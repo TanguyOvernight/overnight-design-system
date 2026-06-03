@@ -84,7 +84,14 @@
   .navbar{display:flex;justify-content:space-around;align-items:center;background:#fff;border-radius:26px;padding:10px 6px;margin-top:14px;box-shadow:var(--sh-card);}
   .nav{display:flex;flex-direction:column;align-items:center;gap:3px;font-family:var(--f);font-weight:700;font-size:11px;color:#9A93B0;}
   .nav.on{color:var(--indigo);}
-  .nav .ic{font-size:19px;line-height:1;}
+  .nav .ic{line-height:1;}
+  .pill.light{background:var(--lav-soft);color:var(--indigo);}
+  .logo{font-family:var(--f);font-weight:800;font-size:56px;letter-spacing:-1.5px;color:#fff;line-height:1;text-align:center;}
+  .moon{position:absolute;top:1px;left:50%;transform:translateX(-50%);width:15px;height:15px;border-radius:50%;background:var(--amber);box-shadow:inset -5px -3px 0 0 var(--bg-a);}
+  .addbtn{width:58px;height:58px;flex:none;border-radius:16px;background:var(--indigo);color:#fff;font-size:28px;display:flex;align-items:center;justify-content:center;box-shadow:0 5px 0 #37268F;}
+  .addbtn:active{transform:translateY(3px);box-shadow:0 2px 0 #37268F;}
+  .prow{display:flex;align-items:center;gap:14px;background:#FBFAFE;border-radius:16px;padding:11px 14px;box-shadow:0 2px 8px rgba(30,16,70,.06);}
+  .deco{position:absolute;stroke:rgba(255,255,255,.13);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;pointer-events:none;z-index:0;}
 </style>
 </head>
 <body>
@@ -335,31 +342,39 @@ const GAMES = [
 const SCREENS = {};
 
 SCREENS.setup = () => `<div class="pad fade">
-  <div style="height:8px"></div>
-  <h1 style="font-size:40px;">Overnight</h1>
-  <div class="sub" style="margin-top:6px;">Le jeu à boire entre potes. Ajoute les joueurs.</div>
-  <div style="height:22px"></div>
-  <div class="row">
-    <input class="input" id="nm" placeholder="Prénom du joueur" value="${S.nameDraft.replace(/"/g,'&quot;')}"
-      oninput="S.nameDraft=this.value" onkeydown="if(event.key==='Enter')addPlayer()">
-    <button class="iconbtn" style="width:56px;height:56px;font-size:26px;background:#fff;color:var(--indigo);" onclick="addPlayer()">+</button>
+  <svg class="deco" style="top:64px;left:24px;width:32px;height:42px;" viewBox="0 0 32 42"><path d="M5 4h22l-3 22a8 8 0 0 1-16 0z"/><path d="M16 26v10M10 38h12"/></svg>
+  <svg class="deco" style="top:120px;right:34px;width:18px;height:18px;" viewBox="0 0 18 18"><path d="M9 1v16M1 9h16"/></svg>
+  <svg class="deco" style="top:96px;right:96px;width:10px;height:10px;" viewBox="0 0 10 10"><circle cx="5" cy="5" r="3"/></svg>
+  <svg class="deco" style="bottom:120px;right:24px;width:34px;height:58px;" viewBox="0 0 34 58"><path d="M13 4h8v9l4 7v33H9V20l4-7z"/></svg>
+  <div class="spacer"></div>
+  <div class="logo">Overn<span style="position:relative;display:inline-block;">ı<span class="moon"></span></span>ght</div>
+  <div class="sub center" style="margin-top:12px;font-size:17px;">Le jeu à boire entre potes.</div>
+  <div style="height:28px"></div>
+  <div class="card" style="padding:22px;">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;">
+      <h2 style="font-size:20px;color:var(--ink);">Joueurs de la soirée</h2>
+      <span class="pill light">${S.players.length} / 12</span>
+    </div>
+    <div style="display:flex;gap:12px;">
+      <input class="input" id="nm" placeholder="Prénom" value="${S.nameDraft.replace(/"/g,'&quot;')}" oninput="S.nameDraft=this.value" onkeydown="if(event.key==='Enter')addPlayer()">
+      <button class="addbtn" onclick="addPlayer()">+</button>
+    </div>
+    ${S.players.length?`<div style="height:1px;background:var(--line);margin:16px 0;"></div>
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      ${S.players.map((p,i)=>`<div class="prow">${avatar(p,40)}<b style="flex:1;font-family:var(--f);color:var(--ink);font-size:16px;">${p.name}</b>
+        <span onclick="rmPlayer(${i})" style="color:#B6AECB;font-size:22px;cursor:pointer;line-height:1;padding:2px 6px;">×</span></div>`).join('')}
+    </div>`:''}
   </div>
   <div style="height:18px"></div>
-  ${S.players.length? `<div class="cap">Joueurs (${S.players.length})</div>`:''}
-  <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px;">
-    ${S.players.map((p,i)=>`<div class="card" style="display:flex;align-items:center;gap:14px;padding:12px 16px;">
-      ${avatar(p,40)}<b style="flex:1;font-family:var(--f);color:var(--ink);">${p.name}</b>
-      <button class="iconbtn" style="width:34px;height:34px;background:var(--lav-soft);color:var(--indigo);font-size:18px;" onclick="rmPlayer(${i})">×</button></div>`).join('')}
-  </div>
-  <div class="cap" style="margin-top:20px;">Intensité des gorgées</div>
-  <div class="row" style="margin-top:8px;">
-    <button class="btn ${(S.mult||1)===1?'primary':''}" style="min-height:48px;font-size:15px;" onclick="setMult(1)">Normal</button>
-    <button class="btn ${(S.mult||1)===2?'primary':''}" style="min-height:48px;font-size:15px;" onclick="setMult(2)">Costaud ×2</button>
-  </div>
-  <div class="spacer"></div>
   ${S.players.length>=2
-    ? `<button class="btn amber" onclick="go('hub')">Commencer la soirée</button>`
-    : `<div class="sub center" style="opacity:.7;">Ajoute au moins 2 joueurs.</div>`}
+    ? `<button class="btn amber" onclick="go('hub')"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3A2A06" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0"/><path d="M16 6.2a3 3 0 0 1 0 5.6M20.5 20a5.5 5.5 0 0 0-3.2-5"/></svg>Créer une partie</button>
+       <button class="btn" style="margin-top:12px;" onclick="alert('Rejoindre une room avec un code — bientôt (mode multi-téléphones).')"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4"/><path d="M11 12H3M7 8l-4 4 4 4"/></svg>Rejoindre</button>`
+    : `<div class="sub center" style="opacity:.75;">Ajoute au moins 2 joueurs pour commencer.</div>`}
+  <div class="navbar">
+    <div class="nav on"><svg class="ic" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7"/><path d="M6 10v9h12v-9"/></svg>Accueil<i style="width:5px;height:5px;border-radius:50%;background:var(--amber);display:block;margin-top:1px;"></i></div>
+    <div class="nav"><svg class="ic" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4h10v4a5 5 0 0 1-10 0z"/><path d="M7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3M9 16h6M8 20h8"/></svg>Classement</div>
+    <div class="nav"><svg class="ic" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0 1 14 0"/></svg>Profil</div>
+  </div>
 </div>`;
 
 SCREENS.hub = () => `<div class="pad fade">
