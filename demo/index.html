@@ -51,7 +51,7 @@
   .back{background:repeating-linear-gradient(45deg,#6C4FE0 0 8px,#553BCB 8px 16px)!important;border:3px solid #fff;}
   .chip{min-width:38px;height:46px;padding:0 6px;border-radius:11px;background:rgba(255,255,255,.16);display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:700;font-size:16px;color:#fff;}
   .chip:active{transform:scale(.94);}
-  .gamerow{display:flex;align-items:center;gap:14px;padding:14px;cursor:pointer;}
+  .gamerow{display:flex;align-items:center;gap:16px;padding:17px 4px;cursor:pointer;}
   .gtile{width:46px;height:46px;border-radius:14px;display:flex;align-items:center;justify-content:center;flex:none;font-family:var(--f);font-weight:800;font-size:18px;color:#fff;}
   .fade{animation:fade .25s ease;}
   @keyframes fade{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
@@ -69,7 +69,7 @@
   /* échelle d'intensité 1-10 */
   .scale{display:flex;gap:5px;align-items:center;}
   .lvl{flex:1;aspect-ratio:1;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:800;font-size:13px;color:#fff;opacity:.9;cursor:pointer;}
-  .lvl.on{outline:3px solid #fff;outline-offset:1px;transform:translateY(-2px);opacity:1;box-shadow:0 6px 12px rgba(0,0,0,.3);}
+  .lvl.on{background:#fff!important;color:#1E1633!important;transform:translateY(-3px) scale(1.18);opacity:1;box-shadow:0 7px 14px rgba(0,0,0,.32);}
   /* podium */
   .podblk{border-radius:14px 14px 0 0;display:flex;align-items:flex-start;justify-content:center;padding-top:14px;font-family:var(--f);font-weight:800;color:#fff;box-shadow:inset 0 -12px 0 rgba(0,0,0,.10);}
   .confetti{position:absolute;width:9px;height:9px;border-radius:2px;}
@@ -96,8 +96,8 @@
   .pill.gorgee svg{margin-right:-1px;}
   /* catalogue */
   .sechdr{display:flex;align-items:center;gap:12px;margin-bottom:8px;padding:2px;}
-  .sechead-ic{width:42px;height:42px;border-radius:13px;background:var(--lav-soft);display:flex;align-items:center;justify-content:center;color:var(--indigo);flex:none;}
-  .tile{width:58px;height:58px;flex:none;border-radius:16px;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--f);font-weight:800;font-size:20px;box-shadow:0 6px 14px rgba(0,0,0,.16);}
+  .sechead-ic{width:46px;height:46px;border-radius:14px;background:var(--lav-soft);display:flex;align-items:center;justify-content:center;color:var(--indigo);flex:none;}
+  .tile{width:64px;height:64px;flex:none;border-radius:16px;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--f);font-weight:800;font-size:23px;box-shadow:0 6px 14px rgba(0,0,0,.16);}
   .chev{color:var(--indigo);font-weight:800;font-size:22px;line-height:1;}
   /* bandeau coral classement */
   .cbanner{display:flex;align-items:center;gap:14px;background:linear-gradient(120deg,#FF9E7A,#FF6F8B);border-radius:18px;padding:14px 16px;box-shadow:0 12px 24px rgba(255,110,120,.28);}
@@ -347,16 +347,16 @@ const KINGS = {1:["As — Cascade","Tu bois, ton voisin de gauche suit, puis le 
 
 /* ============================ JEUX (méta) ============================ */
 const GAMES = [
- {id:'bus', nom:'Le Bus', desc:'4 manches, ça monte', t:'B', col:'#46C9A0'},
- {id:'palmier', nom:'Palmier', desc:"King's Cup — pose ta carte sans tout faire tomber", t:'P', col:'#37B98B'},
- {id:'ftd', nom:'Fuck the Dealer', desc:'Devine la carte', t:'F', col:'#4F86E0'},
- {id:'pmu', nom:'PMU', desc:'La course', t:'P', col:'#46C9A0'},
- {id:'purple', nom:'Purple', desc:'Haut / bas / pareil', t:'P', col:'#B98CFF'},
- {id:'tape', nom:'Tape la carte', desc:'Réflexe : tape sur les figures', t:'T', col:'#FF7E8B'},
- {id:'vob', nom:'Vérité ou Bois', desc:'Réponds, ou bois', t:'V', col:'#FF7E8B'},
- {id:'jamais', nom:"Je n'ai jamais", desc:"Tu l'as fait ? Tu bois", t:'J', col:'#F0A93C'},
- {id:'echelle', nom:"L'Échelle", desc:'Les autres te font deviner ta carte (1-10)', t:'E', col:'#4F86E0'},
- {id:'pref', nom:'Tu préfères', desc:'A ou B', t:'T', col:'#34C3D6'},
+ {id:'bus', nom:'Le Bus', desc:'Prédiction, cartes et gorgées croissantes.', t:'B', col:'#6C4FE0'},
+ {id:'palmier', nom:'Palmier', desc:'Tire une carte, équilibre, impose la règle.', t:'P', col:'#2BA17C'},
+ {id:'ftd', nom:'Fuck the Dealer', desc:'Devine la carte du dealer en 2 essais.', t:'F', col:'#E0563E'},
+ {id:'pmu', nom:'PMU', desc:'Parie sur ton enseigne et gagne la course.', t:'P', col:'#F0A93C'},
+ {id:'purple', nom:'Purple', desc:'Plus haut, plus bas ou Purple ?', t:'P', col:'#8B5CF6'},
+ {id:'tape', nom:'Tape la carte', desc:'Réflexe : tape sur les figures.', t:'T', col:'#FF7E8B'},
+ {id:'echelle', nom:"L'Échelle", desc:'Un chiffre de 1 à 10, fais-nous deviner.', t:'E', col:'#4F86E0'},
+ {id:'vob', nom:'Vérité ou Bois', desc:'Réponds honnêtement ou bois.', t:'V', col:'#FF6F6F'},
+ {id:'jamais', nom:"Je n'ai jamais", desc:"Avoue si tu l'as déjà fait… ou bois.", t:'J', col:'#46C2B0'},
+ {id:'pref', nom:'Tu préfères', desc:'Choisis ton camp entre deux options.', t:'T', col:'#F0A93C'},
 ];
 
 /* ============================ ÉCRANS ============================ */
@@ -398,19 +398,22 @@ SCREENS.hub = () => {
   const ids=g=>g.id;
   const cartes=GAMES.filter(g=>['bus','palmier','ftd','pmu','purple','tape'].includes(g.id));
   const quest=GAMES.filter(g=>['echelle','vob','jamais','pref'].includes(g.id));
-  const sec=(title,icon,list)=>`<div class="card" style="padding:16px 16px 8px;">
-    <div class="sechdr"><div class="sechead-ic">${icon}</div><h2 style="font-size:19px;color:var(--ink);">${title}</h2></div>
+  const sec=(title,icon,list)=>`<div class="card" style="padding:20px 20px 10px;">
+    <div class="sechdr" style="margin-bottom:6px;"><div class="sechead-ic">${icon}</div><h2 style="font-size:23px;color:var(--ink);">${title}</h2></div>
     ${list.map((g,i)=>`<div class="gamerow" style="${i<list.length-1?'border-bottom:1px solid var(--line);':''}" onclick="startGame('${g.id}')">
-      <div class="tile" style="background:${g.col};">${g.t}</div>
-      <div style="flex:1;"><h2 style="font-size:17px;color:var(--ink);">${g.nom}</h2><div style="font-family:var(--b);font-weight:500;color:var(--ink2);font-size:13px;margin-top:2px;">${g.desc}</div></div>
+      <div class="tile" style="background:${g.col};position:relative;overflow:hidden;">${g.t}<img src="assets/jeu-${g.id}.png" alt="" onerror="this.remove()" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"></div>
+      <div style="flex:1;"><h2 style="font-size:19px;color:var(--ink);">${g.nom}</h2><div style="font-family:var(--b);font-weight:500;color:var(--ink2);font-size:14px;line-height:1.35;margin-top:3px;">${g.desc}</div></div>
       <span class="chev">›</span></div>`).join('')}</div>`;
-  const cIcon=`<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="6" width="12" height="15" rx="2"/><path d="M8 4h9a2 2 0 0 1 2 2v12"/></svg>`;
-  const qIcon=`<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-4 4z"/><path d="M12 8.5v3M12 14h.01"/></svg>`;
+  const cIcon=`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="6" width="12" height="15" rx="2"/><path d="M8 4h9a2 2 0 0 1 2 2v12"/></svg>`;
+  const qIcon=`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-4 4z"/><path d="M12 8.5v3M12 14h.01"/></svg>`;
   return `<div class="pad fade">
-   <div class="hdr"><button class="iconbtn" onclick="go('setup')">‹</button><h2 style="flex:1;text-align:center;">Nos jeux</h2><div style="width:44px"></div></div>
-   <div class="sub center" style="margin:-8px 0 16px;">Choisis ton jeu pour une soirée inoubliable</div>
+   <div style="position:relative;display:flex;align-items:center;justify-content:center;height:46px;margin-bottom:2px;">
+     <button class="iconbtn" style="position:absolute;left:0;" onclick="go('setup')">‹</button>
+     <h1 style="font-size:30px;">Nos jeux</h1>
+   </div>
+   <div class="sub center" style="margin:6px 0 20px;font-size:16px;">Choisis ton jeu pour une soirée inoubliable</div>
    ${sec('Jeux de cartes',cIcon,cartes)}
-   <div style="height:16px"></div>
+   <div style="height:18px"></div>
    ${sec('Jeux de questions',qIcon,quest)}
    <div class="spacer"></div>
    ${navbar('accueil')}
@@ -496,7 +499,7 @@ SCREENS.bus = () => {
       : `<div style="position:relative;height:168px;display:flex;justify-content:center;align-items:center;">
            <div class="playcard back" style="width:94px;height:132px;position:absolute;transform:rotate(-13deg) translateX(-44px);opacity:.8;"></div>
            <div class="playcard back" style="width:94px;height:132px;position:absolute;transform:rotate(13deg) translateX(44px);opacity:.8;"></div>
-           <div class="playcard" style="width:104px;height:148px;position:absolute;background:linear-gradient(160deg,#E0392B,#A8241A);border:3px solid #fff;display:flex;align-items:center;justify-content:center;" data-asset="card-back"><span style="font-size:44px;color:#fff;">&#9790;</span></div>
+           <div class="playcard" style="width:104px;height:148px;position:absolute;background:linear-gradient(160deg,#E0392B,#A8241A);border:3px solid #fff;display:flex;align-items:center;justify-content:center;overflow:hidden;" data-asset="card-back"><span style="font-size:44px;color:#fff;">&#9790;</span><img src="assets/dos-carte.png" alt="" onerror="this.remove()" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"></div>
          </div>`;
     mid = `${fan}
       <div class="card pop" style="margin-top:18px;padding:26px 20px;text-align:center;"><h2 style="font-size:28px;color:var(--ink);">${prompts[g.step]}</h2>
@@ -602,6 +605,7 @@ function palmierScene(g){
   return `<div style="position:relative;height:230px;width:100%;">
     <div style="position:absolute;bottom:0;left:50%;width:62px;height:124px;margin-left:-31px;border-radius:14px 14px 16px 16px;background:linear-gradient(180deg,#2BA17C,#15604A);"></div>
     <div style="position:absolute;bottom:124px;left:50%;width:24px;height:30px;margin-left:-12px;background:#1B6E54;border-radius:4px;"></div>
+    <img src="assets/bouteille.png" alt="" onerror="this.remove()" style="position:absolute;bottom:0;left:50%;transform:translateX(-50%);height:172px;">
     ${cards}${swing}</div>`;
 }
 SCREENS.palmier = () => {
