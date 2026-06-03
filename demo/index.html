@@ -76,7 +76,7 @@ const S = {
 const app = () => document.getElementById('app');
 const cur = () => S.players[S.turn];
 function nextTurn(){ S.turn = (S.turn + 1) % S.players.length; }
-function drink(i, n){ S.players[i].gorgees += n; }
+function drink(i, n){ S.players[i].gorgees += Math.round(n * (S.mult||1)); }
 function go(scr){ if(S.timer){clearInterval(S.timer);S.timer=null;} S.screen = scr; S.reveal = null; render(); }
 
 /* ============================ CARTES ============================ */
@@ -322,6 +322,11 @@ SCREENS.setup = () => `<div class="pad fade">
     ${S.players.map((p,i)=>`<div class="card" style="display:flex;align-items:center;gap:14px;padding:12px 16px;">
       ${avatar(p,40)}<b style="flex:1;font-family:var(--f);color:var(--ink);">${p.name}</b>
       <button class="iconbtn" style="width:34px;height:34px;background:var(--lav-soft);color:var(--indigo);font-size:18px;" onclick="rmPlayer(${i})">×</button></div>`).join('')}
+  </div>
+  <div class="cap" style="margin-top:20px;">Intensité des gorgées</div>
+  <div class="row" style="margin-top:8px;">
+    <button class="btn ${(S.mult||1)===1?'primary':''}" style="min-height:48px;font-size:15px;" onclick="setMult(1)">Normal</button>
+    <button class="btn ${(S.mult||1)===2?'primary':''}" style="min-height:48px;font-size:15px;" onclick="setMult(2)">Costaud ×2</button>
   </div>
   <div class="spacer"></div>
   ${S.players.length>=2
@@ -684,24 +689,35 @@ function vobRound(i){ S.game.round=i; vobPick(); render(); }
 function vobAns(ok){ const g=S.game; if(!ok) drink(S.turn,1); g.count++; if(g.count>=g.target){ g.phase='end'; render(); return; } nextTurn(); vobPick(); render(); }
 
 /* ============================ JE N'AI JAMAIS ============================ */
-function startJamais(){ S.game={used:new Set(), s:null}; jamaisPick(); go('jamais'); }
+function startJamais(){ S.game={phase:'setup', used:new Set(), s:null, target:50, count:0}; go('jamais'); }
+function jamaisSet(n){ const g=S.game; g.target=n; g.count=0; g.phase='play'; jamaisPick(); render(); }
 function jamaisPick(){ const g=S.game; if(g.used.size>=JAMAIS.length)g.used.clear(); let i; do{i=Math.random()*JAMAIS.length|0;}while(g.used.has(i)); g.used.add(i); g.s=JAMAIS[i]; }
-SCREENS.jamais = () => `<div class="pad fade">${gameHead("Je n'ai jamais")}${turnBanner()}
-  <div class="spacer"></div>
-  <div class="card pop" style="padding:32px 24px;"><div class="cap" style="color:var(--amber);">Je n'ai jamais…</div>
-   <div style="font-family:var(--f);font-weight:700;font-size:28px;line-height:1.25;margin-top:12px;color:var(--ink);">…${S.game.s}</div>
-   <div class="sub" style="color:var(--ink2);font-size:14px;margin-top:14px;">Tu l'as déjà fait ? Bois une gorgée.</div></div>
-  <div class="spacer"></div>
-  <div class="row"><button class="btn" onclick="jamaisAns(false)">Jamais</button><button class="btn primary" onclick="jamaisAns(true)">Je l'ai fait (1)</button></div>
- </div>`;
-function jamaisAns(did){ if(did)drink(S.turn,1); nextTurn(); jamaisPick(); render(); }
+SCREENS.jamais = () => {
+  const g=S.game;
+  if(g.phase==='setup') return lenSetup("Je n'ai jamais", 'jamaisSet');
+  if(g.phase==='end') return lenEnd("Je n'ai jamais", g.count);
+  const tgt=g.target===Infinity?'∞':g.target;
+  return `<div class="pad fade">${gameHead("Je n'ai jamais", `<div class="pill">${g.count+1} / ${tgt}</div>`)}${turnBanner()}
+   <div class="spacer"></div>
+   <div class="card pop" style="padding:32px 24px;"><div class="cap" style="color:var(--amber);">Je n'ai jamais…</div>
+    <div style="font-family:var(--f);font-weight:700;font-size:28px;line-height:1.25;margin-top:12px;color:var(--ink);">…${g.s}</div>
+    <div class="sub" style="color:var(--ink2);font-size:14px;margin-top:14px;">Tu l'as déjà fait ? Bois une gorgée.</div></div>
+   <div class="spacer"></div>
+   <div class="row"><button class="btn" onclick="jamaisAns(false)">Jamais</button><button class="btn primary" onclick="jamaisAns(true)">Je l'ai fait (1)</button></div>
+  </div>`;
+};
+function jamaisAns(did){ const g=S.game; if(did)drink(S.turn,1); g.count++; if(g.count>=g.target){g.phase='end';render();return;} nextTurn(); jamaisPick(); render(); }
 
 /* ============================ TU PRÉFÈRES ============================ */
-function startPref(){ S.game={used:new Set(), p:null, picked:null}; prefPick(); go('pref'); }
+function startPref(){ S.game={phase:'setup', used:new Set(), p:null, picked:null, target:50, count:0}; go('pref'); }
+function prefSet(n){ const g=S.game; g.target=n; g.count=0; g.phase='play'; prefPick(); render(); }
 function prefPick(){ const g=S.game; if(g.used.size>=PREF.length)g.used.clear(); let i; do{i=Math.random()*PREF.length|0;}while(g.used.has(i)); g.used.add(i); g.p=PREF[i]; g.picked=null; }
 SCREENS.pref = () => {
   const g=S.game;
-  return `<div class="pad fade">${gameHead('Tu préfères')}${turnBanner()}
+  if(g.phase==='setup') return lenSetup('Tu préfères', 'prefSet');
+  if(g.phase==='end') return lenEnd('Tu préfères', g.count);
+  const tgt=g.target===Infinity?'∞':g.target;
+  return `<div class="pad fade">${gameHead('Tu préfères', `<div class="pill">${g.count+1} / ${tgt}</div>`)}${turnBanner()}
    <div class="spacer"></div>
    <button class="btn ${g.picked===0?'primary':''}" style="min-height:96px;font-size:21px;padding:18px;line-height:1.2;" onclick="prefPickSide(0)">${g.p[0]}</button>
    <div class="sub center" style="font-family:var(--f);font-weight:700;font-size:18px;margin:14px 0;">ou</div>
@@ -711,13 +727,32 @@ SCREENS.pref = () => {
   </div>`;
 };
 function prefPickSide(i){ S.game.picked=i; render(); }
-function prefNext(){ if(S.game.picked===null)return; nextTurn(); prefPick(); render(); }
+function prefNext(){ const g=S.game; if(g.picked===null)return; g.count++; if(g.count>=g.target){g.phase='end';render();return;} nextTurn(); prefPick(); render(); }
 
 /* ============================ ROUTAGE ============================ */
 function startGame(id){
   ({bus:startBus, purple:startPurple, ftd:startFtd, palmier:startPalmier, pmu:startPmu, echelle:startEchelle, tape:startTape, vob:startVob, jamais:startJamais, pref:startPref})[id]();
 }
 function addPlayer(){ const n=(S.nameDraft||'').trim(); if(!n)return; S.players.push({name:n.slice(0,16), color:COLORS[S.players.length%COLORS.length], gorgees:0}); S.nameDraft=''; render(); const i=document.getElementById('nm'); if(i)i.focus(); }
+function setMult(m){ S.mult=m; render(); }
+/* écrans génériques d'options "longueur de partie" (réutilisés par plusieurs jeux) */
+function lenSetup(title, setFn){
+  return `<div class="pad fade">${gameHead(title)}<div class="spacer"></div>
+    <h2 style="text-align:center;font-size:24px;">Combien de tours ?</h2>
+    <div class="sub center" style="margin-top:6px;align-self:center;max-width:300px;">Choisis la longueur de la partie.</div>
+    <div style="display:flex;flex-direction:column;gap:12px;margin-top:24px;">
+      ${[20,50,100].map(n=>`<button class="btn" onclick="${setFn}(${n})">${n} tours</button>`).join('')}
+      <button class="btn amber" onclick="${setFn}(Infinity)">Sans limite</button>
+    </div><div class="spacer"></div></div>`;
+}
+function lenEnd(title, count){
+  return `<div class="pad fade">${gameHead(title)}<div class="spacer"></div>
+    <div class="card pop" style="padding:24px;text-align:center;"><b style="font-family:var(--f);font-size:20px;color:var(--indigo);">Partie terminée !</b>
+    <div class="sub" style="color:var(--ink);margin-top:6px;">${count} tours joués.</div></div>
+    <div class="spacer"></div>
+    <button class="btn primary" onclick="go('scores')">Voir le classement</button>
+    <button class="btn" style="margin-top:12px;" onclick="go('hub')">Retour aux jeux</button></div>`;
+}
 function rmPlayer(i){ S.players.splice(i,1); render(); }
 function resetAll(){ S.players.forEach(p=>p.gorgees=0); S.turn=0; go('setup'); }
 function render(){ app().innerHTML = SCREENS[S.screen](); }
