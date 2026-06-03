@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Overnight — Gamification & Classement (taverne moderne)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Nunito+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --night1:#2A1838; --night2:#1A1026; --night3:#120B1C;
+    --amber:#FFC24B; --amber-hi:#FFD888; --amber-deep:#F2A33C;
+    --magic:#B98CFF; --teal:#4FD6C2; --ember:#FF6B5A; --ruby:#FF4D6D;
+    --cream:#FBF3E6; --dim:#C9BBD6;
+    --gold:#FFD37A; --gold2:#E8B44A; --gold3:#B8862E;
+    --silver:#E6ECF5; --silver2:#AEB9C9; --silver3:#7E8BA0;
+    --bronze:#E6A86B; --bronze2:#C07B3E; --bronze3:#8A521F;
+    --display:"Fraunces",Georgia,serif;
+    --body:"Nunito Sans",-apple-system,"Segoe UI",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-font-smoothing:antialiased;}
+  body{background:#0a0710;display:flex;flex-wrap:wrap;gap:48px;justify-content:center;align-items:flex-start;padding:56px;font-family:var(--body);}
+  .phone{position:relative;width:402px;height:874px;border-radius:60px;background:linear-gradient(145deg,#3a3a3d,#0c0c0d);padding:13px;box-shadow:0 40px 90px rgba(0,0,0,.6),0 0 0 2px rgba(255,255,255,.04) inset;}
+  .label{width:100%;text-align:center;color:#9a8ab0;font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:13px;margin-top:18px;}
+  .screen{position:relative;width:100%;height:100%;border-radius:48px;overflow:hidden;background:radial-gradient(120% 80% at 50% 8%,var(--night1),var(--night2) 55%,var(--night3));color:var(--cream);}
+  .island{position:absolute;top:11px;left:50%;transform:translateX(-50%);width:108px;height:33px;background:#000;border-radius:20px;z-index:60;}
+  .statusbar{position:absolute;top:0;left:0;right:0;height:54px;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px 30px 0;font-weight:800;font-size:15px;}
+  .content{position:absolute;inset:0;z-index:20;display:flex;flex-direction:column;padding:70px 22px 26px;}
+  .glow{position:absolute;border-radius:50%;filter:blur(50px);pointer-events:none;}
+  .dust{position:absolute;width:4px;height:4px;border-radius:50%;background:var(--amber-hi);box-shadow:0 0 8px 2px rgba(255,210,120,.7);opacity:.7;}
+  h1{font-family:var(--display);font-weight:900;line-height:1;letter-spacing:-.5px;}
+  h2{font-family:var(--display);font-weight:700;line-height:1.05;}
+  .cap{font-weight:900;letter-spacing:2.5px;text-transform:uppercase;font-size:11px;color:var(--amber);opacity:.9;}
+  .sub{color:var(--dim);font-weight:600;line-height:1.45;}
+  .glass{background:rgba(255,255,255,.07);border:1.5px solid rgba(255,255,255,.14);border-radius:24px;backdrop-filter:blur(14px);box-shadow:0 16px 40px rgba(0,0,0,.4);}
+  .btn{height:60px;border-radius:24px;display:flex;align-items:center;justify-content:center;gap:10px;font-family:var(--body);font-weight:900;font-size:17px;border:none;cursor:pointer;text-decoration:none;color:#3a2208;background:linear-gradient(180deg,var(--amber-hi),var(--amber-deep));box-shadow:0 12px 26px rgba(255,170,60,.36),inset 0 2px 0 rgba(255,255,255,.5);}
+  .pill{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);font-weight:800;font-size:12px;color:var(--cream);white-space:nowrap;}
+  .pill.on{background:linear-gradient(180deg,var(--amber-hi),var(--amber-deep));color:#3a2208;border-color:transparent;}
+  .spacer{flex:1;}
+  .row{display:flex;gap:10px;}
+  .ava{border-radius:50%;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 35% 30%,#3a2550,#1c1230);}
+  .ring-gold{box-shadow:0 0 0 3px var(--gold2),0 0 18px rgba(255,200,90,.5);}
+  .ring-silver{box-shadow:0 0 0 3px var(--silver2),0 0 14px rgba(200,210,230,.4);}
+  .ring-bronze{box-shadow:0 0 0 3px var(--bronze2),0 0 14px rgba(220,140,80,.4);}
+  /* badges */
+  .badge{width:58px;height:58px;border-radius:18px;display:flex;align-items:center;justify-content:center;font-size:26px;border:1.5px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05);}
+  .badge.un{background:radial-gradient(circle at 40% 30%,rgba(255,200,90,.35),rgba(255,160,60,.12));border-color:rgba(255,200,90,.5);box-shadow:0 0 16px rgba(255,190,80,.35);}
+  .badge.lock{filter:grayscale(1);opacity:.4;}
+  .menu{display:flex;align-items:center;gap:14px;padding:14px 4px;border-bottom:1px solid rgba(255,255,255,.07);}
+  .micon{width:46px;height:46px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:22px;}
+  .barrel{width:78px;border-radius:10px 10px 14px 14px;background:linear-gradient(90deg,#5a3a22,#7a5230 20%,#5a3a22 50%,#7a5230 80%,#5a3a22);position:relative;border:1.5px solid #3a2414;}
+  .barrel:before,.barrel:after{content:"";position:absolute;left:0;right:0;height:7px;background:linear-gradient(180deg,#d9a05a,#9a6a32);}
+  .barrel:before{top:9px;} .barrel:after{bottom:11px;}
+  .tabbar{position:absolute;bottom:0;left:0;right:0;height:74px;background:rgba(18,11,28,.85);backdrop-filter:blur(12px);border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-around;align-items:center;z-index:40;font-size:22px;}
+</style>
+</head>
+<body>
+
+<!-- ===== A. PROFIL GAMIFIÉ ===== -->
+<div>
+<div class="phone"><div class="screen" id="g1">
+  <div class="island"></div>
+  <div class="statusbar"><span>21:47</span><span>📶 🔋</span></div>
+  <div class="glow" style="width:280px;height:200px;top:60px;left:40px;background:rgba(185,140,255,.25);"></div>
+  <div class="content" style="padding-bottom:84px;overflow:hidden;">
+    <!-- header -->
+    <div class="row" style="align-items:center;">
+      <div class="ava ring-gold" style="width:72px;height:72px;font-size:36px;">🦊</div>
+      <div style="flex:1;">
+        <h2 style="font-size:23px;">Léa la Renarde</h2>
+        <div class="sub" style="font-size:13px;">Habituée · taverne rejointe en 2026</div>
+      </div>
+      <div class="pill" style="padding:9px;">⚙︎</div>
+    </div>
+
+    <!-- carte de rang -->
+    <div class="glass" style="margin-top:16px;padding:16px;display:flex;gap:14px;align-items:center;position:relative;overflow:hidden;">
+      <div class="glow" style="width:140px;height:140px;top:-30px;left:-20px;background:rgba(255,194,75,.3);"></div>
+      <!-- écusson -->
+      <svg width="64" height="72" viewBox="0 0 64 72" style="filter:drop-shadow(0 4px 8px rgba(0,0,0,.5));">
+        <defs><linearGradient id="au" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE6A8"/><stop offset="1" stop-color="#C8902E"/></linearGradient></defs>
+        <path d="M32,2 L60,12 V38 C60,56 32,70 32,70 C32,70 4,56 4,38 V12 Z" fill="url(#au)" stroke="#7a5616" stroke-width="2"/>
+        <path d="M32,14 l5,11 12,1 -9,8 3,12 -11,-6 -11,6 3,-12 -9,-8 12,-1 Z" fill="#5a3a12" opacity=".5"/>
+        <text x="32" y="46" text-anchor="middle" font-family="Fraunces" font-weight="900" font-size="20" fill="#3a2408">12</text>
+      </svg>
+      <div style="flex:1;z-index:2;">
+        <div class="cap">Rang 12</div>
+        <h2 style="font-size:21px;margin:2px 0 8px;">Baronne de comptoir</h2>
+        <div style="height:12px;border-radius:8px;background:rgba(0,0,0,.35);overflow:hidden;border:1px solid rgba(255,255,255,.12);">
+          <div style="width:78%;height:100%;background:linear-gradient(90deg,var(--amber),var(--magic));box-shadow:0 0 12px rgba(255,190,80,.6);"></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;margin-top:5px;">
+          <span class="sub" style="font-size:11px;font-weight:800;">RENOMMÉE</span>
+          <span class="sub" style="font-size:11px;font-weight:800;color:var(--cream);">1 240 / 1 500</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- monnaie + butins -->
+    <div class="row" style="margin-top:12px;">
+      <div class="glass" style="flex:1;padding:14px;">
+        <div class="sub" style="font-size:11px;font-weight:900;letter-spacing:1px;">PIÈCES D'OR</div>
+        <div style="display:flex;align-items:center;gap:8px;margin-top:4px;"><span style="font-size:22px;">🪙</span><span style="font-family:var(--display);font-weight:900;font-size:22px;color:var(--gold);">340</span></div>
+      </div>
+      <div class="glass" style="flex:1;padding:14px;position:relative;">
+        <div class="sub" style="font-size:11px;font-weight:900;letter-spacing:1px;">COFFRE</div>
+        <div style="display:flex;align-items:center;gap:8px;margin-top:4px;"><span style="font-size:22px;">🎁</span><span style="font-family:var(--display);font-weight:900;font-size:16px;">3 butins</span></div>
+        <span style="position:absolute;top:10px;right:10px;width:10px;height:10px;border-radius:50%;background:var(--ember);box-shadow:0 0 8px var(--ember);"></span>
+      </div>
+    </div>
+
+    <!-- hauts faits -->
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-top:18px;">
+      <div class="cap">Hauts faits · 8/24</div><span class="sub" style="font-size:12px;font-weight:800;">Tout voir ›</span>
+    </div>
+    <div class="row" style="margin-top:10px;justify-content:space-between;">
+      <div class="badge un" title="Cul sec">🍺</div>
+      <div class="badge un" title="Confident">💞</div>
+      <div class="badge un" title="Roi de la Montée">👑</div>
+      <div class="badge lock" title="Bouc émissaire">💀</div>
+      <div class="badge lock" title="Gardien de secrets">🗝️</div>
+    </div>
+
+    <!-- menu -->
+    <div style="margin-top:8px;">
+      <div class="menu"><div class="micon" style="background:linear-gradient(135deg,#ff8a6b,#ff4d6d);">🎭</div>
+        <div style="flex:1;"><div style="font-weight:800;">Garde-robe</div><div class="sub" style="font-size:12px;">Cadres, avatars, dos de carte</div></div><span class="sub">›</span></div>
+      <div class="menu" style="border-bottom:none;"><div class="micon" style="background:linear-gradient(135deg,#7BE0C2,#4FD6C2);color:#0a2a24;">📊</div>
+        <div style="flex:1;"><div style="font-weight:800;">Mes stats de beuverie</div><div class="sub" style="font-size:12px;">Gorgées, soirées, ambiances préférées</div></div><span class="sub">›</span></div>
+    </div>
+  </div>
+  <div class="tabbar"><span>🏠</span><span style="opacity:.5;">🏆</span><span style="opacity:.5;">🎁</span><span style="color:var(--amber);">🦊</span></div>
+</div></div>
+<div class="label">Gamif · Profil</div>
+</div>
+
+<!-- ===== B. CLASSEMENT (PODIUM) ===== -->
+<div>
+<div class="phone"><div class="screen" id="g2">
+  <div class="island"></div>
+  <div class="statusbar"><span>21:55</span><span>📶 🔋</span></div>
+  <div class="glow" style="width:300px;height:220px;top:90px;left:50px;background:rgba(255,194,75,.28);"></div>
+  <div class="content" style="padding-bottom:20px;overflow:hidden;">
+    <div style="text-align:center;"><div class="cap">Room FOXY · fin de soirée</div><h1 style="font-size:30px;margin-top:4px;">Le Classement</h1></div>
+
+    <!-- onglets -->
+    <div class="row" style="margin-top:14px;justify-content:center;">
+      <span class="pill on">Ce soir</span><span class="pill">Légendes</span><span class="pill">Entre potes</span>
+    </div>
+
+    <!-- critère rigolo -->
+    <div class="row" style="margin-top:12px;overflow:hidden;">
+      <span class="pill" style="background:rgba(255,77,109,.18);border-color:rgba(255,77,109,.4);">🍺 Plus grande descente</span>
+      <span class="pill">😈 Plus sadique</span>
+      <span class="pill">💬 Plus honnête</span>
+    </div>
+
+    <!-- podium -->
+    <div style="display:flex;justify-content:center;align-items:flex-end;gap:10px;margin-top:26px;">
+      <!-- 2e -->
+      <div style="text-align:center;width:96px;">
+        <div class="ava ring-silver" style="width:58px;height:58px;font-size:28px;margin:0 auto;">🐺</div>
+        <div style="font-weight:800;font-size:13px;margin-top:6px;">Maxime</div>
+        <div class="barrel" style="height:74px;margin-top:6px;display:flex;align-items:flex-start;justify-content:center;">
+          <div style="margin-top:26px;font-family:var(--display);font-weight:900;font-size:24px;color:var(--silver);">2</div></div>
+        <div style="font-family:var(--display);font-weight:900;color:var(--silver);">21 🍺</div>
+      </div>
+      <!-- 1er -->
+      <div style="text-align:center;width:104px;">
+        <div style="font-size:26px;">👑</div>
+        <div class="ava ring-gold" style="width:70px;height:70px;font-size:34px;margin:0 auto;">🦊</div>
+        <div style="font-weight:900;font-size:14px;margin-top:6px;color:var(--gold);">Léa</div>
+        <div class="barrel" style="height:104px;margin-top:6px;display:flex;align-items:flex-start;justify-content:center;">
+          <div style="margin-top:30px;font-family:var(--display);font-weight:900;font-size:30px;color:var(--gold);">1</div></div>
+        <div style="font-family:var(--display);font-weight:900;color:var(--gold);">28 🍺</div>
+      </div>
+      <!-- 3e -->
+      <div style="text-align:center;width:96px;">
+        <div class="ava ring-bronze" style="width:54px;height:54px;font-size:26px;margin:0 auto;">🦉</div>
+        <div style="font-weight:800;font-size:13px;margin-top:6px;">Sarah</div>
+        <div class="barrel" style="height:58px;margin-top:6px;display:flex;align-items:flex-start;justify-content:center;">
+          <div style="margin-top:20px;font-family:var(--display);font-weight:900;font-size:22px;color:var(--bronze);">3</div></div>
+        <div style="font-family:var(--display);font-weight:900;color:var(--bronze);">17 🍺</div>
+      </div>
+    </div>
+
+    <!-- liste -->
+    <div class="glass" style="margin-top:18px;padding:6px 14px;">
+      <div class="menu"><span style="width:22px;font-family:var(--display);font-weight:900;color:var(--dim);">4</span>
+        <div class="ava" style="width:38px;height:38px;font-size:20px;">🐗</div>
+        <div style="flex:1;font-weight:800;">Tom</div><span style="color:#7BE0C2;font-size:12px;font-weight:800;">▲2</span>
+        <span style="font-family:var(--display);font-weight:900;">14 🍺</span></div>
+      <div class="menu"><span style="width:22px;font-family:var(--display);font-weight:900;color:var(--dim);">5</span>
+        <div class="ava" style="width:38px;height:38px;font-size:20px;">🦌</div>
+        <div style="flex:1;font-weight:800;">Inès</div><span style="color:var(--ruby);font-size:12px;font-weight:800;">▼1</span>
+        <span style="font-family:var(--display);font-weight:900;">11 🍺</span></div>
+      <div class="menu" style="border-bottom:none;"><span style="width:22px;font-family:var(--display);font-weight:900;color:var(--dim);">6</span>
+        <div class="ava" style="width:38px;height:38px;font-size:20px;">🐍</div>
+        <div style="flex:1;font-weight:800;">Hugo</div><span class="sub" style="font-size:12px;">—</span>
+        <span style="font-family:var(--display);font-weight:900;">9 🍺</span></div>
+    </div>
+  </div>
+</div></div>
+<div class="label">Gamif · Classement</div>
+</div>
+
+<!-- ===== C. BUTIN DE FIN DE SOIRÉE (roue + gemme) ===== -->
+<div>
+<div class="phone"><div class="screen" id="g3">
+  <div class="island"></div>
+  <div class="statusbar"><span>22:10</span><span>📶 🔋</span></div>
+  <div style="position:absolute;inset:0;background:radial-gradient(60% 40% at 50% 40%,rgba(185,140,255,.35),transparent 70%);z-index:4;"></div>
+  <div class="glow" style="width:260px;height:260px;top:200px;left:70px;background:rgba(255,194,75,.32);"></div>
+  <div class="dust" style="top:180px;left:120px;"></div><div class="dust" style="top:230px;left:300px;"></div>
+  <div class="dust" style="top:300px;left:80px;opacity:.6;"></div><div class="dust" style="top:150px;left:250px;opacity:.6;"></div>
+  <div class="content center">
+    <div class="cap">La tournée du patron</div>
+    <h1 style="font-size:30px;margin-top:6px;">Fais tourner la roue</h1>
+    <div class="sub" style="margin-top:6px;max-width:250px;">Un dernier tour pour le butin de la soirée.</div>
+
+    <!-- roue -->
+    <div style="position:relative;margin-top:26px;width:250px;height:250px;">
+      <div style="position:absolute;inset:0;border-radius:50%;
+        background:conic-gradient(#FFD37A 0 60deg,#B98CFF 60deg 120deg,#4FD6C2 120deg 180deg,#FF6B5A 180deg 240deg,#FFD37A 240deg 300deg,#B98CFF 300deg 360deg);
+        border:8px solid rgba(255,255,255,.9);box-shadow:0 18px 50px rgba(0,0,0,.5),0 0 0 4px var(--gold2);"></div>
+      <!-- libellés -->
+      <div style="position:absolute;inset:0;color:#2a1838;font-weight:900;font-size:13px;">
+        <span style="position:absolute;top:24px;left:50%;transform:translateX(-50%);">GEMME</span>
+        <span style="position:absolute;top:46%;right:14px;">120 🪙</span>
+        <span style="position:absolute;bottom:30px;right:30px;">CADRE</span>
+        <span style="position:absolute;bottom:24px;left:50%;transform:translateX(-50%);">50 🪙</span>
+        <span style="position:absolute;bottom:30px;left:24px;">BADGE</span>
+        <span style="position:absolute;top:46%;left:18px;">TOUR ✕2</span>
+      </div>
+      <!-- moyeu -->
+      <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:62px;height:62px;border-radius:50%;
+        background:linear-gradient(180deg,var(--amber-hi),var(--amber-deep));border:4px solid #fff;
+        display:flex;align-items:center;justify-content:center;font-size:26px;box-shadow:0 6px 14px rgba(0,0,0,.4);">🍺</div>
+      <!-- pointeur -->
+      <div style="position:absolute;top:-6px;left:50%;transform:translateX(-50%);width:0;height:0;
+        border-left:13px solid transparent;border-right:13px solid transparent;border-top:22px solid #fff;filter:drop-shadow(0 2px 3px rgba(0,0,0,.5));"></div>
+    </div>
+
+    <!-- aperçu lot gagné -->
+    <div class="glass" style="margin-top:24px;padding:12px 16px;display:flex;align-items:center;gap:12px;">
+      <span style="font-size:26px;filter:drop-shadow(0 0 8px rgba(120,160,255,.8));">💎</span>
+      <div style="text-align:left;"><div style="font-weight:900;">Nouveau haut fait possible</div><div class="sub" style="font-size:12px;">« Gardienne de secrets » à débloquer</div></div>
+    </div>
+    <div class="spacer"></div>
+    <a class="btn" style="width:100%;">TOURNER 🎡</a>
+  </div>
+</div></div>
+<div class="label">Gamif · Butin de soirée</div>
+</div>
+
+</body>
+</html>
