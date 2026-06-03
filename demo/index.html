@@ -35,7 +35,7 @@
   .card{background:#fff;border-radius:22px;box-shadow:var(--sh-card);color:var(--ink);}
   .pcard{background:linear-gradient(135deg,#7C63EC,#5E46CC);border-radius:22px;box-shadow:var(--sh);}
   button{font-family:var(--f);cursor:pointer;border:none;}
-  .btn{position:relative;width:100%;min-height:60px;border-radius:18px;display:flex;align-items:center;justify-content:center;gap:9px;font-weight:800;font-size:17px;color:#fff;background:rgba(255,255,255,.16);box-shadow:0 6px 0 var(--bev,rgba(20,10,50,.30));transition:transform .06s,box-shadow .06s;}
+  .btn{position:relative;width:100%;min-height:64px;border-radius:18px;display:flex;align-items:center;justify-content:center;gap:9px;font-weight:800;font-size:18px;color:#fff;background:rgba(255,255,255,.16);box-shadow:0 6px 0 var(--bev,rgba(20,10,50,.30));transition:transform .06s,box-shadow .06s;}
   .btn:active{transform:translateY(4px);box-shadow:0 2px 0 var(--bev,rgba(20,10,50,.30));}
   .btn.primary{background:#fff;color:var(--indigo);--bev:#CFC8EC;}
   .btn.indigo{background:var(--indigo);--bev:#37268F;}
@@ -59,11 +59,12 @@
   @keyframes pop{from{opacity:0;transform:scale(.8);}to{opacity:1;transform:none;}}
   .av{box-shadow:0 4px 10px rgba(0,0,0,.2);}
   /* bandeau "au tour de" */
-  .banner{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.14);border-radius:18px;padding:9px 16px 9px 9px;margin-bottom:14px;font-family:var(--f);font-weight:700;}
+  .banner{display:flex;align-items:center;gap:13px;background:rgba(255,255,255,.14);border-radius:20px;padding:11px 18px 11px 11px;margin-bottom:16px;font-family:var(--f);font-weight:700;}
   .banner b{color:var(--amber);}
   /* stepper Le Bus */
   .steps{display:flex;align-items:center;justify-content:center;margin-bottom:8px;}
-  .step{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:800;font-size:16px;border:2px solid rgba(255,255,255,.35);color:rgba(255,255,255,.6);}
+  .step{width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:800;font-size:18px;border:2px solid rgba(255,255,255,.35);color:rgba(255,255,255,.6);}
+  .step-line{width:34px;}
   .step.on{background:var(--amber);border-color:var(--amber);color:#3A2A06;box-shadow:0 5px 0 var(--amber-d);}
   .step-line{width:30px;height:3px;background:rgba(255,255,255,.25);}
   /* échelle d'intensité 1-10 */
@@ -463,10 +464,10 @@ SCREENS.scores = () => {
 /* ---- barre de jeu commune ---- */
 function gameHead(title, right){
   return `<div class="hdr"><button class="iconbtn" onclick="go('hub')">‹</button>
-    <h2 style="flex:1;text-align:center;font-size:18px;">${title}</h2>
+    <h2 style="flex:1;text-align:center;font-size:23px;">${title}</h2>
     ${right||`<div class="pill">${cur().name}</div>`}</div>`;
 }
-function turnBanner(){ const p=cur(); return `<div class="banner">${avatar(p,36)}<span style="font-size:15px;">Au tour de <b>${p.name}</b></span></div>`; }
+function turnBanner(){ const p=cur(); return `<div class="banner">${avatar(p,40)}<span style="font-size:16px;">Au tour de <b>${p.name}</b></span></div>`; }
 const ICN={
  home:`<svg class="ic" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7"/><path d="M6 10v9h12v-9"/></svg>`,
  trophy:`<svg class="ic" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4h10v4a5 5 0 0 1-10 0z"/><path d="M7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3M9 16h6M8 20h8"/></svg>`,
@@ -495,16 +496,16 @@ SCREENS.bus = () => {
         <div class="sub" style="color:var(--ink);font-size:14px;margin-top:4px;">${r.msg}</div></div>`;
   } else {
     const fan = g.cards.length
-      ? `<div style="display:flex;gap:10px;justify-content:center;align-items:flex-end;min-height:150px;">${shown}</div>`
-      : `<div style="position:relative;height:168px;display:flex;justify-content:center;align-items:center;">
-           <div class="playcard back" style="width:94px;height:132px;position:absolute;transform:rotate(-13deg) translateX(-44px);opacity:.8;"></div>
-           <div class="playcard back" style="width:94px;height:132px;position:absolute;transform:rotate(13deg) translateX(44px);opacity:.8;"></div>
-           <div class="playcard" style="width:104px;height:148px;position:absolute;background:linear-gradient(160deg,#E0392B,#A8241A);border:3px solid #fff;display:flex;align-items:center;justify-content:center;overflow:hidden;" data-asset="card-back"><span style="font-size:44px;color:#fff;">&#9790;</span><img src="assets/dos-carte.png" alt="" onerror="this.remove()" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"></div>
+      ? `<div style="display:flex;gap:10px;justify-content:center;align-items:flex-end;min-height:170px;">${shown}</div>`
+      : `<div style="position:relative;height:190px;display:flex;justify-content:center;align-items:center;">
+           <div class="playcard back" style="width:104px;height:146px;position:absolute;transform:rotate(-13deg) translateX(-50px);opacity:.8;"></div>
+           <div class="playcard back" style="width:104px;height:146px;position:absolute;transform:rotate(13deg) translateX(50px);opacity:.8;"></div>
+           <div class="playcard" style="width:120px;height:168px;position:absolute;background:linear-gradient(160deg,#E0392B,#A8241A);border:3px solid #fff;display:flex;align-items:center;justify-content:center;overflow:hidden;" data-asset="card-back"><span style="font-size:50px;color:#fff;">&#9790;</span><img src="assets/dos-carte.png" alt="" onerror="this.remove()" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"></div>
          </div>`;
     mid = `${fan}
-      <div class="card pop" style="margin-top:18px;padding:26px 20px;text-align:center;"><h2 style="font-size:28px;color:var(--ink);">${prompts[g.step]}</h2>
-        <div style="font-family:var(--b);font-weight:600;color:var(--ink2);font-size:13px;margin-top:6px;">Erreur = ${g.step} gorgée${g.step>1?'s':''}</div></div>`;
-    if(g.step===1) actions=`<div class="row"><button class="btn red" onclick="busGuess('r')">Rouge</button><button class="btn dark" onclick="busGuess('n')">Noir</button></div>`;
+      <div class="card pop" style="margin-top:22px;padding:30px 22px;text-align:center;"><h2 style="font-size:31px;color:var(--ink);">${prompts[g.step]}</h2>
+        <div style="font-family:var(--b);font-weight:600;color:var(--ink2);font-size:14px;margin-top:8px;">Erreur = ${g.step} gorgée${g.step>1?'s':''}</div></div>`;
+    if(g.step===1) actions=`<div class="row"><button class="btn red" style="min-height:76px;font-size:22px;border:2px solid rgba(255,255,255,.85);" onclick="busGuess('r')">Rouge</button><button class="btn dark" style="min-height:76px;font-size:22px;border:2px solid rgba(255,255,255,.4);" onclick="busGuess('n')">Noir</button></div>`;
     else if(g.step===2) actions=`<div class="row"><button class="btn" onclick="busGuess('p')">Plus ↑</button><button class="btn" onclick="busGuess('m')">Moins ↓</button></div>`;
     else if(g.step===3) actions=`<div class="row"><button class="btn" onclick="busGuess('in')">Intérieur</button><button class="btn" onclick="busGuess('out')">Extérieur</button></div>`;
     else actions=`<div class="row" style="flex-wrap:wrap;">${SUITS.map((s,i)=>`<button class="btn" style="flex:1 1 40%;color:${i===1||i===2?'#FFD2CC':'#fff'};" onclick="busGuess(${i})">${s}</button>`).join('')}</div>`;
@@ -601,32 +602,49 @@ function palmierRule(c){
 function startPalmier(){ S.game={deck:newDeck(), stack:0, card:null, phase:'draw', bx:0, dir:1, res:null}; go('palmier'); }
 function palmierScene(g){
   let cards=''; for(let i=0;i<g.stack;i++){ const rot=(i%2?1:-1)*(4+i*1.4); cards+=`<div style="position:absolute;bottom:${128+i*9}px;left:50%;width:52px;height:34px;margin-left:-26px;border-radius:6px;background:#fff;box-shadow:0 2px 5px rgba(0,0,0,.3);transform:rotate(${rot}deg);"></div>`; }
-  const swing = g.phase==='balance' ? `<div id="swing" style="position:absolute;bottom:${140+g.stack*9}px;left:50%;width:58px;height:80px;margin-left:-29px;border-radius:9px;background:#fff;box-shadow:0 10px 18px rgba(0,0,0,.4);will-change:transform;"></div>` : '';
-  return `<div style="position:relative;height:230px;width:100%;">
+  let extra='';
+  if(g.phase==='balance'){
+    const sb=150+g.stack*9;
+    extra=`<div style="position:absolute;top:6px;bottom:70px;left:50%;width:2px;margin-left:-1px;background:linear-gradient(rgba(255,255,255,.20),rgba(255,255,255,0));"></div>
+      <div style="position:absolute;bottom:${sb-44}px;left:50%;margin-left:-24px;z-index:2;"><div class="tring"><i></i></div></div>
+      <div id="swing" style="position:absolute;bottom:${sb}px;left:50%;width:66px;height:90px;margin-left:-33px;border-radius:10px;background:#fff;box-shadow:0 10px 18px rgba(0,0,0,.4);will-change:transform;z-index:3;"></div>`;
+  }
+  return `<div style="position:relative;height:320px;width:100%;">
     <div style="position:absolute;bottom:0;left:50%;width:62px;height:124px;margin-left:-31px;border-radius:14px 14px 16px 16px;background:linear-gradient(180deg,#2BA17C,#15604A);"></div>
     <div style="position:absolute;bottom:124px;left:50%;width:24px;height:30px;margin-left:-12px;background:#1B6E54;border-radius:4px;"></div>
-    <img src="assets/bouteille.png" alt="" onerror="this.remove()" style="position:absolute;bottom:0;left:50%;transform:translateX(-50%);height:172px;">
-    ${cards}${swing}</div>`;
+    <div style="position:absolute;bottom:24px;left:50%;width:52px;height:44px;margin-left:-26px;border-radius:8px;background:#6C4FE0;border-top:3px solid var(--amber);border-bottom:3px solid var(--amber);"></div>
+    <img src="assets/bouteille.png" alt="" onerror="this.remove()" style="position:absolute;bottom:0;left:50%;transform:translateX(-50%);height:160px;z-index:1;">
+    ${cards}${extra}</div>`;
 }
 SCREENS.palmier = () => {
-  const g=S.game; let mid, actions;
+  const g=S.game;
+  const head=gameHead('Palmier', `<div class="pill">Tour de ${cur().name}</div>`);
+  if(g.phase==='balance'){
+    return `<div class="pad fade" style="padding-bottom:0;">${head}
+      <div class="spacer"></div>${palmierScene(g)}<div class="spacer"></div>
+      <div class="sheet">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--indigo)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V11M12 11c0-4 3-7 8-7-1 4-4 7-8 7zM12 11C12 7 9 4 4 4c1 4 4 7 8 7z"/></svg>
+        <h1 style="font-size:28px;color:var(--ink);margin-top:6px;">Centre la carte</h1>
+        <div style="width:34px;height:4px;border-radius:2px;background:var(--mint);margin:10px auto;"></div>
+        <div style="font-family:var(--b);font-weight:500;color:var(--ink2);font-size:15px;">Tape quand elle passe au milieu.</div>
+        <button class="btn amber" style="margin-top:18px;font-size:22px;min-height:66px;" onclick="palmierDrop()">POSER</button>
+      </div></div>`;
+  }
+  let mid, actions;
   if(g.phase==='draw'){
-    mid=`${palmierScene(g)}<div class="sub center" style="margin-top:8px;">Palmier : ${g.stack} carte${g.stack>1?'s':''} en équilibre.</div>`;
+    mid=`${turnBanner()}${palmierScene(g)}<div class="sub center" style="margin-top:6px;">Palmier : ${g.stack} carte${g.stack>1?'s':''} en équilibre.</div>`;
     actions=`<button class="btn primary" onclick="palmierTirer()">Tirer une carte</button>`;
   } else if(g.phase==='rule'){
     const r=palmierRule(g.card);
-    mid=`<div style="display:flex;justify-content:center;">${cardHTML(g.card,108,150)}</div>
-      <div class="card pop" style="margin-top:14px;padding:16px;text-align:center;"><b style="font-family:var(--f);font-size:18px;color:var(--indigo);">${r[0]}</b>
-      <div class="sub" style="color:var(--ink);font-size:14px;margin-top:5px;">${r[1]}</div></div>`;
+    mid=`${turnBanner()}<div style="display:flex;justify-content:center;">${cardHTML(g.card,118,166)}</div>
+      <div class="card pop" style="margin-top:16px;padding:18px;text-align:center;"><b style="font-family:var(--f);font-size:19px;color:var(--indigo);">${r[0]}</b>
+      <div class="sub" style="color:var(--ink);font-size:15px;margin-top:6px;">${r[1]}</div></div>`;
     actions=`<button class="btn primary" onclick="palmierBalance()">Poser sur le palmier</button>`;
-  } else if(g.phase==='balance'){
-    mid=`${palmierScene(g)}<div class="sub center" style="font-family:var(--f);font-weight:700;">Pose la carte bien au centre du palmier !</div>`;
-    actions=`<button class="btn amber" onclick="palmierDrop()">POSER</button>`;
   } else {
-    mid=`${palmierScene(g)}<div class="card pop" style="margin-top:10px;padding:16px;text-align:center;"><b style="font-family:var(--f);font-size:18px;color:${g.res.ok?'#19A974':'var(--red)'};">${g.res.title}</b><div class="sub" style="color:var(--ink);font-size:14px;margin-top:4px;">${g.res.msg}</div></div>`;
+    mid=`${turnBanner()}${palmierScene(g)}<div class="card pop" style="margin-top:8px;padding:16px;text-align:center;"><b style="font-family:var(--f);font-size:19px;color:${g.res.ok?'#19A974':'var(--red)'};">${g.res.title}</b><div class="sub" style="color:var(--ink);font-size:15px;margin-top:4px;">${g.res.msg}</div></div>`;
     actions=`<button class="btn primary" onclick="palmierNext()">Au joueur suivant</button>`;
   }
-  return `<div class="pad fade">${gameHead('Palmier', `<div class="pill">Palmier ${g.stack}</div>`)}${turnBanner()}<div class="spacer"></div>${mid}<div class="spacer"></div>${actions}</div>`;
+  return `<div class="pad fade">${head}<div class="spacer"></div>${mid}<div class="spacer"></div>${actions}</div>`;
 };
 function palmierTirer(){ S.game.card=draw(S.game.deck); S.game.phase='rule'; render(); }
 function palmierBalance(){ const g=S.game; g.phase='balance'; g.bx=0; g.dir=1; render(); startSwing(); }
@@ -785,7 +803,7 @@ SCREENS.vob = () => {
    <div class="spacer"></div>
    <div class="card pop" style="padding:22px 22px 26px;">
      <div class="sparks"><span style="width:12px;height:3px;border-radius:2px;background:var(--lav);"></span><span class="pill light" style="font-size:12px;">Round ${g.round+1}</span><span style="width:12px;height:3px;border-radius:2px;background:var(--lav);"></span></div>
-     <div style="font-family:var(--f);font-weight:700;font-size:30px;line-height:1.2;margin-top:16px;color:var(--ink);text-align:center;">${g.q}</div></div>
+     <div style="font-family:var(--f);font-weight:700;font-size:33px;line-height:1.18;margin-top:18px;color:var(--ink);text-align:center;">${g.q}</div></div>
    <div class="spacer"></div>
    <div class="cap" style="margin-bottom:9px;">Intensité</div>
    <div class="scale">${VOB.map((r,i)=>`<div class="lvl ${i===g.round?'on':''}" style="background:hsl(${Math.round(150-i*150/9)},62%,54%);" onclick="vobRound(${i})">${i+1}</div>`).join('')}</div>
