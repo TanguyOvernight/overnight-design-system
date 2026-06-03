@@ -115,6 +115,29 @@ Pour briefer la recherche de skills (agent skills / SKILL.md), voilà les brique
 
 Mots-clés de recherche utiles : `expo skill`, `react native skill claude`, `supabase realtime skill`, `expo router agent skill`, `nativewind skill`, `eas build skill`, `SKILL.md expo react native`.
 
+### Skills trouvés (recherche juin 2026)
+
+Recherche faite. Set recommandé, du plus prioritaire au complément :
+
+| Skill | Éditeur | Couvre | Installation |
+|-------|---------|--------|--------------|
+| **`frontend-design`** ⭐ | Anthropic (officiel) | Sort l’UI du « look IA générique » — exactement la crainte du cahier (« éviter app IA générique »). | `/plugin marketplace add anthropics/claude-code` puis `/plugin install frontend-design@claude-plugins-official` |
+| **Expo Skills** (`building-native-ui`…) ⭐ | Expo (officiel) | UI native, Expo Router, styling, composants, animations, natif. Pile notre stack. | `/plugin marketplace add expo/skills` |
+| **`react-native-design`** ⭐ | wshobson/agents | StyleSheet/flexbox/theming/SafeArea + react-navigation + **Reanimated & Gesture Handler** (= notre couche « physicalité » Hearthstone). | `npx skills add https://github.com/wshobson/agents --skill react-native-design` |
+| **react-native-skills** | gigs-slc (130+ règles Callstack/Vercel/Expo) | Best practices RN/Expo, FlashList, anims, perf. | `github.com/gigs-slc/react-native-skills` |
+| **UI/UX Pro Max** | nextlevelbuilder | Base searchable : 50+ styles, ~97 palettes, font pairings, 99 règles UX (utile pour la DA taverne). | marketplace (`mcpmarket` / GitHub) |
+| **Web Interface Guidelines** | Vercel | Audit accessibilité/correction (100+ règles). | marketplace Vercel |
+
+> Note : le skill **NativeWind** mentionné plus haut est couvert par Expo Skills + react-native-design ;
+> à ajouter séparément seulement si on tranche pour Tailwind.
+
+**Sources** :
+[Anthropic frontend-design](https://claude.com/plugins/frontend-design) ·
+[Expo Skills](https://docs.expo.dev/skills/) ·
+[wshobson/agents — react-native-design](https://github.com/wshobson/agents/tree/main/plugins/ui-design/skills/react-native-design) ·
+[gigs-slc/react-native-skills](https://github.com/gigs-slc/react-native-skills) ·
+[Snyk — Top Claude skills UI/UX](https://snyk.io/articles/top-claude-skills-ui-ux-engineers/)
+
 -----
 
 ## 5. Ce qui existe déjà
