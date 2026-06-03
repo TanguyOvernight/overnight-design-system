@@ -124,11 +124,18 @@ const isRed = c => c.s===1 || c.s===2;
 function draw(deck){ if(deck.length===0) deck.push(...newDeck()); return deck.pop(); }
 function cardHTML(c, w, h){
   if(!c) return '';
-  const col = isRed(c) ? 'var(--red)' : '#16161F';
-  return `<div class="playcard pop" style="width:${w}px;height:${h}px;color:${col};">
-    <span class="ci" style="top:8px;left:10px;font-size:${Math.round(w*0.22)}px;">${VN[c.v]}</span>
-    <span class="ci" style="bottom:8px;right:10px;font-size:${Math.round(w*0.22)}px;transform:rotate(180deg);">${VN[c.v]}</span>
-    <span style="font-size:${Math.round(w*0.5)}px;line-height:1;">${SUITS[c.s]}</span></div>`;
+  const red = isRed(c);
+  const col = red ? '#E0392B' : '#1A1A24';
+  const v = VN[c.v], s = SUITS[c.s];
+  const corner = (pos,rot)=>`<div style="position:absolute;${pos};display:flex;flex-direction:column;align-items:center;line-height:.86;${rot?'transform:rotate(180deg);':''}">
+     <span style="font-family:var(--f);font-weight:800;font-size:${Math.round(w*0.21)}px;">${v}</span>
+     <span style="font-size:${Math.round(w*0.17)}px;margin-top:1px;">${s}</span></div>`;
+  return `<div style="position:relative;width:${w}px;height:${h}px;border-radius:${Math.round(w*0.1)}px;background:linear-gradient(157deg,#fff 0%,#F2EEFb 100%);box-shadow:0 ${Math.round(w*0.14)}px ${Math.round(w*0.3)}px rgba(24,12,62,.28),inset 0 0 0 1px rgba(0,0,0,.05);color:${col};overflow:hidden;flex:none;">
+     <div style="position:absolute;inset:${Math.round(w*0.045)}px;border-radius:${Math.round(w*0.07)}px;border:1.5px solid ${red?'rgba(224,57,43,.16)':'rgba(26,26,36,.12)'};"></div>
+     ${corner(`top:${Math.round(h*0.055)}px;left:${Math.round(w*0.085)}px`,false)}
+     ${corner(`bottom:${Math.round(h*0.055)}px;right:${Math.round(w*0.085)}px`,true)}
+     <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:${Math.round(w*0.5)}px;line-height:1;text-shadow:0 2px 4px rgba(0,0,0,.08);">${s}</div>
+   </div>`;
 }
 function avatar(p, size){ return `<div class="av" style="width:${size}px;height:${size}px;font-size:${Math.round(size*0.4)}px;background:${p.color};">${p.name[0].toUpperCase()}</div>`; }
 
@@ -480,26 +487,28 @@ function startBus(){ S.game={deck:newDeck(),step:1,cards:[]}; S.reveal=null; go(
 SCREENS.bus = () => {
   const g=S.game, r=S.reveal;
   const dots=[1,2,3,4].map(n=>`<span style="width:30px;height:8px;border-radius:99px;background:${n<=g.step?'#FFC93C':'rgba(255,255,255,.25)'}"></span>`).join('');
-  const prompts={1:'Rouge ou Noir ?',2:'Plus ou moins que ?',3:'Intérieur ou extérieur ?',4:"Quelle enseigne ?"};
+  const prompts={1:'Rouge ou Noir ?',2:'Plus ou moins ?',3:'Intérieur ou extérieur ?',4:"Quelle enseigne ?"};
   let mid='', actions='';
-  // cartes déjà tirées
-  const shown = g.cards.map(c=>cardHTML(c,64,90)).join('');
+  // pile des cartes précédentes (éventail) — exclut la carte révélée en grand
+  const prev = r ? g.cards.slice(0,-1) : g.cards;
+  const stack = prev.length ? `<div style="display:flex;align-items:center;justify-content:center;margin-bottom:16px;">${prev.map((c,i)=>`<div style="margin-left:${i?-16:0}px;">${cardHTML(c,48,67)}</div>`).join('')}</div>` : '';
   if(r){
     actions = `<button class="btn primary" onclick="busNext()">${r.ok? (g.step>4?'Bravo !':'Continuer') : 'Au suivant'}</button>`;
-    mid = `<div style="display:flex;gap:10px;justify-content:center;align-items:flex-end;">${shown}${cardHTML(r.card,96,134)}</div>
-      <div class="card pop" style="margin-top:16px;padding:16px;text-align:center;">
-        <b style="font-family:var(--f);font-size:18px;color:${r.ok?'#19A974':'var(--red)'};">${r.ok?'Gagné !':'Raté'}</b>
-        <div class="sub" style="color:var(--ink);font-size:14px;margin-top:4px;">${r.msg}</div></div>`;
+    mid = `<div class="panel" style="padding:24px;text-align:center;background:#F6F4FF;">${stack}
+        <div style="display:flex;justify-content:center;">${cardHTML(r.card,150,210)}</div>
+        <div style="margin-top:18px;"><b style="font-family:var(--f);font-size:21px;color:${r.ok?'#19A974':'var(--red)'};">${r.ok?'Gagné !':'Raté'}</b>
+        <div class="sub" style="color:var(--ink2);font-size:14px;margin-top:4px;">${r.msg}</div></div></div>`;
   } else {
-    mid = `<div style="display:flex;gap:10px;justify-content:center;align-items:flex-end;min-height:96px;">${shown||'<div class="back playcard" style="width:116px;height:162px;"></div>'}</div>
-      <h2 style="text-align:center;font-size:24px;margin-top:18px;">${prompts[g.step]}</h2>
-      <div class="sub center" style="margin-top:4px;">Erreur = ${g.step} gorgée${g.step>1?'s':''}</div>`;
+    mid = `<div class="panel" style="padding:24px;text-align:center;background:#F6F4FF;">${stack}
+        <div style="display:flex;justify-content:center;"><div class="back playcard" style="width:176px;height:246px;"></div></div>
+        <h2 style="font-size:24px;margin-top:18px;color:var(--ink);">${prompts[g.step]}</h2>
+        <div class="sub" style="color:var(--ink2);margin-top:4px;">Erreur = ${g.step} gorgée${g.step>1?'s':''}</div></div>`;
     if(g.step===1) actions=`<div class="row"><button class="btn red" onclick="busGuess('r')">Rouge</button><button class="btn dark" onclick="busGuess('n')">Noir</button></div>`;
     else if(g.step===2) actions=`<div class="row"><button class="btn" onclick="busGuess('p')">Plus ↑</button><button class="btn" onclick="busGuess('m')">Moins ↓</button></div>`;
     else if(g.step===3) actions=`<div class="row"><button class="btn" onclick="busGuess('in')">Intérieur</button><button class="btn" onclick="busGuess('out')">Extérieur</button></div>`;
     else actions=`<div class="row" style="flex-wrap:wrap;">${SUITS.map((s,i)=>`<button class="btn" style="flex:1 1 40%;color:${i===1||i===2?'#FFD2CC':'#fff'};" onclick="busGuess(${i})">${s}</button>`).join('')}</div>`;
   }
-  return `<div class="pad fade">${gameHead('Le Bus')}
+  return `<div class="pad fade">${gameHead('Le Bus', `<div class="pill">${g.step}/4</div>`)}
     ${turnBanner()}
     <div style="display:flex;justify-content:center;gap:7px;margin-bottom:6px;">${dots}</div>
     <div class="spacer"></div>${mid}<div class="spacer"></div>${actions}</div>`;
@@ -531,7 +540,7 @@ SCREENS.purple = () => {
        <div class="pop" style="margin-top:16px;"><b style="font-family:var(--f);font-size:20px;color:${r.ok?'#19A974':'var(--red)'};">${r.title}</b><div class="sub" style="color:var(--ink2);font-size:14px;margin-top:4px;">${r.msg}</div></div></div>`;
   } else {
     mid=`<div class="panel" style="padding:24px;background:#F6F4FF;text-align:center;">
-       <div style="display:flex;gap:14px;justify-content:center;align-items:center;">${cardHTML(g.cur,118,166)}<span style="font-size:26px;color:var(--ink2);">→</span><div class="back playcard" style="width:78px;height:110px;"></div></div>
+       <div style="display:flex;gap:14px;justify-content:center;align-items:center;">${cardHTML(g.cur,118,166)}<span style="font-size:26px;color:var(--ink2);">→</span><div class="back playcard" style="width:96px;height:134px;"></div></div>
        <h2 style="font-size:22px;margin-top:18px;color:var(--ink);">La prochaine sera ?</h2>
        <div class="sub" style="color:var(--ink2);margin-top:4px;">« Purple » (même valeur) = +3 à distribuer</div></div>`;
     actions=`<div class="row" style="margin-bottom:12px;"><button class="btn" onclick="purpleGuess('h')">Plus haut ↑</button><button class="btn" onclick="purpleGuess('l')">Plus bas ↓</button></div>
@@ -563,7 +572,7 @@ SCREENS.ftd = () => {
   } else {
     mid=`<div class="panel" style="padding:22px;text-align:center;">
        <div class="cap" style="color:var(--ink2);margin-bottom:12px;">Le donneur</div>
-       <div style="display:flex;justify-content:center;"><div class="back playcard" style="width:140px;height:196px;"></div></div>
+       <div style="display:flex;justify-content:center;"><div class="back playcard" style="width:176px;height:246px;"></div></div>
        <div style="margin-top:16px;"><b style="font-family:var(--f);font-size:16px;color:${g.hint?'var(--blue)':'var(--indigo)'};">${g.hint||'Devine la valeur de la carte.'}</b><div class="sub" style="color:var(--ink2);font-size:13px;margin-top:4px;">Essais restants : ${g.tries} · sinon 2 gorgées</div></div>
        <div class="row" style="flex-wrap:wrap;gap:7px;justify-content:center;margin-top:16px;">${VN.slice(1).map((n,i)=>`<button class="chip" style="background:var(--lav-soft);color:var(--indigo);" onclick="ftdGuess(${i+1})">${n}</button>`).join('')}</div></div>`;
     actions=`<div class="sub center" style="opacity:.7;">Choisis une valeur ci-dessus.</div>`;
@@ -652,7 +661,7 @@ SCREENS.echelle = () => {
   const gauge=(active,color)=>`<div style="display:flex;flex-direction:column-reverse;gap:3px;">${[1,2,3,4,5,6,7,8,9,10].map(n=>`<div style="width:28px;height:15px;border-radius:5px;display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:800;font-size:11px;${n===active?`background:${color};color:#fff;`:'background:var(--lav-soft);color:var(--ink2);'}">${n}</div>`).join('')}</div>`;
   const num=(v)=>`<div style="width:118px;height:166px;border-radius:14px;background:#fff;box-shadow:0 14px 28px rgba(24,12,62,.26);display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:800;font-size:62px;color:var(--indigo);">${v}</div>`;
   if(g.phase==='draw'){
-    mid=`<div class="panel" style="padding:24px;text-align:center;"><div style="display:flex;justify-content:center;"><div class="back playcard" style="width:130px;height:182px;"></div></div>
+    mid=`<div class="panel" style="padding:24px;text-align:center;"><div style="display:flex;justify-content:center;"><div class="back playcard" style="width:168px;height:236px;"></div></div>
       <div class="sub" style="color:var(--ink2);margin-top:16px;">Un chiffre de 1 à 10 va être tiré. <b style="color:var(--ink);">${cur().name} ne doit PAS regarder.</b> Les autres lui donnent des exemples pour ce chiffre.</div></div>`;
     actions=`<button class="btn primary" onclick="echelleTirer()">Tirer la carte</button>`;
   } else if(g.phase==='vu'){
@@ -683,7 +692,7 @@ SCREENS.tape = () => {
   const g=S.game; let mid, actions;
   if(g.phase==='ready'){
     mid=`<div class="panel" style="padding:24px;text-align:center;">
-      <div style="display:flex;justify-content:center;"><div class="back playcard" style="width:150px;height:210px;"></div></div>
+      <div style="display:flex;justify-content:center;"><div class="back playcard" style="width:176px;height:246px;"></div></div>
       <div class="sub" style="color:var(--ink2);margin-top:16px;">Les cartes défilent. <b style="color:var(--ink);">Tape dès qu'une figure apparaît</b> (Valet, Dame, Roi). Pas sur un chiffre, sinon tu bois !</div></div>`;
     actions=`<button class="btn primary" onclick="tapeStart()">Commencer</button>`;
   } else if(g.phase==='run'){
