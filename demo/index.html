@@ -683,38 +683,55 @@ function startPmu(){ S.game=null; S.reveal=null; S.screen='pmuBet'; render(); }
 SCREENS.pmuBet = () => `<div class="pad fade">${gameHead('PMU')}
   <div class="spacer"></div>
   <h2 style="text-align:center;font-size:24px;">Sur quel cheval tu paries ?</h2>
-  <div class="sub center" style="margin-top:6px;">Premier à 6 cases. S'il gagne tu distribues, sinon tu bois.</div>
+  <div class="sub center" style="margin-top:8px;max-width:310px;align-self:center;">Les 4 As courent. Chaque carte tirée fait avancer son enseigne. Quand tous les chevaux dépassent une carte médiane, elle se retourne et fait <b>reculer</b> le cheval de son enseigne. Premier à l'arrivée !</div>
   <div class="row" style="flex-wrap:wrap;margin-top:24px;">
    ${SUITS.map((s,i)=>`<button class="btn" style="flex:1 1 40%;min-height:80px;font-size:30px;color:${i===1||i===2?'#FFD2CC':'#fff'};" onclick="pmuStart(${i})">${s}</button>`).join('')}
   </div><div class="spacer"></div></div>`;
-function pmuStart(bet){ S.game={deck:newDeck(),pos:[0,0,0,0],fin:6,bet,winner:null}; go('pmu'); }
+function pmuStart(bet){
+  const deck=newDeck(), fin=6, side=[];
+  for(let k=1;k<fin;k++) side.push({card:draw(deck), flipped:false});
+  S.game={deck, pos:[0,0,0,0], fin, bet, side, last:null, winner:null, flips:[]};
+  go('pmu');
+}
+function pmuMini(content,isBack,col){
+  return `<div style="width:30px;height:42px;border-radius:7px;${isBack?'background:repeating-linear-gradient(45deg,#6C4FE0 0 5px,#553BCB 5px 10px);border:2px solid #fff;':'background:#fff;border:1px solid #EEE9FA;'}display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--f);font-weight:800;font-size:12px;line-height:1.05;color:${col||'#16161F'};box-shadow:0 4px 8px rgba(0,0,0,.22);">${content}</div>`;
+}
 SCREENS.pmu = () => {
-  const g=S.game;
-  const lanes = SUITS.map((s,i)=>{
-    const pct = Math.min(100, g.pos[i]/g.fin*100);
-    const red = i===1||i===2;
-    return `<div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
-      <div style="width:30px;height:30px;border-radius:9px;background:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;color:${red?'var(--red)':'#16161F'};">${s}</div>
-      <div style="flex:1;height:16px;border-radius:99px;background:${i===g.bet?'rgba(255,201,60,.3)':'rgba(255,255,255,.14)'};position:relative;">
-        <div style="position:absolute;left:calc(${pct}% - 14px);top:-7px;width:30px;height:30px;border-radius:8px;background:${i===g.bet?'#FFC93C':'#fff'};display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:${red?'var(--red)':'#16161F'};transition:left .3s;">${s}</div></div></div>`;
-  }).join('');
+  const g=S.game, red=i=>i===1||i===2;
+  const meds=g.side.map((m,i)=>{ const left=((i+1)/g.fin)*100, c=m.card, col=red(c.s)?'#E0392B':'#16161F';
+    return `<div style="position:absolute;left:${left}%;top:0;transform:translateX(-50%);">${m.flipped?pmuMini(VN[c.v]+'<span style="font-size:14px">'+SUITS[c.s]+'</span>',false,col):pmuMini('',true)}</div>`;}).join('');
+  const finish=`<div style="position:absolute;left:100%;top:-3px;bottom:-3px;transform:translateX(-50%);width:6px;background:repeating-linear-gradient(0deg,#fff 0 5px,#1A1A28 5px 10px);border-radius:3px;"></div>`;
+  const lanes=SUITS.map((s,i)=>{ const left=(g.pos[i]/g.fin)*100, col=red(i)?'#E0392B':'#16161F', bet=i===g.bet;
+    return `<div style="display:flex;align-items:center;gap:8px;margin-bottom:9px;">
+      <div style="width:32px;height:32px;flex:none;border-radius:9px;background:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;color:${col};${bet?'box-shadow:0 0 0 2px var(--amber);':''}">${s}</div>
+      <div style="position:relative;flex:1;height:44px;">
+        <div style="position:absolute;top:50%;left:0;right:0;height:3px;margin-top:-1.5px;background:rgba(255,255,255,.16);border-radius:2px;"></div>
+        <div style="position:absolute;left:${left}%;top:50%;transform:translate(-50%,-50%);transition:left .35s;">
+          <div style="width:32px;height:44px;border-radius:7px;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--f);font-weight:800;color:${col};box-shadow:${bet?'0 0 0 2px var(--amber),':''}0 6px 12px rgba(0,0,0,.3);line-height:1;"><span style="font-size:11px;">A</span><span style="font-size:16px;">${s}</span></div>
+        </div>
+      </div></div>`;}).join('');
+  const board=`<div class="card" style="padding:14px 14px 8px;background:#1F5C43;">
+    <div style="display:flex;align-items:flex-start;gap:8px;margin-bottom:8px;"><div style="width:32px;flex:none;"></div><div style="position:relative;flex:1;height:50px;">${meds}${finish}</div></div>
+    ${lanes}</div>`;
+  let info='';
+  if(g.last){ const c=g.last;
+    info=`<div style="display:flex;align-items:center;gap:14px;justify-content:center;margin-top:14px;">${cardHTML(c,58,82)}<div style="text-align:left;"><b style="font-family:var(--f);color:var(--ink);font-size:15px;">${SUITS[c.s]} avance</b>${g.flips.length?`<div style="color:var(--red);font-weight:800;font-size:13px;margin-top:4px;">${g.flips.join('<br>')}</div>`:''}</div></div>`;}
   let bottom;
-  if(g.winner!==null){
-    const win=g.winner===g.bet;
-    bottom=`<div class="card pop" style="padding:16px;text-align:center;margin-bottom:12px;"><b style="font-family:var(--f);font-size:18px;color:${win?'#19A974':'var(--red)'};">${SUITS[g.winner]} gagne !</b>
-      <div class="sub" style="color:var(--ink);font-size:14px;margin-top:4px;">${win?cur().name+' a gagné son pari : distribue 5 gorgées !':cur().name+' a perdu : bois 3 gorgées.'}</div></div>
-      <button class="btn amber" onclick="go('hub')">Terminer</button>`;
-  } else {
-    bottom=`<button class="btn primary" onclick="pmuDraw()">Tirer une carte</button>`;
-  }
+  if(g.winner!==null){ const win=g.winner===g.bet;
+    bottom=`<div class="card pop" style="padding:16px;text-align:center;margin-bottom:12px;"><b style="font-family:var(--f);font-size:18px;color:${win?'#19A974':'var(--red)'};">${SUITS[g.winner]} remporte la course !</b><div class="sub" style="color:var(--ink);font-size:14px;margin-top:4px;">${win?cur().name+' gagne son pari : distribue 5 gorgées !':cur().name+' a perdu : bois 3 gorgées.'}</div></div><button class="btn amber" onclick="go('hub')">Terminer</button>`;
+  } else bottom=`<button class="btn primary" onclick="pmuDraw()">Tirer une carte</button>`;
   return `<div class="pad fade">${gameHead('PMU', `<div class="pill">Pari ${SUITS[g.bet]}</div>`)}
-    <div class="spacer"></div>
-    <div class="card" style="padding:16px 14px;background:#1F5C43;">${lanes}</div>
-    <div style="height:8px;text-align:center;margin-top:6px;" class="sub">${g.last?('Tirée : '+VN[g.last.v]+SUITS[g.last.s]):''}</div>
-    <div class="spacer"></div>${bottom}</div>`;
+    <div class="spacer"></div>${board}${info}<div class="spacer"></div>${bottom}</div>`;
 };
 function pmuDraw(){
-  const g=S.game, c=draw(g.deck); g.last=c; g.pos[c.s]++;
+  const g=S.game, c=draw(g.deck); g.last=c; g.flips=[];
+  if(g.pos[c.s]<g.fin) g.pos[c.s]++;
+  let changed=true;
+  while(changed){ changed=false; const minPos=Math.min(...g.pos);
+    for(let i=0;i<g.side.length;i++){ const p=i+1;
+      if(!g.side[i].flipped && minPos>p){ g.side[i].flipped=true; const su=g.side[i].card.s; if(g.pos[su]>0) g.pos[su]--; g.flips.push(SUITS[su]+' recule !'); changed=true; }
+    }
+  }
   for(let i=0;i<4;i++){ if(g.pos[i]>=g.fin){ g.winner=i; if(i===g.bet)drink(S.turn,0); else drink(S.turn,3); render(); return; } }
   render();
 }
