@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Overnight — Écran Question (gros texte, simple)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg0:#0C0A12; --bg1:#14101F; --card:#F6F1EA; --ink:#1A1320; --ink2:#5C5468;
+    --cream:#F4EFFA; --dim:#9C93B0;
+    --gold:#FFCB5C; --magenta:#FF5AF7; --violet:#8B5CF6; --cyan:#22D3EE; --ember:#FF6B5A; --green:#34E0A1; --ruby:#FF4D6D;
+    --display:"Space Grotesk",-apple-system,sans-serif;
+    --body:"Inter",-apple-system,"Segoe UI",sans-serif;
+    --magic:linear-gradient(135deg,#FF5AF7,#8B5CF6);
+    --warm:linear-gradient(135deg,#FFD37A,#FF7A3C);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-font-smoothing:antialiased;}
+  body{background:#070509;display:flex;flex-wrap:wrap;gap:48px;justify-content:center;align-items:flex-start;padding:56px;font-family:var(--body);}
+  .phone{position:relative;width:402px;height:874px;border-radius:60px;background:linear-gradient(145deg,#3a3a3d,#0c0c0d);padding:13px;box-shadow:0 40px 90px rgba(0,0,0,.6),0 0 0 2px rgba(255,255,255,.04) inset;}
+  .label{width:100%;text-align:center;color:#8a7fa0;font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:13px;margin-top:18px;}
+  .screen{position:relative;width:100%;height:100%;border-radius:48px;overflow:hidden;background:radial-gradient(130% 70% at 50% 0%,var(--bg1),var(--bg0) 60%);color:var(--cream);}
+  .island{position:absolute;top:11px;left:50%;transform:translateX(-50%);width:108px;height:33px;background:#000;border-radius:20px;z-index:60;}
+  .statusbar{position:absolute;top:0;left:0;right:0;height:54px;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px 30px 0;font-weight:700;font-size:15px;}
+  .content{position:absolute;inset:0;z-index:20;display:flex;flex-direction:column;padding:64px 22px 28px;}
+  .glow{position:absolute;border-radius:50%;filter:blur(60px);pointer-events:none;}
+  .chip{display:inline-flex;align-items:center;gap:7px;padding:9px 15px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);font-weight:700;font-size:13px;color:var(--cream);}
+  .qcard{background:var(--card);border-radius:30px;box-shadow:0 24px 60px rgba(0,0,0,.45);position:relative;overflow:hidden;}
+  .qlabel{font-family:var(--body);font-weight:800;letter-spacing:1.5px;text-transform:uppercase;font-size:12px;}
+  .qtext{font-family:var(--display);font-weight:700;color:var(--ink);letter-spacing:-.8px;line-height:1.12;}
+  .btn{height:64px;border-radius:20px;display:flex;align-items:center;justify-content:center;gap:10px;font-family:var(--body);font-weight:800;font-size:19px;border:none;cursor:pointer;text-decoration:none;color:#fff;}
+  .progress{height:7px;border-radius:99px;background:rgba(255,255,255,.12);overflow:hidden;}
+  .progress > div{height:100%;border-radius:99px;background:var(--magic);}
+  .spacer{flex:1;}
+  .big-round{width:78px;height:78px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:34px;background:#fff;box-shadow:0 14px 30px rgba(0,0,0,.4);}
+</style>
+</head>
+<body>
+
+<!-- ===== Q-A : QUESTION OUVERTE, GROS TEXTE, 1 GESTE ===== -->
+<div>
+<div class="phone"><div class="screen" id="qa">
+  <div class="island"></div>
+  <div class="statusbar"><span>21:54</span><span>📶 🔋</span></div>
+  <div class="glow" style="width:340px;height:280px;top:60px;left:30px;background:rgba(255,77,109,.30);"></div>
+  <div class="content">
+    <!-- chrome minimal -->
+    <div style="display:flex;align-items:center;gap:10px;">
+      <span class="chip" style="background:rgba(255,77,109,.18);border-color:rgba(255,77,109,.4);">🔥 Trash</span>
+      <div class="progress" style="flex:1;"><div style="width:18%;"></div></div>
+      <span class="chip">7/40</span>
+    </div>
+    <div style="text-align:center;margin-top:18px;" class="chip" >Au tour de · <b>Léa</b> 🦊</div>
+
+    <div class="spacer"></div>
+    <!-- carte question : GROS TEXTE -->
+    <div class="qcard" style="padding:30px 26px;">
+      <div style="position:absolute;top:0;left:0;right:0;height:6px;background:linear-gradient(90deg,#FF6B5A,#FF4D6D,#8B5CF6);"></div>
+      <div class="qlabel" style="color:#FF4D6D;">Question 7</div>
+      <div class="qtext" style="font-size:40px;margin-top:14px;">
+        Tu sauves qui, tu manges qui&nbsp;:
+        <span style="color:#FF4D6D;">Maxime</span> ou <span style="color:#FF4D6D;">Sarah</span>&nbsp;?</div>
+    </div>
+    <div class="spacer"></div>
+
+    <!-- 1 geste : un énorme bouton + passer -->
+    <a class="btn" style="width:100%;background:var(--magic);box-shadow:0 14px 32px rgba(139,92,246,.45);">Question suivante ▸</a>
+    <div style="text-align:center;margin-top:14px;color:var(--dim);font-weight:700;font-size:15px;">Glisse ← pour passer</div>
+  </div>
+</div></div>
+<div class="label">Question · gros texte</div>
+</div>
+
+<!-- ===== Q-B : TU PRÉFÈRES, 2 GROS BOUTONS ===== -->
+<div>
+<div class="phone"><div class="screen" id="qb">
+  <div class="island"></div>
+  <div class="statusbar"><span>21:58</span><span>📶 🔋</span></div>
+  <div class="glow" style="width:300px;height:240px;top:60px;left:-30px;background:rgba(139,92,246,.30);"></div>
+  <div class="glow" style="width:280px;height:240px;bottom:160px;right:-40px;background:rgba(34,211,238,.20);"></div>
+  <div class="content">
+    <div style="display:flex;align-items:center;gap:10px;">
+      <span class="chip" style="background:rgba(139,92,246,.2);border-color:rgba(139,92,246,.4);">⚖️ Tu préfères</span>
+      <div class="progress" style="flex:1;"><div style="width:40%;"></div></div>
+      <span class="chip">4/20</span>
+    </div>
+
+    <div class="spacer"></div>
+    <div style="text-align:center;" class="qlabel">Tu préfères…</div>
+    <div class="spacer"></div>
+
+    <!-- 2 gros boutons pleine largeur, gros texte -->
+    <a class="btn" style="width:100%;height:auto;padding:26px 22px;border-radius:24px;flex-direction:column;align-items:flex-start;
+       background:var(--magic);box-shadow:0 14px 32px rgba(139,92,246,.4);">
+      <span style="font-family:var(--display);font-weight:700;font-size:28px;line-height:1.1;text-align:left;">Embrasser ton ex</span>
+      <span style="font-weight:700;font-size:13px;opacity:.85;margin-top:8px;">👆 62% ont choisi ça</span>
+    </a>
+    <div style="text-align:center;font-family:var(--display);font-weight:700;color:var(--dim);font-size:18px;margin:14px 0;">ou</div>
+    <a class="btn" style="width:100%;height:auto;padding:26px 22px;border-radius:24px;flex-direction:column;align-items:flex-start;
+       background:var(--warm);color:#3a2208;box-shadow:0 14px 32px rgba(255,122,60,.4);">
+      <span style="font-family:var(--display);font-weight:700;font-size:28px;line-height:1.1;text-align:left;">Bloquer ta mère 1 an</span>
+      <span style="font-weight:700;font-size:13px;opacity:.8;margin-top:8px;">👆 38% ont choisi ça</span>
+    </a>
+    <div class="spacer"></div>
+    <div style="text-align:center;color:var(--dim);font-weight:700;font-size:15px;">Tape ton choix · tout le monde le voit</div>
+  </div>
+</div></div>
+<div class="label">2 gros boutons</div>
+</div>
+
+<!-- ===== Q-C : LA MONTÉE, GROS TEXTE + 2 BOUTONS ===== -->
+<div>
+<div class="phone"><div class="screen" id="qc">
+  <div class="island"></div>
+  <div class="statusbar"><span>22:02</span><span>📶 🔋</span></div>
+  <div style="position:absolute;inset:0;background:radial-gradient(120% 70% at 50% 0%,#15243a,#0b1422 60%);"></div>
+  <div class="glow" style="width:280px;height:240px;top:120px;left:60px;background:rgba(34,211,238,.18);"></div>
+  <div class="content">
+    <div style="display:flex;align-items:center;gap:10px;">
+      <span class="chip" style="background:rgba(255,203,92,.18);border-color:rgba(255,203,92,.4);">Manche 1 · Rouge ou Noir</span>
+      <div class="spacer"></div><span class="chip">Léa 🦊</span>
+    </div>
+
+    <!-- compteur gorgées géant -->
+    <div style="text-align:center;margin-top:22px;">
+      <span style="font-family:var(--display);font-weight:700;font-size:54px;color:var(--gold);text-shadow:0 0 26px rgba(255,200,90,.5);">🍺 1</span>
+      <div style="color:var(--dim);font-weight:700;font-size:14px;">gorgée si tu te trompes</div>
+    </div>
+
+    <div class="spacer"></div>
+    <!-- carte géante -->
+    <div style="align-self:center;width:170px;height:236px;border-radius:18px;background:#F6F1EA;
+      box-shadow:0 26px 50px rgba(0,0,0,.55);display:flex;align-items:center;justify-content:center;position:relative;">
+      <div style="position:absolute;top:12px;left:16px;font-family:var(--display);font-weight:700;font-size:30px;color:#E0392B;">7</div>
+      <div style="position:absolute;bottom:12px;right:16px;font-family:var(--display);font-weight:700;font-size:30px;color:#E0392B;transform:rotate(180deg);">7</div>
+      <div style="font-size:86px;color:#E0392B;">♥</div>
+    </div>
+    <div class="spacer"></div>
+
+    <div style="text-align:center;font-family:var(--display);font-weight:700;font-size:22px;margin-bottom:14px;">La prochaine sera…</div>
+    <div style="display:flex;gap:14px;width:100%;">
+      <a class="btn" style="flex:1;height:84px;font-size:24px;background:linear-gradient(180deg,#FF6B5A,#E0392B);box-shadow:0 14px 30px rgba(224,57,43,.45);">🔴 ROUGE</a>
+      <a class="btn" style="flex:1;height:84px;font-size:24px;background:linear-gradient(180deg,#3a3550,#1b1726);box-shadow:0 14px 30px rgba(0,0,0,.5);">⚫ NOIR</a>
+    </div>
+  </div>
+</div></div>
+<div class="label">La Montée · gros</div>
+</div>
+
+</body>
+</html>

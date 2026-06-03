@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Overnight — Jeux de cartes (Fuck the Dealer, Pyramide, PMU, Purple)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#241B40; --ink2:#807A9C; --line:#EFECF9;
+    --indigo:#4F38C0; --purple:#6C4FE0; --lav:#B9ACF4; --lav-soft:#E9E4FB;
+    --mint:#46C9A0; --amber:#F0A93C; --coral:#FF7E8B; --blue:#4F86E0;
+    --white:#fff; --red:#E0392B;
+    --f:"Plus Jakarta Sans",-apple-system,"Segoe UI",sans-serif;
+    --b:"Inter",-apple-system,sans-serif;
+    --sh:0 12px 30px rgba(35,18,80,.18); --sh-card:0 8px 22px rgba(40,22,90,.10);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-font-smoothing:antialiased;}
+  body{background:#1b1430;display:flex;flex-wrap:wrap;gap:44px;justify-content:center;align-items:flex-start;padding:52px;font-family:var(--b);}
+  .phone{position:relative;width:402px;height:874px;border-radius:60px;background:linear-gradient(145deg,#3a3a3d,#0c0c0d);padding:13px;box-shadow:0 40px 90px rgba(0,0,0,.55);}
+  .label{width:100%;text-align:center;color:#9385b8;font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:12px;margin-top:16px;font-family:var(--f);}
+  .screen{position:relative;width:100%;height:100%;border-radius:48px;overflow:hidden;color:var(--white);}
+  .island{position:absolute;top:11px;left:50%;transform:translateX(-50%);width:108px;height:33px;background:#000;border-radius:20px;z-index:60;}
+  .sb{position:absolute;top:0;left:0;right:0;height:54px;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px 28px 0;font-weight:600;font-size:15px;}
+  .ct{position:absolute;inset:0;z-index:20;display:flex;flex-direction:column;padding:66px 24px 24px;}
+  h2{font-family:var(--f);font-weight:700;line-height:1.15;letter-spacing:-.2px;}
+  .cap{font-family:var(--b);font-weight:700;letter-spacing:1.5px;text-transform:uppercase;font-size:11px;color:rgba(255,255,255,.62);}
+  .sub{font-family:var(--b);font-weight:500;color:rgba(255,255,255,.8);line-height:1.5;}
+  .hdr{display:flex;align-items:center;gap:12px;margin-bottom:18px;}
+  .iconbtn{width:42px;height:42px;border-radius:14px;background:rgba(255,255,255,.14);display:flex;align-items:center;justify-content:center;}
+  .iconbtn svg{width:20px;height:20px;stroke:#fff;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;}
+  .pill{font-family:var(--f);font-weight:700;font-size:12px;background:rgba(255,255,255,.16);padding:8px 12px;border-radius:999px;}
+  .card{background:#fff;border-radius:22px;box-shadow:var(--sh-card);color:var(--ink);}
+  .btn{height:58px;border-radius:16px;display:flex;align-items:center;justify-content:center;gap:8px;font-family:var(--f);font-weight:700;font-size:16px;border:none;cursor:pointer;text-decoration:none;}
+  .btn.primary{background:#fff;color:var(--indigo);box-shadow:0 8px 20px rgba(0,0,0,.14);}
+  .btn.ghost{background:rgba(255,255,255,.14);color:#fff;}
+  .spacer{flex:1;} .row{display:flex;gap:12px;}
+  .pcard{background:#fff;border-radius:11px;box-shadow:0 8px 18px rgba(0,0,0,.3);display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:700;color:#16161F;position:relative;}
+  .pcard.red{color:var(--red);}
+  .back{background:repeating-linear-gradient(45deg,#6C4FE0 0 6px,#553BCB 6px 12px);border:2.5px solid #fff;}
+  .chip{min-width:34px;height:40px;border-radius:10px;background:rgba(255,255,255,.16);display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:700;font-size:15px;color:#fff;}
+  .chip.on{background:#fff;color:var(--indigo);}
+</style>
+</head>
+<body>
+
+<!-- 1 FUCK THE DEALER -->
+<div><div class="phone"><div class="screen" style="background:linear-gradient(170deg,#6E58D8,#3A2A86);">
+  <div class="island"></div><div class="sb"><span>22:30</span><span>📶 🔋</span></div>
+  <div class="ct">
+    <div class="hdr"><div class="iconbtn"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></div>
+      <h2 style="flex:1;text-align:center;font-size:18px;">Fuck the Dealer</h2><div class="pill">Donneur : Léa</div></div>
+
+    <div style="text-align:center;margin-top:6px;"><div class="cap">Maxime, devine la valeur</div></div>
+    <div style="display:flex;justify-content:center;margin-top:16px;">
+      <div class="pcard back" style="width:108px;height:152px;"></div></div>
+
+    <div class="card" style="margin-top:18px;padding:14px 16px;text-align:center;">
+      <b style="font-family:var(--f);color:var(--indigo);">1ᵉʳ essai raté : ce n'est pas un 7.</b>
+      <div style="font-family:var(--b);font-weight:600;color:var(--ink);font-size:14px;margin-top:4px;">Indice : c'est plus haut ↑ — dernier essai, sinon 2 gorgées.</div>
+    </div>
+
+    <div class="sub" style="font-family:var(--f);font-weight:700;font-size:13px;margin-top:18px;">Ton 2ᵉ choix</div>
+    <div class="row" style="flex-wrap:wrap;gap:8px;margin-top:10px;">
+      <span class="chip" style="opacity:.4;">A</span><span class="chip" style="opacity:.4;">2</span><span class="chip" style="opacity:.4;">3</span><span class="chip" style="opacity:.4;">4</span><span class="chip" style="opacity:.4;">5</span><span class="chip" style="opacity:.4;">6</span><span class="chip" style="opacity:.4;">7</span>
+      <span class="chip">8</span><span class="chip">9</span><span class="chip">10</span><span class="chip on">V</span><span class="chip">D</span><span class="chip">R</span>
+    </div>
+    <div class="spacer"></div>
+    <a class="btn primary" style="width:100%;">Valider « Valet »</a>
+  </div>
+</div></div><div class="label">Fuck the Dealer</div></div>
+
+<!-- 2 LA PYRAMIDE (bluff) -->
+<div><div class="phone"><div class="screen" style="background:linear-gradient(170deg,#7663E8,#4A37B0);">
+  <div class="island"></div><div class="sb"><span>22:36</span><span>📶 🔋</span></div>
+  <div class="ct">
+    <div class="hdr"><div class="iconbtn"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></div>
+      <h2 style="flex:1;text-align:center;font-size:18px;">La Pyramide</h2><div class="pill">Carte 4/15</div></div>
+
+    <!-- pyramide -->
+    <div style="display:flex;flex-direction:column;align-items:center;gap:7px;margin-top:6px;">
+      <div style="display:flex;gap:7px;"><div class="pcard back" style="width:38px;height:52px;"></div></div>
+      <div style="display:flex;gap:7px;"><div class="pcard back" style="width:38px;height:52px;"></div><div class="pcard red" style="width:38px;height:52px;box-shadow:0 0 0 3px #FFC93C,0 8px 16px rgba(0,0,0,.3);">8&#9830;</div></div>
+      <div style="display:flex;gap:7px;"><div class="pcard" style="width:38px;height:52px;">K&#9827;</div><div class="pcard back" style="width:38px;height:52px;"></div><div class="pcard red" style="width:38px;height:52px;">3&#9829;</div></div>
+      <div style="display:flex;gap:7px;"><div class="pcard back" style="width:38px;height:52px;"></div><div class="pcard back" style="width:38px;height:52px;"></div><div class="pcard back" style="width:38px;height:52px;"></div><div class="pcard back" style="width:38px;height:52px;"></div></div>
+    </div>
+
+    <div class="card" style="margin-top:18px;padding:16px;text-align:center;">
+      <b style="font-family:var(--f);color:var(--indigo);font-size:16px;">Carte retournée : 8 — vaut 2 gorgées</b>
+      <div style="font-family:var(--b);font-weight:600;color:var(--ink);font-size:13px;margin-top:4px;">Tu as un 8 ? Distribue 2 gorgées. Personne ne sait si tu bluffes.</div>
+    </div>
+
+    <div class="sub" style="font-family:var(--f);font-weight:700;font-size:13px;margin-top:18px;">Ta main</div>
+    <div class="row" style="margin-top:8px;">
+      <div class="pcard" style="width:46px;height:64px;font-size:15px;">8&#9824;</div>
+      <div class="pcard red" style="width:46px;height:64px;font-size:15px;">A&#9829;</div>
+      <div class="pcard" style="width:46px;height:64px;font-size:15px;">10&#9827;</div>
+    </div>
+    <div class="spacer"></div>
+    <div class="row" style="width:100%;"><a class="btn ghost" style="flex:1;">Passer</a><a class="btn primary" style="flex:1.4;">Distribuer 2 gorgées</a></div>
+  </div>
+</div></div><div class="label">La Pyramide (bluff)</div></div>
+
+<!-- 3 PMU -->
+<div><div class="phone"><div class="screen" style="background:linear-gradient(170deg,#2E7D5B,#15402F);">
+  <div class="island"></div><div class="sb"><span>22:42</span><span>📶 🔋</span></div>
+  <div class="ct">
+    <div class="hdr"><div class="iconbtn"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></div>
+      <h2 style="flex:1;text-align:center;font-size:18px;">PMU</h2><div class="pill">Ton pari : ♥</div></div>
+    <div style="text-align:center;"><div class="cap">La course · arrivée à 6 cases</div></div>
+
+    <!-- piste 4 lanes -->
+    <div class="card" style="margin-top:14px;padding:14px 12px;background:#1F5C43;">
+      <!-- une lane = badge + piste + token -->
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;"><div style="width:30px;height:30px;border-radius:9px;background:#fff;display:flex;align-items:center;justify-content:center;color:#16161F;font-weight:700;">&#9824;</div>
+        <div style="flex:1;height:18px;border-radius:99px;background:rgba(255,255,255,.12);position:relative;"><div style="position:absolute;left:18%;top:-6px;width:30px;height:30px;border-radius:8px;background:#fff;color:#16161F;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;box-shadow:0 4px 8px rgba(0,0,0,.3);">&#9824;</div></div></div>
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;"><div style="width:30px;height:30px;border-radius:9px;background:#fff;display:flex;align-items:center;justify-content:center;color:var(--red);font-weight:700;">&#9829;</div>
+        <div style="flex:1;height:18px;border-radius:99px;background:rgba(255,201,60,.25);position:relative;"><div style="position:absolute;left:64%;top:-6px;width:30px;height:30px;border-radius:8px;background:#FFC93C;color:var(--red);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;box-shadow:0 4px 8px rgba(0,0,0,.3);">&#9829;</div></div></div>
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;"><div style="width:30px;height:30px;border-radius:9px;background:#fff;display:flex;align-items:center;justify-content:center;color:var(--red);font-weight:700;">&#9830;</div>
+        <div style="flex:1;height:18px;border-radius:99px;background:rgba(255,255,255,.12);position:relative;"><div style="position:absolute;left:40%;top:-6px;width:30px;height:30px;border-radius:8px;background:#fff;color:var(--red);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;box-shadow:0 4px 8px rgba(0,0,0,.3);">&#9830;</div></div></div>
+      <div style="display:flex;align-items:center;gap:8px;"><div style="width:30px;height:30px;border-radius:9px;background:#fff;display:flex;align-items:center;justify-content:center;color:#16161F;font-weight:700;">&#9827;</div>
+        <div style="flex:1;height:18px;border-radius:99px;background:rgba(255,255,255,.12);position:relative;"><div style="position:absolute;left:8%;top:-6px;width:30px;height:30px;border-radius:8px;background:#fff;color:#16161F;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;box-shadow:0 4px 8px rgba(0,0,0,.3);">&#9827;</div></div></div>
+    </div>
+
+    <div class="card" style="margin-top:16px;padding:14px 16px;text-align:center;"><b style="font-family:var(--f);color:var(--indigo);">Cœur prend la tête !</b><div style="font-family:var(--b);font-weight:600;color:var(--ink);font-size:13px;margin-top:3px;">Si ton cheval perd, tu bois. S'il gagne, tu distribues.</div></div>
+    <div class="spacer"></div>
+    <a class="btn primary" style="width:100%;">Tirer une carte</a>
+  </div>
+</div></div><div class="label">PMU</div></div>
+
+<!-- 4 PURPLE -->
+<div><div class="phone"><div class="screen" style="background:linear-gradient(170deg,#8A5CF0,#4B2C9E);">
+  <div class="island"></div><div class="sb"><span>22:48</span><span>📶 🔋</span></div>
+  <div class="ct">
+    <div class="hdr"><div class="iconbtn"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></div>
+      <h2 style="flex:1;text-align:center;font-size:18px;">Purple</h2><div class="pill">Léa · x2</div></div>
+
+    <div style="text-align:center;margin-top:8px;"><div class="cap">Carte actuelle</div></div>
+    <div style="display:flex;justify-content:center;margin-top:14px;">
+      <div class="pcard" style="width:130px;height:184px;font-size:0;">
+        <div style="position:absolute;top:12px;left:16px;font-family:var(--f);font-weight:700;font-size:28px;color:#16161F;">9</div>
+        <div style="position:absolute;bottom:12px;right:16px;font-family:var(--f);font-weight:700;font-size:28px;color:#16161F;transform:rotate(180deg);">9</div>
+        <div style="font-size:64px;color:#16161F;">&#9824;</div></div></div>
+
+    <div style="text-align:center;margin-top:18px;"><h2 style="font-size:22px;">La prochaine sera ?</h2>
+      <div class="sub" style="font-size:13px;margin-top:3px;">« Purple » (même valeur) = 3 gorgées pour les autres.</div></div>
+
+    <div class="spacer"></div>
+    <div class="row" style="width:100%;margin-bottom:12px;">
+      <a class="btn ghost" style="flex:1;height:64px;">Plus haut ↑</a>
+      <a class="btn ghost" style="flex:1;height:64px;">Plus bas ↓</a>
+    </div>
+    <a class="btn" style="width:100%;height:60px;background:#C68BFF;color:#2A1257;box-shadow:0 12px 26px rgba(170,90,240,.4);">Purple (même valeur)</a>
+  </div>
+</div></div><div class="label">Purple</div></div>
+
+</body>
+</html>

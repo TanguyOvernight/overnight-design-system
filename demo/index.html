@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1" />
+<title>Overnight — Jeu à boire (démo jouable)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-a:#7663E8; --bg-b:#5A44C6;
+    --ink:#241B40; --ink2:#807A9C; --line:#EFECF9;
+    --indigo:#4F38C0; --purple:#6C4FE0; --lav:#B9ACF4; --lav-soft:#E9E4FB;
+    --mint:#46C9A0; --amber:#F0A93C; --coral:#FF7E8B; --blue:#4F86E0; --red:#E0392B;
+    --white:#fff;
+    --f:"Plus Jakarta Sans",-apple-system,"Segoe UI",sans-serif;
+    --b:"Inter",-apple-system,sans-serif;
+    --sh:0 12px 30px rgba(35,18,80,.22); --sh-card:0 8px 22px rgba(40,22,90,.10);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;-webkit-font-smoothing:antialiased;}
+  html,body{height:100%;}
+  body{font-family:var(--b);background:#0e0a1a;display:flex;justify-content:center;}
+  #app{position:relative;width:100%;max-width:460px;min-height:100dvh;background:linear-gradient(170deg,var(--bg-a),var(--bg-b));
+    color:#fff;display:flex;flex-direction:column;overflow:hidden;}
+  .pad{padding:max(20px,env(safe-area-inset-top)) 20px calc(20px + env(safe-area-inset-bottom));flex:1;display:flex;flex-direction:column;}
+  h1{font-family:var(--f);font-weight:800;letter-spacing:-.4px;line-height:1.05;}
+  h2{font-family:var(--f);font-weight:700;letter-spacing:-.2px;line-height:1.15;}
+  .cap{font-family:var(--b);font-weight:700;letter-spacing:1.5px;text-transform:uppercase;font-size:11px;color:rgba(255,255,255,.6);}
+  .sub{font-family:var(--b);font-weight:500;color:rgba(255,255,255,.82);line-height:1.5;}
+  .spacer{flex:1;}.row{display:flex;gap:12px;}.center{align-items:center;text-align:center;}
+  .hdr{display:flex;align-items:center;gap:12px;margin-bottom:16px;}
+  .iconbtn{width:42px;height:42px;border-radius:14px;background:rgba(255,255,255,.16);display:flex;align-items:center;justify-content:center;cursor:pointer;border:none;color:#fff;font-size:20px;flex:none;}
+  .pill{font-family:var(--f);font-weight:700;font-size:12px;background:rgba(255,255,255,.16);padding:8px 13px;border-radius:999px;display:inline-flex;align-items:center;gap:7px;}
+  .card{background:#fff;border-radius:22px;box-shadow:var(--sh-card);color:var(--ink);}
+  .pcard{background:linear-gradient(135deg,#7C63EC,#5E46CC);border-radius:22px;box-shadow:var(--sh);}
+  button{font-family:var(--f);cursor:pointer;border:none;}
+  .btn{width:100%;min-height:58px;border-radius:16px;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:17px;color:#fff;background:rgba(255,255,255,.15);transition:transform .08s;}
+  .btn:active{transform:scale(.97);}
+  .btn.primary{background:#fff;color:var(--indigo);box-shadow:0 8px 20px rgba(0,0,0,.16);}
+  .btn.indigo{background:var(--indigo);box-shadow:0 10px 24px rgba(79,56,192,.45);}
+  .btn.red{background:linear-gradient(180deg,#FF6B5A,#E0392B);}
+  .btn.dark{background:#16161F;}
+  .btn.amber{background:#FFC93C;color:#3A2A06;}
+  .btn.sm{min-height:50px;font-size:15px;}
+  .av{border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:700;color:#fff;flex:none;}
+  .input{width:100%;height:56px;border-radius:16px;background:rgba(255,255,255,.16);border:none;padding:0 18px;font-family:var(--f);font-weight:600;font-size:17px;color:#fff;}
+  .input::placeholder{color:rgba(255,255,255,.5);}
+  .playcard{background:#fff;border-radius:12px;box-shadow:0 10px 24px rgba(0,0,0,.3);display:flex;align-items:center;justify-content:center;position:relative;color:#16161F;font-family:var(--f);font-weight:800;}
+  .playcard .ci{position:absolute;font-family:var(--f);font-weight:700;}
+  .back{background:repeating-linear-gradient(45deg,#6C4FE0 0 8px,#553BCB 8px 16px)!important;border:3px solid #fff;}
+  .chip{min-width:38px;height:46px;padding:0 6px;border-radius:11px;background:rgba(255,255,255,.16);display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:700;font-size:16px;color:#fff;}
+  .chip:active{transform:scale(.94);}
+  .gamerow{display:flex;align-items:center;gap:14px;padding:14px;cursor:pointer;}
+  .gtile{width:46px;height:46px;border-radius:14px;display:flex;align-items:center;justify-content:center;flex:none;font-family:var(--f);font-weight:800;font-size:18px;color:#fff;}
+  .fade{animation:fade .25s ease;}
+  @keyframes fade{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
+  .pop{animation:pop .3s cubic-bezier(.2,1.3,.5,1);}
+  @keyframes pop{from{opacity:0;transform:scale(.8);}to{opacity:1;transform:none;}}
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script>
+/* ============================ ÉTAT ============================ */
+const COLORS = ['#46C9A0','#FF7E8B','#F0A93C','#4F86E0','#B98CFF','#FF9E7A','#34C3D6','#9AD06B'];
+const S = {
+  screen: 'setup',
+  players: [],            // {name,color,gorgees}
+  turn: 0,
+  nameDraft: '',
+  game: null,            // état du jeu courant
+  reveal: null,
+};
+const app = () => document.getElementById('app');
+const cur = () => S.players[S.turn];
+function nextTurn(){ S.turn = (S.turn + 1) % S.players.length; }
+function drink(i, n){ S.players[i].gorgees += n; }
+function go(scr){ if(S.timer){clearInterval(S.timer);S.timer=null;} S.screen = scr; S.reveal = null; render(); }
+
+/* ============================ CARTES ============================ */
+const SUITS = ['♠','♥','♦','♣']; // ♠♥♦♣
+const VN = ['','A','2','3','4','5','6','7','8','9','10','V','D','R'];
+function newDeck(){ const d=[]; for(let s=0;s<4;s++) for(let v=1;v<=13;v++) d.push({v,s}); return shuffle(d); }
+function shuffle(a){ for(let i=a.length-1;i>0;i--){ const j=Math.random()*(i+1)|0; [a[i],a[j]]=[a[j],a[i]]; } return a; }
+const isRed = c => c.s===1 || c.s===2;
+function draw(deck){ if(deck.length===0) deck.push(...newDeck()); return deck.pop(); }
+function cardHTML(c, w, h){
+  if(!c) return '';
+  const col = isRed(c) ? 'var(--red)' : '#16161F';
+  return `<div class="playcard pop" style="width:${w}px;height:${h}px;color:${col};">
+    <span class="ci" style="top:8px;left:10px;font-size:${Math.round(w*0.22)}px;">${VN[c.v]}</span>
+    <span class="ci" style="bottom:8px;right:10px;font-size:${Math.round(w*0.22)}px;transform:rotate(180deg);">${VN[c.v]}</span>
+    <span style="font-size:${Math.round(w*0.5)}px;line-height:1;">${SUITS[c.s]}</span></div>`;
+}
+function avatar(p, size){ return `<div class="av" style="width:${size}px;height:${size}px;font-size:${Math.round(size*0.4)}px;background:${p.color};">${p.name[0].toUpperCase()}</div>`; }
+
+/* ============================ CONTENU ============================ */
+const VOB = [
+ {titre:"Pour briser la glace", q:[
+  "Quel est le pseudo le plus gênant que tu aies jamais eu sur internet ?",
+  "As-tu déjà fait semblant de reconnaître quelqu'un qui te connaissait visiblement ?",
+  "Quelle est la chanson dont tu connais les paroles par cœur et dont tu as super honte ?",
+  "As-tu déjà répété une dispute sous la douche qui n'a finalement jamais eu lieu ?",
+  "Quelle est la chose la plus humiliante qu'un serveur ait dû voir à ta table ?",
+  "Quel est le truc le plus bizarre que tu fasses quand tu es seul chez toi ?",
+  "As-tu déjà poussé une porte au lieu de la tirer devant plein de gens ?",
+  "Quelle est l'excuse la plus débile que tu aies sortie pour annuler un plan ?",
+  "Quel est ton fond d'écran le plus malaisant du passé ?",
+  "Quel est le truc le plus absurde que tu aies cherché sur Google ce mois-ci ?",
+  "Quel est le compliment le plus bizarre qu'on t'ait jamais fait ?",
+  "Quel est le truc le plus gênant actuellement dans les Notes de ton tél ?"]},
+ {titre:"Attends, sérieux ?", q:[
+  "Quel est l'endroit le plus insolite où tu t'es endormi ?",
+  "Quelle est l'excuse la plus farfelue que tu aies inventée pour te défiler ?",
+  "As-tu déjà fait croire que tu n'avais plus de batterie pour éviter un message ?",
+  "Quel est le truc le plus débile pour lequel tu aies dépensé de la thune cette année ?",
+  "Quelle est la théorie du complot à laquelle tu as cru un peu trop longtemps ?",
+  "As-tu déjà menti sur tes goûts musicaux pour plaire à quelqu'un ?",
+  "As-tu déjà appelé un prof ou un boss \"maman\" ou \"papa\" sans faire exprès ?",
+  "Quelle est l'embrouille la plus ridicule que tu aies eue avec un pote ?",
+  "À quoi d'improbable as-tu déjà parlé à voix haute en étant seul ?",
+  "Quelle est la pire cachette que tu aies choisie à un cache-cache ?",
+  "Quel est le surnom le plus bizarre que tu aies donné à un objet ?"]},
+ {titre:"Les gros dossiers", q:[
+  "Quel est le bruit le plus gênant que tu aies jamais fait en public ?",
+  "Quel est le truc le plus malaisant qui te soit arrivé chez le médecin ?",
+  "As-tu déjà envoyé un vocal que tu as voulu supprimer dans la seconde ?",
+  "Quel est ton record de temps sans changer tes draps ?",
+  "Quel est l'endroit le plus bizarre où tu aies pleuré ?",
+  "Quel est l'aliment que tu fais semblant d'aimer en société mais détestes en privé ?",
+  "Quelle est la situation la plus gênante où un parent t'a surpris ?",
+  "Quel est le plus gros mytho que tu aies mis sur ton CV ?",
+  "Quelle est la pire tenue que tu aies portée en te trouvant super stylé ?",
+  "Quelle est la pire dinguerie que tu aies faite pour impressionner quelqu'un qui s'en foutait ?",
+  "As-tu déjà envoyé un message bourré à quelqu'un que tu avais juré de ne plus contacter ?"]},
+ {titre:"J'y crois pas que tu viens d'avouer ça", q:[
+  "Si ton téléphone fuitait là, quelle serait la chose la plus gênante à voir ?",
+  "As-tu déjà lâché un \"je t'aime\" par erreur à quelqu'un ?",
+  "Quelle est la dispute la plus ridicule que tu aies eue en étant bourré ?",
+  "As-tu déjà essayé de draguer quelqu'un pour finir par l'insulter sans faire exprès ?",
+  "Quelle est la raison la plus absurde pour laquelle on t'a viré d'un endroit ?",
+  "As-tu déjà balancé un message dans le mauvais groupe, changeant l'ambiance ?",
+  "Quelle est la chose la plus gênante dite en rencontrant les parents d'un date ?",
+  "Quel est le secret que tu gardes mais dont tout le monde se fout en vrai ?",
+  "Quelle est ta dernière recherche internet qu'un inconnu ne devrait pas voir ?",
+  "Quelle est la pire photo de toi sur laquelle tu es identifié sur les réseaux ?",
+  "Si le groupe devait te décrire en une phrase gênante, ce serait quoi ?",
+  "Quel est le mensonge le plus débile que tu aies raconté et qui a pris des proportions folles ?"]},
+ {titre:"Le before (entre potes)", q:[
+  `Quelle a été ta vraie première impression de moi ?`,
+  `Qui dans ce groupe pensais-tu détester, mais que tu as fini par adorer ?`,
+  `Quel est ton talent caché que personne ici ne connaît ?`,
+  `Qui dans ce groupe a l'historique de recherche le plus bizarre selon toi ?`,
+  `Quel surnom as-tu déjà pensé donner à quelqu'un ici sans jamais le dire ?`,
+  `Qui dans ce groupe survivrait le plus longtemps à une apocalypse zombie ?`,
+  `Quelle chanson te fait instantanément penser à quelqu'un dans cette pièce ?`,
+  `Quel truc as-tu supposé sur quelqu'un ici qui s'est révélé totalement faux ?`,
+  `À qui ferais-tu le plus confiance pour organiser un voyage à la dernière minute ?`,
+  `Quelle est la dispute la plus débile que tu aies eue avec quelqu'un ici ?`,
+  `Qui est le pire pour répondre aux messages dans le groupe ?`,
+  `Quel compliment as-tu toujours voulu faire à quelqu'un ici sans jamais oser ?`,
+  `Qui a les meilleurs goûts musicaux du groupe, et qui a les pires ?`,
+  `Qui a le plus de chances de devenir célèbre, et pour quelle raison ?`,
+  `Quel est le truc le plus gênant que tu aies fait devant nous ?`,
+  `Qui dans ce groupe te connaît le mieux ?`,
+  `Quelle fausse rumeur sur toi as-tu laissé le groupe croire ?`,
+  `Qui appellerais-tu en premier si tu étais coincé(e) au milieu de nulle part ?`,
+  `Qui donne toujours les meilleurs conseils, même si sa propre vie est un carnage ?`]},
+ {titre:"On balance", q:[
+  `Fais un top 3 des personnes à qui tu te confierais en premier ici.`,
+  `Quelle opinion secrète as-tu sur quelqu'un ici sans jamais l'avoir partagée ?`,
+  `Qui dans ce groupe t'a le plus surpris(e), en bien ou en mal ?`,
+  `Que sais-tu sur quelqu'un ici qu'il/elle ignore que tu sais ?`,
+  `Qui ici a eu la relation amoureuse la plus dramatique selon toi ?`,
+  `Quel moment de l'histoire du groupe te fait encore cringe ?`,
+  `Qui dans cette pièce a le plus le melon à ton avis ?`,
+  `Sur quel avis du groupe à propos de quelqu'un es-tu secrètement en désaccord ?`,
+  `As-tu déjà été jaloux/jalouse de quelqu'un ici, et pourquoi ?`,
+  `Qui raconte beaucoup trop sa vie quand il/elle est bourré(e) ?`,
+  `Quelle est la chose la plus hypocrite qu'un membre du groupe ait dite ?`,
+  `Qui a le plus gros ego de nous tous ?`,
+  `Quel potin sur ce groupe as-tu gardé pour toi ?`,
+  `Qui ici a le plus de chances de tous nous ghoster un jour ?`,
+  `Quelle « période » un peu honteuse de l'un de nous on ne mentionne plus ?`,
+  `Qui dans ce groupe a le plus de chances d'être secrètement riche ?`,
+  `Qui ici a la vie sentimentale la plus chaotique tout en le cachant ?`,
+  `Quelle est l'habitude la plus insupportable de quelqu'un ici ?`,
+  `Qui est le plus susceptible de créer un drama et d'en accuser un autre ?`]},
+ {titre:"Le confessionnal", q:[
+  `Quel truc sur toi n'as-tu jamais dit à personne dans ce groupe ?`,
+  `As-tu déjà été blessé(e) par quelqu'un ici sans jamais en parler ?`,
+  `À quel moment t'es-tu senti(e) mis(e) à l'écart dans ce groupe ?`,
+  `As-tu traversé une période difficile en la cachant à tout le monde ici ?`,
+  `Quelle conversation avec quelqu'un ici a changé ta façon de le/la voir ?`,
+  `As-tu déjà douté de ta place dans ce groupe ?`,
+  `Qu'as-tu caché au groupe par peur d'être jugé(e) ?`,
+  `Quel compliment de quelqu'un ici n'as-tu jamais oublié ?`,
+  `As-tu déjà eu l'impression qu'on connaissait la « mauvaise » version de toi ?`,
+  `Qu'est-ce qui se passe dans ta vie en ce moment que tu n'as pas dit au groupe ?`,
+  `As-tu déjà eu peur qu'on s'éloigne en grandissant ?`,
+  `Quelle est ta plus grande peur pour l'avenir de notre groupe ?`,
+  `Quelle épreuve as-tu surmontée sans rien nous dire ?`,
+  `Quelle question aimerais-tu qu'on te pose mais que personne ne pose jamais ?`,
+  `As-tu déjà envié un pote ici pour un aspect précis de sa vie ?`,
+  `Quelle version de toi ce groupe n'a jamais connue ?`,
+  `As-tu déjà eu l'impression d'être invisible dans le groupe ?`,
+  `Quelle est la chose la plus courageuse que tu aies faite et que personne ici ne sait ?`,
+  `As-tu déjà voulu dire à quelqu'un combien il/elle comptait, avant de te dégonfler ?`]},
+ {titre:"Le round de non-retour", q:[
+  `Quelle est la pire chose que tu aies dite dans le dos de quelqu'un ici présent ?`,
+  `As-tu déjà pécho quelqu'un pour qui un pote du groupe avait des sentiments ?`,
+  `Quel secret de tes 18 ans choquerait ce groupe ?`,
+  `As-tu déjà trahi un secret qu'on t'avait confié dans cette pièce ?`,
+  `Quelle a été ta pire cuite devant nous ?`,
+  `Quel est le truc le plus inconscient que tu aies fait sans qu'on le sache ?`,
+  `Quel mensonge nous as-tu raconté et jamais avoué ?`,
+  `As-tu fait un truc qui te ferait mourir de honte si le groupe l'apprenait ?`,
+  `Quelle est la chose la moins éthique que tu aies faite cette année ?`,
+  `As-tu déjà couvert un pote ici et regretté de l'avoir fait ?`,
+  `Quel secret as-tu juré d'emporter dans ta tombe ?`,
+  `As-tu déjà profité de l'un de nous pour obtenir ce que tu voulais ?`,
+  `As-tu déjà été amoureux/amoureuse de quelqu'un alors que tu n'aurais pas dû ?`,
+  `Quel moment te fait encore honte des années plus tard ?`,
+  `Quand as-tu été le plus proche de détruire une de nos amitiés ?`,
+  `As-tu déjà voulu te venger de quelqu'un ici, même une seconde ?`,
+  `Quel secret te ferait boire un verre cul sec pour ne pas répondre ?`,
+  `As-tu déjà volé la vedette au grand moment d'un pote ?`]},
+ {titre:"Roast (chaise électrique)", q:[
+  `Quel est le truc qui me ressemble le moins que j'aie jamais fait ?`,
+  `Décris-moi en trois mots peu flatteurs.`,
+  `Quelle est la chose la plus cringe que j'aie dite en étant totalement sobre ?`,
+  `Quelle décision de moi avez-vous critiquée dans mon dos ?`,
+  `Quelle est la pire tenue que j'aie portée sans que personne ne me prévienne ?`,
+  `Si j'étais un meme, lequel serais-je ?`,
+  `Quel est mon tic de langage le plus insupportable ?`,
+  `Quel red flag me concernant donnerais-tu à quelqu'un qui me rencontre ?`,
+  `Quel est le moment où j'ai cru avoir trop la classe alors que pas du tout ?`,
+  `Quelle chanson résume parfaitement ma vie amoureuse ?`,
+  `Si ma vie était une sitcom, quelle serait la blague récurrente ?`,
+  `Quelle photo dossier de moi afficherais-tu sur les réseaux ?`]},
+ {titre:"Spécial groupe (fin de soirée)", q:[
+  `Quel est ton meilleur souvenir avec ce groupe ?`,
+  `Qui ici a le plus changé depuis qu'on se connaît ?`,
+  `Qu'est-ce que ce groupe t'a appris sur toi-même ?`,
+  `Qui sera le dernier à faire la fête quand on aura 60 ans ?`,
+  `Quel est le meilleur compliment que quelqu'un ici t'ait fait ?`,
+  `Quelle tradition devrait-on lancer tous ensemble ?`,
+  `Si on renommait notre groupe, on l'appellerait comment ?`,
+  `Qui est le ciment de notre groupe ?`,
+  `Quelle est ta private joke préférée avec nous ?`,
+  `Qu'espères-tu encore vrai sur notre amitié dans dix ans ?`,
+  `Si tu portais un toast à ce groupe là maintenant, que dirais-tu ?`]},
+];
+const JAMAIS = [
+ "envoyé un message au mauvais groupe.","fait semblant d'aimer un cadeau.","menti sur mon âge.",
+ "pleuré devant un dessin animé.","stalké un ex sur les réseaux.","mangé un truc tombé par terre.",
+ "fait semblant d'être malade pour sécher.","oublié le prénom de quelqu'un en pleine conversation.",
+ "pris un fou rire au pire moment.","envoyé un message bourré que j'ai regretté.",
+ "fait semblant de connaître une chanson.","espionné le téléphone de quelqu'un.",
+ "fait semblant d'avoir lu un livre.","dormi pendant un film au ciné.",
+ "fait croire que j'avais plus de batterie.","porté le même vêtement plusieurs jours de suite.",
+ "fait semblant d'être au téléphone pour éviter quelqu'un.","triché à un jeu de société.",
+ "rougi en croisant quelqu'un qui me plaît.","gardé la monnaie rendue en trop."
+];
+const PREF = [
+ ["Ne plus jamais boire de café","Ne plus jamais boire d'alcool"],
+ ["Lire dans les pensées","Être invisible"],
+ ["Perdre tous tes messages","Perdre toutes tes photos"],
+ ["Embrasser ton crush devant tout le monde","Ne jamais l'embrasser"],
+ ["Dire toujours la vérité","Mentir à chaque phrase"],
+ ["Être célèbre mais détesté","Inconnu mais adoré"],
+ ["Connaître ta date de mort","Connaître la cause de ta mort"],
+ ["Avoir 1 vrai ami","Avoir 100 connaissances"],
+ ["Te téléporter","Voler"],
+ ["Bloqué dans un ascenseur avec ton ex","Avec ton boss"],
+ ["Manger épicé à chaque repas","Fade à chaque repas"],
+ ["Ne plus jamais utiliser ton tél une journée","Ne plus dormir une nuit"],
+];
+const KINGS = {1:["As — Cascade","Tu bois, ton voisin de gauche suit, puis le suivant…"],
+ 2:["2 — Toi","Désigne quelqu'un : il boit 2 gorgées."],3:["3 — Moi","Tu bois 3 gorgées."],
+ 4:["4 — Plancher","Dernier à toucher le sol : 1 gorgée."],5:["5 — Les gars","Tous les mecs boivent."],
+ 6:["6 — Les filles","Toutes les filles boivent."],7:["7 — Le ciel","Dernier à lever la main : 1 gorgée."],
+ 8:["8 — Binôme","Choisis un binôme : il boit avec toi à chaque fois."],
+ 9:["9 — Rime","Dis un mot, on rime à tour de rôle. Le 1er qui sèche boit."],
+ 10:["10 — Catégorie","Lance un thème. Le 1er qui sèche boit."],
+ 11:["Valet — Règle","Invente une règle valable toute la partie."],
+ 12:["Dame — Questions","Tu poses des questions. Qui te répond boit."],
+ 13:["Roi — Le verre","Verse dans le verre central. Le 4ᵉ roi le boit… cul sec."]};
+
+/* ============================ JEUX (méta) ============================ */
+const GAMES = [
+ {id:'bus', nom:'Le Bus', desc:'4 manches, ça monte', t:'B', col:'#46C9A0'},
+ {id:'palmier', nom:'Palmier', desc:"King's Cup — pose ta carte sans tout faire tomber", t:'P', col:'#37B98B'},
+ {id:'ftd', nom:'Fuck the Dealer', desc:'Devine la carte', t:'F', col:'#4F86E0'},
+ {id:'pmu', nom:'PMU', desc:'La course', t:'P', col:'#46C9A0'},
+ {id:'purple', nom:'Purple', desc:'Haut / bas / pareil', t:'P', col:'#B98CFF'},
+ {id:'tape', nom:'Tape la carte', desc:'Réflexe : tape sur les figures', t:'T', col:'#FF7E8B'},
+ {id:'vob', nom:'Vérité ou Bois', desc:'Réponds, ou bois', t:'V', col:'#FF7E8B'},
+ {id:'jamais', nom:"Je n'ai jamais", desc:"Tu l'as fait ? Tu bois", t:'J', col:'#F0A93C'},
+ {id:'echelle', nom:"L'Échelle", desc:'Les autres te font deviner ta carte (1-10)', t:'E', col:'#4F86E0'},
+ {id:'pref', nom:'Tu préfères', desc:'A ou B', t:'T', col:'#34C3D6'},
+];
+
+/* ============================ ÉCRANS ============================ */
+const SCREENS = {};
+
+SCREENS.setup = () => `<div class="pad fade">
+  <div style="height:8px"></div>
+  <h1 style="font-size:40px;">Overnight</h1>
+  <div class="sub" style="margin-top:6px;">Le jeu à boire entre potes. Ajoute les joueurs.</div>
+  <div style="height:22px"></div>
+  <div class="row">
+    <input class="input" id="nm" placeholder="Prénom du joueur" value="${S.nameDraft.replace(/"/g,'&quot;')}"
+      oninput="S.nameDraft=this.value" onkeydown="if(event.key==='Enter')addPlayer()">
+    <button class="iconbtn" style="width:56px;height:56px;font-size:26px;background:#fff;color:var(--indigo);" onclick="addPlayer()">+</button>
+  </div>
+  <div style="height:18px"></div>
+  ${S.players.length? `<div class="cap">Joueurs (${S.players.length})</div>`:''}
+  <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px;">
+    ${S.players.map((p,i)=>`<div class="card" style="display:flex;align-items:center;gap:14px;padding:12px 16px;">
+      ${avatar(p,40)}<b style="flex:1;font-family:var(--f);color:var(--ink);">${p.name}</b>
+      <button class="iconbtn" style="width:34px;height:34px;background:var(--lav-soft);color:var(--indigo);font-size:18px;" onclick="rmPlayer(${i})">×</button></div>`).join('')}
+  </div>
+  <div class="spacer"></div>
+  ${S.players.length>=2
+    ? `<button class="btn amber" onclick="go('hub')">Commencer la soirée</button>`
+    : `<div class="sub center" style="opacity:.7;">Ajoute au moins 2 joueurs.</div>`}
+</div>`;
+
+SCREENS.hub = () => `<div class="pad fade">
+  <div style="display:flex;align-items:center;gap:14px;margin-bottom:6px;">
+    <div style="flex:1;"><div class="cap">Au tour de</div><h2 style="font-size:22px;margin-top:2px;">${cur().name}</h2></div>
+    ${avatar(cur(),48)}
+  </div>
+  <div class="pcard" style="padding:14px 16px;margin:14px 0;display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+    ${S.players.map(p=>`<span class="pill" style="background:rgba(255,255,255,.16);">${p.name} · ${p.gorgees}🍺</span>`).join('')}
+  </div>
+  <div class="cap" style="margin:8px 2px;">Choisis un jeu</div>
+  <div class="card" style="padding:4px;">
+    ${GAMES.map((g,i)=>`<div class="gamerow" style="${i<GAMES.length-1?'border-bottom:1px solid var(--line);':''}" onclick="startGame('${g.id}')">
+      <div class="gtile" style="background:${g.col};">${g.t}</div>
+      <div style="flex:1;"><h2 style="font-size:16px;color:var(--ink);">${g.nom}</h2><div class="sub" style="color:var(--ink2);font-size:12px;">${g.desc}</div></div>
+      <span style="color:var(--ink2);font-weight:700;">›</span></div>`).join('')}
+  </div>
+  <div class="spacer"></div>
+  <div class="row" style="margin-top:14px;">
+    <button class="btn sm" onclick="go('scores')">Classement</button>
+    <button class="btn sm" onclick="if(confirm('Recommencer une nouvelle soirée ?')){resetAll();}">Nouvelle soirée</button>
+  </div>
+</div>`;
+
+SCREENS.scores = () => {
+  const sorted=[...S.players].sort((a,b)=>b.gorgees-a.gorgees);
+  return `<div class="pad fade">
+   <div class="hdr"><button class="iconbtn" onclick="go('hub')">‹</button><h2 style="flex:1;text-align:center;font-size:18px;">Classement</h2><div style="width:42px"></div></div>
+   <div class="sub center" style="margin-bottom:16px;">Le plus arrosé de la soirée 🍺</div>
+   <div style="display:flex;flex-direction:column;gap:10px;">
+   ${sorted.map((p,i)=>`<div class="card" style="display:flex;align-items:center;gap:14px;padding:14px 16px;">
+     <b style="font-family:var(--f);color:${i===0?'var(--amber)':'var(--ink2)'};width:22px;font-size:18px;">${i+1}</b>
+     ${avatar(p,40)}<b style="flex:1;font-family:var(--f);color:var(--ink);">${p.name}</b>
+     <b style="font-family:var(--f);color:var(--ink);">${p.gorgees} gorgées</b></div>`).join('')}
+   </div>
+   <div class="spacer"></div>
+   <button class="btn amber" onclick="go('hub')">Retour</button>
+  </div>`;
+};
+
+/* ---- barre de jeu commune ---- */
+function gameHead(title, right){
+  return `<div class="hdr"><button class="iconbtn" onclick="go('hub')">‹</button>
+    <h2 style="flex:1;text-align:center;font-size:18px;">${title}</h2>
+    ${right||`<div class="pill">${cur().name}</div>`}</div>`;
+}
+function turnBanner(){ return `<div class="pill" style="align-self:center;margin-bottom:10px;">Au tour de · ${cur().name}</div>`; }
+
+/* ============================ LE BUS ============================ */
+function startBus(){ S.game={deck:newDeck(),step:1,cards:[]}; S.reveal=null; go('bus'); }
+SCREENS.bus = () => {
+  const g=S.game, r=S.reveal;
+  const dots=[1,2,3,4].map(n=>`<span style="width:30px;height:8px;border-radius:99px;background:${n<=g.step?'#FFC93C':'rgba(255,255,255,.25)'}"></span>`).join('');
+  const prompts={1:'Rouge ou Noir ?',2:'Plus ou moins que ?',3:'Intérieur ou extérieur ?',4:"Quelle enseigne ?"};
+  let mid='', actions='';
+  // cartes déjà tirées
+  const shown = g.cards.map(c=>cardHTML(c,64,90)).join('');
+  if(r){
+    actions = `<button class="btn primary" onclick="busNext()">${r.ok? (g.step>4?'Bravo !':'Continuer') : 'Au suivant'}</button>`;
+    mid = `<div style="display:flex;gap:10px;justify-content:center;align-items:flex-end;">${shown}${cardHTML(r.card,96,134)}</div>
+      <div class="card pop" style="margin-top:16px;padding:16px;text-align:center;">
+        <b style="font-family:var(--f);font-size:18px;color:${r.ok?'#19A974':'var(--red)'};">${r.ok?'Gagné !':'Raté'}</b>
+        <div class="sub" style="color:var(--ink);font-size:14px;margin-top:4px;">${r.msg}</div></div>`;
+  } else {
+    mid = `<div style="display:flex;gap:10px;justify-content:center;align-items:flex-end;min-height:96px;">${shown||'<div class="back playcard" style="width:80px;height:112px;"></div>'}</div>
+      <h2 style="text-align:center;font-size:24px;margin-top:18px;">${prompts[g.step]}</h2>
+      <div class="sub center" style="margin-top:4px;">Erreur = ${g.step} gorgée${g.step>1?'s':''}</div>`;
+    if(g.step===1) actions=`<div class="row"><button class="btn red" onclick="busGuess('r')">Rouge</button><button class="btn dark" onclick="busGuess('n')">Noir</button></div>`;
+    else if(g.step===2) actions=`<div class="row"><button class="btn" onclick="busGuess('p')">Plus ↑</button><button class="btn" onclick="busGuess('m')">Moins ↓</button></div>`;
+    else if(g.step===3) actions=`<div class="row"><button class="btn" onclick="busGuess('in')">Intérieur</button><button class="btn" onclick="busGuess('out')">Extérieur</button></div>`;
+    else actions=`<div class="row" style="flex-wrap:wrap;">${SUITS.map((s,i)=>`<button class="btn" style="flex:1 1 40%;color:${i===1||i===2?'#FFD2CC':'#fff'};" onclick="busGuess(${i})">${s}</button>`).join('')}</div>`;
+  }
+  return `<div class="pad fade">${gameHead('Le Bus')}
+    ${turnBanner()}
+    <div style="display:flex;justify-content:center;gap:7px;margin-bottom:6px;">${dots}</div>
+    <div class="spacer"></div>${mid}<div class="spacer"></div>${actions}</div>`;
+};
+function busGuess(ans){
+  const g=S.game, c=draw(g.deck); let ok=false, msg='';
+  if(g.step===1){ ok = (ans==='r')===isRed(c); msg = ok?'Bien vu, on continue.':`C'était ${isRed(c)?'rouge':'noir'}. Bois 1 gorgée.`; }
+  else if(g.step===2){ const p=g.cards[0]; if(c.v===p.v){ok=false;msg='Égalité = perdu. Bois 2 gorgées.';} else { ok=(ans==='p')===(c.v>p.v); msg=ok?'Exact !':`Raté. Bois 2 gorgées.`; } }
+  else if(g.step===3){ const lo=Math.min(g.cards[0].v,g.cards[1].v), hi=Math.max(g.cards[0].v,g.cards[1].v); if(c.v===lo||c.v===hi){ok=false;msg='Pile sur une borne = perdu. Bois 3 gorgées.';} else { const inside=c.v>lo&&c.v<hi; ok=(ans==='in')===inside; msg=ok?'Bien joué !':'Raté. Bois 3 gorgées.'; } }
+  else { ok = ans===c.s; msg = ok?'Incroyable, carton plein !':`C'était ${SUITS[c.s]}. Bois 4 gorgées.`; }
+  if(!ok) drink(S.turn, g.step);
+  S.reveal={card:c, ok, msg}; S.game.cards.push(c); render();
+}
+function busNext(){
+  const g=S.game;
+  if(S.reveal.ok){ g.step++; S.reveal=null; if(g.step>4){ alert(cur().name+' a réussi le Bus ! Distribue 4 gorgées à qui tu veux.'); endBusTurn(); return;} render(); }
+  else { endBusTurn(); }
+}
+function endBusTurn(){ nextTurn(); S.game={deck:S.game.deck,step:1,cards:[]}; S.reveal=null; render(); }
+
+/* ============================ PURPLE ============================ */
+function startPurple(){ const d=newDeck(); S.game={deck:d, cur:draw(d), chain:0}; S.reveal=null; go('purple'); }
+SCREENS.purple = () => {
+  const g=S.game,r=S.reveal; let mid,actions;
+  if(r){
+    actions=`<button class="btn primary" onclick="purpleNext()">${r.ok?'Continuer':'Au suivant'}</button>`;
+    mid=`<div style="display:flex;gap:12px;justify-content:center;align-items:center;">${cardHTML(g.cur,84,118)}<span style="font-size:26px;opacity:.6;">→</span>${cardHTML(r.card,100,140)}</div>
+     <div class="card pop" style="margin-top:16px;padding:16px;text-align:center;"><b style="font-family:var(--f);font-size:18px;color:${r.ok?'#19A974':'var(--red)'};">${r.title}</b><div class="sub" style="color:var(--ink);font-size:14px;margin-top:4px;">${r.msg}</div></div>`;
+  } else {
+    mid=`<div style="display:flex;justify-content:center;">${cardHTML(g.cur,130,182)}</div>
+      <h2 style="text-align:center;font-size:22px;margin-top:18px;">La prochaine sera ?</h2>
+      <div class="sub center" style="margin-top:4px;">Chaîne : ${g.chain} · « Purple » (même valeur) = +3 à distribuer</div>`;
+    actions=`<div class="row" style="margin-bottom:12px;"><button class="btn" onclick="purpleGuess('h')">Plus haut ↑</button><button class="btn" onclick="purpleGuess('l')">Plus bas ↓</button></div>
+      <button class="btn amber" onclick="purpleGuess('p')">Purple (même valeur)</button>`;
+  }
+  return `<div class="pad fade">${gameHead('Purple')}${turnBanner()}<div class="spacer"></div>${mid}<div class="spacer"></div>${actions}</div>`;
+};
+function purpleGuess(ans){
+  const g=S.game, c=draw(g.deck); let ok,title,msg;
+  if(ans==='p'){ ok=c.v===g.cur.v; title=ok?'PURPLE !':'Raté'; msg=ok?'Énorme. Distribue 3 gorgées à qui tu veux.':'Pas la même valeur. Bois 2 gorgées.'; if(!ok)drink(S.turn,2); }
+  else { if(c.v===g.cur.v){ok=false;title='Égalité';msg='Même valeur : perdu. Bois 1 gorgée.';} else { ok=(ans==='h')===(c.v>g.cur.v); title=ok?'Bien vu !':'Raté'; msg=ok?"Tu peux continuer ou t'arrêter.":'Bois 1 gorgée.'; } if(!ok)drink(S.turn,1); }
+  S.reveal={card:c,ok,title,msg}; render();
+}
+function purpleNext(){
+  const g=S.game;
+  if(S.reveal.ok){ g.chain++; g.cur=S.reveal.card; S.reveal=null; render(); }
+  else { g.chain=0; nextTurn(); g.cur=draw(g.deck); S.reveal=null; render(); }
+}
+
+/* ============================ FUCK THE DEALER ============================ */
+function startFtd(){ S.game={target:(Math.random()*13|0)+1, tries:2, hint:'', last:null}; S.reveal=null; go('ftd'); }
+SCREENS.ftd = () => {
+  const g=S.game,r=S.reveal; let mid,actions;
+  if(r){
+    actions=`<button class="btn primary" onclick="startFtd()">Carte suivante</button>`;
+    mid=`<div style="display:flex;justify-content:center;">${cardHTML({v:g.target,s:0},110,154)}</div>
+     <div class="card pop" style="margin-top:16px;padding:16px;text-align:center;"><b style="font-family:var(--f);font-size:18px;color:${r.ok?'#19A974':'var(--red)'};">${r.title}</b><div class="sub" style="color:var(--ink);font-size:14px;margin-top:4px;">${r.msg}</div></div>`;
+  } else {
+    mid=`<div style="display:flex;justify-content:center;"><div class="back playcard" style="width:108px;height:152px;"></div></div>
+     <div class="card" style="margin-top:16px;padding:14px 16px;text-align:center;"><b style="font-family:var(--f);color:var(--indigo);">${g.hint||'Devine la valeur de la carte.'}</b><div class="sub" style="color:var(--ink);font-size:13px;margin-top:3px;">Essais restants : ${g.tries} · sinon 2 gorgées</div></div>
+     <div class="row" style="flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px;">${VN.slice(1).map((n,i)=>`<button class="chip" onclick="ftdGuess(${i+1})">${n}</button>`).join('')}</div>`;
+    actions='';
+  }
+  return `<div class="pad fade">${gameHead('Fuck the Dealer')}${turnBanner()}<div class="spacer"></div>${mid}<div class="spacer"></div>${actions}</div>`;
+};
+function ftdGuess(v){
+  const g=S.game;
+  if(v===g.target){ S.reveal={ok:true,title:'Trouvé !',msg:cur().name+" a deviné. C'est le donneur qui boit 2 gorgées !"}; render(); return; }
+  g.tries--;
+  if(g.tries<=0){ drink(S.turn,2); S.reveal={ok:false,title:'Raté',msg:`C'était un ${VN[g.target]}. Bois 2 gorgées.`}; render(); return; }
+  g.hint = g.target>v ? `Plus haut que ${VN[v]} ↑` : `Plus bas que ${VN[v]} ↓`;
+  render();
+}
+
+/* ============================ PALMIER (King's Cup) ============================ */
+function palmierRule(c){
+  const v=c.v, red=isRed(c);
+  if(v===1) return ['As — Cul sec / Cupidon','Cul sec ! Ou joue Cupidon : forme un binôme qui boira avec toi.'];
+  if(v>=2&&v<=5) return [VN[v]+(red?' — Rouge : distribue':' — Noir : prends'), red?('Tu distribues '+v+' gorgées.'):('Tu prends '+v+' gorgées.')];
+  if(v===6) return ['6 — Histoire','Raconte une histoire vraie ou fausse. Les autres devinent si tu mens.'];
+  if(v===7) return ['7 — Dans ma valise','« Dans ma valise je mets… » Chacun répète et ajoute un objet. Qui oublie boit.'];
+  if(v===8) return ['8 — Thème','Lance un thème. Chacun cite à tour de rôle. Qui sèche boit.'];
+  if(v===9) return ['9 — Invente une règle','Crée une règle valable toute la partie.'];
+  if(v===10) return ['10 — Action ou vérité','Au choix : action ou vérité.'];
+  if(v===11) return ['Valet — Voisin','2 gorgées pour ton voisin de droite.'];
+  if(v===12) return ['Dame — Tournée','1 gorgée pour tout le monde !'];
+  return ['Roi — Bouffon','Choisis un bouffon : il prendra tes gorgées jusqu’au prochain roi.'];
+}
+function startPalmier(){ S.game={deck:newDeck(), stack:0, card:null, phase:'draw', bx:0, dir:1, res:null}; go('palmier'); }
+function palmierScene(g){
+  let cards=''; for(let i=0;i<g.stack;i++){ const rot=(i%2?1:-1)*(4+i*1.4); cards+=`<div style="position:absolute;bottom:${128+i*9}px;left:50%;width:52px;height:34px;margin-left:-26px;border-radius:6px;background:#fff;box-shadow:0 2px 5px rgba(0,0,0,.3);transform:rotate(${rot}deg);"></div>`; }
+  const swing = g.phase==='balance' ? `<div id="swing" style="position:absolute;bottom:${140+g.stack*9}px;left:50%;width:58px;height:80px;margin-left:-29px;border-radius:9px;background:#fff;box-shadow:0 10px 18px rgba(0,0,0,.4);will-change:transform;"></div>` : '';
+  return `<div style="position:relative;height:230px;width:100%;">
+    <div style="position:absolute;bottom:0;left:50%;width:62px;height:124px;margin-left:-31px;border-radius:14px 14px 16px 16px;background:linear-gradient(180deg,#2BA17C,#15604A);"></div>
+    <div style="position:absolute;bottom:124px;left:50%;width:24px;height:30px;margin-left:-12px;background:#1B6E54;border-radius:4px;"></div>
+    ${cards}${swing}</div>`;
+}
+SCREENS.palmier = () => {
+  const g=S.game; let mid, actions;
+  if(g.phase==='draw'){
+    mid=`${palmierScene(g)}<div class="sub center" style="margin-top:8px;">Palmier : ${g.stack} carte${g.stack>1?'s':''} en équilibre.</div>`;
+    actions=`<button class="btn primary" onclick="palmierTirer()">Tirer une carte</button>`;
+  } else if(g.phase==='rule'){
+    const r=palmierRule(g.card);
+    mid=`<div style="display:flex;justify-content:center;">${cardHTML(g.card,108,150)}</div>
+      <div class="card pop" style="margin-top:14px;padding:16px;text-align:center;"><b style="font-family:var(--f);font-size:18px;color:var(--indigo);">${r[0]}</b>
+      <div class="sub" style="color:var(--ink);font-size:14px;margin-top:5px;">${r[1]}</div></div>`;
+    actions=`<button class="btn primary" onclick="palmierBalance()">Poser sur le palmier</button>`;
+  } else if(g.phase==='balance'){
+    mid=`${palmierScene(g)}<div class="sub center" style="font-family:var(--f);font-weight:700;">Pose la carte bien au centre du palmier !</div>`;
+    actions=`<button class="btn amber" onclick="palmierDrop()">POSER</button>`;
+  } else {
+    mid=`${palmierScene(g)}<div class="card pop" style="margin-top:10px;padding:16px;text-align:center;"><b style="font-family:var(--f);font-size:18px;color:${g.res.ok?'#19A974':'var(--red)'};">${g.res.title}</b><div class="sub" style="color:var(--ink);font-size:14px;margin-top:4px;">${g.res.msg}</div></div>`;
+    actions=`<button class="btn primary" onclick="palmierNext()">Au joueur suivant</button>`;
+  }
+  return `<div class="pad fade">${gameHead('Palmier', `<div class="pill">Palmier ${g.stack}</div>`)}${turnBanner()}<div class="spacer"></div>${mid}<div class="spacer"></div>${actions}</div>`;
+};
+function palmierTirer(){ S.game.card=draw(S.game.deck); S.game.phase='rule'; render(); }
+function palmierBalance(){ const g=S.game; g.phase='balance'; g.bx=0; g.dir=1; render(); startSwing(); }
+function startSwing(){
+  if(S.timer) clearInterval(S.timer);
+  S.timer=setInterval(()=>{ const g=S.game; if(!g||g.phase!=='balance'){clearInterval(S.timer);S.timer=null;return;}
+    g.bx+=g.dir*0.05; if(g.bx>=1){g.bx=1;g.dir=-1;} if(g.bx<=-1){g.bx=-1;g.dir=1;}
+    const el=document.getElementById('swing'); if(el){ el.style.transform='translateX('+(g.bx*120)+'px)'; } else { clearInterval(S.timer); S.timer=null; }
+  },16);
+}
+function palmierDrop(){
+  if(S.timer){clearInterval(S.timer);S.timer=null;}
+  const g=S.game, off=Math.abs(g.bx), tol=Math.max(0.10, 0.22 - g.stack*0.012);
+  if(off<tol){ g.stack++; g.res={ok:true, title:'En équilibre !', msg:'La carte tient — palmier à '+g.stack+'. (Applique aussi la règle de ta carte.)'}; }
+  else { drink(S.turn,3); g.res={ok:false, title:'Le palmier s’effondre !', msg:'Carte ratée : bois 3 gorgées. On repart de zéro.'}; g.stack=0; }
+  g.phase='result'; render();
+}
+function palmierNext(){ const g=S.game; nextTurn(); g.phase='draw'; g.card=null; g.res=null; render(); }
+
+/* ============================ L'ÉCHELLE (1-10, inversé) ============================ */
+function startEchelle(){ S.game={card:null, guess:5, phase:'draw'}; go('echelle'); }
+SCREENS.echelle = () => {
+  const g=S.game; let mid, actions;
+  if(g.phase==='draw'){
+    mid=`<div style="display:flex;justify-content:center;"><div class="back playcard" style="width:120px;height:168px;"></div></div>
+      <div class="sub center" style="margin-top:16px;max-width:300px;">Une carte de 1 à 10 va être tirée. <b>${cur().name} ne doit PAS la voir.</b> Les autres lui donnent des exemples pour ce chiffre, à lui de deviner.</div>`;
+    actions=`<button class="btn primary" onclick="echelleTirer()">Tirer la carte (les autres regardent)</button>`;
+  } else if(g.phase==='vu'){
+    mid=`<div style="display:flex;justify-content:center;">${cardHTML(g.card,120,168)}</div>
+      <div class="sub center" style="margin-top:14px;max-width:300px;">Les autres : donnez des exemples pour faire deviner ce chiffre (ex : « une femme chauve » pour un 2). Puis ${cur().name} annonce son chiffre.</div>`;
+    actions=`<button class="btn primary" onclick="S.game.phase='guess';render();">${cur().name} a deviné →</button>`;
+  } else if(g.phase==='guess'){
+    mid=`<div class="card" style="padding:18px;text-align:center;"><b style="font-family:var(--f);color:var(--indigo);">Quel chiffre annonce ${cur().name} ?</b></div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:18px;">${[1,2,3,4,5,6,7,8,9,10].map(n=>`<button class="chip" style="${n===g.guess?'background:#fff;color:var(--indigo);':''}" onclick="S.game.guess=${n};render();">${n}</button>`).join('')}</div>`;
+    actions=`<button class="btn primary" onclick="echelleReveal()">Valider « ${g.guess} »</button>`;
+  } else {
+    const diff=Math.abs(g.guess-g.card.v);
+    mid=`<div style="display:flex;justify-content:center;gap:14px;align-items:center;">${cardHTML(g.card,96,134)}</div>
+      <div class="card pop" style="margin-top:16px;padding:18px;text-align:center;"><b style="font-family:var(--f);font-size:18px;color:${diff===0?'#19A974':'var(--red)'};">${diff===0?'Dans le mille !':'Écart de '+diff}</b>
+      <div class="sub" style="color:var(--ink);font-size:15px;margin-top:5px;">La carte était un ${g.card.v}, ${cur().name} a dit ${g.guess}. ${diff===0?'Tu distribues 3 gorgées !':'Bois '+diff+' gorgée'+(diff>1?'s':'')+'.'}</div></div>`;
+    actions=`<button class="btn primary" onclick="echelleNext()">Au joueur suivant</button>`;
+  }
+  return `<div class="pad fade">${gameHead("L'Échelle")}${turnBanner()}<div class="spacer"></div>${mid}<div class="spacer"></div>${actions}</div>`;
+};
+function echelleTirer(){ S.game.card={v:(Math.random()*10|0)+1, s:(Math.random()*4|0)}; S.game.phase='vu'; render(); }
+function echelleReveal(){ const diff=Math.abs(S.game.guess-S.game.card.v); if(diff>0)drink(S.turn,diff); S.game.phase='result'; render(); }
+function echelleNext(){ nextTurn(); S.game={card:null, guess:5, phase:'draw'}; render(); }
+
+/* ============================ TAPE LA CARTE (réflexe) ============================ */
+function startTape(){ S.game={phase:'ready', deck:newDeck(), card:null, fig:false, res:null}; go('tape'); }
+SCREENS.tape = () => {
+  const g=S.game; let mid, actions;
+  if(g.phase==='ready'){
+    mid=`<div style="display:flex;justify-content:center;"><div class="back playcard" style="width:140px;height:196px;"></div></div>
+      <div class="sub center" style="margin-top:16px;max-width:300px;align-self:center;">Les cartes défilent. <b>Tape dès qu'une figure apparaît</b> (Valet, Dame, Roi). Mais pas sur un chiffre, sinon tu bois !</div>`;
+    actions=`<button class="btn primary" onclick="tapeStart()">Commencer</button>`;
+  } else if(g.phase==='run'){
+    mid=`<div id="tzone" onclick="tapeHit()" style="cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:16px;">
+      <div id="tcard">${cardHTML(g.card,150,210)}</div>
+      <div class="sub" style="font-family:var(--f);font-weight:700;">Figure = tape · Chiffre = surtout pas</div></div>`;
+    actions=`<button class="btn amber" onclick="tapeHit()">TAPER</button>`;
+  } else {
+    mid=`<div style="display:flex;justify-content:center;">${cardHTML(g.card,120,168)}</div>
+      <div class="card pop" style="margin-top:16px;padding:18px;text-align:center;"><b style="font-family:var(--f);font-size:19px;color:${g.res.ok?'#19A974':'var(--red)'};">${g.res.title}</b><div class="sub" style="color:var(--ink);margin-top:5px;">${g.res.msg}</div></div>`;
+    actions=`<button class="btn primary" onclick="tapeNext()">Au joueur suivant</button>`;
+  }
+  return `<div class="pad fade">${gameHead('Tape la carte')}${turnBanner()}<div class="spacer"></div>${mid}<div class="spacer"></div>${actions}</div>`;
+};
+function tapeStart(){
+  const g=S.game; g.phase='run'; g.fig=false; g.card=null; render();
+  if(S.timer) clearInterval(S.timer);
+  S.timer=setInterval(()=>{ const g=S.game; if(!g||g.phase!=='run'){clearInterval(S.timer);S.timer=null;return;}
+    if(g.fig){ clearInterval(S.timer); S.timer=null; drink(S.turn,1); g.res={ok:false,title:'Trop lent !',msg:'Une figure est passée sans que tu tapes. Bois 1 gorgée.'}; g.phase='result'; render(); return; }
+    const c=draw(g.deck); g.card=c; g.fig=(c.v>=11);
+    const el=document.getElementById('tcard'); if(el){ el.innerHTML=cardHTML(c,150,210); } else { clearInterval(S.timer); S.timer=null; }
+  },780);
+}
+function tapeHit(){
+  const g=S.game; if(g.phase!=='run') return;
+  if(S.timer){clearInterval(S.timer);S.timer=null;}
+  if(g.fig){ g.res={ok:true,title:'Réflexe de ouf !',msg:'Bien tapé sur la figure. Distribue 2 gorgées !'}; }
+  else { drink(S.turn,2); g.res={ok:false,title:'Trop tôt !',msg:"Ce n'était pas une figure. Bois 2 gorgées."}; }
+  g.phase='result'; render();
+}
+function tapeNext(){ nextTurn(); S.game={phase:'ready', deck:S.game.deck, card:null, fig:false, res:null}; render(); }
+
+/* ============================ PMU ============================ */
+function startPmu(){ S.game=null; S.reveal=null; S.screen='pmuBet'; render(); }
+SCREENS.pmuBet = () => `<div class="pad fade">${gameHead('PMU')}
+  <div class="spacer"></div>
+  <h2 style="text-align:center;font-size:24px;">Sur quel cheval tu paries ?</h2>
+  <div class="sub center" style="margin-top:6px;">Premier à 6 cases. S'il gagne tu distribues, sinon tu bois.</div>
+  <div class="row" style="flex-wrap:wrap;margin-top:24px;">
+   ${SUITS.map((s,i)=>`<button class="btn" style="flex:1 1 40%;min-height:80px;font-size:30px;color:${i===1||i===2?'#FFD2CC':'#fff'};" onclick="pmuStart(${i})">${s}</button>`).join('')}
+  </div><div class="spacer"></div></div>`;
+function pmuStart(bet){ S.game={deck:newDeck(),pos:[0,0,0,0],fin:6,bet,winner:null}; go('pmu'); }
+SCREENS.pmu = () => {
+  const g=S.game;
+  const lanes = SUITS.map((s,i)=>{
+    const pct = Math.min(100, g.pos[i]/g.fin*100);
+    const red = i===1||i===2;
+    return `<div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+      <div style="width:30px;height:30px;border-radius:9px;background:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;color:${red?'var(--red)':'#16161F'};">${s}</div>
+      <div style="flex:1;height:16px;border-radius:99px;background:${i===g.bet?'rgba(255,201,60,.3)':'rgba(255,255,255,.14)'};position:relative;">
+        <div style="position:absolute;left:calc(${pct}% - 14px);top:-7px;width:30px;height:30px;border-radius:8px;background:${i===g.bet?'#FFC93C':'#fff'};display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:${red?'var(--red)':'#16161F'};transition:left .3s;">${s}</div></div></div>`;
+  }).join('');
+  let bottom;
+  if(g.winner!==null){
+    const win=g.winner===g.bet;
+    bottom=`<div class="card pop" style="padding:16px;text-align:center;margin-bottom:12px;"><b style="font-family:var(--f);font-size:18px;color:${win?'#19A974':'var(--red)'};">${SUITS[g.winner]} gagne !</b>
+      <div class="sub" style="color:var(--ink);font-size:14px;margin-top:4px;">${win?cur().name+' a gagné son pari : distribue 5 gorgées !':cur().name+' a perdu : bois 3 gorgées.'}</div></div>
+      <button class="btn amber" onclick="go('hub')">Terminer</button>`;
+  } else {
+    bottom=`<button class="btn primary" onclick="pmuDraw()">Tirer une carte</button>`;
+  }
+  return `<div class="pad fade">${gameHead('PMU', `<div class="pill">Pari ${SUITS[g.bet]}</div>`)}
+    <div class="spacer"></div>
+    <div class="card" style="padding:16px 14px;background:#1F5C43;">${lanes}</div>
+    <div style="height:8px;text-align:center;margin-top:6px;" class="sub">${g.last?('Tirée : '+VN[g.last.v]+SUITS[g.last.s]):''}</div>
+    <div class="spacer"></div>${bottom}</div>`;
+};
+function pmuDraw(){
+  const g=S.game, c=draw(g.deck); g.last=c; g.pos[c.s]++;
+  for(let i=0;i<4;i++){ if(g.pos[i]>=g.fin){ g.winner=i; if(i===g.bet)drink(S.turn,0); else drink(S.turn,3); render(); return; } }
+  render();
+}
+
+/* ============================ VÉRITÉ OU BOIS ============================ */
+function startVob(){ S.game={phase:'setup', round:0, used:VOB.map(()=>new Set()), q:null, target:100, count:0}; go('vob'); }
+function vobSetCount(n){ const g=S.game; g.target=n; g.count=0; g.phase='play'; vobPick(); render(); }
+function vobPick(){ const g=S.game, r=g.round, list=VOB[r].q; if(g.used[r].size>=list.length) g.used[r].clear();
+  let i; do{ i=Math.random()*list.length|0; }while(g.used[r].has(i)); g.used[r].add(i); g.q=list[i]; }
+SCREENS.vob = () => {
+  const g=S.game;
+  if(g.phase==='setup'){
+    const tot=VOB.reduce((n,r)=>n+r.q.length,0);
+    return `<div class="pad fade">${gameHead('Vérité ou Bois')}<div class="spacer"></div>
+      <h2 style="text-align:center;font-size:24px;">Combien de questions ?</h2>
+      <div class="sub center" style="margin-top:6px;max-width:300px;align-self:center;">Choisis la longueur de la partie. ${tot} questions au total — au-delà, ça tourne en boucle.</div>
+      <div style="display:flex;flex-direction:column;gap:12px;margin-top:24px;">
+        ${[50,100,200].map(n=>`<button class="btn" onclick="vobSetCount(${n})">${n} questions</button>`).join('')}
+        <button class="btn amber" onclick="vobSetCount(Infinity)">Sans limite</button>
+      </div><div class="spacer"></div></div>`;
+  }
+  if(g.phase==='end'){
+    return `<div class="pad fade">${gameHead('Vérité ou Bois')}<div class="spacer"></div>
+      <div class="card pop" style="padding:24px;text-align:center;"><b style="font-family:var(--f);font-size:20px;color:var(--indigo);">Partie terminée !</b>
+      <div class="sub" style="color:var(--ink);margin-top:6px;">${g.count} questions jouées. Beau parcours.</div></div>
+      <div class="spacer"></div>
+      <button class="btn primary" onclick="go('scores')">Voir le classement</button>
+      <button class="btn" style="margin-top:12px;" onclick="go('hub')">Retour aux jeux</button></div>`;
+  }
+  const tgt = g.target===Infinity?'∞':g.target;
+  return `<div class="pad fade">${gameHead('Vérité ou Bois', `<div class="pill">${g.count+1} / ${tgt}</div>`)}
+   <div class="row" style="gap:5px;flex-wrap:wrap;">${VOB.map((r,i)=>`<button onclick="vobRound(${i})" style="flex:1 1 8%;min-width:28px;padding:7px 2px;border-radius:9px;font-family:var(--f);font-weight:700;font-size:11px;color:${i===g.round?'var(--indigo)':'#fff'};background:${i===g.round?'#fff':'rgba(255,255,255,.14)'};">${i+1}</button>`).join('')}</div>
+   <div class="sub center" style="margin-top:10px;font-family:var(--f);font-weight:700;">${VOB[g.round].titre}</div>
+   ${turnBanner()}
+   <div class="spacer"></div>
+   <div class="card pop" style="padding:30px 24px;"><div class="cap" style="color:var(--purple);">À ${cur().name} de jouer</div>
+     <div style="font-family:var(--f);font-weight:700;font-size:27px;line-height:1.25;margin-top:12px;color:var(--ink);">${g.q}</div></div>
+   <div class="spacer"></div>
+   <div class="row"><button class="btn" onclick="vobAns(false)">Je bois (1)</button><button class="btn primary" onclick="vobAns(true)">Je réponds</button></div>
+  </div>`;
+};
+function vobRound(i){ S.game.round=i; vobPick(); render(); }
+function vobAns(ok){ const g=S.game; if(!ok) drink(S.turn,1); g.count++; if(g.count>=g.target){ g.phase='end'; render(); return; } nextTurn(); vobPick(); render(); }
+
+/* ============================ JE N'AI JAMAIS ============================ */
+function startJamais(){ S.game={used:new Set(), s:null}; jamaisPick(); go('jamais'); }
+function jamaisPick(){ const g=S.game; if(g.used.size>=JAMAIS.length)g.used.clear(); let i; do{i=Math.random()*JAMAIS.length|0;}while(g.used.has(i)); g.used.add(i); g.s=JAMAIS[i]; }
+SCREENS.jamais = () => `<div class="pad fade">${gameHead("Je n'ai jamais")}${turnBanner()}
+  <div class="spacer"></div>
+  <div class="card pop" style="padding:32px 24px;"><div class="cap" style="color:var(--amber);">Je n'ai jamais…</div>
+   <div style="font-family:var(--f);font-weight:700;font-size:28px;line-height:1.25;margin-top:12px;color:var(--ink);">…${S.game.s}</div>
+   <div class="sub" style="color:var(--ink2);font-size:14px;margin-top:14px;">Tu l'as déjà fait ? Bois une gorgée.</div></div>
+  <div class="spacer"></div>
+  <div class="row"><button class="btn" onclick="jamaisAns(false)">Jamais</button><button class="btn primary" onclick="jamaisAns(true)">Je l'ai fait (1)</button></div>
+ </div>`;
+function jamaisAns(did){ if(did)drink(S.turn,1); nextTurn(); jamaisPick(); render(); }
+
+/* ============================ TU PRÉFÈRES ============================ */
+function startPref(){ S.game={used:new Set(), p:null, picked:null}; prefPick(); go('pref'); }
+function prefPick(){ const g=S.game; if(g.used.size>=PREF.length)g.used.clear(); let i; do{i=Math.random()*PREF.length|0;}while(g.used.has(i)); g.used.add(i); g.p=PREF[i]; g.picked=null; }
+SCREENS.pref = () => {
+  const g=S.game;
+  return `<div class="pad fade">${gameHead('Tu préfères')}${turnBanner()}
+   <div class="spacer"></div>
+   <button class="btn ${g.picked===0?'primary':''}" style="min-height:96px;font-size:21px;padding:18px;line-height:1.2;" onclick="prefPickSide(0)">${g.p[0]}</button>
+   <div class="sub center" style="font-family:var(--f);font-weight:700;font-size:18px;margin:14px 0;">ou</div>
+   <button class="btn ${g.picked===1?'amber':''}" style="min-height:96px;font-size:21px;padding:18px;line-height:1.2;color:${g.picked===1?'#3A2A06':'#fff'};" onclick="prefPickSide(1)">${g.p[1]}</button>
+   <div class="spacer"></div>
+   <button class="btn ${g.picked===null?'':'primary'}" onclick="prefNext()">${g.picked===null?'Choisis ton camp':'Au suivant'}</button>
+  </div>`;
+};
+function prefPickSide(i){ S.game.picked=i; render(); }
+function prefNext(){ if(S.game.picked===null)return; nextTurn(); prefPick(); render(); }
+
+/* ============================ ROUTAGE ============================ */
+function startGame(id){
+  ({bus:startBus, purple:startPurple, ftd:startFtd, palmier:startPalmier, pmu:startPmu, echelle:startEchelle, tape:startTape, vob:startVob, jamais:startJamais, pref:startPref})[id]();
+}
+function addPlayer(){ const n=(S.nameDraft||'').trim(); if(!n)return; S.players.push({name:n.slice(0,16), color:COLORS[S.players.length%COLORS.length], gorgees:0}); S.nameDraft=''; render(); const i=document.getElementById('nm'); if(i)i.focus(); }
+function rmPlayer(i){ S.players.splice(i,1); render(); }
+function resetAll(){ S.players.forEach(p=>p.gorgees=0); S.turn=0; go('setup'); }
+function render(){ app().innerHTML = SCREENS[S.screen](); }
+render();
+</script>
+</body>
+</html>

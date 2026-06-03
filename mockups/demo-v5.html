@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Overnight — V5 (soft, premium, bien proportionné)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-a:#7663E8; --bg-b:#5A44C6;
+    --ink:#241B40; --ink2:#807A9C; --line:#EFECF9;
+    --indigo:#4F38C0; --purple:#6C4FE0; --lav:#B9ACF4; --lav-soft:#E9E4FB;
+    --mint:#46C9A0; --mint-soft:#E1F6EF; --peach:#FF9E7A; --coral:#FF7E8B; --peach-soft:#FFEDE4;
+    --white:#fff;
+    --f:"Plus Jakarta Sans",-apple-system,"Segoe UI",sans-serif;
+    --b:"Inter",-apple-system,sans-serif;
+    --sh:0 12px 30px rgba(35,18,80,.18);
+    --sh-card:0 8px 22px rgba(40,22,90,.10);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-font-smoothing:antialiased;}
+  body{background:#1b1430;display:flex;flex-wrap:wrap;gap:44px;justify-content:center;align-items:flex-start;padding:52px;font-family:var(--b);}
+  .phone{position:relative;width:402px;height:874px;border-radius:60px;background:linear-gradient(145deg,#3a3a3d,#0c0c0d);padding:13px;box-shadow:0 40px 90px rgba(0,0,0,.55);}
+  .label{width:100%;text-align:center;color:#9385b8;font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:12px;margin-top:16px;font-family:var(--f);}
+  .screen{position:relative;width:100%;height:100%;border-radius:48px;overflow:hidden;background:linear-gradient(170deg,var(--bg-a),var(--bg-b));color:var(--white);}
+  .island{position:absolute;top:11px;left:50%;transform:translateX(-50%);width:108px;height:33px;background:#000;border-radius:20px;z-index:60;}
+  .sb{position:absolute;top:0;left:0;right:0;height:54px;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px 28px 0;font-weight:600;font-size:15px;}
+  .ct{position:absolute;inset:0;z-index:20;display:flex;flex-direction:column;padding:66px 24px 24px;}
+  h1{font-family:var(--f);font-weight:800;line-height:1.05;letter-spacing:-.4px;}
+  h2{font-family:var(--f);font-weight:700;line-height:1.15;letter-spacing:-.2px;}
+  .cap{font-family:var(--b);font-weight:700;letter-spacing:1.5px;text-transform:uppercase;font-size:11px;color:rgba(255,255,255,.6);}
+  .sub{font-family:var(--b);font-weight:500;color:rgba(255,255,255,.78);line-height:1.5;}
+  .av{border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:700;color:#fff;}
+  .hdr{display:flex;align-items:center;gap:12px;margin-bottom:22px;}
+  .iconbtn{width:42px;height:42px;border-radius:14px;background:rgba(255,255,255,.14);display:flex;align-items:center;justify-content:center;}
+  .iconbtn svg{width:20px;height:20px;stroke:#fff;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;}
+  .card{background:#fff;border-radius:24px;box-shadow:var(--sh-card);color:var(--ink);}
+  .pcard{background:linear-gradient(135deg,#7C63EC,#5E46CC);border-radius:24px;box-shadow:var(--sh);}
+  .btn{height:58px;border-radius:16px;display:flex;align-items:center;justify-content:center;gap:8px;font-family:var(--f);font-weight:700;font-size:16px;border:none;cursor:pointer;text-decoration:none;}
+  .btn.primary{background:#fff;color:var(--indigo);box-shadow:0 8px 20px rgba(0,0,0,.14);}
+  .btn.indigo{background:var(--indigo);color:#fff;box-shadow:0 10px 24px rgba(79,56,192,.45);}
+  .btn.ghost{background:rgba(255,255,255,.14);color:#fff;}
+  .seg{display:flex;background:rgba(255,255,255,.14);border-radius:14px;padding:5px;}
+  .seg div{flex:1;text-align:center;padding:11px 0;border-radius:10px;font-family:var(--f);font-weight:700;font-size:14px;color:rgba(255,255,255,.78);}
+  .seg div.on{background:#fff;color:var(--indigo);}
+  .spacer{flex:1;} .row{display:flex;gap:14px;}
+  .navbar{position:absolute;bottom:0;left:0;right:0;height:76px;background:rgba(255,255,255,.10);backdrop-filter:blur(10px);display:flex;justify-content:space-around;align-items:center;z-index:40;}
+  .nav{display:flex;flex-direction:column;align-items:center;gap:5px;font-family:var(--f);font-weight:600;font-size:11px;color:rgba(255,255,255,.55);}
+  .nav svg{width:23px;height:23px;stroke:rgba(255,255,255,.6);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+  .nav.on{color:#fff;} .nav.on svg{stroke:#fff;}
+</style>
+</head>
+<body>
+
+<!-- 1 ACCUEIL -->
+<div><div class="phone"><div class="screen">
+  <div class="island"></div><div class="sb"><span>21:47</span><span>📶 🔋</span></div>
+  <div class="ct" style="padding-bottom:90px;">
+    <!-- header -->
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:24px;">
+      <div class="av" style="width:50px;height:50px;font-size:19px;background:linear-gradient(135deg,#46C9A0,#2FA8C9);">L</div>
+      <div style="flex:1;"><div class="cap">Bonsoir</div><h2 style="font-size:20px;margin-top:2px;">Léa</h2></div>
+      <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.14);border-radius:999px;padding:8px 14px;font-family:var(--f);font-weight:700;font-size:13px;">Niv. 7</div>
+    </div>
+
+    <!-- CTA principale -->
+    <div class="pcard" style="padding:22px;">
+      <h1 style="font-size:24px;">Lance la soirée</h1>
+      <div class="sub" style="margin-top:6px;font-size:14px;">Crée un salon, tes potes rejoignent avec le code.</div>
+      <div class="row" style="margin-top:18px;">
+        <a class="btn primary" style="flex:1.3;">Créer une partie</a>
+        <a class="btn ghost" style="flex:1;">Rejoindre</a>
+      </div>
+    </div>
+
+    <!-- nos jeux -->
+    <div style="display:flex;align-items:center;justify-content:space-between;margin:26px 2px 14px;">
+      <h2 style="font-size:18px;">Nos jeux</h2><span class="sub" style="font-family:var(--f);font-weight:700;font-size:13px;">Voir tout</span>
+    </div>
+    <div class="row">
+      <!-- Pyramide -->
+      <div class="card" style="flex:1;padding:18px;">
+        <div style="width:48px;height:48px;border-radius:14px;background:var(--mint-soft);display:flex;align-items:center;justify-content:center;">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="#2BA17C" stroke-width="2" stroke-linejoin="round"><path d="M13 3 L23 22 H3 Z"/><path d="M7.5 14 H18.5 M10 9 H16"/></svg></div>
+        <h2 style="font-size:17px;margin-top:14px;color:var(--ink);">Pyramide</h2>
+        <div style="font-family:var(--b);font-weight:500;color:var(--ink2);font-size:13px;margin-top:3px;">4 manches, ça monte</div>
+      </div>
+      <!-- Vérité ou Bois -->
+      <div class="card" style="flex:1;padding:18px;">
+        <div style="width:48px;height:48px;border-radius:14px;background:var(--peach-soft);display:flex;align-items:center;justify-content:center;">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="#F26B4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6 h18 v11 h-9 l-5 4 v-4 h-4 z"/></svg></div>
+        <h2 style="font-size:17px;margin-top:14px;color:var(--ink);">Vérité ou Bois</h2>
+        <div style="font-family:var(--b);font-weight:500;color:var(--ink2);font-size:13px;margin-top:3px;">Réponds, ou bois</div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="nav on"><svg viewBox="0 0 24 24"><path d="M4 11l8-7 8 7"/><path d="M6 10v9h12v-9"/></svg>Accueil</div>
+    <div class="nav"><svg viewBox="0 0 24 24"><rect x="4" y="13" width="4" height="6" rx="1"/><rect x="10" y="9" width="4" height="10" rx="1"/><rect x="16" y="5" width="4" height="14" rx="1"/></svg>Classement</div>
+    <div class="nav"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0 1 14 0"/></svg>Profil</div>
+  </div>
+</div></div><div class="label">1 · Accueil</div></div>
+
+<!-- 2 SALON / CODE -->
+<div><div class="phone"><div class="screen">
+  <div class="island"></div><div class="sb"><span>21:50</span><span>📶 🔋</span></div>
+  <div class="ct">
+    <div class="hdr"><div class="iconbtn"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></div><h2 style="flex:1;text-align:center;font-size:18px;">Salon</h2><div style="width:42px;"></div></div>
+    <div class="pcard" style="padding:24px;text-align:center;">
+      <div class="cap">Code de la partie</div>
+      <h1 style="font-size:60px;letter-spacing:7px;margin-top:8px;">FOXY</h1>
+      <a class="btn ghost" style="margin-top:16px;height:46px;font-size:14px;">Afficher le QR code</a>
+    </div>
+
+    <div style="display:flex;align-items:center;justify-content:space-between;margin:24px 2px 14px;">
+      <h2 style="font-size:18px;">Autour de la table</h2><span class="sub" style="font-family:var(--f);font-weight:700;font-size:13px;">3 joueurs</span>
+    </div>
+    <div class="card" style="padding:8px 18px;">
+      <div style="display:flex;align-items:center;gap:14px;padding:13px 0;border-bottom:1px solid var(--line);"><div class="av" style="width:40px;height:40px;font-size:16px;background:#46C9A0;">L</div><b style="flex:1;font-family:var(--f);color:var(--ink);">Léa</b><span style="font-family:var(--f);font-weight:700;font-size:12px;color:var(--purple);background:var(--lav-soft);padding:5px 10px;border-radius:999px;">Hôte</span></div>
+      <div style="display:flex;align-items:center;gap:14px;padding:13px 0;border-bottom:1px solid var(--line);"><div class="av" style="width:40px;height:40px;font-size:16px;background:#FF7E8B;">M</div><b style="flex:1;font-family:var(--f);color:var(--ink);">Maxime</b><span class="sub" style="color:var(--ink2);font-size:13px;">Prêt</span></div>
+      <div style="display:flex;align-items:center;gap:14px;padding:13px 0;"><div class="av" style="width:40px;height:40px;font-size:16px;background:#F0A93C;">S</div><b style="flex:1;font-family:var(--f);color:var(--ink);">Sarah</b><span class="sub" style="color:var(--ink2);font-size:13px;">Prêt</span></div>
+    </div>
+    <div class="spacer"></div>
+    <a class="btn indigo" style="width:100%;">Lancer la partie</a>
+  </div>
+</div></div><div class="label">2 · Salon</div></div>
+
+<!-- 3 VÉRITÉ OU BOIS -->
+<div><div class="phone"><div class="screen" style="background:linear-gradient(170deg,#7663E8,#52B8C4);">
+  <div class="island"></div><div class="sb"><span>21:54</span><span>📶 🔋</span></div>
+  <div class="ct">
+    <div class="hdr"><div class="iconbtn"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></div>
+      <h2 style="flex:1;text-align:center;font-size:18px;">Vérité ou Bois</h2>
+      <div style="font-family:var(--f);font-weight:700;font-size:12px;background:rgba(255,255,255,.18);padding:8px 12px;border-radius:999px;">Trash</div></div>
+
+    <div style="display:flex;align-items:center;gap:12px;">
+      <div style="flex:1;height:7px;background:rgba(255,255,255,.22);border-radius:99px;overflow:hidden;"><div style="width:18%;height:100%;background:#fff;border-radius:99px;"></div></div>
+      <span class="sub" style="font-family:var(--f);font-weight:700;font-size:13px;color:#fff;">7 / 40</span></div>
+
+    <div class="spacer"></div>
+    <div class="card" style="padding:30px 26px;">
+      <div class="cap" style="color:var(--purple);">À Léa de jouer</div>
+      <div style="font-family:var(--f);font-weight:700;font-size:30px;line-height:1.25;margin-top:14px;color:var(--ink);">
+        C'est qui, dans la pièce, que t'as déjà eu envie d'embrasser ?</div>
+    </div>
+    <div class="spacer"></div>
+
+    <div class="row" style="width:100%;">
+      <a class="btn ghost" style="flex:1;height:62px;">Je bois</a>
+      <a class="btn primary" style="flex:1;height:62px;">Je dis la vérité</a>
+    </div>
+  </div>
+</div></div><div class="label">3 · Vérité ou Bois</div></div>
+
+<!-- 4 PYRAMIDE -->
+<div><div class="phone"><div class="screen" style="background:linear-gradient(170deg,#3E5FB0,#21356E);">
+  <div class="island"></div><div class="sb"><span>22:02</span><span>📶 🔋</span></div>
+  <div class="ct">
+    <div class="hdr"><div class="iconbtn"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></div>
+      <h2 style="flex:1;text-align:center;font-size:18px;">Pyramide</h2><div style="width:42px;"></div></div>
+
+    <!-- progression pyramide (4 tiers) -->
+    <div style="display:flex;flex-direction:column;align-items:center;gap:7px;margin-top:4px;">
+      <div style="display:flex;gap:7px;"><span style="width:34px;height:9px;border-radius:99px;background:rgba(255,255,255,.25);"></span></div>
+      <div style="display:flex;gap:7px;"><span style="width:34px;height:9px;border-radius:99px;background:rgba(255,255,255,.25);"></span><span style="width:34px;height:9px;border-radius:99px;background:rgba(255,255,255,.25);"></span></div>
+      <div style="display:flex;gap:7px;"><span style="width:34px;height:9px;border-radius:99px;background:rgba(255,255,255,.25);"></span><span style="width:34px;height:9px;border-radius:99px;background:rgba(255,255,255,.25);"></span><span style="width:34px;height:9px;border-radius:99px;background:rgba(255,255,255,.25);"></span></div>
+      <div style="display:flex;gap:7px;"><span style="width:34px;height:9px;border-radius:99px;background:#FFC93C;"></span><span style="width:34px;height:9px;border-radius:99px;background:#FFC93C;"></span><span style="width:34px;height:9px;border-radius:99px;background:#FFC93C;"></span><span style="width:34px;height:9px;border-radius:99px;background:#FFC93C;"></span></div>
+    </div>
+    <div style="text-align:center;margin-top:14px;"><h2 style="font-size:22px;">Rouge ou Noir ?</h2><div class="sub" style="font-size:14px;margin-top:3px;">Manche 1 · 1 gorgée si tu te trompes</div></div>
+
+    <div class="spacer"></div>
+    <div style="align-self:center;width:172px;height:236px;border-radius:20px;background:#fff;box-shadow:0 22px 44px rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;position:relative;">
+      <div style="position:absolute;top:14px;left:18px;font-family:var(--f);font-weight:700;font-size:30px;color:#E0392B;">7</div>
+      <div style="position:absolute;bottom:14px;right:18px;font-family:var(--f);font-weight:700;font-size:30px;color:#E0392B;transform:rotate(180deg);">7</div>
+      <div style="font-size:88px;color:#E0392B;line-height:1;">&#9829;</div></div>
+    <div class="spacer"></div>
+
+    <div class="row" style="width:100%;">
+      <a class="btn" style="flex:1;height:74px;font-size:20px;background:#E0392B;color:#fff;box-shadow:0 12px 24px rgba(224,57,43,.4);">Rouge</a>
+      <a class="btn" style="flex:1;height:74px;font-size:20px;background:#16161F;color:#fff;box-shadow:0 12px 24px rgba(0,0,0,.45);">Noir</a>
+    </div>
+  </div>
+</div></div><div class="label">4 · Pyramide</div></div>
+
+<!-- 5 CLASSEMENT -->
+<div><div class="phone"><div class="screen">
+  <div class="island"></div><div class="sb"><span>22:20</span><span>📶 🔋</span></div>
+  <div class="ct">
+    <div class="hdr"><div class="iconbtn"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></div><h2 style="flex:1;text-align:center;font-size:18px;">Classement</h2><div style="width:42px;"></div></div>
+    <div class="seg"><div class="on">Ce soir</div><div>Semaine</div><div>Toujours</div></div>
+
+    <!-- bandeau perso -->
+    <div style="background:linear-gradient(135deg,#FFB07A,#FF8A6E);border-radius:18px;padding:14px 16px;margin-top:18px;display:flex;align-items:center;gap:14px;box-shadow:0 10px 22px rgba(255,138,90,.3);">
+      <div style="width:42px;height:42px;border-radius:12px;background:rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:800;font-size:17px;">#4</div>
+      <div style="font-family:var(--f);font-weight:700;font-size:14px;line-height:1.35;">Tu fais mieux que 60% des joueurs ce soir.</div>
+    </div>
+
+    <!-- podium -->
+    <div style="display:flex;justify-content:center;align-items:flex-end;gap:12px;margin-top:26px;">
+      <div style="text-align:center;width:92px;">
+        <div class="av" style="width:52px;height:52px;font-size:20px;background:#FF7E8B;margin:0 auto;">M</div>
+        <div style="font-family:var(--f);font-weight:700;font-size:13px;margin-top:7px;">Maxime</div>
+        <div class="sub" style="font-size:12px;">21 pts</div>
+        <div style="height:70px;margin-top:8px;border-radius:14px 14px 0 0;background:linear-gradient(180deg,#A99BF0,#8E7CE8);display:flex;align-items:flex-start;justify-content:center;padding-top:12px;font-family:var(--f);font-weight:800;font-size:24px;color:#fff;">2</div></div>
+      <div style="text-align:center;width:100px;">
+        <div class="av" style="width:64px;height:64px;font-size:25px;background:#46C9A0;margin:0 auto;border:3px solid #FFC93C;">L</div>
+        <div style="font-family:var(--f);font-weight:800;font-size:14px;margin-top:7px;">Léa</div>
+        <div class="sub" style="font-size:12px;">28 pts</div>
+        <div style="height:100px;margin-top:8px;border-radius:14px 14px 0 0;background:linear-gradient(180deg,#7C63EC,#5E46CC);display:flex;align-items:flex-start;justify-content:center;padding-top:14px;font-family:var(--f);font-weight:800;font-size:30px;color:#fff;">1</div></div>
+      <div style="text-align:center;width:92px;">
+        <div class="av" style="width:48px;height:48px;font-size:18px;background:#F0A93C;margin:0 auto;">S</div>
+        <div style="font-family:var(--f);font-weight:700;font-size:13px;margin-top:7px;">Sarah</div>
+        <div class="sub" style="font-size:12px;">17 pts</div>
+        <div style="height:54px;margin-top:8px;border-radius:14px 14px 0 0;background:linear-gradient(180deg,#9D8DEC,#7E6CE0);display:flex;align-items:flex-start;justify-content:center;padding-top:10px;font-family:var(--f);font-weight:800;font-size:20px;color:#fff;">3</div></div>
+    </div>
+
+    <!-- liste -->
+    <div class="card" style="margin-top:18px;padding:6px 18px;">
+      <div style="display:flex;align-items:center;gap:14px;padding:13px 0;border-bottom:1px solid var(--line);"><span style="font-family:var(--f);font-weight:700;color:var(--ink2);width:18px;">4</span><div class="av" style="width:36px;height:36px;font-size:14px;background:#FF9E7A;">T</div><b style="flex:1;font-family:var(--f);color:var(--ink);">Tom</b><b style="font-family:var(--f);color:var(--ink);">14 pts</b></div>
+      <div style="display:flex;align-items:center;gap:14px;padding:13px 0;"><span style="font-family:var(--f);font-weight:700;color:var(--ink2);width:18px;">5</span><div class="av" style="width:36px;height:36px;font-size:14px;background:#46C9A0;">I</div><b style="flex:1;font-family:var(--f);color:var(--ink);">Inès</b><b style="font-family:var(--f);color:var(--ink);">11 pts</b></div>
+    </div>
+  </div>
+</div></div><div class="label">5 · Classement</div></div>
+
+<!-- 6 PROFIL -->
+<div><div class="phone"><div class="screen">
+  <div class="island"></div><div class="sb"><span>22:30</span><span>📶 🔋</span></div>
+  <div class="ct" style="padding-bottom:90px;">
+    <div class="hdr"><div style="width:42px;"></div><h2 style="flex:1;text-align:center;font-size:18px;">Profil</h2><div class="iconbtn"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 4v2M12 18v2M4 12h2M18 12h2M6 6l1.5 1.5M16.5 16.5L18 18M18 6l-1.5 1.5M7.5 16.5L6 18"/></svg></div></div>
+
+    <div style="text-align:center;">
+      <div class="av" style="width:88px;height:88px;font-size:34px;background:linear-gradient(135deg,#46C9A0,#2FA8C9);margin:0 auto;box-shadow:0 10px 24px rgba(0,0,0,.2);">L</div>
+      <h1 style="font-size:24px;margin-top:14px;">Léa</h1>
+      <div class="sub" style="font-size:13px;margin-top:2px;">Membre depuis 2026</div>
+    </div>
+
+    <!-- stat strip (XP only) -->
+    <div class="pcard" style="padding:20px 8px;margin-top:22px;display:flex;">
+      <div style="flex:1;text-align:center;border-right:1px solid rgba(255,255,255,.18);">
+        <div style="font-family:var(--f);font-weight:800;font-size:22px;">7</div><div class="cap" style="margin-top:4px;">Niveau</div></div>
+      <div style="flex:1;text-align:center;border-right:1px solid rgba(255,255,255,.18);">
+        <div style="font-family:var(--f);font-weight:800;font-size:22px;">1 240</div><div class="cap" style="margin-top:4px;">Points</div></div>
+      <div style="flex:1;text-align:center;">
+        <div style="font-family:var(--f);font-weight:800;font-size:22px;">#4</div><div class="cap" style="margin-top:4px;">Rang</div></div>
+    </div>
+
+    <!-- progression niveau -->
+    <div class="card" style="margin-top:16px;padding:18px;">
+      <div style="display:flex;justify-content:space-between;align-items:center;"><b style="font-family:var(--f);color:var(--ink);">Niveau 7</b><span style="font-family:var(--b);font-weight:600;color:var(--ink2);font-size:13px;">260 XP avant le niv. 8</span></div>
+      <div style="height:10px;background:var(--lav-soft);border-radius:99px;margin-top:12px;overflow:hidden;"><div style="width:78%;height:100%;background:linear-gradient(90deg,#7C63EC,#46C9A0);border-radius:99px;"></div></div>
+    </div>
+
+    <!-- mini stats soirées -->
+    <div class="row" style="margin-top:16px;">
+      <div class="card" style="flex:1;padding:18px;"><div style="font-family:var(--f);font-weight:800;font-size:20px;color:var(--ink);">23</div><div style="font-family:var(--b);font-weight:500;color:var(--ink2);font-size:13px;margin-top:2px;">Soirées jouées</div></div>
+      <div class="card" style="flex:1;padding:18px;"><div style="font-family:var(--f);font-weight:800;font-size:20px;color:var(--ink);">3</div><div style="font-family:var(--b);font-weight:500;color:var(--ink2);font-size:13px;margin-top:2px;">Victoires</div></div>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="nav"><svg viewBox="0 0 24 24"><path d="M4 11l8-7 8 7"/><path d="M6 10v9h12v-9"/></svg>Accueil</div>
+    <div class="nav"><svg viewBox="0 0 24 24"><rect x="4" y="13" width="4" height="6" rx="1"/><rect x="10" y="9" width="4" height="10" rx="1"/><rect x="16" y="5" width="4" height="14" rx="1"/></svg>Classement</div>
+    <div class="nav on"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0 1 14 0"/></svg>Profil</div>
+  </div>
+</div></div><div class="label">6 · Profil</div></div>
+
+</body>
+</html>
