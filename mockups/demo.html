@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Overnight — Démo jeux à boire (iPhone 17)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Cinzel+Decorative:wght@700;900&family=Nunito+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --night:#160E0A; --wood-dark:#2A1A10; --walnut:#3A2518; --oak:#5A3A22;
+    --parch:#F2E2C4; --parch-aged:#E3CCA0;
+    --gold:#E8B44A; --gold-hi:#F6D67E; --gold-deep:#B8862E; --bronze:#A9742F;
+    --ember:#E0552F; --ember-deep:#CB360F;
+    --emerald:#2E9E6B; --amethyst:#7B4DD6; --ruby:#D43A2F; --topaz:#E0922F;
+    --cream:#F4E8D0; --cream-dim:#C9B591; --ink:#2A1B12;
+    --display:"Cinzel","Times New Roman",serif;
+    --decor:"Cinzel Decorative","Cinzel",serif;
+    --body:"Nunito Sans",-apple-system,"Segoe UI",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-font-smoothing:antialiased;}
+  body{background:#0c0a09;display:flex;flex-wrap:wrap;gap:48px;justify-content:center;
+       align-items:flex-start;padding:56px;font-family:var(--body);}
+
+  /* ===== iPhone 17 frame ===== */
+  .phone{position:relative;width:402px;height:874px;border-radius:60px;
+    background:linear-gradient(145deg,#3a3a3d,#0c0c0d);padding:13px;
+    box-shadow:0 40px 90px rgba(0,0,0,.6),0 0 0 2px rgba(255,255,255,.04) inset;}
+  .label{width:100%;text-align:center;color:#8a7a63;font-family:var(--body);
+    font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:13px;margin-top:18px;}
+  .screen{position:relative;width:100%;height:100%;border-radius:48px;overflow:hidden;
+    background:var(--night);color:var(--cream);}
+  .island{position:absolute;top:11px;left:50%;transform:translateX(-50%);
+    width:108px;height:33px;background:#000;border-radius:20px;z-index:60;}
+  .statusbar{position:absolute;top:0;left:0;right:0;height:54px;z-index:50;
+    display:flex;justify-content:space-between;align-items:center;padding:18px 30px 0;
+    font-family:var(--body);font-weight:800;font-size:15px;color:var(--cream);}
+  .statusbar .icons{display:flex;gap:7px;align-items:center;}
+
+  /* ===== shared atmosphere ===== */
+  .vine{position:absolute;z-index:2;opacity:.9;pointer-events:none;}
+  .glow{position:absolute;border-radius:50%;filter:blur(40px);z-index:1;pointer-events:none;}
+  .wood-floor{position:absolute;left:0;right:0;bottom:0;height:240px;z-index:1;
+    background:
+      repeating-linear-gradient(90deg,rgba(0,0,0,.22) 0 2px,transparent 2px 64px),
+      linear-gradient(180deg,#3a2517 0%,#2a1a10 60%,#1c1109 100%);
+    box-shadow:inset 0 14px 30px rgba(0,0,0,.5);}
+  .content{position:absolute;inset:0;z-index:10;display:flex;flex-direction:column;
+    padding:74px 26px 34px;}
+  .cap{font-family:var(--body);font-weight:800;letter-spacing:3px;text-transform:uppercase;
+    font-size:12px;color:var(--gold);opacity:.85;}
+  h1{font-family:var(--display);font-weight:800;letter-spacing:.5px;line-height:1.05;}
+  h2{font-family:var(--display);font-weight:700;letter-spacing:.5px;}
+  .sub{font-family:var(--body);color:var(--cream-dim);font-weight:600;line-height:1.5;}
+
+  /* ===== buttons (big & cliquable) ===== */
+  .btn{height:66px;border-radius:20px;display:flex;align-items:center;justify-content:center;
+    gap:10px;font-family:var(--body);font-weight:900;font-size:19px;letter-spacing:.3px;
+    border:2px solid var(--gold);color:var(--cream);cursor:pointer;text-decoration:none;
+    background:linear-gradient(180deg,#6a4527,#3f2818);
+    box-shadow:0 6px 0 #20140b,0 10px 18px rgba(0,0,0,.5),inset 0 2px 0 rgba(255,233,180,.25);
+    text-shadow:0 2px 2px rgba(0,0,0,.5);}
+  .btn.gold{background:linear-gradient(180deg,var(--gold-hi),var(--gold-deep));
+    color:#3a2410;border-color:#ffe9b0;text-shadow:0 1px 0 rgba(255,255,255,.3);
+    box-shadow:0 6px 0 #7a5616,0 10px 20px rgba(0,0,0,.5),inset 0 2px 0 rgba(255,255,255,.4);}
+  .btn.ember{background:linear-gradient(180deg,#e96b41,#b62f12);border-color:#ff8a7a;}
+  .btn.ghost{background:rgba(255,255,255,.04);border-color:rgba(233,200,140,.4);
+    box-shadow:none;font-weight:800;font-size:16px;height:54px;}
+
+  /* ===== card / panel ===== */
+  .panel{border-radius:22px;border:2px solid var(--bronze);
+    background:linear-gradient(180deg,#33200f,#241509);box-shadow:0 10px 22px rgba(0,0,0,.45);}
+  .frame-gold{border:3px solid var(--gold);border-radius:22px;
+    box-shadow:0 0 0 1px var(--gold-deep) inset,0 10px 26px rgba(0,0,0,.5);}
+
+  .row{display:flex;gap:12px;}
+  .spacer{flex:1;}
+  .center{align-items:center;text-align:center;}
+
+  /* avatar grid */
+  .ava{width:62px;height:62px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+    font-size:30px;border:2px solid var(--bronze);background:radial-gradient(circle at 35% 30%,#5a3a22,#2a1a10);}
+  .ava.sel{border-color:var(--gold);box-shadow:0 0 0 3px rgba(232,180,74,.35),0 0 16px rgba(232,180,74,.5);}
+
+  /* segmented toggle */
+  .seg{display:flex;background:rgba(0,0,0,.35);border:2px solid var(--bronze);border-radius:16px;padding:5px;}
+  .seg div{flex:1;text-align:center;padding:12px 0;border-radius:11px;font-weight:800;font-size:15px;color:var(--cream-dim);}
+  .seg div.on{background:linear-gradient(180deg,var(--gold-hi),var(--gold-deep));color:#3a2410;
+    box-shadow:0 3px 8px rgba(0,0,0,.4);}
+
+  /* gem (ambiances) */
+  .gem{position:relative;border-radius:18px;padding:18px 14px;border:2px solid rgba(255,255,255,.15);
+    box-shadow:0 8px 18px rgba(0,0,0,.45),inset 0 2px 0 rgba(255,255,255,.18);overflow:hidden;}
+  .gem .gname{font-family:var(--display);font-weight:800;font-size:21px;color:#fff;text-shadow:0 2px 4px rgba(0,0,0,.5);}
+  .gem .gdesc{font-family:var(--body);font-size:12px;font-weight:700;color:rgba(255,255,255,.85);margin-top:3px;}
+  .gem .gicon{font-size:30px;}
+
+  .sign{position:relative;background:linear-gradient(180deg,#6a4527,#3f2818);
+    border:3px solid var(--gold);border-radius:16px;padding:14px 18px;text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.5),inset 0 2px 0 rgba(255,233,180,.25);}
+  .sign:before,.sign:after{content:"";position:absolute;top:-16px;width:6px;height:18px;background:var(--gold-deep);}
+  .sign:before{left:34px;} .sign:after{right:34px;}
+
+  /* drink counter chope */
+  .chope{width:74px;height:90px;border:3px solid var(--gold);border-radius:8px 8px 12px 12px;
+    position:relative;overflow:hidden;background:rgba(0,0,0,.3);}
+  .chope .beer{position:absolute;left:0;right:0;bottom:0;height:62%;
+    background:linear-gradient(180deg,#e0922f,#b8862e);}
+  .chope .foam{position:absolute;left:0;right:0;top:34%;height:14px;background:#fff;border-radius:8px;opacity:.9;}
+
+  .tag{display:inline-block;padding:6px 14px;border-radius:999px;background:rgba(255,255,255,.06);
+    border:1px solid var(--bronze);font-weight:800;font-size:12px;color:var(--cream-dim);}
+</style>
+</head>
+<body>
+
+<!-- ============ 1. ACCUEIL / COFFRET ============ -->
+<div>
+<div class="phone"><div class="screen" id="s1">
+  <div class="island"></div>
+  <div class="statusbar"><span>21:47</span><span class="icons">📶 🔋</span></div>
+  <div class="glow" style="width:300px;height:300px;top:120px;left:50px;background:rgba(232,180,74,.22);"></div>
+  <div class="glow" style="width:200px;height:200px;bottom:120px;right:-40px;background:rgba(224,85,47,.16);"></div>
+  <!-- vines -->
+  <svg class="vine" style="top:46px;left:-10px;width:150px;height:220px;" viewBox="0 0 150 220">
+    <path d="M10,0 C40,40 0,80 40,120 C70,150 30,190 60,220" stroke="#2E6B3A" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <g fill="#3a8a4a"><path d="M40,40 q26,-12 30,12 q-26,12 -30,-12Z"/><path d="M30,110 q-26,-10 -30,14 q26,8 30,-14Z"/><path d="M50,170 q26,-12 30,12 q-26,12 -30,-12Z"/></g>
+    <circle cx="74" cy="48" r="5" fill="#E8B44A"/>
+  </svg>
+  <svg class="vine" style="top:40px;right:-10px;width:150px;height:240px;transform:scaleX(-1);" viewBox="0 0 150 220">
+    <path d="M10,0 C40,40 0,80 40,120 C70,150 30,190 60,220" stroke="#2E6B3A" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <g fill="#3a8a4a"><path d="M40,40 q26,-12 30,12 q-26,12 -30,-12Z"/><path d="M30,110 q-26,-10 -30,14 q26,8 30,-14Z"/></g>
+    <circle cx="74" cy="48" r="5" fill="#E8B44A"/>
+  </svg>
+  <div class="wood-floor"></div>
+  <div class="content center" style="justify-content:center;">
+    <div style="font-size:60px;filter:drop-shadow(0 0 14px rgba(232,180,74,.6));">🌙</div>
+    <div class="cap" style="margin-top:8px;">Taverne ouverte · 18+</div>
+    <h1 style="font-family:var(--decor);font-size:44px;margin-top:6px;color:var(--gold-hi);
+      text-shadow:0 3px 0 #7a5616,0 6px 14px rgba(0,0,0,.6);">OVERNIGHT</h1>
+    <div class="sub" style="margin-top:8px;max-width:260px;">Le jeu à boire de la maison.<br>Sers-toi un verre, on s'occupe du reste.</div>
+    <div class="spacer"></div>
+    <a class="btn gold" style="width:100%;margin-bottom:14px;">JOUER</a>
+    <a class="btn ghost" style="width:100%;">Comment on joue ?</a>
+  </div>
+</div></div>
+<div class="label">1 · Accueil</div>
+</div>
+
+<!-- ============ 2. CRÉATION DE PERSONNAGE ============ -->
+<div>
+<div class="phone"><div class="screen" id="s2">
+  <div class="island"></div>
+  <div class="statusbar"><span>21:48</span><span class="icons">📶 🔋</span></div>
+  <div class="glow" style="width:260px;height:260px;top:90px;left:70px;background:rgba(232,180,74,.16);"></div>
+  <div class="content">
+    <div class="cap">Étape 1 / 2</div>
+    <h1 style="font-size:30px;margin-top:6px;color:var(--gold-hi);">Crée ton personnage</h1>
+    <div class="sub" style="margin-top:6px;">Un nom, une tête. On peaufinera les avatars plus tard.</div>
+
+    <!-- avatar preview -->
+    <div style="display:flex;justify-content:center;margin:22px 0 14px;">
+      <div class="ava sel" style="width:104px;height:104px;font-size:52px;">🦊</div>
+    </div>
+
+    <!-- name input -->
+    <div class="panel" style="padding:16px 18px;display:flex;align-items:center;gap:10px;">
+      <span style="font-size:20px;">⚔️</span>
+      <span style="font-family:var(--display);font-weight:700;font-size:22px;color:var(--cream);">Léa<span style="opacity:.5;font-weight:400;">|</span></span>
+      <span class="spacer"></span><span style="color:var(--cream-dim);font-size:12px;font-weight:800;">3/16</span>
+    </div>
+
+    <!-- photo vs avatar -->
+    <div style="margin-top:18px;" class="cap">Ta photo</div>
+    <div class="seg" style="margin-top:8px;">
+      <div>📷 Photo iPhone</div>
+      <div class="on">🛡️ Avatar du jeu</div>
+    </div>
+
+    <!-- avatar grid -->
+    <div class="row" style="flex-wrap:wrap;justify-content:space-between;margin-top:16px;">
+      <div class="ava sel">🦊</div><div class="ava">🐺</div><div class="ava">🦉</div><div class="ava">🐉</div>
+      <div class="ava">🦅</div><div class="ava">🐗</div><div class="ava">🦌</div><div class="ava">🐍</div>
+    </div>
+    <div class="spacer"></div>
+    <a class="btn gold" style="width:100%;">CONTINUER</a>
+  </div>
+</div></div>
+<div class="label">2 · Création de perso</div>
+</div>
+
+<!-- ============ 3. MODE DE JEU ============ -->
+<div>
+<div class="phone"><div class="screen" id="s3">
+  <div class="island"></div>
+  <div class="statusbar"><span>21:49</span><span class="icons">📶 🔋</span></div>
+  <div class="wood-floor" style="height:180px;opacity:.7;"></div>
+  <div class="content">
+    <div class="cap">Comment on joue ce soir ?</div>
+    <h1 style="font-size:30px;margin-top:6px;color:var(--gold-hi);">Choisis ton mode</h1>
+
+    <div class="panel frame-gold" style="margin-top:22px;padding:24px 20px;">
+      <div style="font-size:40px;">📱</div>
+      <h2 style="font-size:24px;margin-top:8px;color:var(--cream);">Un seul téléphone</h2>
+      <div class="sub" style="margin-top:4px;">On se passe le tél. Aucune connexion requise. Le mode taverne sauvage.</div>
+    </div>
+
+    <div class="panel" style="margin-top:16px;padding:24px 20px;position:relative;">
+      <div style="font-size:40px;">📡</div>
+      <h2 style="font-size:24px;margin-top:8px;color:var(--cream);">Plusieurs téléphones</h2>
+      <div class="sub" style="margin-top:4px;">Une room, un code. Tout le monde voit la même chose, en même temps.</div>
+      <span class="tag" style="position:absolute;top:18px;right:18px;border-color:var(--gold);color:var(--gold);">SYNCHRO</span>
+    </div>
+    <div class="spacer"></div>
+    <a class="btn gold" style="width:100%;">CRÉER LA PARTIE</a>
+  </div>
+</div></div>
+<div class="label">3 · Mode de jeu</div>
+</div>
+
+<!-- ============ 4. INVITER / QR ============ -->
+<div>
+<div class="phone"><div class="screen" id="s4">
+  <div class="island"></div>
+  <div class="statusbar"><span>21:50</span><span class="icons">📶 🔋</span></div>
+  <div class="glow" style="width:280px;height:280px;top:140px;left:60px;background:rgba(232,180,74,.18);"></div>
+  <div class="content center">
+    <div class="cap">Invite ta tablée</div>
+    <!-- wooden sign with code -->
+    <div class="sign" style="margin-top:18px;">
+      <div style="font-family:var(--body);font-weight:800;font-size:12px;letter-spacing:2px;color:var(--gold);">CODE DE LA ROOM</div>
+      <div style="font-family:var(--decor);font-weight:900;font-size:46px;letter-spacing:8px;color:var(--gold-hi);
+        text-shadow:0 2px 0 #7a5616;">FOXY</div>
+    </div>
+    <!-- QR -->
+    <div class="frame-gold" style="background:var(--parch);margin-top:20px;padding:14px;width:208px;height:208px;">
+      <svg viewBox="0 0 25 25" width="180" height="180" shape-rendering="crispEdges">
+        <rect width="25" height="25" fill="#F2E2C4"/>
+        <g fill="#2A1B12">
+          <rect x="0" y="0" width="7" height="7"/><rect x="1" y="1" width="5" height="5" fill="#F2E2C4"/><rect x="2" y="2" width="3" height="3"/>
+          <rect x="18" y="0" width="7" height="7"/><rect x="19" y="1" width="5" height="5" fill="#F2E2C4"/><rect x="20" y="2" width="3" height="3"/>
+          <rect x="0" y="18" width="7" height="7"/><rect x="1" y="19" width="5" height="5" fill="#F2E2C4"/><rect x="2" y="20" width="3" height="3"/>
+          <rect x="9" y="1" width="1" height="1"/><rect x="11" y="0" width="1" height="2"/><rect x="13" y="1" width="2" height="1"/><rect x="16" y="2" width="1" height="1"/>
+          <rect x="9" y="3" width="2" height="1"/><rect x="12" y="3" width="1" height="2"/><rect x="14" y="4" width="1" height="1"/><rect x="16" y="4" width="1" height="2"/>
+          <rect x="9" y="6" width="1" height="2"/><rect x="11" y="5" width="2" height="1"/><rect x="14" y="6" width="2" height="1"/>
+          <rect x="1" y="9" width="2" height="1"/><rect x="4" y="9" width="1" height="2"/><rect x="6" y="10" width="2" height="1"/><rect x="9" y="9" width="1" height="1"/>
+          <rect x="11" y="9" width="2" height="2"/><rect x="14" y="9" width="1" height="1"/><rect x="16" y="10" width="2" height="1"/><rect x="19" y="9" width="2" height="1"/><rect x="22" y="9" width="2" height="1"/>
+          <rect x="2" y="12" width="1" height="2"/><rect x="5" y="13" width="2" height="1"/><rect x="9" y="12" width="2" height="1"/><rect x="12" y="13" width="1" height="2"/><rect x="15" y="12" width="2" height="1"/><rect x="18" y="13" width="1" height="2"/><rect x="21" y="12" width="2" height="1"/>
+          <rect x="9" y="15" width="1" height="2"/><rect x="11" y="16" width="2" height="1"/><rect x="14" y="15" width="2" height="2"/><rect x="17" y="16" width="1" height="1"/><rect x="20" y="15" width="2" height="1"/><rect x="23" y="16" width="1" height="2"/>
+          <rect x="9" y="18" width="1" height="1"/><rect x="11" y="19" width="1" height="2"/><rect x="13" y="18" width="2" height="1"/><rect x="16" y="19" width="2" height="1"/><rect x="19" y="20" width="1" height="1"/><rect x="21" y="19" width="2" height="2"/>
+          <rect x="9" y="21" width="2" height="1"/><rect x="12" y="22" width="1" height="2"/><rect x="14" y="21" width="1" height="2"/><rect x="16" y="22" width="2" height="1"/><rect x="19" y="22" width="2" height="1"/><rect x="23" y="21" width="1" height="2"/>
+        </g>
+      </svg>
+    </div>
+    <div class="sub" style="margin-top:12px;font-size:13px;">Scanne, ou tape le code dans l'app.</div>
+
+    <!-- players present -->
+    <div class="row" style="margin-top:16px;align-items:center;">
+      <div class="ava sel" style="width:46px;height:46px;font-size:24px;">🦊</div>
+      <div class="ava" style="width:46px;height:46px;font-size:24px;">🐺</div>
+      <div class="ava" style="width:46px;height:46px;font-size:24px;">🦉</div>
+      <div class="ava" style="width:46px;height:46px;font-size:22px;border-style:dashed;opacity:.6;">＋</div>
+    </div>
+    <div class="spacer"></div>
+    <div class="row" style="width:100%;">
+      <a class="btn ghost" style="flex:1;">📤 Partager</a>
+      <a class="btn gold" style="flex:1.4;">LANCER ▸</a>
+    </div>
+  </div>
+</div></div>
+<div class="label">4 · Inviter + QR</div>
+</div>
+
+<!-- ============ 5. CHOIX DU JEU ============ -->
+<div>
+<div class="phone"><div class="screen" id="s5">
+  <div class="island"></div>
+  <div class="statusbar"><span>21:52</span><span class="icons">📶 🔋</span></div>
+  <div class="content">
+    <div class="cap">Trois joueurs · Room FOXY</div>
+    <h1 style="font-size:30px;margin-top:6px;color:var(--gold-hi);">Quel jeu ?</h1>
+
+    <!-- La Montée -->
+    <div class="frame-gold" style="margin-top:20px;padding:0;overflow:hidden;height:200px;position:relative;
+      background:radial-gradient(circle at 50% 40%,#1f6e4a,#0e3a27);">
+      <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotate(-8deg);
+        width:78px;height:108px;border-radius:10px;background:var(--parch);border:3px solid var(--gold);
+        display:flex;align-items:center;justify-content:center;font-size:40px;color:#c0392b;box-shadow:0 10px 20px rgba(0,0,0,.5);">A♥</div>
+      <div style="position:absolute;bottom:14px;left:16px;">
+        <h2 style="font-size:25px;color:#fff;text-shadow:0 2px 6px #000;">La Montée</h2>
+        <div class="sub" style="color:#e8e0cf;">4 manches, gorgées qui montent</div>
+      </div>
+    </div>
+
+    <!-- Les Questions -->
+    <div class="panel" style="margin-top:16px;padding:0;overflow:hidden;height:160px;position:relative;border-color:var(--topaz);
+      background:radial-gradient(circle at 50% 30%,#5a3a22,#241509);">
+      <div style="position:absolute;top:24px;left:50%;transform:translate(-50%,0) rotate(3deg);
+        width:140px;height:64px;background:var(--parch);border-radius:6px;box-shadow:0 8px 16px rgba(0,0,0,.5);
+        display:flex;align-items:center;justify-content:center;font-family:var(--display);color:var(--ink);font-weight:700;">？</div>
+      <div style="position:absolute;bottom:14px;left:16px;">
+        <h2 style="font-size:25px;color:#fff;text-shadow:0 2px 6px #000;">Les Questions</h2>
+        <div class="sub" style="color:#e8e0cf;">Du soft au cru, 4 ambiances</div>
+      </div>
+    </div>
+  </div>
+</div></div>
+<div class="label">5 · Choix du jeu</div>
+</div>
+
+<!-- ============ 6. AMBIANCES (Questions) ============ -->
+<div>
+<div class="phone"><div class="screen" id="s6">
+  <div class="island"></div>
+  <div class="statusbar"><span>21:53</span><span class="icons">📶 🔋</span></div>
+  <div class="content">
+    <div class="cap">Les Questions</div>
+    <h1 style="font-size:30px;margin-top:6px;color:var(--gold-hi);">Choisis l'ambiance</h1>
+    <div class="row" style="flex-wrap:wrap;justify-content:space-between;margin-top:22px;gap:14px;">
+      <div class="gem" style="width:48%;background:radial-gradient(circle at 35% 25%,#3fd08c,#1c6b46);">
+        <div class="gicon">💚</div><div class="gname">Connaître</div><div class="gdesc">On se découvre, léger</div>
+      </div>
+      <div class="gem" style="width:48%;background:radial-gradient(circle at 35% 25%,#9b6ff0,#4a2a8f);">
+        <div class="gicon">🔮</div><div class="gname">Deep</div><div class="gdesc">Introspection qui pique</div>
+      </div>
+      <div class="gem" style="width:48%;background:radial-gradient(circle at 35% 25%,#f0594a,#8f1e15);">
+        <div class="gicon">🔥</div><div class="gname">Trash</div><div class="gdesc">Chaud, cru, gênant · 18+</div>
+      </div>
+      <div class="gem" style="width:48%;background:radial-gradient(circle at 35% 25%,#f0b04a,#9b5e1e);">
+        <div class="gicon">🗝️</div><div class="gname">Confiance</div><div class="gdesc">Secrets & révélations</div>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <a class="btn gold" style="width:100%;">C'EST PARTI</a>
+  </div>
+</div></div>
+<div class="label">6 · Ambiances</div>
+</div>
+
+<!-- ============ 7. QUESTION (Trash) ============ -->
+<div>
+<div class="phone"><div class="screen" id="s7">
+  <div class="island"></div>
+  <div class="statusbar"><span>21:54</span><span class="icons">📶 🔋</span></div>
+  <div class="glow" style="width:320px;height:320px;top:60px;left:40px;background:rgba(212,58,47,.22);"></div>
+  <div class="content">
+    <div class="row center" style="justify-content:space-between;">
+      <span class="tag" style="border-color:var(--ruby);color:#f0594a;">🔥 TRASH</span>
+      <span class="tag">Au tour de · Léa 🦊</span>
+    </div>
+    <div class="spacer"></div>
+    <!-- parchment with wax seal -->
+    <div class="frame-gold" style="background:var(--parch);padding:30px 24px;position:relative;">
+      <div style="position:absolute;top:-18px;left:50%;transform:translateX(-50%);width:40px;height:40px;border-radius:50%;
+        background:radial-gradient(circle at 35% 30%,#f0594a,#8f1e15);border:2px solid #fff2;
+        box-shadow:0 4px 8px rgba(0,0,0,.4);"></div>
+      <div style="font-family:var(--display);font-weight:700;font-size:25px;line-height:1.35;color:var(--ink);text-align:center;">
+        Île déserte avec <b style="color:var(--ember-deep);">Maxime</b> et <b style="color:var(--ember-deep);">Sarah</b> :
+        tu en sauves un, tu manges l'autre. Justifie ton menu.</div>
+    </div>
+    <div class="spacer"></div>
+    <div class="row" style="width:100%;">
+      <a class="btn ghost" style="flex:1;">↩︎ Passer</a>
+      <a class="btn gold" style="flex:1.6;">QUESTION SUIVANTE ▸</a>
+    </div>
+    <div style="text-align:center;margin-top:12px;color:var(--cream-dim);font-size:12px;font-weight:700;">Question 7 / 40 · sans répétition</div>
+  </div>
+</div></div>
+<div class="label">7 · Question (Trash)</div>
+</div>
+
+<!-- ============ 8. LA MONTÉE ============ -->
+<div>
+<div class="phone"><div class="screen" id="s8">
+  <div class="island"></div>
+  <div class="statusbar"><span>21:56</span><span class="icons">📶 🔋</span></div>
+  <!-- green felt table -->
+  <div style="position:absolute;inset:0;background:radial-gradient(circle at 50% 38%,#1f6e4a,#0c3322 70%,#072116);"></div>
+  <svg class="vine" style="top:54px;right:-6px;width:120px;height:160px;transform:scaleX(-1);" viewBox="0 0 150 200">
+    <path d="M10,0 C40,40 0,80 40,120 C70,150 30,190 60,200" stroke="#1f5a30" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <g fill="#2a7a3c"><path d="M40,40 q26,-12 30,12 q-26,12 -30,-12Z"/><path d="M30,110 q-26,-10 -30,14 q26,8 30,-14Z"/></g>
+  </svg>
+  <div class="content">
+    <div class="row center" style="justify-content:space-between;">
+      <span class="tag" style="border-color:var(--gold);color:var(--gold);">Manche 1 · Rouge ou Noir</span>
+      <span class="tag">Léa 🦊</span>
+    </div>
+
+    <!-- gorgée counter -->
+    <div style="display:flex;align-items:center;gap:14px;justify-content:center;margin-top:20px;">
+      <div class="chope"><div class="beer"></div><div class="foam"></div></div>
+      <div style="text-align:left;">
+        <div style="font-family:var(--display);font-weight:800;font-size:40px;color:var(--gold-hi);line-height:1;">3</div>
+        <div class="sub" style="font-size:13px;">gorgées en jeu</div>
+      </div>
+    </div>
+
+    <!-- card -->
+    <div style="display:flex;justify-content:center;margin-top:18px;">
+      <div style="width:128px;height:178px;border-radius:14px;background:var(--parch);border:4px solid var(--gold);
+        box-shadow:0 16px 30px rgba(0,0,0,.55),inset 0 0 0 1px var(--gold-deep);
+        display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;">
+        <div style="position:absolute;top:8px;left:10px;font-family:var(--display);font-weight:800;font-size:22px;color:#c0392b;">7</div>
+        <div style="position:absolute;bottom:8px;right:10px;font-family:var(--display);font-weight:800;font-size:22px;color:#c0392b;transform:rotate(180deg);">7</div>
+        <div style="font-size:62px;color:#c0392b;">♥</div>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+    <div class="sub center" style="margin-bottom:12px;">La prochaine carte sera...</div>
+    <div class="row" style="width:100%;">
+      <a class="btn ember" style="flex:1;background:linear-gradient(180deg,#e0392b,#8f1e15);border-color:#ff8a7a;">🔴 ROUGE</a>
+      <a class="btn" style="flex:1;background:linear-gradient(180deg,#3a3a3a,#111);border-color:#888;">⚫ NOIR</a>
+    </div>
+  </div>
+</div></div>
+<div class="label">8 · La Montée</div>
+</div>
+
+</body>
+</html>
