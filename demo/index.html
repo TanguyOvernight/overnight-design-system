@@ -102,7 +102,7 @@
 /* ============================ ÉTAT ============================ */
 const COLORS = ['#46C9A0','#FF7E8B','#F0A93C','#4F86E0','#B98CFF','#FF9E7A','#34C3D6','#9AD06B'];
 const S = {
-  screen: 'setup',
+  screen: 'home',
   players: [],            // {name,color,gorgees}
   turn: 0,
   nameDraft: '',
@@ -342,43 +342,73 @@ const GAMES = [
 /* ============================ ÉCRANS ============================ */
 const SCREENS = {};
 
-SCREENS.setup = () => `<div class="pad fade">
-  <div style="display:flex;align-items:flex-start;gap:14px;margin-top:4px;">
-    <div style="flex:1;">
-      <div class="cap">18+ · party mode</div>
-      <h1 style="font-size:42px;margin-top:8px;">Overnight</h1>
-      <div class="sub" style="margin-top:7px;">Le jeu à boire entre potes.</div>
-    </div>
-    <div style="width:58px;height:58px;border-radius:20px;background:#fff;color:var(--indigo);display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:800;font-size:24px;box-shadow:var(--sh-card);">O</div>
-  </div>
+const NIGHT="background:radial-gradient(circle at 50% 18%,rgba(117,83,255,.35),transparent 38%),linear-gradient(180deg,#2A1375 0%,#34108D 45%,#18084F 100%);box-shadow:inset 0 0 90px rgba(0,0,0,.28);overflow:hidden;";
+const ROUNDBTN="width:58px;height:58px;border-radius:18px;background:linear-gradient(180deg,rgba(156,116,255,.95),rgba(111,73,232,.88));box-shadow:0 12px 24px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.22);border:none;color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;";
+function logoBlock(){
+  return `<img src="assets/logo-overnight.png" alt="Overnight" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'" style="max-width:300px;width:72%;">
+    <div style="display:none;font-family:var(--f);font-size:54px;font-weight:800;color:#fff;letter-spacing:-1px;text-shadow:0 8px 16px rgba(0,0,0,.3);">OVERN<span style="position:relative;display:inline-block;">ı<span style="position:absolute;top:3px;left:50%;transform:translateX(-50%);width:15px;height:15px;border-radius:50%;background:#FFD33F;box-shadow:inset -5px -3px 0 0 #34108D;"></span></span>GHT</div>`;
+}
 
-  <div class="panel" style="padding:18px;margin-top:24px;">
-    <div class="cap" style="color:var(--purple);">Autour de la table</div>
-    <div class="row" style="margin-top:12px;">
-      <input class="input" id="nm" placeholder="Prénom" value="${S.nameDraft.replace(/"/g,'&quot;')}"
-        style="background:#F5F2FF;color:var(--ink);"
-        oninput="S.nameDraft=this.value" onkeydown="if(event.key==='Enter')addPlayer()">
-      <button class="iconbtn" style="width:56px;height:56px;font-size:28px;background:var(--indigo);color:#fff;" onclick="addPlayer()">+</button>
-    </div>
-    <div style="display:flex;flex-direction:column;gap:10px;margin-top:14px;min-height:132px;">
-      ${S.players.length ? S.players.map((p,i)=>`<div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:18px;background:#FAF9FF;border:1px solid #EFECF9;">
-        ${avatar(p,40)}<b style="flex:1;font-family:var(--f);color:var(--ink);">${p.name}</b>
-        <button class="iconbtn" style="width:34px;height:34px;background:var(--lav-soft);color:var(--indigo);font-size:18px;" onclick="rmPlayer(${i})">×</button></div>`).join('')
-      : `<div style="height:112px;border-radius:20px;border:1px dashed #DDD6F8;background:#FAF9FF;display:flex;align-items:center;justify-content:center;text-align:center;padding:18px;color:var(--ink2);font-weight:600;">Ajoute au moins 2 joueurs pour lancer la soirée.</div>`}
+SCREENS.home = () => `<div class="fade" style="position:absolute;inset:0;${NIGHT}">
+  <svg style="position:absolute;bottom:230px;left:-20px;width:160px;height:260px;opacity:.16;" viewBox="0 0 160 260" fill="#0E0640"><path d="M70 260V120M70 120c-10-40-46-54-70-50 8 36 40 56 70 50zM70 120c6-40 40-58 70-52-6 38-38 58-70 52z"/></svg>
+  <svg style="position:absolute;bottom:250px;right:-30px;width:170px;height:280px;opacity:.14;transform:scaleX(-1);" viewBox="0 0 160 260" fill="#0E0640"><path d="M70 260V120M70 120c-10-40-46-54-70-50 8 36 40 56 70 50zM70 120c6-40 40-58 70-52-6 38-38 58-70 52z"/></svg>
+  ${[ [110,46],[150,360],[90,330],[200,70],[260,300],[300,52] ].map(([t,l])=>`<div style="position:absolute;top:${t}px;left:${l}px;width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.65);box-shadow:0 0 6px rgba(255,255,255,.5);"></div>`).join('')}
+  <button onclick="alert('Réglages — bientôt')" style="position:absolute;top:max(54px,env(safe-area-inset-top));right:24px;${ROUNDBTN}">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 3v2.2M12 18.8V21M3 12h2.2M18.8 12H21M5.6 5.6l1.6 1.6M16.8 16.8l1.6 1.6M18.4 5.6l-1.6 1.6M7.2 16.8l-1.6 1.6"/></svg>
+  </button>
+  <div style="position:absolute;top:128px;left:0;right:0;text-align:center;">${logoBlock()}
+    <div style="font-family:var(--b);font-size:15px;font-weight:800;letter-spacing:.8px;color:#CDBBFF;text-transform:uppercase;margin-top:8px;">Le jeu à boire entre potes</div></div>
+  <div style="position:absolute;top:248px;left:0;right:0;height:420px;display:flex;align-items:center;justify-content:center;">
+    <div style="position:absolute;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(117,83,255,.30),transparent 62%);"></div>
+    <img src="assets/home-hero.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" style="max-height:400px;max-width:92%;position:relative;">
+    <div style="display:none;position:relative;flex-direction:column;align-items:center;">
+      <div style="position:relative;width:230px;height:150px;">
+        <div style="position:absolute;bottom:24px;left:50%;transform:translateX(-50%);width:62px;height:118px;border-radius:14px 14px 18px 18px;background:linear-gradient(160deg,#8A5CF0,#4B2BB4);box-shadow:inset -8px 0 0 rgba(0,0,0,.18);"></div>
+        <div style="position:absolute;bottom:60px;left:50%;transform:translateX(-50%);width:42px;height:40px;border-radius:7px;background:#3A1E8F;border-top:3px solid #FFD33F;border-bottom:3px solid #FFD33F;"></div>
+        <div style="position:absolute;bottom:10px;left:18px;width:46px;height:64px;border-radius:8px 8px 10px 10px;background:linear-gradient(180deg,#FF6B5A,#D6321F);"></div>
+        <div style="position:absolute;bottom:10px;right:18px;width:46px;height:64px;border-radius:8px 8px 10px 10px;background:linear-gradient(180deg,#2A2440,#16141F);"></div>
+        <div class="back playcard" style="position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:60px;height:84px;"></div>
+      </div>
+      <div style="width:250px;height:34px;border-radius:50%;background:radial-gradient(circle,#6B47C9,#3A1E8F);margin-top:-6px;box-shadow:0 18px 34px rgba(0,0,0,.4);"></div>
     </div>
   </div>
-
-  <div class="spacer"></div>
-  ${S.players.length>=2
-    ? `<button class="btn amber" aria-label="Commencer la soirée" onclick="go('hub')">Créer une partie</button>`
-    : `<button class="btn" style="opacity:.72;" onclick="document.getElementById('nm')?.focus()">Ajouter des joueurs</button>`}
-  <button class="btn" style="margin-top:10px;" onclick="S.players.length>=2?go('hub'):document.getElementById('nm')?.focus()">Rejoindre</button>
-  <div class="navdock" style="margin-top:16px;">
-    <button class="navitem active"><span class="navicon">⌂</span>Accueil</button>
-    <button class="navitem" onclick="S.players.length?go('scores'):document.getElementById('nm')?.focus()"><span class="navicon">≡</span>Classement</button>
-    <button class="navitem"><span class="navicon">◦</span>Profil</button>
+  <div style="position:absolute;left:28px;right:28px;bottom:calc(44px + env(safe-area-inset-bottom));display:grid;grid-template-columns:1fr 1.25fr;gap:22px;">
+    <button onclick="alert('Mode solo — bientôt 🙂')" style="height:136px;border-radius:28px;background:linear-gradient(180deg,#9D62FF,#6E3FDB);color:#fff;border:none;box-shadow:0 18px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.20);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;cursor:pointer;">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0 1 14 0"/></svg>
+      <div style="font-family:var(--f);font-size:20px;font-weight:900;text-transform:uppercase;">Solo</div>
+      <div style="font-family:var(--b);font-size:14px;opacity:.9;">Joue en solo</div></button>
+    <button onclick="go('setup')" style="height:136px;border-radius:28px;background:linear-gradient(180deg,#FFE46A,#FFC934 55%,#F1AF24);color:#3A245C;border:none;box-shadow:0 18px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.35);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;cursor:pointer;">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#3A245C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0"/><path d="M16 6.2a3 3 0 0 1 0 5.6M20.5 20a5.5 5.5 0 0 0-3.2-5"/></svg>
+      <div style="font-family:var(--f);font-size:20px;font-weight:900;text-transform:uppercase;">Party mode</div>
+      <div style="font-family:var(--b);font-size:14px;opacity:.85;">Joue à plusieurs</div></button>
   </div>
 </div>`;
+
+SCREENS.setup = () => {
+  const n=S.players.length;
+  const capsule=(p,i)=>`<div style="height:80px;border-radius:999px;margin-bottom:14px;padding:0 20px 0 9px;display:flex;align-items:center;gap:16px;background:linear-gradient(180deg,rgba(126,89,240,.70),rgba(91,59,188,.70));box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 10px 20px rgba(0,0,0,.14);">
+    <div style="width:62px;height:62px;border-radius:50%;background:${p.color};border:4px solid rgba(255,255,255,.85);display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:800;font-size:24px;color:#fff;flex:none;">${p.name[0].toUpperCase()}</div>
+    <b style="flex:1;font-family:var(--f);font-size:22px;font-weight:800;color:#fff;">${p.name}</b>
+    <button onclick="rmPlayer(${i})" style="width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.18);color:#fff;font-size:22px;font-weight:900;border:none;flex:none;cursor:pointer;">×</button></div>`;
+  return `<div class="fade" style="position:absolute;inset:0;${NIGHT}">
+    <button onclick="go('home')" style="position:absolute;top:max(54px,env(safe-area-inset-top));left:24px;${ROUNDBTN}font-size:26px;">‹</button>
+    <div style="position:absolute;top:96px;left:0;right:0;text-align:center;">
+      <div style="font-family:var(--f);font-size:15px;font-weight:900;letter-spacing:.8px;color:#F472D6;text-transform:uppercase;">Party mode</div>
+      <div style="font-family:var(--f);font-size:26px;font-weight:900;color:#fff;text-transform:uppercase;margin-top:8px;">Ajoute les joueurs</div></div>
+    <div style="position:absolute;top:172px;left:0;right:0;height:118px;display:flex;align-items:center;justify-content:center;">
+      <img src="assets/cups.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" style="max-height:112px;">
+      <div style="display:none;gap:12px;align-items:flex-end;">
+        <div style="width:58px;height:74px;border-radius:8px 8px 12px 12px;background:linear-gradient(180deg,#FF6B5A,#D6321F);transform:rotate(-10deg);box-shadow:0 10px 18px rgba(0,0,0,.3);"></div>
+        <div style="width:58px;height:74px;border-radius:8px 8px 12px 12px;background:linear-gradient(180deg,#2A2440,#16141F);transform:rotate(10deg);box-shadow:0 10px 18px rgba(0,0,0,.3);"></div></div></div>
+    <div style="position:absolute;left:0;right:0;top:300px;bottom:calc(108px + env(safe-area-inset-bottom));border-radius:38px 38px 0 0;background:linear-gradient(180deg,rgba(112,73,220,.45),rgba(38,18,105,.28));box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 -10px 30px rgba(0,0,0,.12);border:1px solid rgba(255,255,255,.10);padding:30px 26px;overflow-y:auto;">
+      ${S.players.map((p,i)=>capsule(p,i)).join('')}
+      <div style="height:80px;border-radius:24px;border:2px dashed rgba(205,187,255,.34);background:rgba(255,255,255,.04);display:flex;align-items:center;gap:14px;padding:0 14px;">
+        <button onclick="addPlayer()" style="width:52px;height:52px;border-radius:50%;background:rgba(156,116,255,.26);border:none;color:#CDBBFF;font-size:30px;font-weight:800;flex:none;cursor:pointer;">+</button>
+        <input id="nm" placeholder="Ajouter un joueur" value="${S.nameDraft.replace(/"/g,'&quot;')}" oninput="S.nameDraft=this.value" onkeydown="if(event.key==='Enter')addPlayer()" style="flex:1;background:transparent;border:none;outline:none;font-family:var(--f);font-size:20px;font-weight:800;color:#fff;"></div>
+    </div>
+    <button onclick="if(S.players.length>=2)go('hub')" style="position:absolute;left:28px;right:28px;bottom:calc(38px + env(safe-area-inset-bottom));height:78px;border-radius:999px;background:linear-gradient(180deg,#FFE46A,#FFC934 55%,#F1AF24);color:#4A2458;font-family:var(--f);font-size:22px;font-weight:900;letter-spacing:.3px;border:none;box-shadow:0 18px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.35);cursor:pointer;${n<2?'opacity:.55;':''}">C'EST PARTI</button>
+  </div>`;
+};
 
 SCREENS.hub = () => `<div class="pad fade">
   <div class="hdr" style="margin-bottom:8px;">
@@ -398,9 +428,9 @@ SCREENS.hub = () => `<div class="pad fade">
     ${GAMES.filter(g=>['vob','jamais','pref'].includes(g.id)).map((g,i)=>gameRow(g,i)).join('')}
   </div>
   <div class="navdock" style="margin-top:16px;">
-    <button class="navitem active"><span class="navicon">⌂</span>Accueil</button>
+    <button class="navitem active" onclick="go('home')"><span class="navicon">⌂</span>Accueil</button>
     <button class="navitem" onclick="go('scores')"><span class="navicon">≡</span>Classement</button>
-    <button class="navitem"><span class="navicon">◦</span>Profil</button>
+    <button class="navitem" onclick="alert('Profil — bientôt')"><span class="navicon">◦</span>Profil</button>
   </div>
 </div>`;
 
@@ -827,7 +857,7 @@ function startGame(id){
 }
 function addPlayer(){ const n=(S.nameDraft||'').trim(); if(!n)return; S.players.push({name:n.slice(0,16), color:COLORS[S.players.length%COLORS.length], gorgees:0}); S.nameDraft=''; render(); const i=document.getElementById('nm'); if(i)i.focus(); }
 function rmPlayer(i){ S.players.splice(i,1); render(); }
-function resetAll(){ S.players.forEach(p=>p.gorgees=0); S.turn=0; go('setup'); }
+function resetAll(){ S.players.forEach(p=>p.gorgees=0); S.turn=0; go('home'); }
 function render(){ app().innerHTML = SCREENS[S.screen](); }
 render();
 </script>
