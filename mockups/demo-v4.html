@@ -3,20 +3,18 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Overnight — V4 flat (propre)</title>
+<title>Overnight — V4.1 flat (épuré, sans emoji)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --p-deep:#5631BE; --p-top:#7150E6; --p-card:#7B5BF0; --p-soft:#8E6FF6; --p-input:#6B49DE;
+    --p-deep:#5631BE; --p-top:#7150E6; --p-card:#7B5BF0; --p-input:#6B49DE;
     --yellow:#FFC93C; --yellow-d:#F0B626; --cyan:#3FD0E0; --pink:#FF77C2;
-    --ink:#211A38; --ink2:#7A7396; --white:#fff;
-    --teal-top:#5FC9CE;
+    --ink:#211A38; --ink2:#7A7396; --white:#fff; --teal-top:#5FC9CE;
     --f:"Poppins",-apple-system,"Segoe UI",sans-serif;
     --b:"Nunito Sans",-apple-system,sans-serif;
-    --sh:0 14px 30px rgba(35,16,80,.28);
-    --sh-sm:0 8px 18px rgba(35,16,80,.18);
+    --sh:0 14px 30px rgba(35,16,80,.28); --sh-sm:0 8px 18px rgba(35,16,80,.16);
   }
   *{box-sizing:border-box;margin:0;padding:0;-webkit-font-smoothing:antialiased;}
   body{background:#1c1430;display:flex;flex-wrap:wrap;gap:44px;justify-content:center;align-items:flex-start;padding:52px;font-family:var(--b);}
@@ -24,26 +22,27 @@
   .label{width:100%;text-align:center;color:#9385b8;font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:12px;margin-top:16px;}
   .screen{position:relative;width:100%;height:100%;border-radius:48px;overflow:hidden;background:linear-gradient(160deg,var(--p-top),var(--p-deep));color:var(--white);}
   .island{position:absolute;top:11px;left:50%;transform:translateX(-50%);width:108px;height:33px;background:#000;border-radius:20px;z-index:60;}
-  .sb{position:absolute;top:0;left:0;right:0;height:54px;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px 30px 0;font-weight:700;font-size:15px;color:#fff;font-family:var(--b);}
+  .sb{position:absolute;top:0;left:0;right:0;height:54px;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px 30px 0;font-weight:700;font-size:15px;font-family:var(--b);}
   .ct{position:absolute;inset:0;z-index:20;display:flex;flex-direction:column;padding:70px 26px 26px;}
   .shape{position:absolute;z-index:5;}
   h1{font-family:var(--f);font-weight:800;line-height:1.0;letter-spacing:-.5px;}
   h2{font-family:var(--f);font-weight:700;line-height:1.1;}
-  .sub{font-family:var(--b);font-weight:600;color:rgba(255,255,255,.8);line-height:1.45;}
-  .btn{height:62px;border-radius:18px;display:flex;align-items:center;justify-content:center;gap:9px;font-family:var(--f);font-weight:700;font-size:18px;border:none;cursor:pointer;text-decoration:none;}
-  .btn.y{background:var(--yellow);color:#3A2A06;box-shadow:0 10px 22px rgba(240,182,38,.4);}
-  .btn.outline{background:transparent;border:2px solid rgba(255,255,255,.55);color:#fff;}
+  .sub{font-family:var(--b);font-weight:600;color:rgba(255,255,255,.82);line-height:1.45;}
+  .btn{height:62px;border-radius:18px;display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:700;font-size:18px;border:none;cursor:pointer;text-decoration:none;}
+  .btn.y{background:var(--yellow);color:#3A2A06;box-shadow:0 10px 22px rgba(240,182,38,.38);}
+  .btn.outline{background:transparent;border:2px solid rgba(255,255,255,.5);color:#fff;}
   .input{height:60px;border-radius:16px;background:rgba(255,255,255,.16);display:flex;align-items:center;padding:0 20px;font-family:var(--f);font-weight:700;font-size:18px;color:#fff;}
-  .ava{border-radius:50%;display:flex;align-items:center;justify-content:center;border:3px solid rgba(255,255,255,.9);}
+  /* avatar monogramme */
+  .av{border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:700;color:#fff;border:2px solid rgba(255,255,255,.85);}
   .spacer{flex:1;} .row{display:flex;gap:12px;}
-  .navbar{position:absolute;bottom:0;left:0;right:0;height:78px;display:flex;justify-content:space-around;align-items:center;z-index:40;}
-  .nav{display:flex;flex-direction:column;align-items:center;gap:4px;font-family:var(--b);font-weight:700;font-size:11px;color:rgba(255,255,255,.55);}
-  .nav .ic{width:46px;height:46px;border-radius:14px;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;font-size:20px;}
-  .nav.on{color:#fff;} .nav.on .ic{background:var(--yellow);color:#3A2A06;}
   .seg{display:inline-flex;background:rgba(255,255,255,.14);border-radius:999px;padding:5px;}
-  .seg div{padding:9px 18px;border-radius:999px;font-family:var(--f);font-weight:700;font-size:13px;color:rgba(255,255,255,.8);}
+  .seg div{padding:9px 18px;border-radius:999px;font-family:var(--f);font-weight:700;font-size:13px;color:rgba(255,255,255,.82);}
   .seg div.on{background:#fff;color:var(--p-deep);}
   .rowcard{background:#fff;border-radius:18px;box-shadow:var(--sh-sm);display:flex;align-items:center;gap:14px;padding:12px 16px;color:var(--ink);}
+  .navbar{position:absolute;bottom:0;left:0;right:0;height:78px;display:flex;justify-content:space-around;align-items:center;z-index:40;}
+  .nav{display:flex;flex-direction:column;align-items:center;gap:5px;font-family:var(--f);font-weight:700;font-size:11px;color:rgba(255,255,255,.55);}
+  .nav svg{width:24px;height:24px;stroke:rgba(255,255,255,.6);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+  .nav.on{color:#fff;} .nav.on svg{stroke:var(--yellow);}
 </style>
 </head>
 <body>
@@ -51,15 +50,13 @@
 <!-- 1 ACCUEIL -->
 <div><div class="phone"><div class="screen">
   <div class="island"></div><div class="sb"><span>21:47</span><span>📶 🔋</span></div>
-  <!-- formes flat -->
-  <div class="shape" style="top:120px;left:36px;width:70px;height:70px;border-radius:20px;border:5px solid var(--cyan);transform:rotate(-12deg);opacity:.9;"></div>
-  <div class="shape" style="top:150px;right:50px;width:46px;height:46px;border-radius:14px;background:var(--yellow);transform:rotate(14deg);"></div>
-  <div class="shape" style="top:90px;right:120px;width:30px;height:30px;border-radius:10px;background:var(--pink);transform:rotate(8deg);opacity:.9;"></div>
+  <div class="shape" style="top:120px;left:36px;width:66px;height:66px;border-radius:20px;border:5px solid var(--cyan);transform:rotate(-12deg);"></div>
+  <div class="shape" style="top:150px;right:50px;width:44px;height:44px;border-radius:14px;background:var(--yellow);transform:rotate(14deg);"></div>
   <div class="shape" style="top:250px;left:90px;width:120px;height:120px;border-radius:34px;background:rgba(255,255,255,.06);transform:rotate(18deg);"></div>
   <div class="ct" style="padding-bottom:90px;">
     <div class="spacer"></div>
     <h1 style="font-size:62px;">Overnight</h1>
-    <div class="sub" style="margin-top:8px;font-size:16px;">Le jeu à boire entre potes. 🍻</div>
+    <div class="sub" style="margin-top:8px;font-size:16px;">Le jeu à boire entre potes.</div>
     <div style="height:30px;"></div>
     <div style="background:var(--p-card);border-radius:26px;padding:18px;box-shadow:var(--sh);">
       <div class="input">Léa</div>
@@ -68,28 +65,26 @@
     </div>
   </div>
   <div class="navbar">
-    <div class="nav on"><div class="ic">🎲</div>Jouer</div>
-    <div class="nav"><div class="ic">🏆</div>Classement</div>
-    <div class="nav"><div class="ic">🦊</div>Profil</div>
+    <div class="nav on"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="15" rx="3"/><path d="M8 4h10a3 3 0 0 1 3 3v11"/></svg>Jouer</div>
+    <div class="nav"><svg viewBox="0 0 24 24"><rect x="4" y="13" width="4" height="7" rx="1"/><rect x="10" y="9" width="4" height="11" rx="1"/><rect x="16" y="5" width="4" height="15" rx="1"/></svg>Classement</div>
+    <div class="nav"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0 1 14 0"/></svg>Profil</div>
   </div>
 </div></div><div class="label">1 · Accueil</div></div>
 
 <!-- 2 ROOM / CODE -->
 <div><div class="phone"><div class="screen">
   <div class="island"></div><div class="sb"><span>21:50</span><span>📶 🔋</span></div>
-  <div class="shape" style="top:120px;right:40px;width:56px;height:56px;border-radius:16px;border:5px solid var(--cyan);transform:rotate(12deg);"></div>
-  <div class="shape" style="top:300px;left:30px;width:40px;height:40px;border-radius:12px;background:var(--yellow);transform:rotate(-10deg);"></div>
+  <div class="shape" style="top:120px;right:40px;width:54px;height:54px;border-radius:16px;border:5px solid var(--cyan);transform:rotate(12deg);"></div>
   <div class="ct">
     <div style="text-align:center;"><div class="sub" style="font-family:var(--f);font-weight:700;letter-spacing:3px;font-size:13px;">CODE DE LA PARTIE</div>
       <h1 style="font-size:74px;letter-spacing:8px;margin-top:4px;">FOXY</h1>
       <div class="sub" style="font-size:14px;">Partage le code, ou laisse scanner le QR.</div></div>
-
     <div style="background:var(--p-card);border-radius:24px;padding:18px;margin-top:26px;box-shadow:var(--sh);">
       <h2 style="font-size:17px;margin-bottom:14px;">Autour de la table · 3</h2>
       <div class="row" style="flex-wrap:wrap;gap:10px;">
-        <span style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.16);border-radius:999px;padding:7px 14px 7px 7px;font-family:var(--f);font-weight:700;font-size:14px;"><span class="ava" style="width:30px;height:30px;font-size:16px;background:#3FD0E0;border-width:2px;">🦊</span>Léa</span>
-        <span style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.16);border-radius:999px;padding:7px 14px 7px 7px;font-family:var(--f);font-weight:700;font-size:14px;"><span class="ava" style="width:30px;height:30px;font-size:16px;background:#FF77C2;border-width:2px;">🐺</span>Maxime</span>
-        <span style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.16);border-radius:999px;padding:7px 14px 7px 7px;font-family:var(--f);font-weight:700;font-size:14px;"><span class="ava" style="width:30px;height:30px;font-size:16px;background:#FFC93C;border-width:2px;">🦉</span>Sarah</span>
+        <span style="display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.16);border-radius:999px;padding:6px 16px 6px 6px;font-family:var(--f);font-weight:700;font-size:14px;"><span class="av" style="width:30px;height:30px;font-size:13px;background:#3FD0E0;border-width:0;">L</span>Léa</span>
+        <span style="display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.16);border-radius:999px;padding:6px 16px 6px 6px;font-family:var(--f);font-weight:700;font-size:14px;"><span class="av" style="width:30px;height:30px;font-size:13px;background:#FF77C2;border-width:0;">M</span>Maxime</span>
+        <span style="display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.16);border-radius:999px;padding:6px 16px 6px 6px;font-family:var(--f);font-weight:700;font-size:14px;"><span class="av" style="width:30px;height:30px;font-size:13px;background:#FFC93C;color:#3A2A06;border-width:0;">S</span>Sarah</span>
       </div>
     </div>
     <div class="spacer"></div>
@@ -100,10 +95,9 @@
 <!-- 3 QUESTION (vérités) -->
 <div><div class="phone"><div class="screen" style="background:linear-gradient(165deg,#7B5BF0,var(--teal-top));">
   <div class="island"></div><div class="sb"><span>21:54</span><span>📶 🔋</span></div>
-  <div class="ct" style="align-items:center;">
-    <div class="sub" style="font-family:var(--f);font-weight:700;font-size:14px;align-self:flex-start;">😏 Réponds franchement… ou bois.</div>
+  <div class="ct">
+    <div class="sub" style="font-family:var(--f);font-weight:700;font-size:14px;">Réponds franchement… ou bois.</div>
     <div class="spacer"></div>
-    <!-- carte blanche, gros texte -->
     <div style="width:100%;background:#fff;border-radius:28px;box-shadow:var(--sh);padding:30px 26px;color:var(--ink);">
       <div style="height:6px;width:100%;background:#EEE9F7;border-radius:99px;overflow:hidden;"><div style="width:18%;height:100%;background:var(--p-top);"></div></div>
       <div style="font-family:var(--f);font-weight:700;color:var(--p-top);font-size:14px;margin-top:18px;">Question 7 / 40</div>
@@ -111,14 +105,9 @@
         C'est qui, dans la pièce, que t'as déjà eu envie d'embrasser ?</div>
     </div>
     <div class="spacer"></div>
-    <!-- 2 actions claires -->
-    <div style="display:flex;justify-content:center;gap:40px;width:100%;">
-      <div style="text-align:center;">
-        <div style="width:74px;height:74px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-size:32px;box-shadow:var(--sh-sm);">🍷</div>
-        <div class="sub" style="font-family:var(--f);font-weight:700;font-size:13px;margin-top:8px;">Je bois</div></div>
-      <div style="text-align:center;">
-        <div style="width:74px;height:74px;border-radius:50%;background:var(--yellow);display:flex;align-items:center;justify-content:center;font-size:32px;box-shadow:0 10px 22px rgba(240,182,38,.4);">😏</div>
-        <div class="sub" style="font-family:var(--f);font-weight:700;font-size:13px;margin-top:8px;color:#fff;">Je réponds</div></div>
+    <div class="row" style="width:100%;">
+      <a class="btn outline" style="flex:1;">Je bois</a>
+      <a class="btn y" style="flex:1;">Je réponds</a>
     </div>
   </div>
 </div></div><div class="label">3 · Question (vérités)</div></div>
@@ -130,16 +119,15 @@
     <div style="width:100%;text-align:center;"><div class="sub" style="font-family:var(--f);font-weight:700;font-size:13px;letter-spacing:1px;">LA MONTÉE · MANCHE 1</div>
       <h1 style="font-size:30px;margin-top:4px;">Rouge ou Noir ?</h1></div>
     <div class="spacer"></div>
-    <!-- carte à jouer -->
     <div style="width:180px;height:248px;border-radius:20px;background:#fff;box-shadow:0 22px 44px rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;position:relative;">
       <div style="position:absolute;top:14px;left:18px;font-family:var(--f);font-weight:700;font-size:32px;color:#E0392B;">7</div>
       <div style="position:absolute;bottom:14px;right:18px;font-family:var(--f);font-weight:700;font-size:32px;color:#E0392B;transform:rotate(180deg);">7</div>
-      <div style="font-size:92px;color:#E0392B;">♥</div></div>
-    <div style="margin-top:18px;font-family:var(--f);font-weight:700;font-size:16px;color:rgba(255,255,255,.9);">🍷 1 gorgée si tu te trompes</div>
+      <div style="font-size:92px;color:#E0392B;line-height:1;">&#9829;</div></div>
+    <div style="margin-top:18px;font-family:var(--f);font-weight:700;font-size:16px;color:rgba(255,255,255,.9);">1 gorgée si tu te trompes</div>
     <div class="spacer"></div>
     <div class="row" style="width:100%;">
       <a class="btn" style="flex:1;height:80px;font-size:22px;background:#E0392B;color:#fff;box-shadow:0 12px 24px rgba(224,57,43,.4);">Rouge</a>
-      <a class="btn" style="flex:1;height:80px;font-size:22px;background:#1A1A28;color:#fff;box-shadow:0 12px 24px rgba(0,0,0,.45);">Noir</a>
+      <a class="btn" style="flex:1;height:80px;font-size:22px;background:#16161F;color:#fff;box-shadow:0 12px 24px rgba(0,0,0,.45);">Noir</a>
     </div>
   </div>
 </div></div><div class="label">4 · La Montée</div></div>
@@ -151,34 +139,33 @@
     <div style="text-align:center;"><h1 style="font-size:30px;">Classement</h1></div>
     <div style="display:flex;justify-content:center;margin-top:14px;"><div class="seg"><div class="on">Ce soir</div><div>Semaine</div><div>Toujours</div></div></div>
 
-    <!-- XP perso (la seule gamification) -->
+    <!-- XP perso (seule gamification) -->
     <div style="background:var(--p-card);border-radius:18px;padding:14px 16px;margin-top:18px;display:flex;align-items:center;gap:12px;box-shadow:var(--sh-sm);">
-      <div class="ava" style="width:42px;height:42px;font-size:22px;background:#3FD0E0;">🦊</div>
-      <div style="flex:1;"><div style="display:flex;justify-content:space-between;font-family:var(--f);font-weight:700;font-size:13px;"><span>Niveau 7</span><span style="color:rgba(255,255,255,.8);">1 240 / 1 500 XP</span></div>
+      <div class="av" style="width:42px;height:42px;font-size:17px;background:#3FD0E0;border-width:0;">L</div>
+      <div style="flex:1;"><div style="display:flex;justify-content:space-between;font-family:var(--f);font-weight:700;font-size:13px;"><span>Niveau 7</span><span style="color:rgba(255,255,255,.82);">1 240 / 1 500 XP</span></div>
         <div style="height:8px;background:rgba(0,0,0,.22);border-radius:99px;margin-top:6px;overflow:hidden;"><div style="width:78%;height:100%;background:var(--yellow);border-radius:99px;"></div></div></div>
     </div>
 
     <!-- podium flat -->
-    <div style="display:flex;justify-content:center;align-items:flex-end;gap:14px;margin-top:24px;">
+    <div style="display:flex;justify-content:center;align-items:flex-end;gap:14px;margin-top:26px;">
       <div style="text-align:center;width:92px;">
-        <div class="ava" style="width:56px;height:56px;font-size:28px;background:#FF77C2;margin:0 auto;">🐺</div>
+        <div class="av" style="width:56px;height:56px;font-size:22px;background:#FF77C2;margin:0 auto;">M</div>
         <div style="font-family:var(--f);font-weight:700;font-size:13px;margin-top:6px;">Maxime</div>
         <div style="height:78px;margin-top:8px;border-radius:14px 14px 0 0;background:#B9A8F2;display:flex;align-items:flex-start;justify-content:center;padding-top:14px;font-family:var(--f);font-weight:800;font-size:26px;color:#fff;">2</div></div>
       <div style="text-align:center;width:100px;">
-        <div style="font-size:24px;">👑</div>
-        <div class="ava" style="width:66px;height:66px;font-size:34px;background:#3FD0E0;margin:0 auto;">🦊</div>
-        <div style="font-family:var(--f);font-weight:800;font-size:14px;margin-top:6px;">Léa</div>
+        <div class="av" style="width:68px;height:68px;font-size:27px;background:#3FD0E0;margin:0 auto;border-color:var(--yellow);box-shadow:0 0 0 2px var(--yellow);">L</div>
+        <div style="font-family:var(--f);font-weight:800;font-size:14px;margin-top:8px;">Léa</div>
         <div style="height:108px;margin-top:8px;border-radius:14px 14px 0 0;background:#C8B8FB;display:flex;align-items:flex-start;justify-content:center;padding-top:16px;font-family:var(--f);font-weight:800;font-size:32px;color:#fff;">1</div></div>
       <div style="text-align:center;width:92px;">
-        <div class="ava" style="width:52px;height:52px;font-size:26px;background:#FFC93C;margin:0 auto;">🦉</div>
+        <div class="av" style="width:52px;height:52px;font-size:20px;background:#FFC93C;color:#3A2A06;margin:0 auto;">S</div>
         <div style="font-family:var(--f);font-weight:700;font-size:13px;margin-top:6px;">Sarah</div>
         <div style="height:60px;margin-top:8px;border-radius:14px 14px 0 0;background:#A696E8;display:flex;align-items:flex-start;justify-content:center;padding-top:12px;font-family:var(--f);font-weight:800;font-size:22px;color:#fff;">3</div></div>
     </div>
 
     <!-- liste blanche -->
     <div style="margin-top:8px;display:flex;flex-direction:column;gap:10px;">
-      <div class="rowcard"><span style="font-family:var(--f);font-weight:800;color:var(--ink2);width:16px;">4</span><div class="ava" style="width:36px;height:36px;font-size:18px;background:#FFB37A;border-width:2px;">🐗</div><b style="flex:1;font-family:var(--f);">Tom</b><b style="font-family:var(--f);">820 pts</b></div>
-      <div class="rowcard"><span style="font-family:var(--f);font-weight:800;color:var(--ink2);width:16px;">5</span><div class="ava" style="width:36px;height:36px;font-size:18px;background:#9AE89A;border-width:2px;">🦌</div><b style="flex:1;font-family:var(--f);">Inès</b><b style="font-family:var(--f);">640 pts</b></div>
+      <div class="rowcard"><span style="font-family:var(--f);font-weight:800;color:var(--ink2);width:16px;">4</span><div class="av" style="width:36px;height:36px;font-size:15px;background:#FFB37A;border-width:0;">T</div><b style="flex:1;font-family:var(--f);">Tom</b><b style="font-family:var(--f);">820 pts</b></div>
+      <div class="rowcard"><span style="font-family:var(--f);font-weight:800;color:var(--ink2);width:16px;">5</span><div class="av" style="width:36px;height:36px;font-size:15px;background:#7BD88F;border-width:0;">I</div><b style="flex:1;font-family:var(--f);">Inès</b><b style="font-family:var(--f);">640 pts</b></div>
     </div>
   </div>
 </div></div><div class="label">5 · Classement (XP)</div></div>
