@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Overnight — Catalogue de jeux + interfaces</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-a:#7663E8; --bg-b:#5A44C6;
+    --ink:#241B40; --ink2:#807A9C; --line:#EFECF9;
+    --indigo:#4F38C0; --purple:#6C4FE0; --lav:#B9ACF4; --lav-soft:#E9E4FB;
+    --mint:#46C9A0; --mint-soft:#E1F6EF; --peach:#FF9E7A; --coral:#FF7E8B; --peach-soft:#FFEDE4;
+    --amber:#F0A93C; --amber-soft:#FCEFD8; --blue:#4F86E0; --blue-soft:#E2ECFB;
+    --white:#fff;
+    --f:"Plus Jakarta Sans",-apple-system,"Segoe UI",sans-serif;
+    --b:"Inter",-apple-system,sans-serif;
+    --sh:0 12px 30px rgba(35,18,80,.18); --sh-card:0 8px 22px rgba(40,22,90,.10);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-font-smoothing:antialiased;}
+  body{background:#1b1430;display:flex;flex-wrap:wrap;gap:44px;justify-content:center;align-items:flex-start;padding:52px;font-family:var(--b);}
+  .phone{position:relative;width:402px;height:874px;border-radius:60px;background:linear-gradient(145deg,#3a3a3d,#0c0c0d);padding:13px;box-shadow:0 40px 90px rgba(0,0,0,.55);}
+  .label{width:100%;text-align:center;color:#9385b8;font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:12px;margin-top:16px;font-family:var(--f);}
+  .screen{position:relative;width:100%;height:100%;border-radius:48px;overflow:hidden;background:linear-gradient(170deg,var(--bg-a),var(--bg-b));color:var(--white);}
+  .island{position:absolute;top:11px;left:50%;transform:translateX(-50%);width:108px;height:33px;background:#000;border-radius:20px;z-index:60;}
+  .sb{position:absolute;top:0;left:0;right:0;height:54px;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px 28px 0;font-weight:600;font-size:15px;}
+  .ct{position:absolute;inset:0;z-index:20;display:flex;flex-direction:column;padding:66px 24px 24px;}
+  h1{font-family:var(--f);font-weight:800;line-height:1.05;letter-spacing:-.4px;}
+  h2{font-family:var(--f);font-weight:700;line-height:1.15;letter-spacing:-.2px;}
+  .cap{font-family:var(--b);font-weight:700;letter-spacing:1.5px;text-transform:uppercase;font-size:11px;color:rgba(255,255,255,.6);}
+  .sub{font-family:var(--b);font-weight:500;color:rgba(255,255,255,.78);line-height:1.5;}
+  .av{border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:700;color:#fff;}
+  .hdr{display:flex;align-items:center;gap:12px;margin-bottom:22px;}
+  .iconbtn{width:42px;height:42px;border-radius:14px;background:rgba(255,255,255,.14);display:flex;align-items:center;justify-content:center;}
+  .iconbtn svg{width:20px;height:20px;stroke:#fff;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;}
+  .card{background:#fff;border-radius:22px;box-shadow:var(--sh-card);color:var(--ink);}
+  .pcard{background:linear-gradient(135deg,#7C63EC,#5E46CC);border-radius:22px;box-shadow:var(--sh);}
+  .btn{height:58px;border-radius:16px;display:flex;align-items:center;justify-content:center;gap:8px;font-family:var(--f);font-weight:700;font-size:16px;border:none;cursor:pointer;text-decoration:none;}
+  .btn.primary{background:#fff;color:var(--indigo);box-shadow:0 8px 20px rgba(0,0,0,.14);}
+  .btn.indigo{background:var(--indigo);color:#fff;box-shadow:0 10px 24px rgba(79,56,192,.45);}
+  .btn.ghost{background:rgba(255,255,255,.14);color:#fff;}
+  .spacer{flex:1;} .row{display:flex;gap:14px;}
+  /* game row */
+  .grow{display:flex;align-items:center;gap:14px;padding:14px;}
+  .gtile{width:50px;height:50px;border-radius:15px;display:flex;align-items:center;justify-content:center;flex:none;}
+  .gtile svg{width:26px;height:26px;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+  .chev{color:var(--ink2);font-weight:700;}
+  .playcard{width:78px;height:108px;border-radius:11px;background:#fff;box-shadow:0 10px 22px rgba(0,0,0,.3);position:relative;flex:none;}
+  .back{background:repeating-linear-gradient(45deg,#6C4FE0 0 7px,#5A3FCE 7px 14px);border:3px solid #fff;}
+</style>
+</head>
+<body>
+
+<!-- A · CATALOGUE -->
+<div><div class="phone"><div class="screen">
+  <div class="island"></div><div class="sb"><span>21:48</span><span>📶 🔋</span></div>
+  <div class="ct" style="overflow:hidden;">
+    <div class="hdr"><div class="iconbtn"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></div><h2 style="flex:1;text-align:center;font-size:18px;">Nos jeux</h2><div style="width:42px;"></div></div>
+
+    <div class="cap" style="margin:2px 2px 12px;">Jeux de cartes</div>
+    <div class="card" style="padding:4px;">
+      <div class="grow" style="border-bottom:1px solid var(--line);"><div class="gtile" style="background:var(--mint-soft);"><svg viewBox="0 0 26 26" stroke="#2BA17C"><path d="M13 3 L23 22 H3 Z"/><path d="M7.5 14 H18.5 M10 9 H16"/></svg></div><div style="flex:1;"><h2 style="font-size:16px;color:var(--ink);">Pyramide</h2><div class="sub" style="color:var(--ink2);font-size:12px;">Rouge/noir, +/-, intérieur, enseigne</div></div><span class="chev">›</span></div>
+      <div class="grow" style="border-bottom:1px solid var(--line);"><div class="gtile" style="background:var(--lav-soft);"><svg viewBox="0 0 26 26" stroke="#6C4FE0"><path d="M5 4h11l5 5v13H5z"/><path d="M16 4v5h5"/><path d="M9 13h7M9 17h7"/></svg></div><div style="flex:1;"><h2 style="font-size:16px;color:var(--ink);">Roi des cons</h2><div class="sub" style="color:var(--ink2);font-size:12px;">Chaque carte = une règle</div></div><span class="chev">›</span></div>
+      <div class="grow" style="border-bottom:1px solid var(--line);"><div class="gtile" style="background:var(--blue-soft);"><svg viewBox="0 0 26 26" stroke="#3E6FC0"><rect x="4" y="6" width="13" height="16" rx="2"/><path d="M9 3h11a2 2 0 0 1 2 2v13"/></svg></div><div style="flex:1;"><h2 style="font-size:16px;color:var(--ink);">Le Bus</h2><div class="sub" style="color:var(--ink2);font-size:12px;">Réussis le parcours ou bois</div></div><span class="chev">›</span></div>
+      <div class="grow"><div class="gtile" style="background:var(--peach-soft);"><svg viewBox="0 0 26 26" stroke="#F26B4E"><path d="M13 21s-8-4.5-8-10a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 21 11c0 5.5-8 10-8 10z"/></svg></div><div style="flex:1;"><h2 style="font-size:16px;color:var(--ink);">Tape la carte</h2><div class="sub" style="color:var(--ink2);font-size:12px;">Réflexe : la plus rapide gagne</div></div><span class="chev">›</span></div>
+    </div>
+
+    <div class="cap" style="margin:22px 2px 12px;">Jeux de questions</div>
+    <div class="card" style="padding:4px;">
+      <div class="grow" style="border-bottom:1px solid var(--line);"><div class="gtile" style="background:var(--peach-soft);"><svg viewBox="0 0 26 26" stroke="#F26B4E"><path d="M4 6h18v11h-9l-5 4v-4H4z"/></svg></div><div style="flex:1;"><h2 style="font-size:16px;color:var(--ink);">Vérité ou Bois</h2><div class="sub" style="color:var(--ink2);font-size:12px;">Réponds franchement, ou bois</div></div><span class="chev">›</span></div>
+      <div class="grow" style="border-bottom:1px solid var(--line);"><div class="gtile" style="background:var(--amber-soft);"><svg viewBox="0 0 26 26" stroke="#D98A1E"><circle cx="13" cy="13" r="9"/><path d="M13 8v6M13 17h.01"/></svg></div><div style="flex:1;"><h2 style="font-size:16px;color:var(--ink);">Je n'ai jamais</h2><div class="sub" style="color:var(--ink2);font-size:12px;">Tu l'as fait ? Tu bois</div></div><span class="chev">›</span></div>
+      <div class="grow"><div class="gtile" style="background:var(--mint-soft);"><svg viewBox="0 0 26 26" stroke="#2BA17C"><path d="M5 7l4 4-4 4M13 8h8M13 16h8"/></svg></div><div style="flex:1;"><h2 style="font-size:16px;color:var(--ink);">Tu préfères</h2><div class="sub" style="color:var(--ink2);font-size:12px;">A ou B, choisis ton camp</div></div><span class="chev">›</span></div>
+    </div>
+  </div>
+</div></div><div class="label">A · Catalogue</div></div>
+
+<!-- B · ROI DES CONS (Kings) -->
+<div><div class="phone"><div class="screen" style="background:linear-gradient(170deg,#6E58D8,#3F2C9E);">
+  <div class="island"></div><div class="sb"><span>22:05</span><span>📶 🔋</span></div>
+  <div class="ct">
+    <div class="hdr"><div class="iconbtn"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></div>
+      <h2 style="flex:1;text-align:center;font-size:18px;">Roi des cons</h2>
+      <div style="font-family:var(--f);font-weight:700;font-size:12px;background:rgba(255,255,255,.16);padding:8px 12px;border-radius:999px;">Rois 3/4</div></div>
+
+    <!-- pioche en éventail -->
+    <div style="height:120px;position:relative;margin-top:4px;">
+      <div class="playcard back" style="position:absolute;left:50%;top:10px;transform:translateX(-50%) rotate(-18deg);"></div>
+      <div class="playcard back" style="position:absolute;left:50%;top:6px;transform:translateX(-50%) rotate(-9deg);"></div>
+      <div class="playcard back" style="position:absolute;left:50%;top:4px;transform:translateX(-50%) rotate(0deg);"></div>
+      <div class="playcard back" style="position:absolute;left:50%;top:6px;transform:translateX(-50%) rotate(9deg);"></div>
+      <div class="playcard back" style="position:absolute;left:50%;top:10px;transform:translateX(-50%) rotate(18deg);"></div>
+    </div>
+
+    <div style="text-align:center;margin-top:6px;"><div class="cap">Carte tirée par Maxime</div></div>
+
+    <!-- carte tirée + règle -->
+    <div style="display:flex;justify-content:center;margin-top:14px;">
+      <div style="width:118px;height:166px;border-radius:14px;background:#fff;box-shadow:0 18px 36px rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;position:relative;">
+        <div style="position:absolute;top:12px;left:14px;font-family:var(--f);font-weight:700;font-size:24px;color:#16161F;">K</div>
+        <div style="position:absolute;bottom:12px;right:14px;font-family:var(--f);font-weight:700;font-size:24px;color:#16161F;transform:rotate(180deg);">K</div>
+        <div style="font-size:62px;color:#16161F;line-height:1;">&#9827;</div></div>
+    </div>
+
+    <div class="card" style="margin-top:18px;padding:18px 20px;text-align:center;">
+      <div style="font-family:var(--f);font-weight:800;font-size:18px;color:var(--indigo);">Roi — La Règle</div>
+      <div style="font-family:var(--b);font-weight:600;color:var(--ink);font-size:15px;line-height:1.45;margin-top:6px;">
+        Maxime invente une règle qui tient jusqu'à la fin de la partie. Le 4ᵉ roi tiré… cul sec.</div>
+    </div>
+
+    <div class="spacer"></div>
+    <a class="btn primary" style="width:100%;">Tirer une carte</a>
+  </div>
+</div></div><div class="label">B · Roi des cons</div></div>
+
+<!-- C · JE N'AI JAMAIS -->
+<div><div class="phone"><div class="screen" style="background:linear-gradient(170deg,#7663E8,#C28A3A);">
+  <div class="island"></div><div class="sb"><span>22:14</span><span>📶 🔋</span></div>
+  <div class="ct">
+    <div class="hdr"><div class="iconbtn"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></div>
+      <h2 style="flex:1;text-align:center;font-size:18px;">Je n'ai jamais</h2><div style="width:42px;"></div></div>
+
+    <div style="display:flex;align-items:center;gap:12px;">
+      <div style="flex:1;height:7px;background:rgba(255,255,255,.22);border-radius:99px;overflow:hidden;"><div style="width:34%;height:100%;background:#fff;border-radius:99px;"></div></div>
+      <span class="sub" style="font-family:var(--f);font-weight:700;font-size:13px;color:#fff;">12 / 35</span></div>
+
+    <div class="spacer"></div>
+    <div class="card" style="padding:32px 26px;">
+      <div class="cap" style="color:var(--amber);">Je n'ai jamais…</div>
+      <div style="font-family:var(--f);font-weight:700;font-size:31px;line-height:1.25;margin-top:12px;color:var(--ink);">
+        …menti sur mon âge pour impressionner quelqu'un.</div>
+      <div style="font-family:var(--b);font-weight:500;color:var(--ink2);font-size:14px;margin-top:16px;">Si tu l'as fait, tu bois une gorgée.</div>
+    </div>
+    <div class="spacer"></div>
+
+    <div class="row" style="width:100%;">
+      <a class="btn ghost" style="flex:1;height:62px;">Jamais</a>
+      <a class="btn primary" style="flex:1;height:62px;">Je l'ai fait</a>
+    </div>
+    <div style="text-align:center;margin-top:14px;" class="sub">3 joueurs ont déjà bu sur cette carte 👀</div>
+  </div>
+</div></div><div class="label">C · Je n'ai jamais</div></div>
+
+</body>
+</html>
