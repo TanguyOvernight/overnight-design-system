@@ -9,14 +9,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg-a:#7663E8; --bg-b:#5A44C6;
-    --ink:#241B40; --ink2:#807A9C; --line:#EFECF9;
+    --bg-a:#6A4DEC; --bg-b:#5232C6;
+    --ink:#1E1633; --ink2:#7C7596; --line:#EEEAF8;
     --indigo:#4F38C0; --purple:#6C4FE0; --lav:#B9ACF4; --lav-soft:#E9E4FB;
-    --mint:#46C9A0; --amber:#F0A93C; --coral:#FF7E8B; --blue:#4F86E0; --red:#E0392B;
+    --mint:#46C9A0; --amber:#FFC93C; --amber-d:#E0A21C; --coral:#FF7E8B; --blue:#4F86E0; --red:#E0392B; --green:#34C28B;
     --white:#fff;
     --f:"Plus Jakarta Sans",-apple-system,"Segoe UI",sans-serif;
     --b:"Inter",-apple-system,sans-serif;
-    --sh:0 12px 30px rgba(35,18,80,.22); --sh-card:0 8px 22px rgba(40,22,90,.10);
+    --sh:0 14px 34px rgba(28,14,70,.28); --sh-card:0 10px 26px rgba(28,14,70,.12);
   }
   *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;-webkit-font-smoothing:antialiased;}
   html,body{height:100%;}
@@ -35,14 +35,14 @@
   .card{background:#fff;border-radius:22px;box-shadow:var(--sh-card);color:var(--ink);}
   .pcard{background:linear-gradient(135deg,#7C63EC,#5E46CC);border-radius:22px;box-shadow:var(--sh);}
   button{font-family:var(--f);cursor:pointer;border:none;}
-  .btn{width:100%;min-height:58px;border-radius:16px;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:17px;color:#fff;background:rgba(255,255,255,.15);transition:transform .08s;}
-  .btn:active{transform:scale(.97);}
-  .btn.primary{background:#fff;color:var(--indigo);box-shadow:0 8px 20px rgba(0,0,0,.16);}
-  .btn.indigo{background:var(--indigo);box-shadow:0 10px 24px rgba(79,56,192,.45);}
-  .btn.red{background:linear-gradient(180deg,#FF6B5A,#E0392B);}
-  .btn.dark{background:#16161F;}
-  .btn.amber{background:#FFC93C;color:#3A2A06;}
-  .btn.sm{min-height:50px;font-size:15px;}
+  .btn{position:relative;width:100%;min-height:60px;border-radius:18px;display:flex;align-items:center;justify-content:center;gap:9px;font-weight:800;font-size:17px;color:#fff;background:rgba(255,255,255,.16);box-shadow:0 6px 0 var(--bev,rgba(20,10,50,.30));transition:transform .06s,box-shadow .06s;}
+  .btn:active{transform:translateY(4px);box-shadow:0 2px 0 var(--bev,rgba(20,10,50,.30));}
+  .btn.primary{background:#fff;color:var(--indigo);--bev:#CFC8EC;}
+  .btn.indigo{background:var(--indigo);--bev:#37268F;}
+  .btn.red{background:#E0392B;--bev:#A8261A;}
+  .btn.dark{background:#1A1A28;--bev:#000;}
+  .btn.amber{background:var(--amber);color:#3A2A06;--bev:var(--amber-d);}
+  .btn.sm{min-height:50px;font-size:15px;border-radius:14px;}
   .av{border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:700;color:#fff;flex:none;}
   .input{width:100%;height:56px;border-radius:16px;background:rgba(255,255,255,.16);border:none;padding:0 18px;font-family:var(--f);font-weight:600;font-size:17px;color:#fff;}
   .input::placeholder{color:rgba(255,255,255,.5);}
@@ -57,6 +57,34 @@
   @keyframes fade{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
   .pop{animation:pop .3s cubic-bezier(.2,1.3,.5,1);}
   @keyframes pop{from{opacity:0;transform:scale(.8);}to{opacity:1;transform:none;}}
+  .av{box-shadow:0 4px 10px rgba(0,0,0,.2);}
+  /* bandeau "au tour de" */
+  .banner{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.14);border-radius:18px;padding:9px 16px 9px 9px;margin-bottom:14px;font-family:var(--f);font-weight:700;}
+  .banner b{color:var(--amber);}
+  /* stepper Le Bus */
+  .steps{display:flex;align-items:center;justify-content:center;margin-bottom:8px;}
+  .step{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:800;font-size:16px;border:2px solid rgba(255,255,255,.35);color:rgba(255,255,255,.6);}
+  .step.on{background:var(--amber);border-color:var(--amber);color:#3A2A06;box-shadow:0 5px 0 var(--amber-d);}
+  .step-line{width:30px;height:3px;background:rgba(255,255,255,.25);}
+  /* échelle d'intensité 1-10 */
+  .scale{display:flex;gap:5px;align-items:center;}
+  .lvl{flex:1;aspect-ratio:1;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:800;font-size:13px;color:#fff;opacity:.9;cursor:pointer;}
+  .lvl.on{outline:3px solid #fff;outline-offset:1px;transform:translateY(-2px);opacity:1;box-shadow:0 6px 12px rgba(0,0,0,.3);}
+  /* podium */
+  .podblk{border-radius:14px 14px 0 0;display:flex;align-items:flex-start;justify-content:center;padding-top:14px;font-family:var(--f);font-weight:800;color:#fff;box-shadow:inset 0 -12px 0 rgba(0,0,0,.10);}
+  .confetti{position:absolute;width:9px;height:9px;border-radius:2px;}
+  /* bouteille (placeholder — remplaçable par image: #bottle) */
+  .bottle{position:relative;width:90px;height:160px;margin:0 auto;}
+  .bottle .glass{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:66px;height:124px;border-radius:16px 16px 20px 20px;background:linear-gradient(100deg,#1F7E63,#4FC9A6 45%,#1F7E63);box-shadow:inset 8px 0 0 rgba(255,255,255,.18),inset -8px 0 0 rgba(0,0,0,.14);}
+  .bottle .neck{position:absolute;bottom:124px;left:50%;transform:translateX(-50%);width:26px;height:32px;background:#2E9E7C;border-radius:6px;}
+  .bottle .label{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);width:54px;height:46px;border-radius:8px;background:#6C4FE0;border-top:3px solid var(--amber);border-bottom:3px solid var(--amber);display:flex;align-items:center;justify-content:center;color:var(--amber);font-size:24px;font-weight:700;}
+  /* feuille blanche du bas (sheet) */
+  .sheet{background:#fff;color:var(--ink);border-radius:28px 28px 0 0;padding:22px 22px calc(16px + env(safe-area-inset-bottom));margin:0 -20px calc(-20px - env(safe-area-inset-bottom));box-shadow:0 -12px 34px rgba(0,0,0,.18);text-align:center;}
+  /* navbar bas */
+  .navbar{display:flex;justify-content:space-around;align-items:center;background:#fff;border-radius:26px;padding:10px 6px;margin-top:14px;box-shadow:var(--sh-card);}
+  .nav{display:flex;flex-direction:column;align-items:center;gap:3px;font-family:var(--f);font-weight:700;font-size:11px;color:#9A93B0;}
+  .nav.on{color:var(--indigo);}
+  .nav .ic{font-size:19px;line-height:1;}
 </style>
 </head>
 <body>
@@ -378,13 +406,13 @@ function gameHead(title, right){
     <h2 style="flex:1;text-align:center;font-size:18px;">${title}</h2>
     ${right||`<div class="pill">${cur().name}</div>`}</div>`;
 }
-function turnBanner(){ return `<div class="pill" style="align-self:center;margin-bottom:10px;">Au tour de · ${cur().name}</div>`; }
+function turnBanner(){ const p=cur(); return `<div class="banner">${avatar(p,36)}<span style="font-size:15px;">Au tour de <b>${p.name}</b></span></div>`; }
 
 /* ============================ LE BUS ============================ */
 function startBus(){ S.game={deck:newDeck(),step:1,cards:[]}; S.reveal=null; go('bus'); }
 SCREENS.bus = () => {
   const g=S.game, r=S.reveal;
-  const dots=[1,2,3,4].map(n=>`<span style="width:30px;height:8px;border-radius:99px;background:${n<=g.step?'#FFC93C':'rgba(255,255,255,.25)'}"></span>`).join('');
+  const dots=[1,2,3,4].map((n,idx)=>`${idx?'<span class="step-line"></span>':''}<span class="step ${n<=g.step?'on':''}">${n}</span>`).join('');
   const prompts={1:'Rouge ou Noir ?',2:'Plus ou moins que ?',3:'Intérieur ou extérieur ?',4:"Quelle enseigne ?"};
   let mid='', actions='';
   // cartes déjà tirées
@@ -406,7 +434,7 @@ SCREENS.bus = () => {
   }
   return `<div class="pad fade">${gameHead('Le Bus')}
     ${turnBanner()}
-    <div style="display:flex;justify-content:center;gap:7px;margin-bottom:6px;">${dots}</div>
+    <div class="steps">${dots}</div>
     <div class="spacer"></div>${mid}<div class="spacer"></div>${actions}</div>`;
 };
 function busGuess(ans){
@@ -675,14 +703,16 @@ SCREENS.vob = () => {
   }
   const tgt = g.target===Infinity?'∞':g.target;
   return `<div class="pad fade">${gameHead('Vérité ou Bois', `<div class="pill">${g.count+1} / ${tgt}</div>`)}
-   <div class="row" style="gap:5px;flex-wrap:wrap;">${VOB.map((r,i)=>`<button onclick="vobRound(${i})" style="flex:1 1 8%;min-width:28px;padding:7px 2px;border-radius:9px;font-family:var(--f);font-weight:700;font-size:11px;color:${i===g.round?'var(--indigo)':'#fff'};background:${i===g.round?'#fff':'rgba(255,255,255,.14)'};">${i+1}</button>`).join('')}</div>
+   <div class="scale">${VOB.map((r,i)=>`<div class="lvl ${i===g.round?'on':''}" style="background:hsl(${Math.round(150-i*150/9)},62%,54%);" onclick="vobRound(${i})">${i+1}</div>`).join('')}</div>
+   <div style="display:flex;justify-content:space-between;margin-top:8px;font-family:var(--f);font-weight:800;font-size:10px;letter-spacing:1px;"><span style="color:var(--green);">● SOFT</span><span style="color:var(--coral);">GROS DOSSIER ●</span></div>
    <div class="sub center" style="margin-top:10px;font-family:var(--f);font-weight:700;">${VOB[g.round].titre}</div>
    ${turnBanner()}
    <div class="spacer"></div>
    <div class="card pop" style="padding:30px 24px;"><div class="cap" style="color:var(--purple);">À ${cur().name} de jouer</div>
      <div style="font-family:var(--f);font-weight:700;font-size:27px;line-height:1.25;margin-top:12px;color:var(--ink);">${g.q}</div></div>
    <div class="spacer"></div>
-   <div class="row"><button class="btn" onclick="vobAns(false)">Je bois (1)</button><button class="btn primary" onclick="vobAns(true)">Je réponds</button></div>
+   <button class="btn amber" onclick="vobAns(true)">Je réponds</button>
+   <button class="btn" style="margin-top:12px;" onclick="vobAns(false)">Je bois (1)</button>
   </div>`;
 };
 function vobRound(i){ S.game.round=i; vobPick(); render(); }
