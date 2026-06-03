@@ -92,6 +92,27 @@
   .addbtn:active{transform:translateY(3px);box-shadow:0 2px 0 #37268F;}
   .prow{display:flex;align-items:center;gap:14px;background:#FBFAFE;border-radius:16px;padding:11px 14px;box-shadow:0 2px 8px rgba(30,16,70,.06);}
   .deco{position:absolute;stroke:rgba(255,255,255,.13);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;pointer-events:none;z-index:0;}
+  .pill.gorgee{background:var(--amber);color:#3A2A06;}
+  .pill.gorgee svg{margin-right:-1px;}
+  /* catalogue */
+  .sechdr{display:flex;align-items:center;gap:12px;margin-bottom:8px;padding:2px;}
+  .sechead-ic{width:42px;height:42px;border-radius:13px;background:var(--lav-soft);display:flex;align-items:center;justify-content:center;color:var(--indigo);flex:none;}
+  .tile{width:58px;height:58px;flex:none;border-radius:16px;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--f);font-weight:800;font-size:20px;box-shadow:0 6px 14px rgba(0,0,0,.16);}
+  .chev{color:var(--indigo);font-weight:800;font-size:22px;line-height:1;}
+  /* bandeau coral classement */
+  .cbanner{display:flex;align-items:center;gap:14px;background:linear-gradient(120deg,#FF9E7A,#FF6F8B);border-radius:18px;padding:14px 16px;box-shadow:0 12px 24px rgba(255,110,120,.28);}
+  .cbanner .cic{width:42px;height:42px;border-radius:12px;background:rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center;flex:none;}
+  /* sparks + pointeur intensité */
+  .sparks{display:flex;align-items:center;justify-content:center;gap:10px;}
+  .lvl.on{position:relative;}
+  .lvl.on:after{content:"";position:absolute;bottom:-9px;left:50%;transform:translateX(-50%);border-left:6px solid transparent;border-right:6px solid transparent;border-top:7px solid #fff;}
+  /* palmier cible */
+  .tring{width:48px;height:48px;border-radius:50%;border:2px dashed rgba(255,255,255,.55);display:flex;align-items:center;justify-content:center;margin:0 auto;}
+  .tring i{width:14px;height:14px;border-radius:50%;background:var(--mint);display:block;}
+  /* segmented */
+  .seg{display:flex;background:rgba(255,255,255,.16);border-radius:16px;padding:5px;gap:4px;}
+  .seg div{flex:1;text-align:center;padding:11px 0;border-radius:12px;font-family:var(--f);font-weight:700;font-size:14px;color:rgba(255,255,255,.82);cursor:pointer;}
+  .seg div.on{background:var(--lav-soft);color:var(--indigo);}
 </style>
 </head>
 <body>
@@ -370,48 +391,69 @@ SCREENS.setup = () => `<div class="pad fade">
     ? `<button class="btn amber" onclick="go('hub')"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3A2A06" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0"/><path d="M16 6.2a3 3 0 0 1 0 5.6M20.5 20a5.5 5.5 0 0 0-3.2-5"/></svg>Créer une partie</button>
        <button class="btn" style="margin-top:12px;" onclick="alert('Rejoindre une room avec un code — bientôt (mode multi-téléphones).')"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4"/><path d="M11 12H3M7 8l-4 4 4 4"/></svg>Rejoindre</button>`
     : `<div class="sub center" style="opacity:.75;">Ajoute au moins 2 joueurs pour commencer.</div>`}
-  <div class="navbar">
-    <div class="nav on"><svg class="ic" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7"/><path d="M6 10v9h12v-9"/></svg>Accueil<i style="width:5px;height:5px;border-radius:50%;background:var(--amber);display:block;margin-top:1px;"></i></div>
-    <div class="nav"><svg class="ic" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4h10v4a5 5 0 0 1-10 0z"/><path d="M7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3M9 16h6M8 20h8"/></svg>Classement</div>
-    <div class="nav"><svg class="ic" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0 1 14 0"/></svg>Profil</div>
-  </div>
+  ${navbar('accueil')}
 </div>`;
 
-SCREENS.hub = () => `<div class="pad fade">
-  <div style="display:flex;align-items:center;gap:14px;margin-bottom:6px;">
-    <div style="flex:1;"><div class="cap">Au tour de</div><h2 style="font-size:22px;margin-top:2px;">${cur().name}</h2></div>
-    ${avatar(cur(),48)}
-  </div>
-  <div class="pcard" style="padding:14px 16px;margin:14px 0;display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
-    ${S.players.map(p=>`<span class="pill" style="background:rgba(255,255,255,.16);">${p.name} · ${p.gorgees}🍺</span>`).join('')}
-  </div>
-  <div class="cap" style="margin:8px 2px;">Choisis un jeu</div>
-  <div class="card" style="padding:4px;">
-    ${GAMES.map((g,i)=>`<div class="gamerow" style="${i<GAMES.length-1?'border-bottom:1px solid var(--line);':''}" onclick="startGame('${g.id}')">
-      <div class="gtile" style="background:${g.col};">${g.t}</div>
-      <div style="flex:1;"><h2 style="font-size:16px;color:var(--ink);">${g.nom}</h2><div class="sub" style="color:var(--ink2);font-size:12px;">${g.desc}</div></div>
-      <span style="color:var(--ink2);font-weight:700;">›</span></div>`).join('')}
-  </div>
-  <div class="spacer"></div>
-  <div class="row" style="margin-top:14px;">
-    <button class="btn sm" onclick="go('scores')">Classement</button>
-    <button class="btn sm" onclick="if(confirm('Recommencer une nouvelle soirée ?')){resetAll();}">Nouvelle soirée</button>
-  </div>
-</div>`;
+SCREENS.hub = () => {
+  const ids=g=>g.id;
+  const cartes=GAMES.filter(g=>['bus','palmier','ftd','pmu','purple','tape'].includes(g.id));
+  const quest=GAMES.filter(g=>['echelle','vob','jamais','pref'].includes(g.id));
+  const sec=(title,icon,list)=>`<div class="card" style="padding:16px 16px 8px;">
+    <div class="sechdr"><div class="sechead-ic">${icon}</div><h2 style="font-size:19px;color:var(--ink);">${title}</h2></div>
+    ${list.map((g,i)=>`<div class="gamerow" style="${i<list.length-1?'border-bottom:1px solid var(--line);':''}" onclick="startGame('${g.id}')">
+      <div class="tile" style="background:${g.col};">${g.t}</div>
+      <div style="flex:1;"><h2 style="font-size:17px;color:var(--ink);">${g.nom}</h2><div style="font-family:var(--b);font-weight:500;color:var(--ink2);font-size:13px;margin-top:2px;">${g.desc}</div></div>
+      <span class="chev">›</span></div>`).join('')}</div>`;
+  const cIcon=`<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="6" width="12" height="15" rx="2"/><path d="M8 4h9a2 2 0 0 1 2 2v12"/></svg>`;
+  const qIcon=`<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-4 4z"/><path d="M12 8.5v3M12 14h.01"/></svg>`;
+  return `<div class="pad fade">
+   <div class="hdr"><button class="iconbtn" onclick="go('setup')">‹</button><h2 style="flex:1;text-align:center;">Nos jeux</h2><div style="width:44px"></div></div>
+   <div class="sub center" style="margin:-8px 0 16px;">Choisis ton jeu pour une soirée inoubliable</div>
+   ${sec('Jeux de cartes',cIcon,cartes)}
+   <div style="height:16px"></div>
+   ${sec('Jeux de questions',qIcon,quest)}
+   <div class="spacer"></div>
+   ${navbar('accueil')}
+  </div>`;
+};
 
 SCREENS.scores = () => {
   const sorted=[...S.players].sort((a,b)=>b.gorgees-a.gorgees);
+  const top=sorted.slice(0,3), rest=sorted.slice(3), leader=sorted[0];
+  const crown=`<svg width="26" height="20" viewBox="0 0 26 20" fill="var(--amber)" style="margin-bottom:2px;"><path d="M2 6l5 4 6-8 6 8 5-4-2 12H4z"/></svg>`;
+  const pod=(p,rank,h,col)=> p?`<div style="flex:1;text-align:center;">
+      ${rank===1?crown:'<div style="height:22px;"></div>'}
+      <div class="av" style="width:${rank===1?64:52}px;height:${rank===1?64:52}px;font-size:${rank===1?25:20}px;background:${p.color};margin:0 auto;${rank===1?'border:3px solid var(--amber);':''}">${p.name[0].toUpperCase()}</div>
+      <div style="font-family:var(--f);font-weight:800;font-size:14px;margin-top:6px;color:#fff;">${p.name}</div>
+      <div class="pill" style="font-size:11px;padding:5px 10px;margin-top:4px;">${p.gorgees} pts</div>
+      <div class="podblk" style="height:${h}px;margin-top:8px;background:${col};font-size:${rank===1?34:26}px;">${rank}</div>
+    </div>`:`<div style="flex:1;"></div>`;
   return `<div class="pad fade">
-   <div class="hdr"><button class="iconbtn" onclick="go('hub')">‹</button><h2 style="flex:1;text-align:center;font-size:18px;">Classement</h2><div style="width:42px"></div></div>
-   <div class="sub center" style="margin-bottom:16px;">Le plus arrosé de la soirée 🍺</div>
-   <div style="display:flex;flex-direction:column;gap:10px;">
-   ${sorted.map((p,i)=>`<div class="card" style="display:flex;align-items:center;gap:14px;padding:14px 16px;">
-     <b style="font-family:var(--f);color:${i===0?'var(--amber)':'var(--ink2)'};width:22px;font-size:18px;">${i+1}</b>
-     ${avatar(p,40)}<b style="flex:1;font-family:var(--f);color:var(--ink);">${p.name}</b>
-     <b style="font-family:var(--f);color:var(--ink);">${p.gorgees} gorgées</b></div>`).join('')}
+   <div class="hdr"><button class="iconbtn" onclick="go('hub')">‹</button><h2 style="flex:1;text-align:center;">Classement</h2><div style="width:44px"></div></div>
+   <div class="seg"><div class="on">Ce soir</div><div>Semaine</div><div>Toujours</div></div>
+   <div class="cbanner" style="margin-top:16px;">
+     <div class="cic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17l6-6 4 4 6-7"/><path d="M16 8h5v5"/></svg></div>
+     <div style="font-family:var(--f);font-weight:700;font-size:14px;line-height:1.35;">${leader?leader.name+' est en tête de la soirée !':'La soirée commence — à vous de jouer !'}</div>
+   </div>
+   <div style="display:flex;align-items:flex-end;gap:10px;margin-top:24px;position:relative;">
+     <span class="confetti" style="top:0;left:13%;background:var(--mint);transform:rotate(20deg);"></span>
+     <span class="confetti" style="top:34px;right:15%;background:var(--coral);"></span>
+     <span class="confetti" style="top:8px;left:47%;background:var(--amber);border-radius:50%;"></span>
+     <span class="confetti" style="top:46px;left:7%;background:var(--blue);transform:rotate(-15deg);"></span>
+     <span class="confetti" style="top:18px;right:8%;background:var(--lav);"></span>
+     ${pod(top[1],2,78,'linear-gradient(180deg,#A99BF0,#8E7CE8)')}
+     ${pod(top[0],1,114,'linear-gradient(180deg,#7C63EC,#5E46CC)')}
+     ${pod(top[2],3,60,'linear-gradient(180deg,#F0A93C,#D98A1E)')}
+   </div>
+   <div class="card" style="margin-top:10px;padding:4px 16px;">
+     ${rest.length?rest.map((p,i)=>`<div style="display:flex;align-items:center;gap:14px;padding:12px 0;${i<rest.length-1?'border-bottom:1px solid var(--line);':''}">
+        <span style="width:26px;height:26px;border-radius:50%;background:var(--lav-soft);color:var(--ink2);font-family:var(--f);font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center;flex:none;">${i+4}</span>
+        <div class="av" style="width:36px;height:36px;font-size:15px;background:${p.color};">${p.name[0].toUpperCase()}</div>
+        <b style="flex:1;font-family:var(--f);color:var(--ink);">${p.name}</b>
+        <span style="font-family:var(--f);font-weight:800;color:var(--indigo);">${p.gorgees}</span><span style="color:var(--ink2);font-size:12px;margin-left:3px;">pts</span></div>`).join(''):`<div class="sub center" style="color:var(--ink2);padding:16px;">Que le top 3 pour l'instant.</div>`}
    </div>
    <div class="spacer"></div>
-   <button class="btn amber" onclick="go('hub')">Retour</button>
+   ${navbar('classement')}
   </div>`;
 };
 
@@ -422,6 +464,16 @@ function gameHead(title, right){
     ${right||`<div class="pill">${cur().name}</div>`}</div>`;
 }
 function turnBanner(){ const p=cur(); return `<div class="banner">${avatar(p,36)}<span style="font-size:15px;">Au tour de <b>${p.name}</b></span></div>`; }
+const ICN={
+ home:`<svg class="ic" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7"/><path d="M6 10v9h12v-9"/></svg>`,
+ trophy:`<svg class="ic" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4h10v4a5 5 0 0 1-10 0z"/><path d="M7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3M9 16h6M8 20h8"/></svg>`,
+ person:`<svg class="ic" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0 1 14 0"/></svg>`
+};
+function navbar(active){
+ const dot=`<i style="width:5px;height:5px;border-radius:50%;background:var(--amber);display:block;margin-top:2px;"></i>`;
+ const it=(k,l,ic,fn)=>`<div class="nav ${active===k?'on':''}" onclick="${fn}">${ic}${l}${active===k?dot:''}</div>`;
+ return `<div class="navbar">${it('accueil','Accueil',ICN.home,"go('setup')")}${it('classement','Classement',ICN.trophy,"go('scores')")}${it('profil','Profil',ICN.person,"alert('Profil — bientôt')")}</div>`;
+}
 
 /* ============================ LE BUS ============================ */
 function startBus(){ S.game={deck:newDeck(),step:1,cards:[]}; S.reveal=null; go('bus'); }
@@ -439,15 +491,22 @@ SCREENS.bus = () => {
         <b style="font-family:var(--f);font-size:18px;color:${r.ok?'#19A974':'var(--red)'};">${r.ok?'Gagné !':'Raté'}</b>
         <div class="sub" style="color:var(--ink);font-size:14px;margin-top:4px;">${r.msg}</div></div>`;
   } else {
-    mid = `<div style="display:flex;gap:10px;justify-content:center;align-items:flex-end;min-height:96px;">${shown||'<div class="back playcard" style="width:80px;height:112px;"></div>'}</div>
-      <h2 style="text-align:center;font-size:24px;margin-top:18px;">${prompts[g.step]}</h2>
-      <div class="sub center" style="margin-top:4px;">Erreur = ${g.step} gorgée${g.step>1?'s':''}</div>`;
+    const fan = g.cards.length
+      ? `<div style="display:flex;gap:10px;justify-content:center;align-items:flex-end;min-height:150px;">${shown}</div>`
+      : `<div style="position:relative;height:168px;display:flex;justify-content:center;align-items:center;">
+           <div class="playcard back" style="width:94px;height:132px;position:absolute;transform:rotate(-13deg) translateX(-44px);opacity:.8;"></div>
+           <div class="playcard back" style="width:94px;height:132px;position:absolute;transform:rotate(13deg) translateX(44px);opacity:.8;"></div>
+           <div class="playcard" style="width:104px;height:148px;position:absolute;background:linear-gradient(160deg,#E0392B,#A8241A);border:3px solid #fff;display:flex;align-items:center;justify-content:center;" data-asset="card-back"><span style="font-size:44px;color:#fff;">&#9790;</span></div>
+         </div>`;
+    mid = `${fan}
+      <div class="card pop" style="margin-top:18px;padding:26px 20px;text-align:center;"><h2 style="font-size:28px;color:var(--ink);">${prompts[g.step]}</h2>
+        <div style="font-family:var(--b);font-weight:600;color:var(--ink2);font-size:13px;margin-top:6px;">Erreur = ${g.step} gorgée${g.step>1?'s':''}</div></div>`;
     if(g.step===1) actions=`<div class="row"><button class="btn red" onclick="busGuess('r')">Rouge</button><button class="btn dark" onclick="busGuess('n')">Noir</button></div>`;
     else if(g.step===2) actions=`<div class="row"><button class="btn" onclick="busGuess('p')">Plus ↑</button><button class="btn" onclick="busGuess('m')">Moins ↓</button></div>`;
     else if(g.step===3) actions=`<div class="row"><button class="btn" onclick="busGuess('in')">Intérieur</button><button class="btn" onclick="busGuess('out')">Extérieur</button></div>`;
     else actions=`<div class="row" style="flex-wrap:wrap;">${SUITS.map((s,i)=>`<button class="btn" style="flex:1 1 40%;color:${i===1||i===2?'#FFD2CC':'#fff'};" onclick="busGuess(${i})">${s}</button>`).join('')}</div>`;
   }
-  return `<div class="pad fade">${gameHead('Le Bus')}
+  return `<div class="pad fade">${gameHead('Le Bus', `<div class="pill gorgee"><svg width="12" height="15" viewBox="0 0 13 16" fill="#3A2A06"><path d="M6.5 0S0 7 0 10.5a6.5 6.5 0 0 0 13 0C13 7 6.5 0 6.5 0z"/></svg>${g.step} gorgée${g.step>1?'s':''}</div>`)}
     ${turnBanner()}
     <div class="steps">${dots}</div>
     <div class="spacer"></div>${mid}<div class="spacer"></div>${actions}</div>`;
@@ -718,14 +777,16 @@ SCREENS.vob = () => {
   }
   const tgt = g.target===Infinity?'∞':g.target;
   return `<div class="pad fade">${gameHead('Vérité ou Bois', `<div class="pill">${g.count+1} / ${tgt}</div>`)}
-   <div class="scale">${VOB.map((r,i)=>`<div class="lvl ${i===g.round?'on':''}" style="background:hsl(${Math.round(150-i*150/9)},62%,54%);" onclick="vobRound(${i})">${i+1}</div>`).join('')}</div>
-   <div style="display:flex;justify-content:space-between;margin-top:8px;font-family:var(--f);font-weight:800;font-size:10px;letter-spacing:1px;"><span style="color:var(--green);">● SOFT</span><span style="color:var(--coral);">GROS DOSSIER ●</span></div>
-   <div class="sub center" style="margin-top:10px;font-family:var(--f);font-weight:700;">${VOB[g.round].titre}</div>
    ${turnBanner()}
    <div class="spacer"></div>
-   <div class="card pop" style="padding:30px 24px;"><div class="cap" style="color:var(--purple);">À ${cur().name} de jouer</div>
-     <div style="font-family:var(--f);font-weight:700;font-size:27px;line-height:1.25;margin-top:12px;color:var(--ink);">${g.q}</div></div>
+   <div class="card pop" style="padding:22px 22px 26px;">
+     <div class="sparks"><span style="width:12px;height:3px;border-radius:2px;background:var(--lav);"></span><span class="pill light" style="font-size:12px;">Round ${g.round+1}</span><span style="width:12px;height:3px;border-radius:2px;background:var(--lav);"></span></div>
+     <div style="font-family:var(--f);font-weight:700;font-size:30px;line-height:1.2;margin-top:16px;color:var(--ink);text-align:center;">${g.q}</div></div>
    <div class="spacer"></div>
+   <div class="cap" style="margin-bottom:9px;">Intensité</div>
+   <div class="scale">${VOB.map((r,i)=>`<div class="lvl ${i===g.round?'on':''}" style="background:hsl(${Math.round(150-i*150/9)},62%,54%);" onclick="vobRound(${i})">${i+1}</div>`).join('')}</div>
+   <div style="display:flex;justify-content:space-between;margin-top:12px;font-family:var(--f);font-weight:800;font-size:10px;letter-spacing:1px;"><span style="color:var(--green);">● SOFT</span><span style="color:var(--coral);">GROS DOSSIER ●</span></div>
+   <div style="height:16px"></div>
    <button class="btn amber" onclick="vobAns(true)">Je réponds</button>
    <button class="btn" style="margin-top:12px;" onclick="vobAns(false)">Je bois (1)</button>
   </div>`;
