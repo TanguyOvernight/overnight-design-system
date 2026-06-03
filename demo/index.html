@@ -77,7 +77,7 @@ const app = () => document.getElementById('app');
 const cur = () => S.players[S.turn];
 function nextTurn(){ S.turn = (S.turn + 1) % S.players.length; }
 function drink(i, n){ S.players[i].gorgees += n; }
-function go(scr){ S.screen = scr; S.reveal = null; render(); }
+function go(scr){ if(S.timer){clearInterval(S.timer);S.timer=null;} S.screen = scr; S.reveal = null; render(); }
 
 /* ============================ CARTES ============================ */
 const SUITS = ['♠','♥','♦','♣']; // ♠♥♦♣
@@ -148,6 +148,110 @@ const VOB = [
   "Quelle est la pire photo de toi sur laquelle tu es identifié sur les réseaux ?",
   "Si le groupe devait te décrire en une phrase gênante, ce serait quoi ?",
   "Quel est le mensonge le plus débile que tu aies raconté et qui a pris des proportions folles ?"]},
+ {titre:"Le before (entre potes)", q:[
+  `Quelle a été ta vraie première impression de moi ?`,
+  `Qui dans ce groupe pensais-tu détester, mais que tu as fini par adorer ?`,
+  `Quel est ton talent caché que personne ici ne connaît ?`,
+  `Qui dans ce groupe a l'historique de recherche le plus bizarre selon toi ?`,
+  `Quel surnom as-tu déjà pensé donner à quelqu'un ici sans jamais le dire ?`,
+  `Qui dans ce groupe survivrait le plus longtemps à une apocalypse zombie ?`,
+  `Quelle chanson te fait instantanément penser à quelqu'un dans cette pièce ?`,
+  `Quel truc as-tu supposé sur quelqu'un ici qui s'est révélé totalement faux ?`,
+  `À qui ferais-tu le plus confiance pour organiser un voyage à la dernière minute ?`,
+  `Quelle est la dispute la plus débile que tu aies eue avec quelqu'un ici ?`,
+  `Qui est le pire pour répondre aux messages dans le groupe ?`,
+  `Quel compliment as-tu toujours voulu faire à quelqu'un ici sans jamais oser ?`,
+  `Qui a les meilleurs goûts musicaux du groupe, et qui a les pires ?`,
+  `Qui a le plus de chances de devenir célèbre, et pour quelle raison ?`,
+  `Quel est le truc le plus gênant que tu aies fait devant nous ?`,
+  `Qui dans ce groupe te connaît le mieux ?`,
+  `Quelle fausse rumeur sur toi as-tu laissé le groupe croire ?`,
+  `Qui appellerais-tu en premier si tu étais coincé(e) au milieu de nulle part ?`,
+  `Qui donne toujours les meilleurs conseils, même si sa propre vie est un carnage ?`]},
+ {titre:"On balance", q:[
+  `Fais un top 3 des personnes à qui tu te confierais en premier ici.`,
+  `Quelle opinion secrète as-tu sur quelqu'un ici sans jamais l'avoir partagée ?`,
+  `Qui dans ce groupe t'a le plus surpris(e), en bien ou en mal ?`,
+  `Que sais-tu sur quelqu'un ici qu'il/elle ignore que tu sais ?`,
+  `Qui ici a eu la relation amoureuse la plus dramatique selon toi ?`,
+  `Quel moment de l'histoire du groupe te fait encore cringe ?`,
+  `Qui dans cette pièce a le plus le melon à ton avis ?`,
+  `Sur quel avis du groupe à propos de quelqu'un es-tu secrètement en désaccord ?`,
+  `As-tu déjà été jaloux/jalouse de quelqu'un ici, et pourquoi ?`,
+  `Qui raconte beaucoup trop sa vie quand il/elle est bourré(e) ?`,
+  `Quelle est la chose la plus hypocrite qu'un membre du groupe ait dite ?`,
+  `Qui a le plus gros ego de nous tous ?`,
+  `Quel potin sur ce groupe as-tu gardé pour toi ?`,
+  `Qui ici a le plus de chances de tous nous ghoster un jour ?`,
+  `Quelle « période » un peu honteuse de l'un de nous on ne mentionne plus ?`,
+  `Qui dans ce groupe a le plus de chances d'être secrètement riche ?`,
+  `Qui ici a la vie sentimentale la plus chaotique tout en le cachant ?`,
+  `Quelle est l'habitude la plus insupportable de quelqu'un ici ?`,
+  `Qui est le plus susceptible de créer un drama et d'en accuser un autre ?`]},
+ {titre:"Le confessionnal", q:[
+  `Quel truc sur toi n'as-tu jamais dit à personne dans ce groupe ?`,
+  `As-tu déjà été blessé(e) par quelqu'un ici sans jamais en parler ?`,
+  `À quel moment t'es-tu senti(e) mis(e) à l'écart dans ce groupe ?`,
+  `As-tu traversé une période difficile en la cachant à tout le monde ici ?`,
+  `Quelle conversation avec quelqu'un ici a changé ta façon de le/la voir ?`,
+  `As-tu déjà douté de ta place dans ce groupe ?`,
+  `Qu'as-tu caché au groupe par peur d'être jugé(e) ?`,
+  `Quel compliment de quelqu'un ici n'as-tu jamais oublié ?`,
+  `As-tu déjà eu l'impression qu'on connaissait la « mauvaise » version de toi ?`,
+  `Qu'est-ce qui se passe dans ta vie en ce moment que tu n'as pas dit au groupe ?`,
+  `As-tu déjà eu peur qu'on s'éloigne en grandissant ?`,
+  `Quelle est ta plus grande peur pour l'avenir de notre groupe ?`,
+  `Quelle épreuve as-tu surmontée sans rien nous dire ?`,
+  `Quelle question aimerais-tu qu'on te pose mais que personne ne pose jamais ?`,
+  `As-tu déjà envié un pote ici pour un aspect précis de sa vie ?`,
+  `Quelle version de toi ce groupe n'a jamais connue ?`,
+  `As-tu déjà eu l'impression d'être invisible dans le groupe ?`,
+  `Quelle est la chose la plus courageuse que tu aies faite et que personne ici ne sait ?`,
+  `As-tu déjà voulu dire à quelqu'un combien il/elle comptait, avant de te dégonfler ?`]},
+ {titre:"Le round de non-retour", q:[
+  `Quelle est la pire chose que tu aies dite dans le dos de quelqu'un ici présent ?`,
+  `As-tu déjà pécho quelqu'un pour qui un pote du groupe avait des sentiments ?`,
+  `Quel secret de tes 18 ans choquerait ce groupe ?`,
+  `As-tu déjà trahi un secret qu'on t'avait confié dans cette pièce ?`,
+  `Quelle a été ta pire cuite devant nous ?`,
+  `Quel est le truc le plus inconscient que tu aies fait sans qu'on le sache ?`,
+  `Quel mensonge nous as-tu raconté et jamais avoué ?`,
+  `As-tu fait un truc qui te ferait mourir de honte si le groupe l'apprenait ?`,
+  `Quelle est la chose la moins éthique que tu aies faite cette année ?`,
+  `As-tu déjà couvert un pote ici et regretté de l'avoir fait ?`,
+  `Quel secret as-tu juré d'emporter dans ta tombe ?`,
+  `As-tu déjà profité de l'un de nous pour obtenir ce que tu voulais ?`,
+  `As-tu déjà été amoureux/amoureuse de quelqu'un alors que tu n'aurais pas dû ?`,
+  `Quel moment te fait encore honte des années plus tard ?`,
+  `Quand as-tu été le plus proche de détruire une de nos amitiés ?`,
+  `As-tu déjà voulu te venger de quelqu'un ici, même une seconde ?`,
+  `Quel secret te ferait boire un verre cul sec pour ne pas répondre ?`,
+  `As-tu déjà volé la vedette au grand moment d'un pote ?`]},
+ {titre:"Roast (chaise électrique)", q:[
+  `Quel est le truc qui me ressemble le moins que j'aie jamais fait ?`,
+  `Décris-moi en trois mots peu flatteurs.`,
+  `Quelle est la chose la plus cringe que j'aie dite en étant totalement sobre ?`,
+  `Quelle décision de moi avez-vous critiquée dans mon dos ?`,
+  `Quelle est la pire tenue que j'aie portée sans que personne ne me prévienne ?`,
+  `Si j'étais un meme, lequel serais-je ?`,
+  `Quel est mon tic de langage le plus insupportable ?`,
+  `Quel red flag me concernant donnerais-tu à quelqu'un qui me rencontre ?`,
+  `Quel est le moment où j'ai cru avoir trop la classe alors que pas du tout ?`,
+  `Quelle chanson résume parfaitement ma vie amoureuse ?`,
+  `Si ma vie était une sitcom, quelle serait la blague récurrente ?`,
+  `Quelle photo dossier de moi afficherais-tu sur les réseaux ?`]},
+ {titre:"Spécial groupe (fin de soirée)", q:[
+  `Quel est ton meilleur souvenir avec ce groupe ?`,
+  `Qui ici a le plus changé depuis qu'on se connaît ?`,
+  `Qu'est-ce que ce groupe t'a appris sur toi-même ?`,
+  `Qui sera le dernier à faire la fête quand on aura 60 ans ?`,
+  `Quel est le meilleur compliment que quelqu'un ici t'ait fait ?`,
+  `Quelle tradition devrait-on lancer tous ensemble ?`,
+  `Si on renommait notre groupe, on l'appellerait comment ?`,
+  `Qui est le ciment de notre groupe ?`,
+  `Quelle est ta private joke préférée avec nous ?`,
+  `Qu'espères-tu encore vrai sur notre amitié dans dix ans ?`,
+  `Si tu portais un toast à ce groupe là maintenant, que dirais-tu ?`]},
 ];
 const JAMAIS = [
  "envoyé un message au mauvais groupe.","fait semblant d'aimer un cadeau.","menti sur mon âge.",
@@ -188,12 +292,13 @@ const KINGS = {1:["As — Cascade","Tu bois, ton voisin de gauche suit, puis le 
 /* ============================ JEUX (méta) ============================ */
 const GAMES = [
  {id:'bus', nom:'Le Bus', desc:'4 manches, ça monte', t:'B', col:'#46C9A0'},
- {id:'roi', nom:'Roi des cons', desc:'Chaque carte = une règle', t:'R', col:'#6C4FE0'},
+ {id:'palmier', nom:'Palmier', desc:"King's Cup — pose ta carte sans tout faire tomber", t:'P', col:'#37B98B'},
  {id:'ftd', nom:'Fuck the Dealer', desc:'Devine la carte', t:'F', col:'#4F86E0'},
  {id:'pmu', nom:'PMU', desc:'La course', t:'P', col:'#46C9A0'},
  {id:'purple', nom:'Purple', desc:'Haut / bas / pareil', t:'P', col:'#B98CFF'},
  {id:'vob', nom:'Vérité ou Bois', desc:'Réponds, ou bois', t:'V', col:'#FF7E8B'},
  {id:'jamais', nom:"Je n'ai jamais", desc:"Tu l'as fait ? Tu bois", t:'J', col:'#F0A93C'},
+ {id:'echelle', nom:"L'Échelle", desc:'Les autres te font deviner ta carte (1-10)', t:'E', col:'#4F86E0'},
  {id:'pref', nom:'Tu préfères', desc:'A ou B', t:'T', col:'#34C3D6'},
 ];
 
@@ -368,28 +473,95 @@ function ftdGuess(v){
   render();
 }
 
-/* ============================ ROI DES CONS ============================ */
-function startRoi(){ S.game={deck:newDeck(), kings:0, card:null}; S.reveal=null; go('roi'); }
-SCREENS.roi = () => {
-  const g=S.game, c=g.card;
-  let mid;
-  if(c){ const rule=KINGS[c.v];
-    mid=`<div style="display:flex;justify-content:center;">${cardHTML(c,120,168)}</div>
-     <div class="card pop" style="margin-top:18px;padding:18px;text-align:center;"><b style="font-family:var(--f);font-size:19px;color:var(--indigo);">${rule[0]}</b>
-     <div class="sub" style="color:var(--ink);font-size:15px;margin-top:6px;">${rule[1]}</div>
-     ${c.v===13?`<div class="sub" style="color:var(--red);font-weight:700;margin-top:8px;">Rois tirés : ${g.kings}/4</div>`:''}</div>`;
-  } else {
-    mid=`<div style="display:flex;justify-content:center;"><div class="back playcard" style="width:120px;height:168px;"></div></div>
-     <div class="sub center" style="margin-top:18px;">Tire une carte et applique la règle.</div>`;
-  }
-  return `<div class="pad fade">${gameHead('Roi des cons', `<div class="pill">Rois ${S.game.kings}/4</div>`)}${turnBanner()}<div class="spacer"></div>${mid}<div class="spacer"></div>
-    <button class="btn primary" onclick="roiDraw()">Tirer une carte</button></div>`;
-};
-function roiDraw(){
-  const g=S.game, c=draw(g.deck);
-  if(c.v===13){ g.kings++; if(g.kings>=4){ g.card=c; render(); setTimeout(()=>alert(cur().name+' tire le 4ᵉ roi… CUL SEC ! 🍺'),200); g.kings=0; nextTurn(); return; } }
-  g.card=c; nextTurn(); render();
+/* ============================ PALMIER (King's Cup) ============================ */
+function palmierRule(c){
+  const v=c.v, red=isRed(c);
+  if(v===1) return ['As — Cul sec / Cupidon','Cul sec ! Ou joue Cupidon : forme un binôme qui boira avec toi.'];
+  if(v>=2&&v<=5) return [VN[v]+(red?' — Rouge : distribue':' — Noir : prends'), red?('Tu distribues '+v+' gorgées.'):('Tu prends '+v+' gorgées.')];
+  if(v===6) return ['6 — Histoire','Raconte une histoire vraie ou fausse. Les autres devinent si tu mens.'];
+  if(v===7) return ['7 — Dans ma valise','« Dans ma valise je mets… » Chacun répète et ajoute un objet. Qui oublie boit.'];
+  if(v===8) return ['8 — Thème','Lance un thème. Chacun cite à tour de rôle. Qui sèche boit.'];
+  if(v===9) return ['9 — Invente une règle','Crée une règle valable toute la partie.'];
+  if(v===10) return ['10 — Action ou vérité','Au choix : action ou vérité.'];
+  if(v===11) return ['Valet — Voisin','2 gorgées pour ton voisin de droite.'];
+  if(v===12) return ['Dame — Tournée','1 gorgée pour tout le monde !'];
+  return ['Roi — Bouffon','Choisis un bouffon : il prendra tes gorgées jusqu’au prochain roi.'];
 }
+function startPalmier(){ S.game={deck:newDeck(), stack:0, card:null, phase:'draw', bx:0, dir:1, res:null}; go('palmier'); }
+function palmierScene(g){
+  let cards=''; for(let i=0;i<g.stack;i++){ const rot=(i%2?1:-1)*(4+i*1.4); cards+=`<div style="position:absolute;bottom:${128+i*9}px;left:50%;width:52px;height:34px;margin-left:-26px;border-radius:6px;background:#fff;box-shadow:0 2px 5px rgba(0,0,0,.3);transform:rotate(${rot}deg);"></div>`; }
+  const swing = g.phase==='balance' ? `<div id="swing" style="position:absolute;bottom:${140+g.stack*9}px;left:50%;width:58px;height:80px;margin-left:-29px;border-radius:9px;background:#fff;box-shadow:0 10px 18px rgba(0,0,0,.4);will-change:transform;"></div>` : '';
+  return `<div style="position:relative;height:230px;width:100%;">
+    <div style="position:absolute;bottom:0;left:50%;width:62px;height:124px;margin-left:-31px;border-radius:14px 14px 16px 16px;background:linear-gradient(180deg,#2BA17C,#15604A);"></div>
+    <div style="position:absolute;bottom:124px;left:50%;width:24px;height:30px;margin-left:-12px;background:#1B6E54;border-radius:4px;"></div>
+    ${cards}${swing}</div>`;
+}
+SCREENS.palmier = () => {
+  const g=S.game; let mid, actions;
+  if(g.phase==='draw'){
+    mid=`${palmierScene(g)}<div class="sub center" style="margin-top:8px;">Palmier : ${g.stack} carte${g.stack>1?'s':''} en équilibre.</div>`;
+    actions=`<button class="btn primary" onclick="palmierTirer()">Tirer une carte</button>`;
+  } else if(g.phase==='rule'){
+    const r=palmierRule(g.card);
+    mid=`<div style="display:flex;justify-content:center;">${cardHTML(g.card,108,150)}</div>
+      <div class="card pop" style="margin-top:14px;padding:16px;text-align:center;"><b style="font-family:var(--f);font-size:18px;color:var(--indigo);">${r[0]}</b>
+      <div class="sub" style="color:var(--ink);font-size:14px;margin-top:5px;">${r[1]}</div></div>`;
+    actions=`<button class="btn primary" onclick="palmierBalance()">Poser sur le palmier</button>`;
+  } else if(g.phase==='balance'){
+    mid=`${palmierScene(g)}<div class="sub center" style="font-family:var(--f);font-weight:700;">Pose la carte bien au centre du palmier !</div>`;
+    actions=`<button class="btn amber" onclick="palmierDrop()">POSER</button>`;
+  } else {
+    mid=`${palmierScene(g)}<div class="card pop" style="margin-top:10px;padding:16px;text-align:center;"><b style="font-family:var(--f);font-size:18px;color:${g.res.ok?'#19A974':'var(--red)'};">${g.res.title}</b><div class="sub" style="color:var(--ink);font-size:14px;margin-top:4px;">${g.res.msg}</div></div>`;
+    actions=`<button class="btn primary" onclick="palmierNext()">Au joueur suivant</button>`;
+  }
+  return `<div class="pad fade">${gameHead('Palmier', `<div class="pill">Palmier ${g.stack}</div>`)}${turnBanner()}<div class="spacer"></div>${mid}<div class="spacer"></div>${actions}</div>`;
+};
+function palmierTirer(){ S.game.card=draw(S.game.deck); S.game.phase='rule'; render(); }
+function palmierBalance(){ const g=S.game; g.phase='balance'; g.bx=0; g.dir=1; render(); startSwing(); }
+function startSwing(){
+  if(S.timer) clearInterval(S.timer);
+  S.timer=setInterval(()=>{ const g=S.game; if(!g||g.phase!=='balance'){clearInterval(S.timer);S.timer=null;return;}
+    g.bx+=g.dir*0.05; if(g.bx>=1){g.bx=1;g.dir=-1;} if(g.bx<=-1){g.bx=-1;g.dir=1;}
+    const el=document.getElementById('swing'); if(el){ el.style.transform='translateX('+(g.bx*120)+'px)'; } else { clearInterval(S.timer); S.timer=null; }
+  },16);
+}
+function palmierDrop(){
+  if(S.timer){clearInterval(S.timer);S.timer=null;}
+  const g=S.game, off=Math.abs(g.bx), tol=Math.max(0.10, 0.22 - g.stack*0.012);
+  if(off<tol){ g.stack++; g.res={ok:true, title:'En équilibre !', msg:'La carte tient — palmier à '+g.stack+'. (Applique aussi la règle de ta carte.)'}; }
+  else { drink(S.turn,3); g.res={ok:false, title:'Le palmier s’effondre !', msg:'Carte ratée : bois 3 gorgées. On repart de zéro.'}; g.stack=0; }
+  g.phase='result'; render();
+}
+function palmierNext(){ const g=S.game; nextTurn(); g.phase='draw'; g.card=null; g.res=null; render(); }
+
+/* ============================ L'ÉCHELLE (1-10, inversé) ============================ */
+function startEchelle(){ S.game={card:null, guess:5, phase:'draw'}; go('echelle'); }
+SCREENS.echelle = () => {
+  const g=S.game; let mid, actions;
+  if(g.phase==='draw'){
+    mid=`<div style="display:flex;justify-content:center;"><div class="back playcard" style="width:120px;height:168px;"></div></div>
+      <div class="sub center" style="margin-top:16px;max-width:300px;">Une carte de 1 à 10 va être tirée. <b>${cur().name} ne doit PAS la voir.</b> Les autres lui donnent des exemples pour ce chiffre, à lui de deviner.</div>`;
+    actions=`<button class="btn primary" onclick="echelleTirer()">Tirer la carte (les autres regardent)</button>`;
+  } else if(g.phase==='vu'){
+    mid=`<div style="display:flex;justify-content:center;">${cardHTML(g.card,120,168)}</div>
+      <div class="sub center" style="margin-top:14px;max-width:300px;">Les autres : donnez des exemples pour faire deviner ce chiffre (ex : « une femme chauve » pour un 2). Puis ${cur().name} annonce son chiffre.</div>`;
+    actions=`<button class="btn primary" onclick="S.game.phase='guess';render();">${cur().name} a deviné →</button>`;
+  } else if(g.phase==='guess'){
+    mid=`<div class="card" style="padding:18px;text-align:center;"><b style="font-family:var(--f);color:var(--indigo);">Quel chiffre annonce ${cur().name} ?</b></div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:18px;">${[1,2,3,4,5,6,7,8,9,10].map(n=>`<button class="chip" style="${n===g.guess?'background:#fff;color:var(--indigo);':''}" onclick="S.game.guess=${n};render();">${n}</button>`).join('')}</div>`;
+    actions=`<button class="btn primary" onclick="echelleReveal()">Valider « ${g.guess} »</button>`;
+  } else {
+    const diff=Math.abs(g.guess-g.card.v);
+    mid=`<div style="display:flex;justify-content:center;gap:14px;align-items:center;">${cardHTML(g.card,96,134)}</div>
+      <div class="card pop" style="margin-top:16px;padding:18px;text-align:center;"><b style="font-family:var(--f);font-size:18px;color:${diff===0?'#19A974':'var(--red)'};">${diff===0?'Dans le mille !':'Écart de '+diff}</b>
+      <div class="sub" style="color:var(--ink);font-size:15px;margin-top:5px;">La carte était un ${g.card.v}, ${cur().name} a dit ${g.guess}. ${diff===0?'Tu distribues 3 gorgées !':'Bois '+diff+' gorgée'+(diff>1?'s':'')+'.'}</div></div>`;
+    actions=`<button class="btn primary" onclick="echelleNext()">Au joueur suivant</button>`;
+  }
+  return `<div class="pad fade">${gameHead("L'Échelle")}${turnBanner()}<div class="spacer"></div>${mid}<div class="spacer"></div>${actions}</div>`;
+};
+function echelleTirer(){ S.game.card={v:(Math.random()*10|0)+1, s:(Math.random()*4|0)}; S.game.phase='vu'; render(); }
+function echelleReveal(){ const diff=Math.abs(S.game.guess-S.game.card.v); if(diff>0)drink(S.turn,diff); S.game.phase='result'; render(); }
+function echelleNext(){ nextTurn(); S.game={card:null, guess:5, phase:'draw'}; render(); }
 
 /* ============================ PMU ============================ */
 function startPmu(){ S.game=null; S.reveal=null; S.screen='pmuBet'; render(); }
@@ -433,13 +605,33 @@ function pmuDraw(){
 }
 
 /* ============================ VÉRITÉ OU BOIS ============================ */
-function startVob(){ S.game={round:0, used:VOB.map(()=>new Set()), q:null}; vobPick(); go('vob'); }
+function startVob(){ S.game={phase:'setup', round:0, used:VOB.map(()=>new Set()), q:null, target:100, count:0}; go('vob'); }
+function vobSetCount(n){ const g=S.game; g.target=n; g.count=0; g.phase='play'; vobPick(); render(); }
 function vobPick(){ const g=S.game, r=g.round, list=VOB[r].q; if(g.used[r].size>=list.length) g.used[r].clear();
   let i; do{ i=Math.random()*list.length|0; }while(g.used[r].has(i)); g.used[r].add(i); g.q=list[i]; }
 SCREENS.vob = () => {
   const g=S.game;
-  return `<div class="pad fade">${gameHead('Vérité ou Bois')}
-   <div class="row" style="gap:6px;">${VOB.map((r,i)=>`<button onclick="vobRound(${i})" style="flex:1;padding:8px 4px;border-radius:11px;font-family:var(--f);font-weight:700;font-size:11px;color:${i===g.round?'var(--indigo)':'#fff'};background:${i===g.round?'#fff':'rgba(255,255,255,.14)'};">${i+1}</button>`).join('')}</div>
+  if(g.phase==='setup'){
+    const tot=VOB.reduce((n,r)=>n+r.q.length,0);
+    return `<div class="pad fade">${gameHead('Vérité ou Bois')}<div class="spacer"></div>
+      <h2 style="text-align:center;font-size:24px;">Combien de questions ?</h2>
+      <div class="sub center" style="margin-top:6px;max-width:300px;align-self:center;">Choisis la longueur de la partie. ${tot} questions au total — au-delà, ça tourne en boucle.</div>
+      <div style="display:flex;flex-direction:column;gap:12px;margin-top:24px;">
+        ${[50,100,200].map(n=>`<button class="btn" onclick="vobSetCount(${n})">${n} questions</button>`).join('')}
+        <button class="btn amber" onclick="vobSetCount(Infinity)">Sans limite</button>
+      </div><div class="spacer"></div></div>`;
+  }
+  if(g.phase==='end'){
+    return `<div class="pad fade">${gameHead('Vérité ou Bois')}<div class="spacer"></div>
+      <div class="card pop" style="padding:24px;text-align:center;"><b style="font-family:var(--f);font-size:20px;color:var(--indigo);">Partie terminée !</b>
+      <div class="sub" style="color:var(--ink);margin-top:6px;">${g.count} questions jouées. Beau parcours.</div></div>
+      <div class="spacer"></div>
+      <button class="btn primary" onclick="go('scores')">Voir le classement</button>
+      <button class="btn" style="margin-top:12px;" onclick="go('hub')">Retour aux jeux</button></div>`;
+  }
+  const tgt = g.target===Infinity?'∞':g.target;
+  return `<div class="pad fade">${gameHead('Vérité ou Bois', `<div class="pill">${g.count+1} / ${tgt}</div>`)}
+   <div class="row" style="gap:5px;flex-wrap:wrap;">${VOB.map((r,i)=>`<button onclick="vobRound(${i})" style="flex:1 1 8%;min-width:28px;padding:7px 2px;border-radius:9px;font-family:var(--f);font-weight:700;font-size:11px;color:${i===g.round?'var(--indigo)':'#fff'};background:${i===g.round?'#fff':'rgba(255,255,255,.14)'};">${i+1}</button>`).join('')}</div>
    <div class="sub center" style="margin-top:10px;font-family:var(--f);font-weight:700;">${VOB[g.round].titre}</div>
    ${turnBanner()}
    <div class="spacer"></div>
@@ -450,7 +642,7 @@ SCREENS.vob = () => {
   </div>`;
 };
 function vobRound(i){ S.game.round=i; vobPick(); render(); }
-function vobAns(ok){ if(!ok) drink(S.turn,1); nextTurn(); vobPick(); render(); }
+function vobAns(ok){ const g=S.game; if(!ok) drink(S.turn,1); g.count++; if(g.count>=g.target){ g.phase='end'; render(); return; } nextTurn(); vobPick(); render(); }
 
 /* ============================ JE N'AI JAMAIS ============================ */
 function startJamais(){ S.game={used:new Set(), s:null}; jamaisPick(); go('jamais'); }
@@ -484,7 +676,7 @@ function prefNext(){ if(S.game.picked===null)return; nextTurn(); prefPick(); ren
 
 /* ============================ ROUTAGE ============================ */
 function startGame(id){
-  ({bus:startBus, purple:startPurple, ftd:startFtd, roi:startRoi, pmu:startPmu, vob:startVob, jamais:startJamais, pref:startPref})[id]();
+  ({bus:startBus, purple:startPurple, ftd:startFtd, palmier:startPalmier, pmu:startPmu, echelle:startEchelle, vob:startVob, jamais:startJamais, pref:startPref})[id]();
 }
 function addPlayer(){ const n=(S.nameDraft||'').trim(); if(!n)return; S.players.push({name:n.slice(0,16), color:COLORS[S.players.length%COLORS.length], gorgees:0}); S.nameDraft=''; render(); const i=document.getElementById('nm'); if(i)i.focus(); }
 function rmPlayer(i){ S.players.splice(i,1); render(); }
