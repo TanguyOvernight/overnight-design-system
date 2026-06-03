@@ -9,21 +9,29 @@
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg-a:#6A4DEC; --bg-b:#5232C6;
-    --ink:#1E1633; --ink2:#7C7596; --line:#EEEAF8;
+    --bg-a:#7663E8; --bg-b:#5A44C6;
+    --ink:#241B40; --ink2:#807A9C; --line:#EFECF9;
     --indigo:#4F38C0; --purple:#6C4FE0; --lav:#B9ACF4; --lav-soft:#E9E4FB;
-    --mint:#46C9A0; --amber:#FFC93C; --amber-d:#E0A21C; --coral:#FF7E8B; --blue:#4F86E0; --red:#E0392B; --green:#34C28B;
+    --mint:#46C9A0; --amber:#F0A93C; --coral:#FF7E8B; --blue:#4F86E0; --red:#E0392B;
     --white:#fff;
     --f:"Plus Jakarta Sans",-apple-system,"Segoe UI",sans-serif;
     --b:"Inter",-apple-system,sans-serif;
-    --sh:0 14px 34px rgba(28,14,70,.28); --sh-card:0 10px 26px rgba(28,14,70,.12);
+    --sh:0 12px 30px rgba(35,18,80,.22); --sh-card:0 8px 22px rgba(40,22,90,.10);
+    --sh-soft:0 18px 44px rgba(34,18,80,.18);
   }
   *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;-webkit-font-smoothing:antialiased;}
   html,body{height:100%;}
   body{font-family:var(--b);background:#0e0a1a;display:flex;justify-content:center;}
-  #app{position:relative;width:100%;max-width:460px;min-height:100dvh;background:linear-gradient(170deg,var(--bg-a),var(--bg-b));
+  #app{position:relative;width:100%;max-width:460px;height:100dvh;min-height:100dvh;background:
+    radial-gradient(circle at 18% 8%,rgba(255,255,255,.18),transparent 26%),
+    radial-gradient(circle at 92% 18%,rgba(255,201,60,.10),transparent 24%),
+    linear-gradient(170deg,var(--bg-a),var(--bg-b));
     color:#fff;display:flex;flex-direction:column;overflow:hidden;}
-  .pad{padding:max(20px,env(safe-area-inset-top)) 20px calc(20px + env(safe-area-inset-bottom));flex:1;display:flex;flex-direction:column;}
+  #app:before{content:"";position:absolute;inset:0;background:
+    linear-gradient(180deg,rgba(255,255,255,.06),transparent 38%),
+    radial-gradient(circle at 50% 100%,rgba(36,27,64,.18),transparent 42%);
+    pointer-events:none;}
+  .pad{position:relative;z-index:1;padding:max(20px,env(safe-area-inset-top)) 20px calc(20px + env(safe-area-inset-bottom));flex:1;display:flex;flex-direction:column;min-height:0;}
   h1{font-family:var(--f);font-weight:800;letter-spacing:-.4px;line-height:1.05;}
   h2{font-family:var(--f);font-weight:700;letter-spacing:-.2px;line-height:1.15;}
   .cap{font-family:var(--b);font-weight:700;letter-spacing:1.5px;text-transform:uppercase;font-size:11px;color:rgba(255,255,255,.6);}
@@ -33,87 +41,59 @@
   .iconbtn{width:42px;height:42px;border-radius:14px;background:rgba(255,255,255,.16);display:flex;align-items:center;justify-content:center;cursor:pointer;border:none;color:#fff;font-size:20px;flex:none;}
   .pill{font-family:var(--f);font-weight:700;font-size:12px;background:rgba(255,255,255,.16);padding:8px 13px;border-radius:999px;display:inline-flex;align-items:center;gap:7px;}
   .card{background:#fff;border-radius:22px;box-shadow:var(--sh-card);color:var(--ink);}
+  .panel{background:#fff;border-radius:26px;box-shadow:var(--sh-soft);color:var(--ink);}
   .pcard{background:linear-gradient(135deg,#7C63EC,#5E46CC);border-radius:22px;box-shadow:var(--sh);}
   button{font-family:var(--f);cursor:pointer;border:none;}
-  .btn{position:relative;width:100%;min-height:64px;border-radius:18px;display:flex;align-items:center;justify-content:center;gap:9px;font-weight:800;font-size:18px;color:#fff;background:rgba(255,255,255,.16);box-shadow:0 6px 0 var(--bev,rgba(20,10,50,.30));transition:transform .06s,box-shadow .06s;}
-  .btn:active{transform:translateY(4px);box-shadow:0 2px 0 var(--bev,rgba(20,10,50,.30));}
-  .btn.primary{background:#fff;color:var(--indigo);--bev:#CFC8EC;}
-  .btn.indigo{background:var(--indigo);--bev:#37268F;}
-  .btn.red{background:#E0392B;--bev:#A8261A;}
-  .btn.dark{background:#1A1A28;--bev:#000;}
-  .btn.amber{background:var(--amber);color:#3A2A06;--bev:var(--amber-d);}
-  .btn.sm{min-height:50px;font-size:15px;border-radius:14px;}
+  .btn{width:100%;min-height:58px;border-radius:16px;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:17px;color:#fff;background:rgba(255,255,255,.15);transition:transform .08s,box-shadow .2s,background .2s;}
+  .btn:active{transform:scale(.97);}
+  .btn.primary{background:#fff;color:var(--indigo);box-shadow:0 8px 20px rgba(0,0,0,.16);}
+  .btn.indigo{background:var(--indigo);box-shadow:0 10px 24px rgba(79,56,192,.45);}
+  .btn.red{background:linear-gradient(180deg,#FF6B5A,#E0392B);}
+  .btn.dark{background:#16161F;}
+  .btn.amber{background:#FFC93C;color:#3A2A06;}
+  .btn.sm{min-height:50px;font-size:15px;}
   .av{border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:700;color:#fff;flex:none;}
   .input{width:100%;height:56px;border-radius:16px;background:rgba(255,255,255,.16);border:none;padding:0 18px;font-family:var(--f);font-weight:600;font-size:17px;color:#fff;}
   .input::placeholder{color:rgba(255,255,255,.5);}
-  .playcard{background:#fff;border-radius:12px;box-shadow:0 10px 24px rgba(0,0,0,.3);display:flex;align-items:center;justify-content:center;position:relative;color:#16161F;font-family:var(--f);font-weight:800;}
+  .input:focus{outline:none;box-shadow:0 0 0 3px rgba(79,56,192,.16);}
+  .playcard{background:#fff;border-radius:14px;box-shadow:0 14px 28px rgba(24,12,62,.28);display:flex;align-items:center;justify-content:center;position:relative;color:#16161F;font-family:var(--f);font-weight:800;overflow:hidden;}
+  .playcard:before{content:"";position:absolute;inset:8px;border:1px solid #EEE9FA;border-radius:10px;pointer-events:none;}
+  .playcard:after{content:"";position:absolute;width:42%;height:42%;border-radius:999px;background:currentColor;opacity:.08;right:-12%;bottom:-10%;pointer-events:none;}
   .playcard .ci{position:absolute;font-family:var(--f);font-weight:700;}
-  .back{background:repeating-linear-gradient(45deg,#6C4FE0 0 8px,#553BCB 8px 16px)!important;border:3px solid #fff;}
+  .back{background:
+    radial-gradient(circle at 50% 45%,rgba(255,201,60,.22),transparent 20%),
+    linear-gradient(135deg,#7C63EC,#5A44C6)!important;border:3px solid #fff;}
+  .back:after{content:"";position:absolute;inset:22%;border-radius:18px;border:2px solid rgba(255,255,255,.26);background:transparent;}
   .chip{min-width:38px;height:46px;padding:0 6px;border-radius:11px;background:rgba(255,255,255,.16);display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:700;font-size:16px;color:#fff;}
   .chip:active{transform:scale(.94);}
-  .gamerow{display:flex;align-items:center;gap:16px;padding:17px 4px;cursor:pointer;}
-  .gtile{width:46px;height:46px;border-radius:14px;display:flex;align-items:center;justify-content:center;flex:none;font-family:var(--f);font-weight:800;font-size:18px;color:#fff;}
+  .gamerow{display:flex;align-items:center;gap:14px;padding:14px;cursor:pointer;border-radius:18px;transition:background .18s,transform .08s;}
+  .gamerow:active{transform:scale(.985);}
+  .gtile{width:56px;height:56px;border-radius:16px;display:flex;align-items:center;justify-content:center;flex:none;font-family:var(--f);font-weight:800;font-size:20px;color:#fff;box-shadow:inset 0 -10px 18px rgba(35,18,80,.12);}
+  .navdock{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;background:#fff;border-radius:24px;padding:8px;box-shadow:0 14px 34px rgba(25,12,72,.22);color:var(--ink2);}
+  .navitem{height:50px;border-radius:18px;background:transparent;color:var(--ink2);font-family:var(--b);font-weight:700;font-size:11px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;}
+  .navitem.active{background:var(--lav-soft);color:var(--indigo);}
+  .navicon{font-size:18px;line-height:1;font-family:var(--f);}
+  .score-banner{background:linear-gradient(135deg,#FFB07D,#FF7E8B);border-radius:20px;padding:14px 16px;color:#fff;box-shadow:0 12px 26px rgba(160,72,108,.24);font-family:var(--f);font-weight:800;}
+  .podium{height:210px;position:relative;margin:18px 0 4px;}
+  .pod{position:absolute;bottom:0;width:30%;border-radius:20px 20px 12px 12px;color:#fff;text-align:center;font-family:var(--f);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:44px;box-shadow:0 14px 30px rgba(38,20,90,.2);}
+  .pod.one{left:35%;height:134px;background:linear-gradient(180deg,#A98BFF,#7C63EC);}
+  .pod.two{left:3%;height:104px;background:linear-gradient(180deg,#FFB37E,#F08E49);}
+  .pod.three{right:3%;height:88px;background:linear-gradient(180deg,#FFE28A,#F0A93C);}
+  .podplayer{position:absolute;transform:translateX(-50%);text-align:center;color:#fff;font-family:var(--f);font-weight:800;font-size:12px;}
+  .palm-stage{position:relative;height:252px;width:100%;perspective:720px;}
+  .palm-target{position:absolute;left:50%;bottom:132px;width:92px;height:10px;margin-left:-46px;border-radius:99px;background:rgba(255,201,60,.92);box-shadow:0 0 0 10px rgba(255,201,60,.14);}
+  .bottle{position:absolute;bottom:0;left:50%;width:72px;height:132px;margin-left:-36px;border-radius:18px 18px 20px 20px;background:linear-gradient(160deg,#57D6AD 0%,#2BA17C 48%,#12634B 100%);box-shadow:inset -12px 0 0 rgba(0,0,0,.10),0 16px 26px rgba(19,54,56,.22);}
+  .bottle:before{content:"";position:absolute;bottom:126px;left:22px;width:28px;height:34px;border-radius:6px 6px 3px 3px;background:linear-gradient(180deg,#2BA17C,#16664D);}
+  .bottle:after{content:"";position:absolute;top:14px;left:14px;width:10px;height:76px;border-radius:999px;background:rgba(255,255,255,.22);}
+  .palm-card{position:absolute;left:50%;width:62px;height:40px;margin-left:-31px;border-radius:8px;background:#fff;box-shadow:0 6px 12px rgba(24,12,62,.18);border:1px solid #F1ECFA;transform-style:preserve-3d;}
+  .palm-card:after{content:"";position:absolute;inset:7px;border:1px solid #EEE9FA;border-radius:5px;}
+  .swing-card{position:absolute;left:50%;width:76px;height:104px;margin-left:-38px;border-radius:12px;background:#fff;box-shadow:0 18px 30px rgba(24,12,62,.32);border:1px solid #EEE9FA;will-change:transform;transform:translateX(0) rotateX(58deg) rotateZ(-7deg);transform-origin:center 80%;}
+  .swing-card:before{content:"A";position:absolute;top:10px;left:10px;font-family:var(--f);font-weight:800;color:var(--red);}
+  .swing-card:after{content:"♦";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:34px;color:var(--red);}
   .fade{animation:fade .25s ease;}
   @keyframes fade{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
   .pop{animation:pop .3s cubic-bezier(.2,1.3,.5,1);}
   @keyframes pop{from{opacity:0;transform:scale(.8);}to{opacity:1;transform:none;}}
-  .av{box-shadow:0 4px 10px rgba(0,0,0,.2);}
-  /* bandeau "au tour de" */
-  .banner{display:flex;align-items:center;gap:13px;background:rgba(255,255,255,.14);border-radius:20px;padding:11px 18px 11px 11px;margin-bottom:16px;font-family:var(--f);font-weight:700;}
-  .banner b{color:var(--amber);}
-  /* stepper Le Bus */
-  .steps{display:flex;align-items:center;justify-content:center;margin-bottom:8px;}
-  .step{width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:800;font-size:18px;border:2px solid rgba(255,255,255,.35);color:rgba(255,255,255,.6);}
-  .step-line{width:34px;}
-  .step.on{background:var(--amber);border-color:var(--amber);color:#3A2A06;box-shadow:0 5px 0 var(--amber-d);}
-  .step-line{width:30px;height:3px;background:rgba(255,255,255,.25);}
-  /* échelle d'intensité 1-10 */
-  .scale{display:flex;gap:5px;align-items:center;}
-  .lvl{flex:1;aspect-ratio:1;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:800;font-size:13px;color:#fff;opacity:.9;cursor:pointer;}
-  .lvl.on{background:#fff!important;color:#1E1633!important;transform:translateY(-3px) scale(1.18);opacity:1;box-shadow:0 7px 14px rgba(0,0,0,.32);}
-  /* podium */
-  .podblk{border-radius:14px 14px 0 0;display:flex;align-items:flex-start;justify-content:center;padding-top:14px;font-family:var(--f);font-weight:800;color:#fff;box-shadow:inset 0 -12px 0 rgba(0,0,0,.10);}
-  .confetti{position:absolute;width:9px;height:9px;border-radius:2px;}
-  /* bouteille (placeholder — remplaçable par image: #bottle) */
-  .bottle{position:relative;width:90px;height:160px;margin:0 auto;}
-  .bottle .glass{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:66px;height:124px;border-radius:16px 16px 20px 20px;background:linear-gradient(100deg,#1F7E63,#4FC9A6 45%,#1F7E63);box-shadow:inset 8px 0 0 rgba(255,255,255,.18),inset -8px 0 0 rgba(0,0,0,.14);}
-  .bottle .neck{position:absolute;bottom:124px;left:50%;transform:translateX(-50%);width:26px;height:32px;background:#2E9E7C;border-radius:6px;}
-  .bottle .label{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);width:54px;height:46px;border-radius:8px;background:#6C4FE0;border-top:3px solid var(--amber);border-bottom:3px solid var(--amber);display:flex;align-items:center;justify-content:center;color:var(--amber);font-size:24px;font-weight:700;}
-  /* feuille blanche du bas (sheet) */
-  .sheet{background:#fff;color:var(--ink);border-radius:28px 28px 0 0;padding:22px 22px calc(16px + env(safe-area-inset-bottom));margin:0 -20px calc(-20px - env(safe-area-inset-bottom));box-shadow:0 -12px 34px rgba(0,0,0,.18);text-align:center;}
-  /* navbar bas */
-  .navbar{display:flex;justify-content:space-around;align-items:center;background:#fff;border-radius:26px;padding:10px 6px;margin-top:14px;box-shadow:var(--sh-card);}
-  .nav{display:flex;flex-direction:column;align-items:center;gap:3px;font-family:var(--f);font-weight:700;font-size:11px;color:#9A93B0;}
-  .nav.on{color:var(--indigo);}
-  .nav .ic{line-height:1;}
-  .pill.light{background:var(--lav-soft);color:var(--indigo);}
-  .logo{font-family:var(--f);font-weight:800;font-size:56px;letter-spacing:-1.5px;color:#fff;line-height:1;text-align:center;}
-  .moon{position:absolute;top:1px;left:50%;transform:translateX(-50%);width:15px;height:15px;border-radius:50%;background:var(--amber);box-shadow:inset -5px -3px 0 0 var(--bg-a);}
-  .addbtn{width:58px;height:58px;flex:none;border-radius:16px;background:var(--indigo);color:#fff;font-size:28px;display:flex;align-items:center;justify-content:center;box-shadow:0 5px 0 #37268F;}
-  .addbtn:active{transform:translateY(3px);box-shadow:0 2px 0 #37268F;}
-  .prow{display:flex;align-items:center;gap:14px;background:#FBFAFE;border-radius:16px;padding:11px 14px;box-shadow:0 2px 8px rgba(30,16,70,.06);}
-  .deco{position:absolute;stroke:rgba(255,255,255,.13);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;pointer-events:none;z-index:0;}
-  .pill.gorgee{background:var(--amber);color:#3A2A06;}
-  .pill.gorgee svg{margin-right:-1px;}
-  /* catalogue */
-  .sechdr{display:flex;align-items:center;gap:12px;margin-bottom:8px;padding:2px;}
-  .sechead-ic{width:46px;height:46px;border-radius:14px;background:var(--lav-soft);display:flex;align-items:center;justify-content:center;color:var(--indigo);flex:none;}
-  .tile{width:64px;height:64px;flex:none;border-radius:16px;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--f);font-weight:800;font-size:23px;box-shadow:0 6px 14px rgba(0,0,0,.16);}
-  .chev{color:var(--indigo);font-weight:800;font-size:22px;line-height:1;}
-  /* bandeau coral classement */
-  .cbanner{display:flex;align-items:center;gap:14px;background:linear-gradient(120deg,#FF9E7A,#FF6F8B);border-radius:18px;padding:14px 16px;box-shadow:0 12px 24px rgba(255,110,120,.28);}
-  .cbanner .cic{width:42px;height:42px;border-radius:12px;background:rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center;flex:none;}
-  /* sparks + pointeur intensité */
-  .sparks{display:flex;align-items:center;justify-content:center;gap:10px;}
-  .lvl.on{position:relative;}
-  .lvl.on:after{content:"";position:absolute;bottom:-9px;left:50%;transform:translateX(-50%);border-left:6px solid transparent;border-right:6px solid transparent;border-top:7px solid #fff;}
-  /* palmier cible */
-  .tring{width:48px;height:48px;border-radius:50%;border:2px dashed rgba(255,255,255,.55);display:flex;align-items:center;justify-content:center;margin:0 auto;}
-  .tring i{width:14px;height:14px;border-radius:50%;background:var(--mint);display:block;}
-  /* segmented */
-  .seg{display:flex;background:rgba(255,255,255,.16);border-radius:16px;padding:5px;gap:4px;}
-  .seg div{flex:1;text-align:center;padding:11px 0;border-radius:12px;font-family:var(--f);font-weight:700;font-size:14px;color:rgba(255,255,255,.82);cursor:pointer;}
-  .seg div.on{background:var(--lav-soft);color:var(--indigo);}
 </style>
 </head>
 <body>
@@ -133,7 +113,7 @@ const S = {
 const app = () => document.getElementById('app');
 const cur = () => S.players[S.turn];
 function nextTurn(){ S.turn = (S.turn + 1) % S.players.length; }
-function drink(i, n){ S.players[i].gorgees += Math.round(n * (S.mult||1)); }
+function drink(i, n){ S.players[i].gorgees += n; }
 function go(scr){ if(S.timer){clearInterval(S.timer);S.timer=null;} S.screen = scr; S.reveal = null; render(); }
 
 /* ============================ CARTES ============================ */
@@ -354,9 +334,9 @@ const GAMES = [
  {id:'pmu', nom:'PMU', desc:'Parie sur ton enseigne et gagne la course.', t:'P', col:'#F0A93C'},
  {id:'purple', nom:'Purple', desc:'Plus haut, plus bas ou Purple ?', t:'P', col:'#8B5CF6'},
  {id:'tape', nom:'Tape la carte', desc:'Réflexe : tape sur les figures.', t:'T', col:'#FF7E8B'},
- {id:'echelle', nom:"L'Échelle", desc:'Un chiffre de 1 à 10, fais-nous deviner.', t:'E', col:'#4F86E0'},
  {id:'vob', nom:'Vérité ou Bois', desc:'Réponds honnêtement ou bois.', t:'V', col:'#FF6F6F'},
  {id:'jamais', nom:"Je n'ai jamais", desc:"Avoue si tu l'as déjà fait… ou bois.", t:'J', col:'#46C2B0'},
+ {id:'echelle', nom:"L'Échelle", desc:'Un chiffre de 1 à 10, fais-nous deviner.', t:'E', col:'#4F86E0'},
  {id:'pref', nom:'Tu préfères', desc:'Choisis ton camp entre deux options.', t:'T', col:'#F0A93C'},
 ];
 
@@ -364,126 +344,113 @@ const GAMES = [
 const SCREENS = {};
 
 SCREENS.setup = () => `<div class="pad fade">
-  <svg class="deco" style="top:64px;left:24px;width:32px;height:42px;" viewBox="0 0 32 42"><path d="M5 4h22l-3 22a8 8 0 0 1-16 0z"/><path d="M16 26v10M10 38h12"/></svg>
-  <svg class="deco" style="top:120px;right:34px;width:18px;height:18px;" viewBox="0 0 18 18"><path d="M9 1v16M1 9h16"/></svg>
-  <svg class="deco" style="top:96px;right:96px;width:10px;height:10px;" viewBox="0 0 10 10"><circle cx="5" cy="5" r="3"/></svg>
-  <svg class="deco" style="bottom:120px;right:24px;width:34px;height:58px;" viewBox="0 0 34 58"><path d="M13 4h8v9l4 7v33H9V20l4-7z"/></svg>
-  <div class="spacer"></div>
-  <div class="logo">Overn<span style="position:relative;display:inline-block;">ı<span class="moon"></span></span>ght</div>
-  <div class="sub center" style="margin-top:12px;font-size:17px;">Le jeu à boire entre potes.</div>
-  <div style="height:28px"></div>
-  <div class="card" style="padding:22px;">
-    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;">
-      <h2 style="font-size:20px;color:var(--ink);">Joueurs de la soirée</h2>
-      <span class="pill light">${S.players.length} / 12</span>
+  <div style="display:flex;align-items:flex-start;gap:14px;margin-top:4px;">
+    <div style="flex:1;">
+      <div class="cap">18+ · party mode</div>
+      <h1 style="font-size:42px;margin-top:8px;">Overnight</h1>
+      <div class="sub" style="margin-top:7px;">Le jeu à boire entre potes.</div>
     </div>
-    <div style="display:flex;gap:12px;">
-      <input class="input" id="nm" placeholder="Prénom" value="${S.nameDraft.replace(/"/g,'&quot;')}" oninput="S.nameDraft=this.value" onkeydown="if(event.key==='Enter')addPlayer()">
-      <button class="addbtn" onclick="addPlayer()">+</button>
-    </div>
-    ${S.players.length?`<div style="height:1px;background:var(--line);margin:16px 0;"></div>
-    <div style="display:flex;flex-direction:column;gap:10px;">
-      ${S.players.map((p,i)=>`<div class="prow">${avatar(p,40)}<b style="flex:1;font-family:var(--f);color:var(--ink);font-size:16px;">${p.name}</b>
-        <span onclick="rmPlayer(${i})" style="color:#B6AECB;font-size:22px;cursor:pointer;line-height:1;padding:2px 6px;">×</span></div>`).join('')}
-    </div>`:''}
+    <div style="width:58px;height:58px;border-radius:20px;background:#fff;color:var(--indigo);display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:800;font-size:24px;box-shadow:var(--sh-card);">O</div>
   </div>
-  <div style="height:18px"></div>
+
+  <div class="panel" style="padding:18px;margin-top:24px;">
+    <div class="cap" style="color:var(--purple);">Autour de la table</div>
+    <div class="row" style="margin-top:12px;">
+      <input class="input" id="nm" placeholder="Prénom" value="${S.nameDraft.replace(/"/g,'&quot;')}"
+        style="background:#F5F2FF;color:var(--ink);"
+        oninput="S.nameDraft=this.value" onkeydown="if(event.key==='Enter')addPlayer()">
+      <button class="iconbtn" style="width:56px;height:56px;font-size:28px;background:var(--indigo);color:#fff;" onclick="addPlayer()">+</button>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px;margin-top:14px;min-height:132px;">
+      ${S.players.length ? S.players.map((p,i)=>`<div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:18px;background:#FAF9FF;border:1px solid #EFECF9;">
+        ${avatar(p,40)}<b style="flex:1;font-family:var(--f);color:var(--ink);">${p.name}</b>
+        <button class="iconbtn" style="width:34px;height:34px;background:var(--lav-soft);color:var(--indigo);font-size:18px;" onclick="rmPlayer(${i})">×</button></div>`).join('')
+      : `<div style="height:112px;border-radius:20px;border:1px dashed #DDD6F8;background:#FAF9FF;display:flex;align-items:center;justify-content:center;text-align:center;padding:18px;color:var(--ink2);font-weight:600;">Ajoute au moins 2 joueurs pour lancer la soirée.</div>`}
+    </div>
+  </div>
+
+  <div class="spacer"></div>
   ${S.players.length>=2
-    ? `<button class="btn amber" onclick="go('hub')"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3A2A06" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0"/><path d="M16 6.2a3 3 0 0 1 0 5.6M20.5 20a5.5 5.5 0 0 0-3.2-5"/></svg>Créer une partie</button>
-       <button class="btn" style="margin-top:12px;" onclick="alert('Rejoindre une room avec un code — bientôt (mode multi-téléphones).')"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4"/><path d="M11 12H3M7 8l-4 4 4 4"/></svg>Rejoindre</button>`
-    : `<div class="sub center" style="opacity:.75;">Ajoute au moins 2 joueurs pour commencer.</div>`}
-  ${navbar('accueil')}
+    ? `<button class="btn amber" aria-label="Commencer la soirée" onclick="go('hub')">Créer une partie</button>`
+    : `<button class="btn" style="opacity:.72;" onclick="document.getElementById('nm')?.focus()">Ajouter des joueurs</button>`}
+  <button class="btn" style="margin-top:10px;" onclick="S.players.length>=2?go('hub'):document.getElementById('nm')?.focus()">Rejoindre</button>
+  <div class="navdock" style="margin-top:16px;">
+    <button class="navitem active"><span class="navicon">⌂</span>Accueil</button>
+    <button class="navitem" onclick="S.players.length?go('scores'):document.getElementById('nm')?.focus()"><span class="navicon">≡</span>Classement</button>
+    <button class="navitem"><span class="navicon">◦</span>Profil</button>
+  </div>
 </div>`;
 
-SCREENS.hub = () => {
-  const ids=g=>g.id;
-  const cartes=GAMES.filter(g=>['bus','palmier','ftd','pmu','purple','tape'].includes(g.id));
-  const quest=GAMES.filter(g=>['echelle','vob','jamais','pref'].includes(g.id));
-  const sec=(title,icon,list)=>`<div class="card" style="padding:20px 20px 10px;">
-    <div class="sechdr" style="margin-bottom:6px;"><div class="sechead-ic">${icon}</div><h2 style="font-size:23px;color:var(--ink);">${title}</h2></div>
-    ${list.map((g,i)=>`<div class="gamerow" style="${i<list.length-1?'border-bottom:1px solid var(--line);':''}" onclick="startGame('${g.id}')">
-      <div class="tile" style="background:${g.col};position:relative;overflow:hidden;">${g.t}<img src="assets/jeu-${g.id}.png" alt="" onerror="this.remove()" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"></div>
-      <div style="flex:1;"><h2 style="font-size:19px;color:var(--ink);">${g.nom}</h2><div style="font-family:var(--b);font-weight:500;color:var(--ink2);font-size:14px;line-height:1.35;margin-top:3px;">${g.desc}</div></div>
-      <span class="chev">›</span></div>`).join('')}</div>`;
-  const cIcon=`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="6" width="12" height="15" rx="2"/><path d="M8 4h9a2 2 0 0 1 2 2v12"/></svg>`;
-  const qIcon=`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-4 4z"/><path d="M12 8.5v3M12 14h.01"/></svg>`;
-  return `<div class="pad fade">
-   <div style="position:relative;display:flex;align-items:center;justify-content:center;height:46px;margin-bottom:2px;">
-     <button class="iconbtn" style="position:absolute;left:0;" onclick="go('setup')">‹</button>
-     <h1 style="font-size:30px;">Nos jeux</h1>
-   </div>
-   <div class="sub center" style="margin:6px 0 20px;font-size:16px;">Choisis ton jeu pour une soirée inoubliable</div>
-   ${sec('Jeux de cartes',cIcon,cartes)}
-   <div style="height:18px"></div>
-   ${sec('Jeux de questions',qIcon,quest)}
-   <div class="spacer"></div>
-   ${navbar('accueil')}
-  </div>`;
-};
+SCREENS.hub = () => `<div class="pad fade">
+  <div class="hdr" style="margin-bottom:8px;">
+    <button class="iconbtn" onclick="go('setup')">‹</button>
+    <h2 style="flex:1;text-align:center;font-size:20px;">Nos jeux</h2>
+    ${avatar(cur(),42)}
+  </div>
+  <div class="pcard" style="padding:16px;margin:4px 0 16px;display:flex;align-items:center;gap:12px;">
+    ${avatar(cur(),48)}
+    <div style="flex:1;"><div class="cap">Au tour de</div><h2 style="font-size:21px;margin-top:3px;">${cur().name}</h2></div>
+    <div class="pill" style="background:rgba(255,255,255,.16);">${S.players.length} joueurs</div>
+  </div>
+  <div class="panel" style="padding:10px;flex:1;overflow:auto;min-height:0;">
+    <div class="cap" style="color:var(--purple);padding:8px 8px 4px;">Jeux de cartes</div>
+    ${GAMES.filter(g=>['bus','palmier','ftd','pmu','purple','echelle','tape'].includes(g.id)).map((g,i)=>gameRow(g,i)).join('')}
+    <div class="cap" style="color:var(--purple);padding:16px 8px 4px;">Jeux de questions</div>
+    ${GAMES.filter(g=>['vob','jamais','pref'].includes(g.id)).map((g,i)=>gameRow(g,i)).join('')}
+  </div>
+  <div class="navdock" style="margin-top:16px;">
+    <button class="navitem active"><span class="navicon">⌂</span>Accueil</button>
+    <button class="navitem" onclick="go('scores')"><span class="navicon">≡</span>Classement</button>
+    <button class="navitem"><span class="navicon">◦</span>Profil</button>
+  </div>
+</div>`;
+
+function gameRow(g,i){
+  return `<div class="gamerow" onclick="startGame('${g.id}')">
+    <div class="gtile" style="background:${g.col};position:relative;overflow:hidden;">${g.t}<img src="assets/jeu-${g.id}.png" alt="" onerror="this.remove()" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"></div>
+    <div style="flex:1;"><h2 style="font-size:16px;color:var(--ink);">${g.nom}</h2><div class="sub" style="color:var(--ink2);font-size:12px;">${g.desc}</div></div>
+    <span style="color:var(--ink2);font-weight:800;font-size:22px;">›</span></div>`;
+}
 
 SCREENS.scores = () => {
   const sorted=[...S.players].sort((a,b)=>b.gorgees-a.gorgees);
-  const top=sorted.slice(0,3), rest=sorted.slice(3), leader=sorted[0];
-  const crown=`<svg width="26" height="20" viewBox="0 0 26 20" fill="var(--amber)" style="margin-bottom:2px;"><path d="M2 6l5 4 6-8 6 8 5-4-2 12H4z"/></svg>`;
-  const pod=(p,rank,h,col)=> p?`<div style="flex:1;text-align:center;">
-      ${rank===1?crown:'<div style="height:22px;"></div>'}
-      <div class="av" style="width:${rank===1?64:52}px;height:${rank===1?64:52}px;font-size:${rank===1?25:20}px;background:${p.color};margin:0 auto;${rank===1?'border:3px solid var(--amber);':''}">${p.name[0].toUpperCase()}</div>
-      <div style="font-family:var(--f);font-weight:800;font-size:14px;margin-top:6px;color:#fff;">${p.name}</div>
-      <div class="pill" style="font-size:11px;padding:5px 10px;margin-top:4px;">${p.gorgees} pts</div>
-      <div class="podblk" style="height:${h}px;margin-top:8px;background:${col};font-size:${rank===1?34:26}px;">${rank}</div>
-    </div>`:`<div style="flex:1;"></div>`;
+  const p1=sorted[0], p2=sorted[1], p3=sorted[2];
   return `<div class="pad fade">
-   <div class="hdr"><button class="iconbtn" onclick="go('hub')">‹</button><h2 style="flex:1;text-align:center;">Classement</h2><div style="width:44px"></div></div>
-   <div class="seg"><div class="on">Ce soir</div><div>Semaine</div><div>Toujours</div></div>
-   <div class="cbanner" style="margin-top:16px;">
-     <div class="cic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17l6-6 4 4 6-7"/><path d="M16 8h5v5"/></svg></div>
-     <div style="font-family:var(--f);font-weight:700;font-size:14px;line-height:1.35;">${leader?leader.name+' est en tête de la soirée !':'La soirée commence — à vous de jouer !'}</div>
+   <div class="hdr"><button class="iconbtn" onclick="go('hub')">‹</button><h2 style="flex:1;text-align:center;font-size:20px;">Classement</h2><div style="width:42px"></div></div>
+   <div style="display:flex;background:rgba(255,255,255,.14);border-radius:999px;padding:4px;margin-bottom:12px;">
+    ${['Ce soir','Semaine','Toujours'].map((t,i)=>`<button style="flex:1;height:38px;border-radius:999px;background:${i===0?'#fff':'transparent'};color:${i===0?'var(--indigo)':'#fff'};font-family:var(--f);font-weight:800;">${t}</button>`).join('')}
    </div>
-   <div style="display:flex;align-items:flex-end;gap:10px;margin-top:24px;position:relative;">
-     <span class="confetti" style="top:0;left:13%;background:var(--mint);transform:rotate(20deg);"></span>
-     <span class="confetti" style="top:34px;right:15%;background:var(--coral);"></span>
-     <span class="confetti" style="top:8px;left:47%;background:var(--amber);border-radius:50%;"></span>
-     <span class="confetti" style="top:46px;left:7%;background:var(--blue);transform:rotate(-15deg);"></span>
-     <span class="confetti" style="top:18px;right:8%;background:var(--lav);"></span>
-     ${pod(top[1],2,78,'linear-gradient(180deg,#A99BF0,#8E7CE8)')}
-     ${pod(top[0],1,114,'linear-gradient(180deg,#7C63EC,#5E46CC)')}
-     ${pod(top[2],3,60,'linear-gradient(180deg,#F0A93C,#D98A1E)')}
+   <div class="score-banner">#${Math.min(4,sorted.length)} - Tu fais mieux que 60% des joueurs ce soir.</div>
+   <div class="podium">
+    ${p2?`<div class="podplayer" style="left:18%;bottom:112px;">${avatar(p2,46)}<div style="margin-top:5px;">${p2.name}</div><div style="opacity:.78;font-size:11px;">${p2.gorgees} pts</div></div>`:''}
+    ${p1?`<div class="podplayer" style="left:50%;bottom:144px;"><div style="font-size:18px;color:var(--amber);line-height:1;">♛</div>${avatar(p1,54)}<div style="margin-top:5px;">${p1.name}</div><div style="opacity:.78;font-size:11px;">${p1.gorgees} pts</div></div>`:''}
+    ${p3?`<div class="podplayer" style="left:82%;bottom:98px;">${avatar(p3,42)}<div style="margin-top:5px;">${p3.name}</div><div style="opacity:.78;font-size:11px;">${p3.gorgees} pts</div></div>`:''}
+    <div class="pod two">2</div><div class="pod one">1</div><div class="pod three">3</div>
    </div>
-   <div class="card" style="margin-top:10px;padding:4px 16px;">
-     ${rest.length?rest.map((p,i)=>`<div style="display:flex;align-items:center;gap:14px;padding:12px 0;${i<rest.length-1?'border-bottom:1px solid var(--line);':''}">
-        <span style="width:26px;height:26px;border-radius:50%;background:var(--lav-soft);color:var(--ink2);font-family:var(--f);font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center;flex:none;">${i+4}</span>
-        <div class="av" style="width:36px;height:36px;font-size:15px;background:${p.color};">${p.name[0].toUpperCase()}</div>
-        <b style="flex:1;font-family:var(--f);color:var(--ink);">${p.name}</b>
-        <span style="font-family:var(--f);font-weight:800;color:var(--indigo);">${p.gorgees}</span><span style="color:var(--ink2);font-size:12px;margin-left:3px;">pts</span></div>`).join(''):`<div class="sub center" style="color:var(--ink2);padding:16px;">Que le top 3 pour l'instant.</div>`}
+   <div class="panel" style="padding:10px;display:flex;flex-direction:column;gap:8px;">
+   ${sorted.map((p,i)=>`<div style="display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:16px;background:${i===S.turn?'#F5F2FF':'#fff'};">
+     <b style="font-family:var(--f);color:${i===0?'var(--amber)':'var(--ink2)'};width:22px;font-size:16px;">${i+1}</b>
+     ${avatar(p,38)}<b style="flex:1;font-family:var(--f);color:var(--ink);">${p.name}</b>
+     <b style="font-family:var(--f);color:var(--ink);">${p.gorgees} pts</b></div>`).join('')}
    </div>
    <div class="spacer"></div>
-   ${navbar('classement')}
+   <button class="btn amber" onclick="go('hub')">Retour aux jeux</button>
   </div>`;
 };
 
 /* ---- barre de jeu commune ---- */
 function gameHead(title, right){
   return `<div class="hdr"><button class="iconbtn" onclick="go('hub')">‹</button>
-    <h2 style="flex:1;text-align:center;font-size:23px;">${title}</h2>
+    <h2 style="flex:1;text-align:center;font-size:18px;">${title}</h2>
     ${right||`<div class="pill">${cur().name}</div>`}</div>`;
 }
-function turnBanner(){ const p=cur(); return `<div class="banner">${avatar(p,40)}<span style="font-size:16px;">Au tour de <b>${p.name}</b></span></div>`; }
-const ICN={
- home:`<svg class="ic" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7"/><path d="M6 10v9h12v-9"/></svg>`,
- trophy:`<svg class="ic" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4h10v4a5 5 0 0 1-10 0z"/><path d="M7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3M9 16h6M8 20h8"/></svg>`,
- person:`<svg class="ic" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0 1 14 0"/></svg>`
-};
-function navbar(active){
- const dot=`<i style="width:5px;height:5px;border-radius:50%;background:var(--amber);display:block;margin-top:2px;"></i>`;
- const it=(k,l,ic,fn)=>`<div class="nav ${active===k?'on':''}" onclick="${fn}">${ic}${l}${active===k?dot:''}</div>`;
- return `<div class="navbar">${it('accueil','Accueil',ICN.home,"go('setup')")}${it('classement','Classement',ICN.trophy,"go('scores')")}${it('profil','Profil',ICN.person,"alert('Profil — bientôt')")}</div>`;
-}
+function turnBanner(){ return `<div class="pill" style="align-self:center;margin-bottom:10px;">Au tour de · ${cur().name}</div>`; }
 
 /* ============================ LE BUS ============================ */
 function startBus(){ S.game={deck:newDeck(),step:1,cards:[]}; S.reveal=null; go('bus'); }
 SCREENS.bus = () => {
   const g=S.game, r=S.reveal;
-  const dots=[1,2,3,4].map((n,idx)=>`${idx?'<span class="step-line"></span>':''}<span class="step ${n<=g.step?'on':''}">${n}</span>`).join('');
+  const dots=[1,2,3,4].map(n=>`<span style="width:30px;height:8px;border-radius:99px;background:${n<=g.step?'#FFC93C':'rgba(255,255,255,.25)'}"></span>`).join('');
   const prompts={1:'Rouge ou Noir ?',2:'Plus ou moins que ?',3:'Intérieur ou extérieur ?',4:"Quelle enseigne ?"};
   let mid='', actions='';
   // cartes déjà tirées
@@ -495,24 +462,17 @@ SCREENS.bus = () => {
         <b style="font-family:var(--f);font-size:18px;color:${r.ok?'#19A974':'var(--red)'};">${r.ok?'Gagné !':'Raté'}</b>
         <div class="sub" style="color:var(--ink);font-size:14px;margin-top:4px;">${r.msg}</div></div>`;
   } else {
-    const fan = g.cards.length
-      ? `<div style="display:flex;gap:10px;justify-content:center;align-items:flex-end;min-height:170px;">${shown}</div>`
-      : `<div style="position:relative;height:190px;display:flex;justify-content:center;align-items:center;">
-           <div class="playcard back" style="width:104px;height:146px;position:absolute;transform:rotate(-13deg) translateX(-50px);opacity:.8;"></div>
-           <div class="playcard back" style="width:104px;height:146px;position:absolute;transform:rotate(13deg) translateX(50px);opacity:.8;"></div>
-           <div class="playcard" style="width:120px;height:168px;position:absolute;background:linear-gradient(160deg,#E0392B,#A8241A);border:3px solid #fff;display:flex;align-items:center;justify-content:center;overflow:hidden;" data-asset="card-back"><span style="font-size:50px;color:#fff;">&#9790;</span><img src="assets/dos-carte.png" alt="" onerror="this.remove()" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"></div>
-         </div>`;
-    mid = `${fan}
-      <div class="card pop" style="margin-top:22px;padding:30px 22px;text-align:center;"><h2 style="font-size:31px;color:var(--ink);">${prompts[g.step]}</h2>
-        <div style="font-family:var(--b);font-weight:600;color:var(--ink2);font-size:14px;margin-top:8px;">Erreur = ${g.step} gorgée${g.step>1?'s':''}</div></div>`;
-    if(g.step===1) actions=`<div class="row"><button class="btn red" style="min-height:76px;font-size:22px;border:2px solid rgba(255,255,255,.85);" onclick="busGuess('r')">Rouge</button><button class="btn dark" style="min-height:76px;font-size:22px;border:2px solid rgba(255,255,255,.4);" onclick="busGuess('n')">Noir</button></div>`;
+    mid = `<div style="display:flex;gap:10px;justify-content:center;align-items:flex-end;min-height:96px;">${shown||'<div class="back playcard" style="width:80px;height:112px;"></div>'}</div>
+      <h2 style="text-align:center;font-size:24px;margin-top:18px;">${prompts[g.step]}</h2>
+      <div class="sub center" style="margin-top:4px;">Erreur = ${g.step} gorgée${g.step>1?'s':''}</div>`;
+    if(g.step===1) actions=`<div class="row"><button class="btn red" onclick="busGuess('r')">Rouge</button><button class="btn dark" onclick="busGuess('n')">Noir</button></div>`;
     else if(g.step===2) actions=`<div class="row"><button class="btn" onclick="busGuess('p')">Plus ↑</button><button class="btn" onclick="busGuess('m')">Moins ↓</button></div>`;
     else if(g.step===3) actions=`<div class="row"><button class="btn" onclick="busGuess('in')">Intérieur</button><button class="btn" onclick="busGuess('out')">Extérieur</button></div>`;
     else actions=`<div class="row" style="flex-wrap:wrap;">${SUITS.map((s,i)=>`<button class="btn" style="flex:1 1 40%;color:${i===1||i===2?'#FFD2CC':'#fff'};" onclick="busGuess(${i})">${s}</button>`).join('')}</div>`;
   }
-  return `<div class="pad fade">${gameHead('Le Bus', `<div class="pill gorgee"><svg width="12" height="15" viewBox="0 0 13 16" fill="#3A2A06"><path d="M6.5 0S0 7 0 10.5a6.5 6.5 0 0 0 13 0C13 7 6.5 0 6.5 0z"/></svg>${g.step} gorgée${g.step>1?'s':''}</div>`)}
+  return `<div class="pad fade">${gameHead('Le Bus')}
     ${turnBanner()}
-    <div class="steps">${dots}</div>
+    <div style="display:flex;justify-content:center;gap:7px;margin-bottom:6px;">${dots}</div>
     <div class="spacer"></div>${mid}<div class="spacer"></div>${actions}</div>`;
 };
 function busGuess(ans){
@@ -601,50 +561,37 @@ function palmierRule(c){
 }
 function startPalmier(){ S.game={deck:newDeck(), stack:0, card:null, phase:'draw', bx:0, dir:1, res:null}; go('palmier'); }
 function palmierScene(g){
-  let cards=''; for(let i=0;i<g.stack;i++){ const rot=(i%2?1:-1)*(4+i*1.4); cards+=`<div style="position:absolute;bottom:${128+i*9}px;left:50%;width:52px;height:34px;margin-left:-26px;border-radius:6px;background:#fff;box-shadow:0 2px 5px rgba(0,0,0,.3);transform:rotate(${rot}deg);"></div>`; }
-  let extra='';
-  if(g.phase==='balance'){
-    const sb=150+g.stack*9;
-    extra=`<div style="position:absolute;top:6px;bottom:70px;left:50%;width:2px;margin-left:-1px;background:linear-gradient(rgba(255,255,255,.20),rgba(255,255,255,0));"></div>
-      <div style="position:absolute;bottom:${sb-44}px;left:50%;margin-left:-24px;z-index:2;"><div class="tring"><i></i></div></div>
-      <div id="swing" style="position:absolute;bottom:${sb}px;left:50%;width:66px;height:90px;margin-left:-33px;border-radius:10px;background:#fff;box-shadow:0 10px 18px rgba(0,0,0,.4);will-change:transform;z-index:3;"></div>`;
+  let cards=''; for(let i=0;i<g.stack;i++){
+    const rot=(i%2?1:-1)*(5+i*1.7);
+    const y=134+i*9;
+    cards+=`<div class="palm-card" style="bottom:${y}px;transform:rotateX(58deg) rotateZ(${rot}deg);"></div>`;
   }
-  return `<div style="position:relative;height:320px;width:100%;">
-    <div style="position:absolute;bottom:0;left:50%;width:62px;height:124px;margin-left:-31px;border-radius:14px 14px 16px 16px;background:linear-gradient(180deg,#2BA17C,#15604A);"></div>
-    <div style="position:absolute;bottom:124px;left:50%;width:24px;height:30px;margin-left:-12px;background:#1B6E54;border-radius:4px;"></div>
-    <div style="position:absolute;bottom:24px;left:50%;width:52px;height:44px;margin-left:-26px;border-radius:8px;background:#6C4FE0;border-top:3px solid var(--amber);border-bottom:3px solid var(--amber);"></div>
-    <img src="assets/bouteille.png" alt="" onerror="this.remove()" style="position:absolute;bottom:0;left:50%;transform:translateX(-50%);height:160px;z-index:1;">
-    ${cards}${extra}</div>`;
+  const swing = g.phase==='balance' ? `<div id="swing" class="swing-card" style="bottom:${154+g.stack*9}px;"></div>` : '';
+  return `<div class="palm-stage">
+    <div class="palm-target"></div>
+    <div class="bottle"></div>
+    ${cards}${swing}
+  </div>`;
 }
 SCREENS.palmier = () => {
-  const g=S.game;
-  const head=gameHead('Palmier', `<div class="pill">Tour de ${cur().name}</div>`);
-  if(g.phase==='balance'){
-    return `<div class="pad fade" style="padding-bottom:0;">${head}
-      <div class="spacer"></div>${palmierScene(g)}<div class="spacer"></div>
-      <div class="sheet">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--indigo)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V11M12 11c0-4 3-7 8-7-1 4-4 7-8 7zM12 11C12 7 9 4 4 4c1 4 4 7 8 7z"/></svg>
-        <h1 style="font-size:28px;color:var(--ink);margin-top:6px;">Centre la carte</h1>
-        <div style="width:34px;height:4px;border-radius:2px;background:var(--mint);margin:10px auto;"></div>
-        <div style="font-family:var(--b);font-weight:500;color:var(--ink2);font-size:15px;">Tape quand elle passe au milieu.</div>
-        <button class="btn amber" style="margin-top:18px;font-size:22px;min-height:66px;" onclick="palmierDrop()">POSER</button>
-      </div></div>`;
-  }
-  let mid, actions;
+  const g=S.game; let mid, actions;
   if(g.phase==='draw'){
-    mid=`${turnBanner()}${palmierScene(g)}<div class="sub center" style="margin-top:6px;">Palmier : ${g.stack} carte${g.stack>1?'s':''} en équilibre.</div>`;
+    mid=`<div class="panel" style="padding:16px;">${palmierScene(g)}</div><div class="sub center" style="margin-top:10px;">Palmier : ${g.stack} carte${g.stack>1?'s':''} en équilibre.</div>`;
     actions=`<button class="btn primary" onclick="palmierTirer()">Tirer une carte</button>`;
   } else if(g.phase==='rule'){
     const r=palmierRule(g.card);
-    mid=`${turnBanner()}<div style="display:flex;justify-content:center;">${cardHTML(g.card,118,166)}</div>
-      <div class="card pop" style="margin-top:16px;padding:18px;text-align:center;"><b style="font-family:var(--f);font-size:19px;color:var(--indigo);">${r[0]}</b>
-      <div class="sub" style="color:var(--ink);font-size:15px;margin-top:6px;">${r[1]}</div></div>`;
+    mid=`<div style="display:flex;justify-content:center;">${cardHTML(g.card,108,150)}</div>
+      <div class="card pop" style="margin-top:14px;padding:16px;text-align:center;"><b style="font-family:var(--f);font-size:18px;color:var(--indigo);">${r[0]}</b>
+      <div class="sub" style="color:var(--ink);font-size:14px;margin-top:5px;">${r[1]}</div></div>`;
     actions=`<button class="btn primary" onclick="palmierBalance()">Poser sur le palmier</button>`;
+  } else if(g.phase==='balance'){
+    mid=`<div class="panel" style="padding:16px;">${palmierScene(g)}</div><div class="sub center" style="font-family:var(--f);font-weight:700;margin-top:10px;">Pose la carte bien au centre du palmier !</div>`;
+    actions=`<button class="btn amber" onclick="palmierDrop()">POSER</button>`;
   } else {
-    mid=`${turnBanner()}${palmierScene(g)}<div class="card pop" style="margin-top:8px;padding:16px;text-align:center;"><b style="font-family:var(--f);font-size:19px;color:${g.res.ok?'#19A974':'var(--red)'};">${g.res.title}</b><div class="sub" style="color:var(--ink);font-size:15px;margin-top:4px;">${g.res.msg}</div></div>`;
+    mid=`<div class="panel" style="padding:16px;">${palmierScene(g)}</div><div class="card pop" style="margin-top:12px;padding:16px;text-align:center;"><b style="font-family:var(--f);font-size:18px;color:${g.res.ok?'#19A974':'var(--red)'};">${g.res.title}</b><div class="sub" style="color:var(--ink);font-size:14px;margin-top:4px;">${g.res.msg}</div></div>`;
     actions=`<button class="btn primary" onclick="palmierNext()">Au joueur suivant</button>`;
   }
-  return `<div class="pad fade">${head}<div class="spacer"></div>${mid}<div class="spacer"></div>${actions}</div>`;
+  return `<div class="pad fade">${gameHead('Palmier', `<div class="pill">Palmier ${g.stack}</div>`)}${turnBanner()}<div class="spacer"></div>${mid}<div class="spacer"></div>${actions}</div>`;
 };
 function palmierTirer(){ S.game.card=draw(S.game.deck); S.game.phase='rule'; render(); }
 function palmierBalance(){ const g=S.game; g.phase='balance'; g.bx=0; g.dir=1; render(); startSwing(); }
@@ -652,7 +599,7 @@ function startSwing(){
   if(S.timer) clearInterval(S.timer);
   S.timer=setInterval(()=>{ const g=S.game; if(!g||g.phase!=='balance'){clearInterval(S.timer);S.timer=null;return;}
     g.bx+=g.dir*0.05; if(g.bx>=1){g.bx=1;g.dir=-1;} if(g.bx<=-1){g.bx=-1;g.dir=1;}
-    const el=document.getElementById('swing'); if(el){ el.style.transform='translateX('+(g.bx*120)+'px)'; } else { clearInterval(S.timer); S.timer=null; }
+    const el=document.getElementById('swing'); if(el){ el.style.transform='translateX('+(g.bx*120)+'px) rotateX(58deg) rotateZ('+(-7 + g.bx*8)+'deg)'; } else { clearInterval(S.timer); S.timer=null; }
   },16);
 }
 function palmierDrop(){
@@ -799,53 +746,38 @@ SCREENS.vob = () => {
   }
   const tgt = g.target===Infinity?'∞':g.target;
   return `<div class="pad fade">${gameHead('Vérité ou Bois', `<div class="pill">${g.count+1} / ${tgt}</div>`)}
+   <div class="row" style="gap:5px;flex-wrap:wrap;">${VOB.map((r,i)=>`<button onclick="vobRound(${i})" style="flex:1 1 8%;min-width:28px;padding:7px 2px;border-radius:9px;font-family:var(--f);font-weight:700;font-size:11px;color:${i===g.round?'var(--indigo)':'#fff'};background:${i===g.round?'#fff':'rgba(255,255,255,.14)'};">${i+1}</button>`).join('')}</div>
+   <div class="sub center" style="margin-top:10px;font-family:var(--f);font-weight:700;">${VOB[g.round].titre}</div>
    ${turnBanner()}
    <div class="spacer"></div>
-   <div class="card pop" style="padding:22px 22px 26px;">
-     <div class="sparks"><span style="width:12px;height:3px;border-radius:2px;background:var(--lav);"></span><span class="pill light" style="font-size:12px;">Round ${g.round+1}</span><span style="width:12px;height:3px;border-radius:2px;background:var(--lav);"></span></div>
-     <div style="font-family:var(--f);font-weight:700;font-size:33px;line-height:1.18;margin-top:18px;color:var(--ink);text-align:center;">${g.q}</div></div>
+   <div class="card pop" style="padding:30px 24px;"><div class="cap" style="color:var(--purple);">À ${cur().name} de jouer</div>
+     <div style="font-family:var(--f);font-weight:700;font-size:27px;line-height:1.25;margin-top:12px;color:var(--ink);">${g.q}</div></div>
    <div class="spacer"></div>
-   <div class="cap" style="margin-bottom:9px;">Intensité</div>
-   <div class="scale">${VOB.map((r,i)=>`<div class="lvl ${i===g.round?'on':''}" style="background:hsl(${Math.round(150-i*150/9)},62%,54%);" onclick="vobRound(${i})">${i+1}</div>`).join('')}</div>
-   <div style="display:flex;justify-content:space-between;margin-top:12px;font-family:var(--f);font-weight:800;font-size:10px;letter-spacing:1px;"><span style="color:var(--green);">● SOFT</span><span style="color:var(--coral);">GROS DOSSIER ●</span></div>
-   <div style="height:16px"></div>
-   <button class="btn amber" onclick="vobAns(true)">Je réponds</button>
-   <button class="btn" style="margin-top:12px;" onclick="vobAns(false)">Je bois (1)</button>
+   <div class="row"><button class="btn" onclick="vobAns(false)">Je bois (1)</button><button class="btn primary" onclick="vobAns(true)">Je réponds</button></div>
   </div>`;
 };
 function vobRound(i){ S.game.round=i; vobPick(); render(); }
 function vobAns(ok){ const g=S.game; if(!ok) drink(S.turn,1); g.count++; if(g.count>=g.target){ g.phase='end'; render(); return; } nextTurn(); vobPick(); render(); }
 
 /* ============================ JE N'AI JAMAIS ============================ */
-function startJamais(){ S.game={phase:'setup', used:new Set(), s:null, target:50, count:0}; go('jamais'); }
-function jamaisSet(n){ const g=S.game; g.target=n; g.count=0; g.phase='play'; jamaisPick(); render(); }
+function startJamais(){ S.game={used:new Set(), s:null}; jamaisPick(); go('jamais'); }
 function jamaisPick(){ const g=S.game; if(g.used.size>=JAMAIS.length)g.used.clear(); let i; do{i=Math.random()*JAMAIS.length|0;}while(g.used.has(i)); g.used.add(i); g.s=JAMAIS[i]; }
-SCREENS.jamais = () => {
-  const g=S.game;
-  if(g.phase==='setup') return lenSetup("Je n'ai jamais", 'jamaisSet');
-  if(g.phase==='end') return lenEnd("Je n'ai jamais", g.count);
-  const tgt=g.target===Infinity?'∞':g.target;
-  return `<div class="pad fade">${gameHead("Je n'ai jamais", `<div class="pill">${g.count+1} / ${tgt}</div>`)}${turnBanner()}
-   <div class="spacer"></div>
-   <div class="card pop" style="padding:32px 24px;"><div class="cap" style="color:var(--amber);">Je n'ai jamais…</div>
-    <div style="font-family:var(--f);font-weight:700;font-size:28px;line-height:1.25;margin-top:12px;color:var(--ink);">…${g.s}</div>
-    <div class="sub" style="color:var(--ink2);font-size:14px;margin-top:14px;">Tu l'as déjà fait ? Bois une gorgée.</div></div>
-   <div class="spacer"></div>
-   <div class="row"><button class="btn" onclick="jamaisAns(false)">Jamais</button><button class="btn primary" onclick="jamaisAns(true)">Je l'ai fait (1)</button></div>
-  </div>`;
-};
-function jamaisAns(did){ const g=S.game; if(did)drink(S.turn,1); g.count++; if(g.count>=g.target){g.phase='end';render();return;} nextTurn(); jamaisPick(); render(); }
+SCREENS.jamais = () => `<div class="pad fade">${gameHead("Je n'ai jamais")}${turnBanner()}
+  <div class="spacer"></div>
+  <div class="card pop" style="padding:32px 24px;"><div class="cap" style="color:var(--amber);">Je n'ai jamais…</div>
+   <div style="font-family:var(--f);font-weight:700;font-size:28px;line-height:1.25;margin-top:12px;color:var(--ink);">…${S.game.s}</div>
+   <div class="sub" style="color:var(--ink2);font-size:14px;margin-top:14px;">Tu l'as déjà fait ? Bois une gorgée.</div></div>
+  <div class="spacer"></div>
+  <div class="row"><button class="btn" onclick="jamaisAns(false)">Jamais</button><button class="btn primary" onclick="jamaisAns(true)">Je l'ai fait (1)</button></div>
+ </div>`;
+function jamaisAns(did){ if(did)drink(S.turn,1); nextTurn(); jamaisPick(); render(); }
 
 /* ============================ TU PRÉFÈRES ============================ */
-function startPref(){ S.game={phase:'setup', used:new Set(), p:null, picked:null, target:50, count:0}; go('pref'); }
-function prefSet(n){ const g=S.game; g.target=n; g.count=0; g.phase='play'; prefPick(); render(); }
+function startPref(){ S.game={used:new Set(), p:null, picked:null}; prefPick(); go('pref'); }
 function prefPick(){ const g=S.game; if(g.used.size>=PREF.length)g.used.clear(); let i; do{i=Math.random()*PREF.length|0;}while(g.used.has(i)); g.used.add(i); g.p=PREF[i]; g.picked=null; }
 SCREENS.pref = () => {
   const g=S.game;
-  if(g.phase==='setup') return lenSetup('Tu préfères', 'prefSet');
-  if(g.phase==='end') return lenEnd('Tu préfères', g.count);
-  const tgt=g.target===Infinity?'∞':g.target;
-  return `<div class="pad fade">${gameHead('Tu préfères', `<div class="pill">${g.count+1} / ${tgt}</div>`)}${turnBanner()}
+  return `<div class="pad fade">${gameHead('Tu préfères')}${turnBanner()}
    <div class="spacer"></div>
    <button class="btn ${g.picked===0?'primary':''}" style="min-height:96px;font-size:21px;padding:18px;line-height:1.2;" onclick="prefPickSide(0)">${g.p[0]}</button>
    <div class="sub center" style="font-family:var(--f);font-weight:700;font-size:18px;margin:14px 0;">ou</div>
@@ -855,32 +787,13 @@ SCREENS.pref = () => {
   </div>`;
 };
 function prefPickSide(i){ S.game.picked=i; render(); }
-function prefNext(){ const g=S.game; if(g.picked===null)return; g.count++; if(g.count>=g.target){g.phase='end';render();return;} nextTurn(); prefPick(); render(); }
+function prefNext(){ if(S.game.picked===null)return; nextTurn(); prefPick(); render(); }
 
 /* ============================ ROUTAGE ============================ */
 function startGame(id){
   ({bus:startBus, purple:startPurple, ftd:startFtd, palmier:startPalmier, pmu:startPmu, echelle:startEchelle, tape:startTape, vob:startVob, jamais:startJamais, pref:startPref})[id]();
 }
 function addPlayer(){ const n=(S.nameDraft||'').trim(); if(!n)return; S.players.push({name:n.slice(0,16), color:COLORS[S.players.length%COLORS.length], gorgees:0}); S.nameDraft=''; render(); const i=document.getElementById('nm'); if(i)i.focus(); }
-function setMult(m){ S.mult=m; render(); }
-/* écrans génériques d'options "longueur de partie" (réutilisés par plusieurs jeux) */
-function lenSetup(title, setFn){
-  return `<div class="pad fade">${gameHead(title)}<div class="spacer"></div>
-    <h2 style="text-align:center;font-size:24px;">Combien de tours ?</h2>
-    <div class="sub center" style="margin-top:6px;align-self:center;max-width:300px;">Choisis la longueur de la partie.</div>
-    <div style="display:flex;flex-direction:column;gap:12px;margin-top:24px;">
-      ${[20,50,100].map(n=>`<button class="btn" onclick="${setFn}(${n})">${n} tours</button>`).join('')}
-      <button class="btn amber" onclick="${setFn}(Infinity)">Sans limite</button>
-    </div><div class="spacer"></div></div>`;
-}
-function lenEnd(title, count){
-  return `<div class="pad fade">${gameHead(title)}<div class="spacer"></div>
-    <div class="card pop" style="padding:24px;text-align:center;"><b style="font-family:var(--f);font-size:20px;color:var(--indigo);">Partie terminée !</b>
-    <div class="sub" style="color:var(--ink);margin-top:6px;">${count} tours joués.</div></div>
-    <div class="spacer"></div>
-    <button class="btn primary" onclick="go('scores')">Voir le classement</button>
-    <button class="btn" style="margin-top:12px;" onclick="go('hub')">Retour aux jeux</button></div>`;
-}
 function rmPlayer(i){ S.players.splice(i,1); render(); }
 function resetAll(){ S.players.forEach(p=>p.gorgees=0); S.turn=0; go('setup'); }
 function render(){ app().innerHTML = SCREENS[S.screen](); }
