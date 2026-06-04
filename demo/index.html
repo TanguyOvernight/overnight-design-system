@@ -695,26 +695,24 @@ function palmierNext(){ const g=S.game; nextTurn(); g.phase='draw'; g.card=null;
 function startEchelle(){ S.game={card:null, guess:5, phase:'draw'}; go('echelle'); }
 SCREENS.echelle = () => {
   const g=S.game; let mid, actions;
-  const gauge=(active,color)=>`<div style="display:flex;flex-direction:column-reverse;gap:3px;">${[1,2,3,4,5,6,7,8,9,10].map(n=>`<div style="width:28px;height:15px;border-radius:5px;display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:800;font-size:11px;${n===active?`background:${color};color:#fff;`:'background:var(--lav-soft);color:var(--ink2);'}">${n}</div>`).join('')}</div>`;
-  const num=(v)=>`<div style="width:118px;height:166px;border-radius:14px;background:#fff;box-shadow:0 14px 28px rgba(24,12,62,.26);display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:800;font-size:62px;color:var(--indigo);">${v}</div>`;
+  const num=(v,w=150,h=210)=>`<div style="width:${w}px;height:${h}px;border-radius:18px;background:linear-gradient(157deg,#fff,#F2EEFb);box-shadow:0 16px 30px rgba(24,12,62,.28);display:flex;align-items:center;justify-content:center;font-family:var(--d);font-weight:800;font-size:${Math.round(w*0.56)}px;color:var(--indigo);">${v}</div>`;
   if(g.phase==='draw'){
-    mid=`<div class="panel" style="padding:24px;text-align:center;"><div style="display:flex;justify-content:center;">${cardBack(168,236)}</div>
-      <div class="sub" style="color:var(--ink2);margin-top:16px;">Un chiffre de 1 à 10 va être tiré. <b style="color:var(--ink);">${cur().name} ne doit PAS regarder.</b> Les autres lui donnent des exemples pour ce chiffre.</div></div>`;
+    mid=`<div class="panel" style="padding:26px;text-align:center;"><div style="display:flex;justify-content:center;">${cardBack(160,224)}</div>
+      <div class="sub" style="color:var(--ink2);margin-top:18px;">Un chiffre de 1 à 10 va être tiré. <b style="color:var(--ink);">${cur().name} ne doit PAS regarder.</b> Les autres lui font deviner.</div></div>`;
     actions=`<button class="btn primary" onclick="echelleTirer()">Tirer la carte</button>`;
   } else if(g.phase==='vu'){
-    mid=`<div class="panel" style="padding:22px;"><div style="display:flex;gap:16px;justify-content:center;align-items:center;">${gauge(g.card.v,'var(--indigo)')}${num(g.card.v)}</div>
-      <div class="sub center" style="color:var(--ink2);margin-top:14px;">Faites deviner ce chiffre sans le dire (ex : « une femme chauve » = 2). Puis ${cur().name} annonce.</div></div>`;
+    mid=`<div class="panel" style="padding:28px 24px;text-align:center;"><div style="display:flex;justify-content:center;">${num(g.card.v,168,236)}</div>
+      <div class="sub" style="color:var(--ink2);margin-top:20px;font-size:15px;line-height:1.5;">Faites deviner ce chiffre à <b style="color:var(--ink);">${cur().name}</b> : chacun votre tour, donnez un exemple du type<br><b style="color:var(--ink);">« c'est un 10, mais… »</b></div></div>`;
     actions=`<button class="btn primary" onclick="S.game.phase='guess';render();">${cur().name} a deviné →</button>`;
   } else if(g.phase==='guess'){
-    mid=`<div class="panel" style="padding:22px;text-align:center;"><b style="font-family:var(--f);color:var(--indigo);font-size:17px;">Quel chiffre annonce ${cur().name} ?</b>
-      <div style="display:flex;gap:16px;justify-content:center;align-items:center;margin-top:16px;">${gauge(g.guess,'var(--amber)')}
-        <div style="display:flex;flex-wrap:wrap;gap:7px;justify-content:center;max-width:180px;">${[1,2,3,4,5,6,7,8,9,10].map(n=>`<button class="chip" style="${n===g.guess?'background:var(--amber);color:#3A2A06;':'background:var(--lav-soft);color:var(--indigo);'}" onclick="S.game.guess=${n};render();">${n}</button>`).join('')}</div></div></div>`;
+    mid=`<div class="panel" style="padding:26px 24px;text-align:center;"><b style="font-family:var(--f);color:var(--indigo);font-size:18px;">Quel chiffre annonce ${cur().name} ?</b>
+      <div style="display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin:20px auto 0;max-width:250px;">${[1,2,3,4,5,6,7,8,9,10].map(n=>`<button class="chip" style="min-width:46px;height:52px;font-size:18px;${n===g.guess?'background:var(--amber);color:#3A2A06;':'background:var(--lav-soft);color:var(--indigo);'}" onclick="S.game.guess=${n};render();">${n}</button>`).join('')}</div></div>`;
     actions=`<button class="btn primary" onclick="echelleReveal()">Valider « ${g.guess} »</button>`;
   } else {
     const diff=Math.abs(g.guess-g.card.v);
-    mid=`<div class="panel" style="padding:22px;text-align:center;"><div style="display:flex;gap:16px;justify-content:center;align-items:center;">${gauge(g.card.v,'var(--indigo)')}${num(g.card.v)}</div>
-      <div style="margin-top:16px;"><b style="font-family:var(--f);font-size:19px;color:${diff===0?'#19A974':'var(--red)'};">${diff===0?'Dans le mille !':'Écart de '+diff}</b>
-      <div class="sub" style="color:var(--ink2);font-size:14px;margin-top:5px;">Carte ${g.card.v}, ${cur().name} a dit ${g.guess}. ${diff===0?'Distribue 3 gorgées !':'Bois '+diff+' gorgée'+(diff>1?'s':'')+'.'}</div></div></div>`;
+    mid=`<div class="panel" style="padding:28px 24px;text-align:center;"><div style="display:flex;justify-content:center;">${num(g.card.v,150,210)}</div>
+      <div style="margin-top:18px;"><b style="font-family:var(--f);font-size:20px;color:${diff===0?'#19A974':'var(--red)'};">${diff===0?'Dans le mille !':'Écart de '+diff}</b>
+      <div class="sub" style="color:var(--ink2);font-size:14px;margin-top:6px;">Carte ${g.card.v}, ${cur().name} a dit ${g.guess}. ${diff===0?'Distribue 3 gorgées !':'Bois '+diff+' gorgée'+(diff>1?'s':'')+'.'}</div></div></div>`;
     actions=`<button class="btn primary" onclick="echelleNext()">Au joueur suivant</button>`;
   }
   return `<div class="pad fade">${gameHead("L'Échelle", `<div class="pill">1–10</div>`)}${turnBanner()}<div class="gamebody">${mid}</div>${actions}</div>`;
@@ -895,21 +893,19 @@ function startPref(){ S.game={used:new Set(), p:null, picked:null}; prefPick(); 
 function prefPick(){ const g=S.game; if(g.used.size>=PREF.length)g.used.clear(); let i; do{i=Math.random()*PREF.length|0;}while(g.used.has(i)); g.used.add(i); g.p=PREF[i]; g.picked=null; }
 SCREENS.pref = () => {
   const g=S.game;
-  const opt=(i,letter,col)=>{ const sel=g.picked===i;
-    return `<button onclick="prefPickSide(${i})" style="border:none;cursor:pointer;border-radius:24px;padding:26px 22px;text-align:left;background:#fff;color:var(--ink);box-shadow:${sel?'0 0 0 3px var(--indigo),0 16px 28px rgba(0,0,0,.18)':'var(--sh-card)'};display:flex;align-items:center;gap:16px;transition:box-shadow .15s;">
-      <div style="width:50px;height:50px;flex:none;border-radius:15px;background:${sel?'var(--indigo)':col};color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--d);font-weight:800;font-size:24px;">${letter}</div>
-      <div style="font-family:var(--f);font-weight:800;font-size:${Math.min(26,qz(g.p[i]))}px;line-height:1.25;">${g.p[i]}</div></button>`; };
+  const opt=(i,letter,col)=>`<button onclick="prefChoose(${i})" style="border:none;cursor:pointer;border-radius:24px;padding:26px 22px;text-align:left;background:#fff;color:var(--ink);box-shadow:var(--sh-card);display:flex;align-items:center;gap:16px;transition:transform .08s;" onpointerdown="this.style.transform='scale(.97)'">
+      <div style="width:50px;height:50px;flex:none;border-radius:15px;background:${col};color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--d);font-weight:800;font-size:24px;">${letter}</div>
+      <div style="font-family:var(--f);font-weight:800;font-size:${Math.min(26,qz(g.p[i]))}px;line-height:1.25;">${g.p[i]}</div></button>`;
   return `<div class="pad fade">${gameHead('Tu préfères', `<div class="pill">A / B</div>`)}${turnBanner()}
    <div class="gamebody" style="justify-content:center;gap:14px;">
      ${opt(0,'A','#6C4FE0')}
      <div class="center" style="font-family:var(--d);font-weight:800;font-size:17px;color:rgba(255,255,255,.85);">OU</div>
      ${opt(1,'B','#F0A93C')}
+     <div class="sub center" style="margin-top:8px;font-size:13px;color:rgba(255,255,255,.6);">Touche ta réponse pour passer au suivant</div>
    </div>
-   <button class="btn ${g.picked===null?'':'amber'}" style="${g.picked===null?'opacity:.55;pointer-events:none;':''}" onclick="prefNext()">${g.picked===null?'Choisis ton camp':'Au joueur suivant'}</button>
   </div>`;
 };
-function prefPickSide(i){ S.game.picked=i; render(); }
-function prefNext(){ if(S.game.picked===null)return; nextTurn(); prefPick(); render(); }
+function prefChoose(i){ nextTurn(); prefPick(); render(); }
 
 /* ============================ ROUTAGE ============================ */
 function startGame(id){
