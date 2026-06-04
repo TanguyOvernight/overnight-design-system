@@ -167,19 +167,18 @@ function cardBack(w,h,dark){
     ${sp(50,26,1)}${sp(50,106,1)}${sp(23,42,0.6)}${sp(77,42,0.6)}${sp(23,90,0.6)}${sp(77,90,0.6)}
   </svg>`;
 }
-const AV = { Homme:[{id:'h1',c:'#4F86E0'},{id:'h2',c:'#46C9A0'},{id:'h3',c:'#F0A93C'},{id:'h4',c:'#6C4FE0'},{id:'h5',c:'#34C3D6'},{id:'h6',c:'#FF9E7A'}], Femme:[{id:'f1',c:'#FF7E8B'},{id:'f2',c:'#E0563E'},{id:'f3',c:'#B98CFF'},{id:'f4',c:'#9AD06B'},{id:'f5',c:'#4F86E0'},{id:'f6',c:'#F0A93C'}] };
-function avObj(g,id,c){ return {g,c,id,img:'assets/avatars/'+id+'.png'}; }
+const AVATARS = Array.from({length:30},(_,i)=>'assets/avatars/av'+String(i+1).padStart(2,'0')+'.jpg');
 function personSVG(size){ const w=Math.round(size*0.6); return `<svg width="${w}" height="${w}" viewBox="0 0 24 24" fill="#fff" style="opacity:.96;"><circle cx="12" cy="8" r="4.3"/><path d="M3.5 21c0-4.7 3.8-8 8.5-8s8.5 3.3 8.5 8z"/></svg>`; }
 function avatar(p, size){
   const s=size;
   if(p && p.avatar){ const a=p.avatar;
-    return `<div class="av" style="width:${s}px;height:${s}px;background:${a.c};position:relative;overflow:hidden;">${personSVG(s)}${a.img?`<img src="${a.img}" alt="" onerror="this.remove()" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">`:''}</div>`;
+    return `<div class="av" style="width:${s}px;height:${s}px;background:${a.c||'#2A1F4A'};position:relative;overflow:hidden;">${personSVG(s)}${a.img?`<img src="${a.img}" alt="" onerror="this.remove()" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">`:''}</div>`;
   }
   return `<div class="av" style="width:${s}px;height:${s}px;font-size:${Math.round(s*0.4)}px;background:${(p&&p.color)||'#6C4FE0'};">${(p&&p.name?p.name[0]:'?').toUpperCase()}</div>`;
 }
 function openAvatar(i){ S.avatarPicker=i; go('avatars'); }
 function closeAvatar(){ S.avatarPicker=null; go('setup'); }
-function pickAvatar(i,g,id,c){ if(S.players[i]) S.players[i].avatar=avObj(g,id,c); S.avatarPicker=null; saveSession(); go('setup'); }
+function pickAvatar(i,idx){ if(S.players[i]) S.players[i].avatar={img:AVATARS[idx], c:'#2A1F4A'}; S.avatarPicker=null; saveSession(); go('setup'); }
 // Taille de police dynamique : texte court = gros, texte long = plus petit
 function qz(t){ const n=(t||'').length; return n<30?38:n<48?33:n<72?28:n<110?23:20; }
 
@@ -394,14 +393,14 @@ const GAMES = [
 const SCREENS = {};
 SCREENS.avatars = () => {
   const i=S.avatarPicker;
-  const tile=(g,e)=>`<button onclick="pickAvatar(${i},'${g}','${e.id}','${e.c}')" style="border:none;background:transparent;cursor:pointer;padding:0;display:flex;justify-content:center;transition:transform .08s;" onpointerdown="this.style.transform='scale(.93)'" onpointerup="this.style.transform=''">${avatar({avatar:avObj(g,e.id,e.c)},98)}</button>`;
-  const grid=(g)=>`<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;justify-items:center;margin-top:14px;">${AV[g].map(e=>tile(g,e)).join('')}</div>`;
+  const cur=(i!=null&&S.players[i]&&S.players[i].avatar)?S.players[i].avatar.img:null;
+  const tile=(idx)=>{ const img=AVATARS[idx], sel=img===cur;
+    return `<button onclick="pickAvatar(${i},${idx})" style="border:none;background:transparent;cursor:pointer;padding:0;display:flex;justify-content:center;transition:transform .08s;" onpointerdown="this.style.transform='scale(.93)'" onpointerup="this.style.transform=''"><div style="border-radius:50%;${sel?'box-shadow:0 0 0 4px var(--amber);':''}">${avatar({avatar:{img,c:'#2A1F4A'}},96)}</div></button>`; };
   return `<div class="pad fade">
     <div class="hdr"><button class="iconbtn" onclick="closeAvatar()">‹</button><h2 style="flex:1;text-align:center;font-size:21px;">Ton avatar</h2><div style="width:42px"></div></div>
     <div class="sub center" style="margin-bottom:4px;">Choisis ton préféré.</div>
-    <div style="flex:1;overflow:auto;min-height:0;padding:6px 2px 16px;">
-      <div class="cap" style="margin-top:14px;">Homme</div>${grid('Homme')}
-      <div class="cap" style="margin-top:24px;">Femme</div>${grid('Femme')}
+    <div style="flex:1;overflow:auto;min-height:0;padding:14px 2px 18px;">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;justify-items:center;">${AVATARS.map((_,idx)=>tile(idx)).join('')}</div>
     </div>
   </div>`;
 };
