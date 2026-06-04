@@ -22,6 +22,10 @@
   @font-face{font-family:'Nunito';font-style:normal;font-weight:800;font-display:swap;src:url('assets/fonts/nunito-800-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
   @font-face{font-family:'Nunito';font-style:normal;font-weight:900;font-display:swap;src:url('assets/fonts/nunito-900-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}
   @font-face{font-family:'Nunito';font-style:normal;font-weight:900;font-display:swap;src:url('assets/fonts/nunito-900-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  @font-face{font-family:'Baloo 2';font-style:normal;font-weight:700;font-display:swap;src:url('assets/fonts/baloo2-700-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+  @font-face{font-family:'Baloo 2';font-style:normal;font-weight:700;font-display:swap;src:url('assets/fonts/baloo2-700-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  @font-face{font-family:'Baloo 2';font-style:normal;font-weight:800;font-display:swap;src:url('assets/fonts/baloo2-800-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+  @font-face{font-family:'Baloo 2';font-style:normal;font-weight:800;font-display:swap;src:url('assets/fonts/baloo2-800-latin.woff2') format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
   :root{
     --bg-a:#2A1375; --bg-b:#18084F;
     --ink:#241B40; --ink2:#807A9C; --line:#EFECF9;
@@ -29,6 +33,7 @@
     --mint:#46C9A0; --amber:#F0A93C; --coral:#FF7E8B; --blue:#4F86E0; --red:#E0392B;
     --white:#fff;
     --f:"Comfortaa",-apple-system,"Segoe UI",sans-serif;
+    --d:"Baloo 2","Comfortaa",-apple-system,sans-serif;
     --b:"Nunito",-apple-system,sans-serif;
     --sh:0 12px 30px rgba(35,18,80,.22); --sh-card:0 8px 22px rgba(40,22,90,.10);
     --sh-soft:0 18px 44px rgba(34,18,80,.18);
@@ -149,6 +154,17 @@ function cardHTML(c, w, h){
      ${corner(`bottom:${Math.round(h*0.055)}px;right:${Math.round(w*0.085)}px`,true)}
      <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:${Math.round(w*0.5)}px;line-height:1;text-shadow:0 2px 4px rgba(0,0,0,.08);">${s}</div>
    </div>`;
+}
+// Dos de carte recodé en SVG (remplit pile-poil, zéro blanc) — variante rouge (def) ou noire (dark=true)
+function cardBack(w,h,dark){
+  const bg=dark?'#1C1B2E':'#E03A36', fg=dark?'#E8E6FF':'#FFFFFF', rr=(w*0.1).toFixed(1);
+  const sp=(x,y,s)=>`<path transform="translate(${x} ${y}) scale(${s})" d="M0 -6 C0.5 -1.3 1.3 -0.5 6 0 C1.3 0.5 0.5 1.3 0 6 C-0.5 1.3 -1.3 0.5 -6 0 C-1.3 -0.5 -0.5 -1.3 0 -6 Z" fill="${fg}"/>`;
+  return `<svg width="${w}" height="${h}" viewBox="0 0 100 140" preserveAspectRatio="none" style="display:block;flex:none;border-radius:${rr}px;box-shadow:0 ${Math.round(w*0.12)}px ${Math.round(w*0.26)}px rgba(24,12,62,.32);">
+    <rect width="100" height="140" rx="11" fill="${bg}"/>
+    <rect x="5.5" y="5.5" width="89" height="129" rx="8.5" fill="none" stroke="${fg}" stroke-width="1.6" opacity="0.92"/>
+    <circle cx="50" cy="66" r="21" fill="${fg}"/><circle cx="59" cy="59" r="17.5" fill="${bg}"/>
+    ${sp(50,26,1)}${sp(50,106,1)}${sp(23,42,0.6)}${sp(77,42,0.6)}${sp(23,90,0.6)}${sp(77,90,0.6)}
+  </svg>`;
 }
 function avatar(p, size){ return `<div class="av" style="width:${size}px;height:${size}px;font-size:${Math.round(size*0.4)}px;background:${p.color};">${p.name[0].toUpperCase()}</div>`; }
 
@@ -366,7 +382,7 @@ const NIGHT="background:radial-gradient(circle at 50% 18%,rgba(117,83,255,.35),t
 const ROUNDBTN="width:58px;height:58px;border-radius:18px;background:linear-gradient(180deg,rgba(156,116,255,.95),rgba(111,73,232,.88));box-shadow:0 12px 24px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.22);border:none;color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;";
 function logoBlock(){
   return `<img src="assets/logo-overnight.png" alt="Overnight" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'" style="max-width:300px;width:72%;">
-    <div style="display:none;font-family:var(--f);font-size:54px;font-weight:800;color:#fff;letter-spacing:-1px;text-shadow:0 8px 16px rgba(0,0,0,.3);">OVERN<span style="position:relative;display:inline-block;">ı<span style="position:absolute;top:3px;left:50%;transform:translateX(-50%);width:15px;height:15px;border-radius:50%;background:#FFD33F;box-shadow:inset -5px -3px 0 0 #34108D;"></span></span>GHT</div>`;
+    <div style="display:none;font-family:var(--d);font-size:58px;font-weight:800;color:#fff;letter-spacing:0;text-shadow:0 8px 16px rgba(0,0,0,.3);">OVERN<span style="position:relative;display:inline-block;">ı<span style="position:absolute;top:3px;left:50%;transform:translateX(-50%);width:15px;height:15px;border-radius:50%;background:#FFD33F;box-shadow:inset -5px -3px 0 0 #34108D;"></span></span>GHT</div>`;
 }
 
 SCREENS.home = () => `<div class="fade" style="position:absolute;inset:0;${NIGHT}">
@@ -387,7 +403,7 @@ SCREENS.home = () => `<div class="fade" style="position:absolute;inset:0;${NIGHT
         <div style="position:absolute;bottom:60px;left:50%;transform:translateX(-50%);width:42px;height:40px;border-radius:7px;background:#3A1E8F;border-top:3px solid #FFD33F;border-bottom:3px solid #FFD33F;"></div>
         <div style="position:absolute;bottom:10px;left:18px;width:46px;height:64px;border-radius:8px 8px 10px 10px;background:linear-gradient(180deg,#FF6B5A,#D6321F);"></div>
         <div style="position:absolute;bottom:10px;right:18px;width:46px;height:64px;border-radius:8px 8px 10px 10px;background:linear-gradient(180deg,#2A2440,#16141F);"></div>
-        <div class="back playcard" style="position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:60px;height:84px;"></div>
+        <div style="position:absolute;bottom:0;left:50%;transform:translateX(-50%);">${cardBack(60,84)}</div>
       </div>
       <div style="width:250px;height:34px;border-radius:50%;background:radial-gradient(circle,#6B47C9,#3A1E8F);margin-top:-6px;box-shadow:0 18px 34px rgba(0,0,0,.4);"></div>
     </div>
@@ -395,11 +411,11 @@ SCREENS.home = () => `<div class="fade" style="position:absolute;inset:0;${NIGHT
   <div style="position:absolute;left:28px;right:28px;bottom:calc(44px + env(safe-area-inset-bottom));display:grid;grid-template-columns:1fr 1fr;gap:18px;">
     <button onclick="go('setup')" style="height:136px;border-radius:28px;background:linear-gradient(180deg,#FFE46A,#FFC934 55%,#F1AF24);color:#3A245C;border:none;box-shadow:0 18px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.35);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;cursor:pointer;">
       <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#3A245C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0"/><path d="M16 6.2a3 3 0 0 1 0 5.6M20.5 20a5.5 5.5 0 0 0-3.2-5"/></svg>
-      <div style="font-family:var(--f);font-size:19px;font-weight:700;text-transform:uppercase;">Party mode</div>
+      <div style="font-family:var(--d);font-size:20px;font-weight:800;text-transform:uppercase;">Party mode</div>
       <div style="font-family:var(--b);font-size:13px;font-weight:600;opacity:.85;">Joue à plusieurs</div></button>
     <button onclick="alert('Mode en ligne — bientôt')" style="height:136px;border-radius:28px;background:linear-gradient(180deg,#9D62FF,#6E3FDB);color:#fff;border:none;box-shadow:0 18px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.20);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;cursor:pointer;">
       <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.7 2.6 15.3 0 18M12 3c-2.6 2.7-2.6 15.3 0 18"/></svg>
-      <div style="font-family:var(--f);font-size:19px;font-weight:700;text-transform:uppercase;">Online</div>
+      <div style="font-family:var(--d);font-size:20px;font-weight:800;text-transform:uppercase;">Online</div>
       <div style="font-family:var(--b);font-size:13px;font-weight:600;opacity:.9;">Joue à distance</div></button>
   </div>
 </div>`;
@@ -413,8 +429,8 @@ SCREENS.setup = () => {
   return `<div class="fade" style="position:absolute;inset:0;${NIGHT}">
     <button onclick="go('home')" style="position:absolute;top:max(54px,env(safe-area-inset-top));left:24px;${ROUNDBTN}font-size:26px;">‹</button>
     <div style="position:absolute;top:96px;left:0;right:0;text-align:center;">
-      <div style="font-family:var(--f);font-size:15px;font-weight:900;letter-spacing:.8px;color:#F472D6;text-transform:uppercase;">Party mode</div>
-      <div style="font-family:var(--f);font-size:26px;font-weight:900;color:#fff;text-transform:uppercase;margin-top:8px;">Ajoute les joueurs</div></div>
+      <div style="font-family:var(--d);font-size:15px;font-weight:800;letter-spacing:.5px;color:#F472D6;text-transform:uppercase;">Party mode</div>
+      <div style="font-family:var(--d);font-size:28px;font-weight:800;color:#fff;text-transform:uppercase;margin-top:8px;">Ajoute les joueurs</div></div>
     <div style="position:absolute;top:172px;left:0;right:0;height:118px;display:flex;align-items:center;justify-content:center;">
       <img src="assets/cups.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" style="max-height:112px;">
       <div style="display:none;gap:12px;align-items:flex-end;">
@@ -426,7 +442,7 @@ SCREENS.setup = () => {
         <button onclick="addPlayer()" style="width:52px;height:52px;border-radius:50%;background:rgba(156,116,255,.26);border:none;color:#CDBBFF;font-size:30px;font-weight:800;flex:none;cursor:pointer;">+</button>
         <input id="nm" placeholder="Ajouter un joueur" value="${S.nameDraft.replace(/"/g,'&quot;')}" oninput="S.nameDraft=this.value" onkeydown="if(event.key==='Enter')addPlayer()" style="flex:1;background:transparent;border:none;outline:none;font-family:var(--f);font-size:20px;font-weight:800;color:#fff;"></div>
     </div>
-    <button onclick="if(S.players.length>=2)go('hub')" style="position:absolute;left:28px;right:28px;bottom:calc(38px + env(safe-area-inset-bottom));height:78px;border-radius:999px;background:linear-gradient(180deg,#FFE46A,#FFC934 55%,#F1AF24);color:#4A2458;font-family:var(--f);font-size:22px;font-weight:900;letter-spacing:.3px;border:none;box-shadow:0 18px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.35);cursor:pointer;${n<2?'opacity:.55;':''}">C'EST PARTI</button>
+    <button onclick="if(S.players.length>=2)go('hub')" style="position:absolute;left:28px;right:28px;bottom:calc(38px + env(safe-area-inset-bottom));height:78px;border-radius:999px;background:linear-gradient(180deg,#FFE46A,#FFC934 55%,#F1AF24);color:#4A2458;font-family:var(--d);font-size:23px;font-weight:800;letter-spacing:.3px;border:none;box-shadow:0 18px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.35);cursor:pointer;${n<2?'opacity:.55;':''}">C'EST PARTI</button>
   </div>`;
 };
 
@@ -513,7 +529,7 @@ SCREENS.bus = () => {
         <div class="sub" style="color:var(--ink2);font-size:14px;margin-top:4px;">${r.msg}</div></div></div>`;
   } else {
     mid = `<div class="panel" style="padding:24px;text-align:center;background:#F6F4FF;">${stack}
-        <div style="display:flex;justify-content:center;"><div class="back playcard" style="width:176px;height:246px;"></div></div>
+        <div style="display:flex;justify-content:center;">${cardBack(176,246)}</div>
         <h2 style="font-size:24px;margin-top:18px;color:var(--ink);">${prompts[g.step]}</h2>
         <div class="sub" style="color:var(--ink2);margin-top:4px;">Erreur = ${g.step} gorgée${g.step>1?'s':''}</div></div>`;
     if(g.step===1) actions=`<div class="row"><button class="btn red" onclick="busGuess('r')">Rouge</button><button class="btn dark" onclick="busGuess('n')">Noir</button></div>`;
@@ -553,7 +569,7 @@ SCREENS.purple = () => {
        <div class="pop" style="margin-top:16px;"><b style="font-family:var(--f);font-size:20px;color:${r.ok?'#19A974':'var(--red)'};">${r.title}</b><div class="sub" style="color:var(--ink2);font-size:14px;margin-top:4px;">${r.msg}</div></div></div>`;
   } else {
     mid=`<div class="panel" style="padding:24px;background:#F6F4FF;text-align:center;">
-       <div style="display:flex;gap:14px;justify-content:center;align-items:center;">${cardHTML(g.cur,118,166)}<span style="font-size:26px;color:var(--ink2);">→</span><div class="back playcard" style="width:96px;height:134px;"></div></div>
+       <div style="display:flex;gap:14px;justify-content:center;align-items:center;">${cardHTML(g.cur,118,166)}<span style="font-size:26px;color:var(--ink2);">→</span>${cardBack(96,134,true)}</div>
        <h2 style="font-size:22px;margin-top:18px;color:var(--ink);">La prochaine sera ?</h2>
        <div class="sub" style="color:var(--ink2);margin-top:4px;">« Purple » (même valeur) = +3 à distribuer</div></div>`;
     actions=`<div class="row" style="margin-bottom:12px;"><button class="btn" onclick="purpleGuess('h')">Plus haut ↑</button><button class="btn" onclick="purpleGuess('l')">Plus bas ↓</button></div>
@@ -585,7 +601,7 @@ SCREENS.ftd = () => {
   } else {
     mid=`<div class="panel" style="padding:22px;text-align:center;">
        <div class="cap" style="color:var(--ink2);margin-bottom:12px;">Le donneur</div>
-       <div style="display:flex;justify-content:center;"><div class="back playcard" style="width:176px;height:246px;"></div></div>
+       <div style="display:flex;justify-content:center;">${cardBack(176,246)}</div>
        <div style="margin-top:16px;"><b style="font-family:var(--f);font-size:16px;color:${g.hint?'var(--blue)':'var(--indigo)'};">${g.hint||'Devine la valeur de la carte.'}</b><div class="sub" style="color:var(--ink2);font-size:13px;margin-top:4px;">Essais restants : ${g.tries} · sinon 2 gorgées</div></div>
        <div class="row" style="flex-wrap:wrap;gap:7px;justify-content:center;margin-top:16px;">${VN.slice(1).map((n,i)=>`<button class="chip" style="background:var(--lav-soft);color:var(--indigo);" onclick="ftdGuess(${i+1})">${n}</button>`).join('')}</div></div>`;
     actions=`<div class="sub center" style="opacity:.7;">Choisis une valeur ci-dessus.</div>`;
@@ -674,7 +690,7 @@ SCREENS.echelle = () => {
   const gauge=(active,color)=>`<div style="display:flex;flex-direction:column-reverse;gap:3px;">${[1,2,3,4,5,6,7,8,9,10].map(n=>`<div style="width:28px;height:15px;border-radius:5px;display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:800;font-size:11px;${n===active?`background:${color};color:#fff;`:'background:var(--lav-soft);color:var(--ink2);'}">${n}</div>`).join('')}</div>`;
   const num=(v)=>`<div style="width:118px;height:166px;border-radius:14px;background:#fff;box-shadow:0 14px 28px rgba(24,12,62,.26);display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:800;font-size:62px;color:var(--indigo);">${v}</div>`;
   if(g.phase==='draw'){
-    mid=`<div class="panel" style="padding:24px;text-align:center;"><div style="display:flex;justify-content:center;"><div class="back playcard" style="width:168px;height:236px;"></div></div>
+    mid=`<div class="panel" style="padding:24px;text-align:center;"><div style="display:flex;justify-content:center;">${cardBack(168,236)}</div>
       <div class="sub" style="color:var(--ink2);margin-top:16px;">Un chiffre de 1 à 10 va être tiré. <b style="color:var(--ink);">${cur().name} ne doit PAS regarder.</b> Les autres lui donnent des exemples pour ce chiffre.</div></div>`;
     actions=`<button class="btn primary" onclick="echelleTirer()">Tirer la carte</button>`;
   } else if(g.phase==='vu'){
@@ -705,7 +721,7 @@ SCREENS.tape = () => {
   const g=S.game; let mid, actions;
   if(g.phase==='ready'){
     mid=`<div class="panel" style="padding:24px;text-align:center;">
-      <div style="display:flex;justify-content:center;"><div class="back playcard" style="width:176px;height:246px;"></div></div>
+      <div style="display:flex;justify-content:center;">${cardBack(176,246)}</div>
       <div class="sub" style="color:var(--ink2);margin-top:16px;">Les cartes défilent. <b style="color:var(--ink);">Tape dès qu'une figure apparaît</b> (Valet, Dame, Roi). Pas sur un chiffre, sinon tu bois !</div></div>`;
     actions=`<button class="btn primary" onclick="tapeStart()">Commencer</button>`;
   } else if(g.phase==='run'){
@@ -773,7 +789,7 @@ SCREENS.pmu = () => {
   const laneAv=(suit)=>S.players.map((p,idx)=>({p,idx})).filter(o=>g.bets[o.idx]===suit)
     .map((o,j)=>`<div style="margin-left:${j?-9:0}px;position:relative;z-index:${9-j};">${avatar(o.p,22)}</div>`).join('');
   const meds=g.side.map((m,i)=>{ const left=((i+1)/g.fin)*100, c=m.card, col=red(c.s)?'#E0392B':'#16161F';
-    return `<div style="position:absolute;left:${left}%;top:0;transform:translateX(-50%);">${m.flipped?pmuMini(VN[c.v]+'<span style="font-size:14px">'+SUITS[c.s]+'</span>',false,col):pmuMini('',true)}</div>`;}).join('');
+    return `<div style="position:absolute;left:${left}%;top:0;transform:translateX(-50%);">${m.flipped?pmuMini(VN[c.v]+'<span style="font-size:14px">'+SUITS[c.s]+'</span>',false,col):cardBack(30,44)}</div>`;}).join('');
   const finish=`<div style="position:absolute;left:100%;top:-3px;bottom:-3px;transform:translateX(-50%);width:6px;background:repeating-linear-gradient(0deg,#fff 0 5px,#1A1A28 5px 10px);border-radius:3px;"></div>`;
   const lanes=SUITS.map((s,i)=>{ const left=(g.pos[i]/g.fin)*100, col=red(i)?'#E0392B':'#16161F';
     return `<div style="position:relative;height:46px;margin-bottom:8px;">
