@@ -183,12 +183,12 @@ function avatar(p, size){
   return `<div class="av" style="width:${s}px;height:${s}px;font-size:${Math.round(s*0.4)}px;background:${(p&&p.color)||'#6C4FE0'};">${(p&&p.name?p.name[0]:'?').toUpperCase()}</div>`;
 }
 function avatarInline(p,size){
-  const a=p&&p.avatar, st=`display:inline-block;vertical-align:-28%;width:${size}px;height:${size}px;border-radius:50%;overflow:hidden;`;
+  const a=p&&p.avatar, st=`display:inline-block;vertical-align:middle;width:${size}px;height:${size}px;border-radius:50%;overflow:hidden;margin:0 3px 0 5px;position:relative;top:-2px;`;
   if(a&&a.img) return `<span style="${st}background:#2A1F4A;"><img src="${a.img}" style="width:100%;height:100%;object-fit:cover;display:block;"></span>`;
-  return `<span style="${st}background:${(p&&p.color)||'#6C4FE0'};color:#fff;font-family:var(--f);font-weight:800;font-size:${Math.round(size*0.5)}px;text-align:center;line-height:${size}px;">${(p&&p.name?p.name[0]:'?').toUpperCase()}</span>`;
+  return `<span style="${st}background:${(p&&p.color)||'#6C4FE0'};color:#fff;font-family:var(--f);font-weight:800;font-size:${Math.round(size*0.46)}px;text-align:center;line-height:${size}px;">${(p&&p.name?p.name[0]:'?').toUpperCase()}</span>`;
 }
 // prénom (violet clair) + mini-avatar collé, pour styliser les phrases ciblées
-function playerTag(p){ return `<b style="color:#D2C3FF;white-space:nowrap;">${p.name}</b>&nbsp;${avatarInline(p,26)}`; }
+function playerTag(p){ return `<b style="color:#D2C3FF;">${p.name}</b>${avatarInline(p,36)}`; }
 function openAvatar(i){ S.avatarPicker=i; S.avSex=(S.players[i]&&S.players[i].avatar&&S.players[i].avatar.g)||'Homme'; go('avatars'); }
 function closeAvatar(){ S.avatarPicker=null; go('setup'); }
 function selectAvSex(g){ S.avSex=g; render(); }
