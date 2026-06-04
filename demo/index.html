@@ -61,7 +61,6 @@
   .card{background:#fff;border-radius:22px;box-shadow:var(--sh-card);color:var(--ink);}
   .panel{background:#fff;border-radius:26px;box-shadow:var(--sh-soft);color:var(--ink);}
   .gamebody{flex:1;display:flex;flex-direction:column;justify-content:center;min-height:0;padding:2px 0 14px;gap:12px;}
-  .gamebody>.panel{flex:1;display:flex;flex-direction:column;justify-content:center;}
   .pcard{background:linear-gradient(135deg,#7C63EC,#5E46CC);border-radius:22px;box-shadow:var(--sh);}
   button{font-family:var(--f);cursor:pointer;border:none;}
   .btn{width:100%;min-height:60px;border-radius:16px;display:flex;align-items:center;justify-content:center;gap:8px;font-family:var(--d);font-weight:800;font-size:18px;color:#fff;background:linear-gradient(180deg,#9D62FF,#6E3FDB);box-shadow:0 12px 24px rgba(70,40,160,.35),inset 0 1px 0 rgba(255,255,255,.18);transition:transform .08s,box-shadow .2s,background .2s;}
@@ -169,6 +168,8 @@ function cardBack(w,h,dark){
   </svg>`;
 }
 function avatar(p, size){ return `<div class="av" style="width:${size}px;height:${size}px;font-size:${Math.round(size*0.4)}px;background:${p.color};">${p.name[0].toUpperCase()}</div>`; }
+// Taille de police dynamique : texte court = gros, texte long = plus petit
+function qz(t){ const n=(t||'').length; return n<30?38:n<48?33:n<72?28:n<110?23:20; }
 
 /* ============================ CONTENU ============================ */
 const VOB = [
@@ -871,7 +872,7 @@ SCREENS.vob = () => {
    <div class="sub center" style="margin-top:10px;font-family:var(--f);font-weight:700;">${VOB[g.round].titre}</div>
    ${turnBanner()}
    <div class="gamebody"><div class="panel" style="padding:30px 26px;text-align:center;"><div class="cap" style="color:var(--purple);">À ${cur().name} de jouer</div>
-     <div style="font-family:var(--f);font-weight:700;font-size:29px;line-height:1.3;margin-top:14px;color:var(--ink);">${g.q}</div></div></div>
+     <div style="font-family:var(--f);font-weight:800;font-size:${qz(g.q)}px;line-height:1.25;margin-top:14px;color:var(--ink);">${g.q}</div></div></div>
    <div class="row"><button class="btn" onclick="vobAns(false)">Je bois (1)</button><button class="btn primary" onclick="vobAns(true)">Je réponds</button></div>
   </div>`;
 };
@@ -883,7 +884,7 @@ function startJamais(){ S.game={used:new Set(), s:null}; jamaisPick(); go('jamai
 function jamaisPick(){ const g=S.game; if(g.used.size>=JAMAIS.length)g.used.clear(); let i; do{i=Math.random()*JAMAIS.length|0;}while(g.used.has(i)); g.used.add(i); g.s=JAMAIS[i]; }
 SCREENS.jamais = () => `<div class="pad fade">${gameHead("Je n'ai jamais", `<div class="pill">Avoue ou bois</div>`)}${turnBanner()}
   <div class="gamebody"><div class="panel" style="padding:34px 26px;text-align:center;"><div class="cap" style="color:var(--amber);">Je n'ai jamais…</div>
-   <div style="font-family:var(--f);font-weight:700;font-size:30px;line-height:1.3;margin-top:14px;color:var(--ink);">…${S.game.s}</div>
+   <div style="font-family:var(--f);font-weight:800;font-size:${qz(S.game.s)}px;line-height:1.25;margin-top:14px;color:var(--ink);">…${S.game.s}</div>
    <div class="sub" style="color:var(--ink2);font-size:14px;margin-top:16px;">Tu l'as déjà fait ? Bois une gorgée.</div></div></div>
   <div class="row"><button class="btn dark" onclick="jamaisAns(false)">Jamais</button><button class="btn primary" onclick="jamaisAns(true)">Je l'ai fait (1)</button></div>
  </div>`;
@@ -895,9 +896,9 @@ function prefPick(){ const g=S.game; if(g.used.size>=PREF.length)g.used.clear();
 SCREENS.pref = () => {
   const g=S.game;
   const opt=(i,letter,col)=>{ const sel=g.picked===i;
-    return `<button onclick="prefPickSide(${i})" style="flex:1;border:none;cursor:pointer;border-radius:24px;padding:22px 20px;text-align:left;background:#fff;color:var(--ink);box-shadow:${sel?'0 0 0 3px var(--indigo),0 16px 28px rgba(0,0,0,.18)':'var(--sh-card)'};display:flex;align-items:center;gap:16px;transition:box-shadow .15s;">
-      <div style="width:48px;height:48px;flex:none;border-radius:15px;background:${sel?'var(--indigo)':col};color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--d);font-weight:800;font-size:23px;">${letter}</div>
-      <div style="font-family:var(--f);font-weight:700;font-size:19px;line-height:1.3;">${g.p[i]}</div></button>`; };
+    return `<button onclick="prefPickSide(${i})" style="border:none;cursor:pointer;border-radius:24px;padding:26px 22px;text-align:left;background:#fff;color:var(--ink);box-shadow:${sel?'0 0 0 3px var(--indigo),0 16px 28px rgba(0,0,0,.18)':'var(--sh-card)'};display:flex;align-items:center;gap:16px;transition:box-shadow .15s;">
+      <div style="width:50px;height:50px;flex:none;border-radius:15px;background:${sel?'var(--indigo)':col};color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--d);font-weight:800;font-size:24px;">${letter}</div>
+      <div style="font-family:var(--f);font-weight:800;font-size:${Math.min(26,qz(g.p[i]))}px;line-height:1.25;">${g.p[i]}</div></button>`; };
   return `<div class="pad fade">${gameHead('Tu préfères', `<div class="pill">A / B</div>`)}${turnBanner()}
    <div class="gamebody" style="justify-content:center;gap:14px;">
      ${opt(0,'A','#6C4FE0')}
