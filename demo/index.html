@@ -6,7 +6,7 @@
 <title>Overnight — Jeu à boire (démo jouable)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600;700&family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg-a:#2A1375; --bg-b:#18084F;
@@ -14,8 +14,8 @@
     --indigo:#4F38C0; --purple:#6C4FE0; --lav:#B9ACF4; --lav-soft:#E9E4FB;
     --mint:#46C9A0; --amber:#F0A93C; --coral:#FF7E8B; --blue:#4F86E0; --red:#E0392B;
     --white:#fff;
-    --f:"Plus Jakarta Sans",-apple-system,"Segoe UI",sans-serif;
-    --b:"Inter",-apple-system,sans-serif;
+    --f:"Comfortaa",-apple-system,"Segoe UI",sans-serif;
+    --b:"Nunito",-apple-system,sans-serif;
     --sh:0 12px 30px rgba(35,18,80,.22); --sh-card:0 8px 22px rgba(40,22,90,.10);
     --sh-soft:0 18px 44px rgba(34,18,80,.18);
   }
@@ -378,15 +378,15 @@ SCREENS.home = () => `<div class="fade" style="position:absolute;inset:0;${NIGHT
       <div style="width:250px;height:34px;border-radius:50%;background:radial-gradient(circle,#6B47C9,#3A1E8F);margin-top:-6px;box-shadow:0 18px 34px rgba(0,0,0,.4);"></div>
     </div>
   </div>
-  <div style="position:absolute;left:28px;right:28px;bottom:calc(44px + env(safe-area-inset-bottom));display:grid;grid-template-columns:1fr 1.25fr;gap:22px;">
-    <button onclick="alert('Mode solo — bientôt 🙂')" style="height:136px;border-radius:28px;background:linear-gradient(180deg,#9D62FF,#6E3FDB);color:#fff;border:none;box-shadow:0 18px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.20);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;cursor:pointer;">
-      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0 1 14 0"/></svg>
-      <div style="font-family:var(--f);font-size:20px;font-weight:900;text-transform:uppercase;">Solo</div>
-      <div style="font-family:var(--b);font-size:14px;opacity:.9;">Joue en solo</div></button>
-    <button onclick="go('setup')" style="height:136px;border-radius:28px;background:linear-gradient(180deg,#FFE46A,#FFC934 55%,#F1AF24);color:#3A245C;border:none;box-shadow:0 18px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.35);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;cursor:pointer;">
+  <div style="position:absolute;left:28px;right:28px;bottom:calc(44px + env(safe-area-inset-bottom));display:grid;grid-template-columns:1fr 1fr;gap:18px;">
+    <button onclick="go('setup')" style="height:136px;border-radius:28px;background:linear-gradient(180deg,#FFE46A,#FFC934 55%,#F1AF24);color:#3A245C;border:none;box-shadow:0 18px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.35);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;cursor:pointer;">
       <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#3A245C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0"/><path d="M16 6.2a3 3 0 0 1 0 5.6M20.5 20a5.5 5.5 0 0 0-3.2-5"/></svg>
-      <div style="font-family:var(--f);font-size:20px;font-weight:900;text-transform:uppercase;">Party mode</div>
-      <div style="font-family:var(--b);font-size:14px;opacity:.85;">Joue à plusieurs</div></button>
+      <div style="font-family:var(--f);font-size:19px;font-weight:700;text-transform:uppercase;">Party mode</div>
+      <div style="font-family:var(--b);font-size:13px;font-weight:600;opacity:.85;">Joue à plusieurs</div></button>
+    <button onclick="alert('Mode en ligne — bientôt')" style="height:136px;border-radius:28px;background:linear-gradient(180deg,#9D62FF,#6E3FDB);color:#fff;border:none;box-shadow:0 18px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.20);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;cursor:pointer;">
+      <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.7 2.6 15.3 0 18M12 3c-2.6 2.7-2.6 15.3 0 18"/></svg>
+      <div style="font-family:var(--f);font-size:19px;font-weight:700;text-transform:uppercase;">Online</div>
+      <div style="font-family:var(--b);font-size:13px;font-weight:600;opacity:.9;">Joue à distance</div></button>
   </div>
 </div>`;
 
