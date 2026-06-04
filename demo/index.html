@@ -167,7 +167,10 @@ function cardBack(w,h,dark){
     ${sp(50,26,1)}${sp(50,106,1)}${sp(23,42,0.6)}${sp(77,42,0.6)}${sp(23,90,0.6)}${sp(77,90,0.6)}
   </svg>`;
 }
-const AVATARS = Array.from({length:30},(_,i)=>'assets/avatars/av'+String(i+1).padStart(2,'0')+'.jpg');
+const AVATARS = {
+  Homme: Array.from({length:30},(_,i)=>'assets/avatars/h'+String(i+1).padStart(2,'0')+'.jpg'),
+  Femme: Array.from({length:29},(_,i)=>'assets/avatars/f'+String(i+1).padStart(2,'0')+'.jpg'),
+};
 function personSVG(size){ const w=Math.round(size*0.6); return `<svg width="${w}" height="${w}" viewBox="0 0 24 24" fill="#fff" style="opacity:.96;"><circle cx="12" cy="8" r="4.3"/><path d="M3.5 21c0-4.7 3.8-8 8.5-8s8.5 3.3 8.5 8z"/></svg>`; }
 function avatar(p, size){
   const s=size;
@@ -176,9 +179,10 @@ function avatar(p, size){
   }
   return `<div class="av" style="width:${s}px;height:${s}px;font-size:${Math.round(s*0.4)}px;background:${(p&&p.color)||'#6C4FE0'};">${(p&&p.name?p.name[0]:'?').toUpperCase()}</div>`;
 }
-function openAvatar(i){ S.avatarPicker=i; go('avatars'); }
+function openAvatar(i){ S.avatarPicker=i; S.avSex=(S.players[i]&&S.players[i].avatar&&S.players[i].avatar.g)||'Homme'; go('avatars'); }
 function closeAvatar(){ S.avatarPicker=null; go('setup'); }
-function pickAvatar(i,idx){ if(S.players[i]) S.players[i].avatar={img:AVATARS[idx], c:'#2A1F4A'}; S.avatarPicker=null; saveSession(); go('setup'); }
+function selectAvSex(g){ S.avSex=g; render(); }
+function pickAvatar(i,idx){ const sex=S.avSex||'Homme'; if(S.players[i]) S.players[i].avatar={img:AVATARS[sex][idx], c:'#2A1F4A', g:sex}; S.avatarPicker=null; saveSession(); go('setup'); }
 // Taille de police dynamique : texte court = gros, texte long = plus petit
 function qz(t){ const n=(t||'').length; return n<30?38:n<48?33:n<72?28:n<110?23:20; }
 
@@ -392,15 +396,17 @@ const GAMES = [
 /* ============================ ÉCRANS ============================ */
 const SCREENS = {};
 SCREENS.avatars = () => {
-  const i=S.avatarPicker;
+  const i=S.avatarPicker, sex=S.avSex||'Homme';
   const cur=(i!=null&&S.players[i]&&S.players[i].avatar)?S.players[i].avatar.img:null;
-  const tile=(idx)=>{ const img=AVATARS[idx], sel=img===cur;
+  const tab=(g)=>`<button onclick="selectAvSex('${g}')" style="flex:1;height:42px;border-radius:999px;border:none;background:${g===sex?'#fff':'transparent'};color:${g===sex?'var(--indigo)':'#fff'};font-family:var(--d);font-weight:800;font-size:15px;cursor:pointer;">${g}</button>`;
+  const tile=(idx)=>{ const img=AVATARS[sex][idx], sel=img===cur;
     return `<button onclick="pickAvatar(${i},${idx})" style="border:none;background:transparent;cursor:pointer;padding:0;display:flex;justify-content:center;transition:transform .08s;" onpointerdown="this.style.transform='scale(.93)'" onpointerup="this.style.transform=''"><div style="border-radius:50%;${sel?'box-shadow:0 0 0 4px var(--amber);':''}">${avatar({avatar:{img,c:'#2A1F4A'}},96)}</div></button>`; };
   return `<div class="pad fade">
     <div class="hdr"><button class="iconbtn" onclick="closeAvatar()">‹</button><h2 style="flex:1;text-align:center;font-size:21px;">Ton avatar</h2><div style="width:42px"></div></div>
-    <div class="sub center" style="margin-bottom:4px;">Choisis ton préféré.</div>
-    <div style="flex:1;overflow:auto;min-height:0;padding:14px 2px 18px;">
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;justify-items:center;">${AVATARS.map((_,idx)=>tile(idx)).join('')}</div>
+    <div class="sub center" style="margin-bottom:12px;">Choisis ton sexe, puis ton avatar.</div>
+    <div style="display:flex;background:rgba(255,255,255,.14);border-radius:999px;padding:4px;">${tab('Homme')}${tab('Femme')}</div>
+    <div style="flex:1;overflow:auto;min-height:0;padding:16px 2px 18px;">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;justify-items:center;">${AVATARS[sex].map((_,idx)=>tile(idx)).join('')}</div>
     </div>
   </div>`;
 };
