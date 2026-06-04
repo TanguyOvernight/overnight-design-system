@@ -433,7 +433,7 @@ const GAMES = [
  {id:'pmu', nom:'PMU', desc:'Parie sur ton enseigne et gagne la course.', t:'P', col:'#F0A93C'},
  {id:'purple', nom:'Purple', desc:'Rouge, noir ou purple ?', t:'P', col:'#8B5CF6'},
  {id:'tape', nom:'Tape la carte', desc:'Réflexe : tape sur les figures.', t:'T', col:'#FF7E8B'},
- {id:'vob', nom:'Vérité ou Bois', desc:'Réponds honnêtement ou bois.', t:'V', col:'#FF6F6F'},
+ {id:'vob', nom:'Action ou Vérité', desc:'Réponds, fais le gage, ou bois.', t:'A', col:'#FF6F6F'},
  {id:'jamais', nom:"Je n'ai jamais", desc:"Avoue si tu l'as déjà fait… ou bois.", t:'J', col:'#46C2B0'},
  {id:'echelle', nom:"L'Échelle", desc:'Un chiffre de 1 à 10, fais-nous deviner.', t:'E', col:'#4F86E0'},
  {id:'pref', nom:'Tu préfères', desc:'Choisis ton camp entre deux options.', t:'T', col:'#F0A93C'},
@@ -1010,7 +1010,7 @@ SCREENS.vob = () => {
   const g=S.game;
   if(g.phase==='setup'){
     const tot=VOB.reduce((n,r)=>n+r.q.length,0);
-    return `<div class="pad fade">${gameHead('Vérité ou Bois')}<div class="spacer"></div>
+    return `<div class="pad fade">${gameHead('Action ou Vérité')}<div class="spacer"></div>
       <h2 style="text-align:center;font-size:24px;">Combien de questions ?</h2>
       <div class="sub center" style="margin-top:6px;max-width:300px;align-self:center;">Choisis la longueur de la partie. ${tot} questions au total — au-delà, ça tourne en boucle.</div>
       <div style="display:flex;flex-direction:column;gap:12px;margin-top:24px;">
@@ -1019,7 +1019,7 @@ SCREENS.vob = () => {
       </div><div class="spacer"></div></div>`;
   }
   if(g.phase==='end'){
-    return `<div class="pad fade">${gameHead('Vérité ou Bois')}<div class="spacer"></div>
+    return `<div class="pad fade">${gameHead('Action ou Vérité')}<div class="spacer"></div>
       <div class="card pop" style="padding:24px;text-align:center;"><b style="font-family:var(--f);font-size:20px;color:var(--indigo);">Partie terminée !</b>
       <div class="sub" style="color:var(--ink);margin-top:6px;">${g.count} questions jouées. Beau parcours.</div></div>
       <div class="spacer"></div>
@@ -1027,13 +1027,13 @@ SCREENS.vob = () => {
       <button class="btn" style="margin-top:12px;" onclick="go('hub')">Retour aux jeux</button></div>`;
   }
   const tgt = g.target===Infinity?'∞':g.target;
-  return `<div class="pad fade">${gameHead('Vérité ou Bois', `<div class="pill">${g.count+1} / ${tgt}</div>`)}
+  return `<div class="pad fade">${gameHead('Action ou Vérité', `<div class="pill">${g.count+1} / ${tgt}</div>`)}
    <div class="row" style="gap:5px;flex-wrap:wrap;">${VOB.map((r,i)=>`<button onclick="vobRound(${i})" style="flex:1 1 8%;min-width:28px;padding:7px 2px;border-radius:9px;font-family:var(--f);font-weight:700;font-size:11px;color:${i===g.round?'var(--indigo)':'#fff'};background:${i===g.round?'#fff':'rgba(255,255,255,.14)'};">${i+1}</button>`).join('')}</div>
    <div class="sub center" style="margin-top:10px;font-family:var(--f);font-weight:700;">${VOB[g.round].titre}</div>
    ${turnBanner()}
    <div class="gamebody"><div class="panel" style="padding:30px 26px;text-align:center;"><div class="cap" style="color:var(--purple);">À ${cur().name} de jouer</div>
      <div style="font-family:var(--f);font-weight:800;font-size:${qz(g.q)}px;line-height:1.25;margin-top:14px;color:var(--ink);">${g.q}</div></div></div>
-   <div class="row"><button class="btn" onclick="vobAns(false)">Je bois (1)</button><button class="btn primary" onclick="vobAns(true)">Je réponds</button></div>
+   <div class="row"><button class="btn" onclick="vobAns(false)">Je bois (1)</button><button class="btn primary" onclick="vobAns(true)">Je le fais !</button></div>
   </div>`;
 };
 function vobRound(i){ S.game.round=i; vobPick(); render(); }
