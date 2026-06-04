@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg-a:#7663E8; --bg-b:#5A44C6;
+    --bg-a:#2A1375; --bg-b:#18084F;
     --ink:#241B40; --ink2:#807A9C; --line:#EFECF9;
     --indigo:#4F38C0; --purple:#6C4FE0; --lav:#B9ACF4; --lav-soft:#E9E4FB;
     --mint:#46C9A0; --amber:#F0A93C; --coral:#FF7E8B; --blue:#4F86E0; --red:#E0392B;
@@ -23,13 +23,12 @@
   html,body{height:100%;}
   body{font-family:var(--b);background:#0e0a1a;display:flex;justify-content:center;}
   #app{position:relative;width:100%;max-width:460px;height:100dvh;min-height:100dvh;background:
-    radial-gradient(circle at 18% 8%,rgba(255,255,255,.18),transparent 26%),
-    radial-gradient(circle at 92% 18%,rgba(255,201,60,.10),transparent 24%),
-    linear-gradient(170deg,var(--bg-a),var(--bg-b));
+    radial-gradient(circle at 50% 15%,rgba(117,83,255,.32),transparent 44%),
+    linear-gradient(180deg,#2A1375 0%,#34108D 45%,#18084F 100%);
     color:#fff;display:flex;flex-direction:column;overflow:hidden;}
   #app:before{content:"";position:absolute;inset:0;background:
-    linear-gradient(180deg,rgba(255,255,255,.06),transparent 38%),
-    radial-gradient(circle at 50% 100%,rgba(36,27,64,.18),transparent 42%);
+    radial-gradient(circle at 50% 110%,rgba(8,4,28,.4),transparent 42%);
+    box-shadow:inset 0 0 90px rgba(0,0,0,.28);
     pointer-events:none;}
   .pad{position:relative;z-index:1;padding:max(20px,env(safe-area-inset-top)) 20px calc(20px + env(safe-area-inset-bottom));flex:1;display:flex;flex-direction:column;min-height:0;}
   h1{font-family:var(--f);font-weight:800;letter-spacing:-.4px;line-height:1.05;}
@@ -44,9 +43,9 @@
   .panel{background:#fff;border-radius:26px;box-shadow:var(--sh-soft);color:var(--ink);}
   .pcard{background:linear-gradient(135deg,#7C63EC,#5E46CC);border-radius:22px;box-shadow:var(--sh);}
   button{font-family:var(--f);cursor:pointer;border:none;}
-  .btn{width:100%;min-height:58px;border-radius:16px;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:17px;color:#fff;background:rgba(255,255,255,.15);transition:transform .08s,box-shadow .2s,background .2s;}
+  .btn{width:100%;min-height:58px;border-radius:16px;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:17px;color:#fff;background:linear-gradient(180deg,#9D62FF,#6E3FDB);box-shadow:0 12px 24px rgba(70,40,160,.35),inset 0 1px 0 rgba(255,255,255,.18);transition:transform .08s,box-shadow .2s,background .2s;}
   .btn:active{transform:scale(.97);}
-  .btn.primary{background:#fff;color:var(--indigo);box-shadow:0 8px 20px rgba(0,0,0,.16);}
+  .btn.primary{background:linear-gradient(180deg,#A878FF,#7A4DF0);color:#fff;box-shadow:0 14px 28px rgba(90,55,200,.42),inset 0 1px 0 rgba(255,255,255,.22);}
   .btn.indigo{background:var(--indigo);box-shadow:0 10px 24px rgba(79,56,192,.45);}
   .btn.red{background:linear-gradient(180deg,#FF6B5A,#E0392B);}
   .btn.dark{background:#16161F;}
@@ -730,7 +729,7 @@ function tapeNext(){ nextTurn(); S.game={phase:'ready', deck:S.game.deck, card:n
 function startPmu(){
   const deck=newDeck(), fin=6, side=[];
   for(let k=1;k<fin;k++) side.push({card:draw(deck), flipped:false});
-  S.game={phase:'bet', deck, pos:[0,0,0,0], fin, side, bets:{}, betTurn:0, last:null, winner:null, flips:[]};
+  S.game={phase:'bet', deck, pos:[0,0,0,0], fin, side, bets:{}, betTurn:0, betSel:null, last:null, winner:null, flips:[]};
   go('pmu');
 }
 function pmuMini(content,isBack,col){
@@ -738,6 +737,25 @@ function pmuMini(content,isBack,col){
 }
 SCREENS.pmu = () => {
   const g=S.game, red=i=>i===1||i===2;
+  if(g.phase==='bet'){
+    const p=S.players[g.betTurn];
+    const names=['Pique','Cœur','Carreau','Trèfle'], cols=['#1A1A24','#E0392B','#EE7A1E','#1FA463'], tint=['#EEF0F8','#FDECEC','#FDF1E7','#EAF6EF'];
+    const card=(i)=>{ const sel=g.betSel===i;
+      return `<button onclick="S.game.betSel=${i};render()" style="position:relative;border:none;cursor:pointer;border-radius:20px;padding:18px 8px;background:${tint[i]};aspect-ratio:.74;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:${sel?`0 0 0 3px ${cols[i]},0 14px 24px rgba(0,0,0,.16)`:'0 6px 14px rgba(0,0,0,.10)'};transition:box-shadow .15s,transform .08s;">
+        <div style="position:absolute;inset:9px;border-radius:14px;border:1.5px solid ${cols[i]}33;"></div>
+        <div style="font-size:52px;line-height:1;color:${cols[i]};">${SUITS[i]}</div>
+        <div style="font-family:var(--f);font-weight:800;font-size:20px;color:${cols[i]};margin-top:12px;">${names[i]}</div>
+        <div style="width:58%;height:1px;background:${cols[i]}22;margin:11px 0 8px;"></div>
+        <div style="font-family:var(--b);font-weight:600;font-size:13px;color:${cols[i]};opacity:.82;">Couloir ${i+1}</div></button>`; };
+    return `<div class="pad fade">${gameHead('PMU', `<div class="pill">Pari</div>`)}
+      <div style="display:flex;align-items:center;justify-content:center;gap:10px;background:rgba(255,255,255,.14);padding:9px 16px;border-radius:999px;align-self:center;margin-bottom:6px;">${avatar(p,30)}<span style="font-weight:700;color:#fff;">Au tour de ${p.name}</span></div>
+      <div class="spacer"></div>
+      <div class="panel" style="padding:22px 16px;">
+        <h2 style="text-align:center;font-size:24px;color:var(--ink);margin-bottom:18px;">Choisis ton cheval</h2>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:15px;">${[0,1,2,3].map(card).join('')}</div></div>
+      <div class="spacer"></div>
+      <button class="btn amber" onclick="if(S.game.betSel!=null)pmuChoose(S.game.betSel)" style="${g.betSel==null?'opacity:.55;':''}">Valider mon pari</button></div>`;
+  }
   const laneAv=(suit)=>S.players.map((p,idx)=>({p,idx})).filter(o=>g.bets[o.idx]===suit)
     .map((o,j)=>`<div style="margin-left:${j?-9:0}px;position:relative;z-index:${9-j};">${avatar(o.p,22)}</div>`).join('');
   const meds=g.side.map((m,i)=>{ const left=((i+1)/g.fin)*100, c=m.card, col=red(c.s)?'#E0392B':'#16161F';
@@ -759,11 +777,7 @@ SCREENS.pmu = () => {
     <div style="position:relative;height:50px;margin-bottom:6px;"><div style="position:absolute;left:90px;right:4px;top:0;bottom:0;">${meds}${finish}</div></div>
     ${lanes}</div>`;
   let info='', bottom='';
-  if(g.phase==='bet'){
-    const p=S.players[g.betTurn];
-    info=`<div class="banner" style="justify-content:center;margin-top:14px;">${avatar(p,34)}<span style="font-size:16px;"><b>${p.name}</b>, choisis ton cheval</span></div>`;
-    bottom=`<div class="row" style="flex-wrap:wrap;">${SUITS.map((s,i)=>`<button class="btn" style="flex:1 1 40%;min-height:66px;font-size:28px;color:${red(i)?'#FFD2CC':'#fff'};" onclick="pmuChoose(${i})">${s}</button>`).join('')}</div>`;
-  } else if(g.winner!==null){
+  if(g.winner!==null){
     const losers=S.players.filter((p,idx)=>g.bets[idx]!==g.winner).map(p=>p.name);
     info=`<div style="display:flex;justify-content:center;margin-top:14px;">${cardHTML(g.last,84,118)}</div>`;
     bottom=`<div class="card pop" style="padding:16px;text-align:center;margin-bottom:12px;"><b style="font-family:var(--f);font-size:19px;color:#19A974;">${SUITS[g.winner]} remporte la course !</b><div class="sub" style="color:var(--ink);font-size:14px;margin-top:4px;">Les paris sur ${SUITS[g.winner]} distribuent. ${losers.length?losers.join(', ')+' boi'+(losers.length>1?'vent':'t')+' 3 gorgées.':'Tout le monde gagne !'}</div></div><button class="btn amber" onclick="go('hub')">Terminer</button>`;
@@ -772,11 +786,10 @@ SCREENS.pmu = () => {
       info=`<div style="display:flex;align-items:center;gap:16px;justify-content:center;margin-top:14px;">${cardHTML(c,84,118)}<div style="text-align:left;"><b style="font-family:var(--f);color:var(--ink);font-size:16px;">${SUITS[c.s]} avance</b>${g.flips.length?`<div style="color:var(--red);font-weight:800;font-size:13px;margin-top:5px;">${g.flips.join('<br>')}</div>`:''}</div></div>`;}
     bottom=`<button class="btn primary" onclick="pmuDraw()">Tirer une carte</button>`;
   }
-  const pill = g.phase==='bet' ? `<div class="pill">Paris ${g.betTurn+1}/${S.players.length}</div>` : `<div class="pill">Course</div>`;
-  return `<div class="pad fade">${gameHead('PMU', pill)}
+  return `<div class="pad fade">${gameHead('PMU', `<div class="pill">Course</div>`)}
     <div class="spacer"></div>${board}${info}<div class="spacer"></div>${bottom}</div>`;
 };
-function pmuChoose(suit){ const g=S.game; g.bets[g.betTurn]=suit; g.betTurn++; if(g.betTurn>=S.players.length) g.phase='race'; render(); }
+function pmuChoose(suit){ const g=S.game; g.bets[g.betTurn]=suit; g.betTurn++; g.betSel=null; if(g.betTurn>=S.players.length) g.phase='race'; render(); }
 function pmuDraw(){
   const g=S.game, c=draw(g.deck); g.last=c; g.flips=[];
   if(g.pos[c.s]<g.fin) g.pos[c.s]++;
