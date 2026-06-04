@@ -278,7 +278,7 @@ const VOB = [
   `Qui ici a la vie sentimentale la plus chaotique tout en le cachant ?`,
   `Quelle est l'habitude la plus insupportable de quelqu'un ici ?`,
   `Qui est le plus susceptible de créer un drama et d'en accuser un autre ?`]},
- {titre:"Le confessionnal", cat:"probleme", q:[
+ {titre:"Le confessionnal", cat:["probleme","chaud"], q:[
   `Quel truc sur toi n'as-tu jamais dit à personne dans ce groupe ?`,
   `As-tu déjà été blessé(e) par quelqu'un ici sans jamais en parler ?`,
   `À quel moment t'es-tu senti(e) mis(e) à l'écart dans ce groupe ?`,
@@ -298,7 +298,7 @@ const VOB = [
   `As-tu déjà eu l'impression d'être invisible dans le groupe ?`,
   `Quelle est la chose la plus courageuse que tu aies faite et que personne ici ne sait ?`,
   `As-tu déjà voulu dire à quelqu'un combien il/elle comptait, avant de te dégonfler ?`]},
- {titre:"Le round de non-retour", cat:"probleme", q:[
+ {titre:"Le round de non-retour", cat:["probleme","chaud"], q:[
   `Quelle est la pire chose que tu aies dite dans le dos de quelqu'un ici présent ?`,
   `As-tu déjà pécho quelqu'un pour qui un pote du groupe avait des sentiments ?`,
   `Quel secret de tes 18 ans choquerait ce groupe ?`,
@@ -317,7 +317,7 @@ const VOB = [
   `As-tu déjà voulu te venger de quelqu'un ici, même une seconde ?`,
   `Quel secret te ferait boire un verre cul sec pour ne pas répondre ?`,
   `As-tu déjà volé la vedette au grand moment d'un pote ?`]},
- {titre:"Roast (chaise électrique)", cat:"amis", q:[
+ {titre:"Roast (chaise électrique)", cat:["amis","probleme"], q:[
   `Quel est le truc qui me ressemble le moins que j'aie jamais fait ?`,
   `Décris-moi en trois mots peu flatteurs.`,
   `Quelle est la chose la plus cringe que j'aie dite en étant totalement sobre ?`,
@@ -407,6 +407,27 @@ const VOB = [
   {t:"Mesdames : le détail qui vous fait dire non direct chez un mec ?", who:'f'},
   {t:"Fais les yeux doux à {autre} pendant 10 secondes sans rire."},
   {t:"Murmure à {autre} le compliment le plus gênant que tu puisses inventer."}]},
+ {titre:"Piquant", cat:"soft", q:[
+  {t:"Combien de fois t'es-tu relu un message que TU as envoyé, juste pour admirer ton propre humour ?", cat:['soft','probleme']},
+  {t:"Quelle légende tu racontes sur toi que tout le monde a déjà cramée depuis longtemps ?", cat:['soft','amis']},
+  {t:"Décris {autre} en un seul mot… puis explique pourquoi c'est un compliment empoisonné.", cat:['amis','probleme']},
+  {t:"Quel talent totalement inutile tu surévalues complètement chez toi ?", cat:['soft']},
+  {t:"La dernière fois où tu as fait semblant d'être 'super occupé' alors que tu scrollais : c'était quand ?", cat:['soft','probleme']},
+  {t:"Balance le pseudo que tu surveilles un peu trop sur les réseaux. On attend.", cat:['chaud','probleme']},
+  {t:"À quel moment exact {autre} t'a déçu ce soir ? Sois précis, c'est pour la science.", cat:['amis','probleme']},
+  {t:"Pour quel drame ridicule as-tu déjà pleuré, et que tu n'assumes toujours pas ?", cat:['probleme','soft']},
+  {t:"Si on lisait tes 3 derniers messages à voix haute, lequel te ferait quitter le pays ?", cat:['probleme','chaud']},
+  {t:"Classe les présents, du plus 'va finir par te ghoster' au plus fidèle. Argumente.", cat:['amis']},
+  {t:"Avoue la story que tu as supprimée parce qu'elle a fait 2 vues en une heure.", cat:['soft','probleme']},
+  {t:"Quel ex mériterait un 'merci' bien sarcastique pour la 'leçon de vie' ?", cat:['chaud','probleme']},
+  {t:"L'excuse bidon que tu ressors à chaque fois pour esquiver ta tournée : c'est laquelle ?", cat:['amis','soft']},
+  {t:"Si {autre} écrivait ta bio de rencontre, ça donnerait quoi ? (autorise la cruauté)", cat:['amis','chaud']},
+  {t:"Quel compliment tu te fais en secret et que strictement personne ne validerait ?", cat:['soft','probleme']},
+  {t:"Imite la façon dont {autre} rit. On veut le malaise complet.", cat:['amis']},
+  {t:"Messieurs : racontez la fois où votre 'je gère, t'inquiète' a viré à la catastrophe.", who:'h', cat:['amis','probleme']},
+  {t:"Mesdames : c'est quoi le plan 'je rentre tôt ce soir' qui finit systématiquement à 4h ?", who:'f', cat:['soft','amis']},
+  {t:"Entre {autre} et {autre2}, lequel survivrait 24h sans téléphone… et lequel ferait une crise ?", cat:['amis','soft']},
+  {t:"Quel est le mensonge le plus inutile que tu aies dit cette semaine, juste par flemme ?", cat:['soft','probleme']}]},
 ];
 const JAMAIS = [
  "envoyé un message au mauvais groupe.","fait semblant d'aimer un cadeau.","menti sur mon âge.",
@@ -1020,7 +1041,8 @@ function vobFill(t){
   });
 }
 function vobKey(r,i){ return r+'-'+i; }
-function vobPool(cat){ const out=[]; VOB.forEach((rd,r)=>{ if(cat!=='tout' && rd.cat!==cat) return; rd.q.forEach((q,i)=>{ if(vobPlayable(vobItem(q))) out.push([r,i]); }); }); return out; }
+function qCats(rd,it){ const c=(it&&it.cat)||rd.cat; return Array.isArray(c)?c:[c]; }
+function vobPool(cat){ const out=[]; VOB.forEach((rd,r)=>{ rd.q.forEach((q,i)=>{ const it=vobItem(q); if(cat!=='tout' && !qCats(rd,it).includes(cat)) return; if(vobPlayable(it)) out.push([r,i]); }); }); return out; }
 function vobPick(){
   const g=S.game;
   let pool=vobPool(g.cat).filter(([r,i])=>!g.used.has(vobKey(r,i)));
