@@ -445,7 +445,7 @@ SCREENS.setup = () => {
         <button onclick="addPlayer()" style="width:52px;height:52px;border-radius:50%;background:rgba(156,116,255,.26);border:none;color:#CDBBFF;font-size:30px;font-weight:800;flex:none;cursor:pointer;">+</button>
         <input id="nm" placeholder="Ajouter un joueur" value="${S.nameDraft.replace(/"/g,'&quot;')}" oninput="S.nameDraft=this.value" onkeydown="if(event.key==='Enter')addPlayer()" style="flex:1;background:transparent;border:none;outline:none;font-family:var(--f);font-size:20px;font-weight:800;color:#fff;"></div>
     </div>
-    <button onclick="if(S.players.length>=2)go('hub')" style="position:absolute;left:28px;right:28px;bottom:calc(38px + env(safe-area-inset-bottom));height:78px;border-radius:999px;background:linear-gradient(180deg,#FFE46A,#FFC934 55%,#F1AF24);color:#4A2458;font-family:var(--d);font-size:23px;font-weight:800;letter-spacing:.3px;border:none;box-shadow:0 18px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.35);cursor:pointer;${n<2?'opacity:.55;':''}">C'EST PARTI</button>
+    <button onclick="newParty()" style="position:absolute;left:28px;right:28px;bottom:calc(38px + env(safe-area-inset-bottom));height:78px;border-radius:999px;background:linear-gradient(180deg,#FFE46A,#FFC934 55%,#F1AF24);color:#4A2458;font-family:var(--d);font-size:23px;font-weight:800;letter-spacing:.3px;border:none;box-shadow:0 18px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.35);cursor:pointer;${n<2?'opacity:.55;':''}">C'EST PARTI</button>
   </div>`;
 };
 
@@ -579,7 +579,11 @@ function busNext(){
     render();
   } else {
     if(g.mode==='infini'){ p.step=1; p.cards=[]; render(); }
-    else { p.step=1; p.cards=[]; nextTurn(); render(); }
+    else if(g.mode==='partage'){ p.step=1; p.cards=[]; nextTurn(); render(); }
+    else { // normal : il faut passer l'étape 1 pour avancer au suivant
+      if(p.step===1){ p.cards=[]; render(); }              // rate l'étape 1 -> on recommence, reste sur toi
+      else { p.step=1; p.cards=[]; nextTurn(); render(); } // rate une étape ≥2 -> passe au suivant
+    }
   }
 }
 
@@ -945,10 +949,15 @@ function prefChoose(i){ nextTurn(); prefPick(); render(); }
 function startGame(id){
   ({bus:startBus, purple:startPurple, ftd:startFtd, palmier:startPalmier, pmu:startPmu, echelle:startEchelle, tape:startTape, vob:startVob, jamais:startJamais, pref:startPref})[id]();
 }
-function addPlayer(){ const n=(S.nameDraft||'').trim(); if(!n)return; S.players.push({name:n.slice(0,16), color:COLORS[S.players.length%COLORS.length], gorgees:0}); S.nameDraft=''; render(); const i=document.getElementById('nm'); if(i)i.focus(); }
-function rmPlayer(i){ S.players.splice(i,1); render(); }
+function addPlayer(){ const n=(S.nameDraft||'').trim(); if(!n)return; S.players.push({name:n.slice(0,16), color:COLORS[S.players.length%COLORS.length], gorgees:0}); S.nameDraft=''; saveSession(); render(); const i=document.getElementById('nm'); if(i)i.focus(); }
+function rmPlayer(i){ S.players.splice(i,1); saveSession(); render(); }
 function resetAll(){ S.players.forEach(p=>p.gorgees=0); S.turn=0; go('home'); }
+function newParty(){ if(S.players.length<2)return; S.players.forEach(p=>p.gorgees=0); S.turn=0; go('hub'); }
+// Session locale (par téléphone) : on garde les noms/avatars entre les parties et les rechargements
+function saveSession(){ try{ localStorage.setItem('overnight.players', JSON.stringify(S.players.map(p=>({name:p.name,color:p.color})))); }catch(e){} }
+function loadSession(){ try{ const j=localStorage.getItem('overnight.players'); if(j){ const a=JSON.parse(j); if(Array.isArray(a)) S.players=a.filter(p=>p&&p.name).map(p=>({name:p.name, color:p.color||COLORS[0], gorgees:0})); } }catch(e){} }
 function render(){ app().innerHTML = SCREENS[S.screen](); }
+loadSession();
 render();
 </script>
 </body>
