@@ -515,51 +515,73 @@ function gameHead(title, right){
 function turnBanner(){ return `<div class="pill" style="align-self:center;margin-bottom:10px;">Au tour de · ${cur().name}</div>`; }
 
 /* ============================ LE BUS ============================ */
-function startBus(){ S.game={deck:newDeck(),step:1,cards:[]}; S.reveal=null; go('bus'); }
+function startBus(){ S.game={phase:'setup', deck:newDeck(), mode:'normal', step:1, cards:[], players:null}; S.reveal=null; go('bus'); }
+function busSetMode(m){ const g=S.game; g.mode=m; if(m==='partage') g.players=S.players.map(()=>({step:1,cards:[]})); g.phase='play'; S.reveal=null; render(); }
+function busProg(){ const g=S.game; return g.mode==='partage' ? g.players[S.turn] : g; }
 SCREENS.bus = () => {
-  const g=S.game, r=S.reveal;
-  const dots=[1,2,3,4].map(n=>`<span style="width:30px;height:8px;border-radius:99px;background:${n<=g.step?'#FFC93C':'rgba(255,255,255,.25)'}"></span>`).join('');
+  const g=S.game;
+  if(g.phase==='setup'){
+    const modeBtn=(m,t,d)=>`<button onclick="busSetMode('${m}')" style="border:none;cursor:pointer;border-radius:18px;background:var(--lav-soft);padding:16px 18px;text-align:left;display:flex;flex-direction:column;gap:3px;">
+      <span style="font-family:var(--d);font-weight:800;font-size:18px;color:var(--indigo);">${t}</span>
+      <span style="font-family:var(--b);font-weight:600;font-size:13px;color:var(--ink2);line-height:1.35;">${d}</span></button>`;
+    const mid=`<div class="panel" style="padding:24px;text-align:center;"><h2 style="font-size:22px;color:var(--ink);">Mode de jeu</h2>
+      <div style="display:flex;flex-direction:column;gap:12px;margin-top:18px;">
+       ${modeBtn('normal','Normal','Tu rates une étape → tu bois et ça passe au suivant. Les 4 étapes réussies → tu distribues.')}
+       ${modeBtn('infini','Infini','Tu gardes le téléphone tant que tu n’as pas réussi les 4 (rate = retour à l’étape 1).')}
+       ${modeBtn('partage','Partagé','1 tirage par personne, chacun son tour. Ta progression et tes cartes sont mémorisées.')}
+      </div></div>`;
+    return `<div class="pad fade">${gameHead('Le Bus')}${turnBanner()}<div class="gamebody">${mid}</div></div>`;
+  }
+  const p=busProg(), r=S.reveal;
+  const dots=[1,2,3,4].map(n=>`<span style="width:30px;height:8px;border-radius:99px;background:${n<=p.step?'#FFC93C':'rgba(255,255,255,.25)'}"></span>`).join('');
   const prompts={1:'Rouge ou Noir ?',2:'Plus ou moins ?',3:'Intérieur ou extérieur ?',4:"Quelle enseigne ?"};
   let mid='', actions='';
-  // pile des cartes précédentes (éventail) — exclut la carte révélée en grand
-  const prev = r ? g.cards.slice(0,-1) : g.cards;
+  const prev = r ? p.cards.slice(0,-1) : p.cards;
   const stack = prev.length ? `<div style="display:flex;align-items:center;justify-content:center;margin-bottom:16px;">${prev.map((c,i)=>`<div style="margin-left:${i?-16:0}px;">${cardHTML(c,48,67)}</div>`).join('')}</div>` : '';
   if(r){
-    actions = `<button class="btn primary" onclick="busNext()">${r.ok? (g.step>4?'Bravo !':'Continuer') : 'Au suivant'}</button>`;
+    const label = r.ok ? (p.step>=4?'Bravo !':(g.mode==='partage'?'Au joueur suivant':'Continuer')) : 'Au joueur suivant';
+    actions = `<button class="btn primary" onclick="busNext()">${label}</button>`;
     mid = `<div class="panel" style="padding:24px;text-align:center;background:#F6F4FF;">${stack}
-        <div style="display:flex;justify-content:center;">${cardHTML(r.card,150,210)}</div>
+        <div style="display:flex;justify-content:center;">${cardHTML(r.card,168,236)}</div>
         <div style="margin-top:18px;"><b style="font-family:var(--f);font-size:21px;color:${r.ok?'#19A974':'var(--red)'};">${r.ok?'Gagné !':'Raté'}</b>
         <div class="sub" style="color:var(--ink2);font-size:14px;margin-top:4px;">${r.msg}</div></div></div>`;
   } else {
     mid = `<div class="panel" style="padding:24px;text-align:center;background:#F6F4FF;">${stack}
         <div style="display:flex;justify-content:center;">${cardBack(192,268)}</div>
-        <h2 style="font-size:24px;margin-top:18px;color:var(--ink);">${prompts[g.step]}</h2>
-        <div class="sub" style="color:var(--ink2);margin-top:4px;">Erreur = ${g.step} gorgée${g.step>1?'s':''}</div></div>`;
-    if(g.step===1) actions=`<div class="row"><button class="btn red" onclick="busGuess('r')">Rouge</button><button class="btn dark" onclick="busGuess('n')">Noir</button></div>`;
-    else if(g.step===2) actions=`<div class="row"><button class="btn" onclick="busGuess('p')">Plus ↑</button><button class="btn" onclick="busGuess('m')">Moins ↓</button></div>`;
-    else if(g.step===3) actions=`<div class="row"><button class="btn" onclick="busGuess('in')">Intérieur</button><button class="btn" onclick="busGuess('out')">Extérieur</button></div>`;
+        <h2 style="font-size:24px;margin-top:18px;color:var(--ink);">${prompts[p.step]}</h2>
+        <div class="sub" style="color:var(--ink2);margin-top:4px;">Erreur = ${p.step} gorgée${p.step>1?'s':''}</div></div>`;
+    if(p.step===1) actions=`<div class="row"><button class="btn red" onclick="busGuess('r')">Rouge</button><button class="btn dark" onclick="busGuess('n')">Noir</button></div>`;
+    else if(p.step===2) actions=`<div class="row"><button class="btn" onclick="busGuess('p')">Plus ↑</button><button class="btn" onclick="busGuess('m')">Moins ↓</button></div>`;
+    else if(p.step===3) actions=`<div class="row"><button class="btn" onclick="busGuess('in')">Intérieur</button><button class="btn" onclick="busGuess('out')">Extérieur</button></div>`;
     else actions=`<div class="row" style="flex-wrap:wrap;">${SUITS.map((s,i)=>`<button class="btn" style="flex:1 1 40%;color:${i===1||i===2?'#FFD2CC':'#fff'};" onclick="busGuess(${i})">${s}</button>`).join('')}</div>`;
   }
-  return `<div class="pad fade">${gameHead('Le Bus', `<div class="pill">${g.step}/4</div>`)}
+  const tag = g.mode==='partage'?'Partagé':(g.mode==='infini'?'Infini':'Normal');
+  return `<div class="pad fade">${gameHead('Le Bus', `<div class="pill">${p.step}/4 · ${tag}</div>`)}
     ${turnBanner()}
     <div style="display:flex;justify-content:center;gap:7px;margin-bottom:6px;">${dots}</div>
     <div class="gamebody">${mid}</div>${actions}</div>`;
 };
 function busGuess(ans){
-  const g=S.game, c=draw(g.deck); let ok=false, msg='';
-  if(g.step===1){ ok = (ans==='r')===isRed(c); msg = ok?'Bien vu, on continue.':`C'était ${isRed(c)?'rouge':'noir'}. Bois 1 gorgée.`; }
-  else if(g.step===2){ const p=g.cards[0]; if(c.v===p.v){ok=false;msg='Égalité = perdu. Bois 2 gorgées.';} else { ok=(ans==='p')===(c.v>p.v); msg=ok?'Exact !':`Raté. Bois 2 gorgées.`; } }
-  else if(g.step===3){ const lo=Math.min(g.cards[0].v,g.cards[1].v), hi=Math.max(g.cards[0].v,g.cards[1].v); if(c.v===lo||c.v===hi){ok=false;msg='Pile sur une borne = perdu. Bois 3 gorgées.';} else { const inside=c.v>lo&&c.v<hi; ok=(ans==='in')===inside; msg=ok?'Bien joué !':'Raté. Bois 3 gorgées.'; } }
-  else { ok = ans===c.s; msg = ok?'Incroyable, carton plein !':`C'était ${SUITS[c.s]}. Bois 4 gorgées.`; }
-  if(!ok) drink(S.turn, g.step);
-  S.reveal={card:c, ok, msg}; S.game.cards.push(c); render();
+  const g=S.game, p=busProg(), c=draw(g.deck); let ok=false, msg='';
+  if(p.step===1){ ok=(ans==='r')===isRed(c); msg=ok?'Bien vu, on continue.':`C'était ${isRed(c)?'rouge':'noir'}. Bois 1 gorgée.`; }
+  else if(p.step===2){ const pr=p.cards[0]; if(c.v===pr.v){ok=false;msg='Égalité = perdu. Bois 2 gorgées.';} else { ok=(ans==='p')===(c.v>pr.v); msg=ok?'Exact !':'Raté. Bois 2 gorgées.'; } }
+  else if(p.step===3){ const lo=Math.min(p.cards[0].v,p.cards[1].v), hi=Math.max(p.cards[0].v,p.cards[1].v); if(c.v===lo||c.v===hi){ok=false;msg='Pile sur une borne = perdu. Bois 3 gorgées.';} else { const inside=c.v>lo&&c.v<hi; ok=(ans==='in')===inside; msg=ok?'Bien joué !':'Raté. Bois 3 gorgées.'; } }
+  else { ok=ans===c.s; msg=ok?'Incroyable, carton plein !':`C'était ${SUITS[c.s]}. Bois 4 gorgées.`; }
+  if(!ok) drink(S.turn, p.step);
+  S.reveal={card:c, ok, msg}; p.cards.push(c); render();
 }
 function busNext(){
-  const g=S.game;
-  if(S.reveal.ok){ g.step++; S.reveal=null; if(g.step>4){ alert(cur().name+' a réussi le Bus ! Distribue 4 gorgées à qui tu veux.'); endBusTurn(); return;} render(); }
-  else { endBusTurn(); }
+  const g=S.game, p=busProg(), ok=S.reveal.ok; S.reveal=null;
+  if(ok){
+    p.step++;
+    if(p.step>4){ alert(cur().name+' a réussi le Bus ! Distribue 4 gorgées à qui tu veux.'); p.step=1; p.cards=[]; nextTurn(); render(); return; }
+    if(g.mode==='partage') nextTurn();
+    render();
+  } else {
+    if(g.mode==='infini'){ p.step=1; p.cards=[]; render(); }
+    else { p.step=1; p.cards=[]; nextTurn(); render(); }
+  }
 }
-function endBusTurn(){ nextTurn(); S.game={deck:S.game.deck,step:1,cards:[]}; S.reveal=null; render(); }
 
 /* ============================ PURPLE ============================ */
 function startPurple(){ S.game={deck:newDeck(), cards:[], pot:0, last:null}; go('purple'); }
