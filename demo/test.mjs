@@ -19,7 +19,7 @@ await page.getByRole('button',{name:/PARTI/i}).click();                 // -> ca
 await page.waitForTimeout(200);
 const row = t=>page.locator('.gamerow',{hasText:t}).click();
 await row('Le Bus'); await page.waitForTimeout(150);
-await page.getByRole('button',{name:/Normal/}).click(); await page.waitForTimeout(150);
+await page.getByRole('button',{name:/Chacun son tour/}).click(); await page.waitForTimeout(150);
 await page.getByRole('button',{name:'Rouge',exact:true}).click(); await page.waitForTimeout(200);
 console.log('ERREURS JS:', errs.length ? JSON.stringify(errs) : 'AUCUNE');
 await b.close();

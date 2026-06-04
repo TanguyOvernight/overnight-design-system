@@ -698,9 +698,9 @@ SCREENS.bus = () => {
       <span style="font-family:var(--b);font-weight:600;font-size:13px;color:var(--ink2);line-height:1.35;">${d}</span></button>`;
     const mid=`<div class="gpanel" style="padding:24px;text-align:center;"><h2 style="font-size:22px;color:#fff;">Mode de jeu</h2>
       <div style="display:flex;flex-direction:column;gap:12px;margin-top:18px;">
-       ${modeBtn('normal','Normal','Tu rates une étape → tu bois et ça passe au suivant. Les 4 étapes réussies → tu distribues.')}
-       ${modeBtn('infini','Infini','Tu gardes le téléphone tant que tu n’as pas réussi les 4 (rate = retour à l’étape 1).')}
-       ${modeBtn('partage','Partagé','1 tirage par personne, chacun son tour. Ta progression et tes cartes sont mémorisées.')}
+       ${modeBtn('partage','Chacun son tour','1 carte par tour, à plusieurs. Tu gardes ta progression même en ratant (tu bois juste). La partie finit quand chaque joueur a fait ses 4 cartes.')}
+       ${modeBtn('infini','Recommencer','Solo, sans pitié : le moindre rate te renvoie à l’étape 1. Tu gardes le téléphone jusqu’à réussir les 4 d’affilée.')}
+       ${modeBtn('normal','Solo','Tu enchaînes les 4 étapes seul. Rate l’étape 1 = tu rejoues ; rate après = tu bois et ça passe au suivant.')}
       </div></div>`;
     return `<div class="pad fade">${gameHead('Le Bus')}${turnBanner()}<div class="gamebody">${mid}</div></div>`;
   }
@@ -744,15 +744,19 @@ function busGuess(ans){
 }
 function busNext(){
   const g=S.game, p=busProg(), ok=S.reveal.ok; S.reveal=null;
+  if(g.mode==='partage'){
+    p.step++;                       // on avance qu'on ait gagné OU perdu — la progression est gardée
+    if(g.players.every(pl=>pl.step>4)){ alert('Partie terminée — chaque joueur a fait ses 4 cartes !'); go('scores'); return; }
+    for(let k=0;k<S.players.length;k++){ nextTurn(); if(g.players[S.turn].step<=4) break; } // passe au prochain pas encore arrivé au bout
+    render(); return;
+  }
   if(ok){
     p.step++;
     if(p.step>4){ alert(cur().name+' a réussi le Bus ! Distribue 4 gorgées à qui tu veux.'); p.step=1; p.cards=[]; nextTurn(); render(); return; }
-    if(g.mode==='partage') nextTurn();
     render();
   } else {
     if(g.mode==='infini'){ p.step=1; p.cards=[]; render(); }
-    else if(g.mode==='partage'){ p.step=1; p.cards=[]; nextTurn(); render(); }
-    else { // normal : il faut passer l'étape 1 pour avancer au suivant
+    else { // normal solo : il faut passer l'étape 1 pour avancer
       if(p.step===1){ p.cards=[]; render(); }              // rate l'étape 1 -> on recommence, reste sur toi
       else { p.step=1; p.cards=[]; nextTurn(); render(); } // rate une étape ≥2 -> passe au suivant
     }
