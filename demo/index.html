@@ -167,7 +167,8 @@ function cardBack(w,h,dark){
     ${sp(50,26,1)}${sp(50,106,1)}${sp(23,42,0.6)}${sp(77,42,0.6)}${sp(23,90,0.6)}${sp(77,90,0.6)}
   </svg>`;
 }
-const AV = { Homme:['#4F86E0','#46C9A0','#F0A93C','#6C4FE0','#34C3D6'], Femme:['#FF7E8B','#E0563E','#B98CFF','#FF9E7A','#9AD06B'] };
+const AV = { Homme:[{id:'h1',c:'#4F86E0'},{id:'h2',c:'#46C9A0'},{id:'h3',c:'#F0A93C'},{id:'h4',c:'#6C4FE0'},{id:'h5',c:'#34C3D6'},{id:'h6',c:'#FF9E7A'}], Femme:[{id:'f1',c:'#FF7E8B'},{id:'f2',c:'#E0563E'},{id:'f3',c:'#B98CFF'},{id:'f4',c:'#9AD06B'},{id:'f5',c:'#4F86E0'},{id:'f6',c:'#F0A93C'}] };
+function avObj(g,id,c){ return {g,c,id,img:'assets/avatars/'+id+'.png'}; }
 function personSVG(size){ const w=Math.round(size*0.6); return `<svg width="${w}" height="${w}" viewBox="0 0 24 24" fill="#fff" style="opacity:.96;"><circle cx="12" cy="8" r="4.3"/><path d="M3.5 21c0-4.7 3.8-8 8.5-8s8.5 3.3 8.5 8z"/></svg>`; }
 function avatar(p, size){
   const s=size;
@@ -176,19 +177,9 @@ function avatar(p, size){
   }
   return `<div class="av" style="width:${s}px;height:${s}px;font-size:${Math.round(s*0.4)}px;background:${(p&&p.color)||'#6C4FE0'};">${(p&&p.name?p.name[0]:'?').toUpperCase()}</div>`;
 }
-function openAvatar(i){ S.avatarPicker=i; render(); }
-function closeAvatar(){ S.avatarPicker=null; render(); }
-function pickAvatar(i,g,c){ if(S.players[i]) S.players[i].avatar={c,g}; S.avatarPicker=null; saveSession(); render(); }
-function avatarPickerOverlay(){
-  const i=S.avatarPicker; if(i==null||!S.players[i]) return '';
-  const section=(g)=>`<div style="margin-top:18px;"><div class="cap" style="color:var(--ink2);text-align:left;">${g}</div>
-    <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:12px;">${AV[g].map(c=>`<button onclick="pickAvatar(${i},'${g}','${c}')" style="border:none;cursor:pointer;background:transparent;padding:0;">${avatar({avatar:{c,g}},58)}</button>`).join('')}</div></div>`;
-  return `<div onclick="if(event.target===this)closeAvatar()" style="position:absolute;inset:0;background:rgba(8,4,28,.62);display:flex;align-items:flex-end;z-index:60;">
-    <div style="background:#fff;width:100%;border-radius:30px 30px 0 0;padding:26px 24px calc(26px + env(safe-area-inset-bottom));max-height:82%;overflow:auto;">
-      <div style="display:flex;align-items:center;justify-content:space-between;"><h2 style="color:var(--ink);font-size:21px;">Choisis ton avatar</h2><button onclick="closeAvatar()" style="border:none;background:var(--lav-soft);width:38px;height:38px;border-radius:50%;color:var(--indigo);font-size:20px;font-weight:800;cursor:pointer;">×</button></div>
-      ${section('Homme')}${section('Femme')}
-    </div></div>`;
-}
+function openAvatar(i){ S.avatarPicker=i; go('avatars'); }
+function closeAvatar(){ S.avatarPicker=null; go('setup'); }
+function pickAvatar(i,g,id,c){ if(S.players[i]) S.players[i].avatar=avObj(g,id,c); S.avatarPicker=null; saveSession(); go('setup'); }
 // Taille de police dynamique : texte court = gros, texte long = plus petit
 function qz(t){ const n=(t||'').length; return n<30?38:n<48?33:n<72?28:n<110?23:20; }
 
@@ -401,6 +392,19 @@ const GAMES = [
 
 /* ============================ ÉCRANS ============================ */
 const SCREENS = {};
+SCREENS.avatars = () => {
+  const i=S.avatarPicker;
+  const tile=(g,e)=>`<button onclick="pickAvatar(${i},'${g}','${e.id}','${e.c}')" style="border:none;background:transparent;cursor:pointer;padding:0;display:flex;justify-content:center;transition:transform .08s;" onpointerdown="this.style.transform='scale(.93)'" onpointerup="this.style.transform=''">${avatar({avatar:avObj(g,e.id,e.c)},98)}</button>`;
+  const grid=(g)=>`<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;justify-items:center;margin-top:14px;">${AV[g].map(e=>tile(g,e)).join('')}</div>`;
+  return `<div class="pad fade">
+    <div class="hdr"><button class="iconbtn" onclick="closeAvatar()">‹</button><h2 style="flex:1;text-align:center;font-size:21px;">Ton avatar</h2><div style="width:42px"></div></div>
+    <div class="sub center" style="margin-bottom:4px;">Choisis ton préféré.</div>
+    <div style="flex:1;overflow:auto;min-height:0;padding:6px 2px 16px;">
+      <div class="cap" style="margin-top:14px;">Homme</div>${grid('Homme')}
+      <div class="cap" style="margin-top:24px;">Femme</div>${grid('Femme')}
+    </div>
+  </div>`;
+};
 
 const NIGHT="background:radial-gradient(circle at 50% 18%,rgba(117,83,255,.35),transparent 38%),linear-gradient(180deg,#2A1375 0%,#34108D 45%,#18084F 100%);box-shadow:inset 0 0 90px rgba(0,0,0,.28);overflow:hidden;";
 const ROUNDBTN="width:58px;height:58px;border-radius:18px;background:linear-gradient(180deg,rgba(156,116,255,.95),rgba(111,73,232,.88));box-shadow:0 12px 24px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.22);border:none;color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;";
@@ -468,7 +472,6 @@ SCREENS.setup = () => {
         <input id="nm" placeholder="Ajouter un joueur" value="${S.nameDraft.replace(/"/g,'&quot;')}" oninput="S.nameDraft=this.value" onkeydown="if(event.key==='Enter')addPlayer()" style="flex:1;background:transparent;border:none;outline:none;font-family:var(--f);font-size:20px;font-weight:800;color:#fff;"></div>
     </div>
     <button onclick="newParty()" style="position:absolute;left:28px;right:28px;bottom:calc(38px + env(safe-area-inset-bottom));height:78px;border-radius:999px;background:linear-gradient(180deg,#FFE46A,#FFC934 55%,#F1AF24);color:#4A2458;font-family:var(--d);font-size:23px;font-weight:800;letter-spacing:.3px;border:none;box-shadow:0 18px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.35);cursor:pointer;${n<2?'opacity:.55;':''}">C'EST PARTI</button>
-    ${S.avatarPicker!=null?avatarPickerOverlay():''}
   </div>`;
 };
 
