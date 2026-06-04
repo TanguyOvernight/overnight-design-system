@@ -551,29 +551,9 @@ function logoBlock(){
 }
 
 SCREENS.home = () => `<div class="fade" style="position:absolute;inset:0;${NIGHT}">
-  <svg style="position:absolute;bottom:230px;left:-20px;width:160px;height:260px;opacity:.16;" viewBox="0 0 160 260" fill="#0E0640"><path d="M70 260V120M70 120c-10-40-46-54-70-50 8 36 40 56 70 50zM70 120c6-40 40-58 70-52-6 38-38 58-70 52z"/></svg>
-  <svg style="position:absolute;bottom:250px;right:-30px;width:170px;height:280px;opacity:.14;transform:scaleX(-1);" viewBox="0 0 160 260" fill="#0E0640"><path d="M70 260V120M70 120c-10-40-46-54-70-50 8 36 40 56 70 50zM70 120c6-40 40-58 70-52-6 38-38 58-70 52z"/></svg>
-  ${[ [110,46],[150,360],[90,330],[200,70],[260,300],[300,52] ].map(([t,l])=>`<div style="position:absolute;top:${t}px;left:${l}px;width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.65);box-shadow:0 0 6px rgba(255,255,255,.5);"></div>`).join('')}
-  <button onclick="alert('Réglages — bientôt')" style="position:absolute;top:max(54px,env(safe-area-inset-top));right:24px;${ROUNDBTN}">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 3v2.2M12 18.8V21M3 12h2.2M18.8 12H21M5.6 5.6l1.6 1.6M16.8 16.8l1.6 1.6M18.4 5.6l-1.6 1.6M7.2 16.8l-1.6 1.6"/></svg>
-  </button>
-  <div style="position:absolute;top:128px;left:0;right:0;text-align:center;">${logoBlock()}
-    <div style="font-family:var(--b);font-size:15px;font-weight:800;letter-spacing:.8px;color:#CDBBFF;text-transform:uppercase;margin-top:8px;">Le jeu à boire entre potes</div></div>
-  <div style="position:absolute;top:248px;left:0;right:0;height:420px;display:flex;align-items:center;justify-content:center;">
-    <div style="position:absolute;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(117,83,255,.30),transparent 62%);"></div>
-    <img src="assets/home-hero.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" style="max-height:400px;max-width:92%;position:relative;">
-    <div style="display:none;position:relative;flex-direction:column;align-items:center;">
-      <div style="position:relative;width:230px;height:150px;">
-        <div style="position:absolute;bottom:24px;left:50%;transform:translateX(-50%);width:62px;height:118px;border-radius:14px 14px 18px 18px;background:linear-gradient(160deg,#8A5CF0,#4B2BB4);box-shadow:inset -8px 0 0 rgba(0,0,0,.18);"></div>
-        <div style="position:absolute;bottom:60px;left:50%;transform:translateX(-50%);width:42px;height:40px;border-radius:7px;background:#3A1E8F;border-top:3px solid #FFD33F;border-bottom:3px solid #FFD33F;"></div>
-        <div style="position:absolute;bottom:10px;left:18px;width:46px;height:64px;border-radius:8px 8px 10px 10px;background:linear-gradient(180deg,#FF6B5A,#D6321F);"></div>
-        <div style="position:absolute;bottom:10px;right:18px;width:46px;height:64px;border-radius:8px 8px 10px 10px;background:linear-gradient(180deg,#2A2440,#16141F);"></div>
-        <div style="position:absolute;bottom:0;left:50%;transform:translateX(-50%);">${cardBack(60,84)}</div>
-      </div>
-      <div style="width:250px;height:34px;border-radius:50%;background:radial-gradient(circle,#6B47C9,#3A1E8F);margin-top:-6px;box-shadow:0 18px 34px rgba(0,0,0,.4);"></div>
-    </div>
-  </div>
-  <div style="position:absolute;left:28px;right:28px;bottom:calc(44px + env(safe-area-inset-bottom));display:grid;grid-template-columns:1fr 1fr;gap:18px;">
+  <img src="assets/home-bg.png" alt="" onerror="this.remove()" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+  <div style="position:absolute;left:0;right:0;bottom:0;height:360px;background:linear-gradient(180deg,transparent,rgba(8,4,26,.6));pointer-events:none;"></div>
+  <div style="position:absolute;left:28px;right:28px;bottom:calc(44px + env(safe-area-inset-bottom));display:grid;grid-template-columns:1fr 1fr;gap:18px;z-index:2;">
     <button onclick="go('setup')" style="height:136px;border-radius:28px;background:linear-gradient(180deg,#FFE46A,#FFC934 55%,#F1AF24);color:#3A245C;border:none;box-shadow:0 18px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.35);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;cursor:pointer;">
       <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#3A245C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0"/><path d="M16 6.2a3 3 0 0 1 0 5.6M20.5 20a5.5 5.5 0 0 0-3.2-5"/></svg>
       <div style="font-family:var(--d);font-size:20px;font-weight:800;text-transform:uppercase;">Party mode</div>
