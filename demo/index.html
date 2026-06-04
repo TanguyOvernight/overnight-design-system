@@ -188,7 +188,7 @@ function qz(t){ const n=(t||'').length; return n<30?38:n<48?33:n<72?28:n<110?23:
 
 /* ============================ CONTENU ============================ */
 const VOB = [
- {titre:"Pour briser la glace", q:[
+ {titre:"Pour briser la glace", cat:"soft", q:[
   "Quel est le pseudo le plus gênant que tu aies jamais eu sur internet ?",
   "As-tu déjà fait semblant de reconnaître quelqu'un qui te connaissait visiblement ?",
   "Quelle est la chanson dont tu connais les paroles par cœur et dont tu as super honte ?",
@@ -201,7 +201,7 @@ const VOB = [
   "Quel est le truc le plus absurde que tu aies cherché sur Google ce mois-ci ?",
   "Quel est le compliment le plus bizarre qu'on t'ait jamais fait ?",
   "Quel est le truc le plus gênant actuellement dans les Notes de ton tél ?"]},
- {titre:"Attends, sérieux ?", q:[
+ {titre:"Attends, sérieux ?", cat:"soft", q:[
   "Quel est l'endroit le plus insolite où tu t'es endormi ?",
   "Quelle est l'excuse la plus farfelue que tu aies inventée pour te défiler ?",
   "As-tu déjà fait croire que tu n'avais plus de batterie pour éviter un message ?",
@@ -213,7 +213,7 @@ const VOB = [
   "À quoi d'improbable as-tu déjà parlé à voix haute en étant seul ?",
   "Quelle est la pire cachette que tu aies choisie à un cache-cache ?",
   "Quel est le surnom le plus bizarre que tu aies donné à un objet ?"]},
- {titre:"Les gros dossiers", q:[
+ {titre:"Les gros dossiers", cat:"probleme", q:[
   "Quel est le bruit le plus gênant que tu aies jamais fait en public ?",
   "Quel est le truc le plus malaisant qui te soit arrivé chez le médecin ?",
   "As-tu déjà envoyé un vocal que tu as voulu supprimer dans la seconde ?",
@@ -225,7 +225,7 @@ const VOB = [
   "Quelle est la pire tenue que tu aies portée en te trouvant super stylé ?",
   "Quelle est la pire dinguerie que tu aies faite pour impressionner quelqu'un qui s'en foutait ?",
   "As-tu déjà envoyé un message bourré à quelqu'un que tu avais juré de ne plus contacter ?"]},
- {titre:"J'y crois pas que tu viens d'avouer ça", q:[
+ {titre:"J'y crois pas que tu viens d'avouer ça", cat:"probleme", q:[
   "Si ton téléphone fuitait là, quelle serait la chose la plus gênante à voir ?",
   "As-tu déjà lâché un \"je t'aime\" par erreur à quelqu'un ?",
   "Quelle est la dispute la plus ridicule que tu aies eue en étant bourré ?",
@@ -238,7 +238,7 @@ const VOB = [
   "Quelle est la pire photo de toi sur laquelle tu es identifié sur les réseaux ?",
   "Si le groupe devait te décrire en une phrase gênante, ce serait quoi ?",
   "Quel est le mensonge le plus débile que tu aies raconté et qui a pris des proportions folles ?"]},
- {titre:"Le before (entre potes)", q:[
+ {titre:"Le before (entre potes)", cat:"amis", q:[
   `Quelle a été ta vraie première impression de moi ?`,
   `Qui dans ce groupe pensais-tu détester, mais que tu as fini par adorer ?`,
   `Quel est ton talent caché que personne ici ne connaît ?`,
@@ -258,7 +258,7 @@ const VOB = [
   `Quelle fausse rumeur sur toi as-tu laissé le groupe croire ?`,
   `Qui appellerais-tu en premier si tu étais coincé(e) au milieu de nulle part ?`,
   `Qui donne toujours les meilleurs conseils, même si sa propre vie est un carnage ?`]},
- {titre:"On balance", q:[
+ {titre:"On balance", cat:"probleme", q:[
   `Fais un top 3 des personnes à qui tu te confierais en premier ici.`,
   `Quelle opinion secrète as-tu sur quelqu'un ici sans jamais l'avoir partagée ?`,
   `Qui dans ce groupe t'a le plus surpris(e), en bien ou en mal ?`,
@@ -278,7 +278,7 @@ const VOB = [
   `Qui ici a la vie sentimentale la plus chaotique tout en le cachant ?`,
   `Quelle est l'habitude la plus insupportable de quelqu'un ici ?`,
   `Qui est le plus susceptible de créer un drama et d'en accuser un autre ?`]},
- {titre:"Le confessionnal", q:[
+ {titre:"Le confessionnal", cat:"probleme", q:[
   `Quel truc sur toi n'as-tu jamais dit à personne dans ce groupe ?`,
   `As-tu déjà été blessé(e) par quelqu'un ici sans jamais en parler ?`,
   `À quel moment t'es-tu senti(e) mis(e) à l'écart dans ce groupe ?`,
@@ -298,7 +298,7 @@ const VOB = [
   `As-tu déjà eu l'impression d'être invisible dans le groupe ?`,
   `Quelle est la chose la plus courageuse que tu aies faite et que personne ici ne sait ?`,
   `As-tu déjà voulu dire à quelqu'un combien il/elle comptait, avant de te dégonfler ?`]},
- {titre:"Le round de non-retour", q:[
+ {titre:"Le round de non-retour", cat:"probleme", q:[
   `Quelle est la pire chose que tu aies dite dans le dos de quelqu'un ici présent ?`,
   `As-tu déjà pécho quelqu'un pour qui un pote du groupe avait des sentiments ?`,
   `Quel secret de tes 18 ans choquerait ce groupe ?`,
@@ -317,7 +317,7 @@ const VOB = [
   `As-tu déjà voulu te venger de quelqu'un ici, même une seconde ?`,
   `Quel secret te ferait boire un verre cul sec pour ne pas répondre ?`,
   `As-tu déjà volé la vedette au grand moment d'un pote ?`]},
- {titre:"Roast (chaise électrique)", q:[
+ {titre:"Roast (chaise électrique)", cat:"amis", q:[
   `Quel est le truc qui me ressemble le moins que j'aie jamais fait ?`,
   `Décris-moi en trois mots peu flatteurs.`,
   `Quelle est la chose la plus cringe que j'aie dite en étant totalement sobre ?`,
@@ -330,7 +330,7 @@ const VOB = [
   `Quelle chanson résume parfaitement ma vie amoureuse ?`,
   `Si ma vie était une sitcom, quelle serait la blague récurrente ?`,
   `Quelle photo dossier de moi afficherais-tu sur les réseaux ?`]},
- {titre:"Spécial groupe (fin de soirée)", q:[
+ {titre:"Spécial groupe (fin de soirée)", cat:"amis", q:[
   `Quel est ton meilleur souvenir avec ce groupe ?`,
   `Qui ici a le plus changé depuis qu'on se connaît ?`,
   `Qu'est-ce que ce groupe t'a appris sur toi-même ?`,
@@ -342,7 +342,7 @@ const VOB = [
   `Quelle est ta private joke préférée avec nous ?`,
   `Qu'espères-tu encore vrai sur notre amitié dans dix ans ?`,
   `Si tu portais un toast à ce groupe là maintenant, que dirais-tu ?`]},
- {titre:"Action !", q:[
+ {titre:"Action !", cat:"action", q:[
   {t:"Fais un vrai compliment à {autre}."},
   {t:"Imite {autre} : les autres doivent deviner de qui il s'agit."},
   {t:"Câlin de 10 secondes avec {autre}."},
@@ -367,7 +367,7 @@ const VOB = [
   {t:"Messieurs, faites votre meilleure pose de beau gosse.", who:'h'},
   {t:"Entre filles : c'est quoi le red flag que tu repères direct ?", who:'f'},
   {t:"Mesdames, lâchez votre meilleure réplique pour recaler quelqu'un.", who:'f'}]},
- {titre:"Cible", q:[
+ {titre:"Cible", cat:"action", q:[
   {t:"Si tu devais embrasser une personne ici, ce serait qui ? Pointe-la du doigt."},
   {t:"Avec quel joueur partirais-tu en week-end en amoureux, et pourquoi ?"},
   {t:"Donne une qualité et un défaut de {autre}."},
@@ -388,6 +388,25 @@ const VOB = [
   {t:"Quel mec ici est le plus charmeur, selon toi ?", need:'h'},
   {t:"Entre les filles présentes, laquelle gère le mieux une soirée ?", need:'f'},
   {t:"Entre les mecs présents, lequel ferait le meilleur copain de pote ?", need:'h'}]},
+ {titre:"Chaud du cul", cat:"chaud", q:[
+  {t:"Quel est l'endroit le plus insolite où tu as déjà embrassé quelqu'un ?"},
+  {t:"C'est quoi ton plus gros crush inavoué… présent dans cette pièce ou non ?"},
+  {t:"Quelle est la pire excuse que tu aies sortie après un date raté ?"},
+  {t:"Sur une échelle de 1 à 10, à combien tu situes ton charme ce soir ?"},
+  {t:"Quel est ton red flag à toi, celui que tu assumes complètement ?"},
+  {t:"Quelle est la chose la plus gênante qui te soit arrivée pendant un câlin ?"},
+  {t:"Tu préfères embrasser {autre} ou faire cul sec ? (réponds, puis assume)"},
+  {t:"Si tu devais passer une soirée en tête-à-tête avec une personne ici, ce serait qui ?"},
+  {t:"Quel a été ton date le plus what-the-f de toute ta vie ?"},
+  {t:"Quelle est la phrase de drague qui marche à 100% sur toi ?"},
+  {t:"Avec quel personnage de série/film tu craquerais direct ?"},
+  {t:"Quel est le compliment qui te fait fondre à coup sûr ?"},
+  {t:"Raconte ton premier baiser : le contexte le plus honteux possible."},
+  {t:"Entre {autre} et {autre2}, avec qui tu partirais en week-end en amoureux ?"},
+  {t:"Messieurs : votre pire vantardise pour impressionner quelqu'un ?", who:'h'},
+  {t:"Mesdames : le détail qui vous fait dire non direct chez un mec ?", who:'f'},
+  {t:"Fais les yeux doux à {autre} pendant 10 secondes sans rire."},
+  {t:"Murmure à {autre} le compliment le plus gênant que tu puisses inventer."}]},
 ];
 const JAMAIS = [
  "envoyé un message au mauvais groupe.","fait semblant d'aimer un cadeau.","menti sur mon âge.",
@@ -965,7 +984,9 @@ function pmuDraw(){
 }
 
 /* ============================ VÉRITÉ OU BOIS ============================ */
-function startVob(){ S.game={phase:'setup', round:0, used:VOB.map(()=>new Set()), q:null, target:100, count:0}; go('vob'); }
+const VOB_CATS=[{id:'tout',label:'Tout'},{id:'soft',label:'Soft'},{id:'amis',label:'Vieux frères'},{id:'chaud',label:'Chaud du cul'},{id:'probleme',label:'Les problèmes'},{id:'action',label:'Actions'}];
+function startVob(){ S.game={phase:'setup', cat:'tout', used:new Set(), q:null, target:100, count:0}; go('vob'); }
+function vobSetCat(c){ S.game.cat=c; render(); }
 function vobSetCount(n){ const g=S.game; g.target=n; g.count=0; g.phase='play'; vobPick(); render(); }
 // --- Ciblage par sexe (via l'avatar choisi) pour Vérité ou Bois ---
 function sexOf(p){ return p && p.avatar && p.avatar.g; }
@@ -998,23 +1019,27 @@ function vobFill(t){
     return p ? p.name : (m==='{F}'?'une fille':m==='{H}'?'un mec':'quelqu’un');
   });
 }
+function vobKey(r,i){ return r+'-'+i; }
+function vobPool(cat){ const out=[]; VOB.forEach((rd,r)=>{ if(cat!=='tout' && rd.cat!==cat) return; rd.q.forEach((q,i)=>{ if(vobPlayable(vobItem(q))) out.push([r,i]); }); }); return out; }
 function vobPick(){
-  const g=S.game, r=g.round, list=VOB[r].q;
-  let cand=list.map((_,idx)=>idx).filter(idx=>!g.used[r].has(idx) && vobPlayable(vobItem(list[idx])));
-  if(!cand.length){ g.used[r].clear(); cand=list.map((_,idx)=>idx).filter(idx=>vobPlayable(vobItem(list[idx]))); }
-  if(!cand.length){ const f=VOB[0].q; g.q=vobFill(vobItem(rndPick(f)).t); return; }
-  const idx=cand[Math.random()*cand.length|0]; g.used[r].add(idx); g.q=vobFill(vobItem(list[idx]).t);
+  const g=S.game;
+  let pool=vobPool(g.cat).filter(([r,i])=>!g.used.has(vobKey(r,i)));
+  if(!pool.length){ g.used.clear(); pool=vobPool(g.cat); }
+  if(!pool.length) pool=vobPool('tout');           // repli si le thème n'a rien de jouable ici
+  if(!pool.length){ g.q=vobFill(vobItem(VOB[0].q[0]).t); return; }
+  const [r,i]=pool[Math.random()*pool.length|0]; g.used.add(vobKey(r,i)); g.q=vobFill(vobItem(VOB[r].q[i]).t);
 }
 function rndPick(a){ return a[Math.random()*a.length|0]; }
 SCREENS.vob = () => {
   const g=S.game;
   if(g.phase==='setup'){
-    const tot=VOB.reduce((n,r)=>n+r.q.length,0);
+    const chip=(c)=>`<button onclick="vobSetCat('${c.id}')" style="border:none;cursor:pointer;padding:12px 17px;border-radius:999px;font-family:var(--d);font-weight:800;font-size:14px;background:${g.cat===c.id?'#fff':'rgba(255,255,255,.14)'};color:${g.cat===c.id?'var(--indigo)':'#fff'};">${c.label}</button>`;
     return `<div class="pad fade">${gameHead('Action ou Vérité')}<div class="spacer"></div>
-      <h2 style="text-align:center;font-size:24px;">Combien de questions ?</h2>
-      <div class="sub center" style="margin-top:6px;max-width:300px;align-self:center;">Choisis la longueur de la partie. ${tot} questions au total — au-delà, ça tourne en boucle.</div>
-      <div style="display:flex;flex-direction:column;gap:12px;margin-top:24px;">
-        ${[50,100,200].map(n=>`<button class="btn" onclick="vobSetCount(${n})">${n} questions</button>`).join('')}
+      <h2 style="text-align:center;font-size:24px;">Choisis ton thème</h2>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:18px;">${VOB_CATS.map(chip).join('')}</div>
+      <h2 style="text-align:center;font-size:19px;margin-top:30px;">Longueur de la partie</h2>
+      <div style="display:flex;flex-direction:column;gap:12px;margin-top:14px;">
+        ${[50,100].map(n=>`<button class="btn" onclick="vobSetCount(${n})">${n} questions</button>`).join('')}
         <button class="btn amber" onclick="vobSetCount(Infinity)">Sans limite</button>
       </div><div class="spacer"></div></div>`;
   }
@@ -1027,16 +1052,15 @@ SCREENS.vob = () => {
       <button class="btn" style="margin-top:12px;" onclick="go('hub')">Retour aux jeux</button></div>`;
   }
   const tgt = g.target===Infinity?'∞':g.target;
+  const catLabel=(VOB_CATS.find(c=>c.id===g.cat)||{}).label||'Tout';
   return `<div class="pad fade">${gameHead('Action ou Vérité', `<div class="pill">${g.count+1} / ${tgt}</div>`)}
-   <div class="row" style="gap:5px;flex-wrap:wrap;">${VOB.map((r,i)=>`<button onclick="vobRound(${i})" style="flex:1 1 8%;min-width:28px;padding:7px 2px;border-radius:9px;font-family:var(--f);font-weight:700;font-size:11px;color:${i===g.round?'var(--indigo)':'#fff'};background:${i===g.round?'#fff':'rgba(255,255,255,.14)'};">${i+1}</button>`).join('')}</div>
-   <div class="sub center" style="margin-top:10px;font-family:var(--f);font-weight:700;">${VOB[g.round].titre}</div>
+   <div class="sub center" style="font-family:var(--f);font-weight:800;color:var(--lav);margin-bottom:4px;">${catLabel}</div>
    ${turnBanner()}
    <div class="gamebody"><div class="panel" style="padding:30px 26px;text-align:center;"><div class="cap" style="color:var(--purple);">À ${cur().name} de jouer</div>
      <div style="font-family:var(--f);font-weight:800;font-size:${qz(g.q)}px;line-height:1.25;margin-top:14px;color:var(--ink);">${g.q}</div></div></div>
    <div class="row"><button class="btn" onclick="vobAns(false)">Je bois (1)</button><button class="btn primary" onclick="vobAns(true)">Je le fais !</button></div>
   </div>`;
 };
-function vobRound(i){ S.game.round=i; vobPick(); render(); }
 function vobAns(ok){ const g=S.game; if(!ok) drink(S.turn,1); g.count++; if(g.count>=g.target){ g.phase='end'; render(); return; } nextTurn(); vobPick(); render(); }
 
 /* ============================ JE N'AI JAMAIS ============================ */
