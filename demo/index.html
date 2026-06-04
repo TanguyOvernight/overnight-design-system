@@ -60,6 +60,9 @@
   .pill{font-family:var(--f);font-weight:700;font-size:12px;background:rgba(255,255,255,.16);padding:8px 13px;border-radius:999px;display:inline-flex;align-items:center;gap:7px;}
   .card{background:#fff;border-radius:22px;box-shadow:var(--sh-card);color:var(--ink);}
   .panel{background:#fff;border-radius:26px;box-shadow:var(--sh-soft);color:var(--ink);}
+  .gpanel{background:linear-gradient(180deg,rgba(120,82,232,.46),rgba(48,28,116,.32));border:1px solid rgba(255,255,255,.13);border-radius:26px;color:#fff;box-shadow:0 14px 34px rgba(16,8,48,.28),inset 0 1px 0 rgba(255,255,255,.10);}
+  .gpanel .cap{color:rgba(255,255,255,.72);}
+  .gpanel .sub{color:rgba(255,255,255,.82) !important;}
   .gamebody{flex:1;display:flex;flex-direction:column;justify-content:center;min-height:0;padding:2px 0 14px;gap:12px;}
   .pcard{background:linear-gradient(135deg,#7C63EC,#5E46CC);border-radius:22px;box-shadow:var(--sh);}
   button{font-family:var(--f);cursor:pointer;border:none;}
@@ -179,6 +182,13 @@ function avatar(p, size){
   }
   return `<div class="av" style="width:${s}px;height:${s}px;font-size:${Math.round(s*0.4)}px;background:${(p&&p.color)||'#6C4FE0'};">${(p&&p.name?p.name[0]:'?').toUpperCase()}</div>`;
 }
+function avatarInline(p,size){
+  const a=p&&p.avatar, st=`display:inline-block;vertical-align:-28%;width:${size}px;height:${size}px;border-radius:50%;overflow:hidden;`;
+  if(a&&a.img) return `<span style="${st}background:#2A1F4A;"><img src="${a.img}" style="width:100%;height:100%;object-fit:cover;display:block;"></span>`;
+  return `<span style="${st}background:${(p&&p.color)||'#6C4FE0'};color:#fff;font-family:var(--f);font-weight:800;font-size:${Math.round(size*0.5)}px;text-align:center;line-height:${size}px;">${(p&&p.name?p.name[0]:'?').toUpperCase()}</span>`;
+}
+// prénom (violet clair) + mini-avatar collé, pour styliser les phrases ciblées
+function playerTag(p){ return `<b style="color:#D2C3FF;white-space:nowrap;">${p.name}</b>&nbsp;${avatarInline(p,26)}`; }
 function openAvatar(i){ S.avatarPicker=i; S.avSex=(S.players[i]&&S.players[i].avatar&&S.players[i].avatar.g)||'Homme'; go('avatars'); }
 function closeAvatar(){ S.avatarPicker=null; go('setup'); }
 function selectAvSex(g){ S.avSex=g; render(); }
@@ -676,7 +686,7 @@ SCREENS.bus = () => {
     const modeBtn=(m,t,d)=>`<button onclick="busSetMode('${m}')" style="border:none;cursor:pointer;border-radius:18px;background:var(--lav-soft);padding:16px 18px;text-align:left;display:flex;flex-direction:column;gap:3px;">
       <span style="font-family:var(--d);font-weight:800;font-size:18px;color:var(--indigo);">${t}</span>
       <span style="font-family:var(--b);font-weight:600;font-size:13px;color:var(--ink2);line-height:1.35;">${d}</span></button>`;
-    const mid=`<div class="panel" style="padding:24px;text-align:center;"><h2 style="font-size:22px;color:var(--ink);">Mode de jeu</h2>
+    const mid=`<div class="gpanel" style="padding:24px;text-align:center;"><h2 style="font-size:22px;color:#fff;">Mode de jeu</h2>
       <div style="display:flex;flex-direction:column;gap:12px;margin-top:18px;">
        ${modeBtn('normal','Normal','Tu rates une étape → tu bois et ça passe au suivant. Les 4 étapes réussies → tu distribues.')}
        ${modeBtn('infini','Infini','Tu gardes le téléphone tant que tu n’as pas réussi les 4 (rate = retour à l’étape 1).')}
@@ -693,15 +703,15 @@ SCREENS.bus = () => {
   if(r){
     const label = r.ok ? (p.step>=4?'Bravo !':(g.mode==='partage'?'Au joueur suivant':'Continuer')) : 'Au joueur suivant';
     actions = `<button class="btn primary" onclick="busNext()">${label}</button>`;
-    mid = `<div class="panel" style="padding:24px;text-align:center;background:#F6F4FF;">${stack}
+    mid = `<div class="gpanel" style="padding:24px;text-align:center;">${stack}
         <div style="display:flex;justify-content:center;">${cardHTML(r.card,168,236)}</div>
-        <div style="margin-top:18px;"><b style="font-family:var(--f);font-size:21px;color:${r.ok?'#19A974':'var(--red)'};">${r.ok?'Gagné !':'Raté'}</b>
-        <div class="sub" style="color:var(--ink2);font-size:14px;margin-top:4px;">${r.msg}</div></div></div>`;
+        <div style="margin-top:18px;"><b style="font-family:var(--f);font-size:21px;color:${r.ok?'#7BE8C0':'#FF9A8B'};">${r.ok?'Gagné !':'Raté'}</b>
+        <div class="sub" style="font-size:14px;margin-top:4px;">${r.msg}</div></div></div>`;
   } else {
-    mid = `<div class="panel" style="padding:24px;text-align:center;background:#F6F4FF;">${stack}
+    mid = `<div class="gpanel" style="padding:24px;text-align:center;">${stack}
         <div style="display:flex;justify-content:center;">${cardBack(192,268)}</div>
-        <h2 style="font-size:24px;margin-top:18px;color:var(--ink);">${prompts[p.step]}</h2>
-        <div class="sub" style="color:var(--ink2);margin-top:4px;">Erreur = ${p.step} gorgée${p.step>1?'s':''}</div></div>`;
+        <h2 style="font-size:24px;margin-top:18px;color:#fff;">${prompts[p.step]}</h2>
+        <div class="sub" style="margin-top:4px;">Erreur = ${p.step} gorgée${p.step>1?'s':''}</div></div>`;
     if(p.step===1) actions=`<div class="row"><button class="btn red" onclick="busGuess('r')">Rouge</button><button class="btn dark" onclick="busGuess('n')">Noir</button></div>`;
     else if(p.step===2) actions=`<div class="row"><button class="btn" onclick="busGuess('p')">Plus ↑</button><button class="btn" onclick="busGuess('m')">Moins ↓</button></div>`;
     else if(p.step===3) actions=`<div class="row"><button class="btn" onclick="busGuess('in')">Intérieur</button><button class="btn" onclick="busGuess('out')">Extérieur</button></div>`;
@@ -744,15 +754,15 @@ function startPurple(){ S.game={deck:newDeck(), cards:[], pot:0, last:null}; go(
 SCREENS.purple = () => {
   const g=S.game;
   const slot=(c)=> c
-    ? `<div style="display:flex;flex-direction:column;align-items:center;gap:9px;">${cardBack(82,115,!c.red)}<span style="font-family:var(--b);font-weight:800;font-size:12px;color:${c.red?'var(--red)':'var(--ink)'};">${c.red?'Rouge':'Noir'}</span></div>`
-    : `<div style="width:82px;height:115px;border-radius:15px;border:2px dashed #DCD5F6;background:#FAF9FF;"></div>`;
+    ? `<div style="display:flex;flex-direction:column;align-items:center;gap:9px;">${cardBack(82,115,!c.red)}<span style="font-family:var(--b);font-weight:800;font-size:12px;color:${c.red?'#FF9A8B':'#fff'};">${c.red?'Rouge':'Noir'}</span></div>`
+    : `<div style="width:82px;height:115px;border-radius:15px;border:2px dashed rgba(255,255,255,.28);background:rgba(255,255,255,.05);"></div>`;
   const slots=[0,1,2].map(i=>slot(g.cards[i])).join('');
   const done=g.cards.length>=3, canP=g.cards.length<=1;
-  const mid=`<div class="panel" style="padding:22px;text-align:center;">
-     <div class="cap" style="color:var(--ink2);">Cagnotte</div>
-     <div style="font-family:var(--d);font-size:32px;color:var(--indigo);margin:2px 0 18px;line-height:1;">${g.pot} <span style="font-size:15px;font-family:var(--b);font-weight:700;color:var(--ink2);">gorgée${g.pot>1?'s':''}</span></div>
+  const mid=`<div class="gpanel" style="padding:22px;text-align:center;">
+     <div class="cap">Cagnotte</div>
+     <div style="font-family:var(--d);font-size:34px;color:#fff;margin:2px 0 18px;line-height:1;">${g.pot} <span style="font-size:15px;font-family:var(--b);font-weight:700;color:rgba(255,255,255,.72);">gorgée${g.pot>1?'s':''}</span></div>
      <div style="display:flex;gap:12px;justify-content:center;align-items:flex-start;">${slots}</div>
-     ${g.last?`<div style="margin-top:18px;"><b style="font-family:var(--f);font-size:18px;color:${g.last.ok?'#19A974':'var(--red)'};">${g.last.title}</b><div class="sub" style="color:var(--ink2);font-size:13px;margin-top:4px;">${g.last.msg}</div></div>`:`<div class="sub" style="color:var(--ink2);margin-top:18px;font-size:13px;">Rouge ou Noir (1 carte) · Purple = 2 cartes, il faut 1 rouge + 1 noir.</div>`}</div>`;
+     ${g.last?`<div style="margin-top:18px;"><b style="font-family:var(--f);font-size:18px;color:${g.last.ok?'#7BE8C0':'#FF9A8B'};">${g.last.title}</b><div class="sub" style="font-size:13px;margin-top:4px;">${g.last.msg}</div></div>`:`<div class="sub" style="margin-top:18px;font-size:13px;">Rouge ou Noir (1 carte) · Purple = 2 cartes, il faut 1 rouge + 1 noir.</div>`}</div>`;
   let actions;
   if(done) actions=`<button class="btn primary" onclick="purpleNext()">Au joueur suivant →</button>`;
   else actions=`<div class="row"><button class="btn red" onclick="purpleGuess('r')">Rouge</button><button class="btn dark" onclick="purpleGuess('n')">Noir</button></div>
@@ -781,14 +791,14 @@ SCREENS.ftd = () => {
   const g=S.game,r=S.reveal; let mid,actions;
   if(r){
     actions=`<button class="btn primary" onclick="startFtd()">Carte suivante</button>`;
-    mid=`<div class="panel" style="padding:22px;text-align:center;">
+    mid=`<div class="gpanel" style="padding:22px;text-align:center;">
        <div style="display:flex;justify-content:center;">${cardHTML({v:g.target,s:0},120,168)}</div>
-       <div style="margin-top:16px;"><b style="font-family:var(--f);font-size:20px;color:${r.ok?'#19A974':'var(--red)'};">${r.title}</b><div class="sub" style="color:var(--ink2);font-size:14px;margin-top:4px;">${r.msg}</div></div></div>`;
+       <div style="margin-top:16px;"><b style="font-family:var(--f);font-size:20px;color:${r.ok?'#7BE8C0':'#FF9A8B'};">${r.title}</b><div class="sub" style="font-size:14px;margin-top:4px;">${r.msg}</div></div></div>`;
   } else {
-    mid=`<div class="panel" style="padding:22px;text-align:center;">
-       <div class="cap" style="color:var(--ink2);margin-bottom:12px;">Le donneur</div>
+    mid=`<div class="gpanel" style="padding:22px;text-align:center;">
+       <div class="cap" style="margin-bottom:12px;">Le donneur</div>
        <div style="display:flex;justify-content:center;">${cardBack(192,268)}</div>
-       <div style="margin-top:16px;"><b style="font-family:var(--f);font-size:16px;color:${g.hint?'var(--blue)':'var(--indigo)'};">${g.hint||'Devine la valeur de la carte.'}</b><div class="sub" style="color:var(--ink2);font-size:13px;margin-top:4px;">Essais restants : ${g.tries} · sinon 2 gorgées</div></div>
+       <div style="margin-top:16px;"><b style="font-family:var(--f);font-size:16px;color:${g.hint?'#8FD0FF':'#fff'};">${g.hint||'Devine la valeur de la carte.'}</b><div class="sub" style="font-size:13px;margin-top:4px;">Essais restants : ${g.tries} · sinon 2 gorgées</div></div>
        <div class="row" style="flex-wrap:wrap;gap:7px;justify-content:center;margin-top:16px;">${VN.slice(1).map((n,i)=>`<button class="chip" style="background:var(--lav-soft);color:var(--indigo);" onclick="ftdGuess(${i+1})">${n}</button>`).join('')}</div></div>`;
     actions=`<div class="sub center" style="opacity:.7;">Choisis une valeur ci-dessus.</div>`;
   }
@@ -835,26 +845,26 @@ function palmierScene(g){
 SCREENS.palmier = () => {
   const g=S.game; let mid, actions;
   if(g.phase==='setup'){
-    mid=`<div class="panel" style="padding:28px 24px;text-align:center;">
-       <h2 style="font-size:23px;color:var(--ink);">Mini-jeu d'équilibre ?</h2>
-       <div class="sub" style="color:var(--ink2);margin-top:12px;">Avec : après chaque carte, pose-la en équilibre sur le palmier (rate = 3 gorgées). Sans : on applique seulement les règles des cartes.</div>
+    mid=`<div class="gpanel" style="padding:28px 24px;text-align:center;">
+       <h2 style="font-size:23px;color:#fff;">Mini-jeu d'équilibre ?</h2>
+       <div class="sub" style="margin-top:12px;">Avec : après chaque carte, pose-la en équilibre sur le palmier (rate = 3 gorgées). Sans : on applique seulement les règles des cartes.</div>
        <div class="row" style="margin-top:22px;"><button class="btn" onclick="palmSetBalance(true)">Avec</button><button class="btn dark" onclick="palmSetBalance(false)">Sans</button></div></div>`;
     return `<div class="pad fade">${gameHead('Palmier')}${turnBanner()}<div class="gamebody">${mid}</div></div>`;
   }
   if(g.phase==='draw'){
-    mid=`<div class="panel" style="padding:16px;">${palmierScene(g)}</div><div class="sub center" style="margin-top:10px;">${g.balance?('Palmier : '+g.stack+' carte'+(g.stack>1?'s':'')+' en équilibre.'):'Tire une carte et applique sa règle.'}</div>`;
+    mid=`<div class="gpanel" style="padding:16px;">${palmierScene(g)}</div><div class="sub center" style="margin-top:10px;">${g.balance?('Palmier : '+g.stack+' carte'+(g.stack>1?'s':'')+' en équilibre.'):'Tire une carte et applique sa règle.'}</div>`;
     actions=`<button class="btn primary" onclick="palmierTirer()">Tirer une carte</button>`;
   } else if(g.phase==='rule'){
     const r=palmierRule(g.card);
     mid=`<div style="display:flex;justify-content:center;">${cardHTML(g.card,140,196)}</div>
-      <div class="card pop" style="margin-top:16px;padding:18px;text-align:center;"><b style="font-family:var(--f);font-size:19px;color:var(--indigo);">${r[0]}</b>
-      <div class="sub" style="color:var(--ink);font-size:14px;margin-top:5px;">${r[1]}</div></div>`;
+      <div class="gpanel" style="margin-top:16px;padding:18px;text-align:center;"><b style="font-family:var(--f);font-size:19px;color:#fff;">${r[0]}</b>
+      <div class="sub" style="font-size:14px;margin-top:5px;">${r[1]}</div></div>`;
     actions=g.balance ? `<button class="btn amber" onclick="palmierBalance()">Poser sur le palmier</button>` : `<button class="btn primary" onclick="palmierNext()">Au joueur suivant</button>`;
   } else if(g.phase==='balance'){
-    mid=`<div class="panel" style="padding:16px;">${palmierScene(g)}</div><div class="sub center" style="font-family:var(--f);font-weight:700;margin-top:10px;">Pose quand la carte est <span style="color:#19A974;">verte</span> (dans la zone) !</div>`;
+    mid=`<div class="gpanel" style="padding:16px;">${palmierScene(g)}</div><div class="sub center" style="font-family:var(--f);font-weight:700;margin-top:10px;">Pose quand la carte est <span style="color:#7BE8C0;">verte</span> (dans la zone) !</div>`;
     actions=`<button class="btn amber" onclick="palmierDrop()">POSER</button>`;
   } else {
-    mid=`<div class="panel" style="padding:16px;">${palmierScene(g)}</div><div class="card pop" style="margin-top:12px;padding:16px;text-align:center;"><b style="font-family:var(--f);font-size:18px;color:${g.res.ok?'#19A974':'var(--red)'};">${g.res.title}</b><div class="sub" style="color:var(--ink);font-size:14px;margin-top:4px;">${g.res.msg}</div></div>`;
+    mid=`<div class="gpanel" style="padding:16px;">${palmierScene(g)}</div><div class="gpanel" style="margin-top:12px;padding:16px;text-align:center;"><b style="font-family:var(--f);font-size:18px;color:${g.res.ok?'#7BE8C0':'#FF9A8B'};">${g.res.title}</b><div class="sub" style="font-size:14px;margin-top:4px;">${g.res.msg}</div></div>`;
     actions=`<button class="btn primary" onclick="palmierNext()">Au joueur suivant</button>`;
   }
   return `<div class="pad fade">${gameHead('Palmier', `<div class="pill">Palmier ${g.stack}</div>`)}${turnBanner()}<div class="gamebody">${mid}</div>${actions}</div>`;
@@ -978,37 +988,40 @@ SCREENS.pmu = () => {
     return `<div class="pad fade">${gameHead('PMU', `<div class="pill">Pari</div>`)}
       <div style="display:flex;align-items:center;justify-content:center;gap:10px;background:rgba(255,255,255,.14);padding:9px 16px;border-radius:999px;align-self:center;margin-bottom:6px;">${avatar(p,30)}<span style="font-weight:700;color:#fff;">Au tour de ${p.name}</span></div>
       <div class="spacer"></div>
-      <div class="panel" style="padding:22px 16px;">
-        <h2 style="text-align:center;font-size:24px;color:var(--ink);margin-bottom:18px;">Choisis ton cheval</h2>
+      <div class="gpanel" style="padding:22px 16px;">
+        <h2 style="text-align:center;font-size:24px;color:#fff;margin-bottom:18px;">Choisis ton cheval</h2>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:15px;">${[0,1,2,3].map(card).join('')}</div></div>
       <div class="spacer"></div>
       <button class="btn amber" onclick="if(S.game.betSel!=null)pmuChoose(S.game.betSel)" style="${g.betSel==null?'opacity:.55;':''}">Valider mon pari</button></div>`;
   }
-  const laneAv=(suit)=>S.players.map((p,idx)=>({p,idx})).filter(o=>g.bets[o.idx]===suit)
-    .map((o,j)=>`<div style="margin-left:${j?-9:0}px;position:relative;z-index:${9-j};">${avatar(o.p,22)}</div>`).join('');
-  const meds=g.side.map((m,i)=>{ const left=((i+1)/g.fin)*100, c=m.card, col=red(c.s)?'#E0392B':'#16161F';
-    return `<div style="position:absolute;left:${left}%;top:0;transform:translateX(-50%);">${m.flipped?pmuMini(VN[c.v]+'<span style="font-size:14px">'+SUITS[c.s]+'</span>',false,col):cardBack(30,44)}</div>`;}).join('');
-  const finish=`<div style="position:absolute;left:100%;top:-3px;bottom:-3px;transform:translateX(-50%);width:6px;background:repeating-linear-gradient(0deg,#fff 0 5px,#1A1A28 5px 10px);border-radius:3px;"></div>`;
-  const lanes=SUITS.map((s,i)=>{ const left=(g.pos[i]/g.fin)*100, col=red(i)?'#E0392B':'#16161F';
-    return `<div style="position:relative;height:46px;margin-bottom:8px;">
-      <div style="position:absolute;left:0;top:0;bottom:0;width:84px;display:flex;align-items:center;justify-content:flex-end;gap:5px;">
-        <div style="display:flex;">${laneAv(i)}</div>
-        <div style="width:30px;height:30px;flex:none;border-radius:9px;background:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;color:${col};">${s}</div>
-      </div>
-      <div style="position:absolute;left:90px;right:4px;top:0;bottom:0;">
-        <div style="position:absolute;top:50%;left:0;right:0;height:3px;margin-top:-1.5px;background:rgba(255,255,255,.16);border-radius:2px;"></div>
-        <div style="position:absolute;left:${left}%;top:50%;transform:translate(-50%,-50%);transition:left .35s;">
-          <div style="width:32px;height:44px;border-radius:7px;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--f);font-weight:800;color:${col};box-shadow:0 6px 12px rgba(0,0,0,.3);line-height:1;"><span style="font-size:11px;">A</span><span style="font-size:16px;">${s}</span></div>
-        </div>
+  const tH=296, GUT=34, span=tH-60;
+  const meds=g.side.map((m,i)=>{ const bottom=((i+1)/g.fin)*span, c=m.card, col=red(c.s)?'#E0392B':'#16161F';
+    return `<div style="position:absolute;left:2px;bottom:${bottom}px;">${m.flipped?pmuMini(VN[c.v]+'<span style="font-size:12px">'+SUITS[c.s]+'</span>',false,col):cardBack(26,38)}</div>`;}).join('');
+  const finish=`<div style="position:absolute;left:-${GUT}px;right:0;top:0;height:14px;background:repeating-linear-gradient(90deg,#fff 0 11px,#16161F 11px 22px);border-radius:5px;box-shadow:0 3px 7px rgba(0,0,0,.28);"></div>`;
+  const lanes=SUITS.map((s,i)=>{ const col=red(i)?'#E0392B':'#1A1A24', bottom=(g.pos[i]/g.fin)*span;
+    return `<div style="flex:1;position:relative;">
+      <div style="position:absolute;left:50%;bottom:0;top:16px;width:3px;margin-left:-1.5px;background:rgba(255,255,255,.22);border-radius:2px;"></div>
+      <div style="position:absolute;left:50%;bottom:${bottom}px;transform:translateX(-50%);transition:bottom .35s;">
+        <div style="width:42px;height:58px;border-radius:9px;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--f);font-weight:800;color:${col};box-shadow:0 7px 14px rgba(0,0,0,.32);line-height:1;"><span style="font-size:13px;">A</span><span style="font-size:24px;">${s}</span></div>
       </div></div>`;}).join('');
-  const board=`<div class="card" style="padding:14px 12px 8px;background:#1F5C43;">
-    <div style="position:relative;height:50px;margin-bottom:6px;"><div style="position:absolute;left:90px;right:4px;top:0;bottom:0;">${meds}${finish}</div></div>
-    ${lanes}</div>`;
+  const foot=SUITS.map((s,i)=>{ const col=red(i)?'#E0392B':'#1A1A24';
+    const avs=S.players.map((p,idx)=>({p,idx})).filter(o=>g.bets[o.idx]===i).map((o,j)=>`<div style="margin-left:${j?-16:0}px;position:relative;z-index:${9-j};">${avatar(o.p,42)}</div>`).join('');
+    return `<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;">
+      <div style="display:flex;min-height:42px;align-items:center;">${avs||'<div style="width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.14);"></div>'}</div>
+      <div style="width:36px;height:36px;border-radius:10px;background:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;color:${col};">${s}</div></div>`;}).join('');
+  const board=`<div style="padding:14px 12px;background:linear-gradient(180deg,#41AE7B,#2B7A57);border-radius:22px;box-shadow:0 14px 30px rgba(15,60,45,.3);">
+    <div style="position:relative;height:${tH}px;padding-left:${GUT}px;">
+      ${finish}
+      <div style="position:absolute;left:0;top:0;bottom:0;width:${GUT-4}px;">${meds}</div>
+      <div style="position:absolute;left:${GUT}px;right:0;top:0;bottom:0;display:flex;gap:6px;">${lanes}</div>
+    </div>
+    <div style="display:flex;gap:6px;margin-top:10px;padding-left:${GUT}px;">${foot}</div>
+  </div>`;
   let info='', bottom='';
   if(g.winner!==null){
     const losers=S.players.filter((p,idx)=>g.bets[idx]!==g.winner).map(p=>p.name);
     info=`<div style="display:flex;justify-content:center;margin-top:14px;">${cardHTML(g.last,84,118)}</div>`;
-    bottom=`<div class="card pop" style="padding:16px;text-align:center;margin-bottom:12px;"><b style="font-family:var(--f);font-size:19px;color:#19A974;">${SUITS[g.winner]} remporte la course !</b><div class="sub" style="color:var(--ink);font-size:14px;margin-top:4px;">Les paris sur ${SUITS[g.winner]} distribuent. ${losers.length?losers.join(', ')+' boi'+(losers.length>1?'vent':'t')+' 3 gorgées.':'Tout le monde gagne !'}</div></div><button class="btn amber" onclick="go('hub')">Terminer</button>`;
+    bottom=`<div class="gpanel" style="padding:16px;text-align:center;margin-bottom:12px;"><b style="font-family:var(--f);font-size:19px;color:#7BE8C0;">${SUITS[g.winner]} remporte la course !</b><div class="sub" style="font-size:14px;margin-top:4px;">Les paris sur ${SUITS[g.winner]} distribuent. ${losers.length?losers.join(', ')+' boi'+(losers.length>1?'vent':'t')+' 3 gorgées.':'Tout le monde gagne !'}</div></div><button class="btn amber" onclick="go('hub')">Terminer</button>`;
   } else {
     if(g.last){ const c=g.last;
       info=`<div style="display:flex;align-items:center;gap:16px;justify-content:center;margin-top:14px;">${cardHTML(c,96,134)}<div style="text-align:left;"><b style="font-family:var(--f);color:#fff;font-size:17px;">${SUITS[c.s]} avance</b>${g.flips.length?`<div style="color:#FFB3A8;font-weight:800;font-size:13px;margin-top:5px;">${g.flips.join('<br>')}</div>`:''}</div></div>`;}
@@ -1064,7 +1077,7 @@ function vobFill(t){
   const isH=x=>sexOf(x)==='Homme', isF=x=>sexOf(x)==='Femme';
   return t.replace(/\{autre2\}|\{autre\}|\{H\}|\{F\}/g, m=>{
     const p = m==='{H}'?pick(isH) : m==='{F}'?pick(isF) : pick();
-    return p ? p.name : (m==='{F}'?'une fille':m==='{H}'?'un mec':'quelqu’un');
+    return p ? playerTag(p) : (m==='{F}'?'une fille':m==='{H}'?'un mec':'quelqu’un');
   });
 }
 function vobKey(r,i){ return r+'-'+i; }
@@ -1094,8 +1107,8 @@ SCREENS.vob = () => {
   }
   if(g.phase==='end'){
     return `<div class="pad fade">${gameHead('Action ou Vérité')}<div class="spacer"></div>
-      <div class="card pop" style="padding:24px;text-align:center;"><b style="font-family:var(--f);font-size:20px;color:var(--indigo);">Partie terminée !</b>
-      <div class="sub" style="color:var(--ink);margin-top:6px;">${g.count} questions jouées. Beau parcours.</div></div>
+      <div class="gpanel" style="padding:24px;text-align:center;"><b style="font-family:var(--f);font-size:20px;color:#fff;">Partie terminée !</b>
+      <div class="sub" style="margin-top:6px;">${g.count} questions jouées. Beau parcours.</div></div>
       <div class="spacer"></div>
       <button class="btn primary" onclick="go('scores')">Voir le classement</button>
       <button class="btn" style="margin-top:12px;" onclick="go('hub')">Retour aux jeux</button></div>`;
@@ -1105,8 +1118,8 @@ SCREENS.vob = () => {
   return `<div class="pad fade">${gameHead('Action ou Vérité', `<div class="pill">${g.count+1} / ${tgt}</div>`)}
    ${g.cat!=='tout'?`<div class="sub center" style="font-family:var(--f);font-weight:800;color:var(--lav);margin-bottom:4px;">${catLabel}</div>`:''}
    ${turnBanner()}
-   <div class="gamebody"><div class="panel" style="padding:30px 26px;text-align:center;"><div class="cap" style="color:var(--purple);">À ${cur().name} de jouer</div>
-     <div style="font-family:var(--f);font-weight:800;font-size:30px;line-height:1.28;margin-top:14px;color:var(--ink);">${g.q}</div></div></div>
+   <div class="gamebody"><div class="gpanel" style="padding:30px 26px;text-align:center;"><div class="cap" style="color:#D2C3FF;">À ${cur().name} de jouer</div>
+     <div style="font-family:var(--f);font-weight:800;font-size:30px;line-height:1.32;margin-top:14px;color:#fff;">${g.q}</div></div></div>
    <div class="row"><button class="btn" onclick="vobAns(false)">Je bois (1)</button><button class="btn primary" onclick="vobAns(true)">Je le fais !</button></div>
   </div>`;
 };
@@ -1116,9 +1129,9 @@ function vobAns(ok){ const g=S.game; if(!ok) drink(S.turn,1); g.count++; if(g.co
 function startJamais(){ S.game={used:new Set(), s:null}; jamaisPick(); go('jamais'); }
 function jamaisPick(){ const g=S.game; if(g.used.size>=JAMAIS.length)g.used.clear(); let i; do{i=Math.random()*JAMAIS.length|0;}while(g.used.has(i)); g.used.add(i); g.s=JAMAIS[i]; }
 SCREENS.jamais = () => `<div class="pad fade">${gameHead("Je n'ai jamais", `<div class="pill">Avoue ou bois</div>`)}${turnBanner()}
-  <div class="gamebody"><div class="panel" style="padding:34px 26px;text-align:center;"><div class="cap" style="color:var(--amber);">Je n'ai jamais…</div>
-   <div style="font-family:var(--f);font-weight:800;font-size:${qz(S.game.s)}px;line-height:1.25;margin-top:14px;color:var(--ink);">…${S.game.s}</div>
-   <div class="sub" style="color:var(--ink2);font-size:14px;margin-top:16px;">Tu l'as déjà fait ? Bois une gorgée.</div></div></div>
+  <div class="gamebody"><div class="gpanel" style="padding:34px 26px;text-align:center;"><div class="cap" style="color:#FFCF7A;">Je n'ai jamais…</div>
+   <div style="font-family:var(--f);font-weight:800;font-size:30px;line-height:1.3;margin-top:14px;color:#fff;">…${S.game.s}</div>
+   <div class="sub" style="font-size:14px;margin-top:16px;">Tu l'as déjà fait ? Bois une gorgée.</div></div></div>
   <div class="row"><button class="btn dark" onclick="jamaisAns(false)">Jamais</button><button class="btn primary" onclick="jamaisAns(true)">Je l'ai fait (1)</button></div>
  </div>`;
 function jamaisAns(did){ if(did)drink(S.turn,1); nextTurn(); jamaisPick(); render(); }

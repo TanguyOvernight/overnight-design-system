@@ -18,9 +18,9 @@ for (const nm of ['Léa','Maxime']) { await page.fill('#nm', nm); await page.get
 await page.getByRole('button',{name:/PARTI/i}).click();                 // -> catalogue
 await page.waitForTimeout(200);
 const row = t=>page.locator('.gamerow',{hasText:t}).click();
-await row('Tape la carte'); await page.waitForTimeout(150);
-await page.getByRole('button',{name:'Commencer',exact:true}).click(); await page.waitForTimeout(200);
-await page.getByRole('button',{name:'TAPER',exact:true}).click(); await page.waitForTimeout(150);
+await row('Le Bus'); await page.waitForTimeout(150);
+await page.getByRole('button',{name:/Normal/}).click(); await page.waitForTimeout(150);
+await page.getByRole('button',{name:'Rouge',exact:true}).click(); await page.waitForTimeout(200);
 console.log('ERREURS JS:', errs.length ? JSON.stringify(errs) : 'AUCUNE');
 await b.close();
 process.exit(errs.length ? 1 : 0);
