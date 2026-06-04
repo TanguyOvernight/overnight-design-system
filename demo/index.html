@@ -344,7 +344,7 @@ const VOB = [
   `Si tu portais un toast à ce groupe là maintenant, que dirais-tu ?`]},
  {titre:"Action !", q:[
   {t:"Fais un vrai compliment à {autre}."},
-  {t:"Imite {autre} : les autres doivent deviner que c'est lui/elle."},
+  {t:"Imite {autre} : les autres doivent deviner de qui il s'agit."},
   {t:"Câlin de 10 secondes avec {autre}."},
   {t:"Fais un bisou sur la joue à {F}."},
   {t:"Fais un bisou sur la joue à {H}."},
@@ -353,6 +353,16 @@ const VOB = [
   {t:"Au choix : 3 gorgées, ou un slow de 10s avec {autre}."},
   {t:"Mime une scène de film avec {autre}, les autres devinent."},
   {t:"Laisse {autre} t'inventer un surnom pour le reste de la soirée."},
+  {t:"Imite la démarche de {autre} jusqu'au prochain tour."},
+  {t:"Fais une déclaration d'amour exagérée à {autre}."},
+  {t:"Assieds-toi sur les genoux de {autre} pendant un tour (ou bois 2)."},
+  {t:"{autre} peut écrire une story sur ton tél… ou tu bois 4."},
+  {t:"Chuchote un compliment à l'oreille de {autre}."},
+  {t:"Toi et {autre} : photo de couple la plus cringe possible."},
+  {t:"Toi et {autre}, mini-karaoké de 15 secondes."},
+  {t:"Entre {autre} et {autre2}, organise un bras de fer. Le perdant boit 2."},
+  {t:"Drague {F} avec ta pire phrase d'approche.", who:'h'},
+  {t:"Drague {H} avec ta pire phrase d'approche.", who:'f'},
   {t:"Entre mecs : balance ton pire move de drague.", who:'h'},
   {t:"Messieurs, faites votre meilleure pose de beau gosse.", who:'h'},
   {t:"Entre filles : c'est quoi le red flag que tu repères direct ?", who:'f'},
@@ -366,10 +376,18 @@ const VOB = [
   {t:"Classe les joueurs, du plus dragueur au moins dragueur."},
   {t:"Quel joueur te ressemble le plus ? Lequel est ton total opposé ?"},
   {t:"Si {autre} était un personnage de film, ce serait qui ?"},
-  {t:"Quelle première impression {autre} t'a-t-il/elle faite ?"},
+  {t:"Quelle première impression {autre} t'a faite ?"},
   {t:"Désigne le duo du groupe qui irait le mieux ensemble."},
-  {t:"Quelle fille ici a le plus de répondant, selon toi ?"},
-  {t:"Quel mec ici est le plus charmeur, selon toi ?"}]},
+  {t:"Entre {autre} et {autre2}, lequel tu sauves ? Lequel tu largues ?"},
+  {t:"Qui est le plus susceptible de textoter son ex ce soir ?"},
+  {t:"Qui finirait le plus vite à terre ce soir ?"},
+  {t:"À qui prêterais-tu ta carte bleue sans aucune crainte ?"},
+  {t:"Qui ment le mieux du groupe ?"},
+  {t:"Avec quel joueur partirais-tu en road-trip sans hésiter ?"},
+  {t:"Quelle fille ici a le plus de répondant, selon toi ?", need:'f'},
+  {t:"Quel mec ici est le plus charmeur, selon toi ?", need:'h'},
+  {t:"Entre les filles présentes, laquelle gère le mieux une soirée ?", need:'f'},
+  {t:"Entre les mecs présents, lequel ferait le meilleur copain de pote ?", need:'h'}]},
 ];
 const JAMAIS = [
  "envoyé un message au mauvais groupe.","fait semblant d'aimer un cadeau.","menti sur mon âge.",
@@ -957,16 +975,28 @@ function vobItem(x){ return typeof x==='string' ? {t:x} : x; }
 function vobPlayable(it){
   if(it.who==='h' && sexOf(cur())!=='Homme') return false;
   if(it.who==='f' && sexOf(cur())!=='Femme') return false;
-  if(it.t.includes('{autre}') && vobOthers().length===0) return false;
-  if(it.t.includes('{H}') && vobBySex('Homme',true).length===0) return false;
-  if(it.t.includes('{F}') && vobBySex('Femme',true).length===0) return false;
+  if(it.need==='h' && vobBySex('Homme',false).length===0) return false;
+  if(it.need==='f' && vobBySex('Femme',false).length===0) return false;
+  const t=it.t;
+  if(t.includes('{autre2}') && vobOthers().length<2) return false;
+  else if(t.includes('{autre}') && vobOthers().length<1) return false;
+  if(t.includes('{H}') && vobBySex('Homme',true).length===0) return false;
+  if(t.includes('{F}') && vobBySex('Femme',true).length===0) return false;
   return true;
 }
 function vobFill(t){
-  const rnd=a=>a[Math.random()*a.length|0];
-  const other=()=>{ const o=vobOthers(); return o.length?rnd(o).name:'quelqu’un'; };
-  const sex=g=>{ let p=vobBySex(g,true); if(!p.length)p=vobBySex(g,false); return p.length?rnd(p).name:(g==='Homme'?'un mec':'une fille'); };
-  return t.replace(/\{autre\}/g,other).replace(/\{H\}/g,()=>sex('Homme')).replace(/\{F\}/g,()=>sex('Femme'));
+  const pool=shuffle([...vobOthers()]); const used=[];
+  function pick(filter){
+    let p=pool.find(x=>!used.includes(x)&&(!filter||filter(x)));
+    if(!p) p=S.players.find(x=>x!==cur()&&!used.includes(x)&&(!filter||filter(x)));
+    if(!p) p=S.players.find(x=>(!filter||filter(x)));
+    if(p) used.push(p); return p;
+  }
+  const isH=x=>sexOf(x)==='Homme', isF=x=>sexOf(x)==='Femme';
+  return t.replace(/\{autre2\}|\{autre\}|\{H\}|\{F\}/g, m=>{
+    const p = m==='{H}'?pick(isH) : m==='{F}'?pick(isF) : pick();
+    return p ? p.name : (m==='{F}'?'une fille':m==='{H}'?'un mec':'quelqu’un');
+  });
 }
 function vobPick(){
   const g=S.game, r=g.round, list=VOB[r].q;
