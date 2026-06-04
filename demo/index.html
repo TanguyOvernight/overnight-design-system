@@ -367,7 +367,7 @@ const GAMES = [
  {id:'palmier', nom:'Palmier', desc:'Tire une carte, équilibre, impose la règle.', t:'P', col:'#2BA17C'},
  {id:'ftd', nom:'Fuck the Dealer', desc:'Devine la carte du dealer en 2 essais.', t:'F', col:'#E0563E'},
  {id:'pmu', nom:'PMU', desc:'Parie sur ton enseigne et gagne la course.', t:'P', col:'#F0A93C'},
- {id:'purple', nom:'Purple', desc:'Plus haut, plus bas ou Purple ?', t:'P', col:'#8B5CF6'},
+ {id:'purple', nom:'Purple', desc:'Rouge, noir ou purple ?', t:'P', col:'#8B5CF6'},
  {id:'tape', nom:'Tape la carte', desc:'Réflexe : tape sur les figures.', t:'T', col:'#FF7E8B'},
  {id:'vob', nom:'Vérité ou Bois', desc:'Réponds honnêtement ou bois.', t:'V', col:'#FF6F6F'},
  {id:'jamais', nom:"Je n'ai jamais", desc:"Avoue si tu l'as déjà fait… ou bois.", t:'J', col:'#46C2B0'},
@@ -559,35 +559,40 @@ function busNext(){
 function endBusTurn(){ nextTurn(); S.game={deck:S.game.deck,step:1,cards:[]}; S.reveal=null; render(); }
 
 /* ============================ PURPLE ============================ */
-function startPurple(){ const d=newDeck(); S.game={deck:d, cur:draw(d), chain:0}; S.reveal=null; go('purple'); }
+function startPurple(){ S.game={deck:newDeck(), cards:[], pot:0, last:null}; go('purple'); }
 SCREENS.purple = () => {
-  const g=S.game,r=S.reveal; let mid,actions;
-  if(r){
-    actions=`<button class="btn primary" onclick="purpleNext()">${r.ok?'Continuer':'Au suivant'}</button>`;
-    mid=`<div class="panel" style="padding:22px;background:#F6F4FF;text-align:center;">
-       <div style="display:flex;gap:14px;justify-content:center;align-items:center;">${cardHTML(g.cur,90,126)}<span style="font-size:26px;color:var(--ink2);">→</span>${cardHTML(r.card,108,150)}</div>
-       <div class="pop" style="margin-top:16px;"><b style="font-family:var(--f);font-size:20px;color:${r.ok?'#19A974':'var(--red)'};">${r.title}</b><div class="sub" style="color:var(--ink2);font-size:14px;margin-top:4px;">${r.msg}</div></div></div>`;
-  } else {
-    mid=`<div class="panel" style="padding:24px;background:#F6F4FF;text-align:center;">
-       <div style="display:flex;gap:14px;justify-content:center;align-items:center;">${cardHTML(g.cur,118,166)}<span style="font-size:26px;color:var(--ink2);">→</span>${cardBack(96,134,true)}</div>
-       <h2 style="font-size:22px;margin-top:18px;color:var(--ink);">La prochaine sera ?</h2>
-       <div class="sub" style="color:var(--ink2);margin-top:4px;">« Purple » (même valeur) = +3 à distribuer</div></div>`;
-    actions=`<div class="row" style="margin-bottom:12px;"><button class="btn" onclick="purpleGuess('h')">Plus haut ↑</button><button class="btn" onclick="purpleGuess('l')">Plus bas ↓</button></div>
-      <button class="btn amber" onclick="purpleGuess('p')">Purple — même valeur</button>`;
-  }
-  return `<div class="pad fade">${gameHead('Purple', `<div class="pill">Chaîne ×${g.chain}</div>`)}${turnBanner()}<div class="spacer"></div>${mid}<div class="spacer"></div>${actions}</div>`;
+  const g=S.game;
+  const slot=(c)=> c
+    ? `<div style="display:flex;flex-direction:column;align-items:center;gap:7px;">${cardBack(64,90,!c.red)}<span style="font-family:var(--b);font-weight:800;font-size:11px;color:${c.red?'var(--red)':'var(--ink)'};">${c.red?'Rouge':'Noir'}</span></div>`
+    : `<div style="width:64px;height:90px;border-radius:13px;border:2px dashed #DCD5F6;background:#FAF9FF;"></div>`;
+  const slots=[0,1,2].map(i=>slot(g.cards[i])).join('');
+  const done=g.cards.length>=3, canP=g.cards.length<=1;
+  const mid=`<div class="panel" style="padding:22px;text-align:center;">
+     <div class="cap" style="color:var(--ink2);">Cagnotte</div>
+     <div style="font-family:var(--d);font-size:32px;color:var(--indigo);margin:2px 0 18px;line-height:1;">${g.pot} <span style="font-size:15px;font-family:var(--b);font-weight:700;color:var(--ink2);">gorgée${g.pot>1?'s':''}</span></div>
+     <div style="display:flex;gap:12px;justify-content:center;align-items:flex-start;">${slots}</div>
+     ${g.last?`<div style="margin-top:18px;"><b style="font-family:var(--f);font-size:18px;color:${g.last.ok?'#19A974':'var(--red)'};">${g.last.title}</b><div class="sub" style="color:var(--ink2);font-size:13px;margin-top:4px;">${g.last.msg}</div></div>`:`<div class="sub" style="color:var(--ink2);margin-top:18px;font-size:13px;">Rouge ou Noir (1 carte) · Purple = 2 cartes, il faut 1 rouge + 1 noir.</div>`}</div>`;
+  let actions;
+  if(done) actions=`<button class="btn primary" onclick="purpleNext()">Au joueur suivant →</button>`;
+  else actions=`<div class="row"><button class="btn red" onclick="purpleGuess('r')">Rouge</button><button class="btn dark" onclick="purpleGuess('n')">Noir</button></div>
+     <button class="btn amber" style="margin-top:10px;${canP?'':'opacity:.45;pointer-events:none;'}" onclick="purpleGuess('p')">Purple — 2 cartes (1 rouge + 1 noir)</button>`;
+  return `<div class="pad fade">${gameHead('Purple', `<div class="pill">${g.cards.length}/3</div>`)}${turnBanner()}<div class="spacer"></div>${mid}<div class="spacer"></div>${actions}</div>`;
 };
 function purpleGuess(ans){
-  const g=S.game, c=draw(g.deck); let ok,title,msg;
-  if(ans==='p'){ ok=c.v===g.cur.v; title=ok?'PURPLE !':'Raté'; msg=ok?'Énorme. Distribue 3 gorgées à qui tu veux.':'Pas la même valeur. Bois 2 gorgées.'; if(!ok)drink(S.turn,2); }
-  else { if(c.v===g.cur.v){ok=false;title='Égalité';msg='Même valeur : perdu. Bois 1 gorgée.';} else { ok=(ans==='h')===(c.v>g.cur.v); title=ok?'Bien vu !':'Raté'; msg=ok?"Tu peux continuer ou t'arrêter.":'Bois 1 gorgée.'; } if(!ok)drink(S.turn,1); }
-  S.reveal={card:c,ok,title,msg}; render();
-}
-function purpleNext(){
   const g=S.game;
-  if(S.reveal.ok){ g.chain++; g.cur=S.reveal.card; S.reveal=null; render(); }
-  else { g.chain=0; nextTurn(); g.cur=draw(g.deck); S.reveal=null; render(); }
+  if(ans==='p'){
+    const c1=draw(g.deck), c2=draw(g.deck), r1=isRed(c1), r2=isRed(c2);
+    g.cards.push({red:r1},{red:r2});
+    if(r1!==r2){ g.pot+=3; g.last={ok:true,title:'PURPLE !',msg:`1 rouge + 1 noir. La cagnotte monte à ${g.pot}.`}; }
+    else { const pay=Math.max(1,g.pot); drink(S.turn,pay); g.last={ok:false,title:'Raté',msg:`Deux ${r1?'rouges':'noirs'} ! Tu bois la cagnotte (${pay}). Elle repart à 0.`}; g.pot=0; }
+  } else {
+    const c=draw(g.deck), r=isRed(c); g.cards.push({red:r});
+    if((ans==='r')===r){ g.pot+=1; g.last={ok:true,title:'Bien vu !',msg:`+1. La cagnotte monte à ${g.pot}.`}; }
+    else { const pay=Math.max(1,g.pot); drink(S.turn,pay); g.last={ok:false,title:'Raté',msg:`C'était ${r?'rouge':'noir'}. Tu bois la cagnotte (${pay}). Elle repart à 0.`}; g.pot=0; }
+  }
+  render();
 }
+function purpleNext(){ const g=S.game; nextTurn(); g.cards=[]; g.last=null; render(); }
 
 /* ============================ FUCK THE DEALER ============================ */
 function startFtd(){ S.game={target:(Math.random()*13|0)+1, tries:2, hint:'', last:null}; S.reveal=null; go('ftd'); }
