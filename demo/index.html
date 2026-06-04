@@ -532,7 +532,7 @@ SCREENS.bus = () => {
         <div class="sub" style="color:var(--ink2);font-size:14px;margin-top:4px;">${r.msg}</div></div></div>`;
   } else {
     mid = `<div class="panel" style="padding:24px;text-align:center;background:#F6F4FF;">${stack}
-        <div style="display:flex;justify-content:center;">${cardBack(176,246)}</div>
+        <div style="display:flex;justify-content:center;">${cardBack(192,268)}</div>
         <h2 style="font-size:24px;margin-top:18px;color:var(--ink);">${prompts[g.step]}</h2>
         <div class="sub" style="color:var(--ink2);margin-top:4px;">Erreur = ${g.step} gorgée${g.step>1?'s':''}</div></div>`;
     if(g.step===1) actions=`<div class="row"><button class="btn red" onclick="busGuess('r')">Rouge</button><button class="btn dark" onclick="busGuess('n')">Noir</button></div>`;
@@ -609,7 +609,7 @@ SCREENS.ftd = () => {
   } else {
     mid=`<div class="panel" style="padding:22px;text-align:center;">
        <div class="cap" style="color:var(--ink2);margin-bottom:12px;">Le donneur</div>
-       <div style="display:flex;justify-content:center;">${cardBack(176,246)}</div>
+       <div style="display:flex;justify-content:center;">${cardBack(192,268)}</div>
        <div style="margin-top:16px;"><b style="font-family:var(--f);font-size:16px;color:${g.hint?'var(--blue)':'var(--indigo)'};">${g.hint||'Devine la valeur de la carte.'}</b><div class="sub" style="color:var(--ink2);font-size:13px;margin-top:4px;">Essais restants : ${g.tries} · sinon 2 gorgées</div></div>
        <div class="row" style="flex-wrap:wrap;gap:7px;justify-content:center;margin-top:16px;">${VN.slice(1).map((n,i)=>`<button class="chip" style="background:var(--lav-soft);color:var(--indigo);" onclick="ftdGuess(${i+1})">${n}</button>`).join('')}</div></div>`;
     actions=`<div class="sub center" style="opacity:.7;">Choisis une valeur ci-dessus.</div>`;
@@ -628,7 +628,7 @@ function ftdGuess(v){
 /* ============================ PALMIER (King's Cup) ============================ */
 function palmierRule(c){
   const v=c.v, red=isRed(c);
-  if(v===1) return ['As — Cul sec / Cupidon','Cul sec ! Ou joue Cupidon : forme un binôme qui boira avec toi.'];
+  if(v===1) return ['As — Cupidon','Forme un binôme avec qui tu veux : cette personne boit chaque fois que tu bois (et inversement) jusqu’au prochain As.'];
   if(v>=2&&v<=5) return [VN[v]+(red?' — Rouge : distribue':' — Noir : prends'), red?('Tu distribues '+v+' gorgées.'):('Tu prends '+v+' gorgées.')];
   if(v===6) return ['6 — Histoire','Raconte une histoire vraie ou fausse. Les autres devinent si tu mens.'];
   if(v===7) return ['7 — Dans ma valise','« Dans ma valise je mets… » Chacun répète et ajoute un objet. Qui oublie boit.'];
@@ -639,33 +639,41 @@ function palmierRule(c){
   if(v===12) return ['Dame — Tournée','1 gorgée pour tout le monde !'];
   return ['Roi — Bouffon','Choisis un bouffon : il prendra tes gorgées jusqu’au prochain roi.'];
 }
-function startPalmier(){ S.game={deck:newDeck(), stack:0, card:null, phase:'draw', bx:0, dir:1, res:null}; go('palmier'); }
+function startPalmier(){ S.game={deck:newDeck(), stack:0, card:null, phase:'setup', balance:true, bx:0, dir:1, res:null}; go('palmier'); }
+function palmTol(stack){ return Math.max(0.16, 0.30 - stack*0.012); }
 function palmierScene(g){
   let cards=''; for(let i=0;i<g.stack;i++){
-    const rot=(i%2?1:-1)*(5+i*1.7);
-    const y=134+i*9;
+    const rot=(i%2?1:-1)*(5+i*1.7); const y=134+i*9;
     cards+=`<div class="palm-card" style="bottom:${y}px;transform:rotateX(58deg) rotateZ(${rot}deg);"></div>`;
   }
-  const swing = g.phase==='balance' ? `<div id="swing" class="swing-card" style="bottom:${154+g.stack*9}px;"></div>` : '';
-  return `<div class="palm-stage">
-    <div class="palm-target"></div>
-    <div class="bottle"></div>
-    ${cards}${swing}
-  </div>`;
+  let zone='', swing='';
+  if(g.phase==='balance'){
+    const tol=palmTol(g.stack), zw=Math.round(2*tol*120), y=118+g.stack*9;
+    zone=`<div style="position:absolute;left:50%;bottom:${y}px;width:${zw}px;height:120px;margin-left:-${zw/2}px;border-radius:16px;background:rgba(25,169,116,.14);border:2px dashed rgba(25,169,116,.65);"></div>`;
+    swing=`<div id="swing" class="swing-card" style="bottom:${154+g.stack*9}px;"></div>`;
+  }
+  return `<div class="palm-stage">${zone}<div class="bottle"></div>${cards}${swing}</div>`;
 }
 SCREENS.palmier = () => {
   const g=S.game; let mid, actions;
+  if(g.phase==='setup'){
+    mid=`<div class="panel" style="padding:28px 24px;text-align:center;">
+       <h2 style="font-size:23px;color:var(--ink);">Mini-jeu d'équilibre ?</h2>
+       <div class="sub" style="color:var(--ink2);margin-top:12px;">Avec : après chaque carte, pose-la en équilibre sur le palmier (rate = 3 gorgées). Sans : on applique seulement les règles des cartes.</div>
+       <div class="row" style="margin-top:22px;"><button class="btn" onclick="palmSetBalance(true)">Avec</button><button class="btn dark" onclick="palmSetBalance(false)">Sans</button></div></div>`;
+    return `<div class="pad fade">${gameHead('Palmier')}${turnBanner()}<div class="gamebody">${mid}</div></div>`;
+  }
   if(g.phase==='draw'){
-    mid=`<div class="panel" style="padding:16px;">${palmierScene(g)}</div><div class="sub center" style="margin-top:10px;">Palmier : ${g.stack} carte${g.stack>1?'s':''} en équilibre.</div>`;
+    mid=`<div class="panel" style="padding:16px;">${palmierScene(g)}</div><div class="sub center" style="margin-top:10px;">${g.balance?('Palmier : '+g.stack+' carte'+(g.stack>1?'s':'')+' en équilibre.'):'Tire une carte et applique sa règle.'}</div>`;
     actions=`<button class="btn primary" onclick="palmierTirer()">Tirer une carte</button>`;
   } else if(g.phase==='rule'){
     const r=palmierRule(g.card);
-    mid=`<div style="display:flex;justify-content:center;">${cardHTML(g.card,108,150)}</div>
-      <div class="card pop" style="margin-top:14px;padding:16px;text-align:center;"><b style="font-family:var(--f);font-size:18px;color:var(--indigo);">${r[0]}</b>
+    mid=`<div style="display:flex;justify-content:center;">${cardHTML(g.card,140,196)}</div>
+      <div class="card pop" style="margin-top:16px;padding:18px;text-align:center;"><b style="font-family:var(--f);font-size:19px;color:var(--indigo);">${r[0]}</b>
       <div class="sub" style="color:var(--ink);font-size:14px;margin-top:5px;">${r[1]}</div></div>`;
-    actions=`<button class="btn primary" onclick="palmierBalance()">Poser sur le palmier</button>`;
+    actions=g.balance ? `<button class="btn amber" onclick="palmierBalance()">Poser sur le palmier</button>` : `<button class="btn primary" onclick="palmierNext()">Au joueur suivant</button>`;
   } else if(g.phase==='balance'){
-    mid=`<div class="panel" style="padding:16px;">${palmierScene(g)}</div><div class="sub center" style="font-family:var(--f);font-weight:700;margin-top:10px;">Pose la carte bien au centre du palmier !</div>`;
+    mid=`<div class="panel" style="padding:16px;">${palmierScene(g)}</div><div class="sub center" style="font-family:var(--f);font-weight:700;margin-top:10px;">Pose quand la carte est <span style="color:#19A974;">verte</span> (dans la zone) !</div>`;
     actions=`<button class="btn amber" onclick="palmierDrop()">POSER</button>`;
   } else {
     mid=`<div class="panel" style="padding:16px;">${palmierScene(g)}</div><div class="card pop" style="margin-top:12px;padding:16px;text-align:center;"><b style="font-family:var(--f);font-size:18px;color:${g.res.ok?'#19A974':'var(--red)'};">${g.res.title}</b><div class="sub" style="color:var(--ink);font-size:14px;margin-top:4px;">${g.res.msg}</div></div>`;
@@ -673,18 +681,23 @@ SCREENS.palmier = () => {
   }
   return `<div class="pad fade">${gameHead('Palmier', `<div class="pill">Palmier ${g.stack}</div>`)}${turnBanner()}<div class="gamebody">${mid}</div>${actions}</div>`;
 };
+function palmSetBalance(on){ S.game.balance=on; S.game.phase='draw'; render(); }
 function palmierTirer(){ S.game.card=draw(S.game.deck); S.game.phase='rule'; render(); }
 function palmierBalance(){ const g=S.game; g.phase='balance'; g.bx=0; g.dir=1; render(); startSwing(); }
 function startSwing(){
   if(S.timer) clearInterval(S.timer);
   S.timer=setInterval(()=>{ const g=S.game; if(!g||g.phase!=='balance'){clearInterval(S.timer);S.timer=null;return;}
-    g.bx+=g.dir*0.05; if(g.bx>=1){g.bx=1;g.dir=-1;} if(g.bx<=-1){g.bx=-1;g.dir=1;}
-    const el=document.getElementById('swing'); if(el){ el.style.transform='translateX('+(g.bx*120)+'px) rotateX(58deg) rotateZ('+(-7 + g.bx*8)+'deg)'; } else { clearInterval(S.timer); S.timer=null; }
+    g.bx+=g.dir*0.04; if(g.bx>=1){g.bx=1;g.dir=-1;} if(g.bx<=-1){g.bx=-1;g.dir=1;}
+    const el=document.getElementById('swing'); if(!el){ clearInterval(S.timer); S.timer=null; return; }
+    const inZone=Math.abs(g.bx)<palmTol(g.stack);
+    el.style.transform='translateX('+(g.bx*120)+'px) rotateX(58deg) rotateZ('+(-7 + g.bx*8)+'deg)';
+    el.style.background=inZone?'linear-gradient(180deg,#7BE8C0,#19A974)':'#fff';
+    el.style.boxShadow=inZone?'0 0 0 4px rgba(25,169,116,.4),0 18px 30px rgba(25,169,116,.5)':'0 18px 30px rgba(24,12,62,.32)';
   },16);
 }
 function palmierDrop(){
   if(S.timer){clearInterval(S.timer);S.timer=null;}
-  const g=S.game, off=Math.abs(g.bx), tol=Math.max(0.10, 0.22 - g.stack*0.012);
+  const g=S.game, off=Math.abs(g.bx), tol=palmTol(g.stack);
   if(off<tol){ g.stack++; g.res={ok:true, title:'En équilibre !', msg:'La carte tient — palmier à '+g.stack+'. (Applique aussi la règle de ta carte.)'}; }
   else { drink(S.turn,3); g.res={ok:false, title:'Le palmier s’effondre !', msg:'Carte ratée : bois 3 gorgées. On repart de zéro.'}; g.stack=0; }
   g.phase='result'; render();
@@ -695,24 +708,23 @@ function palmierNext(){ const g=S.game; nextTurn(); g.phase='draw'; g.card=null;
 function startEchelle(){ S.game={card:null, guess:5, phase:'draw'}; go('echelle'); }
 SCREENS.echelle = () => {
   const g=S.game; let mid, actions;
-  const num=(v,w=150,h=210)=>`<div style="width:${w}px;height:${h}px;border-radius:18px;background:linear-gradient(157deg,#fff,#F2EEFb);box-shadow:0 16px 30px rgba(24,12,62,.28);display:flex;align-items:center;justify-content:center;font-family:var(--d);font-weight:800;font-size:${Math.round(w*0.56)}px;color:var(--indigo);">${v}</div>`;
   if(g.phase==='draw'){
-    mid=`<div class="panel" style="padding:26px;text-align:center;"><div style="display:flex;justify-content:center;">${cardBack(160,224)}</div>
-      <div class="sub" style="color:var(--ink2);margin-top:18px;">Un chiffre de 1 à 10 va être tiré. <b style="color:var(--ink);">${cur().name} ne doit PAS regarder.</b> Les autres lui font deviner.</div></div>`;
+    mid=`<div style="display:flex;justify-content:center;">${cardBack(184,258)}</div>
+      <div class="sub center" style="margin-top:24px;max-width:300px;align-self:center;">Une carte de 1 à 10 va être tirée. <b style="color:#fff;">${cur().name} ne doit PAS regarder.</b> Les autres lui font deviner.</div>`;
     actions=`<button class="btn primary" onclick="echelleTirer()">Tirer la carte</button>`;
   } else if(g.phase==='vu'){
-    mid=`<div class="panel" style="padding:28px 24px;text-align:center;"><div style="display:flex;justify-content:center;">${num(g.card.v,168,236)}</div>
-      <div class="sub" style="color:var(--ink2);margin-top:20px;font-size:15px;line-height:1.5;">Faites deviner ce chiffre à <b style="color:var(--ink);">${cur().name}</b> : chacun votre tour, donnez un exemple du type<br><b style="color:var(--ink);">« c'est un 10, mais… »</b></div></div>`;
+    mid=`<div style="display:flex;justify-content:center;">${cardHTML(g.card,200,280)}</div>
+      <div class="sub center" style="margin-top:26px;max-width:320px;align-self:center;line-height:1.55;">Faites deviner cette carte à <b style="color:#fff;">${cur().name}</b> : chacun votre tour, un exemple du type <b style="color:#fff;">« c'est un 10, mais… »</b></div>`;
     actions=`<button class="btn primary" onclick="S.game.phase='guess';render();">${cur().name} a deviné →</button>`;
   } else if(g.phase==='guess'){
-    mid=`<div class="panel" style="padding:26px 24px;text-align:center;"><b style="font-family:var(--f);color:var(--indigo);font-size:18px;">Quel chiffre annonce ${cur().name} ?</b>
-      <div style="display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin:20px auto 0;max-width:250px;">${[1,2,3,4,5,6,7,8,9,10].map(n=>`<button class="chip" style="min-width:46px;height:52px;font-size:18px;${n===g.guess?'background:var(--amber);color:#3A2A06;':'background:var(--lav-soft);color:var(--indigo);'}" onclick="S.game.guess=${n};render();">${n}</button>`).join('')}</div></div>`;
+    mid=`<div class="center" style="font-family:var(--d);font-weight:800;font-size:23px;color:#fff;padding:0 10px;">Quel chiffre annonce ${cur().name} ?</div>
+      <div style="display:flex;flex-wrap:wrap;gap:11px;justify-content:center;margin:24px auto 0;max-width:270px;">${[1,2,3,4,5,6,7,8,9,10].map(n=>`<button class="chip" style="min-width:52px;height:60px;font-size:21px;${n===g.guess?'background:var(--amber);color:#3A2A06;':''}" onclick="S.game.guess=${n};render();">${n}</button>`).join('')}</div>`;
     actions=`<button class="btn primary" onclick="echelleReveal()">Valider « ${g.guess} »</button>`;
   } else {
     const diff=Math.abs(g.guess-g.card.v);
-    mid=`<div class="panel" style="padding:28px 24px;text-align:center;"><div style="display:flex;justify-content:center;">${num(g.card.v,150,210)}</div>
-      <div style="margin-top:18px;"><b style="font-family:var(--f);font-size:20px;color:${diff===0?'#19A974':'var(--red)'};">${diff===0?'Dans le mille !':'Écart de '+diff}</b>
-      <div class="sub" style="color:var(--ink2);font-size:14px;margin-top:6px;">Carte ${g.card.v}, ${cur().name} a dit ${g.guess}. ${diff===0?'Distribue 3 gorgées !':'Bois '+diff+' gorgée'+(diff>1?'s':'')+'.'}</div></div></div>`;
+    mid=`<div style="display:flex;justify-content:center;">${cardHTML(g.card,184,258)}</div>
+      <div class="center" style="margin-top:22px;"><div style="font-family:var(--d);font-weight:800;font-size:24px;color:${diff===0?'#7BE8C0':'#FF9A8B'};">${diff===0?'Dans le mille !':'Écart de '+diff}</div>
+      <div class="sub center" style="margin-top:6px;">${cur().name} a dit ${g.guess}. ${diff===0?'Distribue 3 gorgées !':'Bois '+diff+' gorgée'+(diff>1?'s':'')+'.'}</div></div>`;
     actions=`<button class="btn primary" onclick="echelleNext()">Au joueur suivant</button>`;
   }
   return `<div class="pad fade">${gameHead("L'Échelle", `<div class="pill">1–10</div>`)}${turnBanner()}<div class="gamebody">${mid}</div>${actions}</div>`;
@@ -727,7 +739,7 @@ SCREENS.tape = () => {
   const g=S.game; let mid, actions;
   if(g.phase==='ready'){
     mid=`<div class="panel" style="padding:24px;text-align:center;">
-      <div style="display:flex;justify-content:center;">${cardBack(176,246)}</div>
+      <div style="display:flex;justify-content:center;">${cardBack(192,268)}</div>
       <div class="sub" style="color:var(--ink2);margin-top:16px;">Les cartes défilent. <b style="color:var(--ink);">Tape dès qu'une figure apparaît</b> (Valet, Dame, Roi). Pas sur un chiffre, sinon tu bois !</div></div>`;
     actions=`<button class="btn primary" onclick="tapeStart()">Commencer</button>`;
   } else if(g.phase==='run'){
