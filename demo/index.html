@@ -1105,7 +1105,7 @@ SCREENS.vob = () => {
   const tgt = g.target===Infinity?'∞':g.target;
   const catLabel=(VOB_CATS.find(c=>c.id===g.cat)||{}).label||'Tout';
   return `<div class="pad fade">${gameHead('Action ou Vérité', `<div class="pill">${g.count+1} / ${tgt}</div>`)}
-   <div class="sub center" style="font-family:var(--f);font-weight:800;color:var(--lav);margin-bottom:4px;">${catLabel}</div>
+   ${g.cat!=='tout'?`<div class="sub center" style="font-family:var(--f);font-weight:800;color:var(--lav);margin-bottom:4px;">${catLabel}</div>`:''}
    ${turnBanner()}
    <div class="gamebody"><div class="panel" style="padding:30px 26px;text-align:center;"><div class="cap" style="color:var(--purple);">À ${cur().name} de jouer</div>
      <div style="font-family:var(--f);font-weight:800;font-size:${qz(g.q)}px;line-height:1.25;margin-top:14px;color:var(--ink);">${g.q}</div></div></div>
