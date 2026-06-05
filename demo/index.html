@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1, interactive-widget=resizes-content" />
 <title>Overnight — Jeu à boire (démo jouable)</title>
 <meta name="theme-color" content="#241064" />
 <meta name="mobile-web-app-capable" content="yes" />
@@ -137,6 +137,13 @@
   /* Petite explosion de stars/confettis pour les moments forts (Purple, carton plein…) */
   @keyframes confetti{0%{opacity:1;transform:translate(0,0) rotate(0) scale(1);}100%{opacity:0;transform:translate(var(--dx),var(--dy)) rotate(260deg) scale(.5);}}
   @media (prefers-reduced-motion:reduce){.cflip,.drop,.breathe,.fade,.pop{animation:none !important;}}
+  /* Setup : quand le clavier iOS est ouvert, on replie le haut + le CTA et on colle la liste au-dessus du clavier */
+  .su-hide{transition:opacity .18s ease;}
+  .su-sheet{transition:top .22s ease,bottom .22s ease;}
+  .su-cta{transition:transform .22s ease,opacity .18s ease;}
+  #app.kbopen .su-hide{opacity:0;pointer-events:none;}
+  #app.kbopen .su-sheet{top:18px !important;bottom:var(--kb,0px) !important;padding-bottom:18px !important;}
+  #app.kbopen .su-cta{opacity:0;pointer-events:none;transform:translateY(60px);}
 </style>
 </head>
 <body>
@@ -586,22 +593,22 @@ SCREENS.setup = () => {
     <button onclick="rmPlayer(${i})" style="width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.18);color:#fff;font-size:22px;font-weight:900;border:none;flex:none;cursor:pointer;">×</button></div>`;
   return `<div class="fade" style="position:absolute;inset:0;${NIGHT}">
     <button onclick="go('home')" style="position:absolute;top:max(54px,env(safe-area-inset-top));left:24px;${ROUNDBTN}font-size:26px;">‹</button>
-    <div style="position:absolute;top:96px;left:0;right:0;text-align:center;">
+    <div class="su-hide" style="position:absolute;top:96px;left:0;right:0;text-align:center;">
       <div style="font-family:var(--d);font-size:15px;font-weight:800;letter-spacing:.5px;color:#F472D6;text-transform:uppercase;">Party mode</div>
       <div style="font-family:var(--d);font-size:28px;font-weight:800;color:#fff;text-transform:uppercase;margin-top:8px;">Ajoute les joueurs</div></div>
-    <div style="position:absolute;top:172px;left:0;right:0;height:118px;display:flex;align-items:center;justify-content:center;">
+    <div class="su-hide" style="position:absolute;top:172px;left:0;right:0;height:118px;display:flex;align-items:center;justify-content:center;">
       <img src="assets/cups.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" style="max-height:112px;">
       <div style="display:none;gap:12px;align-items:flex-end;">
         <div style="width:58px;height:74px;border-radius:8px 8px 12px 12px;background:linear-gradient(180deg,#FF6B5A,#D6321F);transform:rotate(-10deg);box-shadow:0 10px 18px rgba(0,0,0,.3);"></div>
         <div style="width:58px;height:74px;border-radius:8px 8px 12px 12px;background:linear-gradient(180deg,#2A2440,#16141F);transform:rotate(10deg);box-shadow:0 10px 18px rgba(0,0,0,.3);"></div></div></div>
-    <div style="position:absolute;left:0;right:0;top:300px;bottom:0;border-radius:38px 38px 0 0;background:linear-gradient(180deg,rgba(112,73,220,.45),rgba(38,18,105,.28));box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 -10px 30px rgba(0,0,0,.12);border:1px solid rgba(255,255,255,.10);border-bottom:none;padding:30px 26px calc(128px + env(safe-area-inset-bottom));overflow-y:auto;">
+    <div class="su-sheet" style="position:absolute;left:0;right:0;top:300px;bottom:0;border-radius:38px 38px 0 0;background:linear-gradient(180deg,rgba(112,73,220,.45),rgba(38,18,105,.28));box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 -10px 30px rgba(0,0,0,.12);border:1px solid rgba(255,255,255,.10);border-bottom:none;padding:30px 26px calc(128px + env(safe-area-inset-bottom));overflow-y:auto;-webkit-overflow-scrolling:touch;">
       ${S.players.map((p,i)=>capsule(p,i)).join('')}
       <div style="height:80px;border-radius:24px;border:2px dashed rgba(205,187,255,.34);background:rgba(255,255,255,.04);display:flex;align-items:center;gap:14px;padding:0 14px;">
         <button onclick="addPlayer()" style="width:52px;height:52px;border-radius:50%;background:rgba(156,116,255,.26);border:none;color:#CDBBFF;font-size:30px;font-weight:800;flex:none;cursor:pointer;">+</button>
         <input id="nm" placeholder="Ajouter un joueur" value="${S.nameDraft.replace(/"/g,'&quot;')}" oninput="S.nameDraft=this.value" onkeydown="if(event.key==='Enter')addPlayer()" style="flex:1;background:transparent;border:none;outline:none;font-family:var(--f);font-size:20px;font-weight:800;color:#fff;"></div>
     </div>
-    ${n<2?`<div style="position:absolute;left:0;right:0;bottom:calc(126px + env(safe-area-inset-bottom));text-align:center;font-family:var(--b);font-weight:700;font-size:13px;color:rgba(255,255,255,.66);">Ajoute au moins 2 joueurs</div>`:''}
-    <button onclick="newParty()" style="position:absolute;left:28px;right:28px;bottom:calc(38px + env(safe-area-inset-bottom));height:78px;border-radius:999px;background:linear-gradient(180deg,#FFDB4D,#F0A92A);color:#4A2458;font-family:var(--d);font-size:23px;font-weight:800;letter-spacing:.3px;border:none;box-shadow:0 18px 28px rgba(0,0,0,.28);cursor:pointer;${n<2?'opacity:.5;pointer-events:none;filter:saturate(.7);':''}">C'EST PARTI</button>
+    ${n<2?`<div class="su-hide" style="position:absolute;left:0;right:0;bottom:calc(126px + env(safe-area-inset-bottom));text-align:center;font-family:var(--b);font-weight:700;font-size:13px;color:rgba(255,255,255,.66);">Ajoute au moins 2 joueurs</div>`:''}
+    <button onclick="newParty()" class="su-cta" style="position:absolute;left:28px;right:28px;bottom:calc(38px + env(safe-area-inset-bottom));height:78px;border-radius:999px;background:linear-gradient(180deg,#FFDB4D,#F0A92A);color:#4A2458;font-family:var(--d);font-size:23px;font-weight:800;letter-spacing:.3px;border:none;box-shadow:0 18px 28px rgba(0,0,0,.28);cursor:pointer;${n<2?'opacity:.5;pointer-events:none;filter:saturate(.7);':''}">C'EST PARTI</button>
   </div>`;
 };
 
@@ -1218,6 +1225,15 @@ function burstConfetti(n){
   setTimeout(()=>wrap.remove(),1600);
 }
 function render(){ app().innerHTML = SCREENS[S.screen](); }
+// Détection du clavier (iOS/Android) via visualViewport : libère de la place quand on tape un prénom
+(function(){
+  const vv=window.visualViewport, root=document.documentElement;
+  function setKb(px){ root.style.setProperty('--kb',(px>0?px:0)+'px'); const a=app(); if(a) a.classList.toggle('kbopen', px>120); }
+  function update(){ if(!vv) return; setKb(Math.round(window.innerHeight - vv.height - vv.offsetTop)); }
+  if(vv){ vv.addEventListener('resize',update); vv.addEventListener('scroll',update); }
+  window.addEventListener('focusin', e=>{ if(e.target&&e.target.tagName==='INPUT') setTimeout(update,60); });
+  window.addEventListener('focusout', e=>{ if(e.target&&e.target.tagName==='INPUT') setTimeout(()=>setKb(0),80); });
+})();
 loadSession();
 render();
 </script>
