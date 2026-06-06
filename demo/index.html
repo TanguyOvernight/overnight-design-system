@@ -144,6 +144,14 @@
   #app.kbopen .su-hide{opacity:0;pointer-events:none;}
   #app.kbopen .su-sheet{top:18px !important;bottom:var(--kb,0px) !important;padding-bottom:18px !important;}
   #app.kbopen .su-cta{opacity:0;pointer-events:none;transform:translateY(60px);}
+  /* Optimisation petits écrans (iPhone SE, etc.) : on resserre les marges pour que tout tienne sans coupe */
+  @media (max-height:720px){
+    .pad{padding-top:max(12px,env(safe-area-inset-top));padding-bottom:calc(12px + env(safe-area-inset-bottom));padding-left:16px;padding-right:16px;}
+    .hdr{margin-bottom:9px;}
+    .btn{min-height:54px;font-size:16px;}
+    .btn.sm{min-height:46px;}
+    .gamebody{gap:8px;padding:0 0 6px;}
+  }
 </style>
 </head>
 <body>
@@ -871,8 +879,8 @@ SCREENS.palmier = () => {
     actions=`<button class="btn primary" onclick="palmierTirer()">Tirer une carte</button>`;
   } else if(g.phase==='rule'){
     const r=palmierRule(g.card);
-    mid=`<div class="cflip" style="display:flex;justify-content:center;">${cardHTML(g.card,140,196)}</div>
-      <div class="drop gpanel" style="margin-top:16px;padding:18px;text-align:center;"><b style="font-family:var(--f);font-size:19px;color:#fff;">${r[0]}</b>
+    mid=`<div class="cflip" style="display:flex;justify-content:center;">${cardHTML(g.card,166,232)}</div>
+      <div class="drop gpanel" style="margin-top:18px;padding:18px;text-align:center;"><b style="font-family:var(--f);font-size:19px;color:#fff;">${r[0]}</b>
       <div class="sub" style="font-size:14px;margin-top:5px;">${r[1]}</div></div>`;
     actions=g.balance ? `<button class="btn amber" onclick="palmierBalance()">Poser sur le palmier</button>` : `<button class="btn primary" onclick="palmierNext()">Au joueur suivant</button>`;
   } else if(g.phase==='balance'){
@@ -1031,18 +1039,18 @@ SCREENS.pmu = () => {
     const p=S.players[g.betTurn];
     const names=['Pique','Cœur','Carreau','Trèfle'], cols=['#1A1A24','#E0392B','#EE7A1E','#1FA463'], tint=['#EEF0F8','#FDECEC','#FDF1E7','#EAF6EF'];
     const card=(i)=>{ const sel=g.betSel===i;
-      return `<button onclick="S.game.betSel=${i};render()" style="position:relative;border:none;cursor:pointer;border-radius:20px;padding:18px 8px;background:${tint[i]};aspect-ratio:.74;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:${sel?`0 0 0 3px ${cols[i]},0 14px 24px rgba(0,0,0,.16)`:'0 6px 14px rgba(0,0,0,.10)'};transition:box-shadow .15s,transform .08s;">
-        <div style="position:absolute;inset:9px;border-radius:14px;border:1.5px solid ${cols[i]}33;"></div>
-        <div style="font-size:52px;line-height:1;color:${cols[i]};">${SUITS[i]}</div>
-        <div style="font-family:var(--f);font-weight:800;font-size:20px;color:${cols[i]};margin-top:12px;">${names[i]}</div>
-        <div style="width:58%;height:1px;background:${cols[i]}22;margin:11px 0 8px;"></div>
-        <div style="font-family:var(--b);font-weight:600;font-size:13px;color:${cols[i]};opacity:.82;">Couloir ${i+1}</div></button>`; };
+      return `<button onclick="S.game.betSel=${i};render()" style="position:relative;border:none;cursor:pointer;border-radius:18px;padding:13px 6px;background:${tint[i]};display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:${sel?`0 0 0 3px ${cols[i]},0 14px 24px rgba(0,0,0,.16)`:'0 6px 14px rgba(0,0,0,.10)'};transition:box-shadow .15s,transform .08s;">
+        <div style="position:absolute;inset:8px;border-radius:13px;border:1.5px solid ${cols[i]}33;"></div>
+        <div style="font-size:clamp(34px,11vw,46px);line-height:1;color:${cols[i]};">${SUITS[i]}</div>
+        <div style="font-family:var(--f);font-weight:800;font-size:18px;color:${cols[i]};margin-top:8px;">${names[i]}</div>
+        <div style="width:54%;height:1px;background:${cols[i]}22;margin:8px 0 6px;"></div>
+        <div style="font-family:var(--b);font-weight:600;font-size:12px;color:${cols[i]};opacity:.82;">Couloir ${i+1}</div></button>`; };
     return `<div class="pad fade">${gameHead('PMU', `<div class="pill">Pari</div>`)}
       <div style="display:flex;align-items:center;justify-content:center;gap:10px;background:rgba(255,255,255,.14);padding:9px 16px;border-radius:999px;align-self:center;margin-bottom:6px;">${avatar(p,30)}<span style="font-weight:700;color:#fff;">Au tour de ${p.name}</span></div>
       <div class="spacer"></div>
-      <div class="gpanel" style="padding:22px 16px;">
-        <h2 style="text-align:center;font-size:24px;color:#fff;margin-bottom:18px;">Choisis ton cheval</h2>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:15px;">${[0,1,2,3].map(card).join('')}</div></div>
+      <div class="gpanel" style="padding:16px 14px;">
+        <h2 style="text-align:center;font-size:22px;color:#fff;margin-bottom:13px;">Choisis ton cheval</h2>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px;">${[0,1,2,3].map(card).join('')}</div></div>
       <div class="spacer"></div>
       <button class="btn amber" onclick="if(S.game.betSel!=null)pmuChoose(S.game.betSel)" style="${g.betSel==null?'opacity:.55;':''}">Valider mon pari</button></div>`;
   }
