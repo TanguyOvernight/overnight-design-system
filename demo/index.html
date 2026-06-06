@@ -1003,10 +1003,10 @@ function pmuRed(i){ return i===1||i===2; }
 function pmuMedsHTML(){
   const g=S.game;
   return g.side.map((m,i)=>{
-    const bottom=((i+1)/g.fin)*PMU_SPAN, c=m.card, col=pmuRed(c.s)?'#E0392B':'#16161F';
+    const bottom=((i+1)/g.fin)*PMU_SPAN, c=m.card;
     const inner = m.flipped
-      ? '<span style="display:inline-block;animation:pmuPop .35s ease;">'+pmuMini(VN[c.v]+'<span style="font-size:12px">'+SUITS[c.s]+'</span>', false, col)+'</span>'
-      : cardBack(28,40);
+      ? '<span style="display:inline-block;animation:pmuPop .35s ease;">'+cardHTML(c,30,42)+'</span>'
+      : cardBack(30,42);
     return '<div style="position:absolute;left:2px;bottom:'+bottom+'px;">'+inner+'</div>';
   }).join('');
 }
@@ -1016,7 +1016,7 @@ function pmuLanesHTML(){
     return '<div style="flex:1;position:relative;">'
       +'<div style="position:absolute;left:50%;bottom:0;top:16px;width:3px;margin-left:-1.5px;background:rgba(255,255,255,.22);border-radius:2px;"></div>'
       +'<div id="pmu-h'+i+'" style="position:absolute;left:50%;bottom:'+bottom+'px;transform:translateX(-50%);transition:bottom .55s cubic-bezier(.22,.9,.3,1);">'
-      +'<div style="width:44px;height:60px;border-radius:9px;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--f);font-weight:800;color:'+col+';box-shadow:0 7px 14px rgba(0,0,0,.32);line-height:1;"><span style="font-size:13px;">A</span><span style="font-size:25px;">'+s+'</span></div>'
+      +cardHTML({v:1,s:i},48,67)
       +'</div></div>';
   }).join('');
 }
@@ -1054,11 +1054,11 @@ SCREENS.pmu = () => {
       <div class="spacer"></div>
       <button class="btn amber" onclick="if(S.game.betSel!=null)pmuChoose(S.game.betSel)" style="${g.betSel==null?'opacity:.55;':''}">Valider mon pari</button></div>`;
   }
-  const foot=SUITS.map((s,i)=>{ const col=red(i)?'#E0392B':'#1A1A24';
+  const foot=SUITS.map((s,i)=>{
     const avs=S.players.map((p,idx)=>({p,idx})).filter(o=>g.bets[o.idx]===i).map((o,j)=>`<div style="margin-left:${j?-16:0}px;position:relative;z-index:${9-j};">${avatar(o.p,44)}</div>`).join('');
-    return `<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;">
+    return `<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:7px;">
       <div style="display:flex;min-height:44px;align-items:center;">${avs||'<div style="width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.14);"></div>'}</div>
-      <div style="width:38px;height:38px;border-radius:11px;background:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px;color:${col};">${s}</div></div>`;}).join('');
+      ${cardHTML({v:1,s:i},36,50)}</div>`;}).join('');
   const finish=`<div style="position:absolute;left:0;right:0;top:0;height:14px;background:repeating-linear-gradient(90deg,#fff 0 11px,#16161F 11px 22px);border-radius:5px;box-shadow:0 3px 7px rgba(0,0,0,.28);"></div>`;
   const board=`<div style="padding:14px 12px;background:linear-gradient(180deg,#41AE7B,#2B7A57);border-radius:22px;box-shadow:0 14px 30px rgba(15,60,45,.3);">
     <div style="position:relative;height:${PMU_TH}px;padding-left:${PMU_GUT}px;">
