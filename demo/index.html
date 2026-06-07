@@ -390,7 +390,7 @@ const VOB = [
   `Si tu portais un toast à ce groupe là maintenant, que dirais-tu ?`]},
  {titre:"Action !", cat:"action", q:[
   {t:"Fais un vrai compliment à {autre}."},
-  {t:"Imite {autre} : les autres doivent deviner de qui il s'agit."},
+  {t:"Imite {autre} de façon (très) exagérée. Personne n'a le droit de le/la défendre."},
   {t:"Câlin de 10 secondes avec {autre}."},
   {t:"Fais un bisou sur la joue à {F}."},
   {t:"Fais un bisou sur la joue à {H}."},
@@ -494,7 +494,7 @@ const VOB = [
   {t:"De 1 à 10, à quel point tu confierais un secret à {autre} ? Justifie le chiffre.", cat:['amis','probleme']},
   {t:"Qui de {autre} ou {autre2} survivrait à une apocalypse zombie ? Et pourquoi pas l'autre ?", cat:['amis','soft']},
   {t:"Invente, là maintenant, un slogan publicitaire pour {autre}.", cat:['amis']},
-  {t:"Fais deviner {autre} aux autres rien qu'en le/la mimant.", cat:['amis','action']},
+  {t:"Mime {autre} dans sa situation la plus typique. Le groupe valide… ou hue.", cat:['amis','action']},
   {t:"Échange ton téléphone avec {autre} pendant un tour entier.", cat:['action','probleme']},
   {t:"Imite {autre} en train de dire « allez, juste un dernier verre ».", cat:['amis','action']},
   {t:"Drague {F} comme si on était en 2005, devant tout le monde.", who:'h', cat:['chaud','action']},
@@ -503,6 +503,47 @@ const VOB = [
   {t:"{H} t'inviterait-il le mieux au restaurant, à ton avis ?", cat:['chaud','amis']},
   {t:"Quel conseil de vie totalement pourri tu donnerais à {autre} ?", cat:['amis','soft']},
   {t:"Imagine le pire cadeau d'anniversaire possible pour {autre}.", cat:['amis','soft']}]},
+ {titre:"Sarcasme garanti", cat:["soft","amis","probleme"], q:[
+  {t:"Sur une échelle de « je gère » à « appelez ma mère », t'en es où ce soir ?", cat:['soft']},
+  {t:"Quelle est la dernière fois où tu as eu raison… et où tu n'as pas manqué de le rappeler à tout le monde ?", cat:['soft','amis']},
+  {t:"Si ton ego avait un forfait, ce serait illimité ou bloqué après 2 Go ?", cat:['soft','probleme']},
+  {t:"Avoue le talent que tu prétends avoir uniquement sur ton profil de rencontre.", cat:['chaud','soft']},
+  {t:"Quelle décision de {autre} mériterait un Oscar de la pire idée de l'année ?", cat:['amis','probleme']},
+  {t:"Quel compliment de {autre} tu soupçonnes très fort d'être une pure politesse ?", cat:['amis','soft']},
+  {t:"Si on te confiait une plante, elle survivrait combien de temps ? Sois réaliste.", cat:['soft']},
+  {t:"Quelle est ta plus grande qualité… selon toi, et visiblement uniquement selon toi ?", cat:['soft','amis']},
+  {t:"Entre {autre} et {autre2}, lequel donne des conseils en amour alors que sa vie est un chantier ?", cat:['amis','chaud']},
+  {t:"Quel mensonge tu ressors en soirée et que tout le monde fait poliment semblant de croire ?", cat:['soft','probleme']},
+  {t:"Raconte la fois où tu étais « à 5 minutes »… pendant 45 minutes.", cat:['amis','soft']},
+  {t:"Quelle appli truste ton temps d'écran, et est-ce que tu l'assumes devant nous ?", cat:['soft','probleme']},
+  {t:"Donne une note sur 10 à ta soirée jusqu'ici, puis défends ce chiffre devant le tribunal.", cat:['amis','soft']},
+  {t:"Quel détail chez {autre} tu copierais en douce sans jamais l'avouer ?", cat:['amis','soft']},
+  {t:"Termine la phrase : « le problème avec moi, c'est que je suis trop… » (et sois honnête).", cat:['soft','probleme']},
+  {t:"Quelle réussite minuscule tu racontes comme si tu avais sauvé le monde ?", cat:['soft','amis']}]},
+ {titre:"Gages sans pitié", cat:"action", q:[
+  {t:"Imite quelqu'un du groupe sans dire son nom : les autres doivent deviner qui c'est."},
+  {t:"Laisse {autre} regarder ta dernière recherche Google. Ou bois 3 gorgées."},
+  {t:"Donne ton téléphone à {autre} : il/elle lit ta dernière notification à voix haute (ou tu bois 3)."},
+  {t:"Fais ton meilleur faux rire de soirée pendant 10 secondes, façon {autre}."},
+  {t:"Parle uniquement en chuchotant jusqu'à ton prochain tour, sinon 2 gorgées."},
+  {t:"Déclare ta flamme à un objet de la pièce, façon télénovela. {autre} juge la performance."},
+  {t:"Au choix : un compliment sincère à chaque personne ici, ou 4 gorgées d'un coup."},
+  {t:"Mime ton réveil un lundi matin. On veut la version crue, sans filtre."},
+  {t:"Entre {autre} et {autre2} : concours de regard intense. Le premier qui rit boit 2."},
+  {t:"Prends la pose la plus sérieuse possible pour un faux portrait. {autre} choisit l'angle."},
+  {t:"Refais la réaction de {autre} quand son tél affiche 12% de batterie."},
+  {t:"Messieurs : rejouez votre légendaire « je sais changer un pneu » (spoiler : non).", who:'h'},
+  {t:"Mesdames : refaites votre tête face à un mec qui dit « je suis pas comme les autres ».", who:'f'}]},
+ {titre:"Chaud bouillant (bonus)", cat:"chaud", q:[
+  {t:"Quel move de drague totalement nul a pourtant déjà marché sur toi ?"},
+  {t:"Entre {autre} et {autre2}, qui embrasse le mieux, selon la rumeur ?"},
+  {t:"Décris ton type idéal… puis admets à quel point {autre} en est loin (ou pas).", cat:['chaud','amis']},
+  {t:"Quelle est la chose la plus audacieuse que tu aies textée à 2h du matin ?"},
+  {t:"Si tu devais emmener une personne de cette pièce à un date, ce serait qui et où ?"},
+  {t:"Quel emoji tu envoies quand tu veux dire « viens là » sans le dire ?"},
+  {t:"À quel point tu craquerais pour {autre} dans une autre vie ? Barème sur 10, justifie."},
+  {t:"Quelle réplique de drague tu testerais sur {H} pour voir s'il tient le choc ?", who:'f', cat:['chaud','action']},
+  {t:"Quelle phrase ferait fondre {F} en moins de 3 secondes, à ton avis ?", who:'h', cat:['chaud','action']}]},
 ];
 const JAMAIS = [
  "envoyé un message au mauvais groupe.","fait semblant d'aimer un cadeau.","menti sur mon âge.",
@@ -1115,17 +1156,19 @@ function vobPlayable(it){
   return true;
 }
 function vobFill(t){
-  const pool=shuffle([...vobOthers()]); const used=[];
+  const others=shuffle([...vobOthers()]); const used=[];
+  const isH=x=>sexOf(x)==='Homme', isF=x=>sexOf(x)==='Femme';
   function pick(filter){
-    let p=pool.find(x=>!used.includes(x)&&(!filter||filter(x)));
-    if(!p) p=S.players.find(x=>x!==cur()&&!used.includes(x)&&(!filter||filter(x)));
-    if(!p) p=S.players.find(x=>(!filter||filter(x)));
+    // 1) un AUTRE joueur pas encore utilisé qui respecte le filtre (sexe)
+    let p=others.find(x=>!used.includes(x)&&(!filter||filter(x)));
+    // 2) sans filtre, on peut réutiliser un autre joueur (jamais soi-même)
+    if(!p && !filter) p=others.find(x=>!used.includes(x))||others[0];
+    // (avec filtre et aucun autre du bon sexe → on renvoie null = texte générique, jamais soi-même ni le mauvais sexe)
     if(p) used.push(p); return p;
   }
-  const isH=x=>sexOf(x)==='Homme', isF=x=>sexOf(x)==='Femme';
   return t.replace(/\{autre2\}|\{autre\}|\{H\}|\{F\}/g, m=>{
     const p = m==='{H}'?pick(isH) : m==='{F}'?pick(isF) : pick();
-    return p ? playerTag(p) : (m==='{F}'?'une fille':m==='{H}'?'un mec':'quelqu’un');
+    return p ? playerTag(p) : (m==='{F}'?'une meuf du groupe':m==='{H}'?'un gars du groupe':'quelqu’un ici');
   });
 }
 function vobKey(r,i){ return r+'-'+i; }
