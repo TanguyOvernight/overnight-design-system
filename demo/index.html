@@ -366,6 +366,42 @@ const VOB = [
   {t:"Entre {autre} et {autre2}, lequel récolterait le plus de matchs sur une appli ce soir ?"},
   "Quelle est la chose la plus romantique (ou la plus cheap) qu'on ait faite pour toi ?",
   "Quel surnom mignon tu trouves en réalité parfaitement insupportable ?"]},
+ {titre:"Qui est le plus susceptible…", cat:"qui", q:[
+  "À ton avis, qui ici finirait la soirée à vomir dans un Uber ?",
+  "Qui du groupe est le plus susceptible de texter son ex à 3h du matin ?",
+  "Qui finirait en garde à vue en premier, et pour quel motif complètement débile ?",
+  "Qui est le plus susceptible de tomber amoureux en une seule soirée ?",
+  "Qui checke son téléphone même en plein milieu d'une conversation importante ?",
+  "Qui devient soudainement radin au moment de l'addition ?",
+  "Qui ment le plus facilement sans même transpirer ?",
+  "Qui pleurerait devant une pub un peu trop émouvante ?",
+  "Qui est le plus susceptible de danser sur une table après deux verres ?",
+  "Qui abandonnerait le groupe pour rentrer dormir en douce sans prévenir ?",
+  "Qui balancerait un secret du groupe juste pour briller en soirée ?",
+  "Qui est le plus susceptible de se prendre un vent monumental ce soir ?",
+  "Qui deviendra riche… ou claquera tout en une seule nuit ?",
+  "Qui est le plus susceptible de se disputer avec un parfait inconnu ?",
+  "Qui craquerait en premier dans une télé-réalité ?",
+  "Qui enverrait un message d'insulte puis un « désolé, mauvais contact » ?",
+  "Qui exagère le plus quand il/elle raconte ses histoires ?",
+  "Qui est le plus susceptible de rappeler un ex « juste pour parler » ?",
+  "Qui poste le plus de stories que personne ne regarde ?",
+  "Qui serait le premier à trahir le groupe dans un jeu de survie ?"]},
+ {titre:"Cash, pas de filtre", cat:["probleme","amis","chaud"], q:[
+  {t:"C'est quoi le truc le plus gênant dans ton historique de navigation, là, maintenant ?", cat:['probleme']},
+  {t:"Combien de personnes tu as ghostées cette année ? Chiffre exact.", cat:['chaud','probleme']},
+  {t:"Quelle est la pire raison pour laquelle tu as largué ou été largué ?", cat:['chaud','probleme']},
+  {t:"Avoue le like accidentel le plus honteux d'une session de stalking.", cat:['chaud','soft']},
+  {t:"C'est quoi le mensonge que tu as dit ce soir même, ici ?", cat:['amis','probleme']},
+  {t:"Quel pote présent tu supporterais le moins en coloc ? Franchement.", cat:['amis','probleme']},
+  {t:"Ton pire date : balance, on veut tous les détails gênants.", cat:['chaud']},
+  {t:"Combien tu claques par mois en trucs totalement inutiles ? Sois honnête.", cat:['probleme','soft']},
+  {t:"Quelle est la chose la plus pathétique que tu aies faite par pure jalousie ?", cat:['chaud','probleme']},
+  {t:"Le plus gros mytho que tu aies raconté pour te défiler d'un plan ?", cat:['soft','probleme']},
+  {t:"C'est quoi le dernier truc pour lequel tu as vraiment pleuré ?", cat:['probleme']},
+  {t:"Quel red flag tout le monde voit chez toi… sauf toi ?", cat:['amis','probleme']},
+  {t:"Quelle appli tu masques direct quand quelqu'un regarde ton téléphone ?", cat:['probleme','chaud']},
+  {t:"Le potin le plus juteux que tu gardes sur quelqu'un ici : lâche un indice.", cat:['amis','probleme']}]},
 ];
 const JAMAIS = [
  "envoyé un message au mauvais groupe.","fait semblant d'aimer un cadeau.","menti sur mon âge.",
@@ -376,7 +412,16 @@ const JAMAIS = [
  "fait semblant d'avoir lu un livre.","dormi pendant un film au ciné.",
  "fait croire que j'avais plus de batterie.","porté le même vêtement plusieurs jours de suite.",
  "fait semblant d'être au téléphone pour éviter quelqu'un.","triché à un jeu de société.",
- "rougi en croisant quelqu'un qui me plaît.","gardé la monnaie rendue en trop."
+ "rougi en croisant quelqu'un qui me plaît.","gardé la monnaie rendue en trop.",
+ "vomi en soirée en jurant que tout allait bien.","recontacté un ex par pure flemme d'être seul(e).",
+ "stalké l'ex de mon ex jusqu'en 2018.","fait un irish goodbye pour quitter une soirée sans dire au revoir.",
+ "menti sur le nombre de verres que j'avais bus.","pleuré aux toilettes en pleine fête.",
+ "dragué quelqu'un juste pour un verre gratuit.","supprimé une photo à cause du nombre de likes.",
+ "prétendu avoir lu un message alors que j'avais juste répondu « ok » au hasard.",
+ "fait croire que j'étais déjà parti pour éviter de payer ma tournée.",
+ "liké une vieille photo par accident en plein stalking.","raconté un ragot en jurant que c'était un secret.",
+ "jugé quelqu'un uniquement sur sa playlist.","gardé un objet emprunté en espérant qu'on l'oublie.",
+ "fait semblant d'être d'accord juste pour finir la conversation.","envoyé un message que j'ai regretté avant même qu'il soit lu."
 ];
 const PREF = [
  ["Ne plus jamais boire de café","Ne plus jamais boire d'alcool"],
@@ -391,6 +436,18 @@ const PREF = [
  ["Bloqué dans un ascenseur avec ton ex","Avec ton boss"],
  ["Manger épicé à chaque repas","Fade à chaque repas"],
  ["Ne plus jamais utiliser ton tél une journée","Ne plus dormir une nuit"],
+ ["Que le groupe lise tes DMs","Que le groupe voie ton historique de recherche"],
+ ["Avouer ton salaire à toute la table","Avouer ton nombre de conquêtes"],
+ ["Que ton pire secret soit révélé","Révéler le pire secret d'un pote"],
+ ["Recroiser ton ex à chaque soirée","Ne plus jamais boire d'alcool"],
+ ["Que ton crush lise tes pensées 1 jour","Que ta mère lise tes messages 1 jour"],
+ ["Chanter en public totalement faux","Danser seul(e) au milieu de la piste"],
+ ["Perdre tous tes matchs d'appli","Perdre tous tes followers"],
+ ["Passer 24h avec ton ex","Passer 24h avec ton boss"],
+ ["Poster une story bourré(e) chaque samedi","Envoyer un vocal gênant à ta famille"],
+ ["Ne plus jamais mentir","Ne plus jamais pouvoir dire non"],
+ ["Que tes recherches s'affichent sur ton front","Que ton tél lise tes notifs à voix haute"],
+ ["Te prendre un râteau en public","Rater ton oral devant toute ta promo"],
 ];
 const KINGS = {1:["As — Cascade","Tu bois, ton voisin de gauche suit, puis le suivant…"],
  2:["2 — Toi","Désigne quelqu'un : il boit 2 gorgées."],3:["3 — Moi","Tu bois 3 gorgées."],
@@ -956,7 +1013,7 @@ function pmuDraw(){
 }
 
 /* ============================ VÉRITÉ OU BOIS ============================ */
-const VOB_CATS=[{id:'tout',label:'Tout'},{id:'soft',label:'Soft'},{id:'amis',label:'Vieux frères'},{id:'chaud',label:'Chaud du cul'},{id:'probleme',label:'Les problèmes'},{id:'action',label:'Actions'}];
+const VOB_CATS=[{id:'tout',label:'Tout'},{id:'qui',label:'Qui pourrait ?'},{id:'soft',label:'Soft'},{id:'amis',label:'Vieux frères'},{id:'chaud',label:'Chaud du cul'},{id:'probleme',label:'Les problèmes'},{id:'action',label:'Actions'}];
 function startVob(){ S.game={phase:'setup', cat:'tout', used:new Set(), q:null, target:100, count:0}; go('vob'); }
 function vobSetCat(c){ S.game.cat=c; render(); }
 function vobSetCount(n){ const g=S.game; g.target=n; g.count=0; g.phase='play'; vobPick(); render(); }
