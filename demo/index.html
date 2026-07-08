@@ -81,6 +81,9 @@
   .btn.primary{background:linear-gradient(180deg,#A878FF,#7A4DF0);color:#fff;box-shadow:0 14px 28px rgba(90,55,200,.42),inset 0 1px 0 rgba(255,255,255,.22);}
   .btn.indigo{background:var(--indigo);box-shadow:0 10px 24px rgba(79,56,192,.45);}
   .btn.red{background:linear-gradient(180deg,#FF6B5A,#E0392B);}
+  .btn.teal{background:linear-gradient(180deg,#4FD6AC,#2FA57F);box-shadow:0 12px 24px rgba(30,120,92,.35),inset 0 1px 0 rgba(255,255,255,.22);}
+  .btn.coral{background:linear-gradient(180deg,#FF8A7A,#F04A3E);box-shadow:0 12px 24px rgba(170,50,40,.35),inset 0 1px 0 rgba(255,255,255,.22);}
+  .btn.violet{background:linear-gradient(180deg,#B18CFF,#8B5CF6 55%,#6C3FD8);box-shadow:0 12px 24px rgba(90,50,190,.45),inset 0 1px 0 rgba(255,255,255,.25);}
   .btn.dark{background:#16161F;}
   .btn.amber{background:#FFC93C;color:#3A2A06;}
   .btn.sm{min-height:50px;font-size:15px;}
@@ -113,14 +116,16 @@
   .podplayer{position:absolute;transform:translateX(-50%);text-align:center;color:#fff;font-family:var(--f);font-weight:800;font-size:12px;}
   .palm-stage{position:relative;height:252px;width:100%;perspective:720px;}
   .palm-target{position:absolute;left:50%;bottom:132px;width:92px;height:10px;margin-left:-46px;border-radius:99px;background:rgba(255,201,60,.92);box-shadow:0 0 0 10px rgba(255,201,60,.14);}
-  .bottle{position:absolute;bottom:0;left:50%;width:72px;height:132px;margin-left:-36px;border-radius:18px 18px 20px 20px;background:linear-gradient(160deg,#57D6AD 0%,#2BA17C 48%,#12634B 100%);box-shadow:inset -12px 0 0 rgba(0,0,0,.10),0 16px 26px rgba(19,54,56,.22);}
-  .bottle:before{content:"";position:absolute;bottom:126px;left:22px;width:28px;height:34px;border-radius:6px 6px 3px 3px;background:linear-gradient(180deg,#2BA17C,#16664D);}
-  .bottle:after{content:"";position:absolute;top:14px;left:14px;width:10px;height:76px;border-radius:999px;background:rgba(255,255,255,.22);}
-  .palm-card{position:absolute;left:50%;width:62px;height:40px;margin-left:-31px;border-radius:8px;background:#fff;box-shadow:0 6px 12px rgba(24,12,62,.18);border:1px solid #F1ECFA;transform-style:preserve-3d;}
-  .palm-card:after{content:"";position:absolute;inset:7px;border:1px solid #EEE9FA;border-radius:5px;}
-  .swing-card{position:absolute;left:50%;width:76px;height:104px;margin-left:-38px;border-radius:12px;background:#fff;box-shadow:0 18px 30px rgba(24,12,62,.32);border:1px solid #EEE9FA;will-change:transform;transform:translateX(0) rotateX(58deg) rotateZ(-7deg);transform-origin:center 80%;}
-  .swing-card:before{content:"A";position:absolute;top:10px;left:10px;font-family:var(--f);font-weight:800;color:var(--red);}
-  .swing-card:after{content:"♦";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:34px;color:var(--red);}
+  .bottle{position:absolute;bottom:0;left:50%;width:72px;height:132px;margin-left:-36px;border-radius:18px 18px 20px 20px;background:linear-gradient(160deg,#A98BFF 0%,#7C5CF0 48%,#4A2EA0 100%);box-shadow:inset -12px 0 0 rgba(0,0,0,.14),inset 0 3px 0 rgba(255,255,255,.22),0 16px 26px rgba(20,10,60,.35);}
+  .bottle:before{content:"";position:absolute;bottom:126px;left:22px;width:28px;height:34px;border-radius:6px 6px 3px 3px;background:linear-gradient(180deg,#8E6CF2,#5E40C8);box-shadow:0 -12px 0 -4px #F0B72F;}
+  .bottle:after{content:"";position:absolute;top:14px;left:14px;width:10px;height:76px;border-radius:999px;background:rgba(255,255,255,.26);}
+  .bottle .lbl{position:absolute;top:46px;left:50%;transform:translateX(-50%);width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.94);box-shadow:inset 0 0 0 3px rgba(124,92,240,.45);}
+  .bottle .lbl:after{content:"";position:absolute;top:10px;left:10px;width:22px;height:22px;border-radius:50%;background:#FFD33F;box-shadow:inset -7px -4px 0 0 #fff;}
+  .palm-card{position:absolute;left:50%;width:62px;height:40px;margin-left:-31px;border-radius:8px;background:linear-gradient(180deg,#E8453F,#C22B26);box-shadow:0 6px 12px rgba(24,12,62,.26);transform-style:preserve-3d;}
+  .palm-card:after{content:"";position:absolute;inset:5px;border:1.5px solid rgba(255,255,255,.75);border-radius:5px;}
+  .swing-card{position:absolute;left:50%;width:76px;height:104px;margin-left:-38px;border-radius:12px;background:linear-gradient(180deg,#E8453F,#C9302B);box-shadow:0 18px 30px rgba(24,12,62,.4);will-change:transform;transform:translateX(0) rotateX(58deg) rotateZ(-7deg);transform-origin:center 80%;}
+  .swing-card:before{content:"";position:absolute;inset:7px;border:1.6px solid rgba(255,255,255,.85);border-radius:8px;}
+  .swing-card:after{content:"";position:absolute;top:50%;left:50%;width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;background:#fff;box-shadow:inset -11px -6px 0 0 #C9302B;}
   .fade{animation:fade .25s ease;}
   @keyframes fade{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
   .pop{animation:pop .3s cubic-bezier(.2,1.3,.5,1);}
@@ -235,219 +240,215 @@ function qz(t){ const n=(t||'').length; return n<30?38:n<48?33:n<72?28:n<110?23:
 
 /* ============================ CONTENU ============================ */
 const VOB = [
- {titre:"Pour briser la glace", cat:"soft", q:[
-  "Quelle est la chose la plus inutile pour laquelle tu es prêt(e) à te battre ?",
-  "Quel mensonge tu répètes tellement souvent que tu as fini par y croire toi-même ?",
-  "Quel talent totalement inutile tu maîtrises à la perfection ?",
-  "Quelle appli devrait te payer un salaire vu le temps que tu lui consacres ?",
-  "Quelle décision impulsive tu as prise récemment pour zéro bonne raison ?",
-  "Quel compliment tu te fais en secret et que personne ne validerait jamais ?",
-  "Quelle habitude bizarre tu caches dès que quelqu'un entre dans la pièce ?",
-  "Quel est le truc le plus vieux qui traîne dans ton frigo en ce moment ?",
-  "Quelle célébrité tu défends bec et ongles alors que tout le monde te dit d'arrêter ?",
-  "Quel est ton red flag à toi, celui que tu assumes complètement ?",
-  "Quand as-tu menti pour la dernière fois juste pour éviter une conversation banale ?",
-  "Si ton historique YouTube parlait à ta place, il dirait quoi de toi ?"]},
- {titre:"Petits mensonges, gros malaises", cat:["soft","probleme"], q:[
-  "Quel est le pire message que tu aies envoyé à la mauvaise personne ?",
-  "Raconte la fois où tu étais « à 2 minutes »… pendant 40.",
-  "Quelle est l'excuse la plus minable que tu aies sortie pour annuler un plan ?",
-  "Quelle est la chose la plus chère que tu aies achetée et jamais utilisée ?",
-  "Quel screenshot de ta galerie te ferait quitter le pays s'il fuitait maintenant ?",
-  "Quelle vantardise tu ressors en soirée et que plus personne ne croit vraiment ?",
-  "Quel surnom ridicule un(e) ex t'a donné, et que tu détestes encore ?",
-  "Quelle est la chose la plus puérile pour laquelle tu as boudé plus de 24h ?",
-  "Quel est le plus gros mytho que tu aies mis sur un CV ?",
-  "Avoue : la dernière story que tu as supprimée parce qu'elle faisait un flop, c'était quoi ?",
-  "Quelle est la chose la plus gênante qu'un livreur ait pu surprendre chez toi ?"]},
+ {titre:"Vérités compliquées", cat:"probleme", q:[
+  "Quelle est la décision que tu as prise en sachant très bien qu'elle allait blesser quelqu'un ?",
+  "Quel mensonge tu maintiens depuis tellement longtemps qu'il est trop tard pour avouer ?",
+  "Qu'est-ce que tu n'as jamais pardonné, même si tu as dit « c'est oublié » ?",
+  "Quelle amitié tu continues par habitude alors qu'elle est morte depuis longtemps ?",
+  "Quelle est la chose la plus égoïste que tu aies faite en la déguisant en gentillesse ?",
+  "Sur quoi tu juges secrètement les gens, alors que tu jures que non ?",
+  "Quelle promesse importante tu n'as jamais tenue, et à qui ?",
+  "Qu'est-ce que tu envies vraiment dans la vie de quelqu'un de cette pièce ?",
+  "Quelle version de toi tu joues en soirée et qui n'existe pas vraiment ?",
+  "Quel « désolé » tu n'as jamais pensé une seule seconde ?",
+  "De quoi as-tu le plus honte quand tu repenses à tes années lycée ?",
+  "Quelle relation tu as laissée pourrir volontairement plutôt que d'avoir la conversation ?",
+  "Qu'est-ce que tu fais uniquement quand tu es certain(e) que personne ne le saura jamais ?",
+  "Quel message tu regrettes d'avoir lu parce que tu n'étais pas censé(e) le voir ?",
+  "Quelle est la pire chose que tu aies pensée à un enterrement, un mariage ou un baptême ?",
+  "Pour quoi exactement tu passerais un tour de vérité si tu pouvais acheter ton silence là ?"]},
+ {titre:"Ex & dégâts", cat:["chaud","probleme"], q:[
+  "Quel ex tu recontacterais ce soir si tu étais sûr(e) que personne ne l'apprenne ?",
+  "Quelle est la pire chose que tu aies faite pendant une relation, jamais avouée ?",
+  "Tu as déjà continué une relation en sachant que c'était fini ? Combien de temps ?",
+  "Quel est le vrai motif de ta pire rupture — pas la version officielle ?",
+  "Qui a un ex dont tout le monde ici pense secrètement « heureusement que c'est fini » ? Balance.",
+  "Quelle relation tu as cachée à tes potes ? Pourquoi eux ne devaient pas savoir ?",
+  "Tu as déjà comparé la personne avec qui tu étais à quelqu'un d'autre pendant la relation ?",
+  "Quel message d'ex tu gardes encore alors que tu devrais l'avoir supprimé depuis des années ?",
+  "C'est quoi la chose la plus lunaire que tu aies faite après une rupture ?",
+  "Tu es déjà resté(e) avec quelqu'un principalement par confort ou par flemme ? Avoue.",
+  "Quelle est la pire raison pour laquelle tu as accepté ou proposé un date ?",
+  "À qui ici tu n'as jamais dit que son/sa partenaire de l'époque te détestait cordialement ?",
+  {t:"Entre {autre} et {autre2}, qui gérerait le pire une rupture en direct ? Développe.", cat:['amis','chaud']},
+  {t:"Sois cash : la relation de {autre} actuelle ou passée que tu n'as jamais comprise ?", cat:['amis','probleme']}]},
  {titre:"Vieux frères", cat:"amis", q:[
-  "Quelle a été ta toute première impression de {autre} ? On veut la version non filtrée.",
-  "Donne une qualité que tu envies à {autre}, et un défaut que tu ne supportes plus.",
-  "Complète : « {autre}, c'est typiquement le genre à… »",
-  "Entre {autre} et {autre2}, qui ferait le pire coloc ? Argumente sans pitié.",
-  "Quel surnom un peu cruel mais mérité tu colles à {autre} pour la soirée ?",
-  "Sur 10, à quel point tu confierais le code de ta carte à {autre} ? Justifie le chiffre.",
-  "Quel conseil de vie totalement pourri tu donnerais à {autre}, juste pour voir ?",
-  "Entre {autre} et {autre2}, lequel tu appelles en premier si tu te fais serrer à 4h du mat ?",
-  "Quelle réputation traîne {autre} : méritée, ou totalement injuste ?",
-  "Quel film résume le mieux la vie de {autre} ? Donne le titre exact.",
-  "Quelle est la chose la plus gentille que {autre} ait faite pour toi sans que tu l'avoues jamais ?",
-  "Si {autre} lançait une boîte demain, ce serait quoi, et ça coulerait en combien de temps ?",
-  "Quel détail tu copierais en douce à {autre} sans jamais l'admettre ?",
-  "Quelle private joke avec {autre} personne d'autre ne pourra jamais comprendre ?"]},
- {titre:"On balance (bien noir)", cat:["amis","probleme"], q:[
+  "Quelle a été ta vraie première impression de {autre} ? La version non filtrée, pas la mignonne.",
+  "Quel truc {autre} fait en soirée qui te fait honte pour lui/elle ?",
+  "Complète : « {autre}, c'est typiquement le genre à… » — et vise juste.",
+  "Entre {autre} et {autre2}, qui ferait le pire coloc ? Argumente sans aucune pitié.",
+  "Quel surnom cruel mais mérité tu colles à {autre} pour le reste de la soirée ?",
+  "Sur 10, à quel point tu confierais le code de ta CB à {autre} ? Le chiffre dit tout.",
+  "Quelle réputation traîne {autre} : totalement méritée ou complètement injuste ?",
+  "Quelle habitude de {autre} te donne envie de changer de pièce ? Là, en face.",
+  "Quel est le mensonge le plus transparent que {autre} t'ait jamais servi ?",
+  "Sur quoi {autre} donne des leçons alors que c'est précisément son point faible ?",
+  "Quel talent {autre} est convaincu(e) d'avoir alors que personne n'a jamais rien constaté ?",
   "Si {autre} quittait le groupe demain, qu'est-ce qui te manquerait… le moins ?",
-  "Entre {autre} et {autre2}, lequel tu pousses du radeau s'il ne reste qu'une place ? Sans pitié.",
-  "Quelle opinion bien tranchée sur {autre} tu n'oses jamais dire à voix haute ?",
-  "Sois cruel : les chances réelles, sur 100, que {autre} devienne riche un jour ?",
-  "Quel truc {autre} prend beaucoup trop au sérieux alors que personne ne suit ?",
-  "Quelle période un peu honteuse de {autre} on a tous décidé de ne plus jamais évoquer ?",
-  "Entre {autre} et {autre2}, qui a le plus gros ego pour le moins de raisons ?",
-  "Quelle habitude de {autre} te donne secrètement envie de changer de pièce ?",
-  "Quel est le mensonge le plus transparent que {autre} t'ait déjà servi ?",
-  "Si {autre} était un produit en magasin, il serait en promo pour quelle raison ?",
-  "Sur quoi {autre} donne des leçons alors que c'est exactement son point faible ?",
-  "Quel talent {autre} pense avoir et que strictement personne n'a jamais constaté ?",
-  "Classe vite : {autre} et {autre2}, du plus susceptible de tous nous ghoster au plus fidèle."]},
- {titre:"Les gros dossiers", cat:"probleme", q:[
-  "Quel est l'endroit le plus inattendu où tu as déjà pleuré ?",
-  "Quel est le bruit le plus gênant que ton corps ait produit en public ?",
-  "Quel est ton record de jours sans changer tes draps ? La vérité.",
-  "Quelle est la chose la plus pathétique que tu aies faite pour récupérer l'attention de quelqu'un ?",
-  "Quel est le plus gros pétage de plomb que tu aies eu pour une raison ridicule ?",
-  "Quelle rumeur sur toi tu as laissé courir parce qu'elle t'arrangeait bien ?",
-  "Quel message bourré as-tu envoyé à quelqu'un que tu avais juré de ne plus jamais contacter ?",
-  "Quelle est la chose la moins glorieuse que tu aies faite pour de l'argent ?",
-  "Quel truc puéril tu fais encore en cachette à ton âge ?",
-  "Quelle pensée totalement déplacée tu as déjà eue dans un moment très solennel ?",
-  "Quel petit secret tu gardes précieusement alors qu'en vrai tout le monde s'en fiche ?"]},
+  "Quelle période gênante de {autre} on a tous accepté de ne plus jamais mentionner ?",
+  "Entre {autre} et {autre2}, qui a le plus gros ego pour le moins de raisons valables ?",
+  "Quelle opinion tranchée sur {autre} tu gardes pour toi depuis des années ?",
+  "Cite un moment précis où {autre} t'a déçu(e) sans jamais le savoir… jusqu'à maintenant."]},
+ {titre:"Secrets de groupe", cat:["amis","probleme"], q:[
+  "Quel truc s'est dit dans un groupe privé que {autre} ne doit jamais voir ?",
+  "Quelle conversation du groupe tu as déjà screenshotée et envoyée ailleurs ?",
+  "Tu as déjà fait semblant d'être occupé(e) pour éviter quelqu'un de cette pièce ? Qui ?",
+  "Quel événement du groupe tu as esquivé avec un faux prétexte ? On veut le vrai motif.",
+  "Qui ici tu as déjà retiré (même 5 minutes) de tes stories « proches » ? Pourquoi ?",
+  "Quel potin sur quelqu'un ici tu as appris par quelqu'un d'autre ici ?",
+  "Quelle décision de groupe tu as sabotée discrètement parce qu'elle ne t'arrangeait pas ?",
+  "Si tu devais révéler UN truc qu'on t'a confié « entre nous », lequel ferait le plus de dégâts ?",
+  "Qui du groupe parle le plus dans le dos des autres ? Regarde-le/la maintenant.",
+  "Quel duo de cette pièce s'entend beaucoup moins bien qu'il le prétend ?",
+  "Tu as déjà menti à tout le groupe en même temps ? Sur quoi ?",
+  "Quel pote ici a un(e) partenaire que tu ne valides pas ? Tu peux répondre « je bois »."]},
  {titre:"Roast de toi", cat:["amis","probleme"], q:[
-  "Décrivez-moi en trois mots, dont zéro flatteur.",
-  "Quel est mon tic de langage que vous attendez tous que je remarque enfin ?",
+  "Décrivez-moi en trois mots, dont zéro flatteur. Le plus précis gagne.",
   "Quel red flag me concernant donneriez-vous à quelqu'un qui me rencontre ce soir ?",
-  "Si j'étais un meme, je serais lequel ? Soyez méchants, j'encaisse.",
-  "Quelle décision de ma vie avez-vous le plus critiquée dans mon dos ?",
-  "Quelle est la chose la plus cringe que j'aie dite en étant parfaitement sobre ?",
-  "Annoncez ma note de soirée sur 10, puis défendez ce chiffre devant le tribunal.",
-  "Quel surnom humiliant me collez-vous pour le reste de la nuit ?",
-  "Quelle est la pire tenue que j'aie portée en me croyant intouchable ?",
-  "Quel est, à coup sûr, le numéro 1 de mon temps d'écran ?"]},
- {titre:"Chaud du cul (sans déraper)", cat:"chaud", q:[
-  "Quel move de drague totalement nul a pourtant déjà marché sur toi ?",
-  "Quelle phrase cliché te fait craquer à tous les coups, même si tu le nies ?",
-  "Avec quel personnage de série ou de film tu craquerais sans aucune hésitation ?",
-  "Quel est ton crush le plus inavouable, présent dans cette pièce ou non ?",
-  "Sur 1 à 10, à combien tu situes ton charme ce soir ? Défends le chiffre.",
-  "Quel emoji tu envoies pour dire « viens là » sans avoir à le dire ?",
-  "Quelle est la chose la plus culottée que tu aies textée à 2h du matin ?",
-  "Si tu emmenais quelqu'un de cette pièce à un date demain, ce serait qui et où ?",
-  "Entre {autre} et {autre2}, lequel tu présenterais à tes parents, et lequel surtout pas ?",
-  "Quel red flag te fait fuir direct, même si la personne est totalement canon ?",
-  "À ton avis, {autre} en mode séduction : zéro pointé, ou redoutable ? Argumente.",
-  {t:"Quelle réplique tu testerais sur {H} pour voir s'il garde son calme ?", who:'f', cat:['chaud','action']},
-  {t:"Quelle phrase ferait sourire {F} en moins de trois secondes, à ton avis ?", who:'h', cat:['chaud','action']}]},
- {titre:"Actions !", cat:"action", q:[
-  {t:"Fais un compliment sincère, pas ironique, à {autre}."},
-  {t:"Imite {autre} façon caricature. Tout le monde a le droit d'en rajouter."},
-  {t:"Câlin de 10 secondes avec {autre}, sinon 2 gorgées."},
-  {t:"Fixe {autre} dans les yeux 15 secondes sans rire. Le premier qui craque boit 2."},
-  {t:"Invente sur-le-champ un slogan publicitaire pour {autre}."},
-  {t:"Laisse {autre} t'inventer un surnom pour le reste de la soirée."},
-  {t:"Toi et {autre} : la photo de duo la plus cringe possible. Direction le groupe."},
-  {t:"Chuchote un compliment volontairement gênant à l'oreille de {autre}."},
-  {t:"Entre {autre} et {autre2} : bras de fer. Le perdant boit 2 gorgées."},
-  {t:"Imite quelqu'un du groupe sans dire son nom : les autres devinent qui c'est."},
-  {t:"{autre} lit ta dernière notification à voix haute. Ou tu bois 3 gorgées."},
-  {t:"Parle uniquement en chuchotant jusqu'à ton prochain tour, sinon 2 gorgées."},
-  {t:"Fais ta plus belle déclaration d'amour… à un objet de la pièce."},
-  {t:"Mime ton réveil un lundi matin. On veut la version la plus tragique."},
-  {t:"Fais un bisou sur la joue à {F}, ou bois 2 gorgées."},
-  {t:"Fais un bisou sur la joue à {H}, ou bois 2 gorgées."},
-  {t:"Drague {F} avec ta pire phrase d'approche, le plus sérieusement du monde.", who:'h'},
-  {t:"Drague {H} avec ta pire réplique, façon film des années 2000.", who:'f'},
-  {t:"Messieurs : rejouez le « je gère, t'inquiète » qui a fini en catastrophe.", who:'h'},
-  {t:"Mesdames : refaites votre tête face au mec qui dit « je suis pas comme les autres ».", who:'f'}]},
- {titre:"Gages sans pitié", cat:"action", q:[
-  {t:"Laisse {autre} fouiller ta dernière recherche Google. Ou bois 3 gorgées."},
-  {t:"Montre la dernière photo de ta galerie sans la choisir. Ou 3 gorgées."},
-  {t:"Au choix : un compliment sincère à CHAQUE personne ici, ou 4 gorgées cul sec."},
-  {t:"Prends la pose la plus sérieuse possible. {autre} choisit l'angle le plus moche."},
-  {t:"Refais la réaction de {autre} quand son téléphone tombe à 11% de batterie."},
-  {t:"Raconte ta pire honte de soirée en 15 secondes chrono. Top, c'est parti."},
-  {t:"Laisse le groupe choisir ton fond d'écran pour les 10 prochaines minutes."},
-  {t:"Fais deviner ton dernier achat inutile rien qu'en le mimant."},
-  {t:"Entre {autre} et {autre2} : duel de regard. Le premier qui rit boit 2 gorgées."}]},
- {titre:"Chaud bouillant (encore)", cat:"chaud", q:[
-  "Quelle est la plus grosse galère que tu aies vécue à un rendez-vous ?",
-  "Quel détail anodin chez quelqu'un te fait totalement craquer ?",
-  "Raconte le date le plus what-the-f de toute ta vie.",
-  "Quelle est la pire excuse que tu aies sortie après un date complètement raté ?",
-  "Quel compliment te fait fondre à coup sûr, même venant d'un parfait inconnu ?",
-  {t:"Entre {autre} et {autre2}, lequel récolterait le plus de matchs sur une appli ce soir ?"},
-  "Quelle est la chose la plus romantique (ou la plus cheap) qu'on ait faite pour toi ?",
-  "Quel surnom mignon tu trouves en réalité parfaitement insupportable ?"]},
+  "Quelle décision de ma vie avez-vous le plus commentée dans mon dos ?",
+  "Si j'étais un meme, lequel ? Et pourquoi celui-là précisément ?",
+  "Quelle est la chose la plus cringe que j'aie faite en étant parfaitement sobre ?",
+  "Balancez ma pire qualité déguisée en défaut d'entretien d'embauche. Sans mentir.",
+  "Qu'est-ce que tout le monde ici pense de moi sans jamais me le dire ?",
+  "Quel surnom humiliant vous me collez pour le reste de la nuit ?",
+  "À quel moment ce soir j'ai cru être drôle et je ne l'étais pas ?",
+  "Quelle est la chose dont je me vante trop alors que le niveau est moyen ?"]},
  {titre:"Qui est le plus susceptible…", cat:"qui", q:[
-  "À ton avis, qui ici finirait la soirée à vomir dans un Uber ?",
-  "Qui du groupe est le plus susceptible de texter son ex à 3h du matin ?",
-  "Qui finirait en garde à vue en premier, et pour quel motif complètement débile ?",
-  "Qui est le plus susceptible de tomber amoureux en une seule soirée ?",
-  "Qui checke son téléphone même en plein milieu d'une conversation importante ?",
-  "Qui devient soudainement radin au moment de l'addition ?",
-  "Qui ment le plus facilement sans même transpirer ?",
-  "Qui pleurerait devant une pub un peu trop émouvante ?",
-  "Qui est le plus susceptible de danser sur une table après deux verres ?",
-  "Qui abandonnerait le groupe pour rentrer dormir en douce sans prévenir ?",
-  "Qui balancerait un secret du groupe juste pour briller en soirée ?",
-  "Qui est le plus susceptible de se prendre un vent monumental ce soir ?",
-  "Qui deviendra riche… ou claquera tout en une seule nuit ?",
-  "Qui est le plus susceptible de se disputer avec un parfait inconnu ?",
-  "Qui craquerait en premier dans une télé-réalité ?",
-  "Qui enverrait un message d'insulte puis un « désolé, mauvais contact » ?",
-  "Qui exagère le plus quand il/elle raconte ses histoires ?",
-  "Qui est le plus susceptible de rappeler un ex « juste pour parler » ?",
-  "Qui poste le plus de stories que personne ne regarde ?",
-  "Qui serait le premier à trahir le groupe dans un jeu de survie ?"]},
- {titre:"Cash, pas de filtre", cat:["probleme","amis","chaud"], q:[
-  {t:"C'est quoi le truc le plus gênant dans ton historique de navigation, là, maintenant ?", cat:['probleme']},
-  {t:"Combien de personnes tu as ghostées cette année ? Chiffre exact.", cat:['chaud','probleme']},
-  {t:"Quelle est la pire raison pour laquelle tu as largué ou été largué ?", cat:['chaud','probleme']},
-  {t:"Avoue le like accidentel le plus honteux d'une session de stalking.", cat:['chaud','soft']},
-  {t:"C'est quoi le mensonge que tu as dit ce soir même, ici ?", cat:['amis','probleme']},
-  {t:"Quel pote présent tu supporterais le moins en coloc ? Franchement.", cat:['amis','probleme']},
-  {t:"Ton pire date : balance, on veut tous les détails gênants.", cat:['chaud']},
-  {t:"Combien tu claques par mois en trucs totalement inutiles ? Sois honnête.", cat:['probleme','soft']},
-  {t:"Quelle est la chose la plus pathétique que tu aies faite par pure jalousie ?", cat:['chaud','probleme']},
-  {t:"Le plus gros mytho que tu aies raconté pour te défiler d'un plan ?", cat:['soft','probleme']},
-  {t:"C'est quoi le dernier truc pour lequel tu as vraiment pleuré ?", cat:['probleme']},
-  {t:"Quel red flag tout le monde voit chez toi… sauf toi ?", cat:['amis','probleme']},
-  {t:"Quelle appli tu masques direct quand quelqu'un regarde ton téléphone ?", cat:['probleme','chaud']},
-  {t:"Le potin le plus juteux que tu gardes sur quelqu'un ici : lâche un indice.", cat:['amis','probleme']}]},
+  "Qui ici finirait la soirée à pleurer sur son ex dans la salle de bain ?",
+  "Qui du groupe est le plus susceptible de texter son ex dans l'heure qui vient ?",
+  "Qui finirait en garde à vue en premier, et pour quel motif précis ?",
+  "Qui balancerait un secret du groupe juste pour briller devant des inconnus ?",
+  "Qui a le plus de conversations « à ne jamais montrer » dans son téléphone ?",
+  "Qui est le plus susceptible de ghoster quelqu'un ici présent un jour ?",
+  "Qui mentirait le mieux devant la police ? Argumente, c'est important.",
+  "Qui deviendrait insupportable en une semaine s'il/si elle devenait célèbre ?",
+  "Qui a déjà stalké le/la partenaire d'un(e) ex jusqu'à des profondeurs inavouables ?",
+  "Qui est le plus susceptible de se réveiller demain avec un tatouage regrettable ?",
+  "Qui du groupe cache le mieux son jeu niveau vie amoureuse ?",
+  "Qui trahirait le groupe en premier pour de l'argent ? Et pour combien ?",
+  "Qui est le plus susceptible de faire une scène en public ce soir ?",
+  "Qui a le pire goût en matière de crush, historiquement parlant ?",
+  "Qui s'est déjà inventé une vie devant des inconnus en soirée ?",
+  "Qui du groupe finira par tous nous réunir à son mariage… en ayant invité ses ex ?",
+  "Qui est capable de tenir un vrai secret… et qui n'en a jamais tenu un seul ?",
+  "Qui rentrerait discrètement avec quelqu'un ce soir sans jamais nous le dire ?"]},
+ {titre:"Cash, pas de filtre", cat:["probleme","chaud"], q:[
+  "Combien de personnes tu as ghostées cette année ? Chiffre exact, on attend.",
+  "C'est quoi le mensonge que tu as dit ce soir même, ici, dans cette pièce ?",
+  "Quel pote présent tu supporterais le moins en coloc ? Il/elle t'écoute, vas-y.",
+  "Quelle est la chose la plus pathétique que tu aies faite par pure jalousie ?",
+  "Quelle appli tu masques instantanément quand quelqu'un regarde ton écran ?",
+  "Le potin le plus juteux que tu gardes sur quelqu'un ici : donne un indice. Un vrai.",
+  "Ton pire date de tous les temps : on veut le détail le plus gênant, pas le résumé.",
+  "Quel like accidentel t'a déjà grillé(e) en plein stalking ? Raconte la panique.",
+  "Combien tu claques par mois en trucs que tu caches plus ou moins ? Sois honnête.",
+  "Quel red flag tout le monde voit chez toi sauf toi ? Le groupe confirmera.",
+  "Quelle est la dernière chose pour laquelle tu as vraiment pleuré ? Pas la version soft.",
+  "Tu as déjà lu des messages qui ne t'étaient pas destinés ? Chez qui, et t'as trouvé quoi ?"]},
+ {titre:"Côté meufs", cat:["chaud","probleme"], q:[
+  {t:"Le fameux « je rentre tôt ce soir » : raconte la dernière fois où ça a fini à 5h.", who:'f'},
+  {t:"C'est quoi le message le plus lunaire qu'un mec t'ait envoyé ? Cite-le mot pour mot.", who:'f'},
+  {t:"Combien de mecs tu laisses en vu en ce moment, là, sur ton téléphone ?", who:'f'},
+  {t:"Le pire « il n'est pas comme les autres » que tu aies défendu devant tes copines ?", who:'f'},
+  {t:"Quelle excuse tu ressors pour esquiver un date qui ne mérite même pas un mensonge original ?", who:'f'},
+  {t:"Ton record de temps à décortiquer UN message de mec avec tes copines ? Sois honnête.", who:'f'},
+  {t:"C'est quoi le red flag que tu as ignoré en toute connaissance de cause, et combien de temps ?", who:'f'},
+  {t:"La chose la plus fourbe que tu aies faite pour tester un mec sans qu'il le sache ?", who:'f'},
+  {t:"Quel « on est juste amis » de ta vie n'a convaincu strictement personne ?", who:'f'},
+  {t:"Ta technique de sortie quand un date tourne mal : démonstration, là, maintenant.", who:'f', cat:['chaud','action']}]},
+ {titre:"Côté mecs", cat:["chaud","probleme"], q:[
+  {t:"Le fameux « je gère, t'inquiète » : raconte la fois où tu ne gérais absolument rien.", who:'h'},
+  {t:"Combien de temps tu attends avant de répondre pour « pas paraître trop chaud » ? Avoue le calcul.", who:'h'},
+  {t:"C'est quoi la pire phrase d'approche que tu aies vraiment envoyée ? Cite-la mot pour mot.", who:'h'},
+  {t:"Ton pote est en train de se planter en beauté avec quelqu'un : tu lui dis ou tu regardes le crash ?", who:'h'},
+  {t:"Quelle vantardise tu ressors systématiquement alors qu'elle est à moitié fausse ?", who:'h'},
+  {t:"Le truc le plus mesquin que tu aies fait pour impressionner quelqu'un qui s'en fichait ?", who:'h'},
+  {t:"Tu as déjà fait semblant d'aimer un truc (film, musique, sport) pour plaire ? Lequel ?", who:'h'},
+  {t:"C'est quoi ton excuse par défaut quand tu annules un plan pour rester en pyjama ?", who:'h'},
+  {t:"Quel conseil de drague catastrophique tu as donné à un pote en toute confiance ?", who:'h'},
+  {t:"Refais-nous ta réaction exacte quand ton pote te dit « elle a un(e) ami(e) pour toi ».", who:'h', cat:['chaud','action']}]},
+ {titre:"Chaud du cul", cat:"chaud", q:[
+  "Quel est ton crush le plus inavouable — présent dans cette pièce ou non ? On saura si tu mens.",
+  "Quelle est la chose la plus culottée que tu aies envoyée à 2h du matin ?",
+  "Tu as déjà eu un crush sur le/la partenaire d'un(e) ami(e) ? Tu peux boire au lieu de répondre.",
+  "Quel move de drague honteux a déjà fonctionné sur toi ? Décris-le.",
+  "C'est quoi ton type exact, et qui ici s'en rapproche dangereusement ?",
+  "Quelle rencontre de soirée tu n'as jamais racontée à personne ici ?",
+  "Si tu devais emmener quelqu'un de cette pièce à un date demain : qui, où, et pourquoi lui/elle ?",
+  "Quel red flag te fait fuir immédiatement, même si la personne est parfaite sur le papier ?",
+  "À ton avis, {autre} en mode séduction : catastrophe ou redoutable ? Justifie avec un exemple.",
+  "Entre {autre} et {autre2}, lequel tu présenterais à ta famille, et lequel surtout pas ?",
+  "Quelle conversation tu effacerais immédiatement si on te prenait ton téléphone là ?",
+  "Ton « moment honteux » de drague que tes potes ressortent encore : la vraie version."]},
+ {titre:"Actions !", cat:"action", q:[
+  {t:"Imite {autre} façon caricature méchante. Il/elle n'a pas le droit de se défendre."},
+  {t:"Fixe {autre} dans les yeux 15 secondes. Le premier qui rit boit 2 gorgées."},
+  {t:"{autre} lit ta dernière notification à voix haute. Ou tu bois 3 gorgées. Choisis vite."},
+  {t:"Laisse {autre} fouiller ta derniere recherche Google. Ou 3 gorgées."},
+  {t:"Montre la dernière photo de ta galerie, sans la choisir. Ou 3 gorgées."},
+  {t:"Échange ton téléphone déverrouillé avec {autre} pendant un tour complet. Ou 4 gorgées."},
+  {t:"Appelle un contact choisi par {autre} et dis juste « je t'expliquerai ». Ou 4 gorgées."},
+  {t:"Laisse le groupe envoyer UN emoji (un seul) à la personne de leur choix dans tes contacts. Ou 5 gorgées."},
+  {t:"Imite quelqu'un du groupe sans dire son nom : les autres devinent. Raté = tu bois."},
+  {t:"Refais la réaction de {autre} quand son téléphone passe sous 10% de batterie."},
+  {t:"Entre {autre} et {autre2} : bras de fer immédiat. Le perdant boit 2."},
+  {t:"Toi et {autre} : la photo de duo la plus gênante possible. Elle part dans le groupe."},
+  {t:"Chuchote à {autre} le compliment le plus malaisant que tu puisses inventer."},
+  {t:"Raconte ta pire honte en 15 secondes chrono. En dessous du niveau attendu = 2 gorgées."},
+  {t:"Fais un bisou sur la joue à {F}, ou bois 2 gorgées.", need:'f'},
+  {t:"Fais un bisou sur la joue à {H}, ou bois 2 gorgées.", need:'h'},
+  {t:"Drague {F} avec ta pire phrase, le plus sérieusement du monde. Elle note sur 10.", who:'h'},
+  {t:"Drague {H} façon film des années 2000. Il note sur 10.", who:'f'},
+  {t:"Le groupe choisit ton fond d'écran pour le reste de la soirée. Ou 3 gorgées."},
+  {t:"Laisse {autre} poster ce qu'il/elle veut en commentaire sous ton dernier post. Ou 4 gorgées."}]},
 ];
 const JAMAIS = [
- "envoyé un message au mauvais groupe.","fait semblant d'aimer un cadeau.","menti sur mon âge.",
- "pleuré devant un dessin animé.","stalké un ex sur les réseaux.","mangé un truc tombé par terre.",
- "fait semblant d'être malade pour sécher.","oublié le prénom de quelqu'un en pleine conversation.",
- "pris un fou rire au pire moment.","envoyé un message bourré que j'ai regretté.",
- "fait semblant de connaître une chanson.","espionné le téléphone de quelqu'un.",
- "fait semblant d'avoir lu un livre.","dormi pendant un film au ciné.",
- "fait croire que j'avais plus de batterie.","porté le même vêtement plusieurs jours de suite.",
- "fait semblant d'être au téléphone pour éviter quelqu'un.","triché à un jeu de société.",
- "rougi en croisant quelqu'un qui me plaît.","gardé la monnaie rendue en trop.",
- "vomi en soirée en jurant que tout allait bien.","recontacté un ex par pure flemme d'être seul(e).",
- "stalké l'ex de mon ex jusqu'en 2018.","fait un irish goodbye pour quitter une soirée sans dire au revoir.",
- "menti sur le nombre de verres que j'avais bus.","pleuré aux toilettes en pleine fête.",
- "dragué quelqu'un juste pour un verre gratuit.","supprimé une photo à cause du nombre de likes.",
- "prétendu avoir lu un message alors que j'avais juste répondu « ok » au hasard.",
- "fait croire que j'étais déjà parti pour éviter de payer ma tournée.",
- "liké une vieille photo par accident en plein stalking.","raconté un ragot en jurant que c'était un secret.",
- "jugé quelqu'un uniquement sur sa playlist.","gardé un objet emprunté en espérant qu'on l'oublie.",
- "fait semblant d'être d'accord juste pour finir la conversation.","envoyé un message que j'ai regretté avant même qu'il soit lu."
+ "espionné le téléphone de quelqu'un qui dormait à côté de moi.",
+ "envoyé un message bourré que j'ai relu le lendemain en hurlant intérieurement.",
+ "recontacté un ex par pure flemme d'être seul(e).",
+ "stalké l'ex de mon ex jusqu'à des photos de 2018.",
+ "vomi en soirée en jurant que tout allait parfaitement bien.",
+ "fait un irish goodbye en laissant mes potes me chercher partout.",
+ "menti sur le nombre de verres que j'avais bus… à la personne qui me les servait.",
+ "pleuré aux toilettes en pleine fête puis répondu « rien, ça va » en sortant.",
+ "dragué quelqu'un principalement pour un verre gratuit.",
+ "liké une photo de 2019 en plein stalking et ressenti la mort.",
+ "raconté un ragot en commençant par « je te jure tu le dis à personne ».",
+ "embrassé quelqu'un dont j'ai oublié le prénom avant la fin de la soirée.",
+ "fait semblant d'être en couple pour esquiver quelqu'un.",
+ "fait semblant d'être célibataire un peu trop longtemps en soirée.",
+ "envoyé un screenshot d'une conversation… à la personne concernée.",
+ "regretté un message avant même qu'il soit lu, et prié pour un miracle.",
+ "flirté avec deux personnes de la même soirée en espérant qu'elles ne se parlent pas.",
+ "inventé une anecdote entière pour paraître intéressant(e) devant des inconnus.",
+ "dit « je t'aime » sans le penser, juste parce que c'était le moment attendu.",
+ "utilisé les confidences de quelqu'un contre lui/elle dans une dispute.",
+ "fait genre je découvrais un potin que je connaissais depuis des semaines.",
+ "menti à mes parents sur l'endroit où je dormais.",
+ "gardé des photos d'un ex « au cas où », sans savoir au cas où quoi.",
+ "souhaité secrètement l'échec d'un plan pour ne pas avoir à sortir."
 ];
 const PREF = [
- ["Ne plus jamais boire de café","Ne plus jamais boire d'alcool"],
- ["Lire dans les pensées","Être invisible"],
- ["Perdre tous tes messages","Perdre toutes tes photos"],
- ["Embrasser ton crush devant tout le monde","Ne jamais l'embrasser"],
- ["Dire toujours la vérité","Mentir à chaque phrase"],
- ["Être célèbre mais détesté","Inconnu mais adoré"],
- ["Connaître ta date de mort","Connaître la cause de ta mort"],
- ["Avoir 1 vrai ami","Avoir 100 connaissances"],
- ["Te téléporter","Voler"],
- ["Bloqué dans un ascenseur avec ton ex","Avec ton boss"],
- ["Manger épicé à chaque repas","Fade à chaque repas"],
- ["Ne plus jamais utiliser ton tél une journée","Ne plus dormir une nuit"],
  ["Que le groupe lise tes DMs","Que le groupe voie ton historique de recherche"],
  ["Avouer ton salaire à toute la table","Avouer ton nombre de conquêtes"],
- ["Que ton pire secret soit révélé","Révéler le pire secret d'un pote"],
+ ["Que ton pire secret soit révélé ce soir","Révéler le pire secret d'un pote ce soir"],
  ["Recroiser ton ex à chaque soirée","Ne plus jamais boire d'alcool"],
  ["Que ton crush lise tes pensées 1 jour","Que ta mère lise tes messages 1 jour"],
- ["Chanter en public totalement faux","Danser seul(e) au milieu de la piste"],
- ["Perdre tous tes matchs d'appli","Perdre tous tes followers"],
- ["Passer 24h avec ton ex","Passer 24h avec ton boss"],
- ["Poster une story bourré(e) chaque samedi","Envoyer un vocal gênant à ta famille"],
- ["Ne plus jamais mentir","Ne plus jamais pouvoir dire non"],
+ ["Poster une story bourré(e) chaque samedi","Envoyer un vocal gênant à ta famille chaque dimanche"],
  ["Que tes recherches s'affichent sur ton front","Que ton tél lise tes notifs à voix haute"],
- ["Te prendre un râteau en public","Rater ton oral devant toute ta promo"],
+ ["Te prendre un râteau devant tout le monde","Prendre un vent de ton propre pote"],
+ ["Que ton ex parle de toi 10 min au groupe","Que tes parents montrent TOUTES les photos"],
+ ["Débriefer tes dates devant tes parents","Devant les parents de ton/ta partenaire"],
+ ["Être fiché(e) menteur/menteuse à vie","Devoir dire chaque vérité qui te passe par la tête"],
+ ["Retourner avec ton pire ex","Rester célibataire 10 ans"],
+ ["Que le groupe note ton physique sur 10 à voix haute","Ta personnalité sur 10 à voix haute"],
+ ["Perdre tous tes souvenirs de soirée","Que tes soirées soient toutes filmées et archivées"],
+ ["Que ton boss voie tes stories de ce soir","Que ta famille voie tes messages de ce soir"],
+ ["Assumer publiquement ton pire crush","Ne plus jamais avoir de crush"],
+ ["Avoir un détecteur de mensonge greffé en soirée","Un compteur de verres visible au-dessus de ta tête"],
+ ["Que tout le monde sache quand tu mens","Savoir quand tout le monde te ment"],
+ ["Revivre ta pire rupture une fois par an","N'avoir plus aucun souvenir de tes relations"],
+ ["Que ton historique parte à ton ex","Que tes DMs partent à ton boss"],
 ];
 const KINGS = {1:["As — Cascade","Tu bois, ton voisin de gauche suit, puis le suivant…"],
  2:["2 — Toi","Désigne quelqu'un : il boit 2 gorgées."],3:["3 — Moi","Tu bois 3 gorgées."],
@@ -647,7 +648,11 @@ SCREENS.bus = () => {
         <div class="sub" style="font-size:14px;margin-top:4px;">${r.msg}</div></div></div>`;
   } else {
     mid = `<div class="gpanel" style="padding:24px;text-align:center;">${stack}
-        <div style="display:flex;justify-content:center;">${cardBack(192,268)}</div>
+        <div style="display:flex;justify-content:center;position:relative;">
+          <div style="position:absolute;top:6px;transform:rotate(-5deg);opacity:.5;">${cardBack(192,268)}</div>
+          <div style="position:absolute;top:3px;transform:rotate(3deg);opacity:.75;">${cardBack(192,268)}</div>
+          <div style="position:relative;">${cardBack(192,268)}</div>
+        </div>
         <h2 style="font-size:24px;margin-top:18px;color:#fff;">${prompts[p.step]}</h2>
         <div class="sub" style="margin-top:4px;">Erreur = ${p.step} gorgée${p.step>1?'s':''}</div></div>`;
     if(p.step===1) actions=`<div class="row"><button class="btn red" onclick="busGuess('r')">Rouge</button><button class="btn dark" onclick="busGuess('n')">Noir</button></div>`;
@@ -708,7 +713,7 @@ SCREENS.purple = () => {
   let actions;
   if(done) actions=`<button class="btn primary" onclick="purpleNext()">Au joueur suivant →</button>`;
   else actions=`<div class="row"><button class="btn red" onclick="purpleGuess('r')">Rouge</button><button class="btn dark" onclick="purpleGuess('n')">Noir</button></div>
-     <button class="btn amber" style="margin-top:10px;${canP?'':'opacity:.45;pointer-events:none;'}" onclick="purpleGuess('p')">Purple — 2 cartes (1 rouge + 1 noir)</button>`;
+     <button class="btn violet" style="margin-top:10px;${canP?'':'opacity:.45;pointer-events:none;'}" onclick="purpleGuess('p')">Purple — 2 cartes (1 rouge + 1 noir)</button>`;
   return `<div class="pad fade">${gameHead('Purple', `<div class="pill">${g.cards.length}/3</div>`)}${turnBanner()}<div class="gamebody">${mid}</div>${actions}</div>`;
 };
 function purpleGuess(ans){
@@ -741,7 +746,7 @@ SCREENS.ftd = () => {
     mid=`<div class="gpanel" style="padding:22px;text-align:center;">
        <div class="cap" style="margin-bottom:12px;">Le donneur</div>
        <div style="display:flex;justify-content:center;">${cardBack(192,268)}</div>
-       <div style="margin-top:16px;"><b style="font-family:var(--f);font-size:16px;color:${g.hint?'#8FD0FF':'#fff'};">${g.hint||'Devine la valeur de la carte.'}</b><div class="sub" style="font-size:13px;margin-top:4px;">Essais restants : ${g.tries} · sinon 2 gorgées</div></div>
+       <div style="margin-top:16px;"><b style="font-family:var(--f);font-size:17px;color:${g.hint?'#5CE0BC':'#fff'};">${g.hint||'Devine la valeur de la carte.'}</b><div class="sub" style="font-size:13px;margin-top:4px;${g.tries===1?'color:#FFB16E;font-weight:800;':''}">${g.tries===1?'Dernier essai — sinon 2 gorgées !':'Essais restants : '+g.tries+' · sinon 2 gorgées'}</div></div>
        <div class="row" style="flex-wrap:wrap;gap:7px;justify-content:center;margin-top:16px;">${VN.slice(1).map((n,i)=>`<button class="chip" style="background:var(--lav-soft);color:var(--indigo);" onclick="ftdGuess(${i+1})">${n}</button>`).join('')}</div></div>`;
     actions=`<div class="sub center" style="opacity:.7;">Choisis une valeur ci-dessus.</div>`;
   }
@@ -783,7 +788,7 @@ function palmierScene(g){
     zone=`<div style="position:absolute;left:50%;bottom:${y}px;width:${zw}px;height:120px;margin-left:-${zw/2}px;border-radius:16px;background:rgba(25,169,116,.14);border:2px dashed rgba(25,169,116,.65);"></div>`;
     swing=`<div id="swing" class="swing-card" style="bottom:${154+g.stack*9}px;"></div>`;
   }
-  return `<div class="palm-stage">${zone}<div class="bottle"></div>${cards}${swing}</div>`;
+  return `<div class="palm-stage">${zone}<div class="bottle"><div class="lbl"></div></div>${cards}${swing}</div>`;
 }
 SCREENS.palmier = () => {
   const g=S.game; let mid, actions;
@@ -855,8 +860,15 @@ SCREENS.echelle = () => {
     actions=`<button class="btn primary" onclick="echelleReveal()">Valider « ${g.guess} »</button>`;
   } else {
     const diff=Math.abs(g.guess-g.card.v);
-    mid=`<div class="cflip" style="display:flex;justify-content:center;">${cardHTML(g.card,184,258)}</div>
-      <div class="drop center" style="margin-top:22px;"><div style="font-family:var(--d);font-weight:800;font-size:24px;color:${diff===0?'#7BE8C0':'#FF9A8B'};">${diff===0?'Dans le mille !':'Écart de '+diff}</div>
+    const lo=Math.min(g.guess,g.card.v), hi=Math.max(g.guess,g.card.v);
+    const meter=`<div style="display:flex;gap:5px;justify-content:center;margin-top:18px;">${[1,2,3,4,5,6,7,8,9,10].map(n=>{
+      const isCard=n===g.card.v, isGuess=n===g.guess, between=n>lo&&n<hi;
+      const bg=isCard?'#46C9A0':(isGuess?'#F0A93C':(between?'rgba(255,154,139,.45)':'rgba(255,255,255,.16)'));
+      return `<div style="width:24px;height:34px;border-radius:8px;background:${bg};display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:800;font-size:13px;color:${isCard||isGuess?'#1A0E36':'rgba(255,255,255,.75)'};">${n}</div>`;}).join('')}</div>
+      <div class="sub center" style="font-size:12px;margin-top:7px;"><span style="color:#7BE8C0;font-weight:800;">■</span> la carte · <span style="color:#FFC93C;font-weight:800;">■</span> ${cur().name}</div>`;
+    mid=`<div class="cflip" style="display:flex;justify-content:center;">${cardHTML(g.card,168,236)}</div>
+      ${meter}
+      <div class="drop center" style="margin-top:14px;"><div style="font-family:var(--d);font-weight:800;font-size:24px;color:${diff===0?'#7BE8C0':'#FF9A8B'};">${diff===0?'Dans le mille !':'Écart de '+diff}</div>
       <div class="sub center" style="margin-top:6px;">${cur().name} a dit ${g.guess}. ${diff===0?'Distribue 3 gorgées !':'Bois '+diff+' gorgée'+(diff>1?'s':'')+'.'}</div></div>`;
     actions=`<button class="btn primary" onclick="echelleNext()">Au joueur suivant</button>`;
   }
@@ -1013,7 +1025,7 @@ function pmuDraw(){
 }
 
 /* ============================ VÉRITÉ OU BOIS ============================ */
-const VOB_CATS=[{id:'tout',label:'Tout'},{id:'qui',label:'Qui pourrait ?'},{id:'soft',label:'Soft'},{id:'amis',label:'Vieux frères'},{id:'chaud',label:'Chaud du cul'},{id:'probleme',label:'Les problèmes'},{id:'action',label:'Actions'}];
+const VOB_CATS=[{id:'tout',label:'Tout'},{id:'qui',label:'Qui pourrait ?'},{id:'amis',label:'Vieux frères'},{id:'chaud',label:'Chaud du cul'},{id:'probleme',label:'Les problèmes'},{id:'action',label:'Actions'}];
 function startVob(){ S.game={phase:'setup', cat:'tout', used:new Set(), q:null, target:100, count:0}; go('vob'); }
 function vobSetCat(c){ S.game.cat=c; render(); }
 function vobSetCount(n){ const g=S.game; g.target=n; g.count=0; g.phase='play'; vobPick(); render(); }
@@ -1102,7 +1114,7 @@ SCREENS.jamais = () => `<div class="pad fade">${gameHead("Je n'ai jamais", `<div
   <div class="gamebody"><div class="gpanel pop" style="padding:34px 26px;text-align:center;"><div class="cap" style="color:#FFCF7A;">Je n'ai jamais…</div>
    <div style="font-family:var(--f);font-weight:800;font-size:30px;line-height:1.3;margin-top:14px;color:#fff;">…${S.game.s}</div>
    <div class="sub" style="font-size:14px;margin-top:16px;">Tu l'as déjà fait ? Bois une gorgée.</div></div></div>
-  <div class="row"><button class="btn dark" onclick="jamaisAns(false)">Jamais</button><button class="btn primary" onclick="jamaisAns(true)">Je l'ai fait (1)</button></div>
+  <div class="row"><button class="btn teal" onclick="jamaisAns(false)">Jamais</button><button class="btn coral" onclick="jamaisAns(true)">Je l'ai fait (1)</button></div>
  </div>`;
 function jamaisAns(did){ if(did)drink(S.turn,1); nextTurn(); jamaisPick(); render(); }
 
