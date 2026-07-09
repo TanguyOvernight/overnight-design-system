@@ -240,7 +240,7 @@ function qz(t){ const n=(t||'').length; return n<30?38:n<48?33:n<72?28:n<110?23:
 
 /* ============================ CONTENU ============================ */
 const VOB = [
- {titre:"Vérités compliquées", cat:"probleme", q:[
+ {titre:"Vérités compliquées", cat:"probleme", d:3, q:[
   "Quelle est la décision que tu as prise en sachant très bien qu'elle allait blesser quelqu'un ?",
   "Quel mensonge tu maintiens depuis tellement longtemps qu'il est trop tard pour avouer ?",
   "Qu'est-ce que tu n'as jamais pardonné, même si tu as dit « c'est oublié » ?",
@@ -255,24 +255,24 @@ const VOB = [
   "Quelle relation tu as laissée pourrir volontairement plutôt que d'avoir la conversation ?",
   "Qu'est-ce que tu fais uniquement quand tu es certain(e) que personne ne le saura jamais ?",
   "Quel message tu regrettes d'avoir lu parce que tu n'étais pas censé(e) le voir ?",
-  "Quelle est la pire chose que tu aies pensée à un enterrement, un mariage ou un baptême ?",
-  "Pour quoi exactement tu passerais un tour de vérité si tu pouvais acheter ton silence là ?"]},
- {titre:"Ex & dégâts", cat:["chaud","probleme"], q:[
+  "La pire pensée que tu aies eue en plein mariage ou enterrement ?",
+  "S'il fallait payer pour esquiver UNE question ce soir, ce serait laquelle ?"]},
+ {titre:"Ex & dégâts", cat:["chaud","probleme"], d:3, q:[
   "Quel ex tu recontacterais ce soir si tu étais sûr(e) que personne ne l'apprenne ?",
   "Quelle est la pire chose que tu aies faite pendant une relation, jamais avouée ?",
   "Tu as déjà continué une relation en sachant que c'était fini ? Combien de temps ?",
   "Quel est le vrai motif de ta pire rupture — pas la version officielle ?",
-  "Qui a un ex dont tout le monde ici pense secrètement « heureusement que c'est fini » ? Balance.",
+  "Quel couple passé d'un(e) ami(e) t'a fait penser « heureusement que c'est fini » ?",
   "Quelle relation tu as cachée à tes potes ? Pourquoi eux ne devaient pas savoir ?",
-  "Tu as déjà comparé la personne avec qui tu étais à quelqu'un d'autre pendant la relation ?",
+  "En couple, tu as déjà comparé ton/ta partenaire à quelqu'un d'autre ? À qui ?",
   "Quel message d'ex tu gardes encore alors que tu devrais l'avoir supprimé depuis des années ?",
   "C'est quoi la chose la plus lunaire que tu aies faite après une rupture ?",
   "Tu es déjà resté(e) avec quelqu'un principalement par confort ou par flemme ? Avoue.",
   "Quelle est la pire raison pour laquelle tu as accepté ou proposé un date ?",
-  "À qui ici tu n'as jamais dit que son/sa partenaire de l'époque te détestait cordialement ?",
+  "Qui ici ne sait toujours pas que son/sa partenaire de l'époque te détestait ? Explique.",
   {t:"Entre {autre} et {autre2}, qui gérerait le pire une rupture en direct ? Développe.", cat:['amis','chaud']},
   {t:"Sois cash : la relation de {autre} actuelle ou passée que tu n'as jamais comprise ?", cat:['amis','probleme']}]},
- {titre:"Vieux frères", cat:"amis", q:[
+ {titre:"Vieux frères", cat:"amis", d:2, q:[
   "Quelle a été ta vraie première impression de {autre} ? La version non filtrée, pas la mignonne.",
   "Quel truc {autre} fait en soirée qui te fait honte pour lui/elle ?",
   "Complète : « {autre}, c'est typiquement le genre à… » — et vise juste.",
@@ -289,12 +289,12 @@ const VOB = [
   "Entre {autre} et {autre2}, qui a le plus gros ego pour le moins de raisons valables ?",
   "Quelle opinion tranchée sur {autre} tu gardes pour toi depuis des années ?",
   "Cite un moment précis où {autre} t'a déçu(e) sans jamais le savoir… jusqu'à maintenant."]},
- {titre:"Secrets de groupe", cat:["amis","probleme"], q:[
-  "Quel truc s'est dit dans un groupe privé que {autre} ne doit jamais voir ?",
+ {titre:"Secrets de groupe", cat:["amis","probleme"], d:3, q:[
+  "Qu'est-ce qui s'est dit dans un groupe privé que {autre} ne doit JAMAIS lire ?",
   "Quelle conversation du groupe tu as déjà screenshotée et envoyée ailleurs ?",
   "Tu as déjà fait semblant d'être occupé(e) pour éviter quelqu'un de cette pièce ? Qui ?",
   "Quel événement du groupe tu as esquivé avec un faux prétexte ? On veut le vrai motif.",
-  "Qui ici tu as déjà retiré (même 5 minutes) de tes stories « proches » ? Pourquoi ?",
+  "Qui ici a déjà sauté de ta liste « amis proches » en story ? Pourquoi ?",
   "Quel potin sur quelqu'un ici tu as appris par quelqu'un d'autre ici ?",
   "Quelle décision de groupe tu as sabotée discrètement parce qu'elle ne t'arrangeait pas ?",
   "Si tu devais révéler UN truc qu'on t'a confié « entre nous », lequel ferait le plus de dégâts ?",
@@ -302,18 +302,18 @@ const VOB = [
   "Quel duo de cette pièce s'entend beaucoup moins bien qu'il le prétend ?",
   "Tu as déjà menti à tout le groupe en même temps ? Sur quoi ?",
   "Quel pote ici a un(e) partenaire que tu ne valides pas ? Tu peux répondre « je bois »."]},
- {titre:"Roast de toi", cat:["amis","probleme"], q:[
+ {titre:"Roast de toi", cat:["amis","probleme"], d:2, q:[
   "Décrivez-moi en trois mots, dont zéro flatteur. Le plus précis gagne.",
   "Quel red flag me concernant donneriez-vous à quelqu'un qui me rencontre ce soir ?",
   "Quelle décision de ma vie avez-vous le plus commentée dans mon dos ?",
   "Si j'étais un meme, lequel ? Et pourquoi celui-là précisément ?",
   "Quelle est la chose la plus cringe que j'aie faite en étant parfaitement sobre ?",
-  "Balancez ma pire qualité déguisée en défaut d'entretien d'embauche. Sans mentir.",
+  "Décrivez mon pire défaut comme en entretien d'embauche : « je suis trop… »",
   "Qu'est-ce que tout le monde ici pense de moi sans jamais me le dire ?",
   "Quel surnom humiliant vous me collez pour le reste de la nuit ?",
   "À quel moment ce soir j'ai cru être drôle et je ne l'étais pas ?",
   "Quelle est la chose dont je me vante trop alors que le niveau est moyen ?"]},
- {titre:"Qui est le plus susceptible…", cat:"qui", q:[
+ {titre:"Qui est le plus susceptible…", cat:"qui", d:1, q:[
   "Qui ici finirait la soirée à pleurer sur son ex dans la salle de bain ?",
   "Qui du groupe est le plus susceptible de texter son ex dans l'heure qui vient ?",
   "Qui finirait en garde à vue en premier, et pour quel motif précis ?",
@@ -332,7 +332,7 @@ const VOB = [
   "Qui du groupe finira par tous nous réunir à son mariage… en ayant invité ses ex ?",
   "Qui est capable de tenir un vrai secret… et qui n'en a jamais tenu un seul ?",
   "Qui rentrerait discrètement avec quelqu'un ce soir sans jamais nous le dire ?"]},
- {titre:"Cash, pas de filtre", cat:["probleme","chaud"], q:[
+ {titre:"Cash, pas de filtre", cat:["probleme","chaud"], d:3, q:[
   "Combien de personnes tu as ghostées cette année ? Chiffre exact, on attend.",
   "C'est quoi le mensonge que tu as dit ce soir même, ici, dans cette pièce ?",
   "Quel pote présent tu supporterais le moins en coloc ? Il/elle t'écoute, vas-y.",
@@ -345,34 +345,34 @@ const VOB = [
   "Quel red flag tout le monde voit chez toi sauf toi ? Le groupe confirmera.",
   "Quelle est la dernière chose pour laquelle tu as vraiment pleuré ? Pas la version soft.",
   "Tu as déjà lu des messages qui ne t'étaient pas destinés ? Chez qui, et t'as trouvé quoi ?"]},
- {titre:"Côté meufs", cat:["chaud","probleme"], q:[
-  {t:"Le fameux « je rentre tôt ce soir » : raconte la dernière fois où ça a fini à 5h.", who:'f'},
+ {titre:"Côté meufs", cat:["chaud","probleme"], d:2, q:[
+  {t:"« Je rentre tôt ce soir » : raconte la dernière fois où ça a fini à 5h du matin.", who:'f'},
   {t:"C'est quoi le message le plus lunaire qu'un mec t'ait envoyé ? Cite-le mot pour mot.", who:'f'},
   {t:"Combien de mecs tu laisses en vu en ce moment, là, sur ton téléphone ?", who:'f'},
   {t:"Le pire « il n'est pas comme les autres » que tu aies défendu devant tes copines ?", who:'f'},
   {t:"Quelle excuse tu ressors pour esquiver un date qui ne mérite même pas un mensonge original ?", who:'f'},
-  {t:"Ton record de temps à décortiquer UN message de mec avec tes copines ? Sois honnête.", who:'f'},
+  {t:"Combien de temps max tu as passé à analyser UN message de mec avec tes copines ?", who:'f'},
   {t:"C'est quoi le red flag que tu as ignoré en toute connaissance de cause, et combien de temps ?", who:'f'},
   {t:"La chose la plus fourbe que tu aies faite pour tester un mec sans qu'il le sache ?", who:'f'},
   {t:"Quel « on est juste amis » de ta vie n'a convaincu strictement personne ?", who:'f'},
   {t:"Ta technique de sortie quand un date tourne mal : démonstration, là, maintenant.", who:'f', cat:['chaud','action']}]},
- {titre:"Côté mecs", cat:["chaud","probleme"], q:[
+ {titre:"Côté mecs", cat:["chaud","probleme"], d:2, q:[
   {t:"Le fameux « je gère, t'inquiète » : raconte la fois où tu ne gérais absolument rien.", who:'h'},
-  {t:"Combien de temps tu attends avant de répondre pour « pas paraître trop chaud » ? Avoue le calcul.", who:'h'},
+  {t:"Tu attends combien de temps avant de répondre, pour « pas paraître trop chaud » ?", who:'h'},
   {t:"C'est quoi la pire phrase d'approche que tu aies vraiment envoyée ? Cite-la mot pour mot.", who:'h'},
-  {t:"Ton pote est en train de se planter en beauté avec quelqu'un : tu lui dis ou tu regardes le crash ?", who:'h'},
+  {t:"Ton pote se plante en beauté en draguant : tu l'aides ou tu regardes le crash ?", who:'h'},
   {t:"Quelle vantardise tu ressors systématiquement alors qu'elle est à moitié fausse ?", who:'h'},
   {t:"Le truc le plus mesquin que tu aies fait pour impressionner quelqu'un qui s'en fichait ?", who:'h'},
   {t:"Tu as déjà fait semblant d'aimer un truc (film, musique, sport) pour plaire ? Lequel ?", who:'h'},
   {t:"C'est quoi ton excuse par défaut quand tu annules un plan pour rester en pyjama ?", who:'h'},
   {t:"Quel conseil de drague catastrophique tu as donné à un pote en toute confiance ?", who:'h'},
   {t:"Refais-nous ta réaction exacte quand ton pote te dit « elle a un(e) ami(e) pour toi ».", who:'h', cat:['chaud','action']}]},
- {titre:"Chaud du cul", cat:"chaud", q:[
+ {titre:"Chaud du cul", cat:"chaud", d:3, q:[
   "Quel est ton crush le plus inavouable — présent dans cette pièce ou non ? On saura si tu mens.",
   "Quelle est la chose la plus culottée que tu aies envoyée à 2h du matin ?",
   "Tu as déjà eu un crush sur le/la partenaire d'un(e) ami(e) ? Tu peux boire au lieu de répondre.",
   "Quel move de drague honteux a déjà fonctionné sur toi ? Décris-le.",
-  "C'est quoi ton type exact, et qui ici s'en rapproche dangereusement ?",
+  "Décris ton type exact. Le groupe dit qui ici s'en rapproche le plus.",
   "Quelle rencontre de soirée tu n'as jamais racontée à personne ici ?",
   "Si tu devais emmener quelqu'un de cette pièce à un date demain : qui, où, et pourquoi lui/elle ?",
   "Quel red flag te fait fuir immédiatement, même si la personne est parfaite sur le papier ?",
@@ -380,11 +380,11 @@ const VOB = [
   "Entre {autre} et {autre2}, lequel tu présenterais à ta famille, et lequel surtout pas ?",
   "Quelle conversation tu effacerais immédiatement si on te prenait ton téléphone là ?",
   "Ton « moment honteux » de drague que tes potes ressortent encore : la vraie version."]},
- {titre:"Actions !", cat:"action", q:[
+ {titre:"Actions !", cat:"action", d:2, q:[
   {t:"Imite {autre} façon caricature méchante. Il/elle n'a pas le droit de se défendre."},
   {t:"Fixe {autre} dans les yeux 15 secondes. Le premier qui rit boit 2 gorgées."},
   {t:"{autre} lit ta dernière notification à voix haute. Ou tu bois 3 gorgées. Choisis vite."},
-  {t:"Laisse {autre} fouiller ta derniere recherche Google. Ou 3 gorgées."},
+  {t:"Laisse {autre} lire ta dernière recherche Google. Ou 3 gorgées."},
   {t:"Montre la dernière photo de ta galerie, sans la choisir. Ou 3 gorgées."},
   {t:"Échange ton téléphone déverrouillé avec {autre} pendant un tour complet. Ou 4 gorgées."},
   {t:"Appelle un contact choisi par {autre} et dis juste « je t'expliquerai ». Ou 4 gorgées."},
@@ -423,10 +423,10 @@ const JAMAIS = [
  "inventé une anecdote entière pour paraître intéressant(e) devant des inconnus.",
  "dit « je t'aime » sans le penser, juste parce que c'était le moment attendu.",
  "utilisé les confidences de quelqu'un contre lui/elle dans une dispute.",
- "fait genre je découvrais un potin que je connaissais depuis des semaines.",
+ "fait semblant de découvrir un potin que je connaissais depuis des semaines.",
  "menti à mes parents sur l'endroit où je dormais.",
  "gardé des photos d'un ex « au cas où », sans savoir au cas où quoi.",
- "souhaité secrètement l'échec d'un plan pour ne pas avoir à sortir."
+ "secrètement espéré qu'une soirée s'annule pour rester chez moi."
 ];
 const PREF = [
  ["Que le groupe lise tes DMs","Que le groupe voie ton historique de recherche"],
@@ -1065,13 +1065,16 @@ function vobFill(t){
 function vobKey(r,i){ return r+'-'+i; }
 function qCats(rd,it){ const c=(it&&it.cat)||rd.cat; return Array.isArray(c)?c:[c]; }
 function vobPool(cat){ const out=[]; VOB.forEach((rd,r)=>{ rd.q.forEach((q,i)=>{ const it=vobItem(q); if(cat!=='tout' && !qCats(rd,it).includes(cat)) return; if(vobPlayable(it)) out.push([r,i]); }); }); return out; }
+// Gorgées en jeu : tirées selon la difficulté du pack (d:1 tranquille → d:3 vérité qui pique)
+function vobSips(d){ const ranges={1:[1,2],2:[2,3],3:[3,5]}; const [lo,hi]=ranges[d]||[2,3]; return lo+(Math.random()*(hi-lo+1)|0); }
 function vobPick(){
   const g=S.game;
   let pool=vobPool(g.cat).filter(([r,i])=>!g.used.has(vobKey(r,i)));
   if(!pool.length){ g.used.clear(); pool=vobPool(g.cat); }
   if(!pool.length) pool=vobPool('tout');           // repli si le thème n'a rien de jouable ici
-  if(!pool.length){ g.q=vobFill(vobItem(VOB[0].q[0]).t); return; }
-  const [r,i]=pool[Math.random()*pool.length|0]; g.used.add(vobKey(r,i)); g.q=vobFill(vobItem(VOB[r].q[i]).t);
+  if(!pool.length){ g.q=vobFill(vobItem(VOB[0].q[0]).t); g.sips=2; return; }
+  const [r,i]=pool[Math.random()*pool.length|0]; g.used.add(vobKey(r,i));
+  g.q=vobFill(vobItem(VOB[r].q[i]).t); g.sips=vobSips(VOB[r].d||2);
 }
 function rndPick(a){ return a[Math.random()*a.length|0]; }
 SCREENS.vob = () => {
@@ -1100,12 +1103,14 @@ SCREENS.vob = () => {
   return `<div class="pad fade">${gameHead('Action ou Vérité', `<div class="pill">${g.count+1} / ${tgt}</div>`)}
    ${g.cat!=='tout'?`<div class="sub center" style="font-family:var(--f);font-weight:800;color:var(--lav);margin-bottom:4px;">${catLabel}</div>`:''}
    ${turnBanner()}
-   <div class="gamebody"><div class="gpanel pop" style="padding:30px 26px;text-align:center;"><div class="cap" style="color:#D2C3FF;">À ${cur().name} de jouer</div>
+   <div class="gamebody"><div class="gpanel pop" style="padding:30px 26px 28px;text-align:center;position:relative;">
+     <div style="display:flex;justify-content:center;margin-bottom:14px;"><span style="display:inline-flex;align-items:center;gap:7px;background:linear-gradient(180deg,#FFDB4D,#F0A92A);color:#3A2A06;font-family:var(--d);font-weight:800;font-size:15px;padding:7px 16px;border-radius:999px;box-shadow:0 6px 14px rgba(0,0,0,.25);">${g.sips} gorgée${g.sips>1?'s':''} en jeu</span></div>
+     <div class="cap" style="color:#D2C3FF;">À ${cur().name} de jouer</div>
      <div style="font-family:var(--f);font-weight:800;font-size:30px;line-height:1.32;margin-top:14px;color:#fff;">${g.q}</div></div></div>
-   <div class="row"><button class="btn" onclick="vobAns(false)">Je bois (1)</button><button class="btn primary" onclick="vobAns(true)">Je le fais !</button></div>
+   <div class="row"><button class="btn" onclick="vobAns(false)">Je bois (${g.sips})</button><button class="btn primary" onclick="vobAns(true)">Je le fais !</button></div>
   </div>`;
 };
-function vobAns(ok){ const g=S.game; if(!ok) drink(S.turn,1); g.count++; if(g.count>=g.target){ g.phase='end'; render(); return; } nextTurn(); vobPick(); render(); }
+function vobAns(ok){ const g=S.game; if(!ok) drink(S.turn,g.sips||1); g.count++; if(g.count>=g.target){ g.phase='end'; render(); return; } nextTurn(); vobPick(); render(); }
 
 /* ============================ JE N'AI JAMAIS ============================ */
 function startJamais(){ S.game={used:new Set(), s:null}; jamaisPick(); go('jamais'); }
