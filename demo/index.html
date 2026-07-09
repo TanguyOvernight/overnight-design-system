@@ -1099,15 +1099,11 @@ SCREENS.vob = () => {
       <button class="btn" style="margin-top:12px;" onclick="go('hub')">Retour aux jeux</button></div>`;
   }
   const tgt = g.target===Infinity?'∞':g.target;
-  const catLabel=(VOB_CATS.find(c=>c.id===g.cat)||{}).label||'Tout';
   return `<div class="pad fade">${gameHead('Action ou Vérité', `<div class="pill">${g.count+1} / ${tgt}</div>`)}
-   ${g.cat!=='tout'?`<div class="sub center" style="font-family:var(--f);font-weight:800;color:var(--lav);margin-bottom:4px;">${catLabel}</div>`:''}
-   ${turnBanner()}
-   <div class="gamebody"><div class="gpanel pop" style="padding:30px 26px 28px;text-align:center;position:relative;">
-     <div style="display:flex;justify-content:center;margin-bottom:14px;"><span style="display:inline-flex;align-items:center;gap:7px;background:linear-gradient(180deg,#FFDB4D,#F0A92A);color:#3A2A06;font-family:var(--d);font-weight:800;font-size:15px;padding:7px 16px;border-radius:999px;box-shadow:0 6px 14px rgba(0,0,0,.25);">${g.sips} gorgée${g.sips>1?'s':''} en jeu</span></div>
-     <div class="cap" style="color:#D2C3FF;">À ${cur().name} de jouer</div>
-     <div style="font-family:var(--f);font-weight:800;font-size:30px;line-height:1.32;margin-top:14px;color:#fff;">${g.q}</div></div></div>
-   <div class="row"><button class="btn" onclick="vobAns(false)">Je bois (${g.sips})</button><button class="btn primary" onclick="vobAns(true)">Je le fais !</button></div>
+   <div style="display:flex;flex-direction:column;align-items:center;gap:10px;margin:8px 0 2px;">${avatar(cur(),96)}<div style="font-family:var(--d);font-weight:800;color:#fff;font-size:26px;">${cur().name}</div></div>
+   <div class="gamebody"><div class="gpanel pop" style="padding:30px 26px;text-align:center;">
+     <div style="font-family:var(--f);font-weight:800;font-size:30px;line-height:1.32;color:#fff;">${g.q}</div></div></div>
+   <div class="row"><button class="btn" onclick="vobAns(false)">Je bois&nbsp;<span style="color:#FFD33F;font-size:21px;">(${g.sips})</span></button><button class="btn primary" onclick="vobAns(true)">Je le fais !</button></div>
   </div>`;
 };
 function vobAns(ok){ const g=S.game; if(!ok) drink(S.turn,g.sips||1); g.count++; if(g.count>=g.target){ g.phase='end'; render(); return; } nextTurn(); vobPick(); render(); }
