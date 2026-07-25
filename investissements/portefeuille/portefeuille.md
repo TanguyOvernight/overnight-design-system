@@ -24,10 +24,21 @@ Liquidités : 1,18 $
 | Nvidia | NVDA | 218,88 $ | 150,00 $ | **+45,9 %** | 22 % | Leader des puces IA, capex hyperscalers >700 Md$/an | Perte de leadership produit ; effondrement du capex IA |
 | Tesla | TSLA | 159,74 $ | 200,00 $ | **-20,1 %** | 16 % | Pari optionnel robotaxi/Optimus au-delà de l'auto | Cash burn sans traction robotaxi ; dilution massive |
 | Microsoft | MSFT | 61,94 $ | 63,00 $ | **-1,7 %** | 6 % | Azure + monétisation IA (Copilot) | Décrochage durable d'Azure vs AWS/GCP |
-| *6ᵉ position (~6 $)* | ? | ~6 $ | ? | ? | <1 % | **À identifier — demander à Tanguy** | — |
+| Renault | RNO.PA | 5,33 € | ~8,80 € | **-39,4 %** | <1 % | Micro-position (probablement test) ; auto FR décotée, cours ~26 € | Position trop petite pour porter une thèse — voir note |
 
 *PRU et P/V calculés depuis la capture (valeur ± G/P affichés). Quantités
-fractionnaires (ex. ~0,86 VTI, ~1,06 NVDA, ~0,51 TSLA).*
+fractionnaires (ex. ~0,86 VTI, ~1,06 NVDA, ~0,51 TSLA, ~0,2 RNO).*
+
+Note devise : l'app affiche selon la vue en USD ou en EUR (solde 1,18 $ ≈
+1,04 €) — les positions US restent économiquement exposées au dollar.
+
+**Note Renault (25/07/2026)** : position de 5,33 € en perte de 39 % — à cette
+taille, aucune décision n'a d'impact financier. Deux options saines : la
+garder comme « ligne d'apprentissage » pour suivre l'auto européenne, ou la
+solder pour simplifier le suivi. Contexte : Renault et Stellantis ont plombé
+les bénéfices 2025 du CAC 40 ; secteur auto européen sous pression (VE,
+concurrence chinoise, tarifs US). Ne PAS renforcer par « ancrage au PRU » —
+un éventuel investissement auto devra être une vraie thèse dimensionnée.
 
 ## Analyse d'allocation (25/07/2026)
 
