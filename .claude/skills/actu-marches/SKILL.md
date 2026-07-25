@@ -46,6 +46,19 @@ description: >
   `CSI 300 Hang Seng news`, `Bovespa news`
 - ETF : `<ISIN ou nom ETF> justetf` (frais, encours, réplication, PEA)
 
+## Tickers du portefeuille (priorité n°1 de chaque brief)
+
+| Valeur | Ticker | Requêtes types |
+|---|---|---|
+| Vanguard Total Stock Market | VTI | `US stock market today`, `S&P 500 news` (proxy) |
+| iShares Core MSCI World | SWDA.L | `MSCI World news`, marché global |
+| Nvidia | NVDA | `Nvidia stock news`, `NVDA earnings` (résultats fin août) |
+| Tesla | TSLA | `Tesla stock news`, `TSLA deliveries robotaxi` |
+| Microsoft | MSFT | `Microsoft stock news`, `Azure growth`, résultats fin juillet/janvier/avril/octobre |
+
+Pour les deux ETF : pas d'actu propre — couvrir via le marché US/monde
+(S&P 500, Fed, résultats des méga-caps qui les dominent).
+
 ## Tickers de référence — CAC 40 (principales capitalisations)
 
 | Société | Ticker | Secteur |

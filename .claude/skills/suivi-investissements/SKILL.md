@@ -50,15 +50,64 @@ travail pour que la session suivante reparte de l'état à jour.
 2. **Rechercher l'actualité** de chaque position + du contexte macro (recettes
    dans le skill actu-marches). Prioriser : résultats publiés, profit warnings,
    M&A, changements réglementaires, mouvements > ±3 % avec cause identifiée.
-3. **Restituer** dans cet ordre :
-   - TL;DR en 2-3 phrases (rien d'urgent / point d'attention / action suggérée)
-   - Par position : cours actuel, variation depuis dernier brief, actu notable,
-     impact sur la thèse (inchangée / renforcée / fragilisée)
-   - Contexte macro seulement s'il change quelque chose
-   - Opportunités éventuelles (watchlist ou nouvelles), avec argumentaire
-     risque/potentiel
-4. **Journaliser** le brief dans `journal/AAAA-MM-JJ.md` (format court : faits,
+3. **Chasser les opportunités** (demande explicite de Tanguy) : identifier les
+   valeurs/ETF **actuellement bas mais à fort potentiel long terme** — voir
+   « Radar d'opportunités » ci-dessous.
+4. **Restituer au format mobile** (voir section suivante — impératif).
+5. **Journaliser** le brief dans `journal/AAAA-MM-JJ.md` (format court : faits,
    analyse, décisions/recommandations).
+
+## Format de sortie : mobile d'abord (impératif)
+
+Tanguy lit les briefs **sur téléphone**. Règles strictes :
+
+- **Pas de tableaux larges** (illisibles sur mobile). Une ligne par valeur.
+- Indicateurs visuels : 🟢 RAS / 🟡 à surveiller / 🔴 attention.
+- **Court** : le brief complet tient en ~20-25 lignes. Phrases sèches.
+- Structure fixe :
+
+```
+📊 Brief du JJ/MM
+
+TL;DR — 1-2 phrases max.
+
+— PORTEFEUILLE —
+🟢 VTI +x % · une ligne d'actu ou "RAS"
+🔴 TSLA -x % · fait marquant → conséquence
+
+— À VENIR —
+📅 date · événement · pourquoi ça compte
+
+— OPPORTUNITÉS — (si pertinent, max 2-3)
+💡 Valeur · pourquoi c'est bas · pourquoi ça peut monter · risque principal
+
+Une ligne de recommandation ou "Rien à faire aujourd'hui."
+```
+
+- Les % de variation par position se réfèrent au **PRU** (P/V latente) sauf
+  mention contraire ; les mouvements du jour sont cités dans l'actu.
+- Détails, chiffres complets et sources : uniquement si Tanguy les demande,
+  ou dans le fichier journal (pas dans le message).
+
+## Radar d'opportunités (« bas aujourd'hui, fort potentiel demain »)
+
+Critères cumulatifs pour qu'une valeur entre dans le brief comme opportunité :
+
+1. **Bas objectivable** : -15 % ou plus vs son plus haut 12 mois, OU
+   valorisation sous sa moyenne historique 5 ans, OU sous-performance marquée
+   vs son secteur — jamais juste « ça a baissé aujourd'hui ».
+2. **Cause de la baisse identifiée et jugée temporaire** (cycle, sentiment,
+   rotation) et non structurelle (thèse cassée, disruption, fraude).
+3. **Moteur de long terme intact** : alignement avec un thème 5-7 ans documenté
+   dans `base-connaissances/` (IA/infra, électrification, défense, santé,
+   consommation émergente…) ou avantage concurrentiel durable.
+4. **Risque principal explicité** en une ligne — toujours.
+
+Une opportunité citée dans un brief est ajoutée à
+`base-connaissances/watchlist.md` avec sa condition d'entrée. Max 2-3
+opportunités par brief : la rareté fait la valeur du signal. Vérifier avant de
+proposer : recouvrement avec l'existant (pas sur-concentrer la tech US) et
+taille de position adaptée au portefeuille (~1 000 $).
 
 ## Grille d'analyse d'une valeur (avant toute recommandation)
 

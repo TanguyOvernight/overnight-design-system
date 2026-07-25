@@ -1,24 +1,51 @@
 # Portefeuille — Tanguy
 
-> **Statut : en attente des positions.** Tanguy fournira son portefeuille
-> actuel ; ce fichier sera alors rempli et deviendra la référence du suivi.
+Dernière mise à jour : **2026-07-25** (capture d'écran du courtier mobile).
+Devise du compte : USD. Courtier type CTO avec fractions d'actions et trading
+24/5 (donc a priori **pas un PEA** — à confirmer, impact fiscal : flat tax 30 %
+sur les plus-values).
 
-Dernière mise à jour : — (jamais)
+Valeur totale : **~1 015 $** · Investi : ~856 $ · **P/V latente : ~+152 $ (+17,7 %)**
+Liquidités : 1,18 $
 
-## Positions
+## Positions (6 actifs — 5 identifiés, 1 à confirmer)
 
-| Valeur | Ticker | Enveloppe | Quantité | PRU | Cours | Valeur | Poids | Thèse (1 phrase) | Signal de sortie |
-|---|---|---|---|---|---|---|---|---|---|
-| _à compléter_ | | | | | | | | | |
+| Valeur | Ticker | Valeur | Investi | P/V | Poids | Thèse | Signal de sortie |
+|---|---|---|---|---|---|---|---|
+| Vanguard Total Stock Market ETF | VTI | 312,81 $ | 250,00 $ | **+25,1 %** | 31 % | Cœur de portefeuille : tout le marché US | Aucun (position de fond) |
+| iShares Core MSCI World | SWDA.L | 254,88 $ | 193,44 $ | **+31,8 %** | 25 % | Cœur : actions monde développé | Aucun (position de fond) |
+| Nvidia | NVDA | 218,88 $ | 150,00 $ | **+45,9 %** | 22 % | Leader des puces IA, capex hyperscalers >700 Md$/an | Perte de leadership produit ; effondrement du capex IA |
+| Tesla | TSLA | 159,74 $ | 200,00 $ | **-20,1 %** | 16 % | Pari optionnel robotaxi/Optimus au-delà de l'auto | Cash burn sans traction robotaxi ; dilution massive |
+| Microsoft | MSFT | 61,94 $ | 63,00 $ | **-1,7 %** | 6 % | Azure + monétisation IA (Copilot) | Décrochage durable d'Azure vs AWS/GCP |
+| *6ᵉ position (~6 $)* | ? | ~6 $ | ? | ? | <1 % | **À identifier — demander à Tanguy** | — |
 
-## Allocation
+*PRU et P/V calculés depuis la capture (valeur ± G/P affichés). Quantités
+fractionnaires (ex. ~0,86 VTI, ~1,06 NVDA, ~0,51 TSLA).*
 
-- Par zone géographique : —
-- Par secteur : —
-- Liquidités disponibles : —
+## Analyse d'allocation (25/07/2026)
 
-## Notes
+- **Réalité ≠ mandat initial** : le portefeuille est ~85-90 % États-Unis,
+  0 % CAC 40 en direct, 0 % émergents. VTI et SWDA se recouvrent largement
+  (SWDA est lui-même ~70 % US) → la « diversification » des deux ETF est
+  partiellement illusoire.
+- **Concentration tech** : NVDA + TSLA + MSFT = 44 % en titres vifs, auxquels
+  s'ajoute le poids tech déjà dominant dans VTI/SWDA. Le portefeuille est un
+  pari appuyé sur la tech US et le thème IA.
+- **Risque de change** : 100 % USD pour un investisseur en EUR — un
+  affaiblissement du dollar (scénario Natixis : DXY ~98 fin 2026) rognerait la
+  performance en euros.
+- **Trous vs les thèmes 5-7 ans** de la base de connaissances : rien sur
+  l'électrification/réseaux, la défense européenne, la santé, ni les émergents
+  (Inde en correction = fenêtre d'entrée potentielle).
+- Petites tailles de position : les montants étant modestes, privilégier les
+  renforcements progressifs (ordre fractionné) et limiter le nombre de lignes
+  pour rester lisible.
 
-- Horizon : 5-7 ans, pas de cash out sauf risque de perte durable.
-- À renseigner au premier import : enveloppes utilisées (PEA / CTO / AV),
-  courtier, capacité d'apport mensuel éventuelle.
+## Points de surveillance actifs
+
+| Échéance | Événement | Impact |
+|---|---|---|
+| 29/07/2026 | Résultats Microsoft Q4 FY26 (après clôture) | MSFT (-20 % YTD, capex 190 Md$ scruté) |
+| 29/07/2026 | FOMC (Fed) — 25 % de proba de hausse | Tout le portefeuille |
+| 26/08/2026 | Résultats Nvidia T2 | NVDA (22 % du portefeuille) |
+| Continu | Digestion des résultats Tesla Q2 (EPS -33 % vs attentes, marges en chute) | TSLA — thèse sous pression |
