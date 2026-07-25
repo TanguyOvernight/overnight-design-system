@@ -109,6 +109,37 @@ opportunités par brief : la rareté fait la valeur du signal. Vérifier avant d
 proposer : recouvrement avec l'existant (pas sur-concentrer la tech US) et
 taille de position adaptée au portefeuille (~1 000 $).
 
+## Veille IA & tech émergentes (pré-IPO) — demande explicite de Tanguy
+
+Tanguy veut suivre les sociétés IA/tech **non encore cotées** (OpenAI,
+Anthropic, xAI, Mistral, SpaceX/Starlink…) pour investir dès que et si ça
+devient possible/pertinent. Référence : `base-connaissances/ia-tech-emergentes.md`.
+
+Dans le brief quotidien, ajouter une section `— IA & PRÉ-IPO —` **seulement
+quand il y a du neuf** (levée de fonds, valorisation, rumeur/annonce d'IPO,
+changement d'accès investisseur). Pas de section vide.
+
+Règles spécifiques à ce sujet :
+
+1. **Trois questions systématiques** pour chaque dossier : ça vaut le coup ?
+   (valorisation vs revenus vs croissance) · quand ? (calendrier IPO/accès) ·
+   **sous quel nom ?** (le véhicule exact : ticker de l'IPO, proxy coté,
+   fonds — jamais un nom vague).
+2. **Hiérarchie des accès** à toujours respecter dans les recommandations :
+   (a) actions cotées proxy (ex. Microsoft/SoftBank pour OpenAI,
+   Amazon/Alphabet pour Anthropic, Nvidia pour l'écosystème) = accessible
+   aujourd'hui ; (b) IPO le jour où elle arrive = souscription classique ;
+   (c) véhicules d'exposition au non-coté = à n'évoquer qu'avec leurs primes,
+   frais et illiquidité explicités ; (d) plateformes de secondaire US =
+   généralement inaccessibles/inadaptées à un particulier français, le dire.
+3. **Vigilance arnaques** : toute offre « investissez dans OpenAI avant
+   l'IPO » vue dans l'actualité ou proposée à Tanguy est par défaut suspecte —
+   le signaler. Aucune action OpenAI/Anthropic ne s'achète légalement en
+   direct pour un particulier français aujourd'hui.
+4. Une IPO très attendue se juge **après** son premier prix de marché, pas
+   dans l'euphorie du jour J : règle par défaut = laisser passer les premières
+   séances, analyser, puis décider (les exceptions se justifient).
+
 ## Grille d'analyse d'une valeur (avant toute recommandation)
 
 1. **Business** : que vend l'entreprise, à qui, avantage concurrentiel (moat) ?

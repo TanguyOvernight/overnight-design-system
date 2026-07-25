@@ -59,6 +59,28 @@ description: >
 Pour les deux ETF : pas d'actu propre — couvrir via le marché US/monde
 (S&P 500, Fed, résultats des méga-caps qui les dominent).
 
+## Veille IA & pré-IPO (OpenAI, Anthropic, tech émergentes)
+
+Sociétés suivies : OpenAI, Anthropic, xAI, Mistral AI, SpaceX/Starlink,
+Databricks, Stripe, Perplexity + le pipeline d'IPO tech du moment.
+
+Requêtes types :
+- `OpenAI IPO valuation news <mois> <année>` / idem Anthropic, xAI, Mistral
+- `<société> funding round valuation` (levées = signal de valorisation)
+- `tech IPO pipeline <année>` / `upcoming AI IPO`
+- `Starlink IPO rumors <année>`
+- Après une IPO : `<ticker> stock since IPO performance`
+- Proxys cotés : `SoftBank OpenAI stake`, `Microsoft OpenAI stake`,
+  `Amazon Alphabet Anthropic stake`
+
+Sources : Reuters, Bloomberg, The Information (souvent la meilleure sur le
+privé), TechCrunch, CNBC, Sifted (tech européenne, Mistral), PitchBook/CB
+Insights (valorisations). Les valorisations privées sont des estimations —
+toujours citer la source et la date de la levée correspondante.
+
+Référentiel des accès investisseur français : voir
+`investissements/base-connaissances/ia-tech-emergentes.md`.
+
 ## Tickers de référence — CAC 40 (principales capitalisations)
 
 | Société | Ticker | Secteur |
