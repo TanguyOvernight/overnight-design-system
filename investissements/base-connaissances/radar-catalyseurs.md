@@ -1,0 +1,49 @@
+# Radar de catalyseurs — événements datés à venir
+
+Mis à jour : **2026-07-25**. Chaque brief vérifie ce qui tombe sous 7 jours.
+Ajouter tout nouvel événement daté découvert dans l'actualité ; purger le passé
+en le journalisant si notable.
+
+## Sous 7 jours 🔥
+
+| Date | Événement | Impact portefeuille/watchlist |
+|---|---|---|
+| 29/07 | **Résultats Microsoft Q4 FY26** (après clôture US) | MSFT détenu ; condition du renforcement watchlist (Azure ~40 %, capex) |
+| 29/07 | **FOMC** — décision Fed (~25 % proba de hausse) | Tout le portefeuille ; ton de Warsh = volatilité |
+| 30/07 | Résultats Schneider Electric S1 | Thème électrification (watchlist potentielle) |
+| 30-31/07 | Résultats SocGen, Crédit Agricole | Lecture santé bancaire FR / spread OAT |
+
+## Août 2026
+
+| Date | Événement | Impact |
+|---|---|---|
+| Début août | Ouverture « Corriger ma déclaration » impots.gouv.fr | Régularisation 3916-bis si compte ouvert ≤ 2025 |
+| 26/08 | **Résultats Nvidia T2** | NVDA = 22 % du portefeuille — le rendez-vous du mois |
+
+## Septembre 2026
+
+| Date | Événement | Impact |
+|---|---|---|
+| 10/09 | **BCE** (~93 % proba hausse à 2,50 %) | Taux euro, valeurs domestiques FR |
+| 15-16/09 (à confirmer) | FOMC | Macro globale |
+| 21/09 | **Reclassement FTSE du Vietnam en « émergent »** | Watchlist XFVT — catalyseur daté |
+| ~24/09 | Sommet Trump-Xi attendu | Tech US-Chine, semi, émergents |
+
+## Fin 2026 - 2027
+
+| Échéance | Événement | Impact |
+|---|---|---|
+| Novembre 2026 | **Expiration de la trêve commerciale Chine-USA** (Busan) | Risque macro majeur identifié |
+| Fin 2026-début 2027 | **IPO Anthropic possible** (S-1 déposé 01/06) | Watchlist — analyser le S-1 public dès parution |
+| 2027 | IPO OpenAI probable (> 1 T$ visé) | Watchlist |
+| 2027 | IPO Databricks évoquée | Veille |
+| Continu | Levée Mistral ~20 Md€ (en négociation 06/2026) | Veille tech FR |
+| Trimestriel | Revue de composition CAC 40 (Euronext) | Base de connaissances |
+| Saisonnier | Saisons de résultats : oct-nov (T3), fév-mars (annuels), avr-mai (T1), juil-août (S1) | Fenêtres de briefs renforcés |
+
+## Conditions de marché à surveiller (non datées, seuils du mandat)
+
+- Brent **> 100 $ durable** → scénario réduction de voilure (cf. mandat)
+- Spread OAT-Bund **> 90 pb durable** → alerte valeurs domestiques FR
+- FOMC : passage effectif à une **hausse** de taux → re-pricing global
+- DXY : cassure sous ~98 → vent favorable émergents (renforcer l'idée Inde)
