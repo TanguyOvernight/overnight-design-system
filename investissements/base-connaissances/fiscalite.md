@@ -1,0 +1,67 @@
+# Fiscalité — compte eToro (CTO étranger) — repères
+
+> Repères généraux pour un résident fiscal français, rédigés le 25/07/2026.
+> Pas du conseil fiscal personnalisé — pour les cas complexes, voir un
+> professionnel ou impots.gouv.fr.
+
+## La flat tax : 30 % du GAIN, jamais du retrait
+
+- Le prélèvement forfaitaire unique (PFU) = **12,8 % d'impôt + 17,2 % de
+  prélèvements sociaux = 30 %**, appliqué uniquement à la **plus-value
+  réalisée** (prix de vente - prix d'achat), pas au montant retiré.
+- Exemple : 1 000 € investis → 1 150 € (+15 %) → vente totale :
+  gain 150 € → impôt 45 € → **il reste 1 105 €**. On garde toujours 70 %
+  du gain ; on ne peut pas « perdre de l'argent » à cause de l'impôt.
+- Les **moins-values réalisées** s'imputent sur les plus-values de la même
+  année et sont reportables 10 ans (ex. : la perte Renault réalisée
+  réduirait le gain imposable sur Nvidia vendu la même année).
+- Option possible pour le **barème progressif** à la place du PFU
+  (intéressant si tranche marginale 0 % ou 11 % : on paie alors TMI + 17,2 %
+  au lieu de 30 %) — à évaluer chaque année, l'option est globale.
+
+## Ce qui déclenche l'impôt (fait générateur)
+
+| Événement | Imposable ? |
+|---|---|
+| Les titres montent, on ne vend pas | ❌ Non — plus-value latente jamais taxée |
+| **Vente d'un titre** (même si l'argent reste chez eToro) | ✅ Oui, l'année de la vente |
+| Dividende reçu (même réinvesti) | ✅ Oui, l'année de perception |
+| Retrait d'espèces vers son compte bancaire | ❌ Pas en soi — c'est la vente qui compte, pas le retrait |
+
+Piège classique : « je n'ai pas cash out donc rien à déclarer » est **faux**
+dès qu'il y a eu une vente ou un dividende dans l'année.
+
+## Obligations déclaratives (déclaration de revenus chaque printemps)
+
+1. **Formulaire 3916-bis** : déclarer l'existence du compte eToro (compte
+   d'actifs à l'étranger), **chaque année, même sans aucune opération et
+   même sans gain**. Sanction : 1 500 € d'amende par compte non déclaré.
+2. **Plus/moins-values de cession** : formulaire 2074 (ou report direct
+   case 3VG/3VH de la 2042 selon les cas).
+3. **Dividendes** : cases 2DC/2AB (crédit d'impôt possible sur la retenue à
+   la source US de 15 % via la convention fiscale — eToro applique le
+   formulaire W-8BEN).
+4. eToro fournit un **rapport fiscal annuel** téléchargeable — c'est la base
+   de calcul (attention : les montants sont à convertir/vérifier en euros).
+
+## Comment le fisc « sait »
+
+- eToro (entité UE) participe à l'**échange automatique d'informations**
+  (norme CRS/DAC) : soldes et revenus des comptes des résidents français
+  sont transmis aux autorités, qui recoupent avec la déclaration.
+- Un compte étranger non déclaré + des flux entrants sur le compte bancaire
+  = profil de contrôle typique. La déclaration honnête coûte 30 % du gain ;
+  l'omission coûte amendes + rappels + majorations (jusqu'à 80 %).
+
+## Comparaison avec un PEA (pour les prochains apports)
+
+| | eToro (CTO) | PEA |
+|---|---|---|
+| Univers | Monde entier (dont US) | Actions UE + ETF éligibles (dont synthétiques Monde/EM) |
+| Imposition des ventes | Chaque année (30 % du gain) | **Aucune tant que l'argent reste dans le PEA** |
+| Sortie après 5 ans | 30 % du gain | **17,2 %** du gain seulement |
+| Déclaration annuelle | 3916-bis + gains | Rien à déclarer en cours de vie |
+| Plafond | Aucun | 150 000 € de versements |
+
+→ Sur un horizon 5-7 ans, le PEA est fiscalement taillé pour le mandat :
+capitalisation sans frottement fiscal annuel + taux réduit à la sortie.
