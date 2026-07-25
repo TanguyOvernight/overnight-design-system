@@ -1,9 +1,16 @@
 # Portefeuille — Tanguy
 
 Dernière mise à jour : **2026-07-25** (capture d'écran du courtier mobile).
-Devise du compte : USD. Courtier type CTO avec fractions d'actions et trading
-24/5 (donc a priori **pas un PEA** — à confirmer, impact fiscal : flat tax 30 %
-sur les plus-values).
+**Courtier : eToro** (confirmé par Tanguy) — compte-titres chez un courtier
+étranger, en USD. Conséquences :
+- **Pas de PEA possible chez eToro** : plus-values à la flat tax 30 %.
+- **Obligation déclarative** : compte détenu à l'étranger → formulaire 3916
+  à joindre à la déclaration de revenus (amende par compte non déclaré sinon).
+- Frais de conversion EUR↔USD à chaque dépôt/retrait + risque de change.
+- Recommandation maison (25/07/2026) : garder eToro pour les titres US,
+  ouvrir un **PEA chez un courtier français en parallèle** pour la poche
+  Europe/ETF éligibles (fiscalité à 17,2 % après 5 ans — parfaitement alignée
+  avec l'horizon 5-7 ans du mandat).
 
 Valeur totale : **~1 015 $** · Investi : ~856 $ · **P/V latente : ~+152 $ (+17,7 %)**
 Liquidités : 1,18 $
