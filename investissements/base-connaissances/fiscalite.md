@@ -53,6 +53,23 @@ dès qu'il y a eu une vente ou un dividende dans l'année.
   = profil de contrôle typique. La déclaration honnête coûte 30 % du gain ;
   l'omission coûte amendes + rappels + majorations (jusqu'à 80 %).
 
+## Situation de Tanguy (notée le 25/07/2026)
+
+- **Auto-entrepreneur, revenu imposable ~0** → tranche marginale basse.
+  Conséquence clé : l'année d'une vente avec gain, **l'option barème
+  progressif (case 2OP)** peut ramener l'imposition à **~17,2 %** (prélèvements
+  sociaux seuls) au lieu de 30 %. À réévaluer chaque année de cession selon
+  ses revenus — l'option est globale (s'applique à tous les revenus de
+  capitaux de l'année).
+- Déclaration du printemps 2026 déjà déposée **sans le 3916-bis**.
+  Régularisation : service « Corriger ma déclaration en ligne »
+  (impots.gouv.fr), ouvert de début août à mi-décembre — cocher la case 8UU
+  et remplir le 3916-bis (références eToro, date d'ouverture). Correction
+  spontanée = droit à l'erreur, amende en pratique non appliquée de bonne foi.
+- **À vérifier : date d'ouverture du compte eToro.** Ouvert en 2026 → rien à
+  corriger, il ira dans la déclaration 2027 ; ouvert en 2025 ou avant →
+  corriger en août.
+
 ## Comparaison avec un PEA (pour les prochains apports)
 
 | | eToro (CTO) | PEA |
