@@ -15,6 +15,15 @@ Dernière mise à jour : **2026-07-25** (capture d'écran du courtier mobile).
 Valeur totale : **~1 015 $** · Investi : ~856 $ · **P/V latente : ~+152 $ (+17,7 %)**
 Liquidités : 1,18 $
 
+**Capacité d'épargne : ~500 €/mois** (donnée Tanguy, 25/07/2026). Suivi du
+déploiement mensuel dans le journal ; règles de répartition dans le skill
+suivi-investissements (§ Budget mensuel).
+
+## Budget mensuel — juillet 2026
+
+Placés ce mois-ci : 0 € · Restants : 500 € (aucun versement signalé depuis
+la mise en place du suivi le 25/07).
+
 ## Positions (6 actifs — 5 identifiés, 1 à confirmer)
 
 | Valeur | Ticker | Valeur | Investi | P/V | Poids | Thèse | Signal de sortie |

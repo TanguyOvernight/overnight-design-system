@@ -62,37 +62,84 @@ travail pour que la session suivante reparte de l'état à jour.
 5. **Journaliser** le brief dans `journal/AAAA-MM-JJ.md` (format court : faits,
    analyse, décisions/recommandations).
 
-## Format de sortie : mobile d'abord (impératif)
+## Format de sortie : la newsletter quotidienne (impératif)
 
-Tanguy lit les briefs **sur téléphone**. Règles strictes :
+Demande explicite de Tanguy (25/07/2026) : un format **très explicite**, type
+newsletter sur mesure, livré **chaque matin à 9h (heure de Paris) dans le
+canal Slack privé `#brief-investissements` (ID : `C0BKM2ACTUK`)**. Tanguy lit
+sur téléphone : pas de tableaux larges, tout s'explique en toutes lettres —
+aucun jargon sans explication, aucune abréviation non définie.
 
-- **Pas de tableaux larges** (illisibles sur mobile). Une ligne par valeur.
-- Indicateurs visuels : 🟢 RAS / 🟡 à surveiller / 🔴 attention.
-- **Court** : le brief complet tient en ~20-25 lignes. Phrases sèches.
-- Structure fixe :
+Structure fixe (markdown Slack, < 5 000 caractères) :
 
 ```
-📊 Brief du JJ/MM
+📰 *NEWSLETTER INVEST — [jour de semaine] JJ mois AAAA*
 
-TL;DR — 1-2 phrases max.
+🎯 *L'ESSENTIEL*
+2-3 phrases : ce qui s'est passé, ce que ça change pour toi, l'action du jour
+(ou "rien à faire aujourd'hui").
 
-— PORTEFEUILLE —
-🟢 VTI +x % · une ligne d'actu ou "RAS"
-🔴 TSLA -x % · fait marquant → conséquence
+💼 *TES PLACEMENTS* (~1 000 $ investis)
+Une entrée par position, de la plus grosse à la plus petite :
+🟢/🟡/🔴 *Nom (TICKER)* — poids X %, +/-Y % vs ton prix d'achat
+→ L'actualité : 1-2 phrases explicites (résultats, annonce, mouvement…)
+→ Ce que tu fais : garder / surveiller / renforcer / alléger, et pourquoi.
+(🟢 = rien à signaler · 🟡 = à surveiller · 🔴 = attention)
 
-— À VENIR —
-📅 date · événement · pourquoi ça compte
+📅 *AGENDA DES 7 PROCHAINS JOURS*
+JJ/MM — événement — pourquoi ça concerne TON argent (croiser avec
+base-connaissances/radar-catalyseurs.md).
 
-— OPPORTUNITÉS — (si pertinent, max 2-3)
-💡 Valeur · pourquoi c'est bas · pourquoi ça peut monter · risque principal
+💡 *OÙ INVESTIR ENSUITE* (max 2-3 idées, critères du Radar d'opportunités)
+*Nom (TICKER) — cours actuel vérifié*
+→ Pourquoi c'est intéressant maintenant (avec l'actu qui le montre)
+→ Le risque principal, en une ligne honnête
+→ Le montant suggéré si tu y vas, en euros
 
-Une ligne de recommandation ou "Rien à faire aujourd'hui."
+💶 *TON BUDGET DU MOIS (500 €)*
+État : X € déjà placés ce mois-ci / Y € restants.
+Plan concret en euros : "Z € sur A parce que… ; W € en attente de
+[événement daté]". Jamais de "investis" sans montant ni justification.
+
+⚠️ Une ligne de rappel : je ne suis pas conseiller financier agréé — c'est
+toi qui décides.
 ```
 
-- Les % de variation par position se réfèrent au **PRU** (P/V latente) sauf
-  mention contraire ; les mouvements du jour sont cités dans l'actu.
-- Détails, chiffres complets et sources : uniquement si Tanguy les demande,
-  ou dans le fichier journal (pas dans le message).
+- Les % par position se réfèrent au **PRU** (prix d'achat moyen) — dire
+  « vs ton prix d'achat » dans la newsletter, pas « PRU » sec.
+- Chaque recommandation nomme le **véhicule exact** (ticker, place de
+  cotation, éligibilité PEA/CTO) et un **montant en euros**.
+- Détails, chiffres complets et sources : dans le fichier journal du jour,
+  pas dans la newsletter.
+
+## Budget mensuel : 500 € (donnée de Tanguy, 25/07/2026)
+
+Tanguy peut placer **~500 € par mois**. Règles de déploiement :
+
+1. **Répartition par défaut** : ~300 € (60 %) sur le cœur de portefeuille
+   (ETF larges — idéalement la future poche PEA Europe/monde pour rééquilibrer
+   le tout-USD actuel) ; ~200 € (40 %) sur les convictions/opportunités du
+   Radar. Ajuster si un événement daté justifie d'attendre (résultats, FOMC).
+2. **Pas d'obligation de tout placer** : si rien ne le justifie, le dire
+   (« garde X € pour [événement] »). L'argent non placé reste dans le budget
+   du mois suivant — le cumul est suivi dans le journal.
+3. **Suivi** : chaque newsletter affiche « placés ce mois-ci / restants ».
+   Chaque placement effectué par Tanguy (il le signale) est enregistré dans
+   `portefeuille/portefeuille.md` et déduit du budget du mois.
+4. **Ordre de priorité structurel** (tant que non résolu) : réduire la
+   concentration US/tech (85-90 % du portefeuille) avant d'ajouter une ligne
+   tech de plus ; les émergents et l'Europe passent avant un renforcement US,
+   sauf opportunité exceptionnelle argumentée.
+
+## Livraison quotidienne (routine 9h)
+
+1. Générer la newsletter (routine « brief quotidien » ci-dessus, rendue au
+   format newsletter).
+2. La poster dans Slack `#brief-investissements` (`C0BKM2ACTUK`) via
+   `slack_send_message`. Si l'envoi échoue, la livrer dans la conversation et
+   le signaler.
+3. Envoyer une notification push avec le TL;DR (outil PushNotification).
+4. Journaliser dans `investissements/journal/AAAA-MM-JJ.md`, commit + push.
 
 ## Radar d'opportunités (« bas aujourd'hui, fort potentiel demain »)
 
