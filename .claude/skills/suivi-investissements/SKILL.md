@@ -124,97 +124,63 @@ Trois règles de rédaction ajoutées par Tanguy (26/07/2026) :
    envoyer le cœur d'abord, puis le détail d'analyse en 2ᵉ message dans le
    fil (thread) du premier.
 
-Structure v2 (markdown Slack ; message principal + détails en thread si
-> ~4 500 caractères). Sections marquées *(cond.)* = présentes SEULEMENT
-quand il y a du signal — ne jamais forcer une case vide :
+Structure v3 — SIMPLIFIÉE À 4 SECTIONS (demande Tanguy, 27/07/2026 :
+« moins de catégories, beaucoup d'actu sur mes placements, et très tôt
+l'argent que je dois mettre dans quel placement, ensuite les autres
+pistes »). Message principal + détails en thread si > ~4 500 caractères.
 
 ```
 📬 *NEWSLETTER INVEST n°X — [jour] JJ mois AAAA*
-Une ligne d'ouverture : le ton du jour en 1 phrase (clin d'œil autorisé).
+1 phrase d'ouverture + 1 ligne scoreboard : Portefeuille X $ (jour ±%,
+total ±%) · S&P ±% · Brent · EUR/USD.
 
-📊 *SCOREBOARD* (bloc monospace ```)
-Portefeuille  1 0XX $ · jour ±X % · total +XX %
-S&P 500 ±X % · Nasdaq ±X % · CAC ±X % · Brent XX $ · EUR/USD X,XX
+💶 *TON ARGENT — quoi faire aujourd'hui* (LA section, toujours en premier)
+→ L'instruction du jour, cash : « Mets X € sur [placement précis, ticker,
+  enveloppe] parce que [1 phrase] » — ou « Ne place rien aujourd'hui,
+  attends [événement daté] » (dit sans honte : c'est souvent le bon
+  conseil).
+→ Budget du mois : X € placés / Y € restants + le plan des prochains
+  jours en euros.
+→ 🔁 Statut des recos en cours en une demi-ligne chacune (inchangée /
+  modifiée+pourquoi / annulée+pourquoi / exécutée) — règle 3.
+→ Les actions structurantes en attente (PEA, fonds de sécurité…) : une
+  ligne de rappel tant que non traitées.
 
-🔍 *LA GROSSE AFFAIRE* — [titre ≤ 6 mots]
-Le fait, détaillé et chiffré, avec son <lien|source> (règle 4 : actu ↔
-mouvement de cours ↔ pourquoi cette ampleur).
-*Pourquoi c'est important :* 1-2 phrases.
-*Impact portefeuille :* le verdict en gras (**garder / renforcer si… /
-rien à faire**).
-
-💼 *TES PLACEMENTS*
-Une entrée par position (hors grosse affaire, pas de redite) :
+💼 *TES PLACEMENTS — l'actu de ton argent* (le CŒUR de l'édition, le plus
+riche : c'est ici que va la profondeur)
+Une entrée par position, de la plus grosse à la plus petite :
 🟢/🟡/🔴 *Nom (TICKER)* — poids X %, ±Y % vs ton prix d'achat
-→ Actu : analyse règle 4 (4-7 lignes, lien) · Sans actu : « RAS », une ligne.
-→ 📉 Technique (si position analysée ou décision en jeu) : une ligne
-  factuelle — [au-dessus/sous] MM200 · momentum 12 m ±X % · à X % du plus
-  haut 52 sem. Règles et limites : base-connaissances/lecture-technique.md
-  (la technique MODULE un verdict fondamental, ne le crée jamais ; jamais
-  de chandeliers/figures — mythes mesurés).
+→ Actu : analyse règle 4, généreuse (fait détaillé + <lien|source> +
+  mouvement de cours + POURQUOI cette ampleur + ce que ça change pour
+  toi). La grosse actu du jour ouvre la section avec le format long
+  (*Pourquoi c'est important / Impact portefeuille* en gras).
+→ Intégrer ICI (pas en sections séparées) quand pertinent : la lecture
+  📉 technique (MM200/momentum/52 sem — module, ne crée jamais), le
+  contexte macro qui touche la position (cotes Fed, pétrole…), un signal
+  smart money (achats de dirigeants…), et l'explication d'un terme de
+  jargon à sa première apparition.
 → Verdict : ce que tu fais et pourquoi.
+→ Sans actu : « RAS », une ligne, rien de plus.
 (🟢 RAS · 🟡 à surveiller · 🔴 attention)
 
-🧭 *MÉTÉO MACRO* (cond. — quand le régime change ou avant un événement)
-2-3 lignes max : conditions financières (NFCI/CISS), cotes Fed
-(FedWatch × Kalshi, signaler les divergences), pétrole/fret si ça touche
-une thèse. Source : pipeline signaux-macro.md.
+💡 *LES AUTRES PISTES* (après tes placements — compact)
+Max 2-3 idées toutes familles confondues, taguées 🚀 fort potentiel /
+🛡️ valeur sûre en promo / 🌱 compounder (critères et exigences : Radar
+d'opportunités, compounders.md, grille ≥ 7). Chaque idée : thèse en
+2-3 lignes + risque franc + montant suggéré en euros. Une édition sans
+piste neuve le dit en une ligne. Anti-ancrage (règle des 3 mentions)
+appliqué.
 
-🐋 *SMART MONEY* (cond. — quand un signal touche portefeuille/watchlist)
-Cluster d'achats de dirigeants, 13D activiste, position courte notable,
-gros mouvement 13F (fenêtres trimestrielles). Source : smart-money.md.
-
-📅 *À SUIVRE* — comptes à rebours
-⏳ J-X : événement — pourquoi ça concerne TON argent (radar-catalyseurs).
-
-💡 *OÙ INVESTIR ENSUITE* — deux familles, bien séparées :
-
-🚀 *Fort potentiel* (max 1-2 — plus risqué, peut rapporter gros)
-*Nom (TICKER) — cours actuel vérifié*
-→ Pourquoi ça peut beaucoup monter (la thèse en langage courant + le lien
-  vers l'actu fraîche qui l'appuie)
-→ Ce que tu peux perdre si ça tourne mal, dit franchement
-→ Le montant suggéré en euros (petit : c'est la poche risquée)
-
-🛡️ *Valeur sûre en promo* (max 1-2 — du solide, temporairement bradé)
-*Nom (TICKER) — cours actuel vérifié*
-→ Pourquoi c'est du solide (entreprise/ETF de qualité, activité qui tourne)
-→ Pourquoi c'est moins cher en ce moment (la raison de la baisse, jugée
-  passagère) et pourquoi ça devrait remonter — en restant honnête :
-  « probable », jamais « garanti »
-→ Le montant suggéré en euros
-
-🌱 *Compounder* (max 1 — accumulation long terme, demande Tanguy 27/07)
-*Nom (TICKER) — cours actuel vérifié*
-→ Grande entreprise stable à fort potentiel de scale 5-7 ans : les 6
-  marqueurs de base-connaissances/compounders.md (ROIC + runway, TAM en
-  expansion, plateforme, pricing power, optionalité, skin in the game)
-→ Différence avec 🛡️ : ne dépend PAS d'une promo — accumulation par
-  petites tranches mensuelles même près des plus hauts (George & Hwang),
-  SI le reverse DCF ne suppose pas la perfection
-→ Test de concentration obligatoire (le portefeuille est déjà lourd en
-  tech US : NVDA+MSFT) — à égalité, la diversification gagne
-
-Une famille peut être vide un jour donné (« pas de valeur sûre en promo
-aujourd'hui ») — ne jamais forcer une idée pour remplir la case. Les
-familles respectent les critères du Radar d'opportunités.
-
-💶 *TON BUDGET DU MOIS (500 €)*
-État : X € placés / Y € restants.
-🔁 Statut de CHAQUE reco en suspens (règle 3) : inchangée / modifiée
-(quoi et pourquoi) / annulée (pourquoi) / exécutée.
-Plan concret en euros — jamais de "investis" sans montant ni justification.
-
-🎲 *STAT DU JOUR* ou 🎓 *TERME DU JOUR* (alterner ; jamais les deux)
-Stat : un chiffre marquant + 1 phrase de contexte. Terme : un mot de
-jargon expliqué en 2 phrases, TOUJOURS raccroché à une story du jour
-(jamais hors-sol). Les termes déjà expliqués s'utilisent ensuite sans
-parenthèse — le vocabulaire de Tanguy se construit édition après édition.
-
-👉 *TAKEAWAY* : LA phrase à retenir du jour (l'action ou « rien à faire —
-et c'est très bien »).
-⚠️ Une ligne : pas conseiller financier agréé — c'est toi qui décides.
+📅 *À SUIVRE* — 2-4 lignes : ⏳ J-X événement — pourquoi ça concerne ton
+argent. ⚠️ 1 ligne : pas conseiller agréé — c'est toi qui décides.
 ```
+
+Ce qui a disparu EN TANT QUE SECTIONS (mais pas en tant que contenu) :
+scoreboard détaillé (1 ligne d'en-tête), grosse affaire (= 1ʳᵉ entrée de
+TES PLACEMENTS), météo macro, smart money, technique, stat/terme du jour
+(tous intégrés DANS l'analyse des positions quand pertinents), takeaway
+(= la 1ʳᵉ ligne de TON ARGENT). Les appels restent chiffrés
+(science-prevision.md) partout.
 
 Règles de forme (issues des meilleures newsletters — Axios/Morning
 Brew/Snacks, 26/07/2026) :
