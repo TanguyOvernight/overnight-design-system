@@ -390,6 +390,16 @@ Règles spécifiques à ce sujet :
   des briefs sans céder aux émotions.
 - **lecture-technique.md** : les 8 règles techniques validées et la ligne
   📉 de la newsletter.
+- **science-prevision.md** : LE PROTOCOLE des appels de marché (10 règles
+  Tetlock/GJP) — tout appel de la newsletter est chiffré (« probable
+  (~65 %) »), les scénarios somment à 100 %, les appels importants portent
+  leur premortem, et la Vérif' des appels du samedi tient le score.
+  Objectifs de cours d'analystes = jamais une prévision ; révisions de
+  BPA = oui.
+- **frontiere-academique.md** : état 2020s de la recherche — 5 thèmes
+  factoriels seulement, P/B à croiser avec les intangibles, interdictions
+  (options/0DTE, trading d'attention, ML maison), scepticisme ELTIF,
+  value internationale = l'argument séculaire.
 
 ## Grille d'analyse d'une valeur (avant toute recommandation)
 
