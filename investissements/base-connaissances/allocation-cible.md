@@ -28,7 +28,10 @@ ouvrir, 500 €/mois, horizon 5-7 ans.
   **assurance-vie** (prendre date fiscalement, fonds euros ~2,9 %).
 - **Étape 2** : **or 5-10 %** en DCA (ETC IE00B4ND3602, TER 0,12 %, en CTO ;
   ou ETF or synthétique éligible PEA — vérifier frais/tracking).
-- **Étape 3 (optionnel)** : BTC 0-5 % rebalancé, si tolérance assumée.
+- **Étape 3 (déprioritisée — décision Tanguy 27/07/2026)** : BTC 0-5 % —
+  « ça reste risqué donc pas prioritaire ». Pas de proposition crypto en
+  newsletter sauf demande explicite de Tanguy ; la ligne reste documentée
+  ici pour référence, c'est tout.
 - **Étape 4 (~2029-2030)** : introduire 10-20 % obligations/monétaire EUR
   (sécurisation progressive de l'horizon).
 
