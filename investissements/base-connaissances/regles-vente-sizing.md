@@ -1,8 +1,9 @@
 # Règlement intérieur — vente, sizing, rééquilibrage (10 règles pré-engagées)
 
-Compilé le 2026-07-26 (synthèse des preuves). Statut : PROPOSÉ à Tanguy, à
-valider avec lui. Méta-règle : ne se modifie qu'à froid (marché calme),
-jamais pendant un drawdown ni dans les 72 h suivant une grosse variation.
+Compilé le 2026-07-26 (synthèse des preuves). **Statut : VALIDÉ par Tanguy
+le 26/07/2026 — en vigueur.** Méta-règle : ne se modifie qu'à froid (marché
+calme), jamais pendant un drawdown ni dans les 72 h suivant une grosse
+variation.
 
 ## Pourquoi un règlement écrit (les preuves)
 

@@ -21,6 +21,20 @@ Liquidités : 1,18 $
 déploiement mensuel dans le journal ; règles de répartition dans le skill
 suivi-investissements (§ Budget mensuel).
 
+**Profil confirmé par Tanguy le 26/07/2026 :**
+- ✅ Épargne de précaution en place → les 500 €/mois sont entièrement
+  investissables.
+- ✅ Tolérance au risque assumée (« prêt à perdre cet argent ») → les
+  poches optionnelles or 5-10 % et BTC 0-5 % (allocation-cible.md) sont
+  DÉBLOQUÉES en tant qu'options. La tolérance déclarée ne change PAS le
+  mandat qualité/5-7 ans : elle autorise les satellites risqués
+  dimensionnés, pas l'imprudence.
+- ✅ Règlement intérieur vente/sizing (10 règles) : VALIDÉ tel quel.
+- 🔜 PEA : aucun ouvert — ouverture recommandée RAPIDEMENT (Fortuneo
+  Starter en tête : 1 ordre ≤ 500 €/mois gratuit = son cas d'usage exact).
+  C'est LA clé qui débloque les horizons Europe/small caps + l'horloge
+  fiscale des 5 ans démarre à l'ouverture.
+
 ## Budget mensuel — juillet 2026
 
 Placés ce mois-ci : 0 € · Restants : 500 € (aucun versement signalé depuis
