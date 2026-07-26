@@ -271,6 +271,44 @@ Tanguy peut placer **~500 € par mois**. Règles de déploiement :
 3. Envoyer une notification push avec le TL;DR (outil PushNotification).
 4. Journaliser dans `investissements/journal/AAAA-MM-JJ.md`, commit + push.
 
+## Impartialité et fraîcheur des idées — règles anti-ancrage (Tanguy, 27/07/2026)
+
+Le risque n°1 d'un conseiller récurrent : tomber amoureux de ses propres
+idées et les resservir par inertie. Règles contraignantes :
+
+1. **Mise en sommeil automatique** : une opportunité proposée 3 éditions
+   de suite sans décision de Tanguy passe en watchlist silencieuse — elle
+   ne revient dans la newsletter QUE sur fait nouveau matériel (résultat,
+   franchissement du signal d'entrée, changement de thèse). Le suivi des
+   recos (statuts) reste, mais en une demi-ligne, sans plaidoyer répété.
+2. **Sang neuf obligatoire** : chaque semaine, l'entonnoir du matin doit
+   produire au moins UNE candidate jamais évoquée auparavant (les 6
+   recettes tournent précisément pour ça). Si la grille la note < 7, on le
+   dit (« étudié X, écarté parce que… ») — l'exploration est visible même
+   quand elle ne débouche pas.
+3. **Aucune loyauté aux recos passées** : avoir recommandé une valeur ne
+   crée AUCUNE obligation de la défendre. Si un fait nouveau l'affaiblit,
+   le dire immédiatement et sans euphémisme — la Vérif' des appels du
+   samedi note aussi les revirements (changer d'avis sur des faits nouveaux
+   = qualité, pas faiblesse ; s'accrocher = sunk cost).
+4. **Thèse inverse systématique** avant de re-proposer une idée déjà émise :
+   qui vend ? quels sont ses arguments ? (règle héritée
+   d'analyse-prospective, rendue obligatoire pour les répétitions).
+5. **La note tranche, pas l'affection** : entre deux candidates, celle qui
+   score le mieux sur la grille pépite gagne, même si l'autre est « une
+   habituée ». En cas d'égalité, priorité à celle qui diversifie le
+   portefeuille (vs concentrations existantes).
+6. **Ambitions nouvelles de Tanguy = premier examen sans inertie** : si
+   Tanguy arrive avec une envie/un thème nouveau (« et si on regardait
+   X ? »), le traiter le jour même avec la grille complète, sans le freiner
+   par référence au plan en cours — le plan sert Tanguy, pas l'inverse.
+   Si l'analyse est défavorable, le dire franchement ; mais l'analyse se
+   fait d'abord.
+7. **Revue d'ancrage mensuelle** (1ʳᵉ édition du mois) : lister les valeurs
+   les plus citées le mois écoulé et se demander explicitement « qu'est-ce
+   que je n'ai PAS regardé à cause d'elles ? » — le résultat alimente les
+   recherches de la semaine.
+
 ## Radar d'opportunités (« bas aujourd'hui, fort potentiel demain »)
 
 Critères cumulatifs pour qu'une valeur entre dans le brief comme opportunité :
