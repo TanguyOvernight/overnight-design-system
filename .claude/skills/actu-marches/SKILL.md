@@ -20,6 +20,11 @@ description: >
 - **WebSearch d'abord** pour trouver la bonne page, **WebFetch** ensuite pour en
   extraire les chiffres précis.
 - Ne jamais donner un cours sans préciser sa date/heure approximative.
+- **Cookbook d'URLs directes** : `investissements/base-connaissances/outils-donnees.md`
+  recense les patterns fetchables (Stooq CSV, stockanalysis.com, Finviz,
+  FRED CSV, OpenInsider, Boursorama…) et les sites à éviter en fetch
+  (Yahoo, investing.com → WebSearch seulement). Tester ces patterns en
+  priorité et noter les résultats dans son journal de validation.
 
 ## Sources fiables par usage
 

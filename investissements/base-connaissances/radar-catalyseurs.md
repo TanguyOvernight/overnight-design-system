@@ -17,6 +17,7 @@ en le journalisant si notable.
 
 | Date | Événement | Impact |
 |---|---|---|
+| 31/07 | Résultats Cameco (BPA attendu 0,26 $, -49 %) | Thème uranium/énergie IA (veille, spot ~85,8 $/lb) |
 | Début août | Ouverture « Corriger ma déclaration » impots.gouv.fr | Régularisation 3916-bis si compte ouvert ≤ 2025 |
 | 26/08 | **Résultats Nvidia T2** | NVDA = 22 % du portefeuille — le rendez-vous du mois |
 
@@ -34,7 +35,8 @@ en le journalisant si notable.
 | Échéance | Événement | Impact |
 |---|---|---|
 | Novembre 2026 | **Expiration de la trêve commerciale Chine-USA** (Busan) | Risque macro majeur identifié |
-| Fin 2026-début 2027 | **IPO Anthropic possible** (S-1 déposé 01/06) | Watchlist — analyser le S-1 public dès parution |
+| **Sept-oct 2026 (rumeur : 23/10, ticker ANTH)** | **IPO Anthropic** — S-1 déposé 01/06, réunions investisseurs en cours (MS/GS/JPM, 24/07) ; valo Série H ~965 Md$ | Watchlist — analyser le S-1 public dès parution sur EDGAR ; règle : JAMAIS le jour 1 (cf. SPCX -47 % vs pic) |
+| Mai 2027 | Grèce → MSCI Developed (implémentation) | Effet flux paradoxal possible (sort des indices EM) |
 | 2027 | IPO OpenAI probable (> 1 T$ visé) | Watchlist |
 | 2027 | IPO Databricks évoquée | Veille |
 | Continu | Levée Mistral ~20 Md€ (en négociation 06/2026) | Veille tech FR |
