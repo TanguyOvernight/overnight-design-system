@@ -184,8 +184,19 @@ gros mouvement 13F (fenêtres trimestrielles). Source : smart-money.md.
   « probable », jamais « garanti »
 → Le montant suggéré en euros
 
+🌱 *Compounder* (max 1 — accumulation long terme, demande Tanguy 27/07)
+*Nom (TICKER) — cours actuel vérifié*
+→ Grande entreprise stable à fort potentiel de scale 5-7 ans : les 6
+  marqueurs de base-connaissances/compounders.md (ROIC + runway, TAM en
+  expansion, plateforme, pricing power, optionalité, skin in the game)
+→ Différence avec 🛡️ : ne dépend PAS d'une promo — accumulation par
+  petites tranches mensuelles même près des plus hauts (George & Hwang),
+  SI le reverse DCF ne suppose pas la perfection
+→ Test de concentration obligatoire (le portefeuille est déjà lourd en
+  tech US : NVDA+MSFT) — à égalité, la diversification gagne
+
 Une famille peut être vide un jour donné (« pas de valeur sûre en promo
-aujourd'hui ») — ne jamais forcer une idée pour remplir la case. Les deux
+aujourd'hui ») — ne jamais forcer une idée pour remplir la case. Les
 familles respectent les critères du Radar d'opportunités.
 
 💶 *TON BUDGET DU MOIS (500 €)*
