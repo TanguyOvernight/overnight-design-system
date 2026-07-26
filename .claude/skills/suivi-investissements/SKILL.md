@@ -124,29 +124,43 @@ Trois règles de rédaction ajoutées par Tanguy (26/07/2026) :
    envoyer le cœur d'abord, puis le détail d'analyse en 2ᵉ message dans le
    fil (thread) du premier.
 
-Structure fixe (markdown Slack, < 5 000 caractères) :
+Structure v2 (markdown Slack ; message principal + détails en thread si
+> ~4 500 caractères). Sections marquées *(cond.)* = présentes SEULEMENT
+quand il y a du signal — ne jamais forcer une case vide :
 
 ```
-📰 *NEWSLETTER INVEST — [jour de semaine] JJ mois AAAA*
+📬 *NEWSLETTER INVEST n°X — [jour] JJ mois AAAA*
+Une ligne d'ouverture : le ton du jour en 1 phrase (clin d'œil autorisé).
 
-🎯 *L'ESSENTIEL*
-2-3 phrases : ce qui s'est passé, ce que ça change pour toi, l'action du jour
-(ou "rien à faire aujourd'hui").
+📊 *SCOREBOARD* (bloc monospace ```)
+Portefeuille  1 0XX $ · jour ±X % · total +XX %
+S&P 500 ±X % · Nasdaq ±X % · CAC ±X % · Brent XX $ · EUR/USD X,XX
 
-💼 *TES PLACEMENTS* (~1 000 $ investis)
-Une entrée par position, de la plus grosse à la plus petite :
-🟢/🟡/🔴 *Nom (TICKER)* — poids X %, +/-Y % vs ton prix d'achat
-→ Si actu (règle 4) : le fait détaillé et chiffré + <lien|source>, le
-  mouvement de cours daté qu'il a provoqué, et POURQUOI le marché a réagi
-  comme ça, en langage courant. 4-7 lignes.
-→ Si pas d'actu : « RAS » en une ligne, rien de plus.
-→ Toujours finir par : ce que tu fais (garder / surveiller / renforcer /
-  alléger) et pourquoi.
-(🟢 = rien à signaler · 🟡 = à surveiller · 🔴 = attention)
+🔍 *LA GROSSE AFFAIRE* — [titre ≤ 6 mots]
+Le fait, détaillé et chiffré, avec son <lien|source> (règle 4 : actu ↔
+mouvement de cours ↔ pourquoi cette ampleur).
+*Pourquoi c'est important :* 1-2 phrases.
+*Impact portefeuille :* le verdict en gras (**garder / renforcer si… /
+rien à faire**).
 
-📅 *AGENDA DES 7 PROCHAINS JOURS*
-JJ/MM — événement — pourquoi ça concerne TON argent (croiser avec
-base-connaissances/radar-catalyseurs.md).
+💼 *TES PLACEMENTS*
+Une entrée par position (hors grosse affaire, pas de redite) :
+🟢/🟡/🔴 *Nom (TICKER)* — poids X %, ±Y % vs ton prix d'achat
+→ Actu : analyse règle 4 (4-7 lignes, lien) · Sans actu : « RAS », une ligne.
+→ Verdict : ce que tu fais et pourquoi.
+(🟢 RAS · 🟡 à surveiller · 🔴 attention)
+
+🧭 *MÉTÉO MACRO* (cond. — quand le régime change ou avant un événement)
+2-3 lignes max : conditions financières (NFCI/CISS), cotes Fed
+(FedWatch × Kalshi, signaler les divergences), pétrole/fret si ça touche
+une thèse. Source : pipeline signaux-macro.md.
+
+🐋 *SMART MONEY* (cond. — quand un signal touche portefeuille/watchlist)
+Cluster d'achats de dirigeants, 13D activiste, position courte notable,
+gros mouvement 13F (fenêtres trimestrielles). Source : smart-money.md.
+
+📅 *À SUIVRE* — comptes à rebours
+⏳ J-X : événement — pourquoi ça concerne TON argent (radar-catalyseurs).
 
 💡 *OÙ INVESTIR ENSUITE* — deux familles, bien séparées :
 
@@ -170,13 +184,51 @@ aujourd'hui ») — ne jamais forcer une idée pour remplir la case. Les deux
 familles respectent les critères du Radar d'opportunités.
 
 💶 *TON BUDGET DU MOIS (500 €)*
-État : X € déjà placés ce mois-ci / Y € restants.
-Plan concret en euros : "Z € sur A parce que… ; W € en attente de
-[événement daté]". Jamais de "investis" sans montant ni justification.
+État : X € placés / Y € restants.
+🔁 Statut de CHAQUE reco en suspens (règle 3) : inchangée / modifiée
+(quoi et pourquoi) / annulée (pourquoi) / exécutée.
+Plan concret en euros — jamais de "investis" sans montant ni justification.
 
-⚠️ Une ligne de rappel : je ne suis pas conseiller financier agréé — c'est
-toi qui décides.
+🎲 *STAT DU JOUR* ou 🎓 *TERME DU JOUR* (alterner ; jamais les deux)
+Stat : un chiffre marquant + 1 phrase de contexte. Terme : un mot de
+jargon expliqué en 2 phrases, TOUJOURS raccroché à une story du jour
+(jamais hors-sol). Les termes déjà expliqués s'utilisent ensuite sans
+parenthèse — le vocabulaire de Tanguy se construit édition après édition.
+
+👉 *TAKEAWAY* : LA phrase à retenir du jour (l'action ou « rien à faire —
+et c'est très bien »).
+⚠️ Une ligne : pas conseiller financier agréé — c'est toi qui décides.
 ```
+
+Règles de forme (issues des meilleures newsletters — Axios/Morning
+Brew/Snacks, 26/07/2026) :
+
+- **Le gras porte le signal** : tickers, chiffres clés, verdicts — jamais
+  des phrases entières. Test du scanner : le gras seul doit suffire à
+  comprendre l'essentiel.
+- **Paragraphes ≤ 2 phrases**, saut de ligne fréquent ; chaque bullet
+  commence par le mot porteur (ticker, chiffre, verbe) — jamais
+  « Concernant… ».
+- **Squelette et emojis STRICTEMENT identiques chaque jour** : ce sont des
+  repères de scan, pas de la décoration. Heure fixe. Numérotation (n°X)
+  pour matérialiser la continuité.
+- **Un point de vue assumé par édition** : au moins un jugement tranché et
+  falsifiable (« le marché sur-réagit » / « là c'est structurel ») — il
+  alimente la Vérif' des appels du samedi. Un résumé neutre est un brief
+  mort.
+- Le message principal reste scannable en < 3 min ; l'analyse longue va en
+  thread du message du jour.
+
+Éditions week-end (cadences distinctes, à la Snowball/Les Echos) :
+
+- **Samedi — la Revue** : perf de la semaine chiffrée (scoreboard hebdo),
+  **🎯 Vérif' des appels** : chaque jugement/reco émis dans la semaine
+  revisité avec ✅/❌ et le score cumulé (l'honnêteté du track record est
+  LE différenciant), 1 analyse de fond, et un **quiz 3 questions** sur la
+  semaine (réponses par réactions emoji 1️⃣2️⃣3️⃣, réponses le dimanche).
+- **Dimanche — la Prépa** : agenda complet de la semaine à venir (radar),
+  scénarios sur les événements majeurs (central/haussier/baissier), plan
+  budget conditionnel, réponses du quiz.
 
 - Les % par position se réfèrent au **PRU** (prix d'achat moyen) — dire
   « vs ton prix d'achat » dans la newsletter, pas « PRU » sec.
