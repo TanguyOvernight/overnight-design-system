@@ -162,6 +162,10 @@ total ±%) · S&P ±% · Brent · EUR/USD.
   conseil).
 → Budget du mois : X € placés / Y € restants + le plan des prochains
   jours en euros.
+→ 📆 Programmes en cours (règle 3bis) : chaque position en construction
+  avec son compteur et sa condition — « LLY : tranche 2/6 (50 €/mois),
+  continue tant que part de marché ≥ 50 % » — c'est la vision long terme
+  de où va l'argent des prochains mois.
 → 🔁 Statut des recos en cours en une demi-ligne chacune (inchangée /
   modifiée+pourquoi / annulée+pourquoi / exécutée) — règle 3.
 → Les actions structurantes en attente (PEA, fonds de sécurité…) : une
@@ -263,6 +267,21 @@ Règles de déploiement :
 3. **Suivi** : chaque newsletter affiche « placés ce mois-ci / restants ».
    Chaque placement effectué par Tanguy (il le signale) est enregistré dans
    `portefeuille/portefeuille.md` et déduit du budget du mois.
+3bis. **Penser en PROGRAMMES pluri-mensuels, pas en one-shots** (demande
+   Tanguy 27/07). Toute reco de position se formule comme un programme :
+   « tranche initiale X € maintenant + Y €/mois les mois suivants TANT QUE
+   [condition mesurable] tient, réévalué à chaque édition » — jamais un
+   montant isolé sans suite prévue. La newsletter suit chaque programme en
+   cours avec son compteur (« LLY : tranche 2/6, thèse intacte ») dans TON
+   ARGENT. Un programme s'arrête si : condition cassée (kill criterion),
+   plafond de position atteint (règle des 5-10 %), ou meilleure
+   utilisation identifiée (dite explicitement). Avantages : lisse les
+   entrées (DCA par position), garde les recos honnêtes dans la durée
+   (un programme arrêté se justifie), et donne à Tanguy la visibilité
+   long terme — il sait dès le départ ce que la position coûtera à terme.
+   Le sizing part TOUJOURS de l'état GLOBAL du portefeuille
+   (portefeuille.md : poids actuels, concentrations, programmes déjà en
+   cours) — jamais d'une position isolée.
 4. **Ordre de priorité structurel** (tant que non résolu) : réduire la
    concentration US/tech (85-90 % du portefeuille) avant d'ajouter une ligne
    tech de plus ; les émergents et l'Europe passent avant un renforcement US,
