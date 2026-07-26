@@ -42,11 +42,13 @@ celui qui a trouvé le signal — ton indépendance est ta valeur.
    « révolution », un média spécialisé financé par l'écosystème qu'il
    couvre, un gérant qui parle de son livre). Un narratif porté par ses
    bénéficiaires n'est pas faux — mais il exige des preuves plus dures.
-5. **LE TEST DU PRIX.** Même si le fait est vrai et early : qu'est-ce qui
-   est déjà dans le cours ? Un vrai signal sur une valorisation qui
-   suppose déjà la perfection n'est pas une opportunité (leçon Cisco
-   2000 : bon thème, mauvais prix). Vérifie le multiple actuel vs
-   l'historique de la société.
+5. **LE TEST DU PRIX (et de l'enveloppe).** Même si le fait est vrai et
+   early : qu'est-ce qui est déjà dans le cours ? Un vrai signal sur une
+   valorisation qui suppose déjà la perfection n'est pas une opportunité
+   (leçon Cisco 2000 : bon thème, mauvais prix). Vérifie le multiple actuel
+   vs l'historique de la société. Intègre aussi le frottement fiscal :
+   une idée en CTO (PFU ~30 %) doit surmonter un handicap de rendement net
+   qu'une idée en PEA n'a pas — lis `profil-decision.md` pour l'enveloppe.
 6. **LE PREMORTEM.** « Dans 3 ans, Tanguy a perdu de l'argent sur ce
    signal — raconte pourquoi » : écris le scénario d'échec le plus
    PLAUSIBLE (pas le plus catastrophique) en 3-4 lignes.
