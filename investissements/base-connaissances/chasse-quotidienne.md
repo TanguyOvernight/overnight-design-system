@@ -69,15 +69,36 @@ VISIBLE même quand il ne débouche pas.
 > disent les shorts ? (3) Kill criteria mesurables si achat. (4) Verdict
 > /10 et sizing selon regles-vente-sizing.md. »
 
+## Le pipeline à trois étages (mis à jour 27/07 — agents dédiés)
+
+**Étage 1 — DÉTECTION** : agent `chasseur-pepites` (défini dans
+`.claude/agents/chasseur-pepites.md`, Charte 15 règles). Trouve les
+signaux early, les source, les étiquette.
+
+**Étage 2 — RÉFUTATION** : agent `avocat-diable`
+(`.claude/agents/avocat-diable.md`). Reçoit chaque signal solide du
+Chasseur SANS son contexte (indépendance volontaire) et tente de le
+détruire : re-vérification indépendante des faits, test « déjà couru »,
+meilleure thèse inverse, incitations, test du prix, premortem. Verdict :
+CONFIRMÉ / AFFAIBLI / RÉFUTÉ + probabilité.
+
+**Étage 3 — ANALYSE** : la session principale passe les signaux CONFIRMÉS
+(et les AFFAIBLIS qui le méritent) à la grille /10 → newsletter.
+Les RÉFUTÉS sont journalisés avec le fait tueur (traçabilité).
+
+⚠️ Si les agents personnalisés ne sont pas chargés dans la session
+(erreur « agent type not found ») : utiliser general-purpose en collant le
+contenu du fichier de définition en préambule du prompt.
+
 ## Règles de la chasse
 
 1. **La rareté fait le signal** : 0 pépite trouvée = le dire ; ne jamais
    forcer. Mais chaque semaine doit produire ≥ 1 candidate JAMAIS évoquée
    (règle de sang neuf).
-2. **Deux étages obligatoires** : un signal presse n'entre JAMAIS
-   directement en newsletter — il passe d'abord la contre-analyse (le jour
-   même si le temps le permet, sinon le lendemain). Le signal se raconte
-   (« détecté hier, à l'étude »), la reco attend la grille.
+2. **Trois étages obligatoires** (ci-dessus) : un signal presse n'entre
+   JAMAIS en newsletter sans être passé par l'Avocat du Diable. Le signal
+   frais se raconte (« détecté, à l'étude — verdict demain »), la reco
+   attend le verdict + la grille.
 3. **Les grandes entreprises comptent autant que les petites** : « être au
    bon moment au bon endroit » vaut pour un géant en promo injustifiée
    (le setup MSFT) autant que pour une small inconnue. La grille est la
