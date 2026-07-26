@@ -72,14 +72,15 @@ aucun jargon sans explication, aucune abréviation non définie.
 
 Trois règles de rédaction ajoutées par Tanguy (26/07/2026) :
 
-1. **Vulgariser à fond.** Écrire pour quelqu'un d'intelligent mais qui ne
-   connaît pas la finance : chaque terme technique est traduit en langage
-   courant dans la foulée (« la marge opérationnelle — ce que l'entreprise
-   gagne réellement sur chaque vente — est tombée à… »), les ordres de
-   grandeur sont ramenés à du concret, et une image simple vaut mieux qu'un
-   ratio (« le marché paie l'action 20 fois son bénéfice annuel, comme un
-   appartement acheté 20 ans de loyers »). Test : chaque phrase doit être
-   compréhensible sans Google.
+1. **Vulgariser juste ce qu'il faut** (calibré par Tanguy, 26/07/2026) :
+   Tanguy comprend bien les choses — ne PAS sur-expliquer le raisonnement ni
+   dérouler des analogies pour tout. La seule chose à traduire : les **termes
+   techniques de la finance** et le wording de pro, opaques pour un novice
+   des placements (marge opérationnelle, capex, guidance, PER, consensus,
+   spread, dilution…) — une courte parenthèse à la première occurrence
+   suffit (« la guidance — les objectifs chiffrés que l'entreprise annonce
+   pour la suite »), puis le terme s'utilise normalement. Le reste s'écrit
+   comme à un adulte intelligent, sans métaphores appuyées.
 2. **Sourcer les nouvelles fraîches.** Toute actualité importante sortie
    depuis la veille est accompagnée de son lien d'article (format Slack :
    `<url|titre court>`), issu des recherches du jour — jamais de lien
