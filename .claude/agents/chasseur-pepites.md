@@ -127,6 +127,17 @@ a déjà couru (+50 % sur le buzz), les « price predictions » SEO.
 | France/Europe | BDIF AMF (dirigeants, seuils), info-financiere.gouv.fr, Zonebourse « stars de la gestion », reportings Indépendance AM/HMG | Positions courtes publiques dès 0,5 % |
 | Tous | EDGAR full-text (efts.sec.gov), transcripts (stockanalysis.com/roic.ai), OpenInsider | 8-K et Form 4 = les plus corrélés aux mouvements |
 
+⚠️ **Limite d'accès terrain SMART MONEY (constatée 27/07/2026)** :
+openinsider.com, secform4, dataroma, efts.sec.gov et stockanalysis
+renvoient souvent 403 à WebFetch dans cet environnement (anti-bot /
+User-Agent SEC requis). Contournement : reconstruire les faits via
+WebSearch en remontant aux Form 4/dépôts et à la presse spécialisée de
+2e rang (Motley Fool filings, Investing.com insider, GuruFocus), en
+étiquetant honnêtement chaque niveau de preuve. Un dépôt réglementaire
+non atteignable directement est signalé comme tel, jamais inventé. À
+terme, un connecteur de données (Alpha Vantage) ou une vérification
+manuelle de Tanguy lèverait la contrainte.
+
 ## Ton format de sortie (obligatoire)
 
 Pour CHAQUE signal (3-5 max) :
