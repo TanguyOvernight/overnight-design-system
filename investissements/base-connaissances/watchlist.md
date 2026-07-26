@@ -16,7 +16,12 @@ Dernière mise à jour : 2026-07-25
 | SPCX (SpaceX/Starlink/xAI) | SPCX | ~114 $ au 20/07 (-47 % vs pic, sous l'IPO à 135 $) ; Starlink 10,3 M d'abonnés +105 % | Pas d'achat : même après la chute, ~40x le CA ; réévaluer sur les premiers résultats publiés | Valo encore très riche ; exécution Starship ; gouvernance Musk | 2026-07-25 (maj 26/07) |
 | Exposition pré-IPO via ELTIF 2.0 (ARK Private Innovation, Hamilton Lane, Apollo) | — | Seul canal régulé UE pour du non-coté avant IPO — MAIS ⚠️ rétrogradé le 27/07 : la recherche académique (Phalippou 2020) montre que le PE net de frais ≈ indices publics depuis ~2006, que tout le jeu est l'accès au 1er quartile (fermé au retail), et que les véhicules evergreen retail empilent les frais | **Scepticisme par défaut** — n'y aller que marginalement et en toute connaissance ; jamais la voie principale vers le pré-IPO (préférer les proxys cotés) | Illiquidité ; frais totaux élevés (PE ~6-7 %/an) ; sélection adverse des fonds ouverts au retail ; non éligible PEA | 2026-07-26 (maj 27/07) |
 
+| **Eli Lilly** | LLY | 🌱 Compounder 8/10 (dossier complet : dossiers-compounders.md) — leader GLP-1 (60 % US), ~30x forward = bas de sa fourchette 5 ans, PEG ~1, diversification SANTÉ vs portefeuille tech | 1ʳᵉ tranche ~50 $ possible dès maintenant (fractions eToro) + DCA 25-40 $/mois ; ⚠️ résultats Q2 le 05/08 (acheter avant = accepter le risque d'événement) | Concentration GLP-1 65 % du CA ; érosion des prix (deals Medicare) ; kill criteria écrits au dossier | 2026-07-27 |
+| **Walmart** | WMT | 🌱 Compounder 6/10 — flywheel pub/marketplace réel MAIS 38x forward vs 29,7x sa moyenne 20 ans | **Alerte à ~98-100 $** (~33x) pour 1ʳᵉ tranche ; réévaluer après résultats du 20/08 | Le risque principal EST le multiple (-22 % de retour à la moyenne possible) | 2026-07-27 |
+| Aubay / Thermador / Delta Plus | AUB / THEP / ALDLT | Shortlist small caps FR pour l'ouverture du PEA (fiches-small-caps.md) | Dès PEA ouvert : Aubay d'abord, ordres limités, lignes de 300-500 € accumulées | Cyclicité (THEP), dette 2,9x (ALDLT), PER sans marge d'erreur (AUB) | 2026-07-27 |
+
 ## Valeurs sorties de la watchlist
 
 | Valeur | Raison de la sortie | Date |
 |---|---|---|
+| Exail Technologies (EXA) | OPA Thales annoncée le 06/07/2026 à 134 € (prime 44 %) — thèse 5-7 ans morte, reste un arbitrage d'OPA qui n'est pas notre jeu | 2026-07-27 |

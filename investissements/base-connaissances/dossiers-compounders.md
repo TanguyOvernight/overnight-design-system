@@ -1,0 +1,75 @@
+# Dossiers compounders — analyses complètes
+
+Compilé le 2026-07-27. Grille : qualité /3 · prix /3 · catalyseur /2 ·
+risque /2. Données du jour — rafraîchir les cours avant toute exécution.
+
+## 🌱 ELI LILLY (LLY) — 8/10 → PREMIÈRE RECO COMPOUNDER
+
+*Cours ~1 190 $, capi ~1,15 T$, P/E forward ~30-34x (bas de sa fourchette
+5 ans — le titre a connu 50-80x en 2023-24).*
+
+**La thèse en bref** : leader du plus grand marché pharma de l'histoire
+(GLP-1/obésité, projections 2030 : 40-130 Md$+), part de marché incretin
+**60 % US / 53 % hors US — a dépassé Novo partout en 2026**. Q1 2026 :
+Mounjaro 8,7 Md$ +125 %, guidance relevée à 82-85 Md$. Moat industriel :
+~50 Md$ d'usines US en construction (le goulot du marché est la capacité —
+Lilly l'achète). Pipeline riche : **Foundayo (orforglipron) approuvé le
+01/04/2026** — première pilule GLP-1, 149 $/mois self-pay ; **retatrutide**
+(-22,6 %, dépôt FDA 2027) ; Alzheimer (Kisunla, remternetug).
+
+**Les 6 marqueurs** : tous cochés (ROIC en hausse + runway massif · TAM en
+explosion · plateforme manufacturière+LillyDirect · pricing power de
+portefeuille · optionnalité pipeline · management Ricks exécution parfaite,
+Lilly Endowment ~11 %).
+
+**Reverse DCF** : à ~1 190 $, le prix intègre ~13-15 %/an de croissance du
+FCF sur 10 ans — MOINS que le consensus (+20-25 %/an 2026-2030). La décote
+reflète les risques politiques, pas la croissance. PEG ~1 (vs WMT ~3,5).
+
+**Risques chiffrés** : concentration (Mounjaro+Zepbound = 65 % du CA) ·
+érosion des prix (deal Medicare 245 $/mois, IRA semaglutide -71 %) — la
+croissance doit venir du volume (c'est le cas : +125 %) · concurrence
+(CagriSema inférieur mais lancé ; vague d'oraux vers 2028-30) · brevets
+tirzepatide OK jusqu'à 2036.
+
+**Kill criteria (écrits à l'achat)** :
+1. Part de marché incretin US < 50 % sur 2 trimestres.
+2. Échec/signal de sécurité majeur sur retatrutide ou orforglipron.
+3. Croissance du CA < +15 % en glissement annuel avant 2028.
+
+**Plan** : 1ʳᵉ tranche ~50 $ (5 % du portefeuille, fractions eToro) puis
+DCA 25-40 $/mois sur 6-12 mois en respectant le plafond 5 % au fil de la
+croissance du portefeuille. Balle gardée pour tout -10/-15 % (titre volatil
+autour des readouts). ⚠️ Résultats Q2 le **5 août** — acheter avant =
+accepter le risque d'événement (OK à horizon 7 ans, à dire à Tanguy).
+Bonus diversification : moteur SANTÉ décorrélé du bloc tech/IA actuel.
+
+## 🌱 WALMART (WMT) — 6/10 → WATCHLIST AVEC ALERTE
+
+*Cours ~110-112 $ (-9 % vs pic juin), P/E forward ~37-39x vs moyenne
+20 ans 29,7x.*
+
+**La thèse** : le flywheel tourne réellement — pub 6,4 Md$ +46 % (croît 6×
+plus vite que le retail), pub+abonnements = ~1/3 du profit opérationnel
+déjà, marketplace GMV +30 % depuis 4 trimestres, automatisation (-20 % de
+coût unitaire visé, capex au pic cette année). Profits +19 % vs CA +7 % =
+l'expansion de marge est en marche. Famille Walton ~39-45 % = horizon long.
+
+**Le problème : le prix.** À 38x forward, le marché price ~12-13 %/an de
+profits sur 10 ans sans compression de multiple ; un simple retour à la
+moyenne 20 ans = -22 % de multiple à digérer. PEG ~3,5. Rendement espéré
+à ce prix : ~6-9 %/an — ne bat probablement pas les ETF.
+
+**Kill criteria (si entrée un jour)** : pub < +20 % OU e-commerce < +15 %
+sur 2 trimestres · marge op < 3,8 % en année pleine · comparables US
+< +2 % ×2 avec P/E > 35.
+
+**Plan** : PAS d'achat à 110 $. **Alerte à ~98-100 $ (~33x)** pour une 1ʳᵉ
+tranche. Réévaluer après les résultats du **20 août**. (VTI/SWDA donnent
+déjà ~0,7 % de WMT passivement.)
+
+## Conclusion comparative
+
+LLY d'abord (meilleur rapport qualité/prix + diversification santé), WMT
+en embuscade sur repli. Ni l'un ni l'autre ne justifie d'entorse à la
+règle des 5 % : positions à construire sur 12-18 mois.
