@@ -219,9 +219,18 @@ Brew/Snacks, 26/07/2026) :
 - Détails, chiffres complets et sources : dans le fichier journal du jour,
   pas dans la newsletter.
 
-## Budget mensuel : 500 € (donnée de Tanguy, 25/07/2026)
+## Budget mensuel : 500 € (donnée de Tanguy, 25/07/2026 — mécanique confirmée le 27/07)
 
-Tanguy peut placer **~500 € par mois**. Règles de déploiement :
+Tanguy peut placer **~500 € par mois**. Fonctionnement confirmé par Tanguy :
+**il déclare lui-même chaque investissement effectué** (« j'ai mis X € sur
+Y ») → mise à jour immédiate de portefeuille.md + décompte du budget du
+mois. **Chaque conseil quotidien part du déjà-placé du mois** : ne jamais
+recommander plus que le restant, et adapter le plan à ce qu'il a réellement
+exécuté (même si ce n'était pas la reco). **Période creuse = 0 € placé est
+un choix pleinement valide** — le dire sans détour (« rien ne mérite ton
+argent cette semaine ») ; le non-placé s'ajoute au budget suivant.
+
+Règles de déploiement :
 
 1. **Répartition par défaut** : ~300 € (60 %) sur le cœur de portefeuille
    (ETF larges — idéalement la future poche PEA Europe/monde pour rééquilibrer
