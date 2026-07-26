@@ -5,11 +5,19 @@ B = watchlist · C = écarté. Rafraîchir les chiffres avant tout ordre.
 
 ## Shortlist (top 3 pour l'ouverture du PEA)
 
-1. **Aubay (AUB) — A.** ESN banque/assurance, la meilleure du secteur.
-   CA 2025 +11,4 %, RN record 38,1 M€, trésorerie nette positive,
-   fondateurs ~46 %, guidance 2026 : +12-15 %. PER ~18,6x — on paie la
-   qualité, mais détenue par Indépendance AM ET suivie par HMG. Capi
-   ~700 M€, la plus liquide du trio.
+1. **Aubay (AUB) — A→B (rétrogradé le 27/07 après réfutation).** ESN
+   banque/assurance, la meilleure du secteur (organique +11-12 % vs Sopra
+   +3 %, Capgemini ~2-4 %), RN record 38,1 M€, cash net 56 M€, fondateurs
+   ~46 %. **MAIS l'Avocat du Diable (verdict AFFAIBLI, 35 %) a réfuté la
+   thèse du relèvement de guidance du 23/07** : accélération publique
+   depuis oct. 2025, relèvement mécanique (S1 réalisé), management guide
+   une DÉCÉLÉRATION au S2 (+3-6 %), PER forward ~15-16x = haut de fourchette
+   (pas décoté), objectif 66 € = recherche probablement sponsorisée
+   (Invest Securities seul). ⚠️ Menace structurelle : les agents IA
+   attaquent la prestation code/test bancaire (Morgan Stanley : « piège à
+   valeur »). Reste une société de qualité, mais ce n'est PAS une
+   inefficience de prix. À reconsidérer sur vraie décote (< ~13x) ou marge
+   S1 confirmée ≥ 9 %. Ne pas en faire la 1ʳᵉ pépite du PEA.
 2. **Thermador (THEP) — A.** Distribution B2B de fluides, gouvernance
    culte, quasi zéro dette (41 M€ vs 387 M€ de FP), dividende 2,8 %.
    **T1 2026 : +9,6 % — le rebond du cycle bâtiment se confirme** à

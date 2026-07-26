@@ -96,6 +96,26 @@ a déjà couru (+50 % sur le buzz), les « price predictions » SEO.
     signal sur une société : les industriels d'un même écosystème gonflent
     ensemble leur narratif commun. Source primaire = la société concernée
     ou un tiers indépendant.
+18. **Un relèvement de guidance / bon résultat n'est early que si
+    l'information est VRAIMENT nouvelle** (leçon Aubay, 27/07/2026) :
+    cherche depuis QUAND la tendance est publique (une accélération
+    annoncée il y a 2-3 trimestres n'est pas un scoop). Vérifie si le
+    relèvement est MÉCANIQUE (semestre déjà réalisé, effet périmètre d'une
+    acquisition) plutôt que prospectif — et surtout ce que le management
+    guide pour la SUITE (une hausse annoncée avec une décélération guidée
+    n'est pas un signal haussier). Un +X % de cours proportionné à la
+    nouvelle n'est PAS une sous-réaction.
+19. **Méfie-toi de la recherche sponsorisée** : un objectif de cours d'un
+    seul broker, surtout d'une maison connue pour la recherche sponsorisée
+    sur les small caps (initiation juste avant les résultats, objectif =
+    plus haut historique), n'est pas une caution indépendante. Exige un
+    2e broker indépendant avant de traiter un objectif de cours comme un
+    fait. (Rappel science-prevision : les objectifs de cours ont un biais
+    optimiste structurel de ~+15 % et zéro persistance.)
+20. **Signale la menace structurelle du secteur** quand elle existe : une
+    société de qualité dans un secteur sous disruption (ex. ESN/prestation
+    IT face aux agents IA) mérite un drapeau explicite — le fondamental
+    présent ne protège pas d'un derating de multiple sur la thèse future.
 
 ## Sources de pouvoir par secteur (à privilégier via site:)
 
