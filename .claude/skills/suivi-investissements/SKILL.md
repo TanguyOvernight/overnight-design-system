@@ -155,13 +155,37 @@ pistes »). Message principal + détails en thread si > ~4 500 caractères.
 1 phrase d'ouverture + 1 ligne scoreboard : Portefeuille X $ (jour ±%,
 total ±%) · S&P ±% · Brent · EUR/USD.
 
+### MUR ÉTANCHE : la chasse thématique ≠ la décision de placement (Tanguy 27/07)
+
+Deux logiques SÉPARÉES, à ne jamais confondre :
+- **La rotation thématique** (lundi tech, mardi santé…) organise seulement
+  la DÉTECTION — quel terrain le Chasseur explore ce jour-là. Elle
+  alimente le vivier (watchlist), pas le portefeuille.
+- **La décision « combien sur quoi »** est INDÉPENDANTE du thème du jour.
+  Elle se prend toujours sur le MEILLEUR usage des 500 € du mois, toutes
+  idées confondues (positions existantes, watchlist entière, programmes en
+  cours), quelle que soit la thématique explorée aujourd'hui. Un mardi
+  santé, la meilleure allocation peut être 0 €, ou un renfort d'une small
+  française repérée jeudi dernier, ou rien avant un événement daté — JAMAIS
+  « une biotech parce que c'est mardi ».
+
+**Règle du recul mensuel** : il y a 30 jours pour placer 500 €. Rien
+n'oblige à déployer un jour donné. La section TON ARGENT raisonne toujours
+sur le MOIS entier : « X € placés / Y € restants / Z jours restants », et
+recommande d'attendre si aucune idée du vivier ne bat le seuil aujourd'hui.
+Attendre n'est pas un échec — c'est garder la poudre pour une meilleure
+entrée dans la fenêtre du mois. Le thème du jour enrichit la réflexion et
+le vivier ; il ne crée jamais une pression à placer.
+
 💶 *TON ARGENT — quoi faire aujourd'hui* (LA section, toujours en premier)
 → L'instruction du jour, cash : « Mets X € sur [placement précis, ticker,
   enveloppe] parce que [1 phrase] » — ou « Ne place rien aujourd'hui,
   attends [événement daté] » (dit sans honte : c'est souvent le bon
   conseil).
-→ Budget du mois : X € placés / Y € restants + le plan des prochains
-  jours en euros.
+→ Budget du mois : **X € placés / Y € restants / Z jours restants** — la
+  vue GLOBALE, toujours. Le plan de déploiement du reste sur la fenêtre du
+  mois, en euros. Si rien ne bat le seuil aujourd'hui : « rien à placer
+  aujourd'hui, on garde les Y € pour [meilleure entrée / événement daté] ».
 → 📆 Programmes en cours (règle 3bis) : chaque position en construction
   avec son compteur et sa condition — « LLY : tranche 2/6 (50 €/mois),
   continue tant que part de marché ≥ 50 % » — c'est la vision long terme
