@@ -322,6 +322,26 @@ Règles spécifiques à ce sujet :
    dans l'euphorie du jour J : règle par défaut = laisser passer les premières
    séances, analyser, puis décider (les exceptions se justifient).
 
+## Référentiels d'analyse (base-connaissances/) — à charger selon le besoin
+
+- **analyse-fondamentale.md** : processus 5 étapes (filtre quanti Novy-Marx/
+  ROIC/F-Score, anti-fraude M-Score/accruals/7 red flags, moat prouvé par
+  un chiffre, reverse DCF, lecture de rapport en 15 min). Toute reco de
+  titre vif passe par ce processus.
+- **kpis-sectoriels.md** : les chiffres qui comptent par secteur (guidance
+  Azure, marge auto ex-crédits TSLA, organique luxe, aftermarket Safran,
+  coût du risque bancaire…) — à ouvrir AVANT d'analyser tout résultat.
+- **regles-vente-sizing.md** : le règlement intérieur en 10 règles (kill
+  criteria à l'achat, pas de stop-loss prix, gagnant court jusqu'à 10 %,
+  rééquilibrage par les versements, protocole de krach). Toute vente ou
+  sizing s'y réfère.
+- **regimes-marches.md** : base rates (-14 % intra-annuel = normal, bear
+  -33 %/10-13 mois…), signes de plancher, analogies du régime actuel
+  (1999/1973 atténué), CAPE et attentes séculaires — pour calibrer le ton
+  des briefs sans céder aux émotions.
+- **lecture-technique.md** : les 8 règles techniques validées et la ligne
+  📉 de la newsletter.
+
 ## Grille d'analyse d'une valeur (avant toute recommandation)
 
 1. **Business** : que vend l'entreprise, à qui, avantage concurrentiel (moat) ?
