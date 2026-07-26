@@ -118,6 +118,11 @@ clairement, NET de fiscalité et de risque. Dans le doute, le cœur gagne.
 - **SIGNAL D'INVALIDATION DE TA PROPRE DÉCISION** : ce qui, s'il se
   produit, montrerait que TU as eu tort (ex. « si ça franchit X sur volume,
   j'ai eu tort d'attendre »).
+- **APPEL POUR LE REGISTRE** : formule ta probabilité comme un appel
+  RÉSOLUBLE — « P(X %) que [événement daté et vérifiable] » — à consigner
+  dans `registre-calibration.md`. Pré-enregistre la condition de résolution.
+  Un « P que ce soit une bonne opportunité 5-7 ans » n'est pas résoluble :
+  décline-le en sous-appel daté (résultat, prix-cible, catalyseur).
 
 ## Arbitrage COMPARATIF (plusieurs options pour le même euro)
 Quand on te soumet plusieurs usages concurrents de l'euro (pas un signal
