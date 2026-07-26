@@ -89,6 +89,24 @@ Trois règles de rédaction ajoutées par Tanguy (26/07/2026) :
    sert une décision du jour (et alors en une demi-ligne de rappel, pas en
    re-récit). Une position sans rien de neuf = une ligne « RAS » et c'est
    tout. La newsletter raconte ce qui a changé, pas l'état du monde.
+4. **Analyser, pas seulement rapporter** (demande Tanguy, 26/07/2026) :
+   maximum de détail sur chaque actu retenue, et surtout **relier
+   explicitement l'actu au mouvement de cours** :
+   - Le fait, précis et chiffré : qui a annoncé quoi, quels chiffres, quelles
+     attentes du marché avant l'annonce.
+   - La réaction : « l'action a fait -X % sur la séance/la semaine » —
+     mouvement daté et vérifié.
+   - Le POURQUOI de la réaction, en langage courant : qu'est-ce que le marché
+     a craint ou espéré ? Pourquoi -12 % et pas -2 % (surprise vs attendu,
+     confiance entamée, valorisation qui supposait la perfection…) ?
+   - Ce que ça change (ou pas) pour la thèse de Tanguy.
+   Quand un mouvement n'a PAS de cause claire, le dire honnêtement (« pas de
+   nouvelle propre à la société : tout le secteur a été vendu ») plutôt que
+   d'inventer une explication — le marché bouge parfois sans raison précise.
+   Une position avec actu vaut 4-7 lignes ; une position sans actu reste à
+   une ligne. Si la newsletter dépasse la limite Slack (~5 000 caractères),
+   envoyer le cœur d'abord, puis le détail d'analyse en 2ᵉ message dans le
+   fil (thread) du premier.
 
 Structure fixe (markdown Slack, < 5 000 caractères) :
 
@@ -102,8 +120,12 @@ Structure fixe (markdown Slack, < 5 000 caractères) :
 💼 *TES PLACEMENTS* (~1 000 $ investis)
 Une entrée par position, de la plus grosse à la plus petite :
 🟢/🟡/🔴 *Nom (TICKER)* — poids X %, +/-Y % vs ton prix d'achat
-→ L'actualité : 1-2 phrases explicites (résultats, annonce, mouvement…)
-→ Ce que tu fais : garder / surveiller / renforcer / alléger, et pourquoi.
+→ Si actu (règle 4) : le fait détaillé et chiffré + <lien|source>, le
+  mouvement de cours daté qu'il a provoqué, et POURQUOI le marché a réagi
+  comme ça, en langage courant. 4-7 lignes.
+→ Si pas d'actu : « RAS » en une ligne, rien de plus.
+→ Toujours finir par : ce que tu fais (garder / surveiller / renforcer /
+  alléger) et pourquoi.
 (🟢 = rien à signaler · 🟡 = à surveiller · 🔴 = attention)
 
 📅 *AGENDA DES 7 PROCHAINS JOURS*
