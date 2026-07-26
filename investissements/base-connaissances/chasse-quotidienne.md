@@ -82,9 +82,20 @@ détruire : re-vérification indépendante des faits, test « déjà couru »,
 meilleure thèse inverse, incitations, test du prix, premortem. Verdict :
 CONFIRMÉ / AFFAIBLI / RÉFUTÉ + probabilité.
 
-**Étage 3 — ANALYSE** : la session principale passe les signaux CONFIRMÉS
-(et les AFFAIBLIS qui le méritent) à la grille /10 → newsletter.
-Les RÉFUTÉS sont journalisés avec le fait tueur (traçabilité).
+**Étage 3 — ARBITRAGE** : agent `arbitre-investissement`
+(`.claude/agents/arbitre-investissement.md`). Reçoit le dossier HAUSSIER
+(Chasseur) ET le dossier BAISSIER (Avocat) sur les signaux CONFIRMÉS et
+AFFAIBLIS, les pèse impartialement, applique la grille + le sizing depuis
+l'état GLOBAL du portefeuille, et rend la décision : ACHAT (montant +
+programme) / SURVEILLANCE (déclencheur précis) / PASSE. C'est lui qui
+formalise ce que la session principale faisait implicitement — un juge
+neutre, ni chasseur ni avocat, pour éviter que l'Avocat ait le dernier
+mot par construction. Les RÉFUTÉS ne vont pas à l'arbitrage (morts,
+journalisés avec le fait tueur).
+
+La session principale reprend la décision de l'Arbitre pour la
+newsletter (elle peut la nuancer mais journalise tout désaccord).
+Dialectique : Chasseur (thèse) → Avocat (antithèse) → Arbitre (synthèse).
 
 ⚠️ Si les agents personnalisés ne sont pas chargés dans la session
 (erreur « agent type not found ») : utiliser general-purpose en collant le
