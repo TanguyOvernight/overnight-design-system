@@ -439,6 +439,20 @@ Règles spécifiques à ce sujet :
   factoriels seulement, P/B à croiser avec les intangibles, interdictions
   (options/0DTE, trading d'attention, ML maison), scepticisme ELTIF,
   value internationale = l'argument séculaire.
+- **registre-calibration.md** : le track-record MESURABLE du comité (Brier +
+  décomposition de Murphy, courbe de calibration, Brier Skill Score, seuils
+  d'échantillon 30/50/100, table de rétroaction symptôme→correction pour les
+  3 agents). Chaque appel de la newsletter est un appel résoluble consigné ici.
+- **outils-fiscaux-comportementaux.md** : les leviers de rendement NET
+  sous-exploités — automatisation DCA + journal (le gain le plus sûr, contre
+  le behavior gap), prise de date assurance-vie (100 € pour lancer les 8 ans),
+  rééquilibrage par cash-flow (évite l'impôt CTO), règle de change (actions
+  NON couvertes), ETF factoriels en satellite sans factor-timing, outils FR
+  gratuits (Curvo, justETF). Mythes écartés : hedge de change systématique,
+  factor-timing, rééquilibrage calendaire serré.
+- **fiscalite.md** : flat tax CTO, obligations 3916-bis, option barème
+  (revenu ~0 → ~17,2 %), et récolte de moins-values CTO (report 10 ans,
+  case 3VH, avantage France = pas de wash-sale).
 
 ## Grille d'analyse d'une valeur (avant toute recommandation)
 

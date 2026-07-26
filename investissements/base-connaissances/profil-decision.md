@@ -56,6 +56,25 @@ Séquencement des chantiers : ① PEA (cœur ETF World) → ② or en CTO en DCA
 - **Or (CTO, dès CTO actif)** : cible 6 % sur 18 mois, ~150 €/trimestre.
 - **Cœur WPEA (PEA, dès ouverture)** : ~300 €/mois, le socle.
 - **Aubay** : SURVEILLANCE (achat si ≤ 50 € ou scare optique T3).
+- **Assurance-vie — prise de date (nouveau, 27/07)** : ouvrir une AV en ligne
+  avec ~100 € au plus tôt, uniquement pour lancer l'horloge des 8 ans
+  (abattement 4 600 €/an ensuite + transmission). NE PAS y loger les ETF
+  (frais > PEA) — l'AV = prise de date + fonds euros tampon. Option gratuite.
+
+## Règles de mise en œuvre validées (sprint 27/07)
+- **Change EUR/USD** : la poche ACTIONS reste NON couverte (le hedge a une
+  espérance nulle et coûte le carry ; le risque actions domine). Ne se
+  discute que sur l'or USD ou une poche à échéance courte. Une contrainte
+  de change n'est jamais un motif de reco.
+- **Rééquilibrage par cash-flow d'abord** : diriger le versement mensuel
+  vers la ligne/classe sous-pondérée ; ne JAMAIS vendre en CTO pour
+  rééquilibrer tant que le flux suffit (évite l'impôt). Bandes (5/25) en
+  second recours ; jamais de calendrier serré.
+- **Facteurs** : autorisés en satellite via un ETF multifactoriel
+  (momentum+quality), rééquilibrés mécaniquement. Factor-timing INTERDIT.
+- **Récolte de moins-values CTO** : à activer les années où une plus-value
+  CTO est réalisée (report 10 ans, pas de wash-sale en France) — voir
+  `fiscalite.md`.
 
 ## Règles de sizing (regles-vente-sizing.md — VALIDÉES)
 Cœur/satellite 75-85 / 15-25 · ≤ 5 % par titre vif à l'achat · gagnant court

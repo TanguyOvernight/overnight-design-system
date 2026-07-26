@@ -70,6 +70,31 @@ dès qu'il y a eu une vente ou un dividende dans l'année.
   corriger, il ira dans la déclaration 2027 ; ouvert en 2025 ou avant →
   corriger en août.
 
+## Récolte des moins-values (tax-loss harvesting) — spécifique CTO
+
+Levier de rendement NET propre au CTO (le PEA a sa propre mécanique interne
+de pertes ; l'AV aussi). Manœuvre : en fin d'année, **vendre une ligne en
+perte pour matérialiser la moins-value**, qui vient neutraliser des
+plus-values réalisées la même année (impôt en moins). Mécanique :
+- Les moins-values s'imputent d'abord sur les **plus-values de MÊME NATURE
+  de l'année** ; le reliquat est **reportable 10 ans** (compté depuis
+  l'année de RÉALISATION, pas de déclaration). Elles ne s'imputent **ni sur
+  le revenu, ni sur les dividendes**.
+- Déclaration : **formulaire 2074** (détail des cessions) + **2074-CMV**
+  pour suivre le stock de moins-values reportables, report en **case 3VH**
+  de la 2042. Tenir soi-même le compteur du stock reportable année par année.
+- **L'avantage France : PAS de règle de wash-sale.** On peut vendre pour
+  loger la moins-value et **racheter immédiatement le même titre/ETF** sans
+  délai de carence — l'exposition économique est conservée, seule la base
+  fiscale est « rafraîchie ». (Rester cohérent économiquement : la manœuvre
+  doit avoir une logique de portefeuille, pas seulement fiscale.)
+- **Pour Tanguy** : à réserver aux années où une plus-value CTO est
+  réalisée. Tant que rien n'est vendu avec gain, il n'y a rien à
+  neutraliser — la récolte n'a d'intérêt que couplée à une plus-value de
+  même année (ou pour constituer un stock reportable avant une grosse
+  cession anticipée). Combinée à l'option barème (revenu ~0 → ~17,2 %),
+  l'intérêt de la récolte est moindre les années à TMI basse : à arbitrer.
+
 ## Comparaison avec un PEA (pour les prochains apports)
 
 | | eToro (CTO) | PEA |

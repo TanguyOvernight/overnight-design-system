@@ -21,9 +21,80 @@ appels » du samedi lit ce registre.
   sectoriel, biais optimiste sur un type de signal).
 
 ## Format d'une ligne
-`ID | date | agent | affaire | AFFIRMATION | P(%) | condition de résolution (datée) | statut | issue | note Brier`
+`ID | date | agent | classe_réf | enveloppe | affaire | AFFIRMATION | P(%) | condition de résolution (datée) | statut | issue | note Brier`
 (statut : ⏳ ouvert / ✅ résolu-juste / ❌ résolu-faux · Brier = (P−issue)²,
 issue = 1 si réalisé, 0 sinon ; plus bas = mieux)
+
+**`classe_réf`** (bucketing par classe de référence — indispensable au
+diagnostic) : étiquette chaque appel (ex. `ETF-cœur` / `action-US` /
+`small-cap-EU` / `or` / `macro` / `biotech-binaire`) ET son horizon
+(`<1 an` / `pluriannuel`). On ne score jamais tout en vrac : le Brier PAR
+CLASSE est ce qui révèle « bon sur les ETF larges et la macro, nul sur le
+stock-picking US ». C'est ainsi que le comité apprend OÙ il n'a pas d'edge.
+
+## Comment on lit le score (Brier + décomposition)
+- **Brier global** = moyenne des (P−issue)². Échelle : **0 = parfait**,
+  **0,25 = pile ou face** (0,5 systématique), **1 = confiant ET faux**.
+- **Toujours comparer à un repère** (climatologie) : le Brier qu'on aurait
+  eu en prédisant bêtement le taux de base de la période. Le score seul ne
+  dit rien — c'est l'ÉCART au repère qui mesure la compétence.
+  **Brier Skill Score = 1 − Brier / Brier_repère** : positif = on bat le
+  taux de base ; négatif = on fait pire que de ne rien savoir.
+- **Décomposition de Murphy** : `Brier = Fiabilité − Résolution +
+  Incertitude`.
+  - **Fiabilité / calibration** (bas = mieux) : quand on dit « 70 % », ça
+    arrive-t-il ~70 % du temps ?
+  - **Résolution / discrimination** (haut = mieux) : donne-t-on des probas
+    DIFFÉRENTES aux cas qui divergent, ou colle-t-on tout autour de 50 % ?
+    C'est la vraie valeur ajoutée. **On peut être parfaitement calibré et
+    inutile** (toujours annoncer le taux de base) → il faut calibration ET
+    résolution.
+- **Courbe de calibration** (reliability diagram) : par tranche de proba
+  (0-10 %, 10-20 %…), tracer proba moyenne annoncée (x) vs fréquence
+  réelle (y). Sur la diagonale = parfait ; **sous** = SUR-confiance (on dit
+  90 %, ça arrive 80 %) ; **au-dessus** = SOUS-confiance.
+
+## Exemple chiffré (reproductible, sans stats) — 10 appels résolus
+| # | classe | P | issue | (P−issue)² |
+|---|---|---|---|---|
+| 1 | ETF | 0,70 | 1 | 0,090 |
+| 2 | action-US | 0,60 | 0 | 0,360 |
+| 3 | ETF | 0,80 | 1 | 0,040 |
+| 4 | or | 0,90 | 1 | 0,010 |
+| 5 | action-US | 0,55 | 0 | 0,3025 |
+| 6 | action-US | 0,40 | 0 | 0,160 |
+| 7 | ETF | 0,75 | 1 | 0,0625 |
+| 8 | action-US | 0,65 | 1 | 0,1225 |
+| 9 | action-US | 0,50 | 0 | 0,250 |
+| 10 | or | 0,85 | 1 | 0,0225 |
+
+Somme = 1,42 → **Brier = 0,142**. Repères : pile ou face = 0,25 ;
+climatologie (taux de base 6/10 = 0,6) = 0,24 →
+**Brier Skill Score = 1 − 0,142/0,24 = +0,41** (bat nettement le taux de
+base). Mini-courbe de calibration : tranche 0,40-0,59 → 0/3 réalisés
+(SUR-estime) ; 0,60-0,74 → 2/3 (bien calibré) ; 0,75-0,90 → 4/4
+(SOUS-confiant, on gagnerait à oser plus haut).
+
+## Combien d'appels avant de conclure ?
+L'intervalle de confiance du Brier est LARGE en petit échantillon (un
+événement rare demande des centaines de paires). Repères pratiques :
+- **< 20-30 appels** : anecdotique, on trace, on ne conclut RIEN.
+- **~30-50 résolus** : première lecture grossière du Brier global.
+- **~100+, avec ≥ 10-15 par tranche** : la courbe de calibration devient
+  interprétable. Toujours regarder PAR classe (100 globaux mais 8 sur l'or
+  = zéro conclusion sur l'or).
+
+## Boucle de rétroaction : du registre vers le cerveau des 3 agents
+On change les PROCESS/prompts selon la calibration mesurée, jamais selon le
+dernier trade gagné ou perdu.
+| Symptôme mesuré | Correction sur le système |
+|---|---|
+| **Sur-confiance** (points sous la diagonale — le cas le plus fréquent, humain ET LLM) | Facteur de rétraction : le Juge pousse toute proba vers 0,5 (ex. P' = 0,5 + 0,8·(P−0,5)). Durcir le mandat de l'Avocat (taux de base contradictoires obligatoires). |
+| **Sous-confiance** (points au-dessus) | Autoriser le Juge à durcir les convictions fortes quand la thèse a survécu à l'Avocat. |
+| **Résolution faible** (tout massé à 0,5-0,6) | Interdire les probas 0,45-0,55 sans justification ; exiger une fourchette de scénarios — le comité doit OSER trancher. |
+| **Angle mort** (Brier mauvais sur une `classe_réf`) | Réduire la taille des positions de cette classe, exiger une source primaire de plus, déléguer moins au stock-picking et renforcer le cœur ETF. |
+| **Kill criteria jamais déclenchés/respectés** | Bug de discipline : alerte automatique sur les `kill_criteria` échus. |
+| **Resulting détecté** (post-mortem qui juge au résultat) | Réinjecter dans le prompt de revue : « évalue la décision avec l'info de l'ÉPOQUE uniquement ». |
 
 ## Appels ouverts (semaine du 27/07/2026)
 
