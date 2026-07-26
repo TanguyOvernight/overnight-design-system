@@ -70,6 +70,26 @@ canal Slack privé `#brief-investissements` (ID : `C0BKM2ACTUK`)**. Tanguy lit
 sur téléphone : pas de tableaux larges, tout s'explique en toutes lettres —
 aucun jargon sans explication, aucune abréviation non définie.
 
+Trois règles de rédaction ajoutées par Tanguy (26/07/2026) :
+
+1. **Vulgariser à fond.** Écrire pour quelqu'un d'intelligent mais qui ne
+   connaît pas la finance : chaque terme technique est traduit en langage
+   courant dans la foulée (« la marge opérationnelle — ce que l'entreprise
+   gagne réellement sur chaque vente — est tombée à… »), les ordres de
+   grandeur sont ramenés à du concret, et une image simple vaut mieux qu'un
+   ratio (« le marché paie l'action 20 fois son bénéfice annuel, comme un
+   appartement acheté 20 ans de loyers »). Test : chaque phrase doit être
+   compréhensible sans Google.
+2. **Sourcer les nouvelles fraîches.** Toute actualité importante sortie
+   depuis la veille est accompagnée de son lien d'article (format Slack :
+   `<url|titre court>`), issu des recherches du jour — jamais de lien
+   recyclé ou générique. 1 lien par info, sur les 3-6 infos qui comptent.
+3. **Zéro répétition.** Avant de rédiger, relire le journal de la veille :
+   une actu déjà racontée hier ne revient QUE si elle a évolué ou si elle
+   sert une décision du jour (et alors en une demi-ligne de rappel, pas en
+   re-récit). Une position sans rien de neuf = une ligne « RAS » et c'est
+   tout. La newsletter raconte ce qui a changé, pas l'état du monde.
+
 Structure fixe (markdown Slack, < 5 000 caractères) :
 
 ```
@@ -90,11 +110,26 @@ Une entrée par position, de la plus grosse à la plus petite :
 JJ/MM — événement — pourquoi ça concerne TON argent (croiser avec
 base-connaissances/radar-catalyseurs.md).
 
-💡 *OÙ INVESTIR ENSUITE* (max 2-3 idées, critères du Radar d'opportunités)
+💡 *OÙ INVESTIR ENSUITE* — deux familles, bien séparées :
+
+🚀 *Fort potentiel* (max 1-2 — plus risqué, peut rapporter gros)
 *Nom (TICKER) — cours actuel vérifié*
-→ Pourquoi c'est intéressant maintenant (avec l'actu qui le montre)
-→ Le risque principal, en une ligne honnête
-→ Le montant suggéré si tu y vas, en euros
+→ Pourquoi ça peut beaucoup monter (la thèse en langage courant + le lien
+  vers l'actu fraîche qui l'appuie)
+→ Ce que tu peux perdre si ça tourne mal, dit franchement
+→ Le montant suggéré en euros (petit : c'est la poche risquée)
+
+🛡️ *Valeur sûre en promo* (max 1-2 — du solide, temporairement bradé)
+*Nom (TICKER) — cours actuel vérifié*
+→ Pourquoi c'est du solide (entreprise/ETF de qualité, activité qui tourne)
+→ Pourquoi c'est moins cher en ce moment (la raison de la baisse, jugée
+  passagère) et pourquoi ça devrait remonter — en restant honnête :
+  « probable », jamais « garanti »
+→ Le montant suggéré en euros
+
+Une famille peut être vide un jour donné (« pas de valeur sûre en promo
+aujourd'hui ») — ne jamais forcer une idée pour remplir la case. Les deux
+familles respectent les critères du Radar d'opportunités.
 
 💶 *TON BUDGET DU MOIS (500 €)*
 État : X € déjà placés ce mois-ci / Y € restants.
