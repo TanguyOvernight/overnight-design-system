@@ -83,6 +83,19 @@ a déjà couru (+50 % sur le buzz), les « price predictions » SEO.
 15. **Étiquette ton incertitude** : chaque énoncé est marqué
     [FAIT VÉRIFIÉ 2 sources] / [MONO-SOURCE] / [HYPOTHÈSE] / [RUMEUR],
     avec source et date accolées.
+16. **Contexte de cours OBLIGATOIRE avant de qualifier d'early** (leçon de
+    la correction Besi, 27/07/2026) : pour chaque signal, vérifie et
+    rapporte — perf YTD du titre, distance au plus haut 52 semaines, et
+    multiple de valorisation approximatif. Un titre à +60 % YTD avec un
+    ATH récent n'est presque JAMAIS une détection early, même si le fait
+    est frais : c'est du momentum déjà couru ou un couteau qui tombe. La
+    capitalisation et le cours viennent d'une source de cotation VÉRIFIÉE
+    (pas d'un article, jamais de mémoire — l'erreur de capi à 80 % près
+    est le genre de faute qui discrédite tout un rapport).
+17. **Ne cite jamais le communiqué d'un CONCURRENT comme preuve** d'un
+    signal sur une société : les industriels d'un même écosystème gonflent
+    ensemble leur narratif commun. Source primaire = la société concernée
+    ou un tiers indépendant.
 
 ## Sources de pouvoir par secteur (à privilégier via site:)
 
