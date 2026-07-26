@@ -132,6 +132,22 @@ Noter sur 10 — en dessous de 7, on ne la propose pas :
 La note et son détail vont dans le journal ; la newsletter n'affiche que la
 conclusion. Une 🚀 exige un catalyseur ≥ 1 ; une 🛡️ exige qualité = 3.
 
+### Compléments à l'entonnoir (référentiels dédiés)
+
+- **Smart money** (`base-connaissances/smart-money.md`) : OpenInsider au
+  quotidien (recette n°3) ; hebdo = positions courtes AMF sur les valeurs FR
+  + 13D récents (EDGAR full-text) + annonces de buybacks ; trimestriel
+  (fenêtres 13F : ~14/02, 14/05, 14/08, 14/11) = tournée Dataroma + lettres
+  de fonds → watchlist.
+- **Signaux macro** (`base-connaissances/signaux-macro.md`) : pipeline hebdo
+  ≤ 15 min (NFCI/CISS le mercredi, FedWatch × Kalshi le vendredi, Cleveland
+  Nowcast la veille de chaque CPI, fret le jeudi, GPR mensuel). Contexte de
+  régime pour choisir les fenêtres de renforcement — jamais des signaux
+  d'achat/vente.
+- **Outils & données** : `outils-donnees.md` (cookbook d'URLs),
+  `outils-recherche-ia.md` (transcripts, EDGAR/AMF, screeners IA),
+  `outils-portefeuille.md` (Curvo, TrackingDifferences, PEA).
+
 ### Liste de courses permanente
 
 `base-connaissances/valeurs-qualite.md` : ~20 entreprises connues et de

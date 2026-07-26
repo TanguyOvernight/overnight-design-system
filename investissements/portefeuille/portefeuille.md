@@ -3,7 +3,9 @@
 Dernière mise à jour : **2026-07-25** (capture d'écran du courtier mobile).
 **Courtier : eToro** (confirmé par Tanguy) — compte-titres chez un courtier
 étranger, en USD. Conséquences :
-- **Pas de PEA possible chez eToro** : plus-values à la flat tax 30 %.
+- **Pas de PEA possible chez eToro** : plus-values à la flat tax — ⚠️ passée
+  de 30 % à **31,4 %** en 2026 selon plusieurs sources fiscales (hausse CSG,
+  LFSS 2026) ; à confirmer sur impots.gouv.fr. Renforce l'urgence du PEA.
 - **Obligation déclarative** : compte détenu à l'étranger → formulaire 3916
   à joindre à la déclaration de revenus (amende par compte non déclaré sinon).
 - Frais de conversion EUR↔USD à chaque dépôt/retrait + risque de change.
