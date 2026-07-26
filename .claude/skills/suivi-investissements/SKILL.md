@@ -85,11 +85,23 @@ Trois règles de rédaction ajoutées par Tanguy (26/07/2026) :
    depuis la veille est accompagnée de son lien d'article (format Slack :
    `<url|titre court>`), issu des recherches du jour — jamais de lien
    recyclé ou générique. 1 lien par info, sur les 3-6 infos qui comptent.
-3. **Zéro répétition.** Avant de rédiger, relire le journal de la veille :
-   une actu déjà racontée hier ne revient QUE si elle a évolué ou si elle
-   sert une décision du jour (et alors en une demi-ligne de rappel, pas en
-   re-récit). Une position sans rien de neuf = une ligne « RAS » et c'est
-   tout. La newsletter raconte ce qui a changé, pas l'état du monde.
+3. **La veille est le point de départ** (renforcé par Tanguy, 26/07/2026).
+   Chaque édition commence par relire le journal/la newsletter de la veille,
+   avec deux obligations :
+   - **N'ajouter que de l'information utile.** Une actu déjà racontée hier ne
+     revient QUE si elle a évolué ou si elle sert une décision du jour (et
+     alors en une demi-ligne de rappel, pas en re-récit). Une position sans
+     rien de neuf = une ligne « RAS ». La newsletter raconte ce qui a changé,
+     pas l'état du monde.
+   - **Revenir sur chaque placement recommandé encore en suspens.** Toute
+     suggestion émise précédemment (« 150 € sur X si… », « attendre
+     l'événement Y ») est re-suivie jusqu'à sa résolution avec un statut
+     explicite : *inchangée* (une demi-ligne suffit), *modifiée* (dire
+     précisément ce qui change et pourquoi — nouveau montant, nouvelle
+     condition, nouveau timing), *annulée* (et la raison), ou *exécutée par
+     Tanguy* (alors mise à jour du portefeuille et du budget). Aucune reco ne
+     disparaît silencieusement d'une édition à l'autre — si elle sort, c'est
+     avec une explication.
 4. **Analyser, pas seulement rapporter** (demande Tanguy, 26/07/2026) :
    maximum de détail sur chaque actu retenue, et surtout **relier
    explicitement l'actu au mouvement de cours** :
