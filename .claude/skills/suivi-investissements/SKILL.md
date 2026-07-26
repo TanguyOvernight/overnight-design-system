@@ -147,6 +147,11 @@ rien à faire**).
 Une entrée par position (hors grosse affaire, pas de redite) :
 🟢/🟡/🔴 *Nom (TICKER)* — poids X %, ±Y % vs ton prix d'achat
 → Actu : analyse règle 4 (4-7 lignes, lien) · Sans actu : « RAS », une ligne.
+→ 📉 Technique (si position analysée ou décision en jeu) : une ligne
+  factuelle — [au-dessus/sous] MM200 · momentum 12 m ±X % · à X % du plus
+  haut 52 sem. Règles et limites : base-connaissances/lecture-technique.md
+  (la technique MODULE un verdict fondamental, ne le crée jamais ; jamais
+  de chandeliers/figures — mythes mesurés).
 → Verdict : ce que tu fais et pourquoi.
 (🟢 RAS · 🟡 à surveiller · 🔴 attention)
 
