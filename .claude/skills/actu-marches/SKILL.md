@@ -59,6 +59,26 @@ description: >
 Pour les deux ETF : pas d'actu propre — couvrir via le marché US/monde
 (S&P 500, Fed, résultats des méga-caps qui les dominent).
 
+## Recettes quotidiennes de chasse aux pépites
+
+En appui de l'entonnoir du matin (skill analyse-prospective). Requêtes types :
+
+- Mouvements du jour : `biggest stock movers today` puis
+  `why is <société> stock down/up today` — ne retenir que les mouvements
+  > ±8 % AVEC cause identifiée.
+- Achats de dirigeants : `openinsider cluster buys this week` ou consulter
+  openinsider.com/insider-purchases (code P, 2+ acheteurs en < 7 jours).
+  Version eToro : insider-signal.etoro.app.
+- Révisions/upgrades : `analyst upgrades today <mois> <année>`,
+  zonebourse rubrique « révisions ».
+- Résultats mal accueillis : `<société> beat earnings stock down why`.
+- Qualité au plus bas : Finviz (US, 67 filtres gratuits), TradingView
+  (mondial, 168 critères), ChartMill/ScreenerHero (Europe complète sans
+  compte) — recette « -20 % vs 52w high + ROIC > 10 % + marge > 10 % ».
+- Liste de courses : vérifier les cours du jour des valeurs de
+  `base-connaissances/valeurs-qualite.md` proches de leur seuil de promo
+  (recherche `<ticker> stock price today` ou page Google Finance).
+
 ## Veille IA & pré-IPO (OpenAI, Anthropic, tech émergentes)
 
 Sociétés suivies : OpenAI, Anthropic, xAI, Mistral AI, SpaceX/Starlink,

@@ -83,6 +83,63 @@ Par ordre de fiabilité :
 - Insider buying US : openinsider.com (achats de dirigeants = signal fort
   quand ils sont groupés).
 
+## Chasse quotidienne aux pépites — l'entonnoir du matin
+
+Objectif : alimenter chaque jour les deux familles de la newsletter
+(🚀 fort potentiel / 🛡️ valeur sûre en promo) avec des idées **détectées**
+et non subies. Détection quotidienne ≠ day trading : on cherche chaque jour
+le bon POINT D'ENTRÉE sur des actifs qui valent d'être tenus 5-7 ans.
+
+### Les 6 recettes de détection (2-3 par jour en rotation, toutes sur la semaine)
+
+1. **Gros mouvement avec cause** : `biggest stock movers today why` +
+   vérifier la cause. Une chute > 8 % sur une bonne société pour une raison
+   temporaire (guidance prudente, downgrade isolé) = candidate 🛡️.
+2. **Qualité au plus bas** : screener (Finviz/ChartMill/ScreenerHero) —
+   « -20 % ou plus vs plus haut 52 semaines + ROIC > 10 % + marge > 10 % +
+   dette maîtrisée ». Croiser avec la liste de courses
+   `base-connaissances/valeurs-qualite.md`.
+3. **Achats groupés de dirigeants** (cluster buys) : openinsider.com
+   (2+ insiders achetant en < 7 jours, code P = achat au marché réel).
+   Signal validé académiquement (~+7 %/an de surperformance, Lakonishok &
+   Lee 2001 ; Cohen, Malloy & Pomorski 2012), surtout sur les small/mid.
+   Bonus : l'app Insider Signal d'eToro (insider-signal.etoro.app) — le
+   courtier de Tanguy.
+4. **Révisions d'analystes en hausse** sur un titre/secteur récemment vendu
+   (zonebourse « révisions », upgrades du jour) : le désaccord
+   baisse-du-cours vs hausse-des-attentes est une inefficience.
+5. **Résultats bons mais vendus** : société qui bat le consensus mais
+   chute sur une inquiétude secondaire → si l'inquiétude est temporaire,
+   candidate 🛡️ (c'est le setup MSFT type).
+6. **Événements techniques datés** : inclusions/reclassements d'indice
+   (type Vietnam/FTSE), spin-offs, fins de lock-up post-IPO sur du qualitatif
+   massacré, ventes forcées de fonds. Les acheteurs/vendeurs y sont
+   NON-économiques → inefficiences exploitables. Candidates 🚀.
+
+### Grille de notation d'une pépite (avant d'entrer dans la newsletter)
+
+Noter sur 10 — en dessous de 7, on ne la propose pas :
+
+- **Qualité du business** (0-3) : moat, marges, génération de cash, bilan.
+- **Décote objectivable** (0-3) : % sous le plus haut 12 mois, valorisation
+  vs historique 5 ans et vs secteur, avec cause de la baisse identifiée ET
+  jugée temporaire.
+- **Catalyseur** (0-2) : événement daté qui peut refermer la décote (2),
+  simple retour à la moyenne espéré (1), rien (0).
+- **Risque maîtrisable** (0-2) : le pire scénario est-il survivable et
+  chiffré ? Position dimensionnable dans le budget 500 €/mois ?
+
+La note et son détail vont dans le journal ; la newsletter n'affiche que la
+conclusion. Une 🚀 exige un catalyseur ≥ 1 ; une 🛡️ exige qualité = 3.
+
+### Liste de courses permanente
+
+`base-connaissances/valeurs-qualite.md` : ~20 entreprises connues et de
+qualité prouvée (US + Europe) avec leur seuil de « promo ». Le matin, la
+recette n°2 vérifie en priorité si l'une d'elles a atteint son seuil —
+c'est le chemin le plus court vers une 🛡️ solide. Révision trimestrielle
+de la liste (une entreprise peut perdre sa qualité : thèse à re-vérifier).
+
 ## Méthode des scénarios (pour toute vue prospective)
 
 Toujours produire 3 scénarios avec probabilités subjectives et implications :

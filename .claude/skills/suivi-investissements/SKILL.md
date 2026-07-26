@@ -55,9 +55,12 @@ travail pour que la session suivante reparte de l'état à jour.
 2. **Rechercher l'actualité** de chaque position + du contexte macro (recettes
    dans le skill actu-marches). Prioriser : résultats publiés, profit warnings,
    M&A, changements réglementaires, mouvements > ±3 % avec cause identifiée.
-3. **Chasser les opportunités** (demande explicite de Tanguy) : identifier les
-   valeurs/ETF **actuellement bas mais à fort potentiel long terme** — voir
-   « Radar d'opportunités » ci-dessous.
+3. **Chasser les opportunités** (demande explicite de Tanguy) : dérouler
+   l'**entonnoir du matin** du skill analyse-prospective (2-3 recettes de
+   détection en rotation + vérification de la liste de courses
+   `base-connaissances/valeurs-qualite.md`), noter les candidates sur 10
+   (grille pépite), ne retenir que les ≥ 7 — voir aussi « Radar
+   d'opportunités » ci-dessous pour les critères de fond.
 4. **Restituer au format mobile** (voir section suivante — impératif).
 5. **Journaliser** le brief dans `journal/AAAA-MM-JJ.md` (format court : faits,
    analyse, décisions/recommandations).
