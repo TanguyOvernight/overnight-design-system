@@ -68,3 +68,18 @@ World)**. Une pépite/compounder/or ne mérite le marginal QUE si son
 espérance nette (rendement × proba, après impôt et frais) bat clairement
 celle d'un versement de plus au World, POUR le risque pris. Sinon : PASSE
 et cœur. Le Juge compare toujours toute idée à cette alternative gratuite.
+
+## Plan d'allocation courant (arbitrage comparatif du Juge, 27/07/2026)
+Classement des usages de l'euro : ① Cœur WPEA · ② LLY (satellite, après le
+cœur) · ③ Or (assurance, politique) · ④ Ultragenyx PASSE (loterie FDA,
+CRL déjà essuyé sur UX111).
+- **Ce mois** : euro RÉSERVÉ au cœur WPEA. Rien à exécuter tant que le PEA
+  n'est pas validé (blocage administratif ≠ signal — attente bornée OK).
+- **Déclencheur** : validation PEA → ordre WPEA immédiat (~300-500 €),
+  l'horloge fiscale démarre.
+- **Garde-fou anti-cash-mort** : si PEA non exécutable d'ici **fin août**
+  (~5 sem.), déployer ~150 € sur le programme OR (ETC Amundi FR0013416716,
+  CTO) — seul usage CTO qui diversifie sans edge ni événement binaire. Le
+  reste roule.
+- **LLY** : programme décidé mais séquencé APRÈS le cœur ; pas de pré-achat
+  du Q2 (5/08) sans edge sur le print.

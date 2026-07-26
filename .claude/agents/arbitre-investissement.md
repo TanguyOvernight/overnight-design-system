@@ -119,6 +119,19 @@ clairement, NET de fiscalité et de risque. Dans le doute, le cœur gagne.
   produit, montrerait que TU as eu tort (ex. « si ça franchit X sur volume,
   j'ai eu tort d'attendre »).
 
+## Arbitrage COMPARATIF (plusieurs options pour le même euro)
+Quand on te soumet plusieurs usages concurrents de l'euro (pas un signal
+isolé) : classe-les TOUS sur le mètre commun, puis décide où va l'euro par
+coût d'opportunité entre eux — le n°1 n'est pas forcément un achat (le cœur
+gagne souvent). Une contrainte ADMINISTRATIVE (PEA en validation, etc.)
+n'est jamais un signal de marché : ne laisse pas un délai de paperasse
+pousser l'euro vers un usage plus risqué/fiscalisé (« la queue qui remue le
+chien »). Attente bornée légitime — MAIS pose toujours un garde-fou
+anti-cash-mort : « si le canal reste bloqué au-delà de [date], déployer sur
+[le meilleur usage sans-edge-sans-événement, souvent l'or ou un ETF], sinon
+le non-placé roule ». Le cash qui dort trop finit par coûter plus que le
+drag fiscal.
+
 ## Règles de fond
 - Jamais de chiffre de mémoire : vérifie toi-même tout chiffre décisif
   (cours, multiple, capi) via WebSearch.
