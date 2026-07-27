@@ -258,8 +258,39 @@ function avatarInline(p,size){
 // prénom (violet clair) + mini-avatar collé, pour styliser les phrases ciblées
 function playerTag(p){ return `<b style="color:#D2C3FF;">${p.name}</b>${avatarInline(p,36)}`; }
 function openAvatar(i){ const src=Room.active?Room.players:S.players; S.avatarPicker=i; S.avSex=(src[i]&&src[i].avatar&&src[i].avatar.g)||'Homme'; go('avatars'); }
-function closeAvatar(){ S.avatarPicker=null; go(Room.active?'lobby':'setup'); }
+function closeAvatar(){ const t=S.profileThen; S.profileThen=null; S.avatarPicker=null;
+  go(Room.active?'lobby':(t?'online':'setup')); }
 function selectAvSex(g){ S.avSex=g; render(); }
+function setMyName(v){
+  const nom = String(v||'').slice(0,16);
+  if(typeof Room!=='undefined' && Room.active){
+    Room.saveIdentity({name:nom});
+    const moi = Room.players.find(p=>p.pid===Room.me.pid); if(moi) moi.name = nom;
+    if(Room.isHost) Room.pushState();
+    else Room.transport.broadcast('hello',{pid:Room.me.pid,name:nom,avatar:Room.me.avatar});
+  } else {
+    Room.saveIdentity({name:nom});
+    const j = S.avatarPicker; if(S.players[j]) S.players[j].name = nom;
+    saveSession();
+  }
+  // on met juste à jour le bouton, sans re-render : le clavier reste ouvert
+  const b=document.querySelector('.btn.amber');
+  if(b && S.profileThen){ const ok=nom.trim().length>0;
+    b.style.opacity = ok?'':'.5'; b.style.pointerEvents = ok?'':'none'; }
+}
+function profileDone(){
+  const suite = S.profileThen; S.profileThen=null; S.avatarPicker=null;
+  if(suite==='host') return netHost();
+  if(suite==='join') return netJoin();
+  go(Room.active?'lobby':'setup');
+}
+function openProfile(then){
+  Room.identity();
+  S.profileThen = then || null;
+  S.avatarPicker = (typeof Room!=='undefined' && Room.active) ? myIndex() : 0;
+  S.avSex = (Room.me.avatar && Room.me.avatar.g) || 'Homme';
+  S.screen='avatars'; render();
+}
 function pickAvatar(i,idx){
   const sex=S.avSex||'Homme', av={img:AVATARS[sex][idx], c:'#2A1F4A', g:sex};
   if(Room.active){
@@ -267,9 +298,12 @@ function pickAvatar(i,idx){
     const me=Room.players.find(p=>p.pid===Room.me.pid); if(me) me.avatar=av;
     Room.saveIdentity({avatar:av});
     if(Room.isHost) Room.pushState(); else Room.transport.broadcast('hello',{pid:Room.me.pid,name:Room.me.name,avatar:av});
+    if(S.profileThen){ render(); return; }        // on reste sur le profil tant qu'on n'a pas validé
     S.avatarPicker=null; go('lobby'); return;
   }
   if(S.players[i]) S.players[i].avatar=av;
+  Room.saveIdentity({avatar:av});
+  if(S.profileThen){ render(); return; }
   S.avatarPicker=null; saveSession(); go('setup');
 }
 // Taille de police dynamique : texte court = gros, texte long = plus petit
@@ -520,12 +554,25 @@ SCREENS.avatars = () => {
   const tab=(g)=>`<button onclick="selectAvSex('${g}')" style="flex:1;height:42px;border-radius:999px;border:none;background:${g===sex?'#fff':'transparent'};color:${g===sex?'var(--indigo)':'#fff'};font-family:var(--d);font-weight:800;font-size:15px;cursor:pointer;">${g}</button>`;
   const tile=(idx)=>{ const img=AVATARS[sex][idx], sel=img===cur;
     return `<button onclick="pickAvatar(${i},${idx})" style="border:none;background:transparent;cursor:pointer;padding:0;display:flex;justify-content:center;transition:transform .08s;" onpointerdown="this.style.transform='scale(.93)'" onpointerup="this.style.transform=''"><div style="border-radius:50%;${sel?'box-shadow:0 0 0 4px var(--amber),0 0 26px rgba(255,201,60,.55);':''}">${avatar({avatar:{img,c:'#2A1F4A'}},96)}</div></button>`; };
+  const online = (typeof Room!=='undefined') && Room.active;
+  const monNom = online ? (Room.me.name||'') : ((src[i]&&src[i].name)||'');
+  const nomFieldy = `<div style="margin-top:14px;">
+      <div class="cap" style="margin-bottom:8px;">Ton prénom</div>
+      <input id="pname" value="${String(monNom).replace(/"/g,'&quot;')}" maxlength="16" autocomplete="off"
+        placeholder="Ton prénom" oninput="setMyName(this.value)"
+        onkeydown="if(event.key==='Enter')this.blur()"
+        style="width:100%;height:60px;border-radius:18px;background:rgba(255,255,255,.14);border:none;outline:none;padding:0 18px;font-family:var(--f);font-weight:800;font-size:21px;color:#fff;">
+    </div>`;
+  const pret = String(monNom).trim().length>0;
   return `<div class="pad fade">
-    <div class="hdr"><button class="iconbtn" onclick="closeAvatar()">‹</button><h2 style="flex:1;text-align:center;font-size:21px;">Ton avatar</h2><div style="width:42px"></div></div>
-    <div style="display:flex;background:rgba(255,255,255,.14);border-radius:999px;padding:4px;margin-top:4px;">${tab('Homme')}${tab('Femme')}</div>
-    <div style="flex:1;overflow:auto;min-height:0;padding:30px 2px 18px;">
+    <div class="hdr"><button class="iconbtn" onclick="closeAvatar()">‹</button><h2 style="flex:1;text-align:center;font-size:21px;">Ton profil</h2><div style="width:42px"></div></div>
+    ${nomFieldy}
+    <div class="cap" style="margin:18px 0 8px;">Ton avatar</div>
+    <div style="display:flex;background:rgba(255,255,255,.14);border-radius:999px;padding:4px;">${tab('Homme')}${tab('Femme')}</div>
+    <div style="flex:1;overflow:auto;min-height:0;padding:22px 2px 14px;">
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;justify-items:center;">${AVATARS[sex].map((_,idx)=>tile(idx)).join('')}</div>
     </div>
+    ${S.profileThen?`<button class="btn amber" style="${pret?'':'opacity:.5;pointer-events:none;'}" onclick="profileDone()">${S.profileThen==='host'?'Créer le salon':'Rejoindre'}</button>`:''}
   </div>`;
 };
 
@@ -1336,6 +1383,7 @@ function render(){
    MULTIJOUEUR — salons, tours, reconnexion
    ========================================================================== */
 S.net = { status:'idle', error:'', joinCode:'', view:null };
+S.profileThen = null;   // action en attente après la saisie du profil ('host' | 'join')
 
 /* --- Qui a le droit de jouer maintenant ? --- */
 function expectedActorIndex(){
@@ -1441,7 +1489,7 @@ SCREENS.online = () => {
     <div class="gpanel" style="padding:24px;text-align:center;">
       <h2 style="font-size:23px;color:#fff;">Un salon, plusieurs téléphones</h2>
       <div class="sub" style="margin-top:10px;font-size:14px;">Chacun rejoint avec son tél, choisit son avatar, et joue à son tour.</div>
-      <button class="btn amber" style="margin-top:20px;${cfg?'':'opacity:.5;pointer-events:none;'}" onclick="netHost()">Créer un salon</button>
+      <button class="btn amber" style="margin-top:20px;${cfg?'':'opacity:.5;pointer-events:none;'}" onclick="openProfile('host')">Créer un salon</button>
       <button class="btn" style="margin-top:11px;${cfg?'':'opacity:.5;pointer-events:none;'}" onclick="go('join')">Rejoindre avec un code</button>
     </div>
     <div class="spacer"></div>
@@ -1462,7 +1510,7 @@ SCREENS.join = () => `<div class="pad fade">
   </div>
   <div class="spacer"></div>
   ${S.net.error?`<div class="sub center" style="margin-bottom:10px;color:#FF9A8B;font-size:13px;">${S.net.error}</div>`:''}
-  <button class="btn amber" onclick="netJoin()">${S.net.status==='connecting'?'Connexion…':'Rejoindre'}</button>
+  <button class="btn amber" onclick="joinStep()">${S.net.status==='connecting'?'Connexion…':'Continuer'}</button>
 </div>`;
 
 SCREENS.lobby = () => {
@@ -1489,7 +1537,7 @@ SCREENS.lobby = () => {
     <div style="flex:1;overflow:auto;min-height:0;">
       <div class="cap" style="margin-bottom:8px;">Joueurs (${Room.players.length})</div>
       ${list}
-      <button class="btn sm" style="margin-top:6px;" onclick="openAvatar(myIndex())">Changer mon avatar / prénom</button>
+      <button class="btn sm" style="margin-top:6px;" onclick="openProfile(null)">Changer mon prénom / avatar</button>
     </div>
     ${meHost
       ? `<button class="btn amber" style="margin-top:12px;${enough?'':'opacity:.5;pointer-events:none;'}" onclick="netStart()">${enough?'Lancer la partie':'En attente de joueurs…'}</button>`
@@ -1509,7 +1557,8 @@ function netHost(){
     return;
   }
   S.net.error=''; S.net.status='connecting';
-  Room.saveIdentity({ name: Room.me.name || (S.players[0]&&S.players[0].name) || 'Hôte', avatar: Room.me.avatar || (S.players[0]&&S.players[0].avatar) || null });
+  Room.saveIdentity({ name: (Room.me.name||'').trim() || (S.players[0]&&S.players[0].name) || 'Hôte',
+                      avatar: Room.me.avatar || (S.players[0]&&S.players[0].avatar) || null });
   Room.host().then(code=>{
     S.net.status='ok'; S.players=Room.players; S.screen='lobby'; render();
   }).catch(e=>{
@@ -1517,6 +1566,11 @@ function netHost(){
     S.net.error = e.message==='CONFIG_MANQUANTE' ? "Mode Online non configuré (config.js)." : ("Connexion impossible : "+e.message);
     render();
   });
+}
+function joinStep(){
+  const code=(S.net.joinCode||'').toUpperCase().trim();
+  if(code.length<4){ S.net.error='Le code fait 4 lettres.'; render(); return; }
+  S.net.error=''; openProfile('join');
 }
 function netJoin(){
   if(Room.active){
@@ -1529,7 +1583,7 @@ function netJoin(){
   const code=(S.net.joinCode||'').toUpperCase().trim();
   if(code.length<4){ S.net.error='Le code fait 4 lettres.'; render(); return; }
   S.net.error=''; S.net.status='connecting'; render();
-  Room.saveIdentity({ name: Room.me.name || 'Invité' });
+  Room.saveIdentity({ name: (Room.me.name||'').trim() || 'Invité' });
   Room.join(code).then(()=>{
     S.net.status='ok'; S.players=Room.players; S.screen='lobby'; render();
   }).catch(e=>{
