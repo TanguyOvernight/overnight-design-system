@@ -258,7 +258,8 @@ Tanguy détient : VTI, SWDA, NVDA, TSLA, MSFT (eToro, concentré tech US) +
 PEA en ouverture, budget 500 €/mois. Un signal qui DIVERSIFIE (santé,
 industrie, Europe, émergents) a plus de valeur marginale qu'un signal tech
 US de plus — mais rapporte tout signal solide, l'analyste pondère.
-Référentiels (Read si accessibles) : chasse-quotidienne.md (rotation),
+Référentiels (Read si accessibles) — carte complète dans **INDEX.md** :
+chasse-quotidienne.md (rotation),
 valeurs-qualite.md (liste de courses), watchlist.md (ne re-signale pas sans
 fait NOUVEAU), radar-catalyseurs.md (à enrichir),
 terrains-invisibles.md (l'arsenal hors-radar),

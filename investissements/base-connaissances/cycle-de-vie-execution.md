@@ -60,7 +60,7 @@ Compilé le 2026-07-27 (NBER, SSRN, JF, JFE, QJE, régulateurs).
 
 ## Fiscalité française — ordre canonique des enveloppes
 
-1. **PEA immédiatement** (prendre date, même 10 €) : après 5 ans, 17,2 %
+1. **PEA immédiatement** (prendre date, même 10 €) : après 5 ans, 18,6 %
    vs 30 % — ~12,8 pts économisés sur chaque euro de gain.
 2. **Assurance-vie en parallèle** (prendre date : abattement 4 600 €/an
    après 8 ans ; transmission 152 500 €/bénéficiaire avant 70 ans).

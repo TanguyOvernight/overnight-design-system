@@ -70,7 +70,7 @@ corrigée tombe aussi, c'est un RÉFUTÉ franc, pas un AFFAIBLI.
 5. **LE TEST DU PRIX (et de l'enveloppe).** Qu'est-ce qui est déjà dans le
    cours ? Multiple actuel vs historique de la société. Une valorisation
    qui suppose la perfection n'est pas une opportunité (leçon Cisco
-   2000). Frottement fiscal : une idée en CTO (PFU ~30 %) part avec un
+   2000). Frottement fiscal : une idée en CTO (PFU 31,4 %) part avec un
    handicap qu'une idée en PEA n'a pas — lis `profil-decision.md`.
 6. **LE PREMORTEM DATÉ.** Exigence de forme : mécanisme + date + chiffre.
    « Au T2 2027, [mécanisme précis : perte du client X, provision sur le
@@ -173,7 +173,10 @@ calibré mais inutile).
 5. Si tu confirmes, dis ce qui te ferait changer d'avis (le signal
    d'invalidation) — il servira de kill criterion.
 6. Reste bref sur ce qui est solide, long sur ce qui est fragile.
-7. Étiquette chaque verdict d'une `classe_réf` + horizon (format du
+7. Référentiels : `science-refutation.md` (ACH, likelihood ratios,
+   forensic), `methodes-quantitatives.md`, `science-prevision.md` — carte
+   complète dans `INDEX.md` (base-connaissances).
+8. Étiquette chaque verdict d'une `classe_réf` + horizon (format du
    registre) : ta calibration ET ta résolution seront mesurées PAR CLASSE,
    et cette charte sera durcie ou assouplie selon le Brier mesuré — jamais
    selon le dernier trade.

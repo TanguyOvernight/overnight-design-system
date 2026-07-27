@@ -25,12 +25,12 @@ arbitrage. Tenue à jour à chaque changement de situation. Dernière maj :
 ## Enveloppes (le levier fiscal = partie du rendement net)
 - **PEA (Fortuneo Starter, en ouverture)** : actions/ETF UE + ETF mondiaux
   synthétiques éligibles. Fiscalité : exonération d'IR après 5 ans, PS
-  17,2 % seuls. **1 ordre ≤ 500 €/mois gratuit** → DCA à coût nul.
+  18,6 % seuls. **1 ordre ≤ 500 €/mois gratuit** → DCA à coût nul.
   L'horloge des 5 ans court dès l'ouverture. **Choisir le PEA ≠ choisir
   l'Europe** : WPEA = MSCI World ~70 % US.
 - **CTO (eToro, USD, existant)** : loge ce qui n'est PAS éligible PEA —
   actions US en direct (NVDA, TSLA, MSFT…), or (ETC Amundi FR0013416716),
-  compounders US (LLY, WMT). Fiscalité : **PFU ~30 % (31,4 % à confirmer)**
+  compounders US (LLY, WMT). Fiscalité : **PFU 31,4 %** (12,8 % IR + 18,6 % PS — confirmé 27/07/2026)
   au fil des ventes + déclaration 3916. Frais de conversion EUR↔USD.
 - **Règle de routage** : un actif éligible PEA se loge en PEA (fiscalité),
   jamais en CTO — le même actif peut être « oui » en PEA et « non » en CTO
@@ -54,7 +54,9 @@ Séquencement des chantiers : ① PEA (cœur ETF World) → ② or en CTO en DCA
 ## Programmes en cours / décidés
 - **LLY (compounder, CTO)** : reco de tête, tranche ~50 $ + DCA, ⚠️ Q2 5/08.
 - **Or (CTO, dès CTO actif)** : cible 6 % sur 18 mois, ~150 €/trimestre.
-- **Cœur WPEA (PEA, dès ouverture)** : ~300 €/mois, le socle.
+  Véhicule et rythme d'exécution : `or-execution.md`.
+- **Cœur WPEA (PEA, dès ouverture)** : ~300 €/mois, le socle. Mécanique
+  d'ouverture, courtier et ETF éligibles : `plan-pea.md`.
 - **Aubay** : SURVEILLANCE (achat si ≤ 50 € ou scare optique T3).
 - **Assurance-vie — prise de date (nouveau, 27/07)** : ouvrir une AV en ligne
   avec ~100 € au plus tôt, uniquement pour lancer l'horloge des 8 ans

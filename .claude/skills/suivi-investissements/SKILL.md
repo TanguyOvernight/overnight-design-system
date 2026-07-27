@@ -412,6 +412,11 @@ Règles spécifiques à ce sujet :
 
 ## Référentiels d'analyse (base-connaissances/) — à charger selon le besoin
 
+> 🗺️ **`INDEX.md` d'abord.** La base compte 38 fichiers : l'index dit quel
+> fichier répond à quelle question, qui le lit, lequel est PÉRISSABLE (à
+> re-vérifier avant usage), et surtout **où écrire** une information neuve
+> (règle : une information = un fichier propriétaire, les autres renvoient).
+
 - **analyse-fondamentale.md** : processus 5 étapes (filtre quanti Novy-Marx/
   ROIC/F-Score, anti-fraude M-Score/accruals/7 red flags, moat prouvé par
   un chiffre, reverse DCF, lecture de rapport en 15 min). Toute reco de
@@ -451,7 +456,7 @@ Règles spécifiques à ce sujet :
   gratuits (Curvo, justETF). Mythes écartés : hedge de change systématique,
   factor-timing, rééquilibrage calendaire serré.
 - **fiscalite.md** : flat tax CTO, obligations 3916-bis, option barème
-  (revenu ~0 → ~17,2 %), et récolte de moins-values CTO (report 10 ans,
+  (revenu ~0 → ~18,6 %), et récolte de moins-values CTO (report 10 ans,
   case 3VH, avantage France = pas de wash-sale).
 
 ## Grille d'analyse d'une valeur (avant toute recommandation)

@@ -22,7 +22,7 @@ revalorisation. Jamais « la moyenne historique » brute. [ROBUSTE]
 | Repères transversaux | AQR : 60/40 global **réel ~3,4 %/an**, primes comprimées (méthode Shiller E/P) · CAPE S&P ~40,9 (juil. 2026) → E/P Shiller ~2,4 % réel · ancre INconditionnelle : actions monde ~5 %/an réel 1900-2024 (DMS Yearbook) | AQR déc. 2025 ; GuruFocus | [ROBUSTE] |
 
 **Le World recalculé** (~70 % US + 30 % dév. ex-US) : **4,2-6,2 % nominal
-brut** → net PEA (PS 17,2 % à la sortie, atténué par le report) ≈ 3,5-5,5 %.
+brut** → net PEA (PS 18,6 % à la sortie, atténué par le report) ≈ 3,5-5,5 %.
 → **Nouvelle hypothèse EV World par défaut : 5 %/an net (fourchette 4-6),
 révision trimestrielle.** L'ancien « ~6 % net » devient la borne HAUTE
 (scénario : profits IA tenus ET aucune compression de multiple). Les

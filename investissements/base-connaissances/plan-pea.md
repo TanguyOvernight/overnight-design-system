@@ -61,7 +61,7 @@ MEILLEUR que le physique (ESE : +0,2 pt/an vs indice depuis 2013).
 - Plafond de versements 150 k€ (225 k€ avec PEA-PME) — de versements, pas
   de valorisation.
 - Retrait avant 5 ans = clôture (sauf exceptions) ; après 5 ans : IR
-  exonéré, PS 17,2 % seuls, retraits partiels sans clôture, versements
+  exonéré, PS 18,6 % seuls, retraits partiels sans clôture, versements
   possibles après retrait.
 - Transfert possible sans perdre l'antériorité (frais plafonnés ~150 €,
   remboursés par Fortuneo).

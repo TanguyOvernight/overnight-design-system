@@ -22,7 +22,7 @@ pour Tanguy (PEA Fortuneo, CTO eToro) / drapeaux.
   vendeur forcé, complexité, barrière linguistique). Sans cause → ce n'est pas
   une inefficience, c'est un prix mérité.
 - Ces terrains produisent des CANDIDATES STRUCTURELLES (à thèse lente), pas des
-  signaux datés : elles passent quand même les 5 kill-tests et le pipeline
+  signaux datés : elles passent quand même les 6 kill-tests et le pipeline
   Avocat/Arbitre, avec T2 (nouveauté) adapté — la « nouveauté » est alors la
   non-couverture démontrée, pas un fait daté.
 

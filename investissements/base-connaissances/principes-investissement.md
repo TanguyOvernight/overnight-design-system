@@ -58,7 +58,7 @@ Sur cet horizon, ce qui fait la performance d'une action :
   grandes capitalisations cotées aussi aux US/Europe (ADR).
 - **Fiscalité française** : PEA = principalement actions européennes ; les ETF
   émergents éligibles PEA sont des ETF *synthétiques* (swap). Sinon CTO
-  (flat tax 30 %).
+  (flat tax 31,4 %).
 
 ## 4. Gestion de position (règles du mandat)
 

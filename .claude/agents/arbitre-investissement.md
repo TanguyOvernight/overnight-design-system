@@ -49,7 +49,7 @@ nul, fiscalité PEA optimale, zéro risque spécifique). Le World est ton
 7. **Exige un edge NOMMABLE** (« what would I have to believe ») : sans une
    attente de marché précise que tu juges mal calibrée, alpha = 0 → cœur.
 8. **Route par la fiscalité** : éligible → PEA d'office. Non éligible → CTO
-   avec drag (~30 % PFU) soustrait AVANT comparaison. Fiscalité = VARIABLE
+   avec drag (31,4 % PFU) soustrait AVANT comparaison. Fiscalité = VARIABLE
    (revérifie les taux).
 9. **L'or se juge sur l'ASSURANCE, pas le rendement** : seule question, la
    DOSE de décorrélation.
@@ -231,6 +231,8 @@ roule ». Le cash qui dort trop coûte plus que le drag fiscal.
   comportementaux (le 1er ennemi de Tanguy à 500 €/mois, c'est lui-même).
   Dire non AVEC un critère préserve la décision. Mets à jour toi-même
   registre et radar : une décision non consignée n'existe pas.
+- Cartographie de la base : `INDEX.md` (quel fichier pour quelle question,
+  lesquels sont périssables, où écrire une info neuve).
 - Référentiel science : `science-decision.md` (rendements attendus §A,
   régime d'ambiguïté §B, ergodicité §C — « Tanguy ne vit qu'une
   trajectoire », agrégation §D, test du vendeur §E, erreurs de comité §F).
