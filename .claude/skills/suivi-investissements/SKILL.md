@@ -126,34 +126,35 @@ Trois règles de rédaction ajoutées par Tanguy (26/07/2026) :
      Tanguy* (alors mise à jour du portefeuille et du budget). Aucune reco ne
      disparaît silencieusement d'une édition à l'autre — si elle sort, c'est
      avec une explication.
-4. **Analyser, pas seulement rapporter** (demande Tanguy, 26/07/2026) :
-   maximum de détail sur chaque actu retenue, et surtout **relier
-   explicitement l'actu au mouvement de cours** :
-   - Le fait, précis et chiffré : qui a annoncé quoi, quels chiffres, quelles
-     attentes du marché avant l'annonce.
-   - La réaction : « l'action a fait -X % sur la séance/la semaine » —
-     mouvement daté et vérifié.
-   - Le POURQUOI de la réaction, en langage courant : qu'est-ce que le marché
-     a craint ou espéré ? Pourquoi -12 % et pas -2 % (surprise vs attendu,
-     confiance entamée, valorisation qui supposait la perfection…) ?
-   - Ce que ça change (ou pas) pour la thèse de Tanguy.
-   Quand un mouvement n'a PAS de cause claire, le dire honnêtement (« pas de
-   nouvelle propre à la société : tout le secteur a été vendu ») plutôt que
-   d'inventer une explication — le marché bouge parfois sans raison précise.
-   Une position avec actu vaut 4-7 lignes ; une position sans actu reste à
-   une ligne. Si la newsletter dépasse la limite Slack (~5 000 caractères),
-   envoyer le cœur d'abord, puis le détail d'analyse en 2ᵉ message dans le
-   fil (thread) du premier.
+4. **Analyser en coulisses, livrer l'essentiel** (recalibré par Tanguy,
+   27/07/2026 : « je ne veux pas être noyé sous les infos »). L'ANALYSE
+   complète (fait chiffré + réaction du cours + pourquoi + impact thèse)
+   reste obligatoire dans le PIPELINE et le JOURNAL — mais la newsletter
+   n'en livre que la conclusion utile : le fait en 1-2 lignes + ce que ça
+   change pour Tanguy + le lien. Quand un mouvement n'a pas de cause
+   claire, le dire honnêtement plutôt qu'inventer. Le détail d'analyse va
+   dans le journal du jour (et en thread Slack si Tanguy demande).
+5. **Les positions long terme ne se commentent pas au quotidien**
+   (demande Tanguy, 27/07/2026). Ses actifs sont des positions 5-7 ans :
+   il ne veut PAS voir leurs hausses/baisses du jour. Le COURS d'une
+   position détenue ne se mentionne QUE dans deux cas : (a) il ouvre une
+   opportunité d'y remettre de l'argent (renfort à proposer, chiffré) ;
+   (b) il approche ou déclenche un kill criterion (alerte). En dehors de
+   ces deux cas : silence sur les cours, même après un ±5 %. Seules les
+   GROSSES actualités (résultats, annonce majeure, événement structurel)
+   méritent leur débrief éclair.
 
-Structure v3 — SIMPLIFIÉE À 4 SECTIONS (demande Tanguy, 27/07/2026 :
-« moins de catégories, beaucoup d'actu sur mes placements, et très tôt
-l'argent que je dois mettre dans quel placement, ensuite les autres
-pistes »). Message principal + détails en thread si > ~4 500 caractères.
+Structure v4 — COURTE ET ACTIONNABLE (recalibrée par Tanguy, 27/07/2026 :
+« débrief rapide des grosses actus, clairement les sommes à investir et
+dans quoi, la surveillance chaque jour avec proposition rapide quand le
+chiffre est intéressant, pas noyé sous les infos »). Cible : message
+principal ≤ ~2 500 caractères, lisible en < 2 minutes. Le détail vit dans
+le journal.
 
 ```
-📬 *NEWSLETTER INVEST n°X — [jour] JJ mois AAAA*
-1 phrase d'ouverture + 1 ligne scoreboard : Portefeuille X $ (jour ±%,
-total ±%) · S&P ±% · Brent · EUR/USD.
+📊 *BRIEF INVEST n°X — [jour] JJ/MM*
+1 ligne d'ouverture : LE fait du jour qui compte pour son argent (pas de
+scoreboard de cours).
 
 ### MUR ÉTANCHE : la chasse thématique ≠ la décision de placement (Tanguy 27/07)
 
@@ -177,58 +178,57 @@ Attendre n'est pas un échec — c'est garder la poudre pour une meilleure
 entrée dans la fenêtre du mois. Le thème du jour enrichit la réflexion et
 le vivier ; il ne crée jamais une pression à placer.
 
-💶 *TON ARGENT — quoi faire aujourd'hui* (LA section, toujours en premier)
-→ L'instruction du jour, cash : « Mets X € sur [placement précis, ticker,
-  enveloppe] parce que [1 phrase] » — ou « Ne place rien aujourd'hui,
-  attends [événement daté] » (dit sans honte : c'est souvent le bon
-  conseil).
-→ Budget du mois : **X € placés / Y € restants / Z jours restants** — la
-  vue GLOBALE, toujours. Le plan de déploiement du reste sur la fenêtre du
-  mois, en euros. Si rien ne bat le seuil aujourd'hui : « rien à placer
-  aujourd'hui, on garde les Y € pour [meilleure entrée / événement daté] ».
-→ 📆 Programmes en cours (règle 3bis) : chaque position en construction
-  avec son compteur et sa condition — « LLY : tranche 2/6 (50 €/mois),
-  continue tant que part de marché ≥ 50 % » — c'est la vision long terme
-  de où va l'argent des prochains mois.
-→ 🔁 Statut des recos en cours en une demi-ligne chacune (inchangée /
-  modifiée+pourquoi / annulée+pourquoi / exécutée) — règle 3.
-→ Les actions structurantes en attente (PEA, fonds de sécurité…) : une
-  ligne de rappel tant que non traitées.
+💶 *TON ARGENT* (LA section, toujours en premier — l'instruction)
+→ L'instruction du jour, cash et chiffrée : « Mets **X €** sur
+  [nom précis, ticker, enveloppe PEA/CTO] parce que [1 phrase] » — ou
+  « **Ne place rien aujourd'hui**, attends [événement daté] » (dit sans
+  honte : c'est souvent le bon conseil).
+→ Compteur : **X € placés / Y € restants / Z jours** (1 ligne).
+→ 📆 Programmes en cours : UNE ligne chacun — « LLY : tranche 2/6,
+  50 €/mois, continue tant que [condition] ». C'est la visibilité sur où
+  va l'argent des prochains mois.
+→ Action structurante en attente (PEA…) : 1 ligne de rappel, tant que
+  non traitée.
 
-💼 *TES PLACEMENTS — l'actu de ton argent* (le CŒUR de l'édition, le plus
-riche : c'est ici que va la profondeur)
-Une entrée par position, de la plus grosse à la plus petite :
-🟢/🟡/🔴 *Nom (TICKER)* — poids X %, ±Y % vs ton prix d'achat
-→ Actu : analyse règle 4, généreuse (fait détaillé + <lien|source> +
-  mouvement de cours + POURQUOI cette ampleur + ce que ça change pour
-  toi). La grosse actu du jour ouvre la section avec le format long
-  (*Pourquoi c'est important / Impact portefeuille* en gras).
-→ Intégrer ICI (pas en sections séparées) quand pertinent : la lecture
-  📉 technique (MM200/momentum/52 sem — module, ne crée jamais), le
-  contexte macro qui touche la position (cotes Fed, pétrole…), un signal
-  smart money (achats de dirigeants…), et l'explication d'un terme de
-  jargon à sa première apparition.
-→ Verdict : ce que tu fais et pourquoi.
-→ Sans actu : « RAS », une ligne, rien de plus.
-(🟢 RAS · 🟡 à surveiller · 🔴 attention)
+🎯 *SURVEILLANCES — les chiffres du jour* (le radar quotidien de Tanguy —
+section qu'il a explicitement validée : « très vite me proposer de
+m'engager quand le chiffre de la journée est intéressant »)
+→ UNE ligne par valeur sous surveillance : nom, chiffre du jour vs
+  déclencheur — « STM : 54 € (déclencheur ≤ 42 € → encore loin) ».
+→ **Déclencheur touché ou approché (< ~5 %)** : la ligne devient une
+  🔔 *PROPOSITION* immédiate et complète — montant en euros, enveloppe,
+  1 phrase de pourquoi, et ce qui la ferait annuler : « 🔔 STM a touché
+  41,80 € → je propose **150 € en PEA** dès aujourd'hui. Dis-moi OK et je
+  compte le placement. » Pas d'attente de la prochaine édition : le jour
+  où le chiffre est intéressant, la proposition part le jour même.
+→ Chaque ligne suit son contrat (déclencheur précis + échéance de re-test
+  + expiration — les 4 champs du Juge, radar-catalyseurs.md). Une
+  surveillance échue sans déclenchement disparaît avec 1 ligne d'adieu.
+→ Max ~6 lignes. Le statut des recos en suspens (règle 3) se fond ici en
+  une demi-ligne chacune.
 
-💡 *LES AUTRES PISTES* (après tes placements — compact)
-Max 2-3 idées toutes familles confondues, taguées 🚀 fort potentiel /
-🛡️ valeur sûre en promo / 🌱 compounder (critères et exigences : Radar
-d'opportunités, compounders.md, grille ≥ 7). Chaque idée : thèse en
-2-3 lignes + risque franc + montant suggéré en euros. Une édition sans
-piste neuve le dit en une ligne. Anti-ancrage (règle des 3 mentions)
-appliqué.
+📰 *TES ACTIFS — l'essentiel* (débrief éclair, PAS un bulletin météo)
+→ SEULEMENT les positions avec une GROSSE actu (résultats, annonce
+  majeure, événement structurel) : le fait en 1-2 lignes + ce que ça
+  change pour toi + <lien|source>. Règle 5 stricte : pas de commentaire
+  de cours quotidien sur des positions long terme.
+→ EXCEPTIONS où un cours s'affiche : 💰 opportunité de renfort (alors
+  chiffrée en euros, comme une proposition) ou ⚠️ kill criterion
+  approché/déclenché (alerte + ce qu'on fait).
+→ Rien d'important ? UNE ligne : « Rien de notable sur tes actifs
+  aujourd'hui — ils travaillent. » Et c'est tout.
 
-📅 *À SUIVRE* — 2-4 lignes : ⏳ J-X événement — pourquoi ça concerne ton
-argent. ⚠️ 1 ligne : pas conseiller agréé — c'est toi qui décides.
+📅 *À SUIVRE* — 2-3 lignes max, seulement les événements qui peuvent
+déboucher sur une action (résultat d'une position, déclencheur possible,
+étape PEA). ⚠️ 1 ligne : pas conseiller agréé — c'est toi qui décides.
 ```
 
-Ce qui a disparu EN TANT QUE SECTIONS (mais pas en tant que contenu) :
-scoreboard détaillé (1 ligne d'en-tête), grosse affaire (= 1ʳᵉ entrée de
-TES PLACEMENTS), météo macro, smart money, technique, stat/terme du jour
-(tous intégrés DANS l'analyse des positions quand pertinents), takeaway
-(= la 1ʳᵉ ligne de TON ARGENT). Les appels restent chiffrés
+Ce qui vit AILLEURS que dans la newsletter : l'analyse détaillée
+(journal du jour), les nouvelles pistes du Chasseur tant qu'elles ne sont
+pas des SURVEILLANCES actées par l'Arbitre (elles apparaissent le jour où
+l'Arbitre les acte, en 1 ligne de bienvenue avec leur déclencheur), la
+lecture technique/macro/smart money (intégrée aux propositions quand elle
+compte, jamais en rubrique). Les appels restent chiffrés
 (science-prevision.md) partout.
 
 Règles de forme (issues des meilleures newsletters — Axios/Morning
