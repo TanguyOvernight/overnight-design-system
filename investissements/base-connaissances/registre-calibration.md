@@ -106,6 +106,9 @@ dernier trade gagné ou perdu.
 | C004 | 27/07 | Juge | Ultragenyx | RARE = loterie, PASSE justifié (ne bat pas le cœur 5-7 ans) | 75-80 % | Suivre : issue des PDUFA 23/08 + 19/09 et perf à 12 mois vs World | ⏳ |
 | C005 | 27/07 | Chasseur/macro | Fed | Divergence Kalshi (~48 %) vs FedWatch (~82 %) sur une hausse en septembre | — | FOMC de septembre 2026 : hausse ou non | ⏳ |
 | C006 | 27/07 | Juge | Plan du mois | Le cœur WPEA est le meilleur usage de l'euro de juillet | 75-80 % | Rétrospectif : à l'ouverture du PEA, le cœur était-il le bon choix vs les satellites CTO ? | ⏳ |
+| C007 | 27/07 | Juge | STM | STMPA touche ≤ 45 € en clôture (le déclencheur d'achat surveillance approche) | 35 % | Cours de clôture Paris avant le 31/01/2027 | ⏳ |
+| C008 | 27/07 | Juge | Nike | Nike publie ≥ 1 trimestre de croissance Direct/Digital POSITIVE (stabilisation ≠ couteau) | 38 % | Communiqués Nike sur ses 2 prochains rapports, avant le 30/04/2027 | ⏳ |
+| C009 | 27/07 | Juge | Allocation juillet | L'euro de juillet est déployé sur WPEA (pas STM/Nike/or) une fois le canal débloqué | 80 % | Ordre WPEA exécuté au plus tard le 31/08/2026 | ⏳ |
 
 ## Appels résolus
 | ID | Affaire | Affirmation | P | Issue | Brier | Leçon |

@@ -47,7 +47,7 @@ la mise en place du suivi le 25/07).
 | Vanguard Total Stock Market ETF | VTI | 312,81 $ | 250,00 $ | **+25,1 %** | 31 % | Cœur de portefeuille : tout le marché US | Aucun (position de fond) |
 | iShares Core MSCI World | SWDA.L | 254,88 $ | 193,44 $ | **+31,8 %** | 25 % | Cœur : actions monde développé | Aucun (position de fond) |
 | Nvidia | NVDA | 218,88 $ | 150,00 $ | **+45,9 %** | 22 % | Leader des puces IA, capex hyperscalers >700 Md$/an | Perte de leadership produit ; effondrement du capex IA |
-| Tesla | TSLA | 159,74 $ | 200,00 $ | **-20,1 %** | 16 % | Pari optionnel robotaxi/Optimus au-delà de l'auto | Cash burn sans traction robotaxi ; dilution massive |
+| Tesla | TSLA | 159,74 $ | 200,00 $ | **-20,1 %** | 16 % | Pari optionnel robotaxi/Optimus au-delà de l'auto | Kill criteria formalisés 27/07 ↓ |
 | Microsoft | MSFT | 61,94 $ | 63,00 $ | **-1,7 %** | 6 % | Azure + monétisation IA (Copilot) | Décrochage durable d'Azure vs AWS/GCP |
 | Renault | RNO.PA | 5,33 € | ~8,80 € | **-39,4 %** | <1 % | Micro-position (probablement test) ; auto FR décotée, cours ~26 € | Position trop petite pour porter une thèse — voir note |
 
@@ -64,6 +64,20 @@ solder pour simplifier le suivi. Contexte : Renault et Stellantis ont plombé
 les bénéfices 2025 du CAC 40 ; secteur auto européen sous pression (VE,
 concurrence chinoise, tarifs US). Ne PAS renforcer par « ancrage au PRU » —
 un éventuel investissement auto devra être une vraie thèse dimensionnée.
+
+**Kill criteria TSLA (formalisés par l'Arbitre le 27/07/2026)** — la thèse
+n'est PAS l'auto mais le pari optionnel robotaxi/Optimus ; on ne vend pas sur
+le miss de marge auto (règle maison : pas de stop-loss prix). Un SEUL de ces
+trois avérés = thèse cassée → alléger vers ≤ 10 % (test fiscal CTO + récolte
+de moins-values avant vente) :
+1. **Optionnalité cassée** : robotaxi commercial suspendu, rappelé par le
+   régulateur, ou toujours sans expansion géographique matérielle d'ici T2 2027.
+2. **Cœur auto en perte structurelle** : marge opérationnelle auto < 0 %
+   DEUX trimestres consécutifs OU FCF négatif sur 4 trimestres glissants.
+3. **Dilution/gouvernance** : augmentation de capital significative pour
+   financer le capex, ou départ des équipes clés IA/robotaxi.
+Le miss du Q2 2026 (marge op. 1,4 %, FCF -1,1 Md$) n'en déclenche AUCUN à lui
+seul — c'est une dégradation à surveiller, pas une thèse cassée. Conserver.
 
 ## Analyse d'allocation (25/07/2026)
 
