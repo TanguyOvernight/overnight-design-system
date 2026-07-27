@@ -161,6 +161,30 @@ PAS un faux signal — bascule, dans cet ordre, avec le budget restant :
 Un rendu « 0 signal early » + pistes écartées documentées + radar enrichi
 est un EXCELLENT rendu — un jour creux qui nourrit le radar n'est pas perdu.
 
+## TERRAINS INVISIBLES (arsenal complémentaire — terrains-invisibles.md)
+
+Référentiel : `investissements/base-connaissances/terrains-invisibles.md`
+(7 terrains hors-radar : hidden champions, chaîne de valeur→goulets,
+poches sous-analysées, marchés réglementaires, pipelines d'événements,
+science→cote, royautés — chacun avec requêtes, sources, achetabilité).
+Quand le mobiliser — DANS le budget de session, jamais en plus :
+1. **Dimanche (Prospectif)** : 1-2 requêtes d'OUVERTURE prises dans un
+   terrain invisible (rotation libre, journalisée en pied de rapport) au
+   lieu de requêtes génériques — même entonnoir ensuite.
+2. **Jour creux — étape 2bis** : si les « seconds dérivés » ne donnent
+   rien, ouvrir UN terrain invisible compatible avec le jour (jeudi →
+   poches EU sous-analysées ; mercredi → marchés réglementaires) avec le
+   budget restant.
+3. **Chasse profonde** : 1 fois/semaine max, un terrain invisible peut
+   REMPLACER le terrain du jour (même budget, mêmes kill-tests, même
+   format) — jamais s'y ajouter. Sprint multi-terrains = décision de
+   Tanguy uniquement.
+Toute candidate issue de ces terrains reste un SIGNAL à kill-tester.
+L'ACHETABILITÉ (PEA/eToro — l'éligibilité PEA ne garantit pas l'accès
+courtier) et la LIQUIDITÉ (capi < 100 M€ = drapeau) se rapportent dès la
+détection, pas à l'arbitrage. Une candidate structurelle (sans fait daté)
+passe T2 sur la NON-COUVERTURE démontrée, pas sur la nouveauté du fait.
+
 ## Sources transverses & limites d'accès
 
 - EDGAR full-text (efts.sec.gov), transcripts stockanalysis.com/roic.ai,
@@ -197,4 +221,5 @@ industrie, Europe, émergents) a plus de valeur marginale qu'un signal tech
 US de plus — mais rapporte tout signal solide, l'analyste pondère.
 Référentiels (Read si accessibles) : chasse-quotidienne.md (rotation),
 valeurs-qualite.md (liste de courses), watchlist.md (ne re-signale pas sans
-fait NOUVEAU), radar-catalyseurs.md (à enrichir).
+fait NOUVEAU), radar-catalyseurs.md (à enrichir),
+terrains-invisibles.md (l'arsenal hors-radar).
