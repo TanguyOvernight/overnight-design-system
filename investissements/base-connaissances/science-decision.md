@@ -48,15 +48,12 @@ biais espéré (profil, §change).
 
 ## B. Ambiguïté : quand la probabilité elle-même est incertaine
 
-Distinction Knight (1921) / Ellsberg (QJE 1961) : le RISQUE a des probas
-connues (l'EV s'applique) ; l'AMBIGUÏTÉ a des probas inconnues — et l'EV
-pur y devient de la fausse précision. [ROBUSTE] Réponse formalisée :
-décider sur le PIRE prior plausible (maxmin, Gilboa-Schmeidler 1989).
-En portefeuille : les règles multi-prior donnent des positions plus
-petites, plus stables, meilleur Sharpe hors échantillon
-(Garlappi-Uppal-Wang, RFS 2007) [ROBUSTE] ; l'aversion à l'ambiguïté
-explique sous-participation et sous-diversification des ménages
-(Dimmock et al., JFE 2016) [ROBUSTE].
+Knight (1921) / Ellsberg (QJE 1961) : le RISQUE a des probas connues (l'EV
+s'applique) ; l'AMBIGUÏTÉ a des probas inconnues — l'EV pur y devient de la
+fausse précision. [ROBUSTE] Réponse formalisée : décider sur le pire prior
+plausible (maxmin, Gilboa-Schmeidler 1989) ; en portefeuille, les règles
+multi-prior donnent des positions plus petites, plus stables, meilleur
+Sharpe hors échantillon (Garlappi-Uppal-Wang, RFS 2007) [ROBUSTE].
 
 **Déclencheurs du régime d'ambiguïté** (mesurables, alignés grille) :
 écart arbre/global > 15 pts qui PERSISTE après avoir creusé la branche ;
@@ -130,13 +127,13 @@ un gros pari unique n'a pas d'espérance, il a deux issues. »
 ## E. Le test « QUI VEND ? » — avant tout ACHAT
 
 Théorie : entre agents rationnels sans besoin de liquidité, aucun échange
-ne devrait avoir lieu (no-trade, Milgrom-Stokey 1982) — si ton ordre est
-servi, quelqu'un a choisi de te vendre. Preuve empirique du coût : le
-trading des particuliers taïwanais perd **−3,8 pts/an** agrégés, gains
-captés par les institutions, matérialisés en quelques semaines
-(Barber-Odean-Lee-Liu, RFS 2009) ; le quintile de ménages US le plus
-actif sous-performe de ~6,5 pts/an (Barber-Odean, JF 2000) ; > 80 % des
-day traders perdent sur 6 mois. [ROBUSTE]
+n'a lieu (no-trade, Milgrom-Stokey 1982) — si ton ordre est servi,
+quelqu'un a CHOISI de te vendre. Le coût mesuré de l'ignorer : le trading
+des particuliers taïwanais perd **−3,8 pts/an** agrégés, gains captés par
+les institutions en quelques semaines (Barber-Odean-Lee-Liu, RFS 2009) ;
+le quintile de ménages US le plus actif sous-performe de ~6,5 pts/an
+(Barber-Odean, JF 2000) ; > 80 % des day traders perdent sur 6 mois.
+[ROBUSTE]
 **Protocole (3 questions, grille étape 3bis)** — cadre BAIT de Mauboussin
 (« Who Is on the Other Side? », 2019 : edge Comportemental / Analytique /
 Informationnel / Technique) :
