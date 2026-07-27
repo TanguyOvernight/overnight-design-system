@@ -9,12 +9,24 @@ pour Tanguy (PEA Fortuneo, CTO eToro) / drapeaux.
 
 ## Règles transversales (avant toute chasse invisible)
 
-- **Achetabilité d'abord** : un signal inachetable est une note de radar, pas
-  un signal. PEA = actions siège UE/EEE + ETF UCITS éligibles ; la place doit
-  être ACCESSIBLE chez Fortuneo (Euronext oui ; Stockholm/Milan/Xetra : à
-  vérifier au cas par cas dans l'interface — l'éligibilité PEA ne garantit pas
-  l'accès courtier, le dire explicitement dans le rapport). eToro = US + grandes
-  places (LSE, quelques UE) — vérifier que le ticker y existe.
+- **Achetabilité d'abord — test ÉLIMINATOIRE, à passer AVANT de creuser**
+  (leçon du 27/07/2026 : une chasse profonde a produit un excellent dossier
+  sur une valeur de Varsovie… probablement impossible à acheter. Budget
+  gaspillé). Un signal inachetable est une note de radar, pas une pépite.
+  Hiérarchie opérationnelle des places :
+  | Statut | Places | Usage |
+  |---|---|---|
+  | ✅ **Sûr (PEA)** | Euronext **Paris, Amsterdam, Bruxelles, Lisbonne** | Cible prioritaire de toute chasse PEA |
+  | ⚠️ **Probable, à signaler** | Xetra/Francfort, Milan | Recevable avec drapeau « accès à confirmer » |
+  | ❌ **Exclu en pratique** | Stockholm, Copenhague, Helsinki, Oslo, Varsovie, Vienne, AIM Londres | Radar d'apprentissage uniquement — ne PAS y consacrer de budget de chasse |
+  L'éligibilité PEA (siège UE/EEE) ne garantit JAMAIS l'accès courtier : ce
+  sont deux conditions distinctes, toutes deux nécessaires.
+- **Ticket praticable** : le PEA ne fractionne pas — une action à 400 €+
+  interdit un ticket de 150 €. Vérifier le prix de la part et le signaler.
+  eToro fractionne : un cours élevé n'y est pas disqualifiant.
+- **Handicap CTO** : toute idée logée en CTO subit le PFU à **31,4 %** ; elle
+  doit être NETTEMENT meilleure qu'une idée équivalente logeable en PEA.
+  Le rapporter pour chaque candidate non éligible PEA.
 - **Liquidité** : capi < 100 M€ = drapeau systématique au rapport ; < 50 M€ =
   quasi-inexploitable pour un ordre régulier (spread + carnet). Toujours donner
   capi + volume quotidien approximatif (source de cotation vérifiée, T1).
