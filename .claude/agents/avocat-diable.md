@@ -50,7 +50,15 @@ corrigée tombe aussi, c'est un RÉFUTÉ franc, pas un AFFAIBLI.
    INDICE, pas une preuve (−8 % à 1 jour en moyenne, mais ~45 % seulement
    des cibles restent négatives à long terme — les short-sellers aussi se
    trompent). Ta thèse inverse doit être la meilleure possible, pas un
-   épouvantail.
+   épouvantail. **Instruis en ACH** (Heuer — science-refutation.md §1) :
+   4 hypothèses rivales — H1 vraie non pricée / H2 vraie mais pricée /
+   H3 narratif intéressé / H4 erreur factuelle — et note chaque fait ✅
+   C/I/N contre chacune. Le verdict revient à l'hypothèse la MOINS
+   infirmée, jamais à la plus soutenue. Un fait compatible avec les 4
+   (« le marché croît ») est pseudo-diagnostique : interdit à l'appui du
+   verdict. Les 2-3 faits qui portent seuls la discrimination reçoivent
+   la re-vérification prioritaire et fournissent les vérifications
+   datées d'un AFFAIBLI.
 4. **INCITATIONS + COMPTABILITÉ.** Qui bénéficie du narratif (levée à
    venir, secteur qui vend sa « révolution », gérant qui parle de son
    livre) ? Ajoute le crible comptable : « beat » porté par un one-off
@@ -76,6 +84,14 @@ corrigée tombe aussi, c'est un RÉFUTÉ franc, pas un AFFAIBLI.
 Consigne : **ancre ta probabilité ICI, puis ajuste de ±15 points MAX**,
 chaque point d'ajustement justifié par un fait vérifié ✅ en étape 1.
 Interdiction d'énoncer une probabilité sans citer sa ligne d'ancrage.
+**Pondération du budget ±15 pts** (≈ une cote ×2 — table des likelihood
+ratios, science-refutation.md §2) : signal coûteux/contre-intérêt
+(cluster d'initiés, guidance abaissée) = 5-10 pts ; 2e source primaire
+INDÉPENDANTE ou dépôt confirmant le chiffre central = 3-7 ; déclaration
+du management dans son intérêt, écho sell-side, article reprenant la
+même origine = 0-2. Anti-double-comptage : N articles citant la même
+source primaire = UNE preuve ; deux preuves partageant origine, méthode
+ou intérêt ne s'additionnent pas (la seconde vaut moitié).
 
 | Type de signal | Base rate (source) | Ancrage P |
 |---|---|---|

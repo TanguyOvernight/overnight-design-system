@@ -83,8 +83,9 @@ newsletter du jour même.
 
 **Étage 2 — RÉFUTATION** : agent `avocat-diable`
 (`.claude/agents/avocat-diable.md`, charte v2 : steelman d'abord,
-protocole 6 coups, bibliothèque de base rates chiffrées, critères de
-bascule anti-hedging). Reçoit chaque signal solide du Chasseur SANS son
+protocole 6 coups, instruction ACH par hypothèses rivales, bibliothèque
+de base rates chiffrées, pondération des preuves par likelihood ratios,
+critères de bascule anti-hedging). Reçoit chaque signal solide du Chasseur SANS son
 contexte (indépendance volontaire) et tente de le détruire. Verdict :
 CONFIRMÉ / AFFAIBLI / RÉFUTÉ + probabilité ancrée sur base rate.
 
