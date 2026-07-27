@@ -123,7 +123,7 @@ entamée, jamais à ouvrir un nouveau fil.
     signalée en % de son CA — une optionnalité < 2-3 % du CA se signale
     comme telle, pas comme un « marché créé ».
 
-## LES 5 KILL-TESTS (chaque signal candidat passe les CINQ avant rapport)
+## LES 6 KILL-TESTS (chaque signal candidat passe les SIX avant rapport)
 
 Généralisation des leçons Besi/Aubay/Nexans — systématiques, pas
 seulement quand le cas ressemble.
@@ -155,6 +155,15 @@ seulement quand le cas ressemble.
   structurelle (ex. ESN/prestation IT face aux agents IA) → drapeau
   explicite. Le fondamental présent ne protège pas d'un derating de
   multiple sur la thèse future.
+- **T6 — CONTREPARTIE** (sélection adverse, science-detection.md §3) : qui
+  VEND pour que ce prix existe, et que sait-il ? (a) vendeur FORCÉ
+  identifiable et nommé (sortie d'indice, spin-off, décollecte, fiscal) =
+  seule contrepartie prouvablement non informée ; (b) informés pendant la
+  baisse : cluster de ventes d'insiders, émission d'actions, secondary
+  d'un sponsor = drapeau qui requalifie l'« aubaine » ; (c) « pourquoi
+  moi » : l'avantage structurel (horizon sans mandat, petite taille, coût
+  d'info payé) doit être nommable — sinon rétrograde le signal. Verdict
+  en une ligne au rapport.
 
 ## PLAYBOOKS PAR TERRAIN (rotation de chasse-quotidienne.md)
 
@@ -223,9 +232,16 @@ passe T2 sur la NON-COUVERTURE démontrée, pas sur la nouveauté du fait.
 Pour CHAQUE signal (3-5 max) :
 - **LE FAIT** : précis, chiffré, daté, lien(s) + étiquette de certitude
 - **EXPOSITION COTÉE** : société(s), ticker(s), place, capi (sourcée)
-- **KILL-TESTS** : verdict T1→T5, une ligne chacun (drapeaux T4/T5 inclus)
+- **KILL-TESTS** : verdict T1→T6, une ligne chacun (drapeaux T4/T5 inclus)
 - **POURQUOI C'EST EARLY** : ce que le consensus n'a pas intégré + preuve
   de non-couru (résultat de la requête de disconfirmation)
+- **FENÊTRE & CATALYSEUR** : type d'info × taille du titre → fenêtre
+  d'edge estimée (table §2 de science-detection.md) + l'événement daté
+  qui forcera la correction (la correction se fait aux news —
+  Engelberg-McLean-Pontiff 2018). Signal sur donnée publique : à
+  travailler dans le 1ᵉʳ mois (Bowles 2024). Pas de date de paie
+  plausible sous 12-18 mois → rapporter comme candidate structurelle
+  (doctrine terrains-invisibles), pas comme signal.
 - **LE RISQUE ÉVIDENT** : une ligne honnête
 - **PROCHAINE VÉRIFICATION** : le document/chiffre/date qui confirme ou tue
 
@@ -245,4 +261,6 @@ US de plus — mais rapporte tout signal solide, l'analyste pondère.
 Référentiels (Read si accessibles) : chasse-quotidienne.md (rotation),
 valeurs-qualite.md (liste de courses), watchlist.md (ne re-signale pas sans
 fait NOUVEAU), radar-catalyseurs.md (à enrichir),
-terrains-invisibles.md (l'arsenal hors-radar).
+terrains-invisibles.md (l'arsenal hors-radar),
+science-detection.md (les lois du jeu : inefficiences persistantes,
+vitesses de diffusion, sélection adverse).
