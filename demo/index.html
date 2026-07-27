@@ -603,7 +603,7 @@ SCREENS.hub = () => `<div class="pad fade">
 </div>`;
 
 function gameRow(g,i){
-  return `<div class="gamerow" onclick="startGame('${g.id}')">
+  return `<div class="gamerow" onclick="chooseGame('${g.id}')">
     <div class="gtile" style="background:${g.col};position:relative;overflow:hidden;">${g.t}<img src="assets/jeu-${g.id}.png" alt="" onerror="this.remove()" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"></div>
     <div style="flex:1;"><h2 style="font-size:16px;color:var(--ink);">${g.nom}</h2><div class="sub" style="color:var(--ink2);font-size:12px;">${g.desc}</div></div>
     <span style="color:var(--ink2);font-weight:800;font-size:22px;">›</span></div>`;
@@ -1372,13 +1372,15 @@ function unpackGame(o){
 
 Room.snapshot = function(){
   return { screen:S.screen, turn:S.turn, reveal:S.reveal, game:packGame(S.game),
-           control:controlMode(), scores:S.players.map(p=>p.gorgees||0) };
+           control:controlMode(), pending:S.net.pendingGame||null,
+           scores:S.players.map(p=>p.gorgees||0) };
 };
 Room.applyState = function(st){
   S.players = Room.players;
   Room.players.forEach((p,i)=>{ if(st.scores && st.scores[i]!=null) p.gorgees=st.scores[i]; });
   S.screen = st.screen; S.turn = st.turn; S.reveal = st.reveal; S.game = unpackGame(st.game);
   if(st.control) S.net.control = st.control;
+  S.net.pendingGame = st.pending || null;
   clampTurn();
 };
 
@@ -1386,7 +1388,8 @@ Room.applyState = function(st){
 const NET_ACTIONS = ['busGuess','busNext','busSetMode','palmierTirer','palmierBalance','palmierDrop',
   'palmierNext','palmSetBalance','ftdGuess','startFtd','pmuChoose','pmuSelect','pmuDraw',
   'purpleGuess','purpleNext','echelleTirer','echelleSetGuess','echelleToGuess','echelleReveal',
-  'echelleNext','vobAns','vobSetCat','vobSetCount','jamaisAns','prefVote','prefNext','startGame'];
+  'echelleNext','vobAns','vobSetCat','vobSetCount','jamaisAns','prefVote','prefNext','startGame',
+  'chooseGame','pickControl','launchPending'];
 const ORIG = {};
 NET_ACTIONS.forEach(name=>{
   if(typeof window[name]!=='function') return;
@@ -1475,14 +1478,6 @@ SCREENS.lobby = () => {
       <div class="cap" style="margin-bottom:8px;">Joueurs (${Room.players.length})</div>
       ${list}
       <button class="btn sm" style="margin-top:6px;" onclick="openAvatar(myIndex())">Changer mon avatar / prénom</button>
-      ${meHost?`<div style="margin-top:18px;">
-        <div class="cap" style="margin-bottom:8px;">Qui pilote la partie ?</div>
-        <div style="display:flex;background:rgba(255,255,255,.10);border-radius:18px;padding:5px;gap:5px;">
-          ${[['turn','Chacun son tour','Chacun agit quand c\'est à lui'],['host','Le MJ pilote','Tu fais avancer pour tous']].map(m=>`
-            <button onclick="netSetControl('${m[0]}')" style="flex:1;border:none;cursor:pointer;border-radius:14px;padding:11px 8px;background:${controlMode()===m[0]?'#fff':'transparent'};color:${controlMode()===m[0]?'var(--indigo)':'#fff'};font-family:var(--d);font-weight:800;font-size:13px;line-height:1.2;">${m[1]}</button>`).join('')}
-        </div>
-        <div class="sub" style="font-size:12px;margin-top:7px;">${controlMode()==='host'?'Idéal pour les jeux de questions : tu enchaînes sans attendre que chacun tape sur son écran.':'Chaque joueur agit sur son téléphone quand vient son tour.'}</div>
-      </div>`:`<div class="sub center" style="margin-top:16px;font-size:12px;">Mode : ${controlMode()==='host'?'le MJ pilote':'chacun son tour'}</div>`}
     </div>
     ${meHost
       ? `<button class="btn amber" style="margin-top:12px;${enough?'':'opacity:.5;pointer-events:none;'}" onclick="netStart()">${enough?'Lancer la partie':'En attente de joueurs…'}</button>`
@@ -1494,6 +1489,13 @@ function myIndex(){ return Math.max(0, Room.players.findIndex(p=>p.pid===Room.me
 
 /* --- Actions salon --- */
 function netHost(){
+  if(Room.active){
+    showModal({emoji:'⚠️',title:'Quitter le salon en cours ?',
+      msg:'Tu es déjà dans le salon '+Room.code+'. En créer un nouveau va en sortir tout le monde.',
+      cta:'Oui, nouveau salon', tone:'red',
+      after:()=>{ Room.leave().then(()=>{ S.players=[]; netHost(); }); }});
+    return;
+  }
   S.net.error=''; S.net.status='connecting';
   Room.saveIdentity({ name: Room.me.name || (S.players[0]&&S.players[0].name) || 'Hôte', avatar: Room.me.avatar || (S.players[0]&&S.players[0].avatar) || null });
   Room.host().then(code=>{
@@ -1505,6 +1507,13 @@ function netHost(){
   });
 }
 function netJoin(){
+  if(Room.active){
+    showModal({emoji:'⚠️',title:'Quitter le salon en cours ?',
+      msg:'Tu es dans le salon '+Room.code+'. Rejoindre un autre salon va t\'en faire sortir.',
+      cta:'Oui, changer de salon', tone:'red',
+      after:()=>{ Room.leave().then(()=>{ S.players=[]; netJoin(); }); }});
+    return;
+  }
   const code=(S.net.joinCode||'').toUpperCase().trim();
   if(code.length<4){ S.net.error='Le code fait 4 lettres.'; render(); return; }
   S.net.error=''; S.net.status='connecting'; render();
@@ -1517,7 +1526,59 @@ function netJoin(){
     render();
   });
 }
-function netSetControl(m){ if(!Room.isHost) return; S.net.control=m; Room.pushState(); render(); }
+// Mode conseillé selon le jeu : les jeux de questions vont plus vite si le MJ enchaîne.
+const CONTROL_HINT = { vob:'host', jamais:'host', echelle:'host',
+                       pref:'turn', bus:'turn', palmier:'turn', ftd:'turn', pmu:'turn', purple:'turn' };
+function chooseGame(id){
+  if(!Room.active) return startGame(id);        // un seul téléphone : rien à demander
+  if(!Room.isHost) return;                      // seul l'hôte lance
+  S.net.pendingGame = id;
+  S.net.control = CONTROL_HINT[id] || 'turn';   // pré-sélection intelligente
+  S.screen = 'gamemode'; Room.pushState(); render();
+}
+function pickControl(m){
+  if(Room.active && !Room.isHost) return;
+  S.net.control = m; Room.pushState(); render();
+}
+function launchPending(){
+  if(Room.active && !Room.isHost) return;
+  const id = S.net.pendingGame; if(!id) return;
+  S.net.pendingGame = null; startGame(id);
+}
+SCREENS.gamemode = () => {
+  const id = S.net.pendingGame, g = GAMES.find(x=>x.id===id) || {nom:'Jeu'};
+  const opt = (m,titre,desc,icone) => `
+    <button onclick="pickControl('${m}')" style="width:100%;text-align:left;border:none;cursor:pointer;border-radius:22px;padding:18px;margin-bottom:12px;display:flex;align-items:center;gap:15px;
+      background:${controlMode()===m?'rgba(255,255,255,.96)':'rgba(255,255,255,.10)'};
+      color:${controlMode()===m?'var(--ink)':'#fff'};
+      box-shadow:${controlMode()===m?'0 12px 26px rgba(0,0,0,.28)':'none'};
+      border:1px solid ${controlMode()===m?'transparent':'rgba(255,255,255,.14)'};transition:background .15s;">
+      <div style="width:46px;height:46px;flex:none;border-radius:15px;background:${controlMode()===m?'var(--indigo)':'rgba(255,255,255,.14)'};display:flex;align-items:center;justify-content:center;">${icone}</div>
+      <div style="flex:1;min-width:0;">
+        <div style="font-family:var(--d);font-weight:800;font-size:17px;">${titre}</div>
+        <div style="font-family:var(--b);font-weight:600;font-size:13px;opacity:.78;margin-top:3px;line-height:1.35;">${desc}</div>
+      </div>
+      ${controlMode()===m?'<div style="flex:none;width:24px;height:24px;border-radius:50%;background:var(--indigo);color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;">✓</div>':''}
+    </button>`;
+  const svgTour = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>`;
+  const svgMj = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l4 3 5-6 5 6 4-3v10H3z"/><path d="M3 21h18"/></svg>`;
+  if(Room.active && !Room.isHost){
+    return `<div class="pad fade">${gameHead(g.nom)}<div class="spacer"></div>
+      <div class="gpanel" style="padding:26px;text-align:center;">
+        <b style="font-family:var(--f);font-size:18px;color:#fff;">L'hôte prépare « ${g.nom} »…</b>
+        <div class="sub" style="font-size:13px;margin-top:8px;">Il choisit si chacun joue sur son téléphone ou s'il pilote pour tout le monde.</div>
+      </div><div class="spacer"></div></div>`;
+  }
+  return `<div class="pad fade">
+    <div class="hdr"><button class="iconbtn" onclick="go('hub')">‹</button><h2 style="flex:1;text-align:center;font-size:20px;">${g.nom}</h2><div style="width:42px"></div></div>
+    <div class="spacer"></div>
+    <div class="cap" style="margin-bottom:12px;">Comment vous jouez ?</div>
+    ${opt('turn','Chacun son tour',"Chaque joueur agit sur son téléphone quand vient son tour.",svgTour)}
+    ${opt('host','Le MJ pilote',"Tu fais avancer pour tout le monde. Plus rapide, idéal pour les questions.",svgMj)}
+    <div class="spacer"></div>
+    <button class="btn amber" onclick="launchPending()">Lancer « ${g.nom} »</button>
+  </div>`;
+};
 function netStart(){ if(!Room.isHost) return; S.players=Room.players; S.turn=0; S.screen='hub'; Room.pushState(); render(); }
 function netLeave(){ Room.leave().then(()=>{ S.players=[]; loadSession(); go('home'); }); }
 
