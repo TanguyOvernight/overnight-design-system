@@ -1,8 +1,22 @@
 # Radar de catalyseurs — événements datés à venir
 
-Mis à jour : **2026-07-25**. Chaque brief vérifie ce qui tombe sous 7 jours.
+Mis à jour : **2026-07-27**. Chaque brief vérifie ce qui tombe sous 7 jours.
 Ajouter tout nouvel événement daté découvert dans l'actualité ; purger le passé
 en le journalisant si notable.
+
+## Surveillances du Juge (contrats datés — charte Arbitre v2)
+
+Toute SURVEILLANCE émise par l'Arbitre vit ICI avec ses 4 champs. À
+l'échéance sans déclencheur ni thèse renforcée → PASSE automatique (ou
+renouvellement explicitement motivé). Stock max ~6 lignes.
+
+| Affaire | Déclencheur d'achat précis | Échéance de re-test | Expiration si rien | Appel registre |
+|---|---|---|---|---|
+| **Aubay (PEA)** | Cours ≤ 50 € OU scare optique sur le T3 | Publication T3 (fin oct. 2026) | Après T3 sans déclencheur → PASSE auto | C001 |
+| **STM (STMPA, PEA)** | ≤ 42 $ ET P/E fwd < 30x ET ≥ 1 trim. de MB remontant vers 40 %+ | Résultats Q3 STM (fin oct. 2026) | Après Q3 sans les 3 conditions → PASSE auto | C007 |
+| **Nike (NKE, CTO)** | ≥ 1 trim. Direct/Digital positif OU stabilisation Chine explicite + fin des révisions baissières + tenue > MM50 | Prochains résultats trimestriels NKE (~fin sept. 2026) | Après 2 publications sans stabilisation (≤ 30/04/2027) → PASSE auto | C008 |
+| **WMT (CTO)** | Alerte prix ~98-100 $ (~33x) | Résultats du 20/08/2026 | Fin 2026 sans repli → PASSE auto | — |
+| **MSFT renfort (détenu)** | Après résultats 29/07 : Azure ≥ ~38-40 % ET guidance capex maîtrisée | 29/07/2026 (print) | Print raté sur l'un des deux critères → pas de renfort, re-test au T1 FY27 | — |
 
 ## Sous 7 jours 🔥
 
