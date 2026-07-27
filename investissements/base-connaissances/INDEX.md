@@ -18,6 +18,7 @@ diverge tôt ou tard (cas vécu : le PFU à 30 % vs 31,4 % dans 4 fichiers).
 | Valeurs suivies non détenues + conditions d'entrée | `watchlist.md` |
 | Surveillances actées du Juge (contrats 4 champs) + dates | `radar-catalyseurs.md` |
 | Appels probabilistes et leur score | `registre-calibration.md` |
+| **Classement persistant des opportunités** (rien ne s'y perd) | `classement-opportunites.md` |
 
 ## 🔴 État vivant — à jour en permanence (les 6 fichiers du quotidien)
 
@@ -27,6 +28,7 @@ diverge tôt ou tard (cas vécu : le PFU à 30 % vs 31,4 % dans 4 fichiers).
 | `profil-decision.md` | Qui est Tanguy, quelles règles, quel plan courant ? | **Juge (en 1er)**, Avocat |
 | `radar-catalyseurs.md` | Quelles surveillances actives, quels événements datés ? | Juge, screening quotidien |
 | `registre-calibration.md` | Nos appels tiennent-ils ? Où se trompe-t-on ? | **Juge (en 1er)**, Vérif' du samedi |
+| `classement-opportunites.md` | **Quelle idée est la meilleure AUJOURD'HUI ?** Rang, déclencheur, motif de sortie | **Tous — relu et re-classé à chaque édition** |
 | `watchlist.md` | Quelles idées en réserve, à quel prix ? | Chasseur (ne pas re-signaler), Juge |
 | `chasse-quotidienne.md` | Comment tourne le pipeline à 3 étages, quel terrain quel jour ? | Routine 9h |
 

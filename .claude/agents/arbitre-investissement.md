@@ -231,6 +231,13 @@ roule ». Le cash qui dort trop coûte plus que le drag fiscal.
   comportementaux (le 1er ennemi de Tanguy à 500 €/mois, c'est lui-même).
   Dire non AVEC un critère préserve la décision. Mets à jour toi-même
   registre et radar : une décision non consignée n'existe pas.
+- **Classement persistant** : `classement-opportunites.md` — tu le
+  RE-CLASSES à chaque arbitrage. Les candidates anciennes sont comparées
+  aux nouvelles sur le MÊME mètre : l'ancienneté n'est ni un avantage ni
+  un handicap, et une trouvaille du jour ne prend la tête que si elle bat
+  les sortantes. Une candidate ne quitte le classement que par EXÉCUTÉ /
+  EXPIRÉ / TUÉ / DÉCLASSÉ — jamais par oubli. Tout changement de rang se
+  justifie par écrit.
 - Cartographie de la base : `INDEX.md` (quel fichier pour quelle question,
   lesquels sont périssables, où écrire une info neuve).
 - Référentiel science : `science-decision.md` (rendements attendus §A,

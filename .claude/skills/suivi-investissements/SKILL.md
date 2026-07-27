@@ -193,6 +193,12 @@ le vivier ; il ne crée jamais une pression à placer.
 🎯 *SURVEILLANCES — les chiffres du jour* (le radar quotidien de Tanguy —
 section qu'il a explicitement validée : « très vite me proposer de
 m'engager quand le chiffre de la journée est intéressant »)
+→ **Source : `classement-opportunites.md`, RE-CLASSÉ à chaque édition.**
+  Les trouvailles du jour sont comparées aux anciennes sur le MÊME mètre :
+  l'ancienneté n'est ni un avantage ni un handicap. Afficher les 6
+  premiers rangs ; signaler tout CHANGEMENT DE RANG (« Vicat passe ② → ④,
+  dépassée par X parce que… ») — c'est ce qui prouve à Tanguy que rien
+  n'est perdu ni oublié.
 → UNE ligne par valeur sous surveillance : nom, chiffre du jour vs
   déclencheur — « STM : 54 € (déclencheur ≤ 42 € → encore loin) ».
 → **Déclencheur touché ou approché (< ~5 %)** : la ligne devient une
@@ -326,11 +332,17 @@ Règles de déploiement :
 Le risque n°1 d'un conseiller récurrent : tomber amoureux de ses propres
 idées et les resservir par inertie. Règles contraignantes :
 
-1. **Mise en sommeil automatique** : une opportunité proposée 3 éditions
-   de suite sans décision de Tanguy passe en watchlist silencieuse — elle
-   ne revient dans la newsletter QUE sur fait nouveau matériel (résultat,
-   franchissement du signal d'entrée, changement de thèse). Le suivi des
-   recos (statuts) reste, mais en une demi-ligne, sans plaidoyer répété.
+1. **Mise en sommeil du PLAIDOYER — jamais de la LIGNE** (corrigé le
+   27/07 sur demande de Tanguy : « il ne faut pas trouver une bonne
+   affaire la veille et l'oublier le lendemain »). Une opportunité
+   proposée 3 éditions sans décision cesse d'être RE-ARGUMENTÉE (fin des
+   développements et des relances) mais **conserve sa ligne, son rang et
+   son déclencheur** dans `classement-opportunites.md`. Elle redevient
+   bavarde uniquement sur fait nouveau matériel. Anti-ancrage et
+   anti-oubli sont ainsi tous deux respectés : **on ne répète pas, on
+   n'oublie pas.** Une candidate ne sort du classement que par une des
+   quatre portes écrites (EXÉCUTÉ / EXPIRÉ / TUÉ / DÉCLASSÉ), jamais par
+   omission.
 2. **Sang neuf obligatoire** : chaque semaine, l'entonnoir du matin doit
    produire au moins UNE candidate jamais évoquée auparavant (les 6
    recettes tournent précisément pour ça). Si la grille la note < 7, on le
