@@ -58,15 +58,33 @@
     this.url = url; this.key = key;
     this.client = null; this.channel = null;
   }
+  // Chargement de la librairie Supabase avec CDN de secours : un bloqueur de pub
+  // ou une coupure d'un CDN ne doit pas suffire à tuer le mode Online.
+  var LIB_CDNS = [
+    'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js',
+    'https://unpkg.com/@supabase/supabase-js@2/dist/umd/supabase.js'
+  ];
   SupabaseTransport.prototype._lib = function () {
-    return new Promise(function (resolve, reject) {
-      if (root.supabase && root.supabase.createClient) return resolve(root.supabase);
-      var s = document.createElement('script');
-      s.src = 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js';
-      s.onload = function () { resolve(root.supabase); };
-      s.onerror = function () { reject(new Error('Supabase indisponible')); };
-      document.head.appendChild(s);
+    if (root.supabase && root.supabase.createClient) return Promise.resolve(root.supabase);
+    if (root.__sbLibPromise) return root.__sbLibPromise;   // un seul chargement partagé
+    root.__sbLibPromise = new Promise(function (resolve, reject) {
+      var i = 0;
+      (function next() {
+        if (i >= LIB_CDNS.length) {
+          root.__sbLibPromise = null;
+          return reject(new Error('librairie Supabase injoignable (réseau ou bloqueur ?)'));
+        }
+        var s = document.createElement('script');
+        s.src = LIB_CDNS[i++];
+        s.onload = function () {
+          if (root.supabase && root.supabase.createClient) resolve(root.supabase);
+          else next();
+        };
+        s.onerror = next;
+        document.head.appendChild(s);
+      })();
     });
+    return root.__sbLibPromise;
   };
   SupabaseTransport.prototype.connect = function (opts) {
     var self = this;

@@ -8,7 +8,7 @@
      3. Colle-les ci-dessous, commit, redéploie.
    Tant que c'est vide, l'app reste 100 % jouable en mode local (un téléphone). */
 window.OVERNIGHT_CONFIG = Object.assign({
-  supabaseUrl: '',
+  supabaseUrl: 'https://jcrtfzlsvnuaxtfzrpvy.supabase.co',
   supabaseAnonKey: 'sb_publishable_nC02vNkb8nrpZfbOHZ5jDw_UMzHUGf4',
   // Optionnel : force l'URL utilisée dans le QR code (sinon déduite de la page courante)
   publicBase: ''
