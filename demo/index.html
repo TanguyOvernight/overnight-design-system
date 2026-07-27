@@ -1142,24 +1142,64 @@ SCREENS.jamais = () => `<div class="pad fade">${gameHead("Je n'ai jamais", `<div
  </div>`;
 function jamaisAns(did){ haptic('tap'); if(did)drink(S.turn,1); nextTurn(); jamaisPick(); render(); }
 
-/* ============================ TU PRÉFÈRES ============================ */
-function startPref(){ S.game={used:new Set(), p:null, picked:null}; prefPick(); go('pref'); }
-function prefPick(){ const g=S.game; if(g.used.size>=PREF.length)g.used.clear(); let i; do{i=Math.random()*PREF.length|0;}while(g.used.has(i)); g.used.add(i); g.p=PREF[i]; g.picked=null; }
+/* ============================ TU PRÉFÈRES (vote de groupe) ============================ */
+function startPref(){ S.game={used:new Set(), p:null, votes:[], voter:0, phase:'vote'}; prefPick(); go('pref'); }
+function prefPick(){ const g=S.game; if(g.used.size>=PREF.length)g.used.clear(); let i; do{i=Math.random()*PREF.length|0;}while(g.used.has(i)); g.used.add(i); g.p=PREF[i]; g.votes=[]; g.voter=0; g.phase='vote'; }
 SCREENS.pref = () => {
   const g=S.game;
-  const opt=(i,letter,col)=>`<button class="pop" onclick="prefChoose(${i})" style="border:none;cursor:pointer;border-radius:24px;padding:26px 22px;text-align:left;background:#fff;color:var(--ink);box-shadow:var(--sh-card);display:flex;align-items:center;gap:16px;transition:transform .08s;" onpointerdown="this.style.transform='scale(.97)'">
-      <div style="width:50px;height:50px;flex:none;border-radius:15px;background:${col};color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--d);font-weight:800;font-size:24px;">${letter}</div>
-      <div style="font-family:var(--f);font-weight:800;font-size:${Math.min(26,qz(g.p[i]))}px;line-height:1.25;">${g.p[i]}</div></button>`;
-  return `<div class="pad fade">${gameHead('Tu préfères', `<div class="pill">A / B</div>`)}${turnBanner()}
-   <div class="gamebody" style="justify-content:center;gap:14px;">
-     ${opt(0,'A','#6C4FE0')}
-     <div class="center" style="font-family:var(--d);font-weight:800;font-size:17px;color:rgba(255,255,255,.85);">OU</div>
-     ${opt(1,'B','#F0A93C')}
-     <div class="sub center" style="margin-top:8px;font-size:13px;color:rgba(255,255,255,.6);">Touche ta réponse pour passer au suivant</div>
+  const COL=['#7B57F2','#F0A93C'];
+  if(g.phase==='vote'){
+    const v=S.players[g.voter];
+    const opt=(i,letter)=>`<button class="pop" onclick="prefVote(${i})" style="border:none;cursor:pointer;border-radius:24px;padding:24px 20px;text-align:left;background:#fff;color:var(--ink);box-shadow:var(--sh-card);display:flex;align-items:center;gap:15px;transition:transform .08s;" onpointerdown="this.style.transform='scale(.97)'">
+        <div style="width:48px;height:48px;flex:none;border-radius:15px;background:${COL[i]};color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--d);font-weight:800;font-size:23px;">${letter}</div>
+        <div style="font-family:var(--f);font-weight:800;font-size:${Math.min(24,qz(g.p[i]))}px;line-height:1.25;">${g.p[i]}</div></button>`;
+    const dots=S.players.map((p,i)=>`<span style="width:9px;height:9px;border-radius:50%;background:${i<g.voter?'#FFC93C':(i===g.voter?'#fff':'rgba(255,255,255,.28)')};"></span>`).join('');
+    return `<div class="pad fade">${gameHead('Tu préfères', `<div class="pill">${g.voter+1}/${S.players.length}</div>`)}
+     <div style="display:flex;flex-direction:column;align-items:center;gap:9px;margin:4px 0 2px;">${avatar(v,76)}<div style="font-family:var(--d);font-weight:800;color:#fff;font-size:22px;">${v.name} vote</div>
+       <div style="display:flex;gap:6px;">${dots}</div></div>
+     <div class="gamebody" style="justify-content:center;gap:12px;">
+       ${opt(0,'A')}
+       <div class="center" style="font-family:var(--d);font-weight:800;font-size:16px;color:rgba(255,255,255,.8);">OU</div>
+       ${opt(1,'B')}
+       <div class="sub center" style="font-size:12px;color:rgba(255,255,255,.55);">Passe le téléphone après ton vote</div>
+     </div></div>`;
+  }
+  // révélation : la minorité boit
+  const nA=g.votes.filter(x=>x===0).length, nB=g.votes.length-nA;
+  const tie=nA===nB, minority= tie?-1:(nA<nB?0:1);
+  const pct=[Math.round(nA/g.votes.length*100), Math.round(nB/g.votes.length*100)];
+  const side=(i)=>{
+    const who=S.players.filter((p,k)=>g.votes[k]===i);
+    const isMin=minority===i;
+    return `<div style="border-radius:22px;padding:16px 15px;background:${isMin?'rgba(255,120,105,.18)':'rgba(255,255,255,.10)'};border:1px solid ${isMin?'rgba(255,140,125,.5)':'rgba(255,255,255,.14)'};">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div style="width:34px;height:34px;flex:none;border-radius:11px;background:${COL[i]};color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--d);font-weight:800;font-size:17px;">${i?'B':'A'}</div>
+        <div style="flex:1;font-family:var(--f);font-weight:800;font-size:15px;color:#fff;line-height:1.25;">${g.p[i]}</div>
+        <div style="font-family:var(--d);font-weight:800;font-size:22px;color:${isMin?'#FF9A8B':'#fff'};">${pct[i]}%</div></div>
+      <div style="height:9px;border-radius:99px;background:rgba(0,0,0,.22);margin:11px 0 10px;overflow:hidden;"><div style="width:${pct[i]}%;height:100%;background:${COL[i]};border-radius:99px;transition:width .5s cubic-bezier(.2,.9,.3,1);"></div></div>
+      <div style="display:flex;flex-wrap:wrap;gap:5px;min-height:30px;">${who.length?who.map(p=>avatarInline(p,30)).join(''):'<span class="sub" style="font-size:12px;">personne</span>'}</div></div>`;
+  };
+  const verdict = tie
+    ? `<b style="font-family:var(--f);font-size:19px;color:#FFD37A;">Égalité parfaite — tout le monde boit 1 !</b>`
+    : `<b style="font-family:var(--f);font-size:19px;color:#FF9A8B;">La minorité boit 2 gorgées</b>`;
+  return `<div class="pad fade">${gameHead('Tu préfères', `<div class="pill">Résultat</div>`)}
+   <div class="gamebody" style="justify-content:center;gap:12px;">
+     ${side(0)}${side(1)}
+     <div class="drop center" style="margin-top:4px;">${verdict}</div>
    </div>
-  </div>`;
+   <button class="btn primary" onclick="prefNext()">Question suivante</button></div>`;
 };
-function prefChoose(i){ haptic('tap'); nextTurn(); prefPick(); render(); }
+function prefVote(i){
+  const g=S.game; haptic('tap'); g.votes.push(i); g.voter++;
+  if(g.voter>=S.players.length){
+    const nA=g.votes.filter(x=>x===0).length, nB=g.votes.length-nA;
+    if(nA===nB) S.players.forEach((p,k)=>drink(k,1));
+    else { const min=nA<nB?0:1; S.players.forEach((p,k)=>{ if(g.votes[k]===min) drink(k,2); }); }
+    g.phase='result'; haptic('ok');
+  }
+  render();
+}
+function prefNext(){ nextTurn(); prefPick(); render(); }
 
 /* ============================ ROUTAGE ============================ */
 function startGame(id){
