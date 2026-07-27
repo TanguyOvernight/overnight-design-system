@@ -2,19 +2,27 @@
 
 ## 1. Héberger le jeu (lien stable)
 
-Le repo contient déjà `vercel.json` et `netlify.toml` : la racine du site sert
-`demo/index.html`, et `/join` pointe sur la même page (lien d'invitation).
+Le repo contient déjà `vercel.json` et `netlify.toml`. **Le dossier `demo/` est la
+racine du site** (`outputDirectory` / `publish`), pour que les chemins relatifs
+(polices, avatars, scripts) résolvent correctement. `/join` sert la même page.
 
-### Vercel
-1. https://vercel.com/new → *Import Git Repository* → ce repo
-2. Framework preset : **Other** · Build command : *(vide)* · Output directory : *(vide)*
-3. Deploy → tu obtiens `https://<projet>.vercel.app`
-4. (Optionnel) *Settings → Domains* pour brancher `overnight.chat3d.ai`
+### Vercel — lien direct
+1. Ouvre : **https://vercel.com/new/import?s=https%3A%2F%2Fgithub.com%2FTanguyOvernight%2Fovernight-design-system**
+   (ou https://vercel.com/new → *Import Git Repository* → ce repo)
+2. **Ne change rien** : `vercel.json` fixe déjà le preset et le dossier de sortie.
+   Build command vide, Output directory laissé tel quel.
+3. Si tu déploies la branche de dev, choisis `claude/drinking-games-app-spec-4Egty`
+   dans *Settings → Git → Production Branch* (sinon merge la PR d'abord).
+4. **Deploy** → tu obtiens `https://<projet>.vercel.app`
+5. (Optionnel) *Settings → Domains* pour brancher `overnight.chat3d.ai`
 
 ### Netlify
 1. https://app.netlify.com/start → ce repo
-2. Build command : *(vide)* · Publish directory : `.`
+2. Build command : *(vide)* · Publish directory : **`demo`**
 3. Deploy
+
+> Vérifié en local en servant `demo/` comme racine : 53 ressources chargées
+> (polices, avatars, scripts, manifeste), aucune 404 bloquante.
 
 À chaque `git push`, le site se met à jour tout seul — plus besoin de repinner
 un lien githack sur un SHA.
