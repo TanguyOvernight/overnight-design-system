@@ -34,6 +34,16 @@ renouvellement explicitement motivé). Stock max ~6 lignes.
 | 31/07 | Résultats Cameco (BPA attendu 0,26 $, -49 %) | Thème uranium/énergie IA (veille, spot ~85,8 $/lb) |
 | Début août | Ouverture « Corriger ma déclaration » impots.gouv.fr | Régularisation 3916-bis si compte ouvert ≤ 2025 |
 | 26/08 | **Résultats Nvidia T2** | NVDA = 22 % du portefeuille — le rendez-vous du mois |
+| 27/08 | **Résultats S1 IBA (IBAB, Bruxelles, PEA)** — cash-flow, marge, langage PanTera (lire en diff vs S1 2025) | Chasse profonde 27/07 : goulet actinium-225, participation PanTera 31,3 % (en instruction Avocat/Arbitre) |
+
+## Chasse profonde 27/07 — jalons découverts (hors surveillances actées)
+
+| Échéance | Événement | Signal |
+|---|---|---|
+| Sept. 2026 (date à confirmer) | Résultats S1 Séché (SCHP, Paris, PEA) — 1ʳᵉ quantification PFAS/boues ? EBITDA +5-10 % tenu ? | Marché de destruction PFAS créé par la circulaire du 27/04/2026 (en instruction) |
+| ~Nov. 2026 | T3 Stalprodukt (Varsovie) — 1er trimestre plein sous sauvegardes acier UE (01/07/2026) | GOES/transformateurs — achetabilité PEA non résolue : radar d'apprentissage seulement |
+| ~2029 | Montée en capacité commerciale PanTera (Ra-226 photonucléaire) + usine TerraPower Philadelphie | Jalon long du goulet Ac-225 |
+| Post-2026 | Montée de la dépense PFAS eau potable UE (lag 3-5 ans, ~3,6 Md€ d'ici 2036 — Bluefield) | Thème structurel |
 
 ## Septembre 2026
 
