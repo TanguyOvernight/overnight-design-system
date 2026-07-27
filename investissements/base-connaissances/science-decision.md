@@ -41,10 +41,9 @@ biais espéré (profil, §change).
   zéro).
 - **Un hurdle abaissé n'est PAS un feu vert satellites** : la même
   valorisation comprime l'espérance des satellites actions (surtout tech
-  US corrélée). La prime exigée (+2-3 pts/an, doublée si corrélé — règle
+  US corrélée) ; la prime exigée (+2-3 pts/an, doublée si corrélé — règle
   17) est INCHANGÉE. Le vrai gagnant d'un CAPE 41 : les classes dont
-  l'attente conditionnelle DÉPASSE le World (value, ex-US) — cohérent
-  avec le bonus diversification du mandat.
+  l'attente DÉPASSE le World (value, ex-US) — le bonus diversification.
 
 ## B. Ambiguïté : quand la probabilité elle-même est incertaine
 
@@ -100,15 +99,14 @@ un gros pari unique n'a pas d'espérance, il a deux issues. »
 ## D. Agrégation : combien vaut vraiment l'accord Chasseur/Avocat ?
 
 - **Décompte de l'accord corrélé** [ROBUSTE] : k avis dont les erreurs
-  sont corrélées ρ ≈ au mieux 1/ρ avis indépendants (Clemen-Winkler 1985).
-  ρ = 0,5 → JAMAIS mieux que 2 avis indépendants, quel que soit k ;
-  ρ = 0,7 → ~1,4. Chasseur et Avocat lisent largement les mêmes sources
-  (presse financière, mêmes publications) → leur ρ est ÉLEVÉ : **leur
-  accord vaut ~1,4 avis, pas 2**. Opérationnel : l'accord ne resserre la
-  P que s'il passe par des chemins DISJOINTS (sources primaires
-  différentes, cadres différents : fondamental vs flux). Même source
-  citée des deux côtés = UN avis, et la recherche de contamination
-  (protocole d'instruction) devient un calcul, plus un soupçon.
+  sont corrélées ρ valent au mieux 1/ρ avis indépendants (Clemen-Winkler
+  1985). ρ = 0,5 → jamais mieux que 2 avis, quel que soit k ; ρ = 0,7 →
+  ~1,4. Chasseur et Avocat lisent largement les mêmes sources → leur ρ est
+  ÉLEVÉ : **leur accord vaut ~1,4 avis, pas 2**. Opérationnel : l'accord
+  ne resserre la P que s'il passe par des chemins DISJOINTS (sources
+  primaires différentes, cadres différents : fondamental vs flux). Même
+  source citée des deux côtés = UN avis — la recherche de contamination
+  du protocole d'instruction devient un calcul, plus un soupçon.
 - **Extremizing conditionnel** [ROBUSTE, périmètre précis] : moyenner des
   probas écrase vers 0,5 quand chaque juge ne détient qu'une PART de
   l'info → l'agrégateur pousse la moyenne vers l'extrême (Baron-Mellers-

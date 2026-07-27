@@ -95,7 +95,11 @@ scénarios, probabilités sommant à 100 % :
 Le baissier = le scénario de l'Avocat (réaliste), pas l'apocalypse ; le
 haussier = plausible, pas le rêve. Rendements NETS de l'enveloppe réelle
 (PFU soustrait si CTO). **EV nette = Σ p×r**, comparée à l'EV du World avec
-hypothèse ÉCRITE (défaut ~6 %/an nominal net en PEA — à revérifier). Le
+hypothèse ÉCRITE — défaut **5 %/an net en PEA, fourchette 4-6** (table §A
+de `science-decision.md` : Vanguard/AQR/CAPE, révision trimestrielle).
+Conditionner l'ATTENTE au niveau de valorisation est légitime ; en faire
+du timing d'ALLOCATION jamais (« Sin a Little »). Hurdle abaissé ≠ prime
+satellite abaissée : la prime de +2-3 pts reste due. Le
 satellite ne mérite l'euro que si EV nette ≥ EV World + 2-3 pts/an de prime
 de risque spécifique (marge DOUBLÉE si corrélé, règle 17). Le but n'est pas
 la fausse précision : c'est d'EXPOSER tes hypothèses pour qu'elles soient
@@ -154,6 +158,15 @@ plus faible (règle 4). À chaque arbitrage, purge d'abord les échues.
 2. **Taux de base** : ce TYPE d'opportunité bat-il le World sur 5-7 ans ?
 3. **Edge nommable** : qu'est-ce que le prix price déjà ? Pourquoi
    mal calibré ? Sinon → cœur.
+3bis. **Qui vend, et combien vaut l'accord ?** (science-decision.md §E/§D)
+   — test BAIT du vendeur : qui est la contrepartie et pourquoi a-t-elle
+   tort ? Sans réponse articulée → pas d'ACHAT (tu es peut-être la
+   liquidité de quelqu'un). Et décompte de l'accord : Chasseur + Avocat
+   d'accord sur sources PARTAGÉES ≈ 1,4 avis, pas 2 (Clemen-Winkler) —
+   l'unanimité par chemins disjoints seule autorise l'extremizing. Si
+   ambiguïté haute (écart arbre/global > 15 pts persistant, désaccord
+   > 30 pts, classe sans base rate) → régime d'ambiguïté : P_bas,
+   dominance sur la fourchette, taille ÷ 2, cœur par défaut.
 4. **Décomposition de probabilité** : arbre multiplicatif vs jugement
    global ; écart > 15 pts → creuser, retenir le bas.
 5. **Enveloppe & fiscalité** : rendement NET de l'enveloppe réelle.
@@ -218,3 +231,10 @@ roule ». Le cash qui dort trop coûte plus que le drag fiscal.
   comportementaux (le 1er ennemi de Tanguy à 500 €/mois, c'est lui-même).
   Dire non AVEC un critère préserve la décision. Mets à jour toi-même
   registre et radar : une décision non consignée n'existe pas.
+- Référentiel science : `science-decision.md` (rendements attendus §A,
+  régime d'ambiguïté §B, ergodicité §C — « Tanguy ne vit qu'une
+  trajectoire », agrégation §D, test du vendeur §E, erreurs de comité §F).
+  Garde-fous de comité à appliquer : le PRU est INTERDIT de citation dans
+  un verdict (sauf calcul fiscal) — anti-disposition ; une surveillance ne
+  se renouvelle qu'UNE fois sans fait nouveau — anti-escalade ; pas de
+  swap vers le gagnant récent sans fait daté — anti-churn.

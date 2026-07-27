@@ -1,11 +1,10 @@
 # Science de la réfutation — ACH, pondération des preuves, forensic avancé
 
 Compilé le 2026-07-27 (Heuer/CIA, Pherson, I.J. Good, JAE/JAR/JF). Boîte à
-outils de l'AVOCAT DU DIABLE (`.claude/agents/avocat-diable.md`). Complète
-SANS répéter : science-prevision.md (base rates, petites mises à jour,
-premortem), methodes-quantitatives.md et analyse-fondamentale.md (Beneish,
-Sloan, 7 red flags, SBC). Étiquettes : [ROBUSTE] consensus répliqué ·
-[DÉBATTU] preuves mitigées · [FRAGILE] heuristique indicative.
+outils de l'AVOCAT DU DIABLE. Complète SANS répéter : science-prevision.md
+(base rates, petites mises à jour), methodes-quantitatives.md et
+analyse-fondamentale.md (Beneish, Sloan, 7 red flags, SBC). Étiquettes :
+[ROBUSTE] consensus répliqué · [DÉBATTU] mitigé · [FRAGILE] indicatif.
 
 ## 1. ACH — instruire par hypothèses rivales (Heuer, CIA)
 
@@ -13,11 +12,10 @@ Le cœur (Heuer, *Psychology of Intelligence Analysis*, CIA 1999, ch. 8) :
 on ne prouve pas une thèse en empilant des preuves POUR — presque toute
 preuve est compatible avec plusieurs récits. On retient l'hypothèse qui a
 le MOINS de preuves CONTRE, après avoir tenté d'infirmer CHACUNE. [ROBUSTE
-comme logique éliminatoire ; DÉBATTU comme outil : Dhami et al. 2019 et
-une étude 2024 (N=161) montrent que la matrice seule ne réduit pas
-fiablement le biais de confirmation et reste sensible au choix des
-preuves ; la RAND (RR-1408) note le déficit d'évaluation des SAT. → Garder
-les 3 gestes robustes : expliciter les rivales, chercher l'infirmant,
+comme logique éliminatoire ; DÉBATTU comme outil : la matrice seule ne
+réduit pas fiablement le biais de confirmation et reste sensible au choix
+des preuves (Dhami et al. 2019 ; étude 2024, N=161 ; RAND RR-1408). →
+Garder les 3 gestes robustes : rivales explicites, chercher l'infirmant,
 jeter le non-diagnostique.]
 
 ### La matrice type pour un signal d'investissement
@@ -32,8 +30,7 @@ I (incohérent) / N (non pertinent) contre CHAQUE hypothèse. Puis :
 1. **Diagnosticité d'abord** : un fait C avec les 4 (« le marché croît »,
    « le management est confiant ») pèse ZÉRO — pseudo-diagnostique,
    interdit à l'appui du verdict. Réflexe : demander P(fait | thèse
-   FAUSSE), la question que le cerveau saute spontanément
-   (pseudodiagnosticité, Doherty et al. 1979) [ROBUSTE].
+   FAUSSE) — la question que le cerveau saute (Doherty et al. 1979) [ROBUSTE].
 2. **Verdict = l'hypothèse la moins infirmée**, jamais la plus « soutenue ».
 3. **Sensibilité** (étapes 6 et 8 de l'ACH original) : nommer les 2-3
    faits qui portent SEULS la discrimination → re-vérification
@@ -44,24 +41,22 @@ I (incohérent) / N (non pertinent) contre CHAQUE hypothèse. Puis :
 ### Key Assumptions Check + Quality of Information Check (CIA Tradecraft Primer 2009)
 - **KAC** : écrire 3-5 prémisses implicites (« le management dit vrai »,
   « la demande continue », « le multiple historique est la bonne
-  référence », « le précédent Y est comparable ») et classer : soutenue /
-  correcte avec réserves / non soutenue. ≥ 2 non soutenues sous un fait
-  central = château de cartes, quel que soit le nombre de C.
+  référence ») et classer : soutenue / avec réserves / non soutenue.
+  ≥ 2 non soutenues sous un fait central = château de cartes.
 - **QIC** : pour chaque source-clé — QUI le dit, COMMENT le sait-il
   (témoin direct, calcul, ouï-dire), quel track record ? L'étape 1 vérifie
   le FAIT ; le QIC vérifie la CHAÎNE qui l'a transporté.
 
 ### Détection de déception — MOM / POP / MOSES / EVE (Pherson & Heuer)
 Dès que H3 est plausible : **MOM** — Motif (levée à venir, vesting, short
-à faire couvrir, gérant qui parle de son livre) / Opportunité (contrôle du
-canal : IR, KPI maison invérifiables) / Moyens (historique de comm'
-agressive) · **POP** — précédents du même émetteur (restatements,
-sanctions, promesses ratées : meilleur prédicteur d'une déception
-future) · **MOSES** — source manipulable ? (embargo, « exclusivité » = le
-journaliste a été CHOISI) · **EVE** — preuve vérifiable indépendamment du
-déclarant ? Règle : un MOM élevé ne rend pas le fait FAUX — il DÉGRADE son
-poids (LR → 1) et hausse l'exigence de preuve (étape 4). Jamais de RÉFUTÉ
-sur la seule incitation.
+à faire couvrir) / Opportunité (contrôle du canal : IR, KPI maison
+invérifiables) / Moyens (historique de comm' agressive) · **POP** —
+précédents du même émetteur (restatements, sanctions, promesses ratées :
+meilleur prédicteur d'une déception future) · **MOSES** — source
+manipulable ? (embargo, « exclusivité » = journaliste CHOISI) · **EVE** —
+preuve vérifiable indépendamment du déclarant ? Règle : un MOM élevé ne
+rend pas le fait FAUX — il DÉGRADE son poids (LR → 1) et hausse l'exigence
+de preuve (étape 4). Jamais de RÉFUTÉ sur la seule incitation.
 
 ## 2. Pondération bayésienne — likelihood ratios praticables
 
@@ -108,19 +103,18 @@ une preuve isolée vaut rarement LR > 5 — d'où les petites mises à jour de
 | Régression vers la moyenne déguisée en turnaround | « Nouveau CEO, les marges rebondissent déjà » — après un point bas extrême | Le point de départ était-il un extrême (crise, creux de cycle) ? Un rebond post-extrême est ATTENDU sans aucun talent : exiger l'amélioration VS PAIRS, pas vs soi-même |
 | Base rate neglect dans l'analogie | « Le prochain Nvidia / Amazon » — analogie unique, vue de l'intérieur (Kahneman-Lovallo 1993) [ROBUSTE] | Classe de référence : combien de « prochains X » proclamés ont livré ? → bibliothèque de base rates de la charte ; à défaut, la construire |
 
-Usage : passer au crible le steelman (étape 0) ET ta thèse inverse — une
-thèse inverse bâtie sur un de ces pièges est un épouvantail.
+Usage : passer steelman (étape 0) ET thèse inverse au crible — une thèse
+inverse bâtie sur un de ces pièges est un épouvantail.
 
 ## 4. Forensic avancé (au-delà de Beneish / Sloan / 7 red flags en base)
 
 ### Universel — le bilan qui gonfle
-- **NOA bloat** (Hirshleifer-Hou-Teoh-Zhang, JAE 2004) [ROBUSTE en
-  académique ; décoter post-publication, cf. methodes-quantitatives] :
-  NOA = (actifs − cash/placements) − (passifs − dette), sur actifs N-1.
-  NOA élevés = des ANNÉES d'accruals cumulés jamais validés par le cash —
-  prédicteur négatif des rendements sur ≥ 3 ans (« sustainability
-  effect »). Sloan voit UNE année ; les NOA voient l'HISTORIQUE. Vérif :
-  NOA/actifs vs pairs + trajectoire 3 ans.
+- **NOA bloat** (Hirshleifer-Hou-Teoh-Zhang, JAE 2004) [ROBUSTE ; décoter
+  post-publication, cf. methodes-quantitatives] : NOA = (actifs −
+  cash/placements) − (passifs − dette), sur actifs N-1. NOA élevés = des
+  ANNÉES d'accruals cumulés jamais validés par le cash — prédicteur
+  négatif des rendements sur ≥ 3 ans (« sustainability effect »). Sloan
+  voit UNE année ; les NOA voient l'HISTORIQUE. Vérif : vs pairs + 3 ans.
 - **Décomposer les accruals avant d'accuser** : part « normale » (suit la
   croissance du CA — Jones 1991, modifié Dechow et al. 1995) vs part
   discrétionnaire. Sans régression : accruals qui montent SANS croissance
@@ -174,16 +168,14 @@ thèse inverse bâtie sur un de ces pièges est un épouvantail.
   le forensic chiffré ci-dessus.
 
 ## Intégration à la charte (renvois)
-- Matrice H1-H4 → s'instruit à l'étape 3 ; H2 = étape 2, H3 = étape 4,
-  H4 = étape 1 : l'ACH fait converger les 6 coups vers UN verdict.
+- Matrice H1-H4 → étape 3 (H2 = étape 2, H3 = étape 4, H4 = étape 1 :
+  l'ACH fait converger les 6 coups vers UN verdict).
 - Table LR → discipline l'ajustement ±15 pts des base rates ; l'anti-
-  double-comptage protège aussi la règle 1 (asymétrie déjà encodée).
-- Crible causal → steelman (étape 0) et thèse inverse. Forensic sectoriel
-  → étape 4. Vérifications datées d'un AFFAIBLI = les 2-3 faits porteurs
-  de l'analyse de sensibilité ACH.
+  double-comptage protège la règle 1 (asymétrie déjà encodée).
+- Crible causal → steelman et thèse inverse ; forensic sectoriel → étape
+  4 ; vérifs datées d'un AFFAIBLI = les faits porteurs (sensibilité ACH).
 
-Sources : CIA Tradecraft Primer 2009 · Heuer 1999 ch. 8 · Dhami et al.,
-Applied Cognitive Psychology 2019 · Good 1985 · Senn, BMC 2009 ·
-Rosenzweig 2007 · Kahneman-Lovallo 1993 · Hirshleifer et al., JAE 2004 ·
-Dechow-Dichev, TAR 2002 · Loughran-McDonald, JF 2011/2014 · Li, JAE 2008 ·
-Larcker-Zakolyukina, JAR 2012 · Schilit. URLs : rapport du 27/07/2026.
+Sources : CIA Tradecraft Primer 2009 · Heuer 1999 · Dhami et al. 2019 ·
+Good 1985 · Senn 2009 · Rosenzweig 2007 · Kahneman-Lovallo 1993 ·
+Hirshleifer et al. JAE 2004 · Dechow-Dichev TAR 2002 · Loughran-McDonald
+JF 2011/2014 · Li JAE 2008 · Larcker-Zakolyukina JAR 2012 · Schilit.
