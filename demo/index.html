@@ -141,6 +141,14 @@
   @keyframes breathe{0%,100%{transform:scale(1);}50%{transform:scale(1.022);}}
   /* Petite explosion de stars/confettis pour les moments forts (Purple, carton plein…) */
   @keyframes confetti{0%{opacity:1;transform:translate(0,0) rotate(0) scale(1);}100%{opacity:0;transform:translate(var(--dx),var(--dy)) rotate(260deg) scale(.5);}}
+  /* Modale in-app (remplace les alert() natives — indispensable pour un rendu "vraie app") */
+  .ovl{position:absolute;inset:0;z-index:80;display:flex;align-items:center;justify-content:center;padding:26px;background:rgba(10,4,34,.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);animation:ovlIn .2s ease;}
+  @keyframes ovlIn{from{opacity:0}to{opacity:1}}
+  .ovl-card{width:100%;max-width:340px;border-radius:30px;padding:30px 26px 24px;text-align:center;background:linear-gradient(180deg,#7A55E8,#4A2AAE);border:1px solid rgba(255,255,255,.18);box-shadow:0 30px 60px rgba(6,2,26,.6),inset 0 1px 0 rgba(255,255,255,.24);animation:ovlPop .34s cubic-bezier(.2,1.3,.5,1);}
+  @keyframes ovlPop{from{opacity:0;transform:scale(.82) translateY(14px)}to{opacity:1;transform:none}}
+  .ovl-card h3{font-family:var(--d);font-weight:800;font-size:25px;color:#fff;line-height:1.15;}
+  .ovl-card p{font-family:var(--b);font-weight:600;font-size:15px;color:rgba(255,255,255,.85);margin-top:10px;line-height:1.5;}
+  @media (prefers-reduced-motion:reduce){.ovl,.ovl-card{animation:none !important;}}
   @media (prefers-reduced-motion:reduce){.cflip,.drop,.breathe,.fade,.pop{animation:none !important;}}
   /* Setup : quand le clavier iOS est ouvert, on replie le haut + le CTA et on colle la liste au-dessus du clavier */
   .su-hide{transition:opacity .18s ease;}
@@ -506,7 +514,7 @@ SCREENS.home = () => `<div class="fade" style="position:absolute;inset:0;${NIGHT
       <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#3A245C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0"/><path d="M16 6.2a3 3 0 0 1 0 5.6M20.5 20a5.5 5.5 0 0 0-3.2-5"/></svg>
       <div style="font-family:var(--d);font-size:20px;font-weight:800;text-transform:uppercase;">Party mode</div>
       <div style="font-family:var(--b);font-size:13px;font-weight:600;opacity:.85;">Joue à plusieurs</div></button>
-    <button onclick="alert('Mode en ligne — bientôt')" style="height:136px;border-radius:28px;background:linear-gradient(180deg,#9D62FF,#6E3FDB);color:#fff;border:none;box-shadow:0 18px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.20);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;cursor:pointer;">
+    <button onclick="showModal({emoji:'🌙',title:'Mode Online',msg:'Jouer à distance entre plusieurs téléphones arrive bientôt. En attendant, Party Mode fait très bien le travail.',cta:'J&apos;ai hâte'})" style="height:136px;border-radius:28px;background:linear-gradient(180deg,#9D62FF,#6E3FDB);color:#fff;border:none;box-shadow:0 18px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.20);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;cursor:pointer;">
       <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.7 2.6 15.3 0 18M12 3c-2.6 2.7-2.6 15.3 0 18"/></svg>
       <div style="font-family:var(--d);font-size:20px;font-weight:800;text-transform:uppercase;">Online</div>
       <div style="font-family:var(--b);font-size:13px;font-weight:600;opacity:.9;">Joue à distance</div></button>
@@ -667,25 +675,31 @@ SCREENS.bus = () => {
     <div class="gamebody">${mid}</div>${actions}</div>`;
 };
 function busGuess(ans){
-  const g=S.game, p=busProg(), c=draw(g.deck); let ok=false, msg='';
+  const g=S.game, p=busProg();
+  if(g.mode==='partage' && g.players && g.players.every(pl=>pl.step>4)) return;  // partie finie : plus de tirage
+  const c=draw(g.deck); let ok=false, msg='';
   if(p.step===1){ ok=(ans==='r')===isRed(c); msg=ok?'Bien vu, on continue.':`C'était ${isRed(c)?'rouge':'noir'}. Bois 1 gorgée.`; }
   else if(p.step===2){ const pr=p.cards[0]; if(c.v===pr.v){ok=false;msg='Égalité = perdu. Bois 2 gorgées.';} else { ok=(ans==='p')===(c.v>pr.v); msg=ok?'Exact !':'Raté. Bois 2 gorgées.'; } }
   else if(p.step===3){ const lo=Math.min(p.cards[0].v,p.cards[1].v), hi=Math.max(p.cards[0].v,p.cards[1].v); if(c.v===lo||c.v===hi){ok=false;msg='Pile sur une borne = perdu. Bois 3 gorgées.';} else { const inside=c.v>lo&&c.v<hi; ok=(ans==='in')===inside; msg=ok?'Bien joué !':'Raté. Bois 3 gorgées.'; } }
   else { ok=ans===c.s; msg=ok?'Incroyable, carton plein !':`C'était ${SUITS[c.s]}. Bois 4 gorgées.`; }
   if(!ok) drink(S.turn, p.step);
+  haptic(ok?'ok':'fail');
   S.reveal={card:c, ok, msg}; p.cards.push(c); render();
 }
 function busNext(){
   const g=S.game, p=busProg(), ok=S.reveal.ok; S.reveal=null;
   if(g.mode==='partage'){
     p.step++;                       // on avance qu'on ait gagné OU perdu — la progression est gardée
-    if(g.players.every(pl=>pl.step>4)){ alert('Partie terminée — chaque joueur a fait ses 4 cartes !'); go('scores'); return; }
+    if(g.players.every(pl=>pl.step>4)){ haptic('win'); showModal({emoji:'🏁',title:'Partie terminée !',msg:'Chaque joueur a fait ses 4 cartes. On regarde les dégâts ?',cta:'Voir le classement',after:()=>go('scores')}); return; }
     for(let k=0;k<S.players.length;k++){ nextTurn(); if(g.players[S.turn].step<=4) break; } // passe au prochain pas encore arrivé au bout
     render(); return;
   }
   if(ok){
     p.step++;
-    if(p.step>4){ alert(cur().name+' a réussi le Bus ! Distribue 4 gorgées à qui tu veux.'); p.step=1; p.cards=[]; nextTurn(); render(); return; }
+    if(p.step>4){ const w=cur(); haptic('win');
+      showModal({avatar:`<div style="display:flex;justify-content:center;margin-bottom:14px;">${avatar(w,96)}</div>`,title:w.name+' a réussi le Bus !',msg:'Carton plein. Distribue 4 gorgées à qui tu veux.',cta:'Distribué !',
+        after:()=>{ p.step=1; p.cards=[]; nextTurn(); render(); }});
+      burstConfetti(30); return; }
     render();
   } else {
     if(g.mode==='infini'){ p.step=1; p.cards=[]; render(); }
@@ -734,7 +748,7 @@ function purpleGuess(ans){
 function purpleNext(){ const g=S.game; nextTurn(); g.cards=[]; g.last=null; render(); }
 
 /* ============================ FUCK THE DEALER ============================ */
-function startFtd(){ S.game={target:(Math.random()*13|0)+1, tries:2, hint:'', last:null}; S.reveal=null; go('ftd'); }
+function startFtd(){ S.game={target:(Math.random()*13|0)+1, tries:2, hint:'', last:null, lo:1, hi:13, tried:[]}; S.reveal=null; go('ftd'); }
 SCREENS.ftd = () => {
   const g=S.game,r=S.reveal; let mid,actions;
   if(r){
@@ -747,17 +761,24 @@ SCREENS.ftd = () => {
        <div class="cap" style="margin-bottom:12px;">Le donneur</div>
        <div style="display:flex;justify-content:center;">${cardBack(192,268)}</div>
        <div style="margin-top:16px;"><b style="font-family:var(--f);font-size:17px;color:${g.hint?'#5CE0BC':'#fff'};">${g.hint||'Devine la valeur de la carte.'}</b><div class="sub" style="font-size:13px;margin-top:4px;${g.tries===1?'color:#FFB16E;font-weight:800;':''}">${g.tries===1?'Dernier essai — sinon 2 gorgées !':'Essais restants : '+g.tries+' · sinon 2 gorgées'}</div></div>
-       <div class="row" style="flex-wrap:wrap;gap:7px;justify-content:center;margin-top:16px;">${VN.slice(1).map((n,i)=>`<button class="chip" style="background:var(--lav-soft);color:var(--indigo);" onclick="ftdGuess(${i+1})">${n}</button>`).join('')}</div></div>`;
+       <div class="row" style="flex-wrap:wrap;gap:7px;justify-content:center;margin-top:16px;">${VN.slice(1).map((n,i)=>{
+         const v=i+1, out=v<g.lo||v>g.hi, done=g.tried.includes(v);
+         const dis=out||done;
+         return `<button class="chip" ${dis?'disabled':''} style="${dis?'background:rgba(255,255,255,.07);color:rgba(255,255,255,.28);'+(done?'text-decoration:line-through;':'')+'cursor:default;':'background:var(--lav-soft);color:var(--indigo);'}" ${dis?'':`onclick="ftdGuess(${v})"`}>${n}</button>`;}).join('')}</div>
+       <div class="sub" style="font-size:12px;margin-top:11px;opacity:.75;">${g.hi-g.lo+1-g.tried.filter(v=>v>=g.lo&&v<=g.hi).length} valeur(s) encore possible(s)</div></div>`;
     actions=`<div class="sub center" style="opacity:.7;">Choisis une valeur ci-dessus.</div>`;
   }
   return `<div class="pad fade">${gameHead('Fuck the Dealer', `<div class="pill">${g.tries} essai${g.tries>1?'s':''}</div>`)}${turnBanner()}<div class="gamebody">${mid}</div>${actions}</div>`;
 };
 function ftdGuess(v){
   const g=S.game;
-  if(v===g.target){ S.reveal={ok:true,title:'Trouvé !',msg:cur().name+" a deviné. C'est le donneur qui boit 2 gorgées !"}; render(); return; }
-  g.tries--;
+  if(g.tried.includes(v) || v<g.lo || v>g.hi) return;   // valeur déjà éliminée : sans effet
+  g.tried.push(v);
+  if(v===g.target){ haptic('win'); S.reveal={ok:true,title:'Trouvé !',msg:cur().name+" a deviné. C'est le donneur qui boit 2 gorgées !"}; render(); burstConfetti(20); return; }
+  g.tries--; haptic('fail');
   if(g.tries<=0){ drink(S.turn,2); S.reveal={ok:false,title:'Raté',msg:`C'était un ${VN[g.target]}. Bois 2 gorgées.`}; render(); return; }
-  g.hint = g.target>v ? `Plus haut que ${VN[v]} ↑` : `Plus bas que ${VN[v]} ↓`;
+  if(g.target>v){ g.lo=Math.max(g.lo,v+1); g.hint=`Plus haut que ${VN[v]} ↑`; }
+  else { g.hi=Math.min(g.hi,v-1); g.hint=`Plus bas que ${VN[v]} ↓`; }
   render();
 }
 
@@ -778,15 +799,16 @@ function palmierRule(c){
 function startPalmier(){ S.game={deck:newDeck(), stack:0, card:null, phase:'setup', balance:true, bx:0, dir:1, res:null}; go('palmier'); }
 function palmTol(stack){ return Math.max(0.16, 0.30 - stack*0.012); }
 function palmierScene(g){
-  let cards=''; for(let i=0;i<g.stack;i++){
+  const shown=Math.min(g.stack,9);   // au-delà, la pile sortirait de la scène : on plafonne l'affichage
+  let cards=''; for(let i=0;i<shown;i++){
     const rot=(i%2?1:-1)*(5+i*1.7); const y=134+i*9;
     cards+=`<div class="palm-card" style="bottom:${y}px;transform:rotateX(58deg) rotateZ(${rot}deg);"></div>`;
   }
   let zone='', swing='';
   if(g.phase==='balance'){
-    const tol=palmTol(g.stack), zw=Math.round(2*tol*120), y=118+g.stack*9;
-    zone=`<div style="position:absolute;left:50%;bottom:${y}px;width:${zw}px;height:120px;margin-left:-${zw/2}px;border-radius:16px;background:rgba(25,169,116,.14);border:2px dashed rgba(25,169,116,.65);"></div>`;
-    swing=`<div id="swing" class="swing-card" style="bottom:${154+g.stack*9}px;"></div>`;
+    const tol=palmTol(g.stack), zw=Math.round(2*tol*120), y=118+shown*9;
+    zone=`<div id="palm-zone" style="position:absolute;left:50%;bottom:${y}px;width:${zw}px;height:120px;margin-left:-${zw/2}px;border-radius:16px;background:rgba(25,169,116,.14);border:2px dashed rgba(25,169,116,.45);transition:border-color .1s;"></div>`;
+    swing=`<div id="swing" class="swing-card" style="bottom:${154+shown*9}px;"></div>`;
   }
   return `<div class="palm-stage">${zone}<div class="bottle"><div class="lbl"></div></div>${cards}${swing}</div>`;
 }
@@ -827,15 +849,16 @@ function startSwing(){
     const el=document.getElementById('swing'); if(!el){ clearInterval(S.timer); S.timer=null; return; }
     const inZone=Math.abs(g.bx)<palmTol(g.stack);
     el.style.transform='translateX('+(g.bx*120)+'px) rotateX(58deg) rotateZ('+(-7 + g.bx*8)+'deg)';
-    el.style.background=inZone?'linear-gradient(180deg,#7BE8C0,#19A974)':'#fff';
-    el.style.boxShadow=inZone?'0 0 0 4px rgba(25,169,116,.4),0 18px 30px rgba(25,169,116,.5)':'0 18px 30px rgba(24,12,62,.32)';
+    // on garde le dos "lune rouge" ; la zone valide est signalée par un halo vert, pas en repeignant la carte
+    el.style.boxShadow=inZone?'0 0 0 4px rgba(80,230,170,.85),0 0 26px rgba(60,220,160,.55),0 18px 30px rgba(24,12,62,.4)':'0 18px 30px rgba(24,12,62,.4)';
+    const ring=document.getElementById('palm-zone'); if(ring) ring.style.borderColor=inZone?'rgba(80,230,170,.95)':'rgba(25,169,116,.45)';
   },16);
 }
 function palmierDrop(){
   if(S.timer){clearInterval(S.timer);S.timer=null;}
   const g=S.game, off=Math.abs(g.bx), tol=palmTol(g.stack);
-  if(off<tol){ g.stack++; g.res={ok:true, title:'En équilibre !', msg:'La carte tient — palmier à '+g.stack+'. (Applique aussi la règle de ta carte.)'}; }
-  else { drink(S.turn,3); g.res={ok:false, title:'Le palmier s’effondre !', msg:'Carte ratée : bois 3 gorgées. On repart de zéro.'}; g.stack=0; }
+  if(off<tol){ g.stack++; haptic('ok'); g.res={ok:true, title:'En équilibre !', msg:'La carte tient — palmier à '+g.stack+'. (Applique aussi la règle de ta carte.)'}; g.phase='result'; render(); if(g.stack>0 && g.stack%5===0) burstConfetti(18); return; }
+  drink(S.turn,3); haptic('fail'); g.res={ok:false, title:'Le palmier s’effondre !', msg:'Carte ratée : bois 3 gorgées. On repart de zéro.'}; g.stack=0;
   g.phase='result'; render();
 }
 function palmierNext(){ const g=S.game; nextTurn(); g.phase='draw'; g.card=null; g.res=null; render(); }
@@ -875,7 +898,7 @@ SCREENS.echelle = () => {
   return `<div class="pad fade">${gameHead("L'Échelle", `<div class="pill">1–10</div>`)}${g.phase==='guess'?'':turnBanner()}<div class="gamebody">${mid}</div>${actions}</div>`;
 };
 function echelleTirer(){ S.game.card={v:(Math.random()*10|0)+1, s:(Math.random()*4|0)}; S.game.phase='vu'; render(); }
-function echelleReveal(){ const diff=Math.abs(S.game.guess-S.game.card.v); if(diff>0)drink(S.turn,diff); S.game.phase='result'; render(); }
+function echelleReveal(){ const diff=Math.abs(S.game.guess-S.game.card.v); haptic(diff===0?'win':'fail'); if(diff>0)drink(S.turn,diff); else burstConfetti(20); S.game.phase='result'; render(); }
 function echelleNext(){ nextTurn(); S.game={card:null, guess:5, phase:'draw'}; render(); }
 
 /* ============================ TAPE LA CARTE (réflexe) ============================ */
@@ -1010,7 +1033,7 @@ SCREENS.pmu = () => {
     <div class="gamebody" style="justify-content:center;gap:8px;">${board}<div id="pmu-info" style="min-height:134px;display:flex;align-items:center;justify-content:center;">${pmuInfoHTML()}</div></div>
     <button class="btn primary" onclick="pmuDraw()">Tirer une carte</button></div>`;
 };
-function pmuChoose(suit){ const g=S.game; g.bets[g.betTurn]=suit; g.betTurn++; g.betSel=null; if(g.betTurn>=S.players.length) g.phase='race'; render(); }
+function pmuChoose(suit){ haptic('tap'); const g=S.game; g.bets[g.betTurn]=suit; g.betTurn++; g.betSel=null; if(g.betTurn>=S.players.length) g.phase='race'; render(); }
 function pmuDraw(){
   const g=S.game, c=draw(g.deck); g.last=c; g.flips=[];
   if(g.pos[c.s]<g.fin) g.pos[c.s]++;
@@ -1106,7 +1129,7 @@ SCREENS.vob = () => {
    <div class="row"><button class="btn" onclick="vobAns(false)">Je bois&nbsp;<span style="color:#FFD33F;font-size:21px;">(${g.sips})</span></button><button class="btn primary" onclick="vobAns(true)">Je le fais !</button></div>
   </div>`;
 };
-function vobAns(ok){ const g=S.game; if(!ok) drink(S.turn,g.sips||1); g.count++; if(g.count>=g.target){ g.phase='end'; render(); return; } nextTurn(); vobPick(); render(); }
+function vobAns(ok){ const g=S.game; haptic(ok?'ok':'tap'); if(!ok) drink(S.turn,g.sips||1); g.count++; if(g.count>=g.target){ g.phase='end'; render(); return; } nextTurn(); vobPick(); render(); }
 
 /* ============================ JE N'AI JAMAIS ============================ */
 function startJamais(){ S.game={used:new Set(), s:null}; jamaisPick(); go('jamais'); }
@@ -1117,7 +1140,7 @@ SCREENS.jamais = () => `<div class="pad fade">${gameHead("Je n'ai jamais", `<div
    <div class="sub" style="font-size:14px;margin-top:16px;">Tu l'as déjà fait ? Bois une gorgée.</div></div></div>
   <div class="row"><button class="btn teal" onclick="jamaisAns(false)">Jamais</button><button class="btn coral" onclick="jamaisAns(true)">Je l'ai fait (1)</button></div>
  </div>`;
-function jamaisAns(did){ if(did)drink(S.turn,1); nextTurn(); jamaisPick(); render(); }
+function jamaisAns(did){ haptic('tap'); if(did)drink(S.turn,1); nextTurn(); jamaisPick(); render(); }
 
 /* ============================ TU PRÉFÈRES ============================ */
 function startPref(){ S.game={used:new Set(), p:null, picked:null}; prefPick(); go('pref'); }
@@ -1136,19 +1159,45 @@ SCREENS.pref = () => {
    </div>
   </div>`;
 };
-function prefChoose(i){ nextTurn(); prefPick(); render(); }
+function prefChoose(i){ haptic('tap'); nextTurn(); prefPick(); render(); }
 
 /* ============================ ROUTAGE ============================ */
 function startGame(id){
   ({bus:startBus, purple:startPurple, ftd:startFtd, palmier:startPalmier, pmu:startPmu, echelle:startEchelle, tape:startTape, vob:startVob, jamais:startJamais, pref:startPref})[id]();
 }
-function addPlayer(){ const n=(S.nameDraft||'').trim(); if(!n)return; S.players.push({name:n.slice(0,16), color:COLORS[S.players.length%COLORS.length], gorgees:0}); S.justAdded=S.players.length-1; S.nameDraft=''; saveSession(); render(); S.justAdded=null; const i=document.getElementById('nm'); if(i)i.focus(); }
+function addPlayer(){ const n=(S.nameDraft||'').trim(); if(!n)return; haptic('tap'); S.players.push({name:n.slice(0,16), color:COLORS[S.players.length%COLORS.length], gorgees:0}); S.justAdded=S.players.length-1; S.nameDraft=''; saveSession(); render(); S.justAdded=null; const i=document.getElementById('nm'); if(i)i.focus(); }
 function rmPlayer(i){ S.justAdded=null; S.players.splice(i,1); saveSession(); render(); }
 function resetAll(){ S.players.forEach(p=>p.gorgees=0); S.turn=0; go('home'); }
 function newParty(){ if(S.players.length<2)return; S.players.forEach(p=>p.gorgees=0); S.turn=0; go('hub'); }
 // Session locale (par téléphone) : on garde les noms/avatars entre les parties et les rechargements
 function saveSession(){ try{ localStorage.setItem('overnight.players', JSON.stringify(S.players.map(p=>({name:p.name,color:p.color,avatar:p.avatar||null})))); }catch(e){} }
 function loadSession(){ try{ const j=localStorage.getItem('overnight.players'); if(j){ const a=JSON.parse(j); if(Array.isArray(a)) S.players=a.filter(p=>p&&p.name).map(p=>({name:p.name, color:p.color||COLORS[0], avatar:p.avatar||null, gorgees:0})); } }catch(e){} }
+/* --- Retour haptique : donne le "poids" d'une vraie app mobile --- */
+function haptic(kind){
+  if(!navigator.vibrate) return;
+  const pat={tap:12, ok:[14,40,22], win:[18,50,18,50,42], fail:[42,60,42]}[kind]||12;
+  try{ navigator.vibrate(pat); }catch(e){}
+}
+/* --- Modale in-app (remplace alert()) --- */
+function showModal(o){
+  const host=app(); if(!host) return;
+  const prev=document.getElementById('ovl'); if(prev) prev.remove();
+  const el=document.createElement('div'); el.className='ovl'; el.id='ovl';
+  el.innerHTML=`<div class="ovl-card">
+    ${o.emoji?`<div style="font-size:52px;line-height:1;margin-bottom:12px;">${o.emoji}</div>`:''}
+    ${o.avatar||''}
+    <h3>${o.title}</h3>
+    ${o.msg?`<p>${o.msg}</p>`:''}
+    <button class="btn ${o.tone||'amber'}" style="margin-top:22px;" onclick="closeModal()">${o.cta||'Continuer'}</button>
+  </div>`;
+  el.addEventListener('click', e=>{ if(e.target===el) closeModal(); });
+  host.appendChild(el);
+  S.modalAfter = o.after || null;
+}
+function closeModal(){
+  const el=document.getElementById('ovl'); if(el) el.remove();
+  const fn=S.modalAfter; S.modalAfter=null; if(fn) fn();
+}
 // Petite explosion festive (stars/confettis) — superposée à #app, auto-nettoyée
 function burstConfetti(n){
   const host=app(); if(!host) return;
