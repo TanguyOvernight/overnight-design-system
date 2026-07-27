@@ -1,0 +1,26 @@
+# Overnight — déploiement statique. Le dossier demo/ EST la racine du site,
+# pour que les chemins relatifs (assets, polices, scripts) résolvent correctement.
+[build]
+  publish = "demo"
+  command = ""
+
+# Lien d'invitation : /join?r=CODE sert la même page
+[[redirects]]
+  from = "/join"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
