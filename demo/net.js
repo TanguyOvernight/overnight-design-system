@@ -97,6 +97,7 @@
         .on('broadcast', { event: 'state' }, function (p) { opts.onState && opts.onState(p.payload); })
         .on('broadcast', { event: 'action' }, function (p) { opts.onAction && opts.onAction(p.payload); })
         .on('broadcast', { event: 'hello' }, function (p) { opts.onHello && opts.onHello(p.payload); })
+        .on('broadcast', { event: 'rollcall' }, function () { opts.onRollcall && opts.onRollcall(); })
         .on('presence', { event: 'sync' }, function () {
           var st = self.channel.presenceState(), online = {};
           Object.keys(st).forEach(function (k) { online[k] = true; });
@@ -162,6 +163,8 @@
       return this._open().then(function () {
         self.active = true;
         store('session', { code: self.code, isHost: true });
+        // si c'est une reconnexion, les autres sont déjà là : qu'ils se signalent
+        self.transport.broadcast('rollcall', { at: Date.now() });
         return self.code;
       });
     },
@@ -195,6 +198,11 @@
         onState: function (s) { self._applyState(s); },
         onAction: function (a) { self._onAction(a); },
         onHello: function (h) { self._onHello(h); },
+        // Un hôte reconnecté ne connaît plus personne : chaque invité se re-signale.
+        onRollcall: function () {
+          if (self.isHost) return;
+          self.transport.broadcast('hello', { pid: self.me.pid, name: self.me.name, avatar: self.me.avatar });
+        },
         onPresence: function (online) { self._onPresence(online); }
       });
     },

@@ -656,7 +656,14 @@ function citedBanner(p,label){ return `<div style="display:flex;flex-direction:c
 /* ============================ LE BUS ============================ */
 function startBus(){ S.game={phase:'setup', deck:newDeck(), mode:'normal', step:1, cards:[], players:null}; S.reveal=null; go('bus'); }
 function busSetMode(m){ const g=S.game; g.mode=m; if(m==='partage') g.players=S.players.map(()=>({step:1,cards:[]})); g.phase='play'; S.reveal=null; render(); }
-function busProg(){ const g=S.game; return g.mode==='partage' ? g.players[S.turn] : g; }
+function busProg(){
+  const g=S.game;
+  if(g.mode!=='partage') return g;
+  if(!g.players) g.players=[];
+  // un joueur peut arriver en cours de partie : on lui crée sa progression à la volée
+  while(g.players.length < S.players.length) g.players.push({step:1, cards:[]});
+  return g.players[S.turn] || (g.players[S.turn] = {step:1, cards:[]});
+}
 SCREENS.bus = () => {
   const g=S.game;
   if(g.phase==='setup'){
@@ -1416,6 +1423,11 @@ Room.handleAction = function(a){
   Room.pushState();
 };
 Room.onUpdate = function(){ if(S.screen!=='lobby' || Room.active) render(); };
+// L'hôte qui se reconnecte a perdu sa liste : il demande à tout le monde de se re-signaler.
+Room.onRollcall = function(){
+  if(Room.isHost) Room.transport.broadcast('rollcall', { at: Date.now() });
+  else Room.transport.broadcast('hello', { pid:Room.me.pid, name:Room.me.name, avatar:Room.me.avatar });
+};
 
 /* --- Écrans salon --- */
 SCREENS.online = () => {
