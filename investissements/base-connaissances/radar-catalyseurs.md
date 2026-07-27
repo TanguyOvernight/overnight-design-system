@@ -17,6 +17,7 @@ renouvellement explicitement motivé). Stock max ~6 lignes.
 | **Nike (NKE, CTO)** | ≥ 1 trim. Direct/Digital positif OU stabilisation Chine explicite + fin des révisions baissières + tenue > MM50 | Prochains résultats trimestriels NKE (~fin sept. 2026) | Après 2 publications sans stabilisation (≤ 30/04/2027) → PASSE auto | C008 |
 | **WMT (CTO)** | Alerte prix ~98-100 $ (~33x) | Résultats du 20/08/2026 | Fin 2026 sans repli → PASSE auto | — |
 | **MSFT renfort (détenu)** | Après résultats 29/07 : Azure ≥ ~38-40 % ET guidance capex maîtrisée | 29/07/2026 (print) | Print raté sur l'un des deux critères → pas de renfort, re-test au T1 FY27 | — |
+| **LLY (CTO)** | Cours **≤ 1 020 $** en clôture (−15 % : rétablit la prime de risque nette de PFU) → tranche 1 = plafond L du mois, ≥ 3 tranches | Résultats Q2 le 05/08/2026, puis Q3 (~fin oct.) | Après le Q3 sans passage sous 1 020 $ ET sans relèvement de guidance FY → PASSE auto (renouvellement unique motivé) | C014 |
 | **Séché SCHP (PEA)** | S1 : EBE ≥ 125 M€ ET France organique ≥ 0 % ET guidance 275-285 M€ confirmée ET cours ≤ 90 € → tranche 1 ~150 € ; arrêté strict + quantification PFAS → tranche 2 conditionnelle (plafond 5 %) | Publication S1 (butée 30/09/2026) ; point intermédiaire : arrêté boues (été 2026) | 3e warning OU EBE S1 < 110 M€ OU arrêté ≥10x plus laxiste/reporté au-delà du 01/01/2027 → PASSE auto | C012 |
 
 ## Sous 7 jours 🔥

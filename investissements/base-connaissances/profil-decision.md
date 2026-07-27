@@ -86,17 +86,60 @@ Cœur/satellite 75-85 / 15-25 · ≤ 5 % par titre vif à l'achat · gagnant cou
 jusqu'à 10 % · rééquilibrage par les versements · pas de stop-loss prix ·
 test fiscal avant toute vente CTO · programmes en tranches conditionnelles.
 
-**⚠️ Écart assumé sur le flux mensuel (décision Tanguy 27/07)** : le split
-300/200 = 60/40 en FLUX, plus offensif que la règle 75-85/15-25 (qui porte
-sur le STOCK). Tolérance accordée car : (a) tolérance au risque assumée ;
-(b) le stock reste dominé par le cœur pendant des mois ; (c) le plafond
-≤ 5 % par titre vif s'apprécie sur le portefeuille CIBLE et en nombre de
-mensualités (sinon impossible de bâtir une ligne sur un petit portefeuille).
-**Garde-fous** : les 200 € ne sont PAS un permis de dépenser — ils ne
-partent que sur un déclencheur validé par le Juge ou un programme décidé
-(LLY, or) ; s'ils dorment > 2 mois, ils rejoignent le cœur (anti-cash-mort).
-Si le stock satellite dépasse 25 % du portefeuille, le flux repasse à
-400/100 jusqu'au retour dans la bande.
+## Architecture du flux mensuel — TROIS SEAUX (Juge, 27/07/2026)
+
+Décision Tanguy : plafonner le cœur à 300 € pour garder des munitions.
+Opérationnalisé par le Juge en **trois** seaux, car mélanger l'assurance et
+l'offensif fait consommer le budget de pari par un actif qui, PAR NATURE,
+offre moins (l'or a une espérance réelle ≈ 0 — c'est un extincteur, on ne
+le juge pas au rendement) :
+
+```
+500 €/mois = 300 € CŒUR (WPEA)
+           +  50 € ASSURANCE (or) — prélèvement de structure, non négociable
+           + 150 € OFFENSIF — munitions, sous déclencheur validé uniquement
+```
+Le seau assurance à 50 €/mois correspond exactement au budget déjà décidé
+dans `or-execution.md` (ordre trimestriel de 150 €) : reclassification, pas
+renégociation.
+
+**⚠️ Le 60/40 est un PLAFOND D'AUTORISATION, pas un quota de dépense.** S'il
+est dépensé intégralement chaque mois, la part satellite du stock converge
+vers 40 % — hors de la bande 15-25 % de façon permanente (atteint ~35 % en
+août 2027). Il n'est sûr que parce qu'au taux de déclenchement réel
+(~2-3 achats/an), la dépense effective ressort à ~80/20.
+
+### Plafond d'une ligne vive sur portefeuille en construction
+**L = min( 5 % × (V + 6 000 €) ; 15 % × V )** — V = valeur totale du
+portefeuille au 1ᵉʳ du mois ; 6 000 € = 12 mensualités ENGAGÉES (jamais
+plus : au-delà, le plan est une hypothèse, pas une ressource).
+Converge mécaniquement vers 5 % quand V grandit (6,0 % à 30 k€, 5,3 % à
+100 k€) ; le verrou 15 % commande en dessous de V = 3 000 €.
+Contraintes d'exécution : ≥ 3 tranches par ligne · frais de courtage
+≤ 0,5 % de l'ordre · max 3 lignes vives satellites ouvertes · **aucune
+nouvelle ligne tant qu'un titre vif dépasse 15 % de V**.
+
+### Les deux garde-fous, à recalculer le 1ᵉʳ de chaque mois
+**① D (avancé, comportemental)** = nombre de mois consécutifs où la poche
+offensive est dépensée à ≥ 80 %. **D = 3 → retour automatique à 400/100
+pendant 3 mois.** C'est LE signal de danger : si la poche part tous les
+mois, les déclencheurs sont fabriqués, pas trouvés.
+**② R (retardé, structurel)** = (titres vifs + ETF non-cœur) / V, cœur =
+WPEA + VTI + SWDA.
+| R | Régime de flux |
+|---|---|
+| ≤ 25 % | **300 / 50 / 150** (le régime décidé) |
+| 25-35 % | 400 / 100 |
+| > 35 % | **500 / 0** jusqu'au retour sous 30 % |
+**R ne déclenche JAMAIS de vente** — correction par les flux uniquement
+(vendre NVDA pour rééquilibrer coûterait 31,4 % pour un problème qu'un
+versement règle gratuitement).
+
+> 🔴 **État au 27/07/2026 : R = 43,9 %** (cœur VTI+SWDA 567,69 $ = 55,9 % ;
+> vifs NVDA+TSLA+MSFT+RNO 445,89 $ = 43,9 %). Le garde-fou est **déjà
+> franchi de 19 points** : le régime autorisé aujourd'hui est **500/0**, pas
+> 300/200. **Un seul ordre cœur de 1 000 € le règle** → R = 20,7 %, et le
+> régime 300/50/150 devient légal dès septembre.
 
 ## Le hurdle : pourquoi une idée doit BATTRE le cœur
 Le défaut, ce n'est pas « ne rien faire » — c'est **verser au cœur (ETF
@@ -111,8 +154,22 @@ cœur) · ③ Or (assurance, politique) · ④ Ultragenyx PASSE (loterie FDA,
 CRL déjà essuyé sur UX111).
 - **Ce mois** : euro RÉSERVÉ au cœur WPEA. Rien à exécuter tant que le PEA
   n'est pas validé (blocage administratif ≠ signal — attente bornée OK).
-- **Déclencheur** : validation PEA → ordre WPEA immédiat (~300-500 €),
-  l'horloge fiscale démarre.
+- **Déclencheur — PREMIER ORDRE RÉVISÉ (Juge 27/07)** : validation PEA →
+  verser **1 000 €** (juillet non placé + août) et passer **UN ordre de
+  1 000 € de WPEA**. Trois raisons cumulées : (a) l'offre d'ouverture
+  Fortuneo exige 1 000 € de versement et court jusqu'au **23/08/2026**
+  (⚠️ montant exact de la prime à relire sur la page officielle au moment
+  de souscrire — le fait porteur est la condition des 1 000 €) ; (b) cet
+  ordre unique fait passer R de 43,9 % à 20,7 % et rend le régime
+  300/50/150 légal ; (c) le lump sum bat l'étalement ~2 fois sur 3, et le
+  surcoût de courtage (~2-3,50 €) est le juste prix pour ne pas jouer au
+  timing. **Ne pas verser 500 € : la prime serait perdue.**
+- **Séquence ensuite** — septembre : 300 € WPEA + **100 € ouverture
+  assurance-vie** (prise de date) + 50 € réserve or + 50 € réserve
+  offensive. Octobre-novembre : 300 € WPEA + 50 € or + 150 € offensif
+  accumulé ; **premier ordre or de 150 € fin novembre**.
+- **Anti-cash-mort de la poche offensive** : réserve non déployée depuis
+  **90 jours** → versée au cœur automatiquement. Premier examen : 30/11/2026.
 - **Garde-fou anti-cash-mort** : si PEA non exécutable d'ici **fin août**
   (~5 sem.), déployer ~150 € sur le programme OR (ETC Amundi FR0013416716,
   CTO) — seul usage CTO qui diversifie sans edge ni événement binaire. Le

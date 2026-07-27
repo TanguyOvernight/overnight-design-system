@@ -1,5 +1,15 @@
 # Or — dossier d'exécution (poche 5-10 %)
 
+> 🔁 **Reclassé le 27/07/2026 (Juge)** : le budget or est un **prélèvement
+> de structure** (50 €/mois, ordre trimestriel de 150 €), financé par son
+> PROPRE seau — jamais par la poche offensive. Raison : l'or est une
+> assurance à espérance réelle ≈ 0 ; le financer avec les munitions
+> reviendrait à consommer le budget de pari avec un actif qui, par
+> construction, offre moins. Premier ordre visé : fin novembre 2026.
+> Exécution : ETC Amundi FR0013416716 (CTO) ; à défaut IAU au comptant sur
+> eToro — levier x1 strict, jamais de CFD. DCA rules-based : on n'accélère
+> pas sur la baisse.
+
 Compilé le 2026-07-27. Statut : prêt à exécuter (tolérance au risque
 validée par Tanguy le 26/07).
 

@@ -1,5 +1,17 @@
 # Dossiers compounders — analyses complètes
 
+> 🎯 **Déclencheur d'entrée LLY fixé le 27/07/2026 (Juge)** : **≤ 1 020 $**
+> en clôture (−15 % vs 1 196 $ au 24/07). Calcul : logée en CTO (PFU
+> 31,4 %), LLY doit faire **6,95 %/an brut** pour seulement ÉGALER 5 %/an
+> net en PEA, et **9,55 %/an brut** pour porter la prime de risque
+> spécifique. EV brute mesurée à 1 196 $ : 6,8 %/an → **elle égale, elle ne
+> bat pas** ; EV nette 4,4 % < hurdle 5,0 % (crédité 6,0 % après bonus de
+> diversification santé, ρ≈0,3-0,5). Verdict : **PASSE re-testable**, pas
+> d'achat au-dessus de 1 020 $. Timing : **APRÈS** le print du 05/08 — le
+> print est le générateur le plus probable du déclencheur, pas un risque à
+> contourner ; acheter « de part et d'autre » est un faux compromis (double
+> frais de change, risque d'événement quand même). Appel registre C014.
+
 Compilé le 2026-07-27. Grille : qualité /3 · prix /3 · catalyseur /2 ·
 risque /2. Données du jour — rafraîchir les cours avant toute exécution.
 

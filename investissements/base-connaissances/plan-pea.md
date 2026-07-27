@@ -1,5 +1,14 @@
 # Plan de lancement PEA — Fortuneo (état juillet 2026)
 
+> ⚠️ **À relire sur la page officielle au moment de souscrire (27/07/2026)**
+> : la prime d'ouverture Fortuneo est citée à 250 € dans ce fichier, mais
+> une vérification indépendante trouve une offre courant du 01/07 au
+> **31/08/2026** avec des primes annoncées de 80 à 130 € selon le canal.
+> **Le fait porteur est confirmé et suffit à décider** : versement initial
+> de **1 000 €** requis, échéance **août 2026**. Ne pas faire dépendre la
+> décision du montant exact — l'ordre cœur de 1 000 € est justifié même à
+> prime nulle (il fait aussi passer R de 43,9 % à 20,7 %).
+
 Compilé le 2026-07-27. Statut : PRÊT À EXÉCUTER dès que Tanguy ouvre.
 
 ## Setup jour 1 (résumé exécutable)
