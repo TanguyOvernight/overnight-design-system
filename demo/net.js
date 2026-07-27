@@ -193,6 +193,7 @@
       } else {
         this.players.push({ pid: h.pid, name: h.name || 'Invité', avatar: h.avatar, online: true, gorgees: 0 });
       }
+      if (root.clampTurn) root.clampTurn();
       this.pushState();
     },
 

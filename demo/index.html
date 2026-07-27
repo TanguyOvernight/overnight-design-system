@@ -185,10 +185,25 @@ const S = {
   reveal: null,
 };
 const app = () => document.getElementById('app');
-const cur = () => S.players[S.turn];
-function nextTurn(){ S.turn = (S.turn + 1) % S.players.length; }
-function drink(i, n){ S.players[i].gorgees += n; }
-function go(scr){ if(S.timer){clearInterval(S.timer);S.timer=null;} S.screen = scr; S.reveal = null; render(); }
+const GHOST = {name:'—', color:'#6C4FE0', gorgees:0, avatar:null};
+const cur = () => S.players[S.turn] || S.players[0] || GHOST;
+function clampTurn(){
+  const n=S.players.length;
+  if(!n){ S.turn=0; return; }
+  if(!(S.turn>=0) || S.turn>=n) S.turn=0;
+}
+function nextTurn(){ const n=S.players.length; if(!n){ S.turn=0; return; } S.turn=(S.turn+1)%n; }
+function drink(i, n){ const p=S.players[i]; if(p) p.gorgees=(p.gorgees||0)+n; }
+function go(scr){
+  // En ligne, seul l'hôte change d'écran : sinon les joueurs se désynchronisent.
+  if(typeof Room!=='undefined' && Room.active && !Room.isHost
+     && !['lobby','avatars','online','join','home'].includes(scr)) return;
+  if(S.timer){clearInterval(S.timer);S.timer=null;}
+  S.screen = scr; S.reveal = null;
+  if(typeof Room!=='undefined' && Room.active && Room.isHost && Room._stateVersion!=null
+     && !['lobby','avatars','online','join'].includes(scr)){ Room.pushState(); }
+  render();
+}
 
 /* ============================ CARTES ============================ */
 const SUITS = ['♠','♥','♦','♣']; // ♠♥♦♣
@@ -702,7 +717,8 @@ function busGuess(ans){
   S.reveal={card:c, ok, msg}; p.cards.push(c); render();
 }
 function busNext(){
-  const g=S.game, p=busProg(), ok=S.reveal.ok; S.reveal=null;
+  const g=S.game; if(!g || !S.reveal) return;      // rien à valider (double-clic, état resynchronisé)
+  const p=busProg(), ok=S.reveal.ok; S.reveal=null;
   if(g.mode==='partage'){
     p.step++;                       // on avance qu'on ait gagné OU perdu — la progression est gardée
     if(g.players.every(pl=>pl.step>4)){ haptic('win'); showModal({emoji:'🏁',title:'Partie terminée !',msg:'Chaque joueur a fait ses 4 cartes. On regarde les dégâts ?',cta:'Voir le classement',after:()=>go('scores')}); return; }
@@ -859,6 +875,8 @@ function palmierTirer(){ S.game.card=draw(S.game.deck); S.game.phase='rule'; ren
 function palmierBalance(){ const g=S.game; g.phase='balance'; g.bx=0; g.dir=1; render(); startSwing(); }
 function startSwing(){
   if(S.timer) clearInterval(S.timer);
+  // En ligne, seul l'acteur anime/décide sa carte : évite tout désaccord host/invité.
+  if(typeof Room!=='undefined' && Room.active && !myTurn()) return;
   S.timer=setInterval(()=>{ const g=S.game; if(!g||g.phase!=='balance'){clearInterval(S.timer);S.timer=null;return;}
     g.bx+=g.dir*0.04; if(g.bx>=1){g.bx=1;g.dir=-1;} if(g.bx<=-1){g.bx=-1;g.dir=1;}
     const el=document.getElementById('swing'); if(!el){ clearInterval(S.timer); S.timer=null; return; }
@@ -889,12 +907,12 @@ SCREENS.echelle = () => {
   } else if(g.phase==='vu'){
     mid=`<div class="cflip" style="display:flex;justify-content:center;">${cardHTML(g.card,200,280)}</div>
       <div class="sub center" style="margin-top:26px;max-width:320px;align-self:center;line-height:1.55;">Faites deviner cette carte à <b style="color:#fff;">${cur().name}</b> : chacun votre tour, un exemple du type <b style="color:#fff;">« c'est un 10, mais… »</b></div>`;
-    actions=`<button class="btn primary" onclick="S.game.phase='guess';render();">${cur().name} a deviné →</button>`;
+    actions=`<button class="btn primary" onclick="echelleToGuess()">${cur().name} a deviné →</button>`;
   } else if(g.phase==='guess'){
     const pron=sexOf(cur())==='Femme'?'elle':'il';
     mid=`${citedBanner(cur())}
       <div class="center" style="font-family:var(--d);font-weight:800;font-size:21px;color:#fff;margin-top:8px;">Quel chiffre annonce-t-${pron} ?</div>
-      <div style="display:flex;flex-wrap:wrap;gap:11px;justify-content:center;margin:22px auto 0;max-width:270px;">${[1,2,3,4,5,6,7,8,9,10].map(n=>`<button class="chip" style="min-width:52px;height:60px;font-size:21px;${n===g.guess?'background:var(--amber);color:#3A2A06;':''}" onclick="S.game.guess=${n};render();">${n}</button>`).join('')}</div>`;
+      <div style="display:flex;flex-wrap:wrap;gap:11px;justify-content:center;margin:22px auto 0;max-width:270px;">${[1,2,3,4,5,6,7,8,9,10].map(n=>`<button class="chip" style="min-width:52px;height:60px;font-size:21px;${n===g.guess?'background:var(--amber);color:#3A2A06;':''}" onclick="echelleSetGuess(${n})">${n}</button>`).join('')}</div>`;
     actions=`<button class="btn primary" onclick="echelleReveal()">Valider « ${g.guess} »</button>`;
   } else {
     const diff=Math.abs(g.guess-g.card.v);
@@ -912,8 +930,11 @@ SCREENS.echelle = () => {
   }
   return `<div class="pad fade">${gameHead("L'Échelle", `<div class="pill">1–10</div>`)}${g.phase==='guess'?'':turnBanner()}<div class="gamebody">${mid}</div>${actions}</div>`;
 };
+function pmuSelect(i){ S.game.betSel=i; render(); }
+function echelleSetGuess(n){ S.game.guess=n; render(); }
+function echelleToGuess(){ S.game.phase='guess'; render(); }
 function echelleTirer(){ S.game.card={v:(Math.random()*10|0)+1, s:(Math.random()*4|0)}; S.game.phase='vu'; render(); }
-function echelleReveal(){ const diff=Math.abs(S.game.guess-S.game.card.v); haptic(diff===0?'win':'fail'); if(diff>0)drink(S.turn,diff); else burstConfetti(20); S.game.phase='result'; render(); }
+function echelleReveal(){ if(!S.game || !S.game.card) return; const diff=Math.abs(S.game.guess-S.game.card.v); haptic(diff===0?'win':'fail'); if(diff>0)drink(S.turn,diff); else burstConfetti(20); S.game.phase='result'; render(); }
 function echelleNext(){ nextTurn(); S.game={card:null, guess:5, phase:'draw'}; render(); }
 
 /* ============================ TAPE LA CARTE (réflexe) ============================ */
@@ -1009,7 +1030,7 @@ SCREENS.pmu = () => {
     const p=S.players[g.betTurn];
     const names=['Pique','Cœur','Carreau','Trèfle'], cols=['#1A1A24','#E0392B','#EE7A1E','#1FA463'], tint=['#EEF0F8','#FDECEC','#FDF1E7','#EAF6EF'];
     const card=(i)=>{ const sel=g.betSel===i;
-      return `<button onclick="S.game.betSel=${i};render()" style="position:relative;border:none;cursor:pointer;border-radius:18px;padding:13px 6px;background:${tint[i]};display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:${sel?`0 0 0 3px ${cols[i]},0 14px 24px rgba(0,0,0,.16)`:'0 6px 14px rgba(0,0,0,.10)'};transition:box-shadow .15s,transform .08s;">
+      return `<button onclick="pmuSelect(${i})" style="position:relative;border:none;cursor:pointer;border-radius:18px;padding:13px 6px;background:${tint[i]};display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:${sel?`0 0 0 3px ${cols[i]},0 14px 24px rgba(0,0,0,.16)`:'0 6px 14px rgba(0,0,0,.10)'};transition:box-shadow .15s,transform .08s;">
         <div style="position:absolute;inset:8px;border-radius:13px;border:1.5px solid ${cols[i]}33;"></div>
         <div style="font-size:clamp(34px,11vw,46px);line-height:1;color:${cols[i]};">${SUITS[i]}</div>
         <div style="font-family:var(--f);font-weight:800;font-size:18px;color:${cols[i]};margin-top:8px;">${names[i]}</div>
@@ -1272,7 +1293,21 @@ function burstConfetti(n){
   setTimeout(()=>wrap.remove(),1600);
 }
 function render(){
-  app().innerHTML = SCREENS[S.screen]();
+  if(typeof clampTurn==='function') clampTurn();
+  const draw = SCREENS[S.screen] || SCREENS.home;
+  let html;
+  try { html = draw(); }
+  catch(e){
+    console.error('Écran en erreur:', S.screen, e);
+    html = `<div class="pad fade"><div class="spacer"></div>
+      <div class="gpanel" style="padding:24px;text-align:center;">
+        <div style="font-size:44px;line-height:1;margin-bottom:10px;">🌙</div>
+        <b style="font-family:var(--f);font-size:19px;color:#fff;">Petit couac d'affichage</b>
+        <div class="sub" style="font-size:13px;margin-top:8px;">On te ramène au menu, la partie continue.</div>
+        <button class="btn amber" style="margin-top:18px;" onclick="go('hub')">Retour aux jeux</button>
+      </div><div class="spacer"></div></div>`;
+  }
+  app().innerHTML = html;
   if(typeof amSpectator==='function' && amSpectator()){
     const pad=app().firstElementChild;
     if(pad){ pad.style.pointerEvents='none'; pad.style.opacity='.92'; }
@@ -1300,14 +1335,24 @@ function expectedActorIndex(){
   const g=S.game;
   if(S.screen==='pref' && g && g.phase==='vote') return g.voter;
   if(S.screen==='pmu'  && g && g.phase==='bet')  return g.betTurn;
+  // L'Échelle : pendant 'vu' et 'guess', ce sont les AUTRES qui manipulent
+  // (le joueur courant ne doit pas voir la carte). On confie la main au suivant.
+  if(S.screen==='echelle' && g && (g.phase==='vu'||g.phase==='guess'))
+    return (S.turn+1) % Math.max(1,S.players.length);
   return S.turn;
 }
 function expectedActor(){ return S.players[expectedActorIndex()]; }
 // En local : toujours vrai (le téléphone tourne). En ligne : seulement l'acteur attendu (ou l'hôte).
+// Mode de contrôle en ligne :
+//   'turn' = chacun joue à son tour (par défaut)
+//   'host' = le MJ pilote tout (utile pour les jeux de questions, évite d'attendre)
+function controlMode(){ return (S.net && S.net.control) || 'turn'; }
 function myTurn(){
   if(!Room.active) return true;
+  if(Room.isHost) return true;              // le MJ peut toujours débloquer la partie
+  if(controlMode()==='host') return false;  // MJ aux commandes : les autres suivent
   const a=expectedActor();
-  return !!(a && a.pid===Room.me.pid) || Room.isHost;
+  return !!(a && a.pid===Room.me.pid);
 }
 function amSpectator(){ return Room.active && !myTurn(); }
 
@@ -1327,27 +1372,31 @@ function unpackGame(o){
 
 Room.snapshot = function(){
   return { screen:S.screen, turn:S.turn, reveal:S.reveal, game:packGame(S.game),
-           scores:S.players.map(p=>p.gorgees||0) };
+           control:controlMode(), scores:S.players.map(p=>p.gorgees||0) };
 };
 Room.applyState = function(st){
   S.players = Room.players;
   Room.players.forEach((p,i)=>{ if(st.scores && st.scores[i]!=null) p.gorgees=st.scores[i]; });
   S.screen = st.screen; S.turn = st.turn; S.reveal = st.reveal; S.game = unpackGame(st.game);
+  if(st.control) S.net.control = st.control;
+  clampTurn();
 };
 
 /* --- Routage des actions : l'hôte exécute, les invités demandent --- */
 const NET_ACTIONS = ['busGuess','busNext','busSetMode','palmierTirer','palmierBalance','palmierDrop',
-  'palmierNext','palmSetBalance','ftdGuess','startFtd','pmuChoose','pmuDraw','purpleGuess','purpleNext',
-  'echelleTirer','echelleReveal','echelleNext','vobAns','vobSetCat','vobSetCount','jamaisAns',
-  'prefVote','prefNext','startGame','nextTurn'];
+  'palmierNext','palmSetBalance','ftdGuess','startFtd','pmuChoose','pmuSelect','pmuDraw',
+  'purpleGuess','purpleNext','echelleTirer','echelleSetGuess','echelleToGuess','echelleReveal',
+  'echelleNext','vobAns','vobSetCat','vobSetCount','jamaisAns','prefVote','prefNext','startGame'];
 const ORIG = {};
 NET_ACTIONS.forEach(name=>{
   if(typeof window[name]!=='function') return;
   ORIG[name]=window[name];
   window[name]=function(){
-    if(!Room.active) return ORIG[name].apply(null, arguments);
-    if(Room.isHost){ const r=ORIG[name].apply(null, arguments); Room.pushState(); return r; }
-    Room.act('call', { name, args:[...arguments] });
+    try{
+      if(!Room.active) return ORIG[name].apply(null, arguments);
+      if(Room.isHost){ const r=ORIG[name].apply(null, arguments); Room.pushState(); return r; }
+      Room.act('call', { name, args:[...arguments] });
+    }catch(e){ console.error('Action '+name+' a échoué:', e); try{ render(); }catch(_){} }
     return undefined;
   };
 });
@@ -1356,11 +1405,11 @@ Room.handleAction = function(a){
   const { name, args } = a.payload;
   if(!ORIG[name]) return;
   // seul l'acteur attendu peut faire avancer la partie (l'hôte, lui, peut toujours)
+  if(controlMode()==='host') return;        // MJ aux commandes : aucune action invitée acceptée
   const expected = expectedActor();
-  const isExpected = expected && expected.pid===a.pid;
-  const lobbyOk = ['startGame','vobSetCat','vobSetCount','busSetMode','palmSetBalance'].includes(name);
-  if(!isExpected && !(lobbyOk && a.pid===Room.me.pid)) return;
-  ORIG[name].apply(null, args||[]);
+  if(!expected || expected.pid!==a.pid) return;   // seul l'acteur attendu fait avancer la partie
+  try{ ORIG[name].apply(null, args||[]); }
+  catch(e){ console.error('Action distante '+name+' a échoué:', e); }
   Room.pushState();
 };
 Room.onUpdate = function(){ if(S.screen!=='lobby' || Room.active) render(); };
@@ -1426,6 +1475,14 @@ SCREENS.lobby = () => {
       <div class="cap" style="margin-bottom:8px;">Joueurs (${Room.players.length})</div>
       ${list}
       <button class="btn sm" style="margin-top:6px;" onclick="openAvatar(myIndex())">Changer mon avatar / prénom</button>
+      ${meHost?`<div style="margin-top:18px;">
+        <div class="cap" style="margin-bottom:8px;">Qui pilote la partie ?</div>
+        <div style="display:flex;background:rgba(255,255,255,.10);border-radius:18px;padding:5px;gap:5px;">
+          ${[['turn','Chacun son tour','Chacun agit quand c\'est à lui'],['host','Le MJ pilote','Tu fais avancer pour tous']].map(m=>`
+            <button onclick="netSetControl('${m[0]}')" style="flex:1;border:none;cursor:pointer;border-radius:14px;padding:11px 8px;background:${controlMode()===m[0]?'#fff':'transparent'};color:${controlMode()===m[0]?'var(--indigo)':'#fff'};font-family:var(--d);font-weight:800;font-size:13px;line-height:1.2;">${m[1]}</button>`).join('')}
+        </div>
+        <div class="sub" style="font-size:12px;margin-top:7px;">${controlMode()==='host'?'Idéal pour les jeux de questions : tu enchaînes sans attendre que chacun tape sur son écran.':'Chaque joueur agit sur son téléphone quand vient son tour.'}</div>
+      </div>`:`<div class="sub center" style="margin-top:16px;font-size:12px;">Mode : ${controlMode()==='host'?'le MJ pilote':'chacun son tour'}</div>`}
     </div>
     ${meHost
       ? `<button class="btn amber" style="margin-top:12px;${enough?'':'opacity:.5;pointer-events:none;'}" onclick="netStart()">${enough?'Lancer la partie':'En attente de joueurs…'}</button>`
@@ -1460,6 +1517,7 @@ function netJoin(){
     render();
   });
 }
+function netSetControl(m){ if(!Room.isHost) return; S.net.control=m; Room.pushState(); render(); }
 function netStart(){ if(!Room.isHost) return; S.players=Room.players; S.turn=0; S.screen='hub'; Room.pushState(); render(); }
 function netLeave(){ Room.leave().then(()=>{ S.players=[]; loadSession(); go('home'); }); }
 
@@ -1488,7 +1546,10 @@ function spectatorBar(){
   const a=expectedActor(); if(!a) return '';
   return `<div style="position:absolute;left:0;right:0;bottom:0;z-index:40;padding:16px 20px calc(18px + env(safe-area-inset-bottom));background:linear-gradient(180deg,rgba(20,8,60,0),rgba(20,8,60,.92) 40%);pointer-events:none;">
     <div style="display:flex;align-items:center;gap:12px;justify-content:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.16);padding:10px 18px 10px 10px;border-radius:999px;">
-      ${avatar(a,38)}<span style="font-family:var(--f);font-weight:800;color:#fff;font-size:15px;">${a.online?'Tu regardes — à '+a.name+' de jouer':a.name+' est déconnecté…'}</span></div></div>`;
+      ${avatar(a,38)}<span style="font-family:var(--f);font-weight:800;color:#fff;font-size:15px;">${
+        controlMode()==='host' ? 'Le MJ pilote — à '+a.name+' de jouer'
+        : (a.online ? 'Tu regardes — à '+a.name+' de jouer' : a.name+' est déconnecté…')
+      }</span></div></div>`;
 }
 
 /* --- Démarrage --- */
