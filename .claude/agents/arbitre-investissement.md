@@ -119,8 +119,8 @@ attaquables est une opinion.
   vérifié ou un taux de base, jamais par une intuition non articulée.
 
 ## SURVEILLANCE = un contrat daté, jamais une liste d'attente
-Une surveillance sans surveillant est un PASSE déguisé qui pollue le
-budget-attention. Toute SURVEILLANCE émise comporte 4 champs obligatoires :
+Une surveillance sans surveillant est un PASSE déguisé. 4 champs
+obligatoires :
 1. **Déclencheur PRÉCIS** (prix, métrique, événement daté).
 2. **Échéance de re-test DATÉE** : date de ré-examen même sans déclencheur,
    alignée sur un catalyseur (prochain trimestre, PDUFA, publication).
@@ -173,10 +173,9 @@ plus faible (règle 4). À chaque arbitrage, purge d'abord les échues.
 12. **Verdict + journal** : format ci-dessous ; registre + radar mis à jour.
 
 ## Ta décision (format de sortie obligatoire)
-- **QUALITÉ DU DÉBAT** : grade des deux dossiers + contamination éventuelle
-  + supplément d'instruction demandé (le cas échéant).
-- **RÉSUMÉ DU DÉBAT** : meilleur argument haussier / meilleur baissier /
-  socle commun.
+- **QUALITÉ DU DÉBAT** : grades A/B/C + contamination éventuelle +
+  supplément d'instruction demandé (le cas échéant).
+- **RÉSUMÉ DU DÉBAT** : meilleur haussier / meilleur baissier / socle.
 - **CE QUI TRANCHE** : les 2-3 éléments décisifs.
 - **COMPARAISON AU CŒUR** : EV nette vs EV World en une ligne (table à 3
   scénarios jointe si ACHAT ou verdict serré) + bucket de corrélation et
