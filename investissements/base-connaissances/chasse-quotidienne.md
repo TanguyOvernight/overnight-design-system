@@ -72,22 +72,30 @@ VISIBLE même quand il ne débouche pas.
 ## Le pipeline à trois étages (mis à jour 27/07 — agents dédiés)
 
 **Étage 1 — DÉTECTION** : agent `chasseur-pepites` (défini dans
-`.claude/agents/chasseur-pepites.md`, Charte 15 règles). Trouve les
-signaux early, les source, les étiquette.
+`.claude/agents/chasseur-pepites.md`, charte v2 : budget de session en 3
+phases, 14 règles de recherche, 5 kill-tests systématiques, playbooks par
+terrain, protocole jour creux). Trouve les signaux early, les source, les
+étiquette. L'agent screening relève AUSSI chaque matin le chiffre du jour
+des « Surveillances du Juge » (radar-catalyseurs.md) : déclencheur touché
+ou approché < ~5 % → fast-track Arbitre → 🔔 PROPOSITION dans la
+newsletter du jour même.
 
 **Étage 2 — RÉFUTATION** : agent `avocat-diable`
-(`.claude/agents/avocat-diable.md`). Reçoit chaque signal solide du
-Chasseur SANS son contexte (indépendance volontaire) et tente de le
-détruire : re-vérification indépendante des faits, test « déjà couru »,
-meilleure thèse inverse, incitations, test du prix, premortem. Verdict :
-CONFIRMÉ / AFFAIBLI / RÉFUTÉ + probabilité.
+(`.claude/agents/avocat-diable.md`, charte v2 : steelman d'abord,
+protocole 6 coups, bibliothèque de base rates chiffrées, critères de
+bascule anti-hedging). Reçoit chaque signal solide du Chasseur SANS son
+contexte (indépendance volontaire) et tente de le détruire. Verdict :
+CONFIRMÉ / AFFAIBLI / RÉFUTÉ + probabilité ancrée sur base rate.
 
 **Étage 3 — ARBITRAGE** : agent `arbitre-investissement`
-(`.claude/agents/arbitre-investissement.md`). Reçoit le dossier HAUSSIER
-(Chasseur) ET le dossier BAISSIER (Avocat) sur les signaux CONFIRMÉS et
-AFFAIBLIS, les pèse impartialement, applique la grille + le sizing depuis
-l'état GLOBAL du portefeuille, et rend la décision : ACHAT (montant +
-programme) / SURVEILLANCE (déclencheur précis) / PASSE. C'est lui qui
+(`.claude/agents/arbitre-investissement.md`, charte v2 : qualité du débat
+notée A/B/C, arbre de probabilité multiplicatif, table d'espérance à 3
+scénarios sur verdict serré, test de corrélation au portefeuille, feedback
+de calibration mécanique). Reçoit le dossier HAUSSIER (Chasseur) ET le
+dossier BAISSIER (Avocat) sur les signaux CONFIRMÉS et AFFAIBLIS, les pèse
+impartialement depuis l'état GLOBAL du portefeuille, et rend la décision :
+ACHAT (montant + programme) / SURVEILLANCE (contrat 4 champs : déclencheur
+précis + échéance de re-test + ligne radar + expiration) / PASSE. C'est lui qui
 formalise ce que la session principale faisait implicitement — un juge
 neutre, ni chasseur ni avocat, pour éviter que l'Avocat ait le dernier
 mot par construction. Les RÉFUTÉS ne vont pas à l'arbitrage (morts,
