@@ -26,6 +26,8 @@ renouvellement explicitement motivé). Stock max ~6 lignes.
 |---|---|---|
 | 29/07 | **Résultats Microsoft Q4 FY26** (après clôture US) | MSFT détenu ; condition du renforcement watchlist (Azure ~40 %, capex) |
 | 29/07 | **FOMC** — décision Fed (~25 % proba de hausse) | Tout le portefeuille ; ton de Warsh = volatilité |
+| **29/07** | **Résultats S1 Vicat (VCT, Paris, PEA)** — comparable S1 2025 : EBITDA 331 M€ (-6,3 %) | Chasse PEA 27/07. Entrée conditionnelle : EBITDA S1 ≥ 340 M€ **ET** dette/EBITDA ≤ 1,5x **ET** cours ≤ 60 €. PASSE si > 70 € (couru) ou EBITDA < 320 M€ |
+| **30/07** | **Résultats S1 The Magnum Ice Cream (MICC)** — 1ᵉʳ semestre post-démerger Unilever, webcast 11h CEST | Chasse CTO 27/07. ⚠️ **N.V. néerlandaise = éligible PEA** → si le PEA est ouvert, l'idée y va (pas au CTO : 12,8 pts de fiscalité). Entrée conditionnelle : organique ≥ +3 % **ET** marge EBITDA aj. en amélioration séquentielle **ET** coûts de séparation en décrue chiffrée **ET** dette/EBITDA ≤ 2,5x, capi ≤ ~8,8 Md€. PASSE si guidance abaissée ou levier > 2,7x |
 | 30/07 | Résultats Schneider Electric S1 | Thème électrification (watchlist potentielle) |
 | 30-31/07 | Résultats SocGen, Crédit Agricole | Lecture santé bancaire FR / spread OAT |
 
@@ -36,7 +38,8 @@ renouvellement explicitement motivé). Stock max ~6 lignes.
 | 31/07 | Résultats Cameco (BPA attendu 0,26 $, -49 %) | Thème uranium/énergie IA (veille, spot ~85,8 $/lb) |
 | Début août | Ouverture « Corriger ma déclaration » impots.gouv.fr | Régularisation 3916-bis si compte ouvert ≤ 2025 |
 | 26/08 | **Résultats Nvidia T2** | NVDA = 22 % du portefeuille — le rendez-vous du mois |
-| 27/08 | **Résultats S1 IBA (IBAB, Bruxelles, PEA)** — cash-flow, marge, langage PanTera (lire en diff vs S1 2025) | Chasse profonde 27/07 : goulet actinium-225, participation PanTera 31,3 % (en instruction Avocat/Arbitre) |
+| **07/08** | **Premiers résultats autonomes de Mobility Global (MBGL, NYSE)** — avant bourse, call 8h ET | Chasse CTO 27/07 : spin-off CARFAX de S&P Global, vendeurs FORCÉS (fonds S&P 500 non éligibles), ~11,6x EBITDA vs 18-22x les comparables. Entrée conditionnelle : cours ≤ 21 $ **ET** EBITDA aj. ≥ 175 M$ **ET** organique CARFAX ≥ +3 % **ET** guidance FY26 donnée. Test décisif : cash-flow opérationnel / EBITDA ajusté (levier 2,6x post-spin) |
+| 27/08 | **Résultats S1 IBA (IBAB, Bruxelles, PEA)** — cash-flow, marge, langage PanTera (lire en diff vs S1 2025) | Chasse profonde 27/07 : goulet actinium-225 — ⚠️ thèse RÉFUTÉE par l'Avocat (C010), suivi documentaire seulement |
 
 ## Chasse profonde 27/07 — jalons découverts (hors surveillances actées)
 
