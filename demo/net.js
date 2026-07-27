@@ -110,8 +110,11 @@
         }, 12000);
         self.channel.subscribe(function (status) {
           if (status === 'SUBSCRIBED') {
+            // track() à CHAQUE souscription : après une coupure (écran verrouillé,
+            // changement d'app), la présence doit être re-déclarée.
             self.channel.track({ pid: opts.me.pid, name: opts.me.name, at: Date.now() });
             if (!settled) { settled = true; clearTimeout(timer); resolve(); }
+            else if (opts.onResubscribe) opts.onResubscribe();   // reconnexion
           } else if (status === 'CHANNEL_ERROR' || status === 'TIMED_OUT') {
             if (!settled) { settled = true; clearTimeout(timer); reject(new Error('Salon injoignable')); }
           }
@@ -203,6 +206,7 @@
           if (self.isHost) return;
           self.transport.broadcast('hello', { pid: self.me.pid, name: self.me.name, avatar: self.me.avatar });
         },
+        onResubscribe: function () { self.resync(); },
         onPresence: function (online) { self._onPresence(online); }
       });
     },
@@ -275,6 +279,23 @@
       this.transport = new LocalTransport();
       store('session', null);
       return t.leave ? t.leave() : Promise.resolve();
+    },
+
+    /* --- Resynchronisation après un retour d'arrière-plan / une coupure réseau ---
+       L'écran qui se rallume doit retrouver la partie exactement où elle en est,
+       et les autres doivent le revoir "en ligne" sans qu'il ait rien à faire. --- */
+    resync: function () {
+      if (!this.active || !this.transport || this.transport.mode !== 'online') return;
+      try {
+        if (this.channelAlive()) {
+          if (this.isHost) { this.transport.broadcast('rollcall', { at: Date.now() }); this.pushState(); }
+          else this.transport.broadcast('hello', { pid: this.me.pid, name: this.me.name, avatar: this.me.avatar });
+        }
+      } catch (e) { }
+    },
+    channelAlive: function () {
+      var t = this.transport;
+      return !!(t && t.channel);
     },
 
     /* --- lien d'invitation --- */

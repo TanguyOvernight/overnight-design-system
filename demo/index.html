@@ -1670,6 +1670,26 @@ function netResume(){
   return false;
 }
 
+/* --- Écran verrouillé / app changée : on ne quitte JAMAIS la partie ---
+   iOS coupe les WebSockets en arrière-plan. Au retour, on redemande une
+   resynchronisation : le joueur retrouve la partie où elle en est, et les
+   autres le revoient en ligne sans qu'il ait rien à faire. --- */
+(function(){
+  let dernier = 0;
+  function reprendre(raison){
+    if(!Room.active) return;
+    const t = Date.now();
+    if(t - dernier < 700) return;      // évite les rafales (plusieurs events d'un coup)
+    dernier = t;
+    Room.resync();
+    setTimeout(()=>{ try{ render(); }catch(e){} }, 250);
+  }
+  document.addEventListener('visibilitychange', ()=>{ if(!document.hidden) reprendre('visible'); });
+  window.addEventListener('focus',  ()=>reprendre('focus'));
+  window.addEventListener('online', ()=>reprendre('reseau'));
+  window.addEventListener('pageshow', e=>{ if(e.persisted) reprendre('bfcache'); });
+})();
+
 /* --- Bandeau "à qui le tour" pour les invités --- */
 // Écrans hors-jeu : pas de bandeau spectateur ni de neutralisation des inputs
 const NON_GAME_SCREENS = ['home','online','join','lobby','avatars','setup','hub','scores','gamemode'];
