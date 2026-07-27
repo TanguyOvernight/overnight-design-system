@@ -9,7 +9,7 @@
    Tant que c'est vide, l'app reste 100 % jouable en mode local (un téléphone). */
 window.OVERNIGHT_CONFIG = Object.assign({
   supabaseUrl: '',
-  supabaseAnonKey: '',
+  supabaseAnonKey: 'sb_publishable_nC02vNkb8nrpZfbOHZ5jDw_UMzHUGf4',
   // Optionnel : force l'URL utilisée dans le QR code (sinon déduite de la page courante)
   publicBase: ''
 }, window.OVERNIGHT_CONFIG || {});
