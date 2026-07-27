@@ -1,0 +1,30 @@
+# Déploiement statique Netlify — le jeu est servi depuis /demo
+[build]
+  publish = "."
+  command = ""
+
+[[redirects]]
+  from = "/"
+  to = "/demo/index.html"
+  status = 200
+
+# Lien de rejoint : overnight.app/join?r=CODE
+[[redirects]]
+  from = "/join"
+  to = "/demo/index.html"
+  status = 200
+
+[[headers]]
+  for = "/demo/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/demo/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/demo/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

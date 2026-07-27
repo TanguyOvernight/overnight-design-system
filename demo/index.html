@@ -166,6 +166,9 @@
     .gamebody{gap:8px;padding:0 0 6px;}
   }
 </style>
+<script src="config.js"></script>
+<script src="qr.js"></script>
+<script src="net.js"></script>
 </head>
 <body>
 <div id="app"></div>
@@ -239,10 +242,21 @@ function avatarInline(p,size){
 }
 // prénom (violet clair) + mini-avatar collé, pour styliser les phrases ciblées
 function playerTag(p){ return `<b style="color:#D2C3FF;">${p.name}</b>${avatarInline(p,36)}`; }
-function openAvatar(i){ S.avatarPicker=i; S.avSex=(S.players[i]&&S.players[i].avatar&&S.players[i].avatar.g)||'Homme'; go('avatars'); }
-function closeAvatar(){ S.avatarPicker=null; go('setup'); }
+function openAvatar(i){ const src=Room.active?Room.players:S.players; S.avatarPicker=i; S.avSex=(src[i]&&src[i].avatar&&src[i].avatar.g)||'Homme'; go('avatars'); }
+function closeAvatar(){ S.avatarPicker=null; go(Room.active?'lobby':'setup'); }
 function selectAvSex(g){ S.avSex=g; render(); }
-function pickAvatar(i,idx){ const sex=S.avSex||'Homme'; if(S.players[i]) S.players[i].avatar={img:AVATARS[sex][idx], c:'#2A1F4A', g:sex}; S.avatarPicker=null; saveSession(); go('setup'); }
+function pickAvatar(i,idx){
+  const sex=S.avSex||'Homme', av={img:AVATARS[sex][idx], c:'#2A1F4A', g:sex};
+  if(Room.active){
+    // en ligne : on ne modifie QUE son propre avatar, et on le propage
+    const me=Room.players.find(p=>p.pid===Room.me.pid); if(me) me.avatar=av;
+    Room.saveIdentity({avatar:av});
+    if(Room.isHost) Room.pushState(); else Room.transport.broadcast('hello',{pid:Room.me.pid,name:Room.me.name,avatar:av});
+    S.avatarPicker=null; go('lobby'); return;
+  }
+  if(S.players[i]) S.players[i].avatar=av;
+  S.avatarPicker=null; saveSession(); go('setup');
+}
 // Taille de police dynamique : texte court = gros, texte long = plus petit
 function qz(t){ const n=(t||'').length; return n<30?38:n<48?33:n<72?28:n<110?23:20; }
 
@@ -486,7 +500,8 @@ const GAMES = [
 const SCREENS = {};
 SCREENS.avatars = () => {
   const i=S.avatarPicker, sex=S.avSex||'Homme';
-  const cur=(i!=null&&S.players[i]&&S.players[i].avatar)?S.players[i].avatar.img:null;
+  const src=(typeof Room!=='undefined'&&Room.active)?Room.players:S.players;
+  const cur=(i!=null&&src[i]&&src[i].avatar)?src[i].avatar.img:null;
   const tab=(g)=>`<button onclick="selectAvSex('${g}')" style="flex:1;height:42px;border-radius:999px;border:none;background:${g===sex?'#fff':'transparent'};color:${g===sex?'var(--indigo)':'#fff'};font-family:var(--d);font-weight:800;font-size:15px;cursor:pointer;">${g}</button>`;
   const tile=(idx)=>{ const img=AVATARS[sex][idx], sel=img===cur;
     return `<button onclick="pickAvatar(${i},${idx})" style="border:none;background:transparent;cursor:pointer;padding:0;display:flex;justify-content:center;transition:transform .08s;" onpointerdown="this.style.transform='scale(.93)'" onpointerup="this.style.transform=''"><div style="border-radius:50%;${sel?'box-shadow:0 0 0 4px var(--amber),0 0 26px rgba(255,201,60,.55);':''}">${avatar({avatar:{img,c:'#2A1F4A'}},96)}</div></button>`; };
@@ -514,7 +529,7 @@ SCREENS.home = () => `<div class="fade" style="position:absolute;inset:0;${NIGHT
       <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#3A245C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0"/><path d="M16 6.2a3 3 0 0 1 0 5.6M20.5 20a5.5 5.5 0 0 0-3.2-5"/></svg>
       <div style="font-family:var(--d);font-size:20px;font-weight:800;text-transform:uppercase;">Party mode</div>
       <div style="font-family:var(--b);font-size:13px;font-weight:600;opacity:.85;">Joue à plusieurs</div></button>
-    <button onclick="showModal({emoji:'🌙',title:'Mode Online',msg:'Jouer à distance entre plusieurs téléphones arrive bientôt. En attendant, Party Mode fait très bien le travail.',cta:'J&apos;ai hâte'})" style="height:136px;border-radius:28px;background:linear-gradient(180deg,#9D62FF,#6E3FDB);color:#fff;border:none;box-shadow:0 18px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.20);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;cursor:pointer;">
+    <button onclick="go('online')" style="height:136px;border-radius:28px;background:linear-gradient(180deg,#9D62FF,#6E3FDB);color:#fff;border:none;box-shadow:0 18px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.20);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;cursor:pointer;">
       <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.7 2.6 15.3 0 18M12 3c-2.6 2.7-2.6 15.3 0 18"/></svg>
       <div style="font-family:var(--d);font-size:20px;font-weight:800;text-transform:uppercase;">Online</div>
       <div style="font-family:var(--b);font-size:13px;font-weight:600;opacity:.9;">Joue à distance</div></button>
@@ -1256,7 +1271,15 @@ function burstConfetti(n){
   host.appendChild(wrap);
   setTimeout(()=>wrap.remove(),1600);
 }
-function render(){ app().innerHTML = SCREENS[S.screen](); }
+function render(){
+  app().innerHTML = SCREENS[S.screen]();
+  if(typeof amSpectator==='function' && amSpectator()){
+    const pad=app().firstElementChild;
+    if(pad){ pad.style.pointerEvents='none'; pad.style.opacity='.92'; }
+    app().insertAdjacentHTML('beforeend', spectatorBar());
+    const back=app().querySelector('.iconbtn'); if(back){ back.style.pointerEvents='auto'; }
+  }
+}
 // Détection du clavier (iOS/Android) via visualViewport : libère de la place quand on tape un prénom
 (function(){
   const vv=window.visualViewport, root=document.documentElement;
@@ -1266,8 +1289,212 @@ function render(){ app().innerHTML = SCREENS[S.screen](); }
   window.addEventListener('focusin', e=>{ if(e.target&&e.target.tagName==='INPUT') setTimeout(update,60); });
   window.addEventListener('focusout', e=>{ if(e.target&&e.target.tagName==='INPUT') setTimeout(()=>setKb(0),80); });
 })();
+
+/* ==========================================================================
+   MULTIJOUEUR — salons, tours, reconnexion
+   ========================================================================== */
+S.net = { status:'idle', error:'', joinCode:'', view:null };
+
+/* --- Qui a le droit de jouer maintenant ? --- */
+function expectedActorIndex(){
+  const g=S.game;
+  if(S.screen==='pref' && g && g.phase==='vote') return g.voter;
+  if(S.screen==='pmu'  && g && g.phase==='bet')  return g.betTurn;
+  return S.turn;
+}
+function expectedActor(){ return S.players[expectedActorIndex()]; }
+// En local : toujours vrai (le téléphone tourne). En ligne : seulement l'acteur attendu (ou l'hôte).
+function myTurn(){
+  if(!Room.active) return true;
+  const a=expectedActor();
+  return !!(a && a.pid===Room.me.pid) || Room.isHost;
+}
+function amSpectator(){ return Room.active && !myTurn(); }
+
+/* --- Sérialisation de l'état (les Set ne passent pas en JSON) --- */
+function packGame(g){
+  if(!g) return null;
+  const out={};
+  for(const k in g){ const v=g[k]; out[k] = (v instanceof Set) ? {__set:[...v]} : v; }
+  return out;
+}
+function unpackGame(o){
+  if(!o) return null;
+  const out={};
+  for(const k in o){ const v=o[k]; out[k] = (v && v.__set) ? new Set(v.__set) : v; }
+  return out;
+}
+
+Room.snapshot = function(){
+  return { screen:S.screen, turn:S.turn, reveal:S.reveal, game:packGame(S.game),
+           scores:S.players.map(p=>p.gorgees||0) };
+};
+Room.applyState = function(st){
+  S.players = Room.players;
+  Room.players.forEach((p,i)=>{ if(st.scores && st.scores[i]!=null) p.gorgees=st.scores[i]; });
+  S.screen = st.screen; S.turn = st.turn; S.reveal = st.reveal; S.game = unpackGame(st.game);
+};
+
+/* --- Routage des actions : l'hôte exécute, les invités demandent --- */
+const NET_ACTIONS = ['busGuess','busNext','busSetMode','palmierTirer','palmierBalance','palmierDrop',
+  'palmierNext','palmSetBalance','ftdGuess','startFtd','pmuChoose','pmuDraw','purpleGuess','purpleNext',
+  'echelleTirer','echelleReveal','echelleNext','vobAns','vobSetCat','vobSetCount','jamaisAns',
+  'prefVote','prefNext','startGame','nextTurn'];
+const ORIG = {};
+NET_ACTIONS.forEach(name=>{
+  if(typeof window[name]!=='function') return;
+  ORIG[name]=window[name];
+  window[name]=function(){
+    if(!Room.active) return ORIG[name].apply(null, arguments);
+    if(Room.isHost){ const r=ORIG[name].apply(null, arguments); Room.pushState(); return r; }
+    Room.act('call', { name, args:[...arguments] });
+    return undefined;
+  };
+});
+Room.handleAction = function(a){
+  if(!a || !a.payload) return;
+  const { name, args } = a.payload;
+  if(!ORIG[name]) return;
+  // seul l'acteur attendu peut faire avancer la partie (l'hôte, lui, peut toujours)
+  const expected = expectedActor();
+  const isExpected = expected && expected.pid===a.pid;
+  const lobbyOk = ['startGame','vobSetCat','vobSetCount','busSetMode','palmSetBalance'].includes(name);
+  if(!isExpected && !(lobbyOk && a.pid===Room.me.pid)) return;
+  ORIG[name].apply(null, args||[]);
+  Room.pushState();
+};
+Room.onUpdate = function(){ if(S.screen!=='lobby' || Room.active) render(); };
+
+/* --- Écrans salon --- */
+SCREENS.online = () => {
+  const cfg = Room.configured();
+  return `<div class="pad fade">
+    <div class="hdr"><button class="iconbtn" onclick="go('home')">‹</button><h2 style="flex:1;text-align:center;font-size:21px;">Jouer ensemble</h2><div style="width:42px"></div></div>
+    <div class="spacer"></div>
+    ${!cfg?`<div class="gpanel" style="padding:20px;text-align:center;margin-bottom:16px;">
+       <b style="font-family:var(--f);font-size:17px;color:#FFD37A;">Mode Online pas encore activé</b>
+       <div class="sub" style="font-size:13px;margin-top:7px;">Il manque la configuration Supabase (<code>demo/config.js</code>). Le mode « sur ce téléphone » fonctionne déjà parfaitement.</div></div>`:''}
+    <div class="gpanel" style="padding:24px;text-align:center;">
+      <h2 style="font-size:23px;color:#fff;">Un salon, plusieurs téléphones</h2>
+      <div class="sub" style="margin-top:10px;font-size:14px;">Chacun rejoint avec son tél, choisit son avatar, et joue à son tour.</div>
+      <button class="btn amber" style="margin-top:20px;${cfg?'':'opacity:.5;pointer-events:none;'}" onclick="netHost()">Créer un salon</button>
+      <button class="btn" style="margin-top:11px;${cfg?'':'opacity:.5;pointer-events:none;'}" onclick="go('join')">Rejoindre avec un code</button>
+    </div>
+    <div class="spacer"></div>
+    <button class="btn" onclick="go('setup')">Jouer sur ce téléphone</button>
+    ${S.net.error?`<div class="sub center" style="margin-top:12px;color:#FF9A8B;font-size:13px;">${S.net.error}</div>`:''}
+  </div>`;
+};
+
+SCREENS.join = () => `<div class="pad fade">
+  <div class="hdr"><button class="iconbtn" onclick="go('online')">‹</button><h2 style="flex:1;text-align:center;font-size:21px;">Rejoindre</h2><div style="width:42px"></div></div>
+  <div class="spacer"></div>
+  <div class="gpanel" style="padding:24px;text-align:center;">
+    <div class="cap">Code du salon</div>
+    <input id="rc" value="${(S.net.joinCode||'').replace(/"/g,'&quot;')}" maxlength="4" autocapitalize="characters" autocomplete="off"
+      oninput="S.net.joinCode=this.value.toUpperCase()"
+      style="width:100%;margin-top:12px;height:74px;border-radius:20px;background:rgba(255,255,255,.14);border:none;outline:none;text-align:center;font-family:var(--d);font-weight:800;font-size:40px;letter-spacing:10px;color:#fff;text-transform:uppercase;">
+    <div class="sub" style="font-size:13px;margin-top:10px;">4 lettres, données par l'hôte (ou scanne son QR code).</div>
+  </div>
+  <div class="spacer"></div>
+  ${S.net.error?`<div class="sub center" style="margin-bottom:10px;color:#FF9A8B;font-size:13px;">${S.net.error}</div>`:''}
+  <button class="btn amber" onclick="netJoin()">${S.net.status==='connecting'?'Connexion…':'Rejoindre'}</button>
+</div>`;
+
+SCREENS.lobby = () => {
+  const meHost = Room.isHost, url = Room.inviteURL();
+  const qr = (typeof QR!=='undefined') ? QR.svg(url,{size:190,quiet:2,dark:'#1A0B55',light:'#fff',radius:14}) : '';
+  const list = Room.players.map(p=>`
+    <div style="display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:18px;background:rgba(255,255,255,.08);margin-bottom:9px;">
+      <div style="position:relative;flex:none;">${avatar(p,48)}
+        <span style="position:absolute;right:-1px;bottom:-1px;width:14px;height:14px;border-radius:50%;background:${p.online?'#46C9A0':'#7A7391'};box-shadow:0 0 0 2.5px #3A208C;"></span></div>
+      <b style="flex:1;font-family:var(--f);font-size:17px;color:#fff;">${p.name||'Invité'}${p.pid===Room.me.pid?' <span style="font-size:12px;color:var(--lav);">(toi)</span>':''}</b>
+      ${p.pid===Room.players[0]?.pid?'<span class="pill" style="background:rgba(255,201,60,.2);color:#FFD37A;">Hôte</span>':(p.online?'':'<span class="sub" style="font-size:12px;">hors ligne</span>')}
+    </div>`).join('');
+  const enough = Room.players.length>=2;
+  return `<div class="pad fade">
+    <div class="hdr"><button class="iconbtn" onclick="netLeave()">‹</button><h2 style="flex:1;text-align:center;font-size:20px;">Salon</h2><div style="width:42px"></div></div>
+    <div style="display:flex;gap:14px;align-items:center;background:rgba(255,255,255,.08);border-radius:24px;padding:14px;margin-bottom:14px;">
+      <div style="flex:none;border-radius:14px;overflow:hidden;line-height:0;">${qr}</div>
+      <div style="flex:1;min-width:0;">
+        <div class="cap">Code</div>
+        <div style="font-family:var(--d);font-weight:800;font-size:40px;letter-spacing:6px;color:#fff;line-height:1.05;">${Room.code}</div>
+        <div class="sub" style="font-size:12px;margin-top:6px;">Scanne le QR ou tape le code sur overnight.</div>
+      </div>
+    </div>
+    <div style="flex:1;overflow:auto;min-height:0;">
+      <div class="cap" style="margin-bottom:8px;">Joueurs (${Room.players.length})</div>
+      ${list}
+      <button class="btn sm" style="margin-top:6px;" onclick="openAvatar(myIndex())">Changer mon avatar / prénom</button>
+    </div>
+    ${meHost
+      ? `<button class="btn amber" style="margin-top:12px;${enough?'':'opacity:.5;pointer-events:none;'}" onclick="netStart()">${enough?'Lancer la partie':'En attente de joueurs…'}</button>`
+      : `<div class="gpanel" style="margin-top:12px;padding:16px;text-align:center;"><b style="font-family:var(--f);color:#fff;">En attente de l'hôte…</b><div class="sub" style="font-size:13px;margin-top:4px;">Il choisit le jeu pour tout le monde.</div></div>`}
+  </div>`;
+};
+
+function myIndex(){ return Math.max(0, Room.players.findIndex(p=>p.pid===Room.me.pid)); }
+
+/* --- Actions salon --- */
+function netHost(){
+  S.net.error=''; S.net.status='connecting';
+  Room.saveIdentity({ name: Room.me.name || (S.players[0]&&S.players[0].name) || 'Hôte', avatar: Room.me.avatar || (S.players[0]&&S.players[0].avatar) || null });
+  Room.host().then(code=>{
+    S.net.status='ok'; S.players=Room.players; S.screen='lobby'; render();
+  }).catch(e=>{
+    S.net.status='idle';
+    S.net.error = e.message==='CONFIG_MANQUANTE' ? "Mode Online non configuré (config.js)." : ("Connexion impossible : "+e.message);
+    render();
+  });
+}
+function netJoin(){
+  const code=(S.net.joinCode||'').toUpperCase().trim();
+  if(code.length<4){ S.net.error='Le code fait 4 lettres.'; render(); return; }
+  S.net.error=''; S.net.status='connecting'; render();
+  Room.saveIdentity({ name: Room.me.name || 'Invité' });
+  Room.join(code).then(()=>{
+    S.net.status='ok'; S.players=Room.players; S.screen='lobby'; render();
+  }).catch(e=>{
+    S.net.status='idle';
+    S.net.error = e.message==='CONFIG_MANQUANTE' ? "Mode Online non configuré (config.js)." : ("Salon introuvable : "+e.message);
+    render();
+  });
+}
+function netStart(){ if(!Room.isHost) return; S.players=Room.players; S.turn=0; S.screen='hub'; Room.pushState(); render(); }
+function netLeave(){ Room.leave().then(()=>{ S.players=[]; loadSession(); go('home'); }); }
+
+/* --- Reprise après refresh : on retrouve son salon --- */
+function netResume(){
+  const params=new URLSearchParams(location.search);
+  const invited=(params.get('r')||'').toUpperCase();
+  let sess=null; try{ sess=JSON.parse(localStorage.getItem('overnight.session')||'null'); }catch(e){}
+  if(invited && (!sess || sess.code!==invited)){
+    Room.identity(); S.net.joinCode=invited; S.screen='join';
+    if(Room.configured()) netJoin(); else render();
+    return true;
+  }
+  if(sess && sess.code && Room.configured()){
+    Room.identity();
+    const p = sess.isHost ? Room.host({code:sess.code}) : Room.join(sess.code);
+    p.then(()=>{ S.players=Room.players; if(S.screen==='home'){ S.screen='lobby'; } render(); }).catch(()=>{});
+    return false;
+  }
+  return false;
+}
+
+/* --- Bandeau "à qui le tour" pour les invités --- */
+function spectatorBar(){
+  if(!amSpectator()) return '';
+  const a=expectedActor(); if(!a) return '';
+  return `<div style="position:absolute;left:0;right:0;bottom:0;z-index:40;padding:16px 20px calc(18px + env(safe-area-inset-bottom));background:linear-gradient(180deg,rgba(20,8,60,0),rgba(20,8,60,.92) 40%);pointer-events:none;">
+    <div style="display:flex;align-items:center;gap:12px;justify-content:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.16);padding:10px 18px 10px 10px;border-radius:999px;">
+      ${avatar(a,38)}<span style="font-family:var(--f);font-weight:800;color:#fff;font-size:15px;">${a.online?'Tu regardes — à '+a.name+' de jouer':a.name+' est déconnecté…'}</span></div></div>`;
+}
+
+/* --- Démarrage --- */
 loadSession();
-render();
+if(!netResume()) render();
+
 </script>
 </body>
 </html>
