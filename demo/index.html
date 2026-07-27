@@ -1362,7 +1362,9 @@ function render(){
       </div><div class="spacer"></div></div>`;
   }
   app().innerHTML = html;
-  if(typeof amSpectator==='function' && amSpectator() && !NON_GAME_SCREENS.includes(S.screen)){
+  const bloque = typeof actorGone==='function' && actorGone() && !NON_GAME_SCREENS.includes(S.screen);
+  if(bloque){ app().insertAdjacentHTML('beforeend', spectatorBar()); }
+  else if(typeof amSpectator==='function' && amSpectator() && !NON_GAME_SCREENS.includes(S.screen)){
     const pad=app().firstElementChild;
     if(pad){ pad.style.pointerEvents='none'; pad.style.opacity='.92'; }
     app().insertAdjacentHTML('beforeend', spectatorBar());
@@ -1404,8 +1406,9 @@ function expectedActor(){ return S.players[expectedActorIndex()]; }
 function controlMode(){ return (S.net && S.net.control) || 'turn'; }
 function myTurn(){
   if(!Room.active) return true;
-  if(Room.isHost) return true;              // le MJ peut toujours débloquer la partie
-  if(controlMode()==='host') return false;  // MJ aux commandes : les autres suivent
+  if(controlMode()==='host') return Room.isHost;   // MJ aux commandes : lui seul agit
+  // « Chacun son tour » : l'hôte est un joueur comme les autres. Pour débloquer une
+  // partie (joueur déconnecté), il dispose du bouton explicite « Passer son tour ».
   const a=expectedActor();
   return !!(a && a.pid===Room.me.pid);
 }
@@ -1444,7 +1447,7 @@ const NET_ACTIONS = ['busGuess','busNext','busSetMode','palmierTirer','palmierBa
   'palmierNext','palmSetBalance','ftdGuess','startFtd','pmuChoose','pmuSelect','pmuDraw',
   'purpleGuess','purpleNext','echelleTirer','echelleSetGuess','echelleToGuess','echelleReveal',
   'echelleNext','vobAns','vobSetCat','vobSetCount','jamaisAns','prefVote','prefNext','startGame',
-  'chooseGame','pickControl','launchPending'];
+  'chooseGame','pickControl','launchPending','skipTurn'];
 const ORIG = {};
 NET_ACTIONS.forEach(name=>{
   if(typeof window[name]!=='function') return;
@@ -1670,9 +1673,42 @@ function netResume(){
 /* --- Bandeau "à qui le tour" pour les invités --- */
 // Écrans hors-jeu : pas de bandeau spectateur ni de neutralisation des inputs
 const NON_GAME_SCREENS = ['home','online','join','lobby','avatars','setup','hub','scores','gamemode'];
+// Le joueur attendu a-t-il disparu ? (déconnexion en plein tour)
+function actorGone(){
+  if(!Room.active) return false;
+  const a=expectedActor();
+  return !!(a && a.online===false);
+}
+// Débloque la partie : on avance jusqu'au prochain joueur connecté.
+function skipTurn(){
+  const g=S.game;
+  S.reveal=null;
+  if(S.screen==='pref' && g && g.phase==='vote'){
+    g.votes.push(0); g.voter++;                       // vote neutre pour l'absent
+    if(g.voter>=S.players.length) prefVote(0);
+    render(); return;
+  }
+  if(S.screen==='pmu' && g && g.phase==='bet'){ pmuChoose(0); return; }
+  for(let k=0;k<S.players.length;k++){
+    nextTurn();
+    const p=S.players[S.turn];
+    if(p && p.online!==false) break;                  // premier joueur encore là
+  }
+  render();
+}
 function spectatorBar(){
-  if(!amSpectator() || NON_GAME_SCREENS.includes(S.screen)) return '';
+  if(NON_GAME_SCREENS.includes(S.screen)) return '';
   const a=expectedActor(); if(!a) return '';
+  if(actorGone()){
+    return `<div style="position:absolute;left:0;right:0;bottom:0;z-index:45;padding:16px 20px calc(18px + env(safe-area-inset-bottom));background:linear-gradient(180deg,rgba(20,8,60,0),rgba(20,8,60,.95) 40%);">
+      <div style="display:flex;align-items:center;gap:11px;justify-content:center;background:rgba(255,138,122,.16);border:1px solid rgba(255,138,122,.45);padding:10px 16px 10px 10px;border-radius:999px;margin-bottom:10px;">
+        ${avatar(a,34)}<span style="font-family:var(--f);font-weight:800;color:#FFB3A8;font-size:14px;">${a.name} s'est déconnecté(e)</span></div>
+      ${Room.isHost
+        ? `<button class="btn amber" onclick="skipTurn()">Passer son tour</button>`
+        : `<div class="sub center" style="font-size:13px;">L'hôte peut passer son tour.</div>`}
+    </div>`;
+  }
+  if(!amSpectator()) return '';
   return `<div style="position:absolute;left:0;right:0;bottom:0;z-index:40;padding:16px 20px calc(18px + env(safe-area-inset-bottom));background:linear-gradient(180deg,rgba(20,8,60,0),rgba(20,8,60,.92) 40%);pointer-events:none;">
     <div style="display:flex;align-items:center;gap:12px;justify-content:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.16);padding:10px 18px 10px 10px;border-radius:999px;">
       ${avatar(a,38)}<span style="font-family:var(--f);font-weight:800;color:#fff;font-size:15px;">${
