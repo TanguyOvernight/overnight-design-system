@@ -55,8 +55,11 @@ Séquencement des chantiers : ① PEA (cœur ETF World) → ② or en CTO en DCA
 - **LLY (compounder, CTO)** : reco de tête, tranche ~50 $ + DCA, ⚠️ Q2 5/08.
 - **Or (CTO, dès CTO actif)** : cible 6 % sur 18 mois, ~150 €/trimestre.
   Véhicule et rythme d'exécution : `or-execution.md`.
-- **Cœur WPEA (PEA, dès ouverture)** : ~300 €/mois, le socle. Mécanique
-  d'ouverture, courtier et ETF éligibles : `plan-pea.md`.
+- **Cœur WPEA (PEA, dès ouverture)** : **300 €/mois** (décision Tanguy
+  27/07 : plafonner le cœur à 300 € pour garder ~200 €/mois de munitions
+  satellites). Mécanique, courtier et ETF éligibles : `plan-pea.md`.
+  WPEA et DCAM sont interchangeables (même indice, 0,20 %) — prendre celui
+  que Fortuneo propose ; éviter CW8 (0,38 % pour le même indice).
 - **Aubay** : SURVEILLANCE (achat si ≤ 50 € ou scare optique T3).
 - **Assurance-vie — prise de date (nouveau, 27/07)** : ouvrir une AV en ligne
   avec ~100 € au plus tôt, uniquement pour lancer l'horloge des 8 ans
@@ -82,6 +85,18 @@ Séquencement des chantiers : ① PEA (cœur ETF World) → ② or en CTO en DCA
 Cœur/satellite 75-85 / 15-25 · ≤ 5 % par titre vif à l'achat · gagnant court
 jusqu'à 10 % · rééquilibrage par les versements · pas de stop-loss prix ·
 test fiscal avant toute vente CTO · programmes en tranches conditionnelles.
+
+**⚠️ Écart assumé sur le flux mensuel (décision Tanguy 27/07)** : le split
+300/200 = 60/40 en FLUX, plus offensif que la règle 75-85/15-25 (qui porte
+sur le STOCK). Tolérance accordée car : (a) tolérance au risque assumée ;
+(b) le stock reste dominé par le cœur pendant des mois ; (c) le plafond
+≤ 5 % par titre vif s'apprécie sur le portefeuille CIBLE et en nombre de
+mensualités (sinon impossible de bâtir une ligne sur un petit portefeuille).
+**Garde-fous** : les 200 € ne sont PAS un permis de dépenser — ils ne
+partent que sur un déclencheur validé par le Juge ou un programme décidé
+(LLY, or) ; s'ils dorment > 2 mois, ils rejoignent le cœur (anti-cash-mort).
+Si le stock satellite dépasse 25 % du portefeuille, le flux repasse à
+400/100 jusqu'au retour dans la bande.
 
 ## Le hurdle : pourquoi une idée doit BATTRE le cœur
 Le défaut, ce n'est pas « ne rien faire » — c'est **verser au cœur (ETF
