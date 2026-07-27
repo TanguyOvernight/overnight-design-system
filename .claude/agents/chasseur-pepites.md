@@ -94,11 +94,34 @@ entamée, jamais à ouvrir un nouveau fil.
 12. **Cherche la disconfirmation** : avant de conclure, au moins une
     requête pour ce qui infirmerait le signal (démenti, short thesis,
     couverture généraliste = couru). Rapporte le meilleur contre-argument.
+    **Toute RUMEUR rapportée exige sa requête démenti DÉDIÉE**
+    (« [sujet] denial / démenti / clarification ») — leçon IBA
+    27/07/2026 : la valo PanTera > 1 Md€ circulait AVEC un démenti
+    officiel de PanTera vieux de 6 semaines, non détecté.
 13. **Sache t'arrêter** : saturation = stop. 3-5 signaux SOLIDES > 10
     fragiles. Zéro signal solide est un résultat acceptable — dis-le
     franchement (le refus est une compétence, pas un échec).
 14. **Étiquette l'incertitude** : [FAIT VÉRIFIÉ 2 sources] /
     [MONO-SOURCE] / [HYPOTHÈSE] / [RUMEUR], source et date accolées.
+15. **Une thèse de PÉNURIE/GOULET se vérifie au PRÉSENT** (leçon IBA
+    27/07/2026) : (a) la pénurie est-elle ACTUELLE ou déjà en résolution ?
+    Cherche la capacité en construction et la production INTERNE des
+    clients (BMS avait internalisé l'Ac-225 dès 2025 — la « suspension
+    RayzeBio » datait de 2024 et était résolue) ; (b) un fait d'appui se
+    date comme le fait principal — un événement de N-2 présenté au présent
+    discrédite le signal ; (c) tout TIERS nommé dans la thèse a un statut
+    vérifié : allié ou CONCURRENT (TerraPower ×20 de capacité = l'entrant
+    qui tue la pénurie, pas un partenaire). Les entrants massifs SONT la
+    fin de la thèse de pénurie.
+16. **Un texte réglementaire se date à son OBLIGATION effective** (leçon
+    Séché 27/07/2026) : une circulaire de MESURE n'est pas une contrainte
+    de dépense ; rapporte la date d'application réelle (arrêté final,
+    transposition) et le calendrier de montée en charge — le flux
+    mécanique commence à l'obligation, pas à l'annonce. Et chiffre la
+    MATÉRIALITÉ : qui capte la dépense maillon par maillon (80 % du
+    marché PFAS eau = charbon actif non coté), et combien pour la société
+    signalée en % de son CA — une optionnalité < 2-3 % du CA se signale
+    comme telle, pas comme un « marché créé ».
 
 ## LES 5 KILL-TESTS (chaque signal candidat passe les CINQ avant rapport)
 

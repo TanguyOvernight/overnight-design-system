@@ -73,8 +73,9 @@ VISIBLE même quand il ne débouche pas.
 
 **Étage 1 — DÉTECTION** : agent `chasseur-pepites` (défini dans
 `.claude/agents/chasseur-pepites.md`, charte v2 : budget de session en 3
-phases, 14 règles de recherche, 5 kill-tests systématiques, playbooks par
-terrain, protocole jour creux). Trouve les signaux early, les source, les
+phases, 16 règles de recherche, 5 kill-tests systématiques, playbooks par
+terrain, protocole jour creux, arsenal terrains-invisibles.md). Trouve les
+signaux early, les source, les
 étiquette. L'agent screening relève AUSSI chaque matin le chiffre du jour
 des « Surveillances du Juge » (radar-catalyseurs.md) : déclencheur touché
 ou approché < ~5 % → fast-track Arbitre → 🔔 PROPOSITION dans la
