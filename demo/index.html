@@ -313,36 +313,11 @@ function cardBack(w,h,dark){
 }
 /* ============ SCÈNES CODÉES (HTML/CSS/SVG, zéro image) ============ */
 function svgPalm(size,flip,color){
-  // Silhouette réaliste : tronc effilé, 8 palmes dont la nervure s'arque puis
-  // retombe, folioles pendantes le long de chaque nervure (longues près du
-  // tronc, courtes au bout) — c'est ce feuillage qui fait "palmier".
-  const col=color||'#1D0B5C';
-  const C={x:50,y:33};
-  const fronds=[
-    {c:[68,3],  t:[90,22]},
-    {c:[32,1],  t:[12,20]},
-    {c:[76,16], t:[97,48]},
-    {c:[24,14], t:[4,46]},
-    {c:[72,36], t:[86,70]},
-    {c:[28,34], t:[16,68]},
-    {c:[58,4],  t:[74,9]},
-    {c:[42,2],  t:[26,7]},
-  ];
-  let g='';
-  for(const f of fronds){
-    const q=t=>({x:(1-t)*(1-t)*C.x+2*(1-t)*t*f.c[0]+t*t*f.t[0],
-                 y:(1-t)*(1-t)*C.y+2*(1-t)*t*f.c[1]+t*t*f.t[1]});
-    g+=`<path d="M${C.x} ${C.y} Q${f.c[0]} ${f.c[1]} ${f.t[0]} ${f.t[1]}" fill="none" stroke="${col}" stroke-width="1.7" stroke-linecap="round"/>`;
-    const sgn=f.t[0]>=C.x?1:-1;
-    for(let i=1;i<=13;i++){
-      const t=.14+i*.062, p=q(t);
-      const len=8.5*(1-t)+2;
-      const dx=sgn*len*.45*t, dy=len*(1-.25*t);
-      g+=`<path d="M${p.x.toFixed(1)} ${p.y.toFixed(1)} q${(dx*.4).toFixed(1)} ${(dy*.55).toFixed(1)} ${dx.toFixed(1)} ${dy.toFixed(1)}" fill="none" stroke="${col}" stroke-width="1.15" stroke-linecap="round"/>`;
-    }
-  }
-  return `<svg width="${size}" height="${size}" viewBox="0 0 100 100" style="${flip?'transform:scaleX(-1);':''}display:block;">
-    <path d="M46.8 32 C48.5 52 45 74 41.5 100 L48 100 C51.5 76 53.2 54 53.5 33 Z" fill="${col}"/>${g}</svg>`;
+  // Version minimaliste d'origine : tronc + canopée en un seul tracé d'arcs.
+  return `<svg width="${size}" height="${size}" viewBox="0 0 100 100" fill="${color||'#1D0B5C'}" style="${flip?'transform:scaleX(-1);':''}opacity:.9;display:block;">
+    <path d="M46 98 C48 70 50 52 46 36 L54 36 C57 56 56 76 54 98 Z"/>
+    <path d="M50 40 C38 27 23 23 9 28 C21 13 40 15 50 26 C60 11 79 12 91 25 C77 22 62 26 52 36 C64 29 79 32 87 43 C74 38 60 40 52 44 C43 37 29 36 16 43 C26 31 42 31 50 40 Z"/>
+  </svg>`;
 }
 function cssCup(w,grad,rot,straw){
   const h=Math.round(w*1.24);
