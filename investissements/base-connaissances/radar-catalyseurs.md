@@ -28,6 +28,7 @@ renouvellement explicitement motivé). Stock max ~6 lignes.
 | 29/07 | **FOMC** — décision Fed (~25 % proba de hausse) | Tout le portefeuille ; ton de Warsh = volatilité |
 | **29/07** | **Résultats S1 Vicat (VCT, Paris, PEA)** — comparable S1 2025 : EBITDA 331 M€ (-6,3 %) | Chasse PEA 27/07. Entrée conditionnelle : EBITDA S1 ≥ 340 M€ **ET** dette/EBITDA ≤ 1,5x **ET** cours ≤ 60 €. PASSE si > 70 € (couru) ou EBITDA < 320 M€ |
 | **30/07** | **Résultats S1 The Magnum Ice Cream (MICC)** — 1ᵉʳ semestre post-démerger Unilever, webcast 11h CEST | Chasse CTO 27/07. ⚠️ **N.V. néerlandaise = éligible PEA** → si le PEA est ouvert, l'idée y va (pas au CTO : 12,8 pts de fiscalité). Entrée conditionnelle : organique ≥ +3 % **ET** marge EBITDA aj. en amélioration séquentielle **ET** coûts de séparation en décrue chiffrée **ET** dette/EBITDA ≤ 2,5x, capi ≤ ~8,8 Md€. PASSE si guidance abaissée ou levier > 2,7x |
+| **30/07** | **Résultats S1 Sanofi (SAN, Paris, PEA)** — 1ᵉʳˢ résultats complets sous Belén Garijo (DG depuis le 29/04) | Chasse santé 28/07. Re-test conditionnel : cours ≤ **68 €** APRÈS publication **ET** guidance CA non abaissée **ET** aucun nouvel arrêt de programme. Contexte : arrêt de l'amlitélimab en dermatite atopique le 24/07 (-2,1 %, à 74,75 €) |
 | 30/07 | Résultats Schneider Electric S1 | Thème électrification (watchlist potentielle) |
 | 30-31/07 | Résultats SocGen, Crédit Agricole | Lecture santé bancaire FR / spread OAT |
 
@@ -49,6 +50,15 @@ renouvellement explicitement motivé). Stock max ~6 lignes.
 | ~Nov. 2026 | T3 Stalprodukt (Varsovie) — 1er trimestre plein sous sauvegardes acier UE (01/07/2026) | GOES/transformateurs — achetabilité PEA non résolue : radar d'apprentissage seulement |
 | ~2029 | Montée en capacité commerciale PanTera (Ra-226 photonucléaire) + usine TerraPower Philadelphie | Jalon long du goulet Ac-225 |
 | Post-2026 | Montée de la dépense PFAS eau potable UE (lag 3-5 ans, ~3,6 Md€ d'ici 2036 — Bluefield) | Thème structurel |
+
+## Jalons santé récoltés (chasse du 28/07)
+
+| Échéance | Événement | Intérêt |
+|---|---|---|
+| ~fin sept./oct. 2026 | Décision de la Commission européenne sur l'obicetrapib (avis CHMP positif du 24/07) | Milestones Menarini pour NewAmsterdam Pharma (Nasdaq → CTO, PFU 31,4 %) — veille seulement |
+| S2 2026 | Lecture phase 2 amlitélimab en maladie cœliaque (Sanofi) | Seule valeur résiduelle d'un actif que le marché vient d'écrire à zéro |
+| Fin T3 2026 | Sortie de la cell therapy chez Lakefront (ex-Galapagos, Amsterdam/Bruxelles, PEA) — one-off 125-175 M€ | Purge le bruit comptable ; capi ~1,68 Md€ vs trésorerie guidée 1,975-2,050 Md€ (VE négative) mais ⚠️ cash-burn et gouvernance = drapeaux |
+| Fin T4 2026 | Dépôt de NDA FDA d'Abivax (obefazimod, colite ulcéreuse) | Jalon ; thèse NON rouverte au prix actuel (+1 700 % en 2025) |
 
 ## Septembre 2026
 
