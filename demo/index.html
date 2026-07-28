@@ -1031,9 +1031,41 @@ SCREENS.bus = () => {
       </div></div>`;
     return `<div class="pad fade">${gameHead('Le Bus')}${turnBanner()}<div class="gamebody">${mid}</div></div>`;
   }
+  if(g.phase==='pyrchoice'){
+    const opt=(fn,titre,desc,amber)=>`<button class="btn ${amber?'amber':''}" style="min-height:0;padding:15px 18px;display:block;text-align:left;" onclick="${fn}">
+      <span style="display:block;font-size:17px;">${titre}</span>
+      <span style="display:block;font-family:var(--b);font-weight:600;font-size:12.5px;opacity:.85;margin-top:3px;line-height:1.35;">${desc}</span></button>`;
+    return `<div class="pad fade">${gameHead('Le Bus', `<div class="pill">Pyramide</div>`)}<div class="spacer"></div>
+      <h2 style="text-align:center;font-size:24px;">La vraie Pyramide ?</h2>
+      <div class="sub center" style="font-size:13.5px;margin:8px 0 18px;">Ligne 1 = 1 gorgée, ligne 2 = 2… par carte en main.</div>
+      <div style="display:flex;flex-direction:column;gap:11px;">
+        ${opt("busChoosePyr('menteur')",'Pyramide Menteur','Mémorise tes 4 cartes, puis bluffe : réclame une carte (vraie ou pas) et distribue. La victime peut crier MENTEUR — le perdant boit double.',true)}
+        ${opt("busChoosePyr('classique')",'Pyramide Classique','Cartes détectées automatiquement : zéro triche, zéro mémoire, on distribue tranquille.')}
+      </div>
+      <div class="spacer"></div>
+      <button class="btn sm" onclick="go('scores')">Directement au classement</button>
+    </div>`;
+  }
+  if(g.phase==='memo'){
+    const pl=cur(), mine=iAmActor(), py=g.pyr;
+    const main=(g.players[S.turn]&&g.players[S.turn].cards)||[];
+    return `<div class="pad fade">${gameHead('Le Bus', `<div class="pill">Mémo ${py.memo+1}/${S.players.length}</div>`)}
+      <div class="gamebody" style="justify-content:center;gap:16px;">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:8px;">${avatar(pl,86)}
+          <div style="font-family:var(--d);font-weight:800;font-size:22px;color:#fff;">${pl.name}, mémorise tes cartes</div>
+          <div class="sub" style="font-size:13px;">Après, elles sont cachées pour toujours. Bluffe bien.</div></div>
+        ${py.memoShown
+          ? `<div style="display:flex;justify-content:center;gap:9px;">${main.map(c=>mine?cardHTML(c,72,101):cardBack(72,101)).join('')}</div>`
+          : `<div style="display:flex;justify-content:center;gap:9px;">${main.map(()=>cardBack(72,101)).join('')}</div>`}
+      </div>
+      ${py.memoShown
+        ? `<button class="btn amber" onclick="busMemoNext()">J'ai mémorisé</button>`
+        : `<button class="btn primary" onclick="busMemoShow()">Voir mes cartes</button>`}
+    </div>`;
+  }
   if(g.phase==='pyr'){
     const py=g.pyr, fini=py.i>=py.cards.length;
-    const pw=Math.max(50,Math.min(80,Math.round((window.innerHeight-350)/5.7)));
+    const pw=Math.max(46,Math.min(80,Math.round((window.innerHeight-(g.pyrMode==='menteur'?432:350))/5.7)));
     const ph=Math.round(pw*1.4);
     // pyramide affichée ligne 4 (1 carte) en haut -> ligne 1 (4 cartes) en bas
     const lignes=[4,3,2,1].map(l=>{
@@ -1042,13 +1074,47 @@ SCREENS.bus = () => {
         `<div style="${x.flip?'':'opacity:.95;'}${py.last&&x.flip&&x.c===py.last.c?'filter:drop-shadow(0 0 14px rgba(255,211,63,.65));':''}">${x.flip?cardHTML(x.c,pw,ph):cardBack(pw,ph)}</div>`).join('')}</div>`;
     }).join('');
     const last=py.last;
-    const info = !last ? `<div class="sub center" style="font-size:14px;">Ligne 1 = 1 gorgée · ligne 2 = 2 · ligne 3 = 3 · ligne 4 = 4 — par carte en main.</div>`
-      : `<div class="drop" style="text-align:center;">
+    const chip=(pl2,idx,fn)=>`<button onclick="${fn}(${idx})" style="border:none;cursor:pointer;display:flex;align-items:center;gap:7px;padding:6px 13px 6px 6px;border-radius:999px;background:rgba(255,255,255,.14);${pyrPeut(idx)||fn!=='pyrClaim'?'':'opacity:.4;pointer-events:none;'}box-shadow:inset 0 1.5px 0 rgba(255,255,255,.2),0 2px 5px rgba(10,4,40,.3);">
+      ${avatar(pl2,30)}<b style="font-family:var(--f);font-weight:800;font-size:14px;color:#fff;">${pl2.name}</b></button>`;
+    let info;
+    if(!last){
+      info = `<div class="sub center" style="font-size:14px;">${g.pyrMode==='menteur'?'Réclame les cartes… même celles que tu n\'as pas.':'Ligne 1 = 1 gorgée · ligne 2 = 2 · ligne 3 = 3 · ligne 4 = 4 — par carte en main.'}</div>`;
+    } else if(g.pyrMode==='menteur'){
+      const li=last.ligne;
+      if(py.sub==='target'){
+        const cl=S.players[py.claimant];
+        const cible = pyrPeut(py.claimant) ? '' : 'pointer-events:none;opacity:.55;';
+        info = `<div class="drop" style="text-align:center;">
+          <b style="font-family:var(--f);font-size:16px;color:#FFD37A;">${cl.name} — à qui tu donnes ${li} gorgée${li>1?'s':''} ?</b>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:10px;${cible}">
+            ${S.players.map((pl2,idx)=>idx===py.claimant?'':chip(pl2,idx,'pyrTarget')).join('')}
+          </div></div>`;
+      } else if(py.sub==='verdict'){
+        const tg=S.players[py.target], cl=S.players[py.claimant];
+        const droit = pyrPeut(py.target) ? '' : 'pointer-events:none;opacity:.55;';
+        info = `<div class="drop" style="text-align:center;">
+          <b style="font-family:var(--f);font-size:16px;color:#fff;">${cl.name} prétend avoir un ${VN[last.c.v]}. ${tg.name}, tu fais quoi ?</b>
+          <div class="row" style="margin-top:12px;${droit}">
+            <button class="btn sm" onclick="pyrVerdict(false)">Je bois ${li}</button>
+            <button class="btn sm coral" onclick="pyrVerdict(true)">MENTEUR !</button>
+          </div></div>`;
+      } else {
+        info = `<div class="drop" style="text-align:center;">
+          ${py.result?`<b style="font-family:var(--f);font-size:15.5px;color:${py.result.type==='demasque'?'#FF9A8B':(py.result.type==='avait'?'#7BE8C0':'#fff')};">${py.result.txt}</b>`:
+            `<b style="font-family:var(--f);font-size:16px;color:#FFD37A;">Ligne ${li} — ${li} gorgée${li>1?'s':''}. Qui a un ${VN[last.c.v]} ?</b>`}
+          <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:10px;">
+            ${S.players.map((pl2,idx)=>chip(pl2,idx,'pyrClaim')).join('')}
+          </div>
+          <div class="sub" style="font-size:11.5px;margin-top:8px;">Bluff autorisé. Se faire démasquer = double gorgée.</div></div>`;
+      }
+    } else {
+      info = `<div class="drop" style="text-align:center;">
           <b style="font-family:var(--f);font-size:17px;color:#FFD37A;">Ligne ${last.ligne} — ${last.ligne} gorgée${last.ligne>1?'s':''} par carte</b>
           ${last.porteurs.length
             ? last.porteurs.map(o=>`<div style="margin-top:8px;font-family:var(--f);font-weight:800;font-size:16px;color:#fff;">${playerTag(o.pl)} a ${o.nb>1?o.nb+' fois ':''}la carte — distribue ${o.nb*last.ligne} gorgée${o.nb*last.ligne>1?'s':''} !</div>`).join('')
             : `<div class="sub" style="margin-top:7px;font-size:14px;">Personne ne l'a. Carte morte, on respire.</div>`}
         </div>`;
+    }
     return `<div class="pad fade">${gameHead('Le Bus', `<div class="pill">Pyramide ${py.i}/${py.cards.length}</div>`)}
       ${fini?'':turnBanner()}
       <div class="gamebody" style="gap:10px;">
@@ -1057,7 +1123,7 @@ SCREENS.bus = () => {
       </div>
       ${fini
         ? `<button class="btn amber" onclick="busPyrEnd()">Terminer</button>`
-        : `<button class="btn primary" onclick="busPyrFlip()">Retourner une carte</button>`}
+        : `<button class="btn primary" style="${(g.pyrMode==='menteur'&&py.sub!=='idle')?'opacity:.45;pointer-events:none;':''}" onclick="busPyrFlip()">${g.pyrMode==='menteur'&&py.last?'Carte suivante':'Retourner une carte'}</button>`}
     </div>`;
   }
   const p=busProg(), r=S.reveal;
@@ -1110,12 +1176,7 @@ function busNext(){
   const p=busProg(), ok=S.reveal.ok; S.reveal=null;
   if(g.mode==='partage'){
     p.step++;                       // on avance qu'on ait gagné OU perdu — la progression est gardée
-    if(g.players.every(pl=>pl.step>4)){ haptic('win');
-      showModal({emoji:'🔺',title:'La vraie Pyramide ?',
-        msg:'On retourne une pyramide de cartes : si tu as la valeur dans ta main de 4 cartes, tu distribues. Ligne 1 = 1 gorgée, ligne 2 = 2, ligne 3 = 3, ligne 4 = 4 — par carte en main.',
-        cta:'Lancer la pyramide', after:()=>busStartPyr(),
-        cta2:'Directement au classement', after2:()=>go('scores')});
-      return; }
+    if(g.players.every(pl=>pl.step>4)){ haptic('win'); g.phase='pyrchoice'; render(); return; }
     for(let k=0;k<S.players.length;k++){ nextTurn(); if(g.players[S.turn].step<=4) break; } // passe au prochain pas encore arrivé au bout
     render(); return;
   }
@@ -1135,24 +1196,43 @@ function busNext(){
   }
 }
 
-/* --- La vraie Pyramide (fin du mode partagé) --- */
-function busStartPyr(){
+/* --- La vraie Pyramide (fin du mode partagé) : Menteur ou Classique --- */
+function iAmActor(){ if(!Room.active) return true; const a=expectedActor(); return !!(a && a.pid===Room.me.pid); }
+function pyrLibre(){ const g=S.game; return S.screen==='bus' && g && g.phase==='pyr' && g.pyrMode==='menteur'; }
+// En ligne : chacun ne peut agir QUE pour lui-même sur ces boutons
+function pyrPeut(idx){ if(!Room.active) return true; const pl=S.players[idx]; return !!(pl && pl.pid===Room.me.pid); }
+function busChoosePyr(mode){
   const g=S.game; if(!g || g.mode!=='partage') return;
-  // la pyramide est tirée UNIQUEMENT parmi les cartes qu'aucun joueur n'a en main
   const prises=new Set();
   (g.players||[]).forEach(pl=>(pl.cards||[]).forEach(c=>prises.add(c.v+'-'+c.s)));
   const pool=shuffle(newDeck().filter(c=>!prises.has(c.v+'-'+c.s)));
   const cards=[];
-  [[1,4],[2,3],[3,2],[4,1]].forEach(([ligne,nb])=>{   // ligne 1 en bas (4 cartes) -> ligne 4 (1 carte)
+  [[1,4],[2,3],[3,2],[4,1]].forEach(([ligne,nb])=>{
     for(let k=0;k<nb;k++) cards.push({c:pool.pop(), ligne, flip:false});
   });
-  g.phase='pyr'; g.pyr={cards, i:0, last:null};
-  S.reveal=null; render();
+  g.pyrMode=mode;
+  g.pyr={cards, i:0, last:null, memo:0, memoShown:false, sub:'idle', claimant:null, target:null, result:null};
+  S.turn=0; S.reveal=null;
+  g.phase = (mode==='menteur') ? 'memo' : 'pyr';
+  render();
+}
+function busMemoShow(){ const g=S.game; if(g&&g.pyr){ g.pyr.memoShown=true; render(); } }
+function busMemoNext(){
+  const g=S.game; if(!g||!g.pyr) return;
+  g.pyr.memoShown=false; g.pyr.memo++;
+  if(g.pyr.memo>=S.players.length){ g.phase='pyr'; S.turn=0; }
+  else nextTurn();
+  render();
 }
 function busPyrFlip(){
   const g=S.game; if(!g || !g.pyr || g.pyr.i>=g.pyr.cards.length) return;
+  if(g.pyrMode==='menteur' && g.pyr.sub!=='idle') return;   // une réclamation est en cours
   const it=g.pyr.cards[g.pyr.i]; it.flip=true; g.pyr.i++;
-  // qui a cette VALEUR dans sa main de 4 cartes ?
+  if(g.pyrMode==='menteur'){
+    g.pyr.last={c:it.c, ligne:it.ligne};
+    g.pyr.sub='idle'; g.pyr.result=null;
+    haptic('tap'); nextTurn(); render(); return;
+  }
   const porteurs=S.players.map((pl,idx)=>{
     const main=(g.players[idx]&&g.players[idx].cards)||[];
     const nb=main.filter(c=>c.v===it.c.v).length;
@@ -1160,9 +1240,44 @@ function busPyrFlip(){
   }).filter(Boolean);
   g.pyr.last={c:it.c, ligne:it.ligne, porteurs};
   haptic(porteurs.length?'win':'tap');
-  nextTurn();                                        // le suivant retournera la prochaine
-  render();
+  nextTurn(); render();
   if(porteurs.length) requestAnimationFrame(()=>burstConfetti(16));
+}
+/* --- Bluff : réclamer, cibler, trancher --- */
+function pyrClaim(idx){
+  const g=S.game; if(!g||!g.pyr||g.pyr.sub!=='idle'||!g.pyr.last) return;
+  g.pyr.sub='target'; g.pyr.claimant=idx; g.pyr.result=null;
+  haptic('tap'); render();
+}
+function pyrTarget(idx){
+  const g=S.game; if(!g||!g.pyr||g.pyr.sub!=='target'||idx===g.pyr.claimant) return;
+  g.pyr.sub='verdict'; g.pyr.target=idx;
+  haptic('tap'); render();
+}
+function pyrVerdict(menteur){
+  const g=S.game; if(!g||!g.pyr||g.pyr.sub!=='verdict') return;
+  const li=g.pyr.last.ligne, v=g.pyr.last.c.v;
+  const ci=g.pyr.claimant, ti=g.pyr.target;
+  const cl=S.players[ci], tg=S.players[ti];
+  if(!menteur){
+    drink(ti, li);
+    g.pyr.result={type:'bois', txt:`${tg.name} boit ${li} sans discuter. Le doute reste entier…`};
+    haptic('ok');
+  } else {
+    const main=(g.players[ci]&&g.players[ci].cards)||[];
+    const avait=main.some(c=>c.v===v);
+    if(avait){
+      drink(ti, li*2);
+      g.pyr.result={type:'avait', txt:`${cl.name} l'avait VRAIMENT ! ${tg.name} boit le double : ${li*2} gorgées.`};
+      haptic('win'); requestAnimationFrame(()=>burstConfetti(20));
+    } else {
+      drink(ci, li*2);
+      g.pyr.result={type:'demasque', txt:`MENTEUR démasqué ! ${cl.name} n'avait rien et boit le double : ${li*2} gorgées.`};
+      haptic('fail'); requestAnimationFrame(()=>fireworks());
+    }
+  }
+  g.pyr.sub='idle'; g.pyr.claimant=null; g.pyr.target=null;
+  render();
 }
 function busPyrEnd(){
   fireworks();
@@ -1936,8 +2051,9 @@ function render(){
   }
   app().innerHTML = html;
   const bloque = typeof actorGone==='function' && actorGone() && !NON_GAME_SCREENS.includes(S.screen);
+  const libre = typeof pyrLibre==='function' && pyrLibre();
   if(bloque){ app().insertAdjacentHTML('beforeend', spectatorBar()); }
-  else if(typeof amSpectator==='function' && amSpectator() && !NON_GAME_SCREENS.includes(S.screen)){
+  else if(!libre && typeof amSpectator==='function' && amSpectator() && !NON_GAME_SCREENS.includes(S.screen)){
     const pad=app().firstElementChild;
     if(pad){ pad.style.pointerEvents='none'; pad.style.opacity='.92'; }
     app().insertAdjacentHTML('beforeend', spectatorBar());
@@ -2021,7 +2137,8 @@ const NET_ACTIONS = ['busGuess','busNext','busSetMode','palmierTirer','palmierBa
   'palmierNext','palmSetBalance','ftdGuess','startFtd','pmuChoose','pmuSelect','pmuDraw',
   'purpleGuess','purpleNext','echelleTirer','echelleSetGuess','echelleToGuess','echelleReveal',
   'echelleNext','vobAns','vobSetCat','vobSetCount','jamaisAns','prefVote','prefNext','startGame',
-  'chooseGame','pickControl','launchPending','skipTurn','busStartPyr','busPyrFlip','busPyrEnd'];
+  'chooseGame','pickControl','launchPending','skipTurn','busChoosePyr','busPyrFlip','busPyrEnd',
+  'busMemoShow','busMemoNext','pyrClaim','pyrTarget','pyrVerdict'];
 const ORIG = {};
 NET_ACTIONS.forEach(name=>{
   if(typeof window[name]!=='function') return;
@@ -2040,6 +2157,16 @@ Room.handleAction = function(a){
   const { name, args } = a.payload;
   if(!ORIG[name]) return;
   // seul l'acteur attendu peut faire avancer la partie (l'hôte, lui, peut toujours)
+  // Bluff de la Pyramide : chacun agit pour SOI (réclamer, cibler, trancher), pas selon le tour
+  const PYR_SOI={
+    pyrClaim:(args)=>{ const pl=S.players[args[0]]; return !!(pl && pl.pid===a.pid); },
+    pyrTarget:()=>{ const g2=S.game, cl=g2&&g2.pyr&&S.players[g2.pyr.claimant]; return !!(cl && cl.pid===a.pid); },
+    pyrVerdict:()=>{ const g2=S.game, tg=g2&&g2.pyr&&S.players[g2.pyr.target]; return !!(tg && tg.pid===a.pid); }
+  };
+  if(PYR_SOI[name]){
+    if(PYR_SOI[name](args||[])){ try{ ORIG[name].apply(null, args||[]); }catch(e){} Room.pushState(); }
+    return;
+  }
   if(controlMode()==='host') return;        // MJ aux commandes : aucune action invitée acceptée
   const expected = expectedActor();
   if(!expected || expected.pid!==a.pid) return;   // seul l'acteur attendu fait avancer la partie
