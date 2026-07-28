@@ -1033,11 +1033,13 @@ SCREENS.bus = () => {
   }
   if(g.phase==='pyr'){
     const py=g.pyr, fini=py.i>=py.cards.length;
+    const pw=Math.max(50,Math.min(80,Math.round((window.innerHeight-350)/5.7)));
+    const ph=Math.round(pw*1.4);
     // pyramide affichée ligne 4 (1 carte) en haut -> ligne 1 (4 cartes) en bas
     const lignes=[4,3,2,1].map(l=>{
       const cs=py.cards.filter(x=>x.ligne===l);
-      return `<div style="display:flex;justify-content:center;gap:7px;margin-bottom:7px;">${cs.map(x=>
-        `<div style="${x.flip?'':'opacity:.95;'}${py.last&&x.flip&&x.c===py.last.c?'filter:drop-shadow(0 0 12px rgba(255,211,63,.65));':''}">${x.flip?cardHTML(x.c,52,73):cardBack(52,73)}</div>`).join('')}</div>`;
+      return `<div style="display:flex;justify-content:center;gap:8px;margin-bottom:8px;">${cs.map(x=>
+        `<div style="${x.flip?'':'opacity:.95;'}${py.last&&x.flip&&x.c===py.last.c?'filter:drop-shadow(0 0 14px rgba(255,211,63,.65));':''}">${x.flip?cardHTML(x.c,pw,ph):cardBack(pw,ph)}</div>`).join('')}</div>`;
     }).join('');
     const last=py.last;
     const info = !last ? `<div class="sub center" style="font-size:14px;">Ligne 1 = 1 gorgée · ligne 2 = 2 · ligne 3 = 3 · ligne 4 = 4 — par carte en main.</div>`
@@ -1136,9 +1138,13 @@ function busNext(){
 /* --- La vraie Pyramide (fin du mode partagé) --- */
 function busStartPyr(){
   const g=S.game; if(!g || g.mode!=='partage') return;
+  // la pyramide est tirée UNIQUEMENT parmi les cartes qu'aucun joueur n'a en main
+  const prises=new Set();
+  (g.players||[]).forEach(pl=>(pl.cards||[]).forEach(c=>prises.add(c.v+'-'+c.s)));
+  const pool=shuffle(newDeck().filter(c=>!prises.has(c.v+'-'+c.s)));
   const cards=[];
   [[1,4],[2,3],[3,2],[4,1]].forEach(([ligne,nb])=>{   // ligne 1 en bas (4 cartes) -> ligne 4 (1 carte)
-    for(let k=0;k<nb;k++) cards.push({c:draw(g.deck), ligne, flip:false});
+    for(let k=0;k<nb;k++) cards.push({c:pool.pop(), ligne, flip:false});
   });
   g.phase='pyr'; g.pyr={cards, i:0, last:null};
   S.reveal=null; render();
