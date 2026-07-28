@@ -50,14 +50,12 @@
   *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;-webkit-font-smoothing:antialiased;}
   html,body{height:100%;min-height:100%;}
   /* Couleur de fond solide = iOS Safari teinte la status bar + la barre du bas en violet (plus de blanc) */
-  html{background:#241064;}
-  body{font-family:var(--b);background-color:#241064;
+  html{height:100%;background:#241064;
     background-image:linear-gradient(180deg,#2A1375 0%,#34108D 45%,#18084F 100%);
-    background-repeat:no-repeat;background-size:cover;
-    display:flex;justify-content:center;min-height:100dvh;}
+    background-attachment:fixed;background-repeat:no-repeat;background-size:100% 100%;}
+  body{font-family:var(--b);background:transparent;display:flex;justify-content:center;min-height:100dvh;}
   #app{position:relative;width:100%;max-width:460px;height:100dvh;min-height:100dvh;background:
-    radial-gradient(120% 55% at 50% 6%,rgba(123,87,242,.28),transparent 60%),
-    linear-gradient(180deg,#2A1375 0%,#34108D 45%,#18084F 100%);
+    radial-gradient(120% 55% at 50% 6%,rgba(123,87,242,.28),transparent 60%);
     color:#fff;display:flex;flex-direction:column;overflow:hidden;}
   .pad{position:relative;z-index:1;padding:max(20px,env(safe-area-inset-top)) 20px calc(20px + env(safe-area-inset-bottom));flex:1;display:flex;flex-direction:column;min-height:0;}
   h1{font-family:var(--d);font-weight:800;letter-spacing:-.4px;line-height:1.05;}
@@ -908,7 +906,7 @@ SCREENS.hub = () => `<div class="pad fade">
 
 function gameRow(g,i){
   return `<div class="gamerow" onclick="chooseGame('${g.id}')">
-    <div class="gtile" style="background:${g.col};position:relative;overflow:hidden;">${g.t}<img src="assets/jeu-${g.id}.png" alt="" onerror="this.remove()" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"></div>
+    <div class="gtile" style="background:${g.col};position:relative;overflow:hidden;">${g.t}<img src="assets/jeu-${g.id}.webp" alt="" loading="lazy" decoding="async" onerror="this.remove()" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"></div>
     <div style="flex:1;"><h2 style="font-size:16px;color:var(--ink);">${g.nom}</h2><div class="sub" style="color:var(--ink2);font-size:12px;">${g.desc}</div></div>
     <span style="color:var(--ink2);font-weight:800;font-size:22px;">›</span></div>`;
 }
@@ -1984,7 +1982,7 @@ SCREENS.gamemode = () => {
     <div style="display:flex;justify-content:center;margin-bottom:18px;">
       <div style="width:96px;height:96px;border-radius:26px;background:${(GAMES.find(x=>x.id===id)||{}).col||'#6C4FE0'};position:relative;overflow:hidden;box-shadow:0 16px 32px rgba(0,0,0,.35),inset 0 -12px 22px rgba(35,18,80,.18);display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:800;font-size:34px;color:#fff;">
         ${(GAMES.find(x=>x.id===id)||{}).t||'?'}
-        <img src="assets/jeu-${id}.png" alt="" onerror="this.remove()" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+        <img src="assets/jeu-${id}.webp" alt="" decoding="async" onerror="this.remove()" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
       </div>
     </div>
     <div class="cap" style="margin-bottom:12px;">Comment vous jouez ?</div>
