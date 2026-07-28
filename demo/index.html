@@ -313,16 +313,36 @@ function cardBack(w,h,dark){
 }
 /* ============ SCÈNES CODÉES (HTML/CSS/SVG, zéro image) ============ */
 function svgPalm(size,flip,color){
-  return `<svg width="${size}" height="${size}" viewBox="0 0 100 100" fill="${color||'#1D0B5C'}" style="${flip?'transform:scaleX(-1);':''}display:block;">
-    <path d="M44 98 C46 78 44 58 51 40 L57 42 C51 60 52 78 55 98 Z"/>
-    <path d="M54 41 Q40 18 14 16 Q40 24 52 38 Z"/>
-    <path d="M54 41 Q60 12 86 8 Q64 22 56 40 Z"/>
-    <path d="M53 42 Q30 34 10 42 Q34 44 52 46 Z"/>
-    <path d="M55 42 Q78 32 94 38 Q76 44 57 46 Z"/>
-    <path d="M53 43 Q40 52 34 68 Q46 54 55 47 Z"/>
-    <path d="M56 43 Q70 54 74 70 Q62 54 54 47 Z"/>
-    <circle cx="51" cy="44" r="3.4"/><circle cx="58" cy="45" r="3"/>
-  </svg>`;
+  // Silhouette réaliste : tronc effilé, 8 palmes dont la nervure s'arque puis
+  // retombe, folioles pendantes le long de chaque nervure (longues près du
+  // tronc, courtes au bout) — c'est ce feuillage qui fait "palmier".
+  const col=color||'#1D0B5C';
+  const C={x:50,y:33};
+  const fronds=[
+    {c:[68,3],  t:[90,22]},
+    {c:[32,1],  t:[12,20]},
+    {c:[76,16], t:[97,48]},
+    {c:[24,14], t:[4,46]},
+    {c:[72,36], t:[86,70]},
+    {c:[28,34], t:[16,68]},
+    {c:[58,4],  t:[74,9]},
+    {c:[42,2],  t:[26,7]},
+  ];
+  let g='';
+  for(const f of fronds){
+    const q=t=>({x:(1-t)*(1-t)*C.x+2*(1-t)*t*f.c[0]+t*t*f.t[0],
+                 y:(1-t)*(1-t)*C.y+2*(1-t)*t*f.c[1]+t*t*f.t[1]});
+    g+=`<path d="M${C.x} ${C.y} Q${f.c[0]} ${f.c[1]} ${f.t[0]} ${f.t[1]}" fill="none" stroke="${col}" stroke-width="1.7" stroke-linecap="round"/>`;
+    const sgn=f.t[0]>=C.x?1:-1;
+    for(let i=1;i<=13;i++){
+      const t=.14+i*.062, p=q(t);
+      const len=8.5*(1-t)+2;
+      const dx=sgn*len*.45*t, dy=len*(1-.25*t);
+      g+=`<path d="M${p.x.toFixed(1)} ${p.y.toFixed(1)} q${(dx*.4).toFixed(1)} ${(dy*.55).toFixed(1)} ${dx.toFixed(1)} ${dy.toFixed(1)}" fill="none" stroke="${col}" stroke-width="1.15" stroke-linecap="round"/>`;
+    }
+  }
+  return `<svg width="${size}" height="${size}" viewBox="0 0 100 100" style="${flip?'transform:scaleX(-1);':''}display:block;">
+    <path d="M46.8 32 C48.5 52 45 74 41.5 100 L48 100 C51.5 76 53.2 54 53.5 33 Z" fill="${col}"/>${g}</svg>`;
 }
 function cssCup(w,grad,rot,straw){
   const h=Math.round(w*1.24);
