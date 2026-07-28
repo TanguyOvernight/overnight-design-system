@@ -1037,7 +1037,7 @@ SCREENS.bus = () => {
       <span style="display:block;font-family:var(--b);font-weight:600;font-size:12.5px;opacity:.85;margin-top:3px;line-height:1.35;">${desc}</span></button>`;
     return `<div class="pad fade">${gameHead('Le Bus', `<div class="pill">Pyramide</div>`)}<div class="spacer"></div>
       <h2 style="text-align:center;font-size:24px;">La vraie Pyramide ?</h2>
-      <div class="sub center" style="font-size:13.5px;margin:8px 0 18px;">Ligne 1 = 1 gorgée, ligne 2 = 2… par carte en main.</div>
+      <div class="sub center" style="font-size:13.5px;margin:8px 0 18px;">15 cartes en 5 lignes. Ligne 1 = 1 gorgée… ligne 5 = 5, par carte en main.</div>
       <div style="display:flex;flex-direction:column;gap:11px;">
         ${opt("busChoosePyr('menteur')",'Pyramide Menteur','Mémorise tes 4 cartes, puis bluffe : réclame une carte (vraie ou pas) et distribue. La victime peut crier MENTEUR — le perdant boit double.',true)}
         ${opt("busChoosePyr('classique')",'Pyramide Classique','Cartes détectées automatiquement : zéro triche, zéro mémoire, on distribue tranquille.')}
@@ -1065,20 +1065,30 @@ SCREENS.bus = () => {
   }
   if(g.phase==='pyr'){
     const py=g.pyr, fini=py.i>=py.cards.length;
-    const pw=Math.max(46,Math.min(80,Math.round((window.innerHeight-(g.pyrMode==='menteur'?432:350))/5.7)));
-    const ph=Math.round(pw*1.4);
-    // pyramide affichée ligne 4 (1 carte) en haut -> ligne 1 (4 cartes) en bas
-    const lignes=[4,3,2,1].map(l=>{
+    const maxLigne=py.cards[py.cards.length-1].ligne;
+    // la pyramide se construit : lignes passées en miniatures, ligne EN COURS en grand,
+    // les suivantes n'apparaissent pas encore
+    const dispLigne = fini ? maxLigne+1 : (py.last ? py.last.ligne : 1);
+    const rangee=(l)=>{
       const cs=py.cards.filter(x=>x.ligne===l);
-      return `<div style="display:flex;justify-content:center;gap:8px;margin-bottom:8px;">${cs.map(x=>
-        `<div style="${x.flip?'':'opacity:.95;'}${py.last&&x.flip&&x.c===py.last.c?'filter:drop-shadow(0 0 14px rgba(255,211,63,.65));':''}">${x.flip?cardHTML(x.c,pw,ph):cardBack(pw,ph)}</div>`).join('')}</div>`;
-    }).join('');
+      if(l<dispLigne || fini){    // ligne terminée : miniatures face visible
+        return `<div style="display:flex;justify-content:center;gap:5px;margin-bottom:6px;opacity:.85;">${cs.map(x=>
+          `<div>${x.flip?cardHTML(x.c,34,48):cardBack(34,48)}</div>`).join('')}</div>`;
+      }
+      if(l>dispLigne) return '';   // pas encore construite
+      const w=Math.min(84,Math.floor((342-(cs.length-1)*8)/cs.length)), h=Math.round(w*1.4);
+      return `<div class="pop" style="display:flex;justify-content:center;gap:8px;margin-bottom:8px;">${cs.map(x=>
+        `<div style="${x.flip?'':'opacity:.95;'}${py.last&&x.flip&&x.c===py.last.c?'filter:drop-shadow(0 0 14px rgba(255,211,63,.65));':''}">${x.flip?cardHTML(x.c,w,h):cardBack(w,h)}</div>`).join('')}</div>`;
+    };
+    const aVenir = (!fini && dispLigne<maxLigne)
+      ? `<div class="sub center" style="font-size:11.5px;margin-bottom:8px;opacity:.65;">Encore ${maxLigne-dispLigne} ligne${maxLigne-dispLigne>1?'s':''} au-dessus… jusqu'à ${maxLigne} gorgées.</div>` : '';
+    const lignes = aVenir + Array.from({length:maxLigne},(_,k)=>maxLigne-k).map(rangee).join('');
     const last=py.last;
     const chip=(pl2,idx,fn)=>`<button onclick="${fn}(${idx})" style="border:none;cursor:pointer;display:flex;align-items:center;gap:7px;padding:6px 13px 6px 6px;border-radius:999px;background:rgba(255,255,255,.14);${pyrPeut(idx)||fn!=='pyrClaim'?'':'opacity:.4;pointer-events:none;'}box-shadow:inset 0 1.5px 0 rgba(255,255,255,.2),0 2px 5px rgba(10,4,40,.3);">
       ${avatar(pl2,30)}<b style="font-family:var(--f);font-weight:800;font-size:14px;color:#fff;">${pl2.name}</b></button>`;
     let info;
     if(!last){
-      info = `<div class="sub center" style="font-size:14px;">${g.pyrMode==='menteur'?'Réclame les cartes… même celles que tu n\'as pas.':'Ligne 1 = 1 gorgée · ligne 2 = 2 · ligne 3 = 3 · ligne 4 = 4 — par carte en main.'}</div>`;
+      info = `<div class="sub center" style="font-size:14px;">${g.pyrMode==='menteur'?'Réclame les cartes… même celles que tu n\'as pas.':'La ligne donne les gorgées : ligne 1 = 1, ligne 2 = 2… par carte en main.'}</div>`;
     } else if(g.pyrMode==='menteur'){
       const li=last.ligne;
       if(py.sub==='target'){
@@ -1206,8 +1216,9 @@ function busChoosePyr(mode){
   const prises=new Set();
   (g.players||[]).forEach(pl=>(pl.cards||[]).forEach(c=>prises.add(c.v+'-'+c.s)));
   const pool=shuffle(newDeck().filter(c=>!prises.has(c.v+'-'+c.s)));
+  const plan = pool.length>=15 ? [[1,5],[2,4],[3,3],[4,2],[5,1]] : [[1,4],[2,3],[3,2],[4,1]];
   const cards=[];
-  [[1,4],[2,3],[3,2],[4,1]].forEach(([ligne,nb])=>{
+  plan.forEach(([ligne,nb])=>{
     for(let k=0;k<nb;k++) cards.push({c:pool.pop(), ligne, flip:false});
   });
   g.pyrMode=mode;
