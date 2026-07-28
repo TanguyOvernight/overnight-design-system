@@ -1,6 +1,6 @@
 {
-  "name": "Overnight — Jeu à boire",
-  "short_name": "Overnight",
+  "name": "Drink'it — Jeu à boire",
+  "short_name": "Drink'it",
   "description": "Le jeu à boire entre potes.",
   "start_url": "./index.html",
   "scope": "./",

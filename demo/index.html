@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1, interactive-widget=resizes-content" />
-<title>Overnight — Jeu à boire (démo jouable)</title>
+<title>Drink'it — Jeu à boire</title>
 <meta name="theme-color" content="#241064" />
 <meta name="mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-<meta name="apple-mobile-web-app-title" content="Overnight" />
+<meta name="apple-mobile-web-app-title" content="Drink&#39;it" />
 <link rel="manifest" href="manifest.webmanifest" />
 <link rel="apple-touch-icon" href="assets/icon-192.png" />
 <link rel="icon" href="assets/icon-192.png" />
@@ -167,6 +167,8 @@
   .home-logo{position:absolute;top:max(48px,env(safe-area-inset-top));left:0;right:0;text-align:center;z-index:1;pointer-events:none;}
   @keyframes twinkle{0%,100%{opacity:var(--o,.5);}50%{opacity:.12;}}
   @keyframes floatSlow{0%,100%{transform:translateY(0);}50%{transform:translateY(-7px);}}
+  @keyframes bubbleUp{0%{transform:translateY(0);opacity:0;}12%{opacity:.85;}88%{opacity:.7;}100%{transform:translateY(-96px);opacity:0;}}
+  @keyframes shoot{0%{transform:translate(0,0) rotate(18deg);opacity:0;}3%{opacity:.95;}11%{transform:translate(430px,150px) rotate(18deg);opacity:0;}100%{transform:translate(430px,150px) rotate(18deg);opacity:0;}}
   @media (prefers-reduced-motion:reduce){.home-scene *{animation:none !important;}}
   @media (prefers-reduced-motion:reduce){.cflip,.drop,.breathe,.fade,.pop{animation:none !important;}}
   /* Setup : quand le clavier iOS est ouvert, on replie le haut + le CTA et on colle la liste au-dessus du clavier */
@@ -264,16 +266,23 @@ function svgPalm(size,flip){
     <path d="M50 40 C38 27 23 23 9 28 C21 13 40 15 50 26 C60 11 79 12 91 25 C77 22 62 26 52 36 C64 29 79 32 87 43 C74 38 60 40 52 44 C43 37 29 36 16 43 C26 31 42 31 50 40 Z"/>
   </svg>`;
 }
-function cssCup(w,grad,rot){
+function cssCup(w,grad,rot,straw){
   const h=Math.round(w*1.24);
   return `<div style="width:${w}px;height:${h}px;border-radius:${Math.round(w*.14)}px ${Math.round(w*.14)}px ${Math.round(w*.24)}px ${Math.round(w*.24)}px;background:${grad};transform:rotate(${rot}deg);box-shadow:0 10px 18px rgba(0,0,0,.32),inset 0 3px 0 rgba(255,255,255,.25),inset 0 -12px 16px rgba(0,0,0,.18);position:relative;flex:none;">
+    ${straw?`<div style="position:absolute;top:-${Math.round(h*.42)}px;left:56%;width:${Math.max(5,Math.round(w*.13))}px;height:${Math.round(h*.62)}px;border-radius:99px;background:linear-gradient(180deg,#FFE46A,#F0A92A);transform:rotate(16deg);box-shadow:0 3px 8px rgba(0,0,0,.25);"></div>
+    <div style="position:absolute;top:-${Math.round(h*.5)}px;left:calc(56% + ${Math.round(h*.14)}px);width:${Math.round(h*.2)}px;height:${Math.max(5,Math.round(w*.13))}px;border-radius:99px;background:#F0A92A;transform:rotate(16deg);"></div>`:''}
     <div style="position:absolute;top:${Math.round(h*.07)}px;left:12%;right:12%;height:${Math.round(h*.12)}px;border-radius:50%;background:rgba(255,255,255,.25);"></div></div>`;
 }
 // Bouteille violette stylisée (étiquette lune, bouchon doré) — cœur de l'identité
 function cssBottle(w){
   const h=Math.round(w*2.5), neckW=Math.round(w*.4), neckH=Math.round(w*.58), lbl=Math.round(w*.62);
   return `<div style="position:relative;width:${w}px;height:${h+neckH+16}px;flex:none;">
-    <div style="position:absolute;bottom:0;left:0;width:${w}px;height:${h}px;border-radius:${Math.round(w*.3)}px ${Math.round(w*.3)}px ${Math.round(w*.31)}px ${Math.round(w*.31)}px;background:linear-gradient(160deg,#A98BFF 0%,#7C5CF0 46%,#4A2EA0 100%);box-shadow:inset -${Math.round(w*.17)}px 0 0 rgba(0,0,0,.13),inset 0 4px 0 rgba(255,255,255,.22),0 ${Math.round(w*.26)}px ${Math.round(w*.4)}px rgba(15,8,52,.45);"></div>
+    <div style="position:absolute;bottom:0;left:0;width:${w}px;height:${h}px;border-radius:${Math.round(w*.3)}px ${Math.round(w*.3)}px ${Math.round(w*.31)}px ${Math.round(w*.31)}px;background:linear-gradient(160deg,#A98BFF 0%,#7C5CF0 46%,#4A2EA0 100%);box-shadow:inset -${Math.round(w*.17)}px 0 0 rgba(0,0,0,.13),inset 0 4px 0 rgba(255,255,255,.22),0 ${Math.round(w*.26)}px ${Math.round(w*.4)}px rgba(15,8,52,.45);overflow:hidden;">
+      <div style="position:absolute;left:0;right:0;bottom:0;height:${Math.round(h*.46)}px;background:linear-gradient(180deg,rgba(255,255,255,.20),rgba(255,255,255,.08));border-radius:46% 54% 0 0/18% 22% 0 0;"></div>
+      <span style="position:absolute;bottom:${Math.round(h*.06)}px;left:32%;width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.55);animation:bubbleUp 3.6s ease-in .2s infinite;"></span>
+      <span style="position:absolute;bottom:${Math.round(h*.1)}px;left:56%;width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.45);animation:bubbleUp 4.4s ease-in 1.4s infinite;"></span>
+      <span style="position:absolute;bottom:${Math.round(h*.04)}px;left:70%;width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.4);animation:bubbleUp 3.1s ease-in 2.3s infinite;"></span>
+    </div>
     <div style="position:absolute;bottom:${h-4}px;left:50%;transform:translateX(-50%);width:${neckW}px;height:${neckH}px;border-radius:${Math.round(neckW*.24)}px ${Math.round(neckW*.24)}px 4px 4px;background:linear-gradient(180deg,#8E6CF2,#5E40C8);"></div>
     <div style="position:absolute;bottom:${h+neckH-8}px;left:50%;transform:translateX(-50%);width:${Math.round(neckW*1.15)}px;height:${Math.round(neckW*.55)}px;border-radius:${Math.round(neckW*.2)}px;background:linear-gradient(180deg,#FFE46A,#F1AF24);box-shadow:0 4px 10px rgba(0,0,0,.3);"></div>
     <div style="position:absolute;bottom:${Math.round(h*.34)}px;left:50%;transform:translateX(-50%);width:${lbl}px;height:${lbl}px;border-radius:50%;background:rgba(255,255,255,.94);box-shadow:inset 0 0 0 3px rgba(124,92,240,.45);"></div>
@@ -306,6 +315,7 @@ function homeScene(){
     ${HOME_STARS}
     <div style="position:absolute;top:26%;right:36px;animation:floatSlow 5.4s ease-in-out infinite;filter:drop-shadow(0 0 18px rgba(255,211,63,.45));">
       <svg width="60" height="60" viewBox="0 0 64 64"><defs><mask id="mmoon"><rect width="64" height="64" fill="black"/><circle cx="28" cy="32" r="26" fill="white"/><circle cx="41" cy="25" r="21" fill="black"/></mask></defs><circle cx="28" cy="32" r="26" fill="#FFD33F" mask="url(#mmoon)"/></svg></div>
+    <span style="position:absolute;top:12%;left:4%;width:110px;height:2px;border-radius:99px;background:linear-gradient(90deg,rgba(255,255,255,0),#fff);opacity:0;animation:shoot 8.5s ease-in 2.2s infinite;"></span>
     <div style="position:absolute;bottom:262px;left:-24px;">${svgPalm(150,false)}</div>
     <div style="position:absolute;bottom:286px;right:-30px;">${svgPalm(120,true)}</div>
   </div>
@@ -314,6 +324,9 @@ function homeScene(){
   <div class="home-scene">
     <div style="position:absolute;left:2%;right:2%;bottom:0;height:150px;border-radius:50%;background:radial-gradient(closest-side,rgba(150,112,255,.5),rgba(74,46,160,.26) 66%,transparent);"></div>
     <div style="position:absolute;left:12%;right:12%;bottom:22px;height:104px;border-radius:50%;border:2px solid rgba(255,255,255,.10);"></div>
+    <div style="position:absolute;left:50%;bottom:46px;transform:translateX(-50%);width:150px;height:24px;border-radius:50%;background:rgba(10,4,40,.4);filter:blur(9px);"></div>
+    <div style="position:absolute;left:14px;bottom:24px;width:210px;height:26px;border-radius:50%;background:rgba(10,4,40,.35);filter:blur(9px);"></div>
+    <div style="position:absolute;right:16px;bottom:28px;width:130px;height:22px;border-radius:50%;background:rgba(10,4,40,.35);filter:blur(8px);"></div>
     <div style="position:absolute;left:50%;bottom:56px;transform:translateX(-50%);animation:floatSlow 4.6s ease-in-out infinite;">${cssBottle(78)}</div>
     <div style="position:absolute;left:6px;bottom:32px;display:flex;">
       <div style="transform:rotate(-16deg) translateY(8px);">${cardBack(88,123)}</div>
@@ -321,7 +334,7 @@ function homeScene(){
       <div style="transform:rotate(11deg) translateY(7px);margin-left:-54px;">${cardBack(88,123)}</div>
     </div>
     <div style="position:absolute;right:14px;bottom:36px;display:flex;align-items:flex-end;gap:6px;">
-      ${cssCup(56,'linear-gradient(180deg,#FF8472,#E0392B)',-8)}
+      ${cssCup(56,'linear-gradient(180deg,#FF8472,#E0392B)',-8,true)}
       ${cssCup(48,'linear-gradient(180deg,#5847A8,#2A2440)',10)}
     </div>
   </div>`;
@@ -410,12 +423,10 @@ const VOB = [
   "Qu'est-ce que tu envies vraiment dans la vie de quelqu'un de cette pièce ?",
   "Quelle version de toi tu joues en soirée et qui n'existe pas vraiment ?",
   "Quel « désolé » tu n'as jamais pensé une seule seconde ?",
-  "De quoi as-tu le plus honte quand tu repenses à tes années lycée ?",
   "Quelle relation tu as laissée pourrir volontairement plutôt que d'avoir la conversation ?",
   "Qu'est-ce que tu fais uniquement quand tu es certain(e) que personne ne le saura jamais ?",
   "Quel message tu regrettes d'avoir lu parce que tu n'étais pas censé(e) le voir ?",
-  "La pire pensée que tu aies eue en plein mariage ou enterrement ?",
-  "S'il fallait payer pour esquiver UNE question ce soir, ce serait laquelle ?"]},
+  "La pire pensée que tu aies eue en plein mariage ou enterrement ?"]},
  {titre:"Ex & dégâts", cat:["chaud","probleme"], d:3, q:[
   "Quel ex tu recontacterais ce soir si tu étais sûr(e) que personne ne l'apprenne ?",
   "Quelle est la pire chose que tu aies faite pendant une relation, jamais avouée ?",
@@ -508,52 +519,46 @@ const VOB = [
   "Qui trahirait le groupe en premier pour de l'argent ? Et pour combien ?",
   "Qui est le plus susceptible de faire une scène en public ce soir ?",
   "Qui a le pire goût en matière de crush, historiquement parlant ?",
-  "Qui s'est déjà inventé une vie devant des inconnus en soirée ?",
   "Qui du groupe finira par tous nous réunir à son mariage… en ayant invité ses ex ?",
   "Qui est capable de tenir un vrai secret… et qui n'en a jamais tenu un seul ?",
   "Qui rentrerait discrètement avec quelqu'un ce soir sans jamais nous le dire ?",
   "Qui décevrait le plus ses parents s'ils voyaient sa soirée d'hier ?",
+  "Qui craquerait et donnerait tous nos secrets après juste UN silence gênant en interrogatoire ?",
   "Qui finirait dans une secte en pensant sincèrement que « c'est juste un club de yoga » ?",
   "Qui ferait le tueur en série le plus efficace… parce que personne ne le soupçonnerait jamais ?",
   "Qui vendrait un secret du groupe pour une story sponsorisée ?",
   "Qui pleurerait le moins longtemps à l'enterrement des autres ? Regardez-vous bien.",
   "Qui a le plus de chances de se faire voler son identité… et que le voleur la rende en s'excusant ?",
-  "Qui survivrait le moins longtemps sans son téléphone : 24h, 2h, ou 20 minutes ?",
   "Qui arriverait en retard à son propre enterrement ?",
   "Qui ferait fortune avec une arnaque, et qui se ferait arnaquer par la même arnaque ?"]},
  {titre:"Cash, pas de filtre", cat:["probleme","chaud"], d:3, q:[
   "Combien de personnes tu as ghostées cette année ? Chiffre exact, on attend.",
   "C'est quoi le mensonge que tu as dit ce soir même, ici, dans cette pièce ?",
+  "Ton historique de 3h du matin est lu à voix haute, ou tu rachètes ton silence : combien de gorgées ?",
   "Quel pote présent tu supporterais le moins en coloc ? Il/elle t'écoute, vas-y.",
   "Quelle est la chose la plus pathétique que tu aies faite par pure jalousie ?",
   "Quelle appli tu masques instantanément quand quelqu'un regarde ton écran ?",
   "Le potin le plus juteux que tu gardes sur quelqu'un ici : donne un indice. Un vrai.",
   "Ton pire date de tous les temps : on veut le détail le plus gênant, pas le résumé.",
   "Quel like accidentel t'a déjà grillé(e) en plein stalking ? Raconte la panique.",
-  "Combien tu claques par mois en trucs que tu caches plus ou moins ? Sois honnête.",
   "Quel red flag tout le monde voit chez toi sauf toi ? Le groupe confirmera.",
-  "Quelle est la dernière chose pour laquelle tu as vraiment pleuré ? Pas la version soft.",
   "Tu as déjà lu des messages qui ne t'étaient pas destinés ? Chez qui, et t'as trouvé quoi ?"]},
  {titre:"Côté meufs", cat:["chaud","probleme"], d:2, q:[
   {t:"« Je rentre tôt ce soir » : raconte la dernière fois où ça a fini à 5h du matin.", who:'f'},
   {t:"C'est quoi le message le plus lunaire qu'un mec t'ait envoyé ? Cite-le mot pour mot.", who:'f'},
   {t:"Combien de mecs tu laisses en vu en ce moment, là, sur ton téléphone ?", who:'f'},
   {t:"Le pire « il n'est pas comme les autres » que tu aies défendu devant tes copines ?", who:'f'},
-  {t:"Quelle excuse tu ressors pour esquiver un date qui ne mérite même pas un mensonge original ?", who:'f'},
-  {t:"Combien de temps max tu as passé à analyser UN message de mec avec tes copines ?", who:'f'},
   {t:"C'est quoi le red flag que tu as ignoré en toute connaissance de cause, et combien de temps ?", who:'f'},
   {t:"La chose la plus fourbe que tu aies faite pour tester un mec sans qu'il le sache ?", who:'f'},
   {t:"Quel « on est juste amis » de ta vie n'a convaincu strictement personne ?", who:'f'},
   {t:"Ta technique de sortie quand un date tourne mal : démonstration, là, maintenant.", who:'f', cat:['chaud','action']}]},
  {titre:"Côté mecs", cat:["chaud","probleme"], d:2, q:[
   {t:"Le fameux « je gère, t'inquiète » : raconte la fois où tu ne gérais absolument rien.", who:'h'},
+  {t:"Tu as déjà accepté un date uniquement pour le restaurant ? Note le resto sur 10, pas la personne.", who:'f'},
   {t:"Tu attends combien de temps avant de répondre, pour « pas paraître trop chaud » ?", who:'h'},
   {t:"C'est quoi la pire phrase d'approche que tu aies vraiment envoyée ? Cite-la mot pour mot.", who:'h'},
   {t:"Ton pote se plante en beauté en draguant : tu l'aides ou tu regardes le crash ?", who:'h'},
-  {t:"Quelle vantardise tu ressors systématiquement alors qu'elle est à moitié fausse ?", who:'h'},
   {t:"Le truc le plus mesquin que tu aies fait pour impressionner quelqu'un qui s'en fichait ?", who:'h'},
-  {t:"Tu as déjà fait semblant d'aimer un truc (film, musique, sport) pour plaire ? Lequel ?", who:'h'},
-  {t:"C'est quoi ton excuse par défaut quand tu annules un plan pour rester en pyjama ?", who:'h'},
   {t:"Quel conseil de drague catastrophique tu as donné à un pote en toute confiance ?", who:'h'},
   {t:"Refais-nous ta réaction exacte quand ton pote te dit « elle a un(e) ami(e) pour toi ».", who:'h', cat:['chaud','action']}]},
  {titre:"Chaud du cul", cat:"chaud", d:3, q:[
@@ -564,7 +569,6 @@ const VOB = [
   "Décris ton type exact. Le groupe dit qui ici s'en rapproche le plus.",
   "Quelle rencontre de soirée tu n'as jamais racontée à personne ici ?",
   "Si tu devais emmener quelqu'un de cette pièce à un date demain : qui, où, et pourquoi lui/elle ?",
-  "Quel red flag te fait fuir immédiatement, même si la personne est parfaite sur le papier ?",
   "À ton avis, {autre} en mode séduction : catastrophe ou redoutable ? Justifie avec un exemple.",
   "Entre {autre} et {autre2}, lequel tu présenterais à ta famille, et lequel surtout pas ?",
   "Quelle conversation tu effacerais immédiatement si on te prenait ton téléphone là ?",
@@ -579,7 +583,6 @@ const VOB = [
   {t:"Appelle un contact choisi par {autre} et dis juste « je t'expliquerai ». Ou 4 gorgées."},
   {t:"Laisse le groupe envoyer UN emoji (un seul) à la personne de leur choix dans tes contacts. Ou 5 gorgées."},
   {t:"Imite quelqu'un du groupe sans dire son nom : les autres devinent. Raté = tu bois."},
-  {t:"Refais la réaction de {autre} quand son téléphone passe sous 10% de batterie."},
   {t:"Entre {autre} et {autre2} : bras de fer immédiat. Le perdant boit 2."},
   {t:"Toi et {autre} : la photo de duo la plus gênante possible. Elle part dans le groupe."},
   {t:"Chuchote à {autre} le compliment le plus malaisant que tu puisses inventer."},
@@ -713,8 +716,11 @@ SCREENS.avatars = () => {
 const NIGHT="background:radial-gradient(circle at 50% 18%,rgba(117,83,255,.35),transparent 38%),linear-gradient(180deg,#2A1375 0%,#34108D 45%,#18084F 100%);box-shadow:inset 0 0 90px rgba(0,0,0,.28);overflow:hidden;";
 const ROUNDBTN="width:58px;height:58px;border-radius:18px;background:linear-gradient(180deg,rgba(156,116,255,.95),rgba(111,73,232,.88));box-shadow:0 12px 24px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.22);border:none;color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;";
 function logoBlock(){
-  return `<img src="assets/logo-overnight.png" alt="Overnight" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'" style="max-width:300px;width:72%;">
-    <div style="display:none;font-family:var(--d);font-size:58px;font-weight:800;color:#fff;letter-spacing:0;text-shadow:0 8px 16px rgba(0,0,0,.3);">OVERN<span style="position:relative;display:inline-block;">ı<span style="position:absolute;top:3px;left:50%;transform:translateX(-50%);width:15px;height:15px;border-radius:50%;background:#FFD33F;box-shadow:inset -5px -3px 0 0 #34108D;"></span></span>GHT</div>`;
+  const grad="background:linear-gradient(180deg,#FFFFFF 30%,#CDBBFF);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;";
+  return `<div style="position:relative;display:inline-block;transform:rotate(-2deg);filter:drop-shadow(0 10px 26px rgba(0,0,0,.4));">
+    <div style="font-family:var(--d);font-weight:800;font-size:58px;line-height:1;letter-spacing:1px;white-space:nowrap;">
+      <span style="${grad}">DRINK</span><span style="position:relative;display:inline-block;width:18px;height:1em;vertical-align:baseline;"><svg width="21" height="21" viewBox="0 0 64 64" style="position:absolute;left:-1px;top:-7px;transform:rotate(22deg);filter:drop-shadow(0 0 8px rgba(255,211,63,.55));"><defs><mask id="lgm"><rect width="64" height="64" fill="black"/><circle cx="28" cy="32" r="26" fill="white"/><circle cx="41" cy="25" r="21" fill="black"/></mask></defs><circle cx="28" cy="32" r="26" fill="#FFD33F" mask="url(#lgm)"/></svg></span><span style="${grad}">IT</span>
+    </div></div>`;
 }
 
 SCREENS.home = () => `<div class="fade" style="position:absolute;inset:0;${NIGHT}">
@@ -1736,7 +1742,7 @@ SCREENS.lobby = () => {
       <div style="flex:1;min-width:0;">
         <div class="cap">Code</div>
         <div style="font-family:var(--d);font-weight:800;font-size:40px;letter-spacing:6px;color:#fff;line-height:1.05;">${Room.code}</div>
-        <div class="sub" style="font-size:12px;margin-top:6px;">Scanne le QR ou tape le code sur overnight.</div>
+        <div class="sub" style="font-size:12px;margin-top:6px;">Scanne le QR ou tape le code sur Drink'it.</div>
       </div>
     </div>
     <div style="flex:1;overflow:auto;min-height:0;">
