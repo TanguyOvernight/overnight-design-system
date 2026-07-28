@@ -66,7 +66,7 @@
   .sub{font-family:var(--b);font-weight:500;color:rgba(255,255,255,.82);line-height:1.5;}
   .spacer{flex:1;}.row{display:flex;gap:12px;}.center{align-items:center;text-align:center;}
   .hdr{display:flex;align-items:center;gap:12px;margin-bottom:16px;}
-  .iconbtn{width:42px;height:42px;border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,.22),rgba(255,255,255,.12));display:flex;align-items:center;justify-content:center;cursor:pointer;border:none;color:#fff;font-size:20px;flex:none;
+  .iconbtn{width:44px;height:44px;border-radius:15px;background:linear-gradient(180deg,rgba(255,255,255,.22),rgba(255,255,255,.12));display:flex;align-items:center;justify-content:center;cursor:pointer;border:none;color:#fff;font-size:20px;flex:none;
     box-shadow:0 3px 0 rgba(20,8,58,.5),inset 0 1.5px 0 rgba(255,255,255,.24);transition:transform .06s,box-shadow .06s;}
   .iconbtn:active{transform:translateY(2px);box-shadow:0 1px 0 rgba(20,8,58,.5),inset 0 1.5px 0 rgba(255,255,255,.24);}
   .pill{font-family:var(--f);font-weight:700;font-size:12px;background:linear-gradient(180deg,rgba(255,255,255,.22),rgba(255,255,255,.13));padding:8px 13px;border-radius:999px;display:inline-flex;align-items:center;gap:7px;
@@ -250,6 +250,7 @@ const S = {
   game: null,            // état du jeu courant
   reveal: null,
 };
+const CHEV='<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 5.5 8 12l6.5 6.5"/></svg>';
 const app = () => document.getElementById('app');
 const GHOST = {name:'—', color:'#6C4FE0', gorgees:0, avatar:null};
 const cur = () => S.players[S.turn] || S.players[0] || GHOST;
@@ -839,7 +840,7 @@ SCREENS.avatars = () => {
     </div>`;
   const pret = String(monNom).trim().length>0;
   return `<div class="pad fade">
-    <div class="hdr"><button class="iconbtn" onclick="closeAvatar()">‹</button><h2 style="flex:1;text-align:center;font-size:21px;">Ton profil</h2><div style="width:42px"></div></div>
+    <div class="hdr"><button class="iconbtn" onclick="closeAvatar()">${CHEV}</button><h2 style="flex:1;text-align:center;font-size:21px;">Ton profil</h2><div style="width:44px"></div></div>
     ${nomFieldy}
     <div class="cap" style="margin:18px 0 8px;">Ton avatar</div>
     <div style="display:flex;background:rgba(255,255,255,.14);border-radius:999px;padding:4px;">${tab('Homme')}${tab('Femme')}</div>
@@ -851,7 +852,7 @@ SCREENS.avatars = () => {
 };
 
 const NIGHT="background:linear-gradient(180deg,#2A1375 0,rgba(42,19,117,0) 84px),linear-gradient(0deg,#18084F 0,rgba(24,8,79,0) 84px),radial-gradient(circle at 50% 20%,rgba(117,83,255,.33),transparent 40%),linear-gradient(180deg,#2A1375 0%,#34108D 45%,#18084F 100%);overflow:hidden;";
-const ROUNDBTN="width:58px;height:58px;border-radius:18px;background:linear-gradient(180deg,rgba(156,116,255,.95),rgba(111,73,232,.88));box-shadow:0 12px 24px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.22);border:none;color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;";
+const ROUNDBTN="width:44px;height:44px;border-radius:15px;background:linear-gradient(180deg,rgba(156,116,255,.95),rgba(111,73,232,.88));box-shadow:0 3px 0 rgba(20,8,58,.5),0 10px 20px rgba(0,0,0,.26),inset 0 1.5px 0 rgba(255,255,255,.24);border:none;color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;";
 function logoBlock(){
   const grad="background:linear-gradient(180deg,#FFFFFF 30%,#CDBBFF);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;";
   return `<div style="position:relative;display:inline-block;transform:rotate(-2deg);filter:drop-shadow(0 10px 26px rgba(0,0,0,.4));">
@@ -890,7 +891,7 @@ SCREENS.setup = () => {
     <b style="flex:1;font-family:var(--f);font-size:22px;font-weight:800;color:#fff;">${p.name}</b>
     <button onclick="rmPlayer(${i})" style="width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.18);color:#fff;font-size:22px;font-weight:900;border:none;flex:none;cursor:pointer;">×</button></div>`;
   return `<div class="fade night-bg" style="position:absolute;inset:0;${NIGHT}">
-    <button onclick="go('home')" style="position:absolute;top:max(54px,env(safe-area-inset-top));left:24px;${ROUNDBTN}font-size:26px;">‹</button>
+    <button onclick="go('home')" style="position:absolute;top:max(54px,env(safe-area-inset-top));left:24px;${ROUNDBTN}">${CHEV}</button>
     <div class="su-hide" style="position:absolute;top:96px;left:0;right:0;text-align:center;">
       <div style="font-family:var(--d);font-size:15px;font-weight:800;letter-spacing:.5px;color:#F472D6;text-transform:uppercase;">Party mode</div>
       <div style="font-family:var(--d);font-size:28px;font-weight:800;color:#fff;text-transform:uppercase;margin-top:8px;">Ajoute les joueurs</div></div>
@@ -916,9 +917,9 @@ SCREENS.setup = () => {
 
 SCREENS.hub = () => `<div class="pad fade">
   <div class="hdr" style="margin-bottom:8px;">
-    <button class="iconbtn" onclick="go('setup')">‹</button>
+    <button class="iconbtn" onclick="go('setup')">${CHEV}</button>
     <h2 style="flex:1;text-align:center;font-size:20px;">Nos jeux</h2>
-    <div style="width:42px;"></div>
+    <div style="width:44px;"></div>
   </div>
   <div class="pcard" style="padding:14px 16px;margin:4px 0 16px;display:flex;align-items:center;gap:12px;">
     <div style="flex:1;min-width:0;"><div class="cap">Salon de</div><h2 style="font-size:20px;margin-top:3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${(S.players[0]||{name:'—'}).name}</h2></div>
@@ -957,7 +958,7 @@ SCREENS.scores = () => {
       <div style="width:100%;height:${h}px;margin-top:10px;border-radius:16px 16px 0 0;background:${bg};display:flex;align-items:flex-start;justify-content:center;padding-top:10px;font-family:var(--d);font-weight:800;font-size:30px;color:#fff;box-shadow:inset 0 -10px 18px rgba(0,0,0,.14);transform-origin:bottom;animation:podrise .55s cubic-bezier(.2,1.1,.4,1) ${rank*0.12}s backwards;">${rank}</div>
     </div>` : `<div style="flex:1;"></div>`;
   return `<div class="pad fade">
-   <div class="hdr"><button class="iconbtn" onclick="go('hub')">‹</button><h2 style="flex:1;text-align:center;font-size:21px;">Classement</h2><div style="width:42px"></div></div>
+   <div class="hdr"><button class="iconbtn" onclick="go('hub')">${CHEV}</button><h2 style="flex:1;text-align:center;font-size:21px;">Classement</h2><div style="width:44px"></div></div>
    <div style="display:flex;background:rgba(255,255,255,.14);border-radius:999px;padding:4px;margin-bottom:16px;">
     ${['Ce soir','Semaine','Toujours'].map((t,i)=>`<button style="flex:1;height:38px;border-radius:999px;border:none;background:${i===0?'#fff':'transparent'};color:${i===0?'var(--indigo)':'#fff'};font-family:var(--d);font-weight:800;cursor:pointer;">${t}</button>`).join('')}
    </div>
@@ -980,7 +981,7 @@ SCREENS.scores = () => {
 
 /* ---- barre de jeu commune ---- */
 function gameHead(title, right){
-  return `<div class="hdr"><button class="iconbtn" onclick="go('hub')">‹</button>
+  return `<div class="hdr"><button class="iconbtn" onclick="go('hub')">${CHEV}</button>
     <h2 style="flex:1;text-align:center;font-size:21px;">${title}</h2>
     ${right||`<div class="pill">${cur().name}</div>`}</div>`;
 }
@@ -1883,7 +1884,7 @@ Room.onRollcall = function(){
 SCREENS.online = () => {
   const cfg = Room.configured();
   return `<div class="pad fade">
-    <div class="hdr"><button class="iconbtn" onclick="go('home')">‹</button><h2 style="flex:1;text-align:center;font-size:21px;">Jouer ensemble</h2><div style="width:42px"></div></div>
+    <div class="hdr"><button class="iconbtn" onclick="go('home')">${CHEV}</button><h2 style="flex:1;text-align:center;font-size:21px;">Jouer ensemble</h2><div style="width:44px"></div></div>
     <div class="spacer"></div>
     ${!cfg?`<div class="gpanel" style="padding:20px;text-align:center;margin-bottom:16px;">
        <b style="font-family:var(--f);font-size:17px;color:#FFD37A;">Mode Online pas encore activé</b>
@@ -1901,7 +1902,7 @@ SCREENS.online = () => {
 };
 
 SCREENS.join = () => `<div class="pad fade">
-  <div class="hdr"><button class="iconbtn" onclick="go('online')">‹</button><h2 style="flex:1;text-align:center;font-size:21px;">Rejoindre</h2><div style="width:42px"></div></div>
+  <div class="hdr"><button class="iconbtn" onclick="go('online')">${CHEV}</button><h2 style="flex:1;text-align:center;font-size:21px;">Rejoindre</h2><div style="width:44px"></div></div>
   <div class="spacer"></div>
   <div class="gpanel" style="padding:24px;text-align:center;">
     <div class="cap">Code du salon</div>
@@ -1927,7 +1928,7 @@ SCREENS.lobby = () => {
     </div>`).join('');
   const enough = Room.players.length>=2;
   return `<div class="pad fade">
-    <div class="hdr"><button class="iconbtn" onclick="netLeave()">‹</button><h2 style="flex:1;text-align:center;font-size:20px;">Salon</h2><div style="width:42px"></div></div>
+    <div class="hdr"><button class="iconbtn" onclick="netLeave()">${CHEV}</button><h2 style="flex:1;text-align:center;font-size:20px;">Salon</h2><div style="width:44px"></div></div>
     <div style="display:flex;gap:14px;align-items:center;background:rgba(255,255,255,.08);border-radius:24px;padding:14px;margin-bottom:14px;">
       <div style="flex:none;border-radius:14px;overflow:hidden;line-height:0;">${qr}</div>
       <div style="flex:1;min-width:0;">
@@ -2040,7 +2041,7 @@ SCREENS.gamemode = () => {
       </div><div class="spacer"></div></div>`;
   }
   return `<div class="pad fade">
-    <div class="hdr"><button class="iconbtn" onclick="go('hub')">‹</button><h2 style="flex:1;text-align:center;font-size:20px;">${g.nom}</h2><div style="width:42px"></div></div>
+    <div class="hdr"><button class="iconbtn" onclick="go('hub')">${CHEV}</button><h2 style="flex:1;text-align:center;font-size:20px;">${g.nom}</h2><div style="width:44px"></div></div>
     <div class="spacer"></div>
     <div style="display:flex;justify-content:center;margin-bottom:18px;">
       <div style="width:96px;height:96px;border-radius:26px;background:${(GAMES.find(x=>x.id===id)||{}).col||'#6C4FE0'};position:relative;overflow:hidden;box-shadow:0 16px 32px rgba(0,0,0,.35),inset 0 -12px 22px rgba(35,18,80,.18);display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:800;font-size:34px;color:#fff;">
