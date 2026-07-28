@@ -168,6 +168,12 @@
   @keyframes twinkle{0%,100%{opacity:var(--o,.5);}50%{opacity:.12;}}
   @keyframes floatSlow{0%,100%{transform:translateY(0);}50%{transform:translateY(-7px);}}
   @keyframes bubbleUp{0%{transform:translateY(0);opacity:0;}12%{opacity:.85;}88%{opacity:.7;}100%{transform:translateY(-96px);opacity:0;}}
+  .hs-float{animation:floatSlow 4.8s ease-in-out infinite;transform-box:fill-box;transform-origin:center;}
+  .hs-sway{animation:hsSway 6.5s ease-in-out infinite;transform-box:fill-box;transform-origin:bottom center;}
+  @keyframes hsSway{0%,100%{transform:rotate(0deg);}50%{transform:rotate(1.6deg);}}
+  .hs-bub{animation:hsBub 3.9s ease-in infinite;transform-box:fill-box;}
+  @keyframes hsBub{0%{transform:translateY(0);opacity:0;}14%{opacity:.9;}82%{opacity:.55;}100%{transform:translateY(-62px);opacity:0;}}
+  @media (prefers-reduced-motion:reduce){.hs-float,.hs-sway,.hs-bub{animation:none !important;}}
   @keyframes shoot{0%{transform:translate(0,0) rotate(18deg);opacity:0;}3%{opacity:.95;}11%{transform:translate(430px,150px) rotate(18deg);opacity:0;}100%{transform:translate(430px,150px) rotate(18deg);opacity:0;}}
   @media (prefers-reduced-motion:reduce){.home-scene *{animation:none !important;}}
   @media (prefers-reduced-motion:reduce){.cflip,.drop,.breathe,.fade,.pop{animation:none !important;}}
@@ -309,6 +315,109 @@ const HOME_STARS = (()=>{ let out='';
     const sz=(Math.random()*2.2+1).toFixed(1), o=(Math.random()*.55+.25).toFixed(2), d=(Math.random()*4+2.5).toFixed(1);
     out+=`<span style="position:absolute;left:${x}%;top:${y}%;width:${sz}px;height:${sz}px;border-radius:50%;background:#fff;--o:${o};opacity:${o};box-shadow:0 0 6px rgba(255,255,255,.5);animation:twinkle ${d}s ease-in-out ${(i%7)*0.4}s infinite;"></span>`;
   } return out; })();
+// Illustration signature de la Home : une seule œuvre SVG (dégradés, filtres, verre, liquide)
+function svgHeroScene(){
+  return `<svg viewBox="0 0 372 340" style="position:absolute;inset:0;width:100%;height:100%;" aria-hidden="true">
+  <defs>
+    <linearGradient id="hsGlass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B9A2FF"/><stop offset=".45" stop-color="#8D6BF5"/>
+      <stop offset=".8" stop-color="#6647CC"/><stop offset="1" stop-color="#4A2EA0"/>
+    </linearGradient>
+    <linearGradient id="hsLiq" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFB3E2"/><stop offset=".5" stop-color="#C77DFF"/><stop offset="1" stop-color="#7E4FE0"/>
+    </linearGradient>
+    <linearGradient id="hsCap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE98F"/><stop offset="1" stop-color="#EBA317"/>
+    </linearGradient>
+    <linearGradient id="hsCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F1544B"/><stop offset="1" stop-color="#C22A24"/>
+    </linearGradient>
+    <linearGradient id="hsCupR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF9180"/><stop offset=".55" stop-color="#E8483A"/><stop offset="1" stop-color="#B62A20"/>
+    </linearGradient>
+    <linearGradient id="hsCupD" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6D5BC4"/><stop offset=".6" stop-color="#3A3168"/><stop offset="1" stop-color="#221D3E"/>
+    </linearGradient>
+    <radialGradient id="hsTable" cx=".5" cy=".42" r=".62">
+      <stop offset="0" stop-color="#9A73FF" stop-opacity=".55"/>
+      <stop offset=".62" stop-color="#5A38B8" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#5A38B8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="hsBlur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="6"/></filter>
+    <clipPath id="hsBot"><path d="M171 70 h30 v48 q23 14 23 42 v128 q0 20 -38 20 q-38 0 -38 -20 V160 q0 -28 23 -42 Z"/></clipPath>
+    <mask id="hsMoonC"><rect width="60" height="60" fill="black"/><circle cx="27" cy="30" r="21" fill="white"/><circle cx="37" cy="24" r="17" fill="black"/></mask>
+  </defs>
+
+  <!-- table -->
+  <ellipse cx="186" cy="298" rx="176" ry="36" fill="url(#hsTable)"/>
+  <ellipse cx="186" cy="298" rx="130" ry="24" fill="none" stroke="#FFFFFF" stroke-opacity=".09" stroke-width="2"/>
+
+  <!-- ombres portées -->
+  <ellipse cx="104" cy="303" rx="78" ry="13" fill="#0A0428" opacity=".42" filter="url(#hsBlur)"/>
+  <ellipse cx="186" cy="309" rx="58" ry="11" fill="#0A0428" opacity=".48" filter="url(#hsBlur)"/>
+  <ellipse cx="292" cy="301" rx="56" ry="10" fill="#0A0428" opacity=".4" filter="url(#hsBlur)"/>
+
+  <!-- éventail de cartes (dos lune) -->
+  <g class="hs-sway">
+    <g transform="translate(36 196) rotate(-16)">
+      <rect x="0" y="3" width="88" height="122" rx="12" fill="#8E1F1B"/>
+      <rect width="88" height="122" rx="12" fill="url(#hsCard)"/>
+      <rect x="6" y="6" width="76" height="110" rx="8" fill="none" stroke="#fff" stroke-opacity=".85" stroke-width="1.6"/>
+      <g transform="translate(14 31)" mask="url(#hsMoonC)"><rect width="60" height="60" fill="#fff"/></g>
+      <path d="M22 18 c.5 3 1.5 4 4.5 4.5 c-3 .5 -4 1.5 -4.5 4.5 c-.5 -3 -1.5 -4 -4.5 -4.5 c3 -.5 4 -1.5 4.5 -4.5Z" fill="#fff"/>
+      <path d="M66 96 c.5 3 1.5 4 4.5 4.5 c-3 .5 -4 1.5 -4.5 4.5 c-.5 -3 -1.5 -4 -4.5 -4.5 c3 -.5 4 -1.5 4.5 -4.5Z" fill="#fff" opacity=".9"/>
+    </g>
+    <g transform="translate(66 186) rotate(-3)">
+      <rect x="0" y="3" width="88" height="122" rx="12" fill="#8E1F1B"/>
+      <rect width="88" height="122" rx="12" fill="url(#hsCard)"/>
+      <rect x="6" y="6" width="76" height="110" rx="8" fill="none" stroke="#fff" stroke-opacity=".85" stroke-width="1.6"/>
+      <g transform="translate(14 31)" mask="url(#hsMoonC)"><rect width="60" height="60" fill="#fff"/></g>
+      <path d="M70 20 c.5 3 1.5 4 4.5 4.5 c-3 .5 -4 1.5 -4.5 4.5 c-.5 -3 -1.5 -4 -4.5 -4.5 c3 -.5 4 -1.5 4.5 -4.5Z" fill="#fff"/>
+    </g>
+    <g transform="translate(98 186) rotate(11)">
+      <rect x="0" y="3" width="88" height="122" rx="12" fill="#8E1F1B"/>
+      <rect width="88" height="122" rx="12" fill="url(#hsCard)"/>
+      <rect x="6" y="6" width="76" height="110" rx="8" fill="none" stroke="#fff" stroke-opacity=".85" stroke-width="1.6"/>
+      <g transform="translate(14 31)" mask="url(#hsMoonC)"><rect width="60" height="60" fill="#fff"/></g>
+      <path d="M20 100 c.5 3 1.5 4 4.5 4.5 c-3 .5 -4 1.5 -4.5 4.5 c-.5 -3 -1.5 -4 -4.5 -4.5 c3 -.5 4 -1.5 4.5 -4.5Z" fill="#fff"/>
+      <path d="M68 16 c.4 2.4 1.2 3.2 3.6 3.6 c-2.4 .4 -3.2 1.2 -3.6 3.6 c-.4 -2.4 -1.2 -3.2 -3.6 -3.6 c2.4 -.4 3.2 -1.2 3.6 -3.6Z" fill="#fff" opacity=".85"/>
+    </g>
+  </g>
+
+  <!-- gobelets -->
+  <g transform="translate(252 222)">
+    <path d="M64 12 q0 -7 8 -7 l36 0 q8 0 8 7 l-5 52 q-1 9 -10 9 l-22 0 q-9 0 -10 -9 Z" transform="translate(-8 14) scale(.92)" fill="url(#hsCupD)"/>
+    <path d="M4 12 q0 -7 8 -7 l40 0 q8 0 8 7 l-5 56 q-1 9 -10 9 l-26 0 q-9 0 -10 -9 Z" fill="url(#hsCupR)"/>
+    <ellipse cx="32" cy="9" rx="26" ry="5.5" fill="#7E1A14"/>
+    <ellipse cx="32" cy="8" rx="22" ry="4" fill="#FFB3A6" opacity=".7"/>
+    <rect x="34" y="-34" width="7" height="46" rx="3.5" transform="rotate(14 38 -10)" fill="url(#hsCap)"/>
+    <rect x="44" y="-38" width="14" height="7" rx="3.5" transform="rotate(14 50 -34)" fill="#EBA317"/>
+    <circle cx="14" cy="34" r="2.2" fill="#fff" opacity=".35"/><circle cx="20" cy="48" r="1.8" fill="#fff" opacity=".3"/>
+    <circle cx="46" cy="40" r="2" fill="#fff" opacity=".3"/>
+    <path d="M8 16 q-1 26 3 48" stroke="#fff" stroke-opacity=".35" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- bouteille -->
+  <g class="hs-float">
+    <path d="M171 70 h30 v48 q23 14 23 42 v128 q0 20 -38 20 q-38 0 -38 -20 V160 q0 -28 23 -42 Z" fill="url(#hsGlass)"/>
+    <g clip-path="url(#hsBot)">
+      <rect x="140" y="212" width="100" height="100" fill="url(#hsLiq)"/>
+      <ellipse cx="186" cy="213" rx="38" ry="7" fill="#FFD6F1" opacity=".85"/>
+      <circle class="hs-bub" cx="170" cy="292" r="4" fill="#fff" opacity="0" style="animation-delay:.3s;"/>
+      <circle class="hs-bub" cx="188" cy="298" r="2.8" fill="#fff" opacity="0" style="animation-delay:1.6s;"/>
+      <circle class="hs-bub" cx="203" cy="290" r="2.2" fill="#fff" opacity="0" style="animation-delay:2.5s;"/>
+      <rect x="205" y="70" width="16" height="240" fill="#2E1873" opacity=".28"/>
+    </g>
+    <rect x="156" y="142" width="10" height="132" rx="5" fill="#fff" opacity=".26"/>
+    <rect x="172" y="76" width="6" height="38" rx="3" fill="#fff" opacity=".3"/>
+    <circle cx="186" cy="248" r="27" fill="#fff" fill-opacity=".95"/>
+    <circle cx="186" cy="248" r="27" fill="none" stroke="#7C5CF0" stroke-opacity=".5" stroke-width="3"/>
+    <g transform="translate(159 218)" mask="url(#hsMoonC)"><rect width="60" height="60" fill="#F4B72A"/></g>
+    <rect x="167" y="52" width="38" height="20" rx="8" fill="url(#hsCap)"/>
+    <rect x="171" y="55" width="22" height="5" rx="2.5" fill="#fff" opacity=".55"/>
+  </g>
+</svg>`;
+}
 function homeScene(){
   return `
   <div style="position:absolute;inset:0;pointer-events:none;overflow:hidden;">
@@ -321,23 +430,7 @@ function homeScene(){
   </div>
   <div class="home-logo">${logoBlock()}
     <div style="margin-top:10px;font-family:var(--b);font-weight:800;font-size:13px;letter-spacing:3px;color:rgba(255,255,255,.66);text-transform:uppercase;">Le jeu à boire entre potes</div></div>
-  <div class="home-scene">
-    <div style="position:absolute;left:2%;right:2%;bottom:0;height:150px;border-radius:50%;background:radial-gradient(closest-side,rgba(150,112,255,.5),rgba(74,46,160,.26) 66%,transparent);"></div>
-    <div style="position:absolute;left:12%;right:12%;bottom:22px;height:104px;border-radius:50%;border:2px solid rgba(255,255,255,.10);"></div>
-    <div style="position:absolute;left:50%;bottom:46px;transform:translateX(-50%);width:150px;height:24px;border-radius:50%;background:rgba(10,4,40,.4);filter:blur(9px);"></div>
-    <div style="position:absolute;left:14px;bottom:24px;width:210px;height:26px;border-radius:50%;background:rgba(10,4,40,.35);filter:blur(9px);"></div>
-    <div style="position:absolute;right:16px;bottom:28px;width:130px;height:22px;border-radius:50%;background:rgba(10,4,40,.35);filter:blur(8px);"></div>
-    <div style="position:absolute;left:50%;bottom:56px;transform:translateX(-50%);animation:floatSlow 4.6s ease-in-out infinite;">${cssBottle(78)}</div>
-    <div style="position:absolute;left:6px;bottom:32px;display:flex;">
-      <div style="transform:rotate(-16deg) translateY(8px);">${cardBack(88,123)}</div>
-      <div style="transform:rotate(-3deg);margin-left:-56px;">${cardBack(88,123)}</div>
-      <div style="transform:rotate(11deg) translateY(7px);margin-left:-54px;">${cardBack(88,123)}</div>
-    </div>
-    <div style="position:absolute;right:14px;bottom:36px;display:flex;align-items:flex-end;gap:6px;">
-      ${cssCup(56,'linear-gradient(180deg,#FF8472,#E0392B)',-8,true)}
-      ${cssCup(48,'linear-gradient(180deg,#5847A8,#2A2440)',10)}
-    </div>
-  </div>`;
+  <div class="home-scene">${svgHeroScene()}</div>`;
 }
 const AVATARS = {
   Homme: Array.from({length:30},(_,i)=>'assets/avatars/h'+String(i+1).padStart(2,'0')+'.jpg'),
@@ -865,7 +958,7 @@ SCREENS.bus = () => {
         </div>
         <h2 style="font-size:22px;color:#fff;">Mode de jeu</h2>
       <div style="display:flex;flex-direction:column;gap:12px;margin-top:18px;">
-       ${modeBtn('partage','Chacun son tour','1 carte par tour, à plusieurs. Tu gardes ta progression même en ratant (tu bois juste). La partie finit quand chaque joueur a fait ses 4 cartes.')}
+       ${modeBtn('partage','La Pyramide','1 carte par tour, à plusieurs. Tu gardes ta progression même en ratant (tu bois juste). La partie finit quand chaque joueur a fait ses 4 cartes.')}
        ${modeBtn('infini','Recommencer','Solo, sans pitié : le moindre rate te renvoie à l’étape 1. Tu gardes le téléphone jusqu’à réussir les 4 d’affilée.')}
        ${modeBtn('normal','Solo','Tu enchaînes les 4 étapes seul. Rate l’étape 1 = tu rejoues ; rate après = tu bois et ça passe au suivant.')}
       </div></div>`;
@@ -898,7 +991,7 @@ SCREENS.bus = () => {
     else if(p.step===3) actions=`<div class="row"><button class="btn" onclick="busGuess('in')">Intérieur</button><button class="btn" onclick="busGuess('out')">Extérieur</button></div>`;
     else actions=`<div class="row" style="flex-wrap:wrap;">${SUITS.map((s,i)=>`<button class="btn" style="flex:1 1 40%;color:${i===1||i===2?'#FFD2CC':'#fff'};" onclick="busGuess(${i})">${s}</button>`).join('')}</div>`;
   }
-  const tag = g.mode==='partage'?'Partagé':(g.mode==='infini'?'Infini':'Normal');
+  const tag = g.mode==='partage'?'Pyramide':(g.mode==='infini'?'Infini':'Normal');
   return `<div class="pad fade">${gameHead('Le Bus', `<div class="pill">${p.step}/4 · ${tag}</div>`)}
     ${turnBanner()}
     <div style="display:flex;justify-content:center;gap:7px;margin-bottom:6px;">${dots}</div>
