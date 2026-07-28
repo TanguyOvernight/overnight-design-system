@@ -190,6 +190,12 @@
   .aura-spark{animation:twinkle var(--d,3s) ease-in-out var(--dl,0s) infinite;}
   @media (prefers-reduced-motion:reduce){.aura-rays,.aura-spark{animation:none !important;}}
   @media (prefers-reduced-motion:reduce){.hs-float,.hs-sway,.hs-bub{animation:none !important;}}
+  /* Ciel WebGL actif : les écrans plein-cadre deviennent translucides (le shader
+     dessine déjà le même dégradé de base) ; sans GPU, le fond inline reste. */
+  html[data-gl] .night-bg{background:
+    linear-gradient(180deg,#2A1375 0,rgba(42,19,117,0) 84px),
+    linear-gradient(0deg,#18084F 0,rgba(24,8,79,0) 84px),
+    radial-gradient(circle at 50% 20%,rgba(117,83,255,.30),transparent 40%) !important;}
   /* Splash de démarrage + loaders réseau */
   #splash{position:fixed;inset:0;z-index:999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;
     background:radial-gradient(120% 70% at 50% 8%,rgba(140,104,255,.4),transparent 55%),linear-gradient(180deg,#2A1375,#18084F);
@@ -854,7 +860,7 @@ function logoBlock(){
     </div></div>`;
 }
 
-SCREENS.home = () => `<div class="fade" style="position:absolute;inset:0;${NIGHT}">
+SCREENS.home = () => `<div class="fade night-bg" style="position:absolute;inset:0;${NIGHT}">
   <img src="assets/home-drinkin.webp" alt=""
     onerror="this.remove();if(!window.__hdOk)document.getElementById('home-fallback').style.display='block';"
     style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;">
@@ -883,7 +889,7 @@ SCREENS.setup = () => {
       <button onclick="openAvatar(${i})" aria-label="Changer d'avatar" style="position:absolute;right:-3px;bottom:-3px;width:28px;height:28px;border-radius:50%;background:#fff;border:none;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 7px rgba(0,0,0,.35);cursor:pointer;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--indigo)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></button></div>
     <b style="flex:1;font-family:var(--f);font-size:22px;font-weight:800;color:#fff;">${p.name}</b>
     <button onclick="rmPlayer(${i})" style="width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.18);color:#fff;font-size:22px;font-weight:900;border:none;flex:none;cursor:pointer;">×</button></div>`;
-  return `<div class="fade" style="position:absolute;inset:0;${NIGHT}">
+  return `<div class="fade night-bg" style="position:absolute;inset:0;${NIGHT}">
     <button onclick="go('home')" style="position:absolute;top:max(54px,env(safe-area-inset-top));left:24px;${ROUNDBTN}font-size:26px;">‹</button>
     <div class="su-hide" style="position:absolute;top:96px;left:0;right:0;text-align:center;">
       <div style="font-family:var(--d);font-size:15px;font-weight:800;letter-spacing:.5px;color:#F472D6;text-transform:uppercase;">Party mode</div>
@@ -2146,6 +2152,70 @@ function spectatorBar(){
 }
 
 /* --- Démarrage --- */
+/* ============================================================
+   CIEL VIVANT — WebGL (GLSL) : aurores lentes + étoiles scintillantes.
+   La technologie des jeux 3D navigateur, dosée : 30 fps, demi-résolution,
+   pause quand l'onglet est caché, repli silencieux sur le dégradé statique,
+   et les bords convergent vers les MÊMES teintes que les barres iOS.
+   ============================================================ */
+(function(){
+  try{
+    if(matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const cv=document.createElement('canvas');
+    cv.style.cssText='position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;';
+    document.body.prepend(cv);
+    const gl=cv.getContext('webgl',{antialias:false,alpha:false,powerPreference:'low-power'});
+    if(!gl){ cv.remove(); return; }
+    const vs='attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}';
+    const fs=`precision mediump float;uniform vec2 R;uniform float T;
+      float h(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
+      float n(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);
+        return mix(mix(h(i),h(i+vec2(1.,0.)),f.x),mix(h(i+vec2(0.,1.)),h(i+vec2(1.,1.)),f.x),f.y);}
+      float fbm(vec2 p){float v=0.,a=.5;for(int i=0;i<4;i++){v+=a*n(p);p*=2.1;a*=.5;}return v;}
+      void main(){
+        vec2 uv=gl_FragCoord.xy/R; uv.y=1.-uv.y;
+        vec3 c=mix(vec3(.165,.075,.458),vec3(.204,.063,.553),smoothstep(0.,.45,uv.y));
+        c=mix(c,vec3(.094,.031,.310),smoothstep(.45,1.,uv.y));
+        float t=T*.02;
+        float a1=fbm(vec2(uv.x*2.6+t, uv.y*3.2-t*.6));
+        float band=smoothstep(.45,.78,a1)*smoothstep(.9,.4,uv.y);
+        vec3 aur=mix(vec3(.72,.55,1.),vec3(1.,.83,.45),n(vec2(uv.x*3.+t,t*1.3)));
+        c+=aur*band*.16;
+        float a2=fbm(vec2(uv.x*1.7-t*.7, uv.y*2.4+t*.4));
+        c+=vec3(.55,.35,.95)*smoothstep(.55,.88,a2)*smoothstep(.12,.5,uv.y)*smoothstep(1.,.55,uv.y)*.13;
+        vec2 st=uv*vec2(R.x/R.y,1.)*92.;
+        vec2 ci=floor(st); float r=h(ci);
+        if(r>.9952){ float tw=.5+.5*sin(T*(1.4+2.2*h(ci+7.))+h(ci+3.)*6.28);
+          float d=length(fract(st)-.5); c+=vec3(1.,.98,.92)*smoothstep(.16,.0,d)*tw*.8*smoothstep(.9,.15,uv.y);}
+        c=mix(vec3(.165,.075,.458),c,smoothstep(0.,.10,uv.y));
+        c=mix(vec3(.094,.031,.310),c,smoothstep(1.,.90,uv.y));
+        gl_FragColor=vec4(c,1.);}`;
+    function sh(t2,src){const o=gl.createShader(t2);gl.shaderSource(o,src);gl.compileShader(o);
+      if(!gl.getShaderParameter(o,gl.COMPILE_STATUS)) throw gl.getShaderInfoLog(o); return o;}
+    const pr=gl.createProgram();
+    gl.attachShader(pr,sh(gl.VERTEX_SHADER,vs));
+    gl.attachShader(pr,sh(gl.FRAGMENT_SHADER,fs));
+    gl.linkProgram(pr);
+    if(!gl.getProgramParameter(pr,gl.LINK_STATUS)) throw new Error('link');
+    gl.useProgram(pr);
+    const bf=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,bf);
+    gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,3,-1,-1,3]),gl.STATIC_DRAW);
+    const lp=gl.getAttribLocation(pr,'p');gl.enableVertexAttribArray(lp);gl.vertexAttribPointer(lp,2,gl.FLOAT,false,0,0);
+    const uR=gl.getUniformLocation(pr,'R'),uT=gl.getUniformLocation(pr,'T');
+    function size(){const k=Math.min(1,(window.devicePixelRatio||1))*.8;
+      cv.width=Math.max(2,(innerWidth*k)|0);cv.height=Math.max(2,(innerHeight*k)|0);
+      gl.viewport(0,0,cv.width,cv.height);gl.useProgram(pr);gl.uniform2f(uR,cv.width,cv.height);}
+    size(); addEventListener('resize',size);
+    document.documentElement.dataset.gl='1';
+    let fr=0;
+    (function loop(ts){ requestAnimationFrame(loop);
+      if(document.hidden) return;
+      if((fr++&1)) return;                        // ~30 fps, sobre pour la batterie
+      gl.uniform1f(uT,ts*.001); gl.drawArrays(gl.TRIANGLES,0,3);
+    })(0);
+  }catch(e){ /* WebGL indisponible : le dégradé statique reste */ }
+})();
+
 loadSession();
 if(!netResume()) render();
 
