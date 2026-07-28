@@ -151,6 +151,36 @@ chiffre est intéressant, pas noyé sous les infos »). Cible : message
 principal ≤ ~2 500 caractères, lisible en < 2 minutes. Le détail vit dans
 le journal.
 
+> ⚠️ **RÈGLE DU BUDGET DE CARACTÈRES** (leçon du brief n°2, 28/07/2026 —
+> Tanguy : « des explications trop techniques avec juste des chiffres…
+> ça rend la chose moins compréhensible »). **Le budget se paie en
+> SUPPRIMANT DES LIGNES, jamais en compressant une explication.**
+> Quatre lignes limpides valent mieux que six cryptiques. Si ça ne rentre
+> pas : on retire la ligne la moins actionnable, on ne raccourcit pas la
+> phrase.
+>
+> **Test du lecteur (à appliquer à CHAQUE ligne avant envoi)** : quelqu'un
+> qui ne suit pas ce dossier tous les jours comprend-il (a) ce que le
+> chiffre MESURE, (b) ce qu'il faudrait pour agir ? Si non, la ligne est
+> à réécrire ou à supprimer.
+>
+> Fautes constatées le 28/07, à ne pas reproduire :
+> - « capi ~9,7 Md€ vs ≤ 8,8 Md€ » → deux nombres sans dire ce qu'ils
+>   mesurent ni pourquoi. **Tout chiffre porte son unité ET son sens.**
+> - « résultat ≥ 340 M€ + dette maîtrisée » → compression devenue
+>   IMPRÉCISE (c'est le bénéfice d'exploitation ; le critère de dette est
+>   chiffré). **Raccourcir ne doit jamais rendre faux.**
+> - « Azure est guidé 39-40 %, notre seuil est calé dessus » → trois
+>   termes de métier enchaînés, indécodable. Dire : « la croissance de son
+>   cloud ; Microsoft a promis 39-40 %, il devra faire mieux que sa propre
+>   promesse ».
+> - « un achat d'initié à 79,40 € » → évoque l'illégalité pour un
+>   non-spécialiste. Dire : « une société liée aux dirigeants a racheté
+>   des actions à 79 € — achat déclaré, légal : un vote de confiance ».
+> - « prix touché ✅ » seul → laisse croire qu'on peut acheter. **Toujours
+>   préciser combien de conditions restent** (« une condition sur quatre
+>   est remplie ; on ne peut rien décider avant [date] »).
+
 ```
 📊 *BRIEF INVEST n°X — [jour] JJ/MM*
 1 ligne d'ouverture : LE fait du jour qui compte pour son argent (pas de
