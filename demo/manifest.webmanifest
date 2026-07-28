@@ -1,6 +1,6 @@
 {
-  "name": "Drink'it — Jeu à boire",
-  "short_name": "Drink'it",
+  "name": "Drinkin — Jeu à boire",
+  "short_name": "Drinkin",
   "description": "Le jeu à boire entre potes.",
   "start_url": "./index.html",
   "scope": "./",
