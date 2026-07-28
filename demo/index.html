@@ -1239,12 +1239,11 @@ function rndPick(a){ return a[Math.random()*a.length|0]; }
 SCREENS.vob = () => {
   const g=S.game;
   if(g.phase==='setup'){
-    const chip=(c)=>`<button onclick="vobSetCat('${c.id}')" style="border:none;cursor:pointer;padding:12px 17px;border-radius:999px;font-family:var(--d);font-weight:800;font-size:14px;background:${g.cat===c.id?'#fff':'rgba(255,255,255,.14)'};color:${g.cat===c.id?'var(--indigo)':'#fff'};">${c.label}</button>`;
+    // Plus de choix de thème : tout est mélangé (g.cat reste 'tout'), on choisit juste la durée.
     return `<div class="pad fade">${gameHead('Action ou Vérité')}<div class="spacer"></div>
-      <h2 style="text-align:center;font-size:24px;">Choisis ton thème</h2>
-      <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:18px;">${VOB_CATS.map(chip).join('')}</div>
-      <h2 style="text-align:center;font-size:19px;margin-top:30px;">Longueur de la partie</h2>
-      <div style="display:flex;flex-direction:column;gap:12px;margin-top:14px;">
+      <h2 style="text-align:center;font-size:24px;">Longueur de la partie</h2>
+      <div class="sub center" style="font-size:14px;margin-top:8px;">Vérités, gages, humour noir… tout est mélangé.</div>
+      <div style="display:flex;flex-direction:column;gap:12px;margin-top:22px;">
         ${[50,100].map(n=>`<button class="btn" onclick="vobSetCount(${n})">${n} questions</button>`).join('')}
         <button class="btn amber" onclick="vobSetCount(Infinity)">Sans limite</button>
       </div><div class="spacer"></div></div>`;
