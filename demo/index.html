@@ -384,6 +384,27 @@ const VOB = [
   "Quel surnom humiliant vous me collez pour le reste de la nuit ?",
   "À quel moment ce soir j'ai cru être drôle et je ne l'étais pas ?",
   "Quelle est la chose dont je me vante trop alors que le niveau est moyen ?"]},
+ {titre:"Humour noir", cat:["noir"], d:3, q:[
+  "À ton enterrement, qui ici ferait un discours magnifique… et qui checkerait son téléphone ?",
+  "Tu as 24h à vivre. Sois honnête : tu passes combien de ces heures sur ton téléphone ?",
+  "Quelle est la chose la plus égoïste que tu ferais si la fin du monde était annoncée pour demain ?",
+  "Ta nécrologie doit être honnête. Elle commence par quoi ?",
+  "Quel objet actuellement chez toi serait le plus gênant à faire découvrir par ta famille après ta mort ?",
+  "Si {autre} disparaissait mystérieusement, quel serait ton alibi ? Il a intérêt à être solide.",
+  "L'au-delà existe et il est à l'image de ta galerie photo. Décris ton enfer personnel.",
+  "Qui ici hériterait de ton téléphone déverrouillé te ferait le plus paniquer depuis l'au-delà ?",
+  "Apocalypse zombie : entre {autre} et {autre2}, lequel tu sacrifies en premier pour ralentir la horde ? Sans trembler.",
+  "Ton thérapeute imaginaire démissionne. Pour quel dossier précis ?",
+  "On grave une seule de tes phrases cultes sur ta tombe. Le groupe choisit laquelle. Propositions ?",
+  "Quelle habitude à toi mènera statistiquement à ta perte, et pourquoi tu la gardes quand même ?",
+  "Tu peux assister à ton propre enterrement en fantôme. Tu surveilles quoi en priorité ?",
+  "Si on rejouait ta vie en film, à quel moment le public crierait « mais NON, fais pas ça » ?",
+  "Ta dernière volonté officielle est une corvée pour le groupe. Tu choisis quoi, juste pour les embêter ?",
+  {t:"Messieurs : ton éloge funèbre est écrit par ton pire ex. Quelle phrase fait rire toute l'église ?", who:'h'},
+  {t:"Mesdames : ton éloge funèbre est écrit par ton pire ex. Quelle phrase fait rire toute l'église ?", who:'f'},
+  {t:"Entre {autre} et {autre2}, lequel survivrait le moins longtemps dans une prison ? Développe, c'est important."},
+  "Le groupe doit te ressusciter mais chacun ne donne qu'une qualité pour convaincre. Qui sèche complètement ?",
+  "Tu apprends que tu es le vilain d'un documentaire Netflix. Il s'appelle comment ?"]},
  {titre:"Qui est le plus susceptible…", cat:"qui", d:1, q:[
   "Qui ici finirait la soirée à pleurer sur son ex dans la salle de bain ?",
   "Qui du groupe est le plus susceptible de texter son ex dans l'heure qui vient ?",
@@ -402,7 +423,16 @@ const VOB = [
   "Qui s'est déjà inventé une vie devant des inconnus en soirée ?",
   "Qui du groupe finira par tous nous réunir à son mariage… en ayant invité ses ex ?",
   "Qui est capable de tenir un vrai secret… et qui n'en a jamais tenu un seul ?",
-  "Qui rentrerait discrètement avec quelqu'un ce soir sans jamais nous le dire ?"]},
+  "Qui rentrerait discrètement avec quelqu'un ce soir sans jamais nous le dire ?",
+  "Qui décevrait le plus ses parents s'ils voyaient sa soirée d'hier ?",
+  "Qui finirait dans une secte en pensant sincèrement que « c'est juste un club de yoga » ?",
+  "Qui ferait le tueur en série le plus efficace… parce que personne ne le soupçonnerait jamais ?",
+  "Qui vendrait un secret du groupe pour une story sponsorisée ?",
+  "Qui pleurerait le moins longtemps à l'enterrement des autres ? Regardez-vous bien.",
+  "Qui a le plus de chances de se faire voler son identité… et que le voleur la rende en s'excusant ?",
+  "Qui survivrait le moins longtemps sans son téléphone : 24h, 2h, ou 20 minutes ?",
+  "Qui arriverait en retard à son propre enterrement ?",
+  "Qui ferait fortune avec une arnaque, et qui se ferait arnaquer par la même arnaque ?"]},
  {titre:"Cash, pas de filtre", cat:["probleme","chaud"], d:3, q:[
   "Combien de personnes tu as ghostées cette année ? Chiffre exact, on attend.",
   "C'est quoi le mensonge que tu as dit ce soir même, ici, dans cette pièce ?",
@@ -497,7 +527,15 @@ const JAMAIS = [
  "fait semblant de découvrir un potin que je connaissais depuis des semaines.",
  "menti à mes parents sur l'endroit où je dormais.",
  "gardé des photos d'un ex « au cas où », sans savoir au cas où quoi.",
- "secrètement espéré qu'une soirée s'annule pour rester chez moi."
+ "secrètement espéré qu'une soirée s'annule pour rester chez moi.",
+ "ri à un enterrement au pire moment possible.",
+ "souhaité (très brièvement) la chute d'un ami qui réussissait trop bien.",
+ "répété l'anecdote d'un défunt comme si elle était de moi.",
+ "fait semblant d'être triste alors que je ne ressentais absolument rien.",
+ "calculé un héritage de tête pendant un repas de famille.",
+ "googlé mes symptômes jusqu'à me diagnostiquer une fin imminente.",
+ "pensé « enfin » en apprenant une rupture dans mon entourage.",
+ "recyclé le cadeau d'un ex en cadeau pour quelqu'un d'autre."
 ];
 const PREF = [
  ["Que le groupe lise tes DMs","Que le groupe voie ton historique de recherche"],
@@ -520,6 +558,14 @@ const PREF = [
  ["Que tout le monde sache quand tu mens","Savoir quand tout le monde te ment"],
  ["Revivre ta pire rupture une fois par an","N'avoir plus aucun souvenir de tes relations"],
  ["Que ton historique parte à ton ex","Que tes DMs partent à ton boss"],
+ ["Connaître la date de ta mort","Connaître la cause (avec les détails gênants)"],
+ ["Que ton éloge funèbre soit écrit par ton ex","Par ton patron"],
+ ["Hanter tes potes sans pouvoir parler","Être hanté par un pote très bavard"],
+ ["Mourir d'une façon ridicule mais célèbre","Anonyme mais digne"],
+ ["Que ta famille lise ton journal intime post-mortem","Que tes potes vident ton téléphone avant qu'elle arrive"],
+ ["Revivre éternellement ton pire lundi","Ne plus jamais avoir de samedi"],
+ ["Un fantôme visible uniquement par ton crush","Par ta belle-mère"],
+ ["Savoir qui viendra à ton enterrement","Savoir ce qu'ils diront au buffet après"],
 ];
 const KINGS = {1:["As — Cascade","Tu bois, ton voisin de gauche suit, puis le suivant…"],
  2:["2 — Toi","Désigne quelqu'un : il boit 2 gorgées."],3:["3 — Moi","Tu bois 3 gorgées."],
@@ -1138,7 +1184,7 @@ function pmuDraw(){
 }
 
 /* ============================ VÉRITÉ OU BOIS ============================ */
-const VOB_CATS=[{id:'tout',label:'Tout'},{id:'qui',label:'Qui pourrait ?'},{id:'amis',label:'Vieux frères'},{id:'chaud',label:'Chaud du cul'},{id:'probleme',label:'Les problèmes'},{id:'action',label:'Actions'}];
+const VOB_CATS=[{id:'tout',label:'Tout'},{id:'noir',label:'Humour noir'},{id:'qui',label:'Qui pourrait ?'},{id:'amis',label:'Vieux frères'},{id:'chaud',label:'Chaud du cul'},{id:'probleme',label:'Les problèmes'},{id:'action',label:'Actions'}];
 function startVob(){ S.game={phase:'setup', cat:'tout', used:new Set(), q:null, target:100, count:0}; go('vob'); }
 function vobSetCat(c){ S.game.cat=c; render(); }
 function vobSetCount(n){ const g=S.game; g.target=n; g.count=0; g.phase='play'; vobPick(); render(); }
