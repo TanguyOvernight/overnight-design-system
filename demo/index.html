@@ -902,20 +902,10 @@ SCREENS.setup = () => {
     <div class="su-hide" style="position:absolute;top:96px;left:0;right:0;text-align:center;">
       <div style="font-family:var(--d);font-size:15px;font-weight:800;letter-spacing:.5px;color:#F472D6;text-transform:uppercase;">Party mode</div>
       <div style="font-family:var(--d);font-size:28px;font-weight:800;color:#fff;text-transform:uppercase;margin-top:8px;">Ajoute les joueurs</div></div>
-    <div class="su-hide" style="position:absolute;top:154px;left:0;right:0;height:140px;pointer-events:none;">
-      <div style="position:relative;width:272px;height:140px;margin:0 auto;">
-        <div style="position:absolute;left:14px;right:14px;bottom:0;height:22px;border-radius:50%;background:radial-gradient(closest-side,rgba(94,66,196,.35),transparent);"></div>
-        <div style="position:absolute;left:0;bottom:2px;opacity:.85;filter:drop-shadow(0 8px 14px rgba(10,4,40,.45));">${svgPalm(124,false,'#6C4EDB')}</div>
-        <div style="position:absolute;right:0;bottom:0;opacity:.62;">${svgPalm(92,true,'#54399F')}</div>
-        <svg viewBox="0 0 272 140" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible;">
-          <path id="pmFil" d="M62 56 Q136 96 216 62" fill="none" stroke="rgba(255,255,255,.28)" stroke-width="1.6"/>
-          ${[[80,68,'#FFD33F','0s'],[112,79,'#FF8A7A','.6s'],[140,83,'#46C9A0','1.2s'],[168,80,'#B98CFF','.3s'],[196,70,'#FFD33F','.9s']].map(b=>`
-            <line x1="${b[0]}" y1="${b[1]-6}" x2="${b[0]}" y2="${b[1]-1}" stroke="rgba(255,255,255,.3)" stroke-width="1.2"/>
-            <circle class="aura-spark" cx="${b[0]}" cy="${b[1]+2}" r="3.4" fill="${b[2]}" style="--dl:${b[3]};--d:2.8s;--o:.95;filter:drop-shadow(0 0 5px ${b[2]});"/>`).join('')}
-        </svg>
-        <svg width="28" height="28" viewBox="0 0 64 64" style="position:absolute;right:64px;top:16px;filter:drop-shadow(0 0 10px rgba(255,211,63,.5));animation:floatSlow 5s ease-in-out infinite;"><defs><mask id="pmMoon"><rect width="64" height="64" fill="black"/><circle cx="28" cy="32" r="26" fill="white"/><circle cx="41" cy="25" r="21" fill="black"/></mask></defs><circle cx="28" cy="32" r="26" fill="#FFD33F" mask="url(#pmMoon)"/></svg>
-        <svg class="aura-spark" viewBox="0 0 12 12" style="position:absolute;left:38px;top:10px;width:9px;height:9px;--dl:.4s;--d:3.6s;--o:.7;"><path d="M6 0 C6.5 4.7 7.3 5.5 12 6 C7.3 6.5 6.5 7.3 6 12 C5.5 7.3 4.7 6.5 0 6 C4.7 5.5 5.5 4.7 6 0 Z" fill="#E9DDFF"/></svg>
-      </div></div>
+    <div class="su-hide" style="position:absolute;top:150px;left:0;right:0;height:150px;pointer-events:none;overflow:hidden;">
+      <div style="position:absolute;left:-16px;bottom:-12px;opacity:.28;">${svgPalm(148,false,'#8B6BEE')}</div>
+      <div style="position:absolute;right:-22px;bottom:-26px;opacity:.20;">${svgPalm(116,true,'#8B6BEE')}</div>
+    </div>
     <div class="su-sheet" style="position:absolute;left:0;right:0;top:300px;bottom:0;border-radius:38px 38px 0 0;background:linear-gradient(180deg,rgba(112,73,220,.45),rgba(38,18,105,.28));box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 -10px 30px rgba(0,0,0,.12);border:1px solid rgba(255,255,255,.10);border-bottom:none;padding:30px 26px calc(128px + env(safe-area-inset-bottom));overflow-y:auto;-webkit-overflow-scrolling:touch;">
       ${S.players.map((p,i)=>capsule(p,i)).join('')}
       <div style="height:80px;border-radius:24px;border:2px dashed rgba(205,187,255,.34);background:rgba(255,255,255,.04);display:flex;align-items:center;gap:14px;padding:0 14px;">
