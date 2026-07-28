@@ -149,6 +149,18 @@
   .ovl-card h3{font-family:var(--d);font-weight:800;font-size:25px;color:#fff;line-height:1.15;}
   .ovl-card p{font-family:var(--b);font-weight:600;font-size:15px;color:rgba(255,255,255,.85);margin-top:10px;line-height:1.5;}
   @media (prefers-reduced-motion:reduce){.ovl,.ovl-card{animation:none !important;}}
+  /* Toast « À toi de jouer » : annonce ton tour sur TON téléphone (mode en ligne) */
+  .turn-toast{position:absolute;top:calc(16px + env(safe-area-inset-top));left:50%;transform:translate(-50%,0);z-index:75;display:flex;align-items:center;gap:11px;padding:10px 20px 10px 10px;border-radius:999px;background:linear-gradient(180deg,#FFDB4D,#F0A92A);color:#3A2A06;font-family:var(--d);font-weight:800;font-size:17px;box-shadow:0 16px 34px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.4);pointer-events:none;animation:toastIn .45s cubic-bezier(.2,1.3,.5,1),toastOut .3s ease 2s forwards;}
+  @keyframes toastIn{0%{opacity:0;transform:translate(-50%,-22px) scale(.8);}60%{transform:translate(-50%,4px) scale(1.04);}100%{opacity:1;transform:translate(-50%,0) scale(1);}}
+  @keyframes toastOut{to{opacity:0;transform:translate(-50%,-14px) scale(.9);}}
+  /* « +N » flottant quand quelqu'un boit : les gorgées ont enfin un poids visuel */
+  .floaty{position:absolute;left:50%;top:34%;z-index:70;display:flex;align-items:center;gap:8px;padding:8px 16px 8px 8px;border-radius:999px;background:rgba(255,110,95,.95);color:#fff;font-family:var(--d);font-weight:800;font-size:18px;box-shadow:0 12px 26px rgba(140,30,20,.4);pointer-events:none;animation:floaty 1.25s cubic-bezier(.2,.8,.4,1) forwards;}
+  @keyframes floaty{0%{opacity:0;transform:translate(-50%,14px) scale(.7);}18%{opacity:1;transform:translate(-50%,0) scale(1.06);}30%{transform:translate(-50%,-4px) scale(1);}100%{opacity:0;transform:translate(-50%,-84px) scale(.94);}}
+  /* Podium qui pousse depuis le sol */
+  @keyframes podrise{from{transform:scaleY(.15);opacity:.3;}to{transform:none;opacity:1;}}
+  /* Point de progression du Bus qui claque quand on avance */
+  @keyframes dotpop{0%{transform:scale(.3);}65%{transform:scale(1.5);}100%{transform:scale(1);}}
+  @media (prefers-reduced-motion:reduce){.turn-toast,.floaty{animation:none !important;}}
   @media (prefers-reduced-motion:reduce){.cflip,.drop,.breathe,.fade,.pop{animation:none !important;}}
   /* Setup : quand le clavier iOS est ouvert, on replie le haut + le CTA et on colle la liste au-dessus du clavier */
   .su-hide{transition:opacity .18s ease;}
@@ -712,7 +724,7 @@ SCREENS.scores = () => {
       ${avatar(p,rank===1?58:46)}
       <div style="font-family:var(--f);font-weight:800;font-size:14px;margin-top:7px;color:#fff;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${p.name}</div>
       <div style="font-family:var(--b);font-weight:600;font-size:12px;color:rgba(255,255,255,.7);">${p.gorgees} pts</div>
-      <div style="width:100%;height:${h}px;margin-top:10px;border-radius:16px 16px 0 0;background:${bg};display:flex;align-items:flex-start;justify-content:center;padding-top:10px;font-family:var(--d);font-weight:800;font-size:30px;color:#fff;box-shadow:inset 0 -10px 18px rgba(0,0,0,.14);">${rank}</div>
+      <div style="width:100%;height:${h}px;margin-top:10px;border-radius:16px 16px 0 0;background:${bg};display:flex;align-items:flex-start;justify-content:center;padding-top:10px;font-family:var(--d);font-weight:800;font-size:30px;color:#fff;box-shadow:inset 0 -10px 18px rgba(0,0,0,.14);transform-origin:bottom;animation:podrise .55s cubic-bezier(.2,1.1,.4,1) ${rank*0.12}s backwards;">${rank}</div>
     </div>` : `<div style="flex:1;"></div>`;
   return `<div class="pad fade">
    <div class="hdr"><button class="iconbtn" onclick="go('hub')">‹</button><h2 style="flex:1;text-align:center;font-size:21px;">Classement</h2><div style="width:42px"></div></div>
@@ -772,7 +784,7 @@ SCREENS.bus = () => {
     return `<div class="pad fade">${gameHead('Le Bus')}${turnBanner()}<div class="gamebody">${mid}</div></div>`;
   }
   const p=busProg(), r=S.reveal;
-  const dots=[1,2,3,4].map(n=>`<span style="width:30px;height:8px;border-radius:99px;background:${n<=p.step?'#FFC93C':'rgba(255,255,255,.25)'}"></span>`).join('');
+  const dots=[1,2,3,4].map(n=>`<span style="width:30px;height:8px;border-radius:99px;background:${n<=p.step?'#FFC93C':'rgba(255,255,255,.25)'};${n===p.step?'animation:dotpop .45s cubic-bezier(.2,1.3,.5,1);':''}"></span>`).join('');
   const prompts={1:'Rouge ou Noir ?',2:'Plus ou moins ?',3:'Intérieur ou extérieur ?',4:"Quelle enseigne ?"};
   let mid='', actions='';
   const prev = r ? p.cards.slice(0,-1) : p.cards;
@@ -1120,7 +1132,15 @@ function pmuInfoHTML(){
 }
 function pmuAnimate(){
   const g=S.game;
-  for(let i=0;i<4;i++){ const el=document.getElementById('pmu-h'+i); if(el) el.style.bottom=((g.pos[i]/g.fin)*PMU_SPAN)+'px'; }
+  const bouge = g.last ? g.last.s : -1;    // l'enseigne qui vient d'avancer
+  for(let i=0;i<4;i++){
+    const el=document.getElementById('pmu-h'+i); if(!el) continue;
+    el.style.bottom=((g.pos[i]/g.fin)*PMU_SPAN)+'px';
+    if(i===bouge && el.animate){
+      el.animate([{transform:'translateX(-50%) scale(1.16)'},{transform:'translateX(-50%) scale(1)'}],
+                 {duration:360, easing:'cubic-bezier(.2,1.2,.4,1)'});
+    }
+  }
   const mc=document.getElementById('pmu-meds'); if(mc) mc.innerHTML=pmuMedsHTML();
   const ic=document.getElementById('pmu-info'); if(ic) ic.innerHTML=pmuInfoHTML();
 }
@@ -1311,7 +1331,7 @@ SCREENS.pref = () => {
         <div style="width:34px;height:34px;flex:none;border-radius:11px;background:${COL[i]};color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--d);font-weight:800;font-size:17px;">${i?'B':'A'}</div>
         <div style="flex:1;font-family:var(--f);font-weight:800;font-size:15px;color:#fff;line-height:1.25;">${g.p[i]}</div>
         <div style="font-family:var(--d);font-weight:800;font-size:22px;color:${isMin?'#FF9A8B':'#fff'};">${pct[i]}%</div></div>
-      <div style="height:9px;border-radius:99px;background:rgba(0,0,0,.22);margin:11px 0 10px;overflow:hidden;"><div style="width:${pct[i]}%;height:100%;background:${COL[i]};border-radius:99px;transition:width .5s cubic-bezier(.2,.9,.3,1);"></div></div>
+      <div style="height:9px;border-radius:99px;background:rgba(0,0,0,.22);margin:11px 0 10px;overflow:hidden;"><div data-grow="${pct[i]}%" style="width:0;height:100%;background:${COL[i]};border-radius:99px;transition:width .6s cubic-bezier(.2,.9,.3,1) .15s;"></div></div>
       <div style="display:flex;flex-wrap:wrap;gap:5px;min-height:30px;">${who.length?who.map(p=>avatarInline(p,30)).join(''):'<span class="sub" style="font-size:12px;">personne</span>'}</div></div>`;
   };
   const verdict = tie
@@ -1388,8 +1408,53 @@ function burstConfetti(n){
     s.style.cssText=`position:absolute;top:40%;left:50%;width:${sz}px;height:${sz}px;background:${cols[i%cols.length]};border-radius:2px;--dx:${dx.toFixed(0)}px;--dy:${dy.toFixed(0)}px;animation:confetti ${dur.toFixed(0)}ms cubic-bezier(.15,.7,.3,1) ${delay.toFixed(0)}ms forwards;`;
     wrap.appendChild(s);
   }
-  host.appendChild(wrap);
+  (typeof fxLayer==='function' ? fxLayer() : host).appendChild(wrap);
   setTimeout(()=>wrap.remove(),1600);
+}
+/* Couche d'effets : un div qui survit aux re-renders (innerHTML efface tout le reste) */
+function fxLayer(){
+  if(!window.__fx){
+    const d=document.createElement('div');
+    d.id='fx'; d.style.cssText='position:absolute;inset:0;pointer-events:none;z-index:72;';
+    window.__fx=d;
+  }
+  if(window.__fx.parentNode!==app()) app().appendChild(window.__fx);
+  return window.__fx;
+}
+/* Effets post-rendu : barres qui se remplissent, annonce de tour, gorgées flottantes */
+function postRender(){
+  fxLayer();
+  // 1) barres à croissance (Tu préfères, etc.)
+  document.querySelectorAll('[data-grow]').forEach(el=>{
+    const w=el.dataset.grow; requestAnimationFrame(()=>requestAnimationFrame(()=>{ el.style.width=w; }));
+  });
+  const enJeu = typeof NON_GAME_SCREENS!=='undefined' && !NON_GAME_SCREENS.includes(S.screen);
+  // 2) « À toi de jouer » : sur TON téléphone, quand ton tour arrive (en ligne, chacun son tour)
+  const mienMaintenant = Room.active && controlMode()==='turn' && enJeu && myTurn();
+  if(mienMaintenant && !window.__tourEtaitAMoi && !document.querySelector('.turn-toast')){
+    haptic('ok');
+    const t=document.createElement('div'); t.className='turn-toast';
+    t.innerHTML = avatar(Room.players.find(x=>x.pid===Room.me.pid)||{name:Room.me.name}, 36) + '<span>À toi de jouer !</span>';
+    fxLayer().appendChild(t); setTimeout(()=>t.remove(), 2400);
+  }
+  window.__tourEtaitAMoi = mienMaintenant;
+  // 3) « +N gorgées » flottant quand un score monte
+  const snap={}; S.players.forEach(pl=>{ snap[pl.pid||pl.name]=pl.gorgees||0; });
+  const old=window.__scoreSnap||null, memeEcran=window.__scoreEcran===S.screen;
+  if(old && memeEcran && enJeu){
+    let spawns=0;
+    S.players.forEach(pl=>{
+      const k=pl.pid||pl.name, d=(pl.gorgees||0)-(old[k]!=null?old[k]:(pl.gorgees||0));
+      if(d>0 && spawns<2){
+        spawns++;
+        const f=document.createElement('div'); f.className='floaty';
+        f.style.top=(30+spawns*9)+'%';
+        f.innerHTML = avatar(pl,32) + `<span>${pl.name} boit +${d}</span>`;
+        fxLayer().appendChild(f); setTimeout(()=>f.remove(), 1300);
+      }
+    });
+  }
+  window.__scoreSnap=snap; window.__scoreEcran=S.screen;
 }
 function render(){
   if(typeof clampTurn==='function') clampTurn();
@@ -1415,6 +1480,7 @@ function render(){
     app().insertAdjacentHTML('beforeend', spectatorBar());
     const back=app().querySelector('.iconbtn'); if(back){ back.style.pointerEvents='auto'; }
   }
+  try{ postRender(); }catch(e){}
 }
 // Détection du clavier (iOS/Android) via visualViewport : libère de la place quand on tape un prénom
 (function(){
