@@ -946,6 +946,14 @@ function gameRow(g,i){
     <span style="color:var(--ink2);font-weight:800;font-size:22px;">›</span></div>`;
 }
 
+// Titres de fin de soirée, par rang au classement (0 gorgée = sobre de service)
+function titreSoif(rang, g){
+  if(!g) return 'Le Chauffeur Désigné';
+  const t=['Le Pilier de Comptoir',"L'Éponge Certifiée",'Le Gosier en Pente',
+           'La Descente Honorable','Le Coude Souple',"L'Apprenti Soiffard",
+           'La Petite Nature','Le Sirop-Grenadine'];
+  return t[Math.min(rang-1, t.length-1)];
+}
 SCREENS.scores = () => {
   const me=S.players[S.turn];
   const sorted=[...S.players].sort((a,b)=>b.gorgees-a.gorgees);
@@ -955,7 +963,8 @@ SCREENS.scores = () => {
       ${rank===1?'<div style="font-size:20px;color:#FFD33F;line-height:1;margin-bottom:3px;">♛</div>':''}
       ${avatar(p,rank===1?58:46)}
       <div style="font-family:var(--f);font-weight:800;font-size:14px;margin-top:7px;color:#fff;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${p.name}</div>
-      <div style="font-family:var(--b);font-weight:600;font-size:12px;color:rgba(255,255,255,.7);">${p.gorgees} pts</div>
+      <div style="font-family:var(--b);font-weight:600;font-size:12px;color:rgba(255,255,255,.75);">${p.gorgees} gorgée${p.gorgees>1?'s':''}</div>
+      <div style="font-family:var(--b);font-weight:800;font-size:10px;letter-spacing:.3px;color:#FFD37A;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${titreSoif(rank,p.gorgees)}</div>
       <div style="width:100%;height:${h}px;margin-top:10px;border-radius:16px 16px 0 0;background:${bg};display:flex;align-items:flex-start;justify-content:center;padding-top:10px;font-family:var(--d);font-weight:800;font-size:30px;color:#fff;text-shadow:0 2px 0 rgba(20,8,60,.35);box-shadow:0 5px 0 ${rank===1?'#3A2688':(rank===2?'#A84E12':'#B27F10')},inset 0 3px 0 rgba(255,255,255,.32),inset 0 -10px 18px rgba(0,0,0,.2);transform-origin:bottom;animation:podrise .55s cubic-bezier(.2,1.1,.4,1) ${rank*0.12}s backwards;">${rank}</div>
     </div>` : `<div style="flex:1;"></div>`;
   return `<div class="pad fade">
@@ -972,8 +981,9 @@ SCREENS.scores = () => {
    <div class="panel" style="padding:10px;display:flex;flex-direction:column;gap:6px;">
    ${sorted.map((p,i)=>`<div style="display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:16px;background:${p===me?'#F2EEFF':'transparent'};">
      <b style="font-family:var(--d);color:${i===0?'#F0A93C':'var(--ink2)'};width:22px;font-size:16px;text-align:center;">${i+1}</b>
-     ${avatar(p,38)}<b style="flex:1;font-family:var(--f);color:var(--ink);">${p.name}</b>
-     <b style="font-family:var(--f);color:var(--ink);">${p.gorgees} pts</b></div>`).join('')}
+     ${avatar(p,38)}<div style="flex:1;min-width:0;"><b style="font-family:var(--f);color:var(--ink);display:block;">${p.name}</b>
+       <span style="font-family:var(--b);font-weight:700;font-size:11.5px;color:${i===0?'#D08A12':'var(--ink2)'};">${titreSoif(i+1,p.gorgees)}</span></div>
+     <b style="font-family:var(--f);color:var(--ink);flex:none;">${p.gorgees} gorgée${p.gorgees>1?'s':''}</b></div>`).join('')}
    </div>
    <div class="spacer"></div>
    <button class="btn amber" onclick="go('hub')">Retour aux jeux</button>
@@ -1424,28 +1434,33 @@ SCREENS.pmu = () => {
   const g=S.game, red=i=>i===1||i===2; pmuSize();
   if(g.phase==='bet'){
     const p=S.players[g.betTurn];
-    const names=['Pique','Cœur','Carreau','Trèfle'], cols=['#1A1A24','#E0392B','#EE7A1E','#1FA463'], tint=['#EEF0F8','#FDECEC','#FDF1E7','#EAF6EF'];
-    const card=(i)=>{ const sel=g.betSel===i;
-      return `<button onclick="pmuSelect(${i})" style="position:relative;border:none;cursor:pointer;border-radius:18px;padding:13px 6px;background:${tint[i]};display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:${sel?`0 0 0 3px ${cols[i]},0 14px 24px rgba(0,0,0,.16)`:'0 6px 14px rgba(0,0,0,.10)'};transition:box-shadow .15s,transform .08s;">
-        <div style="position:absolute;inset:8px;border-radius:13px;border:1.5px solid ${cols[i]}33;"></div>
-        <div style="font-size:clamp(34px,11vw,46px);line-height:1;color:${cols[i]};">${SUITS[i]}</div>
-        <div style="font-family:var(--f);font-weight:800;font-size:18px;color:${cols[i]};margin-top:8px;">${names[i]}</div>
-        <div style="width:54%;height:1px;background:${cols[i]}22;margin:8px 0 6px;"></div>
-        <div style="font-family:var(--b);font-weight:600;font-size:12px;color:${cols[i]};opacity:.82;">Couloir ${i+1}</div></button>`; };
+    const names=['Pique','Cœur','Carreau','Trèfle'];
+    const dejaSur=(i)=>S.players.filter((pp,idx)=>idx<g.betTurn && g.bets[idx]===i);
+    const card=(i)=>{ const sel=g.betSel===i, rouge=red(i), qui=dejaSur(i);
+      return `<button onclick="pmuSelect(${i})" style="position:relative;border:none;cursor:pointer;border-radius:22px;padding:15px 8px 11px;
+        background:linear-gradient(180deg,#3E2499,#27136B);
+        box-shadow:${sel?'0 5px 0 #C07C10,0 0 0 3px #FFD33F,0 0 22px rgba(255,211,63,.35),0 14px 24px rgba(10,4,40,.35),inset 0 2px 0 rgba(255,255,255,.18)':'0 5px 0 rgba(18,8,58,.85),0 12px 22px rgba(10,4,40,.3),inset 0 2px 0 rgba(255,255,255,.12)'};
+        display:flex;flex-direction:column;align-items:center;gap:7px;transition:box-shadow .12s,transform .12s;${sel?'transform:translateY(-2px);':''}">
+        <div style="width:54px;height:54px;border-radius:17px;background:${rouge?'linear-gradient(180deg,#FF8472,#D63A2B)':'linear-gradient(180deg,#413C6B,#201D3A)'};display:flex;align-items:center;justify-content:center;font-size:29px;color:#fff;box-shadow:0 3px 0 rgba(0,0,0,.35),inset 0 2px 0 rgba(255,255,255,.25);">${SUITS[i]}</div>
+        <div style="font-family:var(--d);font-weight:800;font-size:16px;color:#fff;">${names[i]}</div>
+        <div style="display:flex;min-height:28px;align-items:center;">${qui.length? qui.map((pp,j)=>`<div style="margin-left:${j?-10:0}px;">${avatar(pp,26)}</div>`).join('') : '<span style="font-family:var(--b);font-weight:600;font-size:11px;color:rgba(255,255,255,.4);">libre</span>'}</div>
+        ${sel?'<div style="position:absolute;top:8px;right:8px;width:22px;height:22px;border-radius:50%;background:#FFD33F;color:#3A2A06;display:flex;align-items:center;justify-content:center;font-family:var(--d);font-weight:800;font-size:13px;">✓</div>':''}
+      </button>`; };
     return `<div class="pad fade">${gameHead('PMU', `<div class="pill">Pari</div>`)}
       <div style="display:flex;align-items:center;justify-content:center;gap:10px;background:rgba(255,255,255,.14);padding:9px 16px;border-radius:999px;align-self:center;margin-bottom:6px;">${avatar(p,30)}<span style="font-weight:700;color:#fff;">Au tour de ${p.name}</span></div>
       <div class="spacer"></div>
       <div class="gpanel" style="padding:16px 14px;">
-        <h2 style="text-align:center;font-size:22px;color:#fff;margin-bottom:13px;">Choisis ton cheval</h2>
+        <h2 style="text-align:center;font-size:22px;color:#fff;margin-bottom:4px;">Choisis ton cheval</h2>
+        <div class="sub" style="text-align:center;font-size:12.5px;margin-bottom:12px;">Plusieurs joueurs peuvent miser sur le même.</div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px;">${[0,1,2,3].map(card).join('')}</div></div>
       <div class="spacer"></div>
       <button class="btn amber" onclick="if(S.game.betSel!=null)pmuChoose(S.game.betSel)" style="${g.betSel==null?'opacity:.55;':''}">Valider mon pari</button></div>`;
   }
   const foot=SUITS.map((s,i)=>{
     const avs=S.players.map((p,idx)=>({p,idx})).filter(o=>g.bets[o.idx]===i).map((o,j)=>`<div style="margin-left:${j?-16:0}px;position:relative;z-index:${9-j};">${avatar(o.p,44)}</div>`).join('');
-    return `<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:7px;">
-      <div style="display:flex;min-height:44px;align-items:center;">${avs||'<div style="width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.14);"></div>'}</div>
-      ${cardHTML({v:1,s:i},36,50)}</div>`;}).join('');
+    return `<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;">
+      <div style="display:flex;min-height:44px;align-items:center;">${avs||'<div style="width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.10);box-shadow:inset 0 2px 4px rgba(0,0,0,.3);"></div>'}</div>
+      <span style="font-size:17px;color:${red(i)?'#FF9A8B':'rgba(255,255,255,.75)'};text-shadow:0 1px 2px rgba(0,0,0,.4);">${s}</span></div>`;}).join('');
   const finish=`<div style="position:absolute;left:0;right:0;top:0;height:14px;background:repeating-linear-gradient(90deg,#FFD33F 0 11px,#2A1170 11px 22px);border-radius:6px;box-shadow:0 0 16px rgba(255,211,63,.35),0 3px 7px rgba(0,0,0,.3),inset 0 1px 0 rgba(255,255,255,.35);"></div>`;
   const board=`<div style="position:relative;overflow:hidden;padding:14px 12px;background:linear-gradient(180deg,#3B2194,#251166);border-radius:24px;border:1px solid rgba(255,255,255,.12);box-shadow:0 6px 0 rgba(18,8,58,.85),0 18px 34px rgba(10,4,40,.4),inset 0 2px 0 rgba(255,255,255,.12),inset 0 -12px 26px rgba(10,4,40,.35);">
     <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:.08;mix-blend-mode:overlay;pointer-events:none;"><filter id="pmuT"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .9 0"/></filter><rect width="100%" height="100%" filter="url(#pmuT)"/></svg>
