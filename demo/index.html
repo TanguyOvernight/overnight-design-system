@@ -991,7 +991,7 @@ SCREENS.bus = () => {
     else if(p.step===3) actions=`<div class="row"><button class="btn" onclick="busGuess('in')">Intérieur</button><button class="btn" onclick="busGuess('out')">Extérieur</button></div>`;
     else actions=`<div class="row" style="flex-wrap:wrap;">${SUITS.map((s,i)=>`<button class="btn" style="flex:1 1 40%;color:${i===1||i===2?'#FFD2CC':'#fff'};" onclick="busGuess(${i})">${s}</button>`).join('')}</div>`;
   }
-  const tag = g.mode==='partage'?'Pyramide':(g.mode==='infini'?'Infini':'Normal');
+  const tag = g.mode==='partage'?'Partagé':(g.mode==='infini'?'Infini':'Normal');
   return `<div class="pad fade">${gameHead('Le Bus', `<div class="pill">${p.step}/4 · ${tag}</div>`)}
     ${turnBanner()}
     <div style="display:flex;justify-content:center;gap:7px;margin-bottom:6px;">${dots}</div>
