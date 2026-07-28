@@ -1244,7 +1244,8 @@ function palmierScene(g){
 SCREENS.palmier = () => {
   const g=S.game; let mid, actions;
   if(g.phase==='setup'){
-    mid=`<div class="gpanel" style="padding:28px 24px;text-align:center;">
+    mid=`<div style="display:flex;justify-content:center;margin-bottom:4px;" class="pop">${svgPalmBottle()}</div>
+      <div class="gpanel" style="padding:24px;text-align:center;">
        <h2 style="font-size:23px;color:#fff;">Mini-jeu d'équilibre ?</h2>
        <div class="sub" style="margin-top:12px;">Avec : après chaque carte, pose-la en équilibre sur le palmier (rate = 3 gorgées). Sans : on applique seulement les règles des cartes.</div>
        <div class="row" style="margin-top:22px;"><button class="btn" onclick="palmSetBalance(true)">Avec</button><button class="btn dark" onclick="palmSetBalance(false)">Sans</button></div></div>`;
@@ -1562,12 +1563,28 @@ SCREENS.vob = () => {
       </div><div class="spacer"></div></div>`;
   }
   if(g.phase==='end'){
+    const cl=[...S.players].sort((a,b)=>(b.gorgees||0)-(a.gorgees||0));
+    const roi=cl[0]||{name:'—',gorgees:0};
+    const ligne=(pl,i)=>`<div style="display:flex;align-items:center;gap:11px;padding:9px 12px;border-radius:16px;background:rgba(255,255,255,${i===0?'.14':'.07'});margin-top:8px;">
+        <b style="font-family:var(--d);font-size:15px;color:${i===0?'#FFD37A':'rgba(255,255,255,.6)'};width:18px;text-align:center;">${i+1}</b>
+        ${avatar(pl,34)}
+        <div style="flex:1;min-width:0;text-align:left;"><b style="font-family:var(--f);font-size:15px;color:#fff;display:block;">${pl.name}</b>
+          <span style="font-family:var(--b);font-weight:700;font-size:10.5px;color:${i===0?'#FFD37A':'rgba(255,255,255,.55)'};">${titreSoif(i+1,pl.gorgees)}</span></div>
+        <b style="font-family:var(--f);font-size:14px;color:#fff;flex:none;">${pl.gorgees||0} gorgée${(pl.gorgees||0)>1?'s':''}</b></div>`;
     return `<div class="pad fade">${gameHead('Action ou Vérité')}<div class="spacer"></div>
-      <div class="gpanel" style="padding:24px;text-align:center;"><b style="font-family:var(--f);font-size:20px;color:#fff;">Partie terminée !</b>
-      <div class="sub" style="margin-top:6px;">${g.count} questions jouées. Beau parcours.</div></div>
+      <div class="pop" style="display:flex;flex-direction:column;align-items:center;gap:6px;">
+        <div style="font-size:30px;line-height:1;color:#FFD33F;text-shadow:0 0 18px rgba(255,211,63,.6);">♛</div>
+        ${avatar(roi,108)}
+        <div style="font-family:var(--d);font-weight:800;font-size:26px;color:#fff;margin-top:4px;">${roi.name}</div>
+        <div style="font-family:var(--d);font-weight:800;font-size:15px;color:#FFD37A;background:rgba(255,211,63,.14);border:1px solid rgba(255,211,63,.35);padding:6px 16px;border-radius:999px;">${titreSoif(1,roi.gorgees)}</div>
+      </div>
+      <div class="gpanel drop" style="padding:14px 14px 16px;margin-top:18px;">
+        <div class="cap" style="text-align:center;margin-bottom:2px;">${g.count} questions jouées</div>
+        ${cl.slice(0,4).map(ligne).join('')}
+      </div>
       <div class="spacer"></div>
-      <button class="btn primary" onclick="go('scores')">Voir le classement</button>
-      <button class="btn" style="margin-top:12px;" onclick="go('hub')">Retour aux jeux</button></div>`;
+      <button class="btn amber" onclick="go('scores')">Classement complet</button>
+      <button class="btn" style="margin-top:11px;" onclick="go('hub')">Retour aux jeux</button></div>`;
   }
   const tgt = g.target===Infinity?'∞':g.target;
   return `<div class="pad fade">${gameHead('Action ou Vérité', `<div class="pill">${g.count+1} / ${tgt}</div>`)}
@@ -1577,7 +1594,9 @@ SCREENS.vob = () => {
    <div class="row"><button class="btn" onclick="vobAns(false)">Je bois&nbsp;<span style="color:#FFD33F;font-size:21px;">(${g.sips})</span></button><button class="btn primary" onclick="vobAns(true)">Je le fais !</button></div>
   </div>`;
 };
-function vobAns(ok){ const g=S.game; haptic(ok?'ok':'tap'); if(!ok) drink(S.turn,g.sips||1); g.count++; if(g.count>=g.target){ g.phase='end'; render(); return; } nextTurn(); vobPick(); render(); }
+function vobAns(ok){ const g=S.game; haptic(ok?'ok':'tap'); if(!ok) drink(S.turn,g.sips||1); g.count++;
+  if(g.count>=g.target){ g.phase='end'; haptic('win'); render(); requestAnimationFrame(()=>burstConfetti(30)); return; }
+  nextTurn(); vobPick(); render(); }
 
 /* ============================ JE N'AI JAMAIS ============================ */
 function startJamais(){ S.game={used:new Set(), s:null}; jamaisPick(); go('jamais'); }
