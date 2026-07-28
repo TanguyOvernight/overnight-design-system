@@ -2011,7 +2011,18 @@ function netResume(){
   if(sess && sess.code && Room.configured()){
     Room.identity();
     const p = sess.isHost ? Room.host({code:sess.code}) : Room.join(sess.code);
-    p.then(()=>{ S.players=Room.players; if(S.screen==='home'){ S.screen='lobby'; } render(); }).catch(()=>{});
+    p.then(()=>{
+      S.players=Room.players;
+      // L'hôte reprend la partie là où elle en était (état persisté à chaque diffusion)
+      let snap=null; try{ snap=JSON.parse(localStorage.getItem('overnight.snap')||'null'); }catch(e){}
+      if(Room.isHost && snap && snap.__code===Room.code && snap.screen){
+        S.screen=snap.screen; S.turn=snap.turn||0; S.reveal=snap.reveal||null;
+        S.game=unpackGame(snap.game); if(snap.control) S.net.control=snap.control;
+        S.net.pendingGame=snap.pending||null;
+        clampTurn(); Room.pushState();
+      } else if(S.screen==='home'){ S.screen='lobby'; }
+      render();
+    }).catch(()=>{});
     return false;
   }
   return false;

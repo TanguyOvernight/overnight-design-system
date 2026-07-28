@@ -161,8 +161,20 @@
       this.identity();
       this.code = (opts && opts.code) || roomCode(4);
       this.isHost = true;
+      this._stateVersion = Date.now();   // versions monotones même après un rechargement
       this.players.length = 0;
-      this.players.push({ pid: this.me.pid, name: this.me.name, avatar: this.me.avatar, online: true, gorgees: 0 });
+      // Reprise : on recharge l'effectif et les scores sauvegardés, marqués hors
+      // ligne — l'appel nominal les repassera en ligne au fil des réponses.
+      var snap = (opts && opts.code) ? store('snap') : null;
+      if (snap && snap.__code === this.code && Array.isArray(snap.__players) && snap.__players.length) {
+        var self2 = this;
+        snap.__players.forEach(function (pl) {
+          pl.online = (pl.pid === self2.me.pid);
+          self2.players.push(pl);
+        });
+      }
+      if (!this.players.some(function (pl) { return pl.pid === this.me.pid; }, this))
+        this.players.push({ pid: this.me.pid, name: this.me.name, avatar: this.me.avatar, online: true, gorgees: 0 });
       return this._open().then(function () {
         self.active = true;
         store('session', { code: self.code, isHost: true });
@@ -245,6 +257,7 @@
       snap.__v = this._stateVersion;
       snap.__players = this.players;
       snap.__code = this.code;
+      store('snap', snap);
       this.transport.broadcast('state', snap);
       this.onUpdate && this.onUpdate();
     },
@@ -278,6 +291,7 @@
       this.active = false; this.code = null; this.isHost = false; this.players.length = 0;
       this.transport = new LocalTransport();
       store('session', null);
+      store('snap', null);
       return t.leave ? t.leave() : Promise.resolve();
     },
 
