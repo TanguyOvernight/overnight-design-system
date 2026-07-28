@@ -9,6 +9,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 <meta name="apple-mobile-web-app-title" content="Drinkin" />
+<link rel="preload" as="image" href="assets/home-drinkin-hd.png" />
 <link rel="manifest" href="manifest.webmanifest" />
 <link rel="apple-touch-icon" href="assets/icon-192.png" />
 <link rel="icon" href="assets/icon-192.png" />
@@ -174,6 +175,18 @@
   .hs-bub{animation:hsBub 3.9s ease-in infinite;transform-box:fill-box;}
   @keyframes hsBub{0%{transform:translateY(0);opacity:0;}14%{opacity:.9;}82%{opacity:.55;}100%{transform:translateY(-62px);opacity:0;}}
   @media (prefers-reduced-motion:reduce){.hs-float,.hs-sway,.hs-bub{animation:none !important;}}
+  /* Splash de démarrage + loaders réseau */
+  #splash{position:fixed;inset:0;z-index:999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;
+    background:radial-gradient(120% 70% at 50% 8%,rgba(140,104,255,.4),transparent 55%),linear-gradient(180deg,#2A1375,#18084F);
+    transition:opacity .45s ease;}
+  #splash.out{opacity:0;pointer-events:none;}
+  .splash-moon{animation:splashPulse 1.6s ease-in-out infinite;filter:drop-shadow(0 0 22px rgba(255,211,63,.5));}
+  @keyframes splashPulse{0%,100%{transform:scale(1);}50%{transform:scale(1.12);}}
+  .ldr-ring{width:26px;height:26px;border-radius:50%;border:3px solid rgba(255,255,255,.18);border-top-color:#FFD33F;animation:spin .9s linear infinite;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+  .net-loader{position:fixed;inset:0;z-index:90;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;
+    background:rgba(14,6,44,.72);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);animation:ovlIn .2s ease;}
+  @media (prefers-reduced-motion:reduce){.splash-moon,.ldr-ring{animation:none !important;}}
   @keyframes shoot{0%{transform:translate(0,0) rotate(18deg);opacity:0;}3%{opacity:.95;}11%{transform:translate(430px,150px) rotate(18deg);opacity:0;}100%{transform:translate(430px,150px) rotate(18deg);opacity:0;}}
   @media (prefers-reduced-motion:reduce){.home-scene *{animation:none !important;}}
   @media (prefers-reduced-motion:reduce){.cflip,.drop,.breathe,.fade,.pop{animation:none !important;}}
@@ -198,6 +211,11 @@
 <script src="net.js"></script>
 </head>
 <body>
+<div id="splash">
+  <svg class="splash-moon" width="58" height="58" viewBox="0 0 64 64"><defs><mask id="spm"><rect width="64" height="64" fill="black"/><circle cx="28" cy="32" r="26" fill="white"/><circle cx="41" cy="25" r="21" fill="black"/></mask></defs><circle cx="28" cy="32" r="26" fill="#FFD33F" mask="url(#spm)"/></svg>
+  <div style="font-family:var(--d),sans-serif;font-weight:800;font-size:27px;color:#fff;letter-spacing:.5px;">Drinkin</div>
+  <div class="ldr-ring"></div>
+</div>
 <div id="app"></div>
 
 <script>
@@ -817,9 +835,13 @@ function logoBlock(){
 }
 
 SCREENS.home = () => `<div class="fade" style="position:absolute;inset:0;${NIGHT}">
-  <img src="assets/home-drinkin.webp" alt="Drinkin"
-    onerror="this.remove();document.getElementById('home-fallback').style.display='block';"
+  <img src="assets/home-drinkin.webp" alt=""
+    onerror="this.remove();if(!window.__hdOk)document.getElementById('home-fallback').style.display='block';"
     style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;">
+  <img src="assets/home-drinkin-hd.png" alt="Drinkin"
+    onload="window.__hdOk=1;this.style.opacity='1';"
+    onerror="this.remove();"
+    style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;opacity:${window.__hdOk?'1':'0'};transition:opacity .5s ease;">
   <div id="home-fallback" style="display:none;position:absolute;inset:0;">${homeScene()}</div>
   <div style="position:absolute;left:0;right:0;bottom:0;height:46%;background:linear-gradient(180deg,rgba(42,19,117,0) 0%,rgba(38,16,106,.55) 42%,rgba(32,12,92,.92) 78%,#1D0A56 100%);pointer-events:none;"></div>
 
@@ -1565,6 +1587,19 @@ function haptic(kind){
   const pat={tap:12, ok:[14,40,22], win:[18,50,18,50,42], fail:[42,60,42]}[kind]||12;
   try{ navigator.vibrate(pat); }catch(e){}
 }
+/* --- Loader réseau (création / connexion de salon) --- */
+function showLoader(msg){
+  hideLoader();
+  const d=document.createElement('div'); d.className='net-loader'; d.id='netldr';
+  d.innerHTML=`<div class="ldr-ring" style="width:34px;height:34px;border-width:4px;"></div>
+    <b style="font-family:var(--f);font-weight:800;color:#fff;font-size:16px;">${msg||'Connexion…'}</b>`;
+  document.body.appendChild(d);
+}
+function hideLoader(){ const d=document.getElementById('netldr'); if(d) d.remove(); }
+/* --- Splash de démarrage : on le retire dès que la page est prête --- */
+function hideSplash(){ const sp=document.getElementById('splash'); if(!sp) return; sp.classList.add('out'); setTimeout(()=>sp.remove(),500); }
+window.addEventListener('load', ()=>setTimeout(hideSplash, 300));
+setTimeout(hideSplash, 2600);   // filet : jamais bloqué sur le splash
 /* --- Modale in-app (remplace alert()) --- */
 function showModal(o){
   const host=app(); if(!host) return;
@@ -1863,12 +1898,13 @@ function netHost(){
     return;
   }
   S.net.error=''; S.net.status='connecting';
+  showLoader('Création du salon…');
   Room.saveIdentity({ name: (Room.me.name||'').trim() || (S.players[0]&&S.players[0].name) || 'Hôte',
                       avatar: Room.me.avatar || (S.players[0]&&S.players[0].avatar) || null });
   Room.host().then(code=>{
-    S.net.status='ok'; S.players=Room.players; S.screen='lobby'; render();
+    hideLoader(); S.net.status='ok'; S.players=Room.players; S.screen='lobby'; render();
   }).catch(e=>{
-    S.net.status='idle';
+    hideLoader(); S.net.status='idle';
     S.net.error = e.message==='CONFIG_MANQUANTE' ? "Mode Online non configuré (config.js)." : ("Connexion impossible : "+e.message);
     render();
   });
@@ -1889,11 +1925,12 @@ function netJoin(){
   const code=(S.net.joinCode||'').toUpperCase().trim();
   if(code.length<4){ S.net.error='Le code fait 4 lettres.'; render(); return; }
   S.net.error=''; S.net.status='connecting'; render();
+  showLoader('Connexion au salon…');
   Room.saveIdentity({ name: (Room.me.name||'').trim() || 'Invité' });
   Room.join(code).then(()=>{
-    S.net.status='ok'; S.players=Room.players; S.screen='lobby'; render();
+    hideLoader(); S.net.status='ok'; S.players=Room.players; S.screen='lobby'; render();
   }).catch(e=>{
-    S.net.status='idle';
+    hideLoader(); S.net.status='idle';
     S.net.error = e.message==='CONFIG_MANQUANTE' ? "Mode Online non configuré (config.js)." : ("Salon introuvable : "+e.message);
     render();
   });
