@@ -161,6 +161,13 @@
   /* Point de progression du Bus qui claque quand on avance */
   @keyframes dotpop{0%{transform:scale(.3);}65%{transform:scale(1.5);}100%{transform:scale(1);}}
   @media (prefers-reduced-motion:reduce){.turn-toast,.floaty{animation:none !important;}}
+  /* Scène d'accueil codée (HTML/CSS/SVG, zéro image) */
+  .home-scene{position:absolute;left:50%;top:40%;width:372px;height:332px;transform:translateX(-50%);transform-origin:top center;pointer-events:none;}
+  @media (max-height:760px){ .home-scene{transform:translateX(-50%) scale(.76);top:35%;} }
+  .home-logo{position:absolute;top:max(48px,env(safe-area-inset-top));left:0;right:0;text-align:center;z-index:1;pointer-events:none;}
+  @keyframes twinkle{0%,100%{opacity:var(--o,.5);}50%{opacity:.12;}}
+  @keyframes floatSlow{0%,100%{transform:translateY(0);}50%{transform:translateY(-7px);}}
+  @media (prefers-reduced-motion:reduce){.home-scene *{animation:none !important;}}
   @media (prefers-reduced-motion:reduce){.cflip,.drop,.breathe,.fade,.pop{animation:none !important;}}
   /* Setup : quand le clavier iOS est ouvert, on replie le haut + le CTA et on colle la liste au-dessus du clavier */
   .su-hide{transition:opacity .18s ease;}
@@ -249,6 +256,75 @@ function cardBack(w,h,dark){
     <circle cx="50" cy="66" r="21" fill="${fg}"/><circle cx="59" cy="59" r="17.5" fill="${bg}"/>
     ${sp(50,26,1)}${sp(50,106,1)}${sp(23,42,0.6)}${sp(77,42,0.6)}${sp(23,90,0.6)}${sp(77,90,0.6)}
   </svg>`;
+}
+/* ============ SCÈNES CODÉES (HTML/CSS/SVG, zéro image) ============ */
+function svgPalm(size,flip){
+  return `<svg width="${size}" height="${size}" viewBox="0 0 100 100" fill="#1D0B5C" style="${flip?'transform:scaleX(-1);':''}opacity:.9;display:block;">
+    <path d="M46 98 C48 70 50 52 46 36 L54 36 C57 56 56 76 54 98 Z"/>
+    <path d="M50 40 C38 27 23 23 9 28 C21 13 40 15 50 26 C60 11 79 12 91 25 C77 22 62 26 52 36 C64 29 79 32 87 43 C74 38 60 40 52 44 C43 37 29 36 16 43 C26 31 42 31 50 40 Z"/>
+  </svg>`;
+}
+function cssCup(w,grad,rot){
+  const h=Math.round(w*1.24);
+  return `<div style="width:${w}px;height:${h}px;border-radius:${Math.round(w*.14)}px ${Math.round(w*.14)}px ${Math.round(w*.24)}px ${Math.round(w*.24)}px;background:${grad};transform:rotate(${rot}deg);box-shadow:0 10px 18px rgba(0,0,0,.32),inset 0 3px 0 rgba(255,255,255,.25),inset 0 -12px 16px rgba(0,0,0,.18);position:relative;flex:none;">
+    <div style="position:absolute;top:${Math.round(h*.07)}px;left:12%;right:12%;height:${Math.round(h*.12)}px;border-radius:50%;background:rgba(255,255,255,.25);"></div></div>`;
+}
+// Bouteille violette stylisée (étiquette lune, bouchon doré) — cœur de l'identité
+function cssBottle(w){
+  const h=Math.round(w*2.5), neckW=Math.round(w*.4), neckH=Math.round(w*.58), lbl=Math.round(w*.62);
+  return `<div style="position:relative;width:${w}px;height:${h+neckH+16}px;flex:none;">
+    <div style="position:absolute;bottom:0;left:0;width:${w}px;height:${h}px;border-radius:${Math.round(w*.3)}px ${Math.round(w*.3)}px ${Math.round(w*.31)}px ${Math.round(w*.31)}px;background:linear-gradient(160deg,#A98BFF 0%,#7C5CF0 46%,#4A2EA0 100%);box-shadow:inset -${Math.round(w*.17)}px 0 0 rgba(0,0,0,.13),inset 0 4px 0 rgba(255,255,255,.22),0 ${Math.round(w*.26)}px ${Math.round(w*.4)}px rgba(15,8,52,.45);"></div>
+    <div style="position:absolute;bottom:${h-4}px;left:50%;transform:translateX(-50%);width:${neckW}px;height:${neckH}px;border-radius:${Math.round(neckW*.24)}px ${Math.round(neckW*.24)}px 4px 4px;background:linear-gradient(180deg,#8E6CF2,#5E40C8);"></div>
+    <div style="position:absolute;bottom:${h+neckH-8}px;left:50%;transform:translateX(-50%);width:${Math.round(neckW*1.15)}px;height:${Math.round(neckW*.55)}px;border-radius:${Math.round(neckW*.2)}px;background:linear-gradient(180deg,#FFE46A,#F1AF24);box-shadow:0 4px 10px rgba(0,0,0,.3);"></div>
+    <div style="position:absolute;bottom:${Math.round(h*.34)}px;left:50%;transform:translateX(-50%);width:${lbl}px;height:${lbl}px;border-radius:50%;background:rgba(255,255,255,.94);box-shadow:inset 0 0 0 3px rgba(124,92,240,.45);"></div>
+    <div style="position:absolute;bottom:${Math.round(h*.34)+Math.round(lbl*.22)}px;left:calc(50% - ${Math.round(lbl*.28)}px);width:${Math.round(lbl*.5)}px;height:${Math.round(lbl*.5)}px;border-radius:50%;background:#FFD33F;box-shadow:inset -${Math.round(lbl*.16)}px -${Math.round(lbl*.09)}px 0 0 #fff;"></div>
+    <div style="position:absolute;bottom:${Math.round(h*.12)}px;left:${Math.round(w*.16)}px;width:${Math.round(w*.13)}px;height:${Math.round(h*.6)}px;border-radius:999px;background:rgba(255,255,255,.26);"></div>
+  </div>`;
+}
+// Props des jeux de questions : mini-deck + bulle « ? » + gobelets
+function sceneProps(){
+  return `<div style="display:flex;align-items:flex-end;justify-content:center;gap:13px;margin:2px 0 6px;">
+    <div style="transform:rotate(-9deg) translateY(3px);">${cardBack(46,64)}</div>
+    <div style="position:relative;margin-bottom:24px;animation:floatSlow 3.4s ease-in-out infinite;">
+      <div style="width:62px;height:50px;border-radius:16px;background:linear-gradient(180deg,#FF6B5A,#E0392B);display:flex;align-items:center;justify-content:center;font-family:var(--d);font-weight:800;font-size:27px;color:#fff;box-shadow:0 10px 20px rgba(150,30,20,.35);">?</div>
+      <div style="position:absolute;left:13px;bottom:-8px;width:0;height:0;border-left:7px solid transparent;border-right:7px solid transparent;border-top:12px solid #E0392B;transform:rotate(14deg);"></div>
+    </div>
+    ${cssCup(44,'linear-gradient(180deg,#FF8472,#E0392B)',8)}
+    ${cssCup(38,'linear-gradient(180deg,#5847A8,#2A2440)',-7)}
+  </div>`;
+}
+// Étoiles générées une fois (stables entre les rendus)
+const HOME_STARS = (()=>{ let out='';
+  for(let i=0;i<34;i++){
+    const x=(Math.random()*96+2).toFixed(1), y=(Math.random()*52+2).toFixed(1);
+    const sz=(Math.random()*2.2+1).toFixed(1), o=(Math.random()*.55+.25).toFixed(2), d=(Math.random()*4+2.5).toFixed(1);
+    out+=`<span style="position:absolute;left:${x}%;top:${y}%;width:${sz}px;height:${sz}px;border-radius:50%;background:#fff;--o:${o};opacity:${o};box-shadow:0 0 6px rgba(255,255,255,.5);animation:twinkle ${d}s ease-in-out ${(i%7)*0.4}s infinite;"></span>`;
+  } return out; })();
+function homeScene(){
+  return `
+  <div style="position:absolute;inset:0;pointer-events:none;overflow:hidden;">
+    ${HOME_STARS}
+    <div style="position:absolute;top:26%;right:36px;animation:floatSlow 5.4s ease-in-out infinite;filter:drop-shadow(0 0 18px rgba(255,211,63,.45));">
+      <svg width="60" height="60" viewBox="0 0 64 64"><defs><mask id="mmoon"><rect width="64" height="64" fill="black"/><circle cx="28" cy="32" r="26" fill="white"/><circle cx="41" cy="25" r="21" fill="black"/></mask></defs><circle cx="28" cy="32" r="26" fill="#FFD33F" mask="url(#mmoon)"/></svg></div>
+    <div style="position:absolute;bottom:262px;left:-24px;">${svgPalm(150,false)}</div>
+    <div style="position:absolute;bottom:286px;right:-30px;">${svgPalm(120,true)}</div>
+  </div>
+  <div class="home-logo">${logoBlock()}
+    <div style="margin-top:10px;font-family:var(--b);font-weight:800;font-size:13px;letter-spacing:3px;color:rgba(255,255,255,.66);text-transform:uppercase;">Le jeu à boire entre potes</div></div>
+  <div class="home-scene">
+    <div style="position:absolute;left:2%;right:2%;bottom:0;height:150px;border-radius:50%;background:radial-gradient(closest-side,rgba(150,112,255,.5),rgba(74,46,160,.26) 66%,transparent);"></div>
+    <div style="position:absolute;left:12%;right:12%;bottom:22px;height:104px;border-radius:50%;border:2px solid rgba(255,255,255,.10);"></div>
+    <div style="position:absolute;left:50%;bottom:56px;transform:translateX(-50%);animation:floatSlow 4.6s ease-in-out infinite;">${cssBottle(78)}</div>
+    <div style="position:absolute;left:6px;bottom:32px;display:flex;">
+      <div style="transform:rotate(-16deg) translateY(8px);">${cardBack(88,123)}</div>
+      <div style="transform:rotate(-3deg);margin-left:-56px;">${cardBack(88,123)}</div>
+      <div style="transform:rotate(11deg) translateY(7px);margin-left:-54px;">${cardBack(88,123)}</div>
+    </div>
+    <div style="position:absolute;right:14px;bottom:36px;display:flex;align-items:flex-end;gap:6px;">
+      ${cssCup(56,'linear-gradient(180deg,#FF8472,#E0392B)',-8)}
+      ${cssCup(48,'linear-gradient(180deg,#5847A8,#2A2440)',10)}
+    </div>
+  </div>`;
 }
 const AVATARS = {
   Homme: Array.from({length:30},(_,i)=>'assets/avatars/h'+String(i+1).padStart(2,'0')+'.jpg'),
@@ -642,7 +718,7 @@ function logoBlock(){
 }
 
 SCREENS.home = () => `<div class="fade" style="position:absolute;inset:0;${NIGHT}">
-  <img src="assets/home-bg.png" alt="" onerror="this.remove()" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+  ${homeScene()}
   <div style="position:absolute;left:0;right:0;bottom:0;height:360px;background:linear-gradient(180deg,transparent,rgba(8,4,26,.6));pointer-events:none;"></div>
   <div style="position:absolute;left:28px;right:28px;bottom:calc(44px + env(safe-area-inset-bottom));display:grid;grid-template-columns:1fr 1fr;gap:18px;z-index:2;">
     <button onclick="go('setup')" style="height:136px;border-radius:28px;background:linear-gradient(180deg,#FFE46A,#FFC934 55%,#F1AF24);color:#3A245C;border:none;box-shadow:0 18px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.35);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;cursor:pointer;">
@@ -775,7 +851,13 @@ SCREENS.bus = () => {
     const modeBtn=(m,t,d)=>`<button onclick="busSetMode('${m}')" style="border:none;cursor:pointer;border-radius:18px;background:var(--lav-soft);padding:16px 18px;text-align:left;display:flex;flex-direction:column;gap:3px;">
       <span style="font-family:var(--d);font-weight:800;font-size:18px;color:var(--indigo);">${t}</span>
       <span style="font-family:var(--b);font-weight:600;font-size:13px;color:var(--ink2);line-height:1.35;">${d}</span></button>`;
-    const mid=`<div class="gpanel" style="padding:24px;text-align:center;"><h2 style="font-size:22px;color:#fff;">Mode de jeu</h2>
+    const mid=`<div class="gpanel" style="padding:24px;text-align:center;">
+        <div style="display:flex;justify-content:center;margin-bottom:14px;">
+          <div style="transform:rotate(-14deg) translateY(5px);">${cardBack(54,76)}</div>
+          <div style="transform:rotate(-2deg);margin-left:-30px;">${cardBack(54,76)}</div>
+          <div style="transform:rotate(11deg) translateY(4px);margin-left:-30px;">${cardBack(54,76)}</div>
+        </div>
+        <h2 style="font-size:22px;color:#fff;">Mode de jeu</h2>
       <div style="display:flex;flex-direction:column;gap:12px;margin-top:18px;">
        ${modeBtn('partage','Chacun son tour','1 carte par tour, à plusieurs. Tu gardes ta progression même en ratant (tu bois juste). La partie finit quand chaque joueur a fait ses 4 cartes.')}
        ${modeBtn('infini','Recommencer','Solo, sans pitié : le moindre rate te renvoie à l’étape 1. Tu gardes le téléphone jusqu’à réussir les 4 d’affilée.')}
@@ -900,9 +982,17 @@ SCREENS.ftd = () => {
        <div class="cflip" style="display:flex;justify-content:center;">${cardHTML({v:g.target,s:0},120,168)}</div>
        <div class="drop" style="margin-top:16px;"><b style="font-family:var(--f);font-size:20px;color:${r.ok?'#7BE8C0':'#FF9A8B'};">${r.title}</b><div class="sub" style="font-size:14px;margin-top:4px;">${r.msg}</div></div></div>`;
   } else {
-    mid=`<div class="gpanel" style="padding:22px;text-align:center;">
+    const jeton=(x,y,c)=>`<div style="position:absolute;${x};${y};width:34px;height:34px;border-radius:50%;background:${c};box-shadow:0 3px 0 rgba(0,0,0,.35),inset 0 0 0 4px rgba(255,255,255,.75),inset 0 0 0 7px ${c};"></div>
+      <div style="position:absolute;${x.replace(/(\d+)px/,(m,v)=>(+v+5)+'px')};${y.replace(/(\d+)px/,(m,v)=>(+v+6)+'px')};width:34px;height:34px;border-radius:50%;background:${c};opacity:.55;z-index:-1;"></div>`;
+    mid=`<div class="gpanel" style="padding:18px;text-align:center;">
        <div class="cap" style="margin-bottom:12px;">Le donneur</div>
-       <div style="display:flex;justify-content:center;">${cardBack(192,268)}</div>
+       <div style="position:relative;border-radius:24px;padding:22px 16px 18px;background:radial-gradient(130% 110% at 50% 0%,#2F8A62,#1E5C41 72%);box-shadow:inset 0 0 44px rgba(0,0,0,.28),inset 0 2px 0 rgba(255,255,255,.14),0 12px 26px rgba(8,40,26,.35);">
+         <div style="position:absolute;inset:9px;border-radius:17px;border:2px dashed rgba(255,255,255,.16);"></div>
+         ${jeton('left:16px','bottom:18px','#E0392B')}
+         ${jeton('right:18px','top:24px','#3B4CC0')}
+         ${jeton('right:30px','bottom:16px','#F0A93C')}
+         <div style="display:flex;justify-content:center;position:relative;">${cardBack(176,246)}</div>
+       </div>
        <div style="margin-top:16px;"><b style="font-family:var(--f);font-size:17px;color:${g.hint?'#5CE0BC':'#fff'};">${g.hint||'Devine la valeur de la carte.'}</b><div class="sub" style="font-size:13px;margin-top:4px;${g.tries===1?'color:#FFB16E;font-weight:800;':''}">${g.tries===1?'Dernier essai — sinon 2 gorgées !':'Essais restants : '+g.tries+' · sinon 2 gorgées'}</div></div>
        <div class="row" style="flex-wrap:wrap;gap:7px;justify-content:center;margin-top:16px;">${VN.slice(1).map((n,i)=>{
          const v=i+1, out=v<g.lo||v>g.hi, done=g.tried.includes(v);
@@ -1261,7 +1351,8 @@ SCREENS.vob = () => {
   if(g.phase==='setup'){
     // Plus de choix de thème : tout est mélangé (g.cat reste 'tout'), on choisit juste la durée.
     return `<div class="pad fade">${gameHead('Action ou Vérité')}<div class="spacer"></div>
-      <h2 style="text-align:center;font-size:24px;">Longueur de la partie</h2>
+      ${sceneProps()}
+      <h2 style="text-align:center;font-size:24px;margin-top:14px;">Longueur de la partie</h2>
       <div class="sub center" style="font-size:14px;margin-top:8px;">Vérités, gages, humour noir… tout est mélangé.</div>
       <div style="display:flex;flex-direction:column;gap:12px;margin-top:22px;">
         ${[50,100].map(n=>`<button class="btn" onclick="vobSetCount(${n})">${n} questions</button>`).join('')}
@@ -1752,6 +1843,12 @@ SCREENS.gamemode = () => {
   return `<div class="pad fade">
     <div class="hdr"><button class="iconbtn" onclick="go('hub')">‹</button><h2 style="flex:1;text-align:center;font-size:20px;">${g.nom}</h2><div style="width:42px"></div></div>
     <div class="spacer"></div>
+    <div style="display:flex;justify-content:center;margin-bottom:18px;">
+      <div style="width:96px;height:96px;border-radius:26px;background:${(GAMES.find(x=>x.id===id)||{}).col||'#6C4FE0'};position:relative;overflow:hidden;box-shadow:0 16px 32px rgba(0,0,0,.35),inset 0 -12px 22px rgba(35,18,80,.18);display:flex;align-items:center;justify-content:center;font-family:var(--f);font-weight:800;font-size:34px;color:#fff;">
+        ${(GAMES.find(x=>x.id===id)||{}).t||'?'}
+        <img src="assets/jeu-${id}.png" alt="" onerror="this.remove()" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+      </div>
+    </div>
     <div class="cap" style="margin-bottom:12px;">Comment vous jouez ?</div>
     ${opt('turn','Chacun son tour',"Chaque joueur agit sur son téléphone quand vient son tour.",svgTour)}
     ${opt('host','Le MJ pilote',"Tu fais avancer pour tout le monde. Plus rapide, idéal pour les questions.",svgMj)}
