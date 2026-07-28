@@ -1031,6 +1031,33 @@ SCREENS.bus = () => {
       </div></div>`;
     return `<div class="pad fade">${gameHead('Le Bus')}${turnBanner()}<div class="gamebody">${mid}</div></div>`;
   }
+  if(g.phase==='pyr'){
+    const py=g.pyr, fini=py.i>=py.cards.length;
+    // pyramide affichée ligne 4 (1 carte) en haut -> ligne 1 (4 cartes) en bas
+    const lignes=[4,3,2,1].map(l=>{
+      const cs=py.cards.filter(x=>x.ligne===l);
+      return `<div style="display:flex;justify-content:center;gap:7px;margin-bottom:7px;">${cs.map(x=>
+        `<div style="${x.flip?'':'opacity:.95;'}${py.last&&x.flip&&x.c===py.last.c?'filter:drop-shadow(0 0 12px rgba(255,211,63,.65));':''}">${x.flip?cardHTML(x.c,52,73):cardBack(52,73)}</div>`).join('')}</div>`;
+    }).join('');
+    const last=py.last;
+    const info = !last ? `<div class="sub center" style="font-size:14px;">Ligne 1 = 1 gorgée · ligne 2 = 2 · ligne 3 = 3 · ligne 4 = 4 — par carte en main.</div>`
+      : `<div class="drop" style="text-align:center;">
+          <b style="font-family:var(--f);font-size:17px;color:#FFD37A;">Ligne ${last.ligne} — ${last.ligne} gorgée${last.ligne>1?'s':''} par carte</b>
+          ${last.porteurs.length
+            ? last.porteurs.map(o=>`<div style="margin-top:8px;font-family:var(--f);font-weight:800;font-size:16px;color:#fff;">${playerTag(o.pl)} a ${o.nb>1?o.nb+' fois ':''}la carte — distribue ${o.nb*last.ligne} gorgée${o.nb*last.ligne>1?'s':''} !</div>`).join('')
+            : `<div class="sub" style="margin-top:7px;font-size:14px;">Personne ne l'a. Carte morte, on respire.</div>`}
+        </div>`;
+    return `<div class="pad fade">${gameHead('Le Bus', `<div class="pill">Pyramide ${py.i}/${py.cards.length}</div>`)}
+      ${fini?'':turnBanner()}
+      <div class="gamebody" style="gap:10px;">
+        <div>${lignes}</div>
+        ${info}
+      </div>
+      ${fini
+        ? `<button class="btn amber" onclick="busPyrEnd()">Terminer</button>`
+        : `<button class="btn primary" onclick="busPyrFlip()">Retourner une carte</button>`}
+    </div>`;
+  }
   const p=busProg(), r=S.reveal;
   const dots=[1,2,3,4].map(n=>`<span style="width:30px;height:9px;border-radius:99px;background:${n<=p.step?'linear-gradient(180deg,#FFE370,#F3AD1E)':'rgba(255,255,255,.20)'};box-shadow:${n<=p.step?'0 2px 0 rgba(150,90,10,.5),inset 0 1px 0 rgba(255,255,255,.5)':'inset 0 1.5px 3px rgba(0,0,0,.28)'};${n===p.step?'animation:dotpop .45s cubic-bezier(.2,1.3,.5,1);':''}"></span>`).join('');
   const prompts={1:'Rouge ou Noir ?',2:'Plus ou moins ?',3:'Intérieur ou extérieur ?',4:"Quelle enseigne ?"};
@@ -1081,7 +1108,12 @@ function busNext(){
   const p=busProg(), ok=S.reveal.ok; S.reveal=null;
   if(g.mode==='partage'){
     p.step++;                       // on avance qu'on ait gagné OU perdu — la progression est gardée
-    if(g.players.every(pl=>pl.step>4)){ haptic('win'); showModal({emoji:'🏁',title:'Partie terminée !',msg:'Chaque joueur a fait ses 4 cartes. On regarde les dégâts ?',cta:'Voir le classement',after:()=>go('scores')}); return; }
+    if(g.players.every(pl=>pl.step>4)){ haptic('win');
+      showModal({emoji:'🔺',title:'La vraie Pyramide ?',
+        msg:'On retourne une pyramide de cartes : si tu as la valeur dans ta main de 4 cartes, tu distribues. Ligne 1 = 1 gorgée, ligne 2 = 2, ligne 3 = 3, ligne 4 = 4 — par carte en main.',
+        cta:'Lancer la pyramide', after:()=>busStartPyr(),
+        cta2:'Directement au classement', after2:()=>go('scores')});
+      return; }
     for(let k=0;k<S.players.length;k++){ nextTurn(); if(g.players[S.turn].step<=4) break; } // passe au prochain pas encore arrivé au bout
     render(); return;
   }
@@ -1101,6 +1133,35 @@ function busNext(){
   }
 }
 
+/* --- La vraie Pyramide (fin du mode partagé) --- */
+function busStartPyr(){
+  const g=S.game; if(!g || g.mode!=='partage') return;
+  const cards=[];
+  [[1,4],[2,3],[3,2],[4,1]].forEach(([ligne,nb])=>{   // ligne 1 en bas (4 cartes) -> ligne 4 (1 carte)
+    for(let k=0;k<nb;k++) cards.push({c:draw(g.deck), ligne, flip:false});
+  });
+  g.phase='pyr'; g.pyr={cards, i:0, last:null};
+  S.reveal=null; render();
+}
+function busPyrFlip(){
+  const g=S.game; if(!g || !g.pyr || g.pyr.i>=g.pyr.cards.length) return;
+  const it=g.pyr.cards[g.pyr.i]; it.flip=true; g.pyr.i++;
+  // qui a cette VALEUR dans sa main de 4 cartes ?
+  const porteurs=S.players.map((pl,idx)=>{
+    const main=(g.players[idx]&&g.players[idx].cards)||[];
+    const nb=main.filter(c=>c.v===it.c.v).length;
+    return nb>0 ? {pl, nb} : null;
+  }).filter(Boolean);
+  g.pyr.last={c:it.c, ligne:it.ligne, porteurs};
+  haptic(porteurs.length?'win':'tap');
+  nextTurn();                                        // le suivant retournera la prochaine
+  render();
+  if(porteurs.length) requestAnimationFrame(()=>burstConfetti(16));
+}
+function busPyrEnd(){
+  showModal({emoji:'🏁',title:'Pyramide terminée !',msg:'Toutes les cartes sont retournées. On regarde les dégâts ?',
+    cta:'Voir le classement',after:()=>go('scores')});
+}
 /* ============================ PURPLE ============================ */
 function startPurple(){ S.game={deck:newDeck(), cards:[], pot:0, last:null}; go('purple'); }
 SCREENS.purple = () => {
@@ -1708,16 +1769,21 @@ function showModal(o){
     ${o.avatar||''}
     <h3>${o.title}</h3>
     ${o.msg?`<p>${o.msg}</p>`:''}
-    <button class="btn ${o.tone||'amber'}" style="margin-top:22px;" onclick="closeModal()">${o.cta||'Continuer'}</button>
+    <button class="btn ${o.tone||'amber'}" style="margin-top:22px;" onclick="modalGo(1)">${o.cta||'Continuer'}</button>
+    ${o.cta2?`<button class="btn sm" style="margin-top:10px;" onclick="modalGo(2)">${o.cta2}</button>`:''}
   </div>`;
   el.addEventListener('click', e=>{ if(e.target===el) closeModal(); });
   host.appendChild(el);
   S.modalAfter = o.after || null;
+  S.modalAfter2 = o.after2 || null;
 }
-function closeModal(){
+function modalGo(k){
   const el=document.getElementById('ovl'); if(el) el.remove();
-  const fn=S.modalAfter; S.modalAfter=null; if(fn) fn();
+  const fn = (k===2 ? S.modalAfter2 : S.modalAfter);
+  S.modalAfter=null; S.modalAfter2=null;
+  if(fn) fn();
 }
+function closeModal(){ modalGo(1); }
 // Petite explosion festive (stars/confettis) — superposée à #app, auto-nettoyée
 function burstConfetti(n){
   const host=app(); if(!host) return;
@@ -1883,7 +1949,7 @@ const NET_ACTIONS = ['busGuess','busNext','busSetMode','palmierTirer','palmierBa
   'palmierNext','palmSetBalance','ftdGuess','startFtd','pmuChoose','pmuSelect','pmuDraw',
   'purpleGuess','purpleNext','echelleTirer','echelleSetGuess','echelleToGuess','echelleReveal',
   'echelleNext','vobAns','vobSetCat','vobSetCount','jamaisAns','prefVote','prefNext','startGame',
-  'chooseGame','pickControl','launchPending','skipTurn'];
+  'chooseGame','pickControl','launchPending','skipTurn','busStartPyr','busPyrFlip','busPyrEnd'];
 const ORIG = {};
 NET_ACTIONS.forEach(name=>{
   if(typeof window[name]!=='function') return;
