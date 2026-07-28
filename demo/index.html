@@ -1122,7 +1122,7 @@ function busNext(){
     if(p.step>4){ const w=cur(); haptic('win');
       showModal({avatar:`<div style="display:flex;justify-content:center;margin-bottom:14px;">${avatar(w,96)}</div>`,title:w.name+' a réussi le Bus !',msg:'Carton plein. Distribue 4 gorgées à qui tu veux.',cta:'Distribué !',
         after:()=>{ p.step=1; p.cards=[]; nextTurn(); render(); }});
-      burstConfetti(30); return; }
+      fireworks(); return; }
     render();
   } else {
     if(g.mode==='infini'){ p.step=1; p.cards=[]; render(); }
@@ -1159,10 +1159,29 @@ function busPyrFlip(){
   if(porteurs.length) requestAnimationFrame(()=>burstConfetti(16));
 }
 function busPyrEnd(){
+  fireworks();
   showModal({emoji:'🏁',title:'Pyramide terminée !',msg:'Toutes les cartes sont retournées. On regarde les dégâts ?',
     cta:'Voir le classement',after:()=>go('scores')});
 }
 /* ============================ PURPLE ============================ */
+// La cagnotte visualisée en élixir : la fiole se remplit avec les gorgées en jeu
+function svgFiole(pot){
+  const fill=Math.min(1,pot/12), lh=Math.round(46*fill);
+  const glow = pot>=6 ? 'filter:drop-shadow(0 0 12px rgba(199,125,255,.65));' : '';
+  return `<svg width="36" height="74" viewBox="0 0 36 74" style="display:block;${glow}">
+    <defs><linearGradient id="fioleL" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9A6FF"/><stop offset="1" stop-color="#8B4FE0"/></linearGradient>
+    <clipPath id="fioleC"><rect x="6" y="20" width="24" height="50" rx="10"/></clipPath></defs>
+    <rect x="13" y="8" width="10" height="14" rx="3" fill="rgba(255,255,255,.25)"/>
+    <rect x="11" y="3" width="14" height="7" rx="3" fill="#F0A92A"/>
+    <rect x="6" y="20" width="24" height="50" rx="10" fill="rgba(255,255,255,.10)" stroke="rgba(255,255,255,.4)" stroke-width="1.6"/>
+    <g clip-path="url(#fioleC)">
+      <rect x="6" y="${68-lh}" width="24" height="${lh+4}" fill="url(#fioleL)"/>
+      ${pot>0?`<ellipse cx="18" cy="${68-lh}" rx="11" ry="2.6" fill="#F5CFFF" opacity=".85"/>`:''}
+      ${pot>=3?`<circle cx="14" cy="${70-lh/2}" r="1.6" fill="#fff" opacity=".6"/><circle cx="22" cy="${66-lh/3}" r="1.2" fill="#fff" opacity=".5"/>`:''}
+    </g>
+    <rect x="9" y="24" width="4" height="34" rx="2" fill="#fff" opacity=".22"/>
+  </svg>`;
+}
 function startPurple(){ S.game={deck:newDeck(), cards:[], pot:0, last:null}; go('purple'); }
 SCREENS.purple = () => {
   const g=S.game;
@@ -1172,8 +1191,13 @@ SCREENS.purple = () => {
   const slots=[0,1,2].map(i=>slot(g.cards[i])).join('');
   const done=g.cards.length>=3, canP=g.cards.length<=1;
   const mid=`<div class="gpanel" style="padding:22px;text-align:center;">
-     <div class="cap">Cagnotte</div>
-     <div style="font-family:var(--d);font-size:34px;color:#fff;margin:2px 0 18px;line-height:1;">${g.pot} <span style="font-size:15px;font-family:var(--b);font-weight:700;color:rgba(255,255,255,.72);">gorgée${g.pot>1?'s':''}</span></div>
+     <div style="display:flex;align-items:center;justify-content:center;gap:16px;margin:0 0 16px;">
+       ${svgFiole(g.pot)}
+       <div style="text-align:left;">
+         <div class="cap">Cagnotte</div>
+         <div style="font-family:var(--d);font-size:36px;color:#fff;line-height:1;">${g.pot}<span style="font-size:15px;font-family:var(--b);font-weight:700;color:rgba(255,255,255,.72);"> gorgée${g.pot>1?'s':''}</span></div>
+       </div>
+     </div>
      <div style="display:flex;gap:12px;justify-content:center;align-items:flex-start;">${slots}</div>
      ${g.last?`<div class="drop" style="margin-top:18px;"><b style="font-family:var(--f);font-size:18px;color:${g.last.ok?'#7BE8C0':'#FF9A8B'};">${g.last.title}</b><div class="sub" style="font-size:13px;margin-top:4px;">${g.last.msg}</div></div>`:`<div class="sub" style="margin-top:18px;font-size:13px;">Rouge ou Noir (1 carte) · Purple = 2 cartes, il faut 1 rouge + 1 noir.</div>`}</div>`;
   let actions;
@@ -1553,7 +1577,7 @@ function pmuDraw(){
       if(!g.side[i].flipped && minPos>p){ g.side[i].flipped=true; const su=g.side[i].card.s; if(g.pos[su]>0) g.pos[su]--; g.flips.push(SUITS[su]+' recule !'); changed=true; }
     }
   }
-  for(let i=0;i<4;i++){ if(g.pos[i]>=g.fin){ g.winner=i; S.players.forEach((p,idx)=>{ if(g.bets[idx]!==i) drink(idx,3); }); render(); requestAnimationFrame(()=>burstConfetti(24)); return; } }
+  for(let i=0;i<4;i++){ if(g.pos[i]>=g.fin){ g.winner=i; S.players.forEach((p,idx)=>{ if(g.bets[idx]!==i) drink(idx,3); }); render(); requestAnimationFrame(()=>fireworks()); return; } }
   pmuAnimate();
 }
 
@@ -1656,7 +1680,7 @@ SCREENS.vob = () => {
   </div>`;
 };
 function vobAns(ok){ const g=S.game; haptic(ok?'ok':'tap'); if(!ok) drink(S.turn,g.sips||1); g.count++;
-  if(g.count>=g.target){ g.phase='end'; haptic('win'); render(); requestAnimationFrame(()=>burstConfetti(30)); return; }
+  if(g.count>=g.target){ g.phase='end'; haptic('win'); render(); requestAnimationFrame(()=>fireworks()); return; }
   nextTurn(); vobPick(); render(); }
 
 /* ============================ JE N'AI JAMAIS ============================ */
@@ -1784,6 +1808,48 @@ function modalGo(k){
   if(fn) fn();
 }
 function closeModal(){ modalGo(1); }
+/* Feu d'artifice par particules : canvas additif, traînées, scintillement.
+   Réservé aux GRANDS moments (victoires) — les confettis DOM restent pour le reste. */
+function fireworks(){
+  try{
+    if(matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const host=app(); if(!host) return;
+    const cv=document.createElement('canvas');
+    cv.style.cssText='position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:85;';
+    host.appendChild(cv);
+    const r=host.getBoundingClientRect();
+    cv.width=Math.max(2,r.width|0); cv.height=Math.max(2,r.height|0);
+    const ctx=cv.getContext('2d'); if(!ctx){ cv.remove(); return; }
+    const W=cv.width,H=cv.height;
+    const cols=['#FFD33F','#FFC04D','#B98CFF','#FF8A7A','#FFFFFF'];
+    const parts=[];
+    const burst=(x,y,k)=>{ const nb=88;
+      for(let i=0;i<nb;i++){ const a=(i/nb)*6.283+Math.random()*.12, sp=(1.7+Math.random()*2.7)*k;
+        parts.push({x,y,vx:Math.cos(a)*sp,vy:Math.sin(a)*sp,life:1,dec:.011+Math.random()*.011,
+          col:cols[(Math.random()*cols.length)|0], sz:1.4+Math.random()*2.3}); } };
+    burst(W*.5,H*.32,1);
+    setTimeout(()=>burst(W*.28,H*.26,.8),240);
+    setTimeout(()=>burst(W*.74,H*.38,.85),460);
+    let vive=true; const t0=performance.now();
+    (function tick(){
+      if(!vive) return;
+      requestAnimationFrame(tick);
+      ctx.globalCompositeOperation='destination-out';
+      ctx.fillStyle='rgba(0,0,0,.16)'; ctx.fillRect(0,0,W,H);
+      ctx.globalCompositeOperation='lighter';
+      for(const q of parts){
+        if(q.life<=0) continue;
+        q.x+=q.vx; q.y+=q.vy; q.vy+=.045; q.vx*=.985; q.vy*=.985; q.life-=q.dec;
+        ctx.globalAlpha=Math.max(0,q.life)*(.6+.4*Math.sin(q.life*40+q.sz*9));
+        ctx.fillStyle=q.col;
+        ctx.beginPath(); ctx.arc(q.x,q.y,q.sz,0,6.283); ctx.fill();
+      }
+      ctx.globalAlpha=1;
+      if(performance.now()-t0>2600){ vive=false; cv.remove(); }
+    })();
+    haptic('win');
+  }catch(e){}
+}
 // Petite explosion festive (stars/confettis) — superposée à #app, auto-nettoyée
 function burstConfetti(n){
   const host=app(); if(!host) return;
@@ -2006,6 +2072,11 @@ SCREENS.online = () => {
 SCREENS.join = () => `<div class="pad fade">
   <div class="hdr"><button class="iconbtn" onclick="go('online')">${CHEV}</button><h2 style="flex:1;text-align:center;font-size:21px;">Rejoindre</h2><div style="width:44px"></div></div>
   <div class="spacer"></div>
+  <div class="pop" style="display:flex;justify-content:center;align-items:flex-end;gap:12px;margin-bottom:20px;">
+    <div style="transform:rotate(-12deg) translateY(4px);filter:drop-shadow(0 8px 12px rgba(10,4,40,.4));">${cardBack(44,61)}</div>
+    <svg width="32" height="32" viewBox="0 0 64 64" style="margin-bottom:26px;filter:drop-shadow(0 0 10px rgba(255,211,63,.5));animation:floatSlow 5s ease-in-out infinite;"><defs><mask id="jnMoon"><rect width="64" height="64" fill="black"/><circle cx="28" cy="32" r="26" fill="white"/><circle cx="41" cy="25" r="21" fill="black"/></mask></defs><circle cx="28" cy="32" r="26" fill="#FFD33F" mask="url(#jnMoon)"/></svg>
+    <div style="transform:rotate(10deg) translateY(3px);filter:drop-shadow(0 8px 12px rgba(10,4,40,.4));">${cardBack(38,53,true)}</div>
+  </div>
   <div class="gpanel" style="padding:24px;text-align:center;">
     <div class="cap">Code du salon</div>
     <input id="rc" value="${(S.net.joinCode||'').replace(/"/g,'&quot;')}" maxlength="4" autocapitalize="characters" autocomplete="off"
@@ -2321,6 +2392,21 @@ function spectatorBar(){
       gl.uniform1f(uT,ts*.001); gl.drawArrays(gl.TRIANGLES,0,3);
     })(0);
   }catch(e){ /* WebGL indisponible : le dégradé statique reste */ }
+})();
+
+/* Parallaxe au gyroscope sur l'accueil : l'image respire quand on incline le
+   téléphone. Sans capteur (ou sans permission iOS), il ne se passe rien. */
+(function(){
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  addEventListener('deviceorientation', e=>{
+    if(e.gamma==null || S.screen!=='home') return;
+    const gx=Math.max(-22,Math.min(22,e.gamma))/22;
+    const gy=Math.max(-22,Math.min(22,(e.beta==null?45:e.beta)-45))/22;
+    document.querySelectorAll('#app img[src*="home-drinkin"]').forEach(img=>{
+      img.style.willChange='transform';
+      img.style.transform=`scale(1.07) translate(${(gx*-9).toFixed(1)}px,${(gy*-7).toFixed(1)}px)`;
+    });
+  });
 })();
 
 loadSession();
