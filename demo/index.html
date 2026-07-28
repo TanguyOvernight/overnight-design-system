@@ -174,6 +174,10 @@
   @keyframes hsSway{0%,100%{transform:rotate(0deg);}50%{transform:rotate(1.6deg);}}
   .hs-bub{animation:hsBub 3.9s ease-in infinite;transform-box:fill-box;}
   @keyframes hsBub{0%{transform:translateY(0);opacity:0;}14%{opacity:.9;}82%{opacity:.55;}100%{transform:translateY(-62px);opacity:0;}}
+  .aura-rays{animation:auraSpin 46s linear infinite;transform-box:fill-box;transform-origin:center;}
+  @keyframes auraSpin{to{transform:rotate(360deg);}}
+  .aura-spark{animation:twinkle var(--d,3s) ease-in-out var(--dl,0s) infinite;}
+  @media (prefers-reduced-motion:reduce){.aura-rays,.aura-spark{animation:none !important;}}
   @media (prefers-reduced-motion:reduce){.hs-float,.hs-sway,.hs-bub{animation:none !important;}}
   /* Splash de démarrage + loaders réseau */
   #splash{position:fixed;inset:0;z-index:999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;
@@ -1115,14 +1119,16 @@ SCREENS.ftd = () => {
       <div style="position:absolute;${x.replace(/(\d+)px/,(m,v)=>(+v+5)+'px')};${y.replace(/(\d+)px/,(m,v)=>(+v+6)+'px')};width:34px;height:34px;border-radius:50%;background:${c};opacity:.55;z-index:-1;"></div>`;
     mid=`<div class="gpanel" style="padding:18px;text-align:center;">
        <div class="cap" style="margin-bottom:12px;">Le donneur</div>
-       <div style="position:relative;border-radius:24px;padding:22px 16px 18px;background:radial-gradient(130% 110% at 50% 0%,#2F8A62,#1E5C41 72%);box-shadow:inset 0 0 44px rgba(0,0,0,.3),inset 0 2px 0 rgba(255,255,255,.14),0 12px 26px rgba(8,40,26,.35);overflow:hidden;">
-         <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:.12;mix-blend-mode:overlay;pointer-events:none;"><filter id="feltT"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .9 0"/></filter><rect width="100%" height="100%" filter="url(#feltT)"/></svg>
-         <div style="position:absolute;inset:7px;border-radius:18px;border:1.5px solid rgba(240,169,60,.4);"></div>
-         <div style="position:absolute;inset:11px;border-radius:15px;border:2px dashed rgba(255,255,255,.15);"></div>
-         ${jeton('left:16px','bottom:18px','#E0392B')}
-         ${jeton('right:18px','top:24px','#3B4CC0')}
-         ${jeton('right:30px','bottom:16px','#F0A93C')}
-         <div style="display:flex;justify-content:center;position:relative;">${cardBack(176,246)}</div>
+       <div style="position:relative;border-radius:24px;padding:30px 16px 26px;background:radial-gradient(120% 95% at 50% 18%,#3A1E86 0%,#241060 58%,#150941 100%);box-shadow:inset 0 0 60px rgba(0,0,0,.42),0 12px 26px rgba(10,4,40,.4);overflow:hidden;">
+         <svg class="aura-rays" viewBox="0 0 100 100" style="position:absolute;left:50%;top:50%;width:560px;height:560px;margin:-280px 0 0 -280px;pointer-events:none;opacity:.6;">
+           ${[0,45,90,135,180,225,270,315].map(a=>`<path d="M50 50 L46.5 0 L53.5 0 Z" transform="rotate(${a} 50 50)" fill="url(#rayG)"/>`).join('')}
+           <defs><linearGradient id="rayG" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#FFD33F" stop-opacity=".14"/><stop offset=".55" stop-color="#B08CFF" stop-opacity=".07"/><stop offset="1" stop-color="#B08CFF" stop-opacity="0"/></linearGradient></defs>
+         </svg>
+         <div style="position:absolute;left:50%;top:50%;width:340px;height:340px;margin:-170px 0 0 -170px;border-radius:50%;background:radial-gradient(circle,rgba(255,211,63,.22) 0%,rgba(150,100,255,.16) 38%,transparent 68%);pointer-events:none;"></div>
+         ${[[14,18,3,'0s','3.2s'],[86,14,2.4,'.9s','4.1s'],[8,74,2.2,'1.6s','3.6s'],[90,70,3,'.4s','4.4s'],[24,90,2,'2.1s','3.1s'],[74,92,2.6,'1.2s','3.9s']].map(sp=>`
+           <svg class="aura-spark" viewBox="0 0 12 12" style="position:absolute;left:${sp[0]}%;top:${sp[1]}%;width:${sp[2]*4}px;height:${sp[2]*4}px;--dl:${sp[3]};--d:${sp[4]};--o:.8;pointer-events:none;"><path d="M6 0 C6.5 4.7 7.3 5.5 12 6 C7.3 6.5 6.5 7.3 6 12 C5.5 7.3 4.7 6.5 0 6 C4.7 5.5 5.5 4.7 6 0 Z" fill="#FFE9A0"/></svg>`).join('')}
+         <div style="position:absolute;left:50%;bottom:14px;width:190px;height:26px;margin-left:-95px;border-radius:50%;background:radial-gradient(closest-side,rgba(150,100,255,.5),transparent);filter:blur(4px);pointer-events:none;"></div>
+         <div class="hs-float" style="display:flex;justify-content:center;position:relative;filter:drop-shadow(0 24px 26px rgba(90,40,200,.5));">${cardBack(172,240)}</div>
        </div>
        <div style="margin-top:16px;"><b style="font-family:var(--f);font-size:17px;color:${g.hint?'#5CE0BC':'#fff'};">${g.hint||'Devine la valeur de la carte.'}</b><div class="sub" style="font-size:13px;margin-top:4px;${g.tries===1?'color:#FFB16E;font-weight:800;':''}">${g.tries===1?'Dernier essai — sinon 2 gorgées !':'Essais restants : '+g.tries+' · sinon 2 gorgées'}</div></div>
        <div class="row" style="flex-wrap:wrap;gap:7px;justify-content:center;margin-top:16px;">${VN.slice(1).map((n,i)=>{
