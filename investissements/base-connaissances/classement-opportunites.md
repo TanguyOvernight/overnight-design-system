@@ -41,25 +41,45 @@ pas pour son rang.
 
 ---
 
-## CLASSEMENT AU 27/07/2026
+## CLASSEMENT AU 28/07/2026 (re-classé — 3 conditions de prix touchées)
 
 Statut : 🟢 déclencheur proche/actionnable · 🟡 en attente d'un événement
 daté · ⚪ surveillance longue · 🔴 sous le hurdle, conservée pour mémoire
 
-| Rang | Candidate | Env. | Déclencheur d'achat | Prochaine échéance | Statut | Depuis |
+⚠️ **Fiabilité des cours du jour : DÉGRADÉE.** Tous les portails de
+cotation ont renvoyé 403 (politique d'egress). Les niveaux viennent
+d'extraits de recherche, horodatage parfois imprécis. **Vicat est la
+donnée la moins sûre ET la plus décisive** (60,3-60,9 € selon la source,
+une source affichait encore 73,30 € = périmée). À revérifier dans
+l'interface Fortuneo avant tout ordre.
+
+| Rang | Candidate | Env. | Chiffre du jour vs déclencheur | Prochaine échéance | Statut | Mvt |
 |---|---|---|---|---|---|---|
-| **①** | **Cœur WPEA** (le hurdle, 5 %/an net) | PEA | Validation du PEA → **1 000 €** immédiats (offre Fortuneo, butée 23/08) | à l'ouverture | 🟢 | 25/07 |
-| **②** | **Vicat** (ciment) | PEA | S1 : EBITDA ≥ 340 M€ **ET** dette/EBITDA ≤ 1,5x **ET** cours ≤ 60 € | **29/07** (J+2) | 🟢 | 27/07 |
-| **③** | **Magnum Ice Cream** (ex-Unilever) | **PEA** ⚠️ | S1 : organique ≥ +3 % **ET** marge en amélioration séquentielle **ET** coûts de séparation en décrue chiffrée **ET** levier ≤ 2,5x, capi ≤ 8,8 Md€ | **30/07** (J+3) | 🟢 | 27/07 |
-| **④** | **Mobility Global** (CARFAX) | CTO | Cours ≤ 21 $ **ET** EBITDA aj. ≥ 175 M$ **ET** organique CARFAX ≥ +3 % **ET** guidance FY26 donnée | **07/08** | 🟡 | 27/07 |
-| **⑤** | **MSFT renfort** (détenu) | CTO/PEA | Azure ≥ 38-40 % **ET** capex maîtrisé au print | **29/07** (J+2) | 🟡 | 25/07 |
-| **⑥** | **Eli Lilly** (compounder santé) | CTO | Cours **≤ 1 020 $** (−15 %) — rétablit la prime nette de PFU | Q2 le **05/08**, puis Q3 | 🟡 | 27/07 |
-| **⑦** | **Séché Environnement** (PFAS) | PEA | S1 : EBE ≥ 125 M€ **ET** France organique ≥ 0 % **ET** guidance 275-285 M€ **ET** cours ≤ 90 € | S1 sept. (butée 30/09) | 🟡 | 27/07 |
-| **⑧** | **Or** (programme d'assurance) | CTO | Prélèvement de structure 50 €/mois — ordre trimestriel | 1ᵉʳ ordre fin nov. | ⚪ | 26/07 |
-| **⑨** | **Walmart** | CTO | Alerte prix ~98-100 $ (~33x) | Résultats **20/08** | ⚪ | 27/07 |
-| **⑩** | **Aubay** (ESN) | PEA | Cours ≤ 50 € **OU** scare optique T3 | T3 fin oct. | ⚪ | 27/07 |
-| **⑪** | **STM** (semi) | PEA | ≤ 42 $ **ET** P/E fwd < 30x **ET** marge remontant | Q3 fin oct. | 🔴 | 27/07 |
-| **⑫** | **Nike** | CTO | ≥ 1 trim. Direct/Digital positif **OU** stabilisation Chine | ~fin sept. | 🔴 | 27/07 |
+| **①** | **Cœur WPEA** (hurdle 5 %/an net) | PEA | Validation PEA → **1 000 €** (offre Fortuneo, butée 23/08) | à l'ouverture | 🟢 | = |
+| **②** | **Vicat** (ciment) | PEA | **~60,3-60,9 €** vs ≤ 60 € → **à 0,5-1,5 %** ⚠️ donnée fragile | **CE SOIR 18h** (S1) | 🟢 | = |
+| **③** | **Mobility Global** (CARFAX) | CTO | **20,55 $** vs ≤ 21 $ → **PRIX TOUCHÉ (−2,1 %)** | **07/08** (résultats) | 🟢 | ▲ ④→③ |
+| **④** | **Magnum Ice Cream** | **PEA** | capi **~9,6-9,9 Md€** vs ≤ 8,8 Md€ → **+9 à +13 %** | **30/07** (S1) | 🟡 | ▼ ③→④ |
+| **⑤** | **MSFT renfort** (détenu) | CTO/PEA | Azure guidé **39-40 %** par la société = déclencheur calé sur la guidance → se jouera sur le DÉPASSEMENT | **29/07** (print) | 🟡 | = |
+| **⑥** | **Séché Environnement** | PEA | **81,2 €** vs ≤ 90 € → **PRIX TOUCHÉ (−9,8 %)** ; achat d'initié à 79,40 € le 13/07 | S1 ~début sept. (date NON confirmée) | 🟡 | ▲ ⑦→⑥ |
+| **⑦** | **Eli Lilly** | CTO | **~1 202 $** vs ≤ 1 020 $ → **+17,8 %** | Q2 **05/08** | 🟡 | ▼ ⑥→⑦ |
+| **⑧** | **Or** (assurance) | CTO | spot **4 083-4 090 $/oz** | 1ᵉʳ ordre fin nov. | ⚪ | = |
+| **⑨** | **Walmart** | CTO | **111,74 $** vs ~98-100 $ → **+12 à +14 %** | Résultats 20/08 | ⚪ | = |
+| **⑩** | **Aubay** (ESN) | PEA | **~54,3-54,9 €** vs ≤ 50 € → **+9 %**, et s'ÉLOIGNE (objectifs 2026 relevés le 23/07) | T3 fin oct. | ⚪ | = |
+| **⑪** | **STM** (semi) | PEA | **53,16 $** vs ≤ 42 $ → **+26,6 %**, et s'ÉLOIGNE (rebond post-Q2) | Q3 fin oct. | 🔴 | = |
+| **⑫** | **Nike** | CTO | **41,70 $**, colle au plus-bas 52s (40,00 $) — déclencheur qualitatif non atteint | ~fin sept. | 🔴 | = |
+
+**Motifs des changements de rang (28/07)** :
+- **MBGL ④→③** : sa condition de PRIX est désormais REMPLIE (20,55 $ ≤ 21 $)
+  et la thèse du vendeur forcé (fonds S&P 500 contraints de céder le
+  spin-off) reste intacte. Il ne lui manque que les fondamentaux du 07/08.
+- **Magnum ③→④** : sa condition de prix N'EST PAS remplie — la capi doit
+  encore reculer de 9 à 13 %. Le S1 du 30/07 peut refermer l'écart d'un
+  coup, mais aujourd'hui elle est plus loin que MBGL.
+- **Séché ⑦→⑥ / LLY ⑥→⑦** : Séché a sa condition de prix remplie
+  (81,2 € ≤ 90 €) et un achat d'initié récent ; LLY reste à 17,8 % de son
+  déclencheur. Séché passe devant sur le seul critère de proximité
+  d'exécution — sa longue attente (S1 non daté) l'empêche de monter plus haut.
+- **Aucune sortie, aucune entrée.** Rien n'a été perdu.
 
 ⚠️ **Magnum est une N.V. néerlandaise = éligible PEA.** Si le PEA est
 ouvert au moment du déclenchement, l'idée y va — jamais au CTO (12,8
