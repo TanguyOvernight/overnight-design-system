@@ -57,7 +57,7 @@ Synthèse des bonnes pratiques d'interfaces mobiles et de « juice » de jeu
 | Célébrations graduées | ✅ confetti/fireworks |
 | Loaders réseau | ✅ |
 | Reduced motion | ✅ |
-| **Audio (pops, tada, fail)** | ❌ absent — P1 |
+| Audio | 🚫 exclu par choix produit (voir §5) |
 | **Tension avant résultat** (roulement pour FTD, verdict Pyramide) | ❌ — P2 |
 | **Mise en scène des séries** (« 3 d'affilée ! ») | ❌ — P2 |
 | Transitions directionnelles (hiérarchie de navigation) | ➖ fade seul — P3 |
@@ -65,11 +65,12 @@ Synthèse des bonnes pratiques d'interfaces mobiles et de « juice » de jeu
 
 ## 5. Prochaines priorités
 
-1. **P1 — Audio léger** : mini-banque WebAudio synthétisée (pop, ding, tada,
-   womp), activée après le premier geste, coupable dans un réglage. Le canal
-   manquant du multi-sensoriel.
-2. **P2 — Tension** : 600 ms de « suspense » (pulse + haptique croissante)
+> **Décision produit — pas d'audio.** Drinkin est une app de soirée : jouer un
+> son couperait la musique de l'enceinte (ducking iOS/Android). Le
+> multi-sensoriel repose donc sur visuel + haptique uniquement.
+
+1. **P2 — Tension** : 600 ms de « suspense » (pulse + haptique croissante)
    avant les verdicts à fort enjeu (FTD dernière tentative, MENTEUR de la
    Pyramide, photo-finish PMU).
-3. **P2 — Séries** : compteur de streak visible et célébré (bus sans faute,
+2. **P2 — Séries** : compteur de streak visible et célébré (bus sans faute,
    purple enchaîné).

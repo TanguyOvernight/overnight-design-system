@@ -1601,7 +1601,7 @@ function tapeNext(){ nextTurn(); S.game={phase:'ready', deck:S.game.deck, card:n
 function startPmu(){
   const deck=newDeck(), fin=9, side=[];   // 8 médianes -> course en 9 pas
   for(let k=1;k<fin;k++) side.push({card:draw(deck), flipped:false});
-  S.game={phase:'bet', deck, pos:[0,0,0,0], fin, side, bets:{}, betTurn:0, betSel:null, last:null, winner:null, flips:[]};
+  S.game={phase:'bet', deck, pos:[0,0,0,0], fin, side, bets:{}, mises:{}, betTurn:0, betSel:null, miseSel:2, last:null, winner:null, second:null, flips:[]};
   go('pmu');
 }
 function pmuMini(content,isBack,col){
@@ -1672,11 +1672,35 @@ SCREENS.pmu = () => {
       <div style="display:flex;align-items:center;justify-content:center;gap:10px;background:rgba(255,255,255,.14);padding:9px 16px;border-radius:999px;align-self:center;margin-bottom:6px;">${avatar(p,30)}<span style="font-weight:700;color:#fff;">Au tour de ${p.name}</span></div>
       <div class="spacer"></div>
       <div class="gpanel" style="padding:16px 14px;">
-        <h2 style="text-align:center;font-size:22px;color:#fff;margin-bottom:4px;">${(!Room.active || (p&&p.pid===Room.me.pid))?'Choisis ton cheval':p.name+' choisit son cheval'}</h2>
+        <h2 style="text-align:center;font-size:22px;color:#fff;margin-bottom:4px;">${(!Room.active || (p&&p.pid===Room.me.pid))?'Choisis ton cheval et ta mise':p.name+' choisit son cheval et sa mise'}</h2>
         <div class="sub" style="text-align:center;font-size:12.5px;margin-bottom:12px;">Plusieurs joueurs peuvent miser sur le même.</div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px;">${[0,1,2,3].map(card).join('')}</div></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px;">${[0,1,2,3].map(card).join('')}</div>
+        <div style="display:flex;align-items:center;justify-content:center;gap:16px;margin-top:15px;">
+          <button onclick="pmuMise(-1)" style="width:46px;height:46px;border-radius:50%;border:none;cursor:pointer;background:rgba(255,255,255,.14);color:#fff;font-size:26px;font-weight:800;box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 4px 0 rgba(18,8,58,.6);">−</button>
+          <div style="text-align:center;min-width:96px;">
+            <div style="font-family:var(--d);font-weight:800;font-size:30px;color:#FFD33F;line-height:1;">${g.miseSel}</div>
+            <div class="cap" style="margin-top:3px;">gorgée${g.miseSel>1?'s':''} misée${g.miseSel>1?'s':''}</div></div>
+          <button onclick="pmuMise(1)" style="width:46px;height:46px;border-radius:50%;border:none;cursor:pointer;background:rgba(255,255,255,.14);color:#fff;font-size:26px;font-weight:800;box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 4px 0 rgba(18,8,58,.6);">+</button>
+        </div>
+        <div class="sub" style="text-align:center;font-size:12px;margin-top:10px;">Tu bois ta mise avant le départ. 1er&nbsp;: tu donnes le double · 2e&nbsp;: tu donnes ta mise.</div></div>
       <div class="spacer"></div>
       <button class="btn amber" onclick="if(S.game.betSel!=null)pmuChoose(S.game.betSel)" style="${g.betSel==null?'opacity:.55;':''}">Valider mon pari</button></div>`;
+  }
+  if(g.phase==='mise'){
+    const rows=S.players.map((p,idx)=>`
+      <div style="display:flex;align-items:center;gap:13px;padding:10px 14px;border-radius:18px;background:rgba(255,255,255,.09);margin-bottom:9px;">
+        ${avatar(p,44)}<b style="flex:1;font-family:var(--f);font-size:16px;color:#fff;">${p.name}</b>
+        <span style="font-size:19px;">${SUITS[g.bets[idx]]}</span>
+        <span style="font-family:var(--d);font-weight:800;font-size:19px;color:#FFD33F;">${g.mises[idx]||0} gorgée${(g.mises[idx]||0)>1?'s':''}</span>
+      </div>`).join('');
+    return `<div class="pad fade">${gameHead('PMU', `<div class="pill">Mises</div>`)}
+      <div class="spacer"></div>
+      <div class="gpanel" style="padding:20px;">
+        <h2 style="text-align:center;font-size:22px;color:#fff;margin-bottom:4px;">On boit sa mise !</h2>
+        <div class="sub" style="text-align:center;font-size:13px;margin-bottom:14px;">Chacun boit ce qu'il a misé — c'est le prix du ticket.</div>
+        ${rows}</div>
+      <div class="spacer"></div>
+      <button class="btn amber breathe" onclick="pmuStartRace()">Santé ! Lancer la course</button></div>`;
   }
   const foot=SUITS.map((s,i)=>{
     const avs=S.players.map((p,idx)=>({p,idx})).filter(o=>g.bets[o.idx]===i).map((o,j)=>`<div style="margin-left:${j?-16:0}px;position:relative;z-index:${9-j};">${avatar(o.p,44)}</div>`).join('');
@@ -1694,16 +1718,26 @@ SCREENS.pmu = () => {
     <div style="display:flex;gap:6px;margin-top:12px;padding-left:${PMU_GUT}px;">${foot}</div>
   </div>`;
   if(g.winner!==null){
-    const losers=S.players.filter((p,idx)=>g.bets[idx]!==g.winner).map(p=>p.name);
+    // 1er : on donne le double de sa mise · 2e : on donne sa mise (déjà bue au départ)
+    const gains=S.players.map((p,idx)=>{
+      if(g.bets[idx]===g.winner) return {p, n:(g.mises[idx]||0)*2};
+      if(g.bets[idx]===g.second) return {p, n:g.mises[idx]||0};
+      return null;
+    }).filter(Boolean).filter(x=>x.n>0);
+    const detail = gains.length
+      ? gains.map(x=>`<b style="color:#FFD33F;">${x.p.name}</b> donne ${x.n} gorgée${x.n>1?'s':''}`).join(' · ')
+      : 'Personne n’avait misé sur le podium — les mises bues suffisent !';
     const info=`<div style="display:flex;justify-content:center;margin-top:14px;">${cardHTML(g.last,84,118)}</div>`;
-    const bottom=`<div class="gpanel drop" style="padding:16px;text-align:center;margin-bottom:12px;"><b style="font-family:var(--f);font-size:19px;color:#7BE8C0;">${SUITS[g.winner]} remporte la course !</b><div class="sub" style="font-size:14px;margin-top:4px;">Les paris sur ${SUITS[g.winner]} distribuent. ${losers.length?losers.join(', ')+' boi'+(losers.length>1?'vent':'t')+' 3 gorgées.':'Tout le monde gagne !'}</div></div><button class="btn amber" onclick="go('hub')">Terminer</button>`;
+    const bottom=`<div class="gpanel drop" style="padding:16px;text-align:center;margin-bottom:12px;"><b style="font-family:var(--f);font-size:19px;color:#7BE8C0;">${SUITS[g.winner]} gagne${g.second!=null?' · '+SUITS[g.second]+' 2e':''}</b><div class="sub" style="font-size:14px;margin-top:6px;">${detail}</div></div><button class="btn amber" onclick="go('hub')">Terminer</button>`;
     return `<div class="pad fade">${gameHead('PMU', `<div class="pill">Course</div>`)}<div class="gamebody" style="justify-content:center;gap:6px;">${board}${info}</div>${bottom}</div>`;
   }
   return `<div class="pad fade">${gameHead('PMU', `<div class="pill">Course</div>`)}
     <div class="gamebody" style="justify-content:center;gap:8px;">${board}<div id="pmu-info" style="min-height:116px;display:flex;align-items:center;justify-content:center;">${pmuInfoHTML()}</div></div>
     <button class="btn primary" onclick="pmuDraw()">Tirer une carte</button></div>`;
 };
-function pmuChoose(suit){ haptic('tap'); const g=S.game; g.bets[g.betTurn]=suit; g.betTurn++; g.betSel=null; if(g.betTurn>=S.players.length) g.phase='race'; render(); }
+function pmuMise(d){ const g=S.game; g.miseSel=Math.max(1,Math.min(10,(g.miseSel||2)+d)); render(); }
+function pmuChoose(suit){ haptic('tap'); const g=S.game; g.bets[g.betTurn]=suit; g.mises[g.betTurn]=g.miseSel||1; g.betTurn++; g.betSel=null; g.miseSel=2; if(g.betTurn>=S.players.length) g.phase='mise'; render(); }
+function pmuStartRace(){ const g=S.game; if(g.phase!=='mise') return; S.players.forEach((p,idx)=>drink(idx,g.mises[idx]||0)); haptic('ok'); g.phase='race'; render(); }
 function pmuDraw(){
   const g=S.game, c=draw(g.deck); g.last=c; g.flips=[];
   if(g.pos[c.s]<g.fin) g.pos[c.s]++;
@@ -1713,7 +1747,12 @@ function pmuDraw(){
       if(!g.side[i].flipped && minPos>p){ g.side[i].flipped=true; const su=g.side[i].card.s; if(g.pos[su]>0) g.pos[su]--; g.flips.push(SUITS[su]+' recule !'); changed=true; }
     }
   }
-  for(let i=0;i<4;i++){ if(g.pos[i]>=g.fin){ g.winner=i; S.players.forEach((p,idx)=>{ if(g.bets[idx]!==i) drink(idx,3); }); render(); requestAnimationFrame(()=>fireworks()); return; } }
+  for(let i=0;i<4;i++){ if(g.pos[i]>=g.fin){
+    g.winner=i;
+    // 2e place : la plus avancée des trois autres (les mises ont déjà été bues)
+    let sec=-1,best=-1; for(let k=0;k<4;k++){ if(k!==i && g.pos[k]>best){ best=g.pos[k]; sec=k; } }
+    g.second=sec;
+    render(); requestAnimationFrame(()=>fireworks()); return; } }
   pmuAnimate();
 }
 
@@ -2210,7 +2249,7 @@ const NET_ACTIONS = ['busGuess','busNext','busSetMode','palmierTirer','palmierBa
   'palmierNext','palmSetBalance','ftdGuess','startFtd','pmuChoose','pmuSelect','pmuDraw',
   'purpleGuess','purpleNext','echelleTirer','echelleSetGuess','echelleToGuess','echelleReveal',
   'echelleNext','vobAns','vobSetCat','vobSetCount','jamaisAns','prefVote','prefNext','startGame',
-  'chooseGame','pickControl','launchPending','skipTurn','busChoosePyr','busPyrFlip','busPyrEnd',
+  'chooseGame','pickControl','launchPending','skipTurn','pmuMise','pmuStartRace','busChoosePyr','busPyrFlip','busPyrEnd',
   'busMemoShow','busMemoNext','pyrClaim','pyrTarget','pyrVerdict'];
 const ORIG = {};
 NET_ACTIONS.forEach(name=>{
