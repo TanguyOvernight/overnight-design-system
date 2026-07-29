@@ -1479,7 +1479,7 @@ SCREENS.palmier = () => {
       <div class="sub" style="font-size:14px;margin-top:5px;">${r[1]}</div></div>`;
     actions=g.balance ? `<button class="btn amber" onclick="palmierBalance()">Poser sur le palmier</button>` : `<button class="btn primary" onclick="palmierNext()">Au joueur suivant</button>`;
   } else if(g.phase==='balance'){
-    mid=`<div class="gpanel" style="padding:16px;">${palmierScene(g)}</div><div class="sub center" style="font-family:var(--f);font-weight:700;margin-top:10px;">Pose quand la carte est <span style="color:#7BE8C0;">verte</span> (dans la zone) ! Elle rétrécit à chaque carte posée…</div>`;
+    mid=`<div class="gpanel" style="padding:16px;">${palmierScene(g)}</div><div class="sub center" style="font-family:var(--f);font-weight:700;margin-top:10px;">${iAmActor()?'Pose quand la carte est <span style="color:#7BE8C0;">verte</span> (dans la zone) ! Elle rétrécit à chaque carte posée…':cur().name+' cherche le bon moment pour poser…'}</div>`;
     actions=`<button class="btn amber" onclick="palmierDrop()">POSER</button>`;
   } else {
     mid=`<div class="gpanel" style="padding:16px;">${palmierScene(g)}</div><div class="gpanel" style="margin-top:12px;padding:16px;text-align:center;"><b style="font-family:var(--f);font-size:18px;color:${g.res.ok?'#7BE8C0':'#FF9A8B'};">${g.res.title}</b><div class="sub" style="font-size:14px;margin-top:4px;">${g.res.msg}</div></div>`;
@@ -1669,7 +1669,7 @@ SCREENS.pmu = () => {
       <div style="display:flex;align-items:center;justify-content:center;gap:10px;background:rgba(255,255,255,.14);padding:9px 16px;border-radius:999px;align-self:center;margin-bottom:6px;">${avatar(p,30)}<span style="font-weight:700;color:#fff;">Au tour de ${p.name}</span></div>
       <div class="spacer"></div>
       <div class="gpanel" style="padding:16px 14px;">
-        <h2 style="text-align:center;font-size:22px;color:#fff;margin-bottom:4px;">Choisis ton cheval</h2>
+        <h2 style="text-align:center;font-size:22px;color:#fff;margin-bottom:4px;">${(!Room.active || (p&&p.pid===Room.me.pid))?'Choisis ton cheval':p.name+' choisit son cheval'}</h2>
         <div class="sub" style="text-align:center;font-size:12.5px;margin-bottom:12px;">Plusieurs joueurs peuvent miser sur le même.</div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px;">${[0,1,2,3].map(card).join('')}</div></div>
       <div class="spacer"></div>
@@ -1846,7 +1846,7 @@ SCREENS.pref = () => {
        ${opt(0,'A')}
        <div class="center" style="font-family:var(--d);font-weight:800;font-size:16px;color:rgba(255,255,255,.8);">OU</div>
        ${opt(1,'B')}
-       <div class="sub center" style="font-size:12px;color:rgba(255,255,255,.55);">Passe le téléphone après ton vote</div>
+       <div class="sub center" style="font-size:12px;color:rgba(255,255,255,.55);">${Room.active?'Chacun vote depuis son téléphone':'Passe le téléphone après ton vote'}</div>
      </div></div>`;
   }
   // révélation : la minorité boit
@@ -2075,7 +2075,11 @@ function render(){
   if(bloque){ app().insertAdjacentHTML('beforeend', spectatorBar()); }
   else if(!libre && typeof amSpectator==='function' && amSpectator() && !NON_GAME_SCREENS.includes(S.screen)){
     const pad=app().firstElementChild;
-    if(pad){ pad.style.pointerEvents='none'; pad.style.opacity='.92'; }
+    if(pad){ pad.style.pointerEvents='none'; pad.style.opacity='.92';
+      // Les boutons d'action doivent SE VOIR inertes : sinon le spectateur croit
+      // que c'est à lui de jouer.
+      pad.querySelectorAll('button').forEach(b=>{ if(!b.classList.contains('iconbtn')){ b.style.opacity='.4'; b.style.filter='saturate(.55)'; } });
+    }
     app().insertAdjacentHTML('beforeend', spectatorBar());
     const back=app().querySelector('.iconbtn'); if(back){ back.style.pointerEvents='auto'; }
   }
@@ -2484,7 +2488,8 @@ function spectatorBar(){
   return `<div style="position:absolute;left:0;right:0;bottom:0;z-index:40;padding:16px 20px calc(18px + env(safe-area-inset-bottom));background:linear-gradient(180deg,rgba(20,8,60,0),rgba(20,8,60,.92) 40%);pointer-events:none;">
     <div style="display:flex;align-items:center;gap:12px;justify-content:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.16);padding:10px 18px 10px 10px;border-radius:999px;">
       ${avatar(a,38)}<span style="font-family:var(--f);font-weight:800;color:#fff;font-size:15px;">${
-        controlMode()==='host' ? 'Le MJ pilote — à '+a.name+' de jouer'
+        (S.game && S.game.phase==='setup') ? 'Le MJ configure la partie…'
+        : controlMode()==='host' ? 'Le MJ pilote — à '+a.name+' de jouer'
         : (a.online ? 'Tu regardes — à '+a.name+' de jouer' : a.name+' est déconnecté…')
       }</span></div></div>`;
 }
