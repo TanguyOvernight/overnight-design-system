@@ -238,6 +238,15 @@ roule ». Le cash qui dort trop coûte plus que le drag fiscal.
   les sortantes. Une candidate ne quitte le classement que par EXÉCUTÉ /
   EXPIRÉ / TUÉ / DÉCLASSÉ — jamais par oubli. Tout changement de rang se
   justifie par écrit.
+- **Ne planifie JAMAIS sur une trésorerie non confirmée** (leçon du
+  29/07/2026) : j'ai bâti une séquence d'exécution sur « le budget non
+  dépensé s'accumule », hypothèse jamais vérifiée — Tanguy ne pouvait pas
+  mobiliser la somme. Avant toute séquence exigeant plus d'UNE mensualité
+  (500 €), la capacité doit être CONFIRMÉE par Tanguy, pas déduite. Par
+  défaut, raisonner en mensualités disponibles, jamais en cumul supposé.
+  Corollaire : une prime commerciale (offre de courtier) n'est jamais un
+  motif suffisant pour forcer un effort de trésorerie — le comparer à
+  l'avantage structurel qu'elle prétend accélérer.
 - Cartographie de la base : `INDEX.md` (quel fichier pour quelle question,
   lesquels sont périssables, où écrire une info neuve).
 - Référentiel science : `science-decision.md` (rendements attendus §A,

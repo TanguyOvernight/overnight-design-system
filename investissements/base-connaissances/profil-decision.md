@@ -137,9 +137,14 @@ versement règle gratuitement).
 
 > 🔴 **État au 27/07/2026 : R = 43,9 %** (cœur VTI+SWDA 567,69 $ = 55,9 % ;
 > vifs NVDA+TSLA+MSFT+RNO 445,89 $ = 43,9 %). Le garde-fou est **déjà
-> franchi de 19 points** : le régime autorisé aujourd'hui est **500/0**, pas
-> 300/200. **Un seul ordre cœur de 1 000 € le règle** → R = 20,7 %, et le
-> régime 300/50/150 devient légal dès septembre.
+> franchi de 19 points** : le régime autorisé est **500/0** jusqu'au retour
+> dans la bande.
+> **Combien faut-il vraiment ? (recalculé le 29/07)** — pour R ≤ 25 % il
+> faut ajouter **~770 $ ≈ 675 €** au cœur, pas 1 000 €. Soit **un mois et
+> demi de versements**. Séquence réaliste : 500 € en août (R ≈ 28 %, encore
+> en régime 400/100) puis 500 € en septembre (R ≈ 21 %) → **régime
+> 300/50/150 légal à partir d'octobre**. Aucun effort de trésorerie
+> exceptionnel n'est nécessaire.
 
 ## Le hurdle : pourquoi une idée doit BATTRE le cœur
 Le défaut, ce n'est pas « ne rien faire » — c'est **verser au cœur (ETF
@@ -154,16 +159,22 @@ cœur) · ③ Or (assurance, politique) · ④ Ultragenyx PASSE (loterie FDA,
 CRL déjà essuyé sur UX111).
 - **Ce mois** : euro RÉSERVÉ au cœur WPEA. Rien à exécuter tant que le PEA
   n'est pas validé (blocage administratif ≠ signal — attente bornée OK).
-- **Déclencheur — PREMIER ORDRE RÉVISÉ (Juge 27/07)** : validation PEA →
-  verser **1 000 €** (juillet non placé + août) et passer **UN ordre de
-  1 000 € de WPEA**. Trois raisons cumulées : (a) l'offre d'ouverture
-  Fortuneo exige 1 000 € de versement et court jusqu'au **23/08/2026**
-  (⚠️ montant exact de la prime à relire sur la page officielle au moment
-  de souscrire — le fait porteur est la condition des 1 000 €) ; (b) cet
-  ordre unique fait passer R de 43,9 % à 20,7 % et rend le régime
-  300/50/150 légal ; (c) le lump sum bat l'étalement ~2 fois sur 3, et le
-  surcoût de courtage (~2-3,50 €) est le juste prix pour ne pas jouer au
-  timing. **Ne pas verser 500 € : la prime serait perdue.**
+- **Déclencheur — PLAN CORRIGÉ (29/07, contrainte Tanguy)** :
+  ⚠️ **Le plan à 1 000 € est ABANDONNÉ.** Il reposait sur une hypothèse
+  JAMAIS vérifiée — que le budget non dépensé s'accumule en liquide
+  disponible. Tanguy : « je ne pourrais pas mettre 1 000 € sur le PEA si
+  facilement ». **Leçon de méthode : ne jamais bâtir une séquence
+  d'exécution sur une capacité de trésorerie non confirmée ; demander
+  avant de planifier.**
+  **Nouveau plan** : (1) **ouvrir le PEA avec le minimum** (même 100 €) —
+  seule chose qui compte vraiment : démarrer l'horloge des 5 ans, qui fait
+  passer la fiscalité de 31,4 % à 18,6 %. (2) **Août : 500 € → cœur WPEA.**
+  (3) **Septembre : 500 € → cœur WPEA.** (4) Régime 300/50/150 à partir
+  d'**octobre**, une fois R rentré dans la bande.
+  **La prime Fortuneo (80-250 €) n'est PAS un motif suffisant** pour forcer
+  un versement de 1 000 € : c'est un bonus ponctuel, l'horloge fiscale est
+  structurelle. Si les 1 000 € deviennent confortables avant le 23/08, tant
+  mieux — sinon on ne court pas après.
 - **Séquence ensuite** — septembre : 300 € WPEA + **100 € ouverture
   assurance-vie** (prise de date) + 50 € réserve or + 50 € réserve
   offensive. Octobre-novembre : 300 € WPEA + 50 € or + 150 € offensif
