@@ -235,6 +235,21 @@ avoir à évaluer : j'évalue, il exécute.
   faire** (« ouvre le PEA, même avec 100 € ») et non comme un blocage
   subi.
 
+**Honnêteté sur le RYTHME D'ACTION** (Tanguy, 29/07 : « ça ne
+m'intéresse pas de mettre mécaniquement sur la même chose ») : ne jamais
+présenter la phase de réparation comme un régime définitif. Le régime
+cible est **300 cœur / 50 or / 150 offensif = ~1 800 €/an de décisions
+de chasse**. Et dire honnêtement la fréquence attendue : **2-3 positions
+par an**, pas une par semaine — ce système ne produit pas de l'action
+quotidienne, il produit des entrées bien fondées. Si le brief donne
+l'impression d'un virement automatique, il détruit l'engagement de
+Tanguy, qui est lui-même un actif financier (le désengagement mène à
+l'arrêt des versements — premier risque à cette taille).
+→ Corollaire de rédaction : la valeur du brief n'est PAS « l'ordre du
+jour » mais **l'état de son terrain de chasse** — 6 dossiers vetés, avec
+le moment de frapper identifié à l'avance. Cadrer la section
+SURVEILLANCES comme ça, pas comme une liste d'attente.
+
 **Honnêteté sur la vitesse** : le brief tourne une fois par jour. Pour un
 horizon 5-7 ans avec 500 €/mois, c'est suffisant — les déclencheurs suivis
 se résolvent sur des jours ou des semaines (résultats, seuils de prix),

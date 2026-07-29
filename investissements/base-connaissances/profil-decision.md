@@ -134,6 +134,11 @@ WPEA + VTI + SWDA.
 **R ne déclenche JAMAIS de vente** — correction par les flux uniquement
 (vendre NVDA pour rééquilibrer coûterait 31,4 % pour un problème qu'un
 versement règle gratuitement).
+**R ne met JAMAIS de veto sur une opportunité validée** (amendement du
+29/07) : il gouverne la répartition des euros NON déclenchés. Une
+candidate qui a franchi les 3 étages du pipeline reste exécutable dans la
+limite du plafond L, quel que soit R. Une règle comptable ne doit pas
+écraser une décision d'investissement fondée.
 
 > 🔴 **État au 27/07/2026 : R = 43,9 %** (cœur VTI+SWDA 567,69 $ = 55,9 % ;
 > vifs NVDA+TSLA+MSFT+RNO 445,89 $ = 43,9 %). Le garde-fou est **déjà
@@ -162,10 +167,28 @@ quoi faire de son virement mensuel — il exécute, je décide.
    Ce n'est pas un blocage administratif subi, c'est LA tâche à valeur
    la plus élevée disponible : elle démarre le compteur des 5 ans qui fait
    passer la fiscalité de 31,4 % à 18,6 %.
-2. **Dès le PEA ouvert : 500 €/mois → cœur WPEA, sans demander mon avis.**
-   Valable jusqu'à ce que je dise explicitement autre chose (prévision :
-   octobre 2026, quand R sera rentré dans la bande et que la poche
-   offensive de 150 €/mois s'ouvrira).
+2. **Dès le PEA ouvert : 350 €/mois → cœur WPEA, sans demander mon avis**,
+   + **150 €/mois accumulés en réserve offensive**, déployables sur un
+   déclencheur validé par le pipeline complet (Chasseur → Avocat → Juge)
+   dans la limite du plafond L. L'or (50 €) reprend en octobre.
+
+   ⚠️ **AMENDEMENT EXPLICITE à la règle R (29/07, demande Tanguy)** — la
+   version initiale imposait 500/0 tant que R > 35 %. Tanguy : « si je
+   dois mettre 500 € sur le WPEA chaque mois, je n'ai aucun intérêt à
+   faire des placements techniques… ça ne m'intéresse pas ». **Il a
+   raison, et l'argument est FINANCIER, pas émotionnel** : le
+   désengagement d'un investisseur qui s'ennuie mène à l'arrêt des
+   versements — premier risque documenté à cette taille de portefeuille
+   (behavior gap, `outils-fiscaux-comportementaux.md`). Son intérêt pour
+   le sujet est un actif à préserver.
+   **Arbitrage** : le blocage total coûtait ~1 mois de structure sur un
+   portefeuille de ~1 000 € (gain trivial en euros absolus) contre un
+   risque comportemental de premier ordre. **La règle R ne met plus de
+   veto sur une opportunité VALIDÉE ; elle gouverne seulement la
+   répartition des euros NON déclenchés.** Les protections qui comptent
+   restent intactes : plafond L par ligne (150 € aujourd'hui), passage
+   obligatoire par les 3 agents, ≥ 3 tranches, max 3 lignes vives.
+   Réparation de R en ~3 mois au lieu de 2 — accepté.
 3. **Si le PEA n'est pas ouvert au 31/08** : 150 € sur l'or (ETC Amundi
    FR0013416716, CTO eToro), le reste roule. Je le rappellerai le moment venu.
 
