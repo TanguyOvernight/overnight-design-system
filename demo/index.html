@@ -125,7 +125,7 @@
   .pod.two{left:3%;height:104px;background:linear-gradient(180deg,#FFB37E,#F08E49);}
   .pod.three{right:3%;height:88px;background:linear-gradient(180deg,#FFE28A,#F0A93C);}
   .podplayer{position:absolute;transform:translateX(-50%);text-align:center;color:#fff;font-family:var(--f);font-weight:800;font-size:12px;}
-  .palm-stage{position:relative;height:252px;width:100%;perspective:720px;}
+  .palm-stage{position:relative;height:288px;width:100%;perspective:720px;}
   .palm-target{position:absolute;left:50%;bottom:132px;width:92px;height:10px;margin-left:-46px;border-radius:99px;background:rgba(255,201,60,.92);box-shadow:0 0 0 10px rgba(255,201,60,.14);}
   .bottle{position:absolute;bottom:0;left:50%;width:72px;height:132px;margin-left:-36px;border-radius:18px 18px 20px 20px;background:linear-gradient(160deg,#A98BFF 0%,#7C5CF0 48%,#4A2EA0 100%);box-shadow:inset -12px 0 0 rgba(0,0,0,.14),inset 0 3px 0 rgba(255,255,255,.22),0 16px 26px rgba(20,10,60,.35);}
   .bottle:before{content:"";position:absolute;bottom:126px;left:22px;width:28px;height:34px;border-radius:6px 6px 3px 3px;background:linear-gradient(180deg,#8E6CF2,#5E40C8);box-shadow:0 -12px 0 -4px #F0B72F;}
@@ -1413,7 +1413,7 @@ function palmierRule(c){
   return ['Roi — Bouffon','Choisis un bouffon : il prendra tes gorgées jusqu’au prochain roi.'];
 }
 function startPalmier(){ S.game={deck:newDeck(), stack:0, card:null, phase:'setup', balance:true, bx:0, dir:1, res:null}; go('palmier'); }
-function palmTol(stack){ return Math.max(0.16, 0.30 - stack*0.012); }
+function palmTol(stack){ return Math.max(0.14, 0.42 - stack*0.008); }
 function svgPalmBottle(){
   return `<svg width="96" height="192" viewBox="0 0 96 192" style="display:block;">
   <defs>
@@ -1441,16 +1441,21 @@ function svgPalmBottle(){
   </svg>`;
 }
 function palmierScene(g){
-  const shown=Math.min(g.stack,9);   // au-delà, la pile sortirait de la scène : on plafonne l'affichage
+  // Géométrie : le bouchon culmine à 178px du sol (SVG 192, capsule y=14) ;
+  // une carte posée (rotateX 58°) a son ellipse visuelle centrée sur le milieu
+  // de sa boîte -> bottom = 178-20 pour que la 1re carte repose SUR le bouchon.
+  const CAP=158, STEP=8, shown=Math.min(g.stack,8);
   let cards=''; for(let i=0;i<shown;i++){
-    const rot=(i%2?1:-1)*(5+i*1.7); const y=134+i*9;
+    const rot=(i%2?1:-1)*(4+i*1.5); const y=CAP+i*STEP;
     cards+=`<div class="palm-card" style="bottom:${y}px;transform:rotateX(58deg) rotateZ(${rot}deg);"></div>`;
   }
   let zone='', swing='';
   if(g.phase==='balance'){
-    const tol=palmTol(g.stack), zw=Math.round(2*tol*120), y=118+shown*9;
-    zone=`<div id="palm-zone" style="position:absolute;left:50%;bottom:${y}px;width:${zw}px;height:120px;margin-left:-${zw/2}px;border-radius:16px;background:rgba(25,169,116,.14);border:2px dashed rgba(25,169,116,.45);transition:border-color .1s;"></div>`;
-    swing=`<div id="swing" class="swing-card" style="bottom:${154+shown*9}px;"></div>`;
+    // La zone contient toujours la carte entière (demi-carte 38px) + la marge
+    // de tolérance : large au départ, elle se resserre un peu à chaque carte.
+    const tol=palmTol(g.stack), zw=Math.round(2*(tol*120+38))+8, top=CAP+shown*STEP;
+    zone=`<div id="palm-zone" style="position:absolute;left:50%;bottom:${top+4}px;width:${zw}px;height:78px;margin-left:-${zw/2}px;border-radius:18px;background:rgba(25,169,116,.13);border:2px dashed rgba(25,169,116,.45);transition:border-color .1s;"></div>`;
+    swing=`<div id="swing" class="swing-card" style="bottom:${top+18}px;"></div>`;
   }
   return `<div class="palm-stage">${zone}<div style="position:absolute;bottom:0;left:50%;transform:translateX(-50%);">${svgPalmBottle()}</div>${cards}${swing}</div>`;
 }
@@ -1474,7 +1479,7 @@ SCREENS.palmier = () => {
       <div class="sub" style="font-size:14px;margin-top:5px;">${r[1]}</div></div>`;
     actions=g.balance ? `<button class="btn amber" onclick="palmierBalance()">Poser sur le palmier</button>` : `<button class="btn primary" onclick="palmierNext()">Au joueur suivant</button>`;
   } else if(g.phase==='balance'){
-    mid=`<div class="gpanel" style="padding:16px;">${palmierScene(g)}</div><div class="sub center" style="font-family:var(--f);font-weight:700;margin-top:10px;">Pose quand la carte est <span style="color:#7BE8C0;">verte</span> (dans la zone) !</div>`;
+    mid=`<div class="gpanel" style="padding:16px;">${palmierScene(g)}</div><div class="sub center" style="font-family:var(--f);font-weight:700;margin-top:10px;">Pose quand la carte est <span style="color:#7BE8C0;">verte</span> (dans la zone) ! Elle rétrécit à chaque carte posée…</div>`;
     actions=`<button class="btn amber" onclick="palmierDrop()">POSER</button>`;
   } else {
     mid=`<div class="gpanel" style="padding:16px;">${palmierScene(g)}</div><div class="gpanel" style="margin-top:12px;padding:16px;text-align:center;"><b style="font-family:var(--f);font-size:18px;color:${g.res.ok?'#7BE8C0':'#FF9A8B'};">${g.res.title}</b><div class="sub" style="font-size:14px;margin-top:4px;">${g.res.msg}</div></div>`;
