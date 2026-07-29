@@ -1596,7 +1596,7 @@ function tapeNext(){ nextTurn(); S.game={phase:'ready', deck:S.game.deck, card:n
 
 /* ============================ PMU ============================ */
 function startPmu(){
-  const deck=newDeck(), fin=6, side=[];
+  const deck=newDeck(), fin=9, side=[];   // 8 médianes -> course en 9 pas
   for(let k=1;k<fin;k++) side.push({card:draw(deck), flipped:false});
   S.game={phase:'bet', deck, pos:[0,0,0,0], fin, side, bets:{}, betTurn:0, betSel:null, last:null, winner:null, flips:[]};
   go('pmu');
@@ -1606,15 +1606,15 @@ function pmuMini(content,isBack,col){
 }
 let PMU_TH=440; const PMU_GUT=36; let PMU_SPAN=PMU_TH-72;
 // Hauteur de plateau adaptative : évite que le plateau chevauche le bouton sur les petits écrans
-function pmuSize(){ const h=(window.innerHeight||900); PMU_TH=Math.max(300,Math.min(460,Math.round(h-452))); PMU_SPAN=PMU_TH-72; }
+function pmuSize(){ const h=(window.innerHeight||900); PMU_TH=Math.max(330,Math.min(540,Math.round(h-400))); PMU_SPAN=PMU_TH-72; }
 function pmuRed(i){ return i===1||i===2; }
 function pmuMedsHTML(){
   const g=S.game;
   return g.side.map((m,i)=>{
     const bottom=((i+1)/g.fin)*PMU_SPAN, c=m.card;
     const inner = m.flipped
-      ? '<span style="display:inline-block;animation:pmuPop .35s ease;">'+cardHTML(c,30,42)+'</span>'
-      : cardBack(30,42);
+      ? '<span style="display:inline-block;animation:pmuPop .35s ease;">'+cardHTML(c,28,39)+'</span>'
+      : cardBack(28,39);
     return '<div style="position:absolute;left:2px;bottom:'+bottom+'px;">'+inner+'</div>';
   }).join('');
 }
@@ -1631,7 +1631,7 @@ function pmuLanesHTML(){
 function pmuInfoHTML(){
   const g=S.game; if(!g.last) return '';
   const c=g.last;
-  return '<div style="display:flex;align-items:center;gap:16px;justify-content:center;">'+cardHTML(c,96,134)
+  return '<div style="display:flex;align-items:center;gap:16px;justify-content:center;">'+cardHTML(c,80,112)
     +'<div style="text-align:left;"><b style="font-family:var(--f);color:#fff;font-size:17px;">'+SUITS[c.s]+' avance</b>'
     +(g.flips.length?'<div style="color:#FFB3A8;font-weight:800;font-size:13px;margin-top:5px;">'+g.flips.join('<br>')+'</div>':'')+'</div></div>';
 }
@@ -1697,7 +1697,7 @@ SCREENS.pmu = () => {
     return `<div class="pad fade">${gameHead('PMU', `<div class="pill">Course</div>`)}<div class="gamebody" style="justify-content:center;gap:6px;">${board}${info}</div>${bottom}</div>`;
   }
   return `<div class="pad fade">${gameHead('PMU', `<div class="pill">Course</div>`)}
-    <div class="gamebody" style="justify-content:center;gap:8px;">${board}<div id="pmu-info" style="min-height:134px;display:flex;align-items:center;justify-content:center;">${pmuInfoHTML()}</div></div>
+    <div class="gamebody" style="justify-content:center;gap:8px;">${board}<div id="pmu-info" style="min-height:116px;display:flex;align-items:center;justify-content:center;">${pmuInfoHTML()}</div></div>
     <button class="btn primary" onclick="pmuDraw()">Tirer une carte</button></div>`;
 };
 function pmuChoose(suit){ haptic('tap'); const g=S.game; g.bets[g.betTurn]=suit; g.betTurn++; g.betSel=null; if(g.betTurn>=S.players.length) g.phase='race'; render(); }
