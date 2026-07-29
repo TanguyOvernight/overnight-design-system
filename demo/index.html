@@ -2076,9 +2076,9 @@ function render(){
   else if(!libre && typeof amSpectator==='function' && amSpectator() && !NON_GAME_SCREENS.includes(S.screen)){
     const pad=app().firstElementChild;
     if(pad){ pad.style.pointerEvents='none'; pad.style.opacity='.92';
-      // Les boutons d'action doivent SE VOIR inertes : sinon le spectateur croit
-      // que c'est à lui de jouer.
-      pad.querySelectorAll('button').forEach(b=>{ if(!b.classList.contains('iconbtn')){ b.style.opacity='.4'; b.style.filter='saturate(.55)'; } });
+      // Seuls les boutons d'action standard sont grisés : les boutons-contenu
+      // (options de vote, chevaux du PMU) doivent rester lisibles.
+      pad.querySelectorAll('button.btn').forEach(b=>{ b.style.opacity='.4'; b.style.filter='saturate(.55)'; });
     }
     app().insertAdjacentHTML('beforeend', spectatorBar());
     const back=app().querySelector('.iconbtn'); if(back){ back.style.pointerEvents='auto'; }
