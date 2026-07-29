@@ -2019,6 +2019,46 @@ function fxLayer(){
   if(window.__fx.parentNode!==app()) app().appendChild(window.__fx);
   return window.__fx;
 }
+/* --- Écho du clic de l'acteur : les spectateurs voient le bouton pressé s'animer --- */
+function fxFindTarget(fn,args){
+  const enc=v=> typeof v==='string' ? "'"+v+"'" : String(v);
+  const needle=(fn+'('+(args||[]).map(enc).join(',')).replace(/\s+/g,'');
+  const norm=s=>(s||'').replace(/\s+/g,'').replace(/"/g,"'");
+  const els=[...document.querySelectorAll('#app [onclick]')];
+  let el=els.find(e=>norm(e.getAttribute('onclick')).includes(needle));
+  if(!el){ const cand=els.filter(e=>norm(e.getAttribute('onclick')).includes(fn+'(')); if(cand.length===1) el=cand[0]; }
+  return el||null;
+}
+function ghostPress(el){
+  const r=el.getBoundingClientRect(); if(!r.width) return;
+  if(el.animate) el.animate([{transform:'scale(1)'},{transform:'scale(.94)',offset:.4},{transform:'scale(1)'}],{duration:340,easing:'ease-out'});
+  const st=getComputedStyle(el), rad=parseFloat(st.borderRadius)||16;
+  const ring=document.createElement('div');
+  ring.style.cssText='position:fixed;left:'+(r.left-5)+'px;top:'+(r.top-5)+'px;width:'+(r.width+10)+'px;height:'+(r.height+10)+'px;'
+    +'border-radius:'+Math.min(rad+5,(r.height+10)/2)+'px;pointer-events:none;z-index:80;'
+    +'border:3px solid rgba(255,211,63,.95);box-shadow:0 0 18px rgba(255,211,63,.55);opacity:0;';
+  fxLayer().appendChild(ring);
+  if(ring.animate) ring.animate([{opacity:0,transform:'scale(1.07)'},{opacity:1,transform:'scale(1)',offset:.35},{opacity:0,transform:'scale(1)'}],{duration:400,easing:'ease-out'});
+  setTimeout(()=>ring.remove(),420);
+}
+function pressChip(label){
+  const d=document.createElement('div');
+  d.textContent=label;
+  d.style.cssText='position:fixed;left:50%;transform:translateX(-50%);bottom:calc(150px + env(safe-area-inset-bottom));z-index:82;padding:12px 26px;border-radius:999px;background:linear-gradient(180deg,#FFE370,#F0A92A);color:#3A2A06;font-family:var(--d);font-weight:800;font-size:18px;box-shadow:0 5px 0 #C07C10,0 14px 26px rgba(0,0,0,.4);opacity:0;pointer-events:none;';
+  fxLayer().appendChild(d);
+  if(d.animate) d.animate([{opacity:0,transform:'translateX(-50%) scale(.7)'},{opacity:1,transform:'translateX(-50%) scale(1.05)',offset:.25},{opacity:1,transform:'translateX(-50%) scale(1)',offset:.7},{opacity:0,transform:'translateX(-50%) scale(.98)'}],{duration:850,easing:'ease-out'});
+  setTimeout(()=>d.remove(),870);
+}
+window.onNetFx=function(f){
+  if(!f || !f.fn) return;
+  const el=fxFindTarget(f.fn,f.a);
+  if(!el) return;
+  window.__fxAt=Date.now();                       // net.js retient l'état ~350ms
+  const r=el.getBoundingClientRect();
+  const visible = r.width>0 && r.bottom < innerHeight-124 && r.top>0;
+  if(visible) ghostPress(el);
+  else{ const lb=(el.textContent||'').replace(/\s+/g,' ').trim().slice(0,26); if(lb) pressChip(lb); }
+};
 /* Effets post-rendu : barres qui se remplissent, annonce de tour, gorgées flottantes */
 function postRender(){
   fxLayer();
@@ -2075,11 +2115,7 @@ function render(){
   if(bloque){ app().insertAdjacentHTML('beforeend', spectatorBar()); }
   else if(!libre && typeof amSpectator==='function' && amSpectator() && !NON_GAME_SCREENS.includes(S.screen)){
     const pad=app().firstElementChild;
-    if(pad){ pad.style.pointerEvents='none'; pad.style.opacity='.92';
-      // Seuls les boutons d'action standard sont grisés : les boutons-contenu
-      // (options de vote, chevaux du PMU) doivent rester lisibles.
-      pad.querySelectorAll('button.btn').forEach(b=>{ b.style.opacity='.4'; b.style.filter='saturate(.55)'; });
-    }
+    if(pad){ pad.style.pointerEvents='none'; pad.style.opacity='.92'; }
     app().insertAdjacentHTML('beforeend', spectatorBar());
     const back=app().querySelector('.iconbtn'); if(back){ back.style.pointerEvents='auto'; }
   }
@@ -2170,6 +2206,7 @@ NET_ACTIONS.forEach(name=>{
   window[name]=function(){
     try{
       if(!Room.active) return ORIG[name].apply(null, arguments);
+      Room.fx({ fn:name, a:[...arguments] });   // les autres voient mon clic
       if(Room.isHost){ const r=ORIG[name].apply(null, arguments); Room.pushState(); return r; }
       Room.act('call', { name, args:[...arguments] });
     }catch(e){ console.error('Action '+name+' a échoué:', e); try{ render(); }catch(_){} }

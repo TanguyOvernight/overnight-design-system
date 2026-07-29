@@ -98,6 +98,7 @@
         .on('broadcast', { event: 'action' }, function (p) { opts.onAction && opts.onAction(p.payload); })
         .on('broadcast', { event: 'hello' }, function (p) { opts.onHello && opts.onHello(p.payload); })
         .on('broadcast', { event: 'rollcall' }, function () { opts.onRollcall && opts.onRollcall(); })
+        .on('broadcast', { event: 'fx' }, function (p) { opts.onFx && opts.onFx(p.payload); })
         .on('presence', { event: 'sync' }, function () {
           var st = self.channel.presenceState(), online = {};
           Object.keys(st).forEach(function (k) { online[k] = true; });
@@ -219,7 +220,9 @@
           self.transport.broadcast('hello', { pid: self.me.pid, name: self.me.name, avatar: self.me.avatar });
         },
         onResubscribe: function () { self.resync(); },
-        onPresence: function (online) { self._onPresence(online); }
+        onPresence: function (online) { self._onPresence(online); },
+        // Écho visuel : les autres voient l'interaction de l'acteur (pur cosmétique)
+        onFx: function (f) { if (typeof window !== 'undefined' && window.onNetFx) { try { window.onNetFx(f); } catch (e) {} } }
       });
     },
 
@@ -267,6 +270,26 @@
       if (this.isHost) return;                       // l'hôte est la source de vérité
       if (s.__v && s.__v <= this._stateVersion) return;  // ignore les paquets en retard
       this._stateVersion = s.__v || 0;
+      // Si on vient de montrer le clic de l'acteur, on laisse l'écho se voir
+      // (~350ms) avant de changer l'écran ; seul le dernier état retenu compte.
+      var hold = (typeof window !== 'undefined' && window.__fxAt) ? (360 - (Date.now() - window.__fxAt)) : 0;
+      if (hold > 30) {
+        var self = this;
+        self._heldState = s;
+        clearTimeout(self._holdTimer);
+        self._holdTimer = setTimeout(function () {
+          var st = self._heldState; self._heldState = null;
+          if (typeof window !== 'undefined') window.__fxAt = 0;
+          if (st) self._applyNow(st);
+        }, hold);
+        return;
+      }
+      this._applyNow(s);
+    },
+    _applyNow: function (s) {
+      // Un état plus ancien pourrait encore attendre dans le timer de retenue :
+      // on l'annule, sinon il écraserait celui-ci après coup.
+      clearTimeout(this._holdTimer); this._heldState = null;
       // IMPORTANT : on modifie le tableau en place. Le jeu garde une référence
       // (S.players === Room.players) ; le réassigner casserait ce lien.
       this.players.length = 0;
@@ -279,6 +302,10 @@
     act: function (type, payload) {
       if (this.isHost) { this._onAction({ pid: this.me.pid, type: type, payload: payload }); return; }
       this.transport.broadcast('action', { pid: this.me.pid, type: type, payload: payload });
+    },
+    /* --- écho cosmétique de l'interaction (jamais bloquant) --- */
+    fx: function (payload) {
+      try { if (this.active && this.transport && this.transport.broadcast) this.transport.broadcast('fx', payload); } catch (e) {}
     },
     _onAction: function (a) {
       if (!this.isHost) return;
