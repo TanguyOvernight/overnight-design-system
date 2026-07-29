@@ -209,16 +209,38 @@ entrée dans la fenêtre du mois. Le thème du jour enrichit la réflexion et
 le vivier ; il ne crée jamais une pression à placer.
 
 💶 *TON ARGENT* (LA section, toujours en premier — l'instruction)
-→ L'instruction du jour, cash et chiffrée : « Mets **X €** sur
-  [nom précis, ticker, enveloppe PEA/CTO] parce que [1 phrase] » — ou
-  « **Ne place rien aujourd'hui**, attends [événement daté] » (dit sans
-  honte : c'est souvent le bon conseil).
+
+**RÈGLE ABSOLUE (Tanguy, 29/07/2026 : « c'est à toi de prendre la
+décision… j'ai besoin de facilement savoir quoi placer »)** :
+**on livre des DÉCISIONS, jamais des conditions.** « Achat si EBITDA ≥
+340 M€ ET cours ≤ 60 € » est de la mécanique INTERNE — elle vit dans le
+radar et le classement, jamais dans l'instruction. Tanguy ne doit RIEN
+avoir à évaluer : j'évalue, il exécute.
+
+→ **Ligne 1 : le verdict binaire, toujours en tête, lisible en 3 secondes**
+  🟢 *RIEN À FAIRE AUJOURD'HUI* — ou —
+  🔴 *ACTION AUJOURD'HUI : achète pour **X €** de [nom complet] ([TICKER],
+  place) sur ton **[PEA/CTO]**. [1 phrase de pourquoi]. Dis-moi quand
+  c'est fait.*
+  L'ordre est COMPLET et immédiatement exécutable : montant, nom, ticker,
+  enveloppe. Aucune condition à vérifier par Tanguy, aucun « si ».
+→ **📌 ORDRE PERMANENT** (toujours affiché, même les jours calmes) : la
+  consigne par défaut valable JUSQU'À CE QUE JE DISE AUTRE CHOSE, pour
+  qu'il n'ait jamais à se demander quoi faire de son virement mensuel.
+  Ex. : « Tes 500 € du mois → cœur WPEA sur le PEA, sans me demander. »
 → Compteur : **X € placés / Y € restants / Z jours** (1 ligne).
-→ 📆 Programmes en cours : UNE ligne chacun — « LLY : tranche 2/6,
-  50 €/mois, continue tant que [condition] ». C'est la visibilité sur où
-  va l'argent des prochains mois.
-→ Action structurante en attente (PEA…) : 1 ligne de rappel, tant que
-  non traitée.
+→ 📆 Programmes en cours : UNE ligne chacun, formulée en action, pas en
+  condition.
+→ Action structurante en attente : 1 ligne, formulée comme **une tâche à
+  faire** (« ouvre le PEA, même avec 100 € ») et non comme un blocage
+  subi.
+
+**Honnêteté sur la vitesse** : le brief tourne une fois par jour. Pour un
+horizon 5-7 ans avec 500 €/mois, c'est suffisant — les déclencheurs suivis
+se résolvent sur des jours ou des semaines (résultats, seuils de prix),
+pas en intraday. Ne JAMAIS promettre une réactivité en séance qu'on n'a
+pas. En revanche, le jour où un déclencheur tombe, la 🔔 PROPOSITION part
+le jour même, complète, sans attendre l'édition suivante.
 
 🎯 *SURVEILLANCES — les chiffres du jour* (le radar quotidien de Tanguy —
 section qu'il a explicitement validée : « très vite me proposer de

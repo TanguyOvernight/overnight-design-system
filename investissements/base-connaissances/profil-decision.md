@@ -153,6 +153,26 @@ espérance nette (rendement × proba, après impôt et frais) bat clairement
 celle d'un versement de plus au World, POUR le risque pris. Sinon : PASSE
 et cœur. Le Juge compare toujours toute idée à cette alternative gratuite.
 
+## 📌 ORDRE PERMANENT EN VIGUEUR (29/07/2026)
+
+À afficher dans CHAQUE brief. Tanguy ne doit jamais avoir à se demander
+quoi faire de son virement mensuel — il exécute, je décide.
+
+1. **Action du mois : OUVRIR LE PEA**, même avec le minimum (100 € suffisent).
+   Ce n'est pas un blocage administratif subi, c'est LA tâche à valeur
+   la plus élevée disponible : elle démarre le compteur des 5 ans qui fait
+   passer la fiscalité de 31,4 % à 18,6 %.
+2. **Dès le PEA ouvert : 500 €/mois → cœur WPEA, sans demander mon avis.**
+   Valable jusqu'à ce que je dise explicitement autre chose (prévision :
+   octobre 2026, quand R sera rentré dans la bande et que la poche
+   offensive de 150 €/mois s'ouvrira).
+3. **Si le PEA n'est pas ouvert au 31/08** : 150 € sur l'or (ETC Amundi
+   FR0013416716, CTO eToro), le reste roule. Je le rappellerai le moment venu.
+
+**Capacité RÉELLE confirmée : 500 €/mois, pas de cumul mobilisable.**
+Aucune séquence ne doit exiger plus d'une mensualité sans confirmation
+explicite de Tanguy.
+
 ## Plan d'allocation courant (arbitrage comparatif du Juge, 27/07/2026)
 Classement des usages de l'euro : ① Cœur WPEA · ② LLY (satellite, après le
 cœur) · ③ Or (assurance, politique) · ④ Ultragenyx PASSE (loterie FDA,
