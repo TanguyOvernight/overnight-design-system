@@ -1362,10 +1362,13 @@ function purpleNext(){ const g=S.game; nextTurn(); g.cards=[]; g.last=null; rend
 
 /* ============================ FUCK THE DEALER ============================ */
 function startFtd(){ S.game={target:(Math.random()*13|0)+1, tries:2, hint:'', last:null, lo:1, hi:13, tried:[]}; S.reveal=null; go('ftd'); }
+// Carte suivante = joueur suivant : sans ça, en ligne « chacun son tour »,
+// le même joueur gardait la main indéfiniment.
+function ftdNext(){ nextTurn(); startFtd(); }
 SCREENS.ftd = () => {
   const g=S.game,r=S.reveal; let mid,actions;
   if(r){
-    actions=`<button class="btn primary" onclick="startFtd()">Carte suivante</button>`;
+    actions=`<button class="btn primary" onclick="ftdNext()">Au joueur suivant</button>`;
     mid=`<div class="gpanel" style="padding:22px;text-align:center;">
        <div class="cflip" style="display:flex;justify-content:center;">${cardHTML({v:g.target,s:0},120,168)}</div>
        <div class="drop" style="margin-top:16px;"><b style="font-family:var(--f);font-size:20px;color:${r.ok?'#7BE8C0':'#FF9A8B'};">${r.title}</b><div class="sub" style="font-size:14px;margin-top:4px;">${r.msg}</div></div></div>`;
@@ -2256,7 +2259,7 @@ Room.applyState = function(st){
 
 /* --- Routage des actions : l'hôte exécute, les invités demandent --- */
 const NET_ACTIONS = ['busGuess','busNext','busSetMode','palmierTirer','palmierBalance','palmierDrop',
-  'palmierNext','palmSetBalance','ftdGuess','startFtd','pmuChoose','pmuSelect','pmuDraw',
+  'palmierNext','palmSetBalance','ftdGuess','startFtd','ftdNext','pmuChoose','pmuSelect','pmuDraw',
   'purpleGuess','purpleNext','echelleTirer','echelleSetGuess','echelleToGuess','echelleReveal',
   'echelleNext','vobAns','vobSetCat','vobSetCount','jamaisAns','prefVote','prefNext','startGame',
   'chooseGame','pickControl','launchPending','skipTurn','pmuMise','pmuStartRace','busChoosePyr','busPyrFlip','busPyrEnd',
