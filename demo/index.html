@@ -510,8 +510,13 @@ function setMyName(v){
   if(typeof Room!=='undefined' && Room.active){
     Room.saveIdentity({name:nom});
     const moi = Room.players.find(p=>p.pid===Room.me.pid); if(moi) moi.name = nom;
-    if(Room.isHost) Room.pushState();
-    else Room.transport.broadcast('hello',{pid:Room.me.pid,name:nom,avatar:Room.me.avatar});
+    // Débounce réseau : diffuser à chaque frappe provoquait un re-render qui
+    // fermait le clavier de celui qui tape (« ça fait un retour »).
+    clearTimeout(setMyName._t);
+    setMyName._t=setTimeout(()=>{
+      if(Room.isHost) Room.pushState();
+      else Room.transport.broadcast('hello',{pid:Room.me.pid,name:Room.me.name,avatar:Room.me.avatar});
+    },450);
   } else {
     Room.saveIdentity({name:nom});
     const j = S.avatarPicker; if(S.players[j]) S.players[j].name = nom;
@@ -835,7 +840,8 @@ SCREENS.avatars = () => {
   const tile=(idx)=>{ const img=AVATARS[sex][idx], sel=img===cur;
     return `<button onclick="pickAvatar(${i},${idx})" style="border:none;background:transparent;cursor:pointer;padding:0;display:flex;justify-content:center;transition:transform .08s;" onpointerdown="this.style.transform='scale(.93)'" onpointerup="this.style.transform=''"><div style="border-radius:50%;${sel?'box-shadow:0 0 0 4px var(--amber),0 0 26px rgba(255,201,60,.55);':''}">${avatar({avatar:{img,c:'#2A1F4A'}},96)}</div></button>`; };
   const online = (typeof Room!=='undefined') && Room.active;
-  const monNom = online ? (Room.me.name||'') : ((src[i]&&src[i].name)||'');
+  let monNom = online ? (Room.me.name||'') : ((src[i]&&src[i].name)||'');
+  if(monNom==='Invité') monNom='';   // vieux défaut : on ne pré-remplit plus
   const nomFieldy = `<div style="margin-top:14px;">
       <div class="cap" style="margin-bottom:8px;">Ton prénom</div>
       <input id="pname" value="${String(monNom).replace(/"/g,'&quot;')}" maxlength="16" autocomplete="off"
@@ -2107,7 +2113,7 @@ window.onNetFx=function(f){
   if(!el) return;
   window.__fxAt=Date.now();                       // net.js retient l'état ~350ms
   const r=el.getBoundingClientRect();
-  const visible = r.width>0 && r.bottom < innerHeight-124 && r.top>0;
+  const visible = r.width>0 && r.bottom <= innerHeight && r.top>=0;
   if(visible) ghostPress(el);
   else{ const lb=(el.textContent||'').replace(/\s+/g,' ').trim().slice(0,26); if(lb) pressChip(lb); }
 };
@@ -2208,6 +2214,10 @@ function expectedActor(){ return S.players[expectedActorIndex()]; }
 function controlMode(){ return (S.net && S.net.control) || 'turn'; }
 function myTurn(){
   if(!Room.active) return true;
+  // PMU, phase pari : chacun mise pour SOI, quel que soit le mode de pilotage
+  if(S.screen==='pmu' && S.game && S.game.phase==='bet'){
+    const a=S.players[S.game.betTurn]; return !!(a && a.pid===Room.me.pid);
+  }
   if(controlMode()==='host') return Room.isHost;   // MJ aux commandes : lui seul agit
   // « Chacun son tour » : l'hôte est un joueur comme les autres. Pour débloquer une
   // partie (joueur déconnecté), il dispose du bouton explicite « Passer son tour ».
@@ -2280,6 +2290,13 @@ Room.handleAction = function(a){
     if(PYR_SOI[name](args||[])){ try{ ORIG[name].apply(null, args||[]); }catch(e){} Room.pushState(); }
     return;
   }
+  // PMU, phase pari : le parieur du moment agit pour lui-même, même en mode MJ
+  if(['pmuSelect','pmuMise','pmuChoose'].includes(name)){
+    const g2=S.game, ok = S.screen==='pmu' && g2 && g2.phase==='bet'
+      && S.players[g2.betTurn] && S.players[g2.betTurn].pid===a.pid;
+    if(ok){ try{ ORIG[name].apply(null, args||[]); }catch(e){} Room.pushState(); }
+    return;
+  }
   if(controlMode()==='host') return;        // MJ aux commandes : aucune action invitée acceptée
   const expected = expectedActor();
   if(!expected || expected.pid!==a.pid) return;   // seul l'acteur attendu fait avancer la partie
@@ -2287,7 +2304,14 @@ Room.handleAction = function(a){
   catch(e){ console.error('Action distante '+name+' a échoué:', e); }
   Room.pushState();
 };
-Room.onUpdate = function(){ if(S.screen!=='lobby' || Room.active) render(); };
+Room.onUpdate = function(){
+  // Ne jamais re-render pendant qu'on tape : l'input serait recréé et le
+  // clavier se fermerait. Le prochain état re-synchronisera l'affichage.
+  const ae=document.activeElement;
+  if(ae && ae.tagName==='INPUT' && ae.closest('#app')){ Room._renderPending=true; return; }
+  if(S.screen!=='lobby' || Room.active) render();
+};
+addEventListener('focusout', ()=>{ if(Room._renderPending){ Room._renderPending=false; setTimeout(()=>render(),60); } });
 // L'hôte qui se reconnecte a perdu sa liste : il demande à tout le monde de se re-signaler.
 Room.onRollcall = function(){
   if(Room.isHost) Room.transport.broadcast('rollcall', { at: Date.now() });
@@ -2414,7 +2438,9 @@ function netJoin(){
   if(code.length<4){ S.net.error='Le code fait 4 lettres.'; render(); return; }
   S.net.error=''; S.net.status='connecting'; render();
   showLoader('Connexion au salon…');
-  Room.saveIdentity({ name: (Room.me.name||'').trim() || 'Invité' });
+  // Pas de nom par défaut « Invité » : sinon il faut l'effacer à la main dans
+  // le champ. L'affichage a son propre repli cosmétique.
+  Room.saveIdentity({ name: (Room.me.name||'').trim() });
   Room.join(code).then(()=>{
     hideLoader(); S.net.status='ok'; S.players=Room.players; S.screen='lobby'; render();
   }).catch(e=>{
@@ -2425,10 +2451,13 @@ function netJoin(){
 }
 // Mode conseillé selon le jeu : les jeux de questions vont plus vite si le MJ enchaîne.
 const CONTROL_HINT = { vob:'host', jamais:'host', echelle:'host',
-                       pref:'turn', bus:'turn', palmier:'turn', ftd:'turn', pmu:'turn', purple:'turn' };
+                       pref:'turn', bus:'turn', palmier:'turn', ftd:'turn', purple:'turn' };
+// Jeux sans choix de pilotage : le MJ mène la course, chacun garde ses actions perso
+const CONTROL_FORCE = { pmu:'host' };
 function chooseGame(id){
   if(!Room.active) return startGame(id);        // un seul téléphone : rien à demander
   if(!Room.isHost) return;                      // seul l'hôte lance
+  if(CONTROL_FORCE[id]){ S.net.control = CONTROL_FORCE[id]; return startGame(id); }
   S.net.pendingGame = id;
   S.net.control = CONTROL_HINT[id] || 'turn';   // pré-sélection intelligente
   S.screen = 'gamemode'; Room.pushState(); render();
@@ -2573,14 +2602,9 @@ function spectatorBar(){
         : `<div class="sub center" style="font-size:13px;">L'hôte peut passer son tour.</div>`}
     </div>`;
   }
-  if(!amSpectator()) return '';
-  return `<div style="position:absolute;left:0;right:0;bottom:0;z-index:40;padding:16px 20px calc(18px + env(safe-area-inset-bottom));background:linear-gradient(180deg,rgba(20,8,60,0),rgba(20,8,60,.92) 40%);pointer-events:none;">
-    <div style="display:flex;align-items:center;gap:12px;justify-content:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.16);padding:10px 18px 10px 10px;border-radius:999px;">
-      ${avatar(a,38)}<span style="font-family:var(--f);font-weight:800;color:#fff;font-size:15px;">${
-        (S.game && S.game.phase==='setup') ? 'Le MJ configure la partie…'
-        : controlMode()==='host' ? 'Le MJ pilote — à '+a.name+' de jouer'
-        : (a.online ? 'Tu regardes — à '+a.name+' de jouer' : a.name+' est déconnecté…')
-      }</span></div></div>`;
+  // Pas de barre « tu regardes » : le bandeau de tour en haut suffit, et un
+  // bandeau bas cacherait l'interface de jeu.
+  return '';
 }
 
 /* --- Démarrage --- */
