@@ -54,7 +54,7 @@ tout ordre.
 
 | Rang | Candidate | Env. | Chiffre du jour vs déclencheur | Prochaine échéance | Statut | Mvt |
 |---|---|---|---|---|---|---|
-| **①** | **Cœur WPEA** (hurdle 5 %/an net) | PEA | Validation PEA → **1 000 €** (offre Fortuneo, butée 23/08) | à l'ouverture | 🟢 | = |
+| **①** | **Cœur WPEA** (hurdle 5 %/an net) | PEA | Ouvrir le PEA **au minimum (100 € suffisent)** → puis **350 €/mois** mécaniques + 150 €/mois en réserve offensive | à l'ouverture | 🟢 | = |
 | **②** | **Vicat** (ciment) | PEA | ~61-63 € vs ≤ 60 € → **publie CE SOIR** (3 conditions évaluées demain matin) | **29/07 ce soir** | 🟢 | = |
 | **③** | **Mobility Global** (CARFAX) | CTO | **21,72 $** vs ≤ 21 $ → **repassé AU-DESSUS** (+3,4 %) — la condition remplie hier ne l'est plus | **07/08** (résultats) | 🟡 | = |
 | **④** | **Magnum Ice Cream** | **PEA** | capi ~9,4-9,7 Md€ vs ≤ 8,8 Md€ → **+7 à +10 %** | **30/07 DEMAIN** (S1) | 🟡 | = |
