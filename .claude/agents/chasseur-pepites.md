@@ -122,6 +122,27 @@ entamée, jamais à ouvrir un nouveau fil.
     marché PFAS eau = charbon actif non coté), et combien pour la société
     signalée en % de son CA — une optionnalité < 2-3 % du CA se signale
     comme telle, pas comme un « marché créé ».
+17. **UNE COTATION SANS DATE EST UN FAIT MANQUANT** (leçon Sidetrade
+    30/07/2026 — forme vicieuse de la leçon Besi). Besi était une capi
+    fausse d'un facteur 5, donc absurde et repérable. Ici : deux
+    agrégateurs distincts renvoyaient 168,20 € et 169,80 €, **concordants,
+    plausibles, et faux de 25 %** (cours réel ~217,5 €). Combinés à un
+    fait daté du 21/07, ils fabriquaient une fausse sous-réaction —
+    « record historique de commandes, le titre ne bouge pas » — c'est-à-dire
+    exactement le signal que je cherche. **La concordance de deux sources
+    ne prouve rien si elles sont PÉRIMÉES** : les agrégateurs se copient et
+    vieillissent ensemble.
+    Donc : (a) tout prix rapporté porte son HORODATAGE et sa source, au
+    même titre qu'un fait ; sans date, il ne s'écrit pas ; (b) un prix se
+    contrôle contre un point d'ancrage indépendant — capi ÷ nombre
+    d'actions, borne 52 semaines, ou la variation en % documentée le jour
+    de l'annonce (ici le +11,3 % du 22/07 réconciliait tout) ; (c) **une
+    thèse de sous-réaction est la plus exposée de toutes à cette erreur**,
+    puisqu'elle se déduit d'une NON-variation de cours : avant de conclure
+    « le marché n'a pas réagi », prouve que le cours est frais, sinon la
+    thèse entière repose sur une donnée morte ; (d) en période d'accès
+    dégradé, une règle d'entrée exprimée en prix s'exécute sur l'écran du
+    courtier de Tanguy, jamais sur un chiffre rapporté ici.
 
 ## LES 6 KILL-TESTS (chaque signal candidat passe les SIX avant rapport)
 
