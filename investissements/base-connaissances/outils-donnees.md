@@ -60,7 +60,41 @@ Options flow réel (sweeps, dark pool) : pas de source gratuite fiable en
 2026 (Unusual Whales/FlowAlgo payants). Proxy : ratios CBOE + volume
 d'options Finviz.
 
+## 🔴 BLOCAGE STRUCTUREL — aucun pattern de ce fichier n'est exécutable (27→30/07/2026)
+
+**4 jours consécutifs.** Tous les accès web directs (WebFetch *et* curl)
+sont refusés : le proxy répond `connect_rejected — gateway answered 403 to
+CONNECT (policy denial)` sur **100 % des hôtes testés**, y compris
+wikipedia.org. Ce n'est ni un anti-bot, ni un problème de User-Agent, ni
+une panne : le proxy se déclare sain (`enabled: true`), c'est la
+**politique réseau de l'environnement** qui refuse la sortie. Elle est
+paramétrable par Tanguy — il y a déjà ajouté `hooks.slack.com`, ce qui a
+réparé la livraison Slack.
+
+**Conséquence mesurée, pas théorique.** Le 30/07, deux agents indépendants
+ont buté dessus : 4 cours exploitables et datés sur 12 lignes suivies ; et
+le Chasseur a failli remonter une fausse sous-réaction sur Sidetrade à
+partir de deux agrégateurs concordants mais périmés de 25 % (règle 17 de
+la charte). **Une donnée de prix périmée ne dégrade pas la décision, elle
+l'INVERSE** — c'est un risque de premier ordre, pas une gêne.
+
+**Domaines à autoriser, par ordre de levier décroissant :**
+
+| # | Domaine | Ce que ça débloque |
+|---|---|---|
+| 1 | **stooq.com** | **Le correctif structurel.** Cotations en **CSV horodaté**, sans scraping ni anti-bot : `https://stooq.com/q/l/?s=vct.fr&f=sd2t2ohlcv&h&e=csv` (`.fr` Paris, `.us` US, `.de` Xetra). Donne date, heure, OHLC, volume — donc satisfait nativement la règle 17. À lui seul, il répare la section « cours du jour ». |
+| 2 | **globenewswire.com** | Communiqués émetteurs en source primaire. Sans lui, aucun résultat n'est lu à la source — seulement des dépêches de seconde main (cas Vicat 30/07 : EBITDA, levier et guidance connus uniquement par la presse). |
+| 3 | **boursorama.com** | Actualité FR + cotations Euronext (patterns §8). |
+| 4 | **abcbourse.com** | Cotations Euronext + historiques téléchargeables. |
+| 5 | **stockanalysis.com** | Fondamentaux et historiques US. |
+
+Tant que ce blocage dure : **toute règle d'entrée exprimée en prix
+s'exécute sur l'écran Fortuneo de Tanguy**, jamais sur un chiffre rapporté
+ici — et une thèse qui repose sur une NON-variation de cours ne se conclut
+pas du tout.
+
 ## Journal de validation (à remplir au fil des briefs)
 
 | Date | Pattern testé | Résultat |
 |---|---|---|
+| 27→30/07/2026 | **Tous** (§1 à §10) | ❌ **Aucun testable** — 403 au CONNECT sur tous les hôtes (politique réseau de l'environnement, pas anti-bot). Journal vide non par négligence mais par blocage. |

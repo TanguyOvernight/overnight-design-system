@@ -95,6 +95,53 @@ dernier trade gagné ou perdu.
 | **Angle mort** (Brier mauvais sur une `classe_réf`) | Réduire la taille des positions de cette classe, exiger une source primaire de plus, déléguer moins au stock-picking et renforcer le cœur ETF. |
 | **Kill criteria jamais déclenchés/respectés** | Bug de discipline : alerte automatique sur les `kill_criteria` échus. |
 | **Resulting détecté** (post-mortem qui juge au résultat) | Réinjecter dans le prompt de revue : « évalue la décision avec l'info de l'ÉPOQUE uniquement ». |
+| **Biais de sélection du registre** (découvert 30/07/2026 — voir ci-dessous) | Toute SURVEILLANCE ouverte ouvre simultanément son appel probabilisé. Sans quoi le registre ne mesure que les dossiers refusés. |
+
+## ⚠️ RÈGLE DE COUVERTURE (encodée le 30/07/2026 — leçon Vicat)
+
+**Toute surveillance ouverte avec un déclencheur chiffré ouvre
+SIMULTANÉMENT un appel daté et probabilisé** sur la question : *« le
+déclencheur se présentera-t-il en totalité avant l'échéance ? »* Pas de
+surveillance sans appel — c'est une condition de validité du contrat, pas
+une formalité.
+
+**Pourquoi.** Le 30/07, Vicat est devenu le premier contrat de
+surveillance résolu sur des chiffres réellement publiés (1 condition sur
+3 remplie → pas d'achat). Le contrat a parfaitement fonctionné. Mais
+**aucun appel n'avait été enregistré** : le dossier le plus décisif de la
+semaine s'est résolu **sans rien apprendre sur ma calibration**.
+
+**Le défaut est structurel, pas ponctuel.** Un appel naît naturellement
+quand l'Avocat RÉFUTE (il pose une probabilité pour justifier son verdict
+— C010, C017) ou quand le Juge PASSE. Il ne naît pas quand le Juge décide
+de SURVEILLER, parce que la surveillance ressemble à une non-décision.
+**C'en est une** : fixer trois seuils, c'est affirmer implicitement qu'ils
+ont une chance raisonnable d'être atteints ensemble. Sans cette
+affirmation écrite, le registre ne couvre que les dossiers écartés — un
+**biais de sélection** qui rend le score de Brier ininterprétable, puisqu'on
+ne mesure jamais les paris qu'on a choisi de garder ouverts.
+
+**Corollaire anti-triche** : on ne crée JAMAIS d'appel rétroactif sur un
+dossier déjà résolu. Un registre rempli après coup ne mesure plus rien.
+La lacune Vicat est donc définitive et assumée — elle se répare pour la
+suite, pas pour le passé.
+
+**Second enseignement Vicat — la conception des conditions.** Les trois
+conditions portaient sur l'EBITDA, le levier et le prix ; **aucune ne
+regardait la conversion en cash**. Or le free cash-flow s'est retourné de
++44 à −36 M€ (80 M€), sur un dossier dont la thèse ENTIÈRE est le
+désendettement. Règle : **un contrat doit tester le mécanisme de la thèse,
+pas seulement sa photographie comptable.** Si la thèse est « il se
+désendette », une condition doit porter sur le cash qui sert à se
+désendetter.
+
+**Troisième enseignement — la cohérence temporelle des conditions.** Un
+contrat dont deux conditions divergent dans le temps n'est pas un
+contrat : chez Vicat, le levier ne peut pas s'améliorer avant ~mars 2027
+tandis que la guidance relevée éloigne le cours du seuil de prix. Règle :
+**vérifier à l'écriture que les conditions peuvent être vraies EN MÊME
+TEMPS, et à quelle date au plus tôt.** Sinon l'échéance est fictive et la
+surveillance devient une attente indéfinie déguisée en discipline.
 
 ## Appels ouverts (semaine du 27/07/2026)
 
