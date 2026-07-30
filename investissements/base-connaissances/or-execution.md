@@ -5,13 +5,49 @@
 > PROPRE seau — jamais par la poche offensive. Raison : l'or est une
 > assurance à espérance réelle ≈ 0 ; le financer avec les munitions
 > reviendrait à consommer le budget de pari avec un actif qui, par
-> construction, offre moins. Premier ordre visé : fin novembre 2026.
-> Exécution : ETC Amundi FR0013416716 (CTO) ; à défaut IAU au comptant sur
-> eToro — levier x1 strict, jamais de CFD. DCA rules-based : on n'accélère
-> pas sur la baisse.
+> construction, offre moins. ~~Premier ordre visé : fin novembre 2026.~~
+> **AVANCÉ AU 31/07/2026** (arbitrage du 30/07). Exécution :
+> ~~ETC Amundi FR0013416716 (CTO)~~ → **IAU au comptant sur eToro, levier
+> x1 strict, jamais de CFD**. DCA rules-based : on n'accélère pas sur la
+> baisse.
 
-Compilé le 2026-07-27. Statut : prêt à exécuter (tolérance au risque
-validée par Tanguy le 26/07).
+Compilé le 2026-07-27. Statut : **premier ordre déclenché le 30/07/2026**.
+
+## 🟢 PREMIER ORDRE — 100 € d'IAU, à exécuter d'ici le 31/07/2026
+
+**Avancé de fin novembre à fin juillet.** Le motif n'est PAS le prix de
+l'or (~4 100 $/oz) — toute condition d'arrêt liée au prix reste interdite
+par ce fichier. Le motif est **l'asymétrie fiscale de routage** :
+
+> **L'or n'a aucune route PEA.** Aucun ETF or n'est éligible au PEA, et
+> les ETC sont des titres de créance exclus. Un euro destiné à l'or est
+> donc destiné au CTO **quelle que soit la date**. L'exécuter maintenant
+> ne coûte **rien** de ce qu'il coûterait plus tard — contrairement à un
+> euro de cœur, qui perd 12,8 pts de fiscalité à être logé en CTO plutôt
+> qu'en PEA (31,4 % contre 18,6 % après 5 ans).
+
+C'est cette asymétrie, et elle seule, qui désigne l'or comme le bon
+destinataire d'un euro dont le canal principal (le PEA) est bloqué.
+
+**Correction de véhicule (le précédent était inexécutable).**
+FR0013416716 est coté Euronext Paris et vise un **CTO Fortuneo non
+ouvert** — que ce fichier prescrit par ailleurs de ne pas ouvrir avant que
+le PEA tourne. Le véhicule réellement disponible aujourd'hui est **IAU sur
+eToro, au comptant, levier x1**. ⚠️ Vérifier à l'écran que l'instrument
+est bien **« IAU »** et non **« GOLD »** : ce dernier est un CFD à frais
+overnight quotidiens, triplés le week-end — piège rédhibitoire.
+
+**Dose : 100 € et non 150 €.** 100 € donnent **7,2 %** du portefeuille
+post-ordre (~1 391 €), soit **à l'intérieur de la bande cible 5-10 %** ;
+150 € auraient donné 10,4 %, hors bande. La seule question sur l'or est la
+dose — la dose est 100 €.
+
+**Test de non-timing.** La décision aurait été identique avec une Fed
+accommodante : le PEA serait toujours bloqué, l'or toujours à 0 % contre
+une cible de 5-10 %, l'asymétrie fiscale inchangée. Le contexte macro
+(cinquième maintien, trois dissidents pour une hausse, 30 ans US au plus
+haut depuis 2007, or +2 %) est une **confirmation, pas une cause** — s'il
+avait été la cause, la dose dépasserait 100 €, et elle ne la dépasse pas.
 
 ## Marché (fin juillet 2026)
 

@@ -165,6 +165,46 @@ surveillance devient une attente indéfinie déguisée en discipline.
 | C016 | 27/07 | Juge | allocation / <1 an | Garde-fou R | **R ≤ 25 % au 30/09/2026** (le régime 300/50/150 est structurellement légal) | 80 % | Calcul de R sur la capture du 30/09/2026 | ⏳ |
 | C017 | 27/07 | Avocat | holding décotée sans catalyseur / 12 mois · PEA | Viel & Cie (VIL) | La décote N'EST PAS une inefficience capturable : au 31/07/2027 elle reste ≥ 30 % **ET** VIL ne surperforme pas le World de plus de 5 pts | 75 % (P(le signal a raison) = 25 %) | 31/07/2027 : recalcul de la décote aux cours + perf VIL vs WPEA. Jalons : S1 CFT fin août 2026 (marge > 18 % → bascule 40 %), semestriel Viel ~24/09 (autocontrôle > 9 % → bascule 45 %) | ⏳ |
 
+## Appels ouverts le 30/07/2026 (arbitrage Vicat / Magnum / allocation)
+
+| ID | Date | Agent | classe_réf | Affaire | Affirmation | P | Condition de résolution | Statut |
+|---|---|---|---|---|---|---|---|---|
+| **C018** | 30/07 | Avocat | action-US / 12 mois · CTO | MSFT | Acheté ~430 $ le 30/07/2026, MSFT surperforme le S&P 500 TR d'au moins **5 pts** sur 12 mois | **25 %** | 30/07/2027 : perf totale MSFT vs S&P 500 TR. **Kill intermédiaire au 29/10/2026** (T1 FY27) : bookings commerciaux < +15 % a/a **ET** Azure ≤ 44 % cc → thèse morte | ⏳ |
+| **C019** | 30/07 | Avocat | action-US / 12 mois · CTO | MSFT | *Version faible* : MSFT surperforme **simplement** le S&P 500 TR sur 12 mois | **38 %** | 30/07/2027 : perf totale MSFT vs S&P 500 TR | ⏳ |
+| **C020** | 30/07 | Juge | mid-cap-EU cyclique / pluriannuel · PEA | Vicat | **Couverture de surveillance** : le déclencheur réécrit se présente EN TOTALITÉ avant l'échéance — Porte A (≤ 56 € + guidance intacte + dette nette en baisse a/a) **ou** Porte B franchie puis ≤ 62 € sous 45 j | **42 %** (brute 43 %) | 15/03/2027 : clôture Euronext Paris + communiqué FY2026 | ⏳ |
+| **C021** | 30/07 | Juge | mid-cap-EU cyclique / <1 an · PEA | Vicat | **Mécanisme** : FCF FY2026 **≥ 200 M€** ET dette nette au 31/12/2026 **≤ 1 060 M€** ET levier **≤ 1,30x** | **32 %** | Résultats FY2026 (~mi-février 2027), butée 15/03/2027 | ⏳ |
+| **C022** | 30/07 | Juge | staples-EU / 12 mois · PEA | Magnum | **Le PASSE est justifié** : MICC ne surperforme PAS le MSCI World de plus de 5 pts sur 12 mois | **70 %** | 30/07/2027 : perf totale MICC (Amsterdam, EUR) vs MSCI World | ⏳ |
+| **C023** | 30/07 | Juge | staples-EU / pluriannuel · PEA | Magnum | **Test d'élasticité GLP-1** : Magnum publie une croissance organique **en VOLUME négative** sur au moins un trimestre | **30 %** | Communiqués trimestriels MICC, avant le 31/12/2027 | ⏳ |
+| **C024** | 30/07 | Juge | action-US défensive / <1 an · CTO | Walmart | **Couverture (réparation de lacune)** : le déclencheur d'achat (WMT ≤ 100 $ en clôture) se présente | **25 %** (brute 22 %, plancher de charte) | Clôture NYSE, avant le 31/12/2026 | ⏳ |
+| **C025** | 30/07 | Juge | allocation / <1 an · CTO | Ordre de juillet | L'ordre du 30/07 (**400 € SWDA + 100 € IAU sur eToro**) est **exécuté** | **70 %** | Confirmation de Tanguy ou capture de portefeuille, au plus tard le **07/08/2026** | ⏳ |
+| **C026** | 30/07 | Juge | allocation / <1 an · PEA | PEA Fortuneo | Le PEA est **ouvert ET exécutable** (un ordre passable) | **75 %** (brute 78 %, plafond de charte) | État du compte au **30/09/2026** | ⏳ |
+
+**Traçabilité de la calibration mécanique** : registre à **0 appel résolu**
+(< 20) → aucun facteur de rétraction publié n'est applicable. La règle par
+défaut (plafonnement hors [25 %, 75 %] sur les classes sans edge démontré)
+a été appliquée **mécaniquement** et a modifié deux appels : C024
+(22 → 25 %) et C026 (78 → 75 %). C018 et C019 sont enregistrés **tels que
+transmis par l'Avocat**, sans retouche du Juge.
+
+**✅ Lacune structurelle FERMÉE.** Les 6 surveillances actives disposent
+désormais toutes d'un appel probabilisé : Aubay **C001**, STM **C007**,
+Séché **C012**, LLY **C014**, Walmart **C024**, Vicat **C020 + C021**. Le
+biais de sélection qui rendait le score de Brier ininterprétable est
+corrigé — **pour l'avenir seulement**, comme l'exige le corollaire
+anti-triche.
+
+⚠️ **Lacune résiduelle assumée** : **Mobility Global** porte un
+déclencheur chiffré sans appel, et son catalyseur tombe le 07/08. Traité
+par instruction au Chasseur (dossier instruit d'ici le 05/08), pas par un
+appel improvisé.
+
+**Note d'honnêteté sur C009** (« ordre WPEA exécuté au plus tard le
+31/08/2026 », P = 80 %) : la décision du 30/07 exécute un ordre **SWDA en
+CTO**, pas WPEA en PEA. **C009 reste ouvert, inchangé, et ne doit pas être
+requalifié.** S'il se résout faux, ce sera un point de calibration
+légitime contre le Juge — il aura surestimé la vitesse d'ouverture du PEA.
+C'est le système qui fonctionne, pas un incident à masquer.
+
 ## Appels résolus
 | ID | Affaire | Affirmation | P | Issue | Brier | Leçon |
 |---|---|---|---|---|---|---|

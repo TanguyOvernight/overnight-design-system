@@ -12,13 +12,54 @@ renouvellement explicitement motivé). Stock max ~6 lignes.
 
 | Affaire | Déclencheur d'achat précis | Échéance de re-test | Expiration si rien | Appel registre |
 |---|---|---|---|---|
+| **Vicat (VCT, FR0000031775, PEA)** — *contrat RÉÉCRIT le 30/07, renouvellement UNIQUE* | **PORTE A — PRIX (armée en permanence)** : clôture Euronext Paris **≤ 56,00 €** ET guidance FY2026 non abaissée ET dernier point de dette nette **en baisse a/a** → tranche 1 = plafond L. **PORTE B — MÉCANISME (résultats FY2026, ~mi-février 2027)** : FCF FY2026 **≥ 200 M€** ET dette nette au 31/12/2026 **≤ 1 060 M€** ET levier **≤ 1,30x** → le seuil de la Porte A est **relevé à 62,00 € pendant 45 jours** | **15/03/2027** (publication FY2026 + 30 j) | Échéance atteinte sans franchissement → **PASSE AUTOMATIQUE ET DÉFINITIF** (renouvellement unique consommé) | **C020 / C021** |
+| **Séché SCHP (PEA)** | S1 : EBE ≥ 125 M€ ET France organique ≥ 0 % ET guidance 275-285 M€ confirmée ET cours ≤ 90 € → tranche 1 ~150 € ; arrêté strict + quantification PFAS → tranche 2 conditionnelle (plafond 5 %) | Publication S1 (butée 30/09/2026) ; point intermédiaire : arrêté boues (été 2026) | 3e warning OU EBE S1 < 110 M€ OU arrêté ≥10x plus laxiste/reporté au-delà du 01/01/2027 → PASSE auto | C012 |
+| **LLY (CTO)** | Cours **≤ 1 020 $** en clôture (−15 % : rétablit la prime de risque nette de PFU) → tranche 1 = plafond L du mois, ≥ 3 tranches | Résultats Q2 le 05/08/2026, puis Q3 (~fin oct.) | Après le Q3 sans passage sous 1 020 $ ET sans relèvement de guidance FY → PASSE auto (renouvellement unique motivé) | C014 |
 | **Aubay (PEA)** | Cours ≤ 50 € OU scare optique sur le T3 | Publication T3 (fin oct. 2026) | Après T3 sans déclencheur → PASSE auto | C001 |
 | **STM (STMPA, PEA)** | ≤ 42 $ ET P/E fwd < 30x ET ≥ 1 trim. de MB remontant vers 40 %+ | Résultats Q3 STM (fin oct. 2026) | Après Q3 sans les 3 conditions → PASSE auto | C007 |
-| **Nike (NKE, CTO)** | ≥ 1 trim. Direct/Digital positif OU stabilisation Chine explicite + fin des révisions baissières + tenue > MM50 | Prochains résultats trimestriels NKE (~fin sept. 2026) | Après 2 publications sans stabilisation (≤ 30/04/2027) → PASSE auto | C008 |
-| **WMT (CTO)** | Alerte prix ~98-100 $ (~33x) | Résultats du 20/08/2026 | Fin 2026 sans repli → PASSE auto | — |
-| **MSFT renfort (détenu)** | Après résultats 29/07 : Azure ≥ ~38-40 % ET guidance capex maîtrisée | 29/07/2026 (print) | Print raté sur l'un des deux critères → pas de renfort, re-test au T1 FY27 | — |
-| **LLY (CTO)** | Cours **≤ 1 020 $** en clôture (−15 % : rétablit la prime de risque nette de PFU) → tranche 1 = plafond L du mois, ≥ 3 tranches | Résultats Q2 le 05/08/2026, puis Q3 (~fin oct.) | Après le Q3 sans passage sous 1 020 $ ET sans relèvement de guidance FY → PASSE auto (renouvellement unique motivé) | C014 |
-| **Séché SCHP (PEA)** | S1 : EBE ≥ 125 M€ ET France organique ≥ 0 % ET guidance 275-285 M€ confirmée ET cours ≤ 90 € → tranche 1 ~150 € ; arrêté strict + quantification PFAS → tranche 2 conditionnelle (plafond 5 %) | Publication S1 (butée 30/09/2026) ; point intermédiaire : arrêté boues (été 2026) | 3e warning OU EBE S1 < 110 M€ OU arrêté ≥10x plus laxiste/reporté au-delà du 01/01/2027 → PASSE auto | C012 |
+| **WMT (CTO)** | Cours **≤ 100 $** en clôture | Résultats du **20/08/2026** | **31/12/2026** sans repli → PASSE auto | **C024** *(créé le 30/07 — lacune de couverture réparée)* |
+
+**Budget saturé : 6/6 créneaux.** Toute nouvelle surveillance exige d'en
+déclasser une.
+
+### Vérification de cohérence temporelle du contrat Vicat (exigence du registre)
+1 151 − 200 (FCF) + 90 (dividende : 44,9 M titres × 2 €) = **1 041 M€**, et
+1 041 / 833 (EBITDA 2026e) = **1,25x**. Les trois conditions de la Porte B
+sont **mutuellement compatibles et atteignables à la même date**. Le S2
+doit produire 236 M€ de FCF contre 180 M€ au S2 2025 (+31 %) avec un
+EBITDA en hausse de ~6 % — exigeant, et c'est le but : **ce test isole si
+le trou de cash du S1 était du phasage ou de la dégradation.**
+
+**Pourquoi 56 € et pas un chiffre rond** : c'est le prix auquel Vicat
+franchit son hurdle (~8,5 %/an net contre 6,5-7,5 % exigé après ajustement
+de corrélation). À ~62 €, l'espérance nette est de **+6,74 %/an** —
+marginale, donc le cœur gagne. Un seuil ne se justifie que par
+l'arithmétique.
+
+**Kill criteria Vicat (datés, mesurables) :**
+1. **Dette nette au 31/12/2026 > 1 151 M€** (en hausse a/a) à la
+   publication FY2026 → thèse morte, PASSE définitif immédiat.
+2. **Guidance FY2026 abaissée** à tout moment, **OU** EBITDA S1 2027 en
+   recul organique → PASSE définitif.
+3. **Cours > 72,00 € en clôture** avant le 15/03/2027 → dossier couru, le
+   rendement futur est consommé → PASSE définitif.
+
+### Purges journalisées du 30/07
+- **MSFT renfort** → **RÉSOLU**. Print publié, thèse de renfort **RÉFUTÉE**
+  par l'Avocat (25 %). Ligne supprimée. ⚠️ **La détention de 6 % n'est pas
+  remise en cause** — le verdict portait sur le renfort. Appels C018/C019.
+- **Nike (NKE, CTO)** → **contrat RETIRÉ** (budget de 6 créneaux).
+  Justification écrite : déclencheur **qualitatif sans condition de prix**,
+  aucun test de mécanisme ni de cash, ρ ≈ 0,55 en USD (n'apporte pas de
+  diversification), rang dernier, sous le hurdle. **Sous les standards
+  d'écriture d'aujourd'hui, ce contrat ne serait pas accepté.** L'appel
+  **C008 reste ouvert** et se résout sur faits publiés — aucune perte de
+  calibration. Nike **reste au classement** (aucune des 4 portes de sortie
+  ne s'applique), en veille sans contrat.
+- **Magnum** → **PASSE non renouvelé, aucun créneau consommé.** Réouverture
+  sur FAIT et non sur date (capi ≤ 7,6 Md€ **ET** volume organique ≥ +2,0 %)
+  → volontairement **pas de ligne radar**, pour ne pas déguiser une attente
+  indéfinie en discipline. Appels C022/C023.
 
 ## Sous 7 jours 🔥
 

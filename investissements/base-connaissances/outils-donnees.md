@@ -93,6 +93,39 @@ s'exécute sur l'écran Fortuneo de Tanguy**, jamais sur un chiffre rapporté
 ici — et une thèse qui repose sur une NON-variation de cours ne se conclut
 pas du tout.
 
+⚠️ **En revanche, une règle exprimée en MONTANT n'est pas affectée.**
+La précision d'un cours est décisive quand la règle est un *franchissement*
+(« acheter si ≤ 56 € » : une erreur de 4 % déclenche ou annule à tort un
+ordre). Elle est **indifférente** quand la règle est une *quantité*
+(« placer 400 € de MSCI World » : l'ordre est identique à la décimale
+près). **Le blocage interdit les décisions de seuil, pas les décisions
+d'allocation.**
+
+### 🛑 STANDARD DE PREUVE — le blocage réseau n'abaisse PAS la barre
+
+**Règle posée par le Juge le 30/07/2026, après incident.** Le screening du
+jour avait déclaré « NON OBTENUE » ou « NON FIABLE » la dette nette de
+Magnum, sa capitalisation et son levier. **Le Juge les a récupérées en
+deux requêtes indexées** (dette nette 3 264 M€ — *en hausse* de 297 M€ ;
+capi ~9,6 Md€ ; marge FY25 15,9 % rendant le levier calculable), et ces
+chiffres ont **renversé la décision**. Il a également fermé par
+l'arithmétique une « incohérence non élucidée » que j'avais laissée
+ouverte sur Vicat (marge S1 2025 = 331/1 885 = 17,6 % contre 20,0 % en
+FY : l'écart S1/FY est structurel, ~2,4 pts — donc les 18,0 % du S1 2026
+sont cohérents avec un FY ~20,4 %).
+
+**La règle** : *une donnée n'est déclarée indisponible qu'après **trois
+requêtes indexées de formulations différentes**, dont **une en anglais sur
+le nom exact du communiqué**.* Et avant de déclarer une incohérence
+« non élucidée », **tenter de la fermer par le calcul** à partir des
+chiffres déjà connus.
+
+**Pourquoi c'est important** : le blocage est réel pour la *lecture
+directe*, mais la recherche indexée fonctionne. Laisser « le réseau est
+bloqué » devenir un motif d'abaissement du standard de preuve
+transformerait une contrainte technique en excuse analytique — et le
+30/07, cela aurait produit une décision différente sur Magnum.
+
 ## Journal de validation (à remplir au fil des briefs)
 
 | Date | Pattern testé | Résultat |

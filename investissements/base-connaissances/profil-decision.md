@@ -189,12 +189,110 @@ quoi faire de son virement mensuel — il exécute, je décide.
    restent intactes : plafond L par ligne (150 € aujourd'hui), passage
    obligatoire par les 3 agents, ≥ 3 tranches, max 3 lignes vives.
    Réparation de R en ~3 mois au lieu de 2 — accepté.
-3. **Si le PEA n'est pas ouvert au 31/08** : 150 € sur l'or (ETC Amundi
-   FR0013416716, CTO eToro), le reste roule. Je le rappellerai le moment venu.
+3. ~~Si le PEA n'est pas ouvert au 31/08 : 150 € sur l'or (ETC Amundi
+   FR0013416716, CTO eToro), le reste roule.~~ **ANNULÉ ET REMPLACÉ le
+   30/07** — voir ci-dessous. Cette clause était bâtie sur l'hypothèse de
+   cumul (« le reste roule ») que la leçon du 29/07 a invalidée le jour
+   même : elle ne pouvait pas survivre à sa propre prémisse. **Et son
+   véhicule était inexécutable** : FR0013416716 est coté Euronext Paris et
+   vise un CTO Fortuneo non ouvert (que `or-execution.md` prescrit de ne
+   pas ouvrir avant que le PEA tourne). Le véhicule or **réellement
+   disponible sur eToro** est **IAU au comptant, levier x1 strict** —
+   jamais « GOLD » spot ni aucun CFD (frais overnight quotidiens, triplés
+   le week-end).
 
 **Capacité RÉELLE confirmée : 500 €/mois, pas de cumul mobilisable.**
 Aucune séquence ne doit exiger plus d'une mensualité sans confirmation
 explicite de Tanguy.
+
+## 📌 ORDRE DE JUILLET 2026 — arbitrage du Juge, 30/07 (remplace le point 3)
+
+**À exécuter d'ici le 31/07, sur eToro, sans condition à évaluer :**
+1. **Acheter 400 € de SWDA** (iShares Core MSCI World — ligne déjà
+   détenue, aucun nouvel instrument, aucun risque d'exécution).
+2. **Acheter 100 € de IAU** (iShares Gold Trust) — **au comptant, levier
+   x1**. Vérifier à l'écran que l'instrument est bien « IAU » et non
+   « GOLD ».
+3. **Rien d'autre.** Aucun ordre sur titre vif, aucun ordre PEA.
+4. **En août** : ouvrir le PEA au minimum (100 € suffisent) dès validation,
+   puis 400 € sur WPEA. Total août = 500 €, aucun effort exceptionnel.
+
+**Pourquoi router 400 € vers le CTO plutôt que d'attendre le PEA.** Deux
+coûts s'opposent, chiffrés plutôt qu'évoqués :
+- **Coût A — mauvais routage fiscal** : PFU 31,4 % contre 18,6 % en PEA
+  après 5 ans = 12,8 pts sur la plus-value. Sur 6 ans à 5 %/an net, 400 €
+  produisent ~150 € de gain → **surcoût ≈ 19 €**.
+- **Coût B — l'argent de juillet n'est jamais investi** : la capacité
+  confirmée est 500 €/mois **sans cumul mobilisable**. Si le non-dépensé
+  ne roule pas, le coût est de **400 € de capital et ~150 € de gain
+  composé, définitivement**.
+- **Seuil d'indifférence** : parquer n'est le bon choix que si
+  P(l'argent survit intact jusqu'en août) **≥ 95,7 %**. Cette certitude
+  n'existe pas, et la seule fois où le système l'a supposée (l'erreur des
+  1 000 €), il s'est trompé.
+- **Décision sous ambiguïté** : la solution retenue **domine dans tous les
+  états du monde** — si l'argent aurait roulé, on a payé 19 € et réparé R
+  de 16 points ; s'il n'aurait pas roulé, on a sauvé 400 €. Il n'existe
+  aucun état où parquer domine. Prise sous **ergodicité** : Tanguy ne vit
+  qu'une trajectoire, et une trajectoire où l'euro de juillet disparaît
+  n'est pas rattrapable.
+
+**Effet mécanique de cet ordre :**
+
+| Indicateur | Avant | Après |
+|---|---|---|
+| Valeur du portefeuille | ~891 € | ~1 391 € |
+| Cœur (VTI + SWDA) | 55,9 % | **64,6 %** |
+| Titres vifs | 43,9 % | **28,2 %** |
+| Or | 0,0 % | **7,2 %** |
+| NVDA | 22,0 % | **14,1 %** |
+| **R (garde-fou structurel)** | **43,9 %** | **28,2 %** |
+| **Plafond L par ligne vive** | **134 €** | **209 €** |
+
+**R passe de 43,9 % à 28,2 % en un seul versement**, sans vendre une
+action ni payer un euro d'impôt. Le régime autorisé remonte à **400/100**
+dès août : **la poche offensive réapparaît**. NVDA passe de 22 % à 14,1 %
+sans être vendue — la dilution par les versements fonctionne comme prescrit.
+
+**⚠️ La contrainte qui domine tout le reste — et qui répond à l'objection
+de Tanguy du 29/07.** Avec V ≈ 891 €, le plafond d'une ligne vive est
+**L = min(5 % × (V + 6 000) ; 15 % × V) = 133,65 €**, soit **44,55 € par
+tranche** avec l'exigence de ≥ 3 tranches. **Une action Vicat coûte ~62 €.
+Une tranche réglementaire ne peut pas acheter une seule action** — même
+constat pour Séché (~82 €), Sidetrade (~217 €), LLY (~1 221 $).
+À la taille actuelle, **le pipeline satellite produit des décisions que le
+portefeuille est incapable d'exécuter dans le respect de la charte.**
+Ce n'est pas un argument contre les satellites, c'est un argument sur
+**l'ordre des opérations** : après cet ordre, L passe de 134 € à **209 €** ;
+à V = 3 000 €, L = 450 €. **Le cœur n'est pas le concurrent des placements
+techniques — il en est la condition d'existence.** Chaque euro versé au
+cœur augmente le montant qu'il pourra un jour engager sur une pépite.
+
+**Décision de définition (tranchée le 30/07) : l'or est EXCLU du
+numérateur de R.** R mesure la dérive *offensive* ; l'architecture à trois
+seaux du 27/07 (cœur / assurance / offensif) a rendu obsolète la
+définition « titres vifs + ETF non-cœur », écrite quand il n'y avait que
+deux seaux. **Compter l'extincteur comme du carburant est une erreur de
+définition** : elle punirait mécaniquement Tanguy de souscrire l'assurance
+qu'on lui prescrit. Ancienne définition : R = 35,4 %. Bonne définition :
+**R = 28,2 %**.
+
+**Dose d'or : 100 € et non 150 €** → 7,2 % du portefeuille, **à
+l'intérieur de la bande cible 5-10 %**. 150 € auraient donné 10,4 %, hors
+bande. La seule question sur l'or est la dose ; la dose est 100 €.
+
+**Test de non-timing (la Fed n'entre PAS dans cette décision).** Aurais-je
+pris la même décision avec une Fed accommodante ? **Oui, à l'identique** :
+le PEA serait toujours bloqué, l'or toujours à 0 % contre une cible de
+5-10 %, et l'asymétrie fiscale inchangée — **l'or n'a aucune route PEA**
+(aucun ETF or n'est éligible ; les ETC sont des titres de créance exclus),
+donc un euro destiné à l'or est destiné au CTO **quelle que soit la date**,
+et l'exécuter maintenant ne coûte rien de ce qu'il coûterait plus tard.
+**La macro est une confirmation, pas une cause** — si elle avait été la
+cause, la dose d'or serait supérieure à 100 €, et elle ne l'est pas.
+Ce que la macro change légitimement : rien dans l'allocation, mais à
+espérance égale le classement **surpondère désormais les bilans peu
+endettés** (c'est ce qui fait descendre Magnum et tenir Vicat).
 
 ## Plan d'allocation courant (arbitrage comparatif du Juge, 27/07/2026)
 Classement des usages de l'euro : ① Cœur WPEA · ② LLY (satellite, après le
