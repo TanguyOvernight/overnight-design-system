@@ -68,7 +68,7 @@ fabrique pas de 12ᵉ ligne pour tenir le compte.
 | **⑦** | **Eli Lilly** | CTO | 1 221 $ vs ≤ 1 020 $ (+16,5 %) | Q2 **05/08** | 🟡 | = |
 | **⑧** | **Walmart** | CTO | 113,89 $ vs ≤ 100 $ (+14 %) | Résultats **20/08** | ⚪ | ▲ +1 |
 | **⑨** | **Aubay** (ESN) | PEA | ~54,90 € vs ≤ 50 € (+9,8 %) ⚠️ donnée peu fiable | T3 fin oct. | ⚪ | ▲ +1 |
-| **⑩** | **STM** (semi) | PEA | ~50,4 $ vs ≤ 42 $ (+20 %) | Q3 fin oct. | 🔴 | ▲ +1 |
+| **⑩** | **STM** (semi) | PEA | **44,62 €** (30/07) vs **≤ 42 €** → +6,2 % ⚠️ *unité corrigée le 31/07 : le seuil était écrit en $ dans 3 fichiers alors que STMPA cote en €* | Q3 fin oct. | 🔴 | ▲ +1 |
 | **⑪** | **Nike** | CTO | 41,70 $ (cotation du 24/07) — **contrat retiré**, veille sans contrat | ~fin sept. | 🔴 | ▲ +1 |
 
 ### Justification écrite de chaque mouvement

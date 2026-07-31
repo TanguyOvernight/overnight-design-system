@@ -16,7 +16,7 @@ renouvellement explicitement motivé). Stock max ~6 lignes.
 | **Séché SCHP (PEA)** | S1 : EBE ≥ 125 M€ ET France organique ≥ 0 % ET guidance 275-285 M€ confirmée ET cours ≤ 90 € → tranche 1 ~150 € ; arrêté strict + quantification PFAS → tranche 2 conditionnelle (plafond 5 %) | Publication S1 (butée 30/09/2026) ; point intermédiaire : arrêté boues (été 2026) | 3e warning OU EBE S1 < 110 M€ OU arrêté ≥10x plus laxiste/reporté au-delà du 01/01/2027 → PASSE auto | C012 |
 | **LLY (CTO)** | Cours **≤ 1 020 $** en clôture (−15 % : rétablit la prime de risque nette de PFU) → tranche 1 = plafond L du mois, ≥ 3 tranches | Résultats Q2 le 05/08/2026, puis Q3 (~fin oct.) | Après le Q3 sans passage sous 1 020 $ ET sans relèvement de guidance FY → PASSE auto (renouvellement unique motivé) | C014 |
 | **Aubay (PEA)** | Cours ≤ 50 € OU scare optique sur le T3 | Publication T3 (fin oct. 2026) | Après T3 sans déclencheur → PASSE auto | C001 |
-| **STM (STMPA, PEA)** | ≤ 42 $ ET P/E fwd < 30x ET ≥ 1 trim. de MB remontant vers 40 %+ | Résultats Q3 STM (fin oct. 2026) | Après Q3 sans les 3 conditions → PASSE auto | C007 |
+| **STM (STMPA, PEA)** | **≤ 42 €** ET P/E fwd < 30x ET ≥ 1 trim. de MB remontant vers 40 %+ | Résultats Q3 STM (fin oct. 2026) | Après Q3 sans les 3 conditions → PASSE auto | C007 |
 | **WMT (CTO)** | Cours **≤ 100 $** en clôture | Résultats du **20/08/2026** | **31/12/2026** sans repli → PASSE auto | **C024** *(créé le 30/07 — lacune de couverture réparée)* |
 
 **Budget saturé : 6/6 créneaux.** Toute nouvelle surveillance exige d'en
