@@ -235,6 +235,34 @@ avoir à évaluer : j'évalue, il exécute.
   faire** (« ouvre le PEA, même avec 100 € ») et non comme un blocage
   subi.
 
+🎁 *CE QUE ÇA T'APPORTE VRAIMENT* — **section conditionnelle, ajoutée le
+30/07/2026.** À afficher **uniquement les jours où l'instruction est un
+versement au cœur** (le geste que Tanguy trouve ennuyeux), et **tant que le
+portefeuille est sous ~3 000 €**. Au-delà, la contrainte de taille cesse
+d'être mordante et la section devient du remplissage : la supprimer.
+
+Elle existe parce que l'objection du 29/07 (« si je dois mettre 500 € sur
+le WPEA chaque mois… ça ne m'intéresse pas ») **est financièrement
+fondée**, et qu'y répondre par « c'est pour ta sécurité » ne répond pas.
+La vraie réponse est arithmétique et se démontre en trois lignes :
+
+> Plafond par ligne vive **L = min(5 % × (V + 6 000) ; 15 % × V)**, en
+> ≥ 3 tranches. À V ≈ 891 € : **L = 134 €, soit 45 € par tranche.**
+> **Une action Vicat coûte 62 €.** Tanguy ne peut pas exécuter une seule
+> action en respectant ses propres règles.
+> Après un versement de 500 € : **L = 209 €**. À V = 3 000 € : **L = 450 €.**
+
+**Le cœur n'est pas le concurrent des placements techniques — il en est la
+condition d'existence.** Chaque euro versé au cœur augmente le montant
+qu'il pourra un jour engager sur une pépite. C'est aussi le seul levier
+qui répare R (part offensive) **sans vendre ni payer d'impôt**, et donc le
+chemin le plus court vers la réouverture de sa poche offensive.
+
+Règle de rédaction : montrer **le chiffre avant/après** (plafond par
+ligne, R, poids de NVDA), jamais l'argument moral. Et ne jamais employer
+cette section pour justifier un versement qu'on n'aurait pas fait
+autrement — ce serait de la vente, pas du conseil.
+
 **Honnêteté sur le RYTHME D'ACTION** (Tanguy, 29/07 : « ça ne
 m'intéresse pas de mettre mécaniquement sur la même chose ») : ne jamais
 présenter la phase de réparation comme un régime définitif. Le régime
