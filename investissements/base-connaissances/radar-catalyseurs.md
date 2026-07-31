@@ -4,47 +4,114 @@ Mis à jour : **2026-07-27**. Chaque brief vérifie ce qui tombe sous 7 jours.
 Ajouter tout nouvel événement daté découvert dans l'actualité ; purger le passé
 en le journalisant si notable.
 
+## 🛑 LES 4 RÈGLES D'ÉCRITURE D'UN SEUIL (encodées le 31/07/2026)
+
+**Cause racine, pas incident.** En cinq jours, **cinq** données de prix
+fausses ou périmées ont touché une décision — dont une **pendant**
+l'arbitrage censé corriger les précédentes. Le canal ne se réparera pas :
+les extraits de pages de cotation sont des caches **sans horodatage**. Il
+faut donc un process qui reste juste **malgré un canal faux**.
+
+**RÈGLE 1 — Deux ancrages INDÉPENDANTS et de NATURE DIFFÉRENTE.**
+Aucun prix n'entre dans un verdict sans confirmation par deux sources de
+nature différente, dont une non-cachable : (a) un article **horodaté**
+citant prix **et** variation %, ou (b) une **capitalisation ÷ nombre de
+titres**. **Un extrait de page de cotation vaut ZÉRO.**
+*Efficace le 31/07* : 2,75 Md€ ÷ 44,9 M titres = 61,25 € a démasqué deux
+snapshots Vicat comme pré-publication.
+
+**RÈGLE 2 — Contrôle d'arithmétique interne, systématique, 5 secondes.**
+Tout couple « prix + variation % » se vérifie : **prix ÷ (1 + %) =
+clôture précédente implicite**, qui doit égaler la clôture connue. Sinon
+le chiffre est faux **ou ne désigne pas ce qu'on croit**.
+*Efficace le 31/07* : 67,80 ÷ 1,1282 = 60,10 ≠ 61,60 → a révélé que
+« 67,80 € » était un **seuil technique franchi, pas un cours**. Ce test
+aurait aussi attrapé l'erreur Investing.com du 30/07 et l'attribution MSFT
+du 29/07 — **3 incidents sur 5 détectés par un calcul de 5 secondes.**
+
+**RÈGLE 3 — Interdiction d'écrire un seuil sans cotation POST-événement.**
+*C'est la règle qui a manqué le 30/07, et c'est la faute exacte.* Le
+61,60 € n'était pas faux : il était **correct et périmé**. La faute fut
+d'écrire un contrat de prix sur un titre ayant publié **la veille au
+soir**, avec un prix **antérieur à la publication** — alors que le radar
+portait « 29/07 — Résultats S1 Vicat ». L'information était dans le
+fichier.
+> **Si un catalyseur daté est passé et que le cours post-catalyseur n'est
+> pas obtenu, le verdict est SUSPENDU, pas écrit.** « Verdict en attente
+> de cotation » est une sortie légitime et sans honte. **Un jour de retard
+> coûte moins cher qu'un contrat né mort.**
+
+**RÈGLE 4 — Écrire les seuils en VALORISATION, pas en prix** *(le correctif
+de fond)*. Un seuil « ≤ 56,00 € » devient **silencieusement faux** dès que
+le prix, le nombre de titres, la dette nette ou l'EBITDA bougent. Un seuil
+« ≤ 4,60x VE/EBITDA 2026e » est **auto-correcteur** : il ne se convertit en
+prix qu'en allant chercher des données fraîches — **la conversion force la
+vérification.**
+> Si le contrat Vicat avait été écrit « VE/EBITDA 2026e ≤ 4,60x », il
+> aurait été confronté le 31/07 à **5,33x** : un écart de *valorisation*,
+> immédiatement lisible, au lieu d'un écart de prix invérifiable.
+> **Un prix périmé n'aurait pas pu produire un contrat.**
+
+**Format standard de TOUT seuil à partir du 31/07/2026** :
+> **Multiple (primaire, contraignant) + le prix qu'il implique aux données
+> vérifiées du jour (secondaire, indicatif, DATÉ).** Le multiple prime en
+> cas de divergence.
+
 ## Surveillances du Juge (contrats datés — charte Arbitre v2)
 
 Toute SURVEILLANCE émise par l'Arbitre vit ICI avec ses 4 champs. À
 l'échéance sans déclencheur ni thèse renforcée → PASSE automatique (ou
 renouvellement explicitement motivé). Stock max ~6 lignes.
+**État au 31/07 : 5/6 — le sixième créneau est laissé VIDE délibérément**
+(un créneau vide est un actif ; le remplir parce qu'il s'ouvre serait
+fabriquer un déclencheur au lieu d'en trouver un).
 
 | Affaire | Déclencheur d'achat précis | Échéance de re-test | Expiration si rien | Appel registre |
 |---|---|---|---|---|
-| **Vicat (VCT, FR0000031775, PEA)** — *contrat RÉÉCRIT le 30/07, renouvellement UNIQUE* | **PORTE A — PRIX (armée en permanence)** : clôture Euronext Paris **≤ 56,00 €** ET guidance FY2026 non abaissée ET dernier point de dette nette **en baisse a/a** → tranche 1 = plafond L. **PORTE B — MÉCANISME (résultats FY2026, ~mi-février 2027)** : FCF FY2026 **≥ 200 M€** ET dette nette au 31/12/2026 **≤ 1 060 M€** ET levier **≤ 1,30x** → le seuil de la Porte A est **relevé à 62,00 € pendant 45 jours** | **15/03/2027** (publication FY2026 + 30 j) | Échéance atteinte sans franchissement → **PASSE AUTOMATIQUE ET DÉFINITIF** (renouvellement unique consommé) | **C020 / C021** |
 | **Séché SCHP (PEA)** | S1 : EBE ≥ 125 M€ ET France organique ≥ 0 % ET guidance 275-285 M€ confirmée ET cours ≤ 90 € → tranche 1 ~150 € ; arrêté strict + quantification PFAS → tranche 2 conditionnelle (plafond 5 %) | Publication S1 (butée 30/09/2026) ; point intermédiaire : arrêté boues (été 2026) | 3e warning OU EBE S1 < 110 M€ OU arrêté ≥10x plus laxiste/reporté au-delà du 01/01/2027 → PASSE auto | C012 |
 | **LLY (CTO)** | Cours **≤ 1 020 $** en clôture (−15 % : rétablit la prime de risque nette de PFU) → tranche 1 = plafond L du mois, ≥ 3 tranches | Résultats Q2 le 05/08/2026, puis Q3 (~fin oct.) | Après le Q3 sans passage sous 1 020 $ ET sans relèvement de guidance FY → PASSE auto (renouvellement unique motivé) | C014 |
 | **Aubay (PEA)** | Cours ≤ 50 € OU scare optique sur le T3 | Publication T3 (fin oct. 2026) | Après T3 sans déclencheur → PASSE auto | C001 |
 | **STM (STMPA, PEA)** | **≤ 42 €** ET P/E fwd < 30x ET ≥ 1 trim. de MB remontant vers 40 %+ | Résultats Q3 STM (fin oct. 2026) | Après Q3 sans les 3 conditions → PASSE auto | C007 |
 | **WMT (CTO)** | Cours **≤ 100 $** en clôture | Résultats du **20/08/2026** | **31/12/2026** sans repli → PASSE auto | **C024** *(créé le 30/07 — lacune de couverture réparée)* |
 
-**Budget saturé : 6/6 créneaux.** Toute nouvelle surveillance exige d'en
-déclasser une.
+**Budget : 5/6 créneaux.** Le sixième est **laissé libre délibérément**.
 
-### Vérification de cohérence temporelle du contrat Vicat (exigence du registre)
-1 151 − 200 (FCF) + 90 (dividende : 44,9 M titres × 2 €) = **1 041 M€**, et
-1 041 / 833 (EBITDA 2026e) = **1,25x**. Les trois conditions de la Porte B
-sont **mutuellement compatibles et atteignables à la même date**. Le S2
-doit produire 236 M€ de FCF contre 180 M€ au S2 2025 (+31 %) avec un
-EBITDA en hausse de ~6 % — exigeant, et c'est le but : **ce test isole si
-le trou de cash du S1 était du phasage ou de la dégradation.**
+### Purges journalisées du 31/07 — deux PASSE DÉFINITIFS
 
-**Pourquoi 56 € et pas un chiffre rond** : c'est le prix auquel Vicat
-franchit son hurdle (~8,5 %/an net contre 6,5-7,5 % exigé après ajustement
-de corrélation). À ~62 €, l'espérance nette est de **+6,74 %/an** —
-marginale, donc le cœur gagne. Un seuil ne se justifie que par
-l'arithmétique.
-
-**Kill criteria Vicat (datés, mesurables) :**
-1. **Dette nette au 31/12/2026 > 1 151 M€** (en hausse a/a) à la
-   publication FY2026 → thèse morte, PASSE définitif immédiat.
-2. **Guidance FY2026 abaissée** à tout moment, **OU** EBITDA S1 2027 en
-   recul organique → PASSE définitif.
-3. **Cours > 72,00 € en clôture** avant le 15/03/2027 → dossier couru, le
-   rendement futur est consommé → PASSE définitif.
+- **VICAT → ☠️ PASSE DÉFINITIF**, contrat supprimé, renouvellement unique
+  consommé. Kill criterion n°3 (« dossier couru ») déclenché **sur le fond
+  avant la forme** : le titre a fait **+13,15 % le 30/07 à 69,70 €** sur la
+  guidance relevée, sans jamais franchir les 72,00 € formels. Espérance
+  recalculée au vrai prix : **+4,79 %/an, sous le World nu (5 %)**.
+  Les deux portes étaient devenues **logiquement inatteignables** :
+  Porte A exigeait −19,7 % **ET** une guidance non abaissée, or tous les
+  chemins vers 56 € (retournement cyclique, révision en baisse, choc
+  construction) violent cette seconde condition. **C020 résolu ❌ · C021
+  maintenu ouvert · C027 créé.**
+- **MOBILITY GLOBAL → ☠️ PASSE**, aucun créneau ouvert. L'edge invoqué
+  (vendeurs forcés post-spin) est **de flux, donc daté** : à J+21 séances
+  le titre **monte** (+2,4 % en 3 semaines) et **6 analystes le couvrent
+  déjà en « Buy » à 27,83 $**. Espérance **+2,28 %/an net de PFU**, et
+  **+4,21 % même en supposant un bon print le 07/08** — *un contrat dont
+  l'exécution réussie laisse encore l'euro sous le hurdle est un piège.*
+  Ses 4 conditions se résolvaient **le même jour en sens opposés**
+  (P jointe ≈ 4,5 %). **Publié 7 jours AVANT le catalyseur** — la lacune
+  de couverture est fermée avant l'événement, par la porte du PASSE.
+  **C028/C029/C030 créés**, dont deux se résolvent le **07/08**.
+- **SANOFI → contrat de re-test EXPIRÉ**, sans renouvellement. 2 échecs
+  sur 3 : cours **72,73 €** > 68 €, et **deux arrêts de programmes**
+  annoncés (violation frontale de la 3ᵉ condition). Guidance pourtant
+  **relevée** à ~+10 % à changes constants.
+  📌 **Lecture de régime** : le 30/07, deux sociétés relèvent leur
+  guidance — Vicat (cyclique, levier opérationnel) fait **+13,15 %**,
+  Sanofi (pharma, risque pipeline) fait **−8,95 %**, plus forte baisse du
+  CAC. Le marché paie le levier opérationnel cyclique et sanctionne le
+  risque de pipeline. **Cela n'autorise aucune rotation** (ce serait du
+  factor-timing, interdit) mais explique pourquoi les dossiers du jour se
+  referment : on chassait dans une zone que le marché vient de re-noter.
 
 ### Purges journalisées du 30/07
+
 - **MSFT renfort** → **RÉSOLU**. Print publié, thèse de renfort **RÉFUTÉE**
   par l'Avocat (25 %). Ligne supprimée. ⚠️ **La détention de 6 % n'est pas
   remise en cause** — le verdict portait sur le renfort. Appels C018/C019.

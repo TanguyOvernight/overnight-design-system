@@ -205,10 +205,58 @@ requalifié.** S'il se résout faux, ce sera un point de calibration
 légitime contre le Juge — il aura surestimé la vitesse d'ouverture du PEA.
 C'est le système qui fonctionne, pas un incident à masquer.
 
+## Appels ouverts le 31/07/2026 (fast-track Vicat / Mobility Global)
+
+| ID | Date | Agent | classe_réf | Affaire | Affirmation | P | Condition de résolution | Statut |
+|---|---|---|---|---|---|---|---|---|
+| **C027** | 31/07 | Juge | mid-cap-EU cyclique / 12 mois · PEA | Vicat | **Le PASSE à 69,70 € est justifié** : VCT ne surperforme PAS le MSCI World de plus de 5 pts sur 12 mois | **62 %** | 31/07/2027 : perf totale VCT (Euronext) vs MSCI World | ⏳ |
+| **C028** | 31/07 | Juge | mid-cap-US spin-off / <1 an · CTO | Mobility Global | **Test du mécanisme (7 jours)** : MBGL publie un **EBITDA ajusté ≥ 175 M$** ET une **croissance organique CARFAX ≥ +3 %** | **28 %** | Communiqué du **07/08/2026**, avant bourse | ⏳ |
+| **C029** | 31/07 | Juge | mid-cap-US spin-off / <1 an · CTO | Mobility Global | **Test de flux (l'edge est-il expiré ?)** : MBGL clôture **≤ 21,00 $** le 07/08/2026 | **38 %** | Clôture NYSE du **07/08/2026** | ⏳ |
+| **C030** | 31/07 | Juge | mid-cap-US spin-off / 12 mois · CTO | Mobility Global | **Le PASSE est justifié** : MBGL ne surperforme PAS le MSCI World de plus de 5 pts sur 12 mois — *contre un consensus de 6 analystes « Buy » à 27,83 $* | **60 %** | 31/07/2027 : perf totale MBGL vs MSCI World | ⏳ |
+| **C031** | 31/07 | Juge | staples-EU / <1 an · PEA | Magnum | **Test de sélection adverse** : **aucune offre ferme** sur MICC (Blackstone, CD&R ou autre) n'est déposée avant le 31/12/2026 | **70 %** | Communiqués MICC / autorités de marché au 31/12/2026 | ⏳ |
+
+**Notes de calibration :**
+- **C028 et C029 sont les appels les plus précieux du registre : ils se
+  résolvent dans 7 jours**, sur une `classe_réf` (`spin-off`) totalement
+  vierge. Deux points de Brier avant le 15/08.
+- **La conjonction à 4 conditions (~8 %) n'est PAS enregistrée** : la
+  charte plafonne hors [25 %, 75 %] et une conjonction n'est pas « quasi
+  arithmétique » (ses branches ne le sont pas). Elle a été **décomposée**
+  en C028/C029, tous deux dans la bande. *Respecter la règle plutôt que
+  l'argumenter.*
+- **C027 (62 %) et C030 (60 %)** sont délibérément peu confiants : aucun
+  edge démontré, et C030 s'oppose à un consensus sell-side unanime.
+- **Registre : 1 résolu / 31 ouverts** → toujours < 20 résolus, donc
+  **aucun facteur de rétraction publié**. La règle par défaut a été
+  appliquée mécaniquement et a modifié un appel du jour : Vicat 20 % →
+  **25 %** — **dans le sens défavorable au verdict du Juge**. C'est
+  l'usage prévu : la règle ne vaut que si elle fait mal.
+
 ## Appels résolus
-| ID | Affaire | Affirmation | P | Issue | Brier | Leçon |
+
+| ID | Affaire | Affirmation | P | Issue | **Brier** | Leçon |
 |---|---|---|---|---|---|---|
-| (aucun encore — les premières résolutions arrivent fin août : Nexans S1, LLY Q2 5/08, Capricor AdComm 29/07) | | | | | | |
+| **C020** | **Vicat** | Le déclencheur réécrit se présente EN TOTALITÉ avant échéance (Porte A ≤ 56 € ou Porte B) | **42 %** | **0 — ❌ FAUX** (contrat terminé le 31/07 par PASSE définitif : le déclencheur ne peut plus se présenter) | **0,1764** | **P calculée sans conditionner sur un catalyseur inscrit à MON PROPRE radar** (résultats du 29/07). Un mid-cap qui publie a une dispersion de ±10-15 % en une séance : un seuil à −10 % avait donc une probabilité substantielle de devenir inatteignable **avant même que l'encre sèche**. C'est exactement ce qui s'est produit, en une séance (+13,15 %). |
+
+### ⚙️ Correction de process encodée (issue de C020)
+
+> **Tout déclencheur écrit à moins de 5 séances d'un catalyseur DATÉ doit
+> voir sa probabilité calculée comme une MIXTURE sur les issues du
+> catalyseur — jamais sur le prix pré-catalyseur.**
+
+### 📐 Principe : un appel sur MON CONTRAT meurt avec mon contrat ; un appel sur LE MONDE lui survit
+
+**C021 est MAINTENU OUVERT à 32 %, sans retouche**, alors même que le
+dossier Vicat est clos. Distinction de principe :
+- **C020** portait sur *mon déclencheur* → mort avec le contrat.
+- **C021** porte sur *le FCF, la dette nette et le levier FY2026 de
+  Vicat* → **entièrement vérifiable sur comptes publiés**, que l'on
+  détienne le dossier ou non. Le fermer détruirait gratuitement de
+  l'information de calibration **sur le seul mécanisme qui comptait**.
+
+⚠️ **Et ses 32 % ne sont PAS révisés** à la lumière de la dette nette de
+1 310 M€ obtenue depuis : **réviser une probabilité déjà enregistrée est
+de la fraude de calibration.**
 
 ## Prochaines résolutions au calendrier
 - **29/07** : AdComm FDA Capricor (deramiocel DMD) — pas un appel du comité,
