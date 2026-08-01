@@ -59,16 +59,88 @@ variation.
     < ~100 M€ en décollecte, réplication/domiciliation défavorable — jamais
     parce qu'une autre zone a fait mieux cette année.
 
-## Application immédiate au portefeuille actuel
+## 🔴 CONTRATS DE DÉTENTION — NVDA & TSLA (écrits le 01/08/2026)
 
-- TSLA (-20 %, thèse fragilisée) : la règle 4 dit — pas de vente sur le
-  prix ; kill criteria à écrire noir sur blanc (ex. : marge auto < X % deux
-  trimestres de suite, dilution > Y %, aucun jalon robotaxi mesurable d'ici
-  T2 2027). À formaliser avec Tanguy.
-- NVDA 22 % du portefeuille : au-dessus des 10 % de la règle 6 (héritage de
-  la construction initiale) — pas de renforcement NVDA tant que > 10 %,
-  la dilution se fait naturellement par les versements ailleurs.
-- Chaque reco de la newsletter porte désormais ses kill criteria à l'achat.
+### L'incohérence que la première Revue a mise au jour
+
+Au 01/08, le système portait **5 contrats détaillés sur des candidates que
+Tanguy ne possède pas** (Séché, LLY, Aubay, STM, Walmart) et **zéro sur les
+deux lignes qui font 38 % de son portefeuille** — NVDA (22 %) et TSLA (16 %).
+
+Pire : le 27/07, ce fichier notait déjà « kill criteria **à écrire noir sur
+blanc**… à formaliser avec Tanguy » pour TSLA. **Cinq jours plus tard, rien
+n'était écrit — et TSLA venait de perdre 26,01 % sur le mois de juillet**
+(plus haut 432,86 $, plus bas 297,38 $, clôture 30/07 à 309,10 $).
+
+**C'est exactement à l'envers.** Le risque d'un portefeuille est dans ce
+qu'on détient, pas dans ce qu'on surveille. Une ligne à 16 % qui perd un
+quart de sa valeur en un mois sans contrat écrit est le vrai angle mort, et
+aucun des trois agents ne l'a signalé — parce qu'aucun n'est chargé de
+regarder l'existant. **Corrigé ci-dessous.**
+
+### Principe de construction (règle 4 : jamais de vente sur le prix)
+
+Un contrat de détention n'est **pas** un stop-loss. Il ne se déclenche que
+sur un **fait opérationnel publié** qui casse la thèse. Les seuils sont
+écrits **en relatif** (par rapport à un trimestre de référence publié), pas
+en absolu — application de la règle 4 d'écriture des seuils : un seuil
+absolu inventé aujourd'hui serait silencieusement faux demain.
+
+### TSLA (16 % du portefeuille — au-dessus du plafond de 10 %)
+
+- **Politique de taille** : ligne au-dessus du plafond de la règle 6 →
+  **aucun renforcement**, dilution par les versements ailleurs. Identique à
+  NVDA. ⚠️ **Le repli de 26 % ne crée PAS une occasion de renfort** : c'est
+  précisément le raisonnement que la règle 6 interdit sur une ligne déjà
+  surpondérée.
+- **Thèse à tester** : l'automobile finance l'optionnalité (énergie,
+  conduite autonome). Si l'automobile cesse de financer, l'optionnalité
+  devient un pari sans support.
+- **Kill criteria (2 sur 3 déclenchent une revue formelle) :**
+  1. **Marge brute automobile hors crédits réglementaires** en recul
+     **deux trimestres consécutifs** ET sous son niveau du T2 2026.
+  2. **Déploiements de stockage d'énergie (GWh)** en croissance annuelle
+     **négative** sur un trimestre — c'est la jambe qui justifie la prime.
+  3. **Aucun jalon robotaxi mesurable** (flotte facturante, kilomètres sans
+     intervention publiés, autorisation étendue) **d'ici le T2 2027**.
+- **Échéance de premier relevé** : prochaine publication trimestrielle
+  (~fin octobre 2026). **Les niveaux de référence T2 2026 sont à extraire
+  du communiqué à cette date** — non renseignés aujourd'hui faute de
+  chiffres vérifiés, et **je n'invente pas de seuil**.
+- **Appel de calibration à ouvrir à ce moment-là**, pas avant : poser une
+  probabilité aujourd'hui sans les chiffres de référence reproduirait
+  l'erreur C020.
+
+### NVDA (22 % du portefeuille — plus de deux fois le plafond)
+
+- **Politique de taille** : **aucun renforcement tant que > 10 %** (déjà en
+  vigueur, confirmée). Dilution par les versements ailleurs — l'ordre de
+  juillet la fait passer mécaniquement de 22 % à ~14 %.
+- **Thèse à tester** : la dépense d'infrastructure des géants du cloud, pas
+  les parts de marché en mémoire ni le classement des capitalisations.
+- **Kill criteria (2 sur 3 déclenchent une revue formelle) :**
+  1. **Guidance de capex abaissée** par au moins **deux** des grands
+     acheteurs de calcul (Microsoft, Amazon, Alphabet, Meta) sur un même
+     trimestre. ⚠️ *Le 30/07, Microsoft a fait l'inverse : capex FY27 en
+     croissance annoncée. Ce critère n'est pas près de se déclencher.*
+  2. **Croissance du chiffre d'affaires data center** en décélération
+     **deux trimestres consécutifs**, avec un taux passant sous celui du
+     trimestre de référence publié le 26/08/2026.
+  3. **Concentration client** : si la part du premier client dépasse un
+     seuil à fixer sur les chiffres du 26/08 — le dossier Microsoft a
+     rappelé cette semaine qu'un carnet à 45 % sur une seule contrepartie
+     est un risque de premier ordre, pas un détail.
+- **Échéance de premier relevé** : **résultats du 26/08/2026**. Seuils de
+  référence à figer à cette date, sur chiffres publiés.
+
+### Ce que ces contrats ne font PAS
+
+Ils **ne déclenchent pas de vente automatique** : ils déclenchent une
+**revue formelle** avec passage par l'Avocat et l'Arbitre. La règle 8 (test
+fiscal avant toute vente en CTO, ~31,4 % de PFU) et la règle 9 (protocole
+de krach : 72 h de délai, thèse cassée exigée) restent au-dessus d'eux.
+
+- Chaque reco de la newsletter porte ses kill criteria à l'achat.
 
 ## Sources principales
 
