@@ -144,6 +144,24 @@ entamée, jamais à ouvrir un nouveau fil.
     dégradé, une règle d'entrée exprimée en prix s'exécute sur l'écran du
     courtier de Tanguy, jamais sur un chiffre rapporté ici.
 
+    **COROLLAIRE — un ARTICLE non daté est périmé par défaut** (incident
+    du 01/08/2026, 6ᵉ en six jours). Un article Zonebourse intitulé
+    « Transactions d'initiés : un été plutôt calme » est remonté en tête
+    pour une requête de juillet 2026. Titre parfaitement crédible un
+    1ᵉʳ août ; contenu plausible (Bolloré/Vivendi, Niel/URW,
+    Arnault/LVMH) ; **et il mentionnait Sidetrade, une valeur surveillée**
+    — de quoi fabriquer un faux « renforcement d'initié » sur un dossier
+    ouvert. Il décrivait en réalité un **été antérieur**.
+    Le test qui l'a démasqué coûte deux secondes : **une cession datée du
+    « 4 août » racontée au passé, alors que nous sommes le 1ᵉʳ.**
+    > **Contrôle de cohérence temporelle interne, systématique** : si un
+    > article référence une date **postérieure à aujourd'hui** en la
+    > traitant comme passée, ce n'est pas un scoop — **c'est une archive**.
+    > Et se méfier en priorité des articles qui nomment une valeur déjà
+    > surveillée : c'est là qu'une donnée périmée fait le plus de dégâts,
+    > parce qu'elle s'insère dans un dossier existant au lieu d'en ouvrir
+    > un nouveau.
+
 ## LES 6 KILL-TESTS (chaque signal candidat passe les SIX avant rapport)
 
 Généralisation des leçons Besi/Aubay/Nexans — systématiques, pas

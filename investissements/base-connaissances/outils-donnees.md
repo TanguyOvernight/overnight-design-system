@@ -87,6 +87,30 @@ l'INVERSE** — c'est un risque de premier ordre, pas une gêne.
 | 3 | **boursorama.com** | Actualité FR + cotations Euronext (patterns §8). |
 | 4 | **abcbourse.com** | Cotations Euronext + historiques téléchargeables. |
 | 5 | **stockanalysis.com** | Fondamentaux et historiques US. |
+| 6 | **data.sec.gov** | **Débloque le terrain SMART MONEY** (voir ci-dessous). API JSON, pas de scraping : Form 4 (achats d'initiés) et 13F par CIK. Distinct de `www.sec.gov` et d'`efts.sec.gov`, tous deux également bloqués. |
+| 7 | **bdif.amf-france.org** | Déclarations de dirigeants Euronext (AMF) — **la route PEA**, donc la plus précieuse des deux sources initiés. |
+
+### 🔴 TERRAIN « SMART MONEY » (rotation du samedi) — STRUCTURELLEMENT INDISPONIBLE
+
+**Constat du 01/08/2026 : 7 sources initiés/filings en 403**, dont
+`www.sec.gov` lui-même (nouveau par rapport au 27/07, où seul `efts.sec.gov`
+était bloqué) : openinsider, abcbourse/transactions_dirigeants, 10keuros,
+transactions-amf.swaoo, insiderscreener, zonebourse, sec.gov.
+**Les trois solutions de repli proposées ont été testées le 01/08 et
+échouent toutes les trois** (`data.sec.gov`, RSS BDIF AMF, finviz) : le
+blocage est au niveau du CONNECT, donc antérieur à tout anti-bot.
+
+**Pourquoi ce terrain meurt sans accès direct, alors que les autres
+survivent** : les seuls achats d'initiés que la recherche indexée fait
+remonter sont ceux que quelqu'un a **déjà transformés en article** — donc,
+par construction, ceux qui ne sont plus early. **L'achat d'initié non
+commenté ne se trouve QUE dans le registre.** Sans registre, le terrain ne
+produit que du commentaire de seconde main.
+
+**Conséquence assumée** : 1 des 7 terrains de la rotation est hors service.
+Le samedi étant déjà la journée de la **Revue**, l'impact est atténué — mais
+la fenêtre réellement porteuse est le **samedi 15/08** (après la clôture des
+dépôts 13F du Q2, le ~14/08), et elle sera manquée si rien ne change.
 
 Tant que ce blocage dure : **toute règle d'entrée exprimée en prix
 s'exécute sur l'écran Fortuneo de Tanguy**, jamais sur un chiffre rapporté
