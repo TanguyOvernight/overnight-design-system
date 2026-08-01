@@ -57,6 +57,35 @@ vérification.**
 > vérifiées du jour (secondaire, indicatif, DATÉ).** Le multiple prime en
 > cas de divergence.
 
+**RÈGLE 5 — Une CORRECTION s'audite comme une affirmation** (ajoutée le
+01/08/2026, après vérification de la Revue).
+
+Le 30/07, l'Avocat m'a « corrigé » sur le cours de MSFT : selon lui,
+399,30 $ était la clôture du 29/07 et 390,54 $ celle du 28/07. **J'ai
+accepté la correction sans la vérifier.** Elle était **fausse**, et la
+règle 2 — écrite le lendemain — la démasque en cinq secondes :
+
+| Base supposée | Cours du 30/07 | Variation implicite | Presse |
+|---|---|---|---|
+| 390,54 $ | 451,58 $ | **+15,6 %** | ✅ « +15,5 %, plus fort bond de l'histoire » |
+| 399,30 $ | 451,58 $ | +13,1 % | ❌ ne correspond à rien de publié |
+
+Et ma donnée d'origine était **internement cohérente** : 390,54 × 1,0224 =
+399,29 — le 399,30 était bien l'**after-hours**, exactement le +2,24 %
+annoncé. La clôture du 29/07 était donc **390,54 $**.
+
+⚠️ **Le VERDICT de l'Avocat (RÉFUTÉ) reste juste, et même renforcé** : le
+titre a ouvert le 30/07 en gap et n'a jamais été achetable à 390 $ ce
+jour-là. L'asymétrie était consommée — la conclusion était bonne, la
+preuve était fausse.
+
+> **Règle** : une correction reçue d'un agent — surtout quand elle est
+> humiliante et donc psychologiquement crédible — subit **exactement les
+> mêmes contrôles** (règles 1 et 2) qu'une affirmation initiale. Accepter
+> une correction sans la vérifier, c'est déplacer sa confiance, pas
+> l'exercer. **Le contrôle d'arithmétique interne s'applique aux
+> corrections en priorité.**
+
 ## Surveillances du Juge (contrats datés — charte Arbitre v2)
 
 Toute SURVEILLANCE émise par l'Arbitre vit ICI avec ses 4 champs. À
