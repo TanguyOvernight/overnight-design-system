@@ -132,43 +132,26 @@ contenu du fichier de définition en préambule du prompt.
 6. **On ne peut pas détecter une exposition sous-estimée sans référentiel
    de comparaison** (diagnostic du 31/07/2026). Voir le chantier ci-dessous.
 
-## 🔧 CHANTIER OUVERT — constituer l'univers investissable « émergents
-depuis la France »
+## ✅ CHANTIER CLOS le 02/08/2026 — univers émergents accessible en PEA
 
-**Diagnostic posé par le Chasseur le 31/07/2026, après un 0 signal sur le
-terrain émergent.** La contrainte d'achetabilité **élimine ~90 % du champ
-émergent avant même la recherche** (bourses de Bombay, Shanghai/Shenzhen,
-São Paulo, Jakarta, Bangkok, Séoul, Taipei, Johannesburg, Istanbul : toutes
-inaccessibles). Ce qui reste — ADR à New York, et sociétés Euronext à
-revenus émergents — est actuellement **porté par des flux records** :
-3,96 Md$ d'entrées sur deux semaines consécutives fin juillet, et **38 Md$
-de collecte sur les ETF EM cotés aux US au S1 2026, le plus fort premier
-semestre jamais enregistré** (SSGA, 30/06/2026). Donc : terrain cher et
-couvert, où une idée « macro EM » générique n'a aucune chance d'être early.
+Ouvert le 31/07 après un 0 signal, **livré le 02/08** : 12 sociétés
+documentées, 4 écartées avec motif, 32 requêtes.
+**→ Le référentiel vit désormais dans `univers-emergents-pea.md`.**
 
-⚠️ Noter la divergence, sans la trader : un régime de Fed hostile (trois
-dissidents pour une hausse, 30 ans US au plus haut depuis 2007) coexiste
-avec des flux EM records. C'est un **avertissement de positionnement**,
-pas un signal — et il rend un bilan endetté en dollar doublement pénalisé.
+Les trois enseignements qui changent la façon de chasser ce terrain :
+1. **La route PEA passe par Lisbonne et Bruxelles, pas par Paris** — les
+   deux seules sociétés à CA majoritairement émergent sont portugaises
+   (Mota-Engil 78 %, Jerónimo Martins ~79 %). Pas d'équivalent français.
+2. **Chercher dans le groupe B** — actifs 100 % émergents mais ventes
+   facturées ailleurs (Sipef facture 34 % en Suisse : ce sont des desks de
+   négoce). **C'est là que les écrans de screening se trompent, donc là que
+   le terrain est le moins couru.**
+3. **Le champ accessible a RÉTRÉCI sur dix ans** : plus de banque ni de
+   télécom émergente sur Euronext, la distribution africaine est partie avec
+   le retrait de CFAO, la logistique portuaire avec la cession Bolloré.
+   **Le 0 signal du 31/07 était mécanique, pas malchanceux.**
 
-**Le travail à faire (1 session dédiée, pas une chasse)** : dresser la
-liste des sociétés cotées **Euronext Paris / Amsterdam / Bruxelles /
-Lisbonne dont la MAJORITÉ du chiffre d'affaires vient des émergents**,
-avec pour chacune : capitalisation sourcée, liquidité quotidienne, **% de
-CA émergent par géographie**, prix unitaire (contrainte de ticket), et
-date de prochaine publication.
-
-**Pourquoi c'est la bonne priorité** : c'est la **seule route PEA** vers
-les émergents (18,6 % après 5 ans contre 31,4 % en CTO) — donc la plus
-précieuse — et sans ce référentiel, aucune « exposition sous-estimée » ne
-peut être détectée, faute de base de comparaison. À programmer un dimanche
-(édition Prépa) ou sur mandat explicite de Tanguy.
-
-**Amorce déjà collectée** (à vérifier et compléter, aucune n'est une
-candidate validée) : SBM Offshore (SBMO, Amsterdam — Brésil/Guyana/Angola,
-écartée le 31/07 par T1+T2, revue au S1 du 06/08) ; Rubis (RUI, Paris —
-87 % du CA hors Europe développée : Caraïbes 49,1 %, Afrique 37,9 % ;
-**écartée le 31/07**, le récit de transformation SCA→SA provenait d'un
-site SEO et l'AG du 10/06/2026 l'a démenti — aucune résolution de ce type
-n'y figurait) ; Accor, Louis Hachette Group, Coface (balayées le 31/07 :
-croissances à un chiffre bas, aucune inflexion).
+⚠️ **Action bloquante en attente** : vérifier que Fortuneo route Euronext
+Lisbonne et Bruxelles. **L'éligibilité PEA ne garantit pas l'accès du
+courtier** — sans cette vérification, la moitié de cet univers n'existe que
+sur le papier.
