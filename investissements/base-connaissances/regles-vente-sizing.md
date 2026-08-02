@@ -96,20 +96,39 @@ absolu inventé aujourd'hui serait silencieusement faux demain.
 - **Thèse à tester** : l'automobile finance l'optionnalité (énergie,
   conduite autonome). Si l'automobile cesse de financer, l'optionnalité
   devient un pari sans support.
+- **🔒 NIVEAUX DE RÉFÉRENCE FIGÉS — T2 2026, publié le 22/07/2026** (obtenus
+  le 02/08 ; ils étaient disponibles, le trimestre était déjà publié) :
+
+  | Métrique | T2 2026 | Contexte |
+  |---|---|---|
+  | **Marge brute auto HORS crédits réglementaires** | **16,3 %** | 16,9 % crédits inclus |
+  | **Déploiements de stockage** | **13,5 GWh** | **+40 % a/a** (T2 2025 : 9,6 GWh), +53 % vs T1 ; 2ᵉ meilleur trimestre historique |
+  | Crédits réglementaires | **146 M$** | **−67 % a/a** (T2 2025 : 439 M$), −62 % vs T1 |
+  | CA / Résultat opérationnel | 28,24 Md$ (+26 %) / **−57 %** | le CA bat le consensus, le résultat s'effondre |
+
 - **Kill criteria (2 sur 3 déclenchent une revue formelle) :**
   1. **Marge brute automobile hors crédits réglementaires** en recul
-     **deux trimestres consécutifs** ET sous son niveau du T2 2026.
-  2. **Déploiements de stockage d'énergie (GWh)** en croissance annuelle
-     **négative** sur un trimestre — c'est la jambe qui justifie la prime.
+     **deux trimestres consécutifs** ET **sous 16,3 %**.
+  2. **Déploiements de stockage d'énergie** en croissance annuelle
+     **négative** sur un trimestre (référence : 13,5 GWh au T2 2026) —
+     c'est la jambe qui justifie la prime.
   3. **Aucun jalon robotaxi mesurable** (flotte facturante, kilomètres sans
      intervention publiés, autorisation étendue) **d'ici le T2 2027**.
-- **Échéance de premier relevé** : prochaine publication trimestrielle
-  (~fin octobre 2026). **Les niveaux de référence T2 2026 sont à extraire
-  du communiqué à cette date** — non renseignés aujourd'hui faute de
-  chiffres vérifiés, et **je n'invente pas de seuil**.
-- **Appel de calibration à ouvrir à ce moment-là**, pas avant : poser une
-  probabilité aujourd'hui sans les chiffres de référence reproduirait
-  l'erreur C020.
+- **Échéance de premier relevé : 28/10/2026** (date confirmée).
+
+🎯 **Lecture du T2 2026 — les deux jambes divergent nettement.** Le stockage
+est le point fort structurel (+40 % sur un an) ; la marge auto ex-crédits
+est le point de fragilité. Et **l'écart entre marge avec et sans crédits
+n'est plus que de 0,6 pt** (16,9 % vs 16,3 %), contre des écarts
+historiquement bien plus larges : **la béquille des crédits réglementaires a
+quasiment disparu** (−67 % sur un an). C'est structurellement plus sain — la
+marge publiée est désormais presque « pure » — mais cela retire un
+amortisseur, et c'est ce qui explique qu'un CA en hausse de 26 % coexiste
+avec un résultat opérationnel en baisse de 57 %.
+
+- **Appel de calibration** : à ouvrir au **28/10/2026**, pas avant. Poser une
+  probabilité aujourd'hui sur un trimestre situé à trois mois reproduirait
+  l'erreur C020 (probabilité non conditionnée à un catalyseur connu).
 
 ### NVDA (22 % du portefeuille — plus de deux fois le plafond)
 
@@ -126,12 +145,30 @@ absolu inventé aujourd'hui serait silencieusement faux demain.
   2. **Croissance du chiffre d'affaires data center** en décélération
      **deux trimestres consécutifs**, avec un taux passant sous celui du
      trimestre de référence publié le 26/08/2026.
-  3. **Concentration client** : si la part du premier client dépasse un
-     seuil à fixer sur les chiffres du 26/08 — le dossier Microsoft a
-     rappelé cette semaine qu'un carnet à 45 % sur une seule contrepartie
-     est un risque de premier ordre, pas un détail.
-- **Échéance de premier relevé** : **résultats du 26/08/2026**. Seuils de
-  référence à figer à cette date, sur chiffres publiés.
+  3. **Concentration client** : **deux clients non nommés pesaient déjà 39 %
+     du CA**, et au T1 FY2027 **les hyperscalers font plus de la moitié du
+     CA data center** (38 Md$ sur ~75 Md$). Déclenchement si cette
+     concentration s'aggrave encore sur deux trimestres. *Le dossier
+     Microsoft a rappelé cette semaine qu'un carnet à 45 % sur une seule
+     contrepartie est un risque de premier ordre, pas un détail.*
+
+- **🔒 CADRAGE DISPONIBLE au 02/08** :
+  - **Guidance T2 FY2027 donnée par la société : CA de 91 Md$ ± 2 %**
+    (89,2-92,8 Md$). Rappel T1 FY2027 : CA record **81,6 Md$**, data center
+    quasi doublé, dividende et rachats relevés — **et le titre a pourtant
+    reculé**. C'est le rappel utile : chez NVDA, battre ne suffit plus.
+  - **Aucun CA de calcul data center en provenance de Chine n'est intégré
+    à cette guidance.**
+- ⚠️ **NOMENCLATURE CHANGÉE — à intégrer avant d'écrire les seuils.** La
+  société **scinde désormais son reporting** en **Data Center**
+  (Hyperscale **38 Md$** + IA/Cloud/Industriel/Entreprise **37 Md$**) et
+  **Edge Computing** (**6,4 Md$**). **Les niveaux de référence doivent être
+  écrits dans cette nomenclature, pas dans l'ancienne** — sans quoi le
+  critère n°2 comparerait deux agrégats différents et serait ininterprétable.
+- **Échéance de premier relevé** : prochains résultats trimestriels.
+  ⚠️ **La date du 26/08 n'a PAS pu être confirmée** (aucune annonce
+  officielle trouvée) — **à reconfirmer avant de s'en servir comme
+  échéance**, application de la règle 3 d'écriture des seuils.
 
 ### Ce que ces contrats ne font PAS
 

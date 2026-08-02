@@ -215,6 +215,28 @@ C'est le système qui fonctionne, pas un incident à masquer.
 | **C030** | 31/07 | Juge | mid-cap-US spin-off / 12 mois · CTO | Mobility Global | **Le PASSE est justifié** : MBGL ne surperforme PAS le MSCI World de plus de 5 pts sur 12 mois — *contre un consensus de 6 analystes « Buy » à 27,83 $* | **60 %** | 31/07/2027 : perf totale MBGL vs MSCI World | ⏳ |
 | **C031** | 31/07 | Juge | staples-EU / <1 an · PEA | Magnum | **Test de sélection adverse** : **aucune offre ferme** sur MICC (Blackstone, CD&R ou autre) n'est déposée avant le 31/12/2026 | **70 %** | Communiqués MICC / autorités de marché au 31/12/2026 | ⏳ |
 
+## Appel ouvert le 02/08/2026 (Prépa)
+
+| ID | Date | Agent | classe_réf | Affaire | Affirmation | P | Condition de résolution | Statut |
+|---|---|---|---|---|---|---|---|---|
+| **C032** | 02/08 | Juge | pharma-US / <1 an · CTO | Eli Lilly | **Le déclencheur d'achat se présente** : LLY clôture **≤ 1 020 $** au plus tard le **07/08/2026** (semaine de la publication T2 du 05/08) | **15 %** | Clôtures NYSE du 03 au 07/08/2026 | ⏳ |
+
+**Construction de C032, tracée** : base rate propriétaire — sur les
+**4 dernières réactions** de LLY à publication (**−13,4 %** au T2 2025,
++3,0 % au T3 2025, +7,9 % au T4 2025, +9,8 % au T1 2026), **une seule
+suffirait** au repli de **−11,2 %** requis depuis 1 148,84 $. Base
+brute = 25 %.
+**Correction à la baisse (−10 pts)** : (a) la seule réaction qualifiante
+était causée par des **données cliniques** (orforglipron), pas par les
+résultats ; (b) Goldman documente qu'un relèvement de guidance est **déjà
+largement anticipé** — ce qui asymétrise vers le bas *l'ampleur* d'un
+éventuel repli, mais réduit la probabilité d'un choc de la taille requise
+en l'absence de nouvelle clinique.
+⚠️ **Le consensus de BPA est INEXPLOITABLE** (5,83 $ Goldman à 7,74 $
+Visible Alpha — 33 % d'écart) : la probabilité ne s'appuie donc **pas** sur
+un écart au consensus, seulement sur la dispersion historique des
+réactions. Assumé et écrit.
+
 **Notes de calibration :**
 - **C028 et C029 sont les appels les plus précieux du registre : ils se
   résolvent dans 7 jours**, sur une `classe_réf` (`spin-off`) totalement
