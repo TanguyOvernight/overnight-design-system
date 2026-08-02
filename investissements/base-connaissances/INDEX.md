@@ -19,6 +19,10 @@ diverge tôt ou tard (cas vécu : le PFU à 30 % vs 31,4 % dans 4 fichiers).
 | Surveillances actées du Juge (contrats 4 champs) + dates | `radar-catalyseurs.md` |
 | Appels probabilistes et leur score | `registre-calibration.md` |
 | **Classement persistant des opportunités** (rien ne s'y perd) | `classement-opportunites.md` |
+| **Les 5 règles d'écriture d'un seuil** (deux ancrages · contrôle arithmétique · pas de seuil sans cotation post-événement · seuils en VALORISATION · une correction s'audite comme une affirmation) | `radar-catalyseurs.md`, en tête |
+| **Contrats de DÉTENTION** (NVDA, TSLA — ce qu'on possède, pas ce qu'on surveille) | `regles-vente-sizing.md` |
+| Domaines réseau à autoriser + terrains hors service | `outils-donnees.md` |
+| Chantiers ouverts de la chasse (univers à constituer) | `chasse-quotidienne.md` |
 
 ## 🔴 État vivant — à jour en permanence (les 6 fichiers du quotidien)
 
