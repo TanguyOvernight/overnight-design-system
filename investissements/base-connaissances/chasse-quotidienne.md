@@ -45,7 +45,7 @@ VISIBLE même quand il ne débouche pas.
 | **Mercredi** | Industrie, énergie, défense | Usine Nouvelle, Defense News, contrats OTAN/DGA, IEA, capex énergie/infra — carnet de commandes, goulets d'étranglement, fournisseurs critiques |
 | **Jeudi** | France & smalls Europe | Zonebourse « Small & Mid : les choix des stars de la gestion », reportings mensuels Indépendance AM/HMG/Raymond James, BFM Bourse, Market Review Euroland, forum Investisseurs Heureux — + positions courtes AMF sur valeurs suivies |
 | **Vendredi** | Émergents & monde | Nikkei Asia, Economic Times (Inde), Caixin, flux EM (EPFR via presse), reclassements d'indices, réformes de marché |
-| **Samedi (Revue)** | Smart money de la semaine | 13D récents (EDGAR full-text), cluster buys OpenInsider de la semaine, lettres de fonds fraîches, gros mouvements 13F (fenêtres trimestrielles) |
+| **Samedi (Revue)** | 🔧 **CHANTIER D'UNIVERS** *(remplace « smart money » depuis le 03/08/2026 — voir ci-dessous)* | Constituer ou exploiter un référentiel de valeurs peu couvertes, avec capi sourcée, exposition chiffrée, ticket et liquidité. Le terrain smart money est **hors service** : 7 sources initiés en 403, dont sec.gov, et les 3 replis testés échouent |
 | **Dimanche (Prépa)** | Prospectif & thèmes | Catalyseurs datés à venir (radar), thèmes pré-consensus (pipeline analyse-prospective : thème → thèse → timing → véhicule), revue des « étudiés-écartés » du mois |
 
 ## Brief type d'un agent presse (template)
@@ -131,6 +131,42 @@ contenu du fichier de définition en préambule du prompt.
    Les sprints profonds multi-agents restent déclenchés par Tanguy.
 6. **On ne peut pas détecter une exposition sous-estimée sans référentiel
    de comparaison** (diagnostic du 31/07/2026). Voir le chantier ci-dessous.
+
+## 📉 DIAGNOSTIC DE RÉGIME — 4 chasses à zéro d'affilée (30/07 → 03/08)
+
+France-smalls · émergents · smart money · tech : **quatre terrains, quatre
+zéros.** Ce n'est pas une méthode défaillante, et il faut résister à deux
+mauvaises réactions : baisser la barre, ou multiplier les requêtes.
+
+**Ce que les quatre sessions disent en commun :**
+- **T2 (nouveauté) tue presque tout.** Le marché re-note violemment depuis
+  mi-juillet (Nasdaq −3,2 % sur le mois, MSFT +15,5 % en une séance, Vicat
+  +13 % et Sanofi −9 % le même jour). Dans ce régime, **une information
+  publiée est intégrée en heures**, pas en semaines.
+- **Le terrain d'actualité est structurellement épuisé.** Le 03/08 l'a
+  montré au plus près : la piste « fournisseur de rang 2 dont le donneur
+  d'ordre annonce un capex » — la bonne piste en théorie — a mené aux deux
+  seules valeurs PEA du créneau, **toutes deux déjà à +70 % et +82 % en
+  2026**, et étiquetées « pépite des semi-conducteurs » par la presse
+  boursière grand public. **Le 2ᵉ dérivé en PEA n'est pas un angle mort,
+  c'est un consensus de place small-cap.**
+- **Ce qui a produit de la valeur, c'est le CHANTIER**, pas la veille : la
+  constitution de l'univers émergents-PEA (02/08) a révélé une poche
+  entière — les sociétés dont les *actifs* sont émergents mais les *ventes
+  facturées ailleurs*, que les écrans de screening classent mal.
+
+**Conséquence encodée** : le créneau du samedi, dont le terrain « smart
+money » est hors service, devient un **CHANTIER D'UNIVERS**. On ne cherche
+plus l'information fraîche là où mille personnes la cherchent ; on
+construit des référentiels de valeurs peu couvertes, puis on y cherche le
+mal-pricé. **Un référentiel se périme lentement ; une actualité se périme
+en heures.**
+
+⚠️ **Ce diagnostic ne justifie PAS d'assouplir les kill-tests.** Quatre
+zéros honnêtes valent mieux qu'un signal fabriqué : sur la même période,
+le système a évité un contrat mort-né sur Vicat, un renfort MSFT à
+l'asymétrie déjà consommée, et un faux « drift » Sidetrade fondé sur des
+cotations périmées de 25 %. **Le refus est la compétence, pas l'échec.**
 
 ## ✅ CHANTIER CLOS le 02/08/2026 — univers émergents accessible en PEA
 
