@@ -234,11 +234,50 @@ FAUX.**
 ayant signé un MFN ou déposé un plan d'onshoring, est de **0 à 20 points**.
 **Le mécanisme économique du signal est divisé par cinq, voire annulé.**
 
-**Conséquence sur Eli Lilly** : elle fabrique lourdement en **Irlande**,
-donc une part significative de ses flux vers les États-Unis est d'**origine
-UE — plafonnée à 15 %, pas 100 %**. Son exposition est vraisemblablement
-bien inférieure à ce que ma note du 03/08 laissait craindre. **À vérifier
-sur les chiffres que la direction donnera le 05/08.**
+**Conséquence sur Eli Lilly — la vraie réponse, obtenue le 04/08 :**
+
+> 🔑 **LLY bénéficie d'une EXEMPTION TARIFAIRE DE TROIS ANS**, négociée dans
+> son accord **« Most-Favoured-Nation »** avec l'administration américaine,
+> annoncé le **06/11/2025**. Source : **Global Trade Alert**, fiche de
+> mesure officielle. *(Trois ans depuis novembre 2025 → fin 2028. ⚠️ Une
+> source secondaire écrit « jusqu'en 2029 » — retenir la formulation
+> officielle.)*
+
+**La ligne douanière est donc largement neutralisée pour LLY. Mais elle a
+été PAYÉE**, et les contreparties sont le vrai sujet :
+- prix MFN sur les GLP-1 ; **Zepbound/tirzepatide et orforglipron plafonnés
+  à 50 $/mois pour les bénéficiaires Medicare** ;
+- **prix MFN garantis sur TOUS les nouveaux médicaments à venir** ;
+- accès aux prix MFN pour **tous les programmes Medicaid d'État** ;
+- distribution via la plateforme **TrumpRx** (lancée en janvier 2026).
+
+> **⚠️ RECADRAGE DE LA QUESTION POUR LE CALL DU 05/08.** Ce n'est PAS
+> « quelle facture douanière ? » — elle est proche de zéro. C'est
+> **« quel coût de la contrepartie MFN ? »**, c'est-à-dire l'érosion de
+> prix nette sur Zepbound, Mounjaro et Foundayo imposée par le plafond
+> Medicare à 50 $/mois et par l'extension MFN à **tout le pipeline futur**.
+> **Le risque de guidance est là, pas sur la ligne tarifaire.**
+
+📌 **Trois versions successives de ma part, dont deux fausses** — journalisé
+comme tel : le 03/08 « 100 %, exposition lourde » (faux, alarmiste) ; le
+04/08 matin « plafonné à 15 % par l'origine UE » (vrai en général, mais ce
+n'est pas le mécanisme qui joue ici) ; le 04/08 après-midi **« exemption
+négociée de trois ans, payée en concessions de prix »** — c'est la bonne.
+**Leçon : sur un dossier réglementaire, chercher d'abord si l'émetteur a
+négocié un régime particulier, avant de lui appliquer le régime général.**
+
+**Autre chiffre utile, sectoriel** : le Département du Commerce estime que
+**~53 % des médicaments brevetés distribués aux États-Unis sont produits
+hors du pays** — moyenne d'industrie, **aucune décomposition société par
+société n'est publiée**. C'est probablement la question que poseront les
+analystes demain, et le fait qu'elle n'ait pas de réponse publique explique
+pourquoi elle sera posée.
+
+**Périmètre confirmé** : le taux de tête s'applique aux **17 sociétés de
+l'Annexe III** (dont Lilly, Pfizer, J&J, Merck) depuis le 31/07, et à
+toutes les autres au 29/09. **Génériques et biosimilaires expressément
+exclus** à ce stade (leur propre échéance est 2028) — ce qui **tranche la
+divergence** signalée plus haut en faveur de la version Crowell.
 
 ⚠️ **Limite de preuve assumée** : WebFetch renvoie 403 sur crowell.com et
 sur sec.gov/Archives. Le niveau de preuve est « cabinet tier-one + presse
