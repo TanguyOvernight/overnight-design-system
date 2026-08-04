@@ -41,18 +41,25 @@ pas pour son rang.
 
 ---
 
-## CLASSEMENT AU 30/07/2026 — **jour d'action** (arbitrage du Juge)
+## CLASSEMENT AU 04/08/2026
 
 Statut : 🟢 déclencheur proche/actionnable · 🟡 en attente d'un événement
 daté · ⚪ surveillance longue · 🔴 sous le hurdle, conservée pour mémoire
 
-⚠️ **Fiabilité des cours : DÉGRADÉE, 4ᵉ jour.** 403 au CONNECT sur 100 %
-des hôtes. Trois incidents de données en une journée (cotations Sidetrade
-périmées de 25 % ; erreur d'attribution de cours sur MSFT ; 8 cours non
-obtenus ou contradictoires sur 12). **Aucun cours ci-dessous n'a la
-qualité « clôture officielle » — à revérifier chez le courtier avant tout
-ordre exprimé en prix.** Les ordres exprimés en MONTANT (§① et §②) ne sont
-pas affectés : 400 € de SWDA restent 400 € quelle que soit la décimale.
+⚠️ **Fiabilité des cours : DÉGRADÉE, 8ᵉ jour.** 403 au CONNECT sur 100 %
+des hôtes. **Aucun cours ci-dessous n'a la qualité « clôture officielle » —
+à revérifier chez le courtier avant tout ordre exprimé en prix.** Les
+ordres exprimés en MONTANT ne sont pas affectés.
+
+⚠️ **Incident du jour (le 9ᵉ) — la clôture LLY du 03/08 n'est pas tranchée.**
+Deux valeurs circulent, **chacune internement cohérente mais mutuellement
+incompatibles** : **1 113,43 $ (−3,04 %)** et **1 121,36 $ (−2,39 %)**.
+Les deux reconstituent correctement la clôture du 31/07 (1 148,8 $) par
+`prix ÷ (1+%)` — le contrôle de la règle 2 ne discrimine donc pas ici, et
+l'ancrage capitalisation non plus (992,7 vs 999,96 Md$, tous deux sous
+1 000 Md$). **Écart : 0,7 %.** Sans conséquence décisionnelle — la distance
+au nouveau seuil est de +31 % dans les deux cas — mais **noté comme non
+résolu** plutôt qu'arbitré au hasard.
 
 **9 candidates actives** (11 − Vicat ☠️ − Mobility Global ☠️, tous deux
 PASSE DÉFINITIF le 31/07). Je ne fabrique pas de lignes pour tenir le
@@ -63,8 +70,8 @@ compte.
 | **①** | **Cœur World** (hurdle 5 %/an net) | CTO ce mois, PEA ensuite | **400 € de SWDA — AUJOURD'HUI, dernier jour du mois** ; août : 100 € d'ouverture PEA + 400 € WPEA | **immédiat** | 🟢 | = |
 | **②** | **Or** (assurance) | CTO | **100 € d'IAU — AUJOURD'HUI** (comptant, levier x1) ; ~4 086-4 109 $/oz | **immédiat** | 🟢 | = |
 | **③** | **Séché Environnement** | PEA | ~81-82 € vs ≤ 90 € — **seule ligne SOUS son prix visé** | S1, butée 30/09 | 🟡 | ▲ +2 |
-| **④** | **Eli Lilly** | CTO | **1 155,67 $** (30/07, −4,09 %) vs ≤ 1 020 $ → +13,3 % — *se rapproche* | **Q2 05/08** | 🟡 | ▲ +3 |
-| **⑤** | **Walmart** | CTO | **110,87 $** (30/07, −2,7 %) vs ≤ 100 $ → +10,9 % | Résultats **20/08** | ⚪ | ▲ +3 |
+| **④** | **Walmart** | CTO | **112,92 $** (03/08) vs ≤ 100 $ → +11,4 % | Résultats **20/08** | ⚪ | ▲ +1 |
+| **⑤** | **Eli Lilly** | CTO | **~1 113-1 121 $** (03/08) vs **nouveau seuil ~852 $** (23,5x le médian de guidance) → **+31 %**. ⚠️ *Contrat RÉÉCRIT le 04/08, seuil abaissé de 1 020 $ à ~852 $ — soit 16,5 % PLUS STRICT* | **Q2 05/08**, butée 06/11 | 🟡 | ▼ −1 |
 | **⑥** | **Magnum Ice Cream** | PEA | **9,97 Md€ vs ≤ 7,6 Md€ (+31 %)** — PASSE, réouverture sur fait | aucune (fait, pas date) | 🔴 | **= (−2 relatif)** |
 | **⑦** | **Aubay** (ESN) | PEA | ~54,30 € vs ≤ 50 € (+8,6 %) — s'éloigne pour une **bonne** raison (T2 +12,2 % organique, objectifs relevés) | T3 fin oct. | ⚪ | ▲ +2 |
 | **⑧** | **STM** (semi) | PEA | **44,62 €** (30/07) vs **≤ 42 €** → +6,2 % ⚠️ *unité corrigée le 31/07 : le seuil était écrit en $ dans 3 fichiers alors que STMPA cote en €* | Q3 fin oct. | 🔴 | ▲ +2 |
@@ -105,9 +112,27 @@ compte.
   d'offre, pendant que la capi montait à 9,97 Md€. S'y ajoute un
   **surplomb vendeur permanent** : Unilever conserve 19,9 % à écouler sur
   5 ans — l'exact inverse d'une thèse de vendeurs forcés. **C031.**
-- **Séché (+2), LLY (+3), WMT (+3), Aubay (+2), STM (+2), Nike (+2)** :
-  **décalages strictement mécaniques**, aucune réévaluation de mérite.
-  LLY et WMT ne passent devant Magnum que parce que Magnum ne monte pas.
+- **Séché (+2), Aubay (+2), STM (+2), Nike (+2)** : décalages strictement
+  mécaniques du 31/07, aucune réévaluation de mérite.
+
+### Mouvement du 04/08 — LLY ④ → ⑤, WMT prend ④
+
+**Un seul mouvement, une seule justification.** Première mesure d'espérance
+de LLY conduite **au prix du jour** avec une table à trois scénarios :
+**+3,01 %/an net de PFU**, soit **sous le World nu (5 %)** et **4,0 points
+sous le hurdle ajusté de corrélation (7,0 %)**.
+
+C'est **exactement le motif** qui a fait descendre Magnum le 30/07
+(+3,04 %/an). L'appliquer à Magnum et pas à LLY serait du favoritisme.
+
+**LLY ne descend pas plus bas** parce que : (i) son **mécanisme est intact
+et testable dès demain**, alors que celui de Magnum est cassé ; (ii)
+ρ ≈ 0,45-0,55 lui vaut le **bas** de la bande de prime (2 pts, pas 3) —
+la santé diversifie sectoriellement, même si elle n'apporte aucune
+diversification de devise ; (iii) son contrat est **vivant et daté**.
+
+**Aucun autre mouvement** — on ne re-classe pas des lignes qu'on n'a pas
+re-mesurées aujourd'hui.
 
 ### 🔒 Créneaux de surveillance : 5/6 — et le sixième reste VIDE, délibérément
 

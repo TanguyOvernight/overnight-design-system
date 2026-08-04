@@ -254,6 +254,62 @@ réactions. Assumé et écrit.
   **25 %** — **dans le sens défavorable au verdict du Juge**. C'est
   l'usage prévu : la règle ne vaut que si elle fait mal.
 
+## Appels ouverts le 04/08/2026 (réécriture du contrat LLY, AVANT l'événement)
+
+| ID | Date | Agent | classe_réf | Affaire | Affirmation | P | Condition de résolution | Statut |
+|---|---|---|---|---|---|---|---|---|
+| **C033** | 04/08 | Juge | pharma-US / <1 an · CTO | Eli Lilly | **Le principe même de la réécriture** : conditionnellement à au moins une clôture ≤ 1 020 $ d'ici le 06/11/2026, **au moins une des trois conditions de mécanisme (M1, M2, M3) est en échec ou révoquée** au moment de cette clôture | **72 %** | Au 06/11/2026 : si aucune clôture ≤ 1 020 $ → appel **VOID**, non scoré. Sinon, grille M1/M2/M3 arrêtée à la date de la première clôture qualifiante | ⏳ |
+| **C034** | 04/08 | Juge | pharma-US / <1 an · CTO | Eli Lilly | **Le test Vicat appliqué à LLY** : FCF S1 2026 croissant au moins aussi vite que le CA S1 2026, **et** ≥ 5,5 Md$ | **40 %** | Tableau de flux du communiqué du **05/08/2026** | ⏳ |
+| **C035** | 04/08 | Juge | pharma-US / <1 an · CTO | Eli Lilly | La **guidance BPA FY2026 est RELEVÉE** (médian > 36,25 $) | **70 %** | Communiqué du **05/08/2026** | ⏳ |
+| **C036** | 04/08 | Juge | pharma-US / <1 an · CTO | Eli Lilly | **Ancien seuil, fenêtre neuve** : LLY clôture ≤ **1 020 $** au moins une séance entre le 05/08 et le **06/11/2026** | **30 %** | Clôtures NYSE, 05/08 → 06/11/2026 | ⏳ |
+
+**C033 est l'appel qui compte** — il rend falsifiable la thèse entière de la
+réécriture : *une baisse de cours sur LLY est plus souvent causée par une
+casse de mécanisme que par une compression de multiple.* Fondement : sur les
+4 dernières réactions à publication, **la seule baisse à deux chiffres
+(−13,4 %, T2 2025) fut causée par des données cliniques** — donc une cause
+(b), pas (a). **Si C033 se résout FAUX, j'aurai eu tort de complexifier le
+contrat**, et ce sera un point net contre moi.
+
+**C034 — le plus précieux du lot** : il se résout demain, sur une question
+de **mécanisme**, dans la classe exacte où le comité s'est fait prendre sur
+Vicat. 40 % : le FCF glissant est à **10,37 Md$** contre ~32 Md$ de résultat
+net 2026e, et le capex tourne à **44 % du flux d'exploitation** avec un
+programme de ~55 Md$ en déploiement. **Je ne parie pas que la conversion
+s'améliore au pic du capex.**
+
+**Cohérence d'échelle sur le seuil de 1 020 $** — les trois appels ne se
+contredisent pas : **C032 (au 07/08) = 15 % < C036 (au 06/11) = 30 % <
+C014 (au 30/06/2027) = 35 %**. Monotone.
+
+**Ce qui n'est PAS enregistré, et pourquoi** : la conjonction complète
+(prix ≤ 23,5x **ET** certificat délivré) vaut **~3 %**. Hors de la bande
+[25 %, 75 %] imposée tant que moins de 20 appels sont résolus, et une
+conjonction n'est pas « quasi arithmétique ». **Précédent Mobility Global du
+31/07 : décomposer, ne pas arrondir.** Arrondir 3 % à 25 % injecterait au
+registre une affirmation que je sais fausse.
+
+### ⚠️ MENTION OBLIGATOIRE SUR C014 — changement de nature, pas de probabilité
+
+**C014 est MAINTENU OUVERT, INCHANGÉ à 35 %.** Mais depuis le 04/08, il
+**ne mesure plus le contrat du Juge** : le seuil du contrat est passé de
+1 020 $ à ~852 $. Sa condition de résolution pré-enregistrée étant purement
+mondaine (« cours de clôture NYSE, avant le 30/06/2027 »), il reste
+parfaitement résoluble sur des faits publics.
+
+> **La Vérif' du samedi ne doit PAS lire C014 comme « le déclencheur du Juge
+> s'est présenté ».** Il mesure désormais **une prévision de cours**, rien
+> de plus.
+
+C'est le miroir exact du couple C020/C021 : **C020 est mort parce qu'il
+portait sur MES portes ; C021 a survécu parce qu'il portait sur LE MONDE.
+C014 est un C021.** Sa probabilité n'est pas révisée — réviser une
+probabilité enregistrée est une fraude de calibration.
+
+**État du registre : 1 résolu / 35 ouverts.** Cinq points de Brier tombent
+cette semaine : **C034 et C035 demain**, **C032, C028 et C029 le 07/08**.
+Le registre devient interprétable plus vite qu'il ne l'a jamais été.
+
 ## Appels résolus
 
 | ID | Affaire | Affirmation | P | Issue | **Brier** | Leçon |
