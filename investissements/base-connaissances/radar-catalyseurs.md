@@ -105,6 +105,39 @@ fabriquer un déclencheur au lieu d'en trouver un).
 
 **Budget : 5/6 créneaux.** Le sixième est **laissé libre délibérément**.
 
+## 🔍 AUDIT DES CONTRATS — 3 sur 5 sont des seuils de PRIX PUR (04/08/2026)
+
+Audit déclenché en préparant la publication d'Eli Lilly. La grille est celle
+encodée au registre le 30/07 : *« un contrat doit tester le MÉCANISME de la
+thèse, pas seulement sa photographie »*, et celle du 31/07 : *« un seuil ne
+se justifie que par l'arithmétique, pas par un pourcentage rond »*.
+
+| Contrat | Teste le mécanisme ? | Seuil justifié ? | Verdict |
+|---|---|---|---|
+| **Séché** | ✅ EBE S1 ≥ 125 M€ · France organique ≥ 0 % · guidance confirmée | ✅ | **Bien construit** |
+| **STM** | ✅ P/E fwd < 30x · ≥ 1 trimestre de marge brute remontant vers 40 % | ✅ | **Bien construit** |
+| **LLY** | ❌ **prix pur** | ❌ « −15 % » (pourcentage rond) | 🔴 **À réécrire — URGENT, publie le 05/08** |
+| **Walmart** | ❌ **prix pur** | ❌ seuil rond (100 $) | 🔴 À réécrire **avant le 20/08** |
+| **Aubay** | ❌ prix pur **OU** « scare optique » — critère non mesurable | ❌ seuil rond (50 €) | 🔴 À réécrire avant le T3 (fin octobre) |
+
+### Le défaut le plus dangereux : un contrat de prix pur n'interroge pas la CAUSE de la baisse
+
+Un seuil de prix seul achète mécaniquement **quelle que soit la raison du
+repli**. Or trois causes appellent des décisions **opposées** :
+- **compression de multiple sur thèse intacte** → c'est le cas d'achat ;
+- **la thèse commerciale se casse** → couteau qui tombe, surtout pas
+  d'achat ;
+- **choc exogène (tarifaire, réglementaire)** → dépend entièrement de la
+  matérialité chiffrée, qui n'est connue qu'après la publication.
+
+> **Un contrat qui achète à −11 % sans distinguer ces cas achètera dans le
+> deuxième — celui où il ne faut surtout pas acheter.**
+
+**Calendrier de correction, adossé aux catalyseurs** : LLY **avant le
+05/08** ✅ *(en cours)* · Walmart **avant le 20/08** · Aubay avant le T3.
+Chacune se fait **AVANT** l'événement, jamais après — une réécriture
+post-événement est indistinguable d'une rationalisation.
+
 ### Purges journalisées du 31/07 — deux PASSE DÉFINITIFS
 
 - **VICAT → ☠️ PASSE DÉFINITIF**, contrat supprimé, renouvellement unique
