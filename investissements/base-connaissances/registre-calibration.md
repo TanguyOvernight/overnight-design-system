@@ -259,7 +259,7 @@ réactions. Assumé et écrit.
 | ID | Date | Agent | classe_réf | Affaire | Affirmation | P | Condition de résolution | Statut |
 |---|---|---|---|---|---|---|---|---|
 | **C033** | 04/08 | Juge | pharma-US / <1 an · CTO | Eli Lilly | **Le principe même de la réécriture** : conditionnellement à au moins une clôture ≤ 1 020 $ d'ici le 06/11/2026, **au moins une des trois conditions de mécanisme (M1, M2, M3) est en échec ou révoquée** au moment de cette clôture | **72 %** | Au 06/11/2026 : si aucune clôture ≤ 1 020 $ → appel **VOID**, non scoré. Sinon, grille M1/M2/M3 arrêtée à la date de la première clôture qualifiante | ⏳ |
-| **C034** | 04/08 | Juge | pharma-US / <1 an · CTO | Eli Lilly | **Le test Vicat appliqué à LLY** : FCF S1 2026 croissant au moins aussi vite que le CA S1 2026, **et** ≥ 5,5 Md$ | **40 %** | Tableau de flux du communiqué du **05/08/2026** | ⏳ |
+| **C034** | 04/08 | Juge | pharma-US / <1 an · CTO | Eli Lilly | **Le test Vicat appliqué à LLY** : FCF S1 2026 croissant au moins aussi vite que le CA S1 2026, **et** ≥ 5,5 Md$ | **40 %** | ⏳ **RESTE OUVERT au 05/08 — non résoluble.** Le tableau de flux existe (annexe `4-Q2-26-Press-Release-SCF.pdf`) mais **l'hôte est bloqué en 403** et le 10-Q T2 n'est pas encore déposé (attendu ~07-10/08). Six formulations tentées, dont une en français. **La donnée n'existe pas publiquement à ce jour — l'appel n'est ni gagné ni perdu, il attend.** Résolution reportée au dépôt du 10-Q | ⏳ |
 | **C035** | 04/08 | Juge | pharma-US / <1 an · CTO | Eli Lilly | La **guidance BPA FY2026 est RELEVÉE** (médian > 36,25 $) | **70 %** | Communiqué du **05/08/2026** | ⏳ |
 | **C036** | 04/08 | Juge | pharma-US / <1 an · CTO | Eli Lilly | **Ancien seuil, fenêtre neuve** : LLY clôture ≤ **1 020 $** au moins une séance entre le 05/08 et le **06/11/2026** | **30 %** | Clôtures NYSE, 05/08 → 06/11/2026 | ⏳ |
 
@@ -314,7 +314,25 @@ Le registre devient interprétable plus vite qu'il ne l'a jamais été.
 
 | ID | Affaire | Affirmation | P | Issue | **Brier** | Leçon |
 |---|---|---|---|---|---|---|
-| **C020** | **Vicat** | Le déclencheur réécrit se présente EN TOTALITÉ avant échéance (Porte A ≤ 56 € ou Porte B) | **42 %** | **0 — ❌ FAUX** (contrat terminé le 31/07 par PASSE définitif : le déclencheur ne peut plus se présenter) | **0,1764** | **P calculée sans conditionner sur un catalyseur inscrit à MON PROPRE radar** (résultats du 29/07). Un mid-cap qui publie a une dispersion de ±10-15 % en une séance : un seuil à −10 % avait donc une probabilité substantielle de devenir inatteignable **avant même que l'encre sèche**. C'est exactement ce qui s'est produit, en une séance (+13,15 %). |
+| **C035** | **Eli Lilly** | La guidance BPA FY2026 est **RELEVÉE** (médian > 36,25 $) | **70 %** | **0 — ❌ FAUX.** Guidance passée de 35,50-37,00 $ (médian **36,25 $**) à 35,50-36,50 $ (médian **36,00 $**). 36,00 n'est pas > 36,25 | **0,4900** | **J'ai prédit la bonne ÉCONOMIE et la mauvaise COMPTABILITÉ.** Le BPA sous-jacent a bien été **relevé de +2,78 $** au point médian, et le CA de **+3,0 Md$** — mon raisonnement économique était juste. Mais la hausse a été **plus que compensée par 3,03 $ de charges d'*acquired IPR&D*** issues de quatre acquisitions finalisées au trimestre (Orna, Ajax, Centessa, Kelonia). Net : **−0,25 $**. **J'avais écrit l'appel sur le CHIFFRE PUBLIÉ sans anticiper qu'une charge non opérationnelle pouvait le renverser.** ⚠️ **Pire score du registre à ce jour** (référence C020 : 0,1764). | Le déclencheur réécrit se présente EN TOTALITÉ avant échéance (Porte A ≤ 56 € ou Porte B) | **42 %** | **0 — ❌ FAUX** (contrat terminé le 31/07 par PASSE définitif : le déclencheur ne peut plus se présenter) | **0,1764** | **P calculée sans conditionner sur un catalyseur inscrit à MON PROPRE radar** (résultats du 29/07). Un mid-cap qui publie a une dispersion de ±10-15 % en une séance : un seuil à −10 % avait donc une probabilité substantielle de devenir inatteignable **avant même que l'encre sèche**. C'est exactement ce qui s'est produit, en une séance (+13,15 %). |
+
+### ⚙️ Correction de process encodée (issue de C035) — écrire l'appel sur la BONNE grandeur
+
+> **Un appel écrit sur un CHIFFRE PUBLIÉ doit anticiper les mécaniques
+> comptables qui peuvent le renverser sans que l'économie change.**
+
+C035 était juste sur le fond et faux sur la forme. Les trois familles de
+mécaniques à considérer avant d'écrire un appel sur un agrégat publié :
+**charges d'acquired IPR&D** (le prix d'achat d'un pipeline passé
+immédiatement en charges — endémique en pharma), **éléments discrets
+non récurrents** (le cas MSFT du 29/07, où 0,27 $ de « discrete items »
+faisaient 54-66 % du beat), et **changements de durée d'amortissement**
+(le cas MSFT du 30/07, bâtiments 15 → 25 ans).
+
+**Règle** : *si l'appel porte sur une thèse ÉCONOMIQUE, l'écrire sur la
+grandeur économique (CA, sous-jacent, volume) — pas sur l'agrégat publié.
+Si l'appel porte délibérément sur le publié, le dire, et accepter d'être
+noté sur la comptabilité autant que sur l'économie.*
 
 ### ⚙️ Correction de process encodée (issue de C020)
 
