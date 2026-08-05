@@ -86,6 +86,85 @@ preuve était fausse.
 > l'exercer. **Le contrôle d'arithmétique interne s'applique aux
 > corrections en priorité.**
 
+## 🔒 PRÉ-ENGAGEMENT LLY — trois arbitrages posés le 05/08 à 10h00, AVANT publication
+
+Le screening du matin a trouvé **trois défauts dans la grille de certificat
+écrite hier**. Je les tranche **avant d'avoir lu une ligne du communiqué** —
+c'est la seule fenêtre où la décision est honnête. *« Décidez-le maintenant,
+sinon la règle deviendra ce que le texte vous permettra qu'elle soit. »*
+
+### ① M3 — « impact nul par traité » VAUT chiffrage. Décidé AVANT lecture.
+
+**Le paradoxe** : M3 exige un impact Section 232 **chiffré** et ≤ 1,50 $,
+et pose que le silence vaut échec. Or l'impact est **nul par traité** — les
+signataires d'un accord MFN **et** d'un engagement d'onshoring ont un taux
+de **0 % jusqu'au 20/01/2029**, et **Lilly figure parmi les 14 signataires**.
+**Une société ne chiffre pas une ligne à zéro.**
+
+> **ARBITRAGE** : la borne est établie par une **mesure publique,
+> vérifiable et datée** — c'est un meilleur chiffrage que la parole du
+> management. **M3 est réputée SATISFAITE sur la ligne douanière.**
+
+**MAIS le rôle discriminant de M3 ne disparaît pas — il se déplace, et vers
+plus dur.** L'exemption **a été payée**. Le vrai inconnu est le coût des
+contreparties MFN : plafond Medicare à 50 $/mois, prix MFN garantis sur
+**tout le pipeline futur**, Medicaid d'État, TrumpRx (Zepbound et
+orforglipron passent d'un prix affiché de **1 086 $ à ~346 $/mois, −68 %**).
+**Aucun chiffrage public en $ de BPA n'existe** — ni par la direction, ni
+par un broker.
+
+> **M3′ REMPLACE M3** : la direction doit **traiter explicitement le coût
+> des contreparties MFN** — soit en le chiffrant, soit en confirmant que la
+> guidance l'absorbe intégralement. **Ni chiffrage ni confirmation =
+> ÉCHEC.**
+> *Ce n'est pas un assouplissement : la ligne douanière allait passer de
+> toute façon. La condition se déplace vers la variable qui porte
+> réellement le risque de guidance.*
+
+### ② M2 — la jambe incrétine est NON CONTRAIGNANTE. Constaté, pas corrigé.
+
+Seuil calculé : **8,57 Md$ (T2 2025) × 1,35 = 11,57 Md$**.
+**Or Mounjaro + Zepbound ont déjà fait 12,82 Md$ au T1 2026.** Pour manquer
+le seuil, le T2 devrait **reculer de −9,8 % en séquentiel**, dans un
+trimestre qui contient le lancement de Foundayo.
+
+> **Constat honnête : la jambe incrétine de M2 ne peut plus jouer le rôle
+> de discriminateur du cas (b) qui lui était assigné hier — parce que le T1
+> 2026 a été publié entre-temps et l'a rendue triviale.** La jambe qui mord
+> dans M2 est celle de la guidance ≥ 82,0 Md$, **qui duplique M4**.
+
+**Je ne relève PAS le seuil.** Le modifier la veille d'un événement, même
+de bonne foi, c'est l'ajuster à ce que j'anticipe. **Je constate la
+faiblesse et je la publie** : le pouvoir discriminant du certificat repose
+en réalité sur **M1 et M3′**, pas sur M2. À corriger **après** résolution,
+pour le prochain contrat.
+
+### ③ M1 — le seuil est plus dur qu'il n'y paraît. Assumé, non modifié.
+
+**Le FCF de Lilly est écrasé sur le T3** :
+
+| Période 2025 | FCF | % du FCF annuel |
+|---|---|---|
+| **S1 2025** | **1 545,9 M$** | **17,2 %** |
+| T3 2025 | 6 748,2 M$ | **75,2 %** |
+| T4 2025 | 675,9 M$ | 7,5 % |
+
+> Exiger **FCF S1 2026 ≥ 5,5 Md$**, c'est exiger d'un semestre **61 % de
+> tout le FCF de l'exercice 2025**, contre les **17 %** qu'a produit le
+> S1 2025.
+
+**Décomposition** : la jambe relative (« le FCF croît au moins aussi vite
+que le CA ») **ne discrimine rien** — si l'absolu passe, le relatif passe
+mécaniquement. **Tout M1 se joue sur : le T2 2026 livre-t-il ≥ 2,7 Md$ de
+FCF ?** (2,8 Md$ acquis au T1.)
+
+**Je maintiens le seuil.** C'est le test du mécanisme, et un test qui ne
+mord pas ne teste rien. **Mais j'enregistre par avance la nuance** : un
+échec de M1 sur la saisonnalité seule (T2 faible, capex au pic) n'est pas
+le même fait qu'un échec sur une conversion structurellement cassée. **Si
+M1 échoue, la lecture devra distinguer les deux — et la distinction s'écrit
+maintenant, pas après.**
+
 ## Surveillances du Juge (contrats datés — charte Arbitre v2)
 
 Toute SURVEILLANCE émise par l'Arbitre vit ICI avec ses 4 champs. À
@@ -97,7 +176,7 @@ fabriquer un déclencheur au lieu d'en trouver un).
 
 | Affaire | Déclencheur d'achat précis | Échéance de re-test | Expiration si rien | Appel registre |
 |---|---|---|---|---|
-| **Séché SCHP (PEA)** | S1 : EBE ≥ 125 M€ ET France organique ≥ 0 % ET guidance 275-285 M€ confirmée ET cours ≤ 90 € → tranche 1 ~150 € ; arrêté strict + quantification PFAS → tranche 2 conditionnelle (plafond 5 %) | Publication S1 (butée 30/09/2026) ; point intermédiaire : arrêté boues (été 2026) | 3e warning OU EBE S1 < 110 M€ OU arrêté ≥10x plus laxiste/reporté au-delà du 01/01/2027 → PASSE auto | C012 |
+| **Séché SCHP (PEA)** — 📅 **date S1 CONFIRMÉE : mercredi 09/09/2026, après bourse** *(⚠️ source agrégateur unique, à reconfirmer sur groupe-seche.com)* | S1 : EBE ≥ 125 M€ ET France organique ≥ 0 % ET guidance 275-285 M€ confirmée ET cours ≤ 90 € → tranche 1 ~150 € ; arrêté strict + quantification PFAS → tranche 2 conditionnelle (plafond 5 %) | Publication S1 (butée 30/09/2026) ; point intermédiaire : arrêté boues (été 2026) | 3e warning OU EBE S1 < 110 M€ OU arrêté ≥10x plus laxiste/reporté au-delà du 01/01/2027 → PASSE auto | C012 |
 | **LLY (CTO)** — *contrat RÉÉCRIT le 04/08, AVANT la publication* | **DEUX CLÉS OBLIGATOIRES.** **Clé A — CERTIFICAT DE MÉCANISME** au print du 05/08 : **M1** FCF S1 croissant au moins aussi vite que le CA S1 **et** ≥ 5,5 Md$ · **M2** guidance CA FY26 confirmée/relevée (point bas ≥ 82,0 Md$) **et** Mounjaro+Zepbound T2 **≥ +35 % a/a** · **M3** impact Section 232 **chiffré** ≤ **1,50 $** de BPA (**silence = ÉCHEC**) · **M4** guidance BPA non abaissée. **Clé B — VALORISATION** : clôture **≤ 23,5x le médian de la guidance BPA non-GAAP FY2026 post-print** *(indicatif au 04/08 : **852 $** à guidance inchangée ; 875 $ si médian 37,25 $)*. **Révocation** du certificat par **R1** échec ph.3 orforglipron/retatrutide · **R2** seconde révision ≥ −20 % du consensus Foundayo FY26 · **R3** guidance abaissée · **R4** tarif > 1,50 $. **Tranche 1 = 44 €**, ≥ 3 tranches | Résultats Q3, butée **06/11/2026** ; contrôle intermédiaire **05/09/2026** | 06/11 sans conjonction → PASSE auto. **Renouvellement unique NON accordé d'office** : fait nouveau daté exigé. **K1** guidance abaissée le 05/08 → PASSE DÉFINITIF · **K2** M1+M2 en échec simultané → PASSE DÉFINITIF · **K6** > 1 300 $ en clôture → dossier couru → PASSE | **C033 · C034 · C035 · C036** *(C014 et C032 maintenus — mondains)* |
 | **Aubay (PEA)** | Cours ≤ 50 € OU scare optique sur le T3 | Publication T3 (fin oct. 2026) | Après T3 sans déclencheur → PASSE auto | C001 |
 | **STM (STMPA, PEA)** | **≤ 42 €** ET P/E fwd < 30x ET ≥ 1 trim. de MB remontant vers 40 %+ | Résultats Q3 STM (fin oct. 2026) | Après Q3 sans les 3 conditions → PASSE auto | C007 |

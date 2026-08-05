@@ -188,6 +188,39 @@ Paris/Amsterdam/Bruxelles » ; puis « sociétés à VE < trésorerie en zone
 PEA » (le screening VE<cash n'est pas atteignable par recherche indexée —
 il demande un référentiel constitué).
 
+### 🔴 CORRECTION du 05/08 — ma lecture de régime du 04/08 est INVALIDÉE
+
+**Ce que j'ai écrit hier**, sur la base de Palantir (beat sur les 4 lignes
+→ **+15 %**) : *« le sentiment sur les valorisations IA extrêmes n'est PAS
+en phase de purge — il est en phase de RE-VALIDATION par les
+fondamentaux. »*
+
+**AMD a publié le soir même et a battu sur les QUATRE mêmes lignes** — CA
+11,5 Md$ (+50 %), **Data Center 6,7 Md$ (+107 %)**, BPA non-GAAP 1,66 $,
+guidance T3 12,7-13,3 Md$ — **et le titre a perdu 8,94 % en after-hours.**
+
+> **Deux « beat » complets, deux réactions opposées à 24 heures
+> d'intervalle. L'hypothèse « re-validation par les fondamentaux »
+> n'explique pas AMD.**
+
+**L'hypothèse rivale explique les deux** : *le marché re-valide le
+LOGICIEL et purge le HARDWARE.* C'est exactement le **SOX −1,9 % contre
+Nasdaq +2,1 %** que j'avais noté le 03/08 — **et que j'avais rangé en
+observation secondaire au lieu d'en faire l'hypothèse principale.**
+
+**Ce que ça change concrètement** : **NVDA pèse 22 % du portefeuille et
+publie fin août.** AMD est le substitut disponible le plus proche, et **il
+est négatif**. Ce n'est pas un signal d'action — la charte interdit de
+vendre sur le prix, et le critère d'alerte NVDA (« capex abaissé par deux
+grands acheteurs ») n'est pas près de se déclencher. Mais c'est un **fait
+qui invalide une phrase publiée**, et la correction est due.
+
+**Leçon de méthode** : j'ai tiré une loi de régime **d'une seule
+observation**, en reléguant l'observation contradictoire du même jour au
+rang de note. **Une lecture de régime exige au moins deux événements de
+même nature, et doit expliquer les DEUX** — sinon c'est une narration
+construite sur le dernier fait vu.
+
 ### 📉 Marqueur de régime — la défense européenne ne paie plus le récit
 
 **Indice défense européen −12 % depuis mi-janvier contre Stoxx 600
