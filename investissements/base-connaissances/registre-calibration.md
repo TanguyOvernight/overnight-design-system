@@ -310,6 +310,96 @@ probabilité enregistrée est une fraude de calibration.
 cette semaine : **C034 et C035 demain**, **C032, C028 et C029 le 07/08**.
 Le registre devient interprétable plus vite qu'il ne l'a jamais été.
 
+## Appels ouverts le 05/08/2026 (après publication LLY — tous lisibles sur le COMMUNIQUÉ seul, §7)
+
+| ID | Date | Agent | classe_réf | Affaire | Affirmation | P | Condition de résolution | Statut |
+|---|---|---|---|---|---|---|---|---|
+| **C037** | 05/08 | Juge | pharma-US / <1 an · CTO | Eli Lilly | Le communiqué du **T3 2026** fait apparaître des charges d'*acquired IPR&D* **≥ 1,00 $** de BPA | **65 %** | Communiqué T3, butée 30/11/2026 | ⏳ |
+| **C038** | 05/08 | Juge | pharma-US / <1 an · CTO | Eli Lilly | **CA Foundayo T3 2026 ≥ 250 M$** | **55 %** | Communiqué T3, butée 30/11/2026 | ⏳ |
+| **C039** | 05/08 | Juge | pharma-US / <1 an · CTO | Eli Lilly | **Prix réalisés US du T3 2026 ≥ −8 % a/a**, tels que publiés | **65 %** | Communiqué T3, butée 30/11/2026 | ⏳ |
+| **C040** | 05/08 | Juge | pharma-US / <1 an · CTO | Eli Lilly | Le **point bas** de la guidance CA FY2026 n'est **pas abaissé sous 85,0 Md$** au print du T3 | **70 %** | Communiqué T3, butée 30/11/2026 | ⏳ |
+
+**C037 est l'appel qui peut me condamner** : base — Curevo 1,5 + LimmaTech
+0,78 + Vaccine Company 1,55 = **3,83 Md$ annoncés le 26/05, clôturant au
+T3**, plus AtaiBeckley ; 1,00 $ = 894 M$ d'upfront sur 893,8 M titres.
+**S'il se résout VRAI, la clause §5 de la règle 6 s'arme et ma propre règle
+tue le dossier.** L'incertitude porte sur le partage upfront/milestones,
+non publié.
+
+**C038 — dérivation de R2′** : 98 M$ réalisés sur un trimestre **partiel**
+(force de vente activée le 17/04) ; le seul passage à un trimestre plein
+donne ~196 M$ à taux constant. S'y ajoutent, **sur les dires de la
+direction** : notoriété et prescriptions doublées en un mois, ~25 % des
+nouveaux patients oraux démarrant sur Foundayo, campagne élargie au T3,
+accès Medicare ouvert début juillet. **250 M$ est un plancher modeste au
+regard de la trajectoire que la direction décrit elle-même** — sous ce
+seuil, ce n'est plus un manque de consensus, c'est le démenti de la
+direction par ses propres chiffres. *Seuil délibérément fixé bas plutôt que
+« juste » : le taux de sortie de trimestre n'est pas publié, et un seuil bas
+qui mord quand même est plus honnête qu'un seuil élevé bâti sur une
+estimation fabriquée.*
+
+**C039 — teste ce que M3′ n'a pas su tester** : le coût MFN/TrumpRx **ne
+peut pas mordre sans traverser le prix réalisé US**. T2 = **−3 %** avec
+volumes +37 %, avant le lancement Medicare de début juillet. Une
+dégradation de 5 pts consommerait ~1,4 Md$ sur une base de CA US S2
+estimée à ~28 Md$, soit **~70 % de la largeur entière de la fourchette de
+guidance**. ⚠️ *La part US du CA (~⅔) est une hypothèse à vérifier sur le
+10-Q — le seuil est provisoire tant qu'elle ne l'est pas.*
+
+### ⚠️ MENTION OBLIGATOIRE SUR C033 — contenu rétréci, probabilité NON révisée
+
+**C033 (72 %)** portait sur « au moins une des trois conditions M1, M2, M3
+est en échec au moment d'une clôture ≤ 1 020 $ ». **M2 est désormais
+satisfaite sans ambiguïté et M3 réputée satisfaite sur la ligne douanière
+depuis le 05/08 matin : C033 ne repose plus que sur M1.** Son contenu s'est
+rétréci.
+> **Sa probabilité n'est PAS révisée** — réviser une probabilité enregistrée
+> est une fraude de calibration. Même traitement que C014.
+
+### ⚙️ Correction de process (issue de C035, niveau 3 — la plus dure)
+
+**La charte contenait déjà l'antidote, et je ne l'ai pas appliqué à
+moi-même.** La règle 16 impose d'obtenir toute probabilité décisive **deux
+fois** — jugement global **et** arbre multiplicatif. Or C035 était une
+**conjonction** : *P(relèvement du sous-jacent)* × *P(pas de charge d'IPR&D
+compensatrice)* ≈ **0,85 × 0,55 ≈ 47 %**. Mon jugement global disait 70 %.
+**Écart de 23 points — bien au-delà du seuil de 15 de la charte, qui
+commande de creuser et de retenir la valeur BASSE.**
+
+> **À 47 %, le Brier aurait été 0,2209 au lieu de 0,4900. La faute a coûté
+> exactement 0,27 point de Brier — et ce n'était PAS une faute de
+> connaissance comptable : c'était le non-usage d'un outil déjà écrit dans
+> la charte.**
+
+**Règle encodée** : *l'arbre multiplicatif de la règle 16 s'applique aux
+APPELS DU REGISTRE avec la même force qu'aux verdicts. Tout appel dont
+l'affirmation contient un « et », un « non abaissée », ou une condition
+composée est une conjonction et doit être décomposé AVANT enregistrement.*
+
+**Erreur de conception (niveau 2)** : l'appel portait sur une métrique que
+**l'émetteur déplace à volonté par une décision discrétionnaire sans
+rapport avec la thèse**. Prédire la guidance BPA publiée de Lilly, c'est
+prédire **le calendrier de fusions-acquisitions de Lilly**.
+→ *N'écrire un appel, ni une condition de contrat, que sur une grandeur que
+l'émetteur ne contrôle pas (CA, volume, prix réalisé, part de marché) ou
+sur laquelle il s'est publiquement engagé (plancher de guidance).*
+
+### 🔬 Hypothèse à n = 3 — à surveiller, NE PAS conclure
+
+| Appel | Nature | Brier |
+|---|---|---|
+| C032 (≤ 1 020 $ au 07/08) | **prix de marché** | ~0,0225 *(à acter le 07/08)* |
+| C020 (mon contrat Vicat) | **construction interne** | 0,1764 |
+| C035 (comptabilité d'entreprise) | **choix comptable** | **0,4900** |
+
+**Motif possible** : les appels sur *le monde et les prix* seraient bien
+calibrés ; ceux sur *les choix comptables et les constructions internes* ne
+le seraient pas. **Si le motif tient après ~10 résolutions supplémentaires**,
+conséquence : **réduction d'un cran du sizing** sur toute thèse dont le
+mécanisme repose sur une prévision de chiffre publié plutôt que sur un fait
+de marché. **n = 3 ne conclut rien.**
+
 ## Appels résolus
 
 | ID | Affaire | Affirmation | P | Issue | **Brier** | Leçon |

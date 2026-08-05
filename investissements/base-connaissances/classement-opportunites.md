@@ -71,7 +71,7 @@ compte.
 | **②** | **Or** (assurance) | CTO | **100 € d'IAU — AUJOURD'HUI** (comptant, levier x1) ; ~4 086-4 109 $/oz | **immédiat** | 🟢 | = |
 | **③** | **Séché Environnement** | PEA | ~81-82 € vs ≤ 90 € — **seule ligne SOUS son prix visé** | S1, butée 30/09 | 🟡 | ▲ +2 |
 | **④** | **Walmart** | CTO | **112,92 $** (03/08) vs ≤ 100 $ → +11,4 % | Résultats **20/08** | ⚪ | ▲ +1 |
-| **⑤** | **Eli Lilly** | CTO | **~1 113-1 121 $** (03/08) vs **nouveau seuil ~852 $** (23,5x le médian de guidance) → **+31 %**. ⚠️ *Contrat RÉÉCRIT le 04/08, seuil abaissé de 1 020 $ à ~852 $ — soit 16,5 % PLUS STRICT* | **Q2 05/08**, butée 06/11 | 🟡 | ▼ −1 |
+| **⑤** | **Eli Lilly** | CTO | **~1 170 $** (05/08, ⚠️ **pré-marché, PAS une clôture**) vs seuil **846,00 $** (23,5x le médian PUBLIÉ) → **+38 %** *(contre +31 % hier)*. T2 publié : CA **+48 %**, guidance CA **relevée de 3 Md$**, mais guidance BPA publiée **abaissée** par 3,03 $ d'IPR&D | contrôle **05/09** · butée 06/11 | 🟡 | **= (conservé)** |
 | **⑥** | **Magnum Ice Cream** | PEA | **9,97 Md€ vs ≤ 7,6 Md€ (+31 %)** — PASSE, réouverture sur fait | aucune (fait, pas date) | 🔴 | **= (−2 relatif)** |
 | **⑦** | **Aubay** (ESN) | PEA | ~54,30 € vs ≤ 50 € (+8,6 %) — s'éloigne pour une **bonne** raison (T2 +12,2 % organique, objectifs relevés) | T3 fin oct. | ⚪ | ▲ +2 |
 | **⑧** | **STM** (semi) | PEA | **44,62 €** (30/07) vs **≤ 42 €** → +6,2 % ⚠️ *unité corrigée le 31/07 : le seuil était écrit en $ dans 3 fichiers alors que STMPA cote en €* | Q3 fin oct. | 🔴 | ▲ +2 |
@@ -133,6 +133,41 @@ diversification de devise ; (iii) son contrat est **vivant et daté**.
 
 **Aucun autre mouvement** — on ne re-classe pas des lignes qu'on n'a pas
 re-mesurées aujourd'hui.
+
+### Mouvement du 05/08 — LLY CONSERVE ⑤, et le motif est important
+
+**Ce qui pousserait à la rétrogradation** : l'écart au déclencheur passe de
+**+31 % à +38 %** — désormais **pire que celui de Magnum ⑥ (+31 %)**. La
+probabilité d'achat avant le 06/11 tombe à **~3 %**.
+
+**Ce qui l'emporte** : le mètre commun n'est **pas** la distance au
+déclencheur, c'est l'espérance nette ajustée de corrélation — et c'est
+**exactement sur le mécanisme** que LLY et Magnum ont été départagées le
+04/08. Le motif écrit ce jour-là était : *« son mécanisme est intact et
+testable dès demain, alors que celui de Magnum est cassé »*.
+
+**Demain a eu lieu, et le mécanisme ne s'est pas seulement montré intact —
+il s'est renforcé** : CA battu de +13 % contre consensus (22,97 contre
+20,26 Md$), volume **+60 %**, marge brute **+1,3 pt**, guidance CA relevée
+de **3,0 Md$**. Chez Magnum : dette nette **+297 M€** sur une thèse de
+désendettement, FCF intégralement issu du besoin en fonds de roulement.
+
+> **Rétrograder LLY sous Magnum aujourd'hui reviendrait à récompenser un
+> mécanisme cassé et à sanctionner un mécanisme confirmé, sur le seul
+> critère de la distance au prix — c'est-à-dire à faire du prix un jugement
+> de qualité. Refusé.**
+
+**LLY reste une candidate conservée pour son déclencheur, pas pour son
+rang** : espérance ~**+3 %/an net de PFU** contre un hurdle ajusté de
+**7,0 %** — **~4 points en dessous**.
+
+> 📉 **Déclencheur de déclassement, écrit maintenant** : si au contrôle du
+> **05/09/2026** l'écart au seuil de 846 $ dépasse **+45 %** sans
+> amélioration d'espérance, **LLY passe ⑤ → ⑦**, sous Magnum et sous
+> Aubay, **sans nouvel arbitrage**.
+
+⚠️ **Le prix retenu est un PRÉ-MARCHÉ, pas une clôture** (règle 3) — à
+réconcilier sur la clôture officielle du 05/08 dès demain.
 
 ### 🔒 Créneaux de surveillance : 5/6 — et le sixième reste VIDE, délibérément
 

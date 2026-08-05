@@ -86,6 +86,90 @@ preuve était fausse.
 > l'exercer. **Le contrôle d'arithmétique interne s'applique aux
 > corrections en priorité.**
 
+## ⚖️ RÈGLE 6 — LA RÈGLE DU CHIFFRE RÉCONCILIÉ (05/08/2026)
+
+Née d'un cas réel : la guidance de BPA d'Eli Lilly a **baissé de 0,25 $ au
+point médian** le jour même où la société **relevait son CA de 3,0 Md$ et
+son BPA sous-jacent de +2,78 $** — la baisse venant entièrement de
+**3,03 $ de charges d'*acquired IPR&D*** issues de quatre acquisitions
+finalisées au trimestre.
+
+**Le piège à éviter** : croire qu'une clause ambiguë se lit de la même
+façon selon qu'elle **autorise un achat** ou qu'elle **détruit un
+dossier**. Les deux lectures naïves — mécanique (« le chiffre a baissé,
+donc le dossier meurt ») et téléologique (« l'économie s'améliore, donc
+tout va bien ») — partagent ce présupposé, et aucune ne pouvait trancher.
+
+**§1 — Deux chiffres, toujours.** Toute condition portant sur une guidance
+« abaissée / relevée / confirmée » se lit sur **(a) le chiffre publié** et
+**(b) le chiffre sous-jacent réconcilié** — le publié retraité des seuls
+éléments satisfaisant **cumulativement** les quatre tests du §2.
+
+**§2 — Les quatre tests de retraitement (tous obligatoires) :**
+1. **Chiffré et réconcilié par l'émetteur lui-même**, dans le communiqué,
+   en $ par action, avec une arithmétique qui boucle au centime.
+   *(Ici : +2,78 − 3,03 = −0,25 ✓)* — **jamais un retraitement calculé par
+   moi.**
+2. **Événement discret et daté** (clôture d'acquisition, litige, cession),
+   et non dérive du métier de base — prix, volume, coût unitaire, mix,
+   change, remise.
+3. **Aucune dégradation du CA guidé ni de la marge brute.** Si l'un des
+   deux baisse, **le retraitement est INTERDIT** : la guidance est
+   abaissée, point final. *(Ici : CA +3,0 Md$, marge brute +1,3 pt ✓)*
+4. **Décision volontaire d'allocation de capital**, non un événement subi.
+
+**§3 — Conséquences, ASYMÉTRIQUES et non négociables :**
+> - Un instrument de **DESTRUCTION** (kill criterion, révocation) se
+>   déclenche sur le **chiffre SOUS-JACENT**. Il vise un fait ; si le fait
+>   visé est **vérifiablement absent**, il ne s'exécute pas. *Exécuter un
+>   détecteur quand la chose détectée est démontrée absente n'est pas de la
+>   discipline, c'est de la superstition.*
+> - Un instrument d'**AUTORISATION** (condition de certificat, condition
+>   d'achat) se lit sur le **chiffre PUBLIÉ**. Une autorisation de dépenser
+>   ne s'ouvre jamais sur un retraitement.
+> - **Corollaire : une ambiguïté ne se résout JAMAIS en faveur d'un achat,
+>   ni en faveur d'une destruction que la preuve contredit.** Les deux
+>   branches convergent vers l'inaction, qui est le défaut de la charte.
+
+**§4 — Interdiction du panachage au prix.** Un retraitement admis pour
+juger la **direction** de l'activité n'est **jamais** admis pour juger le
+**prix payé**. Tout seuil de valorisation se calcule sur le **BPA publié**.
+Symétrie obligatoire : si un jour la guidance publiée est **gonflée** par un
+profit exceptionnel, ce profit doit être **retiré** du dénominateur,
+**durcissant** le seuil de prix.
+
+**§5 — Clause anti-abus de récurrence.** L'exemption tombe si la même
+catégorie d'« exceptionnel » réapparaît sur **2 trimestres consécutifs** ou
+**3 sur 12 glissants**. Au-delà, elle est récurrente donc opérationnelle, et
+le critère de destruction se déclenche sur le **chiffre publié, sans
+discussion**.
+
+**§6 — Effet différé.** Toute modification d'une condition prend effet **au
+test SUIVANT, jamais au test en cours.** *Une réécriture qui ne peut pas
+aider le trimestre pendant lequel on l'écrit est une réécriture sûre.*
+
+**§7 — Testabilité depuis le communiqué SEUL.** Aucune condition ne peut
+dépendre d'une donnée produite par un canal non contrôlé et non horodaté
+(transcript, commentaire de dirigeant, consensus d'agrégateur). *M3′ et R2
+violaient toutes deux ce principe — c'est pourquoi elles se sont révélées
+intestables le jour où il fallait les tester.*
+
+### 🔑 La preuve qui a tranché, et elle est antérieure à l'événement
+
+Lilly a annoncé le **26/05/2026** l'acquisition de **Curevo (1,5 Md$),
+LimmaTech (0,78 Md$) et Vaccine Company (1,55 Md$)** — ~3,83 Md$ — dont la
+clôture tombe **au T3**. Sur 893,8 M titres, elles produiront mécaniquement
+une nouvelle charge d'IPR&D. **La largeur TOTALE de la fourchette de
+guidance est de 1,00 $** : ~894 M$ d'upfront suffisent à la consommer.
+
+> **Sous la lecture mécanique, le dossier n'était pas « en danger » au T3 :
+> il était DÉJÀ CONDAMNÉ, par des contrats signés en mai, indépendamment de
+> toute performance commerciale. Un critère de mort dont le déclenchement
+> est déjà déterminé par le passé et découplé de la thèse n'est pas un
+> critère de mort — c'est un compte à rebours.**
+> Ce fait était vrai **avant** la publication du jour : il n'est donc pas
+> contaminé par elle.
+
 ## 🔒 PRÉ-ENGAGEMENT LLY — trois arbitrages posés le 05/08 à 10h00, AVANT publication
 
 Le screening du matin a trouvé **trois défauts dans la grille de certificat
@@ -165,6 +249,45 @@ le même fait qu'un échec sur une conversion structurellement cassée. **Si
 M1 échoue, la lecture devra distinguer les deux — et la distinction s'écrit
 maintenant, pas après.**
 
+### ④ RÉSOLUTION DU 05/08 APRÈS PUBLICATION — ce que la grille a donné
+
+| | Condition | Verdict |
+|---|---|---|
+| **M1** (cash) | FCF S1 2026 ≥ 5,5 Md$ | ⬛ **INDÉTERMINÉE** — tableau de flux derrière un hôte bloqué (403), 10-Q T2 non déposé |
+| **M2** (moteur) | Mounjaro+Zepbound T2 ≥ 11,57 Md$ · guidance CA bas ≥ 82,0 Md$ | ✅ **SATISFAITE** — **14,87 Md$** et **85,0 Md$** |
+| **M3′** (contreparties MFN) | coût chiffré **ou** absorption confirmée | ❌ **NON ÉTABLIE** — transcript non indexé. *« Non établi » ≠ « démontré absent »* |
+| **M4** (guidance BPA) | non abaissée, **lue sur le PUBLIÉ** (§3) | ❌ **ÉCHOUÉE** — médian 36,25 → **36,00 $** |
+
+> **CERTIFICAT T2 : NON DÉLIVRÉ, DÉFINITIVEMENT.** M4 étant échouée, la
+> conjonction est morte quoi que disent le 10-Q et le transcript.
+> **Fenêtre de DÉCISION fermée** — la garder ouverte alors qu'elle ne peut
+> rien produire serait le canal par lequel la rationalisation entre.
+> **Fenêtre de DONNÉE rouverte** au **17/08** pour C034 seul (calibration,
+> aucune conséquence décisionnelle).
+
+**K1 : NON DÉCLENCHÉ** (règle 6, §3 — les quatre tests du §2 sont
+satisfaits). **K2 : impossible**, M2 étant satisfaite sans ambiguïté.
+**Le contrat n'est ni échu ni renouvelé — le renouvellement unique reste
+INTACT.** Butée 06/11, contrôle intermédiaire 05/09, inchangés.
+
+⚠️ **La faute de rédaction sur M4 est PAYÉE** : par la perte du trimestre
+et par un point de Brier (C035 = 0,49). **Elle n'est pas payée par une
+exécution rituelle que la preuve contredit.**
+
+### 🚧 PLAFOND D'INSTRUCTION — le coût d'attention devient un critère de mort
+
+L'Arbitre a explicitement envisagé le PASSE au fond et l'a écarté, en le
+disant : espérance ~+3 %/an net contre un hurdle de 7,0 %, déclencheur à
+−28 %, P(achat avant le 06/11) ≈ 3 %, **tranche 1 = 44 €**. *« Un dossier
+qui consomme plus d'attention que tout le reste du livre pour le plus petit
+ticket du livre »* — violation caractérisée de la règle 4.
+
+> **Le dossier LLY ne consomme plus AUCUN arbitrage complet avant le
+> 06/11/2026.** Deux contrôles seulement — **05/09** et **print T3** —
+> chacun lisible en **moins de 15 minutes depuis le seul communiqué**.
+> **K7 : tout troisième arbitrage LLY sollicité avant le 06/11 déclenche un
+> PASSE DÉFINITIF immédiat, sans examen du fond.**
+
 ## Surveillances du Juge (contrats datés — charte Arbitre v2)
 
 Toute SURVEILLANCE émise par l'Arbitre vit ICI avec ses 4 champs. À
@@ -177,7 +300,7 @@ fabriquer un déclencheur au lieu d'en trouver un).
 | Affaire | Déclencheur d'achat précis | Échéance de re-test | Expiration si rien | Appel registre |
 |---|---|---|---|---|
 | **Séché SCHP (PEA)** — 📅 **date S1 CONFIRMÉE : mercredi 09/09/2026, après bourse** *(⚠️ source agrégateur unique, à reconfirmer sur groupe-seche.com)* | S1 : EBE ≥ 125 M€ ET France organique ≥ 0 % ET guidance 275-285 M€ confirmée ET cours ≤ 90 € → tranche 1 ~150 € ; arrêté strict + quantification PFAS → tranche 2 conditionnelle (plafond 5 %) | Publication S1 (butée 30/09/2026) ; point intermédiaire : arrêté boues (été 2026) | 3e warning OU EBE S1 < 110 M€ OU arrêté ≥10x plus laxiste/reporté au-delà du 01/01/2027 → PASSE auto | C012 |
-| **LLY (CTO)** — *contrat RÉÉCRIT le 04/08, AVANT la publication* | **DEUX CLÉS OBLIGATOIRES.** **Clé A — CERTIFICAT DE MÉCANISME** au print du 05/08 : **M1** FCF S1 croissant au moins aussi vite que le CA S1 **et** ≥ 5,5 Md$ · **M2** guidance CA FY26 confirmée/relevée (point bas ≥ 82,0 Md$) **et** Mounjaro+Zepbound T2 **≥ +35 % a/a** · **M3** impact Section 232 **chiffré** ≤ **1,50 $** de BPA (**silence = ÉCHEC**) · **M4** guidance BPA non abaissée. **Clé B — VALORISATION** : clôture **≤ 23,5x le médian de la guidance BPA non-GAAP FY2026 post-print** *(indicatif au 04/08 : **852 $** à guidance inchangée ; 875 $ si médian 37,25 $)*. **Révocation** du certificat par **R1** échec ph.3 orforglipron/retatrutide · **R2** seconde révision ≥ −20 % du consensus Foundayo FY26 · **R3** guidance abaissée · **R4** tarif > 1,50 $. **Tranche 1 = 44 €**, ≥ 3 tranches | Résultats Q3, butée **06/11/2026** ; contrôle intermédiaire **05/09/2026** | 06/11 sans conjonction → PASSE auto. **Renouvellement unique NON accordé d'office** : fait nouveau daté exigé. **K1** guidance abaissée le 05/08 → PASSE DÉFINITIF · **K2** M1+M2 en échec simultané → PASSE DÉFINITIF · **K6** > 1 300 $ en clôture → dossier couru → PASSE | **C033 · C034 · C035 · C036** *(C014 et C032 maintenus — mondains)* |
+| **LLY (CTO)** — *contrat réécrit le 04/08, conditions mises à jour le 05/08 (effet au T3, §6)* | **DEUX CLÉS.** **Clé A — CERTIFICAT au print du T3** : **M1′** FCF 9 mois 2026 **≥ 12,0 Md$** *(9M 2025 = 8 294,1 M$ ; concession de 0,5 Md$ chiffrée et datée au titre du pic de capex)* · **M2′** point **BAS** de la guidance CA FY26 **≥ 85,0 Md$** **et** marge brute non-GAAP T3 **≥ 86,0 %** non dégradée a/a *(la jambe incrétine est SUPPRIMÉE : non contraignante, 14,87 contre 11,57)* · **M3″** **prix réalisés US du T3 ≥ −8 % a/a, tels que publiés** *(remplace M3′, intestable : le coût MFN ne peut pas mordre sans traverser le prix réalisé US ; T2 = −3 % avec volumes +37 %)* · **M4′** guidance BPA non abaissée **selon la règle 6** (sous-jacent pour la destruction, publié pour l'autorisation, clause §5 armée). **Clé B — INCHANGÉE** : clôture **≤ 23,5x le médian de la guidance BPA non-GAAP PUBLIÉE** = **846,00 $** aux chiffres du 05/08 *(§4 : le retraitement n'est PAS offert au prix — 846 $, pas 917 $)*. **Tranche 1 = 44 €**, ≥ 3 tranches | Contrôle **05/09/2026** · butée **06/11/2026** · échéance de donnée **17/08** (10-Q, C034, calibration seule) | 06/11 sans conjonction → PASSE auto. **Renouvellement unique INTACT.** **K1** (règle 6, §5 armée) · **K2** · **K6** > 1 300 $ → couru · **K7** 3ᵉ arbitrage avant le 06/11 → PASSE DÉFINITIF · **R1** échec ph.3 · **R2′** **Foundayo T3 < 250 M$** *(remplace R2, intestable)* · **R3** · **R4** | **C033 · C034 · C036 · C037 · C038 · C039 · C040** |
 | **Aubay (PEA)** | Cours ≤ 50 € OU scare optique sur le T3 | Publication T3 (fin oct. 2026) | Après T3 sans déclencheur → PASSE auto | C001 |
 | **STM (STMPA, PEA)** | **≤ 42 €** ET P/E fwd < 30x ET ≥ 1 trim. de MB remontant vers 40 %+ | Résultats Q3 STM (fin oct. 2026) | Après Q3 sans les 3 conditions → PASSE auto | C007 |
 | **WMT (CTO)** | Cours **≤ 100 $** en clôture | Résultats du **20/08/2026** | **31/12/2026** sans repli → PASSE auto | **C024** *(créé le 30/07 — lacune de couverture réparée)* |
