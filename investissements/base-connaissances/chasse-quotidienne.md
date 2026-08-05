@@ -155,6 +155,55 @@ mauvaises réactions : baisser la barre, ou multiplier les requêtes.
   entière — les sociétés dont les *actifs* sont émergents mais les *ventes
   facturées ailleurs*, que les écrans de screening classent mal.
 
+### 🔁 CONFIRMATION du 05/08 — le zéro est STRUCTUREL, et c'est la 2ᵉ fois
+
+Le terrain défense a produit **exactement le même mécanisme** que le terrain
+émergents le 31/07, et cela transforme une anecdote en motif :
+
+> **Le goulet est réel, documenté, vérifiable — et aucun de ses maillons
+> n'est cotable en PEA.**
+
+- **Émergents (31/07)** : la contrainte d'achetabilité élimine ~90 % du
+  champ ; les meilleurs actifs (CDMO, distribution africaine, logistique
+  portuaire) ont quitté la cote.
+- **Défense (05/08)** : la liste officielle des goulets de la base
+  industrielle et technologique de défense française **existe, est publique
+  et fiable** (rapport du Sénat) — poudres et nitrocellulose, forgeage de
+  grosses pièces, électronique durcie. **Eurenco, Aubert & Duval,
+  ArianeGroup, Roxel, Manoir : tous non cotés ou hors route PEA.**
+  **Terrain réel, véhicule inexistant.**
+- **Santé (04/08)** : idem — le façonnier avec capacités américaines, maillon
+  gagnant du régime tarifaire, est **privé (PCI, Recipharm, GRAM) ou suisse
+  (Lonza, Siegfried, Bachem)**.
+
+**Trois terrains, trois fois le même mur — et ce n'est PAS un mur
+d'information, c'est un mur d'achetabilité.** La consigne « chercher le
+fournisseur de rang 2-3 dans un goulet vérifié » est méthodologiquement
+juste ; elle échoue sur l'univers, pas sur la méthode.
+
+**Conséquence : un chantier d'univers rend plus qu'une veille d'actualité**
+sur ces terrains. Prochains chantiers à programmer le samedi :
+« fournisseurs de défense cotés hors grands maîtres d'œuvre, routes
+Paris/Amsterdam/Bruxelles » ; puis « sociétés à VE < trésorerie en zone
+PEA » (le screening VE<cash n'est pas atteignable par recherche indexée —
+il demande un référentiel constitué).
+
+### 📉 Marqueur de régime — la défense européenne ne paie plus le récit
+
+**Indice défense européen −12 % depuis mi-janvier contre Stoxx 600
++7,5 %.** Rheinmetall **−40 % depuis son pic de janvier**, *malgré* une
+guidance de croissance de CA de **+45 % en 2026**.
+
+> **Le thème ne paie plus le récit, il paie l'EXÉCUTION.** Sur ce terrain,
+> la prochaine chasse doit viser les **écarts d'exécution** (marge tenue vs
+> promise, conversion du carnet en cash), **pas les carnets de commandes**
+> — qui sont désormais intégralement pricés, voire sanctionnés.
+
+Illustration du jour : **Dassault Aviation** publie un S1 à +46 % de CA et
++83 % de résultat opérationnel, carnet 45,4 Md€ → **+10 % dès l'ouverture**,
+réaction proportionnée, fait consommé. **Exosens** relève ses objectifs et
+**recule**, après +149 % en 2025 et +24 % YTD.
+
 **Conséquence encodée** : le créneau du samedi, dont le terrain « smart
 money » est hors service, devient un **CHANTIER D'UNIVERS**. On ne cherche
 plus l'information fraîche là où mille personnes la cherchent ; on
