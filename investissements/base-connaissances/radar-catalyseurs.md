@@ -410,7 +410,7 @@ post-événement est indistinguable d'une rationalisation.
 |---|---|---|
 | 31/07 | Résultats Cameco (BPA attendu 0,26 $, -49 %) | Thème uranium/énergie IA (veille, spot ~85,8 $/lb) |
 | Début août | Ouverture « Corriger ma déclaration » impots.gouv.fr | Régularisation 3916-bis si compte ouvert ≤ 2025 |
-| 26/08 | **Résultats Nvidia T2** | NVDA = 22 % du portefeuille — le rendez-vous du mois |
+| **26/08** ✅ **CONFIRMÉ PAR L'ÉMETTEUR** | **Résultats Nvidia T2 FY2027** — trimestre clos le 26/07 ; publication vers **13h20 PT**, conférence **17h00 ET = 23h00 Paris**. Communiqué NVIDIA du 29/07, quatre relais concordants *(page nvidianews en 403 — ancrage jugé suffisant, mais pas de lecture directe)* | NVDA = **22 % du portefeuille** — le rendez-vous du mois. ⚠️ **La nomenclature de reporting a changé** (Data Center scindé Hyperscale / AI-Cloud / Edge) : **relire les niveaux de référence des contrats de détention dans la NOUVELLE présentation**, pas l'ancienne. 🎯 **La bonne question, apprise d'AMD le 05/08 : pas « bat-il le consensus ? » mais « la croissance porte-t-elle un levier de MARGE ? »** — AMD a fait +50 % de CA et +245 % de résultat opérationnel, et a chuté sur une guidance T3 à +41 % avec une **marge brute STABLE à ~56 %** |
 | **07/08** | **Premiers résultats autonomes de Mobility Global (MBGL, NYSE)** — avant bourse, call 8h ET | Chasse CTO 27/07 : spin-off CARFAX de S&P Global, vendeurs FORCÉS (fonds S&P 500 non éligibles), ~11,6x EBITDA vs 18-22x les comparables. Entrée conditionnelle : cours ≤ 21 $ **ET** EBITDA aj. ≥ 175 M$ **ET** organique CARFAX ≥ +3 % **ET** guidance FY26 donnée. Test décisif : cash-flow opérationnel / EBITDA ajusté (levier 2,6x post-spin) |
 | 27/08 | **Résultats S1 IBA (IBAB, Bruxelles, PEA)** — cash-flow, marge, langage PanTera (lire en diff vs S1 2025) | Chasse profonde 27/07 : goulet actinium-225 — ⚠️ thèse RÉFUTÉE par l'Avocat (C010), suivi documentaire seulement |
 | **31/07/2026** (en vigueur) | 🔴 **DROITS DE DOUANE PHARMA SECTION 232 — structure à ÉTAGES** *(entrée corrigée le 04/08 : ma version du 03/08 était fausse sur le point le plus important)* | **Taux de tête : 100 % ad valorem** sur les médicaments de marque importés, en vigueur le **31/07/2026 pour les grands laboratoires** (29/09/2026 pour les autres). ⚠️ **MAIS ce taux ne s'applique PAS uniformément** — voir la structure ci-dessous. **Sujet n°1 du call Eli Lilly du 05/08.** Élément favorable à LLY : 750 M$ annoncés le 30/07 dans l'Ohio, dans un plan de ~55 Md$ d'investissements industriels américains présenté comme une réponse aux tarifs |
@@ -544,9 +544,50 @@ spécialisée », **pas texte réglementaire primaire**.
 | Trimestriel | Revue de composition CAC 40 (Euronext) | Base de connaissances |
 | Saisonnier | Saisons de résultats : oct-nov (T3), fév-mars (annuels), avr-mai (T1), juil-août (S1) | Fenêtres de briefs renforcés |
 
+## 🛢️ ORMUZ — le fait macro dominant du 05/08, et le dossier qu'il rouvre À MOITIÉ
+
+Le secrétaire au Trésor **Bessent** a déclaré qu'un accord avec l'Iran pour
+**rouvrir le détroit d'Ormuz** pourrait intervenir « dès mardi ou
+mercredi » ; **des navires y transiteraient déjà**. **Brent −5,3 % mardi à
+~79 $** (plus bas depuis le 10/07), **WTI ~74,50 $** — **plus de 10 % en
+deux séances**. Moteur des records du 05/08 : **CAC 40 8 669,30 en clôture
+(+0,03 %)**, record intra-séance 8 693,89 ; **Dow 54 349 (+0,5 %)**, record ;
+S&P 500 −0,2 % ; Nasdaq −0,8 %.
+
+📌 **Seuil de mandat** : « Brent > 100 $ durable → réduction de voilure ».
+On s'en **éloigne franchement**. Aucune action requise — noté parce que le
+mandat l'exige.
+
+### 🚫 Technip Energies — le vent de face NOMMÉ s'inverse, et je ne rouvre pas
+
+TE a abaissé sa guidance de marge Project Delivery de 6,5-7,5 % à
+« > 5,0 % » **en invoquant explicitement les perturbations d'Hormuz**, et
+j'ai écarté le dossier le 05/08. Une réouverture **annule la cause
+déclarée**.
+
+> **Et c'est exactement pourquoi il faut s'en méfier.** J'ai tué un dossier
+> il y a 24 heures ; une nouvelle macro spectaculaire me tend une raison de
+> le ressusciter. **Les trois vérifications exigées restent TOUTES les trois
+> en suspens** : (1) cash-flow opérationnel S1 et trésorerie nette hors
+> avances clients ; (2) chiffrage **explicite et daté** de l'impact
+> Moyen-Orient ; (3) marge des **12,72 Md€** de commandes prises au S1.
+> **Aucune n'est satisfaite par une déclaration du Trésor américain.**
+>
+> Le drapeau qui a tué TE n'était **pas** Hormuz : c'était **« carnet record
+> pendant que la marge s'effondre »** — le motif du *backlog acheté*
+> (précédents Saipem, Petrofac) — et des **créances de réclamation** en
+> guise de recouvrement attendu. **Ormuz ne touche à rien de tout ça.**
+>
+> *Un titre ne redevient pas achetable parce qu'une de ses mauvaises
+> nouvelles s'annule ; il le redevient quand ce qu'on ne savait pas devient
+> su.* Et si la réouverture est réelle, elle est **publique et immédiatement
+> dans le prix** — aucun edge à courir derrière. **Rendez-vous inchangé :
+> T3, fin octobre.**
+
 ## Conditions de marché à surveiller (non datées, seuils du mandat)
 
-- Brent **> 100 $ durable** → scénario réduction de voilure (cf. mandat)
+- Brent **> 100 $ durable** → scénario réduction de voilure (cf. mandat).
+  **État au 05/08 : ~79 $, en repli de >10 % en deux séances** (Ormuz)
 - Spread OAT-Bund **> 90 pb durable** → alerte valeurs domestiques FR
 - FOMC : passage effectif à une **hausse** de taux → re-pricing global
 - DXY : cassure sous ~98 → vent favorable émergents (renforcer l'idée Inde)

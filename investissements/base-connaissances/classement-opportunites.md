@@ -71,7 +71,7 @@ compte.
 | **②** | **Or** (assurance) | CTO | **100 € d'IAU — AUJOURD'HUI** (comptant, levier x1) ; ~4 086-4 109 $/oz | **immédiat** | 🟢 | = |
 | **③** | **Séché Environnement** | PEA | ~81-82 € vs ≤ 90 € — **seule ligne SOUS son prix visé** | S1, butée 30/09 | 🟡 | ▲ +2 |
 | **④** | **Walmart** | CTO | **112,92 $** (03/08) vs ≤ 100 $ → +11,4 % | Résultats **20/08** | ⚪ | ▲ +1 |
-| **⑤** | **Eli Lilly** | CTO | **~1 170 $** (05/08, ⚠️ **pré-marché, PAS une clôture**) vs seuil **846,00 $** (23,5x le médian PUBLIÉ) → **+38 %** *(contre +31 % hier)*. T2 publié : CA **+48 %**, guidance CA **relevée de 3 Md$**, mais guidance BPA publiée **abaissée** par 3,03 $ d'IPR&D | contrôle **05/09** · butée 06/11 | 🟡 | **= (conservé)** |
+| **⑤** | **Eli Lilly** | CTO | ✅ **1 148,61 $ — CLÔTURE OFFICIELLE du 05/08 réconciliée** (+2,95 %) vs seuil **846,00 $** → **+35,8 %** *(contre +31,9 % au 04/08)*. ⚠️ **Le « ~1 170 $ / +38 % » publié hier était un PRÉ-MARCHÉ : 2 des 6 points d'aggravation étaient à moi, pas au marché.** T2 : CA **22,974 Md$ (+47,7 %)**, guidance CA relevée de 3 Md$ à **85,0-87,0 Md$** *(et non 85-86 — corrigé)*, guidance BPA publiée **abaissée** par 3,03 $ d'IPR&D | contrôle **05/09** · butée 06/11 | 🟡 | **= (conservé)** |
 | **⑥** | **Magnum Ice Cream** | PEA | **9,97 Md€ vs ≤ 7,6 Md€ (+31 %)** — PASSE, réouverture sur fait | aucune (fait, pas date) | 🔴 | **= (−2 relatif)** |
 | **⑦** | **Aubay** (ESN) | PEA | ~54,30 € vs ≤ 50 € (+8,6 %) — s'éloigne pour une **bonne** raison (T2 +12,2 % organique, objectifs relevés) | T3 fin oct. | ⚪ | ▲ +2 |
 | **⑧** | **STM** (semi) | PEA | **44,62 €** (30/07) vs **≤ 42 €** → +6,2 % ⚠️ *unité corrigée le 31/07 : le seuil était écrit en $ dans 3 fichiers alors que STMPA cote en €* | Q3 fin oct. | 🔴 | ▲ +2 |
@@ -166,8 +166,35 @@ rang** : espérance ~**+3 %/an net de PFU** contre un hurdle ajusté de
 > amélioration d'espérance, **LLY passe ⑤ → ⑦**, sous Magnum et sous
 > Aubay, **sans nouvel arbitrage**.
 
-⚠️ **Le prix retenu est un PRÉ-MARCHÉ, pas une clôture** (règle 3) — à
-réconcilier sur la clôture officielle du 05/08 dès demain.
+### Mouvement du 06/08 — AUCUN, et la réconciliation LLY est faite
+
+✅ **Réserve levée.** Le prix retenu hier était bien un pré-marché.
+**Clôture officielle du 05/08 : 1 148,61 $ (+2,95 %)**, réconciliée par
+trois contrôles : arithmétique (`1 148,61 ÷ 1 115,68 = +2,95 %`), chemin
+indépendant (`1 147,45 − 31,76 = 1 115,69`, même clôture veille), et
+**capitalisation** (`× 893,8 M = 1,027 T$` ≡ « 1,02 T$ » publié — qui
+**rejette** le concurrent 1 178,37 $, lequel donnerait 1,05 T$).
+
+> 🔑 **Ce que la séance enseigne** : ouverture 1 177,50 (**+5,5 %**), plus
+> haut 1 215,94 (**+9,0 %**), midi ~1 190 (**+7 %**), **clôture 1 148,61
+> (+2,95 %)**. Quatre chiffres circulent et **ils sont tous exacts** — ils
+> diffèrent par l'heure de rédaction. Aucun contrôle arithmétique ne les
+> départage : ils bouclent tous sur 1 115,68 $. **Seul l'ancrage
+> capitalisation tranche — et il a une RÉSOLUTION (~1 %) qu'il faut
+> connaître.** C'est pourquoi il avait échoué le 03/08 (écart 0,7 %) et
+> mord ici (écart 2,6 %). Ce n'était pas une faiblesse de l'outil.
+
+**Écart réel : +35,8 %**, contre +31,9 % au 04/08 — élargissement de
+~4 points, **et non de 6 comme publié hier**. Déclencheur de déclassement
+(>45 % au 05/09) : **non approché**. Motif de conservation du 05/08
+(mécanisme confirmé contre mécanisme cassé chez Magnum) **inchangé**.
+
+**Aucun autre mouvement.** Chasse à zéro, aucune ligne re-mesurée. **SBM
+Offshore, instruit et publié ce matin, N'ENTRE PAS** : classé négatif
+(EBITDA S1 gonflé par la cession du FPSO ONE GUYANA ; S2 implicite
+~590 M$ contre 682 M$ au S1 2025). Il repart avec **un appel de
+calibration (C041) et rien d'autre** — pas de créneau, pas de seuil.
+*Un dossier instruit et classé négatif n'est pas une candidate.*
 
 ### 🔒 Créneaux de surveillance : 5/6 — et le sixième reste VIDE, délibérément
 
