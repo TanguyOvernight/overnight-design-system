@@ -273,3 +273,51 @@ Les trois enseignements qui changent la façon de chasser ce terrain :
 Lisbonne et Bruxelles. **L'éligibilité PEA ne garantit pas l'accès du
 courtier** — sans cette vérification, la moitié de cet univers n'existe que
 sur le papier.
+
+## 🗓️ CORRECTION DE MÉTHODE — vérifier le CALENDRIER avant de définir le terrain (06/08/2026)
+
+**7ᵉ zéro consécutif.** Il est propre, mais une partie de sa cause était
+**dans ma main, pas dans le marché**.
+
+J'ai briefé le Chasseur du jeudi sur une « saison S1 en cours » sur la cote
+française. **Elle était terminée** : 38 des 40 valeurs du CAC 40 ont publié
+**entre le 16 et le 31 juillet** ; il ne restait qu'**Eiffage** (fin août)
+et **Pernod Ricard** (27/08). J'ai envoyé un agent chasser un gisement que
+j'avais moi-même décrit comme ouvert alors qu'il venait de se refermer.
+
+> **C'est le même schéma que le 0 des émergents du 31/07**, dont l'analyse
+> post-mortem a montré qu'il était « mécanique, pas malchanceux » — le champ
+> accessible avait rétréci sur dix ans. Deux fois de suite, le zéro était
+> **prévisible avant le lancement**, par une vérification que je n'ai pas
+> faite.
+
+**Règle encodée** : avant de définir le terrain d'un jour, **vérifier l'état
+du calendrier de publication de ce terrain**. Un terrain dont la saison est
+close ne produit pas de faits neufs — il produit des archives, et les
+archives sont exactement le piège documenté ci-dessous.
+
+Corollaire pour la rotation : quand le terrain du jour est en creux de
+calendrier, **le convertir en chantier d'univers** (comme le samedi) plutôt
+que de lancer une chasse d'actualité qui n'a rien à trouver. La rotation
+sert la couverture, pas le rituel.
+
+### 🎣 3ᵉ piège d'archive en six jours — et le plus dangereux des trois
+
+Une requête sur la séance du 06/08 a remonté : **CAC 40 −0,60 % à
+8 408,27 pts · Hermès −11,03 % · Sanofi −8,95 % · STM −3,55 % à 42,90 €**.
+
+**Écarté par cohérence temporelle croisée** : le CAC a inscrit un record en
+séance à **8 642,32 pts** et clôturé à **8 613,82 pts le 03/08**. Un indice
+à 8 408 le 06/08 impliquerait **−2,4 % en trois séances** sans qu'aucune
+autre source ne le mentionne.
+
+**Pourquoi celui-là était le pire** : l'article citait **trois valeurs déjà
+sous surveillance** et donnait **STM à 42,90 €**, soit **+2,1 % du
+déclencheur de 42 €** — dans la bande de fast-track. Repris sans contrôle,
+il déclenchait un arbitrage sur une **archive de fin juillet**.
+
+> **Le contrôle qui a mordu n'est pas arithmétique.** Les règles 1 et 2
+> vérifient qu'un chiffre est *interne­ment cohérent* — cet article l'était.
+> Ce qui l'a démasqué, c'est un **ancrage sur un événement de marché connu
+> et daté** (le record du 03/08). **Un chiffre d'indice se vérifie contre
+> l'histoire de l'indice, pas contre lui-même.**

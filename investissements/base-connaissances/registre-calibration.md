@@ -318,6 +318,27 @@ Le registre devient interprétable plus vite qu'il ne l'a jamais été.
 | **C038** | 05/08 | Juge | pharma-US / <1 an · CTO | Eli Lilly | **CA Foundayo T3 2026 ≥ 250 M$** | **55 %** | Communiqué T3, butée 30/11/2026 | ⏳ |
 | **C039** | 05/08 | Juge | pharma-US / <1 an · CTO | Eli Lilly | **Prix réalisés US du T3 2026 ≥ −8 % a/a**, tels que publiés | **65 %** | Communiqué T3, butée 30/11/2026 | ⏳ |
 | **C040** | 05/08 | Juge | pharma-US / <1 an · CTO | Eli Lilly | Le **point bas** de la guidance CA FY2026 n'est **pas abaissé sous 85,0 Md$** au print du T3 | **70 %** | Communiqué T3, butée 30/11/2026 | ⏳ |
+| **C041** | **06/08** | Juge | énergie-services / 1-3 ans · PEA | **SBM Offshore** | **L'EBITDA directionnel du S2 2026 ressort ≤ 682 M$** — c'est-à-dire **sous le S1 2025**, malgré un carnet record de 35,6 Md$ et une guidance FY *relevée* | **78 %** | Résultats FY2026 (~février 2027) : **EBITDA directionnel FY publié − 1 310 M$**. NON RÉSOLUBLE si le périmètre « directionnel » cesse d'être publié | ⏳ |
+
+**C041 — l'appel qui teste ma lecture, pas le titre.** Construction, entièrement
+arithmétique : guidance FY EBITDA directionnel **~1 900 M$** − S1 réalisé
+**1 310 M$** = **~590 M$ implicites au S2**. Pour que l'appel échoue, SBM
+doit battre sa propre guidance de **+92 M$**, soit **~4,8 % de l'EBITDA FY**,
+dans un semestre **privé de la plus-value ONE GUYANA** qui a porté le S1.
+
+Les 22 % que je laisse à l'échec ne sont pas décoratifs : SBM guide
+traditionnellement bas, une seconde cession d'actif est possible dans ce
+modèle (le *Fast4Ward* se vend), et la mise en service des FPSO SEAP peut
+avancer des reconnaissances de marge. **C'est le vrai chemin d'échec, et il
+est nommé.**
+
+> ⚠️ **Ce que cet appel ne dit PAS.** Il ne dit pas que SBM est un mauvais
+> dossier — T5 est le seul test que le titre passe brillamment. Il dit que
+> **la lecture naïve du communiqué (« +92 % d'EBITDA, guidance relevée »)
+> est fausse**, et il le dit d'une façon qui me condamne si je me trompe.
+> **Aucun contrat, aucun créneau de surveillance, aucun seuil** — T1 (+90 %
+> sur un an) et T4 (cash-flow hors cession non obtenu) l'interdisent.
+> *Un appel de calibration n'est pas une porte d'entrée déguisée.*
 
 **C037 est l'appel qui peut me condamner** : base — Curevo 1,5 + LimmaTech
 0,78 + Vaccine Company 1,55 = **3,83 Md$ annoncés le 26/05, clôturant au
