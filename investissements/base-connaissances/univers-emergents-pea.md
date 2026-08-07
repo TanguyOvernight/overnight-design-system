@@ -80,7 +80,47 @@ session.
 | **Prochaine publication** | **S1 2026 fin août** (réf. 27/08/2025) | Q3 2026 (S1 publié le 29/07) | Q3 2026 (Q2 publié le 30/07) |
 | **Drapeaux** | Backlog 16,2 Md€ ; objectif 2026 CA +10-15 %, marge EBITDA 18 % ; T1 2026 RN 35 M€ (+31 %, record). **LatAm −33 % (fin du Tren Maya) compensée par l'Afrique** | Déflation alimentaire polonaise citée dans les slides S1 2026 | Proche du plus haut 52 semaines |
 
-## GROUPE B — actifs 100 % émergents, ventes facturées ailleurs *(le gisement)*
+## 🔬 SCISSION DU GROUPE B EN **B1 / B2** — contribution du chantier du 07/08/2026
+
+Le groupe B était défini par une seule anomalie. Le chantier du 07/08 en a
+fait apparaître **une seconde, distincte et plus radicale** :
+
+- **B1 — anomalie de FACTURATION** *(cas Sipef)*. Actifs émergents, ventes
+  facturées via un desk suisse ou singapourien. Le screener lit « Suisse
+  34 % ». **Il faut lire le reporting segmentaire pour la détecter.**
+- **B2 — anomalie de PAVILLON** *(nouveau)*. Société de droit belge ou
+  néerlandais, siège et cotation dans une place développée, mais **100 %
+  des actifs ET du chiffre d'affaires en pays émergent**. Tout screener
+  trié par pays d'incorporation la classe « Belgique » ou « Pays-Bas ».
+
+> **B2 est l'anomalie la plus mécanique qui soit** : elle ne dépend
+> d'aucune subtilité de reporting, seulement du champ « pays » de la base
+> de données. **Méthode réutilisable : croiser le pays de l'ISIN avec le
+> pays des ACTIFS.** Un ISIN `BE`/`NL` sur des actifs 100 % africains ou
+> d'Europe centrale est une candidate B2 par construction.
+
+### B2 — les deux entrées du 07/08 *(référentiel, AUCUN signal)*
+
+| | **TEXAF** | **NEPI Rockcastle** |
+|---|---|---|
+| **Ticker / place / ISIN** | TEXF — **Bruxelles** — BE0974263924 | NRP — **Amsterdam** — **NL0015000RT3** ⚠️ *l'ancien ISIN Isle of Man `IM00BDD7WV31` circule encore chez plusieurs agrégateurs* |
+| **Éligibilité PEA** | Société belge, ISIN BE → **présomption favorable, NON formellement vérifiée** | 🔴 **NON RÉSOLUE — éliminatoire non levé.** N.V. néerlandaise (favorable) mais statut de foncière + double cotation JSE ; aucune source ne tranche |
+| **Actifs** | **100 % Kinshasa (RDC)** : 60 ha en centre-ville dont 44 développables, 426 logements, 26 000 m² de bureaux, + 87 ha en périphérie (projet « Jardins de Kinshasa », 1 500 logements) | **100 % Europe centrale et orientale** : Roumanie (1ᵉʳ), Pologne (2ᵉ), Bulgarie, Slovaquie, Hongrie, Croatie, Serbie, Tchéquie, Lituanie — **> 8 Md€, 60 centres commerciaux** |
+| **CA facturé** | **100 % en RDC** — locatif 85,2 %, concassés de grès 11,7 %, numérique 3,1 % ⚠️ *deux agrégateurs = UNE famille de source* | ~100 % CEE ⚠️ **même caveat que Jerónimo Martins** : Pologne = émergent chez MSCI, développé chez FTSE ; Roumanie = frontière ou émergent selon le fournisseur |
+| **% réellement émergent** | **100 % — le plus élevé de tout l'univers**, devant Mota-Engil (78 %) | ~100 % au sens économique |
+| **Derniers chiffres** | S1 2025 : CA record **18,2 M€**, EBITDA récurrent **+16 % à 8,6 M€**, RO récurrent +8 % à 5,6 M€. Patrimoine fin 2025 : **135,5 M€** en valeur de marché | Q1 2026 : **NOI +3,4 %**, occupation élevée. Acquisitions Magnolia Park (Wrocław) et Silesia City Center (Katowice) ; extension Promenada Bucarest ~**300 M€ / 55 400 m²** [MONO-SOURCE] |
+| **Prix** | **43,40 € au 03/06/2026** 🔴 **NON FIABILISÉ** — deux mois d'âge, et les deux ancrages sont de **même nature** (agrégateurs). Capi 126,13 M€ (non datée) → 2,906 M titres implicites | **7,87 € au 12/07/2026** · capi **5,62 Md€** ÷ **707,29 M titres** = 7,945 € → **écart 0,9 %, deux ancrages de NATURE DIFFÉRENTE concordants** ✅ mais prix vieux de 4 semaines |
+| **Ticket** | 43 € — praticable | **~8 € — excellent** pour une poche de 150 €/mois |
+| **Prochaine publication** | **lundi 07/09/2026** — S1 2026 *(calendrier de la société, source PRIMAIRE)* | **18/08/2026** — S1 2026 [MONO-SOURCE, à reconfirmer] |
+| **Drapeaux durs** | capi ~126 M€ **sous le seuil de 150 M€** ; **liquidité non mesurée et probablement très faible** ; risque pays RDC (conflit à l'est, 7 M de déplacés, recettes extractives amputées — Coface) ; convertibilité et rapatriement des devises non instruits ; concentration mono-ville | Rendement de dividende affiché **~7,17 %** (agrégateur, non vérifié) — *sur une foncière, un rendement élevé est autant un signal de risque qu'une aubaine* ; **endettement et LTV non instruits** ; deux acquisitions polonaises majeures à intégrer et financer |
+
+> ⚠️ **Piège arithmétique explicitement désamorcé sur TEXAF** : capi 126 M€
+> contre un patrimoine de 135,5 M€ **ressemble** à une décote sur actif net.
+> **Ce calcul est faux tant que la dette nette est inconnue** — et elle
+> l'est. Aucun jugement de valorisation n'est possible sur ce dossier
+> aujourd'hui.
+
+## GROUPE B — B1, anomalie de FACTURATION *(le gisement d'origine)*
 
 | | **Sipef** | **Maurel & Prom** | **Eramet** |
 |---|---|---|---|
@@ -104,6 +144,47 @@ session.
 | **Rubis** | RUI — Paris | **3,16 Md€** | **87 % du CA hors Europe développée** (Caraïbes 49,1 %, Afrique 37,9 %) — *chiffre du 31/07, non re-vérifié* | 32,50 € | **S1 le 08/09/2026** |
 
 ## Écartées de l'univers — avec motif
+
+### Écartées du 07/08/2026
+
+- 🎣 **SIPH (Internationale de Plantations d'Hévéas)** — **RADIÉE
+  d'Euronext Paris le 10/12/2019**, retrait obligatoire à 85 €/action
+  (Compagnie Financière Michelin de concert avec SIFCA).
+  > **⚠️ PIÈGE ACTIF, à retenir comme cas d'école** : Boursorama et
+  > Zonebourse servent **encore en 2026** des pages « Cours Action SIPH —
+  > Euronext Paris » bien indexées, **sans mention visible de la
+  > radiation**. C'est l'illustration parfaite de la consigne *« un extrait
+  > de page de cotation vaut ZÉRO »* — ici la page ne donne pas un prix
+  > faux, elle donne le prix **d'un titre qui n'existe plus**. Aucun
+  > contrôle d'arithmétique interne n'aurait pu le détecter.
+- **TotalEnergies EP Gabon (EC, Euronext Paris)** — 🔴 **DOUBLE KILL.**
+  C'était le groupe B parfait sur le papier : 100 % des actifs au Gabon,
+  cotée à Paris. (1) **ISIN GA0000121459, société de droit gabonais
+  siégeant à Port-Gentil → non éligible PEA ni PEA-PME.** (2) Prix
+  **~220 €** = 1,5 mois de poche offensive entière pour UN titre.
+  *Chiffres conservés pour mémoire (CTO uniquement)* : capi 990 M€ ;
+  **4,5 M de titres — ancrage croisé de qualité, le dividende « 22,22 $/
+  action, soit 100 M$ au total » impose 4,50 M titres ✓ et 990 ÷ 4,5 =
+  220 € ✓, deux natures différentes concordantes**. T1 2026 : CA **98 M$
+  (−16 %)**, production **16,1 kb/j (−4 %)**, arrêt non planifié sur le
+  pipeline Anguille/Île Mandji–Cap Lopez.
+- **Acomo N.V.** (Amsterdam) — probablement écartée **pour le motif AMG** :
+  exposition émergente **par les COÛTS** (sourcing épices, noix, graines,
+  cacao) et ventes vers l'Europe et l'Amérique du Nord. ⚠️ **Statut non
+  tranché** : la ventilation géographique du CA — qui déciderait du
+  classement — **n'a pas été trouvée**. S1 2026 [MONO-SOURCE presse] : CA
+  **711 M€** (−3 % à change constant), EBITDA ajusté **61 M€**, marge
+  **8,6 %** (vs ~8 % historique), cash opérationnel 56 M€.
+- **Teixeira Duarte** (Lisbonne) — candidate structurelle plausible
+  (Angola, Brésil, Mozambique) mais **chiffres datés 2024 et non
+  réconciliés** : les « 200 M€ à l'international sur 436 M€ » valent pour
+  la **seule division construction**, pas pour le groupe. **Non
+  documentée, à reprendre.**
+- **Vicat** — ne relève pas de B (facturation locale) mais **ferme un trou
+  du référentiel**. Fin 2025 : France 31,1 %, Europe 11,5 %, Amériques
+  24,5 %, Méditerranée 13,3 %, Asie 10,2 %, Afrique 9,4 % → émergent
+  ≈ **33 %**, plus une part brésilienne non isolée dans « Amériques »
+  (zone dominée par les États-Unis). **→ groupe C, pas B.**
 
 - **AMG Critical Materials** (Amsterdam) — usines au Brésil, Mozambique,
   Sri Lanka, Inde, mais **ventes : États-Unis 33,3 %, Europe ~35 %, Brésil
