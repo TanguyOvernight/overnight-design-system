@@ -41,25 +41,51 @@ pas pour son rang.
 
 ---
 
-## CLASSEMENT AU 04/08/2026
+## CLASSEMENT AU 07/08/2026
 
 Statut : 🟢 déclencheur proche/actionnable · 🟡 en attente d'un événement
 daté · ⚪ surveillance longue · 🔴 sous le hurdle, conservée pour mémoire
 
-⚠️ **Fiabilité des cours : DÉGRADÉE, 8ᵉ jour.** 403 au CONNECT sur 100 %
-des hôtes. **Aucun cours ci-dessous n'a la qualité « clôture officielle » —
-à revérifier chez le courtier avant tout ordre exprimé en prix.** Les
-ordres exprimés en MONTANT ne sont pas affectés.
+⚠️ **Fiabilité des cours : DÉGRADÉE, 12ᵉ jour.** 403 au CONNECT sur 100 %
+des hôtes. **Aucun cours ci-dessous n'a la qualité « clôture officielle »
+sauf mention expresse — à revérifier chez le courtier avant tout ordre
+exprimé en prix.** Les ordres exprimés en MONTANT ne sont pas affectés.
 
-⚠️ **Incident du jour (le 9ᵉ) — la clôture LLY du 03/08 n'est pas tranchée.**
-Deux valeurs circulent, **chacune internement cohérente mais mutuellement
-incompatibles** : **1 113,43 $ (−3,04 %)** et **1 121,36 $ (−2,39 %)**.
-Les deux reconstituent correctement la clôture du 31/07 (1 148,8 $) par
-`prix ÷ (1+%)` — le contrôle de la règle 2 ne discrimine donc pas ici, et
-l'ancrage capitalisation non plus (992,7 vs 999,96 Md$, tous deux sous
-1 000 Md$). **Écart : 0,7 %.** Sans conséquence décisionnelle — la distance
-au nouveau seuil est de +31 % dans les deux cas — mais **noté comme non
-résolu** plutôt qu'arbitré au hasard.
+### 🎣 Le coût réel du blocage, mesuré aujourd'hui : **5 lignes sur 9 n'ont AUCUN cours d'août**
+
+Séché, Aubay, STM, Nike et l'Or n'ont pas de clôture datée d'août
+vérifiable. Ce ne sont pas des trous cosmétiques : **ce sont les cinq
+lignes dont le déclencheur est un prix.**
+
+**Et les archives ne sont pas neutres — elles sont biaisées vers le
+déclenchement.** Trois faux positifs démasqués aujourd'hui, tous allant
+dans le sens d'un achat à tort :
+
+| Faux chiffre | Ce qu'il aurait produit | Ce qu'il est réellement |
+|---|---|---|
+| STM « 42,90 € » | +2,1 % du déclencheur → **fast-track d'Arbitre** | archive de fin juillet |
+| STM « 49,56 € » | cohérent-en-apparence | **clôture du 23/07**, jour des résultats T2 (−14,9 %) |
+| Magnum « 6,56 Md€ » | **SOUS le seuil de 7,6 Md€ → réouverture du dossier** | capi non datée, probablement un point bas du S1 |
+
+> **Un canal dégradé qui produirait du bruit symétrique serait sans
+> conséquence : on perdrait des occasions autant qu'on en fabriquerait.
+> Or les trois erreurs du jour poussent TOUTES à l'achat.** Motif
+> mécanique : un déclencheur est un prix BAS, et une archive est d'autant
+> plus susceptible d'être servie qu'elle correspond à un épisode de
+> volatilité — c'est-à-dire à un point bas. **Le canal est biaisé dans le
+> sens exact où il coûte le plus cher.**
+>
+> Conséquence de discipline : **aucun ordre exprimé en prix n'est
+> exécutable tant que le canal n'est pas réparé.** Les ordres en MONTANT
+> (cœur, or) restent parfaitement sûrs — et c'est une raison de plus de
+> faire avancer le PEA pendant que la chasse est à l'arrêt.
+
+⚠️ **Incident non résolu, reporté : la clôture LLY du 03/08.** Deux valeurs
+circulent, **chacune internement cohérente mais mutuellement
+incompatibles** : **1 113,43 $** et **1 121,36 $**. L'ancrage capitalisation
+ne discrimine pas (écart 0,7 %, **sous sa résolution de ~1 %**). Sans
+conséquence décisionnelle. *Le 05/08, le même ancrage a en revanche
+parfaitement tranché — l'écart y était de 2,6 %.*
 
 **9 candidates actives** (11 − Vicat ☠️ − Mobility Global ☠️, tous deux
 PASSE DÉFINITIF le 31/07). Je ne fabrique pas de lignes pour tenir le
@@ -67,15 +93,15 @@ compte.
 
 | Rang | Candidate | Env. | Situation vs déclencheur | Prochaine échéance | Statut | Mvt |
 |---|---|---|---|---|---|---|
-| **①** | **Cœur World** (hurdle 5 %/an net) | CTO ce mois, PEA ensuite | **400 € de SWDA — AUJOURD'HUI, dernier jour du mois** ; août : 100 € d'ouverture PEA + 400 € WPEA | **immédiat** | 🟢 | = |
-| **②** | **Or** (assurance) | CTO | **100 € d'IAU — AUJOURD'HUI** (comptant, levier x1) ; ~4 086-4 109 $/oz | **immédiat** | 🟢 | = |
-| **③** | **Séché Environnement** | PEA | ~81-82 € vs ≤ 90 € — **seule ligne SOUS son prix visé** | S1, butée 30/09 | 🟡 | ▲ +2 |
-| **④** | **Walmart** | CTO | **112,92 $** (03/08) vs ≤ 100 $ → +11,4 % | Résultats **20/08** | ⚪ | ▲ +1 |
+| **①** | **Cœur World** (hurdle 5 %/an net) | CTO puis PEA | **Août : 100 € d'ouverture PEA + 400 € WPEA.** ⚠️ *Si l'ordre de juillet n'a pas été exécuté (C025, se résout aujourd'hui), le budget d'août est de **1 000 €**, pas 500* | **immédiat** | 🟢 | = |
+| **②** | **Or** (assurance) | CTO | **~4 262 $/oz** (06/08, ⚠️ *spot post-clôture 21h22 EDT, PAS une clôture*) — **+4,0 %** en deux jours, plus haut de 7 semaines, 4ᵉ séance de hausse. Écart à la politique toujours maximal : **0 % détenu contre une cible de 5-10 %** | **immédiat** | 🟢 | = |
+| **③** | **Séché Environnement** | PEA | ~79-81 € vs ≤ 90 € — **seule ligne SOUS son prix visé**. ⚠️ *aucune clôture d'août indexée ; seul point dur = **79,40 €**, prix d'une transaction réelle déclarée à l'AMF le 13/07 (SMC53 SAS, personne liée)*. 🔴 **L'arrêté PFAS n'est TOUJOURS pas paru** — même formulation « été 2026 » qu'en avril, pour une application au 01/01/2027 : la fenêtre se referme dans ~6 semaines | S1 **09/09**, butée 30/09 | 🟡 | **=** |
+| **④** | **Walmart** | CTO | **110,39 $** (06/08, −1,61 % — *implicite 112,20 vs 112,07 affiché ailleurs, écart 0,12 %, non tranché*) vs ≤ 100 $ → **+10,4 %**. 📉 **Oppenheimer dégrade** Outperform → Perform et **retire son objectif de 140 $** (vent contraire sur les comparables US liés à la pharmacie) | Résultats **20/08** — consensus BPA 0,74 $, CA 186,4 Md$ | ⚪ | **=** |
 | **⑤** | **Eli Lilly** | CTO | ✅ **1 148,61 $ — CLÔTURE OFFICIELLE du 05/08 réconciliée** (+2,95 %) vs seuil **846,00 $** → **+35,8 %** *(contre +31,9 % au 04/08)*. ⚠️ **Le « ~1 170 $ / +38 % » publié hier était un PRÉ-MARCHÉ : 2 des 6 points d'aggravation étaient à moi, pas au marché.** T2 : CA **22,974 Md$ (+47,7 %)**, guidance CA relevée de 3 Md$ à **85,0-87,0 Md$** *(et non 85-86 — corrigé)*, guidance BPA publiée **abaissée** par 3,03 $ d'IPR&D | contrôle **05/09** · butée 06/11 | 🟡 | **= (conservé)** |
-| **⑥** | **Magnum Ice Cream** | PEA | **9,97 Md€ vs ≤ 7,6 Md€ (+31 %)** — PASSE, réouverture sur fait | aucune (fait, pas date) | 🔴 | **= (−2 relatif)** |
-| **⑦** | **Aubay** (ESN) | PEA | ~54,30 € vs ≤ 50 € (+8,6 %) — s'éloigne pour une **bonne** raison (T2 +12,2 % organique, objectifs relevés) | T3 fin oct. | ⚪ | ▲ +2 |
-| **⑧** | **STM** (semi) | PEA | **44,62 €** (30/07) vs **≤ 42 €** → +6,2 % ⚠️ *unité corrigée le 31/07 : le seuil était écrit en $ dans 3 fichiers alors que STMPA cote en €* | Q3 fin oct. | 🔴 | ▲ +2 |
-| **⑨** | **Nike** | CTO | 43,22 $ (29/07) — contrat retiré, veille sans contrat | ~fin sept. | 🔴 | ▲ +2 |
+| **⑥** | **Magnum Ice Cream** | PEA | **~9,75 Md€ vs ≤ 7,6 Md€ (+28,3 %)** — repli de **−22,1 %** requis. PASSE, réouverture sur fait. ⚠️ **Faux positif désamorcé** : une capi de **6,56 Md€** circule chez un agrégateur, **non datée et SOUS mon seuil** — elle aurait déclenché une réouverture à tort. Écartée au profit de 11,40 Md$ ÷ 1,169 | aucune (fait, pas date) | 🔴 | **=** |
+| **⑦** | **Aubay** (ESN) | PEA | ~54,30 € vs ≤ 50 € (**+8,6 %**) — s'éloigne pour une **bonne** raison. S1 confirmé : CA **351,8 M€, +11,4 % organique** ; T2 **+12,2 % organique** ; international **intégralement organique** (+12,0 % au T2) ; **objectifs 2026 relevés**. ⚠️ *aucune clôture d'août ; un « 57 € » circule, rattaché au flux du 23/07* | T3 fin oct. | ⚪ | **=** |
+| **⑧** | **STM** (semi) | PEA | **46,89 €** (05/08) vs **≤ 42 €** → **+11,6 %** *(ligne périmée corrigée : elle affichait encore 44,62 € du 30/07)*. 🎣 **TROIS chiffres STM circulent — 42,90 / 49,56 / 52,60 € — et les TROIS sont des archives** : le 49,56 € est la clôture du **23/07**, jour des résultats T2 (−14,9 %) | Q3 fin oct. | 🔴 | **=** |
+| **⑨** | **Nike** | CTO | **42,45 $** (05/08) [MONO-SOURCE, sans variation % ni second ancrage — indicatif] — contrat retiré, veille sans contrat | ~fin sept. | 🔴 | **=** |
 
 ### Justification écrite de chaque mouvement
 
@@ -195,6 +221,40 @@ Offshore, instruit et publié ce matin, N'ENTRE PAS** : classé négatif
 ~590 M$ contre 682 M$ au S1 2025). Il repart avec **un appel de
 calibration (C041) et rien d'autre** — pas de créneau, pas de seuil.
 *Un dossier instruit et classé négatif n'est pas une candidate.*
+
+### Mouvement du 07/08 — AUCUN, et le re-classement a bien été conduit
+
+**Les 9 lignes ont été re-mesurées ce matin sur le mètre commun.** Résultat :
+aucun mouvement de rang. Ce n'est pas une absence de travail, c'est sa
+conclusion — et voici les quatre candidats au mouvement que j'ai examinés
+puis écartés :
+
+- **Walmart ④ — le seul cas sérieux.** Deux faits nouveaux : le prix baisse
+  (l'écart passe de +11,4 % à **+10,4 %**) et **Oppenheimer dégrade** en
+  retirant son objectif de 140 $. *Ils vont en sens opposés* : le premier
+  rapproche du déclencheur, le second interroge la thèse. **Une dégradation
+  d'analyste n'est pas un fait de mécanisme** — je ne bouge pas un rang
+  dessus. En revanche le motif invoqué (**comparables US liés à la
+  pharmacie**) est, lui, un fait de mécanisme, et il part directement dans
+  le cahier des charges de la réécriture du contrat lancée aujourd'hui.
+- **Séché ③** — l'arrêté PFAS n'est toujours pas paru. C'est légèrement
+  défavorable *(le point intermédiaire du contrat glisse vers sa butée)*
+  mais **le contrat se joue sur le S1 du 09/09**, pas sur l'arrêté. Rang
+  inchangé.
+- **Or ②** — **+4,0 %** en deux jours, plus haut de 7 semaines. **Le prix
+  de l'or n'entre pas dans ce classement** (`or-execution.md` interdit
+  toute condition d'arrêt liée au prix). Son rang tient à l'écart à la
+  cible — 0 % détenu contre 5-10 % — qui n'a pas bougé d'un pouce.
+- **Aubay ⑦** — le S1 confirme un mécanisme sain (+11,4 % organique,
+  objectifs relevés). *S'éloigner du déclencheur pour une bonne raison ne
+  fait ni monter ni descendre un rang* : ça déplace la probabilité
+  d'exécution, pas la qualité du dossier.
+
+**Les deux entrées du chantier émergents (TEXAF, NEPI Rockcastle)
+N'ENTRENT PAS au classement** : référentiel documenté, mais T1 non
+instruisable (aucun prix frais) et **achetabilité PEA non levée pour
+NEPI — critère éliminatoire**. *Un chantier remplit le référentiel, pas le
+classement.*
 
 ### 🔒 Créneaux de surveillance : 5/6 — et le sixième reste VIDE, délibérément
 
