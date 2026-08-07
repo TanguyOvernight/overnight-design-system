@@ -51,7 +51,7 @@ des hôtes. **Aucun cours ci-dessous n'a la qualité « clôture officielle »
 sauf mention expresse — à revérifier chez le courtier avant tout ordre
 exprimé en prix.** Les ordres exprimés en MONTANT ne sont pas affectés.
 
-### 🎣 Le coût réel du blocage, mesuré aujourd'hui : **5 lignes sur 9 n'ont AUCUN cours d'août**
+### 🎣 Le coût réel du blocage, mesuré aujourd'hui : **5 lignes sur 8 n'ont AUCUN cours d'août**
 
 Séché, Aubay, STM, Nike et l'Or n'ont pas de clôture datée d'août
 vérifiable. Ce ne sont pas des trous cosmétiques : **ce sont les cinq
@@ -87,21 +87,19 @@ ne discrimine pas (écart 0,7 %, **sous sa résolution de ~1 %**). Sans
 conséquence décisionnelle. *Le 05/08, le même ancrage a en revanche
 parfaitement tranché — l'écart y était de 2,6 %.*
 
-**9 candidates actives** (11 − Vicat ☠️ − Mobility Global ☠️, tous deux
-PASSE DÉFINITIF le 31/07). Je ne fabrique pas de lignes pour tenir le
-compte.
+**8 candidates actives** (9 − **Walmart ☠️ TUÉ aujourd'hui**). Je ne
+fabrique pas de lignes pour tenir le compte.
 
 | Rang | Candidate | Env. | Situation vs déclencheur | Prochaine échéance | Statut | Mvt |
 |---|---|---|---|---|---|---|
 | **①** | **Cœur World** (hurdle 5 %/an net) | CTO puis PEA | **Août : 100 € d'ouverture PEA + 400 € WPEA.** ⚠️ *Si l'ordre de juillet n'a pas été exécuté (C025, se résout aujourd'hui), le budget d'août est de **1 000 €**, pas 500* | **immédiat** | 🟢 | = |
 | **②** | **Or** (assurance) | CTO | **~4 262 $/oz** (06/08, ⚠️ *spot post-clôture 21h22 EDT, PAS une clôture*) — **+4,0 %** en deux jours, plus haut de 7 semaines, 4ᵉ séance de hausse. Écart à la politique toujours maximal : **0 % détenu contre une cible de 5-10 %** | **immédiat** | 🟢 | = |
 | **③** | **Séché Environnement** | PEA | ~79-81 € vs ≤ 90 € — **seule ligne SOUS son prix visé**. ⚠️ *aucune clôture d'août indexée ; seul point dur = **79,40 €**, prix d'une transaction réelle déclarée à l'AMF le 13/07 (SMC53 SAS, personne liée)*. 🔴 **L'arrêté PFAS n'est TOUJOURS pas paru** — même formulation « été 2026 » qu'en avril, pour une application au 01/01/2027 : la fenêtre se referme dans ~6 semaines | S1 **09/09**, butée 30/09 | 🟡 | **=** |
-| **④** | **Walmart** | CTO | **110,39 $** (06/08, −1,61 % — *implicite 112,20 vs 112,07 affiché ailleurs, écart 0,12 %, non tranché*) vs ≤ 100 $ → **+10,4 %**. 📉 **Oppenheimer dégrade** Outperform → Perform et **retire son objectif de 140 $** (vent contraire sur les comparables US liés à la pharmacie) | Résultats **20/08** — consensus BPA 0,74 $, CA 186,4 Md$ | ⚪ | **=** |
-| **⑤** | **Eli Lilly** | CTO | ✅ **1 148,61 $ — CLÔTURE OFFICIELLE du 05/08 réconciliée** (+2,95 %) vs seuil **846,00 $** → **+35,8 %** *(contre +31,9 % au 04/08)*. ⚠️ **Le « ~1 170 $ / +38 % » publié hier était un PRÉ-MARCHÉ : 2 des 6 points d'aggravation étaient à moi, pas au marché.** T2 : CA **22,974 Md$ (+47,7 %)**, guidance CA relevée de 3 Md$ à **85,0-87,0 Md$** *(et non 85-86 — corrigé)*, guidance BPA publiée **abaissée** par 3,03 $ d'IPR&D | contrôle **05/09** · butée 06/11 | 🟡 | **= (conservé)** |
-| **⑥** | **Magnum Ice Cream** | PEA | **~9,75 Md€ vs ≤ 7,6 Md€ (+28,3 %)** — repli de **−22,1 %** requis. PASSE, réouverture sur fait. ⚠️ **Faux positif désamorcé** : une capi de **6,56 Md€** circule chez un agrégateur, **non datée et SOUS mon seuil** — elle aurait déclenché une réouverture à tort. Écartée au profit de 11,40 Md$ ÷ 1,169 | aucune (fait, pas date) | 🔴 | **=** |
-| **⑦** | **Aubay** (ESN) | PEA | ~54,30 € vs ≤ 50 € (**+8,6 %**) — s'éloigne pour une **bonne** raison. S1 confirmé : CA **351,8 M€, +11,4 % organique** ; T2 **+12,2 % organique** ; international **intégralement organique** (+12,0 % au T2) ; **objectifs 2026 relevés**. ⚠️ *aucune clôture d'août ; un « 57 € » circule, rattaché au flux du 23/07* | T3 fin oct. | ⚪ | **=** |
-| **⑧** | **STM** (semi) | PEA | **46,89 €** (05/08) vs **≤ 42 €** → **+11,6 %** *(ligne périmée corrigée : elle affichait encore 44,62 € du 30/07)*. 🎣 **TROIS chiffres STM circulent — 42,90 / 49,56 / 52,60 € — et les TROIS sont des archives** : le 49,56 € est la clôture du **23/07**, jour des résultats T2 (−14,9 %) | Q3 fin oct. | 🔴 | **=** |
-| **⑨** | **Nike** | CTO | **42,45 $** (05/08) [MONO-SOURCE, sans variation % ni second ancrage — indicatif] — contrat retiré, veille sans contrat | ~fin sept. | 🔴 | **=** |
+| **④** | **Eli Lilly** | CTO | ✅ **1 148,61 $ — CLÔTURE OFFICIELLE du 05/08 réconciliée** (+2,95 %) vs seuil **846,00 $** → **+35,8 %** *(contre +31,9 % au 04/08)*. ⚠️ **Le « ~1 170 $ / +38 % » publié hier était un PRÉ-MARCHÉ : 2 des 6 points d'aggravation étaient à moi, pas au marché.** T2 : CA **22,974 Md$ (+47,7 %)**, guidance CA relevée de 3 Md$ à **85,0-87,0 Md$** *(et non 85-86 — corrigé)*, guidance BPA publiée **abaissée** par 3,03 $ d'IPR&D | contrôle **05/09** · butée 06/11 | 🟡 | **= (conservé)** |
+| **⑤** | **Magnum Ice Cream** | PEA | **~9,75 Md€ vs ≤ 7,6 Md€ (+28,3 %)** — repli de **−22,1 %** requis. PASSE, réouverture sur fait. ⚠️ **Faux positif désamorcé** : une capi de **6,56 Md€** circule chez un agrégateur, **non datée et SOUS mon seuil** — elle aurait déclenché une réouverture à tort. Écartée au profit de 11,40 Md$ ÷ 1,169 | aucune (fait, pas date) | 🔴 | **=** |
+| **⑥** | **Aubay** (ESN) | PEA | ~54,30 € vs ≤ 50 € (**+8,6 %**) — s'éloigne pour une **bonne** raison. S1 confirmé : CA **351,8 M€, +11,4 % organique** ; T2 **+12,2 % organique** ; international **intégralement organique** (+12,0 % au T2) ; **objectifs 2026 relevés**. ⚠️ *aucune clôture d'août ; un « 57 € » circule, rattaché au flux du 23/07* | T3 fin oct. | ⚪ | **=** |
+| **⑦** | **STM** (semi) | PEA | **46,89 €** (05/08) vs **≤ 42 €** → **+11,6 %** *(ligne périmée corrigée : elle affichait encore 44,62 € du 30/07)*. 🎣 **TROIS chiffres STM circulent — 42,90 / 49,56 / 52,60 € — et les TROIS sont des archives** : le 49,56 € est la clôture du **23/07**, jour des résultats T2 (−14,9 %) | Q3 fin oct. | 🔴 | **=** |
+| **⑧** | **Nike** | CTO | **42,45 $** (05/08) [MONO-SOURCE, sans variation % ni second ancrage — indicatif] — contrat retiré, veille sans contrat | ~fin sept. | 🔴 | **=** |
 
 ### Justification écrite de chaque mouvement
 
@@ -222,21 +220,19 @@ Offshore, instruit et publié ce matin, N'ENTRE PAS** : classé négatif
 calibration (C041) et rien d'autre** — pas de créneau, pas de seuil.
 *Un dossier instruit et classé négatif n'est pas une candidate.*
 
-### Mouvement du 07/08 — AUCUN, et le re-classement a bien été conduit
+### Mouvement du 07/08 — ☠️ **WALMART TUÉ**, et le reste décale mécaniquement
 
-**Les 9 lignes ont été re-mesurées ce matin sur le mètre commun.** Résultat :
-aucun mouvement de rang. Ce n'est pas une absence de travail, c'est sa
-conclusion — et voici les quatre candidats au mouvement que j'ai examinés
-puis écartés :
+⚠️ **Ce paragraphe a été réécrit en fin de matinée.** Je l'avais d'abord
+conclu « aucun mouvement » après le re-classement de 9h — puis **l'Arbitre
+saisi de la réécriture du contrat Walmart a rendu un PASSE**. Le mouvement
+n'est pas venu du marché, il est venu de l'audit.
 
-- **Walmart ④ — le seul cas sérieux.** Deux faits nouveaux : le prix baisse
-  (l'écart passe de +11,4 % à **+10,4 %**) et **Oppenheimer dégrade** en
-  retirant son objectif de 140 $. *Ils vont en sens opposés* : le premier
-  rapproche du déclencheur, le second interroge la thèse. **Une dégradation
-  d'analyste n'est pas un fait de mécanisme** — je ne bouge pas un rang
-  dessus. En revanche le motif invoqué (**comparables US liés à la
-  pharmacie**) est, lui, un fait de mécanisme, et il part directement dans
-  le cahier des charges de la réécriture du contrat lancée aujourd'hui.
+**WMT ④ → ☠️ TUÉ.** Motif complet en « Sorties enregistrées ». LLY ⑤→④,
+Magnum ⑥→⑤, Aubay ⑦→⑥, STM ⑧→⑦, Nike ⑨→⑧ : **décalages strictement
+mécaniques, aucune réévaluation de mérite.**
+
+Les autres candidats au mouvement, examinés puis écartés :
+
 - **Séché ③** — l'arrêté PFAS n'est toujours pas paru. C'est légèrement
   défavorable *(le point intermédiaire du contrat glisse vers sa butée)*
   mais **le contrat se joue sur le S1 du 09/09**, pas sur l'arrêté. Rang
@@ -245,7 +241,7 @@ puis écartés :
   de l'or n'entre pas dans ce classement** (`or-execution.md` interdit
   toute condition d'arrêt liée au prix). Son rang tient à l'écart à la
   cible — 0 % détenu contre 5-10 % — qui n'a pas bougé d'un pouce.
-- **Aubay ⑦** — le S1 confirme un mécanisme sain (+11,4 % organique,
+- **Aubay ⑥** — le S1 confirme un mécanisme sain (+11,4 % organique,
   objectifs relevés). *S'éloigner du déclencheur pour une bonne raison ne
   fait ni monter ni descendre un rang* : ça déplace la probabilité
   d'exécution, pas la qualité du dossier.
@@ -256,7 +252,7 @@ instruisable (aucun prix frais) et **achetabilité PEA non levée pour
 NEPI — critère éliminatoire**. *Un chantier remplit le référentiel, pas le
 classement.*
 
-### 🔒 Créneaux de surveillance : 5/6 — et le sixième reste VIDE, délibérément
+### 🔒 Créneaux de surveillance : **4/6** — DEUX créneaux vides, délibérément
 
 > **Un créneau vide est un actif, pas un gaspillage.** Le remplir parce
 > qu'il vient de s'ouvrir serait la version « surveillance » de l'erreur
@@ -331,7 +327,8 @@ faible des six.
 | **MSFT (renfort)** | ☠️ **TUÉ** | RÉFUTÉ 25 % : **la prémisse de prix était fausse** — 399,30 $ était la clôture du 29/07 (pas 390,54 $, qui était celle du 28/07) ; +8 % post-publication → ~428-431 $. **L'asymétrie était consommée avant qu'un ordre puisse passer.** Bookings commerciaux T4 **+10 %** contre +83 % sur l'exercice ; **45 % du RPO de 678 Md$ sur un seul client (OpenAI)** ; marge brute Microsoft Cloud 65 % contre 68 % ; FCF T4 **−23 %** ; **54-66 % du beat de BPA non opérationnel**. ⚠️ **Ne concerne QUE le renfort — la détention de 6 % est maintenue, aucune vente.** C018 / C019 | 30/07 |
 | **Vicat (VCT)** | ☠️ **TUÉ** | **PASSE DÉFINITIF à 69,70 €.** Kill criterion n°3 (dossier couru) déclenché **sur le fond avant la forme** : +13,15 % le 30/07 sur la guidance relevée. Espérance recalculée **+4,79 %/an — sous le World nu (5 %)**, 1,7 à 2,7 pts sous le hurdle ; robuste sur toute la fourchette 68-70 €. Les deux portes du contrat étaient devenues logiquement inatteignables en état de thèse intacte. Renouvellement unique consommé. *Le titre n'a pas échoué — il a été rattrapé par son prix.* Prix de réouverture théorique : 59,4-62,9 €, soit 11-17 % sous le marché — **non écrit comme contrat**, toute réouverture repart d'un dossier neuf. C020 ❌ / C021 ouvert / C027 | 31/07 |
 | **Mobility Global (MBGL)** | ☠️ **TUÉ** | **PASSE.** L'edge nommé — vendeurs forcés post-spin — **a expiré** : à J+21 séances le titre monte (+2,4 % en 3 semaines) et **6 analystes le couvrent déjà en « Buy » à 27,83 $**. Un orphelin n'a pas 6 analystes acheteurs 30 jours après sa cotation. Test du vendeur **sans réponse** (qui vend à 21 $, et pourquoi a-t-il tort ?). Espérance **+2,28 %/an net de PFU**, et **+4,21 % même si le print du 07/08 est bon** — le contrat échouait même en réussissant. Réouverture : **≤ 16,50 $ ET levier ≤ 2,0x** simultanément, **sans ligne au radar** (écrire un seuil à −22 % re-créerait l'erreur Vicat). C028/C029/C030 | 31/07 |
-| **Magnum Ice Cream** | *(reste au classement, rang ⑥)* | **PASSE non renouvelé, sans créneau de surveillance** — un contrat exigeant −21 % de prix ET une inflexion de volume est un PASSE avec des étapes supplémentaires. **Réouverture sur FAIT, pas sur date** : capitalisation ≤ 7,6 Md€ **ET** croissance organique en VOLUME ≥ +2,0 % sur le dernier trimestre publié, simultanément. Toute réouverture repart d'un dossier neuf devant le Chasseur et l'Avocat. C022 / C023 | 30/07 |
+| **Walmart (WMT)** | ☠️ **TUÉ** | **PASSE au terme d'une réécriture conduite AVANT l'événement du 20/08 — et c'est la réécriture qui a tué le dossier, pas le marché.** Trois chiffres du dossier 6/10 ne survivent pas à la vérification, **tous flatteurs** : « ~38x » → **40,0x** sur la guidance de l'émetteur ; « profits +19 % » → guidance FY27 **+6,1 %** ; « publicité +46 % » → **+46 % au T2 FY26 puis +37 % au T1 FY27**, le chiffre retenu était le point haut d'une série qui décélère. Le 38x n'était atteignable qu'avec un BPA de 2,95 $, **5,4 % au-dessus du haut de la guidance** — donc via un consensus d'agrégateur, le canal que la règle 7 interdit. 🔑 **Le seuil n'est PAS dérivable, et ce n'est pas un manque de travail** : il dépend d'un multiple terminal à 7 ans, grandeur qu'aucun canal ne produit — *elle est produite par moi*. Bande réelle **25,0x à 37,9x, soit 70 $ à 106 $ : 51 % d'écart sur le prix.** Régime d'ambiguïté → borne basse **70 $ (−37,5 %)**, la seule adossée à une source contrôlée. 🔑 **Et les conditions de mécanisme ne peuvent pas mordre** : publicité à **+37 %** contre une barre à +20 % — il faudrait perdre **17 points en un trimestre**. Les resserrer ferait des deux jambes **le même pari mesuré deux fois**, et elles sont **anti-corrélées** : un défensif à comparables +4 % ne perd pas 29 % sur une compression de multiple isolée, il les perd sur une guidance coupée — l'état du monde où il ne faut surtout pas acheter. Espérance au prix du jour **+3,03 %/an net**, soit **4,0 pts sous le hurdle** — identique à Magnum (+3,04 %, tuée) et LLY (+3,01 %, rétrogradée) : *trois mesures indépendantes, le même résultat au centième*. Réouverture **sur FAIT, sans ligne au radar** : ≤ **28,5x** sur le médian de la guidance BPA publiée **ET** publicité ≥ +25 % **ET** commerce en ligne ≥ +18 %, **simultanément**. **C042/C043/C044** · **C024 maintenu ouvert, inchangé à 25 %, mais sa NATURE a changé** — il ne mesure plus mon contrat, seulement une prévision de cours | 07/08 |
+| **Magnum Ice Cream** | *(reste au classement, rang ⑤)* | **PASSE non renouvelé, sans créneau de surveillance** — un contrat exigeant −21 % de prix ET une inflexion de volume est un PASSE avec des étapes supplémentaires. **Réouverture sur FAIT, pas sur date** : capitalisation ≤ 7,6 Md€ **ET** croissance organique en VOLUME ≥ +2,0 % sur le dernier trimestre publié, simultanément. Toute réouverture repart d'un dossier neuf devant le Chasseur et l'Avocat. C022 / C023 | 30/07 |
 
 ## Ce que la newsletter en fait
 

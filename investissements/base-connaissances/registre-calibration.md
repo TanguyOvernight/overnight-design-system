@@ -472,3 +472,102 @@ de la fraude de calibration.**
 - **Fin juillet-août** : Publication S1 Nexans → résout C003.
 - **23/08 & 19/09** : PDUFA Ultragenyx → alimentent C004.
 - **Septembre** : FOMC → résout C005 (divergence Kalshi/FedWatch).
+
+## Appels ouverts le 07/08/2026 — réécriture du contrat Walmart, AVANT l'événement
+
+| ID | Date | Agent | classe_réf | Affaire | Affirmation | P | Condition de résolution | Statut |
+|---|---|---|---|---|---|---|---|---|
+| **C042** | 07/08 | Juge | action-US défensive / <1 an · CTO | Walmart | **Le mécanisme décélère** : le communiqué du T2 FY27 fait apparaître une croissance de la **publicité globale < +32 %** a/a | **42 %** | Communiqué Walmart du **20/08/2026** — lisible sur le communiqué SEUL | ⏳ |
+| **C043** | 07/08 | Juge | action-US défensive / 12 mois · CTO | Walmart | **Le PASSE est justifié** : WMT ne surperforme PAS le MSCI World de plus de **5 points** sur 12 mois | **68 %** | 07/08/2027 — performance totale WMT vs MSCI World | ⏳ |
+| **C044** | 07/08 | Juge | action-US défensive / pluriannuel · CTO | Walmart | **Le seuil correctement dérivé ne se présente pas** : WMT ne clôture **jamais ≤ 80,00 $** avant le 31/12/2027 | **75 %** *(brute 78 %, plafond de charte appliqué)* | Clôtures NYSE, 07/08/2026 → 31/12/2027 | ⏳ |
+
+**Construction de C042, tracée** : +46 % au T2 FY26 → +37 % au T1 FY27, soit
+**−9 points sur 3 trimestres ≈ −3 pts/trimestre**. La tendance linéaire
+projette **~+34 %** au T2 FY27. **Le seuil de 32 % est placé SOUS la
+tendance, donc il mord des deux côtés** : il échoue si la décélération n'est
+que tendancielle, il réussit si elle s'accélère. Base de comparaison qui se
+durcit (6,4 Md$). **Grandeur non discrétionnaire** — une croissance de
+chiffre d'affaires publicitaire, pas un agrégat comptable : conforme à la
+correction de process encodée le 05/08 après C035. **Il se résout dans
+13 jours et teste directement la lecture qui porte le PASSE.**
+
+**Décomposition vérifiée** (règle du 05/08 : tout appel contenant un « et »
+est une conjonction déguisée) : **aucun des trois n'est une conjonction.**
+C042 = une métrique · C043 = une performance relative · C044 = un prix.
+
+> ⚠️ **La conjonction à 4,95 % n'est PAS enregistrée telle quelle.**
+> L'arbre multiplicatif de l'Arbitre donnait `22 % × 30 % × 75 % = 4,95 %`
+> pour « un contrat WMT correctement écrit produit un achat qui bat le
+> cœur ». Le plafond de charte l'aurait remontée à 25 % — **inscrire 25 %
+> injecterait au registre une affirmation que je sais fausse.** Précédents
+> MBGL (31/07) et LLY (04/08) : **décomposer, ne pas arrondir.**
+
+### 🔄 MENTION OBLIGATOIRE SUR C024 — la nature change, la probabilité NE BOUGE PAS
+
+**C024 est MAINTENU OUVERT et INCHANGÉ à 25 %** (« WMT ≤ 100 $ en clôture
+avant le 31/12/2026 »). Depuis le 07/08, **il ne mesure plus le contrat du
+Juge** — ce contrat n'existe plus, et le seuil correctement dérivé est
+**80,00 $, pas 100 $**. Sa condition de résolution étant purement mondaine
+(une clôture NYSE), il reste parfaitement résoluble.
+
+> ⚠️ **La Vérif' du samedi ne doit PAS lire C024 comme « le déclencheur du
+> Juge s'est présenté ».** Il mesure désormais **une prévision de cours**,
+> rien de plus.
+
+C'est le cas **C021/C014** à l'identique : *un appel sur MON CONTRAT meurt
+avec mon contrat ; un appel sur LE MONDE lui survit.* **Sa probabilité n'est
+pas révisée — réviser une probabilité enregistrée est une fraude de
+calibration.**
+
+### 🔬 Ce que cet arbitrage apprend sur MA façon d'écrire les seuils
+
+L'Arbitre a validé mon arithmétique **terme à terme** (`1,075⁷ = 1,659048`,
+`33,61x`, `31,31x/36,10x` — tout est exact) et a quand même conclu que ma
+dérivation ne tenait pas. **Les deux ne sont pas contradictoires, et c'est
+la leçon.**
+
+1. **Mon hurdle de 7,5 % contredisait ma propre jurisprudence.** Le 04/08
+   j'ai écrit pour LLY : *« ρ ≈ 0,45-0,55 lui vaut le bas de la bande de
+   prime (2 pts, pas 3) → hurdle 7,0 % »*. Walmart est dans le **même
+   bucket**. Appliquer 7,5 % à l'un et 7,0 % à l'autre est du favoritisme
+   inversé. *Corrigé — et le PASSE tient quand même, avec le hurdle plus
+   FAVORABLE.*
+2. **Mon hypothèse centrale contredisait la seule source contrôlée du
+   dossier.** J'ai rétracté de 19 % à 11 % en me croyant prudent. **Or le
+   19 % n'existe pas dans les données de 2026** : Walmart guide **+6,1 %**.
+   Mon « cas prudent » était **4,9 points au-dessus de ce que l'émetteur
+   annonce**, à tenir sept ans. *Rétracter depuis un chiffre faux ne rend
+   pas prudent — ça donne seulement l'impression de l'être.*
+3. **🔑 L'erreur de niveau supérieur, que je n'avais pas vue.** Ma règle du
+   05/08 dit : *n'écrire une condition que sur une grandeur que l'émetteur
+   ne contrôle pas, ou sur laquelle il s'est publiquement engagé.* **Un
+   multiple terminal à 7 ans n'est ni l'un ni l'autre : il n'est produit
+   par aucun canal — il est produit par moi.**
+   > C'est pourquoi la bande **ne peut pas être resserrée par plus de
+   > travail**. Ce n'est pas une imprécision de mesure, **c'est un
+   > paramètre libre.** J'avais diagnostiqué le symptôme (« la bande est
+   > large, c'est le point faible ») sans nommer la cause — et sans la
+   > cause, j'aurais cherché à réduire la bande en documentant davantage,
+   > ce qui était impossible par construction.
+4. **Le fait de réconciliation qui emporte tout** : trois dossiers mesurés
+   indépendamment à trois dates donnent **+3,03 % (WMT), +3,04 % (Magnum),
+   +3,01 % (LLY)** par an net. *Ce n'est pas une coïncidence — c'est ce que
+   produit un actif de qualité acheté au prix que le marché demande pour de
+   la qualité.* **Toute future candidate « compounder de qualité à prix de
+   marché » doit désormais partir de l'hypothèse qu'elle vaut ~3 %/an
+   net**, et démontrer pourquoi elle échappe à cette classe de référence.
+
+### Signal d'invalidation du PASSE — enregistré, avec sa date
+
+**J'aurai eu tort si, avant le 31/12/2027, WMT clôture ≤ 80,00 $ ALORS QUE
+le dernier communiqué montre publicité ≥ +25 %, commerce en ligne ≥ +18 %
+et plancher de guidance BPA non abaissé.** C'est l'état auquel l'Arbitre
+assigne 30 % conditionnellement au prix : si le prix y va **avec** le
+mécanisme intact, la décomposition des causes de baisse était fausse et le
+créneau libéré aujourd'hui aura coûté un achat qui battait le cœur.
+
+**Signal plus précoce, dans 13 jours** : si le communiqué du **20/08** montre
+publicité **≥ +40 %** (ré-accélération contre +37 %) **et** un relèvement du
+**plancher** de guidance BPA FY27 au-dessus de 2,80 $, la lecture « le
+flywheel décélère et l'émetteur guide +6 % » est démentie **par les faits**,
+et le PASSE se rouvre immédiatement — sans attendre un fait de prix.

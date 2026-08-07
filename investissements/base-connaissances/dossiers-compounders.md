@@ -56,7 +56,34 @@ autour des readouts). ⚠️ Résultats Q2 le **5 août** — acheter avant =
 accepter le risque d'événement (OK à horizon 7 ans, à dire à Tanguy).
 Bonus diversification : moteur SANTÉ décorrélé du bloc tech/IA actuel.
 
-## 🌱 WALMART (WMT) — 6/10 → WATCHLIST AVEC ALERTE
+## ☠️ WALMART (WMT) — **PASSE le 07/08/2026** *(ex-« 6/10, watchlist avec alerte »)*
+
+> 🔴 **TROIS CHIFFRES DE CE DOSSIER ÉTAIENT FAUX, ET LES TROIS DANS LE SENS
+> FLATTEUR.** Corrigés ci-dessous. Le texte d'origine est conservé barré
+> pour mémoire, parce qu'un dossier faux qu'on efface ne s'apprend pas.
+>
+> | Chiffre du dossier (27/07) | Vérifié le 07/08 sur source ÉMETTEUR | Sens |
+> |---|---|---|
+> | « ~38x les bénéfices attendus » | **40,0x** (112,01 $ ÷ 2,80 $, médian de la guidance FY27) | flatteur |
+> | « profits +19 % contre CA +7 % » | guidance FY27 : **BPA ajusté +6,1 %** ; T1 FY27 : résultat opérationnel **+5,0 %** | **flatteur, largement** |
+> | « publicité +46 % » | **+46 % au T2 FY26 → +37 % au T1 FY27** — le point haut d'une série qui **décélère** | flatteur |
+>
+> **Le « 38x » n'était atteignable qu'avec un BPA de 2,95 $**, soit 5,4 %
+> au-dessus du HAUT de la guidance de l'émetteur — donc via un consensus
+> d'agrégateur. *Le dossier était écrit, sans le savoir, sur le canal exact
+> que la règle 7 interdit.*
+>
+> **Contamination signalée** : le « 38x » et le « +19 % » venaient du même
+> bloc de texte du 27/07, jamais re-sourcé. Le Chasseur et le contrat de
+> surveillance citaient **la même phrase** — ce n'était pas un accord de
+> deux sources, c'était **une source citée deux fois** (≈ 1,0 avis, pas 2).
+>
+> **Motif du PASSE** : le seuil n'est pas dérivable (il dépend d'un multiple
+> terminal à 7 ans, grandeur qu'aucun canal ne produit — *elle est produite
+> par moi*), bande réelle **70 $ à 106 $** ; et les conditions de mécanisme
+> **ne peuvent pas mordre**. Espérance au prix du jour **+3,03 %/an net**,
+> 4,0 points sous le hurdle. Détail complet dans `classement-opportunites.md`,
+> section « Sorties enregistrées ». **C042/C043/C044.**
 
 *Cours ~110-112 $ (-9 % vs pic juin), P/E forward ~37-39x vs moyenne
 20 ans 29,7x.*
@@ -76,8 +103,12 @@ moyenne 20 ans = -22 % de multiple à digérer. PEG ~3,5. Rendement espéré
 sur 2 trimestres · marge op < 3,8 % en année pleine · comparables US
 < +2 % ×2 avec P/E > 35.
 
-**Plan** : PAS d'achat à 110 $. **Alerte à ~98-100 $ (~33x)** pour une 1ʳᵉ
-tranche. Réévaluer après les résultats du **20 août**. (VTI/SWDA donnent
+~~**Plan** : PAS d'achat à 110 $. **Alerte à ~98-100 $ (~33x)** pour une 1ʳᵉ
+tranche.~~ **CADUC (07/08/2026)** — l'alerte à 98-100 $ reposait sur le
+multiple faux. Le seuil correctement dérivé est **28,5x, soit 80,00 $**, et
+la borne basse imposée par le régime d'ambiguïté est **70 $ (−37,5 %)**.
+**Réouverture sur FAIT et sans ligne au radar** : ≤ 28,5x **ET** publicité
+≥ +25 % **ET** commerce en ligne ≥ +18 %, simultanément. (VTI/SWDA donnent
 déjà ~0,7 % de WMT passivement.)
 
 ## Conclusion comparative

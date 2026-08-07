@@ -293,7 +293,7 @@ ticket du livre »* — violation caractérisée de la règle 4.
 Toute SURVEILLANCE émise par l'Arbitre vit ICI avec ses 4 champs. À
 l'échéance sans déclencheur ni thèse renforcée → PASSE automatique (ou
 renouvellement explicitement motivé). Stock max ~6 lignes.
-**État au 31/07 : 5/6 — le sixième créneau est laissé VIDE délibérément**
+**État au 07/08 : 4/6 — deux créneaux laissés VIDES délibérément**
 (un créneau vide est un actif ; le remplir parce qu'il s'ouvre serait
 fabriquer un déclencheur au lieu d'en trouver un).
 
@@ -303,9 +303,11 @@ fabriquer un déclencheur au lieu d'en trouver un).
 | **LLY (CTO)** — *contrat réécrit le 04/08, conditions mises à jour le 05/08 (effet au T3, §6)* | **DEUX CLÉS.** **Clé A — CERTIFICAT au print du T3** : **M1′** FCF 9 mois 2026 **≥ 12,0 Md$** *(9M 2025 = 8 294,1 M$ ; concession de 0,5 Md$ chiffrée et datée au titre du pic de capex)* · **M2′** point **BAS** de la guidance CA FY26 **≥ 85,0 Md$** **et** marge brute non-GAAP T3 **≥ 86,0 %** non dégradée a/a *(la jambe incrétine est SUPPRIMÉE : non contraignante, 14,87 contre 11,57)* · **M3″** **prix réalisés US du T3 ≥ −8 % a/a, tels que publiés** *(remplace M3′, intestable : le coût MFN ne peut pas mordre sans traverser le prix réalisé US ; T2 = −3 % avec volumes +37 %)* · **M4′** guidance BPA non abaissée **selon la règle 6** (sous-jacent pour la destruction, publié pour l'autorisation, clause §5 armée). **Clé B — INCHANGÉE** : clôture **≤ 23,5x le médian de la guidance BPA non-GAAP PUBLIÉE** = **846,00 $** aux chiffres du 05/08 *(§4 : le retraitement n'est PAS offert au prix — 846 $, pas 917 $)*. **Tranche 1 = 44 €**, ≥ 3 tranches | Contrôle **05/09/2026** · butée **06/11/2026** · échéance de donnée **17/08** (10-Q, C034, calibration seule) | 06/11 sans conjonction → PASSE auto. **Renouvellement unique INTACT.** **K1** (règle 6, §5 armée) · **K2** · **K6** > 1 300 $ → couru · **K7** 3ᵉ arbitrage avant le 06/11 → PASSE DÉFINITIF · **R1** échec ph.3 · **R2′** **Foundayo T3 < 250 M$** *(remplace R2, intestable)* · **R3** · **R4** | **C033 · C034 · C036 · C037 · C038 · C039 · C040** |
 | **Aubay (PEA)** | Cours ≤ 50 € OU scare optique sur le T3 | Publication T3 (fin oct. 2026) | Après T3 sans déclencheur → PASSE auto | C001 |
 | **STM (STMPA, PEA)** | **≤ 42 €** ET P/E fwd < 30x ET ≥ 1 trim. de MB remontant vers 40 %+ | Résultats Q3 STM (fin oct. 2026) | Après Q3 sans les 3 conditions → PASSE auto | C007 |
-| **WMT (CTO)** | Cours **≤ 100 $** en clôture | Résultats du **20/08/2026** | **31/12/2026** sans repli → PASSE auto | **C024** *(créé le 30/07 — lacune de couverture réparée)* |
 
-**Budget : 5/6 créneaux.** Le sixième est **laissé libre délibérément**.
+**Budget : 4/6 créneaux** *(WMT supprimé le 07/08)*. **Deux créneaux sont
+désormais libres, et ils le restent délibérément** — un créneau vide est un
+actif, et la rareté des créneaux est ce qui donne du prix à celui qu'on
+ouvre.
 
 ## 🔍 AUDIT DES CONTRATS — 3 sur 5 sont des seuils de PRIX PUR (04/08/2026)
 
@@ -319,7 +321,7 @@ se justifie que par l'arithmétique, pas par un pourcentage rond »*.
 | **Séché** | ✅ EBE S1 ≥ 125 M€ · France organique ≥ 0 % · guidance confirmée | ✅ | **Bien construit** |
 | **STM** | ✅ P/E fwd < 30x · ≥ 1 trimestre de marge brute remontant vers 40 % | ✅ | **Bien construit** |
 | **LLY** | ✅ **CORRIGÉ le 04/08** — certificat de mécanisme M1 (cash) · M2 (moteur incrétine) · M3 (tarif chiffré) · M4 (guidance) | ✅ **23,5x**, dérivé de la table d'espérance | **Réécrit AVANT l'événement** |
-| **Walmart** | ❌ **prix pur** | ❌ seuil rond (100 $) | 🔴 À réécrire **avant le 20/08** |
+| **Walmart** | ❌ prix pur | ❌ seuil rond (100 $) | ✅ **RÉÉCRIT PUIS SUPPRIMÉ le 07/08 — PASSE.** Le seuil n'est pas dérivable (bande 25-38x, soit 70-106 $) et les conditions de mécanisme **ne peuvent pas mordre** (publicité +37 % contre une barre à +20 %). *Réparer un contrat n'oblige pas à le garder* |
 | **Aubay** | ❌ prix pur **OU** « scare optique » — critère non mesurable | ❌ seuil rond (50 €) | 🔴 À réécrire avant le T3 (fin octobre) |
 
 ### Le défaut le plus dangereux : un contrat de prix pur n'interroge pas la CAUSE de la baisse
@@ -336,7 +338,8 @@ repli**. Or trois causes appellent des décisions **opposées** :
 > deuxième — celui où il ne faut surtout pas acheter.**
 
 **Calendrier de correction, adossé aux catalyseurs** : LLY **avant le
-05/08** ✅ *(en cours)* · Walmart **avant le 20/08** · Aubay avant le T3.
+05/08** ✅ · Walmart **avant le 20/08** ✅ *(fait le 07/08 — verdict PASSE)* ·
+**Aubay avant le T3 (fin octobre) — seul défaut 🔴 restant.**
 Chacune se fait **AVANT** l'événement, jamais après — une réécriture
 post-événement est indistinguable d'une rationalisation.
 

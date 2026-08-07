@@ -239,7 +239,22 @@ coûts s'opposent, chiffrés plutôt qu'évoqués :
 
 **Effet mécanique de cet ordre :**
 
-| Indicateur | Avant | Après |
+> 🔴 **AVERTISSEMENT DE LECTURE, ajouté le 07/08/2026 — la colonne « Après »
+> est une PROJECTION, pas un état constaté.**
+> Elle décrit ce que l'ordre du 30/07 **produirait s'il était exécuté**.
+> **Son exécution n'a jamais été confirmée** (appel **C025**, échéance
+> 07/08/2026). Tant que C025 n'est pas résolu VRAI, **la colonne
+> « Avant » est l'état réel du portefeuille** : V ≈ 891 € au 30/07,
+> **L = 134 €**, R = 43,9 %, NVDA = 22 %.
+>
+> **Ce n'est pas un avertissement théorique** : l'Arbitre saisi du dossier
+> Walmart le **07/08** a lu « V ≈ 1 391 € » comme la valeur courante et en
+> a tiré un plafond de 208,65 € au lieu de 134 €. Il a signalé la
+> divergence au lieu de l'arbitrer seul — **c'est le bon réflexe, mais le
+> piège était bien réel.** Toute table « Avant/Après » adossée à un ordre
+> non confirmé porte désormais cet avertissement.
+
+| Indicateur | Avant *(RÉEL)* | Après *(PROJECTION — non réalisée)* |
 |---|---|---|
 | Valeur du portefeuille | ~891 € | ~1 391 € |
 | Cœur (VTI + SWDA) | 55,9 % | **64,6 %** |
