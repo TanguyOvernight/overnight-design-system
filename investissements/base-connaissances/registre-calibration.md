@@ -171,12 +171,12 @@ surveillance devient une attente indéfinie déguisée en discipline.
 |---|---|---|---|---|---|---|---|---|
 | **C018** | 30/07 | Avocat | action-US / 12 mois · CTO | MSFT | Acheté ~430 $ le 30/07/2026, MSFT surperforme le S&P 500 TR d'au moins **5 pts** sur 12 mois | **25 %** | 30/07/2027 : perf totale MSFT vs S&P 500 TR. **Kill intermédiaire au 29/10/2026** (T1 FY27) : bookings commerciaux < +15 % a/a **ET** Azure ≤ 44 % cc → thèse morte | ⏳ |
 | **C019** | 30/07 | Avocat | action-US / 12 mois · CTO | MSFT | *Version faible* : MSFT surperforme **simplement** le S&P 500 TR sur 12 mois | **38 %** | 30/07/2027 : perf totale MSFT vs S&P 500 TR | ⏳ |
-| **C020** | 30/07 | Juge | mid-cap-EU cyclique / pluriannuel · PEA | Vicat | **Couverture de surveillance** : le déclencheur réécrit se présente EN TOTALITÉ avant l'échéance — Porte A (≤ 56 € + guidance intacte + dette nette en baisse a/a) **ou** Porte B franchie puis ≤ 62 € sous 45 j | **42 %** (brute 43 %) | 15/03/2027 : clôture Euronext Paris + communiqué FY2026 | ⏳ |
+| **C020** | 30/07 | Juge | mid-cap-EU cyclique / pluriannuel · PEA | Vicat | **Couverture de surveillance** : le déclencheur réécrit se présente EN TOTALITÉ avant l'échéance — Porte A (≤ 56 € + guidance intacte + dette nette en baisse a/a) **ou** Porte B franchie puis ≤ 62 € sous 45 j | **42 %** (brute 43 %) | 15/03/2027 : clôture Euronext Paris + communiqué FY2026 | ❌ **RÉSOLU FAUX 31/07** — Brier **0,1764**. *Voir « Appels résolus »* |
 | **C021** | 30/07 | Juge | mid-cap-EU cyclique / <1 an · PEA | Vicat | **Mécanisme** : FCF FY2026 **≥ 200 M€** ET dette nette au 31/12/2026 **≤ 1 060 M€** ET levier **≤ 1,30x** | **32 %** | Résultats FY2026 (~mi-février 2027), butée 15/03/2027 | ⏳ |
 | **C022** | 30/07 | Juge | staples-EU / 12 mois · PEA | Magnum | **Le PASSE est justifié** : MICC ne surperforme PAS le MSCI World de plus de 5 pts sur 12 mois | **70 %** | 30/07/2027 : perf totale MICC (Amsterdam, EUR) vs MSCI World | ⏳ |
 | **C023** | 30/07 | Juge | staples-EU / pluriannuel · PEA | Magnum | **Test d'élasticité GLP-1** : Magnum publie une croissance organique **en VOLUME négative** sur au moins un trimestre | **30 %** | Communiqués trimestriels MICC, avant le 31/12/2027 | ⏳ |
 | **C024** | 30/07 | Juge | action-US défensive / <1 an · CTO | Walmart | **Couverture (réparation de lacune)** : le déclencheur d'achat (WMT ≤ 100 $ en clôture) se présente | **25 %** (brute 22 %, plancher de charte) | Clôture NYSE, avant le 31/12/2026 | ⏳ |
-| **C025** | 30/07 | Juge | allocation / <1 an · CTO | Ordre de juillet | L'ordre du 30/07 (**400 € SWDA + 100 € IAU sur eToro**) est **exécuté** | **70 %** | Confirmation de Tanguy ou capture de portefeuille, au plus tard le **07/08/2026** | ⏳ |
+| **C025** | 30/07 | Juge | **comportement-client** / <1 an · CTO | Ordre de juillet | L'ordre du 30/07 (**400 € SWDA + 100 € IAU sur eToro**) est **exécuté** | **70 %** | Confirmation de Tanguy ou capture de portefeuille, au plus tard le **07/08/2026** | ❌ **RÉSOLU FAUX 08/08** — échéance passée sans confirmation. **Brier = 0,49** *(reclassé en `comportement-client` : voir ci-dessous)* |
 | **C026** | 30/07 | Juge | allocation / <1 an · PEA | PEA Fortuneo | Le PEA est **ouvert ET exécutable** (un ordre passable) | **75 %** (brute 78 %, plafond de charte) | État du compte au **30/09/2026** | ⏳ |
 
 **Traçabilité de la calibration mécanique** : registre à **0 appel résolu**
@@ -260,7 +260,7 @@ réactions. Assumé et écrit.
 |---|---|---|---|---|---|---|---|---|
 | **C033** | 04/08 | Juge | pharma-US / <1 an · CTO | Eli Lilly | **Le principe même de la réécriture** : conditionnellement à au moins une clôture ≤ 1 020 $ d'ici le 06/11/2026, **au moins une des trois conditions de mécanisme (M1, M2, M3) est en échec ou révoquée** au moment de cette clôture | **72 %** | Au 06/11/2026 : si aucune clôture ≤ 1 020 $ → appel **VOID**, non scoré. Sinon, grille M1/M2/M3 arrêtée à la date de la première clôture qualifiante | ⏳ |
 | **C034** | 04/08 | Juge | pharma-US / <1 an · CTO | Eli Lilly | **Le test Vicat appliqué à LLY** : FCF S1 2026 croissant au moins aussi vite que le CA S1 2026, **et** ≥ 5,5 Md$ | **40 %** | ⏳ **RESTE OUVERT au 05/08 — non résoluble.** Le tableau de flux existe (annexe `4-Q2-26-Press-Release-SCF.pdf`) mais **l'hôte est bloqué en 403** et le 10-Q T2 n'est pas encore déposé (attendu ~07-10/08). Six formulations tentées, dont une en français. **La donnée n'existe pas publiquement à ce jour — l'appel n'est ni gagné ni perdu, il attend.** Résolution reportée au dépôt du 10-Q | ⏳ |
-| **C035** | 04/08 | Juge | pharma-US / <1 an · CTO | Eli Lilly | La **guidance BPA FY2026 est RELEVÉE** (médian > 36,25 $) | **70 %** | Communiqué du **05/08/2026** | ⏳ |
+| **C035** | 04/08 | Juge | pharma-US / <1 an · CTO | Eli Lilly | La **guidance BPA FY2026 est RELEVÉE** (médian > 36,25 $) | **70 %** | Communiqué du **05/08/2026** | ❌ **RÉSOLU FAUX 05/08** — Brier **0,4900**. *Voir « Appels résolus »* |
 | **C036** | 04/08 | Juge | pharma-US / <1 an · CTO | Eli Lilly | **Ancien seuil, fenêtre neuve** : LLY clôture ≤ **1 020 $** au moins une séance entre le 05/08 et le **06/11/2026** | **30 %** | Clôtures NYSE, 05/08 → 06/11/2026 | ⏳ |
 
 **C033 est l'appel qui compte** — il rend falsifiable la thèse entière de la
@@ -425,7 +425,9 @@ de marché. **n = 3 ne conclut rien.**
 
 | ID | Affaire | Affirmation | P | Issue | **Brier** | Leçon |
 |---|---|---|---|---|---|---|
-| **C035** | **Eli Lilly** | La guidance BPA FY2026 est **RELEVÉE** (médian > 36,25 $) | **70 %** | **0 — ❌ FAUX.** Guidance passée de 35,50-37,00 $ (médian **36,25 $**) à 35,50-36,50 $ (médian **36,00 $**). 36,00 n'est pas > 36,25 | **0,4900** | **J'ai prédit la bonne ÉCONOMIE et la mauvaise COMPTABILITÉ.** Le BPA sous-jacent a bien été **relevé de +2,78 $** au point médian, et le CA de **+3,0 Md$** — mon raisonnement économique était juste. Mais la hausse a été **plus que compensée par 3,03 $ de charges d'*acquired IPR&D*** issues de quatre acquisitions finalisées au trimestre (Orna, Ajax, Centessa, Kelonia). Net : **−0,25 $**. **J'avais écrit l'appel sur le CHIFFRE PUBLIÉ sans anticiper qu'une charge non opérationnelle pouvait le renverser.** ⚠️ **Pire score du registre à ce jour** (référence C020 : 0,1764). | Le déclencheur réécrit se présente EN TOTALITÉ avant échéance (Porte A ≤ 56 € ou Porte B) | **42 %** | **0 — ❌ FAUX** (contrat terminé le 31/07 par PASSE définitif : le déclencheur ne peut plus se présenter) | **0,1764** | **P calculée sans conditionner sur un catalyseur inscrit à MON PROPRE radar** (résultats du 29/07). Un mid-cap qui publie a une dispersion de ±10-15 % en une séance : un seuil à −10 % avait donc une probabilité substantielle de devenir inatteignable **avant même que l'encre sèche**. C'est exactement ce qui s'est produit, en une séance (+13,15 %). |
+| **C035** | **Eli Lilly** | La guidance BPA FY2026 est **RELEVÉE** (médian > 36,25 $) | **70 %** | **0 — ❌ FAUX.** Guidance passée de 35,50-37,00 $ (médian **36,25 $**) à 35,50-36,50 $ (médian **36,00 $**). 36,00 n'est pas > 36,25 | **0,4900** | **J'ai prédit la bonne ÉCONOMIE et la mauvaise COMPTABILITÉ.** Le BPA sous-jacent a bien été **relevé de +2,78 $** au point médian, et le CA de **+3,0 Md$** — mon raisonnement économique était juste. Mais la hausse a été **plus que compensée par 3,03 $ de charges d'*acquired IPR&D*** issues de quatre acquisitions finalisées au trimestre (Orna, Ajax, Centessa, Kelonia). Net : **−0,25 $**. **J'avais écrit l'appel sur le CHIFFRE PUBLIÉ sans anticiper qu'une charge non opérationnelle pouvait le renverser.** ⚠️ **Pire score du registre à ce jour** (référence C020 : 0,1764). |
+| **C020** | **Vicat** | Le déclencheur réécrit se présente EN TOTALITÉ avant échéance (Porte A ≤ 56 € ou Porte B) | **42 %** | **0 — ❌ FAUX** (contrat terminé le 31/07 par PASSE définitif : le déclencheur ne peut plus se présenter) | **0,1764** | **P calculée sans conditionner sur un catalyseur inscrit à MON PROPRE radar** (résultats du 29/07). Un mid-cap qui publie a une dispersion de ±10-15 % en une séance : un seuil à −10 % avait donc une probabilité substantielle de devenir inatteignable **avant même que l'encre sèche**. C'est exactement ce qui s'est produit, en une séance (+13,15 %). |
+| **C025** | **Ordre de juillet** | L'ordre du 30/07 (400 € SWDA + 100 € IAU sur eToro) est **exécuté** | **70 %** | **0 — ❌ FAUX.** Échéance du 07/08 passée sans confirmation | **0,4900** | **Appel mal CLASSÉ autant que mal chiffré** : rangé en `allocation`, il relevait de `comportement-client` — classe sans historique, où je prédis l'exécution de ma propre recommandation. Mais la vraie cause n'est pas l'optimisme : la capture Fortuneo du 07/08 montre que **Tanguy AGISSAIT** (PEA ouvert) et butait sur un **mur opérationnel**. Le mode d'échec non modélisé est la **FRICTION**, pas le désintérêt. Arbre correct : `0,85 × 0,40 × 0,80 ≈ 27 %` — **43 points sous mon chiffre**, exactement l'écart de C035. |
 
 ### ⚙️ Correction de process encodée (issue de C035) — écrire l'appel sur la BONNE grandeur
 
@@ -571,3 +573,162 @@ publicité **≥ +40 %** (ré-accélération contre +37 %) **et** un relèvement
 **plancher** de guidance BPA FY27 au-dessus de 2,80 $, la lecture « le
 flywheel décélère et l'émetteur guide +6 % » est démentie **par les faits**,
 et le PASSE se rouvre immédiatement — sans attendre un fait de prix.
+
+## ❌ C025 RÉSOLU FAUX — Brier 0,49, et je m'étais trompé sur la NATURE de l'appel
+
+**L'appel** : « l'ordre du 30/07 (400 € SWDA + 100 € IAU sur eToro) est
+exécuté », P = **70 %**, échéance 07/08. **Échéance passée sans
+confirmation → ❌. Brier = (0,70 − 0)² = 0,4900.** Deuxième pire score du
+registre, à égalité quasi parfaite avec C035 (0,4900).
+
+### Ce que je croyais mesurer, et ce que je mesurais vraiment
+
+Je l'avais classé en `allocation`. **C'est faux : c'est un appel de la
+classe `comportement-client`** — une classe où je n'ai **aucun historique**,
+et où j'ai un **conflit d'intérêt structurel** : je prédis l'exécution de ma
+propre recommandation. *Personne ne parie à 30 % que son conseil sera
+ignoré.* **Reclassé, et la classe est créée.**
+
+### 🔑 Mais la vraie leçon n'est pas l'excès d'optimisme — c'est un modèle FAUX
+
+**Le 07/08, Tanguy m'a envoyé une capture Fortuneo : il a OUVERT un PEA.**
+Il n'est pas alimenté, et il était bloqué sur un écran lui réclamant un
+versement qu'il ne trouvait pas comment faire (le premier versement d'un
+compte neuf est un virement POUSSÉ depuis l'extérieur — il n'y a pas de
+bouton dans l'app).
+
+> **Ce fait démolit l'explication commode.** J'aurais pu conclure « j'ai
+> surestimé son engagement » — c'est faux. **Il agissait**, il a ouvert un
+> compte, il s'est heurté à un mur opérationnel. Le mode d'échec que je
+> n'avais pas modélisé n'est pas le désintérêt, c'est **la FRICTION entre
+> une décision et son exécution.**
+
+**Correction de process, et elle porte sur mes RECOMMANDATIONS, pas sur mes
+probabilités :**
+
+> Une recommandation du type « mets 400 € sur le WPEA » présuppose
+> silencieusement un compte capable de recevoir l'ordre. **Cette
+> présupposition n'était pas vérifiée, et elle était fausse.** Toute
+> instruction doit désormais nommer **le chemin opérationnel**, pas
+> seulement la décision : quel compte, alimenté comment, avec quel délai
+> de virement, et quelle est la prochaine action physique à faire.
+>
+> *Un conseil qui ne peut pas être exécuté n'est pas un conseil prudent —
+> c'est un conseil incomplet, et il se compte comme une erreur.*
+
+**Ce que j'aurais dû prédire, et qui devient le format des futurs appels de
+cette classe** : décomposer plutôt que globaliser. `P(Tanguy veut agir)` ×
+`P(le chemin opérationnel est ouvert)` × `P(il le fait dans la fenêtre)`.
+Au 30/07, la deuxième jambe valait au mieux 40 % — **aucun PEA n'existait
+et le compte eToro n'avait jamais été testé sur un ordre**. Arbre :
+`0,85 × 0,40 × 0,80 ≈ 27 %`. **Contre 70 % annoncés : 43 points d'écart.**
+
+> C'est **exactement la faute de C035** — où l'arbre multiplicatif de la
+> règle 16 donnait 47 % contre un jugement global de 70 %. **Deux fois la
+> même semaine, le même écart de ~43 points, produit par la même cause :
+> un jugement global là où une conjonction était en jeu.** La règle
+> existait dans ma charte les deux fois.
+>
+> **Elle n'est donc pas un défaut de connaissance mais de DÉCLENCHEMENT.**
+> Nouvelle contrainte, mécanique : **tout appel dont la réalisation exige
+> plusieurs conditions indépendantes s'écrit comme un produit AVANT d'être
+> chiffré globalement.** Si les deux nombres divergent de plus de 15
+> points, c'est le produit qui est enregistré.
+
+## 🔧 INCIDENT D'INTÉGRITÉ DU REGISTRE — découvert et réparé le 08/08/2026
+
+**C'est la Revue du samedi qui l'a trouvé, en faisant ce pour quoi elle
+existe : compter les appels résolus avant d'en tirer un score.**
+
+Trois défauts, tous dans le même fichier, tous invisibles à la lecture :
+
+| Défaut | Ce qu'il produisait |
+|---|---|
+| **C020 et C035 marqués ⏳** dans le tableau des appels ouverts, alors qu'ils étaient **résolus et scorés** dans la section « Appels résolus » | Le registre **se contredisait lui-même** sur son propre état |
+| **Une ligne de tableau FUSIONNANT deux appels** (C035 et C020), l'identifiant de C020 ayant purement disparu | Un appel résolu **sans identifiant** est un appel qu'aucune requête ne retrouve |
+| **C025 résolu ce matin mais absent** du tableau des résolus | Idem |
+
+### Pourquoi c'est sérieux, et pas cosmétique
+
+**Chaque statistique de calibration que j'aurais publiée aujourd'hui aurait
+été fausse.** Un Brier moyen se calcule sur les appels résolus : avec deux
+résolus invisibles sur trois, la Vérif' des appels aurait annoncé **1 appel
+noté** au lieu de **3**, et la moyenne aurait été **0,4900** au lieu de
+**0,3855**. *Un registre qui perd ses propres résolutions ne mesure plus
+rien — il met en scène une mesure.*
+
+**Et le défaut est structurel, pas accidentel** : le fichier tient chaque
+appel à **deux endroits** (tableau des ouverts + tableau des résolus) sans
+aucun mécanisme de synchronisation. **Une donnée dupliquée sans mécanisme
+de cohérence finit toujours par diverger** ; ici il aura fallu neuf jours.
+
+> **Correction encodée — la règle du miroir.** Résoudre un appel est un
+> geste en **deux temps indissociables** : (1) inscrire la ligne dans
+> « Appels résolus » avec son Brier et sa leçon ; (2) **remplacer le ⏳ du
+> tableau d'origine par le verdict et un renvoi.** Un appel résolu à un
+> seul endroit est un appel **non résolu**.
+>
+> **Contrôle de la Revue, à exécuter AVANT toute statistique** : compter
+> les ⏳ et les résolus, et vérifier que chaque ligne du tableau des
+> résolus porte **un identifiant unique**. Le contrôle qui a mordu
+> aujourd'hui coûte dix secondes.
+
+⚠️ **Aucune probabilité n'a été touchée, aucun Brier n'a été recalculé.**
+Les trois scores (0,1764 · 0,4900 · 0,4900) sont ceux enregistrés à leur
+date de résolution. **La réparation est de forme — la retoucher au fond
+aurait été la fraude que la réparation cherche à empêcher.**
+
+## 📉 PREMIÈRE LECTURE DU SCORE — 3 résolus, 3 FAUX, et le biais a un nom
+
+| Appel | Affirmation | P | Issue | Brier |
+|---|---|---|---|---|
+| **C020** | Le déclencheur Vicat se présente en totalité | 42 % | ❌ | 0,1764 |
+| **C035** | La guidance BPA de Lilly est relevée | 70 % | ❌ | 0,4900 |
+| **C025** | L'ordre de juillet est exécuté | 70 % | ❌ | 0,4900 |
+
+**Brier moyen = 0,3855.** Repère pile ou face : **0,25**.
+**Je fais actuellement PIRE que de répondre 50 % à tout.**
+P moyenne annoncée : **60,7 %** · réalisations : **0 sur 3**.
+
+### ⚠️ n = 3 ne conclut RIEN — ma propre charte l'écrit
+
+*« < 20-30 appels : anecdotique, on trace, on ne conclut RIEN. »* Trois
+appels, c'est du bruit : trois pièces qui tombent du même côté n'ont rien
+d'extraordinaire (probabilité 1/8 même avec une pièce parfaite).
+**Je ne change donc AUCUN paramètre de sizing sur cette base.**
+
+### 🔑 Mais le MOTIF, lui, est lisible — et il n'est pas statistique
+
+Les trois appels ont la même forme logique. Regarde ce que chacun affirme :
+
+- « le déclencheur **se présentera** »
+- « la guidance **sera relevée** »
+- « l'ordre **sera exécuté** »
+
+> **Les trois prédisent qu'un ÉVÉNEMENT SE PRODUIRA. Les trois se sont
+> résolus par un NON-ÉVÉNEMENT.** Ce n'est pas de la sur-confiance
+> générique : c'est un **biais d'occurrence** — je sous-estime
+> systématiquement la fréquence à laquelle *il ne se passe rien*.
+
+C'est le biais le plus banal et le plus coûteux d'un système conçu pour
+**chercher** des opportunités : l'attention se porte sur les chemins qui
+mènent à l'action, et les chemins qui mènent à l'inertie ne sont pas
+inventoriés avec la même énergie. *Le monde est fait d'inertie beaucoup
+plus que mes appels ne le supposent.*
+
+### La prédiction que ce diagnostic engendre — et elle est testable
+
+Si le biais est réel, alors **mes appels récents devraient mieux scorer**,
+parce qu'ils ont spontanément changé de forme : **C041** (l'EBITDA de SBM
+au S2 **ne dépassera pas** 682 M$, 78 %), **C043** (Walmart **ne
+surperformera pas**, 68 %), **C044** (Walmart **ne clôturera jamais** sous
+80 $, 75 %) prédisent tous des **NON-événements**.
+
+> **C'est une prédiction falsifiable sur ma propre calibration, et je
+> l'enregistre comme telle** : si le biais d'occurrence est la bonne
+> explication, ces trois-là doivent se résoudre VRAIS. S'ils se résolvent
+> faux, mon diagnostic était une histoire commode et le vrai problème est
+> ailleurs — de la sur-confiance pure, dans les deux directions.
+>
+> **Aucune correction de sizing avant ~10 résolutions supplémentaires.**
+> Nommer un biais sur n = 3 est légitime ; agir dessus ne l'est pas.

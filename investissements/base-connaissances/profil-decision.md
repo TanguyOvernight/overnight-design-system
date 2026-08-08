@@ -239,6 +239,21 @@ coûts s'opposent, chiffrés plutôt qu'évoqués :
 
 **Effet mécanique de cet ordre :**
 
+> ✅ **MISE À JOUR 08/08/2026 — C025 est RÉSOLU FAUX.** L'ordre du 30/07 n'a
+> **pas** été exécuté (échéance passée sans confirmation, Brier 0,49). **La
+> colonne « Après » ci-dessous ne s'est donc JAMAIS réalisée** et la colonne
+> « Avant » reste l'état du portefeuille. **V ≈ 891 € (au 30/07), L = 134 €,
+> R = 43,9 %, NVDA = 22 %.**
+>
+> 📌 **Ce que la semaine a appris sur la CAUSE.** Le 07/08, Tanguy a envoyé
+> une capture montrant un **PEA Fortuneo ouvert mais non alimenté**, et un
+> écran lui réclamant un versement qu'il ne trouvait pas comment effectuer.
+> **Le mode d'échec n'était pas le désintérêt — c'était la friction
+> opérationnelle.** Il agissait. Ma recommandation présupposait un compte
+> capable de recevoir l'ordre, et cette présupposition était fausse.
+> *Encodé au registre : toute instruction nomme désormais le chemin
+> opérationnel, pas seulement la décision.*
+>
 > 🔴 **AVERTISSEMENT DE LECTURE, ajouté le 07/08/2026 — la colonne « Après »
 > est une PROJECTION, pas un état constaté.**
 > Elle décrit ce que l'ordre du 30/07 **produirait s'il était exécuté**.
