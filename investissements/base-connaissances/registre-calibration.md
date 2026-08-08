@@ -210,8 +210,8 @@ C'est le système qui fonctionne, pas un incident à masquer.
 | ID | Date | Agent | classe_réf | Affaire | Affirmation | P | Condition de résolution | Statut |
 |---|---|---|---|---|---|---|---|---|
 | **C027** | 31/07 | Juge | mid-cap-EU cyclique / 12 mois · PEA | Vicat | **Le PASSE à 69,70 € est justifié** : VCT ne surperforme PAS le MSCI World de plus de 5 pts sur 12 mois | **62 %** | 31/07/2027 : perf totale VCT (Euronext) vs MSCI World | ⏳ |
-| **C028** | 31/07 | Juge | mid-cap-US spin-off / <1 an · CTO | Mobility Global | **Test du mécanisme (7 jours)** : MBGL publie un **EBITDA ajusté ≥ 175 M$** ET une **croissance organique CARFAX ≥ +3 %** | **28 %** | Communiqué du **07/08/2026**, avant bourse | ⏳ |
-| **C029** | 31/07 | Juge | mid-cap-US spin-off / <1 an · CTO | Mobility Global | **Test de flux (l'edge est-il expiré ?)** : MBGL clôture **≤ 21,00 $** le 07/08/2026 | **38 %** | Clôture NYSE du **07/08/2026** | ⏳ |
+| **C028** | 31/07 | Juge | mid-cap-US spin-off / <1 an · CTO | Mobility Global | **Test du mécanisme (7 jours)** : MBGL publie un **EBITDA ajusté ≥ 175 M$** ET une **croissance organique CARFAX ≥ +3 %** | **28 %** | Communiqué du **07/08/2026**, avant bourse | ✅ **RÉSOLU VRAI 08/08** — Brier **0,5184**. *Voir « Appels résolus »* |
+| **C029** | 31/07 | Juge | mid-cap-US spin-off / <1 an · CTO | Mobility Global | **Test de flux (l'edge est-il expiré ?)** : MBGL clôture **≤ 21,00 $** le 07/08/2026 | **38 %** | Clôture NYSE du **07/08/2026** | ✅ **RÉSOLU VRAI 08/08** — Brier **0,3844**. *Voir « Appels résolus »* |
 | **C030** | 31/07 | Juge | mid-cap-US spin-off / 12 mois · CTO | Mobility Global | **Le PASSE est justifié** : MBGL ne surperforme PAS le MSCI World de plus de 5 pts sur 12 mois — *contre un consensus de 6 analystes « Buy » à 27,83 $* | **60 %** | 31/07/2027 : perf totale MBGL vs MSCI World | ⏳ |
 | **C031** | 31/07 | Juge | staples-EU / <1 an · PEA | Magnum | **Test de sélection adverse** : **aucune offre ferme** sur MICC (Blackstone, CD&R ou autre) n'est déposée avant le 31/12/2026 | **70 %** | Communiqués MICC / autorités de marché au 31/12/2026 | ⏳ |
 
@@ -219,7 +219,7 @@ C'est le système qui fonctionne, pas un incident à masquer.
 
 | ID | Date | Agent | classe_réf | Affaire | Affirmation | P | Condition de résolution | Statut |
 |---|---|---|---|---|---|---|---|---|
-| **C032** | 02/08 | Juge | pharma-US / <1 an · CTO | Eli Lilly | **Le déclencheur d'achat se présente** : LLY clôture **≤ 1 020 $** au plus tard le **07/08/2026** (semaine de la publication T2 du 05/08) | **15 %** | Clôtures NYSE du 03 au 07/08/2026 | ⏳ |
+| **C032** | 02/08 | Juge | pharma-US / <1 an · CTO | Eli Lilly | **Le déclencheur d'achat se présente** : LLY clôture **≤ 1 020 $** au plus tard le **07/08/2026** (semaine de la publication T2 du 05/08) | **15 %** | Clôtures NYSE du 03 au 07/08/2026 | ❌ **RÉSOLU FAUX 08/08** — Brier **0,0225**. *Voir « Appels résolus »* |
 
 **Construction de C032, tracée** : base rate propriétaire — sur les
 **4 dernières réactions** de LLY à publication (**−13,4 %** au T2 2025,
@@ -732,3 +732,164 @@ surperformera pas**, 68 %), **C044** (Walmart **ne clôturera jamais** sous
 >
 > **Aucune correction de sizing avant ~10 résolutions supplémentaires.**
 > Nommer un biais sur n = 3 est légitime ; agir dessus ne l'est pas.
+
+## Résolutions du 08/08/2026 — Mobility Global et Eli Lilly
+
+| ID | Affaire | Affirmation | P | Issue | **Brier** | Leçon |
+|---|---|---|---|---|---|---|
+| **C028** | **Mobility Global** | EBITDA ajusté T2 **≥ 175 M$** **ET** organique CARFAX **≥ +3 %** | **28 %** | **1 — ✅ VRAI.** EBITDA ajusté **202 M$** (+15,4 % au-dessus du seuil) ; CARFAX **+8 %** | **0,5184** | **Pire score du registre — et je l'ai voté contre mon intérêt** (voir ci-dessous). J'ai massivement sous-estimé un dossier que j'avais tué : les deux jambes passent, et l'EBITDA de très loin |
+| **C029** | **Mobility Global** | Clôture NYSE **≤ 21,00 $** le 07/08 | **38 %** | **1 — ✅ VRAI.** Clôture **19,56-19,70 $**, jamais positive de la séance (plus haut 20,70 < clôture veille 20,73) | **0,3844** | Le titre a chuté de ~5 % sur un **CA manqué et une guidance de CA coupée**. J'avais raisonné « l'edge de flux a expiré, le titre dérive à la hausse » — vrai jusqu'au print, faux au print |
+| **C032** | **Eli Lilly** | Clôture **≤ 1 020 $** au plus tard le 07/08 | **15 %** | **0 — ❌ FAUX.** LLY entre ~1 148 $ et ~1 192 $ toute la semaine | **0,0225** | **Mon meilleur score**, et il vient d'un appel où j'ai eu raison de dire que ça n'arriverait pas. *Un 15 % bien placé vaut mieux qu'un 50 % posé pour ne pas se tromper.* |
+
+### 🔍 C028 — pourquoi je l'ai résolu VRAI alors que FAUX m'arrangeait
+
+**Le fait** : résoudre VRAI me coûte **0,5184**, mon pire score. Résoudre
+FAUX m'aurait donné **0,0784**, mon deuxième meilleur. **L'écart entre les
+deux lectures vaut 0,44 point de Brier en ma faveur.**
+
+**La porte de sortie existait, et elle était respectable.** Mon appel exigeait
+une croissance **« organique »** de CARFAX. Or **aucune source ne qualifie
+explicitement le +8 % de CARFAX d'organique** — c'est un chiffre publié. La
+lettre du contrat autorisait le ❌.
+
+**Pourquoi je ne l'ai pas prise :**
+1. **Aucune acquisition sur la période** — la société venait d'être scindée
+   de S&P Global, c'était son premier trimestre autonome.
+2. **Au niveau groupe, publié et organique sont IDENTIQUES : 7 % et 7 %.**
+   L'écart entre les deux notions est donc **nul** sur ce trimestre.
+3. CARFAX est une activité domestique américaine : **pas d'effet de change**.
+
+> **L'écart publié/organique vient des acquisitions, des cessions et du
+> change. Aucun des trois n'existe ici. Le +8 % EST organique en substance,
+> et le mot manquant est une absence de vocabulaire, pas une absence de
+> fait.**
+>
+> Se retrancher derrière un mot manquant pour éviter 0,44 point de Brier
+> aurait été la définition exacte de la fraude de calibration que tout ce
+> registre est censé empêcher. **Un registre qu'on peut plaider est un
+> registre qui ne mesure plus rien.**
+
+⚠️ **Défaut de rédaction à corriger pour la suite** : mon appel employait
+un terme (« organique ») que **l'émetteur n'utilise pas dans son
+communiqué** — violation de la règle 7 (testabilité depuis le communiqué
+seul). *N'écrire une condition qu'avec le vocabulaire que l'émetteur emploie
+réellement.*
+
+### 📌 Ce que MBGL apprend sur la décision, séparément du score
+
+**Le PASSE du 31/07 n'est pas invalidé par ce print, et il faut le dire
+précisément pour ne pas se payer de mots.** Ce que le trimestre montre :
+
+| Fait | Lecture |
+|---|---|
+| EBITDA ajusté **202 M$**, marge **43 %** | La rentabilité était meilleure que je ne l'avais estimée |
+| CA **468 M$**, **manqué de 6,28 M$** vs consensus | La croissance, elle, déçoit |
+| BPA **0,18 $** contre **0,24 $** attendu (FactSet) | **−25 %** |
+| **Guidance CA FY26 COUPÉE** à 1,87-1,885 Md$ | La révision est baissière |
+| Guidance EBITDA **maintenue** à 745-760 M$ | *« CA coupé, EBITDA tenu » — la marge encaisse le choc* |
+| Cause nommée par la direction | **Le passage à une offre groupée engagé fin 2025 n'a pas produit les bénéfices attendus** |
+| Levier net **2,4×**, FCF S1 **177 M$** | Conforme à mon estimation de 2,6× post-spin |
+
+> **Le titre a fait −5 % sur ce print.** Mon motif de PASSE était que
+> l'espérance restait sous le hurdle **même en supposant un bon print**
+> (+4,21 %/an). Le print n'a pas été bon. **La décision tient, mais mon
+> APPEL était mal calibré** — et ce sont deux choses différentes qu'il
+> faut refuser de confondre.
+
+⚠️ **Divergence de consensus non résolue** : mon chiffre pré-publication de
+« BPA normalisé 0,45 $ » **ne se retrouve dans aucune source**. La seule
+référence sourcée est **FactSet à 0,24 $**. Contrôle qui valide le 0,18 $
+publié : `53 M$ ÷ 0,18 = 294,4 M titres`, cohérent avec ~295,1 M en
+circulation ✓. **Mon 0,45 $ était probablement un agrégat semestriel ou un
+BPA ajusté non comparable — origine non identifiée, noté comme tel.**
+
+## ❌ LE DIAGNOSTIC DE CE MATIN EST RÉFUTÉ — en trois heures, par des données déjà publiques
+
+**Ce matin, sur n = 3, j'ai écrit un diagnostic et une prédiction
+falsifiable :**
+
+> *« Les trois prédisent qu'un ÉVÉNEMENT SE PRODUIRA. Les trois se sont
+> résolus par un NON-ÉVÉNEMENT. […] je sous-estime systématiquement la
+> fréquence à laquelle il ne se passe rien. »* — **biais d'occurrence.**
+
+**Trois heures plus tard, C028 et C029 se résolvent.** Les deux prédisaient
+qu'un événement se produirait (un seuil d'EBITDA franchi, un cours sous
+21 $), **à faible probabilité (28 % et 38 %)**. Sous ma théorie, ils
+devaient se résoudre **FAUX** — voire mériter des probabilités *encore plus
+basses*.
+
+**Les deux se sont résolus VRAIS.**
+
+> **La théorie du biais d'occurrence a produit une prédiction fausse sur
+> les deux premiers points de données disponibles. Elle est réfutée.**
+
+### 🔴 Et l'aggravation, qui est la vraie leçon : les données EXISTAIENT DÉJÀ
+
+**MBGL a publié le vendredi 07/08 avant bourse et a clôturé le 07/08 au
+soir.** J'ai écrit ma théorie le **samedi 08/08 au matin** — *après* que les
+faits soient publics, mais *avant* de les avoir lus.
+
+> **J'ai théorisé sur trois points en laissant trois résolutions en attente
+> alors que les données étaient déjà disponibles.** Ce n'est pas de la
+> malchance : c'est un **ordre des opérations inversé**.
+>
+> **Règle encodée, mécanique** : la Revue **résout d'abord tous les appels
+> échus, ensuite seulement calcule les statistiques et cherche des
+> motifs.** Aucun diagnostic de calibration n'est écrit tant qu'un appel
+> échu reste ouvert. *Un motif tiré d'un échantillon qu'on n'a pas fini de
+> collecter est une histoire, pas une mesure.*
+
+**C'est la TROISIÈME narration bâtie sur trop peu de points cette semaine** :
+Palantir/AMD le 05/08 (un événement), le pétrole et les records le 06/08
+(une séance), le biais d'occurrence le 08/08 (trois appels). **Trois fois,
+la correction a suivi en 24 à 72 heures.** Le motif n'est pas dans les
+marchés, il est dans ma façon de conclure.
+
+## 📊 LE SCORE RÉEL — n = 6, et il est mauvais dans les DEUX directions
+
+| ID | P | Issue | Brier |
+|---|---|---|---|
+| C032 | 15 % | ❌ | **0,0225** |
+| C020 | 42 % | ❌ | 0,1764 |
+| C029 | 38 % | ✅ | 0,3844 |
+| C035 | 70 % | ❌ | 0,4900 |
+| C025 | 70 % | ❌ | 0,4900 |
+| C028 | 28 % | ✅ | **0,5184** |
+
+**Brier moyen = 0,3469.** Répondre **50 % à tout** donnerait **0,2500**.
+**Brier Skill Score contre ce repère : −0,388.**
+
+> **Je fais actuellement nettement PIRE que si je n'avais aucune opinion.**
+
+### La structure du score — et elle est sans ambiguïté
+
+| Tranche | Appels | Réalisés |
+|---|---|---|
+| **P ≥ 42 %** *(« probable »)* | C020, C035, C025 | **0 sur 3** |
+| **P < 42 %** *(« peu probable »)* | C028, C029, C032 | **2 sur 3** |
+
+> **Ce que j'annonce probable n'arrive pas. Ce que j'annonce improbable
+> arrive.** Ce n'est **pas** un biais directionnel — ce n'est pas de
+> l'optimisme, ce n'est pas un biais d'occurrence. **C'est de
+> l'anti-calibration** : mes probabilités s'écartent de 50 % **dans la
+> mauvaise direction**.
+
+**Ce que je fais de ce constat — et ce que je n'en fais pas :**
+
+- ❌ **Je ne change AUCUN paramètre de sizing.** n = 6, ma charte exige
+  20-30 résolutions avant de conclure. Six pièces qui tombent ainsi n'ont
+  rien d'extraordinaire.
+- ❌ **Je ne propose PAS de nouvelle théorie explicative.** J'en ai produit
+  trois cette semaine, toutes réfutées. **La quatrième serait la même
+  erreur.** *La bonne réponse à « je viens de sur-interpréter n = 3 » n'est
+  pas une meilleure interprétation de n = 6.*
+- ✅ **Je publie le score tel quel dans la Revue**, y compris qu'il est pire
+  qu'un pile ou face. C'est le seul engagement qui compte.
+- ✅ **Un seul correctif mécanique, et il ne suppose aucune théorie** : la
+  **règle du facteur de rétraction** déjà inscrite dans ma table de
+  rétroaction s'applique — `P' = 0,5 + 0,8 × (P − 0,5)`. Elle réduit
+  l'écart à 50 % **quelle que soit la direction de l'erreur**, donc elle
+  vaut sous l'anti-calibration comme sous la sur-confiance simple.
+  **Appliquée à partir d'aujourd'hui, à tout appel du Juge.**
+  *Contrôle sur l'échantillon : elle aurait donné 0,3095 au lieu de 0,3469.
+  Toujours pire que 0,25 — elle atténue, elle ne répare pas.*
