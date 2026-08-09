@@ -893,3 +893,33 @@ marchés, il est dans ma façon de conclure.
   **Appliquée à partir d'aujourd'hui, à tout appel du Juge.**
   *Contrôle sur l'échantillon : elle aurait donné 0,3095 au lieu de 0,3469.
   Toujours pire que 0,25 — elle atténue, elle ne répare pas.*
+
+## Appel ouvert le 09/08/2026 — premier appel passé au facteur de rétraction
+
+| ID | Date | Agent | classe_réf | Affaire | Affirmation | P | Condition de résolution | Statut |
+|---|---|---|---|---|---|---|---|---|
+| **C045** | 09/08 | Juge | **macro-US** / <1 mois | CPI juillet | **La désinflation du cœur CALE** : l'inflation sous-jacente américaine de juillet ressort **≥ 2,5 % a/a** | **62 %** *(brut 65 %, rétraction appliquée)* | Publication BLS du **12/08/2026, 14h30 Paris** | ⏳ |
+
+**Construction, tracée** : juin 2026 = **2,6 % a/a** et **0,0 % m/m** ;
+consensus de juillet = **2,5 %** [MONO-SOURCE]. L'appel dit donc que **le
+consensus est légèrement trop optimiste** sur le cœur. Base : le sous-jacent
+est structurellement plus visqueux que le headline, et la désinflation de
+juin venait de l'énergie (**−5,7 %**, essence **−9,7 %**) — un canal qui ne
+traverse le cœur que lentement et indirectement.
+
+**Grandeur non discrétionnaire** : un indice publié par une agence
+statistique, que personne n'a d'intérêt à orienter. Conforme à la correction
+de process du 05/08.
+
+> ⚙️ **Premier appel passé au facteur de rétraction** `P' = 0,5 + 0,8 ×
+> (P − 0,5)`, encodé hier après un Brier de 0,3469 sur six résolutions.
+> **65 % → 62 %.** L'écart paraît dérisoire ; il ne l'est pas sur la
+> distribution : c'est mes 70 % qui deviennent 66 % et mes 15 % qui
+> deviennent 22 %. **Sur l'échantillon existant, la règle aurait donné
+> 0,3095 au lieu de 0,3469.**
+
+**Note sur les scénarios de la Prépa (partition à trois branches)** : la
+rétraction y a été appliquée **vers 1/3 et non vers 0,5**. *La rétraction
+pousse vers l'ignorance, et l'ignorance sur trois branches vaut 1/3.*
+Brut 45/25/30 → **43/27/30**. **Adaptation nécessaire de la règle, notée
+dès sa première utilisation.**

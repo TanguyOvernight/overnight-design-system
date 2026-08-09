@@ -414,6 +414,181 @@ post-événement est indistinguable d'une rationalisation.
 | 31/07 | Résultats Cameco (BPA attendu 0,26 $, -49 %) | Thème uranium/énergie IA (veille, spot ~85,8 $/lb) |
 | Début août | Ouverture « Corriger ma déclaration » impots.gouv.fr | Régularisation 3916-bis si compte ouvert ≤ 2025 |
 | **26/08** ✅ **CONFIRMÉ PAR L'ÉMETTEUR** | **Résultats Nvidia T2 FY2027** — trimestre clos le 26/07 ; publication vers **13h20 PT**, conférence **17h00 ET = 23h00 Paris**. Communiqué NVIDIA du 29/07, quatre relais concordants *(page nvidianews en 403 — ancrage jugé suffisant, mais pas de lecture directe)* | NVDA = **22 % du portefeuille** — le rendez-vous du mois. ⚠️ **La nomenclature de reporting a changé** (Data Center scindé Hyperscale / AI-Cloud / Edge) : **relire les niveaux de référence des contrats de détention dans la NOUVELLE présentation**, pas l'ancienne. 🎯 **La bonne question, apprise d'AMD le 05/08 : pas « bat-il le consensus ? » mais « la croissance porte-t-elle un levier de MARGE ? »** — AMD a fait +50 % de CA et +245 % de résultat opérationnel, et a chuté sur une guidance T3 à +41 % avec une **marge brute STABLE à ~56 %** |
+
+
+## 🔒 PRÉ-ENGAGEMENT NVIDIA — grille écrite le 09/08, **17 jours avant** la publication
+
+*Écrite quand aucune anticipation ne peut la contaminer. La méthode a payé
+deux fois cette semaine : sur SBM (la soustraction `1900 − 1310 = 590` posée
+le 31/07) et sur Eli Lilly. **NVDA pèse 22 % du portefeuille** — c'est
+l'événement le plus conséquent du mois.*
+
+### ⚠️ Trois corrections à MON briefing, avant toute chose
+
+| Ce que j'avais écrit | Le fait |
+|---|---|
+| Le segment « AI-Cloud » | **ACIE — *AI Clouds, Industrial and Enterprise***. Le périmètre inclut l'entreprise on-prem, le souverain et l'industriel : **ce n'est pas un détail de nommage**, ça change ce que le chiffre mesure |
+| Terafab phase 1 = **16,8 Md$** *(publié dans la Revue d'hier)* | **Le dépôt de SpaceX lui-même estime la première phase à ~55 Md$** — écart de 38 Md$ relevé publiquement. Les deux chiffres ne mesurent probablement pas la même chose (investissement annoncé contre coût total de phase), **mais je ne peux pas le trancher, et j'ai publié le plus petit sans le savoir** |
+| Capex hyperscaler 2026 ≈ **650 Md$** | **~725-750 Md$** après les relèvements de juillet (Alphabet jusqu'à 205, Meta 125-145, Amazon ~200). 🔑 **Conséquence : la projection « > 1 000 Md$ en 2027 » implique +35-40 %, pas +55 %. Le récit est nettement moins accélérant qu'il n'y paraît.** |
+
+### 🕳️ La rupture de comparabilité INVISIBLE — le piège n°1
+
+> **Depuis le T1 FY2027, les mesures non-GAAP de NVIDIA n'excluent PLUS la
+> rémunération en actions (SBC).** L'historique a été retraité en
+> conséquence. **Tout BPA non-GAAP publié avant le 20/05/2026 est sur
+> l'ancienne base et n'est PAS comparable.**
+>
+> Cas réel déjà observé : un agrégateur a annoncé pour le T1 « BPA 2,39 $
+> contre 1,75 $ attendu », quand la CFO Commentary donne **1,87 $**. Le
+> 2,39 $ est **arithmétiquement incompatible** avec un résultat opérationnel
+> de 53,5 Md$ sur ~24,2 Md d'actions.
+> **Règle du soir : tout écart de BPA cité par un agrégateur dans les dix
+> premières minutes est FAUX jusqu'à réconciliation avec le communiqué.**
+
+### La série comparable — deux points, dont un seul publié
+
+| | **T4 FY2026** *(reconstitué)* | **T1 FY2027** *(publié 20/05)* |
+|---|---|---|
+| CA total | 68,1 Md$ (+20 % séq) | **81,6 Md$** (+20 % séq, +85 % a/a) |
+| Data Center | 62,3 Md$ | **75,2 Md$** (+21 % séq) |
+| — Hyperscale | ≈ 33,9 Md$ [DÉRIVÉ] | **38 Md$ (+12 % séq)** |
+| — ACIE | ≈ 28,2 Md$ [DÉRIVÉ] | **37 Md$ (+31 % séq)** |
+| Marge brute GAAP / non-GAAP | 75,0 % / 75,2 % | **74,9 % / 75,0 %** |
+| Marge opérationnelle | ≈ 65,0 % [DÉRIVÉ] | **65,6 %** |
+| Stocks | 21,403 Md$ | **25,797 Md$** (+20,5 % séq) |
+| Créances / DSO | n.c. | **40,7 Md$ / 45 j** (contre 51 j) |
+| Engagements d'appro. | 95,2 Md$ | **119,0 Md$ (+25 % séq)** |
+| **Guidance du trimestre suivant** | 78,0 Md$ → **+14,5 % séq** | **91,0 Md$ ±2 % → +11,5 % séq** ; MB 74,9/75,0 ±50 pb ; **AUCUN CA compute Data Center Chine assumé** |
+
+*Méthode de reconstitution, reproductible : `38 ÷ 1,12 = 33,9` et
+`37 ÷ 1,31 = 28,2`, **somme 62,1 contre 62,3 Md$ publiés** — l'écart de
+0,2 vient de l'arrondi des « 38 » et « 37 ». **Cette réconciliation valide
+à la fois la reconstitution et les deux montants de segment.***
+
+> **Le 26/08 je disposerai de TROIS points, dont deux dérivés. Tout
+> commentaire sur une « tendance Hyperscale » ce soir-là sera de la
+> narration** — et j'en ai produit trois cette semaine, toutes réfutées.
+
+### LES CINQ CHIFFRES QUI DÉCIDENT
+
+**① La guidance T3 exprimée en % du CA T2 réalisé — jamais en absolu.**
+Le pas séquentiel **guidé** décélère déjà : **+14,5 % → +11,5 %**. Calcul à
+faire en direct : `guidance T3 ÷ CA T2 publié − 1`. **Mauvaise surprise : un
+troisième pas sous +10 %.**
+> C'est la lecture SBM transposée. Le communiqué titrera « ~+95 % a/a » — un
+> chiffre **mécaniquement flatté par une base écrasée** (le T2 FY26 était à
+> ~47 Md$, plombé par la Chine). *Spectaculaire et informationnellement
+> vide.*
+
+**② La marge brute GUIDÉE pour le T3 — pas celle réalisée au T2.**
+🔑 **NVIDIA guide déjà ZÉRO levier de marge** : trois trimestres à
+74,9-75,0 %. **Une marge « qui tient » n'est donc PAS une bonne nouvelle,
+c'est le scénario central.** *C'est exactement l'erreur qui a coûté 7 % à
+AMD le 05/08.* Mauvaise surprise : guidance T3 **sous 74,4 % GAAP**. Le
+seul vrai bon signal serait **au-dessus de 75,5 %**.
+
+**③ Hyperscale séquentiel CONTRE ACIE séquentiel.** T1 : **+12 % contre
++31 %**, ACIE pesant déjà ~49 % du Data Center. Mauvaise surprise :
+**Hyperscale sous +8 % séq.**
+> **Les deux lectures sont mauvaises, et c'est ce qui rend ce couple plus
+> informatif que le total.** Si Hyperscale décélère avec 725-750 Md$ de
+> capex client, **l'argent va vers leur propre silicium**. Si ACIE porte
+> tout, la « diversification » devient une histoire de **circularité**.
+
+**④ Engagements d'approvisionnement** — dans la **CFO Commentary**, livrable
+**écrit** publié à 13h20 PT (donc conforme à ma contrainte « communiqué
+seul », ce n'est pas un transcript). **95,2 → 119,0 Md$ (+25 % séq)**, dont
+95 Md$ payables d'ici janvier 2027. Mauvaise surprise : **stable ou en
+baisse.** *C'est le seul chiffre où NVIDIA engage du cash contractuel sur ce
+qu'elle croit de son S2 — un plateau ici précède une révision de guidance
+d'un ou deux trimestres.*
+
+**⑤ La marge OPÉRATIONNELLE, calculée à la main** (`RO ÷ CA`). 65,0 % →
+**65,6 %**. Mauvaise surprise : **en recul séquentiel** avec un CA en hausse
+de 11-16 %. *Si la marge brute est verrouillée à 75 % par le mix et le coût
+mémoire, le seul levier restant est l'opex — et c'est là que la R&D Rubin et
+les recrutements apparaîtront. Marge brute stable ET marge opérationnelle en
+repli = le profil exact d'AMD.*
+
+### Ce que le communiqué NE permettra PAS de trancher le soir même
+
+**La concentration client est au 10-Q, pas au communiqué** — disponible ~J+1.
+Points de comparaison : **T1 FY27 → 3 clients à 21/17/16 % = 54 %** ; T3 FY26
+→ 4 clients à 22/15/13/11 % = **61 %**. **La concentration BAISSE.** Mauvaise
+surprise : premier client **> 25 %**, ou retour à quatre clients > 10 %
+totalisant > 60 %.
+
+**Lisible au bilan condensé, en revanche** : stocks **114 jours de COGS,
+rigoureusement stables** sur deux trimestres → **ne signaler un problème
+qu'au-dessus de ~125 jours**, *jamais sur le montant absolu, qui monte
+mécaniquement avec le CA* ; DSO **45 j** → seuil d'alerte **55-60 j** ;
+provisions sur stocks (**0,8 Md$ au T1**), qui mangent directement les 75 %
+de marge brute.
+
+**🔍 Le rapprochement que personne ne fera à ma place** : mettre côte à côte
+**la croissance séquentielle d'ACIE** et **la variation de la ligne
+d'investissements** (titres de participation non cotés : **3,39 → 22,25 Md$
+en un an**, ×6,6 ; **> 40 Md$ engagés sur les quatre premiers mois de 2026**,
+dont 30 Md$ dans OpenAI, le Series E de xAI, 2 Md$ dans CoreWeave).
+> **ACIE est précisément le segment où se trouvent les clients que NVIDIA
+> finance. Si ACIE accélère pendant que la ligne d'investissements bondit,
+> la croissance affichée est en partie AUTOFINANCÉE** — et ce chiffre
+> d'affaires n'a pas la même qualité que celui d'Hyperscale.
+
+### 🇨🇳 Le piège symétrique de la plus-value SBM
+
+**La guidance T2 exclut TOUT CA compute Data Center Chine.** Si la guidance
+T3 **réintègre** la Chine, le pas séquentiel affiché sera mécaniquement
+supérieur **sans qu'un seul GPU de plus ait été demandé par le marché
+occidental**.
+> **Vérification obligatoire, en DIFF** : la phrase sur la Chine dans le
+> paragraphe *Outlook* a-t-elle changé par rapport au 20/05 ? *Se lit comme
+> un Risk Factor : c'est le changement de formulation qui informe, pas la
+> formulation.*
+
+### 🚫 Ce que je m'interdis d'avance
+
+- **Lire le a/a.** Base écrasée par la Chine, aucune information.
+- **Lire la réaction du cours comme un verdict.** **NVDA a baissé après
+  QUATRE publications « beat-and-raise » consécutives**, dont **−1,8 % le
+  20/05** après 81,6 contre 78 Md$ guidés. *C'est le soir où la tentation de
+  lire le cours sera maximale, et le soir où elle sera la plus fausse.*
+- **Crier au loup sur les stocks** en valeur absolue. Un faux positif ici me
+  décrédibiliserait sur les cinq autres points.
+
+### 🏭 Internalisation silicium — le calendrier tranche, pas l'opinion
+
+**La tension que je signalais (SpaceX sur Vera Rubin ET Terafab) n'en est
+pas une : ce sont deux horizons.** Terafab ne produit **rien avant fin
+2027**, **rien en volume avant 2028** — et le PDK Intel 14A v0.9 n'arrive
+qu'en **octobre 2026**, donc la conception ne peut pas commencer avant le
+T4 2026. **Zéro impact sur FY2027 et FY2028.**
+
+**La menace matérielle DANS la fenêtre est ailleurs, et elle est déjà
+partiellement dans les comptes** : **Google TPU (~4,3 M unités projetées en
+2026)**, **AWS Trainium 3 (GA décembre 2025, montée en cadence depuis le
+T2 2026)**, et surtout **Google↔Anthropic — jusqu'à 1 M de puces / > 1 GW en
+2026, puis jusqu'à 5 GW à partir de 2027**. *Un gigawatt non-NVIDIA est un
+gigawatt perdu.* Repère agrégé à suivre : **Broadcom guide > 100 Md$ de CA
+IA pour FY2027.**
+
+> **Tout cela se lira en NÉGATIF dans UNE seule ligne : la croissance
+> séquentielle d'Hyperscale.** Google, Amazon et Meta y sont logés. Nulle
+> part ailleurs.
+
+**Contexte d'entrée** : NVDA clôture **223,96 $ le 07/08** (+2,27 %), capi
+**5,42 T$** — contrôle `5,42e12 ÷ 223,96 = 24,2 Md titres` ✓. Plus haut de
+clôture historique **235,74 $ le 14/05** : le titre entre dans la
+publication à **~5 % de son sommet**, après un SOX à −21 % en juillet et des
+collectes record sur SMH/SOXX. **La barre est haute.**
+
+⚠️ **Limite de preuve assumée** : `sec.gov` bloqué (403), **aucun document
+primaire lu**. Les montants Hyperscale/ACIE sont de source secondaire — ils
+réconcilient au dollar près, ce qui est une forte présomption, pas une
+lecture. **Non tranché** : Hyperscale/ACIE/Edge sont-ils des segments
+reportables ASC 280 ou une simple désagrégation de CA ? (le 10-Q du T1 cite
+encore « Compute & Networking »). **Aucune information datée d'août 2026 sur
+les licences d'exportation Chine** — c'est le piège n°5 et il reste ouvert.
 | **07/08** | **Premiers résultats autonomes de Mobility Global (MBGL, NYSE)** — avant bourse, call 8h ET | Chasse CTO 27/07 : spin-off CARFAX de S&P Global, vendeurs FORCÉS (fonds S&P 500 non éligibles), ~11,6x EBITDA vs 18-22x les comparables. Entrée conditionnelle : cours ≤ 21 $ **ET** EBITDA aj. ≥ 175 M$ **ET** organique CARFAX ≥ +3 % **ET** guidance FY26 donnée. Test décisif : cash-flow opérationnel / EBITDA ajusté (levier 2,6x post-spin) |
 | 27/08 | **Résultats S1 IBA (IBAB, Bruxelles, PEA)** — cash-flow, marge, langage PanTera (lire en diff vs S1 2025) | Chasse profonde 27/07 : goulet actinium-225 — ⚠️ thèse RÉFUTÉE par l'Avocat (C010), suivi documentaire seulement |
 | **31/07/2026** (en vigueur) | 🔴 **DROITS DE DOUANE PHARMA SECTION 232 — structure à ÉTAGES** *(entrée corrigée le 04/08 : ma version du 03/08 était fausse sur le point le plus important)* | **Taux de tête : 100 % ad valorem** sur les médicaments de marque importés, en vigueur le **31/07/2026 pour les grands laboratoires** (29/09/2026 pour les autres). ⚠️ **MAIS ce taux ne s'applique PAS uniformément** — voir la structure ci-dessous. **Sujet n°1 du call Eli Lilly du 05/08.** Élément favorable à LLY : 750 M$ annoncés le 30/07 dans l'Ohio, dans un plan de ~55 Md$ d'investissements industriels américains présenté comme une réponse aux tarifs |
@@ -496,7 +671,7 @@ spécialisée », **pas texte réglementaire primaire**.
 | **29/09** | Section 232 pharma — entrée en vigueur pour les laboratoires **autres que les grands** | Seule échéance tarifaire encore devant nous |
 | **22/09** | **Résultats S1 complets SEMCO Technologies (ALSEM, Euronext Growth Paris, PEA)** | Chasse tech 03/08 : **écartée par T2 + T1 + T6**. Fabricant d'*electrostatic chucks* (mandrins qui maintiennent le wafer), fournisseur de rang 2 des équipementiers. CA S1 **19,9 M€ (+19,9 %)**, carnet **+30 %** [MONO-SOURCE], objectifs 2028 **confirmés et non relevés**. ⚠️ **Le tueur de fond est T6** : l'actionnaire de contrôle **ECM Technologies a cédé 10,8 % du capital à 45,00 € le 21/05/2026** (50 M€, placement accéléré) — *ce n'est pas un vendeur forcé, c'est l'initié le mieux informé qui révèle son prix de réserve*. Le 28/07 n'était qu'un **CA seul** : ni marge, ni cash-flow. Le 22/09 est la 1ʳᵉ vérification du **cash-flow face au capex** (automatisation + nouvelle usine) et de la marge EBIT > 40 % visée. **Ancrage naturel de réexamen : 45 €** |
 | **05/08** | **Résultats S1 Heineken (HEIA, Amsterdam, PEA)** | Univers émergents-PEA (`univers-emergents-pea.md`, groupe C) : ~45-50 % d'exposition émergente estimée ; Afrique/Moyen-Orient à **+15,7 % de CA et +62 % de résultat opérationnel** en 2025. Lecture documentaire, aucun dossier ouvert |
-| **12/08** | **Résultats S1 Sipef (SIP, Bruxelles, PEA)** | Univers émergents-PEA, **groupe B — le gisement** : 100 % des actifs en Indonésie/PNG/Côte d'Ivoire mais ventes facturées Suisse 34,3 % / Singapour 10,1 %, donc **structurellement mal classée par les screeners**. ⚠️ Titre déjà à son plus haut historique (101,40 €, ⅔ d'un mois de poche offensive pour UNE action) et flottant réduit. **À instruire, pas à acheter** |
+| ~~12/08~~ → **13/08** ⚠️ *(date corrigée le 09/08 : deux agrégateurs donnent le 13/08 ; référence 2025 = 14/08 ; sipef.com inaccessible)* | **Résultats S1 Sipef (SIP, Bruxelles, PEA)** | Univers émergents-PEA, **groupe B — le gisement** : 100 % des actifs en Indonésie/PNG/Côte d'Ivoire mais ventes facturées Suisse 34,3 % / Singapour 10,1 %, donc **structurellement mal classée par les screeners**. ⚠️ Titre déjà à son plus haut historique (101,40 €, ⅔ d'un mois de poche offensive pour UNE action) et flottant réduit. **À instruire, pas à acheter** |
 | **Fin août** | **Résultats S1 Mota-Engil (EGL, Lisbonne, PEA)** — réf. 27/08/2025 | Univers émergents-PEA, **groupe A** : **78 % du CA consolidé émergent** (Afrique 2 129 M€ +22 %, LatAm 2 006 M€ −33 %), backlog 16,2 Md€, ticket **4,67 €** — le meilleur profil de l'univers. Priorité n°1 à instruire : liquidité réelle et structure de dette d'un contract miner |
 | **Fin août** | **Résultats S1 Ageas (AGS, Bruxelles, PEA)** — réf. 27/08/2025 | Univers émergents-PEA, **groupe C** : **52 % du RÉSULTAT opérationnel net vient d'Asie** (860 M€ sur 1 650 M€), 26 M de clients asiatiques. Difficulté d'instruction : **JV non consolidées** → tester le cash qui remonte réellement à Bruxelles |
 | **08/09** | **Résultats S1 Rubis (RUI, Paris, PEA)** | Univers émergents-PEA : 87 % du CA hors Europe développée. ⚠️ Dossier écarté le 31/07 (récit de gouvernance issu d'un site SEO, démenti par l'AG du 10/06) — suivi documentaire |
@@ -531,6 +706,12 @@ spécialisée », **pas texte réglementaire primaire**.
 
 | Date | Événement | Impact |
 |---|---|---|
+| **27-29/08** | 🔴 **JACKSON HOLE — PREMIER DISCOURS DE KEVIN WARSH comme président de la Fed.** Thème : *« Financial Innovation: Implications for Payments and Policy »* [MONO-SOURCE, à reconfirmer] | **Événement structurant de la fin du mois, et il tombe le LENDEMAIN de Nvidia.** Dans un régime où le débat porte sur une **hausse** de taux (~42-44 % de probabilité en septembre), le premier Jackson Hole d'un nouveau président fixe le cadre. *Manqué au radar jusqu'au 09/08* |
+| **12/08, 14h30** | **CPI américain de juillet** — consensus **3,4 %** a/a, sous-jacent **2,5 %** [MONO-SOURCE] | Juin : headline **−0,4 % m/m / +3,5 % a/a** (contre 3,8 % attendus, plus forte baisse mensuelle depuis 2020, énergie −5,7 %) ; sous-jacent **0,0 % m/m / 2,6 % a/a**. **Appel C045 ouvert** |
+| **13/08, 14h30** | PPI américain de juillet — consensus +0,1 % m/m [MONO-SOURCE] | Juin : **−0,3 % m/m, +5,5 % a/a** contre 6,2 % attendus |
+| **14/08** | Ventes au détail US 14h30 (**consensus formel non publié**) · PIB zone euro T2 2ᵉ estimation ~11h00 (flash +0,4 % t/t) · Michigan prélim. 16h00 | — |
+| **18/08** | Production industrielle US 15h15 | *Manqué au radar jusqu'au 09/08* |
+| **19/08** | Inflation FINALE zone euro (flash du 31/07 : **2,9 %** contre 2,8 % en juin) | *Manqué au radar jusqu'au 09/08* |
 | 10/09 | **BCE** (~93 % proba hausse à 2,50 %) | Taux euro, valeurs domestiques FR |
 | 15-16/09 (à confirmer) | FOMC | Macro globale |
 | 21/09 | **Reclassement FTSE du Vietnam en « émergent »** | Watchlist XFVT — catalyseur daté |
