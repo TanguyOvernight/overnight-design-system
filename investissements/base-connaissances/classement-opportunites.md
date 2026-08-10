@@ -41,44 +41,55 @@ pas pour son rang.
 
 ---
 
-## CLASSEMENT AU 07/08/2026
+## CLASSEMENT AU 10/08/2026
 
 Statut : 🟢 déclencheur proche/actionnable · 🟡 en attente d'un événement
 daté · ⚪ surveillance longue · 🔴 sous le hurdle, conservée pour mémoire
 
-⚠️ **Fiabilité des cours : DÉGRADÉE, 12ᵉ jour.** 403 au CONNECT sur 100 %
+⚠️ **Fiabilité des cours : DÉGRADÉE, 16ᵉ jour.** 403 au CONNECT sur 100 %
 des hôtes. **Aucun cours ci-dessous n'a la qualité « clôture officielle »
 sauf mention expresse — à revérifier chez le courtier avant tout ordre
 exprimé en prix.** Les ordres exprimés en MONTANT ne sont pas affectés.
 
-### 🎣 Le coût réel du blocage, mesuré aujourd'hui : **5 lignes sur 8 n'ont AUCUN cours d'août**
+### ✅ NETTE AMÉLIORATION DU CANAL — 3 lignes sur 8 ont enfin un ancrage propre
 
-Séché, Aubay, STM, Nike et l'Or n'ont pas de clôture datée d'août
-vérifiable. Ce ne sont pas des trous cosmétiques : **ce sont les cinq
-lignes dont le déclencheur est un prix.**
+Le blocage réseau n'a pas bougé, mais **la méthode a progressé** : là où je
+cherchais des cotations, je reconstruis désormais les prix par des chemins
+que le canal dégradé n'atteint pas.
 
-**Et les archives ne sont pas neutres — elles sont biaisées vers le
-déclenchement.** Trois faux positifs démasqués aujourd'hui, tous allant
-dans le sens d'un achat à tort :
+| Ligne | Chemin de reconstruction | Résultat |
+|---|---|---|
+| **Séché** | `capi 624,16 M€ (04/08) ÷ 7 857 732 titres (déclaration AMF du 01/08)` | **79,43 €** — et il colle au centime à la transaction déclarée du 13/07 (79,40 €) |
+| **STM** | STM et STMPA sont **la même action** (NL0000226223), arbitrée : `clôture NYSE 56,10 $ ÷ EUR/USD 1,1550`, les deux datées du 07/08 | **48,57 €**, validé par `capi 50,023 Md$ ÷ 56,10 = 891,7 M titres` |
+| **Nike** | clôture horodatée **16:00:02 EDT**, validée par `61,86 Md$ ÷ 41,70 = 1,4834 Md titres` | **41,70 $** |
+
+> 🔑 **La leçon vaut au-delà du jour** : quand le canal des cotations est
+> mort, **les déclarations réglementaires (nombre de titres), les
+> capitalisations datées et les cotations d'une AUTRE place reconstituent
+> un prix que la page de cotation ne donne plus.** Trois chemins, aucun
+> n'est une page de cotation.
+
+**Restent sans ancrage propre** : **Aubay** (aucun cours d'août, 3ᵉ semaine —
+le « 54,30 € +1,69 % » et la capi de 692 M€ **viennent du même instantané
+non daté**, ce n'est donc PAS un double ancrage), **Magnum** (capi étiquetée
+« août » sans jour), **l'or** (deux valeurs de la même famille de sources).
+
+### 🎣 Trois faux positifs désamorcés, et le troisième est maintenant EXPLIQUÉ
 
 | Faux chiffre | Ce qu'il aurait produit | Ce qu'il est réellement |
 |---|---|---|
-| STM « 42,90 € » | +2,1 % du déclencheur → **fast-track d'Arbitre** | archive de fin juillet |
-| STM « 49,56 € » | cohérent-en-apparence | **clôture du 23/07**, jour des résultats T2 (−14,9 %) |
-| Magnum « 6,56 Md€ » | **SOUS le seuil de 7,6 Md€ → réouverture du dossier** | capi non datée, probablement un point bas du S1 |
+| STM « 46,17 € » *(que j'ai retenu vendredi)* | un écart au seuil sous-estimé de 4 points | **page affichant cours = clôture précédente : instantané GELÉ, indatable** |
+| LLY « 1 148,61 $ » *(que j'ai PUBLIÉ le 07/08)* | +35,8 % au lieu de +40,2 % | **très probablement la clôture du 31/07** — un chiffre de juillet mal daté en août |
+| Magnum « 6,56 Md€ » | **sous le seuil → réouverture à tort** | ✅ **arithmétique établie** : la page affiche « 7,67 Md$ (6,56 Md€) », soit un taux implicite de **1,169** contre un EUR/USD réel de **1,1550**. **Capi périmée ET taux périmé** |
 
-> **Un canal dégradé qui produirait du bruit symétrique serait sans
-> conséquence : on perdrait des occasions autant qu'on en fabriquerait.
-> Or les trois erreurs du jour poussent TOUTES à l'achat.** Motif
-> mécanique : un déclencheur est un prix BAS, et une archive est d'autant
-> plus susceptible d'être servie qu'elle correspond à un épisode de
-> volatilité — c'est-à-dire à un point bas. **Le canal est biaisé dans le
-> sens exact où il coûte le plus cher.**
+> **Le biais reste orienté dans le même sens : les trois erreurs
+> rapprochaient un déclencheur.** Motif mécanique inchangé — un déclencheur
+> est un prix BAS, et une archive est d'autant plus servie qu'elle
+> correspond à un épisode de volatilité.
 >
 > Conséquence de discipline : **aucun ordre exprimé en prix n'est
-> exécutable tant que le canal n'est pas réparé.** Les ordres en MONTANT
-> (cœur, or) restent parfaitement sûrs — et c'est une raison de plus de
-> faire avancer le PEA pendant que la chasse est à l'arrêt.
+> exécutable sans revérification chez le courtier.** Les ordres en MONTANT
+> (cœur) restent parfaitement sûrs.
 
 ⚠️ **Incident non résolu, reporté : la clôture LLY du 03/08.** Deux valeurs
 circulent, **chacune internement cohérente mais mutuellement
@@ -93,13 +104,13 @@ fabrique pas de lignes pour tenir le compte.
 | Rang | Candidate | Env. | Situation vs déclencheur | Prochaine échéance | Statut | Mvt |
 |---|---|---|---|---|---|---|
 | **①** | **Cœur World** (hurdle 5 %/an net) | **PEA Fortuneo — OUVERT le 07/08, NON ALIMENTÉ** | 🟢 **Le blocage a changé de nature.** Le PEA existe ; il attend son **premier virement**, qui se pousse depuis la banque externe (pas de bouton dans l'app). ⏱️ **L'horloge fiscale des 5 ans démarre au PREMIER VERSEMENT, pas à l'ouverture — elle n'a donc pas démarré.** Budget d'août : **1 000 €** (C025 résolu ❌ : l'ordre de juillet n'a pas été exécuté, les 500 € se reportent) | **immédiat** | 🟢 | = |
-| **②** | **Or** (assurance) | CTO | **~4 262 $/oz** (06/08, ⚠️ *spot post-clôture 21h22 EDT, PAS une clôture*) — **+4,0 %** en deux jours, plus haut de 7 semaines, 4ᵉ séance de hausse. Écart à la politique toujours maximal : **0 % détenu contre une cible de 5-10 %** | **immédiat** | 🟢 | = |
-| **③** | **Séché Environnement** | PEA | ~79-81 € vs ≤ 90 € — **seule ligne SOUS son prix visé**. ⚠️ *aucune clôture d'août indexée ; seul point dur = **79,40 €**, prix d'une transaction réelle déclarée à l'AMF le 13/07 (SMC53 SAS, personne liée)*. 🔴 **L'arrêté PFAS n'est TOUJOURS pas paru** — même formulation « été 2026 » qu'en avril, pour une application au 01/01/2027 : la fenêtre se referme dans ~6 semaines | S1 **09/09**, butée 30/09 | 🟡 | **=** |
-| **④** | **Eli Lilly** | CTO | ✅ **1 148,61 $ — CLÔTURE OFFICIELLE du 05/08 réconciliée** (+2,95 %) vs seuil **846,00 $** → **+35,8 %** *(contre +31,9 % au 04/08)*. ⚠️ **Le « ~1 170 $ / +38 % » publié hier était un PRÉ-MARCHÉ : 2 des 6 points d'aggravation étaient à moi, pas au marché.** T2 : CA **22,974 Md$ (+47,7 %)**, guidance CA relevée de 3 Md$ à **85,0-87,0 Md$** *(et non 85-86 — corrigé)*, guidance BPA publiée **abaissée** par 3,03 $ d'IPR&D | contrôle **05/09** · butée 06/11 | 🟡 | **= (conservé)** |
-| **⑤** | **Magnum Ice Cream** | PEA | **~9,75 Md€ vs ≤ 7,6 Md€ (+28,3 %)** — repli de **−22,1 %** requis. PASSE, réouverture sur fait. ⚠️ **Faux positif désamorcé** : une capi de **6,56 Md€** circule chez un agrégateur, **non datée et SOUS mon seuil** — elle aurait déclenché une réouverture à tort. Écartée au profit de 11,40 Md$ ÷ 1,169 | aucune (fait, pas date) | 🔴 | **=** |
+| **②** | **Or** (assurance) | CTO | **~4 328 $/oz** (10/08) [MONO-SOURCE, pas de second ancrage de nature différente] — la fourchette non tranchée de vendredi (4 315-4 358 $) se resserre sur le **bas-milieu**. 🔴 **Mais le garde-fou R (43,9 % > 35 %) INTERDIT tout achat d'or ce mois-ci** : l'or est classé non-cœur, en acheter aggraverait l'écart. Reprend dès que R repasse sous 30 %, c'est-à-dire dès le 1ᵉʳ ordre. Écart à la politique toujours maximal : **0 % détenu contre une cible de 5-10 %** | **immédiat** | 🟢 | = |
+| **③** | **Séché Environnement** | PEA | ✅ **79,43 € au 04/08** — **seule ligne SOUS son prix visé, −11,7 %**. Ancrage propre par capitalisation : `624,16 M€ (04/08) ÷ 7 857 732 titres (01/08, déclaration AMF) = 79,43 €`, **cohérent au centime près avec la transaction déclarée du 13/07 (79,40 €)**. ⚠️ *3ᵉ semaine sans clôture d'août au sens strict ; deux cours de 84,20 € et 82,60 € rejetés — non datés ET arithmétiquement incompatibles avec la capi qui les accompagne*. 🔴 **L'arrêté PFAS n'est TOUJOURS pas paru** — même formulation « été 2026 » qu'en avril, pour une application au 01/01/2027 : la fenêtre se referme dans ~6 semaines | S1 **09/09**, butée 30/09 | 🟡 | **=** |
+| **④** | **Eli Lilly** | CTO | 🔴 **CONFLIT TRANCHÉ CONTRE MON CHIFFRE. Clôture du 05/08 = 1 169,86 $**, et non 1 148,61 $. Au 07/08 : **~1 185,85 $** [MONO-SOURCE] → **+40,2 %** au-dessus du seuil de 846 $ *(et non +35,8 % comme publié le 07/08)*. ⚠️ **Déclencheur de déclassement à +45 % le 05/09 : il ne manque que 4,8 points.** T2 : CA **22,974 Md$ (+47,7 %)**, guidance CA relevée de 3 Md$ à **85,0-87,0 Md$** *(et non 85-86 — corrigé)*, guidance BPA publiée **abaissée** par 3,03 $ d'IPR&D | contrôle **05/09** · butée 06/11 | 🟡 | **= (conservé)** |
+| **⑤** | **Magnum Ice Cream** | PEA | **~9,87 Md€ vs ≤ 7,6 Md€ (+29,9 %)** — `11,40 Md$ ÷ 1,1550`. PASSE, réouverture sur fait. ✅ **Le faux positif du « 6,56 Md€ » est maintenant EXPLIQUÉ arithmétiquement** : la page affiche « 7,67 Md$ (6,56 Md€) », soit un taux implicite de **1,169**, incompatible avec l'EUR/USD réel de **1,1550** au 07/08. **Capi périmée ET taux périmé.** Deutsche Bank abaisse son objectif de 14,50 à 13,50 € | aucune (fait, pas date) | 🔴 | **=** |
 | **⑥** | **Aubay** (ESN) | PEA | ~54,30 € vs ≤ 50 € (**+8,6 %**) — s'éloigne pour une **bonne** raison. S1 confirmé : CA **351,8 M€, +11,4 % organique** ; T2 **+12,2 % organique** ; international **intégralement organique** (+12,0 % au T2) ; **objectifs 2026 relevés**. ⚠️ *aucune clôture d'août ; un « 57 € » circule, rattaché au flux du 23/07* | T3 fin oct. | ⚪ | **=** |
-| **⑦** | **STM** (semi) | PEA | **46,89 €** (05/08) vs **≤ 42 €** → **+11,6 %** *(ligne périmée corrigée : elle affichait encore 44,62 € du 30/07)*. 🎣 **TROIS chiffres STM circulent — 42,90 / 49,56 / 52,60 € — et les TROIS sont des archives** : le 49,56 € est la clôture du **23/07**, jour des résultats T2 (−14,9 %) | Q3 fin oct. | 🔴 | **=** |
-| **⑧** | **Nike** | CTO | **42,45 $** (05/08) [MONO-SOURCE, sans variation % ni second ancrage — indicatif] — contrat retiré, veille sans contrat | ~fin sept. | 🔴 | **=** |
+| **⑦** | **STM** (semi) | PEA | 🔴 **~48,57 € au 07/08 vs ≤ 42 € → +15,6 %. La ligne S'ÉLOIGNE** *(et le « 46,17 € » retenu vendredi ne tient pas : page affichant cours = clôture précédente, instantané gelé)*. 🔑 **Méthode nouvelle et propre** : STM et STMPA sont **la même action** (NL0000226223), arbitrée entre NYSE et Paris → `clôture NYSE 56,10 $ ÷ EUR/USD 1,1550 = 48,57 €`, les deux datés du 07/08 ; capi 50,023 Md$ ÷ 56,10 = **891,7 M titres** ✓. Reconstruction du 06/08 : **46,91 €** → **+3,5 % sur la séance de vendredi**. ⚠️ *Dérivé, pas observé : aucune cotation Paris en euros datée* | Q3 fin oct. | 🔴 | **=** |
+| **⑧** | **Nike** | CTO | ✅ **41,70 $ — clôture officielle horodatée du 07/08, 16:00:02 EDT**, validée par capi `61,86 Md$ ÷ 41,70 = 1,4834 Md titres` ✓. **−1,77 % en deux séances** — contrat retiré, veille sans contrat | ~fin sept. | 🔴 | **=** |
 
 ### Justification écrite de chaque mouvement
 
