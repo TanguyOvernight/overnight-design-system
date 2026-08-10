@@ -770,6 +770,35 @@ déclarée**.
 > dans le prix** — aucun edge à courir derrière. **Rendez-vous inchangé :
 > T3, fin octobre.**
 
+## 🔴 VEILLE NON DATÉE — la décision JEDEC sur l'épaisseur des packages HBM
+
+**Aucune date publique. Et pour tout le complexe du packaging avancé, elle
+vaut plus que n'importe quelle publication de résultats.**
+
+Des membres du JEDEC — **dont Samsung Electronics et SK Hynix** — discutent
+depuis le **15/07/2026** de **relever la limite d'épaisseur des packages HBM
+de prochaine génération**. Si la contrainte se relâche, les fabricants de
+mémoire **restent sur le micro-bump/TCB et repoussent l'adoption du collage
+hybride**.
+
+> 🔑 **La leçon de méthode, encodée le 10/08** : j'avais qualifié
+> l'assemblage de *« péage indifférent au vainqueur de la guerre des
+> puces »*. **Vrai de l'assemblage en général, FAUX du collage hybride** —
+> qui n'est pas une obligation physique mais **un choix de norme**.
+> **Un péage qu'un comité de normalisation peut supprimer n'est pas un
+> péage : c'est une option sur une norme.**
+>
+> **Règle** : avant de qualifier une position de « péage », vérifier s'il
+> existe un chemin technique **ou normatif** qui le contourne. Un goulet
+> physique et un goulet conventionnel ne se valorisent pas pareil.
+
+**Conséquence directe** : c'est le déclencheur binaire du dossier **BESI**
+(kill confirmé le 10/08 — réouverture sur décision JEDEC tranchée, ou
+commande mémoire annoncée nommément, ou prix < ~140 €). Prochain rendez-vous
+BESI : **22/10/2026, 07h00 CET**, où la mise à jour « commandes collage
+hybride mémoire » sera de nouveau attendue — **son omission au 23/07 a fait
+reculer le titre malgré des chiffres records.**
+
 ## Conditions de marché à surveiller (non datées, seuils du mandat)
 
 - Brent **> 100 $ durable** → scénario réduction de voilure (cf. mandat).
