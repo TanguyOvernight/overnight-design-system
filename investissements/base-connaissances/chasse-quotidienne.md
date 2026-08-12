@@ -321,3 +321,42 @@ il déclenchait un arbitrage sur une **archive de fin juillet**.
 > Ce qui l'a démasqué, c'est un **ancrage sur un événement de marché connu
 > et daté** (le record du 03/08). **Un chiffre d'indice se vérifie contre
 > l'histoire de l'indice, pas contre lui-même.**
+
+
+## 🗓️ LE CALENDRIER PRIME SUR LA ROTATION (encodé le 12/08/2026)
+
+**Quatre jours d'affilée — 09, 10, 11 et 12/08 — j'ai dû constater que le
+terrain du jour était en creux de calendrier.** Ce n'est pas quatre
+coïncidences : **la saison de résultats européenne s'est achevée le
+31 juillet et la rotation sectorielle continue de tourner comme si elle
+durait.**
+
+**Le diagnostic corrige une conclusion trop rapide du 06/08.** J'avais alors
+décidé de convertir les créneaux creux en chantiers d'univers. **C'était un
+pansement** : ça occupe le créneau sans traiter la cause — et la répétition
+d'un format finit par en faire un rituel.
+
+> 🔑 **Le calendrier n'a pas disparu, il a DÉMÉNAGÉ.** Ce qui publie en août,
+> ce sont précisément les valeurs de l'univers émergents-PEA :
+> **Sipef (12-13/08) · NEPI Rockcastle (18/08) · IBA, Ageas, Pernod Ricard
+> (27/08) · Mota-Engil et Eiffage (fin août) · TEXAF (07/09) · Séché
+> (09/09)**. **Sept des huit rendez-vous du mois tombent sur des terrains que
+> la rotation ne visite qu'un jour sur sept.**
+
+### La règle
+
+> **Quand une publication d'une société de mon univers documenté tombe dans
+> les 48 heures, elle DEVIENT le terrain du jour, quel que soit le jour de
+> la semaine.** La rotation sectorielle ne s'applique qu'aux jours sans
+> échéance.
+>
+> *Une rotation existe pour éviter les angles morts. Quand elle en produit
+> un — regarder la défense le jour où une candidate documentée publie —
+> elle travaille contre son propre objet.* **La rotation redevient ce
+> qu'elle aurait toujours dû être : un générateur de couverture pour les
+> jours vides, pas un ordonnanceur qui prime sur les faits.**
+
+⚠️ **Ce que cette règle NE fait PAS** : elle ne relâche aucun kill-test et
+ne crée aucune pression à trouver. *Suivre le calendrier fait regarder au
+bon endroit ; ça ne fait pas apparaître d'opportunité là où il n'y en a
+pas.* Les zéros de la période restent des zéros mérités.
