@@ -770,6 +770,8 @@ déclarée**.
 > dans le prix** — aucun edge à courir derrière. **Rendez-vous inchangé :
 > T3, fin octobre.**
 
+| **~19/08/2026** ⚠️ *date calculée, à confirmer* | 🔴 **EXPIRATION DU LOCK-UP D'ARCELORMITTAL SUR ~17,3 % DE VALLOUREC** | **Le fait que personne n'a relié à la guidance dégradée du 30/07.** ArcelorMittal — actionnaire industriel **siégeant au conseil** — a vendu **10,0 % du capital à 24,00 € le 19/05/2026** avec un lock-up de **90 jours calendaires** depuis un règlement attendu vers le 21/05. **Il redevient libre de céder 17,3 % de plus sur un titre à ~18,54 € (07/08), soit 23 % SOUS son propre prix de sortie.** Le titre avait déjà chuté de ~10 % le jour du placement de mai. ⚠️ **Lecture** : ce n'est pas un signal d'achat, c'est **une date à ne pas ignorer avant d'acheter sur faiblesse**. *Les institutionnels servis à 24 € en mai sont de l'offre potentielle, pas des alliés.* À confirmer sur le prospectus (inaccessible, 403) |
+
 ## 🔴 VEILLE NON DATÉE — la décision JEDEC sur l'épaisseur des packages HBM
 
 **Aucune date publique. Et pour tout le complexe du packaging avancé, elle
