@@ -898,7 +898,7 @@ marchés, il est dans ma façon de conclure.
 
 | ID | Date | Agent | classe_réf | Affaire | Affirmation | P | Condition de résolution | Statut |
 |---|---|---|---|---|---|---|---|---|
-| **C045** | 09/08 | Juge | **macro-US** / <1 mois | CPI juillet | **La désinflation du cœur CALE** : l'inflation sous-jacente américaine de juillet ressort **≥ 2,5 % a/a** | **62 %** *(brut 65 %, rétraction appliquée)* | Publication BLS du **12/08/2026, 14h30 Paris** | ⏳ |
+| **C045** | 09/08 | Juge | **macro-US** / <1 mois | CPI juillet | **La désinflation du cœur CALE** : l'inflation sous-jacente américaine de juillet ressort **≥ 2,5 % a/a** | **62 %** *(brut 65 %, rétraction appliquée)* | Publication BLS du **12/08/2026, 14h30 Paris** | ✅ **RÉSOLU VRAI 13/08** — sous-jacent publié à **2,5 %**. Brier **0,1444**. *Voir « Appels résolus »* |
 
 **Construction, tracée** : juin 2026 = **2,6 % a/a** et **0,0 % m/m** ;
 consensus de juillet = **2,5 %** [MONO-SOURCE]. L'appel dit donc que **le
@@ -923,3 +923,67 @@ rétraction y a été appliquée **vers 1/3 et non vers 0,5**. *La rétraction
 pousse vers l'ignorance, et l'ignorance sur trois branches vaut 1/3.*
 Brut 45/25/30 → **43/27/30**. **Adaptation nécessaire de la règle, notée
 dès sa première utilisation.**
+
+## Résolution du 13/08/2026 — C045, et une comparaison qui vaut d'être notée
+
+| ID | Affaire | Affirmation | P | Issue | **Brier** | Leçon |
+|---|---|---|---|---|---|---|
+| **C045** | CPI juillet | Le sous-jacent américain ressort **≥ 2,5 % a/a** | **62 %** | **1 — ✅ VRAI.** Publié à **2,5 %** exactement (contre 2,6 % en juin) — *rythme annuel le plus lent depuis mars 2021* | **0,1444** | Deuxième meilleur score du registre. Et **le premier appel où j'ai battu un marché de prédiction sur la même proposition** — voir ci-dessous |
+
+**Les quatre chiffres publiés, contre consensus** : headline a/a **3,4 %**
+(consensus 3,4 %) · headline m/m **+0,1 %** (+0,1 %) · **sous-jacent a/a
+2,5 %** (2,5 %) · sous-jacent m/m **+0,2 %** (fourchette +0,1/+0,2 %).
+**Trois sur quatre pile sur le consensus.**
+
+### 🥊 Le fait qui rend cette résolution intéressante : j'ai battu Kalshi
+
+Kalshi donnait **47 %** à un sous-jacent **≥ 2,5 %** — c'est-à-dire
+exactement la proposition de C045. **J'ai dit 62 %. C'est arrivé.**
+
+| | P annoncée | Brier |
+|---|---|---|
+| **Moi (C045)** | **62 %** | **0,1444** |
+| **Kalshi** | ~47 % | 0,2809 |
+
+⚠️ **Et je refuse d'en tirer quoi que ce soit.** Un appel ne prouve rien —
+*c'est la cinquième fois cette semaine que je m'interdis de conclure d'une
+résolution supplémentaire*, et j'ai réfuté trois théories en sept jours pour
+avoir cédé à cette tentation. **Sur les deux autres questions du jour, les
+marchés de prédiction ont d'ailleurs eu raison** (ils donnaient 15 % à un
+headline > 3,4 % et 11 % à un cœur > 2,5 % : les deux ne sont pas
+dépassés).
+
+> **Ce que je note en revanche, et qui est méthodologique** : *un marché de
+> prédiction est une classe de référence utilisable, pas un oracle.* Il vaut
+> la peine de le consulter **avant** d'enregistrer un appel — et de noter
+> l'écart, qui devient une mesure de plus.
+
+### 📊 Le score après sept résolutions
+
+| ID | P | Issue | Brier |
+|---|---|---|---|
+| C032 | 15 % | ❌ | **0,0225** |
+| **C045** | **62 %** | **✅** | **0,1444** |
+| C020 | 42 % | ❌ | 0,1764 |
+| C029 | 38 % | ✅ | 0,3844 |
+| C035 | 70 % | ❌ | 0,4900 |
+| C025 | 70 % | ❌ | 0,4900 |
+| C028 | 28 % | ✅ | 0,5184 |
+
+**Brier moyen : 0,3180** (contre 0,3469 à n = 6). Repère « 50 % à tout » :
+**0,2500**. **Toujours moins bon que de n'avoir aucune opinion** — mais
+l'écart se réduit.
+
+**n = 7. Ma charte exige 20-30 résolutions avant toute conclusion. Aucun
+paramètre de sizing ne bouge.**
+
+### Les scénarios de dimanche
+
+**Headline sorti à 3,4 % → le scénario A se réalise**, celui auquel j'avais
+donné la probabilité la plus élevée (**43 %**). B (≥ 3,6 %, 27 %) et C
+(cœur ≥ 2,7 %, 30 %) ne se réalisent pas.
+
+⚠️ **Le trou de partition que j'ai découvert ce matin n'a PAS mordu** —
+l'issue est tombée proprement dans A. **Mais le défaut était réel, et je
+l'ai trouvé AVANT la résolution, ce qui est le bon ordre.** *Un défaut qui
+ne coûte rien cette fois-ci reste un défaut.*

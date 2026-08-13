@@ -80,6 +80,36 @@ session.
 | **Prochaine publication** | **S1 2026 fin août** (réf. 27/08/2025) | Q3 2026 (S1 publié le 29/07) | Q3 2026 (Q2 publié le 30/07) |
 | **Drapeaux** | Backlog 16,2 Md€ ; objectif 2026 CA +10-15 %, marge EBITDA 18 % ; T1 2026 RN 35 M€ (+31 %, record). **LatAm −33 % (fin du Tren Maya) compensée par l'Afrique** | Déflation alimentaire polonaise citée dans les slides S1 2026 | Proche du plus haut 52 semaines |
 
+## 🔴 CORRECTION MAJEURE À LA THÈSE DU GROUPE B (13/08/2026)
+
+**L'anomalie de facturation explique pourquoi ces sociétés sont
+SOUS-SCREENÉES. Elle n'explique PAS pourquoi elles seraient MAL
+VALORISÉES.** Ce sont deux choses différentes, et j'ai construit tout ce
+référentiel en les confondant.
+
+**Le cas qui l'a révélé** : Sipef, dont la facturation Suisse 34,3 % /
+Singapour 10,1 % trompe effectivement tous les écrans quantitatifs — **mais
+qui est suivie en continu par la presse financière belge**, les courtiers
+locaux et des forums dédiés.
+
+> 🔑 **Le terrain est invisible aux ROBOTS, pas aux BELGES.**
+>
+> *L'invisibilité aux screeners n'est pas de la négligence analytique.* Une
+> société peut être absente de tous les filtres quantitatifs et parfaitement
+> couverte par les humains qui comptent — c'est-à-dire par ceux qui fixent
+> son prix.
+
+**Conséquence sur la façon d'instruire ce groupe** : le test T6
+(« pourquoi moi ? ») **ne peut plus être considéré comme satisfait par
+l'anomalie de classification seule.** Il faut désormais montrer, en plus,
+**qu'aucune communauté d'investisseurs locale ne couvre le dossier** — ce
+qui est une exigence bien plus dure, et qui disqualifiera probablement les
+sociétés belges et néerlandaises du groupe.
+
+*Les candidates les plus prometteuses de ce référentiel deviennent donc
+celles dont la place de cotation est la MOINS dotée en presse financière
+locale, pas celles dont le reporting est le plus trompeur.*
+
 ## 🔬 SCISSION DU GROUPE B EN **B1 / B2** — contribution du chantier du 07/08/2026
 
 Le groupe B était défini par une seule anomalie. Le chantier du 07/08 en a
@@ -128,10 +158,10 @@ fait apparaître **une seconde, distincte et plus radicale** :
 | **Capitalisation** | ~**1,07 Md€** | **1,618 Md€** ÷ 201 261 570 actions = 8,04 € ✓ cohérent | ~**1,7 Md€** (÷ 59,30 € = 28,7 M titres ✓) |
 | **Exposition** | **Actifs : 100 %** — 85 814 ha Indonésie / Papouasie-NG / Côte d'Ivoire. ⚠️ *Ventes par destination* : Indonésie 45,6 %, **Suisse 34,3 %, Singapour 10,1 %** — **NE PAS lire ce split comme une exposition développée** | **Production : 100 %** — Gabon 14 662 b/j, Venezuela 8 194 b/j, Angola 4 289 b/j. CA 2025 : 578 M$ | **Actifs ~100 %** — manganèse Gabon (EBITDA 371 M€), nickel Weda Bay Indonésie, lithium Centenario Argentine. Ventilation CA par destination **non trouvée** (3 formulations) |
 | **Secteur** | Huile de palme, bananes, thé | Exploration-production pétrolière | Mines et métaux (Mn, Ni, Li) |
-| **Prix unitaire** | **101,40 €** ⚠️ **⅔ d'un mois de poche offensive pour UNE action** ; 1ᵉʳ passage au-dessus de 100 € de son histoire | **8,12 €** | **59,30 €** |
+| **Prix unitaire** | 🔴 **CORRIGÉ le 13/08 — mon ancrage était MAL DATÉ.** Le 101,40 € date du **20 mai 2026**, pas de fin juillet, et ce n'était pas « le 1ᵉʳ passage au-dessus de 100 € ». Fourchette 52 sem. **61,20-103,60 €**. **Prix réel au 12/08 : 92,70 €**, double-ancré (`capi 981 M€ ÷ 10,6 M = 92,55 €`, écart 0,16 %) — soit **~10 % SOUS le sommet**. ⚠️ *Premier ancrage de ma propre liste signalé comme suspect par un agent* | **8,12 €** | **59,30 €** |
 | **Liquidité** | non mesurée — **flottant réduit** (contrôle Ackermans & van Haaren) | non mesurée — **Pertamina majoritaire, flottant faible** | non mesurée |
 | **Prochaine publication** | **S1 2026 le 12/08/2026** | S1 publié : CA 366 M$ (+27 % vs S2 2025) | S1 publié : CA ajusté 1,65 Md€ (+8 %, +14 % pcc) |
-| **Drapeaux** | 2025 : CA 570,4 M$ (+28 %), RN 125,4 M$ (+91 %). **T1 : déjà au plus haut historique** | **T6 : contrepartie dominée par un actionnaire d'État étranger** ; risque Venezuela | 🔴 **T4 GRAVE** : dette nette 1,9 Md€ fin 2025 (**+49 %**), recherche de fonds, crise de gouvernance, tensions minières en Indonésie |
+| **Drapeaux** | ✅ **S1 2026 publié le 13/08 — GUIDANCE RELEVÉE** : résultat récurrent 2026 attendu **SUPÉRIEUR** au record de 2025 (contre « largement en ligne » au T1). Production CPO **+6,9 %**, bananes +9,4 %. **Part vendue à terme : 33 % à 1 267 $/t contre 36 % à 827 $/t un an plus tôt → prix contracté +53 %.** FCF 6 mois **+32,3 M$** malgré une ponction de 37,3 M$ sur le BFR ; **bilan sans dette**, position financière nette +124,5 M$ ; capex concentré au S2. ⚠️ **MAIS le S1 ne fait que +4,3 % de résultat net : la guidance relevée n'est pas VALIDÉE par le semestre, elle est PARIÉE sur le suivant.** 💱 **Et le « recul » du consensus (10,35 € contre 10,68 €) est un ARTEFACT DE CHANGE, pas un pari baissier** : en dollars le résultat progresse, en euros il stagne — l'euro passe de ~1,108 à ~1,152, soit −3,8 %. **Pour un investisseur en euros, le risque résiduel est le CHANGE, pas la palme.** 🔴 CPO à **RM 4 748 (11/08), plus haut de clôture en 4 mois**, au-dessus de la fourchette prévue par l'organisme professionnel — configuration du piège de valorisation. Soutien B50 indonésien = plancher **politique**, révocable. **VERDICT : à instruire en priorité, PAS à acheter** | **T6 : contrepartie dominée par un actionnaire d'État étranger** ; risque Venezuela | 🔴 **T4 GRAVE** : dette nette 1,9 Md€ fin 2025 (**+49 %**), recherche de fonds, crise de gouvernance, tensions minières en Indonésie |
 
 ## GROUPE C — exposition substantielle non majoritaire, ou par le résultat
 
