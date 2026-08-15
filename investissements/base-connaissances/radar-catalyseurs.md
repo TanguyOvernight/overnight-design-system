@@ -395,7 +395,35 @@ post-événement est indistinguable d'une rationalisation.
   → volontairement **pas de ligne radar**, pour ne pas déguiser une attente
   indéfinie en discipline. Appels C022/C023.
 
-## Sous 7 jours 🔥
+## Sous 7 jours 🔥 — **RAFRAÎCHI LE 15/08/2026**
+
+> ⚠️ **Défaut d'hygiène corrigé aujourd'hui** : cette table affichait encore
+> les échéances du **29-31 juillet**, périmées depuis plus de deux semaines,
+> pendant que les vraies échéances de la semaine vivaient dans les tables
+> « Août » et « Septembre » plus bas. **Une table intitulée « sous 7 jours »
+> qui ne contient rien des 7 prochains jours est pire qu'absente : elle
+> rassure.** L'ancien contenu est conservé sous « Historique » ci-dessous.
+
+| Date | Événement | Impact / ce que j'en fais |
+|---|---|---|
+| **17/08** | 🔴 **Butée de données du 10-Q T2 de Lilly (SEC)** | **Résout C034** (FCF S1 2026 croissant au moins aussi vite que le CA, et ≥ 5,5 Md$). **Calibration SEULE** — aucune conséquence sur le contrat d'achat, dont les clés se jouent au T3. *L'hôte était en 403 le 04/08 ; six formulations tentées.* Si le document reste inatteignable, l'appel n'est **ni gagné ni perdu**, il attend — et je l'écris plutôt que de le forcer |
+| **18/08** | **Résultats S1 NEPI Rockcastle** (NRP, Euronext Amsterdam) [MONO-SOURCE, à reconfirmer] — webcast **19/08 09h00** | Chantier émergents, **groupe B2**. 🔴 **Éligibilité PEA NON RÉSOLUE = critère ÉLIMINATOIRE non levé.** Tant qu'il ne l'est pas, **aucune instruction ne démarre** : instruire un titre non achetable est du temps perdu, la leçon Stalprodukt |
+| **18/08** | Production industrielle US, 15h15 | Contexte macro seulement |
+| **19/08** | **Inflation FINALE zone euro** (flash du 31/07 : **2,9 %** contre 2,8 % en juin) | Contexte. *Pas d'appel ouvert dessus — et je n'en ouvre pas un pour meubler* |
+| **~19/08** ⚠️ *date calculée* | 🔴 **Expiration du lock-up d'ArcelorMittal sur ~17,3 % de Vallourec** | **NE RIEN FAIRE AVANT.** Le vendeur le mieux informé du dossier redevient libre, **23 % sous son propre prix de sortie de mai (24,00 €)**. T6 en échec. *Les institutionnels servis à 24 € en mai sont de l'offre potentielle, pas des alliés* |
+| **20/08, 14h00** | 🔴 **Résultats Walmart T2 FY27** | **Résout C042** (croissance de la publicité globale < +32 % a/a — annoncé à 42 %). Lisible **sur le communiqué seul**, condition pré-enregistrée le 07/08. Dossier TUÉ, l'appel survit : *un PASSE se note comme un achat* |
+| **26/08, 22h20** | 🔴 **Résultats Nvidia T2 FY2027** — 22 % du portefeuille | Grille de pré-engagement écrite le 09/08, **17 jours à l'avance** (§ ci-dessous). ⚠️ **§3.4 À RÉ-EXAMINER** : l'alliance de financement de 500 Md$ déplace l'élément mesuré **hors bilan** — la grille doit être relue avant, pas après |
+| **27-29/08** | 🔴 **Jackson Hole — premier discours de Kevin Warsh comme président de la Fed** | Tombe **le lendemain de Nvidia**. Dans un régime où le débat porte sur une **hausse**, le premier Jackson Hole d'un nouveau président fixe le cadre |
+
+### 📋 Ajouts du chantier « smart money » du 15/08
+
+| Date | Événement | Note |
+|---|---|---|
+| **14/11/2026** | Fenêtre de dépôt des **13F du T3 2026** | ⚠️ **Ne PAS replanifier le terrain smart money un samedi si le canal reste bloqué.** Le re-test du 15/08 a produit **0 signal sur 6 portes testées, 6 fermées** — la date de dépôt ne rouvre pas un canal mort |
+| **non datée** | **Theon International** (THEON, Amsterdam) — publication FY 2026 | Point de contrôle unique : le **book-to-bill**. À **1,0x** au S1 2026 pendant que le CA fait **+35,4 %** — le carnet ne croît donc **pas plus vite que les ventes**. Un passage durablement **sous 1,0x** casserait le récit avant que le CA ne le montre. *Le « soft backlog de 1,46 Md€ » est l'agrégat de vitrine ; le book-to-bill est le chiffre contraignant* |
+| **non datée** | **Exosens** (EXENS, Paris) — publication annuelle 2026 | Guidance relevée vers le **haut de fourchette : ~540 M€ de CA, ~178 M€ d'EBITDA ajusté**. À confronter au réalisé |
+
+### Historique — l'ancienne table « sous 7 jours » (29-31/07, conservée)
 
 | Date | Événement | Impact portefeuille/watchlist |
 |---|---|---|

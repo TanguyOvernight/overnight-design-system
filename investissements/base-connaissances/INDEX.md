@@ -34,7 +34,18 @@ diverge tôt ou tard (cas vécu : le PFU à 30 % vs 31,4 % dans 4 fichiers).
 | `registre-calibration.md` | Nos appels tiennent-ils ? Où se trompe-t-on ? | **Juge (en 1er)**, Vérif' du samedi |
 | `classement-opportunites.md` | **Quelle idée est la meilleure AUJOURD'HUI ?** Rang, déclencheur, motif de sortie | **Tous — relu et re-classé à chaque édition** |
 | `watchlist.md` | Quelles idées en réserve, à quel prix ? | Chasseur (ne pas re-signaler), Juge |
-| `chasse-quotidienne.md` | Comment tourne le pipeline à 3 étages, quel terrain quel jour ? | Routine 9h |
+| `chasse-quotidienne.md` | Comment tourne le pipeline à 3 étages, quel terrain quel jour ? ⚠️ **À LIRE AVANT DE BRIEFER UN AGENT** — c'est de la mémoire persistante au même titre que le classement (leçon du 15/08 : j'ai briefé une chasse sur un terrain que j'avais moi-même classé hors service 12 jours plus tôt) | Routine 9h |
+
+## 🔧 Référentiels d'univers (chantiers du samedi — NE SONT PAS des classements)
+
+> Un chantier remplit un **référentiel** ; le `classement-opportunites.md` ne
+> se remplit que par le pipeline à trois agents. **Aucune ligne d'un
+> référentiel n'est une candidate.**
+
+| Fichier | Univers | État |
+|---|---|---|
+| `univers-emergents-pea.md` | Exposition émergente achetable en PEA (groupes A/B1/B2/C) | Ouvert 03/08 |
+| `univers-defense-pea.md` | Fournisseurs de défense **hors maîtres d'œuvre**, Paris/Amsterdam/Bruxelles | Ouvert 15/08 — 🔴 **résultat de fond NÉGATIF** : 5 sociétés, aucune à la fois achetable, non courue et documentée. Le champ définitionnel (% de CA défense sourcé chez l'émetteur) est **vide pour les cinq** |
 
 ## 🧠 Doctrine des agents — permanent, le socle scientifique
 

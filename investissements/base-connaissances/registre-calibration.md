@@ -150,9 +150,9 @@ surveillance devient une attente indéfinie déguisée en discipline.
 | C001 | 27/07 | Juge | Aubay | Achat justifié SI repli ≤ 50 € **ou** scare optique T3 | 56 % | À la publication T3 (fin oct. 2026) : le déclencheur s'est-il présenté et l'entrée aurait-elle battu le World depuis ? | ⏳ |
 | C002 | 27/07 | Avocat | Besi | Pas d'edge au prix actuel (~227 €) : sous-performe ou ne bat pas le World à 12 mois | 75 % | 27/07/2027 : BESI vs MSCI World sur 12 mois | ⏳ |
 | C003 | 27/07 | Juge | Nexans | Le repli est un dérating MÉRITÉ, pas une inefficience (self-invalidation : S1 dé-risque GSI + FCF relevé à ≤130 €) | 58 % | Publication S1 2026 (imminente) : provision GSI ? FCF révisé ? | ⏳ |
-| C004 | 27/07 | Juge | Ultragenyx | RARE = loterie, PASSE justifié (ne bat pas le cœur 5-7 ans) | 75-80 % | Suivre : issue des PDUFA 23/08 + 19/09 et perf à 12 mois vs World | ⏳ |
-| C005 | 27/07 | Chasseur/macro | Fed | Divergence Kalshi (~48 %) vs FedWatch (~82 %) sur une hausse en septembre | — | FOMC de septembre 2026 : hausse ou non | ⏳ |
-| C006 | 27/07 | Juge | Plan du mois | Le cœur WPEA est le meilleur usage de l'euro de juillet | 75-80 % | Rétrospectif : à l'ouverture du PEA, le cœur était-il le bon choix vs les satellites CTO ? | ⏳ |
+| C004 | 27/07 | Juge | Ultragenyx | RARE = loterie, PASSE justifié (ne bat pas le cœur 5-7 ans) | ~~75-80 %~~ → **77,5 %** *(convention du 15/08, voir audit)* | ⏳ **CONDITION RESSERRÉE le 15/08, avant tout fait connu** : résout sur la **performance totale RARE vs MSCI World au 27/07/2027**. Les PDUFA des 23/08 et 19/09 deviennent des **jalons**, pas des conditions | ⏳ |
+| C005 | 27/07 | Chasseur/macro | Fed | ~~Divergence Kalshi (~48 %) vs FedWatch (~82 %) sur une hausse en septembre~~ | **—** | 🚫 **NON SCORABLE — retiré du dénominateur le 15/08.** Aucune probabilité n'a jamais été enregistrée, et l'énoncé n'est pas une affirmation mais l'**observation d'un désaccord entre deux sources**. Rien à noter. **Aucune probabilité n'est rétro-ajustée** — remplacé par **C046**, ouvert ce jour, avant le FOMC | 🚫 |
+| C006 | 27/07 | Juge | Plan du mois | Le cœur WPEA est le meilleur usage de l'euro de juillet | ~~75-80 %~~ | 🚫 **NON SCORABLE — retiré du dénominateur le 15/08.** Double défaut : fourchette au lieu d'un point, **et** condition de résolution **subjective et rétrospective** (« le cœur était-il le bon choix ? » est une question que je me poserais à moi-même, dont je choisirais la réponse). Un appel que je peux plaider ne mesure rien. **Pas de remplaçant** : la proposition n'est pas reformulable en test objectif | 🚫 |
 | C007 | 27/07 | Juge | STM | STMPA touche ≤ 45 € en clôture (le déclencheur d'achat surveillance approche) | 35 % | Cours de clôture Paris avant le 31/01/2027 | ⏳ |
 | C008 | 27/07 | Juge | Nike | Nike publie ≥ 1 trimestre de croissance Direct/Digital POSITIVE (stabilisation ≠ couteau) | 38 % | Communiqués Nike sur ses 2 prochains rapports, avant le 30/04/2027 | ⏳ |
 | C009 | 27/07 | Juge | Allocation juillet | L'euro de juillet est déployé sur WPEA (pas STM/Nike/or) une fois le canal débloqué | 80 % | Ordre WPEA exécuté au plus tard le 31/08/2026 | ⏳ |
@@ -164,6 +164,63 @@ surveillance devient une attente indéfinie déguisée en discipline.
 | C015 | 27/07 | Juge | allocation / pluriannuel | Poche offensive | La poche offensive (150 €/mois, règles du 27/07) BAT le versement équivalent au cœur WPEA | 25 % (brute 16 %, plancher de charte) | 31/12/2027 : perf pondérée par dates d'achat vs WPEA acheté aux mêmes dates | ⏳ |
 | C016 | 27/07 | Juge | allocation / <1 an | Garde-fou R | **R ≤ 25 % au 30/09/2026** (le régime 300/50/150 est structurellement légal) | 80 % | Calcul de R sur la capture du 30/09/2026 | ⏳ |
 | C017 | 27/07 | Avocat | holding décotée sans catalyseur / 12 mois · PEA | Viel & Cie (VIL) | La décote N'EST PAS une inefficience capturable : au 31/07/2027 elle reste ≥ 30 % **ET** VIL ne surperforme pas le World de plus de 5 pts | 75 % (P(le signal a raison) = 25 %) | 31/07/2027 : recalcul de la décote aux cours + perf VIL vs WPEA. Jalons : S1 CFT fin août 2026 (marge > 18 % → bascule 40 %), semestriel Viel ~24/09 (autocontrôle > 9 % → bascule 45 %) | ⏳ |
+
+## 🔍 AUDIT DE NOTABILITÉ DU REGISTRE — 15/08/2026 (Revue n°4)
+
+**Ce que j'ai cherché** : pas si mes appels sont justes — si mes appels sont
+**notables**. Un appel qu'aucune procédure ne peut noter n'est pas un appel,
+c'est une phrase.
+
+**Résultat : 4 appels sur 45 sont défectueux, et les 4 datent du même jour —
+le 27/07, mon lot fondateur.** Aucun appel ouvert depuis le 30/07 n'est
+atteint. Ce n'est pas un hasard : le format (`P` en point, condition datée et
+vérifiable) s'est durci après coup, et **les appels écrits avant le
+durcissement n'ont jamais été repassés au tamis**. Trois semaines de Revues
+hebdomadaires ne l'ont pas vu, parce que **la Vérif' du samedi lit les appels
+RÉSOLUS et ne relit jamais les appels OUVERTS.**
+
+| Appel | Défaut | Traitement |
+|---|---|---|
+| **C003** Nexans | **Condition non datée** (« publication S1 2026 (imminente) ») **et composée** (deux questions dans un seul appel) | Date fixée aujourd'hui — voir ci-dessous |
+| **C004** Ultragenyx | **Fourchette** 75-80 % au lieu d'un point (un Brier n'accepte pas d'intervalle) **et** condition composée (2 PDUFA + une perf à 12 mois) | **Convention déclarée : une fourchette résout à son POINT MÉDIAN → 77,5 %.** Condition resserrée sur la perf à 12 mois |
+| **C005** Fed | **Aucune probabilité n'a jamais été écrite** (`P = —`), et l'énoncé décrit un désaccord entre deux sources au lieu d'affirmer quoi que ce soit | 🚫 **NON SCORABLE**, retiré du dénominateur. Remplacé par un appel neuf |
+| **C006** Plan du mois | Fourchette **et** condition **rétrospective et subjective** — je serais à la fois juge et partie | 🚫 **NON SCORABLE**, retiré du dénominateur, **sans remplaçant** |
+
+### La règle qui rend la réparation honnête
+
+> **On ne rétro-ajuste jamais une probabilité. On peut préciser une
+> CONDITION, à la stricte condition que rien de l'issue ne soit encore
+> connu — et il faut l'écrire.**
+
+Contrôle explicite, appel par appel : les PDUFA de C004 tombent les **23/08
+et 19/09**, donc **dans le futur** ; la perf à 12 mois court jusqu'au
+27/07/2027. **Rien n'est connu.** La convention « fourchette → médiane » est
+déclarée **avant** toute résolution et vaudra pour tout appel futur.
+Pour C005 et C006, je **n'invente pas** la probabilité manquante : un appel
+sans probabilité écrite à l'avance est perdu, et le reconstituer aujourd'hui
+serait exactement la triche que ce registre existe pour empêcher.
+
+### Conséquence chiffrée, à dire sans l'adoucir
+
+Le registre affichait **45 appels**. Il en compte **43 notables** (C005 et
+C006 sortis). Mon dénominateur futur est **plus petit de 2** que je ne le
+croyais — donc la date à laquelle mon score deviendra interprétable
+(20-30 résolutions, charte) **recule**.
+
+### ✅ Nouvelle règle permanente de la Vérif' du samedi
+
+> **La Vérif' des appels relit les appels OUVERTS autant que les appels
+> RÉSOLUS.** À chaque Revue, contrôle de notabilité sur tout appel ouvert :
+> (1) `P` est-il un **point** ? (2) la condition porte-t-elle **une date
+> butée** ? (3) la condition est-elle **vérifiable par un tiers** sans mon
+> jugement ? (4) l'appel affirme-t-il **une seule** chose ?
+> Un appel qui échoue à l'un des quatre est réparé **le jour où on le
+> découvre**, jamais le jour où il résout.
+
+*C'est le même défaut de famille que l'incident d'intégrité du 08/08 (des
+appels résolus marqués ⏳) : dans les deux cas, le registre se contredisait
+lui-même et personne ne le relisait. La « règle du miroir » couvrait les
+résolus. Elle couvre désormais les ouverts.*
 
 ## Appels ouverts le 30/07/2026 (arbitrage Vicat / Magnum / allocation)
 

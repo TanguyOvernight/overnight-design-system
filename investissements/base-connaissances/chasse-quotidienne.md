@@ -45,8 +45,34 @@ VISIBLE même quand il ne débouche pas.
 | **Mercredi** | Industrie, énergie, défense | Usine Nouvelle, Defense News, contrats OTAN/DGA, IEA, capex énergie/infra — carnet de commandes, goulets d'étranglement, fournisseurs critiques |
 | **Jeudi** | France & smalls Europe | Zonebourse « Small & Mid : les choix des stars de la gestion », reportings mensuels Indépendance AM/HMG/Raymond James, BFM Bourse, Market Review Euroland, forum Investisseurs Heureux — + positions courtes AMF sur valeurs suivies |
 | **Vendredi** | Émergents & monde | Nikkei Asia, Economic Times (Inde), Caixin, flux EM (EPFR via presse), reclassements d'indices, réformes de marché |
-| **Samedi (Revue)** | 🔧 **CHANTIER D'UNIVERS** *(remplace « smart money » depuis le 03/08/2026 — voir ci-dessous)* | Constituer ou exploiter un référentiel de valeurs peu couvertes, avec capi sourcée, exposition chiffrée, ticket et liquidité. Le terrain smart money est **hors service** : 7 sources initiés en 403, dont sec.gov, et les 3 replis testés échouent |
+| **Samedi (Revue)** | 🔧 **CHANTIER D'UNIVERS** *(remplace « smart money » depuis le 03/08/2026 — voir ci-dessous)* | Constituer ou exploiter un référentiel de valeurs peu couvertes, avec capi sourcée, exposition chiffrée, ticket et liquidité. Le terrain smart money est **hors service** : 7 sources initiés en 403, dont sec.gov, et les 3 replis testés échouent. **🔒 RE-TESTÉ ET RECONFIRMÉ le 15/08** — 6 portes rouvertes, 6 fermées (abcbourse, insiderscreener, transactions-amf.swaoo, data.gouv.fr, FSMA Belgique, Fortuneo). Le re-test était motivé par la date de dépôt des 13F du T2 (14/08) ; **il n'a rien produit.** Prochaine fenêtre 13F : 14/11/2026 — **ne pas replanifier ce terrain pour autant** |
 | **Dimanche (Prépa)** | Prospectif & thèmes | Catalyseurs datés à venir (radar), thèmes pré-consensus (pipeline analyse-prospective : thème → thèse → timing → véhicule), revue des « étudiés-écartés » du mois |
+
+### ⚠️ RÈGLE DE PRÉSÉANCE (encodée le 15/08/2026 — après l'avoir violée)
+
+**Ce qui s'est passé** : le prompt de routine fixe « samedi = smart money ».
+J'ai briefé le chasseur là-dessus **sans avoir lu ce fichier**, où le terrain
+est classé hors service depuis le 03/08. Je ne l'ai vu qu'après, l'agent
+tournant déjà.
+
+> **1. Une mise HORS SERVICE écrite et motivée PRIME sur la rotation du
+> prompt.** La rotation dit quel terrain viser ; ce fichier dit lesquels sont
+> morts. Le second gagne.
+>
+> **2. Exception, et elle doit être NOMMÉE** : un **fait nouveau daté** peut
+> justifier UN re-test. Le 15/08, ce fait existait — la date limite de dépôt
+> des 13F du T2 était la veille. Un re-test sur fait nouveau est légitime ;
+> un re-test par habitude de rotation ne l'est pas.
+>
+> **3. Un re-test s'arme toujours d'un REPLI.** Ne jamais laisser un canal
+> mort produire une journée vide : le brief doit contenir le chantier de
+> substitution dès le départ.
+>
+> **4. La cause racine** : la routine impose de lire la mémoire persistante
+> AVANT la chasse. Je l'appliquais au seul `classement-opportunites.md`.
+> **Un fichier de méthode est de la mémoire persistante au même titre qu'une
+> liste de candidates** — `chasse-quotidienne.md` se lit avant de briefer,
+> pas pendant que l'agent tourne.
 
 ## Brief type d'un agent presse (template)
 
