@@ -41,7 +41,152 @@ pas pour son rang.
 
 ---
 
-## CLASSEMENT AU 11/08/2026
+## CLASSEMENT AU 15/08/2026
+
+### 🔴 CORRECTION MAJEURE DU 15/08 — le chemin `capi ÷ titres` est DÉMOLI, pas seulement suspect
+
+Le 13/08 j'écrivais que `capi ÷ titres` n'était *« indépendant que si la capi
+vient d'une autre source que le prix »*. **C'était trop indulgent. Le chemin
+est faux même quand les sources diffèrent**, et la démonstration est
+arithmétique :
+
+> Sur un instantané frais de Séché : `655,21 M€ ÷ 7 857 732 = **83,38 €**`,
+> alors que **la même page affiche 84,20 €**. **Les deux nombres ne bouclent
+> pas** (−1,0 %).
+
+**Ce que ça prouve** : une capitalisation affichée est **calculée par le site
+à partir d'un prix**, et d'un prix **plus ancien** que celui qu'il montre.
+Diviser la capi par les titres ne reconstruit donc pas un prix — **ça exhume
+un prix périmé.**
+
+**Conséquence directe et coûteuse : mon « 79,43 € au 04/08 » sur Séché
+n'était pas le prix du 04/08.** C'était un prix antérieur, d'origine
+indéterminée. Le « cohérent au centime près avec la transaction du 13/07 »
+dont j'étais si content **était le symptôme, pas la validation** : il collait
+à juillet parce que c'était un prix de juillet.
+
+### 🎯 ET LE BIAIS SYSTÉMATIQUE A ENFIN UNE CAUSE — une hypothèse falsifiable
+
+J'avais noté que **mes erreurs allaient toutes dans le même sens** (elles
+rapprochaient un déclencheur, donc sous-estimaient les prix) et je
+l'expliquais par un argument faible : *« une archive est d'autant plus servie
+qu'elle correspond à un épisode de volatilité »*. **Meilleure hypothèse :**
+
+> **Tous les modes de panne du canal dégradé ont en commun de renvoyer une
+> donnée PLUS ANCIENNE** — instantané gelé (STM 46,17 €), clôture mal datée
+> (LLY 1 148,61 $), capi périmée (Magnum), `capi ÷ titres` (Séché).
+> **Dans un marché qui monte depuis des semaines, « plus ancien » signifie
+> mécaniquement « plus bas » — donc « plus près d'un seuil d'achat ».**
+> Le biais n'est pas dans les sources : **il est dans la conjonction d'un
+> canal qui retarde et d'un marché qui monte.**
+
+⚠️ **Je l'écris comme une HYPOTHÈSE, avec son test** — j'ai réfuté trois
+théories en une semaine pour avoir sauté cette étape. **Prédiction
+falsifiable : si le marché baissait plusieurs semaines, mes erreurs
+devraient basculer et devenir systématiquement HAUTES.** Tant que ce test
+n'est pas passé, ceci reste une explication plausible, pas un fait acquis.
+
+### ✅ Le chemin de remplacement — et il est meilleur que tous les précédents
+
+**Les déclarations réglementaires de RACHAT D'ACTIONS.** Deux lignes en ont
+bénéficié aujourd'hui :
+
+| Ligne | Document | Ce qu'il donne |
+|---|---|---|
+| **STM** | **Form 6-K** | 65 209 actions rachetées du **3 au 7 août** au prix moyen pondéré de **45,7643 € sur Euronext Paris** |
+| **Aubay** | **déclaration hebdomadaire des transactions sur actions propres** | Un **prix moyen pondéré daté et officiel**, chaque semaine. Celle du **3-7 août existe** ; celle du 10-14 août n'était pas encore indexée |
+
+> 🔑 **C'est un prix DÉCLARÉ PAR L'ÉMETTEUR dans un dépôt réglementaire.** Il
+> ne peut être ni gelé, ni mal daté, ni mal converti — **les trois modes de
+> panne qui m'ont fait publier trois faux chiffres.** Et il ne dépend
+> d'**aucune** page de cotation.
+>
+> ⚠️ **Sa limite, écrite d'emblée** : un **VWAP hebdomadaire n'est pas une
+> clôture**. Il ne peut **PAS** déclencher un seuil de prix — il sert à
+> *contrôler* un prix obtenu ailleurs. *Le confondre avec une clôture serait
+> la version « moyenne » de l'erreur d'instantané gelé.*
+
+**C'est la voie pour débloquer Aubay, aveugle depuis 4 semaines.**
+
+### ⚠️ L'état réel du canal est pire que « 403 » : il est FERMÉ
+
+**Zéro `WebFetch` abouti aujourd'hui**, sur des hôtes pourtant distincts
+(stooq, globenewswire, sipef.com, **sec.gov**). **Aucun document d'émetteur,
+aucun dépôt SEC, aucun PDF n'a été lu.** Tout ce qui suit transite par des
+**résumés de moteur de recherche** — des synthèses d'extraits, pas des
+sources primaires.
+
+**Et ce mode de défaillance est ACTIF, pas théorique** : sur SIPEF, le même
+moteur a produit **quatre jeux de chiffres mutuellement incompatibles** sur
+la même question, en mélangeant très probablement les millésimes 2024, 2025
+et 2026.
+
+---
+
+### 📊 LE CLASSEMENT AU 15/08 — **8 candidates, AUCUN MOUVEMENT DE RANG**
+
+| Rang | Candidate | Env. | Chiffre du jour vs déclencheur | Qualité de la donnée | Statut | Mvt |
+|---|---|---|---|---|---|---|
+| **①** | **Cœur World** (hurdle 5 %/an net) | **PEA Fortuneo — OUVERT, NON ALIMENTÉ** | 🟢 **Le blocage n'a pas bougé de la semaine.** Le PEA attend son **premier virement**, à pousser depuis la banque externe. ⏱️ **L'horloge des 5 ans n'a toujours pas démarré.** Budget d'août : **1 000 €** | — | 🟢 | **=** |
+| **②** | **Or** (assurance) | CTO | **~4 371-4 373 $/oz** au 14/08 **à 9h00 ET** — soit **+1 %** sur la semaine. 🔴 **Garde-fou R (43,9 % > 35 %) : achat d'or INTERDIT ce mois-ci.** Écart à la cible toujours maximal : **0 % détenu contre 5-10 %** | ⚠️ **PAS une clôture spot** — le seul chiffre de clôture est celui des **futures décembre (4 432 $)**, non comparable (contango ~1,4 %) | 🟢 | **=** |
+| **③** | **Séché Environnement** | PEA | ⚠️ **PRIX RÉVISÉ À LA HAUSSE, ET MA MARGE FOND.** Deux lectures d'août : **81,9 €** et **84,20 €**. Le seuil est ≤ 90 € : la ligne reste dessous, **mais de −6,4 % à −9,0 % seulement, contre les −11,7 % que j'annonçais.** 🔴 **L'arrêté PFAS boues n'est TOUJOURS pas paru** | ❌ **Les deux cours sont NON DATÉS → rejetés.** Et le 79,43 € qu'ils remplacent était **circulaire** | 🟡 | **=** |
+| **④** | **Eli Lilly** | CTO | **1 220,28 $** → **+44,24 %** au-dessus du seuil de 846 $. 🔻 **REPASSE SOUS LA BARRE DES +45 %** (+45,05 % le 10/08). Le déclencheur de déclassement **n'est plus atteint dans sa substance**. Contrôle **05/09**, inchangé | ⚠️ Date non tranchée : « as of 13/08… previous close » ⇒ très probablement la **clôture du 12/08**. Motif d'instantané gelé non levé | 🟡 | **=** |
+| **⑤** | **Magnum Ice Cream** | PEA | **~9,88 Md€** vs ≤ 7,6 Md€ → il faut **−23,1 %**. PASSE, réouverture sur fait | ✅ `11,40 Md$ ÷ 1,1536 = 9,883 Md€`, à **0,13 %** de mon relevé précédent. ⚠️ Variante concurrente **12,68 Md$ (10,99 Md€)** non tranchée | 🔴 | **=** |
+| **⑥** | **Aubay** (ESN) | PEA | **4ᵉ SEMAINE SANS COURS FIABLE.** Lectures : 54,30 € · 56,50 € · dispersion avouée **49-57 €**. → écart au seuil de 50 € entre **+8,6 %** et **+13,0 %** | ❌ Le 56,50 € porte le **drapeau instantané gelé** (cours = clôture précédente, **à l'identique**, sans variation % ⇒ bouclage impossible). ✅ **Mais la conclusion « ne rien faire » est ROBUSTE à toute l'incertitude** — toutes les lectures sont au-dessus du seuil | ⚪ | **=** |
+| **⑦** | **STM** (semi) | PEA | ✅ **46,66 € au 14/08** vs ≤ 42 € → **+11,1 %**, il faut **−9,99 %**. −0,9 % sur la semaine | ✅ **LA SEULE LIGNE VRAIMENT RÉCONCILIÉE.** Deux univers distincts : Paris **46,66 €** et NYSE **53,92 $ ÷ 1,1536 (change de source indépendante) = 46,74 €** — **écart 0,17 %**. *Contrôle bonus : le VWAP de rachat 6-K (45,7643 €, 3-7 août) est compatible* | 🔴 | **=** |
+| **⑧** | **Nike** | CTO | **41,23 $** au 13/08 (clôture) — **−1,1 %** sur la semaine. Veille sans contrat | ⚠️ MONO-SOURCE. Le **40,80 $** du 14/08 est **intraday**, non retenu — *et c'est un chiffre BAS, donc suspect par construction* | 🔴 | **=** |
+
+### Justification du non-mouvement — et pourquoi Séché ne bouge PAS malgré la correction
+
+**Aucune candidate n'a changé de rang, et je ne fabrique pas de mouvement
+pour faire vivre le tableau.** Le seul cas qui méritait examen est **Séché** :
+
+- **Ce qui plaide pour la faire descendre** : son argument principal — *« la
+  seule ligne SOUS son prix visé, de −11,7 % »* — était **partiellement un
+  artefact de mesure**. La vraie marge est de −6,4 % à −9,0 %, et **aucun de
+  ces deux chiffres n'est datable**. Le dossier a perdu à la fois de la marge
+  et de la qualité de preuve.
+- **Ce qui l'emporte** : le mètre commun est l'**espérance nette ajustée de
+  la corrélation**, pas la marge au déclencheur. Une correction de 3 à 5 %
+  sur le prix d'entrée ne déplace pas une espérance pluriannuelle sous celle
+  d'une ligne qui, comme LLY ④, est **~4 points sous le hurdle**. Et Séché
+  **reste la seule candidate dont le prix soit du bon côté de son seuil**.
+- 🔑 **Le vrai enjeu n'est pas le rang, c'est le CONTRAT** : Séché se joue
+  sur le **S1 du 09/09** (EBE ≥ 125 M€ **ET** France organique ≥ 0 % **ET**
+  guidance 275-285 M€ confirmée **ET** cours ≤ 90 €). *Trois des quatre
+  conditions ne dépendent pas du cours.* **Un prix révisé de 4 % ne change
+  pas un contrat dont les trois quarts sont comptables.**
+
+⚠️ **Ce que la correction change VRAIMENT, et il faut le dire** : le jour où
+ce contrat se déclenchera, **je n'aurai pas de prix fiable pour vérifier la
+quatrième condition.** Séché n'a **aucun cours daté depuis le 04/08** — et le
+04/08 lui-même vient de tomber. **C'est la ligne la plus aveugle du livre**,
+et son échéance est dans 25 jours.
+
+### 📅 Séché — le sablier PFAS, mis à jour au 15/08
+
+L'arrêté boues **n'est pas paru au JO**. Ce qui existe :
+- **Circulaire interministérielle du 27/04/2026** (recherche des PFAS dans
+  les boues destinées à l'épandage) — **Bulletin Officiel, pas Journal
+  Officiel. Une circulaire n'est pas un arrêté.**
+- **Arrêté du 20/04/2026** : il existe, mais il porte sur les PFAS **dans les
+  EAUX** en entrée/sortie de STEP. **Ce n'est pas l'arrêté boues.**
+- **Seuils provisoires en vigueur** (calqués sur la Wallonie, 2026-2028) :
+  **40 µg/kg MS** (6 PFAS prioritaires) et **400 µg/kg MS** (22 PFAS) — *ce
+  sont exactement les seuils de la condition C011*. Campagnes trimestrielles
+  imposées aux plus grandes STEP **depuis le 01/07/2026**.
+- **L'arrêté reste attendu « à l'été 2026 »**, pour une application au
+  01/01/2027, sur avis du HCSP. **L'été administratif se termine le 21/09 ;
+  la butée de C013 est le 30/09.** *La fenêtre se referme dans ~5 semaines.*
+
+⚠️ **Réserve de méthode** : cette conclusion vient de la **convergence de
+plusieurs commentateurs juridiques**, pas d'une consultation de Légifrance
+(inaccessible). **Une absence dans un index n'est pas une preuve d'absence au
+JO.**
+
+---
+
+## CLASSEMENT (état antérieur au 11/08, conservé pour l'historique)
 
 Statut : 🟢 déclencheur proche/actionnable · 🟡 en attente d'un événement
 daté · ⚪ surveillance longue · 🔴 sous le hurdle, conservée pour mémoire

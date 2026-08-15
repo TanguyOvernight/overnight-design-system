@@ -149,7 +149,7 @@ surveillance devient une attente indéfinie déguisée en discipline.
 |---|---|---|---|---|---|---|---|
 | C001 | 27/07 | Juge | Aubay | Achat justifié SI repli ≤ 50 € **ou** scare optique T3 | 56 % | À la publication T3 (fin oct. 2026) : le déclencheur s'est-il présenté et l'entrée aurait-elle battu le World depuis ? | ⏳ |
 | C002 | 27/07 | Avocat | Besi | Pas d'edge au prix actuel (~227 €) : sous-performe ou ne bat pas le World à 12 mois | 75 % | 27/07/2027 : BESI vs MSCI World sur 12 mois | ⏳ |
-| C003 | 27/07 | Juge | Nexans | Le repli est un dérating MÉRITÉ, pas une inefficience (self-invalidation : S1 dé-risque GSI + FCF relevé à ≤130 €) | 58 % | Publication S1 2026 (imminente) : provision GSI ? FCF révisé ? | ⏳ |
+| C003 | 27/07 | Juge | Nexans | Le repli est un dérating MÉRITÉ, pas une inefficience (self-invalidation : S1 dé-risque GSI + FCF relevé à ≤130 €) | 58 % | 🚫 **NON SCORABLE — tranché le 15/08.** **Date enfin établie : le S1 2026 a été publié le 29/07/2026 à 08h11**, soit deux jours après l'ouverture de l'appel. Mais la condition est **ambiguë au point d'admettre deux lectures opposées** sur la même matière de fait — voir l'analyse ci-dessous. **Le défaut a été découvert à 9h, AVANT de connaître les faits** ; le lever maintenant serait infalsifiable | 🚫 |
 | C004 | 27/07 | Juge | Ultragenyx | RARE = loterie, PASSE justifié (ne bat pas le cœur 5-7 ans) | ~~75-80 %~~ → **77,5 %** *(convention du 15/08, voir audit)* | ⏳ **CONDITION RESSERRÉE le 15/08, avant tout fait connu** : résout sur la **performance totale RARE vs MSCI World au 27/07/2027**. Les PDUFA des 23/08 et 19/09 deviennent des **jalons**, pas des conditions | ⏳ |
 | C005 | 27/07 | Chasseur/macro | Fed | ~~Divergence Kalshi (~48 %) vs FedWatch (~82 %) sur une hausse en septembre~~ | **—** | 🚫 **NON SCORABLE — retiré du dénominateur le 15/08.** Aucune probabilité n'a jamais été enregistrée, et l'énoncé n'est pas une affirmation mais l'**observation d'un désaccord entre deux sources**. Rien à noter. **Aucune probabilité n'est rétro-ajustée** — remplacé par **C046**, ouvert ce jour, avant le FOMC | 🚫 |
 | C006 | 27/07 | Juge | Plan du mois | Le cœur WPEA est le meilleur usage de l'euro de juillet | ~~75-80 %~~ | 🚫 **NON SCORABLE — retiré du dénominateur le 15/08.** Double défaut : fourchette au lieu d'un point, **et** condition de résolution **subjective et rétrospective** (« le cœur était-il le bon choix ? » est une question que je me poserais à moi-même, dont je choisirais la réponse). Un appel que je peux plaider ne mesure rien. **Pas de remplaçant** : la proposition n'est pas reformulable en test objectif | 🚫 |
@@ -200,12 +200,95 @@ Pour C005 et C006, je **n'invente pas** la probabilité manquante : un appel
 sans probabilité écrite à l'avance est perdu, et le reconstituer aujourd'hui
 serait exactement la triche que ce registre existe pour empêcher.
 
+### 📕 C003 (Nexans) — pourquoi je le retire alors qu'il me rapporterait probablement
+
+**Les faits, établis le 15/08** : Nexans a publié son S1 le **29/07/2026**.
+**Guidance de FCF normalisé RELEVÉE**, de 210-310 M€ à **235-325 M€** *(les
+deux bornes avant/après proviennent d'une même formulation — double lecture
+indépendante)*. EBITDA ajusté relevé de 730-810 à **770-840 M€**. FCF réalisé
+au S1 : **165,5 M€**. Contrôle arithmétique validé : `387,7 ÷ 3 248,6 =
+11,93 %`, exactement la marge de 11,9 % annoncée. **Sur GSI** : projet
+**toujours au carnet** (1,2 Md€ sur 7,7 Md€), livraison **repoussée au-delà
+de 2029**, et *« la guidance ne suppose aucune exécution du projet GSI en
+2026 »*. **Aucune provision trouvée — communiqué primaire inaccessible.**
+
+**Les deux lectures, et elles sont toutes deux défendables :**
+
+| Lecture | Raisonnement | Verdict | Brier |
+|---|---|---|---|
+| **A** — « dé-risquer » = *résoudre le risque* | Repousser au-delà de 2029 et sortir de la guidance, ce n'est pas résoudre : c'est **différer et porter**. Conjonction non remplie → l'appel TIENT | ✅ VRAI | **0,1764** |
+| **B** — « dé-risquer » = *réduire l'exposition* | Relever le FCF **en supposant zéro GSI** prouve que le résultat **ne dépend plus** du projet. L'exposition est réduite → conjonction remplie → l'appel TOMBE | ❌ FAUX | **0,3364** |
+
+> **Je ne peux pas choisir entre A et B aujourd'hui sans que le choix soit
+> dicté par le résultat qu'il produit.** La convention que je me suis donnée
+> ce matin est explicite : *on peut préciser une condition à la stricte
+> condition que rien de l'issue ne soit encore connu.* L'issue est connue.
+> **La porte est fermée, et c'est moi qui l'ai fermée avant de savoir ce
+> qu'il y avait derrière.**
+
+**Ce que ce retrait me coûte** — et c'est le point qui rend l'opération
+honnête : sous la lecture **A, la plus naturelle des deux**, C003 vaudrait
+**0,1764**, soit **mon troisième meilleur score** et il aurait fait baisser
+mon Brier moyen. **Renoncer à C003 me prive d'un bon score plus
+probablement qu'il ne m'évite un mauvais.** *Un scrupule qui rapporte n'est
+pas un scrupule.*
+
+⚠️ **Et le défaut de fond n'est pas l'ambiguïté du verbe : c'est la
+CONJONCTION.** Un appel dont l'invalidation exige que **deux** choses
+arrivent ensemble double les surfaces d'interprétation. **Règle ajoutée :
+une clause d'auto-invalidation ne porte que sur UN fait.**
+
 ### Conséquence chiffrée, à dire sans l'adoucir
 
-Le registre affichait **45 appels**. Il en compte **43 notables** (C005 et
-C006 sortis). Mon dénominateur futur est **plus petit de 2** que je ne le
-croyais — donc la date à laquelle mon score deviendra interprétable
-(20-30 résolutions, charte) **recule**.
+Le registre affichait **45 appels**. Il en compte **42 notables** — **C005,
+C006 et C003 sortis**. Mon dénominateur futur est **plus petit de 3** que je
+ne le croyais, donc la date à laquelle mon score deviendra interprétable
+(20-30 résolutions, charte) **recule d'autant**.
+
+**Et un quatrième est en sursis : C034**, non par défaut de format mais
+**parce que le canal réseau le tue** — voir ci-dessous. Ce serait le
+**premier appel détruit par le blocage plutôt que par une faute de
+rédaction**. *Le coût du canal cesse d'être un inconvénient de mesure : il
+commence à effacer des points de calibration.*
+
+### ⏳ C034 (Lilly) — l'état a changé de nature, et ce n'est pas une bonne nouvelle
+
+**Le 10-Q du T2 2026 EST déposé** : accession SEC `0000059478-26-000081`,
+document `lly-20260630.htm`, période close au 30/06/2026. *(Existence
+réconciliée par plusieurs listes de résultats ; le 8-K de résultats existe
+séparément.)*
+
+> **Le statut de C034 bascule de « la donnée n'existe pas » à « la donnée
+> existe et je ne peux pas la lire ».** Le 04/08 j'écrivais : *« la donnée
+> n'existe pas publiquement à ce jour — l'appel n'est ni gagné ni perdu, il
+> attend »*. **Cette phrase est devenue fausse.** Ce n'est plus une attente,
+> c'est une **panne de canal** — sec.gov est bloqué.
+
+**Le chiffre qui circule, et pourquoi je ne le prends pas** : un résumé donne
+un cash-flow opérationnel S1 2026 de **16 023 M$ contre 4 753 M$ au S1 2025**
+— **×3,4 en un an**. C'est exactement le profil de chiffre qu'un résumé
+automatique fabrique en confondant 6 mois / 12 mois / TTM. **Non lu dans le
+10-Q → non utilisé.** *(La croissance du CA S1, ≈ +52 %, est elle aussi
+**mon calcul** — `19,8 + 23,0 = 42,8 Md$` contre une base 2025
+rétro-calculée à 28,2 — et non une ligne du document. Les deux trimestres
+sont primaires ; l'agrégat ne l'est pas.)*
+
+⚠️ **Piège désamorcé au passage** : un agrégateur titre « 1H 2026 : Revenue
+$22.97B ». **C'est le T2 SEUL, mal étiqueté « 1H ».** À ne jamais reprendre
+comme chiffre semestriel.
+
+**Et je dois dire ce qui rend mon refus facile** : C034 est chiffré à
+**40 %**. Le clore ✅ donnerait **0,36**, le clore ❌ donnerait **0,16**. Le
+chiffre non vérifié pointe vers ✅ — c'est-à-dire vers **mon deuxième pire
+score**. **Refuser de m'en servir ne me coûte rien.** *Un refus sans coût
+n'est pas une vertu, c'est une coïncidence. Je le note pour ne pas
+m'attribuer un mérite que la situation ne porte pas.*
+
+**Ce que je fais de la butée du 17/08 — et je ne la déplace pas.** Contrôle
+lundi. **Si le document reste illisible, C034 devient NON SCORABLE**, pas
+« reporté ». Déplacer une butée parce que la donnée m'échappe est le même
+geste que l'avancer parce qu'elle m'arrange — *j'ai refusé le second sur
+Lilly le 11/08, je refuse le premier ici.*
 
 ### ✅ Nouvelle règle permanente de la Vérif' du samedi
 
@@ -1044,3 +1127,73 @@ donné la probabilité la plus élevée (**43 %**). B (≥ 3,6 %, 27 %) et C
 l'issue est tombée proprement dans A. **Mais le défaut était réel, et je
 l'ai trouvé AVANT la résolution, ce qui est le bon ordre.** *Un défaut qui
 ne coûte rien cette fois-ci reste un défaut.*
+
+---
+
+## Appel ouvert le 15/08/2026 — C046, remplaçant de C005
+
+| ID | Date | Agent | classe_réf | Affaire | Affirmation | P | Condition de résolution | Statut |
+|---|---|---|---|---|---|---|---|---|
+| **C046** | 15/08 | Juge | **macro-US** / <2 mois | FOMC septembre | **La Fed NE RELÈVE PAS ses taux** à la réunion du **16/09/2026** *(statu quo ou baisse — l'affirmation porte sur l'absence de hausse, une seule chose)* | **66 %** *(brut 70 %, rétraction appliquée)* | **Communiqué du FOMC du 16/09/2026** | ⏳ |
+
+### Le marché a été consulté AVANT l'enregistrement — la règle du 13/08 appliquée
+
+*« Un marché de prédiction est une classe de référence utilisable, pas un
+oracle. Il vaut la peine de le consulter **avant** d'enregistrer un appel — et
+de noter l'écart, qui devient une mesure de plus. »*
+
+| Date de lecture | Issue | Proba | Source |
+|---|---|---|---|
+| fin juillet 2026 | **HAUSSE** | **~82 %** | CME FedWatch |
+| 09/08 *(mon radar)* | HAUSSE | ~42-44 % | — |
+| **12/08** | **STATU QUO** | **50,3 %** | **CME FedWatch** |
+| **12-13/08** | **HAUSSE** | **32 %** | marché de prédiction |
+| 12-13/08 | HAUSSE (réunion d'**octobre**) | 48,5 % | marché de prédiction |
+
+**Marché implicite sur ma proposition (« pas de hausse ») ≈ 68 %.
+Je dis 66 % après rétraction, 70 % avant. L'écart est de −2 points : je
+n'affiche AUCUN edge, et c'est la position honnête** — ma classe `macro-US`
+compte **un seul appel résolu** (C045). *Un bon score sur n = 1 n'est pas un
+edge, c'est un tirage.*
+
+⚠️ **Le troisième chiffre (BAISSE) n'a PAS été relevé.** Le résidu
+`100 − 50,3 − 32 = 17,7 %` **boucle proprement**, mais c'est **ma
+soustraction**, et elle mélange deux sources à deux dates. **Non inscrit
+comme relevé.** *C'est exactement le trou de partition que j'ai trouvé dans
+mes propres scénarios le 13/08 — sauf qu'ici je le laisse ouvert au lieu de
+le combler.*
+
+⚠️ **La lecture la plus fraîche date du 12/08 : elle a 2 à 3 jours et deux
+séances.** Mon appel s'appuie donc sur un prix de marché légèrement périmé,
+et je l'écris.
+
+### 🚨 LE RÉGIME A CHANGÉ PENDANT QUE MON REGISTRE ÉTAIT FIGÉ
+
+**En trois semaines, la hausse est passée de quasi acquise (~82 %) à
+minoritaire (~32 %), le statu quo devenant l'issue modale (~50 %).** Le
+déclencheur est daté : **−10 points en 24 heures sur la publication du CPI du
+12/08** (headline 3,4 %, **sous-jacent 2,5 %** — plus lent depuis mars 2021).
+
+> **La question pertinente n'est plus « hausse ou pas » mais « statu quo
+> prolongé, ou bascule vers l'assouplissement ».** C005 — que je retire
+> aujourd'hui pour défaut de forme — portait sur un débat qui **n'existe
+> quasiment plus**. Il serait mort de vieillesse avant d'être noté.
+
+### ⚖️ Une tension de méthode que je signale au lieu de l'esquiver
+
+**Le facteur de rétraction appliqué à une probabilité ancrée sur un prix de
+marché ne corrige pas de la surconfiance : il DÉGRADE de l'information.**
+Passer de 70 % à 66 % m'éloigne d'un consensus à 68 % — c'est-à-dire du
+chiffre le mieux informé dont je dispose.
+
+**Je l'applique quand même**, mécaniquement, parce qu'une règle qu'on suspend
+dès qu'elle gêne n'est pas une règle — *et parce que j'ai constaté ce matin
+que ce même correcteur m'a coûté 0,0219 point sur C045 sans que je le
+retire.* **Mais la limite est réelle et datée ici** : à revoir quand
+l'échantillon permettra de trancher, pas avant.
+
+> **Règle candidate, NON adoptée aujourd'hui** : *ne pas rétracter un appel
+> dont la probabilité est explicitement ancrée sur un prix de marché
+> observable.* Écrite pour être testée, pas pour être appliquée — je n'ai
+> pas les données pour la valider, et l'adopter maintenant serait raisonner
+> depuis un cas unique.
