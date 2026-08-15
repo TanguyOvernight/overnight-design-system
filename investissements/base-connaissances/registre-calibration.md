@@ -1197,3 +1197,58 @@ l'échantillon permettra de trancher, pas avant.
 > observable.* Écrite pour être testée, pas pour être appliquée — je n'ai
 > pas les données pour la valider, et l'adopter maintenant serait raisonner
 > depuis un cas unique.
+
+---
+
+## 🔴 REQUALIFICATION DU 15/08 — le diagnostic de C025 reposait sur un fait faux
+
+**Le score de C025 ne bouge pas** : 70 %, issue ❌, Brier **0,4900**.
+*On ne réécrit pas un appel résolu, et l'issue reste ce qu'elle est.*
+
+**Mais l'EXPLICATION que j'en avais tirée le 08/08 est à jeter.** J'avais
+écrit : *« la capture Fortuneo du 07/08 montre que Tanguy AGISSAIT (PEA
+ouvert) et butait sur un mur opérationnel. Le mode d'échec non modélisé est
+la FRICTION, pas le désintérêt. »*
+
+**La capture du 15/08 établit qu'aucun PEA n'a jamais été ouvert.** Ce qui
+existe chez Fortuneo est un **compte courant** (100 €, carte reçue). La
+parenthèse « PEA ouvert » était fausse — et elle portait tout le diagnostic.
+
+### Ce que devient l'arbre de décomposition
+
+J'avais reconstruit `0,85 × 0,40 × 0,80 ≈ 27 %` en nommant les trois
+facteurs : intention, canal disponible, exécution. **Le facteur manquant
+n'était aucun des trois.** La vraie chaîne comportait **une étape que je
+n'avais pas modélisée du tout, parce que je la croyais déjà franchie** :
+*l'ouverture du plan lui-même.*
+
+> **Requalification** : le mode d'échec n'est pas la **FRICTION** (un
+> utilisateur qui veut agir et bute sur une interface). C'est
+> l'**ÉTAPE FANTÔME** — une étape que le conseiller coche mentalement comme
+> acquise et cesse donc de vérifier, ce qui la rend invisible dans tous les
+> arbres construits ensuite.
+
+**C'est un mode d'échec plus dangereux que la friction**, pour une raison
+précise : la friction se voit *(l'utilisateur se plaint)*, l'étape fantôme
+**se camoufle dans la plainte de l'utilisateur**. Tanguy m'a dit ne pas
+trouver comment verser. J'ai entendu « problème d'interface ». Il disait
+« l'objet n'existe pas ».
+
+### ✅ Règle permanente ajoutée
+
+> **Quand l'utilisateur décrit une impossibilité opérationnelle qui
+> PERSISTE, l'hypothèse par défaut n'est pas « il ne trouve pas le bouton »
+> mais « le bouton n'existe pas, parce que l'objet n'existe pas ».**
+> Une friction qui dure plus de quelques jours est un **fait sur l'état du
+> monde**, à re-tester à la source — pas un problème d'utilisateur à
+> contourner par de meilleures instructions.
+
+**Contrôle associé** : tout état du monde que je répète dans un brief sans
+l'avoir re-vérifié depuis **plus de 7 jours** doit être marqué comme
+*non re-testé* dans le classement. **« PEA ouvert » a été republié huit fois
+sans un seul contrôle.**
+
+⚠️ **Et je note la direction de l'erreur, comme pour les prix** : elle allait
+**dans le sens de mon propre récit** — celui d'un dossier qui progresse.
+*C'est le deuxième biais directionnel identifié aujourd'hui, et il n'a rien à
+voir avec le canal réseau : celui-ci est le mien.*

@@ -123,11 +123,65 @@ et 2026.
 
 ---
 
+### 🔴 CORRECTION D'ÉTAT DU 15/08 — le PEA n'a JAMAIS été ouvert
+
+**Capture Fortuneo du 15/08, 12h02.** Elle ne montre qu'une section
+**« Banque »** : un **compte courant** à **100,00 €**, carte reçue et à
+activer. **Aucun compte-titres, aucun PEA.** La tuile « Bourse » est une
+**sollicitation commerciale** — *« Vous souhaitez investir sur les marchés
+financiers ? Envie de transférer votre PEA chez Fortuneo ? »* — c'est-à-dire
+exactement ce qu'on affiche à quelqu'un **qui n'en a pas**.
+
+**Ce que j'avais écrit le 07/08, et qui était faux** : *« PEA Fortuneo —
+OUVERT le 07/08, NON ALIMENTÉ… il attend son premier virement, qui se pousse
+depuis la banque externe »*. **Répété dans huit briefs consécutifs comme
+l'action n°1.**
+
+**La bonne reconstruction des faits** : ce que Tanguy a ouvert est le
+**compte BANCAIRE** Fortuneo. Le « versement » que l'application réclamait
+servait à **activer ce compte courant** — pas un plan d'épargne en actions.
+**Et cette étape est FRANCHIE** : les 100 € sont là, la carte est arrivée.
+*Ce que je prenais pour un blocage était une étape réussie.*
+
+> 🔑 **L'erreur de méthode, et elle n'est pas de lecture** : j'ai interprété
+> une capture d'écran ambiguë dans le sens de **mon propre récit** — celui
+> d'un dossier qui avance — puis j'ai **propagé cette interprétation huit
+> jours sans jamais la re-tester**, alors que je disposais d'un signal
+> contraire évident : *Tanguy me disait ne pas trouver comment verser.*
+> **J'ai traité son blocage comme une friction d'interface. C'était une
+> information sur l'état réel du monde.**
+>
+> **Règle encodée** : *quand l'utilisateur décrit une impossibilité
+> opérationnelle persistante, l'hypothèse par défaut n'est pas « il ne
+> trouve pas le bouton » — c'est « le bouton n'existe pas, parce que l'objet
+> n'existe pas ».* Une friction qui dure est un **fait sur le monde**, pas un
+> problème d'utilisateur.
+
+**Ce que ça change concrètement** : l'action n°1 n'est pas « faire le
+virement », c'est **OUVRIR LE PEA** (parcours *ouverture*, **pas**
+*transfert* — le transfert s'adresse à qui en détient déjà un ailleurs).
+**Bonne nouvelle non anticipée** : le compte courant Fortuneo étant actif,
+l'alimentation du PEA devient un **virement interne, instantané** — le délai
+« nouveau bénéficiaire » de 24-48 h que je redoutais **tombe**.
+
+**Ce que ça NE change pas** : l'horloge fiscale des 5 ans démarre au
+**premier versement sur le PEA**. Ni l'ouverture du compte bancaire, ni les
+100 € qui y dorment ne l'ont fait courir.
+
+⚠️ **Un appel de calibration est concerné** : **C025** a été résolu ❌ le
+08/08 avec pour diagnostic *« Tanguy AGISSAIT (PEA ouvert) et butait sur un
+mur opérationnel »*. **La prémisse entre parenthèses était fausse.** Le score
+(0,4900) ne bouge pas — l'issue reste FAUSSE, et on ne réécrit pas un appel
+résolu. Mais **l'explication que j'en avais tirée reposait sur un fait
+inexact**, et le mode d'échec « FRICTION » que j'avais encodé doit être
+requalifié : ce n'était pas de la friction, **c'était une étape manquante que
+je croyais franchie**. *Voir `registre-calibration.md`.*
+
 ### 📊 LE CLASSEMENT AU 15/08 — **8 candidates, AUCUN MOUVEMENT DE RANG**
 
 | Rang | Candidate | Env. | Chiffre du jour vs déclencheur | Qualité de la donnée | Statut | Mvt |
 |---|---|---|---|---|---|---|
-| **①** | **Cœur World** (hurdle 5 %/an net) | **PEA Fortuneo — OUVERT, NON ALIMENTÉ** | 🟢 **Le blocage n'a pas bougé de la semaine.** Le PEA attend son **premier virement**, à pousser depuis la banque externe. ⏱️ **L'horloge des 5 ans n'a toujours pas démarré.** Budget d'août : **1 000 €** | — | 🟢 | **=** |
+| **①** | **Cœur World** (hurdle 5 %/an net) | 🔴 **PEA — PAS OUVERT.** *(état corrigé le 15/08, voir encadré)* | 🔴 **J'AI DÉCRIT LE MAUVAIS BLOCAGE PENDANT 8 JOURS.** Ce qui est ouvert et actif chez Fortuneo, c'est le **COMPTE COURANT** (100 €, carte reçue) — **pas un PEA**. ⏱️ L'horloge des 5 ans n'a pas démarré, mais la marche à franchir n'est pas un virement : **c'est l'ouverture du plan.** Budget d'août : **1 000 €** | **immédiat** | 🟢 | **=** |
 | **②** | **Or** (assurance) | CTO | **~4 371-4 373 $/oz** au 14/08 **à 9h00 ET** — soit **+1 %** sur la semaine. 🔴 **Garde-fou R (43,9 % > 35 %) : achat d'or INTERDIT ce mois-ci.** Écart à la cible toujours maximal : **0 % détenu contre 5-10 %** | ⚠️ **PAS une clôture spot** — le seul chiffre de clôture est celui des **futures décembre (4 432 $)**, non comparable (contango ~1,4 %) | 🟢 | **=** |
 | **③** | **Séché Environnement** | PEA | ⚠️ **PRIX RÉVISÉ À LA HAUSSE, ET MA MARGE FOND.** Deux lectures d'août : **81,9 €** et **84,20 €**. Le seuil est ≤ 90 € : la ligne reste dessous, **mais de −6,4 % à −9,0 % seulement, contre les −11,7 % que j'annonçais.** 🔴 **L'arrêté PFAS boues n'est TOUJOURS pas paru** | ❌ **Les deux cours sont NON DATÉS → rejetés.** Et le 79,43 € qu'ils remplacent était **circulaire** | 🟡 | **=** |
 | **④** | **Eli Lilly** | CTO | **1 220,28 $** → **+44,24 %** au-dessus du seuil de 846 $. 🔻 **REPASSE SOUS LA BARRE DES +45 %** (+45,05 % le 10/08). Le déclencheur de déclassement **n'est plus atteint dans sa substance**. Contrôle **05/09**, inchangé | ⚠️ Date non tranchée : « as of 13/08… previous close » ⇒ très probablement la **clôture du 12/08**. Motif d'instantané gelé non levé | 🟡 | **=** |
