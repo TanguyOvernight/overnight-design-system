@@ -412,7 +412,7 @@ post-événement est indistinguable d'une rationalisation.
 | **19/08** | **Inflation FINALE zone euro** (flash du 31/07 : **2,9 %** contre 2,8 % en juin) | Contexte. *Pas d'appel ouvert dessus — et je n'en ouvre pas un pour meubler* |
 | **~19/08** ⚠️ *date calculée* | 🔴 **Expiration du lock-up d'ArcelorMittal sur ~17,3 % de Vallourec** | **NE RIEN FAIRE AVANT.** Le vendeur le mieux informé du dossier redevient libre, **23 % sous son propre prix de sortie de mai (24,00 €)**. T6 en échec. *Les institutionnels servis à 24 € en mai sont de l'offre potentielle, pas des alliés* |
 | **20/08, 14h00** | 🔴 **Résultats Walmart T2 FY27** | **Résout C042** (croissance de la publicité globale < +32 % a/a — annoncé à 42 %). Lisible **sur le communiqué seul**, condition pré-enregistrée le 07/08. Dossier TUÉ, l'appel survit : *un PASSE se note comme un achat* |
-| **26/08, 22h20** | 🔴 **Résultats Nvidia T2 FY2027** — 22 % du portefeuille | Grille de pré-engagement écrite le 09/08, **17 jours à l'avance** (§ ci-dessous). ⚠️ **§3.4 À RÉ-EXAMINER** : l'alliance de financement de 500 Md$ déplace l'élément mesuré **hors bilan** — la grille doit être relue avant, pas après |
+| **26/08, 22h20** | 🔴 **Résultats Nvidia T2 FY2027** — 22 % du portefeuille | Grille de pré-engagement écrite le 09/08, **17 jours à l'avance** (§ ci-dessous). ✅ **§3.4 RÉ-EXAMINÉ ET AMENDÉ LE 16/08, soit J−10** — le critère ④ (engagements d'approvisionnement) devient **conditionnel** : un plateau ne compte comme mauvaise surprise que si aucun transfert d'obligations d'achat vers un véhicule de financement n'est mentionné. *Sinon ④ est NON TESTABLE et je l'écris.* **Règle générale ajoutée : toute grille pré-engagée est relue à J−7 avec une seule question — « l'objet que je mesure existe-t-il encore sous la même forme ? »** |
 | **27-29/08** | 🔴 **Jackson Hole — premier discours de Kevin Warsh comme président de la Fed** | Tombe **le lendemain de Nvidia**. Dans un régime où le débat porte sur une **hausse**, le premier Jackson Hole d'un nouveau président fixe le cadre |
 
 ### 📋 Ajouts du chantier « smart money » du 15/08
@@ -530,6 +530,65 @@ seul », ce n'est pas un transcript). **95,2 → 119,0 Md$ (+25 % séq)**, dont
 baisse.** *C'est le seul chiffre où NVIDIA engage du cash contractuel sur ce
 qu'elle croit de son S2 — un plateau ici précède une révision de guidance
 d'un ou deux trimestres.*
+
+> ### 🔧 AMENDEMENT DU ④ — écrit le **16/08**, soit **10 jours AVANT** le print
+>
+> **Le défaut** : le critère ④ suppose que les engagements d'approvisionnement
+> **de NVIDIA** capturent l'ensemble du cash contractuel engagé sur son S2.
+> **L'alliance de financement de ~500 Md$ portée au radar casse cette
+> hypothèse** : si des obligations d'achat sont assumées par un véhicule
+> financé ou par des partenaires, **la ligne d'engagements de NVIDIA peut
+> plafonner sans que cela signifie ce que le critère prétend lire.**
+>
+> 🔴 **Et le signal s'INVERSE, ce qui est le pire cas** : un plateau, que
+> j'avais écrit comme « mauvaise surprise annonçant une révision de
+> guidance », deviendrait le symptôme d'un **transfert comptable** — donc
+> potentiellement d'une activité en hausse. *Un critère qui peut dire le
+> contraire de ce qu'il mesure est pire qu'un critère absent.*
+>
+> **Le critère ④ devient donc, à compter de maintenant :**
+>
+> > Un plateau ou un recul des engagements d'approvisionnement compte comme
+> > **mauvaise surprise SEULEMENT SI** la CFO Commentary **ne mentionne
+> > aucun transfert, prise en charge ou externalisation d'obligations
+> > d'achat** vers un véhicule de financement ou un partenaire.
+> > **Si un tel transfert EST mentionné, ④ devient NON TESTABLE pour ce
+> > trimestre, et je l'écris — je ne lis pas le plateau.**
+> > *Si un total consolidé (NVIDIA + véhicule) est publié, c'est LUI qui
+> > porte le test, et le seuil reste « stable ou en baisse » sur ce total.*
+>
+> ✅ **Légitimité de l'amendement** : écrit **10 jours avant la publication**,
+> **rien de l'issue n'est connu**. C'est la même fenêtre que celle qui m'a
+> autorisé hier à resserrer la condition de C004 — et la même qui m'a
+> interdit de toucher à C003.
+>
+> ⚠️ **L'alliance de financement elle-même est un état NON RE-TESTÉ** (portée
+> au radar, non revérifiée depuis). Si elle n'existe pas ou a changé de
+> forme, l'amendement est simplement inoffensif : il n'ajoute une condition
+> que dans un cas de figure précis.
+>
+> ### 🔁 Et c'est la DEUXIÈME fois ce mois-ci — le motif mérite un nom
+>
+> Le 05/08, j'ai dû remplacer **M3′** sur Lilly parce qu'il était devenu
+> **intestable** : le coût MFN ne pouvait pas être observé sans traverser le
+> prix réalisé US. Aujourd'hui, ④ devient conditionnel parce que l'objet
+> mesuré **peut se déplacer hors du périmètre où je le mesure**.
+>
+> > **UN CRITÈRE PRÉ-ENREGISTRÉ SE PÉRIME QUAND L'ÉMETTEUR CHANGE LA FORME
+> > DE SA PUBLICATION** — segmentation, périmètre de consolidation, véhicule
+> > de financement. Le pré-engagement protège contre **mon** biais après
+> > coup ; il ne protège **pas** contre une modification du référentiel par
+> > l'émetteur.
+> >
+> > **Règle ajoutée** : toute grille pré-engagée est **relue à J−7**, et la
+> > seule question posée est *« l'objet que je mesure existe-t-il encore sous
+> > la même forme ? »*. Une relecture à J−7 est encore aveugle à l'issue —
+> > **une relecture le soir même ne l'est plus.**
+>
+> *C'est exactement le piège n°1 que cette grille nommait elle-même — « la
+> rupture de comparabilité INVISIBLE ». Je l'avais écrit pour la
+> segmentation Data Center. Je ne l'avais pas appliqué à mes propres
+> critères.*
 
 **⑤ La marge OPÉRATIONNELLE, calculée à la main** (`RO ÷ CA`). 65,0 % →
 **65,6 %**. Mauvaise surprise : **en recul séquentiel** avec un CA en hausse
