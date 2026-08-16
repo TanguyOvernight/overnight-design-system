@@ -74,6 +74,104 @@ tournant déjà.
 > liste de candidates** — `chasse-quotidienne.md` se lit avant de briefer,
 > pas pendant que l'agent tourne.
 
+## 🔴 DEUX RÈGLES DU TERRAIN RÉGLEMENTAIRE (encodées le 16/08/2026)
+
+Chasse prospective du 16/08 : **8 mécanismes datés examinés, 0 retenu.**
+Mais deux enseignements de méthode, tous deux coûteux à ignorer.
+
+### ① LE REPORT EST LE MODE DE DÉFAILLANCE DOMINANT — vérifier la date AVANT d'analyser
+
+**Sur 8 mécanismes, DEUX portaient une date FAUSSE dans les premiers
+résultats de recherche** — et dans les deux cas c'était un **report** :
+
+| Thème | Date servie | Date RÉELLE | Texte |
+|---|---|---|---|
+| Décret thermostat France, parc **existant** | 01/01/**2027** | **01/01/2030** | décret n° **2025-1343 du 26/12/2025** |
+| **ETS2** (marché carbone bâtiments/transport) | 01/01/**2027** | **2028** | trilogue du **10/12/2025** |
+
+**Le décret thermostat serait passé d'« obligation sur ~37 millions de
+logements dans 16 mois » à « obligation sur le neuf, soit ~1 % du parc par
+an ».** Toute la thèse tenait à cette date.
+
+> **RÈGLE : sur tout thème réglementaire, la première requête n'est PAS
+> « quel est le mécanisme » mais « ce texte a-t-il été reporté ou modifié ? »**
+> — requête ciblée « report / postponement / décret modificatif », **avant
+> toute analyse.** Un texte se date à son **obligation effective**, jamais à
+> sa publication.
+>
+> 🎯 *Signe de qualité d'une source : le report du décret thermostat a été
+> confirmé par **Delta Dore, fabricant de thermostats** — un acteur qui
+> n'a aucun intérêt à annoncer que son marché obligatoire recule de trois
+> ans. **Une source qui parle contre son propre intérêt vaut deux sources
+> neutres.***
+
+### ② UN PÉAGE CRÉÉ PAR UNE RÈGLE PEUT ÊTRE DÉFAIT PAR LE FAISEUR DE RÈGLE
+
+**CORSIA** avait tout du goulot parfait : phase obligatoire en janvier 2027,
+couverture passant de ~64 % à ~87 % des émissions de l'aviation
+internationale, demande estimée à **170-236 Mt CO2e** contre seulement
+**~41 Mt d'unités éligibles** vérifiées. Une pénurie de 4 à 6 pour 1.
+
+**Ce qui l'a tué** : la Commission européenne a **assoupli les critères de
+qualité** des crédits de phase 1 — *précisément parce que l'offre était très
+en deçà de la demande.*
+
+> **Un goulot dont l'autorité peut réduire la contrainte par décision
+> administrative n'est pas un goulot.**
+
+**C'est la TROISIÈME espèce de contournement en trois semaines, et il faut
+les tenir ensemble** :
+
+| Dossier | Le péage supposé | Par quoi il est contourné |
+|---|---|---|
+| **BESI** (10/08) | assemblage hybride de puces | une **décision de comité de normalisation** |
+| **Stevanato** (11/08) | flacon/seringue des anti-obésité | un **comprimé** — substitution produit |
+| **CORSIA** (16/08) | pénurie d'unités carbone éligibles | **le régulateur relâche sa propre règle** |
+
+> 🔑 **La généralisation** : *un péage RÉGLEMENTAIRE porte une voie de
+> contournement de plus qu'un péage physique — celle du faiseur de règle.*
+> Et cette voie s'ouvre **d'autant plus que le péage est rentable**, puisque
+> c'est la rareté elle-même qui déclenche la pression politique.
+> **Un goulot réglementaire trop beau est auto-destructeur.**
+
+**Même schéma sur la consigne / PPWR** : deux échappatoires légales — la
+**dérogation aux États atteignant 80 % de collecte en 2026**, et la
+**consigne DIGITALE** que la Belgique laisse tester (un smartphone remplace
+la machine). *C'est littéralement le cas « un comprimé remplace le flacon »,
+transposé.*
+
+### ③ INVERSION DU TERRAIN : chasser à partir du VÉHICULE, pas de la RÈGLE
+
+**Le constat, et il est structurel** : sur 8 mécanismes, **3 sont morts faute
+de véhicule achetable** — pas faute de qualité.
+
+- *Fin de la salderingsregeling néerlandaise au 01/01/2027* (loi adoptée le
+  17/12/2024) : **le meilleur mécanisme de la session** — l'autoconsommation
+  devient du jour au lendemain la seule valeur du parc PV résidentiel
+  néerlandais. **Encaisseurs : tous privés** (Zonneplan, HomeWizard, Sessy)
+  ou hors zone.
+- *Extinction de la 2G en France* (arrêt Orange **22/09 → 20/10/2026**) :
+  ~**11,8 M d'appareils**, coût ≥ **685 M€** *(MONO-SOURCE, portée par une ONG
+  militante — ordre de grandeur, pas un fait)*. Obsolescence pure, datée,
+  **non contournable**. **Encaisseurs : Kone (Helsinki, exclu), Schindler
+  (Suisse, exclu), Otis (immatériel).** Le seul pure play français, Cogelec,
+  **n'est plus coté.**
+- *REP emballages professionnels FR* (01/01/2027) : aucun véhicule identifié.
+
+> **L'ACHETABILITÉ N'EST PLUS UN FILTRE EN AVAL : elle est devenue la CAUSE
+> PREMIÈRE de mortalité des thèmes réglementaires** — parce que l'Europe fait
+> payer ses obligations par des acteurs privés ou nordiques.
+
+**RÈGLE : le terrain réglementaire se chasse désormais À PARTIR DU
+VÉHICULE.** On part de la liste des small/mid caps Paris-Amsterdam-Bruxelles
+et on demande, pour chacune : *quelle obligation datée tombe dans son carnet ?*
+**Partir de la règle produit des thèmes brillants et inachetables** — la
+session du 16/08 en a produit trois d'affilée.
+
+*C'est la même conclusion que le chantier défense de la veille (5 sociétés,
+aucune achetable-non courue-documentée) : deux terrains consécutifs disent
+que le point de départ est le mauvais.*
+
 ## Brief type d'un agent presse (template)
 
 > « Tu es un chasseur d'opportunités d'investissement. Date : [date].

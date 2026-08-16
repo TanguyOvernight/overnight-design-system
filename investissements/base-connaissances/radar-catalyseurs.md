@@ -407,13 +407,62 @@ post-événement est indistinguable d'une rationalisation.
 | Date | Événement | Impact / ce que j'en fais |
 |---|---|---|
 | **17/08** | 🔴 **Butée de données du 10-Q T2 de Lilly (SEC)** | **Résout C034** (FCF S1 2026 croissant au moins aussi vite que le CA, et ≥ 5,5 Md$). **Calibration SEULE** — aucune conséquence sur le contrat d'achat, dont les clés se jouent au T3. *L'hôte était en 403 le 04/08 ; six formulations tentées.* Si le document reste inatteignable, l'appel n'est **ni gagné ni perdu**, il attend — et je l'écris plutôt que de le forcer |
-| **18/08** | **Résultats S1 NEPI Rockcastle** (NRP, Euronext Amsterdam) [MONO-SOURCE, à reconfirmer] — webcast **19/08 09h00** | Chantier émergents, **groupe B2**. 🔴 **Éligibilité PEA NON RÉSOLUE = critère ÉLIMINATOIRE non levé.** Tant qu'il ne l'est pas, **aucune instruction ne démarre** : instruire un titre non achetable est du temps perdu, la leçon Stalprodukt |
+| **18/08** | **Résultats S1 NEPI Rockcastle** (NRP, Euronext Amsterdam) [MONO-SOURCE, à reconfirmer] — webcast **19/08 09h00** | 🟡 **INSTRUIT LE 16/08 — NON TRANCHÉ, présomption forte d'ÉLIGIBLE.** Les 3 obstacles se lèvent au raisonnement, **aucune preuve de rang (a) obtenue**. **① Siège** : N.V. néerlandaise depuis le **21/09/2022** (redomiciliation Île de Man → Pays-Bas), **ISIN NL0015000RT3** — résidente fiscale NL **par incorporation**, pas de zone grise ✅. **② Statut foncière — le point qu'on croyait mortel** : NEPI a **explicitement écarté** le régime REIT néerlandais en 2022 (*« pas la meilleure structure à ce stade »*), les revenus locatifs sont taxés **au niveau des filiales** (Roumanie 16 %, Pologne 19 %), et le régime FBI est **fermé à l'immobilier détenu directement depuis le 01/01/2025**. 🔑 **La preuve la plus forte est indirecte : NEPI *DEMANDE* un statut REIT néerlandais (25/02/2026) — on ne demande pas ce qu'on possède déjà** ✅. **③ Double cotation JSE : non bloquante** — le label « REIT » de la JSE est un **label boursier**, PAS un régime d'exonération néerlandais. *Ne pas confondre : c'est le piège du dossier.* 🔴 **RISQUE PROSPECTIF DATÉ ET NON RÉSOLU** : si les Pays-Bas légifèrent un régime REIT et que NEPI l'adopte, **les achats POSTÉRIEURS deviennent inéligibles au PEA**. Issue de la demande de février : **inconnue**. ⚠️ **PIÈGE D'ISIN** : l'ancien ISIN manxois **IM00BDD7WV31** circule encore dans plusieurs bases — **une ligne sous ISIN IM… ne serait PAS éligible.** Vérifier **NL0015000RT3** sur l'ordre |
 | **18/08** | Production industrielle US, 15h15 | Contexte macro seulement |
 | **19/08** | **Inflation FINALE zone euro** (flash du 31/07 : **2,9 %** contre 2,8 % en juin) | Contexte. *Pas d'appel ouvert dessus — et je n'en ouvre pas un pour meubler* |
 | **~19/08** ⚠️ *date calculée* | 🔴 **Expiration du lock-up d'ArcelorMittal sur ~17,3 % de Vallourec** | **NE RIEN FAIRE AVANT.** Le vendeur le mieux informé du dossier redevient libre, **23 % sous son propre prix de sortie de mai (24,00 €)**. T6 en échec. *Les institutionnels servis à 24 € en mai sont de l'offre potentielle, pas des alliés* |
 | **20/08, 14h00** | 🔴 **Résultats Walmart T2 FY27** | **Résout C042** (croissance de la publicité globale < +32 % a/a — annoncé à 42 %). Lisible **sur le communiqué seul**, condition pré-enregistrée le 07/08. Dossier TUÉ, l'appel survit : *un PASSE se note comme un achat* |
 | **26/08, 22h20** | 🔴 **Résultats Nvidia T2 FY2027** — 22 % du portefeuille | Grille de pré-engagement écrite le 09/08, **17 jours à l'avance** (§ ci-dessous). ✅ **§3.4 RÉ-EXAMINÉ ET AMENDÉ LE 16/08, soit J−10** — le critère ④ (engagements d'approvisionnement) devient **conditionnel** : un plateau ne compte comme mauvaise surprise que si aucun transfert d'obligations d'achat vers un véhicule de financement n'est mentionné. *Sinon ④ est NON TESTABLE et je l'écris.* **Règle générale ajoutée : toute grille pré-engagée est relue à J−7 avec une seule question — « l'objet que je mesure existe-t-il encore sous la même forme ? »** |
 | **27-29/08** | 🔴 **Jackson Hole — premier discours de Kevin Warsh comme président de la Fed** | Tombe **le lendemain de Nvidia**. Dans un régime où le débat porte sur une **hausse**, le premier Jackson Hole d'un nouveau président fixe le cadre |
+
+### 📋 Complément du 16/08 — trois événements de la semaine que j'avais manqués
+
+| Date | Événement | Statut |
+|---|---|---|
+| **19/08** | 🔴 **MINUTES DU FOMC des 28-29/07** *(règle des 3 semaines)* | **DÉRIVÉ**, non confirmé. ⚠️ **Contenu MONO-SOURCE NON VÉRIFIÉ (Newsquawk)** : taux maintenus à **3,50-3,75 %** avec **TROIS dissidences (Logan, Hammack, Kashkari) en faveur d'une HAUSSE de 25 pb.** **Si c'est exact, ce n'est pas un non-événement mais un risque haussier sur les taux** — voir la note C046 ci-dessous |
+| **21/08** | **PMI flash d'août** — manufacturier + services, US / zone euro / RU / Japon | ✅ RÉCONCILIÉ. Probablement **le 2ᵉ événement macro de la semaine** après Walmart |
+| **19/08** | Mises en chantier + permis de construire US ; NAHB le 18/08 | MONO-SOURCE |
+| semaine | **Home Depot, Target, Lowe's, TJX** publient — traditionnellement **avant** Walmart | MONO-SOURCE, dates non trouvées. **Utiles comme signal précurseur sur le consommateur américain** |
+| semaine | **Analog Devices** (analogique/industriel/auto) et **Fabrinet** (optique datacenter, proxy IA) | MONO-SOURCE, dates non trouvées |
+
+> ⚠️ **C046 — je NE révise PAS sur les trois dissidences.** L'information est
+> **mono-source et non vérifiée**. *Le 11/08, j'ai refusé de réviser C045 sur
+> une « correction » qui s'est révélée fausse — et ce refus m'a protégé.*
+> **Même geste ici.** Les minutes du 19/08 trancheront ; si les dissidences
+> sont réelles, ce sera une information à intégrer **à la prochaine
+> ouverture d'appel**, pas une révision rétroactive de C046.
+
+> ✅ **Jackson Hole : mes dates 27-29/08 sont CONFIRMÉES** (Kansas City Fed +
+> 2 sources), thème *« Financial Innovation: Implications for Payments and
+> Policy »*, premier discours du président Warsh.
+> 🔴 **Un agrégateur le place les 21-22 août — c'est le calendrier 2025
+> recopié. FAUX.** *Même famille d'erreur que le mélange de millésimes subi
+> sur Sipef la veille. Ne pas laisser cette date entrer dans un scénario.*
+
+### 📋 Catalyseurs réglementaires datés — récolte de la chasse prospective du 16/08
+
+**Aucun n'ouvre de dossier** (tous morts sur l'achetabilité ou sur la date).
+Portés au radar comme **référentiel de dates**, pas comme candidats.
+
+| Date | Événement | Preuve |
+|---|---|---|
+| **22/09 → 20/10/2026** | **Arrêt définitif du réseau 2G d'Orange** en métropole, en 3 étapes ; fin de service en décembre 2026 | 2 sources |
+| **31/12/2026** | Date limite d'adhésion à un éco-organisme — **REP emballages professionnels FR** | mono-source |
+| **01/01/2027** | 🇳🇱 **Fin de la *salderingsregeling*** — loi adoptée le 17/12/2024 ; compensation de réinjection ramenée à ≥ 50 % du tarif nu jusqu'en 2030 | 2 sources |
+| **01/01/2027** | Régulation de température obligatoire — **logements NEUFS uniquement** *(l'existant est repoussé au 01/01/2030 par le décret n° 2025-1343 du 26/12/2025)* | 2 sources |
+| **20/01/2027** | Application du **règlement Machines (UE) 2023/1230** | 2 sources |
+| **Janvier 2027** | Phase obligatoire **CORSIA** (couverture ~64 % → ~87 %) ; annulation des unités de phase 1 à échéance janvier 2028 | 2 sources |
+| **2028** *(et NON 2027)* | Démarrage de l'**ETS2** bâtiments/transport routier — reporté au trilogue du 10/12/2025 | 2 sources |
+| **01/01/2029** | **PPWR** : 90 % de collecte séparée des bouteilles PET et canettes ≤ 3 L ; **dérogation** aux États atteignant 80 % en 2026 | 2 sources |
+
+**Deux pistes non explorées, faute de budget d'agent — à reprendre :**
+**(1)** l'évaluation du seuil de 80 % en **Espagne** en 2026 (catalyseur daté
+réel sur la consigne) ; **(2)** le **décret français annoncé pour garantir la
+sécurité des ascenseurs** face à l'extinction 2G — *s'il crée une obligation
+de mise en conformité assortie de sanctions, il change la nature du flux.*
+**(3)** **Alfen** (Amsterdam), adjacente au thème néerlandais — *ni chiffrée
+ni vérifiée ; son métier est le stockage industriel et les bornes, pas la
+batterie domestique.*
 
 ### 📋 Ajouts du chantier « smart money » du 15/08
 

@@ -399,7 +399,7 @@ réactions. Assumé et écrit.
 | ID | Date | Agent | classe_réf | Affaire | Affirmation | P | Condition de résolution | Statut |
 |---|---|---|---|---|---|---|---|---|
 | **C033** | 04/08 | Juge | pharma-US / <1 an · CTO | Eli Lilly | **Le principe même de la réécriture** : conditionnellement à au moins une clôture ≤ 1 020 $ d'ici le 06/11/2026, **au moins une des trois conditions de mécanisme (M1, M2, M3) est en échec ou révoquée** au moment de cette clôture | **72 %** | Au 06/11/2026 : si aucune clôture ≤ 1 020 $ → appel **VOID**, non scoré. Sinon, grille M1/M2/M3 arrêtée à la date de la première clôture qualifiante | ⏳ |
-| **C034** | 04/08 | Juge | pharma-US / <1 an · CTO | Eli Lilly | **Le test Vicat appliqué à LLY** : FCF S1 2026 croissant au moins aussi vite que le CA S1 2026, **et** ≥ 5,5 Md$ | **40 %** | ⏳ **RESTE OUVERT au 05/08 — non résoluble.** Le tableau de flux existe (annexe `4-Q2-26-Press-Release-SCF.pdf`) mais **l'hôte est bloqué en 403** et le 10-Q T2 n'est pas encore déposé (attendu ~07-10/08). Six formulations tentées, dont une en français. **La donnée n'existe pas publiquement à ce jour — l'appel n'est ni gagné ni perdu, il attend.** Résolution reportée au dépôt du 10-Q | ⏳ |
+| **C034** | 04/08 | Juge | pharma-US / <1 an · CTO | Eli Lilly | **Le test Vicat appliqué à LLY** : FCF S1 2026 croissant au moins aussi vite que le CA S1 2026, **et** ≥ 5,5 Md$ | **40 %** | ✅ **RÉSOLU VRAI le 16/08, la veille de sa butée.** CF d'exploitation S1 2026 **16 023 M$** contre 4 753 M$, capex ~5 200 → **FCF ≈ 10 823 M$**. Les deux jambes tiennent, la seconde **quelle que soit la donnée manquante** (capex S1 2025 introuvable, mais borné ≥ 0 ⇒ croissance du FCF ≥ +127,7 % contre +52 % pour le CA). **Brier 0,3600.** *Voir « Résolution du 16/08 »* — ancienne note : ⏳ **RESTE OUVERT au 05/08 — non résoluble.** Le tableau de flux existe (annexe `4-Q2-26-Press-Release-SCF.pdf`) mais **l'hôte est bloqué en 403** et le 10-Q T2 n'est pas encore déposé (attendu ~07-10/08). Six formulations tentées, dont une en français. **La donnée n'existe pas publiquement à ce jour — l'appel n'est ni gagné ni perdu, il attend.** Résolution reportée au dépôt du 10-Q | ⏳ |
 | **C035** | 04/08 | Juge | pharma-US / <1 an · CTO | Eli Lilly | La **guidance BPA FY2026 est RELEVÉE** (médian > 36,25 $) | **70 %** | Communiqué du **05/08/2026** | ❌ **RÉSOLU FAUX 05/08** — Brier **0,4900**. *Voir « Appels résolus »* |
 | **C036** | 04/08 | Juge | pharma-US / <1 an · CTO | Eli Lilly | **Ancien seuil, fenêtre neuve** : LLY clôture ≤ **1 020 $** au moins une séance entre le 05/08 et le **06/11/2026** | **30 %** | Clôtures NYSE, 05/08 → 06/11/2026 | ⏳ |
 
@@ -1252,3 +1252,132 @@ sans un seul contrôle.**
 **dans le sens de mon propre récit** — celui d'un dossier qui progresse.
 *C'est le deuxième biais directionnel identifié aujourd'hui, et il n'a rien à
 voir avec le canal réseau : celui-ci est le mien.*
+
+---
+
+## ✅ RÉSOLUTION DU 16/08/2026 — C034 (Eli Lilly), et il me coûte
+
+| ID | Affirmation | P | Issue | Brier |
+|---|---|---|---|---|
+| **C034** | **Le test Vicat appliqué à LLY** : FCF S1 2026 croissant au moins aussi vite que le CA S1 2026, **et** ≥ 5,5 Md$ | **40 %** | **1 — ✅ VRAI** | **0,3600** |
+
+### Les chiffres, et comment ils ont été établis
+
+**Flux net de trésorerie d'exploitation, 6 mois clos le 30/06/2026 :
+16 023 M$** contre **4 753 M$** au S1 2025 — soit **×3,37**.
+
+**Hier je refusais ce chiffre.** Il était MONO-SOURCE et son profil (×3,4 en
+un an) est exactement celui qu'un résumé automatique fabrique en confondant
+6 mois / 12 mois / TTM. **Aujourd'hui il est retenu, parce que trois chaînes
+arithmétiques indépendantes se referment :**
+
+| Chaîne | Calcul | Résultat |
+|---|---|---|
+| **1 — valide le S1 2025** | `4 753 + 8 800 (T3) = 13 553` → T4 2025 implicite **3 260** → total FY2025 = **16 813** | **exactement les 16 813 M$ publiés** ✅ |
+| **2 — valide le S1 2026** | `16 023 − 5 300 (T1) = 10 723` pour le T2 seul, contre un **pic trimestriel de ~10 600** cité par une source distincte | **écart 1,2 %** ✅ |
+| **3 — valide le capex** | `2 300 (T1) + ~2 900 (T2) = 5 200` | **exactement le chiffre d'allocation de capital S1 du communiqué** ✅ |
+
+⚠️ **Aucune de ces valeurs n'a été LUE dans le 10-Q** (`lly-20260630.htm`,
+accession `0000059478-26-000081`, déposé le 05/08) — l'hôte reste bloqué.
+**La résolution repose sur la règle du chiffre réconcilié, pas sur une
+lecture primaire.** C'est écrit pour que quiconque relira sache exactement
+sur quoi ce point de calibration est assis.
+
+### 🔑 Le raisonnement qui rend la conjonction résoluble malgré une donnée manquante
+
+C034 est une **conjonction** — deux jambes.
+
+**Jambe 2** : FCF S1 2026 = `16 023 − 5 200` ≈ **10 823 M$ ≥ 5 500** ✅
+*(il faudrait un capex semestriel de 10,5 Md$ pour la faire tomber)*.
+
+**Jambe 1** : elle exige la croissance du FCF, donc **le capex du S1 2025 —
+INTROUVABLE.** Et pourtant elle se tranche :
+
+> **Le capex est nécessairement ≥ 0, donc le FCF du S1 2025 est
+> nécessairement ≤ 4 753 M$.** La croissance du FCF est donc **au minimum**
+> `10 823 ÷ 4 753 − 1 = **+127,7 %**` — très au-dessus des **+52 %** de
+> croissance du CA. **La donnée manquante ne peut jouer que dans un sens :
+> plus le capex 2025 était élevé, plus la croissance est forte.**
+
+**C'est la même forme de raisonnement qu'hier sur la provision GSI de
+Nexans** — *une jambe non vérifiée ne bloque pas si elle ne peut couper que
+d'un côté.* **Différence décisive avec C003, et c'est elle qui explique que
+l'un se note et l'autre pas** : ici l'inconnue est **quantitative et
+bornée** ; chez Nexans elle était **sémantique** (deux lectures opposées d'un
+verbe). *Une borne se raisonne ; une ambiguïté de sens, non.*
+
+### Ce que ça coûte, et l'ordre dans lequel c'est arrivé
+
+**Brier 0,3600** — l'un de mes plus mauvais scores. **Moyenne : 0,3180 →
+0,3233.**
+
+| | n = 7 | **n = 8** |
+|---|---|---|
+| Brier moyen | 0,3180 | **0,3233** |
+| Repère « 50 % à tout » | 0,2500 | 0,2500 |
+| Climatologie | 0,2449 | **0,2500** *(taux de base exactement 4/8)* |
+| **BSS** | −0,272 / −0,299 | **−0,293 sur les deux** |
+
+> **Hier, je refusais ce chiffre en notant que le refus ne me coûtait rien —
+> le clore m'aurait donné un mauvais score. Aujourd'hui, correctement
+> réconcilié, il me coûte 0,36 et dégrade ma moyenne. J'ai refusé quand
+> c'était gratuit, j'accepte quand c'est cher.** *C'est le bon ordre, et
+> c'est tout ce qu'il y a à en dire.*
+
+### Le motif se durcit — et je continue de ne pas le théoriser
+
+| | n = 6 (08/08) | n = 7 (15/08) | **n = 8** |
+|---|---|---|---|
+| Annoncé **PROBABLE** (P ≥ 60 %) | 0/3 | 1/3 | **1/3** |
+| Annoncé **IMPROBABLE** (P ≤ 42 %) | 2/3 | 2/4 | **3/5** |
+
+**Ce que j'annonce improbable se réalise maintenant 3 fois sur 5.** Le motif
+que je décrivais le 08/08, qui s'était *amolli* le 15/08, **se re-durcit**.
+
+⚠️ **Et c'est précisément pour ça que je n'en tire toujours rien.** *Un motif
+qui s'affaiblit puis se renforce au gré de chaque résolution unitaire est un
+motif qui n'existe pas encore.* J'ai construit trois théories sur ce registre
+en une semaine ; les trois sont mortes en moins de 72 heures. **n = 8 ; ma
+charte exige 20-30. Aucun paramètre de sizing ne bouge.**
+
+---
+
+## 🔒 PRÉ-ENGAGEMENT DE PÉRIMÈTRE SUR C042 — écrit le 16/08, **4 jours avant** le print
+
+**Le défaut découvert aujourd'hui** : mon chiffre de référence du T1 FY27
+est **ambigu**. Deux formulations circulent pour le 21/05/2026 :
+- **« publicité mondiale +37 % »** — celui que j'ai enregistré ;
+- **« publicité totale +36 %, dont Walmart Connect +44 % »**.
+
+**Ce ne sont pas deux mesures du même objet** : la publicité *globale*
+inclut Vizio, Flipkart Ads et PhonePe ; *Walmart Connect* est le périmètre US
+seul, et il croît **nettement plus vite** (+44 % contre +36/37 %).
+
+> ⚠️ **Le piège est mortel pour l'appel** : lire jeudi un « Walmart Connect
+> +X % » et le comparer à mon +37 % *global* ferait perdre — ou gagner — le
+> pari **sur une erreur de périmètre**, pas sur une lecture du monde.
+
+**Ce que je fige maintenant, avant tout fait connu :**
+
+> **C042 se résout sur le chiffre que Walmart présente comme la croissance
+> de son activité publicitaire GLOBALE (ou TOTALE) dans le communiqué du T2
+> FY27.**
+> **Si le communiqué ne publie QUE Walmart Connect (US), ou seulement un
+> agrégat de définition différente, C042 est NON RÉSOLUBLE** — et je ne
+> substitue **PAS** Walmart Connect à la publicité globale.
+> *La branche A4 des scénarios de ce dimanche (6 %) couvre exactement ce
+> cas.*
+
+**Note sur la construction** : la tendance de C042 (`+46 % → +37 %`, soit
+−3 pts/trimestre, projection **~+34 %**) a été bâtie sur le +37 %. Si le vrai
+chiffre du T1 était **+36 %**, la projection tombe à **~+33 %** et le seuil de
+32 % est **encore plus serré** — l'appel devient plus difficile à gagner, pas
+plus facile. *Je le signale parce que l'incertitude joue contre moi, et que
+c'est le sens dans lequel il faut la déclarer.*
+
+⚠️ **Troisième critère pré-enregistré amendé pour cause de périmètre en
+douze jours** : M3′ sur Lilly (05/08, intestable), ④ sur Nvidia (16/08, objet
+déplaçable hors bilan), C042 aujourd'hui (deux périmètres publicitaires).
+**Ce n'est plus une série d'accidents, c'est le coût structurel du
+pré-engagement** — et il se paie en relectures à J−7, pas en regrets le soir
+du print.
