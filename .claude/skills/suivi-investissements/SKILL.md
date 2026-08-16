@@ -151,6 +151,38 @@ chiffre est intéressant, pas noyé sous les infos »). Cible : message
 principal ≤ ~2 500 caractères, lisible en < 2 minutes. Le détail vit dans
 le journal.
 
+> 🔴 **AUDIT DU 15/08/2026 — cette cible n'a JAMAIS été respectée.**
+> Mesure sur les 14 éditions d'août : plus courte **3 588**, moyenne
+> **~4 300**, plus longue **6 302**. **Zéro respect sur 14, dépassement
+> moyen de +72 %.**
+>
+> **Diagnostic** : une règle écrite mais jamais **mesurée** n'est pas une
+> règle, c'est une intention. Et la cible unique était **intenable le
+> samedi** (la Vérif' des appels a un coût de place irréductible) — *une
+> règle qu'on ne peut pas tenir se fait ignorer partout, y compris là où
+> elle était tenable.*
+>
+> **DEUX CIBLES, parce que deux objets différents :**
+> | Édition | Cible |
+> |---|---|
+> | **Brief quotidien** (lun-ven) | **≤ 2 500 caractères** |
+> | **Revue du samedi / Prépa du dimanche** | **≤ 4 000 caractères** |
+>
+> **PROCÉDURE OBLIGATOIRE, pas une bonne résolution :**
+> 1. **`wc -c` sur le fichier AVANT l'envoi Slack**, systématiquement.
+> 2. **Écrire le compte dans le journal du jour.** Ce qui n'est pas mesuré
+>    dérive — c'est la démonstration de ces 14 éditions.
+> 3. En cas de dépassement : **COUPER, pas justifier.** La première section
+>    qui saute est celle qui **répète une information déjà donnée dans la
+>    semaine**.
+> 4. **Ne jamais réécrire après envoi** pour améliorer le chiffre : ce
+>    serait s'attribuer un bon score sans avoir changé de comportement.
+>
+> *Enjeu réel, et il n'est pas esthétique* : le mandat dit « mobile-first ».
+> **6 300 caractères sur un téléphone, ce n'est pas un brief, c'est un
+> article** — et les dernières sections (📅 À SUIVRE, le quiz) ne sont alors
+> jamais lues. **Le coût du dépassement est de l'information non reçue.**
+
 > ⚠️ **RÈGLE DU BUDGET DE CARACTÈRES** (leçon du brief n°2, 28/07/2026 —
 > Tanguy : « des explications trop techniques avec juste des chiffres…
 > ça rend la chose moins compréhensible »). **Le budget se paie en

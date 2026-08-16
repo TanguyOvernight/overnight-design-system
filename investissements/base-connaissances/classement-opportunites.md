@@ -177,6 +177,29 @@ inexact**, et le mode d'échec « FRICTION » que j'avais encodé doit être
 requalifié : ce n'était pas de la friction, **c'était une étape manquante que
 je croyais franchie**. *Voir `registre-calibration.md`.*
 
+### ⏱️ ÉTATS NON RE-TESTÉS — contrôle instauré le 16/08
+
+**Application de la règle d'hier** : *tout état du monde que je republie sans
+l'avoir re-vérifié depuis plus de 7 jours est marqué « non re-testé ».*
+« PEA ouvert » avait été republié **huit fois sans un seul contrôle** — voilà
+le tableau qui doit empêcher que ça recommence.
+
+| État republié | Dernière vérification | Âge | Statut |
+|---|---|---|---|
+| **PEA non ouvert** ; compte courant Fortuneo actif, 100 € | **15/08** *(capture)* | 1 j | ✅ frais |
+| **Aubay — aucun cours fiable** | 25/07 | **22 j** | 🔴 **NON RE-TESTÉ** — et c'est le trou lui-même qui a 22 jours |
+| **Séché — aucun cours daté** | 04/08 *(et ce relevé est tombé le 15/08)* | **12 j** | 🔴 **NON RE-TESTÉ**, à 24 j de l'échéance du S1 |
+| **Fortuneo Starter : 1ᵉʳ ordre du mois ≤ 500 € gratuit, puis 0,35 %** | 08/08 | **8 j** | ⚠️ **NON RE-TESTÉ** — *et je le republie dans CHAQUE brief comme une instruction d'exécution* |
+| **WPEA — frais courants 0,20 %** *(conflit avec un 0,52 % distributeur, jamais tranché)* | 08/08 | **8 j** | ⚠️ **NON RE-TESTÉ** — l'écart vaut ~300 € sur 5 ans |
+| **BESI — aucune donnée** | — | — | 🔴 Jamais établi |
+| Fiscalité : PFU **31,4 %** / PEA > 5 ans **18,6 %** | 27/07 | 20 j | ⚠️ **NON RE-TESTÉ** — *stable par nature (loi de finances), mais republié quotidiennement* |
+
+> 🔑 **Le plus gênant n'est pas le plus vieux, c'est le plus RÉPÉTÉ.** Les
+> frais Fortuneo et le TER du WPEA sont republiés à chaque brief comme des
+> instructions d'exécution — **ce sont eux qui feront agir Tanguy**, et ce
+> sont eux qui ne sont plus contrôlés depuis huit jours. *L'ancienneté d'un
+> fait compte moins que le nombre de décisions qu'il porte.*
+
 ### 📊 LE CLASSEMENT AU 15/08 — **8 candidates, AUCUN MOUVEMENT DE RANG**
 
 | Rang | Candidate | Env. | Chiffre du jour vs déclencheur | Qualité de la donnée | Statut | Mvt |
