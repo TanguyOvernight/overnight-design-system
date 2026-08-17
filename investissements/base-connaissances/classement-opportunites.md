@@ -217,7 +217,104 @@ le tableau qui doit empêcher que ça recommence.
 > sont eux qui ne sont plus contrôlés depuis huit jours. *L'ancienneté d'un
 > fait compte moins que le nombre de décisions qu'il porte.*
 
-### 📊 LE CLASSEMENT AU 15/08 — **8 candidates, AUCUN MOUVEMENT DE RANG**
+### 🔴 CORRECTION DU 17/08 — ma « seule ligne vraiment réconciliée » ne l'était pas
+
+Le 15/08, j'écrivais que STM était **« LA SEULE LIGNE VRAIMENT RÉCONCILIÉE »**,
+par deux chemins prétendument indépendants : Paris **46,66 €** et NYSE
+**53,92 $ ÷ 1,1536 = 46,74 €**, écart 0,17 %. **Les deux affirmations sont
+fausses.**
+
+**① Les chiffres étaient périmés d'un jour.** Clôtures réelles du **14/08** :
+**47,67 €** à Paris et **54,29 $** au NYSE. Preuve du décalage :
+`54,29 − 0,37 (variation du jour) = 53,92 $` — **mon « 53,92 $ du 14/08 »
+était la clôture du 13/08.**
+
+**② Et surtout, la MÉTHODE ne peut structurellement pas boucler :**
+
+> **Paris clôture à 17h35. Le NYSE clôture à 22h00 heure de Paris.**
+> Les deux « chemins » ne sont **pas simultanés** — ils sont séparés de
+> **4 h 25 de cotation américaine**. Diviser une clôture de New York par un
+> taux de change **ne peut pas** reproduire une clôture de Paris, et
+> l'écart mesuré n'est pas une erreur de données : **c'est le mouvement de
+> l'action entre 17h35 et 22h00.**
+
+**Vérification sur les chiffres corrects du 14/08** :
+`47,67 € × 1,158 (EUR/USD du jour) = 55,21 $` contre **54,29 $** cotés au
+NYSE → **1,7 % d'écart**. *L'écart de 0,17 % du 13/08 n'était pas une
+validation : c'était une journée où l'action n'a presque pas bougé entre les
+deux clôtures.*
+
+> 🔑 **J'ai pris une coïncidence pour une preuve, et je l'ai promue « seule
+> ligne fiable du livre ».** *C'est le mode d'erreur le plus coûteux du
+> registre : non pas un chiffre faux, mais une **fausse certitude** — qui
+> fait cesser de chercher.*
+
+**Le chemin n'est pas mort, il est mal spécifié.** Règle corrigée :
+
+> **Un ancrage inter-place exige des cotations SIMULTANÉES, jamais deux
+> clôtures.** Pour contrôler une clôture de Paris (17h35), il faut le cours
+> de New York **à 11h35 heure de New York**, pas sa clôture. À défaut de
+> cotation horodatée, **ce chemin est inutilisable.**
+
+*Cinquième contrôle né de la panne du canal, et le premier qui invalide un
+chemin que je croyais acquis : bouclage `veille × (1+var)` · `capi ÷ titres`
+interdit · somme des composantes d'un indice · cohérence fourchette/cours ·
+**et désormais la simultanéité inter-place**.*
+
+### 📊 LE CLASSEMENT AU 17/08 — 8 candidates, **AUCUN MOUVEMENT DE RANG**
+
+| Rang | Candidate | Chiffre du jour vs déclencheur | Qualité | Mvt |
+|---|---|---|---|---|
+| **①** | **Cœur World** | 🔴 **PEA NON OUVERT** — action n°1 inchangée. Budget d'août **1 000 €** | ✅ vérifié le 15/08 | **=** |
+| **②** | **Or** | **4 364,96 $/oz**, clôture du **14/08** (−0,64 %). 🔴 Garde-fou **R = 43,9 % > 35 % : achat d'or INTERDIT** | ✅ **RÉCONCILIÉ** : `4 364,96 + 28,13 = 4 393,09` veille, et `−28,13 ÷ 4 393,09 = −0,640 %` ✓. *Mes 4 371-4 373 $ n'étaient pas faux : c'était un relevé de 9h ET, la séance a fini plus bas* | **=** |
+| **③** | **Séché** | 🔴 **TOUJOURS AVEUGLE.** Seul point daté : **79,40 € au 13/07** — un mois. Les lectures d'août (81,9 / 82,60 / 84,20 €) restent **toutes non datées**. Sous le seuil de 90 € dans **toutes** les lectures, mais **aucune ne le prouve à une date opposable** | ❌ **INTROUVABLE.** ⚠️ **Piège identifié** : le ticker **SCHP** est homonyme du *Schwab U.S. TIPS ETF* (USD) — il pollue toute requête en anglais | **=** |
+| **④** | **Eli Lilly** | **1 180,16 $** au 14/08 → achat ≤ 1 020 $ : **+15,7 %** · déclassement ≤ 846 $ : **+39,5 %** *(contre +44,2 % au 12/08)* | ⚠️ **MONO-SOURCE**, non bouclée. ⚠️ **Le 14/08 était le détachement du dividende** — mais un dividende trimestriel sur un titre à 1 200 $ pèse une fraction de pour-cent : **il ne peut pas expliquer les −3,3 %.** *Le mouvement est donc réel — raisonnement de ma part, non sourcé* | **=** |
+| **⑤** | **Magnum** | Capi implicite **~10,4 Md€** → il faut **−27 %** | 🔴 **PIÈGE DE LA RÈGLE 4, ACTIF.** Deux capis **non datées** à **33 % d'écart** : 11,40 Md$ et **7,67 Md$ (6,56 Md€)**. **La seconde passerait SOUS mon seuil de 7,6 Md€ et déclencherait un achat** — c'est exactement le profil que la règle interdit : bas, flatteur, à portée. Test de cohérence : `19,67 $ × 612,26 M titres ≈ 12,0 Md$ ≈ 10,4 Md€` ⇒ **la lecture basse est un artefact** | **=** |
+| **⑥** | **Aubay** | ✅ **LA LIGNE SE DÉBLOQUE.** **~57,2-57,4 €** au 14/08 (fourchette certaine **57,0-58,4 €**) → **+14 à +15 %** au-dessus du seuil de 50 € | ✅ **Ancré sur un DOCUMENT RÉGLEMENTAIRE** — déclaration de rachat du 3-7/08 : **55,7733 € de VWAP le 03/08**, montée à **57,00 €** le 07/08. ⚠️ Clôture exacte indépartageable (57,2 ou 57,4 — un moteur a **permuté open et close**) | **=** |
+| **⑦** | **STM** | **47,67 €** au 14/08 → **+13,5 %** au-dessus du seuil de 42 €, il faut **−11,9 %** | 🔴 **DÉCLASSÉE EN QUALITÉ** : la réconciliation dont je me prévalais est invalide *(voir encadré)*. MONO-SOURCE Paris | **=** |
+| **⑧** | **Nike** | **40,73 $** au 14/08 (−1,21 %) | ✅ **LA SEULE LIGNE VRAIMENT RÉCONCILIÉE DU JOUR** : `40,73 + 0,50 = 41,23 $` = mon relevé du 13/08, et `−0,50 ÷ 41,23 = −1,213 %` ✓. **Deux chemins réellement indépendants** — une donnée antérieure hors recherche du jour, et une variation publiée qui reconstitue la veille | **=** |
+
+### 🎯 Aubay — le déblocage confirme l'hypothèse du biais directionnel
+
+**Ma dispersion avouée de « 49 à 57 € » doit être AMPUTÉE PAR LE BAS.** Le
+document réglementaire prouve qu'Aubay s'échangeait à **55,77-57,00 € début
+août** : **aucune lecture à 49-51 € n'est défendable.** Mes deux chiffres
+douteux se rangent — 54,30 € ≈ fin juillet, 56,50 € ≈ début août : **périmés,
+pas absurdes.**
+
+> **Aubay n'était pas « peut-être proche de son seuil ». C'est la ligne la
+> PLUS ÉLOIGNÉE d'un achat de tout le livre.** *La lecture basse suggérait
+> exactement l'inverse — troisième vérification consécutive de l'hypothèse
+> écrite le 15/08 : le canal renvoie du plus ancien, donc du plus bas, donc
+> du plus proche d'un déclencheur.*
+
+⚠️ **Et un fait de dossier que je n'avais pas** : Aubay a **relevé ses
+objectifs le 23/07** — CA S1 **351,8 M€ (+30,8 % publié, +11,4 % organique)**,
+guidance portée de 676-690 à **695-705 M€**. *Le dossier s'améliore pendant
+que le point d'entrée s'éloigne.* **Le rang ne bouge pas** — le mètre est
+l'espérance ajustée du risque, pas la distance au déclencheur — **mais le
+contrat ≤ 50 € devra être ré-examiné avant le T3**, une guidance relevée
+rendant un repli de 13 % moins probable à choc constant. *Je ne le modifie
+pas aujourd'hui : déplacer un seuil parce que le prix s'en éloigne est le
+mauvais motif.*
+
+📅 **Rendez-vous à 18h00 aujourd'hui** : Aubay publie ses déclarations de
+rachat **le lundi suivant, entre 17h50 et 18h05** (motif reconstruit sur 5
+publications). Celle du **10-14/08 sort donc ce soir** — *ce n'était pas un
+trou de recherche, c'était une attente de calendrier.*
+
+### ❌ Séché : le chemin d'Aubay ne se réplique pas
+
+**Séché publie ses déclarations de rachat MENSUELLEMENT**, arrêtées en fin de
+mois et publiées 3-5 jours après. **Celle au 31/07 devrait exister** (publiée
+vers le 4-5 août) — **non indexée à ce jour. C'est la meilleure cible de
+relance**, même si elle ne donnera qu'un prix de fin juillet.
+
+✅ Confirmé au passage : **7 857 732 actions au 01/06/2026** (12 987 335 droits
+de vote théoriques) — *mon nombre de titres est juste. Mais **aucun prix n'en
+a été tiré** : `capi ÷ titres` reste interdit.*
+
+### (état antérieur au 15/08, conservé pour l'historique)
 
 | Rang | Candidate | Env. | Chiffre du jour vs déclencheur | Qualité de la donnée | Statut | Mvt |
 |---|---|---|---|---|---|---|

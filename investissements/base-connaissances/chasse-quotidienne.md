@@ -172,6 +172,77 @@ session du 16/08 en a produit trois d'affilée.
 aucune achetable-non courue-documentée) : deux terrains consécutifs disent
 que le point de départ est le mauvais.*
 
+### ⚠️ CORRECTION DE CETTE RÈGLE, 24 HEURES APRÈS — l'inversion marche, et ne suffit pas
+
+**Appliquée au terrain tech le 17/08. Résultat mesurable :**
+
+| | Partir du THÈME (14-16/08) | **Partir du VÉHICULE (17/08)** |
+|---|---|---|
+| Sociétés achetables trouvées | ~2 sur 13 | **4 sur 5** |
+| Événements datés trouvés | 8, mais chez des acteurs privés/nordiques | **4, tous chez des cotés PEA** |
+| Requêtes | 14 | **12** |
+| Signaux retenus | 0 | **0** |
+
+> **L'inversion résout le problème d'ACHETABILITÉ. Elle ne résout pas le
+> problème de PRIX.**
+>
+> Sur une place aussi étroite que Paris-Amsterdam-Bruxelles, les ~10
+> véhicules tech praticables sont **suivis par tout le monde**, et leur
+> événement daté est **repricé le jour même** : Soitec **+24 % en une
+> séance** le 23/07, TKH **+9,5 %** le 11/08, Melexis avec un **objectif de
+> consensus médian SOUS le cours**.
+>
+> **🔑 Je suis passé d'un mur d'ACHETABILITÉ à un mur d'EFFICIENCE. C'est un
+> progrès de diagnostic, pas un progrès de rendement.**
+
+**La conséquence, et il faut l'accepter plutôt que de la contourner** : sur
+ce terrain, **chercher une sous-réaction à une nouvelle publiée est une
+impasse structurelle** — cinq zéros le disent. Ce qui reste vivant :
+
+1. **Les anomalies qui jouent APRÈS l'événement, pas avant.** Le *drift
+   post-scission* est documenté académiquement et se joue **à la cotation de
+   l'entité séparée**, pas au vote. *TKH est le cas d'école en cours :
+   l'AGE du 03/09 n'est PAS le moment intéressant ; la cotation de
+   l'Electrification séparée l'est.*
+2. **Les sociétés structurellement sous-couvertes** — le chantier d'univers,
+   pas la veille d'actualité.
+3. **Les décotes sans événement**, où il n'y a rien à repricer *(Barco :
+   sous sa valeur comptable, près de son plus bas 10 ans, et **aucun**
+   catalyseur avant février 2027)*.
+
+### 🔢 NOUVEAU CONTRÔLE ARITHMÉTIQUE — la fourchette 52 semaines périmée
+
+Détecté le 17/08 sur TKH : fourchette servie **31,54 – 48,14 €** alors que le
+cours **daté** du 14/08 est **52,65 €**.
+
+> **Un plus-haut 52 semaines INFÉRIEUR au cours du jour est une
+> impossibilité arithmétique.** La fourchette est donc périmée — et une
+> fourchette périmée fait paraître un titre **plus proche de son sommet**
+> qu'il ne l'est, ou l'inverse.
+>
+> **Usage autorisé d'une fourchette non datée : borne basse historique
+> seulement. Jamais comme mesure de distance au sommet.**
+
+*Quatrième contrôle du même genre, tous nés d'une panne du canal : bouclage
+`cours_veille × (1+var)`, `capi ÷ titres` interdit, somme des composantes
+d'un indice, et désormais la cohérence fourchette/cours.*
+
+### ✅ Une règle encodée hier a mordu aujourd'hui
+
+**Equasens** portait le Ségur numérique en santé Vague 2 — mécanisme
+réglementaire financé et daté, taillé pour un éditeur de logiciels de santé
+français, sur le seul véhicule tech **décoté** de la session (−24,4 % sur un
+an).
+
+**Tué par la règle du report, écrite la veille** : le calendrier a **déjà
+glissé deux fois** *(fin de réalisation 17/03/2027 → **22/06/2027** ; solde
+16/06/2027 → **28/09/2027**)*. Et par la règle 16 : Ségur V2 a produit
+**0,6 M€ au S1 2026 sur un CA de 124,5 M€ — 0,5 %.** *Une optionnalité, pas
+un marché créé.*
+
+> **La règle du report a fait son travail avant même que j'écrive la
+> thèse.** *Elle avait 24 heures.*
+
 ## Brief type d'un agent presse (template)
 
 > « Tu es un chasseur d'opportunités d'investissement. Date : [date].

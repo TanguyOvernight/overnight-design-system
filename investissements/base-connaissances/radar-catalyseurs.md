@@ -490,7 +490,7 @@ batterie domestique.*
 |---|---|---|
 | 31/07 | Résultats Cameco (BPA attendu 0,26 $, -49 %) | Thème uranium/énergie IA (veille, spot ~85,8 $/lb) |
 | Début août | Ouverture « Corriger ma déclaration » impots.gouv.fr | Régularisation 3916-bis si compte ouvert ≤ 2025 |
-| **26/08** ✅ **CONFIRMÉ PAR L'ÉMETTEUR** | **Résultats Nvidia T2 FY2027** — trimestre clos le 26/07 ; publication vers **13h20 PT**, conférence **17h00 ET = 23h00 Paris**. Communiqué NVIDIA du 29/07, quatre relais concordants *(page nvidianews en 403 — ancrage jugé suffisant, mais pas de lecture directe)* | NVDA = **22 % du portefeuille** — le rendez-vous du mois. ⚠️ **La nomenclature de reporting a changé** (Data Center scindé Hyperscale / AI-Cloud / Edge) : **relire les niveaux de référence des contrats de détention dans la NOUVELLE présentation**, pas l'ancienne. 🎯 **La bonne question, apprise d'AMD le 05/08 : pas « bat-il le consensus ? » mais « la croissance porte-t-elle un levier de MARGE ? »** — AMD a fait +50 % de CA et +245 % de résultat opérationnel, et a chuté sur une guidance T3 à +41 % avec une **marge brute STABLE à ~56 %** |
+| **26/08** ✅ **CONFIRMÉ PAR L'ÉMETTEUR** | **Résultats Nvidia T2 FY2027** — trimestre clos le 26/07 ; publication vers **13h20 PT**, conférence **17h00 ET = 23h00 Paris**. Communiqué NVIDIA du 29/07, quatre relais concordants *(page nvidianews en 403 — ancrage jugé suffisant, mais pas de lecture directe)* | NVDA = **22 % du portefeuille** — le rendez-vous du mois. 🔴 **INTITULÉ CORRIGÉ LE 17/08** — cette ligne écrivait *« Data Center scindé Hyperscale / AI-Cloud / Edge »*, **un triptyque qui n'existe pas**. La structure réelle : **DEUX plateformes** — *Data Center* et *Edge Computing* — le **Data Center** étant lui-même subdivisé en **Hyperscale** (clouds publics, **37,9 Md$**) et **ACIE** (*AI Clouds, Industrial & Enterprise*, **37,4 Md$**). CA du trimestre **81,6 Md$**. ⚠️ **Et la refonte n'est PAS à venir : elle est en vigueur depuis le T1 FY2027** (trimestre clos le 26/04/2026, publié en mai) — **antérieure à ma fenêtre de veille du 09/08.** Le 26/08 sortira donc avec des comparatifs déjà dans le nouveau format. *La grille détaillée §LES CINQ CHIFFRES portait, elle, la bonne structure et les bons montants — seul cet intitulé de résumé était faux. Un résumé faux au-dessus d'une grille juste est exactement ce qu'on relit en diagonale le soir du print.* 🎯 **La bonne question, apprise d'AMD le 05/08 : pas « bat-il le consensus ? » mais « la croissance porte-t-elle un levier de MARGE ? »** — AMD a fait +50 % de CA et +245 % de résultat opérationnel, et a chuté sur une guidance T3 à +41 % avec une **marge brute STABLE à ~56 %** |
 
 
 ## 🔒 PRÉ-ENGAGEMENT NVIDIA — grille écrite le 09/08, **17 jours avant** la publication
@@ -944,3 +944,57 @@ reculer le titre malgré des chiffres records.**
 - Spread OAT-Bund **> 90 pb durable** → alerte valeurs domestiques FR
 - FOMC : passage effectif à une **hausse** de taux → re-pricing global
 - DXY : cassure sous ~98 → vent favorable émergents (renforcer l'idée Inde)
+
+---
+
+## 🔴 NVIDIA — §3.4 RÉSOLU LE 17/08, à J−9 : l'alliance de 500 Md$ est datée et son traitement est connu
+
+**Ce que je cherchais depuis le 09/08** : *l'alliance de financement
+déplace-t-elle hors bilan l'élément que ma grille prétend mesurer ?*
+**Réponse : OUI, et de la manière la plus difficile à lire.**
+
+### Les faits, datés et primaires
+
+| Élément | Fait |
+|---|---|
+| **Date d'annonce** | **10/08/2026** — *donc DANS ma fenêtre de veille, un jour après l'écriture de la grille* |
+| Source | Communiqué **NVIDIA** (nvidianews) + reprise Bloomberg/Fortune |
+| Partenaires | **Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, KKR** |
+| Montant | **plus de 500 Md$** de capitaux tiers à mobiliser |
+| **Statut juridique** | 🔴 **des MOU — PAS des accords définitifs** |
+| **Traitement** | La dette est **délibérément maintenue HORS du bilan de NVIDIA**, routée via des **plateformes de financement indépendantes** |
+| **Sens des flux** | ⚠️ **Ce n'est PAS une dépense de NVIDIA** : chaque firme souscrit indépendamment et dirige les fonds vers **LES CLIENTS** de NVIDIA |
+| Non divulgué | L'engagement de **chaque** firme, et **les actifs/contrats d'usage servant de collatéral** |
+
+### 🎯 L'INSTRUCTION DE LECTURE DU 26/08 — et elle change d'endroit
+
+> **Ces 500 Md$ risquent de n'apparaître NI en dette, NI en engagement
+> reconnu** : statut MOU + véhicules tiers + bénéficiaires qui sont les
+> clients, pas l'émetteur.
+>
+> **Donc : ne pas les chercher dans le compte de résultat ni au bilan.**
+> **Aller lire la note ENGAGEMENTS ET PASSIFS ÉVENTUELS, et toute clause de
+> GARANTIE ou de BACKSTOP.** C'est là, et nulle part ailleurs, que se joue la
+> question posée par §3.4.
+
+**Le couplage à surveiller, déjà écrit le 09/08 et qui devient opérationnel** :
+**ACIE est précisément le segment où se trouvent les clients que NVIDIA
+finance.** Si **ACIE accélère** pendant que **la ligne d'investissements
+bondit**, la croissance et le financement pointent vers les mêmes
+contreparties. *Repère du T1 : Hyperscale **+12 %** séquentiel contre ACIE
+**+31 %**.*
+
+### ⚠️ Un chiffre tiers que je note sans l'adopter
+
+Une estimation d'analyste évoque une **sous-évaluation de la dépréciation
+d'environ 176 Md$ sur 2026-2028** à l'échelle du secteur, gonflant les
+résultats publiés. **MONO-SOURCE, non vérifié, et d'un ordre de grandeur
+extraordinaire.** Je l'inscris comme **question à poser**, pas comme fait :
+*si l'infrastructure financée hors bilan s'amortit plus vite que prévu, le
+porteur du risque n'est pas celui que le bilan désigne.*
+
+### Ce que ça ne change PAS
+
+**Aucune probabilité, aucun seuil, aucun contrat n'est modifié.** Ce
+pré-engagement précise **où lire**, pas **quoi conclure**. *La grille du
+09/08 tient ; elle gagne une adresse.*
