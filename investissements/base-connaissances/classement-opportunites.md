@@ -177,7 +177,24 @@ inexact**, et le mode d'échec « FRICTION » que j'avais encodé doit être
 requalifié : ce n'était pas de la friction, **c'était une étape manquante que
 je croyais franchie**. *Voir `registre-calibration.md`.*
 
-### ⏱️ ÉTATS NON RE-TESTÉS — contrôle instauré le 16/08
+### ⏱️ ÉTATS NON RE-TESTÉS — contrôle instauré le 16/08, **relevé au 17/08**
+
+| État republié | Dernière vérif. | Âge | Statut au 17/08 |
+|---|---|---|---|
+| **PEA non ouvert** ; compte courant actif, 100 € | 15/08 | 2 j | ✅ frais |
+| **Aubay — aucun cours fiable** | 25/07 | **23 j** | 🔴 **EN COURS DE LEVÉE** — la déclaration hebdo de rachat du 10-14/08 devrait être indexée aujourd'hui |
+| **Séché — aucun cours daté** | 04/08 *(relevé invalidé le 15/08)* | **13 j** | 🔴 **PIRE QU'AVANT** : l'ancien chiffre est tombé sans être remplacé. **23 jours avant son échéance du 09/09** |
+| **Frais Fortuneo** (1ᵉʳ ordre ≤ 500 € gratuit) | 08/08 | **9 j** | ⚠️ **NON RE-TESTÉ — et republié dans CHAQUE brief comme instruction d'exécution** |
+| **WPEA — frais courants 0,20 %** *(conflit 0,52 % jamais tranché)* | 08/08 | **9 j** | ⚠️ **NON RE-TESTÉ.** ✅ **Délégué à Tanguy le 16/08** : lire la fiche à l'ouverture du PEA |
+| **BESI — aucune donnée** | — | — | 🔴 Jamais établi |
+| Fiscalité PFU 31,4 % / PEA 18,6 % | 27/07 | 21 j | ⚠️ NON RE-TESTÉ *(stable par nature)* |
+
+> **Le tableau fait déjà son travail** : il a désigné Aubay et Séché comme les
+> deux priorités du screening de ce lundi, **avant** que le jour ne commence.
+> *Un contrôle qui ne change pas l'ordre du jour ne sert à rien ; celui-ci
+> l'a changé.*
+
+### ⏱️ (référence — état initial du 16/08)
 
 **Application de la règle d'hier** : *tout état du monde que je republie sans
 l'avoir re-vérifié depuis plus de 7 jours est marqué « non re-testé ».*
