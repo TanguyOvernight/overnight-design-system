@@ -998,3 +998,46 @@ porteur du risque n'est pas celui que le bilan désigne.*
 **Aucune probabilité, aucun seuil, aucun contrat n'est modifié.** Ce
 pré-engagement précise **où lire**, pas **quoi conclure**. *La grille du
 09/08 tient ; elle gagne une adresse.*
+
+---
+
+## 📅 Récolte du 18/08 — deux dates d'échéance précisées, un test falsifiable posé
+
+| Date | Événement | Statut de preuve |
+|---|---|---|
+| **~08-09/09/2026** ⚠️ | **Résultats S1 Séché Environnement** — *un compteur de site de cotation lu le 14/08 impliquait le **08/09**, contre mon hypothèse du 09/09* | ⚠️ **DÉRIVÉ, ±1 jour.** Aucune entrée au calendrier financier de l'émetteur n'a pu être lue. **Retenir ~08-09/09** |
+| **16/09/2026, après bourse** | **Résultats S1 Aubay** | ✅ **RÉCONCILIÉ ÉDITORIALEMENT** — trois éditeurs distincts (Option Finance, ABC Bourse, BFM Bourse) |
+| **20/08/2026** | 🧪 **Butée du test Séché** — voir ci-dessous | test posé par moi |
+
+### 🧪 Le test falsifiable posé sur Séché
+
+**Fait** : ni la déclaration de rachat arrêtée au **30/06**, ni celle arrêtée
+au **31/07** ne sont indexées — 18 jours après la seconde. Le motif mensuel
+(31/01, 28/02, 30/04, 31/05) est pourtant établi.
+
+> **Deux hypothèses concurrentes, une date, et l'une des deux tombera :**
+> **H1** — *l'indexation de ces déclarations s'est dégradée* (cohérent avec
+> l'état du canal).
+> **H2** — *le programme de rachat est en pause* (cohérent avec un émetteur
+> sous contrainte de trésorerie avant son S1).
+>
+> **Si rien n'apparaît d'ici le jeudi 20/08, H2 devient plus économique que
+> H1** — deux mois consécutifs manquants ne s'expliquent plus par un retard.
+> **Et H2 serait une information sur la SOCIÉTÉ, pas sur mon canal.**
+
+*C'est la première fois que l'absence d'une donnée devient elle-même un
+signal testable plutôt qu'un simple trou.*
+
+### 🚨 Conséquence opérationnelle — le contrat Séché peut devenir inexécutable
+
+Le contrat exige **quatre conditions** : EBE S1 ≥ 125 M€ · France organique
+≥ 0 % · guidance 275-285 M€ confirmée · **cours ≤ 90 €**.
+
+**Les trois premières seront lisibles au communiqué. La quatrième exige un
+prix que je n'ai plus** — mon unique donnée « datée » (79,40 € au 13/07)
+s'est révélée être une **transaction d'entité liée sur 119 titres**, pas une
+clôture.
+
+> **Il me faut un cours Séché datable AVANT le ~08/09.** Sans lui, un contrat
+> dont le monde remplit les trois quarts ne pourra pas se déclencher. *La
+> course n'est plus contre la société, elle est contre mon canal.*

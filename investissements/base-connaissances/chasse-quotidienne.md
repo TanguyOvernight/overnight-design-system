@@ -555,3 +555,115 @@ d'un format finit par en faire un rituel.
 ne crée aucune pression à trouver. *Suivre le calendrier fait regarder au
 bon endroit ; ça ne fait pas apparaître d'opportunité là où il n'y en a
 pas.* Les zéros de la période restent des zéros mérités.
+
+## 🔬 CE N'EST PAS LE MÊME ZÉRO — typologie encodée le 18/08/2026
+
+Deux terrains consécutifs, deux zéros, **deux causes qui n'ont rien à voir**.
+Les confondre ferait croire à une méthode défaillante ; les distinguer dit où
+chercher.
+
+| Terrain | Achetabilité | Cause du zéro | Ce que ça signifie |
+|---|---|---|---|
+| **Tech (17/08)** | 4 véhicules sur 5 | 🔴 **MUR D'EFFICIENCE** — bons dossiers, prix déjà fait *(Soitec +24 % en une séance, TKH +9,5 %, Melexis avec un objectif de consensus SOUS le cours)* | **Le marché a raison plus vite que moi.** Rien à faire sur ce terrain par la veille d'actualité |
+| **Santé (18/08)** | **5 véhicules sur 5** | 🔴 **MUR DE QUALITÉ** — les rares décotés le sont **pour de vraies raisons** : covenant menacé, concurrence asiatique, substitution orale, cash dépensé | **Le marché n'a pas tort.** *Et c'est plutôt une bonne nouvelle : je ne rate rien* |
+
+> 🔑 **Un zéro d'efficience dit « tu arrives trop tard ». Un zéro de qualité
+> dit « il n'y avait rien à prendre ».** Le premier est un problème de
+> méthode, le second n'en est pas un. **Les compter ensemble comme
+> « 6 zéros » efface la seule information utile.**
+
+### ✅ L'inversion tient sur l'achetabilité — deuxième vérification
+
+| | Achetables | Non achetables |
+|---|---|---|
+| Partir du THÈME (14-16/08) | ~2 | 11 |
+| **Partir du VÉHICULE** (17/08 tech) | **4** | 1 |
+| **Partir du VÉHICULE** (18/08 santé) | **5** | **0** |
+
+*Aucune suisse, aucun nordique, aucun AIM proposés aujourd'hui.* **La règle
+d'achetabilité a cessé d'être un filtre en aval : elle est devenue le point
+de départ, et elle ne coûte plus de pistes.**
+
+### 🕳️ MAIS une des trois zones survivantes est VIDE sur mes places
+
+J'avais encodé le 17/08 trois zones où l'efficience mord moins. **La chasse
+d'aujourd'hui les a testées toutes les trois. Résultat :**
+
+1. **Drift post-événement — GISEMENT INEXISTANT ICI.** Aucune scission santé
+   cotante à Paris/Amsterdam/Bruxelles. Et surtout : **Euronext a passé une
+   année entière sans IPO majeure** *(Bloomberg, 07/01/2026)* — la biotech
+   européenne part au Nasdaq, la belge **Agomab y a levé 200 M$ en février
+   2026**. **Le gisement post-introduction n'existe pas sur mes places : il a
+   émigré.**
+2. **Sociétés sous-couvertes** — testée avec **Guerbet** (zéro analyste,
+   ticket minuscule) : **tuée sur les fondamentaux**, pas sur la couverture.
+3. **Décotes sans catalyseur** — testée avec **Lakefront** : voir la règle
+   ci-dessous.
+
+> **Une stratégie de repli dont un tiers du gisement n'existe pas sur les
+> places accessibles doit être rétrécie, pas répétée.**
+
+### 💰 NOUVELLE RÈGLE — une décote sur trésorerie n'est pas une erreur de prix
+
+**Lakefront Biotherapeutics** (ex-Galapagos, Amsterdam + Nasdaq) : capi
+~**1,54 Md€** pour une trésorerie guidée à ~**2 Md€** fin 2026. Le cas d'école
+de la décote sur cash.
+
+**Deux faits la démolissent :**
+- **L'objectif de cours médian de 5 analystes est à 23,59 $, soit ~15 % SOUS
+  le cours de 27,09 $.** *Le marché paie déjà plus cher que ce que les
+  analystes justifient — l'exact inverse d'une sous-réaction.*
+- **Le retour de capital est PLAFONNÉ** (jusqu'à 150 M$, soit ~9 % de la capi,
+  et un rachat de 50 M€) **pendant que 758,5 M€ de trésorerie sont sortis au
+  S1 2026.**
+
+> **RÈGLE : une décote sur trésorerie mesure la PROBABILITÉ QUE LE CASH SOIT
+> DÉPENSÉ, pas une inattention du marché.** Avant de la traiter comme une
+> opportunité, chercher **ce qui autorise l'actionnaire à récupérer ce cash**
+> — plafond de rachat, clause contractuelle, contrôle familial. *Sans droit
+> de tirage, ce n'est pas de la trésorerie, c'est le budget de quelqu'un
+> d'autre.*
+
+### 🔁 « Mécanisme réel, encaisseur privé ou cassé » — TROISIÈME occurrence
+
+Le **Critical Medicines Act** (accord Parlement-Conseil du 12/05/2026) visait
+à réduire la dépendance aux principes actifs extra-européens — **45 % des
+importations viennent de Chine**. Un texte fait sur mesure pour un producteur
+d'API européen coté.
+
+**Les encaisseurs** : Seqens, Fareva, Recipharm — **tous privés** ; Siegfried
+est **suisse** (exclu) ; le seul coté en PEA, **EuroAPI**, a perdu **141,5 M€
+au S1 2026** et chuté de **27 % en une séance**, *« balayée par la concurrence
+asiatique »*.
+
+Et **le contournement n°3 est intégré au texte dès l'origine** : le CMA
+fonctionne par **incitations et préférence dans les marchés publics**, pas par
+interdiction d'importer. ⚠️ **Règle 16** : texte final au JOUE attendu
+**fin 2026**, date d'application confirmée **à ce moment-là**. *Un accord
+politique n'est pas une obligation de dépense.*
+
+> **Défense (15/08), réglementaire (16/08), santé (18/08) : trois terrains,
+> le même schéma.** *En Europe, la règle est écrite pour un secteur dont les
+> acteurs ne sont pas cotés là où je peux acheter.*
+
+### ⏳ Le test de la CAUSE TEMPORAIRE — formalisé sur Guerbet
+
+**Guerbet** ressemblait à la décote idéale : produits de contraste, chute
+violente pour une cause **identifiée et nommée** (le site de Raleigh), zéro
+couverture, ticket minuscule.
+
+**Ce qui la tue** : l'entreprise elle-même écrit que les ralentissements de
+production **« continueront de s'accentuer tout au long de l'exercice 2026 »**,
+pendant qu'elle obtient un **waiver de covenant** pour les trois tests des
+30/06/2026, 31/12/2026 et 30/06/2027, avec un **risque probable de
+non-respect du ratio dette/EBITDA de 3,5x** — plafond déjà relevé à **4,8x**
+fin 2025 — et un **FCF guidé entre −50 et −70 M€**.
+
+> **RÈGLE : une cause « temporaire » qui S'AGGRAVE sur 24 mois pendant qu'un
+> covenant saute n'est plus une cause temporaire — c'est la situation.**
+> Le test n'est pas « la cause est-elle identifiée ? » mais **« l'émetteur
+> annonce-t-il lui-même son atténuation, avec une date ? »**
+
+⚠️ **Et le refinancement à conclure d'ici le 31/10/2026**, avec des
+actionnaires familiaux qui *« confirment leur engagement à accompagner la
+société »* : **au radar comme risque de DILUTION, pas comme opportunité.**

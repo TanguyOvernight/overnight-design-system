@@ -261,7 +261,117 @@ chemin que je croyais acquis : bouclage `veille × (1+var)` · `capi ÷ titres`
 interdit · somme des composantes d'un indice · cohérence fourchette/cours ·
 **et désormais la simultanéité inter-place**.*
 
-### 📊 LE CLASSEMENT AU 17/08 — 8 candidates, **AUCUN MOUVEMENT DE RANG**
+### 🔴🔴 CORRECTION DU 18/08 — **ma correction d'hier était elle-même fausse**
+
+Hier j'ai publié, dans le brief et dans ce fichier, que mon cours STM du
+14/08 (**46,66 €**) était *« périmé d'un jour »* et devait être remplacé par
+**47,67 €**. **C'est le 47,67 € qui est faux, et mon chiffre d'origine qui
+était juste.**
+
+**La preuve est arithmétique et elle est nette.** STM a clôturé à **49,06 €
+le 17/08, en hausse de +5,15 %** *(plus forte hausse du CAC 40 ce jour-là)* :
+
+| Candidat pour la clôture du 14/08 | Test | Résultat |
+|---|---|---|
+| **46,66 €** *(mon chiffre du 15/08)* | `49,06 ÷ 1,0515 = ` **46,6572** | ✅ **écart 0,003 €** |
+| 47,67 € *(ma « correction » du 17/08)* | `47,67 × 1,0515 = ` **50,13** contre 49,06 cotés | ❌ **écart 1,07 €** |
+
+> **Ce que je retire** : l'affirmation « mes chiffres étaient périmés d'un
+> jour ». **Ce que je maintiens intégralement** : la réconciliation
+> inter-place du 15/08 était **invalide**, parce qu'elle appariait une
+> clôture de Paris (17h35) à une clôture de New York (22h00). *Le défaut de
+> méthode était réel ; la correction de fait qui l'accompagnait ne l'était
+> pas.*
+
+### 🔑 LA LEÇON, ET C'EST LA PLUS IMPORTANTE DE LA SEMAINE
+
+**J'ai une règle exactement pour ça, et je ne l'ai pas appliquée.** Règle 5
+d'écriture d'un seuil : ***une correction s'audite comme une affirmation.***
+
+Le 47,67 € était **MONO-SOURCE et sans bouclage arithmétique**. Je l'ai
+accepté en trente secondes — alors que j'aurais exigé deux ancrages pour un
+chiffre ordinaire.
+
+> **Pourquoi il est passé : il n'arrivait pas seul. Il arrivait emballé dans
+> une démonstration de méthode brillante et vraie** *(les 4h25 entre les deux
+> clôtures)*. **L'histoire a fait la persuasion à la place de la preuve.**
+>
+> **RÈGLE RENFORCÉE : un chiffre qui accompagne une correction de méthode
+> est PLUS suspect qu'un chiffre nu, pas moins.** La qualité du raisonnement
+> qui l'entoure ne transfère aucune fiabilité au nombre. *Les auditer
+> séparément, toujours : le raisonnement d'un côté, le chiffre de l'autre.*
+
+*C'est la deuxième fois qu'une de mes corrections est fausse — la première
+était la « correction » du CPI le 10/08. Deux fois sur deux, le défaut est le
+même : j'ai relâché le standard de preuve parce que je corrigeais.*
+
+### 📊 LE CLASSEMENT AU 18/08 — 8 candidates, **AUCUN MOUVEMENT DE RANG**
+
+*(clôtures du lundi 17/08 ; les marchés européens viennent d'ouvrir)*
+
+| Rang | Candidate | Chiffre vs déclencheur | Qualité | Mvt |
+|---|---|---|---|---|
+| **①** | **Cœur World** | 🔴 **PEA NON OUVERT.** Budget d'août **1 000 €** | ✅ 15/08 | **=** |
+| **②** | **Or** | ❌ **Aucune clôture validée au 17/08.** Relevés intra-journaliers de **4 384 $ à 4 436 $ — 52 $ d'amplitude**. Le +35,70 $ d'un diffuseur implique une veille à 4 352,60 $, **incompatible** avec mes 4 364,96 $ → règle 2 échoue. 🔴 Garde-fou R : achat **INTERDIT** | ❌ REJETÉ. ⚠️ **Point structurel permanent** : *le spot or n'a PAS de clôture officielle unique* (marché OTC 24 h). Toute « clôture spot » est une **convention de diffuseur** | **=** |
+| **③** | **Séché** | 🔴 **AGGRAVÉE — voir encadré.** Mon unique donnée n'est **pas un cours** | ❌ **PIRE QUE PRÉVU** | **=** |
+| **④** | **Eli Lilly** | **1 190,41 $** au 17/08 → achat ≤ 1 020 $ : **+16,7 %** · déclassement ≤ 846 $ : **+40,7 %** | ⚠️ MONO-SOURCE, mais **cohérence interne OK** (clôture dans le range 1 163,50-1 198,52). ✅ **Dividende chiffré : 1,73 $, ex-date 14/08 = 0,15 % du cours** → *le détachement n'explique PAS le mouvement du 14/08. Mon raisonnement d'hier est confirmé* | **=** |
+| **⑤** | **Magnum** | ✅ **10,40 Md€** au 14/08 (Amsterdam) → il faut **−26,9 %**, soit un cours de **12,41 €** | ✅ **LA MEILLEURE DONNÉE DU BRIEF** : `16,98 € × 612 259 739 titres`, le nombre de titres venant d'un **dépôt SEC 424B3 daté du 29/07/2026** — document réglementaire, non dérivé d'un cours | **=** |
+| **⑥** | **Aubay** | **~56,85 €** (VWAP partiel 10-12/08) → **+13,7 %** au-dessus du seuil de 50 € | ✅ **Déclaration de rachat 10-14/08 TROUVÉE** : 529 + 250 titres le 10/08 à 56,66/56,70 € · 1 501 le 11/08 à **56,8667 €** · 1 953 le 12/08 à **56,8782 €** · 13-14/08 « proches de 57,00 € ». ⚠️ MONO-SOURCE, total hebdo et VWAP officiel introuvables | **=** |
+| **⑦** | **STM** | **49,06 €** au 17/08 **(+5,15 %, plus forte hausse du CAC 40)** → **+16,8 %** au-dessus du seuil de 42 € | ✅ **Bouclage arithmétique** : `49,06 ÷ 1,0515 = 46,657` = **exactement mon chiffre du 15/08**. *Deux chemins indépendants convergent — cette fois c'en est vraiment une* | **=** |
+| **⑧** | **Nike** | **39,09 $** au 17/08 — **−4,02 % en une séance** | ✅ **RÉCONCILIÉ** : `40,73 × (1 − 0,0402) = 39,093` ✓, deux éditeurs distincts. ⚠️ **Anomalie écartée** : un « plus bas 52 sem. à 39,41 $ le 17/08 » est **impossible** avec une clôture à 39,09 $ — *un plus bas ne peut pas être au-dessus de la clôture* | **=** |
+
+### 🔴 SÉCHÉ — la ligne ne s'aggrave pas seulement, elle change de nature
+
+**Correction de référentiel** : mon « **79,40 € au 13/07** », seule donnée
+datée de la ligne, **n'est PAS une clôture de séance.** C'est une transaction
+de **SMC53 SAS** (entité liée) portant sur **119 actions** — un **prix
+d'exécution déclaré**, pas un cours de marché.
+
+> **Ma ligne la plus aveugle l'est davantage que je ne le croyais : je n'ai
+> jamais eu de cours Séché en août, et mon dernier « cours » de juillet n'en
+> était pas un.**
+
+**Et deux arrêtés mensuels manquent d'affilée** — ni le 30/06, ni le 31/07 ne
+sont indexés, **18 jours après** l'arrêté du 31/07.
+
+> 🧪 **TEST FALSIFIABLE, avec sa date** : *si la déclaration du 31/07
+> n'apparaît pas d'ici **jeudi 20/08**, l'hypothèse « le programme de rachat
+> est en pause » devient plus économique que « l'indexation est en retard ».*
+> **Deux hypothèses, une date, et l'une des deux tombera.**
+
+⚠️ **L'échéance est peut-être un jour plus proche** : un compteur de site de
+cotation lu le 14/08 impliquait le **08/09**, contre mon hypothèse du 09/09.
+**Retenir ~08-09/09, ±1 jour, non confirmé.**
+
+### 🚨 CE QUE ÇA IMPLIQUE VRAIMENT — un contrat qui ne peut plus se déclencher
+
+Le contrat Séché comporte **quatre conditions** : EBE S1 ≥ 125 M€ · France
+organique ≥ 0 % · guidance 275-285 M€ confirmée · **et cours ≤ 90 €**.
+
+> **Trois sont comptables et seront lisibles au communiqué. La quatrième
+> exige un prix que je n'ai plus.** *Un contrat dont une condition n'est pas
+> mesurable est un contrat qui ne peut pas se déclencher — même si le monde
+> lui donne raison.*
+
+**Ce n'est pas une mort de classement, c'est une mort opérationnelle**, et
+elle a une date : **il me faut un cours Séché datable avant le ~08/09.** Le
+rang ③ tient — le mètre est l'espérance ajustée du risque, et la thèse PFAS
++ redressement est intacte — **mais le compte à rebours porte désormais sur
+ma capacité à MESURER, pas sur celle de la société à PERFORMER.**
+
+### 🎯 Magnum — le piège nommé, et c'est la 4ᵉ vérification du biais
+
+**Les 7,67 Md$ (≈ 6,56 Md€) qui auraient déclenché un achat sont
+identifiés : c'est la VALORISATION D'INTRODUCTION EN BOURSE de décembre
+2025.** *(Bloomberg, 08/12/2025 : « Trades at €7.9 Billion Value ».)*
+**Huit mois d'âge.**
+
+> **Quatrième vérification de l'hypothèse du 15/08, et la première où la
+> provenance du chiffre est NOMMÉE** — non plus « périmé » en général, mais
+> « le prix d'introduction ». *Séché, Magnum, Aubay, Magnum à nouveau :
+> ancien → bas → à portée du seuil.*
+
+### (état antérieur au 17/08, conservé)
 
 | Rang | Candidate | Chiffre du jour vs déclencheur | Qualité | Mvt |
 |---|---|---|---|---|
