@@ -160,3 +160,90 @@ Ne PAS relancer une chasse « défense » tant que ce référentiel n'est pas
 complété — **le refaire produirait les mêmes cinq noms et les mêmes trous.**
 La reprise se fait par **lecture documentaire** (rapports annuels, segments
 opérationnels), pas par recherche d'actualité.
+
+---
+
+# 🔬 LE CHAMP DÉFINITIONNEL — rempli à 40 % le 19/08/2026
+
+**Rappel du problème posé le 15/08** : *« le % de CA réellement exposé à la
+défense, sourcé chez l'émetteur, est introuvable pour les CINQ sociétés.
+C'est le chiffre qui définit l'appartenance même à cet univers, et il manque
+partout. Un référentiel dont le champ définitionnel est vide n'est pas un
+référentiel, c'est une liste de noms. »*
+
+**Deux sociétés sur cinq ont désormais un chiffre d'émetteur. Et le
+remplissage a immédiatement changé la composition de l'univers.**
+
+| Société | % du CA exposé à la défense | Source | Statut |
+|---|---|---|---|
+| **EXOSENS** | ✅ **75 %** *(« Défense et surveillance », FY2025)* — marchés commerciaux 22 % | communiqué émetteur du **23/02/2026** | **CONFIRMÉE dans l'univers** |
+| **SOGECLAIR** | ✅ **14,2 %** *(FY2025)* | trois arrêtés concordants de l'émetteur | 🔴 **SORT DE L'UNIVERS** |
+| **THEON** | ❌ aucun | — | le « ~100 % » reste une **déduction d'activité** |
+| **EGIDE** | ❌ aucun | — | 🔴 **le « 45 % » n'est PAS un chiffre défense** |
+| **SABCA** | ❌ aucun | — | non instruisable, incohérence du 15/08 **non levée** |
+
+## 🔴 SOGECLAIR sort de l'univers — et elle en sort par un CHIFFRE
+
+**Cohérence interne vérifiée sur trois arrêtés de l'émetteur** : T1 2025
+**14,7 %** (+72 %) · 9M 2025 **14 %** (+30,8 %) · FY 2025 **14,2 %** (+28,3 %).
+
+**Et le fait qui décide est ailleurs que dans le pourcentage** : au **S1
+2026**, le secteur Défense de Sogeclair croît de **+1,2 % seulement** —
+contre +28,3 % sur l'exercice précédent.
+
+> **Une société à 14 % de défense dont la défense ne croît plus n'est pas un
+> dossier défense.** *Elle sort par un chiffre, pas par une appréciation —
+> et c'est exactement ce qu'un champ définitionnel est censé produire.*
+
+✅ **Le trou « aucun chiffre 2026 » signalé le 15/08 est comblé au passage** :
+CA **S1 2026 = 78,1 M€ (−3,1 %)**, 80,2 M€ à taux constant (−0,5 %), publié
+le **22/07/2026 à 17h40** ; T1 2026 = 39,6 M€ (−4,6 %) ; FY 2025 = 160,3 M€
+(+2,1 %). **Croissance sub-2 % et défense atone : le profil ne ressemble à
+aucun des quatre autres.**
+
+## 🔴 EGIDE — le soupçon du 15/08 est CONFIRMÉ
+
+Le référentiel notait : *« imagerie thermique = 45 % du CA — source
+secondaire, et « imagerie thermique » n'est pas synonyme de « défense ».* »
+
+**Vérifié : le 45 % est bien le poids de l'IMAGERIE THERMIQUE au 31/12/2025,
+et la défense n'apparaît chez l'émetteur que QUALITATIVEMENT** (« clients
+stratégiques Défense, Optronique, Semi-conducteurs »).
+
+> **Le « 45 % » ne doit plus jamais être recopié comme un pourcentage
+> défense.** *Le soupçon était juste, et il aura fallu quatre jours pour le
+> transformer en fait.*
+
+Chiffres d'émetteur récoltés (résultats annuels du **26/06/2026**) : CA
+**31,34 M€ (+4 %)**, **EBITDA revenu positif à +0,70 M€** contre −0,45 M€ —
+*un redressement réel, mais sur une société dont l'exposition défense reste
+non chiffrée.*
+
+## 📄 THEON — le document existe, il faut le lire
+
+Le « ~100 % défense » **reste une déduction**. Chiffres FY2025 relevés, tous
+**secondaires** : CA **443,5 M€ (+25,9 %)**, prises de commandes **1 313,9 M€
+(+182 %)**.
+
+> 📄 **À LIRE dès accès rétabli : le rapport annuel 2025, publié le
+> 20/04/2026.** C'est là qu'est le *segment reporting*. **Ce n'est pas un
+> événement à attendre, c'est un document déjà disponible que le canal
+> m'empêche d'ouvrir.**
+
+## Ce que ce remplissage change pour l'univers
+
+**L'univers passe de 5 à 4 noms**, et il se hiérarchise pour la première fois :
+
+1. **Exosens** — seule société à exposition défense **chiffrée et majoritaire
+   (75 %)**. ⚠️ *Mais tuée le 15/08 sur T2 : son relèvement de guidance a fait
+   BAISSER le titre. Reste dans l'univers, pas dans le pipeline.*
+2. **Theon** — exposition très probablement majoritaire mais **non chiffrée**,
+   et **courue (+30,8 % depuis janvier)**.
+3. **Egide** — exposition **inconnue**, micro-cap, +163 % en trois mois.
+4. **SABCA** — **non instruisable**.
+5. ~~Sogeclair~~ — **sortie**.
+
+⚠️ **Anomalie à lever sur Exosens** : `75 % + 22 % = 97 %`. **3 % ne sont pas
+expliqués.** À vérifier à la lecture du communiqué (PDF émetteur bloqué).
+*Un total qui ne fait pas 100 % est soit une catégorie omise, soit un
+arrondi — et je ne sais pas lequel.*
