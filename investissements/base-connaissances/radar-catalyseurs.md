@@ -1041,3 +1041,56 @@ clôture.
 > **Il me faut un cours Séché datable AVANT le ~08/09.** Sans lui, un contrat
 > dont le monde remplit les trois quarts ne pourra pas se déclencher. *La
 > course n'est plus contre la société, elle est contre mon canal.*
+
+---
+
+## 🔍 NVIDIA — AUDIT DE FORME À J−7 (19/08/2026), sur les CINQ critères
+
+**La question posée à chaque critère, et une seule** : *l'objet que je
+prétends mesurer existe-t-il encore sous la même forme le 26/08 ?*
+**Rien de l'issue n'est connu** — l'audit est donc légitime, comme
+l'amendement du ④ le 16/08.
+
+| Critère | Objet mesuré | La forme a-t-elle bougé ? | Verdict |
+|---|---|---|---|
+| **① Guidance T3 en % du CA T2** | CA total et guidance totale | Non — la refonte segmentaire ne touche pas le total | ✅ **ROBUSTE** |
+| **② Marge brute GUIDÉE T3** | un pourcentage | Non | ✅ **ROBUSTE**, mais **incomplet** — voir ci-dessous |
+| **③ Hyperscale séq. CONTRE ACIE séq.** | les deux sous-segments du Data Center | **Non — et c'est vérifié** : Hyperscale **37,9 Md$**, ACIE **37,4 Md$** au T1 FY27 | ✅ **ROBUSTE ET RECONFIRMÉ** |
+| **④ Engagements d'approvisionnement** | le cash contractuel engagé | 🔴 **OUI** — l'alliance de 500 Md$ peut le déplacer hors périmètre | ⚠️ **AMENDÉ le 16/08**, conditionnel |
+| **⑤ Marge opérationnelle (`RO ÷ CA`)** | deux lignes du compte de résultat | Non | ✅ **ROBUSTE** |
+
+### ✅ Un contrôle arithmétique qui valide le ③
+
+Ma grille écrivait *« ACIE pesant déjà ~49 % du Data Center »*. Avec les
+montants reconfirmés le 17/08 : `37,4 ÷ (37,9 + 37,4) = **49,7 %**`.
+**Le chiffre tient.** *C'est le critère que mon intitulé de résumé décrivait
+faussement — le résumé était faux, la grille était juste, et l'arithmétique
+le confirme une seconde fois.*
+
+### ⚠️ La seule faiblesse trouvée aujourd'hui : le ② est robuste mais INCOMPLET
+
+La marge brute ne bougera pas du fait de l'alliance de financement — **mais
+ce n'est pas là qu'elle mordrait.**
+
+> **Un chiffre d'affaires réalisé auprès de clients que NVIDIA contribue à
+> financer reste du chiffre d'affaires à la même marge.** Le risque déplacé
+> par les 500 Md$ n'est **pas** un risque de MARGE : c'est un risque de
+> **QUALITÉ du chiffre d'affaires** — recouvrabilité, concentration,
+> circularité.
+>
+> **Aucun de mes cinq critères ne mesure ça**, et je ne peux pas le réparer
+> par un sixième : la donnée qui le trancherait *(quelle part du CA provient
+> de clients financés par les véhicules)* **ne sera pas publiée.**
+
+**Ce que je fais de cette lacune — et c'est une décision, pas un aveu** :
+je l'écris **maintenant, à J−7**, pour que le 26/08 au soir je ne puisse pas
+conclure « la marge tient donc tout va bien ». **Une marge brute intacte sera
+compatible avec un chiffre d'affaires de moins bonne qualité, et je le saurai
+d'avance.**
+
+> 🔑 **Ce que cet audit m'apprend sur la méthode du pré-engagement** : sur
+> cinq critères écrits 17 jours à l'avance, **un s'est périmé** (④) et **un
+> est incomplet** (②) — soit **40 % de la grille touchée en 10 jours**. *Ce
+> n'est pas un échec du pré-engagement : c'est son coût, et c'est un coût
+> qu'on ne paie QUE si on relit. Sans cette relecture programmée, j'aurais
+> lu le 26/08 une grille dont deux cinquièmes mentaient.*
