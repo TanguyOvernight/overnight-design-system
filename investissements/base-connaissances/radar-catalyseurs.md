@@ -1094,3 +1094,90 @@ d'avance.**
 > n'est pas un échec du pré-engagement : c'est son coût, et c'est un coût
 > qu'on ne paie QUE si on relit. Sans cette relecture programmée, j'aurais
 > lu le 26/08 une grille dont deux cinquièmes mentaient.*
+
+---
+
+## 🧪 SÉCHÉ — le test du 18/08 est ANNULÉ et REMPLACÉ (décidé le 19/08, avant sa butée)
+
+**Le test posé hier** : *si la déclaration de rachat du 31/07 n'apparaît pas
+d'ici le 20/08, H2 (« programme en pause ») devient plus économique que H1
+(« indexation en retard »).*
+
+### Pourquoi il est mal posé
+
+Distinguer H1 de H2 exige d'ouvrir **la newsroom de l'émetteur** ou **la BDIF
+de l'AMF**. **`WebFetch` est mort ; les deux sont structurellement hors de
+portée.**
+
+> 🔴 **La butée serait arrivée sans qu'aucun canal ait pu la servir. Elle
+> aurait testé mon CANAL, pas mon HYPOTHÈSE.**
+> *Un test dont l'échec est garanti par la méthode n'est pas un test.*
+
+### Ce que la session a quand même établi
+
+| Élément | Constat |
+|---|---|
+| **Autorisation de rachat** | ✅ **AG mixte du 24/04/2026**, quorum 82,30 %, autorisation **18 mois** → court jusqu'en **octobre 2027**. **H2 n'est PAS explicable par une échéance : si le programme est en pause, c'est une DÉCISION** |
+| Déclarations 28/02 et 31/05 | ✅ indexées |
+| Déclarations 30/06 et 31/07 | ❌ toujours introuvables |
+| **Information mensuelle capital/droits de vote de juillet** | ✅ **publiée le 03/08 ET indexée** → *le canal Séché n'est pas globalement mort* |
+| Communiqué de suspension | ❌ non trouvé *(mais une pause ne fait pas l'objet d'un communiqué)* |
+
+### ✅ LE TEST REFORMULÉ — avec un discriminant réellement disponible
+
+**L'information mensuelle « nombre d'actions et de droits de vote » est
+indexée**, et elle contient le discriminant : **si Séché rachète ses actions,
+le nombre de titres d'autocontrôle bouge.**
+
+> **NOUVEAU TEST** : comparer le nombre d'actions et de droits de vote entre
+> les arrêtés de **juin, juillet et août 2026** *(le prochain sort vers le
+> **03/09**)*.
+>
+> - **Écart nul sur trois mois → H2** : le programme est en pause.
+> - **Écart non nul → H1** : le programme tourne, c'est l'indexation des
+>   déclarations qui a lâché.
+>
+> ✅ **Ce test passe par un canal DÉMONTRÉ vivant, et il mesure la SOCIÉTÉ,
+> pas ma connectivité.**
+
+**Nouvelle échéance : ~03/09/2026.** *L'ancienne butée du 20/08 est annulée
+pour un motif écrit avant de connaître son issue.*
+
+---
+
+## 🔴 VALLOUREC — deux corrections à ma partition de scénarios (19/08)
+
+### ① Ma décote était surévaluée de six points
+
+J'ai écrit et répété : *« un titre 23 % SOUS le prix de sortie
+d'ArcelorMittal »*. **Faux.** Les **24,00 € du 19/05 sont un prix
+CUM-DIVIDENDE**, et Vallourec a détaché un **dividende exceptionnel de
+2,05 €** le **03/08**.
+
+`24,00 − 2,05 = 21,95 €` de prix comparable → contre ~18,20 € :
+**−17,1 %, et non −23 %.**
+
+> **Comparer un prix cum-dividende à un cours ex-dividende gonfle la décote
+> de six points.** *Même défaut de nature que la réconciliation inter-place :
+> deux nombres qui ne mesurent pas la même chose.*
+
+**Conséquence sur ma partition** : l'argument des **82 %** (« un industriel
+ne solde pas 23 % sous son propre prix ») **s'affaiblit mécaniquement** — à
+−17 %, la réticence est moindre. **Je ne modifie pas la probabilité**, le
+scénario étant pré-enregistré. *Mais sa justification était partiellement
+fausse, et je l'écris.*
+
+### ② La partition ne peut pas discriminer le matin
+
+**Un placement accéléré se lance APRÈS la clôture.** L'absence de communiqué
+à 9h50 le jour de l'expiration est **l'état attendu dans TOUS les scénarios**,
+y compris celui de la cession.
+
+> **Défaut de conception que je n'avais pas vu : j'ai daté la partition au
+> 19/08 alors que l'événement observable est NOCTURNE.** *Une partition
+> horodatée doit l'être sur l'heure où l'information devient observable, pas
+> sur celle où l'échéance tombe.*
+
+⚠️ **Le capteur avancé est hors service** : ni cours ni volume Vallourec
+obtenus, et **la BDIF de l'AMF — canal officiel des franchissements de
+seuil — est inaccessible.**

@@ -305,7 +305,69 @@ chiffre ordinaire.
 était la « correction » du CPI le 10/08. Deux fois sur deux, le défaut est le
 même : j'ai relâché le standard de preuve parce que je corrigeais.*
 
-### 📊 LE CLASSEMENT AU 18/08 — 8 candidates, **AUCUN MOUVEMENT DE RANG**
+### 🔴 ALERTE DU 19/08 — un cours Séché à 65,30 € aurait déclenché un ACHAT
+
+Le moteur a servi **65,30 €** comme « dernier cours de clôture » de Séché.
+**C'est −27,4 % sous mon seuil de 90 €.** Rejeté sur quatre motifs :
+
+1. **Non daté** (règle 1) · 2. **bas et flatteur** (règle 4) ·
+3. 🎯 **origine identifiée : le 02/02/2026, Séché a chuté de 16 % à 66,00 €**
+   après un avertissement (EBITDA 2025 ramené à ~220 M€). **65,30 € est le
+   niveau post-krach de février** · 4. **contre-test** : la capi du 04/08 et
+   le nombre d'actions pointent vers **~79 €**.
+
+⚠️ Le seul contrôle interne qu'il passe est **circulaire** :
+`65,30 × 1,3982 = 91,30` = l'objectif de cours affiché sur la même page.
+
+> 🔑 **Cinquième vérification du biais directionnel, deuxième avec une
+> provenance NOMMÉE.** *Les quatre premières faussaient une mesure.*
+> **Celle-ci aurait produit un ORDRE.**
+>
+> 🔴 **Mon seuil ≤ 90 € n'est PAS constaté franchi. Il reste NON TESTÉ.**
+
+### 📊 LE CLASSEMENT AU 19/08 — 8 candidates, **AUCUN MOUVEMENT DE RANG**
+
+*(clôtures du mardi 18/08)*
+
+| Rang | Candidate | Chiffre vs déclencheur | Qualité | Mvt |
+|---|---|---|---|---|
+| **①** | **Cœur World** | 🔴 **PEA NON OUVERT.** Budget d'août **1 000 €** | ✅ 15/08 | **=** |
+| **②** | **Or** | ~**4 387 $/oz** au 18/08 (−0,60 %). 🔴 Garde-fou R : achat **INTERDIT** | ⚠️ MONO-SOURCE, heure non précisée. *Autres relevés du même jour : 4 394,08 $ à 9h ET, 4 381,85 $ à 12h15 ET* | **=** |
+| **③** | **Séché** | 🔴 **NON TESTÉ** — et le seul chiffre qui l'aurait « testé » était un piège | ❌ **INTROUVABLE** | **=** |
+| **④** | **Eli Lilly** | **1 183,16 $** au 18/08 → achat ≤ 1 020 $ : **+16,0 %** · déclassement ≤ 846 $ : **+39,9 %** | ⚠️ MONO-SOURCE, aucune variation pour boucler | **=** |
+| **⑤** | **Magnum** | **10,40 Md€** → il faut **−26,9 %** | ✅ **bouclage validé** `16,98 × 612 259 739 = 10,396`. 🔴 **Piège reproductible confirmé par le calcul** : le « 7,84 Md€ » qui circule = `12,80 € × titres` = **le prix d'IPO du 08/12/2025**, à **+3,1 %** de mon seuil | **=** |
+| **⑥** | **Aubay** | Dernier repère : VWAP de rachat ~**56,85 €** (10-12/08) → **+13,7 %** | ❌ Le « 54,30 € » qui circule est **NON DATÉ** → rejeté | **=** |
+| **⑦** | **STM** | **49,06 €** (17/08) → **+16,8 %** au-dessus du seuil de 42 €. *18/08 introuvable* | ✅ **RE-VALIDÉ par chemin indépendant** : `49,06 ÷ 1,0515 = 46,657` et le moteur donne indépendamment **46,66 €** pour le 14/08 | **=** |
+| **⑧** | **Nike** | **39,09 $** — **plus bas depuis septembre 2014** | ✅ RÉCONCILIÉ. 🔴 **Mais la cause va CONTRE le dossier** — voir ci-dessous | **=** |
+
+### 🔴 Nike — un plus-bas de 12 ans qui n'est PAS un signal d'achat
+
+**Déclencheur exogène daté** : le 17/08, **On Holding** publie sous consensus
+(CA 1,076 Md$ contre 1,110 attendus) et **tout le sportswear premium décroche
+par contagion**.
+
+**Facteurs de fond** *(MONO-SOURCE, non vérifiés)* : JPMorgan dégrade à
+*Underweight* objectif 40 $ · UBS alerte sur la **baisse des prix de revente**
+Nike/Jordan · **Chine −11 %**, **digital −29 %** · **~0,52 $ des 0,72 $ de BPA
+d'origine NON RÉCURRENTE** (récupération tarifaire).
+
+> **La condition de réouverture de Nike est « ≥ 1 trimestre de Direct/Digital
+> POSITIF ou stabilisation Chine explicite ». Digital à −29 % et Chine à
+> −11 % vont exactement dans le sens inverse.**
+>
+> **Le titre ne baisse pas parce qu'il devient bon marché : il baisse parce
+> que les conditions de mon propre contrat s'éloignent.**
+
+⚠️ **Le point sur la qualité du BPA — 72 % du bénéfice d'origine non
+récurrente — est à VÉRIFIER avant d'être utilisé.**
+
+### ✅ Un résultat rare : mes quatre repères testables ont TOUS bouclé
+
+CAC **8 579,60** · STM **49,06** · Magnum `16,98 × 612 259 739` · Nike
+**39,09** — les quatre validés contre des chemins indépendants.
+**Ma base est saine ; le bruit vient exclusivement du moteur.**
+
+### (état antérieur au 18/08, conservé)
 
 *(clôtures du lundi 17/08 ; les marchés européens viennent d'ouvrir)*
 
