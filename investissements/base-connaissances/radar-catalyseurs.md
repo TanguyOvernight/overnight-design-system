@@ -1181,3 +1181,68 @@ y compris celui de la cession.
 ⚠️ **Le capteur avancé est hors service** : ni cours ni volume Vallourec
 obtenus, et **la BDIF de l'AMF — canal officiel des franchissements de
 seuil — est inaccessible.**
+
+---
+
+## 🔴 SÉCHÉ — le test du 19/08 est à son tour SUSPENDU (20/08)
+
+**Deux tests conçus en deux jours, les deux invalides.** Le premier
+confondait mon canal et mon hypothèse. **Le second mesurait la mauvaise
+grandeur.**
+
+**Le test du 19/08** : *comparer le nombre d'ACTIONS et de DROITS DE VOTE
+entre juin, juillet et août ; écart nul → programme de rachat en pause.*
+
+**Les chiffres obtenus** : actions **7 857 732 au 01/05** et **7 857 732 au
+01/08** — identiques. DDV théoriques 12 985 377 → 12 996 808.
+
+### Pourquoi ça ne prouve rien
+
+> 🔴 **Un rachat d'actions ne change PAS le nombre d'actions**, sauf
+> annulation. **J'ai bâti un test sur une grandeur qui ne bouge pas avec le
+> phénomène que je voulais détecter.**
+
+**Second défaut** : les **droits de vote THÉORIQUES incluent l'autocontrôle
+par construction.** La dérive de **+11 431** est de l'acquisition de droits de
+vote **double par ancienneté**, pas un mouvement d'autocontrôle.
+
+### ✅ RÈGLE ENCODÉE — l'ordre de conception d'un test
+
+> **Concevoir le test à partir de la GRANDEUR QUI BOUGE, puis chercher le
+> canal. Jamais l'inverse.**
+>
+> *Le 19/08 j'ai fait le contraire : j'ai constaté qu'un canal était vivant
+> (l'information mensuelle), et j'ai conçu un test autour de ce qu'il
+> contenait. **Partir du canal disponible produit des tests qui se lisent
+> bien et ne mesurent rien.***
+
+### Statut réel : SUSPENDU, pas mort
+
+Le champ manquant — les **DDV NETS (exerçables en assemblée)** — **figure au
+format standard** de ces déclarations. Il en faut **deux, à deux dates** :
+*la différence `théoriques − nets` approxime l'autocontrôle.*
+
+**À reprendre dès qu'une déclaration mensuelle est lisible en entier.**
+
+---
+
+## ✅ VALLOUREC — le capteur avancé a fonctionné (20/08)
+
+**Relevé du 19/08** : clôture **18,155 €** (veille 18,25 €, **−0,52 %**),
+**volume 206 532 titres** contre une moyenne 20 séances de **853 184**.
+
+| Indice | Lecture |
+|---|---|
+| **Volume** | **0,24× la moyenne** — anormalement **BAS** |
+| **Taille qu'aurait un ABB** | `0,173 × 238 699 859 =` **41,3 M titres ≈ 48× le volume quotidien** |
+| **Cours** | **−0,52 %**, contre **−10 %** le jour du placement de mai |
+| **Communiqués** | aucun, sur quatre angles de requête |
+
+> **La signature d'un placement accéléré serait inratable. 206 532 titres est
+> la signature INVERSE.** *Trois indices de natures différentes convergent.*
+
+**La partition penche vers B2 (« rien de public », 82 %) — mais elle se
+résout DEMAIN SOIR, pas aujourd'hui.**
+
+✅ **Ma correction de décote a été AUDITÉE par bouclage** :
+`(18,155 − 21,95) ÷ 21,95 = −17,29 %`. *Confirmée, pas recopiée.*
