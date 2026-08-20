@@ -619,7 +619,7 @@ de la fraude de calibration.**
 
 | ID | Date | Agent | classe_réf | Affaire | Affirmation | P | Condition de résolution | Statut |
 |---|---|---|---|---|---|---|---|---|
-| **C042** | 07/08 | Juge | action-US défensive / <1 an · CTO | Walmart | **Le mécanisme décélère** : le communiqué du T2 FY27 fait apparaître une croissance de la **publicité globale < +32 %** a/a | **42 %** | Communiqué Walmart du **20/08/2026** — lisible sur le communiqué SEUL | ⏳ |
+| **C042** | 07/08 | Juge | action-US défensive / <1 an · CTO | Walmart | **Le mécanisme décélère** : le communiqué du T2 FY27 fait apparaître une croissance de la **publicité globale < +32 %** a/a | **42 %** | ❌ **RÉSOLU FAUX le 20/08** — publicité globale publiée à **+38 %** (cinq sources concordantes). **La décélération s'est INVERSÉE.** Brier **0,1764**. *Voir « Résolution du 20/08 »* | ❌ |
 | **C043** | 07/08 | Juge | action-US défensive / 12 mois · CTO | Walmart | **Le PASSE est justifié** : WMT ne surperforme PAS le MSCI World de plus de **5 points** sur 12 mois | **68 %** | 07/08/2027 — performance totale WMT vs MSCI World | ⏳ |
 | **C044** | 07/08 | Juge | action-US défensive / pluriannuel · CTO | Walmart | **Le seuil correctement dérivé ne se présente pas** : WMT ne clôture **jamais ≤ 80,00 $** avant le 31/12/2027 | **75 %** *(brute 78 %, plafond de charte appliqué)* | Clôtures NYSE, 07/08/2026 → 31/12/2027 | ⏳ |
 
@@ -1381,3 +1381,140 @@ déplaçable hors bilan), C042 aujourd'hui (deux périmètres publicitaires).
 **Ce n'est plus une série d'accidents, c'est le coût structurel du
 pré-engagement** — et il se paie en relectures à J−7, pas en regrets le soir
 du print.
+
+---
+
+## ❌ RÉSOLUTION DU 20/08/2026 — C042 (Walmart), et un test que j'ai dû me passer à moi-même
+
+| ID | Affirmation | P | Issue | Brier |
+|---|---|---|---|---|
+| **C042** | **Le mécanisme décélère** : la publicité globale de Walmart croît de **< +32 %** au T2 FY27 | **42 %** | **0 — ❌ FAUX.** Publiée à **+38 %** | **0,1764** |
+
+### Le chiffre, et la série qu'il complète
+
+**Publicité globale T2 FY2027 : +38 % a/a.** Concordant sur **cinq résumés
+indépendants** datés du 20/08. *Ce n'est pas le T1 resservi : le T1 (+36/37 %)
+apparaît séparément et est explicitement étiqueté « fiscal first quarter,
+ended April 30 ».*
+
+| Trimestre | Croissance |
+|---|---|
+| T2 FY26 | **+46 %** |
+| T1 FY27 | +36/37 % |
+| **T2 FY27** | **+38 %** |
+
+**Ma tendance linéaire projetait ~+34 %. Le réalisé est +38 %.**
+
+> **La décélération ne s'est pas seulement arrêtée : elle s'est INVERSÉE.**
+> *Mon seuil était placé sous la tendance pour mordre des deux côtés. Il a
+> mordu du côté où je ne regardais pas.*
+
+**Branche réalisée : A3 (≥ +37 %), à laquelle j'avais donné 12 %.**
+*J'avais mis **82 % de la masse** sur une décélération (A1 + A2). L'issue est
+tombée dans ma troisième branche sur quatre.*
+
+### 🪞 LE TEST QUE J'AI DÛ ME PASSER — parce que résoudre m'ARRANGE
+
+**L'agent de relevé m'a recommandé de classer NON RÉSOLUBLE**, faute d'avoir
+pu lire le libellé verbatim (`WebFetch` mort sur tous les domaines).
+**J'ai résolu quand même. Voici pourquoi, et pourquoi c'était le point
+délicat de la journée.**
+
+🔴 **D'abord le fait gênant** : résoudre FAUX fait passer ma moyenne de
+**0,3233 à 0,3069**. **L'issue m'améliore.** *C'est exactement la
+configuration où un standard de preuve opportuniste se glisse sans qu'on le
+voie.*
+
+**Le test du miroir, posé explicitement** :
+
+> *Avec la MÊME qualité de preuve — cinq sources concordantes disant
+> « global advertising » — mais un chiffre de 30 % au lieu de 38 %, donc une
+> issue qui me DÉGRADERAIT, est-ce que je résoudrais ?*
+>
+> **Réponse : oui.** La qualité de la preuve ne dépend pas de la direction du
+> résultat. **Donc je résous.**
+
+### Les trois raisons, dans l'ordre de leur force
+
+**① Mon déclencheur de NON RÉSOLUBLE, tel qu'écrit le 16/08, n'est pas
+atteint.** Il disait : *« si le communiqué ne publie QUE Walmart Connect
+(US), ou seulement un agrégat de définition différente ».* **Ni l'un ni
+l'autre** : le périmètre rapporté est bien **global**.
+
+**② Précédent vieux de quatre jours, et il pointe dans le même sens.**
+**C034 a été résolu le 16/08 sans lire le 10-Q**, sur réconciliation
+arithmétique triple — et je l'avais écrit noir sur blanc : *« la résolution
+repose sur la règle du chiffre réconcilié, pas sur une lecture primaire. »*
+**Refuser ici appliquerait un standard plus strict que là-bas — et
+précisément sur l'appel qui m'arrange.**
+
+**③ « Lisible sur le communiqué SEUL » désignait un DOCUMENT, pas un acte de
+lecture.** Écrit le 07/08 pour distinguer *« le communiqué suffit »* de
+*« il faut le 10-Q ou la conférence »*. **L'accent était sur SEUL.**
+*Sous la lecture inverse, presque aucun appel ne serait résoluble dans l'état
+actuel de mon canal — ce qui ferait du blocage réseau un dispensateur
+d'excuses.*
+
+### ⚠️ Les deux réserves, inscrites
+
+1. **Je n'ai pas lu le libellé verbatim.** La résolution repose sur cinq
+   résumés concordants, pas sur le document.
+2. **Un résumé isolé affirme « Walmart U.S. advertising also up 38 % ».**
+   **Non corroboré, et le doublon exact est suspect** — au T1 les deux
+   périmètres divergeaient nettement (+36/37 global contre +44 Connect).
+   *Si le +38 % était en réalité un chiffre US mal étiqueté « global », la
+   résolution serait fausse. Cinq sources contre une : je tranche, et
+   j'inscris le risque.*
+
+### 📊 Le score après neuf résolutions
+
+| ID | P | Issue | Brier |
+|---|---|---|---|
+| C032 | 15 % | ❌ | **0,0225** |
+| C045 | 62 % | ✅ | **0,1444** |
+| C020 | 42 % | ❌ | 0,1764 |
+| **C042** | **42 %** | **❌** | **0,1764** |
+| C034 | 40 % | ✅ | 0,3600 |
+| C029 | 38 % | ✅ | 0,3844 |
+| C035 | 70 % | ❌ | 0,4900 |
+| C025 | 70 % | ❌ | 0,4900 |
+| C028 | 28 % | ✅ | 0,5184 |
+
+**Brier moyen : 0,3233 → 0,3069.** *Meilleure amélioration depuis le début.*
+
+| Repère | Valeur | BSS |
+|---|---|---|
+| « 50 % à tout » | 0,2500 | **−0,228** *(contre −0,293)* |
+| Climatologie *(taux de base 4/9)* | 0,2469 | **−0,243** *(contre −0,293)* |
+
+**Toujours négatif sur les deux — mais l'écart se réduit nettement.**
+**n = 9 ; ma charte exige 20-30. Aucun paramètre de sizing ne bouge.**
+
+**Discrimination** : annoncé **PROBABLE** (P ≥ 60 %) **1/3** · annoncé
+**IMPROBABLE** (P ≤ 42 %) **3/6**. *Le motif « ce que j'annonce improbable
+arrive » s'atténue à nouveau — troisième oscillation en trois semaines.
+Je continue de n'en rien tirer.*
+
+### 🎯 Ce que la résolution dit du DOSSIER, et il faut séparer les deux
+
+**Le PASSE du 07/08 n'est PAS invalidé.** Il reposait sur la **valorisation**
+(40,0x réels contre les « ~38x » annoncés) et sur le constat que **les
+conditions de mécanisme ne pouvaient pas mordre**.
+
+**Ce qui est invalidé, c'est ma lecture de la DÉCÉLÉRATION** — une lecture qui
+accompagnait le dossier sans le porter.
+
+> **J'avais raison de passer, et tort sur la raison que j'ai mise à côté.**
+> *C'est précisément ce qu'un appel de calibration sert à révéler : sans
+> C042, j'aurais gardé les deux convictions groupées, et j'aurais cru que la
+> bonne validait la mauvaise.*
+
+⚠️ **Et un fait à ne pas manquer dans le contexte** : le résultat
+opérationnel de Walmart bondit de **+28,8 %**, *« aidé par 2,9 Md$ de
+remboursements tarifaires »*. **Non récurrent.**
+
+> 🔁 **Deuxième occurrence en trois jours du même motif** : chez **Nike**,
+> ~0,52 $ des 0,72 $ de BPA proviendraient aussi d'une récupération
+> tarifaire. **RÈGLE : sur les publications de la distribution américaine de
+> ce trimestre, chercher la ligne « remboursements tarifaires » AVANT de lire
+> le levier opérationnel.**

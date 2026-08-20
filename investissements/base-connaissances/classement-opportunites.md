@@ -325,6 +325,30 @@ Le moteur a servi **65,30 €** comme « dernier cours de clôture » de Séché
 >
 > 🔴 **Mon seuil ≤ 90 € n'est PAS constaté franchi. Il reste NON TESTÉ.**
 
+### ❌ 20/08 — C042 résolu FAUX, et Walmart reste TUÉ
+
+**La publicité globale de Walmart a crû de +38 % au T2 FY27**, contre mon
+seuil de « < +32 % ». **La décélération s'est inversée** (46 → 37 → 38 %).
+
+> **Le PASSE du 07/08 n'est PAS invalidé** — il reposait sur la
+> **valorisation** (40,0x réels contre les « ~38x » annoncés), pas sur la
+> décélération. **Ce qui est invalidé, c'est la lecture du mécanisme que
+> j'avais mise à côté du dossier.**
+>
+> *J'avais raison de passer, et tort sur l'argument d'accompagnement. Sans
+> C042, j'aurais cru que le bon validait le mauvais.*
+
+**Les conditions de réouverture de Walmart sont INCHANGÉES** : ≤ 28,5x sur le
+médian de la guidance publiée **ET** publicité ≥ +25 % **ET** commerce en
+ligne ≥ +18 %, **simultanément**. *Le +38 % en satisfait une sur trois —
+et une condition sur trois ne rouvre rien.*
+
+⚠️ **À intégrer aux prochaines lectures de la distribution US** : le résultat
+opérationnel de Walmart bondit de **+28,8 %**, *« aidé par 2,9 Md$ de
+remboursements tarifaires »* — **non récurrent**. Chez **Nike**, ~0,52 $ des
+0,72 $ de BPA viendraient de la même source. **Chercher la ligne
+« remboursements tarifaires » AVANT de lire le levier opérationnel.**
+
 ### 📊 LE CLASSEMENT AU 19/08 — 8 candidates, **AUCUN MOUVEMENT DE RANG**
 
 *(clôtures du mardi 18/08)*
