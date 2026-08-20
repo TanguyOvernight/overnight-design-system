@@ -667,3 +667,67 @@ fin 2025 — et un **FCF guidé entre −50 et −70 M€**.
 ⚠️ **Et le refinancement à conclure d'ici le 31/10/2026**, avec des
 actionnaires familiaux qui *« confirment leur engagement à accompagner la
 société »* : **au radar comme risque de DILUTION, pas comme opportunité.**
+
+
+## 🚫 TROISIÈME ESPÈCE DE ZÉRO — le MUR D'ACCÈS (encodé le 20/08/2026)
+
+La typologie du 18/08 en comptait deux. **La chasse France & smalls du 20/08
+en a révélé une troisième, et c'est la plus insidieuse parce qu'elle
+ressemble aux deux autres.**
+
+| Espèce | Ce que le zéro signifie | Ce qu'il m'apprend sur le terrain |
+|---|---|---|
+| **Mur d'EFFICIENCE** *(tech, 17/08)* | « Tu arrives trop tard » — prix déjà fait | **Beaucoup** : le terrain est vivant mais rapide |
+| **Mur de QUALITÉ** *(santé, 18/08)* | « Il n'y avait rien à prendre » — le marché n'a pas tort | **Beaucoup** : je ne rate rien |
+| 🆕 **Mur d'ACCÈS** *(France-smalls, 20/08)* | **« Je n'ai pas pu regarder »** | 🔴 **RIEN. Absolument rien.** |
+
+**Les faits du 20/08** : **six domaines de cotation refusés**, dont
+`live.euronext.com` en source primaire, plus les deux écrans de plus-bas
+52 semaines et l'agrégateur AMF. **Un terrain France/small caps se chasse sur
+le PRIX** — sans lui, il ne reste que des récits.
+
+> **RÈGLE : un terrain qui échoue sur l'ACCÈS n'est pas « chassé à zéro », il
+> est NON INSTRUIT.** *Il ne compte pas dans le décompte des zéros, et il ne
+> dit rien de la productivité du terrain.*
+>
+> **Pourquoi ça compte vraiment** : j'ai huit zéros ce mois-ci. Les compter
+> ensemble me ferait conclure « ma méthode ne trouve rien ». **Mais un zéro
+> d'accès ne mesure pas ma méthode, il mesure mon tuyau.** *Mélanger les
+> trois, c'est se fabriquer un faux diagnostic sur soi.*
+
+**Conséquence opérationnelle** : le terrain France & smalls du 20/08 est
+**à rejouer** dès qu'un chemin de prix fonctionne, et **l'angle des
+publications du 17-20/08 n'a jamais été ouvert** — c'est un angle mort
+entier, pas une absence de matière.
+
+### 🕸️ Et une découverte sur ce terrain précis : il est POSSÉDÉ par le spam
+
+**Trois des quatre premières requêtes ont ramené des guides de screeners et
+des listicles SEO** au lieu de faits d'entreprise.
+
+> **Le vocabulaire naturel de ce terrain — « small cap française »,
+> « pépite » — est POSSÉDÉ par le contenu généré.** C'est le terrain le plus
+> pollué de ma rotation.
+
+**Le seul canal ayant produit des faits primaires datés est le fil de presse
+réglementé (GlobeNewswire), interrogé par FORMULATION MÉTIER** : *« carnet de
+commandes »*, *« résultats semestriels 2026 »*, *« activité du premier
+semestre »*.
+
+> **RÈGLE POUR LE JEUDI : attaquer d'emblée par le FIL DE PRESSE PRIMAIRE,
+> jamais par le NOM DU SEGMENT.** *Chercher « small cap française » revient à
+> demander au spam de se présenter.*
+
+### 📖 Un mot d'émetteur à savoir lire : « résilient »
+
+**Riber** (ALRIB) a publié un carnet de commandes qualifié de **« résilient »**
+au 30/06/2026.
+
+> **« Résilient » est un mot de PRUDENCE, pas d'INFLEXION.** Le communiqué ne
+> dit pas *book-to-bill > 1*, il dit *« on tient »*. **Sur un dossier
+> valorisé ~55x les bénéfices, la nuance décide.**
+
+*(Riber tuée par ailleurs sur T1, et sans appel : fourchette 52 semaines
+**2,85 € → 18,50 €**, un facteur **6,5**, dont +29 % sur le seul mois de
+janvier 2026. Et deux capitalisations discordantes — 289 M€ contre 323 M€ —
+symptôme classique d'agrégateurs non rafraîchis.)*
