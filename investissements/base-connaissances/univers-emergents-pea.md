@@ -259,3 +259,276 @@ fait apparaître **une seconde, distincte et plus radicale** :
   émergent de SBM Offshore et de Vicat.
 - 🔴 **Vérifier le routage Fortuneo vers Euronext Lisbonne et Bruxelles** —
   sans quoi une partie de cet univers n'existe que sur le papier.
+
+
+---
+
+# 🔴 NEPI ROCKCASTLE — DOSSIER CLOS le 21/08/2026, et par la société elle-même
+
+**La question fermée posée le 16/08 a enfin une réponse. Elle est négative,
+et elle est DATÉE.**
+
+## Ce que le webcast du S1 2026 (19/08) établit
+
+| Élément | Contenu |
+|---|---|
+| **Trajectoire** | NEPI se déclare **« on track » pour adopter un régime REIT à compter du 1ᵉʳ JANVIER 2027** |
+| **Préparation** | La société affirme être **prête à appliquer le régime REIT depuis sa constitution aux Pays-Bas** |
+| **Seule réserve ouverte** | Une discussion avec l'administration fiscale néerlandaise sur **le traitement du développement résidentiel** — conclusion attendue au **T4 2026** |
+| **Motivation explicite** | Préserver un taux d'imposition effectif de **8-10 %** et **s'exempter du Pilier 2** (minimum 15 % par juridiction) |
+
+⚠️ **QUALITÉ : MOYENNE.** Trois résumés concordants du *earnings call*, **pas
+le texte primaire**. *Le sens général est robuste ; les formulations exactes
+(« on track », « 8-10 % ») sont des reformulations d'analystes.*
+
+## 🎯 Pourquoi ça ferme le dossier
+
+**Un régime REIT néerlandais exonérant l'IS sur les revenus locatifs place la
+société sous l'exclusion PEA des SIIC et de leurs équivalents étrangers.**
+
+> **La question n'est plus « est-ce éligible aujourd'hui ? » — c'était
+> probablement oui.** Elle est : **« la société s'engage-t-elle publiquement
+> sur une trajectoire qui la rendra inéligible ? »** — et **la réponse est
+> oui, avec une date : le 01/01/2027.**
+>
+> **La seule réserve porte sur un point de PÉRIMÈTRE (le résidentiel), pas
+> sur le principe.**
+
+**Ce que ça donnerait concrètement** : une fenêtre d'achat théorique jusqu'au
+**31/12/2026**, puis **plus aucun renforcement possible en PEA**. *Pour un
+mandat à 5-7 ans construit sur des versements mensuels, acheter une ligne
+qu'on ne pourra plus abonder dans quatre mois n'a pas de sens.*
+
+⚠️ **Et l'antériorité ne se parie pas** : le précédent français de 2011 avait
+« grand-périsé » les titres déjà logés, mais **rien ne garantit ce
+traitement**, et l'espérance ne peut pas reposer sur une clause qui n'existe
+pas encore.
+
+## ✅ CE QUE CETTE ISSUE VALIDE — la discipline du 16/08
+
+**Le 16/08, la règle du calendrier désignait NEPI comme terrain du jour** — sa
+publication tombait dans les 48 heures. **J'ai refusé de l'instruire**, au
+motif que le critère éliminatoire d'éligibilité PEA n'était pas levé, et j'ai
+consacré la session à la seule question fermée.
+
+> **Cinq jours plus tard, la réponse est arrivée d'elle-même, et elle est
+> négative. Coût d'instruction dépensé : ZÉRO.**
+>
+> *Si j'avais suivi la règle du calendrier plutôt que le critère éliminatoire,
+> j'aurais produit une analyse fouillée d'une société dont l'émetteur
+> annonçait, dans le même document, qu'elle deviendrait inachetable.*
+
+**C'est l'arbitrage encodé le 16/08 qui a fonctionné** : *un critère
+ÉLIMINATOIRE se vérifie AVANT que la règle du calendrier ne s'applique.*
+
+## Ce qui reste au référentiel, à titre documentaire seulement
+
+**S1 2026, chiffres retenus et bouclés** :
+- **DEPS 32,14 c€ (+3,5 %)** — ✅ **preuve anti-piège** :
+  `31,05 × 1,035 = 32,137` reconstitue exactement le chiffre servi. *Un moteur
+  ne produit pas ce bouclage par accident en servant du périmé.*
+- **Guidance 2026 RELEVÉE** : DEPS attendu **+3,5 % à +4,0 %** → **64,20 à
+  64,51 c€** *(contre ~+3 % auparavant)*.
+- **LTV 33,1 %** au 30/06 *(contre 32,8 % au 31/12/2025 — l'émetteur compare
+  au 31/12, pas au 31/03 ; ne pas bâtir de série trimestrielle là-dessus)*.
+- ⚠️ **Occupation 98,2 % — NON VÉRIFIÉE** : c'est **exactement la valeur du S1
+  2025**, et elle n'est pas bouclable. *Le 1,8 % de vacance EPRA est son
+  complément arithmétique, donc pas une confirmation indépendante.*
+- ✅ **S&P a relevé la note à BBB+, perspective stable, juillet 2026** —
+  **mono-source levé** : communiqué de l'émetteur + PDF S&P hébergé + deux
+  reprises indépendantes.
+
+> **Une bonne société, correctement gérée, dont la note vient d'être relevée —
+> et qui devient inachetable dans ma seule enveloppe fiscale utile. Les deux
+> constats sont vrais en même temps.**
+
+**STATUT : SORTIE du pipeline d'instruction. Conservée au référentiel comme
+cas d'école de l'anomalie de pavillon (groupe B2), pas comme candidate.**
+
+---
+
+# 🔑 LA QUESTION QUI DÉBLOQUE OU TUE DEUX DOSSIERS D'UN COUP (21/08/2026)
+
+**Deux foncières néerlandaises d'affilée bloquées sur le MÊME critère
+éliminatoire** — NEPI Rockcastle le 16/08, **CTP N.V.** aujourd'hui.
+
+> **Ce n'est plus une coïncidence, c'est une question à régler une fois pour
+> toutes.** *Une réponse générique débloquerait ou tuerait les deux — et
+> toutes celles qui suivront.*
+
+## ✅ Et grâce à NEPI, je connais désormais le DISCRIMINANT
+
+**Ce n'est ni le siège, ni la place de cotation, ni le métier.** C'est :
+
+> **La société bénéficie-t-elle — ou a-t-elle demandé — un régime
+> d'EXONÉRATION D'IMPÔT SUR LES SOCIÉTÉS de type REIT / FBI / SIIC sur ses
+> revenus locatifs ?**
+>
+> - **NON** → *a priori* éligible PEA *(cas de NEPI jusqu'au 31/12/2026)*.
+> - **OUI, ou demande en cours avec date** → **exclusion PEA** des SIIC et de
+>   leurs équivalents étrangers *(cas de NEPI à compter du 01/01/2027)*.
+
+**La question à poser à toute foncière néerlandaise, en une phrase** :
+*« bénéficie-t-elle du régime FBI, ou l'a-t-elle demandé ? »* — et **le
+régime FBI est fermé à l'immobilier détenu DIRECTEMENT depuis le
+01/01/2025**, ce qui rend la réponse souvent structurante.
+
+**À appliquer à CTP dès la prochaine session.**
+
+---
+
+# 🆕 ENTRÉES AU RÉFÉRENTIEL — 21/08/2026
+
+## ① CTP N.V. — `CTPNV`, Euronext **Amsterdam** — groupe **B2** (anomalie de pavillon)
+
+Logistique industrielle. **Le jumeau structurel de NEPI** : société de droit
+néerlandais, actifs presque tous en Europe centrale.
+
+| Champ | Valeur | Qualité |
+|---|---|---|
+| Prix | **15,46 €** au **05/08/2026** | ✅ daté |
+| Capitalisation | **~7,41 Md€** = `479,28 M titres × 15,46 €` | ✅ méthode licite |
+| Fourchette 52 sem. | 13,92 – 19,62 € → **−21 % sous son plus haut** | — |
+| Ticket | **15 €** — excellent | ✅ |
+| GAV | **18,9 Md€** au 31/03/2026 (+2,0 % sur le trimestre) | — |
+| EPRA NTA | **20,95 €/action** (+12,7 % sur un an) | — |
+| Loyers annualisés | **858 M€** au S1 2026 (**+13,3 %**) | — |
+| **PEA** | 🔴 **NON RÉSOLU — ÉLIMINATOIRE** *(voir la question générique ci-dessus)* | 🔴 |
+
+**Exposition chiffrée — ventilation du portefeuille au 31/03/2026** :
+**Tchéquie 40,4 %** · **Roumanie 14,9 %** · Allemagne 10,7 % · **Pologne
+7,8 %** · **Slovaquie 7,6 %** · **Serbie 3,7 %** · Pays-Bas 2,6 % ·
+**Bulgarie 1,8 %** · Autriche 1,3 % · Italie 1,1 %.
+
+⚠️ **Le total ne fait que 91,9 % — la HONGRIE manque** de la liste restituée,
+alors que CTP y est un propriétaire logistique majeur. **Les 8,1 % lui
+reviennent très probablement, mais je ne les affecte pas sans source.**
+→ Exposition Europe centrale/orientale **≈ 76 % chiffré, ~84 % si l'écart est
+hongrois**.
+
+🔴 **Deux rejets appliqués, tous deux par la règle 17** :
+- une **capitalisation non datée de 8,43 Md€** : `8,43 Md ÷ 479,28 M =
+  17,59 €/titre`, **incompatible de 14 %** avec le cours daté de 15,46 € ;
+- une **performance de « −19,62 % sur un an »** — *chiffre identique au plus
+  haut 52 semaines (19,62 €)*, donc **collision de champ manifeste**.
+
+🔴 **T6 NON SATISFAIT, et je le dis franchement** : **17 analystes** suivent
+le titre, consensus « Strong Buy », objectif moyen 21,26 €. **CTP n'est pas
+négligée — elle est mal classée par les robots et parfaitement couverte par
+les humains.** *C'est exactement la correction du 13/08 : « invisible aux
+ROBOTS, pas aux BELGES ».* **Véhicule d'exposition, PAS signal
+d'inattention.**
+
+⚠️ **Gouvernance** : **Remon Vos, fondateur-dirigeant, détient 73,11 %** du
+capital et des droits de vote. Flottant 26,89 %.
+⚠️ **Non instruit et important** : **LTV et dette nette** *(pas de jugement de
+valorisation sans elles — leçon TEXAF)* · et **pourquoi le titre est dans le
+bas de sa fourchette alors que le NTA monte de 12,7 % sur un an.** *C'est la
+vraie question.*
+
+## ② KBC GROUPE — `KBC`, Euronext **Bruxelles** — groupe **C** (exposition par le RÉSULTAT)
+
+**Comble explicitement le trou n°3 du référentiel** : *« aucune banque à
+réseau émergent purement Euronext ».*
+
+**Exposition chiffrée, et elle BOUCLE sur elle-même** — résultat net FY 2025 :
+
+| Division | Résultat net |
+|---|---|
+| Belgique | 2 151 M€ |
+| **Tchéquie** | **922 M€** |
+| **Marchés internationaux** *(Slovaquie, Hongrie, Bulgarie)* | **814 M€** |
+| Centre de groupe | −318 M€ |
+| **Total** | **3 568 M€** |
+
+✅ **Contrôle interne : `2 151 + 922 + 814 − 318 = 3 569 ≈ 3 568`.**
+*C'est le seul chiffre de la session validé par un test arithmétique interne
+plutôt que par une seconde source.*
+
+→ **Europe centrale = 1 736 M€ sur 3 568 = 48,7 % du résultat net du
+groupe.** Corroboration à 9 mois : `(691 + 609) ÷ 2 566 = 50,7 %` — **deux
+périodes, même ordre de grandeur.**
+
+📌 **Jumeau structurel d'Ageas** (52 % du résultat opérationnel d'Asie) :
+**exposition par le RÉSULTAT, pas par le chiffre d'affaires.**
+
+**Pays** : **Tchéquie** *(de loin le premier — 922 M€ à elle seule)*,
+**Hongrie, Slovaquie, Bulgarie**.
+⚠️ **Risque pays : fiscal et réglementaire, pas monétaire.** Pas de contrôle
+des changes (UE), mais **la Hongrie** a un historique documenté de **taxes
+bancaires exceptionnelles, plafonnements de taux et pressions réglementaires
+sur les banques étrangères.**
+
+🔴 **Aucune inattention plaidable** : membre du BEL 20, **à ~4 % de son plus
+haut historique** (125,40 € le 31/07/2026), cours 119,85 €, capi 50,74 Md€.
+**Brique de référentiel, pas opportunité.**
+⚠️ **Ticket 120 € = 24 % du budget mensuel** — praticable mais lourd.
+⚠️ **Angle mort, le même que sur Ageas** : *quelle part du résultat tchèque et
+hongrois REMONTE réellement en dividende à Bruxelles* après exigences de
+fonds propres locales ?
+
+## ③ ORANGE — Euronext **Paris** — groupe **C**, **ENTRÉE PROVISOIRE**
+
+**Comble le trou « aucune télécom émergente ».** PEA éligible sans discussion.
+
+🔴 **Aucun prix, aucune capi, aucune performance ne sont inscrits** — la
+session n'a pas produit de cotation horodatée. **Champ prix VIDE, à remplir.**
+
+**Exposition** : **Afrique & Moyen-Orient = 8,4 Md€ de CA 2025 (+12,2 %)** sur
+un CA groupe de **40,4 Md€** → **20,8 %**. **179 millions de clients** sur
+17 marchés africains + la Jordanie.
+⚠️ **MONO-SOURCE, et le % est un calcul.** *Ce n'est pas encore un chiffre de
+référentiel, c'est un chiffre à confirmer sur le document émetteur.*
+
+### 🎯 Le test de la leçon « défense », appliqué — et il RAFFINE la règle
+
+**20,8 %, c'est peu.** À peine au-dessus des **14,2 %** qui ont fait sortir
+Sogeclair du référentiel défense le 19/08.
+
+> **Ce qui sauve Orange provisoirement, ce n'est pas le NIVEAU, c'est la
+> DÉRIVÉE** : la zone croît de **+12,2 %** pendant que le groupe stagne. **Sa
+> part monte mécaniquement chaque année.**
+>
+> **Sogeclair, c'était l'inverse exact** : 14,2 % de défense, **et une défense
+> à +1,2 %** — une exposition minoritaire **qui ne croissait plus**.
+
+**RÈGLE RAFFINÉE — le champ définitionnel a DEUX composantes** :
+> **Le pourcentage d'exposition ET sa dérivée.** Un niveau bas qui monte vite
+> est un dossier ; un niveau bas qui stagne n'en est pas un. *Juger sur le
+> seul niveau aurait sorti Orange et gardé Sogeclair.*
+
+⚠️ **Et le risque pays MORD ici pour de bon — l'ÉGYPTE.** Historique de
+**dévaluations brutales de la livre** et de **difficultés de rapatriement de
+devises**. **Un chiffre d'affaires en croissance de 12 % en monnaie locale
+peut se traduire par une contribution en euros nulle ou négative.**
+*C'est le cas d'école du contrôle des changes, et il est actif, pas
+théorique.* S'y ajoute le risque sécuritaire au Sahel.
+
+**Non instruit** : le document émetteur · la contribution de la zone à
+l'**EBITDAaL** *(le chiffre d'affaires d'une télécom africaine n'est pas sa
+valeur)* · le statut d'un éventuel projet de mise en Bourse séparée d'Orange
+MEA.
+**Si la confirmation émetteur invalide le +12,2 %, ce nom SORT.**
+
+---
+
+## ❌ Écartée, et pour mémoire
+
+**CONDURIL – ENGENHARIA** (CDU, Lisbonne) — contractant portugais opérant en
+**Angola, Mozambique, Botswana, Cap-Vert, Maroc**. **Écartée sur
+l'ACHETABILITÉ, pas sur l'intérêt** : cotée sur **Euronext Access**
+(compartiment non réglementé), **2 millions d'actions** seulement, aucun
+routage courtier raisonnable. Et le champ définitionnel reste vide : la seule
+donnée est *« exports 58,9 % des ventes nettes »* au 31/12/2024 — **un chiffre
+d'exportations, pas une ventilation pays.** *À classer « intéressante et
+inaccessible », comme TotalEnergies EP Gabon.*
+
+## 🕳️ Le résultat négatif qui confirme la prémisse du référentiel
+
+**AUCUN nouveau groupe A trouvé.** Après Mota-Engil (78 % du CA) et Jerónimo
+Martins (79 %), **aucun candidat supplémentaire ne franchit les 50 % de CA
+consolidé émergent** à Paris/Amsterdam/Bruxelles/Lisbonne.
+
+> **Le champ est réellement étroit — ce n'est pas un défaut de recherche.**
+> Les deux entrées du jour sont des groupes **B2** et **C**, c'est-à-dire
+> **les seuls gisements qui restent.**
