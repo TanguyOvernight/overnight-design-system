@@ -349,7 +349,67 @@ remboursements tarifaires »* — **non récurrent**. Chez **Nike**, ~0,52 $ des
 0,72 $ de BPA viendraient de la même source. **Chercher la ligne
 « remboursements tarifaires » AVANT de lire le levier opérationnel.**
 
-### 📊 LE CLASSEMENT AU 19/08 — 8 candidates, **AUCUN MOUVEMENT DE RANG**
+### 🔴 21/08 — LE PIÈGE STM, ET UNE QUATRIÈME PROVENANCE NOMMÉE
+
+Le moteur a servi un bloc **apparemment complet et horodaté à la minute** :
+STM à **43,295 € « le 20/08 à 15h18 »**, ouverture 43,995, haut 44,080, bas
+43,010, volume 945 331, variation −1,36 %. **Interne­ment cohérent. Et faux.**
+
+**Rejeté sur quatre motifs cumulés** :
+1. **Ce n'est pas une clôture** — horodaté 15h18, séance en cours.
+2. **Le bouclage échoue contre mon référentiel** : −1,36 % implique une veille
+   à **43,89 €**, contre mon dernier validé de **49,06 € au 17/08** — soit
+   **−10,5 % en une ou deux séances, sans aucun catalyseur.**
+3. 🎯 **La provenance est identifiée** : STM s'est effondré **−17,7 % fin
+   juillet 2026** sur ses résultats T2 (EBITDA 679 M$ contre 797,7 attendus,
+   guidance T3 sous consensus). **Un niveau de 43-44 € correspond exactement
+   au plancher post-résultats de fin juillet / début août.**
+4. **Il coche les trois signatures** : plus ancien, plus bas, **et plus proche
+   de mon seuil d'achat** — il me placerait à **+3,1 %** du seuil de 42 € au
+   lieu de **+16,8 %**.
+
+> 🔑 **QUATRIÈME PROVENANCE NOMMÉE** : valorisation d'IPO (Magnum) · niveau
+> post-krach de février (Séché) · **autre place de cotation** (Séché/Londres)
+> · **plancher post-résultats T2 (STM)**.
+>
+> ⚠️ **Et la vraie leçon est ailleurs : UN CHIFFRE QUI A L'AIR COMPLET N'EST
+> PAS UN CHIFFRE VÉRIFIÉ.** Ce bloc avait un OHLC entier, un volume et un
+> horodatage à la minute. **Le seul contrôle qui l'a démasqué est le bouclage
+> contre mon dernier chiffre validé.**
+>
+> **Mes ancrages validés ne sont pas des archives — ils sont le mécanisme de
+> détection.** *Sans le 49,06 € du 17/08, ce piège passait.*
+
+### 📊 LE CLASSEMENT AU 21/08 — 8 candidates, **AUCUN MOUVEMENT DE RANG**
+
+*(clôtures du jeudi 20/08 quand elles sont bouclées, sinon dernier validé)*
+
+| Rang | Candidate | Chiffre vs déclencheur | Qualité | Mvt |
+|---|---|---|---|---|
+| **①** | **Cœur World** | 🔴 **PEA NON OUVERT** — 14ᵉ jour. Budget d'août **1 000 €** | ✅ 15/08 | **=** |
+| **②** | **Or** | **~4 555 $/oz** le 21/08 (+0,86 %) — soit **~+4,4 % depuis le 14/08**. 🔴 Garde-fou R : achat **INTERDIT** | ⚠️ heure non fournie ; dispersion ±20 $ entre diffuseurs *(Kitco ~4 538)* | **=** |
+| **③** | **Séché** | 🔴 **NON TESTÉ — 6ᵉ semaine.** Un seul chiffre servi (84,20 €), **non daté** → rejeté. *Note : il est AU-DESSUS du seuil, donc non flatteur — probablement pas le mode de panne, juste une page live sans horodatage* | ❌ **NON ACCESSIBLE** | **=** |
+| **④** | **Eli Lilly** | Fourchette **1 243-1 280 $** le 20/08 — **ce n'est PAS une clôture**. Dernier validé : **1 183,16 $ au 18/08** → **+16,0 %** | ⚠️ *Le chiffre du jour va CONTRE le sens du biais (plus haut), donc moins suspect — mais une fourchette n'est pas une clôture* | **=** |
+| **⑤** | **Magnum** | **10,40 Md€** → il faut **−26,9 %** | ✅ **SOURCE DU PIÈGE CONFIRMÉE AU CENTIME** : Euronext a fixé le prix de référence du *direct listing* à **12,80 €**, et `12,80 × 612 259 739 = 7,837 Md€`. **Le « 7,84 Md€ » est définitivement disqualifié** | **=** |
+| **⑥** | **Aubay** | Repère inchangé **~56,85 €** → **+13,7 %**. *Le « 54,30 € » qui circule reste NON DATÉ* | ✅ **Corroboré** : CA T2 2026 **173,6 M€, +30,7 % publié / +12,2 % organique**, et rachats déclarés sur les deux semaines | **=** |
+| **⑦** | **STM** | Dernier validé **49,06 € (17/08)** → **+16,8 %**. *Le chiffre du 20/08 a été rejeté — voir encadré* | 🔴 **Piège actif aujourd'hui** | **=** |
+| **⑧** | **Nike** | **41,05 $ au 19/08** (+2,48 %) — **+5,0 % au-dessus** de son plus-bas de 2014 | ✅ **BOUCLÉ** : `40,06 × 1,0248 = 41,052`. 🎁 **Effet de bord : ceci valide rétroactivement mon 40,06 $ du 18/08**, qui était non bouclé | **=** |
+
+### 📉 Le CAC enchaîne — huitième séance de baisse
+
+**8 453,09 (−0,57 %) au 20/08.** Bouclage : `8 501,91 → 8 453,09 = −0,574 %` ✅
+**Huitième baisse consécutive — la série la plus longue depuis mi-novembre
+2017.** L'indice a cédé les 8 500 points. Causes citées : remontée des taux
+obligataires, escalade États-Unis/Iran, **Brent +2,4 % à 93,86 $**, et le luxe
+qui pèse.
+
+*S&P 500 **7 641,16** (−0,87 %) · Nasdaq **26 067,17** (−1,0 %) — non bouclés.*
+
+**Aucune action** : le portefeuille est un pari pluriannuel, et huit séances
+de baisse ne sont pas un kill criterion. *Je le note parce que la série est
+statistiquement remarquable, pas parce qu'elle appelle une décision.*
+
+### (état antérieur au 19/08, conservé)
 
 *(clôtures du mardi 18/08)*
 
