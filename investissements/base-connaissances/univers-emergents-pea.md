@@ -532,3 +532,131 @@ consolidé émergent** à Paris/Amsterdam/Bruxelles/Lisbonne.
 > **Le champ est réellement étroit — ce n'est pas un défaut de recherche.**
 > Les deux entrées du jour sont des groupes **B2** et **C**, c'est-à-dire
 > **les seuls gisements qui restent.**
+
+---
+
+# 🔴🔴 22/08/2026 — JE ROUVRE NEPI, ET MON DISCRIMINANT D'HIER ÉTAIT FAUX
+
+**Hier j'ai écrit « DOSSIER CLOS » et « la question est réglée ». Les deux
+sont à retirer.**
+
+## ❶ Le discriminant que j'ai encodé hier est FAUX
+
+**Ce que j'ai écrit le 21/08** : *« le régime FBI est fermé à l'immobilier
+détenu DIRECTEMENT depuis le 01/01/2025, ce qui rend la réponse souvent
+structurante »* — et j'en tirais que NEPI et CTP ne pouvaient pas être FBI.
+
+> 🔴 **FAUX. La fermeture du FBI au 01/01/2025 ne vise QUE l'immobilier SITUÉ
+> AUX PAYS-BAS.** *« FBI's can no longer directly invest in real estate
+> located in the Netherlands from January 1, 2025. However, FBI's are still
+> permitted to directly invest in FOREIGN real estate. »*
+> **Quatre cabinets fiscaux indépendants, formulation convergente.**
+
+**NEPI (100 % Europe centrale) et CTP (Tchéquie, Roumanie, Hongrie…)
+détiennent presque exclusivement de l'immobilier ÉTRANGER au sens
+néerlandais. La porte FBI ne leur est PAS fermée.**
+
+## ❷ Et mon test de repli — le taux d'imposition effectif — ne discrimine pas non plus
+
+J'espérais trancher par le TEI : *proche de zéro → exonéré ; ~25 % → normal.*
+CTP affiche **283,70 M€ de charge d'impôt** pour ~**1 363,7 M€** de résultat
+avant impôt, soit **~20,8 %**.
+
+> ⚠️ **Ce test ne discrimine que pour une foncière MONO-JURIDICTION.**
+> Les revenus d'Europe centrale de CTP sont imposés **localement** — en
+> Tchéquie, en Roumanie, en Pologne — **quel que soit le statut fiscal de la
+> maison mère néerlandaise.** *Un TEI consolidé de 21 % prouve que le groupe
+> paie de l'impôt quelque part, pas que CTP N.V. n'est pas un FBI.*
+>
+> **Second affaiblissement** : une grande part de cette charge est
+> probablement de l'**impôt différé** sur les plus-values de réévaluation
+> *(GAV +15,7 % à 18,5 Md€ en 2025)*, pas de l'impôt courant sur les loyers.
+
+## ❸ 🔴 LA CONTRADICTION QUI M'OBLIGE À ROUVRIR NEPI
+
+**NEPI annoncerait un « Dutch REIT » au 01/01/2027. Or AUCUN régime REIT
+néerlandais n'est adopté, ni même déposé.** Une étude existe *(lettre au
+Tweede Kamer du « 7 juin », année non confirmée)*, mais **aucun
+wetsvoorstel, aucune date d'entrée en vigueur**.
+
+**Deux lectures, et je ne peux pas trancher :**
+- **(a)** Le résumé a mal étiqueté, et NEPI adopte des régimes REIT **LOCAUX,
+  pays par pays**. *Un résumé mentionne explicitement « Investments in Spain,
+  where the REIT structure applies from January 1, 2027 » — ce qui évoque le
+  **SOCIMI espagnol**, pas un régime néerlandais.*
+- **(b)** Un régime néerlandais a progressé et n'a pas été trouvé.
+
+> **Et la différence décide de tout** : si le régime visé est **espagnol**,
+> il s'applique aux seuls investissements espagnols de NEPI — **la maison
+> mère néerlandaise reste normalement imposée, et le PEA reste OUVERT.**
+
+## 🪞 Ce que je dois dire sur MOI, et c'est le point désagréable
+
+**Hier, l'agent m'a livré cette information avec une qualité explicitement
+étiquetée MOYENNE**, en précisant que les formulations venaient de
+**reformulations d'analystes, pas du texte source**. **Je l'ai utilisée comme
+si elle était décisive, et j'ai écrit « DOSSIER CLOS ».**
+
+> **Pourquoi je ne l'ai pas vérifiée : parce que la fermeture VALIDAIT MA
+> MÉTHODE.** *Elle me permettait d'écrire « le critère éliminatoire du 16/08
+> a économisé une instruction entière » — une conclusion flatteuse, et
+> j'avais envie qu'elle soit vraie.*
+>
+> **C'est exactement le mode d'échec du 17/08** : j'avais accepté une
+> correction de chiffre mono-source parce qu'elle arrivait emballée dans une
+> démonstration de méthode brillante. **Cinq jours plus tard, même erreur,
+> autre habit : cette fois le récit flatteur n'était pas celui de l'agent,
+> c'était le mien.**
+
+**RÈGLE RENFORCÉE : une information qui VALIDE ma méthode doit être auditée
+PLUS sévèrement qu'une information neutre, pas moins.** *Le plaisir de la
+confirmation est un anesthésiant.*
+
+## Statut corrigé des deux dossiers
+
+| Dossier | Statut au 21/08 *(faux)* | **Statut au 22/08** |
+|---|---|---|
+| **NEPI** | ❌ « CLOS, inéligible au 01/01/2027 » | 🟡 **NON TRANCHÉ** — probable mais **la juridiction du régime REIT n'est pas établie** |
+| **CTP** | 🔴 « bloqué, même éliminatoire » | 🟡 **PAS ÉLIMINÉE** — l'élimination reposait sur un discriminant erroné |
+
+## ✅ Ce qui reste ACQUIS, et qui est solide
+
+**Le cadre juridique est confirmé, en source de qualité HAUTE (BOFIP)** :
+depuis le **21/10/2011**, les titres de **SIIC et de sociétés européennes
+comparables** ne peuvent plus être inscrits en PEA — **motif explicite :
+éviter le cumul de l'exonération PEA et de l'exonération d'IS.**
+
+> **Le critère EST bien l'exonération d'impôt sur les sociétés.** Mon
+> intuition de départ était juste ; c'est son APPLICATION que j'avais fausse.
+> **Une foncière néerlandaise normalement imposée reste éligible.**
+
+## 🔧 LE DISCRIMINANT RECONSTRUIT — version corrigée
+
+> **① La société est-elle exonérée d'IS DANS SON ÉTAT DE SIÈGE sur ses
+> revenus locatifs ?** — à lire dans la note fiscale, ligne *current tax* de
+> l'entité mère. **Pas le TEI consolidé.**
+>
+> **② Est-elle un PLACEUR PASSIF ou un OPÉRATEUR-PROMOTEUR ?** Les régimes
+> REIT et FBI exigent du **placement passif** (*beleggen*) et excluent
+> l'activité de promotion (*ondernemen*).
+> **C'est le critère qui sépare probablement les deux dossiers** : **CTP est
+> un promoteur** — *« Europe's largest owner, DEVELOPER and manager »*, avec
+> un pipeline de développement au cœur du modèle — donc **structurellement
+> hors régime, donc PEA a priori OUVERT**. **NEPI est une foncière de centres
+> commerciaux, passive** — donc éligible au régime, donc **PEA qui se
+> refermerait**.
+> ⚠️ **RAISONNEMENT NON SOURCÉ appliqué à CTP.** *Je le crois juste, je ne
+> l'ai vu écrit nulle part. Ne pas le traiter comme un fait.*
+>
+> **③ Le TEI ne sert QUE si le groupe est mono-juridiction.**
+
+## 📄 Les deux documents qui trancheraient, nommés
+
+1. **Base Listing Particulars EMTN 2025 de CTP** — *les prospectus obligataires
+   contiennent toujours une section fiscale explicite sur le statut de
+   l'émetteur.* **C'est la source décisive.**
+2. **Note « Income tax » du rapport annuel FY-2025 de CTP**, ligne *current
+   tax* Pays-Bas.
+
+**Les deux sont inaccessibles par mon canal.** *Mais ils sont nommés — c'est
+la différence entre une question ouverte et une question perdue.*
