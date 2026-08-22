@@ -147,7 +147,7 @@ surveillance devient une attente indéfinie déguisée en discipline.
 
 | ID | Date | Agent | Affaire | Affirmation | P | Condition de résolution | Statut |
 |---|---|---|---|---|---|---|---|
-| C001 | 27/07 | Juge | Aubay | Achat justifié SI repli ≤ 50 € **ou** scare optique T3 | 56 % | À la publication T3 (fin oct. 2026) : le déclencheur s'est-il présenté et l'entrée aurait-elle battu le World depuis ? | ⏳ |
+| C001 | 27/07 | Juge | Aubay | Achat justifié SI repli ≤ 50 € **ou** scare optique T3 | 56 % | ⏳ **CLAUSE DE VOID AJOUTÉE le 22/08, avant tout fait connu** : si **aucun déclencheur ne se présente** avant la publication du T3 (fin oct. 2026), l'appel est **VOID et non scoré**. S'il s'en présente un, résolution sur la **performance totale de l'entrée contre le MSCI World**, de la date du déclencheur à celle du T3. *(Aubay cote ~56,85 €, soit +13,7 % au-dessus du seuil : rien n'est connu.)* | ⏳ |
 | C002 | 27/07 | Avocat | Besi | Pas d'edge au prix actuel (~227 €) : sous-performe ou ne bat pas le World à 12 mois | 75 % | 27/07/2027 : BESI vs MSCI World sur 12 mois | ⏳ |
 | C003 | 27/07 | Juge | Nexans | Le repli est un dérating MÉRITÉ, pas une inefficience (self-invalidation : S1 dé-risque GSI + FCF relevé à ≤130 €) | 58 % | 🚫 **NON SCORABLE — tranché le 15/08.** **Date enfin établie : le S1 2026 a été publié le 29/07/2026 à 08h11**, soit deux jours après l'ouverture de l'appel. Mais la condition est **ambiguë au point d'admettre deux lectures opposées** sur la même matière de fait — voir l'analyse ci-dessous. **Le défaut a été découvert à 9h, AVANT de connaître les faits** ; le lever maintenant serait infalsifiable | 🚫 |
 | C004 | 27/07 | Juge | Ultragenyx | RARE = loterie, PASSE justifié (ne bat pas le cœur 5-7 ans) | ~~75-80 %~~ → **77,5 %** *(convention du 15/08, voir audit)* | ⏳ **CONDITION RESSERRÉE le 15/08, avant tout fait connu** : résout sur la **performance totale RARE vs MSCI World au 27/07/2027**. Les PDUFA des 23/08 et 19/09 deviennent des **jalons**, pas des conditions | ⏳ |
@@ -156,7 +156,7 @@ surveillance devient une attente indéfinie déguisée en discipline.
 | C007 | 27/07 | Juge | STM | STMPA touche ≤ 45 € en clôture (le déclencheur d'achat surveillance approche) | 35 % | Cours de clôture Paris avant le 31/01/2027 | ⏳ |
 | C008 | 27/07 | Juge | Nike | Nike publie ≥ 1 trimestre de croissance Direct/Digital POSITIVE (stabilisation ≠ couteau) | 38 % | Communiqués Nike sur ses 2 prochains rapports, avant le 30/04/2027 | ⏳ |
 | C009 | 27/07 | Juge | Allocation juillet | L'euro de juillet est déployé sur WPEA (pas STM/Nike/or) une fois le canal débloqué | 80 % | Ordre WPEA exécuté au plus tard le 31/08/2026 | ⏳ |
-| C010 | 27/07 | Avocat | IBA (RÉFUTÉ) | La thèse « actif caché PanTera » est morte : pas d'accord ferme ≥ 800 M€ d'ici fin 2027 ET/OU EBIT 2026 sous guidance (32 M€) | 75 % (= 1−25 % de la thèse) | Fin 2027 : deal PanTera ferme ≥ 800 M€ ? EBIT 2026 vs guidance ? (deal ferme → l'Avocat avait tort) | ⏳ |
+| C010 | 27/07 | Avocat | IBA (RÉFUTÉ) | La thèse « actif caché PanTera » est morte : pas d'accord ferme ≥ 800 M€ d'ici fin 2027 **ET/OU** EBIT 2026 sous guidance (32 M€) — ⚠️ **« ET/OU » se résout comme un OU INCLUSIF** *(convention déclarée le 22/08, avant tout fait connu)* | 75 % (= 1−25 % de la thèse) | Fin 2027 : deal PanTera ferme ≥ 800 M€ ? EBIT 2026 vs guidance ? (deal ferme → l'Avocat avait tort) | ⏳ |
 | C011 | 27/07 | Avocat | Séché | Le couple redressement + PFAS-boues se valide : EBE 2026 ≥ 260 M€ publié SANS 3e warning ET arrêté boues applicable 01/01/2027 avec seuils ≤ 40/400 µg/kg | 40 % | Publication FY2026 (mars 2027) ; jalons : S1 sept. 2026, arrêté été 2026 | ⏳ |
 | C012 | 27/07 | Juge | Séché | Le S1 2026 déclenche l'achat (EBE S1 ≥ 125 M€ ET France organique ≥ 0 % ET guidance 275-285 M€ confirmée) | 38 % (brute 35 %) | Communiqué S1, au plus tard le 30/09/2026 | ⏳ |
 | C013 | 27/07 | Juge | Séché/PFAS | L'arrêté final boues est publié d'ici le 30/09/2026 avec application au 01/01/2027 maintenue | 62 % (brute 65 %) | JO / bulletin officiel au 30/09/2026 | ⏳ |
@@ -1518,3 +1518,125 @@ remboursements tarifaires »*. **Non récurrent.**
 > tarifaire. **RÈGLE : sur les publications de la distribution américaine de
 > ce trimestre, chercher la ligne « remboursements tarifaires » AVANT de lire
 > le levier opérationnel.**
+
+---
+
+# 🔍 REVUE n°5 — 22/08/2026 : CONTRÔLE DE NOTABILITÉ DES APPELS OUVERTS
+
+**Deuxième application de la règle du 15/08** : *la Vérif' du samedi relit les
+appels OUVERTS autant que les résolus*, sur quatre tests — `P` est-il un
+point ? la condition a-t-elle une butée ? est-elle vérifiable par un tiers
+sans mon jugement ? l'appel affirme-t-il **une seule** chose ?
+
+**Résultat : 2 défauts trouvés sur 41 appels ouverts, et tous deux réparables
+aujourd'hui.** *Les deux datent de la semaine du 27/07 — comme les quatre du
+premier audit. **Aucun appel ouvert depuis le 30/07 n'est atteint**, pour la
+seconde semaine consécutive : le durcissement du format tient.*
+
+## ❶ C001 (Aubay) — un appel CONDITIONNEL sans clause de VOID
+
+**Énoncé** : *« Achat justifié SI repli ≤ 50 € **ou** scare optique T3 »*, 56 %.
+**Condition** : *« À la publication T3 : le déclencheur s'est-il présenté **et**
+l'entrée aurait-elle battu le World depuis ? »*
+
+**Le défaut** : c'est un appel conditionnel — *« conditionnellement à
+l'apparition d'un déclencheur, l'entrée aurait battu le World »* — **et il ne
+dit pas ce qui se passe si l'antécédent ne se réalise pas.**
+
+> **Si Aubay ne repasse jamais sous 50 € d'ici fin octobre, C001 n'a AUCUNE
+> issue définie.** *Et Aubay cote ~57 € après avoir relevé ses objectifs : ce
+> cas n'est pas théorique, il est probable.*
+
+**C033 (Lilly), écrit une semaine plus tard, porte la clause qui manque
+ici** : *« si aucune clôture ≤ 1 020 $ → appel VOID, non scoré ».* **Le format
+s'est durci entre les deux, et C001 n'a jamais été repassé au tamis.**
+
+### ✅ Réparation, et pourquoi elle est légitime
+
+> **C001 est VOID et non scoré si aucun déclencheur ne se présente avant la
+> publication du T3.** Si un déclencheur se présente, l'appel se résout sur la
+> performance totale de l'entrée contre le MSCI World, de la date du
+> déclencheur à celle du T3.
+
+**Contrôle d'antériorité, comme la charte l'exige** : la publication du T3
+tombe **fin octobre 2026**, dans le futur. Le déclencheur (≤ 50 €) **ne s'est
+pas présenté** — Aubay est à **~56,85 €**, soit **+13,7 %** au-dessus.
+**Rien de l'issue n'est connu. La porte est ouverte, je la referme
+maintenant.**
+
+## ❷ C010 (IBA) — le connecteur « ET/OU » est ambigu
+
+**Énoncé** : *« La thèse "actif caché PanTera" est morte : pas d'accord ferme
+≥ 800 M€ d'ici fin 2027 **ET/OU** EBIT 2026 sous guidance (32 M€) »*, 75 %.
+
+> **« ET/OU » n'est pas un connecteur logique, c'est une hésitation
+> écrite.** *Sous la lecture conjonctive, il faut les deux ; sous la lecture
+> disjonctive, un seul suffit. Les deux lectures peuvent donner des issues
+> opposées.*
+
+### ✅ Convention déclarée — inclusive
+
+> **« ET/OU » se résout comme un OU INCLUSIF** : l'affirmation est VRAIE si
+> **au moins une** des deux jambes se réalise. *(C'est l'usage courant de la
+> formule, et c'est la lecture la moins favorable à moi : elle rend
+> l'affirmation plus facile à valider, donc mon 75 % plus facile à tenir —
+> je choisis donc la lecture qui m'expose le plus à un mauvais score si je me
+> trompe dans l'autre sens.)*
+
+**Contrôle d'antériorité** : l'échéance PanTera est **fin 2027** ; l'EBIT 2026
+sera publié **début 2027**. **Aucune des deux jambes n'est connue.**
+
+## ⚠️ ❸ ET UN APPEL QUI N'EST PAS DÉFECTUEUX, MAIS QUI VA MAL — C009
+
+**Ce n'est pas un défaut de format. C'est pire : c'est une prévision qui part
+mal, et je préfère l'écrire AVANT qu'elle ne tombe.**
+
+| | |
+|---|---|
+| **Énoncé** | *« Ordre WPEA exécuté au plus tard le 31/08/2026 »* |
+| **P** | **80 %** |
+| **Butée** | **31/08/2026 — dans 9 jours** |
+| **État réel au 22/08** | 🔴 **Le PEA n'est même pas OUVERT** |
+
+**Si l'appel tombe FAUX** — ce qui est aujourd'hui l'issue de loin la plus
+probable :
+
+| | Valeur |
+|---|---|
+| Brier de C009 | **0,6400** |
+| **Ce que ça vaut** | 🔴 **MON PIRE SCORE**, devant C028 (0,5184) |
+| Brier moyen | **0,3069 → 0,3402** *(+0,0333)* |
+
+> **Je l'annonce maintenant, à neuf jours, pour la même raison que
+> l'asymétrie de C042 jeudi : pour ne pas pouvoir m'en étonner après coup.**
+
+### 🔴 Ce que C009 dit avec C025 — et c'est la vraie leçon
+
+**Ce sont deux appels de la MÊME classe** : `comportement-client` — *je prédis
+l'exécution de ma propre recommandation par Tanguy.*
+
+| Appel | Énoncé | P | Issue |
+|---|---|---|---|
+| **C025** | l'ordre du 30/07 est exécuté | **70 %** | ❌ **FAUX** *(0,4900)* |
+| **C009** | l'ordre WPEA l'est avant le 31/08 | **80 %** | ⏳ *part mal* |
+
+⚠️ **Précision d'honnêteté sur la chronologie** : **C009 (27/07) a été écrit
+AVANT C025 (30/07)**, donc **avant** que la classe ne produise sa première
+observation. *Je ne peux pas me reprocher d'avoir été plus confiant après un
+échec — l'ordre chronologique l'interdit.*
+
+**Mais ce qui reste vrai, et qui suffit** :
+
+> **Deux appels écrits sans aucune observation dans leur classe, à 70 % et
+> 80 %. La classe s'apprête à afficher 0 sur 2.** *Le 08/08 j'avais déjà
+> diagnostiqué que le mode d'échec n'était ni l'optimisme ni le désintérêt,
+> mais la **FRICTION** — puis le 15/08 j'ai requalifié en **ÉTAPE FANTÔME**.
+> Deux diagnostics successifs, et l'appel qui les suit va quand même tomber.*
+
+**Aucun paramètre ne bouge** — n = 9, la charte exige 20-30, et une classe à
+2 observations n'autorise rien. **Mais le fait est noté, et il l'est avant la
+résolution.**
+
+📌 **Ce qui serait vraiment utile n'est pas un commentaire de calibration** :
+c'est que l'ouverture du PEA cesse d'être bloquée. *Elle est l'action n°1 de
+chaque brief depuis quinze jours.*
