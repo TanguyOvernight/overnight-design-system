@@ -1640,3 +1640,51 @@ résolution.**
 📌 **Ce qui serait vraiment utile n'est pas un commentaire de calibration** :
 c'est que l'ouverture du PEA cesse d'être bloquée. *Elle est l'action n°1 de
 chaque brief depuis quinze jours.*
+
+---
+
+## Appel ouvert le 23/08/2026 — C047 (NVIDIA)
+
+| ID | Date | Agent | classe_réf | Affaire | Affirmation | P | Condition de résolution | Statut |
+|---|---|---|---|---|---|---|---|---|
+| **C047** | 23/08 | Juge | **semi-US / <1 mois · CTO** | NVIDIA | **NVIDIA guide un chiffre d'affaires du T3 FY2027 dont le POINT MÉDIAN est ≥ 103,0 Md$** | **56 %** *(brut 57 %, rétraction appliquée)* | **Communiqué du 26/08/2026** — lisible sur le communiqué SEUL. Si la guidance n'est pas donnée sous forme comparable *(branche N5)* → **NON RÉSOLUBLE** | ⏳ |
+
+### Construction, tracée
+
+**Repère** : consensus de CA du T3 FY27 à **103,1 Md$**, validé par bouclage
+sur **deux sources indépendantes** — `103,1 ÷ 57,0 (T3 FY26) = +80,9 %`
+contre un « +81 % » publié ailleurs.
+
+**Partition sous-jacente** *(scénarios de la Prépa)* : N1 ≥ 108 (20 %) ·
+N2 103-108 (37 %) · N3 98-103 (28 %) · N4 < 98 (12 %) · N5 non comparable
+(3 %). **C047 = N1 + N2 = 57 % brut.**
+
+### ⚠️ La subtilité de lecture, figée AVANT le print
+
+**103,1 Md$ est le consensus de CA, PAS « la guidance attendue ».**
+> Chez la plupart des sociétés, la guidance sort **sous** le consensus de
+> revenus. **Chez NVIDIA c'est l'inverse** : en mai elle a guidé **91,0**
+> contre un consensus T2 de **86,84** — **+4,8 % au-dessus**.
+> **Une guidance sous le consensus est donc, pour NVIDIA, un signal négatif.**
+
+### 🪞 Pourquoi j'enregistre un appel proche de 50 % — et c'est une décision
+
+**56 %, c'est presque « je ne sais pas ».** Un appel proche du milieu est le
+**moins informatif** pour la calibration : il ne discrimine rien.
+
+> **Et je l'enregistre quand même, pour une raison de fond : un registre qui
+> ne contient que les appels sur lesquels je me sens confiant ne mesure pas
+> ma CALIBRATION, il mesure ma CONFIANCE.**
+>
+> *Refuser d'écrire là où je n'ai pas d'edge produirait un registre
+> systématiquement flatteur — et c'est exactement le biais que ce dispositif
+> existe pour empêcher.*
+
+**Je n'ai aucun edge sur la guidance de NVIDIA, et le 56 % le dit
+honnêtement.** *Ma classe `semi-US` compte zéro appel résolu.*
+
+⚠️ **La tension du 15/08 revient** : *le facteur de rétraction appliqué à une
+probabilité ancrée sur un consensus de marché dégrade de l'information au
+lieu de corriger une surconfiance.* **Je l'applique quand même** — une règle
+qu'on suspend dès qu'elle gêne n'est pas une règle. **57 % → 56 %**, l'effet
+est ici négligeable.

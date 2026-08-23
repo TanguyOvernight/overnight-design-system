@@ -1246,3 +1246,58 @@ résout DEMAIN SOIR, pas aujourd'hui.**
 
 ✅ **Ma correction de décote a été AUDITÉE par bouclage** :
 `(18,155 − 21,95) ÷ 21,95 = −17,29 %`. *Confirmée, pas recopiée.*
+
+
+---
+
+## 📅 SEMAINE DU 24 AU 28/08 — la plus chargée du mois, et deux risques qui n'en font qu'un
+
+| Date | Heure Paris | Événement | Qualité |
+|---|---|---|---|
+| **Mer. 26/08** | **14h30** | 🔴 **PCE de juillet + PIB T2 (2ᵉ est.) + biens durables** — les trois GROUPÉS | ⚠️ **Groupage ATYPIQUE** *(le PCE tombe d'habitude en fin de semaine)*. **À vérifier mardi au calendrier BEA** |
+| **Mer. 26/08** | **~22h20** | 🔴 **NVIDIA, T2 FY2027** | ✅ date HAUTE (6+ sources) ; heure non confirmée pour ce trimestre |
+| **Jeu. 27/08** | 07h00 | **IBA** — S1 2026, conférence à 15h00 | ✅ **HAUTE** (communiqué émetteur du 06/08) |
+| **Jeu. 27/08** | — | **Pernod Ricard** (annuels FY25/26) · **Ageas** (S1) | moyenne-haute *(heures non trouvées)* |
+| **Jeu. 27/08** | après clôture US | 🔑 **MARVELL (MRVL)** — T2 FY2027 + guidance | moyenne |
+| **Ven. 28/08** | **16h00** | 🔴 **WARSH — discours d'ouverture de Jackson Hole**, son PREMIER comme président de la Fed | ✅ **HAUTE** (MNI, corroboré) |
+| Ven. 28/08 | — | Chicago PMI · Michigan final · **révision annuelle préliminaire des NFP** | moyenne |
+| ~Fin août | — | **Mota-Engil** (Lisbonne) — S1 | ❌ **NON CONFIRMÉ** *(le S1 2025 était le 27/08/2025 — extrapolation)* |
+
+### 🔑 MARVELL le 27/08 — le contre-champ direct de mon risque « silicium interne »
+
+**Marvell est un pur acteur du silicium sur mesure** (ASIC pour hyperscalers).
+Sa guidance tombe **le lendemain de NVIDIA**.
+
+> **Si Marvell guide fort le lendemain d'un NVIDIA prudent, la thèse de
+> bascule des clients vers leur propre puce prend corps.** *C'est le seul
+> moyen d'observer ce risque de l'extérieur, et il tombe dans la bonne
+> fenêtre.*
+
+### ⚠️ Le mercredi est une journée à DOUBLE DÉTENTE
+
+**PCE + PIB + biens durables à 14h30, puis NVIDIA à 22h20. Le même jour porte
+le risque TAUX et le risque IA** — et la semaine vient d'établir que **ce
+sont le même risque.**
+
+### Sur Warsh : le style est lui-même un facteur
+
+La presse décrit un **« Warsh playbook of saying as little as possible »**, et
+note que sa communication avare en *forward guidance* aurait **contribué au
+sell-off obligataire** après le FOMC de début août.
+
+> **Le risque de mercredi et celui de vendredi passent tous deux par les taux
+> longs.** *Ils ne sont pas indépendants.*
+
+📌 **Contexte de calendrier utile** : Jackson Hole tombe **19 jours avant** le
+FOMC du 16/09, et **il reste l'emploi d'août ET le CPI d'août** à publier.
+**Le discours de Warsh est informatif, pas décisif.**
+
+### 🚨 Le piège FedWatch, refusé pour la TROISIÈME fois
+
+Une lecture du **20/08** donne **68,4 % de probabilité de MAINTIEN**.
+**Je REFUSE d'en déduire 31,6 % de hausse** : le résidu contient **aussi les
+baisses**.
+
+**Ce que je retiens, sourcé** : probabilité de **hausse** à **~30 % au
+16/08**, contre **~82,4 % fin juillet**. *Mon relevé du 12-13/08 (~32 %) tient
+toujours — je n'ai pas de meilleure donnée que la mienne.*
