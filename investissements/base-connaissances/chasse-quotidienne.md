@@ -731,3 +731,93 @@ au 30/06/2026.
 **2,85 € → 18,50 €**, un facteur **6,5**, dont +29 % sur le seul mois de
 janvier 2026. Et deux capitalisations discordantes — 289 M€ contre 323 M€ —
 symptôme classique d'agrégateurs non rafraîchis.)*
+
+## 📄 LE TEST DU DOCUMENT MANQUANT — encodé le 24/08/2026
+
+**Le meilleur résultat de la chasse du 24/08 n'est pas un signal, c'est un
+TEST.**
+
+**Le cas** : toute la presse parle du *« spinoff vote »* de **TKH Group** le
+03/09. J'ai voulu instruire le **drift post-scission** — l'anomalie où les
+actionnaires reçoivent des titres qu'ils n'ont pas choisis et les vendent
+mécaniquement.
+
+**Le dossier est mort, et il est mort proprement :**
+
+> **Une scission néerlandaise (*juridische splitsing*) impose le dépôt public
+> d'un « DEMERGER PROPOSAL » (*splitsingsvoorstel*) chiffré, avec ratio
+> d'échange. TKH n'en a publié AUCUN.**
+>
+> *Contre-exemple, à la même période et sur la même place* : **JDE Peet's a
+> publié exactement ce document le 15/01/2026.** *Donc le document existe,
+> il est public, et son absence est une information.*
+
+**Ce que TKH fait à la place** : un **dual-track vente stratégique / IPO**
+piloté par J.P. Morgan, **dont le produit revient en CASH à TKH**. Et l'AGE
+ne demande pas l'approbation d'un traité de scission — elle demande
+l'approbation *« à des conditions qui seront finalisées par le Directoire »*.
+**Un blanc-seing, pas une scission.**
+
+**Confirmation par le langage de l'emploi des fonds** : TKH parle du produit
+*« y compris le produit des cessions »*. 🔑 ***On ne dit « produit » que s'il
+y a encaissement.*** Une distribution en nature ne produit rien à encaisser.
+
+### ✅ LA RÈGLE
+
+> **Quand un mécanisme juridique exige un DOCUMENT SPÉCIFIQUE pour exister,
+> l'absence de ce document réfute le mécanisme — quoi que dise la presse.**
+>
+> **Cherche le document, pas le récit.** *« Vote de scission » dans un titre
+> de presse ne vaut rien contre un splitsingsvoorstel qui n'existe pas.*
+
+**Et le kill vaut dans LES DEUX branches** : même si le dual-track bascule
+vers l'IPO, **il n'y a pas de distribution forcée, donc pas de vendeurs
+mécaniques, donc pas de drift.** *Le dossier est mort dans les deux issues
+possibles — c'est ce qui rend le verdict solide.*
+
+**Le déclencheur de résurrection, nommé** : *si un jour un
+splitsingsvoorstel est déposé au registre du commerce néerlandais avec un
+ratio d'échange, le dossier redevient exactement celui que je cherchais.*
+
+---
+
+## ⚠️ CORRECTION DE MA RÈGLE DU 17/08 — une incompatibilité invalide la PAIRE
+
+**Ce que j'avais encodé le 17/08**, après le cas TKH : *« un plus-haut
+52 semaines INFÉRIEUR au cours du jour est une impossibilité arithmétique →
+la fourchette est périmée. »*
+
+🔴 **La règle est incomplète, et l'omission est intéressée.**
+
+| Les deux données de l'époque | |
+|---|---|
+| Cours « daté » du 14/08 | **52,65 €** |
+| Fourchette 52 sem. | **31,54 – 48,14 €** |
+
+**J'en ai conclu que la FOURCHETTE était périmée. Mais la même
+incompatibilité se résout tout aussi bien par : LE COURS est faux.**
+
+**Et c'est probablement le cours.** Un relevé du 24/08 donne **48,46 € au
+19/08** avec une fourchette **32,42 – 49,48 €** — *coherente, puisque
+48,46 < 49,48.* **Mon 52,65 € dépasse le plus-haut des DEUX fourchettes.**
+*Et « 31,54 – 48,14 » ressemble à une version antérieure de « 32,42 – 49,48 » :
+une fourchette monte avec le temps.*
+
+> **J'ai choisi, entre deux lectures également disponibles, celle qui gardait
+> MON chiffre.** *Ce n'est pas un biais directionnel — TKH n'a pas de seuil
+> chez moi. C'est un biais de possession.*
+
+### ✅ RÈGLE CORRIGÉE
+
+> **Une incompatibilité entre un cours et une fourchette invalide LA PAIRE,
+> pas seulement l'un des deux membres.** Tant qu'un troisième point
+> indépendant ne tranche pas, **les deux sont suspects et aucun ne s'écrit
+> comme un fait.**
+>
+> *Corollaire : quand deux de mes données se contredisent, la lecture qui
+> conserve mon chiffre antérieur est celle dont je dois me méfier le plus.*
+
+**Troisième fois ce mois-ci qu'une règle doit être raffinée par le cas même
+qui la teste** *(champ définitionnel le 21/08, conception des tests le 20/08,
+et celle-ci)*. **Une règle qui n'a jamais été exercée ne sait pas encore ce
+qu'elle omet.**
