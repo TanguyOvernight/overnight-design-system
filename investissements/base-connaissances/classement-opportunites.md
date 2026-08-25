@@ -380,6 +380,81 @@ STM à **43,295 € « le 20/08 à 15h18 »**, ouverture 43,995, haut 44,080, ba
 > **Mes ancrages validés ne sont pas des archives — ils sont le mécanisme de
 > détection.** *Sans le 49,06 € du 17/08, ce piège passait.*
 
+### 📊 LE CLASSEMENT AU 25/08 — 8 candidates, **AUCUN MOUVEMENT DE RANG**
+
+*(clôtures du lundi 24/08 quand elles bouclent, sinon dernier validé)*
+
+| Rang | Candidate | Chiffre vs déclencheur | Qualité | Mvt |
+|---|---|---|---|---|
+| **①** | **Cœur World** | 🔴 **PEA NON OUVERT — 18ᵉ jour.** Budget d'août **1 000 €** *(le seul rang dont le blocage soit entièrement entre les mains de Tanguy)* | ✅ 15/08 | **=** |
+| **②** | **Or** | **~4 648 $/oz** (+2,93 % vs 21/08) — **~+6,6 % depuis le 14/08**. 🔴 Garde-fou R : achat **INTERDIT** | ⚠️ Moteur daté *(sanctions Iran)*, **mais trois relevés du lundi divergent de 18,50 $ sur la même séance** → cohérent, non validé | **=** |
+| **③** | **Séché** | 🔴 **NON TESTÉ — 8ᵉ semaine, et DOUBLE ZÉRO** : ni cours daté, ni droits de vote nets. ⏳ **S1 dans 14-15 jours (~08-09/09)** | ❌ `EGRESS_BLOCKED` retesté ce matin — **8ᵉ domaine bloqué sur 8** | **=** |
+| **④** | **Eli Lilly** | Dernier validé **1 183,16 $ (18/08)** → **+16,0 %** au-dessus du seuil de 846 $ | ❌ Le **1 255,40 $** servi aujourd'hui **se réfute tout seul** : la même réponse donne un **plus-bas de séance à 1 255,50 $**. *Une clôture sous le plus-bas n'existe pas* | **=** |
+| **⑤** | **Magnum** | **10,40 Md€** → il faut **−26,9 %** | ✅ Piège du prix de référence IPO (12,80 €) définitivement documenté | **=** |
+| **⑥** | **Aubay** | Repère inchangé **~56,85 €** → **+13,7 %** | ⚠️ Déclaration **journalière du 17/08 trouvée** *(366 actions, bouclage interne ✅)*, **mais le prix de 57,00 € est REFUSÉ** : un VWAP identique sur **quatre places** est impossible, et il ne s'est **pas reproduit** au second passage | **=** |
+| **⑦** | **STM** | Dernier validé **49,06 € (17/08)** → **+16,8 %** | 🔴 **3ᵉ et 4ᵉ occurrence de la bande 43,x** (43,48 / 42,99). Elles bouclent **entre elles** (+1,14 %) et avec **aucun niveau daté de 2026**. 🔴 **Le 42,99 est à +2,4 % du seuil d'achat.** *Provenance : inconnue — mes provenances nommées restent à **4**, pas 5* | **=** |
+| **⑧** | **Nike** | Dernier validé **41,05 $ (19/08)** | ❌ Le **40,75 $** servi « au 24/08 » est **ma propre chaîne du 21/08 réétiquetée** | **=** |
+
+### 🔬 LE MODE DE PANNE EST NOMMÉ — et mon meilleur test ne le voyait pas
+
+**Deux tests de date fausse exécutés aujourd'hui. Deux REFUS nets** — le
+moteur a corrigé un « jeudi 27 » en « mercredi 26 » et refusé de fabriquer
+des transactions pour un **dimanche**. **Il n'invente pas.**
+
+**Le mode réel est le RÉÉTIQUETAGE TEMPOREL** : une donnée **vraie** servie
+sous une **date fausse**. Trois occurrences le même jour — mes clôtures du
+21/08 servies « au 24/08 » **au centième près**, la chaîne Nike, et une marge
+brute du **T3 FY2026** *(clos en octobre 2025)* servie comme « T3 » courant.
+
+> ⚠️ **Le test de la date fausse teste si le moteur INVENTE. Il ne teste pas
+> s'il RECOPIE.** *Seul le bouclage `veille × (1 + variation)` contre MA
+> PROPRE SÉRIE VALIDÉE attrape le réétiquetage — et il l'a attrapé trois fois
+> pendant que l'autre test regardait ailleurs.* **Sans mes ancrages, un
+> réétiquetage est indétectable : il est vrai partout, sauf sur la date.**
+
+**Deux contrôles d'impossibilité ajoutés au corpus** : ① une clôture **sous
+le plus-bas de séance** de la même réponse *(Lilly)* ; ② un **VWAP identique
+sur quatre places** *(Aubay)*.
+
+### 🔑 NVIDIA J−1 — la barre monte, et je ne bouge pas mon seuil
+
+**Consensus de CA du T3 : 103,1 → ~104,0 Md$** *(+0,87 % en deux jours)*, la
+source se crédibilisant en restituant **exactement** mon consensus T2 de
+91,85. Points de bascule désormais nommés publiquement : **≥ 107** valide le
+supercycle, **≤ 104** arme les sceptiques.
+
+| C047 | |
+|---|---|
+| Mon seuil | **≥ 103,0 Md$** |
+| Consensus dimanche | 103,1 → seuil **à hauteur** |
+| Consensus aujourd'hui | **104,0** → seuil **1,0 % SOUS** |
+
+> **Mon appel est devenu marginalement plus FACILE sans que j'y touche.** *Je
+> ne révise pas : la probabilité est pré-enregistrée, et déplacer un seuil
+> parce que le repère bouge est exactement ce que j'ai refusé tout le mois.*
+>
+> 📐 **Leçon de conception** : *un seuil ancré sur un nombre **absolu** dérive
+> en difficulté quand le consensus bouge ; un seuil écrit « ≥ le consensus du
+> jour du print » serait invariant — au prix d'exiger que ce consensus soit
+> lui-même établi le soir venu.* **J'ai choisi l'absolu pour la
+> non-ambiguïté. C'est un arbitrage, pas une erreur — mais il faut le savoir
+> avant, pas après.**
+
+📌 **Rappel de la décision du 23/08** : *C047 ne se résout PAS dans la nuit de
+mercredi à jeudi, mais **jeudi matin**, quand le communiqué est indexé et
+lisible en entier.*
+
+### 🩺 Santé — un zéro, et c'est une QUATRIÈME espèce
+
+Rien de daté sur Paris, Amsterdam ou Bruxelles ; tous les faits trouvés sont
+hors zone *(Ultragenyx — Nasdaq ; Novartis — Zurich ; Genmab — Copenhague)*.
+
+**Août est un désert réglementaire européen : l'EMA ne siège quasiment pas.**
+C'est un **zéro de CALENDRIER** — à ajouter aux trois espèces déjà nommées :
+mur d'**efficience** *(tech)*, mur de **qualité** *(santé)*, mur d'**accès**
+*(France-smalls)*. *Un zéro de calendrier ne compte pas comme un échec de
+chasse : il était prévisible, et il le restera jusqu'à la rentrée.*
+
 ### 📊 LE CLASSEMENT AU 21/08 — 8 candidates, **AUCUN MOUVEMENT DE RANG**
 
 *(clôtures du jeudi 20/08 quand elles sont bouclées, sinon dernier validé)*
