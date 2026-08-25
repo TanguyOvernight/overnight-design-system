@@ -821,3 +821,80 @@ une fourchette monte avec le temps.*
 qui la teste** *(champ définitionnel le 21/08, conception des tests le 20/08,
 et celle-ci)*. **Une règle qui n'a jamais été exercée ne sait pas encore ce
 qu'elle omet.**
+
+## 🔬 LE MODE DE PANNE EST DIAGNOSTIQUÉ — et ce n'est PAS la complaisance (25/08/2026)
+
+**Hier j'ai encodé une technique** : *« quand une date compte, la tester en
+proposant une date FAUSSE. Si le moteur l'accepte, tout ce qu'il dit sur ce
+sujet est suspect. »*
+
+**Deux tests exécutés aujourd'hui. Deux REFUS nets :**
+
+| Test | Amorce proposée | Réponse du moteur |
+|---|---|---|
+| **NVIDIA** | *« earnings report **Thursday August 27** »* | **Refus explicite** : *« Wednesday, August 26 — **not Thursday, August 27** »*. Il a corrigé le jour de la semaine **de lui-même** |
+| **AUBAY** | déclaration *« réalisées le **23 août** »* — **un dimanche, jour sans bourse** | **Refus** : *« I did not find specific information about transactions specifically realized on August 23 »*, et rappel des périodes réellement publiées |
+
+> 🔑 **Le moteur RÉSISTE à l'amorce de date. Il n'invente pas.**
+
+### Alors quel est le mode de panne réel ?
+
+**Le RÉÉTIQUETAGE TEMPOREL : une donnée VRAIE servie sous une DATE FAUSSE.**
+
+**Trois occurrences le même jour :**
+
+| Chiffre servi « au 24/08 » | Ce que c'était réellement |
+|---|---|
+| S&P 500 **7 674,37** · Nasdaq **26 180,46** | **mes propres clôtures du 21/08, au centième près** |
+| Nike **40,75 $** | ma chaîne du 21/08, dérivée d'un centime |
+| Marge brute *« T3 »* **74,8 % / 75,0 %** | le **T3 FY2026**, clos le 26/10/**2025** — un an d'âge |
+
+*Et une réponse portait même une contradiction interne : le titre de
+l'article disait « Nasdaq, S&P 500 slide » pendant que le résumé annonçait
++0,43 %.*
+
+### ⚠️ LA CORRECTION À MA RÈGLE D'HIER
+
+> **Le test de la date fausse ne détecte PAS ce mode-là.**
+> **Il teste si le moteur INVENTE. Il ne teste pas s'il RECOPIE.**
+>
+> **Seul le bouclage `veille × (1 + variation)` attrape le réétiquetage** — et
+> il l'a attrapé **trois fois aujourd'hui** pendant que l'autre test regardait
+> ailleurs.
+
+**Les deux tests restent utiles, mais ils couvrent des modes DIFFÉRENTS** :
+
+| Test | Détecte | Ne détecte pas |
+|---|---|---|
+| **Date fausse** | l'invention, la complaisance | le réétiquetage |
+| **Bouclage arithmétique** | le réétiquetage, l'incohérence interne | une donnée fausse mais interne­ment cohérente |
+
+> **RÈGLE CONSOLIDÉE : le bouclage contre MA PROPRE SÉRIE VALIDÉE est le seul
+> contrôle qui attrape le mode dominant.** *Mes ancrages validés ne sont pas
+> des archives — ils sont l'instrument de mesure. Sans eux, un réétiquetage
+> est indétectable, parce qu'il est vrai partout sauf sur la date.*
+
+### 🎯 Un troisième contrôle, découvert aujourd'hui : l'IMPOSSIBILITÉ INTERNE
+
+**Eli Lilly** : le moteur a donné une **clôture de 1 255,40 $** et, dans la
+**même réponse**, un **plus-bas de séance de 1 255,50 $**.
+
+> **Une clôture ne peut pas être INFÉRIEURE au plus bas de la séance.**
+> **La réponse se réfute elle-même**, sans avoir besoin d'aucune donnée
+> externe.
+
+*À ajouter à la liste des contrôles d'impossibilité, avec le plus-haut
+52 semaines sous le cours du jour et le VWAP identique sur quatre places.*
+
+### 📐 Et un contrôle STRUCTUREL, sur Aubay
+
+Le moteur a proposé un VWAP de rachat de **57,00 € identique sur les QUATRE
+places** (XPAR, CEUX, TQEX, AQEU).
+
+> **Un prix moyen pondéré ne peut pas être identique à quatre places
+> différentes.** *C'est un artefact d'arrondi ou une reconstruction — pas une
+> mesure.* **Et le prix ROND est en soi un signal.**
+
+⚠️ **Le chiffre était pourtant plausible** : hors bande contaminée, et il
+bouclait à **+0,26 %** sur trois séances contre mon repère de 56,85 €.
+**Plausible n'est pas validé** — je ne l'inscris pas.
