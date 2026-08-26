@@ -380,6 +380,81 @@ STM à **43,295 € « le 20/08 à 15h18 »**, ouverture 43,995, haut 44,080, ba
 > **Mes ancrages validés ne sont pas des archives — ils sont le mécanisme de
 > détection.** *Sans le 49,06 € du 17/08, ce piège passait.*
 
+### 📊 LE CLASSEMENT AU 26/08 — 8 candidates, **1 REQUALIFICATION, 0 mouvement de rang**
+
+*(clôtures du mardi 25/08 quand elles bouclent, sinon dernier validé)*
+
+| Rang | Candidate | Chiffre vs déclencheur | Qualité | Mvt |
+|---|---|---|---|---|
+| **①** | **Cœur World** | 🔴 **PEA NON OUVERT — 19ᵉ jour.** Budget d'août **1 000 €**. *L'Arbitre le redit : aucun arbitrage sur une satellite ne vaut le dixième de ce virement* | ✅ 15/08 | **=** |
+| **②** | **Or** | Dernier validé **~4 648 $/oz (24/08)**. Le relevé du 25/08 est **REJETÉ** *(heure non fournie)*, et une cotation à spread de **60,30 $** l'est aussi — impossible sur l'or spot | ❌ **Ligne structurellement inexploitable sans horodatage** | **=** |
+| **③** | **Séché** | ✅ **8 SEMAINES DE CÉCITÉ ROMPUES — 80,10 € au 21/08, horodaté 17:35:20.** Bouclage `79,90 × 1,0025 = 80,0998` ✓, dans la fourchette de séance 79,70-80,50 ✓. **Sous le seuil de 90 €, de −11,0 %** | ⚠️ **PROVISOIRE** *(bouclage INTERNE, pas contre ma série — il attrape l'invention, pas le réétiquetage)*. 🎯 Le rival à **82,60 €** tué net : **au-dessus du plus-haut de séance** | **=** |
+| **④** | **Eli Lilly** | Dernier validé **1 183,16 $ (18/08)** → **+16,0 %** | ❌ Aucune clôture datée du 25/08. *Note : mon 1 255,40 $ refusé hier tombe **DANS** la fourchette 1 240,71-1 259,50 du 25/08 — **c'est le « plus-bas à 1 255,50 » qui était corrompu**, pas forcément le prix* | **=** |
+| **⑤** | **Magnum** | **10,40 Md€** → il faut **−26,9 %** | ❌ La capi affichée de 10,67 Md€ implique **17,427 €**, un prix qui ne correspond à aucun prix daté. ✅ **Ma règle `capi ÷ titres` validée empiriquement une 3ᵉ fois** | **=** |
+| **⑥** | **Aubay** | Repère **~56,85 €** → **+13,7 %** | ⚠️ Le 57,00 € est **identifié et daté** *(déclaration de rachat du 17/08)* — **mais c'est un VWAP d'exécution sur 366 titres, pas une clôture.** 🔴 *Mon motif de rejet d'hier était FAUX ; le bon motif est le TYPE* | **=** |
+| **⑦** | **STM** | 🔴 **LE RÉGIME DE PRIX EST ÉTABLI À ~43-44 €, PAS 49.** VWAP de rachat **44,4019 €** (18-21/08), clôture du 21/08 estimée **42,90-43,60 €** *(P = 88 %)*. **Mon ancrage de 49,06 € est trop haut d'environ 12 %** | ✅ **CONFIRMÉ P = 96 %** par une identité inter-documents : `19 224 908 − 18 828 440 = 396 468` **exact**. **Deux causes datées** : déroute semis du 18/08 (−5 %) et **PERTE NETTE S1 publiée le 19/08** | 🔄 **REQUALIFIÉ** |
+| **⑧** | **Nike** | **39,48 $ au 25/08** (−3,12 %) | ✅ **BOUCLÉ** : `40,75 × 0,9688 = 39,4786`, deux sources indépendantes | **=** |
+
+### 🔄 LA SEULE ÉCRITURE DE RANG DU JOUR — STM change de NATURE, pas de position
+
+**STM reste ⑦ et passe de *candidate classée* à « CONSERVÉE POUR SON
+DÉCLENCHEUR, PAS POUR SON RANG »** — la catégorie que mon mètre commun prévoit
+pour les lignes sous le cœur.
+
+> 🔴 **Le motif est arithmétique, pas interprétatif** : ρ ≈ 0,8-0,9 *(prouvé
+> par le 18/08 : −6,3 % à New York sur une déroute des semis américains, un
+> jour sans nouvelle propre)* → **hurdle doublé ≈ 10-11 %/an net**. EV nette
+> **+4,31 %/an**, et **+4,72 % MÊME AU DÉCLENCHEUR de 42,00 €**.
+>
+> **Il n'existe aucun prix atteignable dans la fourchette du contrat où cet
+> euro batte le cœur WPEA nu (5,00 %)** — sauf si la marge brute tourne, ce
+> que mesure très exactement la troisième branche du contrat.
+
+*Non descendue à ⑧ faute d'EV de Nike sur le même mètre : Nike est en CTO à
+31,4 % contre PEA à 18,6 %, soit 1,5-2 pts/an d'écart structurel. Descendre
+sans ce calcul serait un mouvement de rang injustifié — règle 3.*
+
+### 🔴 ET J'AVAIS MAL LU MON PROPRE CONTRAT
+
+J'ai saisi l'Arbitre en écrivant *« déclencheur : cours ≤ 42 € »*. **Le
+contrat réel est une conjonction à TROIS branches** — `≤ 42 €` **ET** P/E fwd
+< 30x **ET** ≥ 1 trimestre de marge brute remontant vers 40 %+.
+
+> **J'avais réduit mon contrat à sa branche la plus facile à mesurer — celle
+> qui bouge tous les jours — et oublié les deux qui portent le mécanisme.**
+> *Le déclencheur n'est donc PAS touché, et il n'y a aucune proposition à
+> faire.*
+>
+> 🔑 **C'est exactement le piège que ce contrat avait été écrit pour éviter**,
+> et l'audit du 04/08 l'avait classé « bien construit » pour cette raison :
+> *« un contrat qui achète à −11 % sans distinguer les cas achètera dans le
+> cas où il ne faut surtout pas acheter. »* **La perte nette n'invalide pas
+> le seuil : elle arme la troisième branche dans le sens négatif.**
+
+**Contrat resserré** : le déclencheur exige désormais une **clôture Euronext
+Paris DATÉE ET OBSERVÉE** *(un VWAP ne déclenche JAMAIS)*, un P/E fwd sur
+**consensus BPA 2027 publié**, et une marge brute **publiée**. 🔴 **Kill
+anticipé armé** : une deuxième période consécutive de perte nette au T3 tue le
+contrat. 🔒 **Renouvellement consommé par avance** — après le T3, le PASSE
+sera définitif.
+
+### 🚨 Deux incohérences dormantes de MA base, trouvées par l'Arbitre
+
+**① Une contrainte que je colportais plus dure que ma règle réelle.** J'écris
+depuis des jours que *« le garde-fou R interdit les achats offensifs »*.
+**`profil-decision.md` L.137, amendement du 29/07 : *« R ne met JAMAIS de veto
+sur une opportunité validée : il gouverne la répartition des euros NON
+DÉCLENCHÉS. »*** *Une règle fausse dans le sens prudent reste une règle
+fausse — celle-ci finirait par interdire un achat légitime.*
+
+**② Une fiche qui armerait un ordre NON CONFORME.** `L = min(5 % × (V + 6 000) ;
+15 % × V)` à V ≈ 870 € → `5 % × 6 870 = 343` contre `15 % × 870 = **130 €**`,
+**verrou 15 % commandant**. Première tranche : **~43 €**.
+
+> **La watchlist inscrit une « tranche ~150 € » pour STM — soit plus que le
+> plafond de la LIGNE ENTIÈRE.** *Après versement des 1 000 € d'août : L =
+> 280 €, tranche ~93 €. Le problème s'atténue, il ne disparaît pas.*
+
 ### 📊 LE CLASSEMENT AU 25/08 — 8 candidates, **AUCUN MOUVEMENT DE RANG**
 
 *(clôtures du lundi 24/08 quand elles bouclent, sinon dernier validé)*

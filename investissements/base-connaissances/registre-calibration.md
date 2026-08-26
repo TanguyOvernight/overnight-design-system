@@ -1688,3 +1688,46 @@ probabilité ancrée sur un consensus de marché dégrade de l'information au
 lieu de corriger une surconfiance.* **Je l'applique quand même** — une règle
 qu'on suspend dès qu'elle gêne n'est pas une règle. **57 % → 56 %**, l'effet
 est ici négligeable.
+
+---
+
+## C048 · C049 — deux appels STM ouverts le 26/08/2026
+
+*Issus de l'arbitrage fast-track du 26/08. Facteur de rétraction `P' = 0,5 +
+0,8 × (P − 0,5)` appliqué mécaniquement (registre à n = 9 résolus).*
+
+| ID | Classe de référence | Affirmation | P brute | **P inscrite** | Résolution |
+|---|---|---|---|---|---|
+| **C048** | semi-EU · < 1 mois · PEA | **La déclaration MAR de ST pour la semaine 24-28/08/2026 fait apparaître un VWAP hebdomadaire ≤ 44,4019 €** *(le régime de prix tient ou baisse ; il ne rebondit pas au-dessus de la semaine précédente)* | 65 % | **62 %** | Déclaration publiée **au plus tard le 04/09/2026**. ⚠️ **Si elle ne paraît pas, l'appel MEURT — il ne se devine pas** |
+| **C049** | semi-EU · < 3 mois · PEA | **STMPA clôture ≤ 42,00 € sur Euronext Paris au moins une fois avant le 31/10/2026** *(la branche PRIX du contrat se présente, indépendamment des deux autres)* | 78 % | **72 %** | Clôtures Euronext Paris · butée **31/10/2026** |
+
+### Construction tracée de C048
+
+Le VWAP de 44,4019 € est **+2,78 % au-dessus** de la clôture estimée du
+21/08 : la barre est donc **généreuse envers le camp « pas de rebond »** — il
+faudrait une hausse pondérée de plus de 2,8 % pour la franchir. Base :
+~30-35 % pour un mouvement de VWAP hebdomadaire de cette taille sur un semi
+très volatil.
+
+⚠️ **Facteur de tension déclaré, et c'est lui qui plafonne l'appel** :
+**NVIDIA publie le 26/08 — donc À L'INTÉRIEUR de la fenêtre de mesure**, sur
+environ 60 % des séances comptées. *Je m'arrête à 65 % brut et non 75 % parce
+que je n'ai aucun avantage informationnel sur ce print — mon propre C047 est
+à 56 %.*
+
+### Construction tracée de C049
+
+Depuis ~43,20 €, il faut **−2,86 %**. Volatilité 2 mois ≈ 20 % *(annualisée
+~50 % sur un semi en repli)* → la barrière est à **0,145 σ**. Principe de
+réflexion : `P(touche) ≈ 2 × N(−0,145) ≈ 88,5 %` à dérive nulle. **Corrigé de
+l'incertitude sur le point de départ** *(P = 88 % que la clôture du 21/08 soit
+bien dans la fourchette 42,90-43,60)* : `0,885 × 0,88 ≈ 78 %` brut → **72 %**.
+
+### 🔴 L'appel que je ne peux PAS écrire, et c'est le plus important
+
+Celui qui résoudrait la **troisième branche du contrat au T3** — *« la marge
+brute du T3 ressort ≥ X % »*. **Il exige la marge brute du T2 comme
+référence, et le canal fermé me l'interdit.**
+
+> **Je n'invente pas de seuil.** *À obtenir AVANT le T3, jamais après : un
+> seuil écrit après la publication n'est pas un appel, c'est un commentaire.*
