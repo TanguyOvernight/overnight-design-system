@@ -391,7 +391,7 @@ STM à **43,295 € « le 20/08 à 15h18 »**, ouverture 43,995, haut 44,080, ba
 | **③** | **Séché** | 🔴 **NON TESTÉ — 8ᵉ semaine, et DOUBLE ZÉRO** : ni cours daté, ni droits de vote nets. ⏳ **S1 dans 14-15 jours (~08-09/09)** | ❌ `EGRESS_BLOCKED` retesté ce matin — **8ᵉ domaine bloqué sur 8** | **=** |
 | **④** | **Eli Lilly** | Dernier validé **1 183,16 $ (18/08)** → **+16,0 %** au-dessus du seuil de 846 $ | ❌ Le **1 255,40 $** servi aujourd'hui **se réfute tout seul** : la même réponse donne un **plus-bas de séance à 1 255,50 $**. *Une clôture sous le plus-bas n'existe pas* | **=** |
 | **⑤** | **Magnum** | **10,40 Md€** → il faut **−26,9 %** | ✅ Piège du prix de référence IPO (12,80 €) définitivement documenté | **=** |
-| **⑥** | **Aubay** | Repère inchangé **~56,85 €** → **+13,7 %** | ⚠️ Déclaration **journalière du 17/08 trouvée** *(366 actions, bouclage interne ✅)*, **mais le prix de 57,00 € est REFUSÉ** : un VWAP identique sur **quatre places** est impossible, et il ne s'est **pas reproduit** au second passage | **=** |
+| **⑥** | **Aubay** | Repère inchangé **~56,85 €** → **+13,7 %** | ⚠️ Déclaration **journalière du 17/08 trouvée** *(366 actions, bouclage interne ✅)*, **prix de 57,00 € REFUSÉ — motif CORRIGÉ le 26/08** : ce n'est pas une clôture mais un **VWAP d'exécution sur 366 titres** *(erreur de TYPE)*. 🔴 *Mon motif d'hier — « VWAP identique sur quatre places = impossible » — était **FAUX** : c'est le format réglementaire normal. Faux contrôle retiré du corpus* | **=** |
 | **⑦** | **STM** | Dernier validé **49,06 € (17/08)** → **+16,8 %** | 🔴 **3ᵉ et 4ᵉ occurrence de la bande 43,x** (43,48 / 42,99). Elles bouclent **entre elles** (+1,14 %) et avec **aucun niveau daté de 2026**. 🔴 **Le 42,99 est à +2,4 % du seuil d'achat.** *Provenance : inconnue — mes provenances nommées restent à **4**, pas 5* | **=** |
 | **⑧** | **Nike** | Dernier validé **41,05 $ (19/08)** | ❌ Le **40,75 $** servi « au 24/08 » est **ma propre chaîne du 21/08 réétiquetée** | **=** |
 
@@ -413,8 +413,10 @@ brute du **T3 FY2026** *(clos en octobre 2025)* servie comme « T3 » courant.
 > réétiquetage est indétectable : il est vrai partout, sauf sur la date.**
 
 **Deux contrôles d'impossibilité ajoutés au corpus** : ① une clôture **sous
-le plus-bas de séance** de la même réponse *(Lilly)* ; ② un **VWAP identique
-sur quatre places** *(Aubay)*.
+le plus-bas de séance** de la même réponse *(Lilly)* — ✅ **tient** ;
+② ~~un VWAP identique sur quatre places *(Aubay)*~~ — ☠️ **RETIRÉ le 26/08 :
+c'était un faux contrôle**, le VWAP global répété par place est le format
+réglementaire normal.
 
 ### 🔑 NVIDIA J−1 — la barre monte, et je ne bouge pas mon seuil
 

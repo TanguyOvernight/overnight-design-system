@@ -884,17 +884,48 @@ l'article disait « Nasdaq, S&P 500 slide » pendant que le résumé annonçait
 > externe.
 
 *À ajouter à la liste des contrôles d'impossibilité, avec le plus-haut
-52 semaines sous le cours du jour et le VWAP identique sur quatre places.*
+52 semaines sous le cours du jour.* ~~et le VWAP identique sur quatre places~~
+🔴 **— ce dernier est RETIRÉ le 26/08, voir ci-dessous.**
 
-### 📐 Et un contrôle STRUCTUREL, sur Aubay
+### ☠️ 26/08 — LE « CONTRÔLE STRUCTUREL SUR AUBAY » EST RETIRÉ : c'était un FAUX contrôle
 
-Le moteur a proposé un VWAP de rachat de **57,00 € identique sur les QUATRE
-places** (XPAR, CEUX, TQEX, AQEU).
+**Ce que j'avais écrit le 25/08** : *« un prix moyen pondéré ne peut pas être
+identique à quatre places différentes — c'est un artefact ou une
+reconstruction, pas une mesure »*, à propos du VWAP de rachat Aubay de
+**57,00 €** sur XPAR / CEUX / TQEX / AQEU.
 
-> **Un prix moyen pondéré ne peut pas être identique à quatre places
-> différentes.** *C'est un artefact d'arrondi ou une reconstruction — pas une
-> mesure.* **Et le prix ROND est en soi un signal.**
+> 🔴 **C'est faux.** La provenance a été retrouvée : **déclaration de
+> transactions sur actions propres du 17/08/2026**, 366 titres —
+> **197 XPAR · 66 CEUX · 42 TQEX · 61 AQEU**. **Une déclaration de rachat
+> reporte un prix moyen pondéré GLOBAL, répété sur chaque ligne de place.**
+> *Ce n'est pas une anomalie : c'est le format réglementaire.*
 
-⚠️ **Le chiffre était pourtant plausible** : hors bande contaminée, et il
-bouclait à **+0,26 %** sur trois séances contre mon repère de 56,85 €.
-**Plausible n'est pas validé** — je ne l'inscris pas.
+### 🔑 Pourquoi un faux CONTRÔLE est pire qu'une fausse donnée
+
+**Une donnée fausse coûte une donnée. Un contrôle faux coûte toutes les
+données qu'il rejettera.** *Celui-ci écartait systématiquement **les
+déclarations de rachat réglementaires** — c'est-à-dire exactement le chemin
+qui a débloqué Aubay le 17/08, et le seul canal documentaire qui me reste
+pendant que l'egress est fermé.* **Je m'étais fabriqué un filtre contre ma
+propre meilleure source.**
+
+### ✅ Le rejet restait bon — mais pour un motif meilleur
+
+**57,00 € n'est pas une clôture : c'est un VWAP d'exécution sur 366 titres.**
+Même parfaitement authentique, **il ne mesure pas l'objet mesuré par un cours
+de séance.** *C'est une erreur de **TYPE**, pas de véracité.*
+
+> **RÈGLE (26/08) — l'ordre des questions est imposé** :
+> **① De quel TYPE est cette donnée ?** *(clôture · VWAP d'exécution ·
+> intraday · prix de référence · transaction de personne liée)*
+> **② Seulement ensuite : est-elle vraisemblable ?**
+>
+> *J'ai eu raison par accident le 25/08. **Un bon verdict rendu pour un
+> mauvais motif est un échec de méthode déguisé en succès** — il ne se
+> détecte qu'en remontant à la provenance.*
+
+⚠️ **Ce qui SURVIT de l'épisode** : le second contrôle instauré le 25/08 —
+*une clôture ne peut pas être inférieure au plus-bas de la même séance* —
+**tient**. C'est une **contradiction interne**, pas une conjecture sur un
+format. *La différence entre les deux est exactement ce qui sépare un
+contrôle d'impossibilité d'un préjugé.*
