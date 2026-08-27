@@ -1,0 +1,40 @@
+{
+  "_doc": "Santé des sources testée depuis l'environnement cloud (une requête légère par mécanisme, UA navigateur). verdict OK = réponse exploitable ; EGRESS_BLOCKED = domaine refusé par le proxy egress de l'environnement (CONNECT 403, policy denial) — à autoriser dans les paramètres réseau de l'environnement cloud. WebFetch passe par le même egress (même verdict) ; seul WebSearch fonctionne toujours.",
+  "teste_depuis": "environnement cloud claude.ai (proxy egress, politique restrictive)",
+  "sources": {
+    "jobup": {"verdict": "EGRESS_BLOCKED", "detail": "CONNECT 403 sur www.jobup.ch ; WebFetch bloqué aussi. Substitution WebSearch partielle : site:jobup.ch renvoie titres+liens mais sans filtre fraîcheur ni JSON-LD", "teste_le": "2026-08-27"},
+    "jobs_ch": {"verdict": "EGRESS_BLOCKED", "detail": "CONNECT 403 sur www.jobs.ch ; même substitution WebSearch partielle que jobup", "teste_le": "2026-08-27"},
+    "linkedin_guest": {"verdict": "EGRESS_BLOCKED", "detail": "CONNECT 403 sur www.linkedin.com (seeMoreJobPostings). WebSearch remonte des ch.linkedin.com/jobs/view/ mais sans fenêtre 48h fiable", "teste_le": "2026-08-27"},
+    "job_room_seco": {"verdict": "EGRESS_BLOCKED", "detail": "CONNECT 403 sur www.job-room.ch (POST _search jamais atteint). Pas de substitution WebSearch (API JSON)", "teste_le": "2026-08-27"},
+    "ats_greenhouse": {"verdict": "EGRESS_BLOCKED", "detail": "CONNECT 403 sur boards-api.greenhouse.io (test scandit)", "teste_le": "2026-08-27"},
+    "ats_lever": {"verdict": "EGRESS_BLOCKED", "detail": "CONNECT 403 sur api.lever.co (test sonarsource)", "teste_le": "2026-08-27"},
+    "ats_smartrecruiters": {"verdict": "EGRESS_BLOCKED", "detail": "CONNECT 403 sur api.smartrecruiters.com (test Nexthink?city=Lausanne — totalFound non vérifiable)", "teste_le": "2026-08-27"},
+    "ats_workday": {"verdict": "EGRESS_BLOCKED", "detail": "CONNECT 403 sur logitech.wd5.myworkdayjobs.com (POST cxs jamais atteint) — autoriser *.myworkdayjobs.com", "teste_le": "2026-08-27"},
+    "ats_phenom_pmi": {"verdict": "EGRESS_BLOCKED", "detail": "CONNECT 403 sur join.pmicareers.com (POST widgets jamais atteint)", "teste_le": "2026-08-27"},
+    "rss_cominmag": {"verdict": "EGRESS_BLOCKED", "detail": "CONNECT 403 sur cominmag.ch", "teste_le": "2026-08-27"},
+    "wttj_lausanne": {"verdict": "EGRESS_BLOCKED", "detail": "CONNECT 403 sur www.welcometothejungle.com (page SSR emploi-lausanne-suisse)", "teste_le": "2026-08-27"},
+    "websearch": {"verdict": "OK", "detail": "WebSearch opérationnel (testé : requête jobup marketing Lausanne → titres + liens + compteurs). Substitution dégradée en attendant l'ouverture de l'egress : pas de fenêtre 48h stricte, pas de métadonnées structurées", "teste_le": "2026-08-27"}
+  },
+  "domaines_a_autoriser": [
+    "www.jobup.ch",
+    "www.jobs.ch",
+    "www.linkedin.com",
+    "www.job-room.ch",
+    "boards-api.greenhouse.io",
+    "api.lever.co",
+    "api.smartrecruiters.com",
+    "*.myworkdayjobs.com",
+    "join.pmicareers.com",
+    "cominmag.ch",
+    "www.welcometothejungle.com",
+    "apply.workable.com",
+    "api.ashbyhq.com",
+    "careers.batmaid.com",
+    "careers.corintis.com",
+    "careers.uefa.com",
+    "www.olympics.com",
+    "qoqa.jobs",
+    "www.salt.ch",
+    "www.epfl-innovationpark.ch"
+  ]
+}
