@@ -380,6 +380,91 @@ STM à **43,295 € « le 20/08 à 15h18 »**, ouverture 43,995, haut 44,080, ba
 > **Mes ancrages validés ne sont pas des archives — ils sont le mécanisme de
 > détection.** *Sans le 49,06 € du 17/08, ce piège passait.*
 
+### 📊 LE CLASSEMENT AU 27/08 — 8 candidates, **0 mouvement de rang**
+
+*(clôtures du mercredi 26/08 quand elles bouclent, sinon dernier validé)*
+
+| Rang | Candidate | Chiffre vs déclencheur | Qualité | Mvt |
+|---|---|---|---|---|
+| **①** | **Cœur World** | 🔴 **PEA NON OUVERT — 20ᵉ jour.** Budget d'août **1 000 €** | ✅ 15/08 | **=** |
+| **②** | **Or** | **4 660,00 $** le 26/08 (+0,14 %) | ⚠️ Bouclage interne OK **mais heure absente** → pas une clôture. *3ᵉ jour consécutif de rejet sur ce seul motif* | **=** |
+| **③** | **Séché** | Dernier validé **80,10 € (21/08)** → **−11,0 %** sous le seuil de 90 € | ❌ Un **77,80 € NON DATÉ** rejeté. ✅ **Règle du 26/08 appliquée** : aucun événement daté trouvé → **verdict d'INDISCERNABILITÉ**, pas de rejet déguisé | **=** |
+| **④** | **Eli Lilly** | Dernier validé **1 183,16 $ (18/08)** → **+16,0 %** | ❌ Non instruit *(budget de chasse épuisé)* | **=** |
+| **⑤** | **Magnum** | **10,40 Md€** → il faut **−26,9 %** | ❌ Non instruit | **=** |
+| **⑥** | **Aubay** | Repère **~56,85 €** → **+13,7 %** | ❌ Non instruit | **=** |
+| **⑦** | **STM** | Régime établi **~43-44 €**. *Contrat resserré le 26/08, renouvellement consommé par avance* | ⏳ **C048 court** : la déclaration MAR du 24-28/08 doit partir de **19 224 908 titres** *(publication ~31/08)* | **=** |
+| **⑧** | **Nike** | **39,48 $ (25/08)** | ✅ bouclé | **=** |
+
+### 🟢 NVIDIA — le trimestre est fort, et mon inquiétude principale S'AFFAIBLIT
+
+**Position détenue (22 % du portefeuille), pas une candidate — mais c'est la
+ligne la plus lourde du livre.**
+
+**T2 FY2027 réalisé** : CA **96,2 Md$** *(+17,9 % séquentiel, +106 % a/a)* ·
+marge brute **75,0 %** · **guidance T3 : 108,0 Md$ ±2 %** contre un consensus
+de 103,1.
+
+| Critère (grille du 09/08) | Lecture | Sens |
+|---|---|---|
+| ① Guidance T3 en % du CA T2 | **+12,3 %** contre +17,9 % réalisé → **−5,6 pts** | ⚠️ décélération |
+| ② Marge brute guidée | **74,0 %** contre 75,0 % → **−100 pb**, coûts mémoire | ⚠️ |
+| ③ **Hyperscale contre ACIE** | **+28,5 % contre +7,8 %** *(au T1 : +12 % contre +31 %)* | ✅ **voir ci-dessous** |
+| ④ Engagements d'approvisionnement | **119 → 279 Md$**, ×2,34 en un trimestre | 🔴 échéancier NON TROUVÉ |
+| ⑤ Marge opérationnelle GAAP | **66,2 %** *(contrôle croisé à 0,1 Md$ près)* | ✅ |
+
+> 🔑 **Le critère ③ va CONTRE mon hypothèse, et c'est pour ça que je l'avais
+> écrit à l'avance.** Je surveillais : *« si ACIE accélère pendant que la
+> ligne d'investissements bondit, croissance et financement pointent vers les
+> mêmes contreparties. »* **C'est l'inverse : la croissance vient des
+> hyperscalers, qui s'autofinancent.** *Retournement relatif de 39,7 points.*
+
+**Mais le risque n'a pas disparu — il a CHANGÉ DE LIGNE**, et exactement là où
+mon instruction du 17/08 disait de regarder *(note « Commitments and
+Contingencies », pas le bilan ni le compte de résultat)* :
+
+> **105 Md$ de garantie de crédit sur les loyers d'OpenAI**, baux de 20 ans,
+> 4,25 GW, centres hébergeant exclusivement du calcul NVIDIA. **Le fournisseur
+> garantit la solvabilité de son propre client.**
+>
+> Et **13,1 % du bénéfice net GAAP** vient de **plus-values sur titres de
+> participation** *(+7,8 Md$)* — ce qui rend le **BPA GAAP supérieur au
+> non-GAAP**, inversion inhabituelle. **La circularité a désormais une ligne
+> dans le compte de résultat.**
+
+⚠️ **Concentration des créances : 5 clients = 70 %, contre 56 % un an plus
+tôt.** *Ce serait la mesure directe du risque de qualité du CA que je croyais
+impossible à obtenir — mais c'est la source la plus faible du dossier.*
+**Inscrit comme QUESTION, à vérifier en priorité dès réouverture du canal.**
+
+### 🆕 EIFFAGE — candidate ouverte, thèse INTESTABLE aujourd'hui
+
+**S1 2026** *(26/08, après clôture)* : CA **12,20 Md€** *(+1,1 % à p.c.c.)* ·
+**ROC +11,6 %**, marge **+20 pb** · **carnet Travaux 31,5 Md€, +7 % a/a**,
+en croissance dans toutes les divisions. Titre à **−18 % sur six mois** après
++44,5 % en 2025. **Achetabilité ✅** *(CAC 40, PEA, ~119 € l'action)*.
+
+**Le résultat croît 5 fois plus vite que l'activité.** *C'est du levier
+opérationnel, pas de l'effet volume.*
+
+> ❌ **T2 échoue** — la guidance est **CONFIRMÉE** avec une **décélération
+> explicitement guidée** *(« croissance de moindre ampleur qu'en 2025 »)*.
+> ❌ **T1 INTESTABLE** — publication après la clôture d'hier, réaction
+> aujourd'hui, **aucun cours du 27/08**. *Conclure à une sous-réaction ce
+> matin serait l'erreur Sidetrade.*
+> 🔴 **Drapeau structurel non instruit** : échéance des concessions APRR.
+
+**Le chiffre qui tranche : la clôture du 27/08.** *Au-delà de +5 %, fait
+consommé, dossier mort. Entre −1 % et +2 % avec ce carnet, elle mérite
+l'Avocat.*
+
+### 🚫 IBA — anti-signal journalisé
+
+Marge brute **33,7 % contre 29,5 %**, CA **+6 %** — **mais book-to-bill
+équipement 0,9x contre 1,0x fin 2025**, surcapacité admise par l'émetteur.
+**Une marge qui monte pendant que le carnet se vide n'est pas une bonne
+nouvelle : c'est le début d'une mauvaise.** *(Et l'accès Fortuneo à Euronext
+Bruxelles reste non vérifié — IBA n'existe que sur le papier.)*
+
 ### 📊 LE CLASSEMENT AU 26/08 — 8 candidates, **1 REQUALIFICATION, 0 mouvement de rang**
 
 *(clôtures du mardi 25/08 quand elles bouclent, sinon dernier validé)*
