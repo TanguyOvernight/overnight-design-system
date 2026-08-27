@@ -1647,7 +1647,44 @@ chaque brief depuis quinze jours.*
 
 | ID | Date | Agent | classe_réf | Affaire | Affirmation | P | Condition de résolution | Statut |
 |---|---|---|---|---|---|---|---|---|
-| **C047** | 23/08 | Juge | **semi-US / <1 mois · CTO** | NVIDIA | **NVIDIA guide un chiffre d'affaires du T3 FY2027 dont le POINT MÉDIAN est ≥ 103,0 Md$** | **56 %** *(brut 57 %, rétraction appliquée)* | **Communiqué du 26/08/2026** — lisible sur le communiqué SEUL. Si la guidance n'est pas donnée sous forme comparable *(branche N5)* → **NON RÉSOLUBLE** | ⏳ |
+| **C047** | 23/08 | Juge | **semi-US / <1 mois · CTO** | NVIDIA | **NVIDIA guide un chiffre d'affaires du T3 FY2027 dont le POINT MÉDIAN est ≥ 103,0 Md$** | **56 %** *(brut 57 %, rétraction appliquée)* | **Communiqué du 26/08/2026** | ✅ **RÉSOLU VRAI le 27/08 au matin** — guidance **108,0 Md$ ±2 %**, marge **+4,9 %**. **Brier 0,1936** |
+
+### ✅ Résolution de C047 — 27/08/2026, au matin et non dans la nuit
+
+**La procédure a tenu.** *Décidé le 23/08, réaffirmé le 26/08 à H−13, exécuté
+ce matin : je n'ai pas lu les comptes dans la nuit.* **C'est le premier
+pré-engagement de PROCÉDURE — portant sur le MOMENT de lire, pas sur le
+contenu — arrivé à échéance dans ce registre. Il a tenu.**
+
+| | |
+|---|---|
+| Guidance T3 FY2027, point médian | **108,0 Md$** *(±2 % : 105,8 − 110,2)* |
+| Seuil pré-enregistré | ≥ 103,0 Md$ |
+| **Issue** | ✅ **VRAI**, marge **+4,9 %** |
+| **Brier** | `(0,56 − 1)² = ` **0,1936** |
+
+**Robustesse** : même le **bas** de la fourchette (105,8) dépasse le seuil de
+**+2,8 %**, et dépasse **les deux consensus concurrents** (103,1 et ~104).
+*La divergence de consensus que je n'avais pas su trancher le 26/08 est sans
+conséquence — elle est écrasée par l'ampleur du dépassement.*
+
+**Effet sur le registre** : `n = 9 → 10` · Brier moyen **0,3069 → 0,2956** ·
+BSS contre « 50 % partout » **−0,228 → −0,182**.
+
+> ⚠️ **Et je refuse de m'en féliciter, pour une raison écrite AVANT l'issue.**
+> L'arithmétique des deux branches avait été posée ce matin, à l'aveugle :
+> VRAI donnait 0,1936, FAUX donnait 0,3136, et le seuil d'indifférence était
+> 0,3069. **Les deux issues l'encadraient étroitement.**
+>
+> **À P = 56 % sur un seuil posé À HAUTEUR du consensus, C047 ne pouvait ni
+> beaucoup rapporter ni beaucoup coûter.** *0,1936 est mon **5ᵉ score sur
+> 10** — la médiane exacte.* **Un registre rempli d'appels à 56 % n'enregistre
+> qu'une chose : que je sais lire un consensus.**
+>
+> 🔑 **Ce que ça m'apprend pour la suite** : *la calibration se mesure sur des
+> appels où je m'ÉCARTE du consensus. Un appel posé sur le consensus est
+> peut-être bien calibré, mais il n'est pas informatif — et dix appels comme
+> celui-là ne feraient pas un registre utile.*
 
 ### Construction, tracée
 
