@@ -1,0 +1,30 @@
+{
+  "_doc": "Registre des employeurs surveillés par API ATS directe. status 'valide' = un appel a déjà renvoyé des postes réels (obligatoire avant confiance, cf. TECHNIQUE.md). 'a_valider' = endpoint construit, jamais confirmé.",
+  "_maj": "2026-08-27",
+  "employeurs": [
+    {"nom": "Nexthink", "ats": "smartrecruiters", "endpoint": "https://api.smartrecruiters.com/v1/companies/Nexthink/postings?city=Lausanne", "status": "valide", "note": "97 postes total, 15 Lausanne au 27.08.2026"},
+    {"nom": "Swissquote", "ats": "smartrecruiters", "endpoint": "https://api.smartrecruiters.com/v1/companies/Swissquote/postings", "status": "a_valider", "note": "portail vérifié ; totalFound>0 à confirmer"},
+    {"nom": "MindMaze", "ats": "smartrecruiters", "endpoint": "https://api.smartrecruiters.com/v1/companies/MindMaze/postings", "status": "a_valider", "note": "identifiant exact à confirmer (totalFound>0)"},
+    {"nom": "Logitech", "ats": "workday", "endpoint": "https://logitech.wd5.myworkdayjobs.com/wday/cxs/logitech/Logitech/jobs", "method": "POST", "body": {"appliedFacets": {}, "limit": 20, "offset": 0, "searchText": "Lausanne"}, "status": "valide", "note": "6 hits Lausanne dont 2 marketing au 27.08 ; dedup par externalPath"},
+    {"nom": "Ferring", "ats": "workday", "endpoint": "https://ferring.wd3.myworkdayjobs.com/wday/cxs/ferring/Ferring/jobs", "method": "POST", "body": {"appliedFacets": {}, "limit": 20, "offset": 0, "searchText": ""}, "status": "a_valider", "note": "chemin cxs à confirmer"},
+    {"nom": "Philip Morris International", "ats": "phenom", "endpoint": "https://join.pmicareers.com/widgets", "method": "POST", "body": {"lang": "en", "deviceType": "desktop", "country": "gb", "pageName": "search-results", "ddoKey": "refineSearch", "sortBy": "Most recent", "from": 0, "jobs": true, "counts": true, "all_fields": ["category", "country", "city"], "size": 10, "clearAll": false, "jsonp": false, "searchType": "basic", "keywords": "", "global": true, "selected_fields": {"country": ["Switzerland"]}, "locationData": {}}, "status": "valide", "note": "10 postes Suisse (2 Lausanne) au 27.08 ; filtrer city côté client"},
+    {"nom": "SwissBorg", "ats": "lever", "endpoint": "https://api.lever.co/v0/postings/swissborg?mode=json", "status": "a_valider", "note": "jobs.lever.co/swissborg vérifié en HTML"},
+    {"nom": "SonarSource", "ats": "lever", "endpoint": "https://api.lever.co/v0/postings/sonarsource?mode=json", "status": "valide", "note": "119 postings dont 21 Genève au 27.08 ; réponse 2.3 MB"},
+    {"nom": "Proton", "ats": "greenhouse", "endpoint": "https://boards-api.greenhouse.io/v1/boards/proton/jobs", "status": "a_valider", "note": "portail job-boards.eu.greenhouse.io/proton vérifié ; utiliser l'hôte API mondial"},
+    {"nom": "Scandit", "ats": "greenhouse", "endpoint": "https://boards-api.greenhouse.io/v1/boards/scandit/jobs", "status": "valide", "note": "13 postes au 27.08 (Zurich surtout — garde-fou géo)"},
+    {"nom": "Frontiers Media", "ats": "workable", "endpoint": "https://apply.workable.com/api/v1/widget/accounts/frontiersmedia", "status": "a_valider", "note": "endpoint widget à confirmer"},
+    {"nom": "SOPHiA GENETICS", "ats": "workable", "endpoint": "https://apply.workable.com/api/v1/widget/accounts/sophia-genetics", "status": "a_valider", "note": ""},
+    {"nom": "Flyability", "ats": "workable", "endpoint": "https://apply.workable.com/api/v1/widget/accounts/flyability", "status": "a_valider", "note": ""},
+    {"nom": "Visium", "ats": "workable", "endpoint": "https://apply.workable.com/api/v1/widget/accounts/visium", "status": "a_valider", "note": ""},
+    {"nom": "Unit8", "ats": "workable", "endpoint": "https://apply.workable.com/api/v1/widget/accounts/unit8", "status": "a_valider", "note": ""},
+    {"nom": "Distalmotion", "ats": "workable", "endpoint": "https://apply.workable.com/api/v1/widget/accounts/distalmotion", "status": "a_valider", "note": ""},
+    {"nom": "Batmaid", "ats": "teamtailor", "endpoint": "https://careers.batmaid.com/jobs.json", "status": "a_valider", "note": "flux à découvrir"},
+    {"nom": "Corintis", "ats": "teamtailor", "endpoint": "https://careers.corintis.com/jobs.json", "status": "a_valider", "note": ""},
+    {"nom": "Neural Concept", "ats": "ashby", "endpoint": "https://api.ashbyhq.com/posting-api/job-board/neuralconcept", "status": "a_valider", "note": ""},
+    {"nom": "UEFA", "ats": "sap", "endpoint": "https://careers.uefa.com", "status": "a_valider", "note": "scrape"},
+    {"nom": "CIO", "ats": "smartrecruiters_probable", "endpoint": "https://www.olympics.com/ioc/careers", "status": "a_valider", "note": "identifiant à découvrir"},
+    {"nom": "QoQa", "ats": "propre", "endpoint": "https://qoqa.jobs/", "status": "a_valider", "note": "scrape simple"},
+    {"nom": "Salt Mobile", "ats": "propre", "endpoint": "https://www.salt.ch/en/about-us/careers", "status": "a_valider", "note": "scrape"},
+    {"nom": "EPFL Innovation Park (agrégateur startups)", "ats": "webflow_js", "endpoint": "https://www.epfl-innovationpark.ch/jobs", "status": "a_valider", "note": "rendu JS requis ; passage hebdo (lundi)"}
+  ]
+}

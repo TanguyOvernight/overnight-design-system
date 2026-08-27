@@ -1,0 +1,55 @@
+{
+  "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
+  "maj": "2026-08-27",
+  "dernier_brief": 0,
+  "vus": {
+    "jobup": [
+      "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
+      "https://www.jobup.ch/fr/emplois/detail/1d8fe3a8-a08c-40a9-83ee-ac79841a86ba/",
+      "https://www.jobup.ch/fr/emplois/detail/1e544208-54fd-4584-9c8d-2dbedcb52802/",
+      "https://www.jobup.ch/fr/emplois/detail/8e600d02-765c-4f64-bb08-9e0b064abb82/",
+      "https://www.jobup.ch/fr/emplois/detail/9aeb7e6d-f399-44f2-aad9-59417b7d8565/",
+      "https://www.jobup.ch/fr/emplois/detail/05ece306-9479-434f-bc05-4e7cd5d2fbb0/",
+      "https://www.jobup.ch/fr/emplois/detail/34353530-588d-42d4-8b6f-8498a820b9a2/",
+      "https://www.jobup.ch/fr/emplois/detail/726e85f7-fde3-4f67-aa84-c0785f591f37/",
+      "https://www.jobup.ch/fr/emplois/detail/a5cb81a4-4800-45ab-acef-b50c7b0565f5/",
+      "https://www.jobup.ch/fr/emplois/detail/7b51b01d-8e87-4432-a48b-9dec32a8f5e4/",
+      "https://www.jobup.ch/fr/emplois/detail/4cdce798-b3f0-44ba-b31b-2749f3c94675/",
+      "https://www.jobup.ch/fr/emplois/detail/0c96b100-bf60-4bfb-b5b6-463221d2d92f/",
+      "https://www.jobup.ch/fr/emplois/detail/eacba075-057f-4be7-88b4-f381e074693c/",
+      "https://www.jobup.ch/fr/emplois/detail/cd7794c7-a6a9-4a0e-a420-adaa788a469f/",
+      "https://www.jobup.ch/fr/emplois/detail/156175ad-3424-42e8-ab2f-1bceb70da7e0/",
+      "https://www.jobup.ch/fr/emplois/detail/825c203a-b68a-48ee-aa94-1b60fbdc7e8b/",
+      "https://www.jobup.ch/fr/emplois/detail/80f0f752-afe0-4b4c-b56b-8fa9c06cd961/",
+      "https://www.jobup.ch/fr/emplois/detail/be01052f-4932-47dc-8689-aac9a10b4c16/",
+      "https://www.jobup.ch/fr/emplois/detail/7c723c52-4508-4164-adfc-5491636e8d5c/",
+      "https://www.jobup.ch/fr/emplois/detail/3ec0dd9a-2218-4a35-95dd-9d09d0315884/",
+      "https://www.jobup.ch/fr/emplois/detail/10eba9b8-a26a-4202-b503-f38829026500/",
+      "https://www.jobup.ch/fr/emplois/detail/0e2dd78a-2133-4450-838c-8f4fc251245a/",
+      "https://www.jobup.ch/fr/emplois/detail/00a371c5-a943-42c0-97cd-599c77ecb7e3/",
+      "https://www.jobup.ch/fr/emplois/detail/b01ab207-9b0f-4e10-828b-23f78b6b75ea/",
+      "https://www.jobup.ch/fr/emplois/detail/60a32ab2-4d3a-4120-a384-e323fd470472/",
+      "https://www.jobup.ch/fr/emplois/detail/80dba334-1c83-4411-9ef1-03a9b5a5c093/",
+      "https://www.jobup.ch/fr/emplois/detail/f7390fd6-646e-4a87-8177-e35b9a60c561/"
+    ],
+    "linkedin": [
+      "https://ch.linkedin.com/jobs/view/pr-influence-coordinator-at-audemars-piguet-4457966465",
+      "https://ch.linkedin.com/jobs/view/brand-specialist-media-pr-march%C3%A9-suisse-cdd-8-mois-80%25-at-audemars-piguet-4457620903",
+      "https://ch.linkedin.com/jobs/view/technico-commercial%C2%B7e-et-communication-80%E2%80%93100%25-at-walcut-sa-4459301111",
+      "https://ch.linkedin.com/jobs/view/editorial-content-services-programming-expert-at-uefa-4456929918",
+      "https://ch.linkedin.com/jobs/view/graphiste-junior-cdm-12-mois-50%25-at-qoqa-4459305312",
+      "https://ch.linkedin.com/jobs/view/euro-front-office-specialist-at-uefa-4456943847",
+      "https://ch.linkedin.com/jobs/view/interactive-media-designer-cdm-6-mois-80-%C3%A0-100%25-at-qoqa-4459366065",
+      "https://ch.linkedin.com/jobs/view/hr-business-partner-operations-nestl%C3%A9-waters-suisse-sa-at-nestl%C3%A9-4459000235",
+      "https://ch.linkedin.com/jobs/view/charg%C3%A9-charg%C3%A9e-de-relation-client%C3%A8le-h-f-x-100%25-at-vaudoise-assurances-4454406361",
+      "https://ch.linkedin.com/jobs/view/d%C3%A9corateur%C2%B7trice-en-habillage-horloger-at-hublot-4459161883"
+    ]
+  },
+  "postees": [
+    {"brief": 0, "date": "2026-08-27", "score": "prioritaire", "titre": "Brand Specialist (Media & PR) Marché Suisse", "entreprise": "Audemars Piguet", "note": "posté avant le resserrement des critères (CDD 8 mois, Tolochenaz) — serait radar avec persona v2", "lien": "https://ch.linkedin.com/jobs/view/brand-specialist-media-pr-march%C3%A9-suisse-cdd-8-mois-80%25-at-audemars-piguet-4457620903"},
+    {"brief": 0, "date": "2026-08-27", "score": "solide", "titre": "PR & Influence Coordinator", "entreprise": "Audemars Piguet", "lien": "https://ch.linkedin.com/jobs/view/pr-influence-coordinator-at-audemars-piguet-4457966465"},
+    {"brief": 0, "date": "2026-08-27", "score": "solide", "titre": "Interactive Media Designer", "entreprise": "QoQa", "note": "CDM 6 mois — serait radar avec persona v2", "lien": "https://ch.linkedin.com/jobs/view/interactive-media-designer-cdm-6-mois-80-%C3%A0-100%25-at-qoqa-4459366065"},
+    {"brief": 0, "date": "2026-08-27", "score": "radar", "titre": "Editorial Content Services Programming Expert", "entreprise": "UEFA", "lien": "https://ch.linkedin.com/jobs/view/editorial-content-services-programming-expert-at-uefa-4456929918"},
+    {"brief": 0, "date": "2026-08-27", "score": "radar", "titre": "Expert·e Learning Design & Digital Learning (80-100%)", "entreprise": "Vaudoise Assurances", "lien": "https://www.jobup.ch/fr/emplois/detail/0e2dd78a-2133-4450-838c-8f4fc251245a/"}
+  ]
+}
