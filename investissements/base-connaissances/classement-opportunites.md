@@ -539,6 +539,10 @@ fausse — celle-ci finirait par interdire un achat légitime.*
 > **La watchlist inscrit une « tranche ~150 € » pour STM — soit plus que le
 > plafond de la LIGNE ENTIÈRE.** *Après versement des 1 000 € d'août : L =
 > 280 €, tranche ~93 €. Le problème s'atténue, il ne disparaît pas.*
+>
+> ✅ **CORRIGÉ le 27/08 — et le balayage en a trouvé DEUX de plus** *(voir le
+> journal du 27/08 § 9)* : Séché portait la même tranche de 150 €, **dans
+> deux fichiers**, et **son S1 tombe le 09/09 — dans 13 jours.**
 
 ### 📊 LE CLASSEMENT AU 25/08 — 8 candidates, **AUCUN MOUVEMENT DE RANG**
 
