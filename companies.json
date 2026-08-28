@@ -1,6 +1,6 @@
 {
   "_doc": "Registre des employeurs surveillés par API ATS directe. status 'valide' = un appel a déjà renvoyé des postes réels (obligatoire avant confiance, cf. TECHNIQUE.md). 'a_valider' = endpoint construit, jamais confirmé.",
-  "_maj": "2026-08-27",
+  "_maj": "2026-08-28",
   "employeurs": [
     {"nom": "Nexthink", "ats": "smartrecruiters", "endpoint": "https://api.smartrecruiters.com/v1/companies/Nexthink/postings?city=Lausanne", "status": "valide", "note": "97 postes total, 15 Lausanne au 27.08.2026"},
     {"nom": "Swissquote", "ats": "smartrecruiters", "endpoint": "https://api.smartrecruiters.com/v1/companies/Swissquote/postings", "status": "a_valider", "note": "portail vérifié ; totalFound>0 à confirmer"},
@@ -25,6 +25,20 @@
     {"nom": "CIO", "ats": "smartrecruiters_probable", "endpoint": "https://www.olympics.com/ioc/careers", "status": "a_valider", "note": "identifiant à découvrir"},
     {"nom": "QoQa", "ats": "propre", "endpoint": "https://qoqa.jobs/", "status": "a_valider", "note": "scrape simple"},
     {"nom": "Salt Mobile", "ats": "propre", "endpoint": "https://www.salt.ch/en/about-us/careers", "status": "a_valider", "note": "scrape"},
-    {"nom": "EPFL Innovation Park (agrégateur startups)", "ats": "webflow_js", "endpoint": "https://www.epfl-innovationpark.ch/jobs", "status": "a_valider", "note": "rendu JS requis ; passage hebdo (lundi)"}
+    {"nom": "EPFL Innovation Park (agrégateur startups)", "ats": "webflow_js", "endpoint": "https://www.epfl-innovationpark.ch/jobs", "status": "a_valider", "note": "rendu JS requis ; passage hebdo (lundi)"},
+    {"nom": "État de Vaud", "ats": "oracle_hcm", "endpoint": "https://fa-ewrg-saasfaeuraprod1.fa.ocs.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&finder=findReqs;siteNumber=CX_1,limit=200,sortBy=POSTING_DATES_DESC", "status": "a_valider", "note": "2e vague 28.08 ; API publique, filtre marketing/comm/design côté client ; EGRESS_BLOCKED au premier test"},
+    {"nom": "CHUV", "ats": "feed_json", "endpoint": "https://recrutement.chuv.ch/utf8/ic_job_feeds.feed_engine?p_web_site_id=5352&p_published_to=WWW&p_language=DEFAULT&p_direct=Y&p_format=MOBILE", "headers": {"Referer": "https://recrutement.chuv.ch/home.html"}, "status": "a_valider", "note": "2e vague 28.08 ; EGRESS_BLOCKED mais pages vacancy/*.html bien indexées via WebSearch (1 offre motion designer signalée brief n°1)"},
+    {"nom": "CIO (sitemap SAP)", "ats": "sap_sitemap", "endpoint": "https://ioc.jobs.hr.cloud.sap/sitemap.xml", "status": "a_valider", "note": "2e vague 28.08 ; nouveautés = URLs jamais vues ; complète l'entrée CIO smartrecruiters_probable existante"},
+    {"nom": "CIO / OBS (Teamtailor)", "ats": "teamtailor", "endpoint": "https://careers.olympics.com/jobs.json", "status": "a_valider", "note": "2e vague 28.08"},
+    {"nom": "BCV", "ats": "successfactors_sitemap", "endpoint": "https://jobs.bcv.ch/sitemap.xml", "status": "a_valider", "note": "2e vague 28.08 ; logique sitemap URLs jamais vues"},
+    {"nom": "Vaudoise Assurances", "ats": "softgarden", "endpoint": "https://vaudoise.softgarden.io/en/vacancies", "status": "a_valider", "note": "2e vague 28.08 ; SSR, liens /job/ID"},
+    {"nom": "Tamedia", "ats": "rss", "endpoint": "https://jobs.tamedia.ch/fr/jobs.rss", "status": "a_valider", "note": "2e vague 28.08"},
+    {"nom": "talent.com (agrégateur)", "ats": "ssr", "endpoint": "https://ch.talent.com/jobs?k=marketing&l=Lausanne%2C+VD", "status": "a_valider", "note": "2e vague 28.08 ; filet à dédup stricte ; pages /view?id= bien indexées via WebSearch"},
+    {"nom": "Michael Page", "ats": "ssr", "endpoint": "https://www.michaelpage.ch/fr/jobs/marketing-agences", "endpoints_extra": ["https://www.michaelpage.ch/fr/jobs/digital"], "status": "a_valider", "note": "2e vague 28.08 ; filtre Vaud/Lausanne côté client"},
+    {"nom": "FEI", "ats": "scrape", "endpoint": "https://inside.fei.org/fei/about-fei/working-at-the-fei/jobs", "status": "a_valider", "note": "2e vague 28.08 ; passage hebdo (lundi)"},
+    {"nom": "World Aquatics", "ats": "lucca", "endpoint": "https://jobs.world.luccasoftware.com/world-aquatics", "status": "a_valider", "note": "2e vague 28.08 ; passage hebdo (lundi)"},
+    {"nom": "FIG", "ats": "scrape", "endpoint": "https://www.gymnastics.sport/site/opportunities/jobs.php", "status": "a_valider", "note": "2e vague 28.08 ; passage hebdo (lundi)"},
+    {"nom": "TAS", "ats": "scrape", "endpoint": "https://www.tas-cas.org/en/general-information/jobs", "status": "a_valider", "note": "2e vague 28.08 ; passage hebdo (lundi)"},
+    {"nom": "Loterie Romande", "ats": "scrape", "endpoint": "https://www.loro.ch/fr/carrieres/offres-emploi", "status": "a_valider", "note": "2e vague 28.08 ; passage hebdo (lundi)"}
   ]
 }

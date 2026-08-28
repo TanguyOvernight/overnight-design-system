@@ -1,7 +1,7 @@
 {
   "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
-  "maj": "2026-08-27",
-  "dernier_brief": 0,
+  "maj": "2026-08-28",
+  "dernier_brief": 1,
   "vus": {
     "jobup": [
       "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -30,7 +30,16 @@
       "https://www.jobup.ch/fr/emplois/detail/b01ab207-9b0f-4e10-828b-23f78b6b75ea/",
       "https://www.jobup.ch/fr/emplois/detail/60a32ab2-4d3a-4120-a384-e323fd470472/",
       "https://www.jobup.ch/fr/emplois/detail/80dba334-1c83-4411-9ef1-03a9b5a5c093/",
-      "https://www.jobup.ch/fr/emplois/detail/f7390fd6-646e-4a87-8177-e35b9a60c561/"
+      "https://www.jobup.ch/fr/emplois/detail/f7390fd6-646e-4a87-8177-e35b9a60c561/",
+      "https://www.jobup.ch/fr/emplois/detail/02b67ce3-b778-4e9f-91f9-b4ca4f3d56cf/",
+      "https://www.jobup.ch/fr/emplois/detail/01285e06-c9b0-4d54-8aae-0329dfd85e7a/",
+      "https://www.jobup.ch/fr/emplois/detail/0b8c8db0-056d-4405-84d7-b147db500058/",
+      "https://www.jobup.ch/fr/emplois/detail/6bb3e7ba-7c3c-409b-b2c5-4ba9ce90336b/",
+      "https://www.jobup.ch/fr/emplois/detail/66274afd-579d-4b32-8e7e-2ab922af6923/",
+      "https://www.jobup.ch/fr/emplois/detail/fc60872e-0a17-4c3f-b762-b30ec277426f/",
+      "https://www.jobup.ch/fr/emplois/detail/48d5e162-762a-40a2-a3f2-a86f69e298a9/",
+      "https://www.jobup.ch/fr/emplois/detail/09fb8d5c-43b0-401c-8b82-9a4dbf3a50fd/",
+      "https://www.jobup.ch/fr/societes/39778-neho/emplois/#directeur-trice-marketing"
     ],
     "linkedin": [
       "https://ch.linkedin.com/jobs/view/pr-influence-coordinator-at-audemars-piguet-4457966465",
@@ -42,7 +51,34 @@
       "https://ch.linkedin.com/jobs/view/interactive-media-designer-cdm-6-mois-80-%C3%A0-100%25-at-qoqa-4459366065",
       "https://ch.linkedin.com/jobs/view/hr-business-partner-operations-nestl%C3%A9-waters-suisse-sa-at-nestl%C3%A9-4459000235",
       "https://ch.linkedin.com/jobs/view/charg%C3%A9-charg%C3%A9e-de-relation-client%C3%A8le-h-f-x-100%25-at-vaudoise-assurances-4454406361",
-      "https://ch.linkedin.com/jobs/view/d%C3%A9corateur%C2%B7trice-en-habillage-horloger-at-hublot-4459161883"
+      "https://ch.linkedin.com/jobs/view/d%C3%A9corateur%C2%B7trice-en-habillage-horloger-at-hublot-4459161883",
+      "https://ch.linkedin.com/jobs/view/marketing-b2b-specialist-at-albedis-4454532830",
+      "https://ch.linkedin.com/jobs/view/growth-marketing-lead-europe-at-saporo-4361121112",
+      "https://ch.linkedin.com/jobs/view/head-of-marketing-and-communications-at-clinique-de-la-source-3612854736",
+      "https://ch.linkedin.com/jobs/view/svp-marketing-at-akselos-3764186129",
+      "https://ch.linkedin.com/jobs/view/head-of-ai-for-an-ai-startup-at-inait-2848000692",
+      "https://ch.linkedin.com/jobs/view/digital-marketing-manager-at-firstpoint-digital-agency-4256469367",
+      "https://ch.linkedin.com/jobs/view/sp%C3%A9cialiste-en-marketing-digital-at-emblematik-4180910958",
+      "https://ch.linkedin.com/jobs/view/direct-marketing-trainee-at-international-olympic-committee-%E2%80%93-ioc-4437780538",
+      "https://ch.linkedin.com/jobs/view/chef-de-produit-digital-at-h%C3%A9ritage-editions-sa-3423037973"
+    ],
+    "chuv": [
+      "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html"
+    ],
+    "talent_com": [
+      "https://ch.talent.com/view?id=98e1d682673e",
+      "https://ch.talent.com/view?id=2415865893ec"
+    ],
+    "albedis": [
+      "https://www.albedis.com/emploi/4267277496-marketing-b2b-specialist-h-f-100-7-months-assignment-fr/"
+    ],
+    "emplois_vaud": [
+      "https://emplois-vaud.ch/job/responsable-marketing-et-communication-asio-sa%CC%80rl/324d594c44",
+      "https://emplois-vaud.ch/job/charge%CC%81-e-de-communication-marketing-60/324153444e",
+      "https://emplois-vaud.ch/job/stagiaire-marketing-communication/324e6b4367",
+      "https://emplois-vaud.ch/job/internship-ux-ui-designer/324e516444",
+      "https://emplois-vaud.ch/job/ux-designer/3249323636",
+      "https://emplois-vaud.ch/job/stagiaire-en-vide%CC%81o-80-a%CC%80-100/3246735435"
     ]
   },
   "postees": [
@@ -50,6 +86,17 @@
     {"brief": 0, "date": "2026-08-27", "score": "solide", "titre": "PR & Influence Coordinator", "entreprise": "Audemars Piguet", "lien": "https://ch.linkedin.com/jobs/view/pr-influence-coordinator-at-audemars-piguet-4457966465"},
     {"brief": 0, "date": "2026-08-27", "score": "solide", "titre": "Interactive Media Designer", "entreprise": "QoQa", "note": "CDM 6 mois — serait radar avec persona v2", "lien": "https://ch.linkedin.com/jobs/view/interactive-media-designer-cdm-6-mois-80-%C3%A0-100%25-at-qoqa-4459366065"},
     {"brief": 0, "date": "2026-08-27", "score": "radar", "titre": "Editorial Content Services Programming Expert", "entreprise": "UEFA", "lien": "https://ch.linkedin.com/jobs/view/editorial-content-services-programming-expert-at-uefa-4456929918"},
-    {"brief": 0, "date": "2026-08-27", "score": "radar", "titre": "Expert·e Learning Design & Digital Learning (80-100%)", "entreprise": "Vaudoise Assurances", "lien": "https://www.jobup.ch/fr/emplois/detail/0e2dd78a-2133-4450-838c-8f4fc251245a/"}
+    {"brief": 0, "date": "2026-08-27", "score": "radar", "titre": "Expert·e Learning Design & Digital Learning (80-100%)", "entreprise": "Vaudoise Assurances", "lien": "https://www.jobup.ch/fr/emplois/detail/0e2dd78a-2133-4450-838c-8f4fc251245a/"},
+    {"brief": 1, "date": "2026-08-28", "score": "prioritaire", "titre": "Directeur·trice Marketing", "entreprise": "Neho", "note": "second regard : CONFIRMÉ ; lien détail introuvable en mode dégradé → page employeur", "lien": "https://www.jobup.ch/fr/societes/39778-neho/emplois/"},
+    {"brief": 1, "date": "2026-08-28", "score": "prioritaire", "titre": "Marketing & Digital Communications Lead (80-100%)", "entreprise": "SWISSVET GROUP", "note": "second regard : CONFIRMÉ, lien détail talent.com retrouvé ; fraîcheur non établie", "lien": "https://ch.talent.com/view?id=98e1d682673e"},
+    {"brief": 1, "date": "2026-08-28", "score": "solide", "titre": "Responsable de Communication — Swiss Plasma Center", "entreprise": "EPFL", "lien": "https://www.jobup.ch/fr/emplois/detail/02b67ce3-b778-4e9f-91f9-b4ca4f3d56cf/"},
+    {"brief": 1, "date": "2026-08-28", "score": "solide", "titre": "Chef-fe de projets communication", "entreprise": "Association Innovaud", "note": "CDD ~1 an, 80-100%", "lien": "https://www.jobup.ch/fr/emplois/detail/01285e06-c9b0-4d54-8aae-0329dfd85e7a/"},
+    {"brief": 1, "date": "2026-08-28", "score": "solide", "titre": "Motion designer - vidéaste, Service de communication (80-100%)", "entreprise": "CHUV", "note": "publiée ~3 semaines, nouvelle source — jamais signalée avant", "lien": "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html"},
+    {"brief": 1, "date": "2026-08-28", "score": "solide", "titre": "Chef de projet marketing – rédacteur web", "entreprise": "BioSanté Editions", "note": "second regard : AJUSTÉ 👀→✅ (lien direct retrouvé)", "lien": "https://www.jobup.ch/fr/emplois/detail/0b8c8db0-056d-4405-84d7-b147db500058/"},
+    {"brief": 1, "date": "2026-08-28", "score": "radar", "titre": "Marketing B2B Specialist (100%, mission 7 mois)", "entreprise": "via albedis", "lien": "https://www.albedis.com/emploi/4267277496-marketing-b2b-specialist-h-f-100-7-months-assignment-fr/"},
+    {"brief": 1, "date": "2026-08-28", "score": "radar", "titre": "Growth Marketing Lead Europe", "entreprise": "Saporo", "note": "non vérifié — ID LinkedIn ancien, mais levée 7M€ déc. 2025 avec expansion marketing", "lien": "https://ch.linkedin.com/jobs/view/growth-marketing-lead-europe-at-saporo-4361121112"},
+    {"brief": 1, "date": "2026-08-28", "score": "radar", "titre": "Head of Marketing and Communications", "entreprise": "Clinique de La Source", "note": "REPÊCHÉE par le second regard — annonce ancienne (ID LinkedIn 2023) mais pages détail encore servies ; non vérifié", "lien": "https://www.jobup.ch/fr/emplois/detail/6bb3e7ba-7c3c-409b-b2c5-4ba9ce90336b/"},
+    {"brief": 1, "date": "2026-08-28", "score": "radar", "titre": "Directeur·trice de Lausanne Tourisme (80-100%)", "entreprise": "Lausanne Tourisme", "note": "C-level → radar", "lien": "https://www.jobup.ch/fr/emplois/detail/66274afd-579d-4b32-8e7e-2ab922af6923/"},
+    {"brief": 1, "date": "2026-08-28", "score": "radar", "titre": "Graphiste Senior & Responsable de Projets 360° (DE/FR)", "entreprise": "Sabina et Cie SA", "note": "bilingue DE exigé + temporaire ; URL détail non capturée (lien listing)", "lien": "https://emplois-vaud.ch/planification-design-emplois"}
   ]
 }

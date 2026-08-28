@@ -1,6 +1,7 @@
 # Persona candidat — Tanguy Rousselin
 
-> Version 2 — critères confirmés par Tanguy le 27.08.2026. Ce fichier pilote le filtrage :
+> Version 2.1 — critères confirmés par Tanguy le 27.08.2026, affinés le même soir par
+> consigne Slack explicite (appliquée au 28.08). Ce fichier pilote le filtrage :
 > chaque offre collectée est scorée contre ce persona avant d'être postée dans Slack.
 
 ## Identité professionnelle
@@ -18,6 +19,12 @@ Trois piliers :
 3. IA appliquée & creative technology — construction d'outils réels avec Claude :
    site corporate en React Three Fiber codé seul, automatisations (réunions→CRM,
    briefs quotidiens), workflows IA génératifs. Pas un simple utilisateur : un bâtisseur.
+
+Titre actuel : **Head of Marketing & Brand Identity** (Chat3D / Overnight Studio, 4 ans).
+Avant : **2,5 ans dans le gaming** (Game Only) — renforce le secteur gaming/e-sport.
+Portfolio : **oblativity.com**. Basé à **Lyon → candidature en mobilité** vers Lausanne
+(citoyen UE) — la mobilité ne dégrade jamais un score ; elle est un point à adresser
+dans l'angle de candidature. **Claude Code figure littéralement dans les outils du CV.**
 
 ## Preuves (chez Chat3D / Overnight Studio, startup ML 3D)
 - Rebranding complet de l'entreprise (identité, naming, design system).
@@ -77,6 +84,7 @@ Bonus : mention IA/GenAI, petite équipe au rôle large, levée récente, marque
 Malus : grille corporate rigide, poste siloté.
 
 ## Hypothèses restantes (défauts appliqués en attendant)
-1. Anglais : supposé courant — offres EN traitées à égalité.
+1. ~~Anglais : supposé courant~~ → CONFIRMÉ le 27.08 : **C1 Cambridge** — offres EN
+   traitées sans aucune réserve.
 2. Salaire : pas de plancher — affiché quand l'annonce le donne, sans filtrage.
-3. Permis/résidence : sans impact sur la collecte.
+3. Permis/résidence : citoyen UE en mobilité Lyon→Lausanne — sans impact sur la collecte.

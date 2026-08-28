@@ -8,9 +8,15 @@
    Jamais d'offre sans lien.
 2. Ordre fixe des métadonnées : Entreprise · Lieu · Taux · Type de contrat · fraîcheur.
    Le taux est affiché dès qu'il est connu.
-3. Trois niveaux, quotas stricts : 🎯 PRIORITÉ max 3 (deux lignes d'analyse : « → Pourquoi
-   toi » et « → Angle ») · ✅ SOLIDES max 6 (une ligne) · 👀 RADAR max 5 (zéro analyse).
-4. Pied chiffré : X collectées · Y uniques · Z retenues · N hors persona.
+3. Trois niveaux, quotas (élargis le 28.08 — philosophie « postuler à un maximum ») :
+   🎯 PRIORITÉ max 3 (deux lignes d'analyse : « → Pourquoi toi » et « → Angle ») ·
+   ✅ SOLIDES max 8 (une ligne) · 👀 RADAR max 8 (zéro analyse). Débordement → excédent
+   en 👀 une ligne, RIEN n'est supprimé.
+3bis. Offre premier scope Claude/IA : marqueur ⚡ devant le titre + « Pourquoi toi »
+   nommant l'atout Claude (bâtisseur, pas simple utilisateur). Mention explicite
+   Claude/Anthropic → 🎯 d'office si critères durs OK.
+4. Pied chiffré : 📊 X collectées · Y uniques · Z proposées · second regard : C/A/R/P
+   (confirmées/ajustées/rejetées/repêchées) · N hors persona.
 5. Santé des sources : silence = tout va bien. Une panne apparaît en 🔧 EN TÊTE dès le
    premier jour, jamais enterrée.
 6. Jour sans nouveauté : brief de 3 lignes max.
