@@ -380,6 +380,75 @@ STM à **43,295 € « le 20/08 à 15h18 »**, ouverture 43,995, haut 44,080, ba
 > **Mes ancrages validés ne sont pas des archives — ils sont le mécanisme de
 > détection.** *Sans le 49,06 € du 17/08, ce piège passait.*
 
+### 📊 LE CLASSEMENT AU 28/08 — 8 candidates, **0 mouvement de rang, 1 SORTIE**
+
+| Rang | Candidate | Chiffre vs déclencheur | Qualité | Mvt |
+|---|---|---|---|---|
+| **①** | **Cœur World** | 🔴 **PEA NON OUVERT — 21ᵉ jour.** ⚰️ **C009 meurt lundi** *(Brier 0,6400)* | ✅ | **=** |
+| **②** | **Or** | **~4 603-4 606 $/oz** le 27/08 | ⚠️ **Sans heure — 4ᵉ jour de rejet sur ce seul motif.** *Écart entre diffuseurs 0,08 % : fourchette normale, pas une discordance* | **=** |
+| **③** | **Séché** | Dernier validé **80,10 € (21/08)** → **−11,0 %** sous le seuil | ❌ Deux chiffres rejetés. 🔴 **Le « 80,00 € » est à DIX CENTIMES de mon ancrage : signature de réétiquetage.** S1 dans **12 jours** | **=** |
+| **④** | **Eli Lilly** | **1 183,16 $ (18/08)** → **+16,0 %** | ❌ Non instruit *(mur d'accès)* | **=** |
+| **⑤** | **Magnum** | **10,40 Md€** → il faut **−26,9 %** | ❌ Non instruit | **=** |
+| **⑥** | **Aubay** | **~56,85 €** → **+13,7 %** | ✅ **Régime CONFIRMÉ** par les déclarations de rachat du 3-7/08 : bande **55,77-57,00 €**. ⚠️ *TYPE = VWAP d'exécution, pas une clôture* | **=** |
+| **⑦** | **STM** | Régime **~43-44 €** *(inchangé)* | ❌ « 52,6 € » et « 55,11 € » **REJETÉS** : ils ne chaînent pas entre eux *(+4,77 % contre +5,68 % annoncé)* et **aucun événement daté** n'explique un tel saut → **lecture ARCHIVE**. ⏳ **C048 dans 3 jours** | **=** |
+| **⑧** | **Nike** | **39,48 $ (25/08)** | ❌ Non instruit | **=** |
+
+### ☠️ SORTIE — EIFFAGE, TUÉE le jour même de son ouverture
+
+**Ouverte hier comme candidate sur un chiffre qui n'existe pas.**
+
+> 🔴 **Le ROC n'a pas fait +11,6 % : il a fait +2 %, à 1,02 Md€, SOUS le
+> consensus de 1,05 Md€.** *Le +12,1 % que j'avais pris pour le ROC est le
+> **résultat net part du groupe**.* **Et le couple que j'ai republié —
+> « ROC +11,6 % avec marge +20 pb » — était arithmétiquement impossible :
+> +11,6 % de ROC sur +2,3 % de CA force +70 pb de marge, pas +20.**
+
+**Clôture du 27/08 : 108,80 €, −7,40 %** — *la pire séance du CAC 40 ce
+jour-là.* **Hors des deux bandes de mon test**, qui n'avait prévu que la
+hausse et la stagnation : *une grille bâtie sur un chiffre faux ne prévoit pas
+les issues que ce chiffre excluait.*
+
+**Motifs du kill** : ❌ T2 · ❌ ROC sous consensus · ❌ **FCF −75 M€** ·
+🔴 **cause structurelle sans date** *(concessions APRR, débat parlementaire)*.
+**Réouverture sur un fait NOUVEAU et daté sur les concessions — jamais sur un
+cours plus bas.**
+
+### 🎯 Correction d'ancrage : CAC 26/08 = **8 462,00**, pas 8 477,66
+
+`8 462,00 − 142,13 = 8 319,87` = la clôture du 27/08 ✅ · avec 8 477,66 la
+variation serait de −1,861 % contre **−1,68 % publié** ❌.
+
+> **Un bouclage AMONT valide une variation, pas un NIVEAU** — une erreur de
+> niveau traverse un pourcentage intacte. **Seule la chaîne AVAL tranche : une
+> clôture n'est vraiment validée que le lendemain.**
+>
+> 😐 **Et 8 462,00 est le nombre que j'avais daté du 24/08.** *Il était vrai ;
+> c'est la date qui était fausse. Réétiquetage dans mon propre livre — ce qui
+> valide rétroactivement mon refus de trancher le 26/08.*
+
+**CAC 27/08 : 8 319,87 (−1,68 %)** — pire séance depuis le 8 juillet, sur le
+débat budgétaire français. **S&P 7 730,99 (+0,7 %) · Nasdaq 26 541,35
+(+1,6 %)**, tirés par NVIDIA.
+
+### 🌍 Terrain émergents — deux dossiers, deux zéros de nature différente
+
+**AGEAS — zéro d'EFFICIENCE.** S1 du 27/08 : ROP **+6 %**, guidance annuelle
+relevée **> 1,95 Md€**, Asie **+30 %**. ✅ **Et mon angle mort du 02/08 est
+comblé par l'émetteur** : **> 1,4 Md€ de remontées de liquidités attendues en
+2026, +49 %** — la question « que remonte vraiment à Bruxelles ? » a sa
+réponse. ❌ **Mais le prix est déjà fait** : 73,25 € au 17/08, à **2,4 % du
+plus haut 52 semaines AVANT le beat**. ⚠️ *Et l'Asie +30 % est tirée par une
+BAISSE DU TAUX D'IMPÔT en Chine — une croissance fiscale ne se reproduit pas.*
+
+**MOTA-ENGIL — NON INSTRUIT** *(mur d'accès sur le prix)*. S1 du 27/08 :
+résultat net **74 M€ (+24 %)**, CA **2 898 M€ (+6 %)**, EBITDA **487 M€
+(+10 %)**, **carnet record 17 714 M€ (+10 %)**. ✅ Bouclages solides *(le
+comparatif 2025 concorde avec le chiffre publié un an plus tôt)*.
+🔻 **Mais la disconfirmation mord** : la guidance était **CA +10-15 % et marge
+18 %** ; le S1 délivre **+6 % et 17 %**. *Le bénéfice monte pendant que le
+haut de bilan tourne à la moitié du rythme promis.* **Et sans cours du 27/08,
+aucune thèse de sous-réaction n'est permise.**
+
 ### 📊 LE CLASSEMENT AU 27/08 — 8 candidates, **0 mouvement de rang**
 
 *(clôtures du mercredi 26/08 quand elles bouclent, sinon dernier validé)*
@@ -438,8 +507,11 @@ impossible à obtenir — mais c'est la source la plus faible du dossier.*
 
 ### 🆕 EIFFAGE — candidate ouverte, thèse INTESTABLE aujourd'hui
 
+🔴 **FICHE FAUSSE — voir la correction du 28/08 plus haut. Le ROC n'a pas
+fait +11,6 % mais +2 %, SOUS le consensus. Candidate TUÉE le 28/08.**
+
 **S1 2026** *(26/08, après clôture)* : CA **12,20 Md€** *(+1,1 % à p.c.c.)* ·
-**ROC +11,6 %**, marge **+20 pb** · **carnet Travaux 31,5 Md€, +7 % a/a**,
+~~**ROC +11,6 %**, marge **+20 pb**~~ · **carnet Travaux 31,5 Md€, +7 % a/a**,
 en croissance dans toutes les divisions. Titre à **−18 % sur six mois** après
 +44,5 % en 2025. **Achetabilité ✅** *(CAC 40, PEA, ~119 € l'action)*.
 
