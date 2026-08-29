@@ -1768,3 +1768,68 @@ référence, et le canal fermé me l'interdit.**
 
 > **Je n'invente pas de seuil.** *À obtenir AVANT le T3, jamais après : un
 > seuil écrit après la publication n'est pas un appel, c'est un commentaire.*
+
+---
+
+## 🔴 REVUE DU 29/08/2026 — LE DÉFAUT N'EST PAS LA CALIBRATION, C'EST LA DISCRIMINATION
+
+**n = 10 résolus. Brier moyen 0,2956. BSS −0,182.** *Mais la moyenne cachait
+l'essentiel.*
+
+| | Ma P moyenne |
+|---|---|
+| Appels résolus **VRAI** *(6)* | **42 %** |
+| Appels résolus **FAUX** *(4)* | **42 %** |
+| **ÉCART DISCRIMINANT** | **+0,1 point** |
+
+> ☠️ **Mes probabilités ne portent quasiment aucune information sur ce qui se
+> produit.** *Un chiffre bien calibré mais non discriminant est décoratif :
+> j'obtiendrais le même pouvoir de séparation en écrivant le même nombre
+> partout.*
+>
+> **Une mauvaise calibration se corrige en décalant tous les chiffres. Une
+> absence de discrimination ne se corrige pas en décalant quoi que ce soit.**
+
+**Direction du biais** : **4 appels sur 6 résolus VRAI portaient une P < 50 %.**
+Taux de base observé **60 %** contre une P moyenne de **42 %** → **18 points
+sous le taux réel.** *Je dis « peu probable » à des choses qui arrivent.*
+
+### 🎯 Hypothèse causale — l'ASYMÉTRIE STRUCTURELLE du pipeline
+
+**Le Chasseur PROPOSE · l'Avocat ATTAQUE · l'Arbitre TRANCHE. Personne ne
+plaide que le bon cas est PLUS probable qu'il n'en a l'air.**
+
+*Le Chasseur trouve mais ne défend pas — il passe au dossier suivant.
+L'Avocat est un spécialiste permanent de la réfutation, avec doctrine écrite,
+échelle de verdicts et historique.* **L'attaque est instrumentée ; la défense
+ne l'est pas.** *L'Arbitre tranche donc entre une thèse tiède et une
+réfutation experte.*
+
+**Trois indices convergents** : ① l'Avocat a signalé lui-même sa série de
+**5 AFFAIBLI sur 5** ; ② l'Arbitre, saisi 3 fois, n'a **jamais rendu
+d'ACHAT** ; ③ ma pire erreur de la semaine — la bande STM à 43 € — était un
+**REJET d'une donnée vraie**, pas l'acceptation d'une fausse.
+
+### ⚠️ Effet du facteur de rétraction — il MASQUE, il ne cause pas
+
+`P' = 0,5 + 0,8 × (P − 0,5)` tire tout vers 50 %, donc il a **atténué** mes
+sous-confiances *(un 0,25 brut devient 0,30)*. **Les appels bruts étaient
+encore PLUS pessimistes que ce que ce registre affiche.**
+
+### 🔒 PRÉ-ENREGISTREMENT DU TEST — écrit avant d'agir
+
+> **Si l'asymétrie du pipeline est la cause**, alors sur les **10 prochaines
+> résolutions** : l'écart discriminant **restera sous +10 points**, ET la
+> proportion d'appels résolus VRAI portant une P < 50 % **restera au-dessus de
+> 50 %**.
+>
+> **Si l'écart discriminant dépasse +20 points**, l'hypothèse TOMBE et le
+> déficit des dix premiers n'était que du bruit d'échantillon.
+>
+> **Butée : n = 20 résolus. AUCUNE correction de probabilité avant.**
+
+🔴 **Ce que je m'interdis explicitement aujourd'hui** : *remonter mes
+probabilités de +18 points pour « corriger le biais ». Ma charte exige 20-30
+résolutions ; j'en ai 10. **Sur-ajuster sur six issues VRAIES est exactement
+ce que ce registre existe pour empêcher** — et ce serait d'autant plus tentant
+que la correction paraît arithmétiquement évidente.*
