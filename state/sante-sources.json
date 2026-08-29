@@ -21,7 +21,12 @@
     "tamedia_rss": {"verdict": "EGRESS_BLOCKED", "detail": "2e vague — CONNECT 403 sur jobs.tamedia.ch (28.08)", "teste_le": "2026-08-28"},
     "talent_com": {"verdict": "EGRESS_BLOCKED", "detail": "2e vague — CONNECT 403 sur ch.talent.com (28.08). Substitution WebSearch correcte : pages /view?id= indexées avec métadonnées (SWISSVET détail trouvé ainsi)", "teste_le": "2026-08-28"},
     "michael_page": {"verdict": "EGRESS_BLOCKED", "detail": "2e vague — CONNECT 403 sur www.michaelpage.ch (28.08)", "teste_le": "2026-08-28"},
-    "websearch": {"verdict": "OK", "detail": "WebSearch opérationnel (run n°1 entièrement dessus : 11 offres proposées, liens directs retrouvés pour 9/11). Limites confirmées : pas de fenêtre 48h stricte, index mélange frais et périmé (LinkedIn IDs 2023), certains liens détail introuvables (Neho)", "teste_le": "2026-08-28"}
+    "serpapi_google_jobs": {"verdict": "EGRESS_BLOCKED", "detail": "3e vague — CONNECT 403 sur serpapi.com au premier test cloud (29.08). Source validée par Tanguy en local le 28.08 (forme : ville DANS q + gl=ch, jamais location= ; chips=date_posted:today ; max 3 req/jour, 248 restantes). Clé sur le Drive privé (serpapi-key.txt). INUTILISABLE depuis le cloud tant que serpapi.com n'est pas autorisé — signalé 🔧 brief n°2", "teste_le": "2026-08-29"},
+    "startupticker": {"verdict": "EGRESS_BLOCKED", "detail": "3e vague marché caché — CONNECT 403 sur www.startupticker.ch (29.08). Substitution WebSearch partielle (news indexées sans fraîcheur fiable)", "teste_le": "2026-08-29"},
+    "ictjournal_rss": {"verdict": "EGRESS_BLOCKED", "detail": "3e vague marché caché — CONNECT 403 sur www.ictjournal.ch (29.08)", "teste_le": "2026-08-29"},
+    "swissaijob": {"verdict": "A_TESTER", "detail": "3e vague hebdo (lundi) — premier passage prévu lundi 31.08 ; egress probablement bloqué, prévoir substitution WebSearch site:swissaijob.ch", "teste_le": null},
+    "wellfound": {"verdict": "A_TESTER", "detail": "3e vague hebdo (lundi) — premier passage prévu lundi 31.08", "teste_le": null},
+    "websearch": {"verdict": "OK", "detail": "WebSearch opérationnel (runs n°1 et n°2 entièrement dessus). Limites confirmées : pas de fenêtre 48h stricte, index mélange frais et périmé (LinkedIn IDs 2023), certains liens détail introuvables ; mais republications détectables (PLATEFORME 10 « il y a 3 jours »)", "teste_le": "2026-08-29"}
   },
   "domaines_a_autoriser": [
     "www.jobup.ch",
@@ -57,6 +62,17 @@
     "jobs.world.luccasoftware.com",
     "www.gymnastics.sport",
     "www.tas-cas.org",
-    "www.loro.ch"
+    "www.loro.ch",
+    "serpapi.com",
+    "www.startupticker.ch",
+    "www.ictjournal.ch",
+    "swissaijob.ch",
+    "wellfound.com",
+    "www.eu-startups.com",
+    "www.scale-up-vaud.ch",
+    "www.shab.ch",
+    "careers.epfl.ch",
+    "www.lausanne.ch",
+    "qoqa.jobs"
   ]
 }

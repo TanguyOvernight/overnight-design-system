@@ -38,6 +38,32 @@
     · WebSearch site:emplois-vaud.ch · Ville de Lausanne via WebSearch (rendu JS indisponible).
 Premier test cloud 28.08 : toutes EGRESS_BLOCKED (voir state/sante-sources.json).
 
+## 3e vague — SerpAPI, tech/IA & marché caché (en vigueur le 29.08.2026)
+16. SerpAPI / Google Jobs (quotidien, max 3 req/jour) — clé sur le Drive privé
+    (serpapi-key.txt). ⚠️ FORME VALIDÉE par test réel de Tanguy (28.08) : la ville DANS
+    `q` + `gl=ch` — le paramètre `location=` rend 0 résultat avec google_jobs :
+    GET https://serpapi.com/search.json?engine=google_jobs&q={kw}+Lausanne&gl=ch&hl=fr&chips=date_posted:today&api_key={clé}
+    pour q ∈ {marketing communication brand, "generative AI" OR "IA générative" OR Claude}.
+    0 résultat avec chips → une fois sans chips, fraîcheur via detected_extensions.posted_at.
+    Nouveautés par job_id/apply_link. Preuve de valeur : Team Lead Social Media QoQa
+    détectée par ce canal seul. EGRESS_BLOCKED au 29.08.
+17. Tech/IA (hebdo, lundi) — SwissAIJob swissaijob.ch/jobs/lausanne (SSR ; double usage :
+    postes Business/PMM à scorer + RADAR des employeurs IA lausannois type Mistral AI,
+    Harmattan AI, RAI Institute → vérifier leurs pages carrières, enrichir companies.json)
+    · Wellfound wellfound.com/role/l/marketing/lausanne et /location/lausanne (fraîcheur
+    à vérifier par offre) · posts sociaux via SerpAPI (+1 requête le lundi) :
+    engine=google, q=(site:linkedin.com/posts OR site:x.com) ("we are hiring" OR
+    "nous recrutons" OR "on recrute") (Lausanne OR Vaud) (marketing OR communication OR
+    brand OR growth), tbs=qdr:w — filet bruyant assumé, trouvailles fraîches en 👀.
+18. Marché caché (quotidien, léger) — startupticker.ch/en/news (levées/implantations
+    VAUDOISES) · RSS ictjournal.ch/rss.xml · hebdo : RSS EU-Startups Suisse
+    eu-startups.com/category/switzerland-startups/feed/ (403 → WebSearch) · mensuel
+    (1er lundi) : Scale-up Vaud scale-up-vaud.ch/jobs (moisson URLs carrières) + API SHAB
+    shab.ch/api/v1/publications?publicationStates=PUBLISHED&cantons=VD&subRubrics=HR01&pageRequest.size=50
+    (nouvelles inscriptions RC). Chaque signal vaudois → page carrières le jour même +
+    state/radar-startups.md (fenêtre spontanée 1-3 mois) → section 🚀 du brief (max
+    2/semaine).
+
 ## Réserves si une source casse
 - Adzuna API pays ch (clé gratuite à créer sur developer.adzuna.com) — l'assurance du système.
 - JSearch (RapidAPI) — proxy Google for Jobs, ~200 req/mois gratuit.

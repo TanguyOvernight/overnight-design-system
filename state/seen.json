@@ -1,7 +1,7 @@
 {
   "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
-  "maj": "2026-08-28",
-  "dernier_brief": 1,
+  "maj": "2026-08-29",
+  "dernier_brief": 2,
   "vus": {
     "jobup": [
       "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -39,7 +39,9 @@
       "https://www.jobup.ch/fr/emplois/detail/fc60872e-0a17-4c3f-b762-b30ec277426f/",
       "https://www.jobup.ch/fr/emplois/detail/48d5e162-762a-40a2-a3f2-a86f69e298a9/",
       "https://www.jobup.ch/fr/emplois/detail/09fb8d5c-43b0-401c-8b82-9a4dbf3a50fd/",
-      "https://www.jobup.ch/fr/societes/39778-neho/emplois/#directeur-trice-marketing"
+      "https://www.jobup.ch/fr/societes/39778-neho/emplois/#directeur-trice-marketing",
+      "https://www.jobup.ch/fr/emplois/detail/1887991/",
+      "https://www.jobup.ch/fr/emplois/detail/e0c060f0-b218-4755-9a05-737a548707cf/"
     ],
     "linkedin": [
       "https://ch.linkedin.com/jobs/view/pr-influence-coordinator-at-audemars-piguet-4457966465",
@@ -72,6 +74,15 @@
     "albedis": [
       "https://www.albedis.com/emploi/4267277496-marketing-b2b-specialist-h-f-100-7-months-assignment-fr/"
     ],
+    "qoqa": [
+      "https://qoqa.jobs/emplois/?job=134",
+      "https://qoqa.jobs/emplois//?job=99&candidature=",
+      "https://qoqa.jobs/emplois/communication-fr/83-projektmanager%C2%B7in-kommunikation-%C2%96-100-befristet-auf-9-monate-fr/"
+    ],
+    "ville_lausanne": [
+      "https://www.lausanne.ch/officiel/travailler-a-la-ville/nous-rejoindre/offres-emploi/detail-offre-emploi/pj19290.html",
+      "https://www.lausanne.ch/officiel/travailler-a-la-ville/nous-rejoindre/offres-emploi/detail-offre-emploi/pj18930.html"
+    ],
     "emplois_vaud": [
       "https://emplois-vaud.ch/job/responsable-marketing-et-communication-asio-sa%CC%80rl/324d594c44",
       "https://emplois-vaud.ch/job/charge%CC%81-e-de-communication-marketing-60/324153444e",
@@ -97,6 +108,11 @@
     {"brief": 1, "date": "2026-08-28", "score": "radar", "titre": "Growth Marketing Lead Europe", "entreprise": "Saporo", "note": "non vérifié — ID LinkedIn ancien, mais levée 7M€ déc. 2025 avec expansion marketing", "lien": "https://ch.linkedin.com/jobs/view/growth-marketing-lead-europe-at-saporo-4361121112"},
     {"brief": 1, "date": "2026-08-28", "score": "radar", "titre": "Head of Marketing and Communications", "entreprise": "Clinique de La Source", "note": "REPÊCHÉE par le second regard — annonce ancienne (ID LinkedIn 2023) mais pages détail encore servies ; non vérifié", "lien": "https://www.jobup.ch/fr/emplois/detail/6bb3e7ba-7c3c-409b-b2c5-4ba9ce90336b/"},
     {"brief": 1, "date": "2026-08-28", "score": "radar", "titre": "Directeur·trice de Lausanne Tourisme (80-100%)", "entreprise": "Lausanne Tourisme", "note": "C-level → radar", "lien": "https://www.jobup.ch/fr/emplois/detail/66274afd-579d-4b32-8e7e-2ab922af6923/"},
-    {"brief": 1, "date": "2026-08-28", "score": "radar", "titre": "Graphiste Senior & Responsable de Projets 360° (DE/FR)", "entreprise": "Sabina et Cie SA", "note": "bilingue DE exigé + temporaire ; URL détail non capturée (lien listing)", "lien": "https://emplois-vaud.ch/planification-design-emplois"}
+    {"brief": 1, "date": "2026-08-28", "score": "radar", "titre": "Graphiste Senior & Responsable de Projets 360° (DE/FR)", "entreprise": "Sabina et Cie SA", "note": "bilingue DE exigé + temporaire ; URL détail non capturée (lien listing)", "lien": "https://emplois-vaud.ch/planification-design-emplois"},
+    {"brief": 2, "date": "2026-08-29", "score": "prioritaire", "titre": "Responsable marketing, communication et services aux publics (80-100%)", "entreprise": "PLATEFORME 10", "note": "republication active ~3 jours ; détails structurés possiblement hérités de l'édition 2024", "lien": "https://www.jobup.ch/fr/emplois/detail/1887991/"},
+    {"brief": 2, "date": "2026-08-29", "score": "solide", "titre": "Team Lead Social Media (réf. QOQA-000134)", "entreprise": "QoQa", "note": "détectée par le test SerpAPI de Tanguy du 28.08 ; lien = liste qoqa.jobs (détail ?job=134 non vérifié) ; ~9 jours", "lien": "https://qoqa.jobs/emplois/"},
+    {"brief": 2, "date": "2026-08-29", "score": "solide", "titre": "Chargée ou chargé de communication (80%)", "entreprise": "Ville de Lausanne — mobilité & espaces publics", "note": "taux corrigé par second regard : 80% (pas 90%)", "lien": "https://www.lausanne.ch/officiel/travailler-a-la-ville/nous-rejoindre/offres-emploi/detail-offre-emploi/pj19290.html"},
+    {"brief": 2, "date": "2026-08-29", "score": "radar", "titre": "Social Media Manager FR/DE (ZH ou VD)", "entreprise": "QoQa", "note": "allemand courant exigé", "lien": "https://qoqa.jobs/emplois//?job=99&candidature="},
+    {"brief": 2, "date": "2026-08-29", "score": "radar", "titre": "Projektmanager·in Kommunikation (CDD 9 mois)", "entreprise": "QoQa", "note": "CDD < 12 mois + annonce DE ; employeur prioritaire", "lien": "https://qoqa.jobs/emplois/communication-fr/83-projektmanager%C2%B7in-kommunikation-%C2%96-100-befristet-auf-9-monate-fr/"}
   ]
 }

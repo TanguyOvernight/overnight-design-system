@@ -1,6 +1,6 @@
 {
   "_doc": "Registre des employeurs surveillés par API ATS directe. status 'valide' = un appel a déjà renvoyé des postes réels (obligatoire avant confiance, cf. TECHNIQUE.md). 'a_valider' = endpoint construit, jamais confirmé.",
-  "_maj": "2026-08-28",
+  "_maj": "2026-08-29",
   "employeurs": [
     {"nom": "Nexthink", "ats": "smartrecruiters", "endpoint": "https://api.smartrecruiters.com/v1/companies/Nexthink/postings?city=Lausanne", "status": "valide", "note": "97 postes total, 15 Lausanne au 27.08.2026"},
     {"nom": "Swissquote", "ats": "smartrecruiters", "endpoint": "https://api.smartrecruiters.com/v1/companies/Swissquote/postings", "status": "a_valider", "note": "portail vérifié ; totalFound>0 à confirmer"},
@@ -39,6 +39,9 @@
     {"nom": "World Aquatics", "ats": "lucca", "endpoint": "https://jobs.world.luccasoftware.com/world-aquatics", "status": "a_valider", "note": "2e vague 28.08 ; passage hebdo (lundi)"},
     {"nom": "FIG", "ats": "scrape", "endpoint": "https://www.gymnastics.sport/site/opportunities/jobs.php", "status": "a_valider", "note": "2e vague 28.08 ; passage hebdo (lundi)"},
     {"nom": "TAS", "ats": "scrape", "endpoint": "https://www.tas-cas.org/en/general-information/jobs", "status": "a_valider", "note": "2e vague 28.08 ; passage hebdo (lundi)"},
-    {"nom": "Loterie Romande", "ats": "scrape", "endpoint": "https://www.loro.ch/fr/carrieres/offres-emploi", "status": "a_valider", "note": "2e vague 28.08 ; passage hebdo (lundi)"}
+    {"nom": "Loterie Romande", "ats": "scrape", "endpoint": "https://www.loro.ch/fr/carrieres/offres-emploi", "status": "a_valider", "note": "2e vague 28.08 ; passage hebdo (lundi)"},
+    {"nom": "EPFL (portail central)", "ats": "propre", "endpoint": "https://careers.epfl.ch", "status": "a_valider", "note": "3e vague 29.08 ; les postes du EPFL AI Center y transitent — surveiller marketing/comm/IA appliquée"},
+    {"nom": "QoQa (détail)", "ats": "propre", "endpoint": "https://qoqa.jobs/emplois/", "status": "valide", "note": "3 offres comm/social réelles au 29.08 (jobs 83/99/134) ; détail via ?job={id} ; déjà listée en scrape simple — endpoint confirmé"},
+    {"nom": "PLATEFORME 10", "ats": "jobup", "endpoint": "https://www.jobup.ch/fr/societes/plateforme-10", "status": "a_valider", "note": "3e vague 29.08 ; institution culturelle lausannoise, recrute via jobup ; ajoutée après l'offre 🎯 du brief n°2"}
   ]
 }

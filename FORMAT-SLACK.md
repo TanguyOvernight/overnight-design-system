@@ -15,6 +15,11 @@
 3bis. Offre premier scope Claude/IA : marqueur ⚡ devant le titre + « Pourquoi toi »
    nommant l'atout Claude (bâtisseur, pas simple utilisateur). Mention explicite
    Claude/Anthropic → 🎯 d'office si critères durs OK.
+3ter. SECTION 🚀 MARCHÉ CACHÉ (max 2/semaine, seulement quand un signal le justifie) :
+   startup vaudoise venant de lever/s'implanter SANS offre marketing publiée → suggérer
+   la candidature spontanée avec l'angle (« série A de X M, équipe va doubler, aucun
+   profil marketing publié — fenêtre idéale »). ✉️ de Tanguy dessus = préparer le
+   dossier spontané comme une candidature.
 4. Pied chiffré : 📊 X collectées · Y uniques · Z proposées · second regard : C/A/R/P
    (confirmées/ajustées/rejetées/repêchées) · N hors persona.
 5. Santé des sources : silence = tout va bien. Une panne apparaît en 🔧 EN TÊTE dès le
