@@ -1833,3 +1833,53 @@ probabilités de +18 points pour « corriger le biais ». Ma charte exige 20-30
 résolutions ; j'en ai 10. **Sur-ajuster sur six issues VRAIES est exactement
 ce que ce registre existe pour empêcher** — et ce serait d'autant plus tentant
 que la correction paraît arithmétiquement évidente.*
+
+---
+
+## 🧪 REGISTRE FANTÔME — instauré le 30/08/2026
+
+**Le problème** : la revue du 29/08 a établi que mes probabilités sont ~18
+points sous le taux de base observé et **ne discriminent pas** (écart +0,1 pt).
+**Mais n = 10, et ma charte exige 20-30 résolutions avant toute correction.**
+
+*Que fait-on d'un instrument dont on soupçonne le biais sans pouvoir encore
+le corriger ?*
+
+### Le dispositif
+
+> **Chaque appel porte désormais DEUX nombres :**
+>
+> **P** — produit par le processus normal, **INCHANGÉ**. Seul inscrit au
+> registre officiel, seul scoré, seul utilisé pour décider.
+> **P′** — fantôme, `P′ = P + 18 points`, **borné à [5 %, 95 %]**, calculé
+> **MÉCANIQUEMENT**. Jamais montré à un agent, jamais lu au moment de décider.
+>
+> **À n = 20, les DEUX séries sont scorées sur les mêmes issues.**
+
+### Pourquoi ce dispositif et pas une correction
+
+| Option | Défaut |
+|---|---|
+| Corriger tout de suite | Sur-ajustement sur 6 issues VRAIES. **Et si le défaut est l'absence de DISCRIMINATION, décaler tout le monde de +18 pts ne discrimine pas mieux** |
+| Ignorer | Gaspille l'observation |
+| **Registre fantôme** | ✅ Ne contamine aucune décision · ✅ n'invalide pas le test pré-enregistré du 29/08 · ✅ **sépare les deux diagnostics** |
+
+> 🔑 **C'est la seule expérience qui distingue les deux hypothèses** :
+> **si P′ bat P** → le défaut est un **biais de niveau**, réparable par
+> décalage. **Si P′ ne bat PAS P malgré +18 points** → le défaut est bien
+> l'**absence de discrimination**, et aucun décalage ne me sauvera.
+
+⚠️ **Discipline** : *P′ se calcule `P + 18`, **sans jugement**. Le jour où je
+corrigerais « un peu plus ici, un peu moins là », P′ cesserait d'être un test
+pour devenir une seconde opinion — et l'expérience serait perdue.*
+
+### Appels ouverts, avec leur fantôme
+
+| ID | P *(officielle)* | P′ *(fantôme)* |
+|---|---|---|
+| **C048** — VWAP MAR de STM ≤ 44,4019 € sur 24-28/08 | **62 %** | 80 % |
+| **C049** — STMPA ≤ 42,00 € avant le 31/10 | **72 %** | 90 % |
+| **C046** — FOMC du 16/09 | *(inchangée)* | *(P + 18)* |
+
+*Les appels résolus AVANT le 30/08 n'ont pas de fantôme : on ne rejoue pas une
+expérience sur des issues connues.*
