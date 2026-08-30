@@ -1,7 +1,7 @@
 {
   "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
-  "maj": "2026-08-29",
-  "dernier_brief": 2,
+  "maj": "2026-08-30",
+  "dernier_brief": 3,
   "vus": {
     "jobup": [
       "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -41,7 +41,14 @@
       "https://www.jobup.ch/fr/emplois/detail/09fb8d5c-43b0-401c-8b82-9a4dbf3a50fd/",
       "https://www.jobup.ch/fr/societes/39778-neho/emplois/#directeur-trice-marketing",
       "https://www.jobup.ch/fr/emplois/detail/1887991/",
-      "https://www.jobup.ch/fr/emplois/detail/e0c060f0-b218-4755-9a05-737a548707cf/"
+      "https://www.jobup.ch/fr/emplois/detail/e0c060f0-b218-4755-9a05-737a548707cf/",
+      "https://www.jobup.ch/en/jobs/detail/17dd0bdb-8cc9-41e1-ad82-47f87e374e27/",
+      "https://www.jobup.ch/en/jobs/detail/c535e1bb-05a9-4744-9bd5-0005b589609e/",
+      "https://www.jobs.ch/de/stellenangebote/detail/7f305c8a-8921-4711-bb71-45e5e27aefd1/"
+    ],
+    "ats_employeurs": [
+      "https://recrutement.eben-hezer.ch/jobs/7602918-responsable-communication-et-recherche-de-fonds",
+      "https://recruiting.epfl.ch/Vacancies/3118/Description/2"
     ],
     "linkedin": [
       "https://ch.linkedin.com/jobs/view/pr-influence-coordinator-at-audemars-piguet-4457966465",
@@ -113,6 +120,9 @@
     {"brief": 2, "date": "2026-08-29", "score": "solide", "titre": "Team Lead Social Media (réf. QOQA-000134)", "entreprise": "QoQa", "note": "détectée par le test SerpAPI de Tanguy du 28.08 ; lien = liste qoqa.jobs (détail ?job=134 non vérifié) ; ~9 jours", "lien": "https://qoqa.jobs/emplois/"},
     {"brief": 2, "date": "2026-08-29", "score": "solide", "titre": "Chargée ou chargé de communication (80%)", "entreprise": "Ville de Lausanne — mobilité & espaces publics", "note": "taux corrigé par second regard : 80% (pas 90%)", "lien": "https://www.lausanne.ch/officiel/travailler-a-la-ville/nous-rejoindre/offres-emploi/detail-offre-emploi/pj19290.html"},
     {"brief": 2, "date": "2026-08-29", "score": "radar", "titre": "Social Media Manager FR/DE (ZH ou VD)", "entreprise": "QoQa", "note": "allemand courant exigé", "lien": "https://qoqa.jobs/emplois//?job=99&candidature="},
-    {"brief": 2, "date": "2026-08-29", "score": "radar", "titre": "Projektmanager·in Kommunikation (CDD 9 mois)", "entreprise": "QoQa", "note": "CDD < 12 mois + annonce DE ; employeur prioritaire", "lien": "https://qoqa.jobs/emplois/communication-fr/83-projektmanager%C2%B7in-kommunikation-%C2%96-100-befristet-auf-9-monate-fr/"}
+    {"brief": 2, "date": "2026-08-29", "score": "radar", "titre": "Projektmanager·in Kommunikation (CDD 9 mois)", "entreprise": "QoQa", "note": "CDD < 12 mois + annonce DE ; employeur prioritaire", "lien": "https://qoqa.jobs/emplois/communication-fr/83-projektmanager%C2%B7in-kommunikation-%C2%96-100-befristet-auf-9-monate-fr/"},
+    {"brief": 3, "date": "2026-08-30", "score": "solide", "titre": "Communications Manager / Deputy Head of Communications & Events (60-80%)", "entreprise": "EPFL / Swiss Data Science Center", "note": "taux plafonné 80% ; probable remplacement (titulaire en poste depuis 04.2026 partie)", "lien": "https://www.jobup.ch/en/jobs/detail/17dd0bdb-8cc9-41e1-ad82-47f87e374e27/"},
+    {"brief": 3, "date": "2026-08-30", "score": "solide", "titre": "Marketing Operations & Go-to-Market Analyst", "entreprise": "Salt Mobile", "note": "taux/contrat non vérifiés ; fraîcheur ~1 jour (talent.com)", "lien": "https://www.jobup.ch/en/jobs/detail/c535e1bb-05a9-4744-9bd5-0005b589609e/"},
+    {"brief": 3, "date": "2026-08-30", "score": "solide", "titre": "Responsable communication et recherche de fonds (80%)", "entreprise": "Fondation Eben-Hézer", "note": "CDI, entrée 01.09.2026 ou à convenir ; lien direct employeur (Teamtailor)", "lien": "https://recrutement.eben-hezer.ch/jobs/7602918-responsable-communication-et-recherche-de-fonds"}
   ]
 }
