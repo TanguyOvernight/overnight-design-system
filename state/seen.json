@@ -1,7 +1,7 @@
 {
   "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
-  "maj": "2026-08-30",
-  "dernier_brief": 3,
+  "maj": "2026-08-31",
+  "dernier_brief": 4,
   "vus": {
     "jobup": [
       "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -48,7 +48,17 @@
     ],
     "ats_employeurs": [
       "https://recrutement.eben-hezer.ch/jobs/7602918-responsable-communication-et-recherche-de-fonds",
-      "https://recruiting.epfl.ch/Vacancies/3118/Description/2"
+      "https://recruiting.epfl.ch/Vacancies/3118/Description/2",
+      "https://jobs.jobvite.com/logitech/job/oTCtufwc",
+      "https://www.jobup.ch/en/jobs/detail/e387231f-2470-4f7a-96cd-dc482fd7e201/",
+      "https://www.gymnastics.sport/publicdir/opportunities/files/218.pdf",
+      "https://emplois-vaud.ch/job/senior-manager-growth-marketing/324e776469",
+      "https://emplois-vaud.ch/job/responsable-publicit%C3%A9-et-communication-digitale/3251587862",
+      "https://emplois-vaud.ch/job/web-designer-fixed-term-contract-6-months/324f336462",
+      "https://emplois-vaud.ch/job/product-designer-trading-8-months-contract/324e4e464d",
+      "https://jobs.tdh.org/jobs/7980262-charge-e-de-communication-creation-de-contenu",
+      "https://ch.linkedin.com/jobs/view/responsable-communication-at-etat-de-vaud-4308719732",
+      "https://ch.linkedin.com/jobs/view/marketing-digital-communications-lead-80%25-100%25-at-swissvet-group-4372250006"
     ],
     "linkedin": [
       "https://ch.linkedin.com/jobs/view/pr-influence-coordinator-at-audemars-piguet-4457966465",
@@ -123,6 +133,17 @@
     {"brief": 2, "date": "2026-08-29", "score": "radar", "titre": "Projektmanager·in Kommunikation (CDD 9 mois)", "entreprise": "QoQa", "note": "CDD < 12 mois + annonce DE ; employeur prioritaire", "lien": "https://qoqa.jobs/emplois/communication-fr/83-projektmanager%C2%B7in-kommunikation-%C2%96-100-befristet-auf-9-monate-fr/"},
     {"brief": 3, "date": "2026-08-30", "score": "solide", "titre": "Communications Manager / Deputy Head of Communications & Events (60-80%)", "entreprise": "EPFL / Swiss Data Science Center", "note": "taux plafonné 80% ; probable remplacement (titulaire en poste depuis 04.2026 partie)", "lien": "https://www.jobup.ch/en/jobs/detail/17dd0bdb-8cc9-41e1-ad82-47f87e374e27/"},
     {"brief": 3, "date": "2026-08-30", "score": "solide", "titre": "Marketing Operations & Go-to-Market Analyst", "entreprise": "Salt Mobile", "note": "taux/contrat non vérifiés ; fraîcheur ~1 jour (talent.com)", "lien": "https://www.jobup.ch/en/jobs/detail/c535e1bb-05a9-4744-9bd5-0005b589609e/"},
-    {"brief": 3, "date": "2026-08-30", "score": "solide", "titre": "Responsable communication et recherche de fonds (80%)", "entreprise": "Fondation Eben-Hézer", "note": "CDI, entrée 01.09.2026 ou à convenir ; lien direct employeur (Teamtailor)", "lien": "https://recrutement.eben-hezer.ch/jobs/7602918-responsable-communication-et-recherche-de-fonds"}
+    {"brief": 3, "date": "2026-08-30", "score": "solide", "titre": "Responsable communication et recherche de fonds (80%)", "entreprise": "Fondation Eben-Hézer", "note": "CDI, entrée 01.09.2026 ou à convenir ; lien direct employeur (Teamtailor)", "lien": "https://recrutement.eben-hezer.ch/jobs/7602918-responsable-communication-et-recherche-de-fonds"},
+    {"brief": 4, "date": "2026-08-31", "score": "prioritaire", "titre": "⚡ AI Designer — Creative and Design AI Lab", "entreprise": "Logitech", "note": "premier scope Claude/IA : GenAI appliquée au design + agentic frameworks demandés ; lien Jobvite direct", "lien": "https://jobs.jobvite.com/logitech/job/oTCtufwc"},
+    {"brief": 4, "date": "2026-08-31", "score": "prioritaire", "titre": "Marketing and Communication Manager (100%)", "entreprise": "Fondation EPFL Innovation Park", "note": "lien résolu par second regard (uuid e387231f)", "lien": "https://www.jobup.ch/en/jobs/detail/e387231f-2470-4f7a-96cd-dc482fd7e201/"},
+    {"brief": 4, "date": "2026-08-31", "score": "solide", "titre": "Head of Marketing, Communication & TV", "entreprise": "FIG", "note": "PDF descriptif = lien direct ; séniorité exacte illisible (PDF bloqué)", "lien": "https://www.gymnastics.sport/publicdir/opportunities/files/218.pdf"},
+    {"brief": 4, "date": "2026-08-31", "score": "solide", "titre": "Digital Communications & Content Manager", "entreprise": "FIG", "note": "⚠️ lien indirect (page jobs FIG, offres en PDF non indexés)", "lien": "https://www.gymnastics.sport/site/opportunities/jobs.php"},
+    {"brief": 4, "date": "2026-08-31", "score": "solide", "titre": "Senior Manager, Growth Marketing", "entreprise": "FEI", "note": "publiée 24.03.2026 — encore listée, fin de course possible", "lien": "https://emplois-vaud.ch/job/senior-manager-growth-marketing/324e776469"},
+    {"brief": 4, "date": "2026-08-31", "score": "solide", "titre": "Responsable Publicité et communication digitale (CDI 100%)", "entreprise": "BCV", "lien": "https://emplois-vaud.ch/job/responsable-publicit%C3%A9-et-communication-digitale/3251587862"},
+    {"brief": 4, "date": "2026-08-31", "score": "radar", "titre": "Communications & Media Relations Manager", "entreprise": "FIG", "note": "⚠️ lien indirect", "lien": "https://www.gymnastics.sport/site/opportunities/jobs.php"},
+    {"brief": 4, "date": "2026-08-31", "score": "radar", "titre": "Responsable communication", "entreprise": "État de Vaud", "note": "fraîcheur incertaine (ID LinkedIn 430x)", "lien": "https://ch.linkedin.com/jobs/view/responsable-communication-at-etat-de-vaud-4308719732"},
+    {"brief": 4, "date": "2026-08-31", "score": "radar", "titre": "Web Designer (CDD 6 mois)", "entreprise": "via emplois-vaud", "lien": "https://emplois-vaud.ch/job/web-designer-fixed-term-contract-6-months/324f336462"},
+    {"brief": 4, "date": "2026-08-31", "score": "radar", "titre": "Product Designer Trading (8 mois)", "entreprise": "probable Swissquote", "lien": "https://emplois-vaud.ch/job/product-designer-trading-8-months-contract/324e4e464d"},
+    {"brief": 4, "date": "2026-08-31", "score": "radar", "titre": "Créateur de Contenu H/F", "entreprise": "MVO Group Sàrl", "note": "⚠️ lien introuvable (Indeed) — à retenter", "lien": "https://ch-fr.indeed.com/q-content-creator-emplois.html"}
   ]
 }
