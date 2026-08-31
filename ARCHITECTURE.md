@@ -5,6 +5,12 @@ Routine cloud claude.ai « Veille Emploi Lausanne — brief 10h » (cron 0 8 * *
 modèle claude-fable-5, repo TanguyOvernight/overnight-design-system branche
 claude/veille-emploi-lausanne, connecteur Slack attaché.
 
+RÈGLES DU 30.08 (consignes Tanguy) : ⛔ lien direct obligatoire par offre (résolution
+active, « ⚠️ lien indirect » en exception rare) · périmètre P1 élargi jusqu'à Morges
+(transports en commun) · state/ouvertes.json = suivi des 🎯 passées + ✅ likées + ✉️,
+re-checkées à chaque run (fermées → « ❌ fermée » dans le brief) · brief détaillé
+(🎯 avec 📝 Détails de l'annonce, ✅ sur 2 lignes) · section 📌 TOUJOURS OUVERTES.
+
 GARDE DE CONFIDENTIALITÉ (0bis, depuis le 29.08) : tant que le repo est PUBLIC,
 feedback.md, candidatures.md et lettres/ vivent sur le Drive privé « Veille Emploi
 Lausanne (privé) » (dossier 1WOb5lQ2MV96C5sq4TI85r_4NOM5d6KIx — aussi : serpapi-key.txt,

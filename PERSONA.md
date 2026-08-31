@@ -58,11 +58,14 @@ Lead · Marketing Automation / AI Marketing · Product Marketing Manager · Comm
 Pure performance SEA/PPC sans dimension créative · postes commerciaux déguisés ·
 exécution graphique junior · stages/apprentissages · < 80 %.
 
-## Périmètre géographique (« Lausanne même »)
-- P1 : Lausanne ville + couronne immédiate contiguë (Renens, Prilly, Ecublens/EPFL,
-  Pully, Crissier, Epalinges) — score plein.
-- P2 : arc lémanique vaudois (Morges, Nyon, Vevey, Montreux, Yverdon, vallée de Joux…)
-  — rétrogradé d'un niveau : une offre 🎯 sur le fond y devient ✅, une ✅ devient 👀.
+## Périmètre géographique — ÉLARGI le 30.08 (consigne Tanguy : « alentours en
+## transports en commun jusqu'à Morges incluse »)
+- P1 (score plein) : Lausanne ET toute commune accessible en transports en commun
+  jusqu'à Morges incluse — Renens, Prilly, Ecublens/EPFL, Chavannes, Saint-Sulpice,
+  Bussigny, Crissier, Pully, Lutry, Epalinges, Le Mont, Romanel, Cheseaux, Préverenges,
+  Denges, Echandens, Morges, Tolochenaz.
+- P2 (-1 niveau) : au-delà — Saint-Prex, Rolle, Nyon, Vevey, Montreux, Yverdon,
+  vallée de Joux…
 - Genève : 👀 Radar au mieux, seulement si exceptionnelle.
 - Full remote suisse = traité comme P1.
 

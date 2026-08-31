@@ -4,14 +4,23 @@
 > pourquoi elles matchent. Tout le reste est secondaire.
 
 ## Règles
-1. Le lien direct est posé sur le titre de l'offre — un tap sur mobile ouvre l'annonce.
-   Jamais d'offre sans lien.
+1. ⛔ RÈGLE DU LIEN DIRECT (Tanguy, 30.08 — non négociable) : chaque titre porte l'URL
+   de SA page détail (uuid jobup/jobs.ch, /jobs/view/ LinkedIn, page ATS de l'offre),
+   JAMAIS une page de recherche/listing/employeur. Lien large → le RÉSOUDRE avant le
+   brief ; échec → mention explicite « ⚠️ lien indirect (page {employeur/listing}) »,
+   exception rare. Un tap sur mobile doit ouvrir l'annonce.
 2. Ordre fixe des métadonnées : Entreprise · Lieu · Taux · Type de contrat · fraîcheur.
    Le taux est affiché dès qu'il est connu.
-3. Trois niveaux, quotas (élargis le 28.08 — philosophie « postuler à un maximum ») :
-   🎯 PRIORITÉ max 3 (deux lignes d'analyse : « → Pourquoi toi » et « → Angle ») ·
-   ✅ SOLIDES max 8 (une ligne) · 👀 RADAR max 8 (zéro analyse). Débordement → excédent
-   en 👀 une ligne, RIEN n'est supprimé.
+3. Trois niveaux, quotas (élargis le 28.08), FORMAT DÉTAILLÉ (demande du 30.08) :
+   🎯 PRIORITÉ max 3 : métadonnées + « → Pourquoi toi » + « → Angle » + « 📝 Détails »
+   2-3 lignes tirées de l'ANNONCE (missions clés, profil demandé, salaire si affiché,
+   deadline si connue) · ✅ SOLIDES max 8 : 2 lignes (contexte + exigence/détail clé de
+   l'annonce) · 👀 RADAR max 8 : 1 ligne. Débordement → excédent en 👀, RIEN supprimé.
+3quater. SECTION 📌 TOUJOURS OUVERTES (après le RADAR, exigence du 30.08) : une ligne
+   par offre de state/ouvertes.json (🎯 passées + ✅ likées + ✉️, tant que ni déclinées
+   ni pourvues) — titre lié · entreprise · « en ligne depuis N j » ; ❌ fermées du jour
+   en fin de section ; cap 10 lignes (au-delà : les mieux scorées + le dire). Cette
+   section paraît même les jours creux. Ce n'est PAS un re-signalement : c'est le suivi.
 3bis. Offre premier scope Claude/IA : marqueur ⚡ devant le titre + « Pourquoi toi »
    nommant l'atout Claude (bâtisseur, pas simple utilisateur). Mention explicite
    Claude/Anthropic → 🎯 d'office si critères durs OK.
