@@ -155,7 +155,70 @@ surveillance devient une attente indéfinie déguisée en discipline.
 | C006 | 27/07 | Juge | Plan du mois | Le cœur WPEA est le meilleur usage de l'euro de juillet | ~~75-80 %~~ | 🚫 **NON SCORABLE — retiré du dénominateur le 15/08.** Double défaut : fourchette au lieu d'un point, **et** condition de résolution **subjective et rétrospective** (« le cœur était-il le bon choix ? » est une question que je me poserais à moi-même, dont je choisirais la réponse). Un appel que je peux plaider ne mesure rien. **Pas de remplaçant** : la proposition n'est pas reformulable en test objectif | 🚫 |
 | C007 | 27/07 | Juge | STM | STMPA touche ≤ 45 € en clôture (le déclencheur d'achat surveillance approche) | 35 % | Cours de clôture Paris avant le 31/01/2027 | ⏳ |
 | C008 | 27/07 | Juge | Nike | Nike publie ≥ 1 trimestre de croissance Direct/Digital POSITIVE (stabilisation ≠ couteau) | 38 % | Communiqués Nike sur ses 2 prochains rapports, avant le 30/04/2027 | ⏳ |
-| C009 | 27/07 | Juge | Allocation juillet | L'euro de juillet est déployé sur WPEA (pas STM/Nike/or) une fois le canal débloqué | 80 % | Ordre WPEA exécuté au plus tard le 31/08/2026 | ⏳ |
+| C009 | 27/07 | Juge | Allocation juillet | L'euro de juillet est déployé sur WPEA (pas STM/Nike/or) une fois le canal débloqué | 80 % | Ordre WPEA exécuté au plus tard le 31/08/2026 | ❌ **RÉSOLU FAUX le 31/08 — Brier 0,6400, PIRE score du registre.** *Voir l'encadré ci-dessous* |
+
+### ⚰️ Résolution de C009 — 31/08/2026
+
+**Le PEA n'est pas ouvert. Aucun ordre n'a pu être passé.**
+
+**Scrupule de procédure, tranché explicitement** : *la butée n'a pas
+techniquement expiré (nous sommes le 31).* **Mais l'issue n'est pas
+déterminée par l'écoulement des heures — elle l'est par l'absence du
+PRÉREQUIS.** *Un ordre sur PEA exige un PEA ; ouvrir un plan et exécuter le
+même jour n'est pas réalisable.* 🔓 *Si le plan s'avérait ouvert et l'ordre
+passé d'ici ce soir, la résolution serait rouverte — dit avant de scorer, pas
+après.*
+
+| | |
+|---|---|
+| **Brier** | **0,6400** *(pire du registre ; précédent 0,5184)* |
+| **Moyenne** | 0,2956 → **0,3269** |
+| **BSS** | −0,182 → **−0,308** |
+| Poids | **18 % du total des pertes**, à lui seul |
+
+*Ce seul appel efface plus du double du gain cumulé de C047 et C045 (0,1620
+sous le seuil, contre 0,3900 au-dessus).*
+
+### 🔒 CLASSE-ACTION NON APPLIQUÉE — délibérément
+
+**La catégorie CLASSE-ACTION** *(appel dont la résolution dépend d'un acte
+volontaire d'un tiers, scoré séparément)* **a été instaurée le 28/08 — trois
+jours avant cette résolution — et explicitement réservée aux appels À VENIR.**
+
+> ✅ **C009 est scoré dans le registre PRINCIPAL, sans aménagement.**
+>
+> *La tentation était réelle et le raisonnement présentable : « cet appel ne
+> mesurait pas ma lecture des marchés ».* **Mais reclasser après coup un appel
+> qu'on voit perdre est indistinguable d'une rationalisation.** *Une règle qui
+> ne coûte jamais rien n'est pas une règle — et c'est le jour où elle coûte
+> qu'elle vaut quelque chose.*
+
+### 🔴 Effet sur le diagnostic de discrimination du 29/08
+
+| | Avant C009 | **Après** |
+|---|---|---|
+| P moyenne sur les **VRAIS** *(6)* | 42 % | **42 %** |
+| P moyenne sur les **FAUX** *(5)* | 42 % | **50 %** |
+| **ÉCART DISCRIMINANT** | +0,1 pt | 🔴 **−7,5 pts** |
+
+> ☠️ **L'écart devient NÉGATIF : mes probabilités sont légèrement plus hautes
+> sur ce qui NE se produit PAS.** *Un écart nul dit « mes nombres n'informent
+> pas » ; un écart négatif dit « mes nombres informent à l'envers ».*
+
+⚠️ **Ce que je n'en conclus PAS** : *un seul appel — le seul du registre dont
+l'issue dépendait d'un acte administratif — a produit ce basculement. Le
+retirer rendrait l'écart à +0,1, c'est-à-dire nul, pas bon.* **Le diagnostic
+de fond est inchangé : mes probabilités ne discriminent pas, avant comme
+après.**
+
+> 🔑 **Ce que C009 démontre en réalité, c'est la FRAGILITÉ de la mesure** : *à
+> n = 11, un unique appel atypique déplace l'écart de 7,6 points.* **Une
+> statistique qu'un seul point fait changer de signe n'est pas une
+> statistique.** *Cela milite pour la règle déjà écrite : **aucune correction
+> avant n = 20**.*
+
+✅ **Le test pré-enregistré du 29/08 reste intact** — il se juge sur les **10
+prochaines** résolutions, pas sur celle-ci.
 | C010 | 27/07 | Avocat | IBA (RÉFUTÉ) | La thèse « actif caché PanTera » est morte : pas d'accord ferme ≥ 800 M€ d'ici fin 2027 **ET/OU** EBIT 2026 sous guidance (32 M€) — ⚠️ **« ET/OU » se résout comme un OU INCLUSIF** *(convention déclarée le 22/08, avant tout fait connu)* | 75 % (= 1−25 % de la thèse) | Fin 2027 : deal PanTera ferme ≥ 800 M€ ? EBIT 2026 vs guidance ? (deal ferme → l'Avocat avait tort) | ⏳ |
 | C011 | 27/07 | Avocat | Séché | Le couple redressement + PFAS-boues se valide : EBE 2026 ≥ 260 M€ publié SANS 3e warning ET arrêté boues applicable 01/01/2027 avec seuils ≤ 40/400 µg/kg | 40 % | Publication FY2026 (mars 2027) ; jalons : S1 sept. 2026, arrêté été 2026 | ⏳ |
 | C012 | 27/07 | Juge | Séché | Le S1 2026 déclenche l'achat (EBE S1 ≥ 125 M€ ET France organique ≥ 0 % ET guidance 275-285 M€ confirmée) | 38 % (brute 35 %) | Communiqué S1, au plus tard le 30/09/2026 | ⏳ |
