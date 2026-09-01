@@ -1798,7 +1798,49 @@ est ici négligeable.
 
 | ID | Classe de référence | Affirmation | P brute | **P inscrite** | Résolution |
 |---|---|---|---|---|---|
-| **C048** | semi-EU · < 1 mois · PEA | **La déclaration MAR de ST pour la semaine 24-28/08/2026 fait apparaître un VWAP hebdomadaire ≤ 44,4019 €** *(le régime de prix tient ou baisse ; il ne rebondit pas au-dessus de la semaine précédente)* | 65 % | **62 %** | Déclaration publiée **au plus tard le 04/09/2026**. ⚠️ **Si elle ne paraît pas, l'appel MEURT — il ne se devine pas** |
+| **C048** | semi-EU · < 1 mois · PEA | **La déclaration MAR de ST pour la semaine 24-28/08/2026 fait apparaître un VWAP hebdomadaire ≤ 44,4019 €** | 65 % | **62 %** | ✅ **RÉSOLU VRAI le 01/09** — VWAP **42,6526 €**, marge 3,9 %. **Brier 0,1444** |
+
+### ✅ Résolution de C048 — 01/09/2026
+
+**Déclaration publiée le 31/08** *(6-K SEC + GlobeNewswire)*, couvrant le
+**24-25/08** *(deux séances : ST a cessé d'acheter les 26, 27 et 28)*.
+
+| Champ | Valeur |
+|---|---|
+| Actions | **128 904** · VWAP **42,6526 €** · Montant **5 498 096,53 €** |
+| Autodétention après | **19 353 812** |
+| **Départ impliqué** | `19 353 812 − 128 904 =` **19 224 908** = mon ancrage, **écart 0** ✅ |
+
+**Trois contrôles indépendants se referment** : ① la chaîne d'autodétention
+*(le nombre sur-déterminé par une contrainte externe — le seul qui vaille
+preuve)* ; ② le triplet agrégé *(écart 5,78 € sur 5,5 M€, arrondi du VWAP)* ;
+③ **la ventilation journalière, EXACTE AU CENTIME** : `90 607 × 42,6470 +
+38 297 × 42,6660 = 5 498 096,53 €`.
+
+**Effet** : moyenne 0,3269 → **0,3117** *(n = 12)* · BSS −0,308 → **−0,247**.
+
+### 🧪 PREMIÈRE MESURE DU REGISTRE FANTÔME
+
+| | P | Brier |
+|---|---|---|
+| **Officielle** | 62 % | **0,1444** |
+| **Fantôme** *(P + 18)* | 80 % | **0,0400** |
+| | | **avantage fantôme : −0,1044** |
+
+> **Premier point : le fantôme fait mieux** — cohérent avec le diagnostic de
+> sous-confiance du 29/08.
+>
+> ⚠️ **UN point ne prouve rien, et je m'interdis d'en tirer quoi que ce soit.**
+> *Le dispositif a été construit pour être jugé à **n = 20**, précisément pour
+> que je ne puisse pas me convaincre au premier résultat favorable.*
+> **Un test qu'on interprète dès qu'il va dans le sens espéré n'est plus un
+> test.**
+
+⚠️ **Anomalie ouverte, non résolue** : *ST a cessé d'acheter les 26-28/08,
+trois séances ouvrées, sans qu'aucun document daté ne l'explique.* **Verdict :
+INDISCERNABLE** — noté comme anomalie, pas comme signal, et surtout pas comme
+signal négatif *(la lecture facile)*. **Contrôle daté : la déclaration du
+31/08→04/09, attendue le 07/09.**
 | **C049** | semi-EU · < 3 mois · PEA | **STMPA clôture ≤ 42,00 € sur Euronext Paris au moins une fois avant le 31/10/2026** *(la branche PRIX du contrat se présente, indépendamment des deux autres)* | 78 % | **72 %** | Clôtures Euronext Paris · butée **31/10/2026** |
 
 ### Construction tracée de C048
