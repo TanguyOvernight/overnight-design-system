@@ -1,7 +1,23 @@
 # Références 3D — Overnight Studio
 
+Pour les visuels du site, utiliser en priorité les [28 prompts de Tanguy](../exports-gpt-image/PROMPTS-SITE-OVERNIGHT.md).
+Les fichiers produits sont à ranger dans [exports-gpt-image](../exports-gpt-image/README.md).
+
+
 Collection de références pour diriger les images de présentation de personnages, accessoires,
 véhicules et environnements d'Overnight Studio.
+
+## Prêt pour la prochaine image
+
+**Donner un sujet, un mode et une contrainte suffit pour démarrer.**
+
+- [Démarrage rapide](DEMARRAGE-RAPIDE.md) : brief court et préparation des images d’entrée.
+- [Cinq prompts prêts à utiliser](PROMPTS-PRETS.md) : objet, mech, personnage, véhicule, environnement.
+- [PROMPTS.json](PROMPTS.json) : mêmes prompts et références exactes, avec leurs rôles et empreintes.
+
+Les références nécessaires à ces modèles sont accessibles individuellement. Les archives
+complètes restent disponibles pour approfondir un projet. Ces modèles n’ont pas encore été
+validés par génération.
 
 ## Contenu
 
