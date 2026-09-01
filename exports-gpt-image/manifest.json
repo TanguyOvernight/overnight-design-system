@@ -3,7 +3,7 @@
   "source_file": "PROMPTS-SITE-OVERNIGHT.md",
   "source_sha256": "c1fb52c1a55bfa41fab23d7287c90a5f96161669a7d8cd82e8e0c859d91abd1d",
   "planned_image_count": 28,
-  "exported_image_count": 0,
+  "exported_image_count": 1,
   "global_direction": "Une image illustre un rendu : aucun texte, cote, label, flèche ou diagramme. Les légendes restent sur le site.",
   "status_meaning": {
     "pending": "Pas encore généré",
@@ -21,9 +21,22 @@
       "series": null,
       "depends_on": null,
       "identity_anchor": null,
-      "status": "pending",
+      "status": "generated",
       "filename_stem": "props/01-crates-v01",
-      "files": [],
+      "files": [
+        {
+          "path": "props/01-crates-v01.png",
+          "version": 1,
+          "format": "PNG",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 2145052,
+          "sha256": "9d4036874b95c789b920d1441ea58d1e50c86cf2d3c071ec53677b50ac7c34be",
+          "prompt_path": "props/01-crates-v01.prompt.md",
+          "generator": "built-in image_gen",
+          "status": "generated"
+        }
+      ],
       "prompt_original": "Studio beauty render of a stack of three military sci-fi supply crates, game-ready 3D asset,\nsingle shot. Olive-drab painted steel, orange latches and corner guards, paint chips on\nprotruding edges only, dust in panel recesses, one crate open showing foam inserts. 3/4 view,\ndark charcoal studio backdrop, soft key light, subtle violet rim, wide soft contact shadow.\nNo text or labels anywhere. Landscape 3:2."
     },
     {

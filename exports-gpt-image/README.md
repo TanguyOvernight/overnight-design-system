@@ -1,7 +1,9 @@
 # Exports GPT Image — Overnight Studio
 
 Dossier de récupération des visuels du site, de leurs prompts et de leurs versions.
-**28 images prévues ; 0 export généré pour le moment.**
+**28 images prévues ; 1 image générée, 27 à produire.**
+
+Premier export : [01 — Crates, version 01 — PNG 1536 × 1024](props/01-crates-v01.png) · [Prompt utilisé](props/01-crates-v01.prompt.md). En attente de validation artistique.
 
 [Prompts source](PROMPTS-SITE-OVERNIGHT.md) · [Suivi des 28 images](EXPORTS.md) · [Manifest](manifest.json)
 

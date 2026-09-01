@@ -1,6 +1,8 @@
 # Props — exports
 
-Aucune image exportée pour le moment.
+**1 / 9 images générées.**
+
+[01 — Crates, version 01 — PNG 1536 × 1024](01-crates-v01.png) · [Prompt et références](01-crates-v01.prompt.md). En attente de validation de Tanguy.
 
 [Retour au dossier](../README.md) · [Suivi global](../EXPORTS.md)
 

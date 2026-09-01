@@ -1,10 +1,10 @@
 # Suivi des exports
 
-**0 / 28 images générées.** Les chemins ci-dessous sont des noms prévus, pas des fichiers déjà produits.
+**1 / 28 images générées.** Les liens pointent vers les exports réels ; les autres chemins restent des noms prévus. La version 01 attend la validation de Tanguy.
 
 | ID | Visuel | Rubrique | Format demandé | Dépendance | État | Base du nom de fichier |
 | --- | --- | --- | --- | --- | --- | --- |
-| 01 | Crates — Props, ancre bento (paysage 3:2) | props | 3:2 | — | À générer | `props/01-crates-v01` |
+| 01 | Crates — Props, ancre bento (paysage 3:2) | props | 3:2 | — | Généré · à valider | [PNG v01](props/01-crates-v01.png) · [Prompt](props/01-crates-v01.prompt.md) |
 | 02 | Backpack — Props bento (carré) | props | 1:1 | — | À générer | `props/02-backpack-v01` |
 | 03 | Combat helmet — Props bento (carré) | props | 1:1 | — | À générer | `props/03-combat-helmet-v01` |
 | 04 | Duffel bag — Props bento (carré) | props | 1:1 | — | À générer | `props/04-duffel-bag-v01` |
