@@ -3,7 +3,7 @@
   "source_file": "PROMPTS-SITE-OVERNIGHT.md",
   "source_sha256": "c1fb52c1a55bfa41fab23d7287c90a5f96161669a7d8cd82e8e0c859d91abd1d",
   "planned_image_count": 28,
-  "exported_image_count": 1,
+  "exported_image_count": 5,
   "global_direction": "Une image illustre un rendu : aucun texte, cote, label, flèche ou diagramme. Les légendes restent sur le site.",
   "status_meaning": {
     "pending": "Pas encore généré",
@@ -49,9 +49,34 @@
       "series": null,
       "depends_on": null,
       "identity_anchor": null,
-      "status": "pending",
+      "status": "generated",
       "filename_stem": "props/02-backpack-v01",
-      "files": [],
+      "files": [
+        {
+          "path": "props/02-backpack-v01.png",
+          "version": 1,
+          "format": "PNG",
+          "width": 1254,
+          "height": 1254,
+          "bytes": 2179228,
+          "sha256": "183d45991340e0df8ce54e9ebfc45e39959ca0c29940a5f157a3816f549cbe93",
+          "prompt_path": "props/02-backpack-v01.prompt.md",
+          "generator": "built-in image_gen",
+          "status": "generated",
+          "reference_images": [
+            {
+              "path": "exports-gpt-image/props/01-crates-v01.png",
+              "role": "Éclairage studio, fond charbon, ombres et niveau de finition uniquement ; pas le sujet ni la palette.",
+              "sha256": "9d4036874b95c789b920d1441ea58d1e50c86cf2d3c071ec53677b50ac7c34be"
+            },
+            {
+              "path": "refs-3d/images/uploaded/beast-game-in-14.jpg",
+              "role": "Échelle du tissage, coutures, attaches et plis uniquement ; pas le personnage, la composition multiple ni la palette.",
+              "sha256": "4a81b35b49c6edf2c4c7ec6aaf95ddb5c9d1f7c1b565feb1d9fe0a1998d3aef1"
+            }
+          ]
+        }
+      ],
       "prompt_original": "Studio beauty render of a rugged tactical backpack, game-ready 3D asset, single shot. Waxed\nnavy canvas, brown leather straps, brass buckles, visible stitching, wear polished on strap\nedges. Upright, slight 3/4 angle, dark charcoal backdrop, soft key + violet rim, soft contact\nshadow. No text or labels. Square."
     },
     {
@@ -64,9 +89,29 @@
       "series": null,
       "depends_on": null,
       "identity_anchor": null,
-      "status": "pending",
+      "status": "generated",
       "filename_stem": "props/03-combat-helmet-v01",
-      "files": [],
+      "files": [
+        {
+          "path": "props/03-combat-helmet-v01.png",
+          "version": 1,
+          "format": "PNG",
+          "width": 1254,
+          "height": 1254,
+          "bytes": 1903253,
+          "sha256": "72478dbac388b31cb63acc32a25eee6b8aa921221036109e7dd2754588849d2c",
+          "prompt_path": "props/03-combat-helmet-v01.prompt.md",
+          "generator": "built-in image_gen",
+          "status": "generated",
+          "reference_images": [
+            {
+              "path": "exports-gpt-image/props/01-crates-v01.png",
+              "role": "Éclairage studio, fond charbon, ombres et niveau de finition uniquement ; pas le sujet ni la palette.",
+              "sha256": "9d4036874b95c789b920d1441ea58d1e50c86cf2d3c071ec53677b50ac7c34be"
+            }
+          ]
+        }
+      ],
       "prompt_original": "Studio beauty render of a matte black tactical helmet with side rails and mounted strobe,\ngame-ready 3D asset, single shot. Micro-scratches on crown and rail edges, clean webbing.\n3/4 view slightly above, dark charcoal backdrop, soft key + violet rim. No text. Square."
     },
     {
@@ -79,9 +124,34 @@
       "series": null,
       "depends_on": null,
       "identity_anchor": null,
-      "status": "pending",
+      "status": "generated",
       "filename_stem": "props/04-duffel-bag-v01",
-      "files": [],
+      "files": [
+        {
+          "path": "props/04-duffel-bag-v01.png",
+          "version": 1,
+          "format": "PNG",
+          "width": 1254,
+          "height": 1254,
+          "bytes": 1974253,
+          "sha256": "6d40adcc1cfaeba9bf26100089499e67f9a9de8fa28f23a6a65c1c0b64810cbb",
+          "prompt_path": "props/04-duffel-bag-v01.prompt.md",
+          "generator": "built-in image_gen",
+          "status": "generated",
+          "reference_images": [
+            {
+              "path": "exports-gpt-image/props/01-crates-v01.png",
+              "role": "Éclairage studio, fond charbon, ombres et niveau de finition uniquement ; pas le sujet ni la palette.",
+              "sha256": "9d4036874b95c789b920d1441ea58d1e50c86cf2d3c071ec53677b50ac7c34be"
+            },
+            {
+              "path": "refs-3d/images/uploaded/beast-game-in-14.jpg",
+              "role": "Échelle du tissage, coutures, attaches et plis uniquement ; pas le personnage, la composition multiple ni la palette.",
+              "sha256": "4a81b35b49c6edf2c4c7ec6aaf95ddb5c9d1f7c1b565feb1d9fe0a1998d3aef1"
+            }
+          ]
+        }
+      ],
       "prompt_original": "Studio beauty render of a heavy canvas duffel bag, game-ready 3D asset, single shot. Deep navy\ncanvas, chocolate leather handles, brass zipper, handle wear where hands grip, natural slouch.\n3/4 view, dark charcoal backdrop, soft key + violet rim. No text. Square."
     },
     {
@@ -94,9 +164,29 @@
       "series": null,
       "depends_on": null,
       "identity_anchor": null,
-      "status": "pending",
+      "status": "generated",
       "filename_stem": "props/05-suitcase-v01",
-      "files": [],
+      "files": [
+        {
+          "path": "props/05-suitcase-v01.png",
+          "version": 1,
+          "format": "PNG",
+          "width": 1254,
+          "height": 1254,
+          "bytes": 1861997,
+          "sha256": "9f3ef8741dabb38ce56bf783ef74f961d9dc90c23da52ed24cb66af5eb0a5b47",
+          "prompt_path": "props/05-suitcase-v01.prompt.md",
+          "generator": "built-in image_gen",
+          "status": "generated",
+          "reference_images": [
+            {
+              "path": "exports-gpt-image/props/01-crates-v01.png",
+              "role": "Éclairage studio, fond charbon, ombres et niveau de finition uniquement ; pas le sujet ni la palette.",
+              "sha256": "9d4036874b95c789b920d1441ea58d1e50c86cf2d3c071ec53677b50ac7c34be"
+            }
+          ]
+        }
+      ],
       "prompt_original": "Studio beauty render of a hard-shell aluminum suitcase, game-ready 3D asset, single shot.\nRibbed brushed aluminum, navy accents, worn corner bumpers, half-peeled sticker residue on one\nface. Standing 3/4 view, dark charcoal backdrop, soft key + violet rim. No readable text. Square."
     },
     {

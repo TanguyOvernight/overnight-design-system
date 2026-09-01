@@ -1,9 +1,9 @@
 # Exports GPT Image — Overnight Studio
 
 Dossier de récupération des visuels du site, de leurs prompts et de leurs versions.
-**28 images prévues ; 1 image générée, 27 à produire.**
+**28 images prévues ; 5 images générées, 23 à produire.**
 
-Premier export : [01 — Crates, version 01 — PNG 1536 × 1024](props/01-crates-v01.png) · [Prompt utilisé](props/01-crates-v01.prompt.md). En attente de validation artistique.
+Le bento Props est généré : [caisses](props/01-crates-v01.png), [sac à dos](props/02-backpack-v01.png), [casque](props/03-combat-helmet-v01.png), [sac de voyage](props/04-duffel-bag-v01.png), [valise](props/05-suitcase-v01.png). Tous les fichiers sont en version 01 et attendent la validation artistique. Les prompts réels accompagnent les PNG.
 
 [Prompts source](PROMPTS-SITE-OVERNIGHT.md) · [Suivi des 28 images](EXPORTS.md) · [Manifest](manifest.json)
 

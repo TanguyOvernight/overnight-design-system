@@ -1,14 +1,14 @@
 # Suivi des exports
 
-**1 / 28 images générées.** Les liens pointent vers les exports réels ; les autres chemins restent des noms prévus. La version 01 attend la validation de Tanguy.
+**5 / 28 images générées.** Les liens pointent vers les exports réels ; les autres chemins restent des noms prévus. Les cinq versions 01 attendent la validation de Tanguy.
 
 | ID | Visuel | Rubrique | Format demandé | Dépendance | État | Base du nom de fichier |
 | --- | --- | --- | --- | --- | --- | --- |
 | 01 | Crates — Props, ancre bento (paysage 3:2) | props | 3:2 | — | Généré · à valider | [PNG v01](props/01-crates-v01.png) · [Prompt](props/01-crates-v01.prompt.md) |
-| 02 | Backpack — Props bento (carré) | props | 1:1 | — | À générer | `props/02-backpack-v01` |
-| 03 | Combat helmet — Props bento (carré) | props | 1:1 | — | À générer | `props/03-combat-helmet-v01` |
-| 04 | Duffel bag — Props bento (carré) | props | 1:1 | — | À générer | `props/04-duffel-bag-v01` |
-| 05 | Suitcase — Props bento (carré) | props | 1:1 | — | À générer | `props/05-suitcase-v01` |
+| 02 | Backpack — Props bento (carré) | props | 1:1 | — | Généré · à valider | [PNG v01](props/02-backpack-v01.png) · [Prompt](props/02-backpack-v01.prompt.md) |
+| 03 | Combat helmet — Props bento (carré) | props | 1:1 | — | Généré · à valider | [PNG v01](props/03-combat-helmet-v01.png) · [Prompt](props/03-combat-helmet-v01.prompt.md) |
+| 04 | Duffel bag — Props bento (carré) | props | 1:1 | — | Généré · à valider | [PNG v01](props/04-duffel-bag-v01.png) · [Prompt](props/04-duffel-bag-v01.prompt.md) |
+| 05 | Suitcase — Props bento (carré) | props | 1:1 | — | Généré · à valider | [PNG v01](props/05-suitcase-v01.png) · [Prompt](props/05-suitcase-v01.prompt.md) |
 | 06 | Utility van — Vehicles bento (paysage 16:11) | vehicles | 16:11 | — | À générer | `vehicles/06-utility-van-v01` |
 | 07 | Heavy tanker truck — Vehicles bento + split (paysage 16:11) | vehicles | 16:11 | — | À générer | `vehicles/07-tanker-truck-v01` |
 | 08 | Bar interior — Environments split + ancre bento (paysage 16:10) | environments | 16:10 | — | À générer | `environments/08-bar-interior-v01` |
