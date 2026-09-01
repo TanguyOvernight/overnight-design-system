@@ -5,18 +5,54 @@ véhicules et environnements d'Overnight Studio.
 
 ## Contenu
 
-- [`CONTEXTE-IMAGES-OVERNIGHT.md`](CONTEXTE-IMAGES-OVERNIGHT.md) : brief fourni par Tanguy,
-  conservé intégralement.
-- [`images/uploaded/`](images/uploaded/) : les **10 images originales** du ZIP `Ref 3D Image.zip`,
-  sans recompression ni recadrage.
-- [`ARTSTATION.md`](ARTSTATION.md) : les **20 projets ArtStation** transmis dans la conversation,
-  avec leur statut de récupération.
-- [`LECTURE-VISUELLE.md`](LECTURE-VISUELLE.md) : observations et décisions réutilisables pour
-  préparer les prochains rendus.
-- [`manifest.json`](manifest.json) : provenance, dimensions, poids et empreintes des fichiers.
+**445 images conservées** : 10 fichiers déjà présents, plus 435 images dans des ZIP numérotés.
+Les deux nouvelles archives couvrent **62 projets**. Deux fichiers de la première archive
+sont aussi présents à l’identique dans `originaux.zip` ; le manifest distingue chemins et contenus.
 
-Les vingt liens ArtStation sont enregistrés, mais leurs images n'ont pas été téléchargées.
-Les images du ZIP ne sont pas automatiquement assimilées à celles de ces projets.
+- [`CONTEXTE-IMAGES-OVERNIGHT.md`](CONTEXTE-IMAGES-OVERNIGHT.md) : brief de Tanguy, intégral.
+- [`images/uploaded/`](images/uploaded/) : 10 fichiers de `Ref 3D Image.zip`.
+- [`ARTSTATION.md`](ARTSTATION.md) : 20 liens d’origine, dont **19 avec 196 images**.
+- [`SIMILAIRES.md`](SIMILAIRES.md) : **43 projets et 239 images** supplémentaires.
+- [`LECTURE-VISUELLE.md`](LECTURE-VISUELLE.md) : choix de caméra, lumière, matières,
+  personnages et formats, avec exemples précis.
+- [`manifest.json`](manifest.json) : provenance, dimensions, poids, empreintes et niveau de lecture.
+
+Les archives numérotées contiennent les images originales sans modification de leurs octets.
+Les planches d’aperçu sont des copies réduites destinées à la consultation. Les images ArtStation
+ont été fournies par ZIP. **JwedwA reste la seule référence initiale sans images** ; `JwemvA`
+est un autre projet. Les deux ne sont pas assimilés.
+
+## Consulter et extraire
+
+- [Catalogue PDF des planches](APERCUS.pdf) : 19 projets d’origine, 8 planches complémentaires et
+  6 projets complémentaires détaillés.
+- [Collection originaux](ARCHIVES.md#originaux) : 196 images de 19 projets.
+- [Collection similaires](ARCHIVES.md#similaires) : 239 images de 43 projets.
+
+Chaque collection est répartie en ZIP autonomes qui conservent les projets entiers.
+Les ZIP dépassent la taille d’aperçu de nombreux lecteurs : utiliser **Download raw file**
+sur GitHub, ou cloner la branche. Pour travailler avec Codex dans le dépôt :
+
+```bash
+python refs-3d/extract_references.py
+```
+
+Cette commande vérifie les empreintes et prépare `refs-3d/images/artstation/` et
+`refs-3d/images/similaires/`. Elle ne remplace pas un fichier local différent. Les fichiers
+extraits sont ignorés par Git : les ZIP restent les sources enregistrées. Les chemins `path`
+du manifest désignent les fichiers après extraction. Les liens du guide ouvrent les aperçus.
+
+## Sélection de départ selon le besoin
+
+| Besoin | Références à ouvrir |
+| --- | --- |
+| Présentation complète d’un objet | [Mailbox Diorama](APERCUS.pdf#page=20), [Console](APERCUS.pdf#page=29) |
+| Personnage, vêtements et matériaux | [Bird and Fish](APERCUS.pdf#page=3), [The Exorcist](APERCUS.pdf#page=33) |
+| Personnage mécanique et gros plans | [Xan](APERCUS.pdf#page=2), [Solar Express](APERCUS.pdf#page=10) |
+| Véhicule studio puis en contexte | [Nissan Taxi](APERCUS.pdf#page=11), [Thunderbolt](APERCUS.pdf#page=13) |
+| Architecture et modules | [Last Call](APERCUS.pdf#page=16), [Clesseia](APERCUS.pdf#page=17) |
+| Composition d’environnement | [Old Bones](APERCUS.pdf#page=32), [Sacred Tower](APERCUS.pdf#page=30) |
+| Accessoire stylisé | [Cottage teapot oven](APERCUS.pdf#page=19), [Desert Treasures](APERCUS.pdf#page=18) |
 
 ## Index des images fournies
 
@@ -43,7 +79,7 @@ Les images du ZIP ne sont pas automatiquement assimilées à celles de ces proje
    réaliste PBR à légèrement stylisé.
 4. Vérifier le rendu par rapport aux références sélectionnées et corriger les écarts ciblés.
 
-Les observations de cet index proviennent des images effectivement examinées.
+Les observations proviennent des images effectivement parcourues ; le manifest précise la portée de cette lecture pour chaque projet.
 Les noms de fichiers originaux ont été conservés pour préserver les indications de provenance.
 Les identités des auteurs et les licences n'ont pas été vérifiées séparément pour les fichiers
 du ZIP. Cette collection est une base d'étude, pas un portfolio de créations d'Overnight Studio.
