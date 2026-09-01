@@ -4,11 +4,15 @@
 > pourquoi elles matchent. Tout le reste est secondaire.
 
 ## Règles
-1. ⛔ RÈGLE DU LIEN DIRECT (Tanguy, 30.08 — non négociable) : chaque titre porte l'URL
-   de SA page détail (uuid jobup/jobs.ch, /jobs/view/ LinkedIn, page ATS de l'offre),
-   JAMAIS une page de recherche/listing/employeur. Lien large → le RÉSOUDRE avant le
-   brief ; échec → mention explicite « ⚠️ lien indirect (page {employeur/listing}) »,
-   exception rare. Un tap sur mobile doit ouvrir l'annonce.
+1. ⛔ RÈGLE DU LIEN DIRECT + EXISTENCE (30.08, DURCIE le 31.08 après l'incident
+   Logitech) : chaque titre porte l'URL de SA page détail, JAMAIS une page de
+   recherche/listing/employeur ; lien large → le RÉSOUDRE avant le brief (échec →
+   « ⚠️ lien indirect », exception rare). EN PLUS : employeur du registre
+   companies.json → l'offre doit être CONFIRMÉE sur son ATS officiel avant
+   publication (absente = périmée → pas publiée, journalisée ; ATS abandonnés =
+   morts par défaut, cf. TECHNIQUE.md). En mode dégradé, une offre invérifiable ne
+   monte JAMAIS au-dessus de 👀 — mention « ⚠️ non vérifiée — possiblement
+   périmée » — surtout une ⚡ séduisante.
 2. Ordre fixe des métadonnées : Entreprise · Lieu · Taux · Type de contrat · fraîcheur.
    Le taux est affiché dès qu'il est connu.
 3. Trois niveaux, quotas (élargis le 28.08), FORMAT DÉTAILLÉ (demande du 30.08) :

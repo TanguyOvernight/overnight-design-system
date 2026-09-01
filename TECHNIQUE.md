@@ -48,6 +48,20 @@
 | Teamtailor | {site}/jobs.json à confirmer | |
 | Ashby | GET api.ashbyhq.com/posting-api/job-board/{org} | |
 
+## PIÈGE MAJEUR — ATS abandonnés (incident Logitech du 31.08)
+L'index WebSearch ressort des annonces d'ATS que l'employeur a QUITTÉS (ex. Logitech :
+jobs.jobvite.com = ancien ATS, mort par défaut ; l'officiel est
+logitech.wd5.myworkdayjobs.com). L'offre « AI Designer — Creative and Design AI Lab »
+a été publiée en 🎯⚡ au brief n°4 avec un lien Jobvite mort — vérifiée absente des 66
+résultats « AI Designer » et des 6 postes Lausanne du Workday officiel. RÈGLE ⛔ durcie :
+1. Employeur présent dans companies.json → toute offre trouvée AILLEURS doit être
+   confirmée sur l'ATS officiel du registre AVANT publication ; absente = périmée,
+   on ne publie pas (journal).
+2. En mode dégradé, une offre ni ouvrable ni confirmée par une source structurée
+   (API ATS du registre, feed, JSON-LD, index primaire daté) ne monte JAMAIS au-dessus
+   de 👀 — mention « ⚠️ non vérifiée — possiblement périmée ». Surtout pour une ⚡.
+3. Domaines d'ATS abandonnés connus : jobs.jobvite.com (Logitech).
+
 ## Règles transverses
 1. Clé primaire de dédup = id/URL, JAMAIS la date (formats hétérogènes).
 2. Dédup inter-sources par hash (titre normalisé, entreprise).

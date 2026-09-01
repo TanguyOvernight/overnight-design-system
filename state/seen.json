@@ -1,7 +1,7 @@
 {
   "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
-  "maj": "2026-08-31",
-  "dernier_brief": 4,
+  "maj": "2026-09-01",
+  "dernier_brief": 5,
   "vus": {
     "jobup": [
       "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -144,6 +144,12 @@
     {"brief": 4, "date": "2026-08-31", "score": "radar", "titre": "Responsable communication", "entreprise": "État de Vaud", "note": "fraîcheur incertaine (ID LinkedIn 430x)", "lien": "https://ch.linkedin.com/jobs/view/responsable-communication-at-etat-de-vaud-4308719732"},
     {"brief": 4, "date": "2026-08-31", "score": "radar", "titre": "Web Designer (CDD 6 mois)", "entreprise": "via emplois-vaud", "lien": "https://emplois-vaud.ch/job/web-designer-fixed-term-contract-6-months/324f336462"},
     {"brief": 4, "date": "2026-08-31", "score": "radar", "titre": "Product Designer Trading (8 mois)", "entreprise": "probable Swissquote", "lien": "https://emplois-vaud.ch/job/product-designer-trading-8-months-contract/324e4e464d"},
-    {"brief": 4, "date": "2026-08-31", "score": "radar", "titre": "Créateur de Contenu H/F", "entreprise": "MVO Group Sàrl", "note": "⚠️ lien introuvable (Indeed) — à retenter", "lien": "https://ch-fr.indeed.com/q-content-creator-emplois.html"}
+    {"brief": 4, "date": "2026-08-31", "score": "radar", "titre": "Créateur de Contenu H/F", "entreprise": "MVO Group Sàrl", "note": "⚠️ lien introuvable (Indeed) — à retenter", "lien": "https://ch-fr.indeed.com/q-content-creator-emplois.html"},
+    {"brief": 5, "date": "2026-09-01", "score": "PERIMEE-CORRIGEE", "titre": "⚡ AI Designer — Creative and Design AI Lab", "entreprise": "Logitech", "note": "CORRECTIF : périmée (ancien ATS Jobvite, lien mort) — vérifiée absente du Workday officiel par Tanguy le 31.08 ; retirée de 📌 ; à ne JAMAIS re-signaler", "lien": "https://jobs.jobvite.com/logitech/job/oTCtufwc"},
+    {"brief": 5, "date": "2026-09-01", "score": "solide", "titre": "PWS Global Marketing Manager", "entreprise": "Logitech", "note": "lien Workday officiel vérifié par Tanguy ; ~20 j ; stratégie DTC/data, peu de DA", "lien": "https://logitech.wd5.myworkdayjobs.com/en-US/Logitech/job/Lausanne-Switzerland/PWS-Global-Marketing-Manager_147736"},
+    {"brief": 5, "date": "2026-09-01", "score": "radar", "titre": "Head of Brand & Marketing, Logitech PWS", "entreprise": "Logitech", "note": "⚠️ non vérifiée (index seulement, Workday _141978) — règle durcie appliquée ; à vérifier en priorité", "lien": "https://logitech.wd5.myworkdayjobs.com/Logitech/job/Lausanne-Switzerland/Head-of-Brand---Marketing--Logitech-Personal-Workspace-Solutions--PWS-_141978/apply"},
+    {"brief": 5, "date": "2026-09-01", "score": "radar", "titre": "Senior Hardware Product UX Designer", "entreprise": "Logitech", "note": "UX hardware — adjacent ; lien officiel vérifié par Tanguy", "lien": "https://logitech.wd5.myworkdayjobs.com/en-US/Logitech/job/Lausanne-Switzerland/Senior-Hardware-Product-User-Experience-Designer_146581"},
+    {"brief": 5, "date": "2026-09-01", "score": "radar", "titre": "Directeur de la Performance Commerciale et Marketing (100%)", "entreprise": "Vivara SA", "note": "COMEX/C-level → radar ; publiée ~01.08", "lien": "https://www.jobagent.ch/job/directeur-de-la-performance-commerciale-et-marketing-100/3252376d31"},
+    {"brief": 5, "date": "2026-09-01", "score": "radar", "titre": "Spécialiste Communication et Rédaction (60-80%)", "entreprise": "Fédération suisse des aveugles et malvoyants (FSA)", "note": "⚠️ non vérifiée — lien introuvable ; piste sbv-fsa.ch", "lien": "https://sbv-fsa.ch/fr/"}
   ]
 }
