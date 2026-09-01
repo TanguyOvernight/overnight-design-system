@@ -1,0 +1,139 @@
+{
+  "name": "Overnight — prompts de démarrage",
+  "status": "prompt_templates_ready_not_generation_validated",
+  "defaults": {
+    "mode": "BEAUTY",
+    "style": "realistic PBR appearance to lightly stylized",
+    "reference_limit": 2
+  },
+  "references": {
+    "mech_shape": {
+      "path": "images/uploaded/tom-tran-1.webp",
+      "source_path": "images/uploaded/tom-tran-1.webp",
+      "role": "Silhouette lisible et séparation des assemblages ; ne pas copier le design.",
+      "sha256": "635e81902523c190ee9fa6158cdafffe3dd2d4df43d1fc026a83efa35398bfdb",
+      "bytes": 211232,
+      "source_url": "https://www.artstation.com/artwork/OvLQlJ",
+      "original_archive": "Ref 3D Image.zip"
+    },
+    "mech_materials": {
+      "path": "images/uploaded/tom-tran-2.webp",
+      "source_path": "images/uploaded/tom-tran-2.webp",
+      "role": "Peinture, métal, jonctions et usure localisée ; ne pas copier les marquages.",
+      "sha256": "1a0826e21a1243981aca7aa5f59cfe5a867589503c48a2d3e4e0c8c75a95e77c",
+      "bytes": 215722,
+      "source_url": "https://www.artstation.com/artwork/OvLQlJ",
+      "original_archive": "Ref 3D Image.zip"
+    },
+    "prop_staging": {
+      "path": "prompt-inputs/yAJx35-01.jpg",
+      "source_path": "images/artstation/yAJx35/01.jpg",
+      "role": "Cadrage trois-quarts et ancrage ; ne pas reprendre le décor ni la stylisation.",
+      "sha256": "3ec435cb19bd472b332748c8639660388cd07c6f3b13f024b679e9963b213dab",
+      "bytes": 280156,
+      "source_url": "https://www.artstation.com/artwork/yAJx35",
+      "original_archive": "originaux.zip"
+    },
+    "character": {
+      "path": "prompt-inputs/RqnvvD-01.jpg",
+      "source_path": "images/artstation/RqnvvD/01.jpg",
+      "role": "Présentation en pied et couches de matières ; créer une nouvelle identité.",
+      "sha256": "e6dab9c42d1a12f0eb45e61f2d7cc9419a95331e5e2a3617c3942ce75fe5364d",
+      "bytes": 977984,
+      "source_url": "https://www.artstation.com/artwork/RqnvvD",
+      "original_archive": "originaux.zip"
+    },
+    "cloth": {
+      "path": "images/uploaded/beast-game-in-14.jpg",
+      "source_path": "images/uploaded/beast-game-in-14.jpg",
+      "role": "Coupe, épaisseur, coutures et plis ; ne pas imposer la palette.",
+      "sha256": "4a81b35b49c6edf2c4c7ec6aaf95ddb5c9d1f7c1b565feb1d9fe0a1998d3aef1",
+      "bytes": 362359,
+      "source_url": null,
+      "original_archive": "Ref 3D Image.zip"
+    },
+    "vehicle": {
+      "path": "prompt-inputs/eRNzeb-01.webp",
+      "source_path": "images/artstation/eRNzeb/01.webp",
+      "role": "Cadrage studio et ombre au sol ; créer un véhicule original sans marque.",
+      "sha256": "77fdfef442a38e5624abe16878ba5c21ce4b6723da50498646dce8993ba787cd",
+      "bytes": 311874,
+      "source_url": "https://www.artstation.com/artwork/eRNzeb",
+      "original_archive": "originaux.zip"
+    },
+    "vehicle_wear": {
+      "path": "prompt-inputs/eRNzeb-03.webp",
+      "source_path": "images/artstation/eRNzeb/03.webp",
+      "role": "Poussière et débris près du pare-brise ; adapter à l’exposition du nouveau véhicule.",
+      "sha256": "18d015983a78a705ebb7386ad263ea429e18f93b19375abccb7824bcff76554c",
+      "bytes": 447068,
+      "source_url": "https://www.artstation.com/artwork/eRNzeb",
+      "original_archive": "originaux.zip"
+    },
+    "environment": {
+      "path": "prompt-inputs/2Bvzov-01.jpg",
+      "source_path": "images/similaires/2Bvzov/01.jpg",
+      "role": "Profondeur et masses de lumière ; ne pas reprendre les éléments iconiques.",
+      "sha256": "d8749e71bc51f5cd93eb6091a11d5ddb5e7035bb118e89cd19eda4038be5bfb9",
+      "bytes": 601013,
+      "source_url": "https://www.artstation.com/artwork/2Bvzov",
+      "original_archive": "similaires.zip"
+    },
+    "blockout": {
+      "path": "prompt-inputs/2Bvzov-04.jpg",
+      "source_path": "images/similaires/2Bvzov/04.jpg",
+      "role": "Composition par volumes simples ; créer une architecture distincte.",
+      "sha256": "3a07400f0746648e14b74c0a3e02bbc3da19416a19d7ed13a1c36aca895c21b7",
+      "bytes": 1186519,
+      "source_url": "https://www.artstation.com/artwork/2Bvzov",
+      "original_archive": "similaires.zip"
+    }
+  },
+  "presets": [
+    {
+      "id": "PROP-STUDIO",
+      "title": "Objet — caisse de ravitaillement",
+      "references": [
+        "prop_staging",
+        "mech_materials"
+      ],
+      "prompt": "Use case: stylized-concept\nAsset type: 3D portfolio beauty image for Overnight Studio.\nInput images: Image 1 guides three-quarter staging and grounding only. Image 2 guides painted metal, dark joints and localized wear only. Create a new object with its own silhouette.\nScene: clean dark charcoal studio gradient and matte floor.\nSubject: one original science-fiction supply crate, closed, with a clear lid seam, two recessed handles and practical corner protectors.\nStyle and materials: realistic PBR appearance with lightly stylized large forms. Painted grey shell, dark rubber seals, metal latches and a restrained orange accent. Small irregular chips on exposed corners and handle contact areas; broad surfaces stay calm.\nComposition: complete three-quarter view, moderate perspective, landscape 3:2, subject around 70% of the frame, soft floor contact shadow.\nLighting: broad soft key, gentle fill and restrained edge separation. Preserve material detail in shadow.\nConstraints: consistent thickness, aligned joins and functional-looking handles. No lettering, brands, watermark, uniform grunge, bloom or decorative cables."
+    },
+    {
+      "id": "MECH-STUDIO",
+      "title": "Mech — robot utilitaire",
+      "references": [
+        "mech_shape",
+        "mech_materials"
+      ],
+      "prompt": "Use case: stylized-concept\nAsset type: 3D character portfolio beauty image for Overnight Studio.\nInput images: Image 1 guides silhouette readability and separation of assemblies. Image 2 guides material contrast and localized wear. Create a distinct robot design without copying the armor shapes, face or markings.\nScene: clean dark charcoal studio gradient and matte floor.\nSubject: one original bipedal utility robot with a compact sensor head, practical torso, articulated hands and broad stable feet. Relaxed stance, arms separated from the torso.\nStyle and materials: realistic PBR appearance, lightly stylized proportions. Desaturated olive armor, dark mechanical joints and a small warm accent. Joint gaps and attachment points remain visible. Any cables connect to visible endpoints. Wear occurs at contact areas and exposed edges.\nComposition: full-body three-quarter view, landscape 3:2, complete hands and feet, clear space around the silhouette.\nLighting: broad soft key, controlled fill, subtle contour light and soft contact shadow.\nConstraints: coherent joints, stable weight distribution, consistent repeated components. No extra limbs, floating parts, lettering, brands or bloom."
+    },
+    {
+      "id": "CHARACTER-STUDIO",
+      "title": "Personnage — éclaireuse adulte",
+      "references": [
+        "character",
+        "cloth"
+      ],
+      "prompt": "Use case: stylized-concept\nAsset type: 3D character portfolio beauty image for Overnight Studio.\nInput images: Image 1 guides full-body presentation and material layering only. Image 2 guides garment thickness, seams and folds only. Create a new face, hairstyle and costume.\nScene: clean dark charcoal studio gradient and matte floor.\nSubject: one original adult female scout, calm and attentive, with short practical hair, a weathered canvas jacket, fitted trousers and worn leather boots. One muted red fabric detail provides the color accent. Hands rest naturally and remain visible.\nStyle and materials: realistic PBR appearance with lightly stylized proportions. Distinct skin, canvas, leather and metal fasteners. Folds follow the pose and attachment points; fraying is limited to stressed hems. Natural skin variation and coherent facial anatomy.\nComposition: full-body three-quarter presentation, slight weight shift, feet grounded, portrait 2:3, breathing room around head and hands.\nLighting: broad soft key, gentle fill, restrained edge separation; readable eyes and folds.\nConstraints: consistent identity, clear finger anatomy and clothing layers. No extra props or characters, lettering, brands, plastic skin, uniform grunge or beauty-filter smoothing."
+    },
+    {
+      "id": "VEHICLE-STUDIO",
+      "title": "Véhicule — fourgon utilitaire usé",
+      "references": [
+        "vehicle",
+        "vehicle_wear"
+      ],
+      "prompt": "Use case: stylized-concept\nAsset type: 3D vehicle portfolio presentation for Overnight Studio.\nInput images: Image 1 guides studio framing and ground contact. Image 2 guides localized dust and debris. Design an original unbranded utility van, distinct from the reference vehicle.\nScene: perfectly clean neutral grey studio gradient and matte floor.\nSubject: one boxy utility van with faded dark red paint, dark rubber tires, steel trim and dusty glass. Consistent wheelbase, aligned door seams, coherent window thickness and practical mirrors.\nStyle and materials: realistic PBR appearance. Corrosion streaks run downward from susceptible seams; dust settles in sheltered recesses; a few dry leaves collect near the windshield base. Broad panels remain quieter. Glass, rubber, paint and metal have distinct responses.\nComposition: complete front three-quarter view, moderate perspective, landscape 3:2. Visible wheels contact the same floor, with a wide soft grounding shadow.\nLighting: soft even studio light revealing surface variation and form.\nConstraints: plausible panels and circular wheels, restrained damage. No unrelated set dressing, brands, lettering, mist, bloom, excessive depth blur or dirty background."
+    },
+    {
+      "id": "ENVIRONMENT-HERO",
+      "title": "Environnement — observatoire abandonné",
+      "references": [
+        "environment",
+        "blockout"
+      ],
+      "prompt": "Use case: stylized-concept\nAsset type: 3D environment portfolio hero for Overnight Studio.\nInput images: Image 1 guides depth, focal hierarchy and light masses only. Image 2 guides simple spatial organization before detail. Create a new layout without copying the reference sculpture or ornament.\nScene and subject: an abandoned stone observatory interior, a tall central opening admitting daylight, worn steps leading toward an empty observation platform, sparse vegetation at exposed edges. No people.\nStyle and materials: realistic PBR appearance with slightly simplified large forms. Desaturated stone, oxidized dark metal and restrained natural green. Weathering follows leaks and exposure; walkable areas stay readable.\nComposition: landscape 16:9 with clear foreground, middle ground and background. The opening and platform form one focal area. Structural lines guide the eye; secondary corners stay quieter.\nLighting: one coherent daylight direction, broad shadow masses and subtle reflected fill. Readable material detail near the focal area.\nConstraints: believable architectural joins and scale, continuous stairs and controlled repetition. No decorative clutter, lettering, logos, dramatic fog, bloom or competing bright focal points."
+    }
+  ]
+}
