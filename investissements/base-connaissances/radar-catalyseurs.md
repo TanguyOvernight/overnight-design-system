@@ -947,6 +947,64 @@ reculer le titre malgré des chiffres records.**
 
 ---
 
+## 🔒 SÉCHÉ — GRILLE DE LECTURE DU S1, ÉCRITE LE 02/09 À J−7
+
+*Même dispositif que la grille NVIDIA du 09/08 : décider **où lire et quoi
+mesurer** avant de savoir quoi que ce soit.*
+
+### 🎯 La saisonnalité change la lecture — la dégradation est au SECOND semestre
+
+| | S1 | H2 | Année | Part du S1 |
+|---|---|---|---|---|
+| 2024 | 88,3 | **153,7** | 242,0 | 36,5 % |
+| 2025 | 118,2 | **106,8** | 225,0 | **52,5 %** |
+
+**Le H2 2025 s'est effondré de −30,5 %.** *La casse n'est pas un problème
+d'année, c'est un problème de second semestre.* ⚠️ **Donc le comparatif du S1
+2026 (118,2 M€) est une base FORTE : c'est le dernier semestre avant que tout
+aille mal.**
+
+### 🎯 Le critère le plus informatif — ce que le S1 REND NÉCESSAIRE
+
+| Si le S1 sort à | H2 impliqué *(guidance 265)* | vs H2 2025 |
+|---|---|---|
+| 110 M€ | 155,0 | **+45,1 %** |
+| **125 M€** *(seuil)* | **140,0** | **+31,1 %** |
+| 139 M€ | 126,0 | +18,0 % |
+
+> **Le vrai test ne porte pas sur le semestre publié : il porte sur ce que ce
+> semestre rend nécessaire.** *Un EBE « conforme » à 125 M€ laisserait un H2 à
+> +31 % — chez une société qui a coupé sa guidance deux fois en douze mois.*
+
+### ⚠️ Ce que mon seuil de 125 M€ mesure vraiment
+
+| Contre quoi | Exigence |
+|---|---|
+| S1 2025 publié *(118,2)* | +5,8 % |
+| S1 2025 à **périmètre constant** *(102,4)* | +22,1 % |
+| **S1 proportionnel à la guidance** *(~139)* | 🔴 **−10,1 %** |
+
+**Le seuil est SOUS ce que la guidance implique : ce n'est pas une barre
+d'excellence, c'est un PLANCHER DE CRÉDIBILITÉ.** *Non modifié — le relever
+après coup serait la symétrie de l'assouplissement refusé le 30/08.*
+
+### 📋 ORDRE DE LECTURE IMPOSÉ pour le 09/09 à 18h00
+
+**① EBE publié** ≥ 125 M€ *(< 110 → KILL)* · **② EBE à périmètre constant**
+contre 102,4 · **③ H2 implicite** = guidance − S1, contre 106,8 · **④ France
+organique** ≥ 0 % *(pente : +5,8 % → −2,8 % → **−7,6 %** au T1 26 ; il faut un
+T2 à ~+7-8 %)* · **⑤ guidance 260-270 confirmée** *(nouvelle coupe = 3ᵉ
+avertissement → KILL)* · **⑥ levier ET SON ORIGINE** *(300 M€ d'hybrides en
+capitaux propres — un levier en baisse ne prouve rien sans le cash-flow)* ·
+**⑦ clôture DATÉE ≤ 90 €**.
+
+🔴 **La lacune assumée** : *trois conditions sur quatre seront dans le
+communiqué ; la quatrième est un PRIX, la seule que le canal fermé peut
+refuser.* **Scénarios du 30/08 : 26 % que le dossier se joue sans que je
+puisse conclure, contre 12 % qu'il se joue et que je le puisse.**
+
+---
+
 ## 🔴 NVIDIA — §3.4 RÉSOLU LE 17/08, à J−9 : l'alliance de 500 Md$ est datée et son traitement est connu
 
 **Ce que je cherchais depuis le 09/08** : *l'alliance de financement
