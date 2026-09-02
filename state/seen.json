@@ -1,7 +1,7 @@
 {
   "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
-  "maj": "2026-09-01",
-  "dernier_brief": 5,
+  "maj": "2026-09-02",
+  "dernier_brief": 6,
   "vus": {
     "jobup": [
       "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -162,6 +162,15 @@
     {"brief": "5bis", "date": "2026-09-01", "score": "radar", "titre": "Chef de projet & production créative (60-100%)", "entreprise": "Sabina Advertising", "note": "⚠️ lien indirect sabina.ch/jobs", "lien": "https://sabina.ch/en/jobs/"},
     {"brief": "5bis", "date": "2026-09-01", "score": "radar", "titre": "Communication & Social Media Manager (60-80%)", "entreprise": "Camptocamp", "note": "⚠️ ancienne probable", "lien": "https://www.welcometothejungle.com/en/companies/camptocamp/jobs"},
     {"brief": "5bis", "date": "2026-09-01", "score": "radar", "titre": "Social Media Manager (100%)", "entreprise": "Publishing Factory", "note": "⚠️ attribution à confirmer", "lien": "https://www.jobup.ch/fr/emplois/detail/00005514456200f6dd1083a44e5276e67dd4f72fd9/"},
-    {"brief": "5bis", "date": "2026-09-01", "score": "radar", "titre": "Senior Communication Officer (+2 postes comm)", "entreprise": "IUCN", "note": "Gland = -1 géo ; vacancies 7246/6893/6662", "lien": "https://hrms.iucn.org/vacancy/7246"}
+    {"brief": "5bis", "date": "2026-09-01", "score": "radar", "titre": "Senior Communication Officer (+2 postes comm)", "entreprise": "IUCN", "note": "Gland = -1 géo ; vacancies 7246/6893/6662", "lien": "https://hrms.iucn.org/vacancy/7246"},
+    {"brief": 6, "date": "2026-09-02", "score": "solide", "titre": "Marketing Specialist – Open Programs", "entreprise": "IMD Business School", "note": "ATS officiel ; fraîcheur non établie", "lien": "https://jobs.imd.org/job/Lausanne-Marketing-Specialist/1356742457/"},
+    {"brief": 6, "date": "2026-09-02", "score": "solide", "titre": "Graphiste / Web designer (100%)", "entreprise": "Conforama Suisse", "note": "Morges = plein score (périmètre élargi)", "lien": "https://www.jobs.ch/de/stellenangebote/detail/36730716-3a2f-44b6-8c02-9f095a16a6d5/"},
+    {"brief": 6, "date": "2026-09-02", "score": "radar", "titre": "Senior Brand & Content Designer", "entreprise": "Neural Concept", "note": "⚠️ absente de l'index Ashby officiel — 🎯 direct si confirmée manuellement ; piliers 2+3", "lien": "https://jobs.ashbyhq.com/neuralconcept"},
+    {"brief": 6, "date": "2026-09-02", "score": "radar", "titre": "Responsable marketing", "entreprise": "VMR SA", "note": "⚠️ forte suspicion d'offre 29.09.2021 recyclée par l'index", "lien": "https://www.jobup.ch/fr/emplois/?location=lausanne&term=responsable+marketing"},
+    {"brief": 6, "date": "2026-09-02", "score": "radar", "titre": "Design Manager", "entreprise": "Swissquote", "note": "⚠️ non vérifiée (signal removed 18.06) ; Gland -1", "lien": "https://builtin.com/job/design-manager/9773202"},
+    {"brief": 6, "date": "2026-09-02", "score": "radar", "titre": "Paid Media & Internal Communication Specialist", "entreprise": "Nespresso", "note": "ATS Nestlé officiel (lien résolu) ; 1-3 ans = junior ; La Tour-de-Peilz -1", "lien": "https://jobdetails.nestle.com/job/La-Tour-de-Peilz-Paid-Media-&-Internal-Communication-Specialist/1292299601/"},
+    {"brief": 6, "date": "2026-09-02", "score": "radar", "titre": "Creative Content & Short Formats Lead", "entreprise": ".NeuroRestore (EPFL/CHUV)", "note": "Genève = plafond radar ; careers.epfl.ch officiel", "lien": "https://careers.epfl.ch/job/Gen%C3%A8ve-Creative-Content-&-Short-Formats-Lead/1163068055"},
+    {"brief": 6, "date": "2026-09-02", "score": "radar", "titre": "Créateur·trice de contenu réseaux sociaux", "entreprise": "Fondation Asile des aveugles", "note": "⚠️ lien et taux non résolus", "lien": "https://www.jobup.ch/fr/emplois/?location=lausanne&term=cr%C3%A9ateur%20de%20contenu"},
+    {"brief": 6, "date": "2026-09-02", "score": "marche-cache", "titre": "🚀 Kandou AI — candidature spontanée suggérée", "entreprise": "Kandou AI", "note": "série A 225M$ (03.2026), 0 poste marketing publié ; ✉️ = dossier spontané", "lien": "https://kandou.com"}
   ]
 }
