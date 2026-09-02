@@ -929,3 +929,69 @@ de séance.** *C'est une erreur de **TYPE**, pas de véracité.*
 **tient**. C'est une **contradiction interne**, pas une conjecture sur un
 format. *La différence entre les deux est exactement ce qui sépare un
 contrôle d'impossibilité d'un préjugé.*
+
+---
+
+## 🛡️ DEUX CONTRÔLES AJOUTÉS LE 02/09/2026 — et l'un d'eux ouvre une famille nouvelle
+
+### ① LE CAS DÉGÉNÉRÉ — mon bouclage a un angle mort structurel
+
+**Deux cours servis avec `veille = clôture` et `variation = 0,00 %`** *(Aubay
+54,90 € · Eli Lilly 1 160,00 $)*.
+
+> `54,90 × (1 + 0,00) = 54,90` ✅ **Le bouclage valide, et ne prouve rien.**
+>
+> ☠️ **L'équation est une TAUTOLOGIE : elle est vraie pour n'importe quel
+> nombre.** *Le contrôle que j'ai érigé en meilleur garde-fou est
+> **structurellement aveugle** à cette forme.*
+
+**C'est la case « donnée fausse mais internement cohérente » de la table du
+25/08, rencontrée pour la première fois en vrai.**
+
+> ✅ **RÈGLE** : **`variation = 0,00 %` ET `veille = clôture` → RÉPONSE
+> DÉGÉNÉRÉE, rejet automatique**, quelle que soit la vraisemblance du niveau.
+>
+> ⚠️ *Les deux niveaux étaient plausibles (−3,4 % et −1,24 % contre mes
+> ancrages). **C'est précisément pourquoi il ne faut pas les prendre** : un
+> chiffre invérifiable ne devient pas vérifiable en étant vraisemblable.*
+
+### ② L'INVARIANT D'ÉMETTEUR — une famille de contrôle NOUVELLE
+
+**Une déclaration mensuelle a été servie sous le nom de Séché avec
+147 454 887 actions. Séché en a 7 857 732.** *Facteur ×18,8 : c'est un autre
+émetteur, dont le document a été recollé sur le nom.*
+
+> 🔴 **Pourquoi c'est le piège le plus dangereux du corpus** : *il ne porte pas
+> sur un cours d'agrégateur mais sur un **DOCUMENT RÉGLEMENTAIRE** — le canal
+> que cette doctrine classe le plus haut, et le seul ouvert quand l'egress est
+> fermé.*
+>
+> **Ni la date ni le bouclage ne l'attrapent** : le document est probablement
+> authentique et cohérent. **C'est le NOM qui a été substitué.**
+
+> ✅ **RÈGLE** : **le nombre d'actions composant le capital est un INVARIANT
+> par émetteur.** *Le conserver, et le vérifier sur tout document
+> réglementaire servi sous ce nom.*
+>
+> **Invariants établis** : **Séché = 7 857 732** · **STM ≈ 915 M** *(déduit de
+> trois ratios concordants)*.
+
+> 🔑 **Ce que cette règle inaugure** : *tous mes contrôles antérieurs testent
+> la **DATE** (réétiquetage) ou la **COHÉRENCE** (bouclage, impossibilités).*
+> **Celui-ci teste l'IDENTITÉ — « ce document parle-t-il bien de l'entreprise
+> qu'il prétend ? »** *Nouvelle famille, et elle n'avait aucun représentant
+> jusqu'à aujourd'hui.*
+
+### 📐 Corollaire — un contrôle se déduit du DOCUMENT, pas du besoin
+
+**J'ai transposé à Séché le contrôle `actions × VWAP = montant` qui marche
+sur Aubay et STM. Séché ne publie pas ce document** — sa déclaration mensuelle
+art. 223-16 porte l'autodétention et les droits de vote, **pas un prix**.
+
+> **Le contrôle disponible se déduit du FORMAT du document, jamais du besoin
+> de l'analyste.** *Demander à Séché le contrôle d'Aubay, c'est demander une
+> réponse à une question que son document ne pose pas.*
+>
+> *Contrôle réellement disponible chez Séché :*
+> `autodétention ÷ actions = %` — *vérifié : `91 080 ÷ 7 857 732 = 1,159 %`,
+> arrondi émetteur 1,16 % ✅*
