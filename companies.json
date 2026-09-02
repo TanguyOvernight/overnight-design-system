@@ -48,6 +48,8 @@
     {"nom": "RAI Robotics & AI Institute", "ats": "a_decouvrir", "endpoint": "https://rai-inst.com", "status": "a_valider", "note": "radar SwissAIJob 31.08 : présent à Lausanne (stages surtout)"},
     {"nom": "SpotMe", "ats": "a_decouvrir", "endpoint": "https://spotme.com/careers/", "status": "a_valider", "note": "radar Wellfound 31.08 : plateforme événementielle B2B, bureau Lausanne, cible marketers B2B"},
     {"nom": "Fondation EPFL Innovation Park", "ats": "jobup", "endpoint": "https://www.jobup.ch/en/enterprises/5107-fondation-epfl-innovation-park/", "status": "a_valider", "note": "31.08 : poste marketing/brand lead présumé ouvert — distinct de l'agrégateur epfl-innovationpark.ch/jobs"},
-    {"nom": "Neho (portail direct)", "ats": "propre", "endpoint": "https://careers.neho.ch/jobs", "status": "valide", "note": "31.08 : confirme le Directeur·trice Marketing ; UUID jobup introuvable — utiliser ce portail"}
+    {"nom": "Neho (portail direct)", "ats": "propre", "endpoint": "https://careers.neho.ch/jobs", "status": "valide", "note": "31.08 : confirme le Directeur·trice Marketing ; UUID jobup introuvable — utiliser ce portail"},
+    {"nom": "Kandou AI", "ats": "a_decouvrir", "endpoint": "https://kandou.com", "status": "a_valider", "note": "radar marché caché 02.09 : série A 225M$ (03.2026), Lausanne — surveiller l'apparition d'un premier poste marketing/comm"},
+    {"nom": "IMD Business School", "ats": "successfactors", "endpoint": "https://jobs.imd.org", "status": "valide", "note": "02.09 : ATS officiel actif (Marketing Specialist Open Programs signalé brief n°6)"}
   ]
 }

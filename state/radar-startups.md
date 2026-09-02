@@ -10,8 +10,13 @@
 > page carrières · fenêtre spontanée · statut brief.
 
 ## Signaux actifs
-_(aucun signal frais — fichier créé le 29.08.2026, passes 2j démarrées ce jour en mode
-dégradé WebSearch)_
+- **Kandou AI** (Lausanne, interconnexions/IA) — série A 225 M$ (mars 2026,
+  startupticker) — hors fenêtre stricte 1-3 mois mais scale-up en forte croissance :
+  page carrières à surveiller pour un PREMIER poste marketing/comm (aucun publié au
+  02.09). Détecté le 02.09. Statut : surveillance hebdo.
+- **Scale Up Vaud — 7 nouvelles scale-ups certifiées 2026** (startupticker, vu le
+  02.09) — vivier de candidatures spontanées ; moisson des noms + URLs carrières
+  prévue à la passe mensuelle du lundi 07.09.
 
 ## Signaux périmés ou hors fenêtre (contexte)
 - Startup aérospatiale lausannoise — seed ~40 M$ (Visionaries Club, Creandum) — mars 2026
