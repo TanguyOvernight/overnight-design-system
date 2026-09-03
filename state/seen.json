@@ -1,7 +1,7 @@
 {
   "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
-  "maj": "2026-09-02",
-  "dernier_brief": 6,
+  "maj": "2026-09-03",
+  "dernier_brief": 7,
   "vus": {
     "jobup": [
       "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -171,6 +171,11 @@
     {"brief": 6, "date": "2026-09-02", "score": "radar", "titre": "Paid Media & Internal Communication Specialist", "entreprise": "Nespresso", "note": "ATS Nestlé officiel (lien résolu) ; 1-3 ans = junior ; La Tour-de-Peilz -1", "lien": "https://jobdetails.nestle.com/job/La-Tour-de-Peilz-Paid-Media-&-Internal-Communication-Specialist/1292299601/"},
     {"brief": 6, "date": "2026-09-02", "score": "radar", "titre": "Creative Content & Short Formats Lead", "entreprise": ".NeuroRestore (EPFL/CHUV)", "note": "Genève = plafond radar ; careers.epfl.ch officiel", "lien": "https://careers.epfl.ch/job/Gen%C3%A8ve-Creative-Content-&-Short-Formats-Lead/1163068055"},
     {"brief": 6, "date": "2026-09-02", "score": "radar", "titre": "Créateur·trice de contenu réseaux sociaux", "entreprise": "Fondation Asile des aveugles", "note": "⚠️ lien et taux non résolus", "lien": "https://www.jobup.ch/fr/emplois/?location=lausanne&term=cr%C3%A9ateur%20de%20contenu"},
-    {"brief": 6, "date": "2026-09-02", "score": "marche-cache", "titre": "🚀 Kandou AI — candidature spontanée suggérée", "entreprise": "Kandou AI", "note": "série A 225M$ (03.2026), 0 poste marketing publié ; ✉️ = dossier spontané", "lien": "https://kandou.com"}
+    {"brief": 6, "date": "2026-09-02", "score": "marche-cache", "titre": "🚀 Kandou AI — candidature spontanée suggérée", "entreprise": "Kandou AI", "note": "série A 225M$ (03.2026), 0 poste marketing publié ; ✉️ = dossier spontané", "lien": "https://kandou.com"},
+    {"brief": 7, "date": "2026-09-03", "score": "solide", "titre": "♻️ Spécialiste Communication et Rédaction (60-80%)", "entreprise": "FSA", "note": "remontée 👀→✅ : lien détail résolu (a41cd12d), page vivante ; taux plafonné 80%", "lien": "https://www.jobup.ch/en/jobs/detail/a41cd12d-2dea-49fd-bf6c-49439e290872/"},
+    {"brief": 7, "date": "2026-09-03", "score": "radar", "titre": "Producteur·trice de contenu réseaux sociaux (60-80%)", "entreprise": "Pro Juventute", "note": "CDD 2 ans prolongeable ; profil exécution ; ⚠️ lien détail non résolu", "lien": "https://ch-fr.indeed.com/q-social-media-l-lausanne,-vd-emplois.html"},
+    {"brief": 7, "date": "2026-09-03", "score": "radar", "titre": "Chef·fe de projets promotion et communication (60%)", "entreprise": "Ville de Lausanne — Parcs et domaines", "note": "⚠️ non vérifiée ; 60% = plancher", "lien": "https://www.jobup.ch/fr/societes/49800-ville-de-lausanne/emplois/"},
+    {"brief": 7, "date": "2026-09-03", "score": "marche-cache", "titre": "🚀 Neural Concept — candidature spontanée recommandée", "entreprise": "Neural Concept", "note": "l'offre Senior Brand & Content Designer (début août, réelle : brand system+motion+outils IA, 90-100%) a disparu de l'ATS — pourvue/retirée ; fit quasi parfait → spontanée ; retirée de la veille active", "lien": "https://www.neuralconcept.com/careers"},
+    {"brief": 7, "date": "2026-09-03", "score": "ecartee-notable", "titre": "Responsable du service communication et manifestations (100%)", "entreprise": "Commune de Plan-les-Ouates", "note": "REJET second regard (Genève hors périmètre) malgré 130-185k + création de service — signalée en pied de brief, Tanguy peut la rouvrir", "lien": "https://www.jobup.ch/fr/emplois/detail/d327acee-48b1-42bf-91c9-0b76b6eec2ad/"}
   ]
 }

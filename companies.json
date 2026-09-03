@@ -50,6 +50,7 @@
     {"nom": "Fondation EPFL Innovation Park", "ats": "jobup", "endpoint": "https://www.jobup.ch/en/enterprises/5107-fondation-epfl-innovation-park/", "status": "a_valider", "note": "31.08 : poste marketing/brand lead présumé ouvert — distinct de l'agrégateur epfl-innovationpark.ch/jobs"},
     {"nom": "Neho (portail direct)", "ats": "propre", "endpoint": "https://careers.neho.ch/jobs", "status": "valide", "note": "31.08 : confirme le Directeur·trice Marketing ; UUID jobup introuvable — utiliser ce portail"},
     {"nom": "Kandou AI", "ats": "a_decouvrir", "endpoint": "https://kandou.com", "status": "a_valider", "note": "radar marché caché 02.09 : série A 225M$ (03.2026), Lausanne — surveiller l'apparition d'un premier poste marketing/comm"},
-    {"nom": "IMD Business School", "ats": "successfactors", "endpoint": "https://jobs.imd.org", "status": "valide", "note": "02.09 : ATS officiel actif (Marketing Specialist Open Programs signalé brief n°6)"}
+    {"nom": "IMD Business School", "ats": "successfactors", "endpoint": "https://jobs.imd.org", "status": "valide", "note": "02.09 : ATS officiel actif (Marketing Specialist Open Programs signalé brief n°6)"},
+    {"nom": "Artefact (Lausanne)", "ats": "greenhouse", "endpoint": "https://boards-api.greenhouse.io/v1/boards/artefactjobs/jobs", "status": "a_valider", "note": "03.09 : monte une équipe GenAI à Lausanne (Senior LLM Engineer + rôles data) — veille pour un futur rôle consulting/créa GenAI-marketing ; board vérifié 01.09 (data/Paris surtout)"}
   ]
 }
