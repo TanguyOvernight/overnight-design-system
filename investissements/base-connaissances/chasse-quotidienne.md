@@ -995,3 +995,78 @@ art. 223-16 porte l'autodétention et les droits de vote, **pas un prix**.
 > *Contrôle réellement disponible chez Séché :*
 > `autodétention ÷ actions = %` — *vérifié : `91 080 ÷ 7 857 732 = 1,159 %`,
 > arrondi émetteur 1,16 % ✅*
+
+---
+
+## 🔒 03/09/2026 — L'HÉRITAGE DU REJET, et une QUATRIÈME famille de contrôle
+
+### ① L'HÉRITAGE DU REJET — les chiffres faux COLLENT
+
+**Deux cours rejetés le 02/09 en cas dégénéré** *(Aubay 54,90 € · Lilly
+1 160,00 $)* **sont revenus le 03/09 — non comme cours, mais comme VEILLE d'un
+nouveau calcul.**
+
+| Servi le 03/09 | Veille impliquée | Statut |
+|---|---|---|
+| Aubay 54,50 € *(−0,73 %)* | `54,50 ÷ 0,9927 = ` **54,90 €** | 🔴 rejeté la veille |
+| Lilly 1 163,80 $ *(+0,33 %)* | **1 160,00 $** | 🔴 rejeté la veille |
+
+**Les deux bouclages sont arithmétiquement PARFAITS.** *C'est ce qui les rend
+dangereux : un bouclage impeccable sur une fondation pourrie a toutes les
+apparences d'une validation.*
+
+> ✅ **RÈGLE** : **un calcul dont une entrée a été rejetée HÉRITE DU REJET**,
+> quelle que soit la qualité du calcul.
+>
+> **Corollaire opérationnel** : *tenir une **LISTE DE QUARANTAINE NOMMÉE**, et
+> pas seulement rejeter au fil de l'eau.* **Un chiffre rejeté qui n'est pas
+> mémorisé revient le lendemain déguisé en prémisse.**
+
+**🔒 QUARANTAINE au 03/09** : Séché **82,60 €** *(non daté, 4 occurrences)* ·
+Aubay **54,90 €** *(dégénéré, 2 occurrences)* · Lilly **1 160,00 $**
+*(dégénéré)* · Nike **40,75 $** *(réétiquetage)* · Séché **77,80 €**
+*(non daté)*.
+
+### ② LA COHÉRENCE INTERNE — quatrième famille, et la moins coûteuse
+
+**Un paquet servi sur Séché contenait, dans la même réponse** : *« Oddo relève
+son objectif de 105 à **115 €** »* **et** *« plus haut objectif analyste :
+**100 €** »*.
+
+> ☠️ **115 > 100. La réponse se réfute elle-même.**
+>
+> **Et aucun de mes trois autres contrôles ne l'aurait attrapée** : *le
+> bouclage ? aucun prix à chaîner. Le test de date ? aucune date affirmée.
+> L'invariant d'émetteur ? le nombre d'actions n'était pas en jeu.*
+
+**LES QUATRE FAMILLES DE CONTRÔLE, désormais complètes** :
+
+| # | Famille | Ce qu'elle teste | Coût |
+|---|---|---|---|
+| ① | **DATE** | le réétiquetage temporel | moyen |
+| ② | **COHÉRENCE EXTERNE** | le bouclage contre MA série validée | élevé *(exige une série)* |
+| ③ | **IDENTITÉ** | le document parle-t-il de la bonne entreprise ? | faible *(un invariant mémorisé)* |
+| ④ | **COHÉRENCE INTERNE** | la réponse se contredit-elle elle-même ? | **quasi nul** |
+
+> 🔑 **La ④ ne demande AUCUNE donnée — juste de lire la réponse ENTIÈRE avant
+> d'en extraire un chiffre.** *C'est le contrôle le moins cher du corpus, et
+> c'est le dernier que j'ai ajouté.*
+
+### ③ LE MUR D'ACCÈS A UNE GRANULARITÉ
+
+*Encodé le 20/08 comme un état binaire. Il est en réalité **sélectif**, et la
+fracture est défavorable :*
+
+| Canal | État au 03/09 |
+|---|---|
+| Documentaire / émetteur / fils réglementés | 🔴 **FERMÉ** |
+| Cotation indices & grandes valeurs | 🟢 **OUVERT** |
+| Cotation **petites valeurs** | 🔴 **CONTAMINÉ** *(chiffres collants)* |
+
+> **Le prix des gros passe ; le document et le prix des petits ne passent
+> pas.** *C'est exactement l'inverse de ce dont un terrain France-smalls a
+> besoin.*
+>
+> ✅ **RÈGLE** : *classer le mur d'accès par **type de canal** ET par **taille
+> de capitalisation**. Le déclarer « ouvert » ou « fermé » globalement fait
+> perdre l'information qui décide de ce qu'on peut instruire.*
