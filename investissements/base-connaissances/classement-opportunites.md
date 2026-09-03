@@ -380,6 +380,72 @@ STM à **43,295 € « le 20/08 à 15h18 »**, ouverture 43,995, haut 44,080, ba
 > **Mes ancrages validés ne sont pas des archives — ils sont le mécanisme de
 > détection.** *Sans le 49,06 € du 17/08, ce piège passait.*
 
+### ⚠️ LACUNE DE TENUE — le classement a sauté quatre jours (29/08 → 02/09)
+
+**La routine exige un re-classement QUOTIDIEN. Il n'a pas été écrit les 29, 30,
+31/08 ni les 01 et 02/09.** *Le travail d'analyse a bien eu lieu — journal,
+registre, radar, corpus, tous tenus — mais **la mémoire persistante, elle, est
+restée au 28/08**.*
+
+> 🔑 **C'est exactement le risque que ce fichier existe pour empêcher.** *Sa
+> règle fondatrice dit : « il ne faut pas trouver une bonne affaire la veille
+> et l'oublier le lendemain parce qu'on a fait de nouvelles recherches. »*
+> **Pendant quatre jours, les mouvements de STM (49 → 42,31 €), le déblocage
+> de Séché et deux corrections de contrat n'existaient que dans le journal —
+> c'est-à-dire dans le récit, pas dans la liste.**
+>
+> ⚠️ **Et le journal ne remplace pas le classement** : *un journal se lit
+> chronologiquement et enterre l'ancien ; un classement se lit d'un coup d'œil
+> et force la comparaison.* **Rattrapé ci-dessous, en une seule entrée
+> consolidée.**
+
+---
+
+### 📊 LE CLASSEMENT AU 03/09 — 8 candidates, **0 mouvement de rang**
+
+*(rattrapage consolidé du 29/08 au 03/09 · clôtures du 02/09 quand elles bouclent)*
+
+| Rang | Candidate | Chiffre vs déclencheur | Qualité | Mvt |
+|---|---|---|---|---|
+| **①** | **Cœur World** | 🔴 **PEA NON OUVERT — 25ᵉ jour.** ⚰️ **C009 résolu FAUX** le 31/08 *(Brier 0,6400, pire du registre)*. 1 000 € d'août reportés, **aucun versement de septembre constaté** | ✅ | **=** |
+| **②** | **Or** | ❌ **Aucun point retenu depuis le 24/08.** *Trois relevés rejetés d'affilée : deux sans heure, un par impossibilité interne (spot **sous le bas de sa propre fourchette**, 3ᵉ occurrence du contrôle né sur Lilly)* | ❌ **Ligne structurellement inexploitable** | **=** |
+| **③** | **Séché** | 🟢 **CÉCITÉ ROMPUE : 81,90 € au 26/08** *(mono-source, provisoire)* → **−9,0 %** sous le seuil de 90 €. **S1 dans 6 jours** | ✅ **Ancrage du 21/08 AUTHENTIFIÉ** : la série 12→21/08 reproduit mon 80,10 € sans qu'on le lui souffle, 8 bouclages exacts. 🎯 **Le « 80,00 € » rejeté était la clôture réelle du 14/08** | **=** |
+| **④** | **Eli Lilly** | Dernier validé **1 174,61 $ (28/08)** → **+38,8 %** au-dessus du seuil de 846 $ | 🔴 **Deux faux attrapés** : un « 1 174,61 le 31/08 » *(mon ancrage recopié, contredit par un article « −1,2 % » du même jour)* et un **1 160,00 en réponse dégénérée** | **=** |
+| **⑤** | **Magnum** | **10,40 Md€** → il faut **−26,9 %** | ❌ Non instruit depuis le 27/08 | **=** |
+| **⑥** | **Aubay** | ⚠️ **TROU DU SCREENING** — repère ~56,85 € **lui-même non daté** : je ne peux ni le confirmer ni le remplacer | 🔴 Un « 54,90 € » rejeté en **réponse dégénérée** *(veille = clôture, variation 0,00 %)* | **=** |
+| **⑦** | **STM** | 🔴 **42,31 € au 01/09 → +0,74 % du seuil de 42,00 €**, le point le plus proche à ce jour. **Bas de séance 41,830 € : SOUS le seuil** | ✅ **Bouclé à 0,005 €** contre le 31/08. ✅ **C048 résolu VRAI** *(VWAP de rachat 42,6526 €, chaîne d'autodétention intacte à l'unité près)* | **=** |
+| **⑧** | **Nike** | **38,12 $ au 01/09** *(veille 38,65)* | 🟠 **PROVISOIRE** — variation non publiée, pas de bouclage indépendant | **=** |
+
+### 🔒 STM — pourquoi le rang ne bouge pas alors que le prix s'effondre
+
+**Le titre est passé de 49,06 € (17/08) à 42,31 € (01/09) : −13,8 % en dix
+séances, et il frôle mon seuil d'achat.** *Un classement naïf le ferait
+monter.* **Il ne monte pas, et le motif est écrit depuis le 26/08 :**
+
+> **Le contrat a TROIS branches** — `clôture ≤ 42,00 €` **ET** `P/E fwd < 30x`
+> **ET** `≥ 1 trimestre de marge brute en hausse séquentielle`.
+> **Depuis la perte nette du S1 publiée le 19/08, les deux dernières sont en
+> échec ou immesurables.**
+>
+> 🔑 **Le prix baisse PARCE QUE la thèse se dégrade. Les deux mouvements ne
+> sont pas indépendants** — et un rang qui monterait sur le seul prix
+> traiterait une cause commune comme deux bonnes nouvelles.
+>
+> **EV nette calculée le 26/08 : +4,72 %/an MÊME AU DÉCLENCHEUR** — sous le
+> cœur WPEA nu (5,00 %), et à plus de 5 points sous le hurdle corrélé
+> (ρ ≈ 0,8-0,9, hurdle doublé). **Aucun prix atteignable dans la fourchette du
+> contrat ne rend cet euro meilleur que le cœur.**
+
+*Statut inchangé : **conservée pour son déclencheur, pas pour son rang**.*
+
+### 📌 Ce qui a changé dans les CONTRATS pendant ces quatre jours
+
+| Ligne | Modification | Motif |
+|---|---|---|
+| **Séché** | 🔴 Condition 3 corrigée : **« guidance 260-270 M€ confirmée »** *(était 275-285)* | Le 275-285 sortait de l'avertissement n°1 et avait été **abandonné le 09/03/2026**, 4 mois avant l'écriture du contrat. **Une condition inatteignable ne se déclenche jamais** |
+| **Séché** | ⚖️ Convention d'avertissements fixée : **un communiqué = un avertissement → je suis à DEUX** | Lecture la plus indulgente, adoptée sur le principe et **verrouillée** : une coupe le 09/09 est la n°3, kill sans débat |
+| **Séché + STM** | Tranches passées de **« ~150 € »** à **la FORMULE `min(L)/3` ≈ 43 €** | 150 € **dépassait le plafond de la ligne entière** (L = 131 €). *Une tranche en euros fixes se périme en silence ; une formule se recalcule* |
+
 ### 📊 LE CLASSEMENT AU 28/08 — 8 candidates, **0 mouvement de rang, 1 SORTIE**
 
 | Rang | Candidate | Chiffre vs déclencheur | Qualité | Mvt |
