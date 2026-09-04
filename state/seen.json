@@ -1,7 +1,7 @@
 {
   "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
-  "maj": "2026-09-03",
-  "dernier_brief": 7,
+  "maj": "2026-09-04",
+  "dernier_brief": 8,
   "vus": {
     "jobup": [
       "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -176,6 +176,16 @@
     {"brief": 7, "date": "2026-09-03", "score": "radar", "titre": "Producteur·trice de contenu réseaux sociaux (60-80%)", "entreprise": "Pro Juventute", "note": "CDD 2 ans prolongeable ; profil exécution ; ⚠️ lien détail non résolu", "lien": "https://ch-fr.indeed.com/q-social-media-l-lausanne,-vd-emplois.html"},
     {"brief": 7, "date": "2026-09-03", "score": "radar", "titre": "Chef·fe de projets promotion et communication (60%)", "entreprise": "Ville de Lausanne — Parcs et domaines", "note": "⚠️ non vérifiée ; 60% = plancher", "lien": "https://www.jobup.ch/fr/societes/49800-ville-de-lausanne/emplois/"},
     {"brief": 7, "date": "2026-09-03", "score": "marche-cache", "titre": "🚀 Neural Concept — candidature spontanée recommandée", "entreprise": "Neural Concept", "note": "l'offre Senior Brand & Content Designer (début août, réelle : brand system+motion+outils IA, 90-100%) a disparu de l'ATS — pourvue/retirée ; fit quasi parfait → spontanée ; retirée de la veille active", "lien": "https://www.neuralconcept.com/careers"},
-    {"brief": 7, "date": "2026-09-03", "score": "ecartee-notable", "titre": "Responsable du service communication et manifestations (100%)", "entreprise": "Commune de Plan-les-Ouates", "note": "REJET second regard (Genève hors périmètre) malgré 130-185k + création de service — signalée en pied de brief, Tanguy peut la rouvrir", "lien": "https://www.jobup.ch/fr/emplois/detail/d327acee-48b1-42bf-91c9-0b76b6eec2ad/"}
+    {"brief": 7, "date": "2026-09-03", "score": "ecartee-notable", "titre": "Responsable du service communication et manifestations (100%)", "entreprise": "Commune de Plan-les-Ouates", "note": "REJET second regard (Genève hors périmètre) malgré 130-185k + création de service — signalée en pied de brief, Tanguy peut la rouvrir", "lien": "https://www.jobup.ch/fr/emplois/detail/d327acee-48b1-42bf-91c9-0b76b6eec2ad/"},
+    {"brief": 8, "date": "2026-09-04", "score": "solide", "titre": "Chef de projet marketing opérationnel - Senior (100%)", "entreprise": "BioSanté Editions", "note": "publiée 03.09, CDI, télétravail fréquent ; angle automatisations emails", "lien": "https://www.welcometothejungle.com/fr/companies/biosante-editions/jobs/chef-de-projet-marketing-operationnel-senior_lausanne"},
+    {"brief": 8, "date": "2026-09-04", "score": "solide", "titre": "Brand Communication Specialist", "entreprise": "Audemars Piguet", "note": "Le Brassus -1 géo ; taux non affiché ⚠️ ; confirmée active (LinkedIn actively hiring)", "lien": "https://www.jobup.ch/en/jobs/detail/1584850/"},
+    {"brief": 8, "date": "2026-09-04", "score": "radar", "titre": "Responsable communication et marketing (100% CDI)", "entreprise": "Payot SA", "note": "⚠️ probable repost d'annonce de 06.2024 (relais emploi-suisse daté) — fit serait 🎯 si active ; re-vérifier lundi", "lien": "https://www.jobup.ch/fr/emplois/detail/c05063e2-bc80-436d-8d2d-89930daab0ff/"},
+    {"brief": 8, "date": "2026-09-04", "score": "radar", "titre": "Coordinateur marketing & communication (100%)", "entreprise": "Centre Porsche Lausanne", "note": "⚠️ entrée prévue 01.06.2026 déjà passée + min. 3 ans", "lien": "https://www.jobup.ch/fr/emplois/detail/fdfc1bc6-e020-43ec-88b2-5c4ce4df43df/"},
+    {"brief": 8, "date": "2026-09-04", "score": "radar", "titre": "Brand Lead Coordinator Marché Suisse (80%, CDD 8 mois)", "entreprise": "Audemars Piguet Marketing SA", "note": "Tolochenaz plein score, durée plafonne ; ⚠️ lien indirect (SmartRecruiters AP bloqué)", "lien": "https://www.jobs.ch/en/companies/8655186f-dca0-49ba-9a63-ddca8d1c9990-audemars-piguet-marketing-sa/vacancies/"},
+    {"brief": 8, "date": "2026-09-04", "score": "radar", "titre": "Producteur·trice de contenu RS (60-80%, CDD 2 ans)", "entreprise": "Pro Juventute", "note": "⚠️ lien = page société (meilleure résolution en 2 jours)", "lien": "https://www.jobup.ch/fr/societes/44205-pro-juventute/"},
+    {"brief": 8, "date": "2026-09-04", "score": "radar", "titre": "Responsable de marché clientèle privée B2C", "entreprise": "TL", "note": "Renens ; orientation commerciale", "lien": "https://www.jobup.ch/fr/emplois/detail/ea1d44da-672b-4c68-9ef2-30c663855f96/"},
+    {"brief": 8, "date": "2026-09-04", "score": "radar", "titre": "Assistant/e Visual Merchandising Manager", "entreprise": "Manor", "note": "⚠️ junior probable non levé ; lien indirect", "lien": "https://ch.talent.com/fr/jobs/k-communication-marketing-l-lausanne-vd"},
+    {"brief": 8, "date": "2026-09-04", "score": "radar", "titre": "Chef de projet Marketing Digital / Copywriter DE/FR (CDI 100%)", "entreprise": "TSA Publications", "note": "⚠️ allemand probable requis", "lien": "https://www.connexion-emploi.com/en/o/chef-de-projet-marketing-digital-copywriter-allemand-francais-h-f-d-lausanne"},
+    {"brief": 8, "date": "2026-09-04", "score": "radar", "titre": "Copywriter marketing (100% CDI)", "entreprise": "via Academic Work", "note": "⚠️ employeur final invisible ; positionnement jeunes diplômés = risque junior", "lien": "https://www.jobup.ch/en/jobs/?location=lausanne&term=copywriter"}
   ]
 }
