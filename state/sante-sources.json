@@ -1,32 +1,132 @@
 {
-  "_doc": "Santé des sources testée depuis l'environnement cloud (une requête légère par mécanisme, UA navigateur). verdict OK = réponse exploitable ; EGRESS_BLOCKED = domaine refusé par le proxy egress de l'environnement (CONNECT 403, policy denial) — à autoriser dans les paramètres réseau de l'environnement cloud. WebFetch passe par le même egress (même verdict) ; seul WebSearch fonctionne toujours. Re-test quotidien de l'accès direct.",
-  "teste_depuis": "environnement cloud claude.ai (proxy egress, politique restrictive)",
+  "_doc": "Santé des sources. EGRESS OUVERT le 04.09 (44 domaines autorisés par Tanguy) — fin du mode dégradé, vérifié dans cette session. Re-test quotidien maintenu. bebee.com / bewtr.com hors liste (agrégateurs secondaires).",
+  "teste_depuis": "environnement cloud claude.ai — egress OUVERT depuis le 04.09",
   "sources": {
-    "jobup": {"verdict": "EGRESS_BLOCKED", "detail": "CONNECT 403 confirmé au re-test du 28.08. Substitution WebSearch partielle : site:jobup.ch renvoie titres+liens mais sans filtre fraîcheur ni JSON-LD", "teste_le": "2026-08-30"},
-    "jobs_ch": {"verdict": "EGRESS_BLOCKED", "detail": "CONNECT 403 confirmé au re-test du 28.08 ; même substitution WebSearch partielle que jobup", "teste_le": "2026-08-30"},
-    "linkedin_guest": {"verdict": "EGRESS_BLOCKED", "detail": "CONNECT 403 confirmé au re-test du 28.08. WebSearch remonte des ch.linkedin.com/jobs/view/ mais mélange frais et périmé (IDs 2023 encore indexés) — filtrer par plage d'ID", "teste_le": "2026-08-30"},
-    "job_room_seco": {"verdict": "EGRESS_BLOCKED", "detail": "CONNECT 403 confirmé au re-test du 28.08. Pas de substitution WebSearch (API JSON)", "teste_le": "2026-08-30"},
-    "ats_greenhouse": {"verdict": "EGRESS_BLOCKED", "detail": "CONNECT 403 sur boards-api.greenhouse.io (test scandit)", "teste_le": "2026-08-27"},
-    "ats_lever": {"verdict": "EGRESS_BLOCKED", "detail": "CONNECT 403 sur api.lever.co (test sonarsource)", "teste_le": "2026-08-27"},
-    "ats_smartrecruiters": {"verdict": "EGRESS_BLOCKED", "detail": "CONNECT 403 sur api.smartrecruiters.com (test Nexthink?city=Lausanne — totalFound non vérifiable)", "teste_le": "2026-08-27"},
-    "ats_workday": {"verdict": "EGRESS_BLOCKED", "detail": "CONNECT 403 sur logitech.wd5.myworkdayjobs.com (POST cxs jamais atteint) — autoriser *.myworkdayjobs.com", "teste_le": "2026-08-27"},
-    "ats_phenom_pmi": {"verdict": "EGRESS_BLOCKED", "detail": "CONNECT 403 sur join.pmicareers.com (POST widgets jamais atteint)", "teste_le": "2026-08-27"},
-    "rss_cominmag": {"verdict": "EGRESS_BLOCKED", "detail": "CONNECT 403 confirmé au re-test du 28.08", "teste_le": "2026-08-30"},
-    "wttj_lausanne": {"verdict": "EGRESS_BLOCKED", "detail": "CONNECT 403 sur www.welcometothejungle.com (page SSR emploi-lausanne-suisse)", "teste_le": "2026-08-27"},
-    "etat_vaud_oracle": {"verdict": "EGRESS_BLOCKED", "detail": "2e vague — CONNECT 403 sur fa-ewrg-saasfaeuraprod1.fa.ocs.oraclecloud.com au premier test (28.08). API Oracle publique jamais atteinte", "teste_le": "2026-08-30"},
-    "chuv_feed": {"verdict": "EGRESS_BLOCKED", "detail": "2e vague — CONNECT 403 sur recrutement.chuv.ch (28.08). Substitution WebSearch efficace : les pages vacancy/*.html sont bien indexées (motion designer trouvé ainsi)", "teste_le": "2026-08-30"},
-    "cio_sap": {"verdict": "EGRESS_BLOCKED", "detail": "2e vague — CONNECT 403 sur ioc.jobs.hr.cloud.sap ET careers.olympics.com (28.08)", "teste_le": "2026-08-30"},
-    "bcv_sitemap": {"verdict": "EGRESS_BLOCKED", "detail": "2e vague — CONNECT 403 sur jobs.bcv.ch (28.08)", "teste_le": "2026-08-30"},
-    "vaudoise_softgarden": {"verdict": "EGRESS_BLOCKED", "detail": "2e vague — CONNECT 403 sur vaudoise.softgarden.io (28.08)", "teste_le": "2026-08-30"},
-    "tamedia_rss": {"verdict": "EGRESS_BLOCKED", "detail": "2e vague — CONNECT 403 sur jobs.tamedia.ch (28.08)", "teste_le": "2026-08-30"},
-    "talent_com": {"verdict": "EGRESS_BLOCKED", "detail": "2e vague — CONNECT 403 sur ch.talent.com (28.08). Substitution WebSearch correcte : pages /view?id= indexées avec métadonnées (SWISSVET détail trouvé ainsi)", "teste_le": "2026-08-30"},
-    "michael_page": {"verdict": "EGRESS_BLOCKED", "detail": "2e vague — CONNECT 403 sur www.michaelpage.ch (28.08)", "teste_le": "2026-08-30"},
-    "serpapi_google_jobs": {"verdict": "EGRESS_BLOCKED", "detail": "3e vague — CONNECT 403 sur serpapi.com au premier test cloud (29.08). Source validée par Tanguy en local le 28.08 (forme : ville DANS q + gl=ch, jamais location= ; chips=date_posted:today ; max 3 req/jour, 248 restantes). Clé sur le Drive privé (serpapi-key.txt). INUTILISABLE depuis le cloud tant que serpapi.com n'est pas autorisé — signalé 🔧 brief n°2", "teste_le": "2026-08-30"},
-    "startupticker": {"verdict": "EGRESS_BLOCKED", "detail": "3e vague marché caché — CONNECT 403 sur www.startupticker.ch (29.08). Substitution WebSearch partielle (news indexées sans fraîcheur fiable)", "teste_le": "2026-08-30"},
-    "ictjournal_rss": {"verdict": "EGRESS_BLOCKED", "detail": "3e vague marché caché — CONNECT 403 sur www.ictjournal.ch (29.08)", "teste_le": "2026-08-30"},
-    "swissaijob": {"verdict": "A_TESTER", "detail": "3e vague hebdo (lundi) — premier passage prévu lundi 31.08 ; egress probablement bloqué, prévoir substitution WebSearch site:swissaijob.ch", "teste_le": null},
-    "wellfound": {"verdict": "A_TESTER", "detail": "3e vague hebdo (lundi) — premier passage prévu lundi 31.08", "teste_le": null},
-    "websearch": {"verdict": "OK", "detail": "WebSearch opérationnel (runs n°1 et n°2 entièrement dessus). Limites confirmées : pas de fenêtre 48h stricte, index mélange frais et périmé (LinkedIn IDs 2023), certains liens détail introuvables ; mais republications détectables (PLATEFORME 10 « il y a 3 jours »)", "teste_le": "2026-08-30"}
+    "jobup": {
+      "verdict": "OK",
+      "detail": "OK — JSON-LD ItemList opérationnel (53 offres 48h le 04.09) ; parse liste-aware requis",
+      "teste_le": "2026-09-04"
+    },
+    "jobs_ch": {
+      "verdict": "OK",
+      "detail": "OK — pages détail GET ✔ (piège confirmé : offre expirée = 301 vers catégorie en 200)",
+      "teste_le": "2026-09-04"
+    },
+    "linkedin_guest": {
+      "verdict": "A_RETESTER",
+      "detail": "A_RETESTER — pages /jobs/view/ GET ✔ ; endpoint seeMoreJobPostings à re-tester au prochain run",
+      "teste_le": "2026-09-04"
+    },
+    "job_room_seco": {
+      "verdict": "OK",
+      "detail": "OK — POST _search opérationnel (6 hits marketing VD le 04.09) ; externalUrl = lien verbatim",
+      "teste_le": "2026-09-04"
+    },
+    "ats_greenhouse": {
+      "verdict": "A_RETESTER",
+      "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
+      "teste_le": "2026-09-04"
+    },
+    "ats_lever": {
+      "verdict": "A_RETESTER",
+      "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
+      "teste_le": "2026-09-04"
+    },
+    "ats_smartrecruiters": {
+      "verdict": "A_RETESTER",
+      "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
+      "teste_le": "2026-09-04"
+    },
+    "ats_workday": {
+      "verdict": "A_RETESTER",
+      "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
+      "teste_le": "2026-09-04"
+    },
+    "ats_phenom_pmi": {
+      "verdict": "A_RETESTER",
+      "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
+      "teste_le": "2026-09-04"
+    },
+    "rss_cominmag": {
+      "verdict": "A_RETESTER",
+      "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
+      "teste_le": "2026-09-04"
+    },
+    "wttj_lausanne": {
+      "verdict": "A_RETESTER",
+      "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
+      "teste_le": "2026-09-04"
+    },
+    "etat_vaud_oracle": {
+      "verdict": "A_RETESTER",
+      "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
+      "teste_le": "2026-09-04"
+    },
+    "chuv_feed": {
+      "verdict": "OK",
+      "detail": "OK — recrutement.chuv.ch accessible (home + vacancy GET ✔) ; feed à exploiter au prochain run",
+      "teste_le": "2026-09-04"
+    },
+    "cio_sap": {
+      "verdict": "A_RETESTER",
+      "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
+      "teste_le": "2026-09-04"
+    },
+    "bcv_sitemap": {
+      "verdict": "A_RETESTER",
+      "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
+      "teste_le": "2026-09-04"
+    },
+    "vaudoise_softgarden": {
+      "verdict": "OK",
+      "detail": "OK — listing SSR opérationnel (Digital Creative Specialist ABSENTE = fermée)",
+      "teste_le": "2026-09-04"
+    },
+    "tamedia_rss": {
+      "verdict": "A_RETESTER",
+      "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
+      "teste_le": "2026-09-04"
+    },
+    "talent_com": {
+      "verdict": "A_RETESTER",
+      "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
+      "teste_le": "2026-09-04"
+    },
+    "michael_page": {
+      "verdict": "A_RETESTER",
+      "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
+      "teste_le": "2026-09-04"
+    },
+    "serpapi_google_jobs": {
+      "verdict": "OK",
+      "detail": "OK — 3/3 requêtes le 04.09 ; chips=date_posted:today souvent vide → retry sans chips ; apply_options = liens verbatim",
+      "teste_le": "2026-09-04"
+    },
+    "startupticker": {
+      "verdict": "A_RETESTER",
+      "detail": "A_RETESTER au prochain run (domaine autorisé)",
+      "teste_le": "2026-09-04"
+    },
+    "ictjournal_rss": {
+      "verdict": "A_RETESTER",
+      "detail": "A_RETESTER au prochain run",
+      "teste_le": "2026-09-04"
+    },
+    "swissaijob": {
+      "verdict": "A_TESTER",
+      "detail": "3e vague hebdo (lundi) — premier passage prévu lundi 31.08 ; egress probablement bloqué, prévoir substitution WebSearch site:swissaijob.ch",
+      "teste_le": null
+    },
+    "wellfound": {
+      "verdict": "A_TESTER",
+      "detail": "3e vague hebdo (lundi) — premier passage prévu lundi 31.08",
+      "teste_le": null
+    },
+    "websearch": {
+      "verdict": "OK",
+      "detail": "WebSearch opérationnel (runs n°1 et n°2 entièrement dessus). Limites confirmées : pas de fenêtre 48h stricte, index mélange frais et périmé (LinkedIn IDs 2023), certains liens détail introuvables ; mais republications détectables (PLATEFORME 10 « il y a 3 jours »)",
+      "teste_le": "2026-08-30"
+    }
   },
   "domaines_a_autoriser": [
     "www.jobup.ch",

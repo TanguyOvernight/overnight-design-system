@@ -4,22 +4,26 @@
 > pourquoi elles matchent. Tout le reste est secondaire.
 
 ## Règles
-1. ⛔ RÈGLE DU LIEN DIRECT + EXISTENCE (30.08, DURCIE le 31.08 après l'incident
-   Logitech) : chaque titre porte l'URL de SA page détail, JAMAIS une page de
-   recherche/listing/employeur ; lien large → le RÉSOUDRE avant le brief (échec →
-   « ⚠️ lien indirect », exception rare). EN PLUS : employeur du registre
-   companies.json → l'offre doit être CONFIRMÉE sur son ATS officiel avant
-   publication (absente = périmée → pas publiée, journalisée ; ATS abandonnés =
-   morts par défaut, cf. TECHNIQUE.md). En mode dégradé, une offre invérifiable ne
-   monte JAMAIS au-dessus de 👀 — mention « ⚠️ non vérifiée — possiblement
-   périmée » — surtout une ⚡ séduisante.
+1. ⛔ RÈGLES DES LIENS v3 (04.09, après purge : 10/13 liens du suivi morts) :
+   a. INTERDICTION ABSOLUE DE COMPOSER UNE URL — toute URL est copiée VERBATIM d'une
+      réponse reçue pendant CE run (JSON-LD, API ATS, RSS, SerpAPI apply_link).
+      Jamais reconstruire/compléter/deviner/de mémoire. Sans URL de source : publier
+      SANS lien avec « 🔎 à retrouver : cherche "{titre}" {entreprise} sur {site} ».
+   b. Formats valides : jobup/jobs.ch = /detail/{UUID hex 8-4-4-4-12}/ (id NUMÉRIQUE
+      = ancien format MORT) ; LinkedIn = /jobs/view/{id} ; Workday = /job/{slug}_{req}.
+   c. Employeur du registre → confirmation sur son ATS officiel avant publication.
+   d. Invérifiable par source structurée accessible → plafond 👀 « ⚠️ non vérifiée ».
+   e. VÉRIF FINALE avant envoi : GET de chaque lien — valide UNIQUEMENT si l'URL
+      FINALE après redirections contient l'identifiant ET contenu d'offre présent.
+      PIÈGE JOBUP : offre expirée = 301 → page catégorie en 200 (le code seul ne
+      prouve rien).
 2. Ordre fixe des métadonnées : Entreprise · Lieu · Taux · Type de contrat · fraîcheur.
    Le taux est affiché dès qu'il est connu.
 3. Trois niveaux, quotas (élargis le 28.08), FORMAT DÉTAILLÉ (demande du 30.08) :
-   🎯 PRIORITÉ max 3 : métadonnées + « → Pourquoi toi » + « → Angle » + « 📝 Détails »
-   2-3 lignes tirées de l'ANNONCE (missions clés, profil demandé, salaire si affiché,
-   deadline si connue) · ✅ SOLIDES max 8 : 2 lignes (contexte + exigence/détail clé de
-   l'annonce) · 👀 RADAR max 8 : 1 ligne. Débordement → excédent en 👀, RIEN supprimé.
+   🎯 PRIORITÉ max 3 : métadonnées (+ expérience demandée si connue) + « → Pourquoi
+   toi » + « → Angle » + « 📝 Détails » 2-3 lignes de l'ANNONCE · ✅ SOLIDES max 12
+   (volume élargi 04.09) : 2 lignes · 👀 RADAR max 12 : 1 ligne. Débordement → 👀,
+   RIEN supprimé. 📌 cap 12.
 3quater. SECTION 📌 TOUJOURS OUVERTES (après le RADAR, exigence du 30.08) : une ligne
    par offre de state/ouvertes.json (🎯 passées + ✅ likées + ✉️, tant que ni déclinées
    ni pourvues) — titre lié · entreprise · « en ligne depuis N j » ; ❌ fermées du jour

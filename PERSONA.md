@@ -38,8 +38,12 @@ dans l'angle de candidature. **Claude Code figure littéralement dans les outils
 - Type de contrat : CDI, ou CDD d'au moins 1 an. CDD < 12 mois, CDM et intérims →
   👀 Radar au mieux (seulement si employeur prioritaire), jamais 🎯/✅.
 - Géographie : Lausanne même en priorité — voir périmètre ci-dessous.
-- Expérience : 4 ans au poste actuel → cible profil confirmé/manager (offres ~3-7 ans).
-  10+ ans / C-level → 👀 au mieux ; junior/débutant/stages → ❌.
+- Expérience — RECALIBRÉE par Tanguy le 04.09 : cible = offres demandant ~2 à 5 ans.
+  RÈGLE « SENIOR » : le titre ne disqualifie JAMAIS — les ANNÉES EXIGÉES dans l'annonce
+  tranchent : ≤4 ans exigés → traiter normalement quel que soit le titre ; 5-6 ans →
+  👀 avec « expérience demandée : N ans » ; 7+ ans ou C-level → ❌ (👀 si employeur
+  exceptionnel) ; « Senior » sans années précisées → 👀 max « séniorité à vérifier » ;
+  junior pur/stages → ❌.
 - L'essentiel du brief : les offres fraîches avec leur LIEN DIRECT — obligatoire pour
   chaque offre postée (voir FORMAT-SLACK.md).
 

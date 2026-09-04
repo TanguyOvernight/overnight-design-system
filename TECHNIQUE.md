@@ -48,6 +48,19 @@
 | Teamtailor | {site}/jobs.json à confirmer | |
 | Ashby | GET api.ashbyhq.com/posting-api/job-board/{org} | |
 
+## EGRESS OUVERT (04.09) + RÈGLES URL v3
+Egress ouvert par Tanguy le 04.09 (44 domaines) — vérifié : jobup JSON-LD (parse
+LISTE-aware : le bloc ld+json est un tableau), jobs.ch, Job-Room POST, SerpAPI, CHUV,
+softgarden. Hors liste : bebee.com, bewtr.com (agrégateurs secondaires).
+RÈGLES URL v3 (leçons de la purge du 04.09 — 10/13 liens du suivi morts) :
+1. JAMAIS composer/compléter/deviner une URL — verbatim uniquement (2 UUID « devinés »
+   se sont avérés faux le jour même de la règle : ...5b495b1a25ab vs ...5b495bba98a3).
+2. jobup/jobs.ch : /detail/{UUID hex}/ seul format vivant ; id numérique = mort.
+3. Offre expirée jobup = 301 → page catégorie en 200 : valider par URL FINALE +
+   contenu, jamais par le code seul.
+4. Les UUID jobup ont une durée de vie courte (fermetures + rotations) : re-GET
+   obligatoire à chaque re-mention.
+
 ## PIÈGE MAJEUR — ATS abandonnés (incident Logitech du 31.08)
 L'index WebSearch ressort des annonces d'ATS que l'employeur a QUITTÉS (ex. Logitech :
 jobs.jobvite.com = ancien ATS, mort par défaut ; l'officiel est
