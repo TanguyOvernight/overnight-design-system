@@ -1,7 +1,7 @@
 {
   "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
-  "maj": "2026-09-04",
-  "dernier_brief": 8,
+  "maj": "2026-09-05",
+  "dernier_brief": 9,
   "vus": {
     "jobup": [
       "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -193,6 +193,15 @@
     {"brief": "8bis", "date": "2026-09-04", "score": "solide", "titre": "Marketing & Brand Manager Switzerland", "entreprise": "BE WTR", "note": "Google Jobs ~12 j, plein temps ; 🔎 à retrouver (bebee/bewtr hors liste egress) — pas de lien publié", "lien": ""},
     {"brief": "8bis", "date": "2026-09-04", "score": "radar", "titre": "Chargée/chargé de communication - auxiliaire (80%)", "entreprise": "Ville de Lausanne — Finances", "note": "publiée 04.09 ; temporaire ; GET ✔", "lien": "https://www.jobup.ch/fr/emplois/detail/31c27776-3baf-4e73-bc6b-259ded68208c/"},
     {"brief": "8bis", "date": "2026-09-04", "score": "radar", "titre": "Product Manager Client Management & AI", "entreprise": "Swissquote", "note": "Gland -1 ; produit+IA adjacent ; lien verbatim Job-Room, GET ✔", "lien": "https://www.jobs.ch/de/stellenangebote/detail/083eadc7-7745-4668-8f19-a514b7f3c754/"},
-    {"brief": "8bis", "date": "2026-09-04", "score": "CORRECTIF", "titre": "FSA Spécialiste Comm (brief 7) et AP Brand Comm Specialist (brief 8)", "entreprise": "—", "note": "les deux étaient déjà mortes à la publication (404 au GET) — erreurs assumées au brief 8bis ; Vaudoise Digital Creative Specialist absente du softgarden officiel = fermée", "lien": ""}
+    {"brief": "8bis", "date": "2026-09-04", "score": "CORRECTIF", "titre": "FSA Spécialiste Comm (brief 7) et AP Brand Comm Specialist (brief 8)", "entreprise": "—", "note": "les deux étaient déjà mortes à la publication (404 au GET) — erreurs assumées au brief 8bis ; Vaudoise Digital Creative Specialist absente du softgarden officiel = fermée", "lien": ""},
+    {"brief": 9, "date": "2026-09-05", "score": "REJETEE-TRANSPARENCE", "titre": "⚡ AI Content Marketing Manager (100% remote)", "entreprise": "EWOR", "note": "rejetée avant publication : entonnoir fellowship (ATS = Apply to the EWOR Fellowship, TechCrunch 04.2025) — signalée en transparence au brief", "lien": "https://www.linkedin.com/jobs/view/ai-content-marketing-manager-100-%25-remote-m-f-d-at-ewor-4462306631"},
+    {"brief": 9, "date": "2026-09-05", "score": "radar", "titre": "Senior Manager Brand Retail Deployment", "entreprise": "Philip Morris International", "note": "publiée 04.09, confirmée ATS PMI (⛔.3) ; séniorité à vérifier (comparables 5-8 ans)", "lien": "https://www.linkedin.com/jobs/view/senior-manager-brand-retail-deployment-at-philip-morris-international-4463363961"},
+    {"brief": 9, "date": "2026-09-05", "score": "radar", "titre": "Search & AI Visibility Specialist", "entreprise": "Swissquote", "note": "7+ ans SEO exigés ; dérogatoire GenAI (GEO/LLM-SEO) ; Gland -1", "lien": "https://www.linkedin.com/jobs/view/search-ai-visibility-specialist-at-swissquote-4454395759"},
+    {"brief": 9, "date": "2026-09-05", "score": "radar", "titre": "Admissions & Enrolment Specialist (100%)", "entreprise": "International School of Lausanne", "lien": "https://www.linkedin.com/jobs/view/admissions-enrolment-specialist-100%25-specialist-portfolio-family-engagement-events-at-international-school-of-lausanne-4463315807"},
+    {"brief": 9, "date": "2026-09-05", "score": "radar", "titre": "EdTech Project Manager", "entreprise": "EHL Group", "lien": "https://www.jobup.ch/fr/emplois/detail/c9df5c6a-7dd1-4e29-b7e5-790f45813d18/"},
+    {"brief": 9, "date": "2026-09-05", "score": "radar", "titre": "Head of B2B Marketing", "entreprise": "Proton", "note": "Genève (multi-sites) + Head of = plafond ; lien greenhouse verbatim", "lien": "https://job-boards.eu.greenhouse.io/proton/jobs/4183145101"},
+    {"brief": 9, "date": "2026-09-05", "score": "radar", "titre": "ABM Manager", "entreprise": "SonarSource", "note": "Genève plafond ; lien Lever verbatim", "lien": "https://jobs.lever.co/sonarsource/a57bf736-bc10-4c3b-9af8-43a5f7591d53"},
+    {"brief": 9, "date": "2026-09-05", "score": "ecartee-notable", "titre": "Senior Product Portfolio Marketing Manager", "entreprise": "Intuitive", "note": "7 ans exigés + Aubonne -1 → ❌ règle Senior", "lien": "https://www.linkedin.com/jobs/view/senior-product-portfolio-marketing-manager-at-intuitive-4463601714"},
+    {"brief": 9, "date": "2026-09-05", "score": "ecartee-notable", "titre": "Directeur·trice Vente, Marketing & Communication", "entreprise": "Ganci Partners", "note": "tri-fonction direction 7-10+ ans, Montreux -1 → ❌", "lien": "https://www.linkedin.com/jobs/view/directeur%C2%B7trice-vente-marketing-communication-at-ganci-partners-4461166254"}
   ]
 }
