@@ -1,13 +1,57 @@
 {
   "_doc": "Suivi des meilleures offres en cours : 🎯 passées + ✅ likées + ✉️, tant que non déclinées ni envoyées. Re-check à CHAQUE run, MÉTHODE STRICTE (règle 04.09) : GET avec suivi de redirections — en ligne seulement si l'URL FINALE contient l'identifiant ET contenu d'offre présent ; 301 vers catégorie = fermée ; 404/410 = fermée. GRANDE PURGE exécutée le 04.09 (egress ouvert) : 10 retirées sur 13, bilan au brief n°8bis et au journal.",
-  "maj": "2026-09-04",
+  "maj": "2026-09-05",
   "purge_04_09": {
-    "retirees_fermees": ["PLATEFORME 10 Responsable mkt/comm (lien numérique mort + hors index)", "EPFL SPC Resp Communication (301→catégorie)", "Innovaud Chef-fe projets comm (404)", "BioSanté Chef de projet mkt-rédacteur v1 (301, remplacée par les postes Senior/éditorial)", "QoQa Team Lead Social Media (lien composé par pattern — invalide ; offre hors index jobup)", "EPFL/SDSC Deputy Head (301→catégorie)", "Salt Marketing Ops & GTM (301→catégorie)", "Eben-Hézer Resp comm & fonds (410 Gone)", "EPFL Innovation Park M&C Manager (404)", "Ville de Lausanne pj19290 (lausanne.ch injoignable — invérifiable, retirée par prudence)"],
+    "retirees_fermees": [
+      "PLATEFORME 10 Responsable mkt/comm (lien numérique mort + hors index)",
+      "EPFL SPC Resp Communication (301→catégorie)",
+      "Innovaud Chef-fe projets comm (404)",
+      "BioSanté Chef de projet mkt-rédacteur v1 (301, remplacée par les postes Senior/éditorial)",
+      "QoQa Team Lead Social Media (lien composé par pattern — invalide ; offre hors index jobup)",
+      "EPFL/SDSC Deputy Head (301→catégorie)",
+      "Salt Marketing Ops & GTM (301→catégorie)",
+      "Eben-Hézer Resp comm & fonds (410 Gone)",
+      "EPFL Innovation Park M&C Manager (404)",
+      "Ville de Lausanne pj19290 (lausanne.ch injoignable — invérifiable, retirée par prudence)"
+    ],
     "lecons": "liens numériques jobup = format mort ; jamais composer une URL ; l'index WebSearch survend la vitalité — seul le GET fait foi"
   },
   "offres": [
-    {"id": "chuv-motion", "titre": "Motion designer - vidéaste (80-100%)", "entreprise": "CHUV", "lieu": "Lausanne", "score": "✅", "lien": "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html", "premiere_apparition": "2026-08-28", "dernier_check": "2026-09-04", "statut": "en ligne (GET ✔ 200, URL finale intacte, contenu présent)"},
-    {"id": "swissvet-lead", "titre": "Marketing & Digital Communications Lead (80-100%)", "entreprise": "SWISSVET GROUP", "lieu": "Lausanne", "score": "🎯", "lien": "https://ch.linkedin.com/jobs/view/marketing-digital-communications-lead-80%25-100%25-at-swissvet-group-4372250006", "premiere_apparition": "2026-08-28", "dernier_check": "2026-09-04", "statut": "en ligne (GET ✔ 200, page LinkedIn avec contenu)"},
-    {"id": "neho-dir-mkt", "titre": "Directeur·trice Marketing", "entreprise": "Neho", "lieu": "Lausanne", "score": "🎯", "lien": "https://careers.neho.ch/jobs", "lien_indirect": true, "note_lien": "portail officiel GET ✔ (offre listée) ; page détail du portail à extraire au prochain run", "premiere_apparition": "2026-08-28", "dernier_check": "2026-09-04", "statut": "en ligne"}
+    {
+      "id": "chuv-motion",
+      "titre": "Motion designer - vidéaste (80-100%)",
+      "entreprise": "CHUV",
+      "lieu": "Lausanne",
+      "score": "✅",
+      "lien": "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html",
+      "premiere_apparition": "2026-08-28",
+      "dernier_check": "2026-09-05",
+      "statut": "en ligne (GET ✔ 05.09)",
+      "note": "publiée le 06.08 (feed CHUV) — 1 mois en ligne"
+    },
+    {
+      "id": "swissvet-lead",
+      "titre": "Marketing & Digital Communications Lead (80-100%)",
+      "entreprise": "SWISSVET GROUP",
+      "lieu": "Lausanne",
+      "score": "🎯",
+      "lien": "https://ch.linkedin.com/jobs/view/marketing-digital-communications-lead-80%25-100%25-at-swissvet-group-4372250006",
+      "premiere_apparition": "2026-08-28",
+      "dernier_check": "2026-09-05",
+      "statut": "en ligne (GET ✔ 05.09)"
+    },
+    {
+      "id": "neho-dir-mkt",
+      "titre": "Directeur·trice Marketing",
+      "entreprise": "Neho",
+      "lieu": "Lausanne",
+      "score": "🎯",
+      "lien": "https://careers.neho.ch/jobs",
+      "lien_indirect": true,
+      "note_lien": "portail officiel GET ✔ (offre listée) ; page détail du portail à extraire au prochain run",
+      "premiere_apparition": "2026-08-28",
+      "dernier_check": "2026-09-05",
+      "statut": "présumée en ligne (portail actif 05.09, page JS : données embarquées mentionnent Marketing mais listing non extractible — à confirmer visuellement par Tanguy ou via rendu JS)"
+    }
   ]
 }
