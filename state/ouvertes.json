@@ -1,6 +1,6 @@
 {
   "_doc": "Suivi des meilleures offres en cours : 🎯 passées + ✅ likées + ✉️, tant que non déclinées ni envoyées. Re-check à CHAQUE run, MÉTHODE STRICTE (règle 04.09) : GET avec suivi de redirections — en ligne seulement si l'URL FINALE contient l'identifiant ET contenu d'offre présent ; 301 vers catégorie = fermée ; 404/410 = fermée. GRANDE PURGE exécutée le 04.09 (egress ouvert) : 10 retirées sur 13, bilan au brief n°8bis et au journal.",
-  "maj": "2026-09-05",
+  "maj": "2026-09-06",
   "purge_04_09": {
     "retirees_fermees": [
       "PLATEFORME 10 Responsable mkt/comm (lien numérique mort + hors index)",
@@ -25,8 +25,8 @@
       "score": "✅",
       "lien": "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html",
       "premiere_apparition": "2026-08-28",
-      "dernier_check": "2026-09-05",
-      "statut": "en ligne (GET ✔ 05.09)",
+      "dernier_check": "2026-09-06",
+      "statut": "en ligne (GET+contenu ✔ 06.09) — 1 mois en ligne",
       "note": "publiée le 06.08 (feed CHUV) — 1 mois en ligne"
     },
     {
@@ -37,8 +37,8 @@
       "score": "🎯",
       "lien": "https://ch.linkedin.com/jobs/view/marketing-digital-communications-lead-80%25-100%25-at-swissvet-group-4372250006",
       "premiere_apparition": "2026-08-28",
-      "dernier_check": "2026-09-05",
-      "statut": "en ligne (GET ✔ 05.09)"
+      "dernier_check": "2026-09-06",
+      "statut": "en ligne (GET+contenu ✔ 06.09)"
     },
     {
       "id": "neho-dir-mkt",
@@ -50,8 +50,8 @@
       "lien_indirect": true,
       "note_lien": "portail officiel GET ✔ (offre listée) ; page détail du portail à extraire au prochain run",
       "premiere_apparition": "2026-08-28",
-      "dernier_check": "2026-09-05",
-      "statut": "présumée en ligne (portail actif 05.09, page JS : données embarquées mentionnent Marketing mais listing non extractible — à confirmer visuellement par Tanguy ou via rendu JS)"
+      "dernier_check": "2026-09-06",
+      "statut": "présumée en ligne (portail actif ✔ 06.09, listing JS)"
     }
   ]
 }
