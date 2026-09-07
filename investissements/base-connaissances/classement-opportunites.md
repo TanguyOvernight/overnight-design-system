@@ -401,6 +401,56 @@ restée au 28/08**.*
 
 ---
 
+### 📊 LE CLASSEMENT AU 07/09 — 8 candidates, **0 mouvement de rang**
+
+*(rattrapage 04→07/09 · écrit AVANT la newsletter, correction de procédure du 07/09)*
+
+| Rang | Candidate | Chiffre vs déclencheur | Qualité | Mvt |
+|---|---|---|---|---|
+| **①** | **Cœur World** | 🔴 **PEA NON OUVERT — 29ᵉ jour.** 1 000 € d'août intacts, **aucun versement de septembre constaté** | ✅ | **=** |
+| **②** | **Or** | **~4 491 $/oz au 03/09, 9h05 ET** *(3 horodatages concordants à 0,1 %)* | 🟡 **NIVEAU retenu, RÉCIT rejeté** — le « nouveau record » est réfuté par cohérence interne *(la même source situe l'ATH à 5 608 $)* | **=** |
+| **③** | **Séché** | Dernier validé **81,90 € (26/08)** → **−9,0 %** sous le seuil de 90 €. 🔴 **S1 DANS 2 JOURS** | ❌ **Aucun cours daté depuis 12 jours.** ☠️ **Un faux DATÉ DU 09/09 servi le 07/09** — voir le garde-fou de collision | **=** |
+| **④** | **Eli Lilly** | Dernier validé **1 174,61 $ (28/08)** | ❌ Non obtenu. *1 160,00 et 1 160,08 en quarantaine* | **=** |
+| **⑤** | **Magnum** | **10,40 Md€** → il faut **−26,9 %** | ❌ Non instruit depuis le 27/08 | **=** |
+| **⑥** | **Aubay** | ⚠️ **TROU** — repère ~56,85 € non daté | 🔴 Un « 55,00 € fin août » rejeté : **sans date** ET **à 10 centimes du 54,90 € en quarantaine** | **=** |
+| **⑦** | **STM** | Dernier validé **43,60 € (02/09)** → **+3,81 %** du seuil de 42,00 € | 🔴 **Paire 44,81 / 44,03 INVALIDÉE** *(deux lectures également possibles)*. ✅ Autodétention **19 353 812** reconfirmée | **=** |
+| **⑧** | **Nike** | ❌ Non obtenu | *40,75 $ en quarantaine* | **=** |
+
+### ☠️ LE FAIT DU JOUR — un faux daté du FUTUR, calibré contre mon propre seuil
+
+**Servi le 07/09** : *« Résultats Semestriels H1 2025 **(Publiés le 9 Septembre
+2026)** »* — **la date exacte de la publication surveillée** — avec CA 580 ·
+EBE 118 · ROC 49 · RNPG 16.
+
+> **Ce sont MES comparatifs S1 2025** *(580,1 · 118,2 · 49,1 · 15,9)*,
+> **redatés de mercredi prochain.**
+>
+> 🔴 **Et le piège est calibré contre moi** : *mon seuil est **EBE ≥ 125 M€**.
+> Un « 118 » servi mercredi serait lu comme un **ÉCHEC de la condition** —
+> alors que c'est un artefact.* **J'aurais tué le dossier sur un chiffre d'il
+> y a un an.**
+
+**Garde-fou inscrit au radar** : *test de collision avant toute lecture
+mercredi.* **Et la leçon générale : un artefact peut me faire REJETER autant
+qu'accepter — les faux ne poussent pas tous à acheter.**
+
+### 🌍 TEXAF — lu, non retenu, aucune ligne ouverte
+
+**S1 publié le 07/09** *(GlobeNewswire, un identifiant unique en trois
+langues — marqueur d'authenticité fort)*. Messages de tête : **résultat
+opérationnel récurrent +4,6 %**, lancement des « Jardins de Kinsuka ».
+
+🔴 **Les chiffres détaillés ne s'écrivent pas** : *trois valeurs de résultat
+net pour deux semestres dans la même session (4,44 · 4,6 · 3,9 M€)*, et un
+bloc « S1 2026 » qui était en réalité du **T1** *(la somme des segments fait
+exactement la moitié du CA semestriel)*.
+
+**Le point d'analyse tient malgré tout** : **EBIT +5,5 % mais résultat net
+−15 %** — *un écart de 20 points qui ne vient ni de l'exploitation ni du
+locatif. Sur un émetteur 100 % RDC : change, coût de la dette, ou fiscalité
+congolaise.* **C'est là que loge le risque pays.** *(Aucun contrat ouvert :
+lecture de terrain. Et la liquidité micro reste un drapeau.)*
+
 ### 📊 LE CLASSEMENT AU 03/09 — 8 candidates, **0 mouvement de rang**
 
 *(rattrapage consolidé du 29/08 au 03/09 · clôtures du 02/09 quand elles bouclent)*
