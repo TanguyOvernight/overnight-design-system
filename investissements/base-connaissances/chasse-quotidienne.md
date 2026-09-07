@@ -1112,3 +1112,68 @@ Séché n'est pas revenu comme cours, il est revenu **habillé d'une variation**
 (« 82,60 €, +0,61 % »), ce qui fabriquait un **82,10 € « calculé »**
 d'apparence irréprochable.* **Seul l'héritage du rejet l'a arrêté — et cette
 règle avait été écrite la veille, sur le motif exact qu'elle a attrapé.**
+
+---
+
+## ☠️ 07/09/2026 — LE RÉÉTIQUETAGE VERS LE **FUTUR**, et une cinquième famille
+
+### ① Un faux daté de MERCREDI PROCHAIN
+
+**Servi le 07/09** : *« Résultats Semestriels H1 2025 **(Publiés le 9 Septembre
+2026)** »* — **la date exacte d'une publication que je surveille**, avec les
+chiffres **réels** du S1 2025.
+
+> **Le réétiquetage vers le PASSÉ est détecté depuis le 01/08. Le
+> réétiquetage vers le FUTUR — un faux servi À L'AVANCE sur une échéance
+> attendue — est inédit.**
+>
+> ✅ **Seule la COHÉRENCE INTERNE l'a arrêté** *(un S1 2025 ne se publie pas en
+> septembre 2026)*. **Ni le bouclage, ni ma série, ni l'invariant d'émetteur
+> ne pouvaient : les chiffres sont vrais et cohérents entre eux.**
+
+> 🔴 **RÈGLE — LE TEST DE COLLISION AVANT TOUTE ÉCHÉANCE SURVEILLÉE** :
+> *mémoriser les COMPARATIFS de l'année précédente **avant** l'événement. Si
+> les chiffres servis comme « année N » égalent mes comparatifs « N−1 », c'est
+> le faux — **pas un résultat décevant**.*
+>
+> ⚠️ **Et noter le sens du piège** : *un artefact peut me faire REJETER un
+> dossier autant que l'accepter. **Les faux ne poussent pas tous à acheter.***
+
+### ② CINQUIÈME FAMILLE — la COHÉRENCE RELATIONNELLE
+
+**Le RATIO entre deux séries suivies séparément.**
+
+| | Nasdaq ÷ S&P |
+|---|---|
+| Mes ancrages du 02/09 | **3,4197** |
+| Servis au 04/09 | **3,4342** |
+| Dérive | **+0,42 % sur deux séances** — plausible |
+
+> **Un réétiquetage aveugle ne préserve pas un ratio inter-indices au
+> millième.** *Si l'un des deux chiffres venait d'une autre séance, le ratio
+> sauterait.*
+>
+> 🔑 **Son mérite unique : elle fonctionne quand je n'ai validé NI l'un NI
+> l'autre des deux chiffres.** *C'est le seul contrôle qui produise de
+> l'information sur **deux inconnues simultanées**.*
+>
+> **Elle ne promeut pas en ancrage — elle sort de la suspicion.** *Nouvel
+> état disponible : « non ancré, non suspect ».*
+
+### ③ Le canal a un TROISIÈME état — le synthétiseur seul
+
+| Canal | 03/09 | **07/09** |
+|---|---|---|
+| Documentaire / émetteur / fils réglementés | 🔴 fermé | 🔴 **fermé, `curl` direct compris** |
+| Cotation indices & grandes valeurs | 🟢 ouvert | 🟡 **synthétiseur uniquement** |
+| Cotation petites valeurs | 🔴 contaminé | 🔴 contaminé |
+
+> ☠️ **Quand le seul canal ouvert est un synthétiseur, il n'y a plus de source
+> primaire : chaque fait arrive sans page consultable, donc SANS DATE
+> VÉRIFIABLE À LA SOURCE.**
+>
+> **La famille ① (DATE) est DÉSARMÉE.** *Les familles ② (cohérence externe),
+> ④ (interne) et ⑤ (relationnelle) portent tout le poids — elles seules ne
+> dépendent d'aucune source.*
+>
+> **Mesure du jour : 3 pièges d'archive sur 3 dossiers instruits — 100 %.**

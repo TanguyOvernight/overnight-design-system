@@ -947,6 +947,43 @@ reculer le titre malgré des chiffres records.**
 
 ---
 
+## 🔒 SÉCHÉ — GARDE-FOU DE COLLISION, écrit le 07/09 pour le 09/09 à 18h00
+
+**Le 07/09, un faux DATÉ DU FUTUR a été servi** : un bloc titré *« Résultats
+Semestriels H1 2025 **(Publiés le 9 Septembre 2026)** »* — soit **la date
+exacte de la publication surveillée**.
+
+| Poste | **Mes comparatifs S1 2025** | Servi comme « 09/09/2026 » |
+|---|---|---|
+| CA contributif | **580,1** | 580 |
+| **EBE** | **118,2** | **118** |
+| ROC | **49,1** | 49 |
+| RNPG | **15,9** | 16 |
+
+> ☠️ **Collision totale sur les quatre lignes.** *Ce sont mes propres
+> comparatifs 2025, redatés de mercredi prochain.*
+
+### 🔴 LE TEST À APPLIQUER MERCREDI, AVANT TOUTE LECTURE
+
+> **Si les chiffres servis comme « S1 2026 » égalent CA 580 · EBE 118 ·
+> ROC 49 · RNPG 16 → CE N'EST PAS UN SEMESTRE DÉCEVANT, C'EST LE FAUX.**
+>
+> **Et le piège est calibré contre moi** : *mon seuil de contrat est **EBE ≥
+> 125 M€**. Un « 118 » servi mercredi serait lu comme un **ÉCHEC de la
+> condition** — alors que c'est un **ARTEFACT**.* **J'aurais tué le dossier
+> sur un chiffre d'il y a un an.**
+
+**Ce qui l'a arrêté** : ni le bouclage, ni ma série, ni l'invariant d'émetteur
+*(les chiffres sont vrais et cohérents)*. **La cohérence interne seule** — *un
+semestre 2025 ne se publie pas en septembre 2026.*
+
+📌 **Archive utile extraite du même bloc, correctement datée** : la guidance
+posée le **10/09/2025** était **ROC 145-155 M€** *(abaissée depuis 160-170)* et
+**EBE 275-285 M€** *(abaissée depuis 290-300)*. **Le S1 du 09/09 est le test de
+contrôle de cette fourchette, un an après.**
+
+---
+
 ## 🔒 SÉCHÉ — GRILLE DE LECTURE DU S1, ÉCRITE LE 02/09 À J−7
 
 *Même dispositif que la grille NVIDIA du 09/08 : décider **où lire et quoi
