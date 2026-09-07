@@ -1,7 +1,7 @@
 {
   "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
-  "maj": "2026-09-06",
-  "dernier_brief": 10,
+  "maj": "2026-09-07",
+  "dernier_brief": 11,
   "vus": {
     "jobup": [
       "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -940,6 +940,78 @@
       "score": "jour-creux",
       "titre": "(aucune nouvelle offre persona — brief court)",
       "entreprise": "—",
+      "lien": ""
+    },
+    {
+      "brief": 11,
+      "date": "2026-09-07",
+      "score": "radar",
+      "titre": "Rédacteur (80-100%)",
+      "entreprise": "VisionCompliance",
+      "note": "Genève plafond ; CHF 7-8k affiché ; min 3 ans ; publié 01.09 ; GET ✔",
+      "lien": "https://www.jobs.ch/fr/offres-emplois/detail/cc789034-87fd-409d-a76d-173424db7f87/"
+    },
+    {
+      "brief": 11,
+      "date": "2026-09-07",
+      "score": "radar",
+      "titre": "Spécialiste Relations Publiques",
+      "entreprise": "Patek Philippe",
+      "note": "Plan-les-Ouates ; 5-7 ans ; publiée 06.09 ; GET ✔",
+      "lien": "https://www.jobs.ch/fr/offres-emplois/detail/c3fe3d0f-6d52-4632-a3b2-9a6e6a8853fe/"
+    },
+    {
+      "brief": 11,
+      "date": "2026-09-07",
+      "score": "radar",
+      "titre": "Digital Marketing Brand Manager",
+      "entreprise": "via Finders",
+      "note": "Genève ; min 5 ans B2C ; GET ✔",
+      "lien": "https://www.jobs.ch/fr/offres-emplois/detail/496514f8-965d-4178-84c9-360cc84f7ac6/"
+    },
+    {
+      "brief": 11,
+      "date": "2026-09-07",
+      "score": "radar",
+      "titre": "Spécialiste en Marketing Digital et CRM",
+      "entreprise": "via emplois-vaud",
+      "note": "🔎 sans lien (site anti-bot) ; lieu à confirmer",
+      "lien": ""
+    },
+    {
+      "brief": 11,
+      "date": "2026-09-07",
+      "score": "radar",
+      "titre": "Director, Marketing + Head of Commercial",
+      "entreprise": "FEI",
+      "note": "niveau direction > cible ; 🔎 inside.fei.org",
+      "lien": ""
+    },
+    {
+      "brief": 11,
+      "date": "2026-09-07",
+      "score": "radar",
+      "titre": "Brand Manager",
+      "entreprise": "Hugo Reitzel",
+      "note": "Aigle hors périmètre ; 🔎",
+      "lien": ""
+    },
+    {
+      "brief": 11,
+      "date": "2026-09-07",
+      "score": "ecartee-notable",
+      "titre": "⏰ Responsable éditorial (deadline 08.09)",
+      "entreprise": "Genève Aéroport",
+      "note": "remplacement maternité <12 mois + Genève ; lien donné pour urgence",
+      "lien": "https://www.jobs.ch/fr/offres-emplois/detail/6e2d9cdb-3a0c-4971-a644-5518153a04d2/"
+    },
+    {
+      "brief": 11,
+      "date": "2026-09-07",
+      "score": "info",
+      "titre": "🗑️ FIG Head of M/C/TV + Digital Comms disparues du site",
+      "entreprise": "FIG",
+      "note": "considérées pourvues/retirées (brief 4)",
       "lien": ""
     }
   ]
