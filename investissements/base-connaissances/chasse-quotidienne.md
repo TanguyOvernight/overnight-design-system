@@ -1177,3 +1177,55 @@ chiffres **réels** du S1 2025.
 > dépendent d'aucune source.*
 >
 > **Mesure du jour : 3 pièges d'archive sur 3 dossiers instruits — 100 %.**
+
+---
+
+## 🛑 08/09/2026 — LE TEST DE DISPERSION : la première règle qui dit QUAND ARRÊTER
+
+### Le constat — le canal ne sert plus un faux, il sert un ÉVENTAIL
+
+**Quatre prix pour Séché dans une seule session, mutuellement incompatibles**
+*(écart extrême +3,9 %)* : **79,50** *(dégénéré)* · **82,60** *(quarantaine)* ·
+**81,10** *(double tueur)* · **79,50 re-servi sous une date postérieure**
+*(coïncidence)*.
+
+> 🔑 **Quand quatre prix incompatibles arrivent, l'information n'est pas
+> « lequel est vrai » — c'est que LE CANAL NE PORTE PLUS DE PRIX DU TOUT.**
+
+### ✅ LA RÈGLE
+
+> **Si un canal sert, dans une même session, TROIS valeurs ou plus mutuellement
+> incompatibles pour le même instrument : on cesse de chercher laquelle est
+> vraie. On déclare le canal NON PORTEUR pour cet instrument, et on arrête d'y
+> dépenser des requêtes.**
+
+**Coût mesuré de son absence, le jour où elle a été écrite** : *6 requêtes
+dépensées sur le cours de Séché pour 4 rejets ; **3 auraient suffi**. Les 3
+perdues manquaient au terrain santé.*
+
+### 🔬 Pourquoi c'est une famille NOUVELLE
+
+| Mes règles antérieures | Celle-ci |
+|---|---|
+| répondent à **« ce chiffre est-il vrai ? »** | répond à **« dois-je continuer à demander ? »** |
+| protègent contre l'**erreur** | protège contre le **GASPILLAGE** |
+
+> ⚠️ **Et le gaspillage se paie sur un AUTRE terrain que celui où il a lieu.**
+> *Les requêtes brûlées sur un canal mort ne manquent pas au dossier qu'on
+> instruisait — elles manquent à celui qu'on n'a jamais ouvert.*
+
+### 📐 Un recoupement inédit entre deux contrôles
+
+**Le prix de 81,10 € a été tué DEUX FOIS, par deux chemins indépendants** :
+
+> **a)** `81,10 ÷ 0,9988 = 81,20 €` de veille impliquée — **mais la même
+> réponse annonce « previous close 65,30 € »**, soit 24 % d'écart.
+> → **COHÉRENCE INTERNE** *(née le 03/09)*
+>
+> **b)** `81,10 ÷ 0,9878 = 82,10 €` de veille hebdomadaire impliquée —
+> **exactement le chiffre en quarantaine**.
+> → **HÉRITAGE DU REJET** *(né le 03/09)*
+
+**Deux familles écrites le même jour, se recoupant pour la première fois cinq
+jours plus tard.** *Un corpus de contrôles devient redondant avant de devenir
+complet — et la redondance est un signe de santé, pas de gaspillage.*
