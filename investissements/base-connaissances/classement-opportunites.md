@@ -401,6 +401,52 @@ restée au 28/08**.*
 
 ---
 
+### 📊 LE CLASSEMENT AU 08/09 — 8 candidates, **0 mouvement de rang**
+
+*(écrit AVANT la newsletter)*
+
+| Rang | Candidate | Chiffre vs déclencheur | Qualité | Mvt |
+|---|---|---|---|---|
+| **①** | **Cœur World** | 🔴 **PEA NON OUVERT — 30ᵉ jour** | ✅ | **=** |
+| **②** | **Or** | **~4 491 $/oz (03/09, 9h05 ET)** | 🟡 niveau retenu, récit rejeté | **=** |
+| **③** | **Séché** | Dernier validé **81,90 € (26/08)** → **−9,0 %** sous le seuil. 🔴 **S1 DEMAIN 18h** | ☠️ **CANAL DÉCLARÉ NON PORTEUR** — 4 prix incompatibles en une session *(79,50 · 80,40 · 81,10 · 82,60)*. **13 jours sans cours** | **=** |
+| **④** | **Eli Lilly** | **1 174,61 $ (28/08)** | ❌ non obtenu | **=** |
+| **⑤** | **Magnum** | **10,40 Md€** → il faut −26,9 % | ❌ non instruit | **=** |
+| **⑥** | **Aubay** | ⚠️ trou, repère non daté | ❌ non obtenu | **=** |
+| **⑦** | **STM** | **43,60 € (02/09)** → **+3,81 %** du seuil | 🔴 paire 44,81/44,03 invalidée | **=** |
+| **⑧** | **Nike** | ❌ non obtenu | quarantaine 40,75 $ | **=** |
+
+### ☠️ SÉCHÉ — le canal est déclaré NON PORTEUR, la veille du S1
+
+**Quatre prix mutuellement incompatibles servis dans une seule session**,
+écart extrême **+3,9 %**. *Chacun tué par une règle différente : dégénéré ·
+quarantaine · cohérence interne · coïncidence.*
+
+> **Règle instaurée aujourd'hui — le TEST DE DISPERSION** : *trois valeurs
+> incompatibles ou plus dans une session → **le canal ne porte plus cet
+> instrument**, on cesse d'y dépenser des requêtes.*
+>
+> 🔒 **Conséquence assumée pour demain : je ne chercherai PAS de cours Séché.**
+> *La condition de prix se vérifiera sur l'écran du courtier, ou pas du tout —
+> ce que ma décision du 04/09 avait déjà anticipé.*
+
+### 🟢 RUBIS — fait solide versé au dossier, PAS un signal
+
+**S1 publié ce matin** : CA **4 068 M€ (+24 %)** · EBITDA **434 M€ (+18 %)** ·
+RN **191 M€ (+17 %)** · levier **1,3×**. **🎯 Guidance annuelle RELEVÉE de
++35 M€ sur LES DEUX bornes** *(740-790 → **775-825 M€**)* — *relèvement de
+niveau, pas élargissement de fourchette.*
+
+**Tous mes contrôles passent** *(collision, cohérence interne, non dégénéré,
+héritage)*. ❌ **Mais T2 échoue** : publié à 7h30, repris par quatre canaux —
+**le prix est fait**. *Et sans cours de RUI, aucune thèse de sous-réaction
+n'est formulable.* **Zéro d'EFFICIENCE.**
+
+🚩 **Drapeau structurel** : *la marge est-africaine vient d'un « ajustement de
+la formule de prix au Kenya ».* **Une marge administrée est une marge que
+l'autorité peut reprendre** — schéma CORSIA du 16/08. *Si une thèse Rubis
+devait un jour reposer dessus, ce serait son talon.*
+
 ### 📊 LE CLASSEMENT AU 07/09 — 8 candidates, **0 mouvement de rang**
 
 *(rattrapage 04→07/09 · écrit AVANT la newsletter, correction de procédure du 07/09)*
