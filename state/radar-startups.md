@@ -46,6 +46,13 @@ Alix Switzerland SA (Nyon) · WideField Pictures (Sainte-Croix, prod image) · H
 Digital (Lutry) · mothr Sàrl (Lausanne) · 42 Innovations Sàrl (La Tour-de-Peilz).
 Rien de type filiale de groupe cette semaine.
 
+## Signal 08.09 — labo « Frontier AI » anonyme recrute en francophone
+DeepRec.ai (cabinet) publie un « Technical Lead IA appliquée / Forward Deployed
+AI Engineer », EMEA, ~1 sem/mois à Paris, pour « une entreprise leader mondiale
+de l'IA de nouvelle génération » (modèles fondamentaux). Profil du client :
+Mistral AI très probable. Rôle tech → hors brief, mais confirme l'expansion
+commerciale francophone — la veille premier-poste-marketing GenAI reste chaude.
+
 ## Employeurs IA Lausanne (état 07.09)
 Mistral AI : 4 postes Applied AI actifs (~1 mois) — 0 marketing. Harmattan AI (MLOps),
 Giotto AI (3 postes research), Nexthink (Senior PM AI Agent), Artefact (Senior AI
