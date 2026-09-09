@@ -401,6 +401,64 @@ restée au 28/08**.*
 
 ---
 
+### 📊 LE CLASSEMENT AU 09/09 — 8 candidates, **0 mouvement de rang**
+
+*(écrit AVANT la newsletter · ⚠️ screening non instruit, budget passé au terrain)*
+
+| Rang | Candidate | Chiffre vs déclencheur | Qualité | Mvt |
+|---|---|---|---|---|
+| **①** | **Cœur World** | 🔴 **PEA NON OUVERT — 31ᵉ jour** | ✅ | **=** |
+| **②** | **Or** | **~4 491 $/oz (03/09)** | *non instruit ce jour* | **=** |
+| **③** | **Séché** | **81,90 € (26/08)** → −9,0 % sous le seuil. 🔴 **S1 CE SOIR 18h — lecture demain matin** | ☠️ canal **NON PORTEUR** · **14 jours sans cours** | **=** |
+| **④** | **Eli Lilly** | **1 174,61 $ (28/08)** | *non instruit* | **=** |
+| **⑤** | **Magnum** | **10,40 Md€** | *non instruit* | **=** |
+| **⑥** | **Aubay** | trou, repère non daté | 📅 **S1 le 16/09** | **=** |
+| **⑦** | **STM** | **43,60 € (02/09)** → +3,81 % du seuil | *non instruit* | **=** |
+| **⑧** | **Nike** | ❌ | quarantaine 40,75 $ | **=** |
+
+### 🎣 ENTECH — piège désamorcé, et le fait vaut comme MARQUEUR SECTORIEL
+
+**S1 2026 du 08/09** : CA **71,8 M€ (×2,6)** — *le titre du communiqué* — mais
+**prises de commandes 45,8 M€** et **carnet 150 → 116 M€ (−23 %)**.
+
+> 🔑 **`45,8 ÷ 71,8 = book-to-bill 0,64×`.** *Le ×2,6 n'est pas de la croissance
+> commerciale : c'est le **déstockage** du carnet record de 2025. Annualisées,
+> les prises de commandes sont **divisées par plus de deux**.*
+>
+> 🔴 **Et la reconstitution ne boucle pas** : `150 + 45,8 − 71,8 = 124 M€`
+> contre **116 M€** annoncés — **8 M€ (6,5 %) non expliqués**, dans le sens
+> défavorable.
+
+**Écarté** *(T2 : croissance mécanique, objectif confirmé non relevé · T4 non
+vérifiable : CA seul, alors que la reconnaissance à l'avancement + le
+développement d'actifs en propre font du **BFR** le vrai test)*.
+
+### 🔑 LA CONVERGENCE — elle vaut mieux que le signal que je n'ai pas trouvé
+
+> **Fugro (31/07)** : la direction **date elle-même** la reprise de l'éolien
+> offshore à **2027**.
+> **Entech (08/09)** : prises de commandes ENR/stockage **divisées par plus de
+> deux** au S1 2026.
+>
+> **Deux sociétés sans lien capitalistique, deux sous-secteurs, même sens.**
+> **Toute future thèse « rebond des renouvelables français » devra expliquer
+> ces deux faits datés avant d'être instruite.**
+
+### 🪤 Deux pièges, dont un sur le site de l'ÉMETTEUR
+
+**① Fausse attribution de paquet** : *Vallourec-Aramco ont signé un accord
+OCTG **sans aucun montant**. Un titre « **3,7 Md$** d'accords franco-saoudiens »
+circule — c'est la valeur potentielle COMBINÉE d'un paquet avec PLUSIEURS
+entreprises françaises.* **Si ce chiffre revient accolé à Vallourec : rejet
+d'office.**
+
+**② Article périmé sur `vallourec.com`** : *une page annonçant un contrat OCTG
+en mer du Nord, remontée en 2ᵉ position sur une requête du 09/09/2026, est de
+**novembre 2025** — et ne porte aucune date visible.*
+> ✅ **Corollaire étendu : un article non daté est périmé par défaut, Y COMPRIS
+> sur le site de l'émetteur.** *C'est la source que ma doctrine classe le plus
+> haut, et elle n'y échappe pas.*
+
 ### 📊 LE CLASSEMENT AU 08/09 — 8 candidates, **0 mouvement de rang**
 
 *(écrit AVANT la newsletter)*
