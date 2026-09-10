@@ -1229,3 +1229,56 @@ perdues manquaient au terrain santé.*
 **Deux familles écrites le même jour, se recoupant pour la première fois cinq
 jours plus tard.** *Un corpus de contrôles devient redondant avant de devenir
 complet — et la redondance est un signe de santé, pas de gaspillage.*
+
+---
+
+## 🗓️ 10/09/2026 — LE CONTRÔLE DE CALENDRIER, et la VARIATION AUTO-CALCULÉE
+
+### ① Une chaîne dont la validité dépend d'un JOUR FÉRIÉ
+
+**Le S&P du 08/09 boucle sur l'ancrage du 04/09** *(−0,584 % → −0,58 % servi)*.
+**Chaîner un mardi sur un vendredi serait normalement une faute** — ici c'est
+licite : **le 07/09/2026 est le premier lundi de septembre, LABOR DAY, et Wall
+Street était fermée.**
+
+> ✅ **RÈGLE** : *avant de chaîner deux clôtures, vérifier que la veille
+> calendaire est bien une **séance ouvrée SUR CETTE PLACE**. Un férié rend
+> licite un chaînage autrement fautif — et le rend fautif ailleurs.*
+>
+> 🔑 **Contrôle croisé élégant** : *Paris A eu une séance le 07/09, New York
+> non.* **Deux réponses indépendantes s'accordant sur une asymétrie de
+> calendrier entre deux places — un réétiquetage n'invente pas ça.**
+
+### ② LA VARIATION AUTO-CALCULÉE — un piège qui MIME le bouclage
+
+**Sur Nike, le « −2,8 % » n'a pas été servi par la source : il a été calculé
+par le synthétiseur à partir de ses deux propres chiffres.**
+
+> ☠️ **Un bouclage sur une variation que le répondeur a lui-même déduite est
+> aussi vide qu'un cas dégénéré — mais il ne se voit pas.**
+> *Le cas dégénéré s'annonce (`variation = 0,00 %`). Celui-ci a l'air normal :
+> la variation est simplement **dérivée des deux nombres qu'elle prétend
+> relier**.*
+
+> ✅ **RÈGLE** : *exiger que la variation soit **SERVIE PAR LA SOURCE**, pas
+> déduite. Si clôture, veille et variation viennent du même paragraphe sans
+> attribution distincte, le bouclage ne prouve rien.*
+
+### ③ Le RATIO prouve la CO-SESSION, pas seulement la vraisemblance
+
+*Le ratio Nasdaq ÷ S&P recalculé sur la paire du 04/09 reproduit **3,4342 au
+millième** — **preuve indépendante que les deux chiffres étaient de la MÊME
+séance**.* **Et son SIGNE suit la logique** *(le 09/09, le Nasdaq baisse plus,
+donc le ratio recule — il recule)*.
+
+> 🔑 **Un réétiquetage aveugle ne produit pas le bon signe par hasard.**
+
+### ④ Le SENS du faux — troisième confirmation
+
+**Les trois valeurs STM servies sont AU-DESSUS de mon ancrage** *(43,95 ·
+44,94 · 46,64, jusqu'à +11 % du seuil)*.
+
+> **Un faux ici ne pousse pas à ACHETER : il éloigne du seuil et ferait
+> CLASSER le dossier.** *Après la bande STM du 26/08 et le faux Séché du
+> 07/09, c'est la **troisième** fois qu'un artefact menace de me faire
+> renoncer.* **Les faux ne poussent pas tous à acheter.**
