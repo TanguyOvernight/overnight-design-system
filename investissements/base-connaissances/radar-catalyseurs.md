@@ -947,6 +947,66 @@ reculer le titre malgré des chiffres records.**
 
 ---
 
+## 🔴 SÉCHÉ — ÉTAT APRÈS LE S1 DU 09/09, et la FENÊTRE qui court
+
+**Publié le 09/09 à 18h00. ✅ Test de collision NÉGATIF** *(CA 607,8 contre 580 ·
+EBE 128,3 contre 118 · RNPG 12,2 contre 16 — ce n'était pas le faux)*.
+
+| Condition du contrat | État au 10/09 |
+|---|---|
+| ① EBE ≥ 125 M€ | ✅ **REMPLIE — 128,3 M€ (+8,5 %)** |
+| ② France organique ≥ 0 % | ⚪ **NON VÉRIFIABLE** — non publiée dans ce que j'atteins |
+| ③ Guidance 260-270 M€ confirmée | ⚪ **NON VÉRIFIABLE** — *« objectifs confirmés » (CA 1 230-1 260, levier < 3×) mais **le montant d'EBE n'est pas restitué*** |
+| ④ Clôture datée ≤ 90 € | ⚪ **NON VÉRIFIABLE** — canal non porteur depuis le 08/09 |
+
+> **CONTRAT NON REMPLI. Aucune condition n'a ÉCHOUÉ — trois sont
+> IMMESURABLES.** *Dossier illisible, pas dossier réfuté.*
+> ✅ **Pas de 3ᵉ avertissement : la guidance est confirmée, pas coupée. Je
+> reste à DEUX.**
+
+### 🔒 FENÊTRE DE 15 JOURS — BUTÉE **24/09/2026**
+
+> **Le contrat se déclenche si — et seulement si — une CLÔTURE DATÉE ≤ 90 €
+> apparaît d'ici le 24/09.**
+> *Passé cette date : **PASSE, avec le motif « NON CONCLU FAUTE D'ACCÈS AU
+> PRIX »** — surtout pas « thèse insuffisante ». La distinction sépare un
+> échec d'instrumentation d'un échec d'analyse.*
+>
+> ⚠️ **Si le déclencheur tire avec le PEA fermé : j'inscris que LE DÉCLENCHEUR
+> A TIRÉ (un fait), PAS qu'un achat a été décidé.**
+>
+> 🔴 **Interdiction maintenue** : *ne pas utiliser le 81,90 € du 26/08 comme
+> prix de décision, même s'il est 9 % sous le seuil.* **Ce serait une
+> vraisemblance substituée à une mesure.**
+
+### 📊 Ce que les comptes disent quand même
+
+**EBE +8,5 % · RNPG −23,3 %** — *un écart de **32 points**, motif cité :
+coûts d'acquisition et plan de performance, non récurrents.* ⚠️ **Troisième
+occurrence en deux semaines de ce motif** *(Eiffage, TEXAF, Séché)* : *« le
+haut monte, le net baisse, c'est non récurrent »* — **je n'ai jamais pu le
+vérifier faute d'accès au compte de résultat détaillé.**
+
+**🔴 Le levier a INVERSÉ sa trajectoire** :
+
+| | 31/12/2025 | **30/06/2026** |
+|---|---|---|
+| Dette nette IFRS | 548,8 M€ | **757,4 M€** *(+208,6, acquisitions)* |
+| Levier affiché | 2,3× | **2,9×** |
+| **Retraité des 300 M€ d'hybrides** | ~3,8× | **≈ 4,2×** |
+
+*Contrôle : `723,8 ÷ 251,2 = 2,881` — le levier se calcule hors emprunts sans
+recours.* **L'objectif affiché est « < 3× » ; l'économique est à ~4,2×.**
+
+### 🎣 Le piège du 10/09 visait la condition qui décide
+
+*« France : CA 168,0 M€, recul organique **−7,6 %** », servi comme du S1 2026.*
+**C'est le T1** *(communiqué du 23/04)* — et **168 M€ est arithmétiquement
+impossible pour un semestre** dont le groupe fait 607,8 M€ avec l'international
+à ~43 %. **Servi tel quel, il m'aurait fait conclure que la France échoue.**
+
+---
+
 ## 🔒 SÉCHÉ — GARDE-FOU DE COLLISION, écrit le 07/09 pour le 09/09 à 18h00
 
 **Le 07/09, un faux DATÉ DU FUTUR a été servi** : un bloc titré *« Résultats
