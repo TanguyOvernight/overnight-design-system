@@ -1,7 +1,7 @@
 {
  "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
- "maj": "2026-09-09",
- "dernier_brief": 13,
+ "maj": "2026-09-10",
+ "dernier_brief": 14,
  "vus": {
   "jobup": [
    "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -46,7 +46,9 @@
    "https://www.jobup.ch/en/jobs/detail/c535e1bb-05a9-4744-9bd5-0005b589609e/",
    "https://www.jobs.ch/de/stellenangebote/detail/7f305c8a-8921-4711-bb71-45e5e27aefd1/",
    "947c24d0-0dcf-4761-bdce-336d2740543d",
-   "79885313-9272-465b-85aa-c724928d6877"
+   "79885313-9272-465b-85aa-c724928d6877",
+   "f5b13669-1723-4d29-bcce-511ab4d9095b",
+   "d9042d61-8b0f-4675-a438-f188d663ad3c"
   ],
   "ats_employeurs": [
    "https://recrutement.eben-hezer.ch/jobs/7602918-responsable-communication-et-recherche-de-fonds",
@@ -94,7 +96,14 @@
    "4464658240",
    "4464953000",
    "4463540397",
-   "4465018026"
+   "4465018026",
+   "4465077109",
+   "4463069171",
+   "4465055342",
+   "4463047513",
+   "4465622978",
+   "4465028329",
+   "4465357000"
   ],
   "chuv": [
    "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html"
@@ -1187,6 +1196,51 @@
    "titre": "Brand Segment Lead",
    "entreprise": "Nestlé Suisse",
    "note": "remplacement maternité 6-12 mois + 'internal opportunity' → ❌",
+   "lien": null
+  },
+  {
+   "brief": 14,
+   "date": "2026-09-10",
+   "score": "✅",
+   "titre": "Webmaster spécialisé UI/UX (h/f) 80-100%",
+   "entreprise": "Centre Patronal",
+   "note": "Paudex CDI min 3 ans, publiée 10.09 (jour même), double-source jobup+jobs.ch GET ✔",
+   "lien": "https://www.jobup.ch/fr/emplois/detail/f5b13669-1723-4d29-bcce-511ab4d9095b/"
+  },
+  {
+   "brief": 14,
+   "date": "2026-09-10",
+   "score": "✅",
+   "titre": "Printshop Specialist",
+   "entreprise": "IMD",
+   "note": "Lausanne CDI min 3 ans Adobe/InDesign, publiée 09.09 ; remontée 👀→✅ par second regard (double occurrence index LinkedIn) ; ATS officiel hors allowlist — réserve notée au brief",
+   "lien": "https://ch.linkedin.com/jobs/view/printshop-specialist-at-imd-4465077109"
+  },
+  {
+   "brief": 14,
+   "date": "2026-09-10",
+   "score": "👀",
+   "titre": "EURO HB Live Producer",
+   "entreprise": "UEFA",
+   "note": "Nyon -1 ; CDD 18 mois ferme 02.2027→07.2028 ; 4-6 ans broadcast ; DEADLINE 24.09.2026 ; GET ✔",
+   "lien": "https://ch.linkedin.com/jobs/view/euro-hb-live-producer-at-uefa-4463069171"
+  },
+  {
+   "brief": 14,
+   "date": "2026-09-10",
+   "score": "👀",
+   "titre": "Trade Marketing Manager EMEA",
+   "entreprise": "Sunstar",
+   "note": "Etoy -1, CDI, 5-8+ ans exigés ; GET ✔",
+   "lien": "https://ch.linkedin.com/jobs/view/trade-marketing-manager-emea-at-sunstar-4465055342"
+  },
+  {
+   "brief": 14,
+   "date": "2026-09-10",
+   "score": "ecartee-notable",
+   "titre": "Therapy Development Marketing Manager",
+   "entreprise": "Edwards Lifesciences",
+   "note": "jetée par second regard : diplôme Life Sciences/Médecine requis + significant experience — engagement HCP, pas marketing créa",
    "lien": null
   }
  ]
