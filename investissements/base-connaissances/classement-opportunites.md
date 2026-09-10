@@ -401,6 +401,59 @@ restée au 28/08**.*
 
 ---
 
+### 📊 LE CLASSEMENT AU 10/09 — 8 candidates, **0 mouvement de rang**
+
+### 🔴 SÉCHÉ — LE S1 EST PUBLIÉ, LE CONTRAT N'EST PAS REMPLI, ET AUCUNE CONDITION N'A ÉCHOUÉ
+
+**Publié le 09/09 à 18h00.** ✅ **Test de collision NÉGATIF** — *ce n'est pas
+le faux qui circulait depuis le 07/09* : CA **607,8** contre 580, EBE **128,3**
+contre 118, RNPG **12,2** contre 16.
+
+| Lecture | Résultat |
+|---|---|
+| **① EBE publié** | **128,3 M€ (+8,5 %)** — ✅ **CONDITION REMPLIE** *(+2,6 % au-dessus du seuil, +16,6 % au-dessus du KILL)* |
+| ② EBE à périmètre constant | 🔴 **NON TROUVÉ** — *la question critique reste sans réponse* |
+| ③ H2 implicite | `265 − 128,3 = 136,7` contre 106,8 → **+28,0 %**, *juste sous mon drapeau de +30 %* |
+| ④ France organique | 🔴 **NON TROUVÉ** |
+| ⑤ Guidance | **confirmée** *(CA 1 230-1 260, levier < 3×)* — 🔴 mais **le montant d'EBE n'est pas restitué** |
+| ⑥ Levier | **2,3× → 2,9×**, dette **548,8 → 757,4 M€**, *attribuée aux acquisitions* |
+| ⑦ Cours daté | 🔴 **NON OBTENU** |
+
+> **CONTRAT NON REMPLI. Aucun achat.** *Mais **trois conditions sont
+> immesurables, aucune n'est en échec** — ce n'est pas un dossier réfuté,
+> c'est un dossier illisible.*
+>
+> ✅ **Pas de KILL** : la guidance est confirmée, pas coupée. **Je reste à
+> deux avertissements.**
+>
+> 🔒 **Décision du 04/09 appliquée** : fenêtre de 15 jours, **butée 24/09**.
+> Déclenchement si une clôture datée ≤ 90 € apparaît. Sinon **PASSE avec le
+> motif « non conclu faute d'accès »**.
+
+**⚰️ C012 résolu FAUX** *(Brier 0,1444, moyenne 0,2988 à n = 13)*, **avec note
+d'invalidité partielle décidée la veille.**
+
+### 🔴 Le levier a INVERSÉ sa trajectoire — et la lecture du 30/08 tient
+
+| | 31/12/2025 | **30/06/2026** |
+|---|---|---|
+| Dette nette IFRS | 548,8 M€ | **757,4 M€** |
+| Levier affiché | 2,3× | **2,9×** |
+| **Retraité des 300 M€ d'hybrides** | ~3,8× | **≈ 4,2×** |
+
+*Contrôle : `723,8 ÷ 251,2 = 2,881` — le levier se calcule hors emprunts sans
+recours.* **Le désendettement de 2025 était un artefact d'hybrides ; la dette
+réelle repart à la hausse. L'objectif affiché est « < 3× », l'économique est à
+~4,2×.**
+
+### 🎣 Le piège du jour visait la condition qui décide
+
+*« France : CA 168,0 M€, recul organique **−7,6 %** », servi comme du S1 2026.*
+**C'est le T1** — et **168 M€ est arithmétiquement impossible pour un semestre**
+dont le groupe fait 607,8 M€ avec l'international à ~43 %.
+> ☠️ **Servi tel quel, ce chiffre m'aurait fait conclure que la France échoue —
+> un verdict tiré d'un trimestre présenté comme un semestre.**
+
 ### 📊 LE CLASSEMENT AU 09/09 — 8 candidates, **0 mouvement de rang**
 
 *(écrit AVANT la newsletter · ⚠️ screening non instruit, budget passé au terrain)*

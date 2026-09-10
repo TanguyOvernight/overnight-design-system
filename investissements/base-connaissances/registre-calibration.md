@@ -221,7 +221,47 @@ après.**
 prochaines** résolutions, pas sur celle-ci.
 | C010 | 27/07 | Avocat | IBA (RÉFUTÉ) | La thèse « actif caché PanTera » est morte : pas d'accord ferme ≥ 800 M€ d'ici fin 2027 **ET/OU** EBIT 2026 sous guidance (32 M€) — ⚠️ **« ET/OU » se résout comme un OU INCLUSIF** *(convention déclarée le 22/08, avant tout fait connu)* | 75 % (= 1−25 % de la thèse) | Fin 2027 : deal PanTera ferme ≥ 800 M€ ? EBIT 2026 vs guidance ? (deal ferme → l'Avocat avait tort) | ⏳ |
 | C011 | 27/07 | Avocat | Séché | Le couple redressement + PFAS-boues se valide : EBE 2026 ≥ 260 M€ publié SANS 3e warning ET arrêté boues applicable 01/01/2027 avec seuils ≤ 40/400 µg/kg | 40 % | Publication FY2026 (mars 2027) ; jalons : S1 sept. 2026, arrêté été 2026 | ⏳ |
-| C012 | 27/07 | Juge | Séché | Le S1 2026 déclenche l'achat (EBE S1 ≥ 125 M€ ET France organique ≥ 0 % ET guidance 275-285 M€ confirmée) | 38 % (brute 35 %) | Communiqué S1, au plus tard le 30/09/2026 | ⏳ |
+| C012 | 27/07 | Juge | Séché | Le S1 2026 déclenche l'achat (EBE S1 ≥ 125 M€ ET France organique ≥ 0 % ET guidance 275-285 M€ confirmée) | 38 % (brute 35 %) | Communiqué S1 du 09/09/2026 | ❌ **RÉSOLU FAUX le 10/09 — Brier 0,1444.** ⚠️ **Note d'invalidité partielle** |
+
+### ⚰️ Résolution de C012 — 10/09/2026
+
+**Le S1 2026 a été publié le 09/09 à 18h00. L'achat n'est PAS déclenché.**
+
+| Condition | État |
+|---|---|
+| ① EBE ≥ 125 M€ | ✅ **REMPLIE** — **128,3 M€ (+8,5 %)** |
+| ② France organique ≥ 0 % | ⚪ **NON VÉRIFIABLE** |
+| ③ Guidance confirmée | ⚪ **NON VÉRIFIABLE** *(le montant d'EBE n'est pas restitué)* |
+| ④ Clôture datée ≤ 90 € | ⚪ **NON VÉRIFIABLE** |
+
+**Brier `(0,38 − 0)² = 0,1444`** · moyenne **0,3117 → 0,2988** *(n = 13)* ·
+BSS **−0,247 → −0,195**.
+
+### 🔒 NOTE D'INVALIDITÉ PARTIELLE — décidée le 09/09, AVANT l'issue
+
+> **La 3ᵉ branche de cet appel — « guidance 275-285 M€ confirmée » — était
+> INATTEIGNABLE dès son écriture** *(ce montant était mort depuis le
+> 09/03/2026, quatre mois avant)*.
+>
+> ✅ **Le Brier compte dans la moyenne — je ne le retire pas.** *Amender un
+> appel enregistré parce qu'on le découvre mal rédigé est ce que ce registre
+> existe pour empêcher, et je l'ai refusé le 31/08 sur C009 le jour où ça
+> m'aurait arrangé.*
+>
+> ⚠️ **Mais il est marqué NON INFORMATIF sur ma capacité de lecture** : *j'ai
+> écrit une conjonction dont une branche ne pouvait pas se réaliser, et je
+> suis crédité d'avoir prédit qu'elle ne se réaliserait pas.* **Le Brier ne
+> distingue pas « j'ai bien lu » de « j'ai mal écrit ».**
+>
+> 🔑 **Nuance due à l'honnêteté** : *la **première** branche est REMPLIE.
+> J'avais bien vu que le seuil d'EBE de 125 M€ était un plancher franchissable
+> — analyse écrite le 02/09. **Ce qui est non informatif, c'est le verdict
+> global, pas chaque branche.***
+
+**C011 et C013 restent OUVERTS** *(EBE FY2026 ≥ 260 M€ sans 3ᵉ warning, échéance
+mars 2027 · arrêté PFAS boues au 30/09/2026)*. **Aucun 3ᵉ avertissement n'a été
+émis : je reste à DEUX.**
+
 | C013 | 27/07 | Juge | Séché/PFAS | L'arrêté final boues est publié d'ici le 30/09/2026 avec application au 01/01/2027 maintenue | 62 % (brute 65 %) | JO / bulletin officiel au 30/09/2026 | ⏳ |
 | C014 | 27/07 | Juge | action-US / pluriannuel · CTO | LLY | Le déclencheur d'achat fixé se présente : **LLY ≤ 1 020 $ en clôture** | 35 % | Cours de clôture NYSE, avant le 30/06/2027 | ⏳ |
 | C015 | 27/07 | Juge | allocation / pluriannuel | Poche offensive | La poche offensive (150 €/mois, règles du 27/07) BAT le versement équivalent au cœur WPEA | 25 % (brute 16 %, plancher de charte) | 31/12/2027 : perf pondérée par dates d'achat vs WPEA acheté aux mêmes dates | ⏳ |
