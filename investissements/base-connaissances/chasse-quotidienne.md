@@ -1282,3 +1282,100 @@ donc le ratio recule — il recule)*.
 > CLASSER le dossier.** *Après la bande STM du 26/08 et le faux Séché du
 > 07/09, c'est la **troisième** fois qu'un artefact menace de me faire
 > renoncer.* **Les faux ne poussent pas tous à acheter.**
+
+---
+
+# 11/09/2026 — Quatre acquis, dont une prédiction réfutée
+
+## ① 🧪 LA PREMIÈRE PRÉDICTION SUR LE CANAL — et elle est FAUSSE
+
+**Posée le 10/09** : *« le chiffre Lilly 1 149,36 $, rejeté comme cas dégénéré,
+reviendra demain en VEILLE d'un calcul impeccable — c'est ce qu'a fait le
+1 160,00 le 03/09. »* → ❌ **RÉFUTÉE. Aucun calcul ne s'appuie dessus.**
+
+### 🔑 RÈGLE NOUVELLE — **le motif d'héritage dépend du FORMAT de réponse**
+
+Le motif du 03/09 supposait un canal servant des **paires (clôture, variation)**
+— seul format dans lequel un chiffre peut occuper la case « veille ».
+Aujourd'hui le canal sert un **triplet intraday (bas, clôture, haut)** et
+laisse le répondeur fabriquer les pourcentages.
+
+> **Un chiffre en quarantaine ne peut pas revenir en veille d'un calcul si le
+> canal a cessé de produire des calculs.**
+>
+> *La prédiction était juste sur le mécanisme et fausse sur sa PRÉMISSE.*
+> **Avant de prédire le comportement d'un canal, vérifier que son FORMAT est
+> stable — un motif observé sur un format ne se transporte pas sur un autre.**
+
+⚠️ **Et la faiblesse était annoncée d'avance** : le motif venait d'**une seule
+observation**. *Un motif tiré d'un cas est une anecdote.* **Le coût du test a
+été nul — il se lisait dans les données déjà collectées pour le screening.**
+**C'est le bon prix pour une hypothèse faible : ne pas la financer, la lire en
+passant.**
+
+## ② ⚠️ LE TRIPLET INTRADAY N'EST PAS CHAÎNABLE — donc pas validable
+
+`1 121,07 ≤ 1 125,49 ≤ 1 139,50` : **cohérence interne parfaite.** Et pourtant
+**1 125,49 n'est PAS promu ancrage.**
+
+> **La cohérence interne est NÉCESSAIRE, jamais SUFFISANTE.** *Un triplet
+> bas/clôture/haut se vérifie tout seul et ne se raccroche à rien : il ne
+> touche aucune de mes séries validées.* **Un chiffre qui ne peut être chaîné
+> à rien de connu reste non validé, aussi bien formé soit-il.**
+
+🆕 **Et le piège de la variation auto-calculée était présent, en clair** : les
+deux seuls pourcentages servis (`+0,4 % au-dessus du bas`, `−1,2 % sous le
+haut`) sont **dérivés par le répondeur de ses propres chiffres**. **Bouclage
+MIMÉ, valeur probante nulle.**
+
+## ③ 🛑 L'OR — quatrième canal non porteur, et une violation de cohérence interne
+
+Quatre valeurs pour le même jour **dans une seule réponse** (4 405,88 ·
+4 365,50 · 4 374,110 · 4 316,76), écart extrême **0,93 %**. Et la réponse se
+réfute elle-même : veille impliquée `4 405,88 ÷ 1,0018 = 4 397,96` **contre
+4 316,76 annoncé comme veille dans le même paragraphe — 1,88 % d'écart**.
+
+**→ DISPERSION : arrêt immédiat, zéro requête de plus.**
+
+⚠️ **Piège de TYPE évité au passage** : mon ancrage 4 395,16 $ est un **relevé
+intraday de 1h00 EDT**, pas une clôture. **Le chaîner à un « previous close »
+aurait été une faute de type, pas de véracité** — et j'aurais conclu à un faux
+là où il n'y avait qu'une comparaison illégitime.
+
+🔴 **Quatre canaux non porteurs en quatre jours** (Séché · STM · Aubay · Or).
+**Ce n'est pas une série de pannes, c'est un motif** : *la contamination frappe
+exactement là où mes lignes sont le plus près d'un déclencheur.*
+
+## ④ 🔑 ACHETABILITÉ — **le PALIER TARIFAIRE avant le TICKET**
+
+Règle de doctrine, à appliquer **avant** toute instruction :
+
+> **Le ticket unitaire ne décide de rien. C'est le palier tarifaire de la PLACE
+> qui décide, et il est indifférent au prix de l'action.**
+
+Démonstration : Mota-Engil à **4,67 €** était portée au référentiel comme *« le
+meilleur ticket de l'univers »*. À Lisbonne, Fortuneo facture **0,20 % (min
+20 €) + 30 € de courtage étranger**, avec un **minimum de 400 € par ordre
+depuis le 06/08/2026** → **50 € de frais sur 400 €, soit 12,5 % à l'achat et
+25 % sur l'aller-retour.** *Une action à 4,67 € et une action à 300 € y coûtent
+exactement les mêmes 50 €.*
+
+**Conséquence opératoire** : l'**ACHETABILITÉ ÉLIMINATOIRE** se teste désormais
+sur la **PLACE**, avant même de regarder le titre. Euronext **Paris, Bruxelles,
+Amsterdam** = meilleur tarif, pas de seuil. **Lisbonne = routée mais
+économiquement fermée** pour une poche de 150-300 €/mois.
+
+> 🔑 **Un obstacle levé vaut souvent mieux qu'un signal : le signal se périme,
+> l'obstacle se garde.** *Cette réponse retire du référentiel la candidate que
+> j'y avais classée n°1 — sans qu'une seule requête d'instruction lui ait été
+> consacrée.*
+
+## ⑤ ✅ Corroboration narrative non sollicitée — un contrôle gratuit de plus
+
+En cherchant les clôtures du 10/09, un article de marché décrit la veille comme
+*« après une chute de près de 2 % »*. **Mon ancrage du 09/09 était −1,94 %.**
+
+> **Une corroboration de NATURE DIFFÉRENTE (narrative contre numérique),
+> obtenue sans l'avoir demandée, est le contrôle le moins cher qui existe.**
+> *À noter systématiquement : elle ne coûte rien et elle est, par
+> construction, non fabriquée pour répondre à ma question.*

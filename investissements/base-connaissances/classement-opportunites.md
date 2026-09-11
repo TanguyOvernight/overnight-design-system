@@ -1501,6 +1501,100 @@ identifié (cash-flow opérationnel / EBITDA ajusté, levier 2,6x post-spin).
 Un créneau et un appel lui seront ouverts alors, en déclassant le plus
 faible des six.
 
+---
+
+### 📊 LE CLASSEMENT AU 11/09 — 8 candidates, **0 mouvement de rang**
+
+**Re-classement conduit sur le même mètre** (espérance nette / risque, ajustée
+de la corrélation, contre le cœur World à 5 %/an net). **Aucun rang ne bouge —
+et il faut dire pourquoi, sinon « 0 mouvement » se confond avec « pas
+regardé ».**
+
+| Rang | Candidate | Chiffre du jour | Déclencheur | État |
+|---|---|---|---|---|
+| ① | **Cœur World (WPEA)** | — | **PEA ouvert** | 🔴 **33ᵉ jour**, 1 000 € à quai |
+| ② | **Or** | 🛑 **aucun** | — | **canal NON PORTEUR depuis ce jour** (dispersion 4 valeurs, 0,93 %) |
+| ③ | **Séché (SCHP)** | 🔴 aucun cours | clôture ≤ 90 € | 🔒 fenêtre armée, **butée 24/09** |
+| ④ | **Eli Lilly (LLY)** | ⚠️ 1 125,49 $ **non chaînable** | — | **non promu ancrage** ; quarantaine maintenue |
+| ⑤ | **Magnum** | — | capi ≤ 7,6 Md€ **ET** volume ≥ +2,0 % | dormant, réouverture sur FAIT |
+| ⑥ | **Aubay (AUB)** | 🔴 canal non porteur | — | 📅 **S1 le 16/09**, test de collision posé |
+| ⑦ | **STM (STMPA)** | ancrage **43,60 € (02/09)** | ≤ 42,00 € + 2 jambes | **+3,81 %** du seuil ; canal non porteur |
+| ⑧ | **Nike (NKE)** | — | — | radar seul (sortie S&P 100 annoncée 21/09, mono-source) |
+
+### 🔴 Le fait structurel du jour : **la moitié du classement n'a plus de prix**
+
+**Quatre canaux de cotation déclarés non porteurs en quatre jours** : Séché
+(08/09) · STM (10/09) · Aubay (de facto) · **Or (11/09)**.
+
+> 🔴 **Ce ne sont pas quatre pannes, c'est un motif.** *Les lignes dont je ne
+> peux plus mesurer le prix sont précisément mes lignes les plus proches d'un
+> déclencheur* — small caps et matières premières, exactement là où la
+> contamination frappe. **Le classement continue de vivre ; c'est
+> l'instrument de mesure qui a disparu, pas les dossiers.**
+>
+> ⚠️ **Et ça change la nature de la butée du 24/09.** Si Séché passe en PASSE
+> faute de cours, le motif à écrire sera **« non conclu faute d'accès au
+> prix »**, jamais « thèse insuffisante ». *Confondre les deux serait
+> enregistrer un échec d'analyse là où il n'y a eu qu'une panne de canal —
+> et fausserait durablement ma mémoire des refus.*
+
+### ⚠️ RUBIS (RUI) — instruite aujourd'hui, **NON classée**
+
+S1 2026 publié le 08/09 : CA **4 068 M€ (+24 %)**, EBITDA **434 M€ (+18 %)**,
+**guidance relevée à 775-825 M€** (contre 740-790), levier **1,3×**, **87 % du
+CA hors Europe développée**. Cohérence interne excellente (marge −54 pb,
+exactement l'effet prix attendu ; H2 implicite ≈ H1 2025 → guidance prudente).
+
+> 🔴 **T2 ÉCHOUE sur preuve datée** : **+4,67 % le 08/09, en tête du SBF 120**,
+> consensus battu de ~4,9 %. **Une réaction proportionnée n'est pas une
+> sous-réaction.** T6 non satisfait (mid-cap SBF 120 suivie), T5 drapeau
+> (produits pétroliers vs transition), **T4 : le cash-flow opérationnel
+> n'est pas dans le paquet** — et avec un CA +24 % sur un baril > 100 $, une
+> part du bond d'EBITDA vient probablement de **plus-values de stocks non
+> récurrentes**, qui se retournent aussi vite qu'elles viennent.
+>
+> **→ Dossier à INSTRUIRE, pas candidate.** Aucune ligne au classement, aucun
+> seuil écrit. **Prochaine vérification nommée** : tableau des flux de
+> trésorerie du rapport semestriel — **cash-flow opérationnel et variation du
+> BFR**. *Écrire un seuil de prix maintenant re-créerait l'erreur Vicat.*
+
+### ⚠️ CE QUI CHANGE POUR L'EXÉCUTION — l'action bloquante de 40 jours est levée
+
+**Fortuneo route bien Lisbonne et Bruxelles — mais le routage n'était pas la
+bonne question.** *(Mono-source renforcé : deux formulations indépendantes,
+énumération identique ; `fortuneo.fr` bloqué en egress → **à confirmer sur
+l'écran du courtier avant tout ordre**.)*
+
+- ✅ **Bruxelles et Amsterdam : meilleur tarif, PAS de seuil de 400 €** →
+  réellement exécutables sur une poche de 150-300 €.
+- 🔴 **Lisbonne : 0,20 % (min 20 €) + 30 € de courtage étranger, ET minimum
+  400 € par ordre depuis le 06/08/2026** → **50 € de frais sur 400 €, soit
+  12,5 % à l'achat et 25 % sur l'aller-retour.**
+
+> 🔴 **Mota-Engil devient INEXÉCUTABLE** — elle figurait au référentiel
+> émergents comme *« le meilleur ticket de l'univers »* à 4,67 €.
+> **Le ticket unitaire n'a aucune importance : c'est le PALIER TARIFAIRE de la
+> place qui décide.** Idem Jerónimo Martins, Galp, Teixeira Duarte, Conduril.
+>
+> 🔑 **La candidate n°1 « à instruire en priorité » sort de la liste sans
+> qu'une seule requête d'instruction lui ait été consacrée.** *Un obstacle levé
+> vaut souvent mieux qu'un signal : le signal se périme, l'obstacle se garde.*
+
+### 📡 Porté au radar, pas au classement
+
+**Égypte placée en Watch List** pour un reclassement Émergent Secondaire →
+**Frontière** (FTSE). 🔴 **Matériel pour ORANGE** (entrée provisoire, 20,8 % de
+CA Afrique-Moyen-Orient, risque de dévaluation et de rapatriement égyptien déjà
+porté au dossier comme *« actif, pas théorique »*). **Une mise sous
+surveillance d'indice est la reconnaissance institutionnelle de ce risque, et
+un passage en frontière déclencherait des sorties forcées.** *Le dossier
+s'aggrave sans qu'une requête lui ait été consacrée.*
+
+Également : **Vietnam Frontière → Émergent Secondaire effectif le lundi
+21/09** (aucune exposition accessible en PEA → « intéressant et
+inaccessible ») · **Grèce Émergent Avancé → Développé** en septembre chez FTSE
+**et** MSCI · **baril américain > 100 $** franchi le 10/09.
+
 ## Sorties enregistrées (mémoire des refus — ne pas re-signaler sans fait NOUVEAU)
 
 | Candidate | Sortie | Motif | Date |

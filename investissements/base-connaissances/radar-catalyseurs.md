@@ -1456,3 +1456,51 @@ baisses**.
 **Ce que je retiens, sourcé** : probabilité de **hausse** à **~30 % au
 16/08**, contre **~82,4 % fin juillet**. *Mon relevé du 12-13/08 (~32 %) tient
 toujours — je n'ai pas de meilleure donnée que la mienne.*
+
+---
+
+## 📡 Ajouts du 11/09/2026 — terrain émergents
+
+| Date | Événement | Accessible PEA ? | Statut |
+|---|---|---|---|
+| **lun. 21/09/2026** | **Vietnam : Frontière → Émergent Secondaire (FTSE Russell), effectif à l'ouverture** | 🔴 **NON** | flux mécaniques datés ; ✅ *contrôle de calendrier : le 21/09/2026 est bien un lundi* |
+| **septembre 2026** | **Grèce : Émergent Avancé → Développé**, chez **FTSE ET MSCI** | partiellement | *deux fournisseurs d'indices indépendants convergents — corroboration de nature différente* |
+| **ouvert** | 🔴 **ÉGYPTE en Watch List : Émergent Secondaire → FRONTIÈRE** | — | **rétrogradation possible** |
+| 10/09/2026 | **Brut américain > 100 $** franchi (conflit moyen-oriental prolongé) | — | régime de marché : 4ᵉ séance de baisse à Wall Street, 2ᵉ à Paris |
+
+### 🔴 Pourquoi l'Égypte est une ligne de RADAR et pas une curiosité
+
+Le dossier **ORANGE** (entrée provisoire au portefeuille) porte **20,8 % de CA
+Afrique-Moyen-Orient**, avec un risque de dévaluation et de rapatriement
+égyptien déjà qualifié au dossier d'*« actif, pas théorique »*.
+
+> **Une mise sous surveillance d'indice est la reconnaissance INSTITUTIONNELLE
+> d'un risque que j'avais écrit tout seul.** *Et un passage effectif en
+> frontière déclencherait des sorties forcées des fonds indiciels émergents.*
+> 🔑 **Le dossier s'aggrave sans qu'une seule requête lui ait été consacrée —
+> c'est le rendement propre d'un radar tenu : il capitalise les découvertes
+> faites en cherchant autre chose.**
+
+### ⚠️ Ce qui est « intéressant et inaccessible »
+
+Le Vietnam rejoint **Conduril** et **TotalEnergies EP Gabon** dans la catégorie
+des catalyseurs réels sans véhicule achetable en PEA. **Cette catégorie doit
+rester explicitement nommée** : *sans elle, je re-découvrirais ces dossiers
+tous les trois mois et je re-dépenserais les mêmes requêtes.*
+
+### 🗓️ Échéances armées — état au 11/09
+
+- **14-17/09** : plénière CHMP (Amsterdam). ⚠️ *vérifier l'ANNÉE de tout
+  document « 14-17 septembre » — un ordre du jour 2020 porte les mêmes
+  quantièmes.*
+- **16/09** : **FOMC (C046 résout)** **et Aubay S1** — test de collision
+  pré-positionné : comparatifs 2025 S1 268,96 M€ / T1 136,14 / T2 132,82, et
+  le contrôle gratuit plus fort : **le CA du S1 est DÉJÀ public à 351,8 M€,
+  donc toute « surprise sur le chiffre d'affaires » le 16/09 est un artefact
+  par construction.**
+- **21/09** : sortie de Nike du S&P 100 (mono-source, radar seul) ·
+  **reclassement Vietnam**.
+- **24/09** : 🔒 **butée Séché** — clôture datée ≤ 90 € déclenche ; sinon
+  **PASSE, motif « non conclu faute d'accès au prix »**.
+- **30/09** : butée C013 (arrêté PFAS boues).
+- **~31/10** : butée C049 (STMPA ≤ 42,00 €).

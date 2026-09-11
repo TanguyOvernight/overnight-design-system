@@ -660,3 +660,80 @@ comparables** ne peuvent plus être inscrits en PEA — **motif explicite :
 
 **Les deux sont inaccessibles par mon canal.** *Mais ils sont nommés — c'est
 la différence entre une question ouverte et une question perdue.*
+
+---
+
+## 🔓 11/09/2026 — L'ACTION BLOQUANTE DU 02/08 EST LEVÉE (40 jours)
+
+**Question posée le 02/08** : *Fortuneo route-t-il Euronext Lisbonne et
+Bruxelles ?*
+
+**Réponse : OUI pour les deux — et le routage n'était pas la bonne question.**
+
+*(Deux requêtes, formulations indépendantes, énumération identique.
+`fortuneo.fr` bloqué en egress → **[MONO-SOURCE RENFORCÉ]** : à confirmer sur
+l'écran du courtier avant tout ordre.)*
+
+| Fait établi | |
+|---|---|
+| Places accessibles **en PEA** | Paris, **Bruxelles**, **Amsterdam**, Lisbonne (+ Francfort, Milan, Madrid, SIX) |
+| **Meilleur tarif** | Paris / **Bruxelles** / **Amsterdam** / Equiduct — **LISBONNE N'Y EST PAS** |
+| Autres places européennes | **0,20 %, minimum 20 €, PLUS 30 € de courtage étranger** |
+| 🔴 **Depuis le 06/08/2026** | **minimum 400 € par ordre d'achat** hors Paris / Bruxelles / Amsterdam |
+
+### L'arithmétique qui ferme Lisbonne pour ce mandat
+
+| Ordre | Frais | % du montant |
+|---|---|---|
+| **300 €** (haut du ticket cible) | **ORDRE REFUSÉ** — sous le seuil de 400 € | — |
+| **400 €** (minimum) | 20 € (plancher) + 30 € = **50 €** | **12,5 %** |
+| **aller-retour à 400 €** | **100 €** | **25 %** |
+| pour ramener les frais à 1 % | il faudrait **5 000 € par ordre** | — |
+
+## 🔴 CE QUI EST CORRIGÉ DANS CE RÉFÉRENTIEL
+
+**Enseignement n°1** — ~~« la route PEA passe par Lisbonne et Bruxelles »~~
+→ **« par BRUXELLES et AMSTERDAM. Lisbonne est routée, mais économiquement
+fermée. »**
+
+**Enseignement n°4** — *« le vrai frein est l'accès courtier »* : **juste, mais
+imprécis.** → **Le frein n'est pas le ROUTAGE, c'est le PALIER TARIFAIRE.**
+
+### ☠️ Sortent de l'univers instruisible (inexécutables sur 150-300 €/mois)
+
+**Mota-Engil** *(classée ici n°1 « à instruire en priorité », à 4,67 €, comme
+« le meilleur ticket de l'univers »)* · **Jerónimo Martins** · **Galp** ·
+**Teixeira Duarte** · **Conduril**.
+
+> 🔑 **Le ticket unitaire n'a AUCUNE importance.** *J'ai passé des semaines à
+> chercher des titres à petit nominal parce que je croyais le ticket
+> contraignant.* **C'est le palier tarifaire de la PLACE qui décide, et il est
+> indifférent au prix de l'action.** Une action à 4,67 € et une action à 300 €
+> coûtent exactement les mêmes 50 € à Lisbonne.
+>
+> ✅ **Et la candidate n°1 sort sans qu'une seule requête d'instruction ait été
+> dépensée sur elle** — même économie que le refus NEPI du 16/08.
+
+### ✅ RÉELLEMENT DÉBLOQUÉ — meilleur tarif, pas de seuil de 400 €
+
+**Bruxelles** : TEXAF, Ageas, Sipef, AB InBev, KBC
+**Amsterdam** : CTP, Heineken, SBM Offshore
+
+⚠️ **TEXAF devient matériellement plus intéressante** *(exposition RDC, cotée à
+Bruxelles)* maintenant que la place est confirmée au meilleur tarif — **mais
+aucun fait daté ne la soutient aujourd'hui : elle n'entre pas au classement.**
+
+### 🗓️ Porté au radar ce jour
+
+**Vietnam** Frontière → Émergent Secondaire, effectif **lundi 21/09/2026**
+(🔴 aucune exposition accessible en PEA) · **Grèce** Émergent Avancé →
+Développé (FTSE **et** MSCI) · 🔴 **Égypte en Watch List pour une
+RÉTROGRADATION en Frontière** — matériel pour le dossier **Orange**.
+
+## ⏭️ Prochaine action bloquante de ce référentiel
+
+**Confirmer sur l'écran Fortuneo** (Tanguy, une fois le PEA ouvert) :
+① le seuil de 400 € hors Paris/Bruxelles/Amsterdam, ② l'absence de ce seuil
+sur Bruxelles et Amsterdam. **Tant que ce n'est pas vu à l'écran, le fait
+reste mono-source renforcé — solide pour ÉCARTER un dossier, insuffisant pour
+passer un ordre.**

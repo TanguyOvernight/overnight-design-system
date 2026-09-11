@@ -2028,3 +2028,28 @@ pour devenir une seconde opinion — et l'expérience serait perdue.*
 
 *Les appels résolus AVANT le 30/08 n'ont pas de fantôme : on ne rejoue pas une
 expérience sur des issues connues.*
+
+---
+
+## ⚠️ 11/09/2026 — Une prédiction testée HORS registre, et c'est un défaut
+
+La prédiction Lilly du 10/09 (*« 1 149,36 reviendra en veille d'un calcul »*)
+a été **posée, testée et réfutée** — mais **sans probabilité pré-enregistrée**.
+
+> 🔴 **Elle ne peut donc pas entrer au registre, et je ne l'y fais pas entrer
+> après coup.** *Attribuer rétroactivement un P à une prédiction déjà résolue
+> est exactement la manœuvre que le registre existe pour empêcher.*
+
+**Ce que ça coûte** : une prédiction falsifiable, propre, résolue en 24 heures
+— **et inutilisable pour la calibration.** Brier moyen inchangé : **0,2988 à
+n = 13**, BSS **−0,195**.
+
+**Correction de procédure, applicable dès demain** : *toute prédiction que
+j'écris en toutes lettres dans un journal ou un brief d'agent reçoit un
+NUMÉRO et un P **au moment où je l'écris**, ou bien n'est pas écrite comme
+prédiction.* **Sinon je m'offre le plaisir d'avoir raison sans le risque
+d'être compté.**
+
+**Aucune résolution ce jour.** Prochaines échéances : **C046 le 16/09 (FOMC)**
+· C013 le 30/09 · C049 le ~31/10. *Le test pré-enregistré de discrimination
+reste ouvert : 3 résolutions sur les 20 requises.*
