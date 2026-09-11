@@ -1,7 +1,7 @@
 {
  "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
- "maj": "2026-09-10",
- "dernier_brief": 14,
+ "maj": "2026-09-11",
+ "dernier_brief": 15,
  "vus": {
   "jobup": [
    "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -48,7 +48,10 @@
    "947c24d0-0dcf-4761-bdce-336d2740543d",
    "79885313-9272-465b-85aa-c724928d6877",
    "f5b13669-1723-4d29-bcce-511ab4d9095b",
-   "d9042d61-8b0f-4675-a438-f188d663ad3c"
+   "d9042d61-8b0f-4675-a438-f188d663ad3c",
+   "d40a35e6-4b39-4bc0-83a7-53a4e80ea779",
+   "aad60097-617a-4afd-b934-1f7fff2f51ec",
+   "b9a5115b-0466-4624-ac2e-91fe27adc58e"
   ],
   "ats_employeurs": [
    "https://recrutement.eben-hezer.ch/jobs/7602918-responsable-communication-et-recherche-de-fonds",
@@ -103,7 +106,13 @@
    "4463047513",
    "4465622978",
    "4465028329",
-   "4465357000"
+   "4465357000",
+   "4461323717",
+   "4427728024",
+   "4463513135",
+   "4465866106",
+   "4464566300",
+   "4463944649"
   ],
   "chuv": [
    "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html"
@@ -1241,6 +1250,60 @@
    "titre": "Therapy Development Marketing Manager",
    "entreprise": "Edwards Lifesciences",
    "note": "jetée par second regard : diplôme Life Sciences/Médecine requis + significant experience — engagement HCP, pas marketing créa",
+   "lien": null
+  },
+  {
+   "brief": 15,
+   "date": "2026-09-11",
+   "score": "🎯",
+   "titre": "Content Manager Brico & Jardin - CDI - 100%",
+   "entreprise": "QoQa Services SA",
+   "note": "Bussigny, publiée 10.09, min 3 ans rédactionnel ; « appétence pour l'IA et les outils modernes sans limite » → +1 GenAI ; employeur adoré ; candidature CV+lettre OU vidéo ; fiche relue en entier par second regard, aucun drapeau ; entre en 📌",
+   "lien": "https://www.jobup.ch/fr/emplois/detail/d40a35e6-4b39-4bc0-83a7-53a4e80ea779/"
+  },
+  {
+   "brief": 15,
+   "date": "2026-09-11",
+   "score": "👀",
+   "titre": "Gestionnaire Marketing Communication Evénements",
+   "entreprise": "Mobimo Management SA",
+   "note": "CORRIGÉE par second regard : JSON-LD disait CDI, fiche = CDD maternité 60-70% janv→août 2027 ; Lausanne Flon ; aucune année exigée",
+   "lien": "https://www.jobup.ch/fr/emplois/detail/aad60097-617a-4afd-b934-1f7fff2f51ec/"
+  },
+  {
+   "brief": 15,
+   "date": "2026-09-11",
+   "score": "👀",
+   "titre": "Graphic Design Specialist",
+   "entreprise": "Audemars Piguet",
+   "note": "Le Brassus -1, min 5 ans studio/agence, Adobe+motion ; verbatim LinkedIn (medienjobs bloqué) GET ✔",
+   "lien": "https://ch.linkedin.com/jobs/view/graphic-design-specialist-at-audemars-piguet-4461323717"
+  },
+  {
+   "brief": 15,
+   "date": "2026-09-11",
+   "score": "👀",
+   "titre": "Retail Education Specialist (1-year contract)",
+   "entreprise": "Audemars Piguet",
+   "note": "Le Brassus -1, CDD 12 mois, 3-5 ans formation digitale ; GET ✔",
+   "lien": "https://ch.linkedin.com/jobs/view/retail-education-specialist-1-year-contract-at-audemars-piguet-4427728024"
+  },
+  {
+   "brief": 15,
+   "date": "2026-09-11",
+   "score": "👀",
+   "titre": "Visuel merchandiser",
+   "entreprise": "Zara",
+   "note": "Lausanne, niveau expérimenté (forme les nouveaux VM), exécution boutique ; GET ✔",
+   "lien": "https://ch.linkedin.com/jobs/view/visuel-merchandiser-at-zara-4463513135"
+  },
+  {
+   "brief": 15,
+   "date": "2026-09-11",
+   "score": "ecartee-notable",
+   "titre": "Responsable de la marque visuelle & Designer graphique",
+   "entreprise": "bexio",
+   "note": "intitulé parfait mais Rapperswil SG hors zone",
    "lien": null
   }
  ]
