@@ -1,7 +1,7 @@
 {
  "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
- "maj": "2026-09-11",
- "dernier_brief": 15,
+ "maj": "2026-09-12",
+ "dernier_brief": 16,
  "vus": {
   "jobup": [
    "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -112,7 +112,13 @@
    "4463513135",
    "4465866106",
    "4464566300",
-   "4463944649"
+   "4463944649",
+   "4456787687",
+   "4454633093",
+   "4465103149",
+   "4466364640",
+   "4444118969",
+   "4463977902"
   ],
   "chuv": [
    "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html"
@@ -1304,6 +1310,42 @@
    "titre": "Responsable de la marque visuelle & Designer graphique",
    "entreprise": "bexio",
    "note": "intitulé parfait mais Rapperswil SG hors zone",
+   "lien": null
+  },
+  {
+   "brief": 16,
+   "date": "2026-09-12",
+   "score": "👀",
+   "titre": "Marketing Communications Specialist – Events (maternity cover 18 mois)",
+   "entreprise": "Parker Hannifin",
+   "note": "Etoy -1 → 👀 ; CDD 18 mois éligible ; aucune année exigée ; events B2B EMEA ; annonce 100% EN ; GET ✔",
+   "lien": "https://ch.linkedin.com/jobs/view/marketing-communications-specialist-%E2%80%93-events-maternity-cover-18-months-at-parker-hannifin-4456787687"
+  },
+  {
+   "brief": 16,
+   "date": "2026-09-12",
+   "score": "👀",
+   "titre": "Collaborateur/trice Visual Merchandising 100%",
+   "entreprise": "Manor",
+   "note": "Lausanne CDI, exécution ; profil CFC polydesigner 3D ; distinct de l'Assistant VM Manager (brief 13) ; GET ✔",
+   "lien": "https://ch.linkedin.com/jobs/view/collaborateur-trice-visual-merchandising-100%25-m-f-d-at-manor-ag-4454633093"
+  },
+  {
+   "brief": 16,
+   "date": "2026-09-12",
+   "score": "ecartee-notable",
+   "titre": "Retail Designer",
+   "entreprise": "Audemars Piguet",
+   "note": "7 ans design intérieur/architecture exigés → ❌",
+   "lien": null
+  },
+  {
+   "brief": 16,
+   "date": "2026-09-12",
+   "score": "ecartee-notable",
+   "titre": "Director Design HnB",
+   "entreprise": "Philip Morris International",
+   "note": "niveau direction → ❌",
    "lien": null
   }
  ]
