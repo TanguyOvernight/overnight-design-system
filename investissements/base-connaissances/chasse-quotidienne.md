@@ -1379,3 +1379,96 @@ En cherchant les clôtures du 10/09, un article de marché décrit la veille com
 > obtenue sans l'avoir demandée, est le contrôle le moins cher qui existe.**
 > *À noter systématiquement : elle ne coûte rien et elle est, par
 > construction, non fabriquée pour répondre à ma question.*
+
+---
+
+# 12/09/2026 — Trois règles neuves, dont une sixième espèce de panne
+
+## ① 🆕 LE **CANAL VIDE** — sixième espèce de panne, et la plus flatteuse
+
+**Constat** : sur le terrain smart money, trois requêtes ont rendu trois fois
+un **numéro de document AMF** (Infotel `2026DD1137335`, Viridien `226C1504`,
+Teleperformance `226C1503/05`) — **jamais un nom, jamais un SENS (achat ou
+vente), jamais un montant.**
+
+| Canal **DISPERSÉ** *(08/09)* | Canal **VIDE** *(12/09)* |
+|---|---|
+| sert **trop** de valeurs, incompatibles | en sert **zéro** |
+| se trahit par le **désaccord** | **paraît coopératif** : il rend un objet RÉEL |
+| danger : **retenir un faux** | danger : **croire qu'on progresse** |
+
+> 🆕 **CRITÈRE D'ARRÊT, symétrique de celui du 08/09** : *trois requêtes qui
+> rendent l'EXISTENCE d'un document sans jamais son CONTENU → **canal VIDE**,
+> arrêt immédiat.*
+>
+> ⚠️ **Le vide est plus dangereux que le dispersé, précisément parce qu'il ne
+> se trahit pas.** *Un numéro de document AMF est un objet réel : il donne le
+> sentiment d'avoir avancé.* **Le dispersé ment ; le vide flatte.**
+
+**Et le coût est réel** : 3 requêtes pour 0 fait — *des requêtes qui manquent
+au terrain que je n'ai jamais ouvert.*
+
+## ② 🆕 LE **BOUCLAGE INVERSÉ** — l'antidote exact de la variation auto-calculée
+
+**Le 10/09** : la veille venait du répondeur → le bouclage était **vide**, il
+MIMAIT un contrôle. **Le 12/09 sur Aubay** : la veille vient de **MA mémoire
+persistante**, écrite au radar avant la session et **jamais servie au canal**.
+
+| | 2026 servi | 2025 *(mon radar)* | Ratio | Taux publié |
+|---|---|---|---|---|
+| S1 | 351,8 M€ | 268,96 | +30,80 % | **+30,8 %** ✅ |
+| T2 | 173,6 M€ | 132,82 | +30,70 % | **+30,7 %** ✅ |
+| T1 *(par différence)* | 178,2 M€ | 136,14 | +30,89 % | — |
+
+> **RÈGLE : quand la veille vient de ma mémoire et non de la réponse, le
+> bouclage est IMMUNISÉ PAR CONSTRUCTION contre la variation auto-calculée.**
+> *Le répondeur ne peut pas ajuster ses chiffres à un comparatif qu'il n'a
+> jamais vu.*
+>
+> 🔑 **Un comparatif stocké vaut une source indépendante.** *Et il ne coûte
+> rien — à condition d'avoir tenu le radar. C'est le rendement différé d'une
+> écriture faite des semaines plus tôt sans savoir à quoi elle servirait.*
+
+## ③ 🆕 UN ANCRAGE PEUT TUER UN CHIFFRE D'UN **AUTRE** INSTRUMENT
+
+Le WTI servi à **101,19 $** portait **+8,77 % sur 24 h** → veille impliquée
+**93,03 $**. Or mon fait validé du 10/09 est *« brut américain > 100 $
+franchi »*. **Incompatible** — et le récit du jour dit REPLI, pas +8,77 %.
+
+> **Le WTI n'est pas un instrument que je suis.** Mais j'avais un fait daté sur
+> le brut américain, et il a suffi. **Mes ancrages forment un RÉSEAU, pas une
+> collection de fiches indépendantes** — et le réseau est plus dense que la
+> liste des choses que je surveille.
+
+## ④ La règle du palier tarifaire a payé **le jour même**
+
+Stockholm (Systemair, AddLife, Crafoord), Londres et l'AIM (Ashtead
+Technology, Genuit, Elliott/LSEG) : **quatre candidates éliminées à coût nul,
+avant tout kill-test.** *L'obstacle se garde ; le signal se périme.*
+
+**Et l'asymétrie du terrain smart money est structurelle, pas conjoncturelle** :
+> **Tout ce qui est atteignable est inachetable ; tout ce qui est achetable est
+> inatteignable.** Les registres d'initiés nordiques et britanniques sont
+> publics, indexés et scrapés en temps réel — et hors périmètre. Les
+> déclarations AMF sont dans le périmètre — et enfermées dans des PDF BDIF non
+> indexés.
+
+## ⑤ Une « PROCHAINE VÉRIFICATION » nommée à l'avance ferme un dossier en UNE requête
+
+**Rubis** : ouverte le 11/09 avec son test décisif écrit (*« cash-flow
+opérationnel et variation du BFR »*), **classée négatif le 12/09 en une
+requête** — cash-flow opérationnel **223 M€ contre 276 M€, −19 %**.
+
+> 🔑 **C'est la leçon la plus transférable de la semaine.** *Un dossier laissé
+> « à instruire » sans test nommé se rouvre tous les mois et se re-paye à
+> chaque fois. Un dossier laissé « à instruire » AVEC son test nommé se ferme
+> à la première occasion, au prix d'une requête.*
+
+## ⑥ Rappel appliqué : la règle de la coïncidence exacte (04/09) exige une CONTRE-ÉPREUVE
+
+Le S&P a bouclé à **0,00013 %** — une quasi-coïncidence, donc un signal
+d'alarme. **Contre-épreuve** : une fabrication depuis mon ancrage aurait donné
+`7 591,70 × 1,0086 = 7 656,99`, soit **0,01 de PLUS que le chiffre servi**.
+*Le résidu d'arrondi plaide pour l'indépendance.* **Et surtout : ce n'est pas
+le chiffre SERVI qui coïncide avec un ancrage, c'est la veille RECONSTRUITE —
+ce qui est précisément l'objet du bouclage, pas un symptôme de réétiquetage.**

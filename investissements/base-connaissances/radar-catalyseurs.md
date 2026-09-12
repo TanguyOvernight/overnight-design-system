@@ -1504,3 +1504,36 @@ tous les trois mois et je re-dépenserais les mêmes requêtes.*
   **PASSE, motif « non conclu faute d'accès au prix »**.
 - **30/09** : butée C013 (arrêté PFAS boues).
 - **~31/10** : butée C049 (STMPA ≤ 42,00 €).
+
+---
+
+## 📡 Mise à jour du 12/09/2026
+
+| Date | Fait | Statut |
+|---|---|---|
+| **16/09, APRÈS CLÔTURE** | **Aubay S1** — heure précisée *(mono-source)*. **FOMC séquencé AVANT, en journée → collision de LECTURE, plus d'EXÉCUTION** | ✅ précisé |
+| 11/09 | **CPI US août : +0,4 % m/m, 3,4 % a/a, conforme** | ⚠️ **MONO-SOURCE, non bouclé** |
+| 11/09 | **Repli du brut** : direction validée *(double corroboration narrative indépendante)*, **niveau NON validé**. Semaine ~+10 % | ✅ direction / 🔴 niveau |
+| 04/09 | **Société Générale : rachat de 1,5 Md€ exécuté à 55 %** *(communiqué du 07/09)* | fait daté, radar seul — T1/T2/T6 échouent |
+| 10/09 | **Viridien** `226C1504` et **Teleperformance** `226C1503/05` : franchissements de seuil AMF · **Infotel** `2026DD1137335` : déclaration de dirigeant | 🔴 **datés, place ✅ Paris, CONTENU inatteignable** — instruisables si un accès BDIF s'ouvre |
+
+### 🔴 Trois dossiers en attente d'un seul déblocage
+
+Viridien, Teleperformance et Infotel sont **les trois seules pistes smart money
+du périmètre**. Elles ne sont **pas écartées — elles sont non instruites**,
+faute d'accès au contenu des déclarations AMF.
+
+> **À ne pas confondre avec un refus.** *Si le BDIF devient atteignable un
+> jour, ces trois lignes sont immédiatement instruisables ; si je les avais
+> classées « écartées », je ne les rouvrirais jamais.* **Le motif exact est :
+> canal VIDE.**
+
+### Échéances armées — état au 12/09
+
+- **14-17/09** : plénière CHMP (Amsterdam). ⚠️ *vérifier l'ANNÉE de tout
+  document « 14-17 septembre ».*
+- **16/09** : **FOMC (C046 résout, en journée)** puis **Aubay S1 (après
+  clôture)** — collision testée, CA déjà public et vérifié par trois chemins.
+- **21/09** : Nike / S&P 100 *(mono-source)* · **reclassement Vietnam**.
+- **24/09** : 🔒 **butée Séché — 12 jours restants.**
+- **30/09** : butée C013 · **~31/10** : butée C049.

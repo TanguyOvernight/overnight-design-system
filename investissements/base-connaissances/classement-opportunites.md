@@ -1595,6 +1595,80 @@ s'aggrave sans qu'une requête lui ait été consacrée.*
 inaccessible ») · **Grèce Émergent Avancé → Développé** en septembre chez FTSE
 **et** MSCI · **baril américain > 100 $** franchi le 10/09.
 
+---
+
+### 📊 LE CLASSEMENT AU 12/09 — 8 candidates, **0 mouvement de rang**, **1 sortie**
+
+**Re-classement sur le même mètre.** Aucun rang ne bouge. **Mais le tableau
+change quand même : une candidate instruite hier sort aujourd'hui par le bas.**
+
+| Rang | Candidate | Chiffre du jour | Déclencheur | État |
+|---|---|---|---|---|
+| ① | **Cœur World (WPEA)** | — | **PEA ouvert** | 🔴 **34ᵉ jour**, 1 000 € à quai |
+| ② | **Or** | 🛑 aucun | — | canal NON PORTEUR (dispersion du 11/09) |
+| ③ | **Séché (SCHP)** | 🔴 aucun cours | clôture ≤ 90 € | 🔒 **butée 24/09**, 12 jours restants |
+| ④ | **Eli Lilly (LLY)** | — | ≤ 1 020 $ | quarantaine active, 1 125,49 non validé |
+| ⑤ | **Magnum** | — | capi ≤ 7,6 Md€ **ET** volume ≥ +2,0 % | dormant |
+| ⑥ | **Aubay (AUB)** | 🔴 canal non porteur | — | 📅 **S1 mer. 16/09 après clôture** — collision DURCIE |
+| ⑦ | **STM (STMPA)** | ancrage 43,60 € (02/09) | ≤ 42,00 € + 2 jambes | +3,81 % du seuil |
+| ⑧ | **Nike (NKE)** | — | — | radar seul |
+
+### ☠️ RUBIS (RUI) — **CLASSÉE NÉGATIF**, ouverte le 11/09, fermée le 12/09
+
+**Le chiffre manquant est arrivé** : **cash-flow opérationnel ajusté S1 2026 de
+223 M€ contre 276 M€ au S1 2025, soit −19 %** *(communiqué émetteur du 08/09)*,
+avec la cause donnée par l'émetteur lui-même — *« besoins en fonds de roulement
+plus élevés dans un contexte de hausse des prix du pétrole »*.
+
+| | S1 2025 | S1 2026 |
+|---|---|---|
+| CA | — | **4 068 M€ (+24 %)** |
+| EBITDA | ~367,8 *(indicatif)* | **434 M€ (+18 %)** |
+| **Cash-flow opérationnel** | **276 M€** | **223 M€ (−19 %)** |
+| **Conversion EBITDA → cash** | ~75 % *(indicatif)* | **51,4 %** |
+
+> 🔴 **T4 échoue sur le drapeau forensic canonique** — *CA en hausse, cash-flow
+> en baisse* — et il échoue durement : **~24 points de conversion perdus en un
+> an, pendant que l'émetteur RELÈVE sa guidance dans le même communiqué.**
+> S'ajoutent **T2** (+4,67 % le jour de l'annonce, consensus battu de 4,9 %) et
+> **T6** (mid-cap SBF 120 largement suivie).
+>
+> 🔑 **L'hypothèse écrite la veille était exacte** : *« une part du bond
+> d'EBITDA vient probablement de plus-values de stocks non récurrentes, qui se
+> retournent aussi vite qu'elles viennent. »* La divergence EBITDA/cash en est
+> la signature — **et le baril a baissé le 11/09.**
+>
+> **Aucun seuil de réouverture n'est écrit**, et c'est délibéré : *écrire un
+> prix de réouverture sur un dossier dont le mécanisme est réfuté re-créerait
+> l'erreur Vicat.* **Réouverture sur FAIT seulement** : conversion EBITDA → cash
+> ≥ 70 % sur un semestre publié.
+
+### ✅ AUBAY — le test de collision du 16/09 est CONFIRMÉ et DURCI
+
+Publication **mercredi 16/09 APRÈS CLÔTURE** *(heure mono-source, non remontée
+à un agenda horodaté de l'émetteur)*.
+
+| | 2026 servi | 2025 *(mon radar, écrit avant)* | Ratio calculé | Taux publié |
+|---|---|---|---|---|
+| **S1** | 351,8 M€ | 268,96 | **+30,80 %** | **+30,8 %** ✅ |
+| **T2** | 173,6 M€ | 132,82 | **+30,70 %** | **+30,7 %** ✅ |
+| **T1** *(par différence)* | 178,2 M€ | 136,14 | **+30,89 %** | — |
+
+> ✅ **Le CA du S1 est public et vérifié par TROIS chemins. Toute « surprise
+> sur le chiffre d'affaires » le 16/09 sera un artefact par construction.**
+> Le seul enjeu réel est **la marge opérationnelle** (objectif 9-10 %, haut de
+> fourchette relevé) et le commentaire sur la demande au S2.
+>
+> 📌 **La collision FOMC s'allège** : le FOMC tombe en journée, Aubay après
+> clôture → **collision de LECTURE, plus d'EXÉCUTION.**
+
+### 📡 Ancrages de marché validés au 11/09 (bouclés au 10⁻⁴)
+
+**CAC 8 179,77** (+0,78 %) · **S&P 7 656,98** (+0,86 %) · **Nasdaq 26 333,04**
+(+0,96 %) · **ratio Nasdaq/S&P 3,4391**. **Semaine CAC : −1,2 %.**
+🔵 **Régime : le décrochage se CORRIGE, il ne s'inverse pas** — rebond de
+RISQUE (le Nasdaq mène), sur un repli du baril **non résolu**.
+
 ## Sorties enregistrées (mémoire des refus — ne pas re-signaler sans fait NOUVEAU)
 
 | Candidate | Sortie | Motif | Date |
