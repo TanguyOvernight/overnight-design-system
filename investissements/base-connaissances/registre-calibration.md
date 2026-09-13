@@ -2053,3 +2053,64 @@ d'être compté.**
 **Aucune résolution ce jour.** Prochaines échéances : **C046 le 16/09 (FOMC)**
 · C013 le 30/09 · C049 le ~31/10. *Le test pré-enregistré de discrimination
 reste ouvert : 3 résolutions sur les 20 requises.*
+
+---
+
+## Appels ouverts le 13/09/2026 — C050, C051, C052
+
+### 🔴 D'abord : C046 n'est PAS révisé, et il va coûter cher
+
+**C046** *(15/08, P = 66 % que la Fed NE relève PAS ses taux le 16/09)* est
+aujourd'hui contredit par une probabilité implicite de marché de **~85,5 %
+de HAUSSE au 12/09** — soit une **borne inférieure de ~14,5 %** pour ma
+proposition *(le résidu contient aussi les baisses)*. **Écart : ~51 points à
+trois jours de la résolution, le plus grand du registre.**
+
+> ⚖️ **Décision : aucune modification.** *Réviser le P d'un appel enregistré
+> détruit exactement ce que le registre mesure — un appel rattrapé en cours de
+> route ne mesure plus un jugement, il mesure ma capacité à avoir l'air
+> d'avoir eu raison.* **Si la Fed relève, C046 vaudra 0,4356 de Brier.**
+>
+> 🔑 **Ce qui a changé est nommable, et ce ne sont pas des prix** : le discours
+> Warsh du **28/08** et le **cœur du CPI du 11/09 au-dessus du consensus**.
+> *Ma protection structurelle — « la Fed ne surprend pas » — a changé de camp :
+> elle protège désormais la hausse.*
+
+### Les trois appels neufs
+
+| | Date | Type | Proposition | **P** | Résolution |
+|---|---|---|---|---|---|
+| **C050** | 13/09 | macro-US / <1 sem. | **La Fed NE RELÈVE PAS ses taux au FOMC du 16/09/2026** *(statu quo ou baisse)* | **25 %** — brut **11 %** → rétraction **19 %** → **plancher de charte** | Communiqué FOMC du 16/09, 20h00 Paris |
+| **C051** | 13/09 | 🧪 **test de charte** | *(proposition identique à C050)* | **19 %** — rétraction appliquée, **plancher NON appliqué** | idem · **HORS dénominateur principal** |
+| **C052** | 13/09 | small-EU / <1 mois · PEA | **La marge opérationnelle d'activité du S1 2026 d'Aubay ressort ≥ 9,1 %** *(au-dessus du 9,1 % réalisé en 2025)* | **54 %** *(brut 55 %, rétraction)* | Communiqué Aubay du 16/09 · butée **30/09/2026** · **VOID si la marge S1 n'est pas publiée** |
+
+### 🧪 C050 / C051 — pourquoi deux appels sur la même proposition
+
+**Mes scénarios du 13/09 donnent P(pas de hausse) = 11 %.** La charte impose un
+**plancher de 25 %**. **Elle m'oblige donc à enregistrer un chiffre que mon
+propre raisonnement contredit de 14 points.**
+
+> **Le plancher existe pour me protéger de ma surconfiance.** *Ici il
+> m'empêche d'enregistrer une conviction bien fondée, sur un cas où je ne fais
+> que transcrire un prix de marché liquide adossé à une politique
+> télégraphiée.*
+>
+> ⚖️ **Je n'invente pas une exception en cours de route.** J'applique la charte
+> pour C050 — et j'ouvre C051, **identique à une seule variable près : le
+> plancher.** *C'est une expérience, pas une hésitation.*
+
+**🔒 RÈGLE D'ARRÊT FIXÉE AVANT TOUTE RÉSOLUTION** : la question du plancher ne
+sera tranchée qu'à **8 paires C050/C051 accumulées**. **Jamais sur ce cas
+seul.**
+
+> *Un garde-fou abandonné sur un échantillon de 1 n'est pas un garde-fou
+> amendé — c'est un garde-fou contourné.* **Et je l'écris maintenant,
+> précisément parce que dans trois jours j'aurai une raison de vouloir
+> l'oublier.**
+
+### État du registre au 13/09
+
+**13 résolus · Brier moyen 0,2988 · BSS −0,195.** Test pré-enregistré de
+discrimination : **3 résolutions sur les 20 requises.**
+**Prochaines échéances : C046 + C050 + C051 + C052 le 16/09** — *quatre
+résolutions en une soirée, du jamais vu dans ce registre.*

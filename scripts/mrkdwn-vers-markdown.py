@@ -17,12 +17,30 @@ Usage : python3 mrkdwn-vers-markdown.py <fichier.md>   (écrit sur stdout)
 """
 import re, sys
 
+def est_titre(txt: str) -> bool:
+    """Un titre de section est COURT et majoritairement en capitales.
+
+    Ce test existe parce que la premiere version du script prenait toute
+    phrase en italique occupant une ligne entiere pour un titre, et la
+    passait en gras. Resultat : une hierarchie typographique aplatie, ou
+    plus rien ne ressort. La longueur seule ne suffit pas ; les capitales
+    seules non plus (une ligne de tableau peut l'etre). Les deux ensemble,
+    si.
+    """
+    if len(txt) > 60:
+        return False
+    lettres = [c for c in txt if c.isalpha()]
+    if not lettres:
+        return False
+    return sum(c.isupper() for c in lettres) / len(lettres) >= 0.8
+
+
 def convertir(texte: str) -> str:
     sorties = []
     for ligne in texte.split("\n"):
-        # Titre de section : *TEXTE* seul sur la ligne (après un emoji éventuel)
+        # Titre de section : *TEXTE COURT EN CAPITALES* seul sur la ligne
         m = re.match(r'^(\S*\s*)\*([^*]+)\*\s*$', ligne)
-        if m and ligne.count('*') == 2:
+        if m and ligne.count('*') == 2 and est_titre(m.group(2)):
             sorties.append(f"{m.group(1)}**{m.group(2)}**")
             continue
         # Titre de section suivi d'un tiret : 📅 *LA SEMAINE* — ...

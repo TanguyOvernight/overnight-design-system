@@ -1537,3 +1537,70 @@ faute d'accès au contenu des déclarations AMF.
 - **21/09** : Nike / S&P 100 *(mono-source)* · **reclassement Vietnam**.
 - **24/09** : 🔒 **butée Séché — 12 jours restants.**
 - **30/09** : butée C013 · **~31/10** : butée C049.
+
+---
+
+## 🔴 CORRECTION du 13/09/2026 — la séquence du 16/09 était FAUSSE
+
+**J'avais écrit le 12/09** : *« FOMC séquencé AVANT, en journée → collision de
+LECTURE, plus d'EXÉCUTION. »* **Faux en heure de Paris.**
+
+| Heure de Paris | Événement |
+|---|---|
+| 17h35 | clôture Euronext Paris |
+| **~18h00** | **AUBAY S1** — ⚠️ heure **DÉDUITE** de l'habitude (annuel du 18/03 à 18h00), **non confirmée** |
+| **20h00** | **FOMC + communiqué + dot plot** *(14h00 ET)* |
+| 20h30 | conférence de presse Warsh |
+
+> 🔴 **Le FOMC tombe APRÈS Aubay. La collision est AGGRAVÉE, pas allégée** :
+> la réaction à Aubay se formera à **l'ouverture du jeudi 17/09, entièrement
+> recouverte par un FOMC survenu entre-temps** — et **Bolloré publie le même
+> soir**.
+>
+> ⚠️ **Conséquence, décidée à l'avance** : **aucune lecture d'Aubay par le
+> cours le 17/09.** Le dossier se juge **sur le communiqué**.
+>
+> 🔑 *C'est le défaut de dimanche dernier sous une autre forme : deux
+> événements indépendants dans leur survenue partagent une cause commune pour
+> ma MESURE. La Fed ne change pas la marge d'Aubay — elle rend illisible le
+> prix censé me la refléter.*
+
+## ✅ Nike / S&P 100 — MONO-SOURCE LEVÉE
+
+**Annonce S&P Dow Jones Indices du 04/09/2026**, effective **avant l'ouverture
+du lundi 21/09/2026**. Sortent **Nike, Colgate-Palmolive, Simon Property,
+Honeywell** ; entrent **Dell, Palo Alto, Arista, SanDisk**. **Nike reste au
+S&P 500.**
+
+> 🔑 **La corroboration décisive n'est pas le nombre de relais, c'est la
+> STRUCTURE** : un réétiquetage ne produit pas spontanément une liste
+> cohérente de quatre sortants et quatre entrants tous du même secteur.
+> **Statut : ÉTABLI.**
+
+⚠️ Les chiffres d'accompagnement (−40 % YTD, capitalisation, −78 % sur 5 ans)
+restent **NON VALIDÉS** — paragraphe unique, et **aucun `capi ÷ titres` n'a
+été fait**.
+
+## 🎣 CHMP 14-17/09 — arrêt à UNE requête
+
+Existence de la plénière établie ; **ordre du jour non obtenu**. **Le piège
+nommé s'est présenté** : la même requête a remonté les plénières **2025
+(15-18)**, **2024 (16-19)** et un PDF **2022 (12-15)**.
+✅ **Règle du CANAL VIDE appliquée dès sa deuxième journée d'existence, et
+mieux que prévu : arrêt à la 1ʳᵉ requête. Deux requêtes économisées.**
+
+## 🗓️ Semaine du 14 au 18/09 — Euronext Paris
+
+*(⚠️ agenda d'AGRÉGATEUR, non recoupé émetteur par émetteur.)*
+
+| Jour | Publications |
+|---|---|
+| lun. 14 | Diagnostic Medical Systems |
+| mar. 15 | **Aéroports de Paris** · Exail Technologies *(dossier TUÉ : OPA Thales — ne rouvre rien)* · Assystem |
+| **mer. 16** | **AUBAY** · **Bolloré SE** · LNA Santé · HiPay · Touax |
+| jeu. 17 | **Virbac** · **Robertet** · Altamir · Innate Pharma |
+| ven. 18 | ACTIA Group |
+
+🔴 **Bruxelles et Amsterdam : rien obtenu — angle mort NON INSTRUIT, pas un
+vide constaté.** *La distinction compte : un angle mort se rouvre, un vide
+constaté se classe.*

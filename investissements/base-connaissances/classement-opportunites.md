@@ -1669,6 +1669,64 @@ Publication **mercredi 16/09 APRÈS CLÔTURE** *(heure mono-source, non remonté
 🔵 **Régime : le décrochage se CORRIGE, il ne s'inverse pas** — rebond de
 RISQUE (le Nasdaq mène), sur un repli du baril **non résolu**.
 
+---
+
+### 📊 LE CLASSEMENT AU 13/09 — 8 candidates, **0 mouvement de rang**
+
+**Dimanche : marchés fermés, aucun chiffre de cotation neuf.** Le re-classement
+porte donc sur les **faits** de la semaine à venir, pas sur des prix.
+
+| Rang | Candidate | État au 13/09 | Déclencheur |
+|---|---|---|---|
+| ① | **Cœur World (WPEA)** | 🔴 **PEA non ouvert — 35ᵉ jour**, 1 000 € à quai | ouverture du PEA |
+| ② | **Or** | canal NON PORTEUR *(dispersion du 11/09)* | — |
+| ③ | **Séché (SCHP)** | 🔒 **butée 24/09 — 11 jours** | clôture ≤ 90 € |
+| ④ | **Eli Lilly (LLY)** | quarantaine active | ≤ 1 020 $ |
+| ⑤ | **Magnum** | dormant | capi ≤ 7,6 Md€ **ET** volume ≥ +2,0 % |
+| ⑥ | **Aubay (AUB)** | 📅 **S1 mercredi 16/09 ~18h00** — **C052 ouvert** | — |
+| ⑦ | **STM (STMPA)** | ancrage 43,60 € *(02/09)*, +3,81 % du seuil | ≤ 42,00 € + 2 jambes |
+| ⑧ | **Nike (NKE)** | ✅ **sortie du S&P 100 : mono-source LEVÉE**, effective **21/09** | — |
+
+### 🔴 AUBAY — deux chiffres que le mot « relèvement » cache
+
+| Version | CA 2026 | **Marge op. d'activité** |
+|---|---|---|
+| Initiale *(18/03/2026)* | 676-690 M€ | **9,0 – 9,5 %** |
+| **RELEVÉE** *(juillet)* | **695-705 M€** | **9,0 – 10,0 %** |
+| **Réalisé 2025** | 601,6 M€ | **9,1 %** ✅ *(55,0 ÷ 601,6 = 9,14 %, bouclage servi)* |
+
+> 🔑 **① Le relèvement n'a bougé QUE LE HAUT (9,5 → 10,0). Le bas est resté à
+> 9,0 %, sous les 9,1 % réalisés en 2025.** *La propre guidance d'Aubay
+> autorise encore une marge en RECUL, malgré +30,8 % de chiffre d'affaires.*
+>
+> **② La croissance est aux ⅔ ACQUISE** *(Solutec)* : publié **+30,8 %**,
+> **organique +11,4 %**. L'organique dépasse largement la guidance initiale
+> (+3 à 5 %) — **mais c'est public depuis juillet.**
+>
+> **③ Le S2 impliqué décélère à +3,2 / +6,2 %** *(695-705 − 351,8 contre
+> 601,6 − 268,96 = 332,64)*. **Mécaniquement normal — Solutec entre dans la
+> base — mais c'est la phrase que le marché lira mercredi soir.**
+
+🛑 **Chiffre REFUSÉ et mis en quarantaine** : *« marge S1 2026 autour de
+7,5 % »* — **impossible, cette marge se publie mercredi.** Formulation vague
+sans attribution : **signature du réétiquetage temporel.**
+
+🔴 **CORRECTION DE SÉQUENCE** : **Aubay ~18h00, FOMC 20h00 Paris.** Le FOMC
+tombe **APRÈS**. La réaction à Aubay se formera **jeudi 17/09 à l'ouverture,
+entièrement recouverte par le FOMC** — et **Bolloré publie le même soir**.
+> ⚠️ **Décidé à l'avance : AUCUNE lecture d'Aubay par le cours le 17/09. Le
+> dossier se juge sur le communiqué.**
+
+### 📌 Trois appels enregistrés ce jour
+
+**C050** *(la Fed ne relève pas, **25 %**, plancher de charte)* · **C051**
+*(identique, **19 %**, sans plancher — 🧪 hors dénominateur, test du plancher)*
+· **C052** *(**marge S1 Aubay ≥ 9,1 %**, **54 %**)*.
+
+🔴 **Et C046** *(15/08, 66 % que la Fed ne relève pas)* **n'est pas révisé** —
+le marché price ~85,5 % de hausse. *Un appel rattrapé en cours de route ne
+mesure plus un jugement.* **Quatre résolutions tombent mercredi soir.**
+
 ## Sorties enregistrées (mémoire des refus — ne pas re-signaler sans fait NOUVEAU)
 
 | Candidate | Sortie | Motif | Date |
