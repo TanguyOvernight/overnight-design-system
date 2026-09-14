@@ -46,6 +46,17 @@ Alix Switzerland SA (Nyon) · WideField Pictures (Sainte-Croix, prod image) · H
 Digital (Lutry) · mothr Sàrl (Lausanne) · 42 Innovations Sàrl (La Tour-de-Peilz).
 Rien de type filiale de groupe cette semaine.
 
+## Signal 14.09 — Adaptyv Bio (Lausanne) : Série A €34.35M le 27.08
+« Automated lab for agentic biology » — EN PLEINE FENÊTRE spontanée (1-3 mois
+post-levée). Page carrières adaptyvbio.com hors allowlist (000) — vérification
+humaine ou ajout allowlist requis. Candidat 🚀 marché caché du brief n°18.
+Source verbatim : https://www.eu-startups.com/2026/08/lausanne-based-adaptyv-raises-e34-35-million-series-a-to-build-the-automated-lab-for-agentic-biology/
+
+## Signal 14.09 — Proton construit son équipe marketing (Genève parmi les sites)
+4 « Head of » ouverts simultanément (B2B Marketing, Design, Growth, Product
+Marketing). Trop seniors pour la cible, MAIS une vague de heads précède
+généralement des embauches specialist/manager 2-5 ans — surveillance renforcée.
+
 ## Signal 08.09 — labo « Frontier AI » anonyme recrute en francophone
 DeepRec.ai (cabinet) publie un « Technical Lead IA appliquée / Forward Deployed
 AI Engineer », EMEA, ~1 sem/mois à Paris, pour « une entreprise leader mondiale

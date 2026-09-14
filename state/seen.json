@@ -1,7 +1,7 @@
 {
  "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
- "maj": "2026-09-13",
- "dernier_brief": 17,
+ "maj": "2026-09-14",
+ "dernier_brief": 18,
  "vus": {
   "jobup": [
    "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -51,7 +51,12 @@
    "d9042d61-8b0f-4675-a438-f188d663ad3c",
    "d40a35e6-4b39-4bc0-83a7-53a4e80ea779",
    "aad60097-617a-4afd-b934-1f7fff2f51ec",
-   "b9a5115b-0466-4624-ac2e-91fe27adc58e"
+   "b9a5115b-0466-4624-ac2e-91fe27adc58e",
+   "bcf9cc48-99ae-4aca-bf97-463a08e864d2",
+   "5514d0fd-8a07-4ba1-952f-1a9ce49f14db",
+   "069d7703-3899-49cd-8b47-d0b462a37304",
+   "cf524ac0-6070-4724-aa4a-9a14d4247093",
+   "6d16e6f2-5488-47fa-a0f0-9fcb0b0d807d"
   ],
   "ats_employeurs": [
    "https://recrutement.eben-hezer.ch/jobs/7602918-responsable-communication-et-recherche-de-fonds",
@@ -1355,6 +1360,60 @@
    "titre": "Jour creux — 0 nouvelle persona ; SerpAPI 3e jour de panne (allowlist)",
    "entreprise": "—",
    "note": "pins 4/4 vivants ; Job-Room sert désormais careers.audemarspiguet.com (canal officiel AP)",
+   "lien": null
+  },
+  {
+   "brief": 18,
+   "date": "2026-09-14",
+   "score": "✅",
+   "titre": "Brand Manager à 80-100%",
+   "entreprise": "Alloboissons SA",
+   "note": "Givisiez -1 ; CDI ; 2-3 ans pile cible ; publié 14.09 ; ⚠️ délai '13.09' ambigu (coquille/repost) — urgence signalée ; allemand=atout ; vrai brand (second regard fiche entière)",
+   "lien": "https://www.jobs.ch/fr/offres-emplois/detail/bcf9cc48-99ae-4aca-bf97-463a08e864d2/"
+  },
+  {
+   "brief": 18,
+   "date": "2026-09-14",
+   "score": "👀",
+   "titre": "Chef·fe de projet MARCOM B2B",
+   "entreprise": "Naef Immobilier",
+   "note": "Petit-Lancy plafond GE ; CDI 100% ; années n.c. ; pilotage>créa ; GET ✔",
+   "lien": "https://www.jobs.ch/fr/offres-emplois/detail/5514d0fd-8a07-4ba1-952f-1a9ce49f14db/"
+  },
+  {
+   "brief": 18,
+   "date": "2026-09-14",
+   "score": "info",
+   "titre": "⏰ Rappel deadline 18.09 — VdL chargé·e comm auxiliaire (brief 8bis)",
+   "entreprise": "Ville de Lausanne",
+   "note": "pas un re-signalement : rappel de délai",
+   "lien": "https://www.jobup.ch/fr/emplois/detail/31c27776-3baf-4e73-bc6b-259ded68208c/"
+  },
+  {
+   "brief": 18,
+   "date": "2026-09-14",
+   "score": "🚀",
+   "titre": "Adaptyv Bio — Série A €34.35M (27.08), fenêtre spontanée",
+   "entreprise": "Adaptyv Bio",
+   "note": "page carrières hors allowlist ; 🔎 demandé à Tanguy ; ✉️ = dossier spontané",
+   "lien": null
+  },
+  {
+   "brief": 18,
+   "date": "2026-09-14",
+   "score": "ecartee-notable",
+   "titre": "Responsable Senior de Marque Soin du Corps",
+   "entreprise": "L'Occitane",
+   "note": "7+ ans + remplacement maternité",
+   "lien": null
+  },
+  {
+   "brief": 18,
+   "date": "2026-09-14",
+   "score": "info",
+   "titre": "Proton : 4 Head of marketing simultanés (radar)",
+   "entreprise": "Proton",
+   "note": "vague de heads → embauches 2-5 ans à suivre",
    "lien": null
   }
  ]
