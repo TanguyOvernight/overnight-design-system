@@ -1727,6 +1727,102 @@ entièrement recouverte par le FOMC** — et **Bolloré publie le même soir**.
 le marché price ~85,5 % de hausse. *Un appel rattrapé en cours de route ne
 mesure plus un jugement.* **Quatre résolutions tombent mercredi soir.**
 
+---
+
+### 📊 LE CLASSEMENT AU 14/09 — 8 candidates, **0 mouvement de rang**
+
+| Rang | Candidate | État au 14/09 | Déclencheur |
+|---|---|---|---|
+| ① | **Cœur World (WPEA)** | 🔴 **PEA non ouvert — 36ᵉ jour**, 1 000 € à quai | ouverture du PEA |
+| ② | **Or** | canal NON PORTEUR *(dispersion du 11/09)* | — |
+| ③ | **Séché (SCHP)** | 🔒 **butée 24/09 — 10 jours** | clôture ≤ 90 € |
+| ④ | **Eli Lilly (LLY)** | quarantaine active | ≤ 1 020 $ |
+| ⑤ | **Magnum** | dormant | capi ≤ 7,6 Md€ **ET** volume ≥ +2,0 % |
+| ⑥ | **Aubay (AUB)** | 📅 **S1 mer. 16/09 après clôture** ✅ *(confirmé émetteur)* — C052 | — |
+| ⑦ | **STM (STMPA)** | ancrage 43,60 € *(02/09)* — **aucune requête ce jour, ni prix ni fait** | ≤ 42,00 € + 2 jambes |
+| ⑧ | **Nike (NKE)** | sortie du S&P 100 **ÉTABLIE**, effective 21/09 | — |
+
+### ✅ AUBAY — l'organique ACCÉLÈRE, et ça contredit ma propre lecture d'hier
+
+| | Organique |
+|---|---|
+| T1 2026 | **≈ +10,6 %** |
+| **S1 2026** | **+11,4 %** |
+| **T2 2026** | **+12,2 %** |
+
+> 🔑 **Hier j'ai souligné que le S2 impliqué décélère à +3 à 6 % publiés.**
+> C'est vrai — **mais c'est un effet de PÉRIMÈTRE** (Solutec entre dans la base
+> de comparaison), **pas un effet de DEMANDE.** *L'organique, lui, accélère
+> trimestre après trimestre.*
+>
+> ⚠️ **Les deux se tiennent ensemble** : la décélération publiée est
+> mécanique, l'accélération organique est réelle. **Le marché lira
+> probablement la première** — *ce n'est pas une raison pour que j'en fasse
+> autant, ni pour l'oublier : c'est elle qui fera le prix.*
+
+✅ *« Après clôture »* **confirmé par le communiqué émetteur du 23/07** (3
+canaux) — **mono-source levée**. 🔴 **L'heure ~18h00 reste DÉDUITE**, aucune
+source ne la donne.
+**C052 non révisé** *(marge S1 ≥ 9,1 %, 54 %)* : *un organique en accélération
+ne dit rien de DIRECT sur la marge.*
+
+### 🔴 LE RÉGIME DE MARCHÉ A UNE CAUSE, et elle est structurelle
+
+**Pétrole — niveau désormais VALIDÉ** : WTI **100,05 $** *(settlement 11/09)*,
+veille **102,48 $** *(10/09)*, **semaine +9,4 %**.
+
+- **10-11/09** : frappes de drones sur l'**oléoduc Est-Ouest saoudien
+  (7 Mb/j)** — **le contournement même d'Ormuz** — **fermé par Riyad**.
+- **Ormuz effectivement fermé.** **13/09** : navire touché · **Oman REPORTE**
+  les discussions Iran-Golfe.
+
+> 🔑 **Le repli du 11/09 était un PARI SUR LA DIPLOMATIE — et il a sauté
+> dimanche.** *J'avais écrit « le décrochage se corrige sur un repli non
+> résolu » : j'avais raison sur la prudence et je n'avais pas la cause.*
+> **Double verrou : Ormuz fermé ET son contournement fermé — un seul des deux
+> laisserait une soupape.**
+>
+> **Aucune décision de portefeuille n'en découle.** *C'est un régime, pas un
+> signal — et je n'ai pas d'exposition énergie à ajuster.*
+
+### 🛑 FED — canal DISPERSÉ, aucune probabilité neuve écrite
+
+**56 % · 85 % · 98 %** servis dans **une seule réponse** pour la même question
+→ **dispersion, arrêt.** ⚠️ *Le 85 % est à 0,5 pt de mon ancrage du 12/09 —
+signature possible de réétiquetage. Le chiffre qui rassure est celui dont il
+faut se méfier.*
+**État maintenu : ~85,5 % au 12/09. C046, C050, C051 inchangés.**
+> **Mais le SENS de l'information neuve est nommable sans chiffre** : Ormuz
+> fermé → baril haut → inflation haute → **Fed vers la hausse.** *Le week-end
+> pousse dans le sens qui condamne déjà C046.*
+
+### 🔴 L'ANGLE LE PLUS VIVANT DU TERRAIN N'A PAS ÉTÉ OUVERT
+
+**Carnet de commandes divergent du chiffre d'affaires**, véhicules nommés et
+achetables : **ACTIA** *(Paris, publie le 18/09)* · **HiPay** *(Paris, 16/09)*
+· **X-FAB** *(Paris, fonderie, transition SiC, couverture quasi nulle)* ·
+**EVS** *(Bruxelles)*.
+
+> **NON OUVERT ≠ chassé à zéro.** *Trois échéances cette semaine.* **Priorité
+> de demain.**
+
+### 🆕 La grappe du 21/09 — trois événements d'indice le même jour
+
+Revue **Euronext AEX/AMX** *(appliquée après clôture du 18/09, effective
+21/09 ; données arrêtées après clôture du 16/09)* · **sortie de Nike du
+S&P 100** · **reclassement Vietnam chez FTSE**.
+
+> ⚠️ **Lundi 21/09 sera une journée de FLUX MÉCANIQUES, pas de lecture de
+> fondamentaux. Aucune décision ce jour-là** — écrit à l'avance, parce que
+> c'est exactement le genre de séance où un mouvement se lit comme un signal
+> alors qu'il n'est qu'un rééquilibrage indiciel.
+
+### 🔴 Garde-fous — marqués PÉRIMÉS
+
+**V = ~1 015 $ (~870 €) au 25/07 — 51 jours.** **L ≈ 131 € 🔴 périmé ·
+R = 44,0 % 🔴 périmé.** *Tout L et tout R publiés portent désormais la date de
+V ; au-delà de 30 jours, mention « périmé ».*
+
 ## Sorties enregistrées (mémoire des refus — ne pas re-signaler sans fait NOUVEAU)
 
 | Candidate | Sortie | Motif | Date |

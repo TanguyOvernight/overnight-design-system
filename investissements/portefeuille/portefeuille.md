@@ -106,3 +106,59 @@ seul — c'est une dégradation à surveiller, pas une thèse cassée. Conserver
 | 29/07/2026 | FOMC (Fed) — 25 % de proba de hausse | Tout le portefeuille |
 | 26/08/2026 | Résultats Nvidia T2 | NVDA (22 % du portefeuille) |
 | Continu | Digestion des résultats Tesla Q2 (EPS -33 % vs attentes, marges en chute) | TSLA — thèse sous pression |
+
+---
+
+## 🔴 14/09/2026 — LA VALORISATION A **51 JOURS**, et je ne l'avais jamais écrit
+
+**Dernière capture datée : 25/07/2026.** Nous sommes le **14/09**. *Aucune
+valorisation du portefeuille n'a été établie depuis sept semaines.*
+
+### Pourquoi ce n'est pas un détail de tenue de livre
+
+Deux de mes garde-fous se calculent **sur V**, la valeur du portefeuille :
+
+```
+L = min( 5 % × (V + 6 000 €) ; 15 % × V )      ← plafond par ligne
+R = (titres vifs + ETF non-cœur) ÷ V           ← garde-fou d'exposition
+```
+
+> 🔴 **J'ai donc publié pendant sept semaines un plafond de ligne (L ≈ 131 €)
+> et un ratio d'exposition (R = 44,0 %) calculés sur un V de 51 jours.**
+> *Et je les ai écrits sans jamais accoler la date de V — ce qui est
+> exactement la faute que je traque dans les données servies : **un chiffre
+> sans date est périmé par défaut, y compris quand c'est moi qui l'écris.***
+
+### Ce que ça a coûté, et ce que ça n'a pas coûté
+
+✅ **Opérationnellement : rien, pour l'instant.** *Aucun ordre n'a été passé
+depuis le 25/07 — le PEA n'est pas ouvert. Un plafond mal calculé n'a jamais
+plafonné quoi que ce soit.*
+
+🔴 **Mais le risque est en face de nous** : **le jour où le PEA s'ouvrira, le
+premier chiffre dont j'aurai besoin est précisément celui-là.** *Et c'est le
+jour où je serai le plus pressé de l'utiliser.*
+
+### ⚠️ Et je ne peux PAS estimer la dérive — il faut le dire
+
+Le portefeuille est **à 44 % en titres vifs technologiques** (NVDA 22 %,
+TSLA 16 %, MSFT 6 %), donc **très sensible au Nasdaq**. Or je **n'ai aucun
+ancrage d'indice validé au 25/07** : je ne peux pas chaîner.
+
+> **Je pourrais servir une estimation. Je ne le fais pas.** *Une valorisation
+> reconstruite à partir d'ancrages que je n'ai pas serait un chiffre fabriqué
+> — et fabriqué par moi, ce qui est pire que servi par un canal, parce que je
+> ne l'aurais pas mis en quarantaine.*
+
+### 🔒 RÈGLE INSTITUÉE CE JOUR
+
+1. **Tout L et tout R publiés portent désormais la DATE de V** : « L ≈ 131 €
+   *(sur V au 25/07)* ». **Un garde-fou sans date n'est pas un garde-fou.**
+2. **Au-delà de 30 jours, V est marqué PÉRIMÉ** et les garde-fous qui en
+   dérivent sont publiés avec la mention 🔴 **périmé**.
+3. **Action pour Tanguy, à faire AVANT le premier ordre** : une capture
+   d'écran datée du portefeuille eToro. *Deux minutes, et elle débloque les
+   deux garde-fous.*
+
+**État au 14/09 : V = ~1 015 $ (~870 €) au 25/07 — 🔴 PÉRIMÉ (51 jours).
+L ≈ 131 € 🔴 périmé. R = 44,0 % 🔴 périmé.**

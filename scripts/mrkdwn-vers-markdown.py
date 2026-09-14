@@ -35,6 +35,11 @@ def est_titre(txt: str) -> bool:
     return sum(c.isupper() for c in lettres) / len(lettres) >= 0.8
 
 
+def italiques(txt: str) -> str:
+    """*emphase* -> _italique_, en laissant les **gras** intacts."""
+    return re.sub(r'(?<!\*)\*([^*\n]+)\*(?!\*)', r'_\1_', txt)
+
+
 def convertir(texte: str) -> str:
     sorties = []
     for ligne in texte.split("\n"):
@@ -44,11 +49,21 @@ def convertir(texte: str) -> str:
             sorties.append(f"{m.group(1)}**{m.group(2)}**")
             continue
         # Titre de section suivi d'un tiret : 📅 *LA SEMAINE* — ...
+        # La QUEUE doit elle aussi etre convertie : la premiere version la
+        # recopiait verbatim, ce qui laissait des *emphases* mrkdwn en clair
+        # apres le tiret.
         m = re.match(r'^(\S*\s*)\*([A-ZÀ-Ý0-9 ,\'’-]+)\*(\s*[—–-].*)$', ligne)
         if m:
-            sorties.append(f"{m.group(1)}**{m.group(2)}**{m.group(3)}")
+            sorties.append(f"{m.group(1)}**{m.group(2)}**{italiques(m.group(3))}")
             continue
-        sorties.append(re.sub(r'(?<!\*)\*([^*\n]+)\*(?!\*)', r'_\1_', ligne))
+        sorties.append(italiques(ligne))
+    # La PREMIERE ligne non vide est toujours le titre de la newsletter :
+    # elle est longue et en minuscules, donc est_titre() la refuse a juste
+    # titre pour une ligne de corps. On la traite par sa POSITION.
+    for i, ligne in enumerate(sorties):
+        if ligne.strip():
+            sorties[i] = re.sub(r'^_(.+)_$', r'**\1**', ligne)
+            break
     return "\n".join(sorties)
 
 if __name__ == "__main__":

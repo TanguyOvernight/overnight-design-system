@@ -1604,3 +1604,86 @@ mieux que prévu : arrêt à la 1ʳᵉ requête. Deux requêtes économisées.**
 🔴 **Bruxelles et Amsterdam : rien obtenu — angle mort NON INSTRUIT, pas un
 vide constaté.** *La distinction compte : un angle mort se rouvre, un vide
 constaté se classe.*
+
+---
+
+## 📡 Mise à jour du 14/09/2026
+
+### 🟢 PÉTROLE — niveau PROMU ANCRAGE VALIDÉ
+
+| Date | Valeur | Type |
+|---|---|---|
+| 10/09 | **102,48 $** | settlement WTI |
+| **11/09** | **100,05 $** *(−2,43 $ / −2,37 %)* | **settlement WTI** |
+| semaine | **+9,4 %** | — |
+
+✅ **Bouclage inversé** : mes trois affirmations (*« > 100 $ franchi le 10/09 »*,
+*« repli le 11/09 »*, *« semaine ~+10 % »*) venaient de ma mémoire, **jamais
+servies au canal** — les trois concordent.
+☠️ **101,19 $ et sa veille implicite 93,03 $ définitivement RÉFUTÉS** *(la
+veille réelle est 102,48 $ — 10 % d'écart)*.
+
+### 🔴 CHOC MACRO ÉTABLI — double verrou sur le transport du brut
+
+- **10-11/09** : frappes de drones depuis l'Irak sur l'**oléoduc Est-Ouest
+  saoudien (7 Mb/j)**, **le contournement même d'Ormuz** → **fermé par Riyad**.
+- **Ormuz décrit comme effectivement fermé.**
+- **13/09** : navire touché dans le détroit (UKMTO) · **Oman REPORTE** la
+  réunion Iran-Golfe prévue le 14/09.
+
+> 🔑 **Le repli du 11/09 était un pari sur la diplomatie, et il a sauté
+> dimanche.** **Double verrou : Ormuz fermé ET son contournement fermé** — un
+> seul des deux laisserait une soupape physique.
+> **Direction lundi : hausse, non ambiguë.** 🛑 *Niveaux d'ouverture circulant
+> (WTI 102,64 / Brent 108,15) NON RETENUS : mono-source, intraday, non
+> chaînable.*
+
+### 🛑 FED — canal DISPERSÉ
+
+**56 % · 85 % · 98 %** pour la même question dans une seule réponse → **non
+porteur.** ⚠️ *Le 85 % est à 0,5 pt de mon ancrage — signature possible de
+réétiquetage.* **État maintenu : ~85,5 % au 12/09.**
+✅ **CPI d'août 3,4 % a/a : mono-source partiellement levée** (source de nature
+différente, non sollicitée). ✅ **Warsh confirmé président.**
+
+### 🆕 GRAPPE DU LUNDI 21/09 — trois événements d'indice le même jour
+
+| Événement | Détail |
+|---|---|
+| **Revue Euronext AEX/AMX** | appliquée **après clôture du ven. 18/09**, effective **lun. 21/09** *(données arrêtées après clôture du mer. 16/09)* |
+| **Nike quitte le S&P 100** | effectif avant l'ouverture US du **21/09** |
+| **Vietnam : Frontière → Émergent Secondaire (FTSE)** | effectif à l'ouverture du **21/09** |
+
+> ⚠️ **Journée de FLUX MÉCANIQUES, pas de lecture de fondamentaux. AUCUNE
+> DÉCISION CE JOUR-LÀ** — écrit à l'avance, parce que c'est exactement le genre
+> de séance où un mouvement de prix se lit comme un signal alors qu'il n'est
+> qu'un rééquilibrage indiciel.
+
+### ✅ AUBAY — mono-source levée sur la fenêtre, heure toujours déduite
+
+*« Mercredi 16/09, **après clôture** »* : **confirmé par le communiqué émetteur
+du 23/07/2026**, relayé par trois canaux. 🔴 **L'heure ~18h00 reste une
+INFÉRENCE d'habitude**, aucune source ne la donne.
+🆕 **Organique : T1 ≈ +10,6 % → S1 +11,4 % → T2 +12,2 % — il ACCÉLÈRE.**
+*La décélération publiée du S2 (+3 à 6 %) est un effet de PÉRIMÈTRE, pas de
+DEMANDE.*
+
+### 🎣 CHMP — ordre du jour toujours non servi, arrêt à 1 requête (2ᵉ jour)
+
+Ont remonté : agenda **15-18/09/2025** (PDF), événement **16-19/09/2024**,
+événement **11-14/09/2023**. **Aucun document 2026 avec l'année lisible.**
+🔒 **Ne pas re-dépenser avant une source portant « 2026 » dans l'URL ou
+l'en-tête.**
+
+### 🔴 ANGLE NON OUVERT — le meilleur du terrain tech, intact
+
+**Carnet de commandes divergent du chiffre d'affaires** : **ACTIA** *(Paris,
+18/09)* · **HiPay** *(Paris, 16/09)* · **X-FAB** *(Paris, fonderie, transition
+SiC, couverture quasi nulle)* · **EVS** *(Bruxelles)*.
+**NON OUVERT ≠ chassé à zéro.** *Trois échéances cette semaine.*
+
+### 🔴 Angle mort maintenu
+
+**Agenda corporate Amsterdam / Bruxelles** — canal VIDE : il rend les
+publications d'Euronext lui-même, jamais le calendrier des émetteurs.
+*Non instruit, pas constaté vide.*
