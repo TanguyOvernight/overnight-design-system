@@ -27,9 +27,13 @@ def est_titre(txt: str) -> bool:
     seules non plus (une ligne de tableau peut l'etre). Les deux ensemble,
     si.
     """
-    if len(txt) > 60:
+    # Un titre peut porter un sous-titre en minuscules apres un tiret :
+    # "LES MARCHES — le decrochage repart". Seul le segment de TETE est
+    # jugé ; sans cette exception le titre repartait en italique.
+    tete = re.split(r'\s[—–-]\s', txt, maxsplit=1)[0]
+    if len(tete) > 60:
         return False
-    lettres = [c for c in txt if c.isalpha()]
+    lettres = [c for c in tete if c.isalpha()]
     if not lettres:
         return False
     return sum(c.isupper() for c in lettres) / len(lettres) >= 0.8

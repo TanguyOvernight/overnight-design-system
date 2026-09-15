@@ -1472,3 +1472,111 @@ d'alarme. **Contre-épreuve** : une fabrication depuis mon ancrage aurait donné
 *Le résidu d'arrondi plaide pour l'indépendance.* **Et surtout : ce n'est pas
 le chiffre SERVI qui coïncide avec un ancrage, c'est la veille RECONSTRUITE —
 ce qui est précisément l'objet du bouclage, pas un symptôme de réétiquetage.**
+
+---
+
+# 15/09/2026 — Quatre acquis, dont deux corrections contre moi
+
+## ① 🆕 LE CONTRÔLE DES **SIGNES** DE RÉSIDUS — plus fort que leur taille
+
+Trois bouclages du 14/09, contre-épreuve de coïncidence faite sur les trois.
+Résidus : **+0,18 / −0,25 / +0,83**.
+
+> **Une fabrication à partir de mes ancrages produirait un biais COHÉRENT** —
+> le fabricant applique la même opération aux trois séries. **Trois signes
+> indépendants sont la signature de trois arrondis indépendants, donc de trois
+> chiffres réels.**
+>
+> 🔑 **Regarder les SIGNES d'une série de résidus, et pas seulement leur
+> magnitude.** *Ça ne coûte rien et ça tranche là où la magnitude reste
+> ambiguë.* **Ne s'applique qu'à une SÉRIE : un résidu isolé n'a pas de
+> signe informatif.**
+
+## ② ⚠️ LE SENS DU FAUX PEUT S'INVERSER SUR LE MÊME INSTRUMENT
+
+**STM, 10/09** : trois faux, **tous AU-DESSUS** de mon ancrage — ils
+éloignaient du seuil et menaçaient de me faire **classer** le dossier.
+**STM, 14/09** : un −6,6 % non validé qui donnerait **~40,7 €, SOUS mon seuil
+de 42,00 €** — il **rapproche** du seuil.
+
+> 🔴 **C'est la configuration la plus dangereuse d'un canal contaminé : un
+> chiffre non validé qui déclencherait un ACHAT.**
+>
+> *Un faux qui me fait renoncer coûte une occasion. Un faux qui me fait
+> acheter coûte de l'argent* — **et il arrive déguisé en bonne nouvelle.**
+>
+> **RÈGLE : la vigilance doit être ASYMÉTRIQUE.** *Un chiffre non validé qui
+> va dans le sens de mon envie mérite plus de méfiance, pas moins.*
+> ⚠️ **Et ma propre heuristique de biais directionnel ne protège PAS ici** :
+> elle a déjà échoué quatre fois en août (bande STM 43,x) en rejetant des
+> données VRAIES. **La règle n'est pas « rejeter ce qui m'arrange », c'est
+> « exiger le même bouclage, sans l'alléger parce que le chiffre plaît ».**
+
+## ③ ☠️ AVANT DE DÉCLARER UN CANAL EN PANNE — vérifier que le document peut EXISTER
+
+**Le CHMP n'était pas un canal vide.** La plénière **se termine le jeudi
+17/09**, et les *meeting highlights* se publient **après sa clôture** —
+invariant vérifié sur trois plénières 2026.
+
+> ☠️ **Demander le contenu du 14-17/09 le 15/09 au matin, c'est demander un
+> document qui ne peut pas exister.** **J'ai imputé au canal, trois jours de
+> suite, ce qui était une faute de CALENDRIER dans MA question.**
+>
+> **Coût : 3 requêtes — et pire, une règle neuve (le canal vide, écrite le
+> 12/09) appliquée à un cas qu'elle ne couvre pas.** *Une bonne règle mal
+> appliquée finit par être discréditée par ses faux positifs : c'est le même
+> danger que le faux contrôle du 25/08, sous une forme plus discrète.*
+>
+> 🆕 **RÈGLE** : **avant de déclarer un canal vide, dispersé ou non porteur,
+> vérifier que le document demandé peut EXISTER à la date où on le demande.**
+> *Un canal ne peut pas être vide d'un document qui n'est pas encore écrit.*
+
+✅ **Et un blocage indéfini devient une échéance** : réouverture **le 18/09**,
+une requête, sur une URL nommée.
+
+## ④ 🔑 LE TEST DE COLLISION SAIT **INNOCENTER** — et c'est ce qui en fait un contrôle
+
+**HiPay** sert un contenu **S1 2026 chiffré** alors que la société « publie le
+16/09 » : **signature exacte du réétiquetage vers le futur.**
+
+**Résolu par le TYPE, en une requête** : le **29/07 = le chiffre d'affaires**,
+le **16/09 = les résultats** (EBITDA, marge). **Deux documents, pas un faux.**
+
+> 🔑 **Un contrôle qui ne sait qu'accuser est une superstition.** *Celui-ci sait
+> disculper — c'est ce qui le distingue d'un réflexe de méfiance.*
+> **Et la distinction employée est exactement celle qui structure Aubay :
+> un communiqué de CA n'est pas un communiqué de résultats.**
+
+## ⑤ 🆕 ACHETABILITÉ — le TARIF et la LIQUIDITÉ sont DEUX obstacles, pas un
+
+HiPay est sur **Euronext Growth Paris** : **la place est la bonne**, aucun
+surcoût étranger. **Mais la liquidité d'une valeur de cette taille est un
+obstacle distinct.**
+
+> **Le palier tarifaire décide de ce que l'ordre COÛTE ; la liquidité décide
+> de s'il PASSE, et à quel écart.** **Deux tests, pas un** — et tous deux
+> **avant** l'instruction. *Le 11/09 j'ai découvert que le ticket ne décidait
+> pas, que c'était le palier. Aujourd'hui je découvre que le palier ne décide
+> pas tout non plus.*
+
+## ⑥ 🆕 LIMITE DE PROTOCOLE — les six kill-tests présupposent un DOSSIER
+
+Sur un canal vide, **T1, T3, T4, T5 et T6 sont inapplicables ; seul T2 mord.**
+**T4 FORENSIC est structurellement désarmé : on ne peut pas nommer le chiffre
+qui manque à un paquet qui n'existe pas.**
+
+> *« Quel kill-test échoue ? » est une question MAL POSÉE sur un terrain
+> stérile.* **La réponse n'est pas « T4 », c'est « il n'y a pas de paquet ».**
+> ⚠️ **Forcer une réponse en nommant un test donnerait l'illusion d'avoir
+> instruit ce qui n'a jamais existé** — et remplirait le journal de faux
+> négatifs argumentés.
+
+## ⑦ ☠️ Un chiffre rejeté ne revient pas parce que le monde s'est déplacé vers lui
+
+Le WTI **101,19 $** avait été tué le 12/09 *(veille implicite 93,03 $ contre
+102,48 $ réels)*. Le 15/09, le marché est effectivement **vers 101-102 $**.
+
+> **Il n'est PAS réhabilité.** *Un chiffre se valide par sa CHAÎNE, pas par sa
+> ressemblance avec la réalité du moment.* **Un faux qui devient vrai par
+> accident reste un faux : sa provenance n'a pas changé, et c'est la
+> provenance qui décide.**

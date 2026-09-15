@@ -1823,6 +1823,90 @@ S&P 100** · **reclassement Vietnam chez FTSE**.
 R = 44,0 % 🔴 périmé.** *Tout L et tout R publiés portent désormais la date de
 V ; au-delà de 30 jours, mention « périmé ».*
 
+---
+
+### 📊 LE CLASSEMENT AU 15/09 — 8 candidates, **0 mouvement de rang**, **1 entrée en surveillance**
+
+| Rang | Candidate | État au 15/09 | Déclencheur |
+|---|---|---|---|
+| ① | **Cœur World (WPEA)** | 🔴 **PEA non ouvert — 37ᵉ jour.** *Le seul déclencheur qui ne dépend d'aucun canal, et le seul qui n'avance pas.* | ouverture du PEA |
+| ② | **Or** | canal NON PORTEUR — **0 requête** ✅ | — |
+| ③ | **Séché (SCHP)** | 🔒 **butée 24/09 — 9 jours** — **0 requête** ✅ | clôture ≤ 90 € |
+| ④ | **Eli Lilly (LLY)** | quarantaine active — 0 requête | ≤ 1 020 $ |
+| ⑤ | **Magnum** | dormant | capi ≤ 7,6 Md€ **ET** volume ≥ +2,0 % |
+| ⑥ | **Aubay (AUB)** | 📅 **S1 DEMAIN après clôture** · **C052 non révisé (54 %)** | — |
+| ⑦ | **STM (STMPA)** | ⚠️ **ALERTE DE SENS — voir ci-dessous** | ≤ 42,00 € + 2 jambes |
+| ⑧ | **Nike (NKE)** | sortie S&P 100 ÉTABLIE, effective 21/09 | — |
+
+### ⚠️ STM — LE SENS DU FAUX S'EST INVERSÉ
+
+Une baisse de **−6,6 %** au 14/09 est apparue **spontanément** dans un paquet
+CAC. **NON VALIDÉE, zéro requête dépensée.** Appliquée à mon ancrage du 02/09
+(43,60 €), elle donnerait **~40,7 € — SOUS le seuil de 42,00 €.**
+
+> 🔑 **Le 10/09, les trois faux STM étaient TOUS AU-DESSUS de mon ancrage** —
+> ils menaçaient de me faire **classer** le dossier. **Aujourd'hui, le chiffre
+> servi RAPPROCHE du seuil.**
+>
+> 🔴 **C'est la configuration la plus dangereuse d'un canal contaminé : un
+> chiffre non validé qui déclencherait un ACHAT.** *Un faux qui fait renoncer
+> coûte une occasion ; un faux qui fait acheter coûte de l'argent — et il
+> arrive déguisé en bonne nouvelle.*
+>
+> **AUCUNE ACTION.** *Le contrat exige trois jambes, et mon ancrage a 13 jours.*
+> **La vigilance est asymétrique : un chiffre qui va dans le sens de mon envie
+> exige le même bouclage, sans allègement.**
+
+### 🆕 HIPAY (ALHYP) — entrée en **SURVEILLANCE**, pas au classement
+
+**Euronext Growth Paris.** Communiqué émetteur du **29/07/2026, 8h00** :
+
+| S1 2026 | Valeur | Variation |
+|---|---|---|
+| **Volume de paiements traité** | **4,9 Md€** | **+6,0 %** |
+| **Chiffre d'affaires** | **36,6 M€** | **−2,1 %** |
+
+**Take rate** : 0,7469 % contre 0,8087 % reconstitué en 2025 → **−7,6 %**.
+⚠️ **DÉRIVÉ, NON VALIDÉ** *(les deux nombres viennent du même paragraphe : le
+calcul hérite de leur statut, il ne le rehausse pas)*.
+
+🎯 **T4 nommé à l'avance : l'EBITDA S1 2026**, publié demain.
+> **Un take rate qui se comprime de 7,6 % sur des volumes +6 % est soit un
+> effet de MIX, soit une guerre de prix. L'EBITDA dit lequel.**
+> **Dossier fermable en UNE requête demain.**
+
+✅ **Bouclage inversé armé** : **le CA du S1 est public depuis le 29/07 à
+36,6 M€ — toute « surprise sur le chiffre d'affaires » demain sera un artefact
+par construction.** *Même structure qu'Aubay.*
+
+🔴 **Contradiction interne à trancher** : une guidance *« +5 à 8 %, maintenue »*
+est servie dans le même paragraphe que le −2,1 %. **NON VALIDÉE** — elle
+pourrait porter sur le **volume** et non le CA.
+
+> ⚠️ **RÉSERVE D'ACHETABILITÉ, et elle est d'une espèce neuve** : la place est
+> bonne (Paris), **mais Euronext Growth pose une question de LIQUIDITÉ,
+> distincte du palier tarifaire.** *Le palier décide de ce que l'ordre COÛTE ;
+> la liquidité décide de s'il PASSE.* **Deux tests. Pas de rang tant que
+> l'EBITDA n'a pas tranché et que la liquidité n'est pas vérifiée.**
+
+### 📡 Ancrages de marché validés au 14/09
+
+**CAC 8 117,78** (−0,76 %) · **S&P 7 619,98** (−0,48 %) · **Nasdaq 26 186,41**
+(−0,56 %) · **ratio 3,4365**. *Bouclages au 10⁻⁵, contre-épreuve de coïncidence
+passée sur les trois avec des résidus de **signes différents**.*
+
+🔵 **RÉGIME : reprise du décrochage, à DEUX moteurs** — doute IA (endogène,
+Soitec −12,6 %, Legrand −6,7 %, Schneider −6,5 %) **et** double verrou
+pétrolier (exogène). *Le pétrole est passé d'arrière-plan à CO-MOTEUR.*
+🔴 **Settlement WTI du 14/09 : non servi, blanc assumé.** ☠️ *Le 101,19 $ n'est
+PAS réhabilité par la remontée du marché vers ce niveau.*
+
+### ☠️ CHMP — trois jours d'accusation contre un canal innocent
+
+**La plénière se termine le 17/09 ; les comptes rendus paraissent après.**
+*Je demandais un document qui ne pouvait pas exister.* 🔒 **Réouverture le
+18/09, une requête, URL nommée.**
+
 ## Sorties enregistrées (mémoire des refus — ne pas re-signaler sans fait NOUVEAU)
 
 | Candidate | Sortie | Motif | Date |
