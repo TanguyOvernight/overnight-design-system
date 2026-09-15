@@ -1,7 +1,7 @@
 {
  "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
- "maj": "2026-09-14",
- "dernier_brief": 18,
+ "maj": "2026-09-15",
+ "dernier_brief": 19,
  "vus": {
   "jobup": [
    "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -123,7 +123,8 @@
    "4465103149",
    "4466364640",
    "4444118969",
-   "4463977902"
+   "4463977902",
+   "4467713084"
   ],
   "chuv": [
    "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html"
@@ -1414,6 +1415,15 @@
    "titre": "Proton : 4 Head of marketing simultanés (radar)",
    "entreprise": "Proton",
    "note": "vague de heads → embauches 2-5 ans à suivre",
+   "lien": null
+  },
+  {
+   "brief": 19,
+   "date": "2026-09-15",
+   "score": "info",
+   "titre": "Jour creux — 0 persona ; SerpAPI instable (5e jour) ; QoQa 403 jobup contourné via jobs.ch",
+   "entreprise": "—",
+   "note": "Format-Z BD&Digital Mkt écartée (Bulle+60%+commercial)",
    "lien": null
   }
  ]
