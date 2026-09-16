@@ -1475,6 +1475,70 @@ ce qui est précisément l'objet du bouclage, pas un symptôme de réétiquetage
 
 ---
 
+---
+
+# 13/09/2026 — ⚠️ ENTRÉE ÉCRITE APRÈS COUP (le 16/09) — deux règles qui manquaient ici
+
+> ☠️ **Défaut de tenue signalé par un agent le 16/09, et il est réel** : les
+> règles ci-dessous ont été écrites le 13/09 **dans le journal du jour, pas
+> dans ce fichier.** *Le journal raconte une journée ; ce fichier est la
+> mémoire méthodologique persistante.* **Une règle qui ne vit que dans un
+> journal daté est une règle que je ne relirai jamais.**
+>
+> 🔑 **C'est exactement la faute que le classement a commise deux fois en
+> septembre** — la matière écrite au bon endroit au mauvais moment, ou au bon
+> moment au mauvais endroit. *Correction de procédure : toute règle formulée
+> un jour donné est recopiée ici LE JOUR MÊME, même si elle est déjà au
+> journal.*
+
+## ① SOMMER À 100 % N'EST PAS UNE PREUVE DE COUVERTURE
+
+Le 06/09, cinq scénarios Séché sommaient à 100 % — **et l'issue réelle n'était
+dans aucun.**
+
+> **Cinq cases qui totalisent 100 % ne couvrent l'espace des possibles que si
+> j'ai réussi à imaginer tout ce qui pouvait arriver** — ce qui est exactement
+> l'hypothèse que l'échec réfute. **Une somme à 100 % est une contrainte
+> d'ÉCRITURE, pas une preuve de COUVERTURE.**
+
+## ② ÉNUMÉRER LES CAUSES AVANT LES ISSUES
+
+*Je listais des issues et je leur attribuais des probabilités.* **Désormais :
+lister d'abord les MÉCANISMES qui peuvent produire une issue, puis regarder
+quelles issues partagent un mécanisme. Celles-là reçoivent une probabilité
+CONJOINTE, assignée une seule fois.**
+
+**Origine de la règle** : le 06/09, j'avais mis 13,5 % sur « pas de cours » et
+5 % sur « comptes illisibles » — **deux risques qui passaient par le MÊME canal
+cassé, chiffrés comme s'ils étaient indépendants.**
+
+## ③ UNE CASE RÉSIDUELLE EXPLICITE, ≥ 5 % ET ≤ 25 %
+
+Un scénario nommé **« autre chose, que je n'ai pas su imaginer »**.
+
+> **C'est la seule façon de rendre un jeu exhaustif PAR CONSTRUCTION plutôt
+> que par énumération.** *Et sa taille est une information : si je dois lui
+> donner 20 %, c'est que je ne comprends pas le dossier — et je dois le dire
+> plutôt que de fabriquer cinq cases pour masquer le trou.*
+>
+> ⚠️ **Plafond à 25 %** : *le résiduel ne doit pas devenir une décharge où je
+> range ce que j'ai la flemme d'instruire.* **Au-delà, le dossier n'est pas
+> prêt à être scénarisé, et c'est ça qu'il faut écrire.**
+
+---
+
+# 14/09/2026 — ⚠️ ENTRÉE ÉCRITE APRÈS COUP (le 16/09) — aucune règle neuve, et c'est la bonne réponse
+
+**Le 14/09 n'a produit AUCUNE règle méthodologique nouvelle.** Ses acquis sont
+des FAITS, et ils vivent au radar : le niveau du pétrole promu ancrage
+(settlement WTI 100,05 $ au 11/09), la cause structurelle du choc pétrolier, et
+la déclaration du canal FedWatch comme dispersé.
+
+> 🔑 **Je l'écris explicitement plutôt que de laisser un trou dans la
+> série.** *Un fichier de méthode qui saute deux jours ressemble à un fichier
+> mal tenu ; il faut pouvoir distinguer « rien à dire ce jour-là » de « oublié
+> de l'écrire ».* **Le 13/09 était le second cas. Le 14/09 est le premier.**
+
 # 15/09/2026 — Quatre acquis, dont deux corrections contre moi
 
 ## ① 🆕 LE CONTRÔLE DES **SIGNES** DE RÉSIDUS — plus fort que leur taille

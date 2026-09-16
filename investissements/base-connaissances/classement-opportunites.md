@@ -1907,6 +1907,119 @@ PAS réhabilité par la remontée du marché vers ce niveau.*
 *Je demandais un document qui ne pouvait pas exister.* 🔒 **Réouverture le
 18/09, une requête, URL nommée.**
 
+---
+
+### 📊 LE CLASSEMENT AU 16/09 (matin) — 8 candidates, **0 mouvement de rang**, **2 entrées en surveillance**
+
+| Rang | Candidate | État | Déclencheur |
+|---|---|---|---|
+| ① | **Cœur World (WPEA)** | 🔴 **PEA non ouvert — 38ᵉ jour** | ouverture du PEA |
+| ② | **Or** | canal NON PORTEUR — 0 requête ✅ | — |
+| ③ | **Séché (SCHP)** | 🔒 **butée 24/09 — 8 jours** — 0 requête ✅ | clôture ≤ 90 € |
+| ④ | **Eli Lilly (LLY)** | quarantaine active | ≤ 1 020 $ |
+| ⑤ | **Magnum** | dormant | capi ≤ 7,6 Md€ **ET** volume ≥ +2,0 % |
+| ⑥ | **Aubay (AUB)** | 📅 **S1 CE SOIR ~18h · C052 (54 %)** | — |
+| ⑦ | **STM (STMPA)** | ancrage 43,60 € *(02/09)* · ⚠️ le −6,6 % du 14/09 reste non validé | ≤ 42,00 € + 2 jambes |
+| ⑧ | **Nike (NKE)** | sortie S&P 100, effective 21/09 | — |
+
+### 🟢 EVS (Bruxelles) — entrée en **SURVEILLANCE**
+
+| S1 2026 | Valeur | Variation |
+|---|---|---|
+| **Chiffre d'affaires** | **107,2 M€** | **+16,8 %** — *record* |
+| **Prises de commandes** | **85,3 M€** | **−18,0 %** |
+| **Carnet LONG TERME** | **103,6 M€** | **+27,3 %** en six mois |
+
+**Book-to-bill S1 = 0,796x.**
+
+> 🔑 **Les deux signes s'opposent DANS LE MÊME COMMUNIQUÉ** : le court terme se
+> vide, le long terme se construit. **Un marché qui ne lit qu'une ligne lira le
+> −18 %** — et le titre est effectivement resté plat à la publication.
+>
+> ✅ **Cohérence relationnelle** : le S2 impliqué (112,8-132,8 M€) est supérieur
+> au S1, **et l'émetteur sert lui-même l'explication** — *« order intake is
+> typically back-end loaded »*. *Le récit explique le chiffre au lieu de le
+> contredire.*
+>
+> 🎯 **T4 NOMMÉ, non dépensé** : les **prises de commandes du S1 2025
+> attribuables au « Big Event Rental »**. *L'émetteur dit « +3 % hors Big Event
+> et hors Moyen-Orient » sans chiffrer ni l'un ni l'autre.* **Un seul nombre
+> ferme le dossier.** ⚠️ *Et c'est le chiffre qui arrange — donc celui à
+> attaquer.*
+>
+> 🔴 **T2 échoue** (publication de fin août). ⚠️ **Liquidité non vérifiée** —
+> deuxième test d'achetabilité, distinct du palier tarifaire.
+> **Pas de rang tant que T4 n'a pas tranché.**
+
+### ☠️ X-FAB (Paris) — surveillance NÉGATIVE : le seul chiffre qui plaît est invérifiable
+
+**Carnet 308,4 → 291,8 M$ (−16,6) pendant que le CA progresse de +2 % t/t.**
+**Book-to-bill publié : 0,866x → 0,867x — plat, et sous 1,0.**
+
+> L'émetteur annonce un book-to-bill *« sous-jacent au-dessus de 1,0 »* hors
+> programme de fin de vie d'Erfurt. **Les deux ne tiennent que si l'ajustement
+> retire ≥ 13 % du CA du trimestre.** ☠️ **Et le montant d'Erfurt n'est
+> DIVULGUÉ NULLE PART** — ni communiqué, ni transcript.
+>
+> **Test du document manquant : un agrégat construit par l'émetteur sur un
+> périmètre qu'il refuse de chiffrer est invérifiable par un tiers.** *Même
+> statut que le « soft backlog » de Theon.* **Le seul chiffre contraignant est
+> 0,867x.**
+>
+> 🆕 **Erfurt court jusqu'au S1 2027** : *un retraitement invoqué pendant trois
+> à quatre trimestres de plus n'est pas un élément exceptionnel, c'est
+> l'activité.*
+> 🔴 **SiC NON VALIDÉ** : 15,1 M$ au T1 → **10,6 M$ au T2 (−30 % séquentiel)**
+> pendant que le récit affiche « +152 % a/a ». **Arrêt.**
+
+### 🔴 ACTIA (Paris) — angle carnet **CLOS**, mais vendredi est armé
+
+L'émetteur publie un **adjectif** (*« carnet solide »*), pas un chiffre.
+**Acquis pour le 18/09** : CA S1 **269,0 M€ (+1,0 %)**, guidance **~+3 %**,
+cible 700 M€ en 2028, *Aerospace et Energy en forte dynamique, **Mobility
+faible***. ⚠️ **NON VALIDÉ** — aucun ancrage ACTIA en mémoire, donc **aucun
+bouclage inversé possible**.
+
+> 🎯 **Bouclage inversé armé pour vendredi** : le CA S1 est public, le 18/09 est
+> une publication de **RÉSULTATS**. **Toute « surprise sur le CA » sera un
+> artefact par construction.**
+> 🎯 **T4 : la marge opérationnelle de la division Mobility** — *c'est elle qui
+> décide si +3 % de CA vaut quelque chose.*
+
+### 🔒 DÉFENSE — non ouverte par instruction, 3ᵉ application de la règle de préséance
+
+La mise hors service de `univers-defense-pea.md` est **encore active** : le
+champ définitionnel est rempli à **2 sociétés sur 5**, inchangé depuis le 19/08.
+**Condition de levée non remplie.** *Réouverture par LECTURE DOCUMENTAIRE
+(rapport annuel Theon 2025, publié le 20/04/2026), pas par recherche
+d'actualité.*
+
+### 📡 Ancrages de marché validés au 15/09
+
+**CAC 8 090,28** (−0,34 %) · **S&P 7 585,73** (−0,45 %) · **Nasdaq 25 981,57**
+(−0,78 %) · **ratio 3,4251**.
+✅ *Le contrôle des signes de résidus (+0,11 / +0,04 / −0,59) a innocenté un
+S&P qui bouclait à 0,0005 % — **une série se défend mieux qu'un chiffre
+isolé**.*
+
+🆕 **TROISIÈME MOTEUR DE RÉGIME : LES TAUX.** 10 ans US au **plus haut depuis
+2007** (pic 5,03 %), double source. *La séance du 15/09 est une séance de
+taux, pas de doute IA* — **et un 10 ans à ce niveau est déjà un resserrement,
+avant même le FOMC de ce soir.**
+
+### 🛢️ Le choc pétrolier a un CALENDRIER, et un TROU
+
+**Réparation de l'oléoduc : 3 à 5 semaines → ~01-15/10.** **Stocks de Yanbu :
+5 à 7 jours → épuisement 15-17/09.** → **TROU de 2 à 4 semaines**, jusqu'à
+**4 % de l'offre mondiale** en risque.
+⚠️ **Aucune décision n'en découle** : pas d'exposition énergie, et *acheter un
+bénéficiaire du baril est le piège nommé du jour.*
+⚠️ **Corrections contre mon état** : les **mines sont une revendication
+iranienne DÉMENTIE par le Pentagone** *(rétrogradée)* · **capacité de l'oléoduc
+4-5 Mb/j servis contre 7 en mémoire — écart de TYPE, non tranché, ancrage NON
+remplacé.**
+🔴 **Settlement WTI : 2ᵉ blanc.** Ancrage **100,05 $ au 11/09** inchangé.
+
 ## Sorties enregistrées (mémoire des refus — ne pas re-signaler sans fait NOUVEAU)
 
 | Candidate | Sortie | Motif | Date |

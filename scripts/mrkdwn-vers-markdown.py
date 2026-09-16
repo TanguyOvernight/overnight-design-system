@@ -31,8 +31,12 @@ def est_titre(txt: str) -> bool:
     # "LES MARCHES — le decrochage repart". Seul le segment de TETE est
     # jugé ; sans cette exception le titre repartait en italique.
     tete = re.split(r'\s[—–-]\s', txt, maxsplit=1)[0]
-    if len(tete) > 60:
-        return False
+    # Pas de plafond de LONGUEUR : il a rejete deux titres legitimes le
+    # 16/09 ("CE QUI A FAIT BAISSER LES MARCHES HIER..."). Le test des
+    # capitales suffit — une phrase en italique dans du texte courant
+    # n'est jamais a 80 % de majuscules, quelle que soit sa longueur.
+    # Deux criteres dont un seul discrimine, c'est un critere de trop :
+    # celui qui ne discrimine pas ne fait que produire des faux negatifs.
     lettres = [c for c in tete if c.isalpha()]
     if not lettres:
         return False
