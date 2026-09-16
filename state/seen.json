@@ -1,7 +1,7 @@
 {
  "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
- "maj": "2026-09-15",
- "dernier_brief": 19,
+ "maj": "2026-09-16",
+ "dernier_brief": 20,
  "vus": {
   "jobup": [
    "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -124,7 +124,13 @@
    "4466364640",
    "4444118969",
    "4463977902",
-   "4467713084"
+   "4467713084",
+   "4467750491",
+   "4467493432",
+   "4465586309",
+   "4465552617",
+   "4465907203",
+   "4466578300"
   ],
   "chuv": [
    "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html"
@@ -1424,6 +1430,51 @@
    "titre": "Jour creux — 0 persona ; SerpAPI instable (5e jour) ; QoQa 403 jobup contourné via jobs.ch",
    "entreprise": "—",
    "note": "Format-Z BD&Digital Mkt écartée (Bulle+60%+commercial)",
+   "lien": null
+  },
+  {
+   "brief": 20,
+   "date": "2026-09-16",
+   "score": "🎯",
+   "titre": "Graphic & Multimedia Designer",
+   "entreprise": "MATISA Matériel Industriel S.A.",
+   "note": "Crissier pleine zone ; 3-5 ans ; motion Premiere/AE exigés + 3D/immersive + Figma ; FR/EN sans allemand ; CCT MEM ; publiée 15.09 ; fiche relue entière par second regard ; entre en 📌",
+   "lien": "https://ch.linkedin.com/jobs/view/graphic-multimedia-designer-at-matisa-mat%C3%A9riel-industriel-s-a-4467750491"
+  },
+  {
+   "brief": 20,
+   "date": "2026-09-16",
+   "score": "👀",
+   "titre": "Program Experience Manager",
+   "entreprise": "EHL",
+   "note": "Lausanne CDI ; 5+ ans ; learning experience design + part biz-dev ; zéro DA ; GET ✔",
+   "lien": "https://ch.linkedin.com/jobs/view/program-experience-manager-at-ehl-4465552617"
+  },
+  {
+   "brief": 20,
+   "date": "2026-09-16",
+   "score": "ecartee-notable",
+   "titre": "Chief Marketing Officer",
+   "entreprise": "Neural Concept",
+   "note": "C-level → ❌ direct MAIS signal stratégique : 1er poste marketing de leur histoire — spontanée brief 7 urgente (avant l'arrivée du CMO)",
+   "lien": null
+  },
+  {
+   "brief": 20,
+   "date": "2026-09-16",
+   "score": "ecartee-notable",
+   "titre": "Senior Content Marketing Manager",
+   "entreprise": "Volleyball World",
+   "note": "10+ ans exigés",
+   "lien": null
+  },
+  {
+   "brief": 20,
+   "date": "2026-09-16",
+   "score": "ecartee-notable",
+   "titre": "Transversal Projects Manager",
+   "entreprise": "TAG Heuer",
+   "note": "jetée second regard : CDD + PMO salons pur, zéro créa ; Signy-Avenex -1",
    "lien": null
   }
  ]
