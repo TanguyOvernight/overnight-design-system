@@ -2172,3 +2172,98 @@ que j'aie mal daté la publication de cette année.*
 > ultérieure. **Le VOID de ce soir ne dépend pas de la réponse.**
 
 ### Reste ce soir : C046, C050, C051 — FOMC à 20h00
+
+---
+
+## ✅ 16/09/2026, 20h20 — TROIS RÉSOLUTIONS : la Fed a relevé ses taux
+
+**Décision : +25 pb, de 3,50-3,75 % à 3,75-4,00 %, vote UNANIME.**
+*Première hausse depuis 2023.*
+
+| Appel | Écrit le | Proposition | **P** | Issue | **Brier** |
+|---|---|---|---|---|---|
+| **C046** | 15/08 | La Fed NE relève PAS ses taux le 16/09 | **66 %** | ❌ **FAUX** | **0,4356** |
+| **C050** | 13/09 | *(identique)* | **25 %** | ❌ **FAUX** | **0,0625** |
+| **C051** 🧪 | 13/09 | *(identique, sans plancher)* | **19 %** | ❌ **FAUX** | **0,0361** |
+
+### État du registre
+
+| | Avant | **Après** |
+|---|---|---|
+| **Résolus** | 13 | **15** |
+| **Somme des Brier** | 3,8849 | **4,3830** |
+| **Brier moyen** | 0,2988 | **0,2922** |
+| **BSS vs 0,25** | −0,195 | **−0,169** |
+
+*C051 est **hors dénominateur** — il ne figure que dans le registre « test du
+plancher ».*
+
+**C046 à 0,4356 est le 5ᵉ pire score**, derrière C009 (0,6400), C028 (0,5184),
+C035 et C025 (0,4900).
+
+> ⚠️ **Correction d'une phrase du 13/09** : j'avais écrit que C046 serait *« le
+> pire score du registre, devant C009… non : le deuxième pire »*. **Les deux
+> étaient faux — il est cinquième.** *Je m'étais auto-corrigé en cours de
+> phrase sans faire le calcul. **Une hésitation n'est pas une vérification.***
+
+### 🔑 CE QUE MESURE LA PAIRE C046 / C050
+
+**41 points d'écart sur la MÊME proposition, à 29 jours d'intervalle, et dans
+le bon sens.**
+
+> **C'est la meilleure preuve produite à ce jour que je bouge quand
+> l'information bouge** — alors que mon défaut diagnostiqué est précisément un
+> défaut de DISCRIMINATION.
+>
+> ⚠️ **Et il faut en réduire la portée immédiatement** : *un marché liquide
+> publiait une probabilité que je n'avais qu'à lire.* **Ce n'est pas de la
+> discrimination, c'est de la transcription.** *La vraie question reste : est-ce
+> que je discrimine quand personne ne me donne la réponse ?*
+> **Le test pré-enregistré reste à 3 résolutions sur 20.**
+
+### 🧪 REGISTRE DU TEST DU PLANCHER — paire n° 1 sur 8
+
+| Paire | Date | C050 *(plancher 25 %)* | C051 *(sans plancher)* | **Écart** |
+|---|---|---|---|---|
+| **1** | 16/09 | **0,0625** | **0,0361** | **le plancher a coûté 0,0264** |
+
+> 🔒 **RÈGLE FIXÉE LE 13/09, AVANT DE SAVOIR : huit paires avant de trancher.
+> Nous en sommes à UNE. Aucune conclusion.**
+>
+> ⚠️ **Et j'avais écrit ceci en posant la règle** : *« je l'écris maintenant,
+> précisément parce que dans trois jours j'aurai une raison de vouloir
+> l'oublier. »* **La raison est arrivée à l'heure prévue. La règle tient.**
+
+### 🔑 Ce que coûte C046, et ce n'est pas le Brier
+
+La justification du 15/08 était structurelle : *« la Fed ne surprend pas. »*
+
+> **La propriété était vraie ; ma lecture était unilatérale.** *« La Fed ne
+> prend pas le marché à contre-pied » vaut dans les DEUX sens : elle protégeait
+> l'appel tant que rien n'était télégraphié, et elle l'a condamné dès que la
+> hausse l'a été, le 28/08.*
+>
+> **Je n'avais pas regardé la symétrie d'un argument que je trouvais
+> rassurant.** *Faute transférable, et sans rapport avec la macroéconomie.*
+
+✅ **Ce qui a été fait correctement** : C046 **n'a pas été révisé** malgré 51
+points d'écart avec le marché à trois jours de la résolution, et un appel neuf
+a été ouvert à côté.
+
+### ⚠️ Réserve de preuve, à lever
+
+🚨 **Aucun document n'a pu être ouvert ce soir** — `federalreserve.gov` bloqué
+(`EGRESS_BLOCKED`, puis `403`), et **tous les relais aussi**. *Le fait repose
+sur trois titres de documents, dont deux datés `/2026/09/16/` dans l'URL, et
+sur l'absence totale de source contraire.*
+**Les deux bornes de la fourchette sont DÉDUITES, pas LUES.**
+> ✅ *Cela ne bloque pas la résolution : les trois appels portent sur **une
+> seule chose — la Fed a-t-elle relevé ses taux ?** — pas sur la fourchette au
+> caractère près.*
+🎯 **Contrôle à refaire sur source primaire dès réouverture du proxy.**
+
+### Prochaines échéances
+
+**C013** le 30/09 · **C016** (garde-fou R au 30/09) · **C026** (PEA ouvert et
+exécutable au 30/09) · **C049** le ~31/10.
+⚠️ **C052 reste VOID**, butée 30/09 — réouvrable si Aubay publie sa marge.

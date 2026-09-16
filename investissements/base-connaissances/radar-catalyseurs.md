@@ -1687,3 +1687,50 @@ SiC, couverture quasi nulle)* · **EVS** *(Bruxelles)*.
 **Agenda corporate Amsterdam / Bruxelles** — canal VIDE : il rend les
 publications d'Euronext lui-même, jamais le calendrier des émetteurs.
 *Non instruit, pas constaté vide.*
+
+---
+
+## 📡 Soirée du 16/09/2026
+
+### ✅ FOMC — **+25 pb, à 3,75-4,00 %, vote unanime.** Première hausse depuis 2023
+**C046 ❌ (0,4356) · C050 ❌ (0,0625) · C051 ❌ (0,0361).** Registre : **15
+résolus, Brier moyen 0,2922, BSS −0,169.**
+🎯 **Contrôle à refaire sur `federalreserve.gov` dès réouverture du proxy** —
+aucun document n'a pu être ouvert ce soir, les bornes sont **déduites**.
+
+### ⚠️ PORTÉ AU RADAR — le HURDLE du classement devra peut-être bouger
+
+Le mètre du classement est **« le cœur World à 5 %/an net »**. *Un régime de
+taux plus élevé relève mécaniquement le rendement sans risque, donc l'exigence
+qu'une candidate doit battre.*
+> **Rien à recalculer sur 25 pb.** *Mais si le cycle se poursuit, ce n'est pas
+> le classement qu'il faudra revoir : c'est le MÈTRE.* **Et un mètre qu'on
+> change en cours de route sans le dire réécrit rétroactivement tous les
+> refus passés** — donc la révision devra être datée et journalisée comme un
+> événement, pas glissée dans une mise à jour.
+
+### 🚫 C052 VOID — Aubay, marge S1 non accessible
+🎯 **Test nommé pour demain matin, une requête** : *Aubay a-t-elle publié ses
+résultats S1 le 16/09, ou la publication est-elle programmée plus tard ?*
+**Le S1 2024 avait été publié le 18/09/2024.** ⚠️ *Si je me suis trompé de
+date, c'est la faute CHMP à quatre jours d'intervalle.*
+**Butée C052 : 30/09.**
+
+### 🔴 HIPAY — publication réelle, T4 NON CONCLU
+EBITDA S1 2026 **2,5 M€** *(comparatif 2025 non servi)* · **ROC 1,7 → −0,0 M€**
+· résultat net **−1,4 M€** · **guidance réaffirmée** · l'émetteur invoque un
+**effet MIX**.
+🎯 **Chiffre toujours manquant : l'EBITDA S1 2025.** *Le ROC n'est pas
+l'EBITDA — un test nommé qu'on remplace par un test voisin n'est plus un test
+nommé.*
+
+### 🔴 FAIT DE CANAL — blocage d'egress massif ce soir
+`federalreserve.gov` · `actusnews.com` · `aubay.com` · `webdisclosure.fr` ·
+`marketscreener.com` · `cnbc.com` · `cnn.com` · `finance.yahoo.com` ·
+`kiplinger.com` · `tradingeconomics.com`.
+> ⚠️ **À ne pas confondre avec les quatre canaux de COTATION non porteurs.**
+> *Là, le canal répond n'importe quoi ; ici, il ne répond pas du tout.*
+> **Contamination et fermeture sont deux pannes différentes, et elles
+> n'appellent pas la même parade** : contre la contamination, un bouclage ;
+> contre la fermeture, rien d'autre qu'une action de Tanguy sur la politique
+> d'egress.
