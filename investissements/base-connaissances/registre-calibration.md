@@ -2114,3 +2114,61 @@ seul.**
 discrimination : **3 résolutions sur les 20 requises.**
 **Prochaines échéances : C046 + C050 + C051 + C052 le 16/09** — *quatre
 résolutions en une soirée, du jamais vu dans ce registre.*
+
+---
+
+## 🚫 16/09/2026, 18h20 — C052 résolu **VOID, NON SCORÉ**
+
+**C052** *(13/09, « la marge opérationnelle d'activité du S1 2026 d'Aubay
+ressort ≥ 9,1 % », P = 54 %)* → 🚫 **VOID.**
+
+**Motif exact : « non conclu faute de publication accessible ».**
+*Aucun communiqué de résultats S1 2026 n'existe dans le corpus atteignable ce
+soir ; les quatre domaines de source primaire sont bloqués par le proxy.*
+
+### 🔑 Pourquoi cette résolution est la plus importante du registre à ce jour
+
+**Le canal a servi, deux fois, un chiffre qui résolvait l'appel en une ligne** :
+*« la marge du S1 devrait ressortir autour de 7,5 % »*. **7,5 % < 9,0 %** →
+**C052 FAUX aggravé, premier avertissement inscrit au dossier Aubay.**
+
+> ☠️ **Et le chiffre était faux par sa DATE et son TEMPS GRAMMATICAL, pas par
+> sa valeur** : c'est une phrase **au futur** du communiqué de **chiffre
+> d'affaires du 23/07**. **Une anticipation d'émetteur, pas une marge
+> réalisée.**
+>
+> ✅ **La quarantaine avait été écrite le 13/09, avant les faits, avec la
+> consigne explicite de me signaler son retour.** *Sans elle, le registre
+> enregistrait ce soir un FAUX imaginaire — et le dossier Aubay portait un
+> avertissement qu'il n'a pas mérité.*
+>
+> 🔑 **C'est la première fois qu'une règle de quarantaine protège une
+> RÉSOLUTION et non une donnée.** *Jusqu'ici la quarantaine empêchait
+> d'écrire un mauvais chiffre ; ici elle a empêché d'écrire un mauvais
+> SCORE — et un score faux est bien plus difficile à défaire, parce qu'il
+> entre dans une moyenne.*
+
+⚠️ **Vigilance asymétrique, appliquée en sens INVERSE** : *ici le chiffre en
+quarantaine est celui qui DÉRANGE, pas celui qui arrange.* **Le refus ne tient
+pas parce qu'il dérange, mais parce que sa nature est prospective. Il
+tiendrait à l'identique s'il annonçait 11 %.**
+
+### État du registre
+
+**13 résolus · Brier moyen 0,2988 · BSS −0,195 — INCHANGÉS.**
+*Un VOID ne modifie ni le numérateur ni le dénominateur.*
+**Test de discrimination : toujours 3 résolutions sur 20.**
+
+### 🔴 Hypothèse ouverte contre moi, à trancher demain
+
+**Le S1 2024 d'Aubay a été publié le 18/09/2024, pas le 16.** *Il est possible
+que j'aie mal daté la publication de cette année.*
+> ☠️ **Si c'est le cas, c'est la faute CHMP à quatre jours d'intervalle** :
+> réclamer un document à une date où il ne peut pas exister, puis lire son
+> absence comme une information.
+> 🎯 **Test nommé, une requête demain matin.** *Les deux réponses m'intéressent,
+> et l'une des deux me coûte.*
+> ⚠️ **La butée de C052 est le 30/09** : l'appel reste ouvert à une publication
+> ultérieure. **Le VOID de ce soir ne dépend pas de la réponse.**
+
+### Reste ce soir : C046, C050, C051 — FOMC à 20h00
