@@ -1721,3 +1721,42 @@ Le 15/09 : *« les six kill-tests présupposent un DOSSIER »*.
 de bouclage **présupposent un chiffre servi**.
 > **Nommer un contrôle qui échoue faute de matière donne l'illusion d'avoir
 > instruit.** *Le bon mot est « inapplicable », pas « échoué ».*
+
+## ⑤ 🔧 CORRECTION DU MÊME JOUR — la sonde neutre se fait DANS LES DEUX SENS
+
+Le matin du 17/09 j'ai conclu *« fermeture TOTALE d'egress »* sur une sonde
+Wikipédia bloquée. **La sonde était bonne, la conclusion était trop large.**
+
+> ☠️ **`api.github.com` répondait 200 pendant tout ce temps — je poussais mes
+> commits à la seconde où j'écrivais « fermeture totale ».** *J'avais la
+> contre-preuve sous la main et je ne l'ai pas regardée.*
+>
+> **Une sonde qui ÉCHOUE établit qu'un domaine est bloqué. Il faut une sonde
+> qui RÉUSSIT pour établir l'ÉTENDUE.** *Une seule direction de test ne mesure
+> jamais une frontière — elle en établit un côté.*
+>
+> 🆕 **RÈGLE CORRIGÉE** : sonder **un domaine attendu BLOQUÉ et un domaine
+> attendu PASSANT**. *Sans le second, on confond « large » et « total », et on
+> renonce à des canaux qui fonctionnent.*
+
+### Et la panne était DOUBLE, avec deux remèdes différents
+
+| Canal | Où il s'exécute | Panne | Remède |
+|---|---|---|---|
+| **WebSearch** | **côté Anthropic**, hors conteneur | indisponibilité passagère | **aucun — rétablie seule** |
+| **WebFetch / curl** | **depuis le conteneur**, via le proxy | **allowlist d'egress** | **action d'administration** |
+
+> 🔑 **Deux canaux tombés ensemble ne sont pas une panne, ce sont deux
+> pannes.** *Les confondre m'a fait déclarer perdue une séance dont la moitié
+> des moyens était récupérable en une requête.*
+>
+> ⚠️ **Et le coût a été réel** : une journée entière classée « zéro d'accès »,
+> alors que le screening — qui tourne sur WebSearch — était redevenu possible.
+
+### 🔴 Un 403 de politique ne se contourne pas
+
+Le manuel du proxy : *« Do not retry or route around it — report the blocked
+host. »*
+> **Un 403 de politique n'est pas un obstacle technique à surmonter, c'est une
+> décision d'administration.** *Chercher un miroir ou un relais tiers pour
+> passer outre reviendrait à traiter une règle comme un bug.*
