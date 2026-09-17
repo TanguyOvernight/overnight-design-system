@@ -2345,3 +2345,90 @@ l'honnêteté du dossier, pas pour la calibration à court terme.**
 **15 résolus · Brier moyen 0,2922 · BSS −0,169.** Ouverts et datés :
 **C053 le 24/09** · C013, C016, C026 le 30/09 · C049 le ~31/10 ·
 ⚠️ **C052 VOID, réouvrable jusqu'au 30/09** · **C054 le 31/12/2031**.
+
+---
+
+## 🔄 17/09/2026 — **C052 : LE VOID EST CONVERTI EN FAUX**
+
+**Hier soir j'ai résolu C052 en VOID**, motif *« non conclu faute de
+publication accessible »*. **Aujourd'hui la publication est trouvée, et la
+marge est lisible.** **Le motif du VOID a disparu — donc le VOID aussi.**
+
+| | |
+|---|---|
+| **C052** *(13/09)* | « La marge op. d'activité du S1 2026 d'Aubay ressort **≥ 9,1 %** » |
+| **P** | **54 %** |
+| **Réalisé** | **7,5 %** *(contre 7,2 % un an plus tôt)* · ROA 26,6 M€ (+37,9 %) · ROC 25,0 M€, marge 7,1 % |
+| **Issue** | ❌ **FAUX — 1,6 point sous le seuil** |
+| **Brier** | **0,2916** |
+
+> ⚖️ **Convertir un VOID en résolution quand la matière apparaît n'est pas
+> optionnel, c'est obligatoire.** *Un VOID est conditionnel à
+> l'inaccessibilité ; laisser un appel non scoré alors que la donnée existe
+> serait exactement le non-scorage de confort que ce registre existe pour
+> empêcher.* **Le VOID a duré 20 heures et n'a rien coûté ; le conserver
+> aurait coûté un appel.**
+
+### État du registre
+
+| | Avant | **Après** |
+|---|---|---|
+| Résolus | 15 | **16** |
+| Somme des Brier | 4,3830 | **4,6746** |
+| **Brier moyen** | 0,29220 | **0,29216** |
+| **BSS** | −0,1688 | **−0,1687** |
+
+*Le score de C052 (0,2916) est à deux dix-millièmes de ma moyenne : il ne la
+déplace pas. **Un appel à ~54 % qui tombe FAUX est la définition même d'un
+appel non informatif** — et c'est précisément ce que mesure mon défaut de
+discrimination.*
+
+---
+
+## ☠️ ET LA CORRECTION QUI COMPTE : CE QUE J'AI ÉCRIT HIER ÉTAIT FAUX
+
+**Hier soir, j'ai écrit** *(registre et journal)* :
+
+> *« Sans la quarantaine, le registre enregistrait ce soir un FAUX imaginaire —
+> et le dossier Aubay portait un avertissement qu'il n'a pas mérité. »*
+
+**C'est FAUX, et sur les deux membres.**
+
+| Ce que j'ai affirmé | La réalité |
+|---|---|
+| « un FAUX imaginaire » | **Le FAUX est RÉEL. C052 tombe à 7,5 %, exactement le chiffre que j'avais refusé.** |
+| « un avertissement qu'il n'a pas mérité » | **L'avertissement est MÉRITÉ.** Marge 7,5 % contre un bas de guidance à 9,0 % et un réalisé 2025 à 9,1 %. |
+
+> ☠️ **Aubay avait GUIDÉ vers ~7,5 % en juillet et a LIVRÉ 7,5 %.
+> L'anticipation était exacte au dixième.**
+>
+> 🔑 **Et la quarantaine avait raison QUAND MÊME — mais pas pour la raison que
+> j'ai revendiquée hier.**
+>
+> **Ce qu'elle a réellement évité** : de résoudre un appel sur une phrase au
+> FUTUR — c'est-à-dire **d'avoir raison pour une mauvaise raison**.
+> **Ce qu'elle n'a PAS évité** : le FAUX. Il était là, il n'était que
+> **prématuré de 24 heures**.
+>
+> ⚠️ **Hier j'ai transformé « j'ai évité de scorer sur une anticipation » en
+> « j'ai évité un score erroné ». Ce n'est pas la même chose, et la seconde
+> version me flattait.** *Une quarantaine ne prédit pas qu'un chiffre est
+> faux : elle refuse un TYPE. Le confondre avec une prédiction de fausseté,
+> c'est s'attribuer une clairvoyance qu'elle n'a jamais eue.*
+
+### 🔑 La règle qui en sort, et elle vaut au-delà d'Aubay
+
+> **NE JAMAIS LEVER UNE QUARANTAINE AU MOTIF QUE LE RÉALISÉ CONFIRME
+> L'ANTICIPÉ.** *Ce qui lève une quarantaine, c'est un document du bon TYPE à
+> la bonne DATE — indépendamment de l'égalité des valeurs.*
+> **Ici, c'est exactement ce qui s'est produit : le communiqué de RÉSULTATS du
+> 16/09 lève la quarantaine, et il se trouve que sa valeur égale
+> l'anticipation. Les deux faits sont sans rapport.**
+
+### ✅ Le test de collision a innocenté le paquet du 16/09 — et par le compagnon
+
+Le « 7,5 % » d'aujourd'hui **n'est pas** une réapparition du paquet contaminé :
+**le compagnon diffère** — 26,4 M€ *(auto-calculé, en quarantaine)* contre
+**26,6 M€** *(publié)*. *Un canal qui recopierait le paquet en quarantaine
+servirait 26,4.* Plus deux lignes entièrement neuves *(comparatif 7,2 % et ROC
+25,0 M€ / 7,1 %)*.

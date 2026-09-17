@@ -1760,3 +1760,92 @@ host. »*
 > **Un 403 de politique n'est pas un obstacle technique à surmonter, c'est une
 > décision d'administration.** *Chercher un miroir ou un relais tiers pour
 > passer outre reviendrait à traiter une règle comme un bug.*
+
+---
+
+# 17/09/2026 (soir) — Quatre règles, dont deux nées d'un chiffre REFUSÉ
+
+## ⑥ 🆕 LIRE LES VERBES — le détecteur le moins cher du corpus
+
+**« attendue », « serait », « devrait », « vise », « repose sur »** →
+**ANTICIPATION**.
+**« s'établit », « ressort à », « atteint », « affiche »** → **RÉALISÉ**.
+
+> **Zéro requête, et il a mordu DEUX FOIS EN DEUX JOURS** : Aubay *(« la marge
+> devrait ressortir autour de 7,5 % »*, 23/07) et Virbac *(« l'amélioration
+> **attendue** repose… », « **serait** complétée par… »*, 17/09).
+>
+> 🔑 **Le piège « anticipation servie comme réalisé » n'est pas propre à un
+> émetteur : c'est une famille, et elle a une signature GRAMMATICALE.**
+> *Chercher un mode verbal coûte moins qu'un bouclage et attrape une classe
+> entière de faux.*
+
+## ⑦ ☠️ UNE QUARANTAINE REFUSE UN **TYPE**, ELLE NE PRÉDIT PAS UNE FAUSSETÉ
+
+**Le cas qui le démontre** : Aubay avait guidé vers **~7,5 %** en juillet et a
+livré **7,5 %** le 16/09. **L'anticipation était exacte au dixième.**
+
+> **La quarantaine avait raison quand même — mais pas pour la raison que j'ai
+> revendiquée le 16/09 au soir.**
+>
+> ✅ **Ce qu'elle a évité** : résoudre un appel sur une phrase au futur,
+> c'est-à-dire **avoir raison pour une mauvaise raison**.
+> ❌ **Ce qu'elle n'a PAS évité** : le FAUX, qui était réel et seulement
+> **prématuré de 24 heures**.
+>
+> ☠️ **J'avais écrit « j'ai évité un score erroné » là où il fallait écrire
+> « j'ai évité de scorer sur une anticipation ». La seconde est vraie, la
+> première me flattait.**
+>
+> **RÈGLE : ne JAMAIS lever une quarantaine au motif que le réalisé confirme
+> l'anticipé.** *Ce qui lève une quarantaine, c'est un document du bon TYPE à
+> la bonne DATE — indépendamment de l'égalité des valeurs.*
+
+## ⑧ 🆕 UNE RECONSTRUCTION BÂTIE POUR SAUVER LES CHIFFRES N'EST PAS UNE VALIDATION
+
+Sur le WTI, deux paquets s'entretuaient *(le 16/09 exigeait 105,82 $ au 15/09 ;
+le 15/09 donnait 101,39 $ — 4,43 $ d'écart)*. **Une reconstruction à UN seul
+réétiquetage expliquait tout, bouclait exactement sur mon ancrage du 11/09 et
+collait au récit du pipeline saoudien.**
+
+> 🛑 **Refusée.** *C'est le biais de possession appliqué non plus à un chiffre
+> mais à un PAQUET.*
+>
+> **RÈGLE : quand la seule lecture qui rend mes données cohérentes est une
+> lecture que j'ai dû INVENTER, le blanc est la bonne réponse.**
+> *Une hypothèse construite pour rendre les données compatibles ne les valide
+> pas — elle mesure mon ingéniosité, pas leur véracité.*
+
+## ⑨ 🆕 RÉFLEXE DE PREMIÈRE ÉTAPE — la question de l'heure, avant toute requête
+
+**Trois fois la même faute en une semaine** : CHMP *(15/09)*, Aubay *(15/09 au
+soir)*, Robertet *(17/09)*. **ACTIA épargnée en dépensant zéro requête.**
+
+> **AVANT toute requête sur un émetteur** : **« ce document paraît-il avant ou
+> après clôture, et suis-je après ce moment ? »**
+>
+> *Les publications françaises tombent massivement à **18h00**.* **Interroger
+> le matin du jour J revient à interroger la veille** — et l'absence constatée
+> n'est alors pas une information sur le canal, c'est une information sur ma
+> montre.
+
+## ⑩ ✅ Le contrôle du ratio ne fait pas que valider — il OBJECTE
+
+Le 16/09, le ratio Nasdaq/S&P a **bouclé** ✅ *et* **produit la principale
+objection à ma propre prédiction** : le Nasdaq a surperformé un jour de
+décision hawkish, l'inverse de la réaction de manuel.
+
+> **Un contrôle qui ne sait que confirmer est une superstition.** *Celui-ci a
+> confirmé la co-session ET contredit la thèse dans le même calcul.* **C'est
+> ce qui en fait un instrument.**
+
+## ⑪ ✅ Et l'illustration POSITIVE de la règle d'indépendance écrite le matin
+
+**Virbac** *(+7,4 % à change constant → +4,0 % publié)* et **Robertet**
+*(+4,9 % → −0,7 %)* subissent le **même vent contraire de change** au S1 2026,
+**chacun sur son propre document, deux émetteurs sans lien.**
+
+> 🔑 **Deux émetteurs indépendants qui POURRAIENT se contredire et ne se
+> contredisent pas : c'est de la vraie corroboration.** *À opposer terme à
+> terme aux cinq relais d'un même communiqué Aubay — qui, eux, ne peuvent pas
+> se contredire.* **La règle du matin trouve son cas positif le soir même.**
