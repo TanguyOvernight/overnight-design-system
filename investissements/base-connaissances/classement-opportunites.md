@@ -2045,3 +2045,97 @@ rangs), une ligne chacune, avec le chiffre du jour face au déclencheur.
 Les rangs suivants ne sont visibles qu'en cas de mouvement de rang ou de
 déclenchement. **Le classement complet vit ici** — Tanguy peut le
 consulter à tout moment, rien n'y est perdu.
+
+---
+
+## 🔧 17/09/2026 — DEUX RÈGLES DE PROCÉDURE, demandées par Tanguy
+
+**Sa critique, mot pour mot** : *« tu me dis presque tous les jours un choix qui
+te semble bon puis tu te contredis le lendemain. »*
+
+> ☠️ **Il a raison, et pas sur ce que je croyais.** *Mes DÉCISIONS n'ont
+> quasiment pas bougé en 40 jours — le cœur World est rang ① depuis le début,
+> et « aucun achat » a été la conclusion de chaque journée.* **Ce qui change
+> tous les jours, c'est ma CORRECTION DE MÉTHODE — et je la mets en premier,
+> en gros, tous les matins.**
+>
+> **De son côté de l'écran, ça ressemble à quelqu'un qui se dédit chaque
+> jour.** *C'est un défaut de CADRAGE, pas de contenu : je publie mon journal
+> d'épistémologie là où il attend un avis d'investissement.*
+
+### ① 🆕 RÈGLE DES 3 SÉANCES
+
+**Aucune candidate risquée n'est proposée à Tanguy avant d'avoir été vérifiée
+sur TROIS sessions distinctes, avec la même conclusion.**
+
+> *Une idée vue le jour même n'arrive plus jusqu'à lui.* **Il ne voit que ce
+> qui a survécu à la répétition.**
+> 🔑 **Et c'est un durcissement réel, pas cosmétique** : EVS et X-FAB,
+> instruites le 16/09, **ne lui sont PAS proposées aujourd'hui** — elles sont
+> à 1 séance sur 3. *La règle mord dès le jour où elle est écrite, sur les
+> deux meilleures pistes du moment.*
+
+### ② 🆕 LA DÉCISION D'ABORD, LA MÉTHODE APRÈS
+
+**Les corrections de méthode descendent en fin de message.** *Elles restent —
+ce sont elles qui rendent les chiffres utilisables — mais elles ne sont pas son
+sujet, et les mettre en tête inverse le rapport signal/bruit.*
+
+### ③ ⚠️ CONVENTION MANQUANTE, ÉCRITE CE JOUR — le plafond L se calcule APRÈS l'achat
+
+Ce matin j'ai proposé **200 € sur les émergents** alors que **L valait 130,50 €
+avant l'achat**. *Ça passe — mais seulement parce que le plafond s'évalue sur
+le portefeuille POST-achat* :
+
+```
+V post = 870 + 700 = 1 570 €
+L post = min(5 % × 7 570 ; 15 % × 1 570) = min(378,50 ; 235,50) = 235,50 €
+200 € < 235,50 €  ✅
+```
+
+> 🔑 **Je n'avais JAMAIS écrit cette convention.** *Et cette ambiguïté-là est
+> exactement ce qui fabrique mes contradictions apparentes : deux calculs
+> légitimes du même plafond, l'un à 130 € et l'autre à 235 €, sans règle pour
+> trancher.* **La convention est : POST-achat, parce que c'est l'état qui
+> porte le risque.**
+
+## 📋 LE LISTING DEMANDÉ — et la réponse contre-intuitive
+
+**Question de Tanguy** : *« combien je devrais mettre si je ne mettais rien sur
+le World ? »*
+
+| Scénario | R = (titres vifs + ETF non-cœur) ÷ V |
+|---|---|
+| **500 World + 200 émergents** | **37 %** ↘️ |
+| **700 € tout en satellites** | 🔴 **69 %** ↗️ |
+
+*R vaut **44 %** aujourd'hui, pour une cible de **≤ 25 %** (C016).*
+
+> 🔑 **NE PAS ACHETER LE CŒUR NE LIBÈRE PAS DU BUDGET DE RISQUE — ÇA LE
+> DÉTRUIT.**
+>
+> **Et le second effet est arithmétique** : dans `L = min(5 %×(V+6 000) ;
+> 15 %×V)`, **c'est le terme `15 % × V` qui mord tant que V est petit.**
+> *Donc plus le portefeuille est petit, plus les lignes risquées sont
+> plafonnées bas.* **L'achat de cœur fait grossir V, ce qui DESSERRE le
+> plafond : 130 € → 235 € par ligne.**
+>
+> **Le cœur n'est pas ce qui le prive de risque. C'est ce qui l'autorise à en
+> prendre.** *Je n'avais jamais formulé cette propriété de ma propre
+> architecture — elle est sortie de sa question, pas de ma doctrine.*
+
+### Le listing, tel que livré
+
+| | Support | Volatilité | Apport à SON livre | Montant |
+|---|---|---|---|---|
+| 🟢 | **WPEA** — MSCI World | ~15 % | 1 300 sociétés · titres vifs 44 % → 24 % | **500 €** |
+| 🟠 | **PAEEM** — Émergents | ~21 % | ⭐ seule vraie diversification *(livre à 92 % US)* | **200 €** |
+| 🟠 | Small caps Europe | ~20 % | facteur taille · **réplication physique** | *alternative* |
+| 🔴 | Inde | ~22 % | pays unique, concentration élevée | non retenu |
+| 🔴 | Défense Europe | ~28 % | thématique très courue | non retenu |
+| ⛔ | **Nasdaq-100** | ~25 % | 🔴 **recoupe NVDA + TSLA + MSFT déjà détenus** | **0 €** |
+
+**Et les candidates individuelles écartées, avec motif** : Séché *(aucun cours
+depuis 10 jours)* · STM *(3 conditions, canal mort)* · **Aubay (1ᵉʳ
+avertissement hier)** · **EVS et X-FAB (1 séance sur 3 — la règle neuve
+s'applique à elles en premier)** · Or, Lilly, Nike *(inéligibles PEA ou CTO)*.
