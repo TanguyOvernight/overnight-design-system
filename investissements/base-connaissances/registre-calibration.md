@@ -2313,3 +2313,35 @@ de confiance :
 3 résolutions sur 20.*
 **Échéances** : **C053 le 24/09** · C013 le 30/09 · **C016 et C026 le 30/09** ·
 C049 le ~31/10. ⚠️ **C052 VOID, réouvrable jusqu'au 30/09.**
+
+---
+
+## Appel ouvert le 17/09/2026 — C054
+
+| | Date | Type | Proposition | **P** | Résolution |
+|---|---|---|---|---|---|
+| **C054** | 17/09 | **allocation / pluriannuel · PEA** | **L'ETF émergents PEA ne surperforme PAS le World de plus de 2 points par an** *(performance totale annualisée)* | **62 %** *(brut 65 %, rétraction)* | **31/12/2031** — perf totale PAEEM vs WPEA, réinvestie |
+
+### 🔑 Pourquoi cet appel est écrit EN SENS INVERSE de l'achat
+
+**Je recommande d'acheter les émergents, et j'enregistre en même temps que je
+ne les attends PAS gagnants.** *Ce n'est pas une contradiction.*
+
+> **La thèse d'achat est la DÉCORRÉLATION, pas la surperformance.** *Un livre à
+> 92 % américain gagne à contenir un actif qui ne bouge pas avec lui, même si
+> cet actif rapporte un peu moins.*
+>
+> 🔑 **Écrire l'appel dans le sens de la performance m'empêche de me raconter
+> après coup que j'avais prédit une surperformance.** *Si les émergents
+> explosent à la hausse, C054 sera FAUX — et j'aurai eu raison d'acheter pour
+> une mauvaise raison, ce qui est exactement le genre de chose que ce registre
+> existe pour détecter.*
+
+⚠️ **Limite assumée** : échéance à **5 ans et 3 mois**. *Cet appel ne
+contribuera pas au test de discrimination avant 2031.* **Il est enregistré pour
+l'honnêteté du dossier, pas pour la calibration à court terme.**
+
+### État du registre
+**15 résolus · Brier moyen 0,2922 · BSS −0,169.** Ouverts et datés :
+**C053 le 24/09** · C013, C016, C026 le 30/09 · C049 le ~31/10 ·
+⚠️ **C052 VOID, réouvrable jusqu'au 30/09** · **C054 le 31/12/2031**.
