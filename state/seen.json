@@ -1,7 +1,7 @@
 {
  "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
- "maj": "2026-09-16",
- "dernier_brief": 20,
+ "maj": "2026-09-17",
+ "dernier_brief": 21,
  "vus": {
   "jobup": [
    "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -56,7 +56,9 @@
    "5514d0fd-8a07-4ba1-952f-1a9ce49f14db",
    "069d7703-3899-49cd-8b47-d0b462a37304",
    "cf524ac0-6070-4724-aa4a-9a14d4247093",
-   "6d16e6f2-5488-47fa-a0f0-9fcb0b0d807d"
+   "6d16e6f2-5488-47fa-a0f0-9fcb0b0d807d",
+   "e4e0da08-41c4-40b5-b0bc-954c381c1c78",
+   "52d448a5-4c3b-4323-8f6c-9db375012fdd"
   ],
   "ats_employeurs": [
    "https://recrutement.eben-hezer.ch/jobs/7602918-responsable-communication-et-recherche-de-fonds",
@@ -130,7 +132,10 @@
    "4465586309",
    "4465552617",
    "4465907203",
-   "4466578300"
+   "4466578300",
+   "4468277482",
+   "4468203769",
+   "4450748109"
   ],
   "chuv": [
    "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html"
@@ -1475,6 +1480,33 @@
    "titre": "Transversal Projects Manager",
    "entreprise": "TAG Heuer",
    "note": "jetée second regard : CDD + PMO salons pur, zéro créa ; Signy-Avenex -1",
+   "lien": null
+  },
+  {
+   "brief": 21,
+   "date": "2026-09-17",
+   "score": "👀",
+   "titre": "Chargée ou chargé de communication - 100%",
+   "entreprise": "Assura",
+   "note": "Pully pleine zone, CDI, publiée 16.09 ; plafond 👀 ⚠️ : détail 403 anti-bot (règle ⛔.4/5) — existence confirmée par listing jobup du jour ; séniorité à vérifier",
+   "lien": "https://www.jobup.ch/fr/emplois/detail/e4e0da08-41c4-40b5-b0bc-954c381c1c78/"
+  },
+  {
+   "brief": 21,
+   "date": "2026-09-17",
+   "score": "info",
+   "titre": "Radar IA : Merck Healthcare Eysins — Agentic AI Specialist + AI Enablement Lead",
+   "entreprise": "Merck Healthcare",
+   "note": "tech/ops hors brief ; équipe IA agentique en construction à Eysins",
+   "lien": null
+  },
+  {
+   "brief": 21,
+   "date": "2026-09-17",
+   "score": "ecartee-notable",
+   "titre": "Product Manager Upstream Marketing - Medtech ASAP",
+   "entreprise": "Michael Page",
+   "note": "temporaire + produit medtech (écho Onward brief 12)",
    "lien": null
   }
  ]
