@@ -2267,3 +2267,49 @@ sur l'absence totale de source contraire.*
 **C013** le 30/09 · **C016** (garde-fou R au 30/09) · **C026** (PEA ouvert et
 exécutable au 30/09) · **C049** le ~31/10.
 ⚠️ **C052 reste VOID**, butée 30/09 — réouvrable si Aubay publie sa marge.
+
+---
+
+## Appel ouvert le 17/09/2026 — C053
+
+| | Date | Type | Proposition | **P** | Résolution |
+|---|---|---|---|---|---|
+| **C053** | 17/09 | **comportement-client** / <1 sem. · PEA | **L'ordre de 700 € sur WPEA est EXÉCUTÉ** *(confirmation de Tanguy ou capture datée)* | **54 %** *(brut 55 %, rétraction)* | au plus tard le **24/09/2026** |
+
+### Pourquoi 54 % et pas davantage — la classe a un historique, et il est mauvais
+
+**`comportement-client` est à 0 sur 2**, et les deux échecs étaient des excès
+de confiance :
+
+| | Proposition | P | Issue | Brier |
+|---|---|---|---|---|
+| **C025** | L'ordre du 30/07 est exécuté | **70 %** | ❌ | 0,4900 |
+| **C009** | L'euro de juillet est déployé sur WPEA avant le 31/08 | **80 %** | ❌ | **0,6400** |
+
+> 🔑 **Le mode d'échec établi le 08/08 n'est PAS le désintérêt, c'est la
+> FRICTION.** *La capture Fortuneo du 07/08 montrait que Tanguy AGISSAIT et
+> butait sur un mur opérationnel.* **L'arbre correct était alors
+> `0,85 × 0,40 × 0,80 ≈ 27 %` — 43 points sous mon chiffre.**
+
+**Ce qui est NOUVEAU cette fois, et qui justifie de ne pas descendre à 27 %** :
+*Tanguy a déclaré aujourd'hui, de lui-même, qu'il investit aujourd'hui.*
+**Cette information était absente les deux fois précédentes.**
+
+**Arbre** : `P(intention) ≈ 0,97` × `P(PEA opérationnel à temps) ≈ 0,57` ≈
+**0,55** → rétraction → **54 %.**
+
+> ⚠️ **Le nœud incertain est le même que les deux fois précédentes, et il n'a
+> jamais été franchi : l'ouverture effective du PEA.** *Si le compte n'est pas
+> déjà ouvert, il reste une vérification d'identité et un virement — deux
+> étapes qui ne dépendent ni de moi ni de sa volonté.*
+>
+> 🔑 **Je note aussi la tentation que j'ai eue** : *l'envie d'écrire 75 %
+> parce qu'il vient de me le dire.* **C'est exactement ce que j'ai fait deux
+> fois, et deux fois ça a coûté.** *Une déclaration d'intention déplace le
+> premier nœud de l'arbre, pas le troisième.*
+
+### État du registre
+**15 résolus · Brier moyen 0,2922 · BSS −0,169.** *Test de discrimination :
+3 résolutions sur 20.*
+**Échéances** : **C053 le 24/09** · C013 le 30/09 · **C016 et C026 le 30/09** ·
+C049 le ~31/10. ⚠️ **C052 VOID, réouvrable jusqu'au 30/09.**
