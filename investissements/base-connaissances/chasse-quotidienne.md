@@ -1644,3 +1644,80 @@ Le WTI **101,19 $** avait été tué le 12/09 *(veille implicite 93,03 $ contre
 > ressemblance avec la réalité du moment.* **Un faux qui devient vrai par
 > accident reste un faux : sa provenance n'a pas changé, et c'est la
 > provenance qui décide.**
+
+---
+
+# 17/09/2026 — Deux acquis, dont un faux contrôle que je m'étais fabriqué
+
+## ① 🆕 LA SONDE NEUTRE — une requête qui sauve une séance
+
+**Face à une série de refus d'accès, sonder un domaine HORS du terrain du
+jour** *(Wikipédia, ou n'importe quel domaine générique)*.
+
+| Résultat de la sonde | Diagnostic | Parade |
+|---|---|---|
+| **sonde neutre PASSE** | **allowlist sectorielle** | le terrain est mal choisi → **changer de domaine** |
+| **sonde neutre BLOQUÉE** | **fermeture globale** | **aucun changement de terrain ne sauvera la séance → ARRÊTER** |
+
+> ☠️ **Sans elle, on dépense le budget à essayer un septième puis un huitième
+> émetteur, et on conclut « canal vide sur X » — c'est-à-dire la faute CHMP
+> sous une autre forme : imputer à un CANAL ce qui est une propriété de MA
+> CONNEXION.**
+>
+> **Coût : 1 requête. Ce qu'elle sauve : le reste du budget, et un faux
+> diagnostic qui salirait des dossiers non lus.**
+
+🆕 **Espèce de zéro à ajouter à la typologie** : **NON OUVERT PAR FERMETURE
+TOTALE DE CANAL.** *Distinct de « chassé à zéro », « canal vide », « canal
+dispersé », « canal non porteur ».*
+> **Contre la contamination, un bouclage. Contre la fermeture, rien** — sinon
+> une action extérieure. *Les deux pannes n'appellent pas la même réponse, et
+> les confondre fait perdre des séances entières.*
+
+## ② ☠️ LA RÉCONCILIATION ÉDITORIALE N'EST PAS DE L'INDÉPENDANCE
+
+**Le 14/09, j'ai écrit qu'une date était « mono-source levée » parce qu'elle
+était *« relayée par trois canaux »* — Option Finance, ABC Bourse, BFM Bourse.**
+
+> 🔴 **Trois éditeurs qui relaient le MÊME communiqué émetteur ne sont pas
+> trois sources : c'est UNE source relayée trois fois.**
+> **La réconciliation éditoriale mesure la DIFFUSION, pas l'INDÉPENDANCE.**
+
+**C'est un FAUX CONTRÔLE**, de la famille de celui retiré le 26/08 *(« un VWAP
+identique sur quatre places est impossible »)* — et **le deuxième fabriqué sur
+le même émetteur.**
+
+> 🔑 **Et celui-ci est d'une espèce plus dangereuse.**
+> *« Une donnée fausse coûte une donnée. Un contrôle faux coûte toutes les
+> données qu'il rejettera. »* **Mais un contrôle faux PERMISSIF ne rejette
+> rien : il fait ACCEPTER.** *Il ne se signale par aucun manque — il produit
+> une fausse confiance, qui ne fait de bruit que le jour où elle se casse.*
+>
+> **RÈGLE : une source n'est INDÉPENDANTE que si elle peut CONTREDIRE.**
+> *Trois relais d'un même communiqué ne peuvent pas se contredire : ils
+> recopient.* **Compter des relais, c'est compter des exemplaires.**
+>
+> ✅ **La bonne corroboration reste celle qui est de NATURE différente** — un
+> récit contre un chiffre, un ratio contre un niveau, un comparatif stocké
+> contre une variation servie. *C'est ce qui a marché sur Nike le 13/09 : ce
+> n'était pas le nombre de relais, c'était la STRUCTURE (quatre sortants,
+> quatre entrants du même secteur).*
+
+## ③ Rappel appliqué : sur un canal FERMÉ, l'absence n'est pas une information
+
+**Le « 7,5 % » d'Aubay n'est pas réapparu aujourd'hui — et ça ne vaut pas
+test.** *Aucun contenu n'a été servi : l'absence est mécanique, pas
+informative.*
+
+> **Un test de quarantaine ne compte que si le canal pouvait, en principe,
+> servir le chiffre.** *Enregistrer « non réapparu » un jour de fermeture
+> gonflerait artificiellement la confiance dans une quarantaine qui n'a rien
+> eu à arrêter.*
+
+## ④ Et une limite de protocole, étendue
+
+Le 15/09 : *« les six kill-tests présupposent un DOSSIER »*.
+**Aujourd'hui, la même limite s'applique au SCREENING** : les sept contrôles
+de bouclage **présupposent un chiffre servi**.
+> **Nommer un contrôle qui échoue faute de matière donne l'illusion d'avoir
+> instruit.** *Le bon mot est « inapplicable », pas « échoué ».*

@@ -1734,3 +1734,45 @@ nommé.*
 > n'appellent pas la même parade** : contre la contamination, un bouclage ;
 > contre la fermeture, rien d'autre qu'une action de Tanguy sur la politique
 > d'egress.
+
+---
+
+## 🔴 17/09/2026 — FERMETURE TOTALE D'EGRESS
+
+**Vérifiée indépendamment** : proxy sain (`enabled: true`,
+`bundleCoversEveryHost: true`), mais `en.wikipedia.org` **et**
+`federalreserve.gov` renvoient tous deux `CONNECT tunnel failed, 403`.
+**WebSearch : `unavailable`.**
+
+> **Ce n'est ni un canal contaminé, ni un canal vide : c'est une politique
+> d'egress fermée.** 🔴 **Parade non méthodologique — action de Tanguy
+> requise.** *Aucun bouclage ne répare une fermeture.*
+> ⚠️ **Tant qu'elle dure, les séances suivantes sont à budget nul.**
+
+### ⚠️ RÉTROGRADATIONS
+
+| Élément | Avant | **Après** |
+|---|---|---|
+| **Date de publication Aubay (16/09)** | ✅ « mono-source levée, 3 canaux » | 🔴 **MONO-SOURCE** — *trois relais d'un même communiqué ne sont pas trois sources* |
+| **FOMC : bornes 3,75-4,00 % et unanimité** | — | ⚠️ **DÉDUITES, jamais LUES** — 2ᵉ jour d'échec sur source primaire. *Ne pas laisser se durcir en ancrage par répétition.* |
+
+### État des tests armés *(tous suspendus à la réouverture)*
+
+- 🔒 **Test A — Aubay a-t-elle publié le 16/09 ?** 1 requête. **C052 butée 30/09.**
+- 🔒 **Test B — FOMC sur `federalreserve.gov`.** 1 requête.
+- 🔒 **CHMP** — plénière terminée le 17/09, **réouverture 18/09**, URL nommée.
+- 🔒 **ACTIA** — résultats **18/09**. Bouclage inversé armé *(CA S1 269,0 M€,
+  NON VALIDÉ)* · **T4 : marge de la division Mobility**.
+- 🔒 **EVS** — T4 : prises de commandes S1 2025 du « Big Event Rental ».
+- 🔒 **VIRBAC / ROBERTET** *(publiaient le 17/09, non lus)* — invariant à
+  vérifier d'abord : *le CA semestriel était-il déjà public ?* · **T4 Virbac :
+  le pont de marge, change et périmètre séparés** · **T4 Robertet : marge
+  brute et cycle des matières premières** · 🔴 **Robertet : la LIQUIDITÉ décide
+  (contrôle familial, flottant étroit) — à instruire AVANT tout kill-test.**
+- ⚠️ **Prédiction non testée, sans péremption** : *le CAC du 16/09 ne contient
+  pas la décision de la Fed, le S&P et le Nasdaq si.* **Porte sur un SIGNE,
+  donc testable gratuitement plus tard.**
+
+### Ancrages gelés au 15/09
+**CAC 8 090,28 · S&P 7 585,73 · Nasdaq 25 981,57 · ratio 3,4251** ·
+**WTI settlement 100,05 $ (11/09) — 3ᵉ blanc consécutif.**
