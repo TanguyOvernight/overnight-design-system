@@ -1,7 +1,7 @@
 {
  "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
- "maj": "2026-09-17",
- "dernier_brief": 21,
+ "maj": "2026-09-18",
+ "dernier_brief": 22,
  "vus": {
   "jobup": [
    "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -135,7 +135,10 @@
    "4466578300",
    "4468277482",
    "4468203769",
-   "4450748109"
+   "4450748109",
+   "4467835140",
+   "4468224473",
+   "4468816916"
   ],
   "chuv": [
    "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html"
@@ -1508,6 +1511,24 @@
    "entreprise": "Michael Page",
    "note": "temporaire + produit medtech (écho Onward brief 12)",
    "lien": null
+  },
+  {
+   "brief": 22,
+   "date": "2026-09-18",
+   "score": "👀",
+   "titre": "3× Responsable atelier graphique Information RTS (70%)",
+   "entreprise": "RTS",
+   "note": "Ecublens pleine zone, service Direction Artistique, 3 postes ; min 5 ans + 70% sous seuil → 👀 mentions ; GET ✔",
+   "lien": "https://ch.linkedin.com/jobs/view/3-responsables-atelier-graphique-information-rts-70%25-at-rts-radio-t%C3%A9l%C3%A9vision-suisse-4467835140"
+  },
+  {
+   "brief": 22,
+   "date": "2026-09-18",
+   "score": "info",
+   "titre": "Assura : détail lu (min 5 ans comm institutionnelle) + lien officiel assura.ch via Job-Room",
+   "entreprise": "Assura",
+   "note": "plafond 👀 d'hier confirmé sur le fond",
+   "lien": "https://www.assura.ch/fr/carriere/postes-a-pourvoir/charge-communication-pu"
   }
  ]
 }
