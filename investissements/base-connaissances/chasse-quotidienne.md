@@ -1849,3 +1849,92 @@ décision hawkish, l'inverse de la réaction de manuel.
 > contredisent pas : c'est de la vraie corroboration.** *À opposer terme à
 > terme aux cinq relais d'un même communiqué Aubay — qui, eux, ne peuvent pas
 > se contredire.* **La règle du matin trouve son cas positif le soir même.**
+
+---
+
+# 18/09/2026 — Trois règles, dont un faux contrôle de l'espèce SYMÉTRIQUE
+
+## ⑫ ☠️ LE CONTRÔLE FAUX **RESTRICTIF** — le symétrique du 17/09, et le plus flatteur
+
+**Hier j'ai écrit** : *« les publications françaises tombent massivement à
+18h00 — interroger le matin du jour J revient à interroger la veille. »*
+**ACTIA publie à 07:00**, prouvé par **deux horodatages antérieurs** *(27/03 à
+07:00, 20/05 à 07:00)*. En regard : **Virbac 17:45, Robertet 18:15.**
+
+| | Effet | Signal émis |
+|---|---|---|
+| **Faux contrôle PERMISSIF** *(17/09 : « trois relais = trois sources »)* | fait **ACCEPTER** | aucun — produit une fausse confiance |
+| **Faux contrôle RESTRICTIF** *(18/09 : « les Français publient à 18h »)* | fait **RENONCER** | aucun — **et il ressemble à de la discipline** |
+
+> ☠️ **Les deux sont silencieux. Le second est en plus AUTO-FLATTEUR** : *un
+> blanc produit par un contrôle trop sévère se lit comme de la rigueur.*
+> **J'ai failli déclarer introuvable un document déjà servi — et j'en aurais
+> tiré un motif de satisfaction.**
+>
+> 🆕 **RÈGLE : l'heure de publication est un invariant d'ÉMETTEUR, pas de
+> PLACE.** *Elle se lit gratuitement sur les horodatages des deux communiqués
+> précédents, présents dans n'importe quel listing.* **Interroger l'horloge de
+> l'émetteur, pas celle du pays.**
+
+## ⑬ 🆕 UN MAJORANT SUR UNE PÉRIODE LARGE CLÔT UN TEST NOMMÉ SUR UNE PÉRIODE ÉTROITE
+
+Test nommé : *les prises de commandes du **S1 2025** attribuables au Big Event
+Rental d'EVS.* **Non servi. Mais l'ANNÉE ENTIÈRE l'est : 14,8 M€** — **plus
+petit que le recul du seul semestre (18,7 M€). Il tranche a fortiori.**
+
+> **Quand un chiffre nommé n'est pas servi, demander si un agrégat ENGLOBANT
+> suffirait à décider.** *Souvent il est plus facile à obtenir, et une borne
+> qui tranche vaut la mesure exacte.*
+>
+> ✅ **Et le même jour, symétriquement** : X-FAB refuse de chiffrer Erfurt →
+> **borne INFÉRIEURE calculée (> 26,5 M$/trimestre, > 106 M$ annualisés).**
+> **Deux dossiers, deux bornes, deux verdicts — sans jamais obtenir le nombre
+> demandé.**
+
+## ⑭ 🆕 L'AGRÉGAT FLATTEUR EST CELUI QUI REÇOIT LA GRANULARITÉ
+
+**ACTIA publie l'EBITDA PAR DIVISION et le résultat opérationnel au SEUL
+niveau GROUPE.** *Mobility affiche une marge d'EBITDA de 5,2 % contre 3,2 % —
+mais au niveau groupe, les amortissements consomment **78 % de l'EBITDA**.*
+
+> **RÈGLE : quand un émetteur détaille un agrégat et pas l'autre, regarder
+> lequel des deux le flatte.** *La granularité n'est pas neutre : c'est un
+> choix éditorial, et il a un sens.*
+> 🛑 **Aucune clé d'allocation n'étant servie, la marge opérationnelle de
+> Mobility n'a PAS été calculée.** *Le non-clos du test EST le résultat.*
+
+## ⑮ ✅ LA PAIRE AUBAY / VIRBAC — la règle ⑦ a désormais son cas SYMÉTRIQUE
+
+| | Anticipation en quarantaine | Réalisé | Verdict |
+|---|---|---|---|
+| **Aubay** *(16/09)* | ~7,5 % | **7,5 %** | **exacte au dixième** |
+| **Virbac** *(17/09)* | 19,3 % | **18,8 %** | **fausse de 0,5 pt** |
+
+> 🔑 **Deux cas, deux issues opposées, en 48 heures.** *La règle « une
+> quarantaine refuse un TYPE et ne prédit rien » n'était appuyée que sur le cas
+> où elle jouait CONTRE moi — elle pouvait passer pour une rationalisation
+> d'échec.* **Elle a maintenant son cas symétrique. Elle est établie.**
+
+🆕 **Et Virbac ajoute une signature** : *le comparatif (18,3 %) était EXACT, et
+c'est le chiffre de TÊTE qui était gonflé — l'amélioration surestimée d'un
+facteur 2.*
+> **On ne truque pas la RÉFÉRENCE, on truque le PROGRÈS.** *Un comparatif faux
+> se repère par bouclage ; un progrès faux se raconte.* **Vérifier l'écart, pas
+> seulement les niveaux.**
+
+## ⑯ 🔑 « UN ÉMETTEUR QUI PROMET D'AMÉLIORER DOCUMENTE L'ÉTAT PRÉSENT »
+
+Robertet *« réaffirme son engagement en faveur d'une meilleure liquidité et de
+l'animation de son titre »*.
+> **Une promesse d'amélioration est un aveu.** *Même famille que le
+> « résilient » de Riber et que les « effets ponctuels favorables » de Robertet
+> 2025 — qui, eux, ne se sont pas reconduits, et ça s'est vu en euros
+> (EBITDA −6 % sur un CA en hausse).*
+
+## ⑰ 🆕 UN ÉVÉNEMENT MESURÉ SUR DEUX SÉANCES N'EST PAS DEUX ÉVÉNEMENTS
+
+Le Nasdaq a surperformé le 16/09 **et** le 17/09, tous deux autour du FOMC.
+*Tentant d'y voir deux observations convergentes, donc un régime.*
+> **Non : le 16 et le 17 ENCADRENT un seul FOMC**, et le 17 est explicitement
+> décrit comme un rebond post-Fed. **L'objection au ratio reste OUVERTE ; elle
+> n'est pas promue en lecture de régime.**

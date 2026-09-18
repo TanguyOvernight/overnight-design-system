@@ -2139,3 +2139,97 @@ le World ? »*
 depuis 10 jours)* · STM *(3 conditions, canal mort)* · **Aubay (1ᵉʳ
 avertissement hier)** · **EVS et X-FAB (1 séance sur 3 — la règle neuve
 s'applique à elles en premier)** · Or, Lilly, Nike *(inéligibles PEA ou CTO)*.
+
+---
+
+### 📊 LE CLASSEMENT AU 18/09 — 8 candidates, **0 mouvement de rang**
+
+| Rang | Candidate | État | Déclencheur |
+|---|---|---|---|
+| ① | **Cœur World (WPEA)** | 🔴 **PEA non ouvert — 40ᵉ jour** · 🔔 **proposition en cours : 500 €** | ouverture du PEA |
+| ② | **Or** | canal NON PORTEUR · **inéligible PEA** *(ETC = titre de créance)* | — |
+| ③ | **Séché (SCHP)** | 🔒 **butée 24/09 — 6 jours**, aucun cours | clôture ≤ 90 € |
+| ④ | **Eli Lilly (LLY)** | quarantaine · CTO | ≤ 1 020 $ |
+| ⑤ | **Magnum** | dormant | capi ≤ 7,6 Md€ **ET** volume ≥ +2,0 % |
+| ⑥ | **Aubay (AUB)** | 🔴 **1ᵉʳ avertissement** *(marge S1 7,5 % vs 9,1 %)* | — |
+| ⑦ | **STM (STMPA)** | ancrage 43,60 € *(02/09)* · canal non porteur | ≤ 42,00 € + 2 jambes |
+| ⑧ | **Nike (NKE)** | sortie S&P 100 **lundi 21/09** · CTO | — |
+
+### 🛡️ COMPTEURS « 3 SÉANCES » — la règle mord dès son premier jour
+
+| Candidate | Compteur | Mouvement |
+|---|---|---|
+| **X-FAB** *(Paris)* | **2/3** | conclusion **tenue et durcie** |
+| **EVS** *(Bruxelles)* | **1/3** ⚠️ | **RÉINITIALISÉ — conclusion CHANGÉE** |
+| **ACTIA** *(Paris)* | **1/3** | première instruction sur résultats |
+| **Robertet** *(Paris)* | **0/3** | 🔴 **bloquée en amont : achetabilité** |
+
+> 🎯 **AUCUNE candidate n'est proposée à Tanguy.** *Et la règle a filtré **ma
+> meilleure piste**, pas une idée médiocre que je soupçonnais.* **C'est
+> exactement là qu'un filtre doit mordre pour valoir quelque chose.**
+
+### 🛑 EVS — la conclusion CHANGE : le Big Event Rental est trop petit
+
+```
+Prises de commandes 2025 (ANNÉE) : 225,0 M€ · dont Big Event Rental : 14,8 M€
+S1 2025 impliqué : 85,3 ÷ 0,82   = 104,02 M€
+Recul du SEUL semestre            =  18,72 M€
+```
+> **Le BER de l'ANNÉE ENTIÈRE est PLUS PETIT que le recul du SEUL SEMESTRE.**
+> *Même sous l'hypothèse la plus favorable à l'émetteur, il n'explique que
+> 79 % du recul.* **Le −18 % n'est PAS démontré comme effet de base cyclique.**
+> Le « +3 % hors Big Event et hors Moyen-Orient » exige **~21,8 M€** → **le
+> Moyen-Orient doit porter ≥ 7,0 M€, non divulgué.**
+>
+> ⚠️ **EVS n'est pas tuée** *(CA record +16,8 %, carnet long terme +27,3 %
+> incontestés)*, **mais sa thèse ne peut plus s'appuyer sur l'effet de base.**
+> ✅ *Acquis positif : S1 2025 = 46 % de l'année → le « back-end loaded » est
+> désormais MESURÉ, plus raconté.*
+
+### ☠️ X-FAB — 2/3, et l'ajustement caché est maintenant CHIFFRÉ
+
+```
+Pour que 173,3 ÷ (199,8 − E) > 1,0  →  E > 26,5 M$  →  > 13,3 % du CA trimestriel
+                                                     →  > 106 M$ annualisés
+```
+**Erfurt court jusqu'au S1 2027** → *l'émetteur demande de traiter **80 à
+106 M$** comme non représentatifs, sur ~800 M$ de CA annuel.* **Soit 10 à 13 %
+de la société.**
+🔴 **SiC : périmètre ÉLARGI** *(« wide bandgap » = SiC + GaN)* **au moment
+précis où le taux affiché tombe de +152 % à +34 %.** *Deuxième signature du
+même type chez le même émetteur.*
+
+> 🔑 **RÉSULTAT TRANSVERSAL** : **EVS et X-FAB, sans lien, présentent le MÊME
+> défaut** — un agrégat ajusté reposant sur une composante que l'émetteur
+> refuse de chiffrer *(Moyen-Orient / Erfurt)*. **Dans les deux cas,
+> l'ajustement non divulgué est exactement ce qui fait basculer le SIGNE.**
+
+### 🔴 ROBERTET — porte d'achetabilité NON FRANCHIE, kill-tests non lancés
+
+**38 % du capital / 62 % des droits de vote** *(famille Maubert)* · **FSP et
+Peugeot Invest : 125 M€ chacun, horizon long** · ⚠️ **DEUX lignes cotées —
+actions ET certificats d'investissement → risque d'acheter le mauvais
+instrument** · volume quotidien non servi.
+> *L'émetteur « réaffirme son engagement en faveur d'une meilleure
+> liquidité ».* **Une promesse d'amélioration est un aveu sur l'état présent.**
+
+**Faits pour mémoire** : CA 444 M€, organique **+2,8 %** — **sous la borne
+basse de la fourchette annuelle (+3 à +5 %) confirmée le même jour** ·
+**EBITDA 94 M€ contre 100 — −6 % EN VALEUR** pendant que le CA croît ·
+**Matières Premières −6 %**, la division la plus exposée au cycle est la pire.
+
+### ACTIA — inflexion réelle mais ténue, T4 non clos
+
+**ROC +4,4 M€ contre −3,3 M€** · marge groupe **+1,64 %** contre −1,24 %.
+✅ *Pont EBITDA → ROC fermé exactement (écart 1,1 M€ = hausse des
+amortissements).*
+> 🛑 **La marge OPÉRATIONNELLE de Mobility n'est pas publiée — seul l'EBITDA
+> l'est.** *Or les amortissements consomment 78 % de l'EBITDA au niveau
+> groupe.* **L'agrégat flatteur est celui qui reçoit la granularité.**
+
+### 📡 Ancrages validés au 17/09
+**CAC 8 186,93** *(+0,57 %)* · **S&P 7 640,82** *(+1,17 %)* · **Nasdaq 26 418**
+*(+1,69 %)* · **ratio 3,4575**. Résidus **− / + / −**.
+🛢️ 🆕 **WTI settlement 101,91 $ au 17/09** — *5ᵉ tentative, résolue par un point
+daté pris HORS de la fenêtre contestée.* **L'ancrage 100,05 $ du 11/09 est
+conservé, non remplacé.** ☠️ *101,19 et 93,03 restent en quarantaine.*
