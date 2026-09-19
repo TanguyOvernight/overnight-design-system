@@ -1,7 +1,7 @@
 {
  "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
- "maj": "2026-09-18",
- "dernier_brief": 22,
+ "maj": "2026-09-19",
+ "dernier_brief": 23,
  "vus": {
   "jobup": [
    "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -138,7 +138,12 @@
    "4450748109",
    "4467835140",
    "4468224473",
-   "4468816916"
+   "4468816916",
+   "4466905440",
+   "4466692625",
+   "4469152048",
+   "4467858615",
+   "4469145285"
   ],
   "chuv": [
    "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html"
@@ -1529,6 +1534,42 @@
    "entreprise": "Assura",
    "note": "plafond 👀 d'hier confirmé sur le fond",
    "lien": "https://www.assura.ch/fr/carriere/postes-a-pourvoir/charge-communication-pu"
+  },
+  {
+   "brief": 23,
+   "date": "2026-09-19",
+   "score": "👀",
+   "titre": "Coach IA 80-100%",
+   "entreprise": "Losinger Marazzi (service Digital)",
+   "note": "Crissier ou Berne ; pilier 3 pur (acculturation GenAI) MAIS allemand exigé même à Crissier → rétrogradée ✅→👀 par second regard ; années n.c. ; GET ✔",
+   "lien": "https://ch.linkedin.com/jobs/view/coach-ia-80-100%25-at-losinger-marazzi-sa-4466905440"
+  },
+  {
+   "brief": 23,
+   "date": "2026-09-19",
+   "score": "👀",
+   "titre": "Marketing ROI Insight Expert",
+   "entreprise": "Nestlé",
+   "note": "Vevey -1, CDD 18 mois, MMM expertise exigée ; écho pilier 3 (adoption/formation) ; GET ✔",
+   "lien": "https://ch.linkedin.com/jobs/view/marketing-roi-insight-expert-at-nestl%C3%A9-4469152048"
+  },
+  {
+   "brief": 23,
+   "date": "2026-09-19",
+   "score": "ecartee-notable",
+   "titre": "Global Marketing Manager - Equity",
+   "entreprise": "Haleon",
+   "note": "10+ ans + CDD 8 mois (second regard fiche entière)",
+   "lien": null
+  },
+  {
+   "brief": 23,
+   "date": "2026-09-19",
+   "score": "info",
+   "titre": "Logitech re-poste PWS GMM (nouvel ID 4469145285) — pas pourvu après 1 mois",
+   "entreprise": "Logitech",
+   "note": "dédup brief 5 ; signal porte encore ouverte",
+   "lien": null
   }
  ]
 }
