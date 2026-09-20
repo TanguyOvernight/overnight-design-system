@@ -1776,3 +1776,69 @@ nommé.*
 ### Ancrages gelés au 15/09
 **CAC 8 090,28 · S&P 7 585,73 · Nasdaq 25 981,57 · ratio 3,4251** ·
 **WTI settlement 100,05 $ (11/09) — 3ᵉ blanc consécutif.**
+
+---
+
+## 📡 Mise à jour du 20/09/2026 — deux RÉTROGRADATIONS contre moi
+
+| Élément | Avant | **Après** |
+|---|---|---|
+| **« Double verrou » pétrolier** *(14/09)* | ✅ Ormuz fermé **ET** contournement fermé | ☠️ **PÉRIMÉ — l'Arabie saoudite transite PAR Ormuz** *(transferts navire-à-navire au large de Sohan/Oman, ~17/09)*. **La soupape existe.** |
+| **Fenêtre de réparation ~01-15/10** | échéance portée au radar | ⚠️ **NON SOURCÉE** — *Riyad n'a divulgué ni l'ampleur des dégâts ni la durée (13/09)*. **Le « 3 à 5 semaines » n'est pas attribuable.** **Aucune case de scénario ne s'y adosse.** |
+
+> ☠️ **Les DEUX chiffres rétrogradés sont les DEUX qui m'arrangeaient** —
+> *ils transformaient un aléa en catalyseur datable.* **Ce sont ceux que j'ai
+> le moins attaqués en les écrivant.** *La vigilance asymétrique ne vaut que
+> si elle s'applique au moment de l'écriture, pas six jours plus tard.*
+
+✅ **Corroboration de nature différente, et elle est à moi** : mon ancrage du
+18/09 *(settlement 100,30 $)* est **sous le pic de mi-semaine**. *Un récit de
+détente et un prix qui baisse concordent.*
+
+### 🔒 SÉCHÉ — verdict DÉTERMINÉ, exécution le 24/09
+
+**Tentative terminale dépensée le 20/09 : le canal a resservi 82,60 €** —
+**en quarantaine depuis le 08/09, ET sans date** *(le moteur le dit lui-même)*.
+**Canal non porteur CONFIRMÉ à douze jours de distance — héritage du rejet.**
+
+> **PASSE, motif « NON CONCLU FAUTE D'ACCÈS AU PRIX ».** *Jamais « thèse
+> insuffisante » : condition ① REMPLIE, ② ③ ④ immesurables, **aucune en
+> échec**.*
+> 🚪 **Seule porte restante : une clôture datée venue de l'écran de courtier
+> de Tanguy.** ⚠️ *Si le déclencheur tire, j'inscris que LE DÉCLENCHEUR A TIRÉ
+> — pas qu'un achat est décidé.*
+
+### ✅ Grappe du lundi 21/09 — écrivable, et sans surprise
+
+- **Revue AEX/AMX : AUCUN changement de composition** *(source Euronext ; la
+  fenêtre de modification s'est fermée après clôture du 16/09)*.
+  🔑 **La contradiction du 16/09 est tranchée contre « Aalberts entre à
+  l'AEX ».**
+- **Nike / S&P 100** : inchangé, quatre sortants et quatre entrants conformes à
+  l'ancrage du 04/09, **depuis des sources différentes**. ✅ *Corroboration par
+  la STRUCTURE.*
+- **Vietnam** : confirmé. ☠️ *« FTSE **plans** inclusion of 28 stocks » —
+  anticipation mono-source, REFUSÉ.*
+- ☠️ **Chiffres d'accompagnement Nike : dispersion AGGRAVÉE** — −77 % · −78 % ·
+  −200 Md$ · −230 Md$. **Quatre valeurs, deux grandeurs, aucun dénominateur,
+  30 Md$ d'écart sur le même fait. Refus maintenu.**
+
+### ✅ FED — bornes et vote passent de DÉDUITS à SERVIS
+
+**3,75-4,00 %** et **vote 12-0** désormais servis *(deux relais du même
+communiqué : **servies**, pas confirmées en primaire)*.
+🆕 **Dot plot : 16 membres sur 19 attendent ≥ 1 hausse de plus cette année.**
+> ✅ **Le `12-0` est un point favorable pour une raison précise : c'est une
+> granularité que je n'avais PAS.** *Un chiffre qui ne pouvait pas venir de moi
+> vient d'ailleurs.*
+🛑 **Aucune probabilité implicite servie ni cherchée** — canal FedWatch
+toujours dispersé.
+
+### 🎯 Test nommé pour le prochain terrain prospectif
+
+*« Quel fournisseur coté à **Amsterdam ou Bruxelles** publie un carnet de
+commandes **RÉALISÉ** adossé aux 43 Md€ d'investissement réseau néerlandais ? »*
+*TenneT n'est pas cotée ; ABB est au SIX, éliminée au palier tarifaire.*
+
+🎁 **ACTIA horodatée 18/09 à 07H00 — TROISIÈME occurrence.** *L'invariant
+d'émetteur est confirmé sans requête dédiée.*

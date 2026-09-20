@@ -2432,3 +2432,41 @@ Le « 7,5 % » d'aujourd'hui **n'est pas** une réapparition du paquet contamin�
 **26,6 M€** *(publié)*. *Un canal qui recopierait le paquet en quarantaine
 servirait 26,4.* Plus deux lignes entièrement neuves *(comparatif 7,2 % et ROC
 25,0 M€ / 7,1 %)*.
+
+---
+
+## Appel ouvert le 20/09/2026 — C055 *(seconde paire d'écart)*
+
+| | Date | Proposition | **P** | Résolution |
+|---|---|---|---|---|
+| **C053** | 17/09 | **L'ordre de 700 € sur WPEA est exécuté** | **54 %** | 24/09 |
+| **C055** | **20/09** | *(proposition IDENTIQUE)* | **64 %** *(brut 68 %, rétraction)* | 24/09 |
+
+### Pourquoi un second appel plutôt qu'une révision
+
+**Mon arbre du 17/09** : `P(intention) ≈ 0,97 × P(PEA opérationnel à temps) ≈
+0,57`.
+**Le second nœud est RÉSOLU** : *le PEA est ouvert, et le virement est parti.*
+**Deux des trois incertitudes ont disparu en trois jours.**
+
+> ⚖️ **C053 n'est pas révisé** — *un appel rattrapé en cours de route ne mesure
+> plus un jugement, il mesure ma capacité à avoir l'air d'avoir eu raison.*
+> **C055 est ouvert à côté, exactement comme C050 l'a été à côté de C046.**
+
+### 🔑 Et cette paire vaut MIEUX que la première
+
+| | C046 / C050 | **C053 / C055** |
+|---|---|---|
+| Objet | décision de la Fed | **exécution d'un ordre par Tanguy** |
+| La réponse était-elle **publiée** ? | ✅ oui — marché liquide à 85,5 % | ❌ **non — personne ne price ça** |
+| Ce que l'écart mesurerait | **transcription** | **DISCRIMINATION** |
+
+> 🔑 **C046/C050 m'avait donné 41 points dans le bon sens — et j'avais
+> immédiatement réduit la portée : je n'avais fait que lire un prix de
+> marché.** **Ici, il n'y a rien à lire.** *Si les 10 points d'écart entre C053
+> et C055 se révèlent payants, ce sera le premier signe réel de discrimination
+> du registre.*
+
+**État : 16 résolus · Brier moyen 0,2922 · BSS −0,169.**
+**Échéances** : **C053 + C055 le 24/09** *(et la butée Séché le même jour)* ·
+C013, C016, C026 le 30/09 · C049 ~31/10 · C054 le 31/12/2031.
