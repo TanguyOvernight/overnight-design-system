@@ -1,7 +1,7 @@
 {
  "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
- "maj": "2026-09-19",
- "dernier_brief": 23,
+ "maj": "2026-09-20",
+ "dernier_brief": 24,
  "vus": {
   "jobup": [
    "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -1569,6 +1569,15 @@
    "titre": "Logitech re-poste PWS GMM (nouvel ID 4469145285) — pas pourvu après 1 mois",
    "entreprise": "Logitech",
    "note": "dédup brief 5 ; signal porte encore ouverte",
+   "lien": null
+  },
+  {
+   "brief": 24,
+   "date": "2026-09-20",
+   "score": "info",
+   "titre": "Jour creux — 0 persona ; pins 5/5 ✔ ; SerpAPI 10e jour HS",
+   "entreprise": "—",
+   "note": "reposts déjà traités (Logitech PWS, Haleon, Nestlé ROI) ; Harmattan re-poste son Executive Assistant",
    "lien": null
   }
  ]
