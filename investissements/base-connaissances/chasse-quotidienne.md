@@ -1938,3 +1938,92 @@ Le Nasdaq a surperformé le 16/09 **et** le 17/09, tous deux autour du FOMC.
 > **Non : le 16 et le 17 ENCADRENT un seul FOMC**, et le 17 est explicitement
 > décrit comme un rebond post-Fed. **L'objection au ratio reste OUVERTE ; elle
 > n'est pas promue en lecture de régime.**
+
+---
+
+# 21/09/2026 — Le jour où un contrôle a accusé MES propres chiffres
+
+## ⑱ 🔑 UN CONTRÔLE QUI NE PEUT ACCUSER QUE L'EXTÉRIEUR N'EST PAS UNE VÉRIFICATION
+
+**Deux contrôles indépendants — le bouclage ET le ratio — ont accusé la MÊME
+jambe (S&P), dans le MÊME sens, au MÊME ordre de grandeur (~3,3 pts).**
+
+**Et la conclusion possible n'est pas celle que j'attendais** : *si le Nasdaq
+et le paquet du 18/09 sont bons, c'est **mon ancrage du 17/09 (7 640,82)** qui
+est faux de ~3 points — et le ratio-ancrage 3,4575 avec lui.*
+
+> 🔑 **C'est la première fois qu'un de mes contrôles met en cause un de mes
+> PROPRES ancrages validés plutôt qu'un chiffre servi.**
+> **Un système qui ne peut accuser que l'extérieur n'est pas un système de
+> vérification, c'est une défense.** *Et une défense finit toujours par
+> protéger une erreur.*
+>
+> ⚖️ **Règle : ne pas trancher tant qu'un seul chiffre peut le faire.** *La
+> paire (ancrage ; ratio) est marquée **CONDITIONNELLE à sa jambe S&P**, et
+> un test nommé la ferme en une requête.*
+
+## ⑲ ☠️ UNE HYPOTHÈSE PEUT SE RÉFUTER SUR LA DONNÉE QU'ELLE RÉCLAMAIT
+
+**Hypothèse posée** : *« le résidu S&P vient de l'arrondi à l'unité — le
+précédent du CAC du 16/09 le montre. »*
+
+| | Arrondi | Décimale | Effet |
+|---|---|---|---|
+| **CAC 16/09** | 0,0069 % | **0,0018 %** | ✅ divisé par 3 |
+| **S&P 18/09** | −2,81 | **−3,06** | 🔴 **AGGRAVÉ** |
+
+> **Le résidu GRANDIT quand la précision augmente. L'arrondi n'était pas la
+> cause.**
+> 🔑 **Demander plus de décimales était la BONNE question, et la réponse est
+> NON.** *C'est la forme la plus propre qu'une réfutation puisse prendre : se
+> casser sur exactement la donnée qu'on avait réclamée.*
+>
+> ⚠️ **Le piège évité** : *un précédent qui a marché une fois n'est pas un
+> mécanisme.* **Le remède d'hier n'est pas le remède d'aujourd'hui.**
+
+## ⑳ 🆕 LA GRANULARITÉ SÉLECTIVE — pire que l'agrégat flatteur
+
+Le 18/09 j'écrivais *(règle ⑭)* : **« l'agrégat flatteur est celui qui reçoit
+la granularité »** *(ACTIA publie l'EBITDA par division, le résultat
+opérationnel au seul niveau groupe)*.
+
+**EVS en donne une version plus grave** : elle **CHIFFRE** le Big Event Rental
+*(14,8 M€ sur 2025)* et **REFUSE de chiffrer** le Moyen-Orient — **alors que
+c'est le Moyen-Orient qui porte toute la charge de la preuve.**
+
+> ☠️ **La composante VÉRIFIABLE est publiée ; celle dont dépend la
+> démonstration ne l'est pas.** **Ce n'est pas une omission, c'est une
+> SÉLECTION.**
+>
+> **RÈGLE : quand un émetteur chiffre une partie de son explication et pas
+> l'autre, regarder laquelle des deux SUFFIRAIT à trancher.** *Si c'est
+> précisément celle qui manque, l'explication entière est non démontrable —
+> et « non démontrable » n'est pas « réfutée », mais c'est inutilisable de la
+> même façon.*
+
+## ㉑ 🔑 Deux dossiers sans lien, une seule signature
+
+**EVS et X-FAB** : *un agrégat ajusté construit par l'émetteur, reposant sur une
+composante qu'il refuse de chiffrer* — **Moyen-Orient / Erfurt**.
+**Deux compteurs de trois séances, deux clôtures négatives, même mécanisme.**
+
+> ⚠️ **Et ce sont les DEUX seules candidates arrivées jusqu'au compteur.**
+> *La règle des 3 séances n'a pas filtré du bruit : elle a filtré **tout ce que
+> j'avais**.*
+> 🔑 **C'est une information sur mon gisement, pas seulement sur ces deux
+> sociétés** : *les dossiers qui survivent à ma détection sont précisément ceux
+> qui reposent sur un ajustement non vérifiable.* **Si mon crible ne retient
+> que ça, c'est le crible qu'il faut examiner.**
+
+## ㉒ ✅ Un anti-signal servi, identifié, écarté — avec trois motifs
+
+Papier servi : *« AI frenzy — ces valeurs européennes ont gagné plus de 100 %
+cette année »*.
+**① Daté du 21/05** *(quatre mois — mort au sens de T2)* · **② les deux
+véhicules sont Helsinki et Francfort** *(hors périmètre)* · **③ « déjà +100 %,
+dans la presse généraliste » est la définition du TROP TARD.**
+> **Le bon signal est dans la presse spécialisée AVANT la généraliste.**
+
+🎁 **Invariant d'émetteur relevé à coût nul** : **Neurones publie APRÈS
+CLÔTURE.** *Série en cours : ACTIA 07:00 (×3) · Virbac 17:45 · Robertet 18:15 ·
+Neurones après clôture.*
