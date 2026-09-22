@@ -2027,3 +2027,49 @@ dans la presse généraliste » est la définition du TROP TARD.**
 🎁 **Invariant d'émetteur relevé à coût nul** : **Neurones publie APRÈS
 CLÔTURE.** *Série en cours : ACTIA 07:00 (×3) · Virbac 17:45 · Robertet 18:15 ·
 Neurones après clôture.*
+
+---
+
+## ㉓ LE COMPARATIF DOIT ÊTRE CELUI DE L'ÉMETTEUR *(22/09/2026)*
+
+**Quand un émetteur publie « X contre Y », Y est la SEULE base de comparaison
+admissible.** Substituer un Y tiré de ma mémoire, d'une autre période ou d'un autre
+périmètre transforme un fait en verdict — **et le verdict devient le mien, pas celui
+des chiffres.** Comparatif absent → **le blanc est la réponse**, on n'en fabrique pas un.
+
+**Naissance de la règle :** Aubay, marge S1 « 7,5 % vs 9,1 % ». L'émetteur écrivait
+**7,5 % contre 7,2 %**. Le 9,1 % était un ordre de grandeur **annuel** opposé à un
+**semestre** — faute de dénominateur. **J'en avais tiré un avertissement sur résultats
+là où la marge montait.**
+
+> ⚠️ **Deux règles antérieures auraient dû suffire, et n'ont pas mordu :**
+> - **Bouclage inversé** — un comparatif tiré de ma mémoire est *immunisé par
+>   construction* : il sert de référence, donc rien ne peut le contredire.
+> - **Granularité sélective** — je l'avais forgée contre les émetteurs. **Je l'ai
+>   subie :** j'ai vérifié le terme vrai (7,5 %) et jamais celui qui portait la charge
+>   de la preuve (9,1 %).
+>
+> 🎯 **Une règle écrite mais non déclenchée ne protège de rien.** ㉓ existe pour
+> transformer deux principes passifs en **un geste obligatoire : citer littéralement
+> le comparatif de l'émetteur avant tout verdict.**
+
+## ㉔ UN DÉCLENCHEUR TOUJOURS SATISFAIT N'EST PAS UN DÉCLENCHEUR *(22/09/2026)*
+
+**Un seuil vrai en permanence ne discrimine rien : c'est un décor.** Il donne
+l'apparence d'une surveillance active là où aucune condition de déclenchement réelle
+n'existe.
+
+> **Test de validité, à passer à l'écriture ET en revue : le seuil était-il FAUX le
+> jour où il a été posé ?** Si non, il n'encode pas une décision — il encode une
+> illusion de vigilance, et il doit être réécrit ou retiré.
+
+**Naissance de la règle :** Séché, déclencheur « clôture ≤ 90 € ». Trois relevés
+indépendants au 22/09 *(78,80 / 81,10 / 82,60 €)* et les relevés d'août *(79-84 €)*
+sont **dispersés sur la décimale mais unanimes sur la zone**. *Application du majorant :*
+**toutes les valeurs candidates répondent OUI à « ≤ 90 € ? », donc la dispersion
+n'affecte pas cette question.** Le seuil était satisfait **sans interruption depuis
+~7 semaines** — et n'a jamais rien déclenché.
+
+**Conséquence : Séché sort en PASSE, motif « déclencheur non discriminant » —
+et non « faute d'accès au prix ».** *Le motif prévu accusait le canal ; le vrai défaut
+était de conception, et il était de moi.*

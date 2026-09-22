@@ -2233,3 +2233,128 @@ amortissements).*
 🛢️ 🆕 **WTI settlement 101,91 $ au 17/09** — *5ᵉ tentative, résolue par un point
 daté pris HORS de la fenêtre contestée.* **L'ancrage 100,05 $ du 11/09 est
 conservé, non remplacé.** ☠️ *101,19 et 93,03 restent en quarantaine.*
+
+---
+
+## 🔴 22/09/2026 — AUBAY : L'AVERTISSEMENT EST **RÉTRACTÉ**. IL N'A JAMAIS EXISTÉ.
+
+**Je portais Aubay en ⑥ avec la mention « 🔴 1ᵉʳ avertissement (marge S1 7,5 % vs 9,1 %) ».
+Le comparateur est FAUX.** Ce qu'écrit l'émetteur (communiqué du **16/09/2026 18h00**) :
+
+| Élément | Valeur publiée | Sens |
+|---|---|---|
+| **Marge opérationnelle d'activité S1** | **7,5 % contre 7,2 % un an plus tôt** | ⬆️ **EN HAUSSE** |
+| Résultat opérationnel d'activité | 26,6 M€, **+37,9 %** | ⬆️ |
+| Résultat net part du Groupe | **+22,9 %** | ⬆️ |
+| Croissance | +30,8 % *(dont **+11,4 % organique**)* | ⬆️ |
+| **Objectifs 2026** | **RELEVÉS** — CA 695-705 M€, MOA **9-10 %** | ⬆️ |
+| France / International | CA 217,2 M€ @ 6,9 % / 134,7 M€ @ 8,6 % | — |
+
+> **La marge MONTE de 0,3 point. J'avais enregistré une DÉGRADATION là où il y a
+> une AMÉLIORATION, et j'en avais tiré un avertissement sur résultats.**
+
+### D'où venait le 9,1 % — et pourquoi c'est une faute de catégorie
+**9,1 % est un ordre de grandeur de marge ANNUELLE.** Aubay guide 9-10 % sur
+l'année pleine pendant que son S1 ressort à 7,5 % : **le second semestre est
+structurellement plus fort.** Comparer un **semestre** à un **exercice** n'est
+pas une comparaison, c'est une erreur de dénominateur.
+
+### ☠️ LE MÉCANISME DE LA FAUTE — **granularité sélective appliquée à moi-même**
+Le 16/09 j'ai « vérifié » Aubay et conclu que *« la marge EST à 7,5 %, l'avertissement
+EST mérité »*.
+
+> **J'ai vérifié le 7,5 % — le terme VRAI, et le seul des deux qui ne portait rien.
+> Je n'ai jamais vérifié le 9,1 % — le terme qui portait TOUT le verdict.**
+>
+> C'est exactement le défaut que je reproche aux émetteurs : **quantifier la
+> composante vérifiable et laisser dans le flou celle qui supporte la charge de
+> la preuve.** Je l'ai fait sur moi, et le contrôle a validé.
+
+**Et c'est un cas pur de BOUCLAGE INVERSÉ** : le comparateur venait de **ma propre
+mémoire**, pas du document. *Un comparatif tiré de ma mémoire est immunisé par
+construction — aucun contrôle ne peut le contredire, puisque c'est lui qui sert
+de référence.* **La règle existait, écrite de ma main. Je ne l'ai pas appliquée.**
+
+### 📌 RÈGLE ㉓ — LE COMPARATIF DOIT ÊTRE CELUI DE L'ÉMETTEUR
+> **Quand un émetteur publie « X contre Y », Y est la SEULE base de comparaison
+> admissible.** Substituer un Y tiré de ma mémoire, d'une autre période ou d'un
+> autre périmètre transforme un fait en verdict — et le verdict est alors le mien,
+> pas celui des chiffres. **Si le comparatif de l'émetteur est absent, le blanc
+> est la réponse ; on n'en fabrique pas un.**
+
+### ⚠️ TROISIÈME ERREUR SUR LE MÊME ÉMETTEUR — et la plus grave
+1. **17/09** — faux contrôle PERMISSIF : « mono-source levée car relayée par trois canaux ». *Trois relais d'un communiqué = une source.*
+2. **16/09** — célébration fausse de la quarantaine.
+3. **22/09** — **inversion du SIGNE du verdict fondamental.** *Les deux premières portaient sur la qualité d'une source. Celle-ci portait sur le fait lui-même.*
+
+> 🎯 **Aubay est ma zone d'erreur la plus dense. J'y applique désormais une
+> exigence renforcée : aucun verdict sur Aubay sans citation littérale du
+> comparatif de l'émetteur.**
+
+### Conséquences de classement
+- **Aubay ⑥ → ③.** Motif : *la pénalité qui la maintenait au 6ᵉ rang reposait sur un fait inexistant.*
+- **Compteur 3 séances REMIS À 1/3** *(et non repris à 2/3)* : la conclusion a **changé de signe**, donc la série recommence. **Aucune proposition avant le 24/09 au plus tôt.**
+- **Toujours aucun cours exploitable** : 52,20 € *(21/09, en séance)* contre 56,60 € *(non daté)* → **8 % d'écart, canal DISPERSÉ, aucune valeur retenue.** *Même promue, Aubay reste inachetable faute de prix.*
+
+---
+
+## ⏰ 22/09 — SÉCHÉ : PASSE ACTÉ, ET LE MOTIF PRÉVU ÉTAIT LE MAUVAIS
+
+Motif prévu de longue date : *« non conclu faute d'accès au prix »*. **Il est faux —
+ou plutôt, il masque un défaut bien pire, qui est le mien.**
+
+Trois relevés indépendants ce jour : **78,80 €** *(11/09)* · **81,10 €** *(non daté)* ·
+**82,60 €** *(non daté)*. **Dispersés sur la décimale — mais UNANIMES sur la zone :
+Séché est entre 78 et 83 €.** Et les relevés d'août, issus d'un canal *différent*,
+donnaient 79-84 €.
+
+> 🔑 **Application du majorant : quelle que soit la valeur vraie, toutes répondent
+> OUI à « la clôture est-elle ≤ 90 € ? ». La dispersion n'a donc AUCUN effet sur
+> cette question-là.**
+>
+> **Ce qui veut dire que le déclencheur « clôture ≤ 90 € » est satisfait
+> SANS INTERRUPTION depuis ~7 semaines — et qu'il n'a jamais rien déclenché.**
+
+### 📌 RÈGLE ㉔ — UN DÉCLENCHEUR TOUJOURS SATISFAIT N'EST PAS UN DÉCLENCHEUR
+> **Un seuil qui est vrai en permanence ne discrimine rien : c'est un décor.**
+> Il donne l'apparence d'une surveillance active là où il n'y a aucune condition
+> de déclenchement réelle. **Un seuil doit être posé de telle sorte qu'il soit
+> FAUX au moment où on l'écrit** — sinon il n'encode pas une décision, il encode
+> une illusion de vigilance.
+>
+> **Contrôle à passer sur chaque déclencheur existant : était-il FAUX le jour de
+> sa rédaction ? Si non, il est nul et doit être réécrit ou retiré.**
+
+**Verdict : ⏰ PASSE, motif « déclencheur non discriminant ».** *Ce n'est pas un
+échec d'accès à la donnée — c'est un défaut de conception du seuil.* Séché sort du
+classement et rejoint les sorties enregistrées. **Réouverture sur fait NOUVEAU
+uniquement** (résultats, opération de capital, ou un seuil correctement construit).
+
+---
+
+## 📊 LE CLASSEMENT AU 22/09 — 7 candidates, **2 mouvements**
+
+| Rang | Candidate | État | Déclencheur |
+|---|---|---|---|
+| ① | **Cœur World (WPEA)** | 💰 **796 € engagés le 21/09** *(2 ordres)* — exécution à confirmer | versement mensuel |
+| ② | **Or** | canal non porteur · **inéligible PEA** | — |
+| ③ | **Aubay (AUB)** ⬆️ *(de ⑥)* | ✅ **avertissement rétracté** · marge ⬆️, objectifs relevés · **1/3** · aucun cours fiable | *à reconstruire — l'ancien était nul* |
+| ④ | **Eli Lilly (LLY)** | quarantaine · CTO · ~1 150-1 165 $ *(dispersé)* | ≤ 1 020 $ — **très loin** |
+| ⑤ | **Magnum** | dormant | capi ≤ 7,6 Md€ **ET** volume ≥ +2,0 % |
+| ⑥ | **STM (STMPA)** ⬇️ *(de ⑦→⑥ par sortie de Séché)* | **44,65 € au 21/09** *(+2,94 %)* · ex-div 0,09 € le 21/09 | ≤ 42,00 € — **s'éloigne** |
+| ⑦ | **Nike (NKE)** | **sortie du S&P 100 confirmée le 21/09** *(≈18 ans)* · reste au S&P 500 · CTO | — |
+| — | ~~Séché (SCHP)~~ | ⏰ **SORTI — PASSE, déclencheur non discriminant** | — |
+
+### 🛡️ COMPTEURS « 3 SÉANCES »
+| Candidate | Compteur | Mouvement |
+|---|---|---|
+| **X-FAB** *(Paris)* | **2/3** | gelé — aucun cours exploitable *(4 valeurs, aucune datée)* |
+| **Aubay** *(Paris)* | **1/3** 🔄 | **RÉINITIALISÉ — verdict INVERSÉ** |
+| **EVS** *(Bruxelles)* | **1/3** | gelé — 3 valeurs incompatibles, dont un instantané pré-ouverture |
+| **ACTIA** *(Paris)* | **1/3** | gelé — seule valeur trouvée non datée |
+| **Robertet** *(Paris)* | **0/3** | 🔴 bloquée en amont : achetabilité |
+
+> 🎯 **AUCUNE candidate proposée à Tanguy aujourd'hui.** *Et la meilleure nouvelle
+> du jour — Aubay va bien mieux que je ne le croyais — est précisément celle que la
+> règle des 3 séances m'interdit de transformer en recommandation.* **C'est le
+> fonctionnement normal du filtre, pas sa défaillance.**

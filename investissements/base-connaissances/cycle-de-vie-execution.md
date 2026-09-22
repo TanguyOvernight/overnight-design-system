@@ -88,3 +88,54 @@ FX), comportementale (automatisation + non-regard) — parce qu'à 1 000 $,
    d'épargne en 40 mois).
 4. Espacer les dépôts eToro (trimestriels) et router le flux mensuel vers
    le PEA une fois ouvert.
+
+---
+
+## Frais de courtage Fortuneo — deux régimes incompatibles (21/09/2026)
+
+**Source : WebSearch uniquement. `www.fortuneo.fr` est BLOQUÉ à l'egress — pages émetteur non lues.**
+Statut : **à confirmer sur l'espace client.** Ne pas traiter comme acquis.
+
+### Régime A — tarif Starter (par défaut, sans engagement)
+- **0 €** pour le **1er ordre du mois calendaire ≤ 500 €**
+- **0,35 %** du montant pour tout autre ordre
+- Ticket renouvelé chaque mois calendaire, **perdu s'il n'est pas utilisé**
+- Aucune condition d'encours ni de nombre d'ordres
+- Aucun droit de garde, aucun frais de tenue de compte (toutes formules)
+
+### Régime B — 100 premiers ordres offerts
+- Depuis le **01/01/2025** : frais de courtage offerts sur les **100 premiers ordres exécutés**
+- Condition de montant : **de 500 € à 10 000 €**
+- Déclencheur : **première ouverture ou premier transfert** de CTO, PEA ou PEA-PME
+- → **Le PEA de Tanguy vient d'être ouvert : éligibilité PROBABLE mais NON VÉRIFIÉE**
+
+### ⚠️ Les deux régimes donnent des consignes OPPOSÉES
+| | Ordre gratuit si | Nombre d'ordres optimal |
+|---|---|---|
+| **A seul** | 1er du mois **ET ≤ 500 €** | **1 par mois, sous 500 €** |
+| **B actif** | **≥ 500 €** (100 fois) | **autant que voulu, chacun ≥ 500 €** |
+
+**Il n'existe aucune quantité sûre sous les deux régimes** : à 7,049 €, 70 parts = 493,43 € (passe A, rate B)
+et 71 parts = 500,48 € (passe B, rate A). **Il faut trancher l'éligibilité avant de dimensionner.**
+
+### Les ordres du 21/09 ne discriminent PAS les deux régimes
+Ordre 1 = 493,43 € (1er du mois, ≤500) → gratuit sous A **et** sous B (via le ticket Starter).
+Ordre 2 = 296,06 € (2e du mois, <500) → ~1,04 € sous A **et** sous B.
+**Les deux régimes prédisent le même avis d'opéré.** L'expérience proposée le 21/09 était NON DISCRIMINANTE — erreur corrigée le jour même.
+
+### Offre ETF Amundi — ÉCARTÉE, deux fois
+1. **Hors périmètre** : WPEA = *iShares* MSCI World Swap PEA (IE0002XZSHO1), **pas un ETF Amundi**.
+2. **Canal DISPERSÉ** : les relais donnent *500 €–100 000 € jusqu'au 31/12/2026* ET *800 €–100 000 € jusqu'au 31/08/2026*.
+   Deux valeurs incompatibles sur le même paramètre → **aucune valeur retenue.**
+
+### Qualité des sources — à appliquer aux prochaines lectures tarifaires
+- Page émetteur `fortuneo.fr/bourse/ordre-offert-starter` : **arbitre, non lue (bloquée)**
+- moneyvox.fr, prosper-conseil.fr, cafedelabourse.com : éditorial, acceptable
+- **votre-parrainage-fortuneo.fr, arbolyo.fr, finance-evolution.fr : sites d'affiliation/parrainage, intérêt commercial à l'inscription → à ne jamais utiliser seuls**
+
+**Nuance de doctrine :** ma règle « trois relais d'un même communiqué = une seule source » vise les *affirmations sur le monde*.
+Ici l'objet est un **document tarifaire** : la convergence des relais atteste d'une transcription fidèle, ce qui suffit à titre provisoire.
+**Mais la dispersion sur l'offre Amundi prouve que ces relais dérivent sur les détails** → la page émetteur reste l'arbitre.
+
+### Conséquence sur le plan de versement
+**Suspendue** jusqu'à ce que l'éligibilité au régime B soit tranchée. Ne pas figer « 1 ordre/mois » avant.

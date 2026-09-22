@@ -43,6 +43,27 @@ def est_titre(txt: str) -> bool:
     return sum(c.isupper() for c in lettres) / len(lettres) >= 0.8
 
 
+MARQUEURS_LISTE = "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳•"
+
+
+def est_element_de_liste(ligne: str) -> bool:
+    """Une ligne qui s'ouvre par une puce ou un numero cercle est un
+    ELEMENT DE LISTE, jamais un titre de section.
+
+    6e correction (22/09). Le bug : "⑥ *STM* — 44,65 €" ressortait en GRAS.
+    La branche "titre suivi d'un tiret" ne consultait meme pas est_titre() ;
+    son prefixe (\S*\s*), prevu pour un emoji, avalait le "⑥". Et "STM"
+    etant a 100 % de capitales, est_titre() l'aurait valide de toute facon.
+
+    Pourquoi cette garde-ci n'est PAS trop large, contrairement a mes deux
+    elargissements rates : elle ne juge AUCUNE propriete du texte (longueur,
+    casse) que titres et elements de liste peuvent partager. Elle lit un
+    MARQUEUR POSITIF d'appartenance a une liste, en tete de ligne. Un titre
+    de section ne commence jamais par ① ni par •.
+    """
+    return ligne.lstrip()[:1] in MARQUEURS_LISTE
+
+
 def italiques(txt: str) -> str:
     """*emphase* -> _italique_, en laissant les **gras** intacts."""
     return re.sub(r'(?<!\*)\*([^*\n]+)\*(?!\*)', r'_\1_', txt)
@@ -51,6 +72,9 @@ def italiques(txt: str) -> str:
 def convertir(texte: str) -> str:
     sorties = []
     for ligne in texte.split("\n"):
+        if est_element_de_liste(ligne):
+            sorties.append(italiques(ligne))
+            continue
         # Titre de section : *TEXTE COURT EN CAPITALES* seul sur la ligne
         m = re.match(r'^(\S*\s*)\*([^*]+)\*\s*$', ligne)
         if m and ligne.count('*') == 2 and est_titre(m.group(2)):
