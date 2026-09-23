@@ -1,7 +1,7 @@
 {
  "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
- "maj": "2026-09-20",
- "dernier_brief": 24,
+ "maj": "2026-09-23",
+ "dernier_brief": 25,
  "vus": {
   "jobup": [
    "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -143,7 +143,13 @@
    "4466692625",
    "4469152048",
    "4467858615",
-   "4469145285"
+   "4469145285",
+   "4468918083",
+   "4469001902",
+   "4469046950",
+   "4470287692",
+   "4468719301",
+   "4467388536"
   ],
   "chuv": [
    "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html"
@@ -178,6 +184,11 @@
    "emblematik-chef-projet-mkt",
    "vdl-encadrant-mkt-diverscites",
    "academicwork-webdesigner-agence"
+  ],
+  "lever": [
+   "3d1597a7-4535-4f22-8554-9a4a5df242b9",
+   "38187073-6976-4791-9bfd-c946fd67faf0",
+   "85850faa-715d-4122-8ed2-82003a109779"
   ]
  },
  "postees": [
@@ -1578,6 +1589,69 @@
    "titre": "Jour creux — 0 persona ; pins 5/5 ✔ ; SerpAPI 10e jour HS",
    "entreprise": "—",
    "note": "reposts déjà traités (Logitech PWS, Haleon, Nestlé ROI) ; Harmattan re-poste son Executive Assistant",
+   "lien": null
+  },
+  {
+   "brief": 25,
+   "date": "2026-09-23",
+   "score": "✅",
+   "titre": "EURO Event Communications & Digital Coordinator",
+   "entreprise": "UEFA",
+   "note": "Nyon -1 ; CDD 18 mois ferme 02.2027→07.2028 ; 1-3 ans = fourchette basse cible ; GET ✔",
+   "lien": "https://ch.linkedin.com/jobs/view/euro-event-communications-digital-coordinator-at-uefa-4468918083"
+  },
+  {
+   "brief": 25,
+   "date": "2026-09-23",
+   "score": "✅",
+   "titre": "Account Executive (a) 100%",
+   "entreprise": "Publicis Media Switzerland",
+   "note": "Lausanne pleine zone ; 1-2 ans ; FR/EN exigés, DE=plus ; « interest in AI tools » valorisé ; GET ✔",
+   "lien": "https://ch.linkedin.com/jobs/view/account-executive-a-100%25-at-publicis-media-switzerland-4469001902"
+  },
+  {
+   "brief": 25,
+   "date": "2026-09-23",
+   "score": "👀",
+   "titre": "AI Program Facilitator",
+   "entreprise": "ORELIS GLOBAL",
+   "note": "Lausanne ; FR/EN sans allemand ; mission freelance par projet → plafond contrat ; pilier 3 ; GET ✔",
+   "lien": "https://ch.linkedin.com/jobs/view/ai-program-facilitator-at-orelis-global-4469046950"
+  },
+  {
+   "brief": 25,
+   "date": "2026-09-23",
+   "score": "👀",
+   "titre": "Marketing AI Engineer",
+   "entreprise": "SonarSource",
+   "note": "Genève plafond ; équipe marketing, croisement mkt×IA ; API Lever 200 verbatim",
+   "lien": "https://jobs.lever.co/sonarsource/3d1597a7-4535-4f22-8554-9a4a5df242b9"
+  },
+  {
+   "brief": 25,
+   "date": "2026-09-23",
+   "score": "👀",
+   "titre": "Product Designer",
+   "entreprise": "SonarSource",
+   "note": "Genève plafond ; API Lever 200",
+   "lien": "https://jobs.lever.co/sonarsource/38187073-6976-4791-9bfd-c946fd67faf0"
+  },
+  {
+   "brief": 25,
+   "date": "2026-09-23",
+   "score": "ecartee-notable",
+   "titre": "Content Production Expert",
+   "entreprise": "Audemars Piguet",
+   "note": "8 ans exigés ; 4e poste créa AP du mois",
+   "lien": null
+  },
+  {
+   "brief": 25,
+   "date": "2026-09-23",
+   "score": "info",
+   "titre": "Signaux : Proton Head B2B Mkt pourvu ; Neural Concept CMO réaffiché seul ; Elca practice GenAI Pully",
+   "entreprise": "—",
+   "note": "panne déclencheur 21-22.09 assumée en tête de brief ; SerpAPI revenu",
    "lien": null
   }
  ]
