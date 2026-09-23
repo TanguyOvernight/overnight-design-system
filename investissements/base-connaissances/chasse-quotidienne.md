@@ -2073,3 +2073,49 @@ n'affecte pas cette question.** Le seuil était satisfait **sans interruption de
 **Conséquence : Séché sort en PASSE, motif « déclencheur non discriminant » —
 et non « faute d'accès au prix ».** *Le motif prévu accusait le canal ; le vrai défaut
 était de conception, et il était de moi.*
+
+---
+
+## ㉕ AVANT DE DÉCLARER UN CANAL DISPERSÉ, TESTER LE DÉCALAGE D'UNE SÉANCE *(23/09/2026)*
+
+**Deux valeurs « incompatibles » pour une même séance sont très souvent UNE valeur de
+cette séance et UNE valeur de la veille.** Test : *l'une boucle-t-elle sur l'autre par
+la variation servie ?* Si oui, **ce n'est pas de la dispersion, c'est une série
+décalée — et on récupère DEUX ancrages datés au lieu d'en perdre deux.**
+
+**Naissance :** le 22/09 j'avais jeté le CAC entier *(8 139 vs 8 140,34 pour le 21/09)*.
+Le 23/09, deux valeurs à nouveau pour le 22/09 : `8 138,94 × 1,0020 = 8 155,22`, et
+**8 154,91 tombe dans la bande d'arrondi**. → **8 138,94 = clôture du 21/09**,
+**8 154,91 = clôture du 22/09**. *Rétroactivement, le 8 139 était juste et le 8 140,34
+faux.* **J'avais jeté la bonne donnée avec la mauvaise.**
+
+> ⚠️ **Ce que ça dit de la règle de dispersion :** elle protège de l'erreur **en
+> détruisant aussi de la vérité**, et ce coût était invisible — *un blanc ne proteste
+> pas.* Elle reste valide **quand le bouclage échoue**. Elle devient destructrice
+> quand on l'applique sans avoir tenté ce test.
+
+**Variante purement arithmétique, à ne pas confondre avec une dispersion :** le Nasdaq
+servi à « +0,4 % » et « +0,5 % » — `27 244 ÷ 27 122,09 = +0,4495 %`. **Deux arrondis
+d'un même nombre de part et d'autre de la bascule ne sont pas une contradiction.**
+
+## ㉖ UNE SOURCE DISQUALIFIÉE SUR LA FORME SE RÉHABILITE PAR UN BOUCLAGE **TIERS**, JAMAIS SUR ELLE-MÊME *(23/09/2026)*
+
+**Avant de compter un bouclage comme une confirmation : QUI a fourni l'AUTRE jambe ?**
+Même émetteur des deux côtés → **le test ne vaut rien, quelle que soit la précision du
+résultat.**
+
+> 🔑 **Un bouclage n'est une preuve que s'il POUVAIT échouer.**
+
+**Naissance :** `ad-hoc-news.de` est disqualifié sur la forme *(agrégat auto-généré,
+sans auteur nommé — règle 6)*. Pourtant :
+- **STM** : sa valeur du 21/09 est confirmée le 22/09 par une **page de cotation** → bouclage **tiers** ✅
+- **Eli Lilly** : son implicite tombe sur un ancrage venu d'**un autre relais** → **tiers** ✅
+- **Nike** : boucle au centime… **sur son propre chiffre de la veille** → 🔴 **auto-référentiel**, confiance dégradée
+
+**Ce départage réhabilite la source par TEST et non par signature** : deux
+transcriptions exactes vérifiées de l'extérieur. **La disqualification de forme reste
+le bon réglage par défaut** — elle interdit d'utiliser la source SEULE ; elle
+n'autorise pas à jeter un de ses chiffres qui boucle sur un ancrage indépendant.
+
+> ☠️ **C'est le bouclage inversé dans sa forme la plus discrète : celle qui RÉUSSIT.**
+> Un contrôle qui réussit trop bien doit être suspecté d'être circulaire.

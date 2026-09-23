@@ -2358,3 +2358,44 @@ uniquement** (résultats, opération de capital, ou un seuil correctement constr
 > du jour — Aubay va bien mieux que je ne le croyais — est précisément celle que la
 > règle des 3 séances m'interdit de transformer en recommandation.* **C'est le
 > fonctionnement normal du filtre, pas sa défaillance.**
+
+---
+
+## 📊 LE CLASSEMENT AU 23/09 — 7 candidates, **0 mouvement de rang**
+
+| Rang | Candidate | État au 22/09 | Déclencheur |
+|---|---|---|---|
+| ① | **Cœur World (WPEA)** | 💰 **~796 € engagés le 21/09** — exécution non confirmée | versement mensuel |
+| ② | **Or** | canal non porteur · inéligible PEA | — |
+| ③ | **Aubay (AUB)** | 🔴 **3ᵉ séance sans clôture exploitable** · compteur **gelé à 1/3** | *à reconstruire* |
+| ④ | **Eli Lilly (LLY)** | **1 172,05 $** *(+0,61 %)* ✅ bouclé tiers | ≤ 1 020 $ → **−15 % requis** |
+| ⑤ | **Magnum** | dormant | capi ≤ 7,6 Md€ → **−27 % requis** |
+| ⑥ | **STM (STMPA)** | **46,60 €** *(+4,37 %)* ✅ bouclé tiers | ≤ 42,00 € → **−11 % requis** |
+| ⑦ | **Nike (NKE)** | **36,10 $** ⚠️ *bouclage auto-référentiel → confiance MOYENNE* | — |
+
+### ✅ AUDIT DES DÉCLENCHEURS (règle ㉔) — 3 valides sur 4
+**LLY, STM et Magnum étaient tous FAUX le jour de leur écriture** *(marges 6 %, 12 %,
+27 %)*. **Un seul seuil défectueux — Séché — et il a été retiré le 22/09.**
+> 📌 *J'abordais cet audit en m'attendant à une pourriture systémique. Le dossier dit
+> trois sur quatre sains, et je le rapporte tel quel.* **Un audit qui confirme n'est
+> pas un audit raté.**
+
+**Le meilleur seuil du lot est celui que je croyais le plus faible** : Magnum est ancré
+sur `16,98 € × 612 259 739 titres`, **le nombre de titres venant d'un dépôt SEC 424B3
+du 29/07/2026** — un document réglementaire, non dérivé d'un cours.
+
+### 🔴 PIÈGE PERMANENT — faux passage sous le seuil Magnum
+La capi **« 7,67 Md$ (6,56 Md€) »** qui circule **passerait sous 7,6 Md€ et
+déclencherait un achat à tort**. Disqualifiée par l'arithmétique : taux implicite
+**1,169** contre un EUR/USD réel de **1,1550** → **capi périmée ET taux périmé.**
+*Profil exact que la règle interdit : bas, flatteur, à portée.* **À re-signaler à
+chaque relevé Magnum.**
+
+### 🚩 SORTIES — drapeau forensic ajouté à RUBIS *(déjà tuée, ne pas rouvrir sans fait neuf)*
+**Flux de trésorerie opérationnel en BAISSE à 223 M€ contre 276 M€, pendant que
+l'EBITDA fait +18 %.** *Motif servi : BFR sur pétrole cher — recevable, non vérifié au
+tableau de flux.* **Premier chiffre à lire si le dossier se rouvre.**
+
+### 📡 Ancrages validés
+**21/09** — S&P **7 764,70** *(+1,49 %)* · Nasdaq **27 122,09** · Dow **52 048,83** · CAC **8 138,94** *(récupéré le 23/09)*
+**22/09** — Nasdaq **27 244** *(+0,45 %)* · CAC **8 154,91** *(+0,20 %)* · S&P **≈ inchangé, niveau NON ÉTABLI**

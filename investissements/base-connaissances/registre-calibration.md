@@ -2470,3 +2470,43 @@ servirait 26,4.* Plus deux lignes entièrement neuves *(comparatif 7,2 % et ROC
 **État : 16 résolus · Brier moyen 0,2922 · BSS −0,169.**
 **Échéances** : **C053 + C055 le 24/09** *(et la butée Séché le même jour)* ·
 C013, C016, C026 le 30/09 · C049 ~31/10 · C054 le 31/12/2031.
+
+---
+
+## ⚠️ 23/09 — C053 et C055 échoient DEMAIN : je pose la règle de résolution AUJOURD'HUI
+
+**Pourquoi maintenant :** *si je laisse cette question pour demain, je la trancherai
+au moment où je connaîtrai déjà le sens qui m'arrange.* **Une règle de résolution
+écrite après avoir vu l'issue n'est pas une règle, c'est une justification.**
+
+**Proposition commune à C053 (54 %) et C055 (64 %)** : *« L'ordre de 700 € sur WPEA
+est EXÉCUTÉ »*, preuve admise = *confirmation de Tanguy ou capture datée*.
+
+### État des faits au 23/09
+- ✅ **Tanguy a déclaré le 21/09** : « J'ai mis les 500 € sur le WPEA, j'attends la transmission. » — **le placement est attesté par lui.**
+- ✅ Second ordre de 42 parts recommandé le même jour, portant l'engagement à ~796 €.
+- ❌ **Aucune confirmation d'EXÉCUTION reçue.** Réclamée deux fois (22/09, 23/09).
+
+### Les trois résolutions possibles, et laquelle s'applique
+| Issue | Condition | Décision |
+|---|---|---|
+| ✅ **VRAI** | Tanguy confirme l'exécution, ou fournit un avis d'opéré daté | Scorer normalement |
+| ❌ **FAUX** | Il confirme un ordre **non exécuté** *(rejet de couverture, limite non atteinte, ordre expiré)* | Scorer normalement |
+| ⏸️ **NON RÉSOLU** | **Aucune nouvelle de lui au 24/09** | **PROROGATION UNIQUE au 30/09, motivée — PAS de score** |
+
+### 🔴 Pourquoi je m'interdis de résoudre VRAI sans confirmation
+L'exécution est **hautement probable** : ordre placé, limite au-dessus du marché,
+validité jour. **Cette probabilité n'est pas une observation.** Résoudre VRAI
+là-dessus reviendrait à **scorer ma propre prédiction avec ma propre prédiction** —
+un bouclage inversé, exactement la faute d'Aubay transposée au registre.
+
+> ⚠️ **Et je nomme le risque inverse, qui est le plus flatteur** : proroger indéfiniment
+> un appel dont l'issue m'arrangerait est un **faux contrôle permissif** déguisé en
+> rigueur. **D'où la prorogation UNIQUE et datée.** *Au 30/09, sans confirmation,
+> les deux appels sont résolus NON OBSERVABLE et retirés du calcul du Brier — avec
+> mention explicite que le défaut est de COLLECTE, pas de calibration.*
+
+**Note de portée** : la proposition dit « 700 € ». L'engagement réel est de ~796 €
+en deux ordres. **L'esprit de l'appel — Tanguy déploie effectivement sur le WPEA —
+est couvert ; la lettre diffère.** Je résous sur l'esprit, et je l'écris ici *avant*
+de connaître l'issue pour que ce ne soit pas un arrangement rétrospectif.
