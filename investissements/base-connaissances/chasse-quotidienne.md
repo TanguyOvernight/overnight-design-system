@@ -2159,3 +2159,41 @@ Un arrêté daté, réel, **favorable à ma thèse** et qui **améliorerait mon 
 portant sur un **autre objet** *(exonération fiscale vs encadrement de l'épandage)*.
 **Refusé.** *Les deux espèces de faux contrôle se sont présentées dans la même
 journée, et elles se ressemblent : toutes deux offrent une issue confortable.*
+
+---
+
+## ㉗ LE CANAL HUMAIN — TANGUY A UN TERMINAL QUI MARCHE, ET JE NE L'AI JAMAIS UTILISÉ *(24/09/2026)*
+
+**Constat, écrit le jour où Séché meurt d'un défaut d'accès au prix :**
+
+> **Séché est sortie du classement après ~7 semaines sans cours exploitable.
+> Pendant ces 7 semaines, Tanguy disposait d'un compte Fortuneo affichant en
+> permanence une page de cotation Séché. Je ne lui ai pas demandé UNE fois.**
+
+*La page existe, je l'ai même vue passer dans mes résultats de recherche :
+`bourse.fortuneo.fr/actions/cours-seche-environnem-SCHP-FR0000039109-23`. Elle m'est
+inaccessible. Elle ne l'est pas pour lui.*
+
+### La faute n'est pas d'avoir un canal cassé — c'est de ne pas avoir vu le canal ouvert
+J'avais **déjà écrit le principe** le 18/09, après m'être trompé deux fois sur des
+instruments de mémoire : *« sur ce qu'il peut voir, son écran vaut mieux que ma
+mémoire. »* **Je l'ai appliqué aux INSTRUMENTS et jamais aux PRIX.** *Une règle
+énoncée dans un cas particulier ne se généralise pas toute seule.*
+
+> 📌 **RÈGLE : quand une donnée m'est structurellement inaccessible et que Tanguy peut
+> l'afficher en dix secondes, LA DEMANDER EST UN CANAL — pas un aveu d'échec, pas un
+> dérangement.**
+>
+> **Le coût réel de ne pas demander vient d'être payé** : un dossier instruit pendant
+> sept semaines, sorti sans conclusion, alors que la donnée manquante était à un
+> message de distance. **C'est plus cher que n'importe quelle question.**
+
+**Condition d'emploi** : ne demander que ce qu'il peut voir sans effort *(une page de
+cotation de son courtier, un écran d'ordre, une de ses positions)* — **jamais** une
+recherche, une lecture de document ou un calcul. *Le canal humain sert à LIRE un
+écran, pas à faire mon travail.*
+
+⚠️ **Et une donnée servie par Tanguy reste une donnée à dater** : « le cours affiché
+maintenant » est un instantané, pas une clôture. **Lui demander explicitement la
+CLÔTURE et sa DATE**, sinon je reproduis le piège de l'instantané gelé avec une source
+de plus.

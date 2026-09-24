@@ -2487,3 +2487,57 @@ aujourd'hui, toutes non datées : 82,6 · 78,8 · 81,5 · 80,9.
 > **C011 reste OUVERT** *(EBE FY2026 ≥ 260 M€ sans 3ᵉ avertissement, échéance mars 2027)*.
 > **La sortie du classement ne ferme pas les appels de calibration** — ils mesurent ma
 > prévision, pas mon intérêt pour la ligne.
+
+---
+
+## 🔒 24/09 — AUBAY : BUTÉE POSÉE, et cette fois construite selon mes propres règles
+
+**Aubay est mon meilleur dossier fondamental et ma pire ligne en accès au prix** :
+4ᵉ séance sans clôture datée. *C'est exactement la trajectoire de Séché.* **Je pose
+la butée maintenant, avant la dérive, et non après sept semaines.**
+
+### Le contrat
+> **Une clôture Aubay DATÉE et BOUCLÉE PAR UNE SOURCE TIERCE apparaît d'ici le
+> 08/10/2026** *(≈ 10 séances)*.
+
+**Contrôles de conformité, passés à l'écriture :**
+| Test | Vérification |
+|---|---|
+| **㉔** — le seuil était-il FAUX le jour de son écriture ? | ✅ **OUI** — aucune clôture datée n'existe aujourd'hui |
+| **㉔-bis** — est-ce une conjonction avec terme de vérification ? | ✅ **OUI** — *datée* **ET** *bouclée tiers* |
+| **㉖** — le bouclage peut-il échouer ? | ✅ **OUI** — l'autre jambe doit venir d'un autre éditeur |
+
+**Si la butée échoue** → **PASSE**, motif **« non conclu faute d'accès au prix »**.
+*Motif écrit maintenant, avant de connaître l'issue.* **Jamais « thèse insuffisante » :
+la thèse Aubay est solide et documentée — marge S1 7,5 % contre 7,2 %, ROA +37,9 %,
+objectifs 2026 relevés à 695-705 M€ et 9-10 %.**
+
+### 🎯 MAIS LA BUTÉE N'EST PAS LA VRAIE RÉPONSE — le canal humain l'est
+**Je demande à Tanguy la clôture Aubay sur sa page de cotation Fortuneo.** *Dix
+secondes pour lui, quatre séances de blocage levées pour moi.* **Voir règle ㉗ : ne pas
+avoir demandé est ce qui a coûté le dossier Séché.**
+
+**Compteur 3 séances : reste GELÉ à 1/3** — il ne peut pas avancer sans prix, et il
+n'avancera pas par lassitude.
+
+### 📊 CLASSEMENT AU 24/09 — **7 candidates**, Séché SORTIE
+| Rang | Candidate | État | Déclencheur |
+|---|---|---|---|
+| ① | **Cœur World (WPEA)** | ~796 € engagés le 21/09, exécution non confirmée | versement mensuel |
+| ② | **Or** | canal non porteur · inéligible PEA | — |
+| ③ | **Aubay (AUB)** | 🔴 **4ᵉ séance sans cours** · **butée 08/10** · gelée **1/3** | *à reconstruire* |
+| ④ | **Eli Lilly (LLY)** | ~1 151 $ au 23/09 🔒 **EN QUARANTAINE** *(source incohérente avec elle-même)* · dernier ancrage sûr **1 172,05 € au 22/09** | ≤ 1 020 $ → **−13 %** |
+| ⑤ | **Magnum** | dormant | capi ≤ 7,6 Md€ → **−27 %** |
+| ⑥ | **STM (STMPA)** | **46,60 € au 22/09** ✅ confirmé bouclage inter-éditeurs · rien au 23/09 | ≤ 42,00 € → **−11 %** |
+| ⑦ | **Nike (NKE)** | 35,98 $ au 23/09, source unique non bouclée | — |
+| — | ~~**Séché (SCHP)**~~ | ⏰ **SORTIE — PASSE, « non conclu faute d'accès au prix »** | — |
+
+**Ancrages 23/09** — S&P **7 706,03** *(−0,75 %)* · Nasdaq **26 936,04** *(−1,13 %)* ·
+CAC **8 123,41** *(−0,39 %)* · **S&P 22/09 établi à 7 764,26**. 🛢️ Brent > 100 $.
+
+## Sorties enregistrées — ajouts du 24/09
+| Valeur | Motif | Réouverture |
+|---|---|---|
+| **Séché (SCHP)** | ⏰ **PASSE — non conclu faute d'accès au prix.** *Aucune condition n'a échoué ; EBE S1 128,3 M€ (+8,5 %) remplissait la condition 1.* **C011 reste ouvert.** | fait nouveau **ou** prix accessible |
+| **Aurea (AURE)** | ☠️ **PASSE — liquidité éliminatoire (~2 800 €/jour) + aucun cours daté.** *Pas de surveillance ouverte : un seuil immesurable serait une illusion de vigilance (㉔).* | fait nouveau |
+| **Interparfums (ITP)** | ☠️ **PASSE — T2 : flux indiciel du 21/09 déjà passé** · T1 : paire de cours invalidée (36,37 / 28,00 €). ⚠️ *Avait d'abord été tuée « sur le périmètre » — mauvais motif, corrigé : le terrain organise la détection, jamais l'allocation.* | nouvelle anomalie de flux |
