@@ -1,7 +1,7 @@
 {
  "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
- "maj": "2026-09-23",
- "dernier_brief": 25,
+ "maj": "2026-09-24",
+ "dernier_brief": 26,
  "vus": {
   "jobup": [
    "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -58,7 +58,10 @@
    "cf524ac0-6070-4724-aa4a-9a14d4247093",
    "6d16e6f2-5488-47fa-a0f0-9fcb0b0d807d",
    "e4e0da08-41c4-40b5-b0bc-954c381c1c78",
-   "52d448a5-4c3b-4323-8f6c-9db375012fdd"
+   "52d448a5-4c3b-4323-8f6c-9db375012fdd",
+   "ed095491-54a7-4df5-b336-cab0491813e6",
+   "9eaa3315-3a59-4100-b967-3e63d7bd523e",
+   "08b1b59c-0bed-4147-9192-ece6692fd5a7"
   ],
   "ats_employeurs": [
    "https://recrutement.eben-hezer.ch/jobs/7602918-responsable-communication-et-recherche-de-fonds",
@@ -149,7 +152,11 @@
    "4469046950",
    "4470287692",
    "4468719301",
-   "4467388536"
+   "4467388536",
+   "4470954333",
+   "4471422332",
+   "4470989210",
+   "4468587078"
   ],
   "chuv": [
    "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html"
@@ -1652,6 +1659,42 @@
    "titre": "Signaux : Proton Head B2B Mkt pourvu ; Neural Concept CMO réaffiché seul ; Elca practice GenAI Pully",
    "entreprise": "—",
    "note": "panne déclencheur 21-22.09 assumée en tête de brief ; SerpAPI revenu",
+   "lien": null
+  },
+  {
+   "brief": 26,
+   "date": "2026-09-24",
+   "score": "✅",
+   "titre": "Community Manager",
+   "entreprise": "Nestlé Operational Services",
+   "note": "Lausanne pleine zone, CDI, publiée 23.09 ; communauté INTERNE (expérience employé/comm interne) — nuance dite ; pas d'années chiffrées ; sans allemand ; GET ✔",
+   "lien": "https://www.jobup.ch/fr/emplois/detail/ed095491-54a7-4df5-b336-cab0491813e6/"
+  },
+  {
+   "brief": 26,
+   "date": "2026-09-24",
+   "score": "👀",
+   "titre": "Social Media Manager – 60%",
+   "entreprise": "QoQa",
+   "note": "5 ans exigés + 60% sous seuil ; publiée le jour de la fermeture du Content Manager ; IA/vidéo/contenu dans la fiche ; GET ✔",
+   "lien": "https://ch.linkedin.com/jobs/view/social-media-manager-%E2%80%93-60%25-at-qoqa-4470954333"
+  },
+  {
+   "brief": 26,
+   "date": "2026-09-24",
+   "score": "👀",
+   "titre": "Senior UX/UI Designer",
+   "entreprise": "Flyability",
+   "note": "Paudex pleine zone ; 5+ ans senior/lead → mention ; GET ✔",
+   "lien": "https://ch.linkedin.com/jobs/view/senior-ux-ui-designer-at-flyability-4471422332"
+  },
+  {
+   "brief": 26,
+   "date": "2026-09-24",
+   "score": "info",
+   "titre": "🗑️ 📌 QoQa Content Manager FERMÉE (410 canonique jobup, 13 j de suivi)",
+   "entreprise": "QoQa",
+   "note": "variante jobs.ch DE traînait encore (200) — le 410 fait foi ; remplacée par le SMM 60%",
    "lien": null
   }
  ]
