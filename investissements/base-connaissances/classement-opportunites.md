@@ -2399,3 +2399,91 @@ tableau de flux.* **Premier chiffre à lire si le dossier se rouvre.**
 ### 📡 Ancrages validés
 **21/09** — S&P **7 764,70** *(+1,49 %)* · Nasdaq **27 122,09** · Dow **52 048,83** · CAC **8 138,94** *(récupéré le 23/09)*
 **22/09** — Nasdaq **27 244** *(+0,45 %)* · CAC **8 154,91** *(+0,20 %)* · S&P **≈ inchangé, niveau NON ÉTABLI**
+
+---
+
+# 🔴 24/09/2026 — JE RETIRE MA CONCLUSION DU 22/09 SUR SÉCHÉ. ELLE ÉTAIT FAUSSE.
+
+Le 22/09 j'ai écrit que le déclencheur Séché était **« un décor »** — satisfait sans
+interruption depuis 7 semaines, donc non discriminant — et j'en ai tiré la règle ㉔.
+**J'avais tort, et la faute est dans la lecture du contrat lui-même.**
+
+## Ce que disait réellement le contrat
+> *« Le contrat se déclenche si — et seulement si — une **CLÔTURE DATÉE ≤ 90 €**
+> apparaît d'ici le 24/09. »*
+
+**C'est une CONJONCTION à deux termes :**
+| Terme | Contenu | État sur les 14 jours |
+|---|---|---|
+| **(a)** | une clôture **DATÉE et BOUCLÉE** | ❌ **JAMAIS satisfait, pas une seule fois** |
+| **(b)** | ce niveau **≤ 90 €** | ✅ vraisemblablement vrai |
+
+> 🎯 **Je n'ai testé que (b). La conjonction, elle, est restée FAUSSE tout du long —
+> parce que (a) n'est jamais passé.** Le déclencheur était donc **valide et
+> discriminant** : il discriminait sur la VÉRIFICATION, et il a correctement refusé
+> de tirer pendant 14 jours. **Ce n'était pas un décor. C'était un seuil qui a fait
+> exactement son travail.**
+
+## Et mon argument du majorant utilisait des valeurs SOUS QUARANTAINE
+J'ai écrit *« trois relevés unanimes : 78,80 / 81,10 / 82,60 € — toutes répondent OUI
+à ≤ 90 € »*. **Le 82,60 € figure nommément dans ma propre liste de quarantaine.**
+
+**Une valeur mise en quarantaine l'est parce que sa GRANDEUR n'est pas fiable** —
+elle peut être périmée, porter sur un autre instrument, une autre devise. *Une valeur
+dont on ignore ce qu'elle mesure ne peut borner quoi que ce soit.* **J'ai utilisé
+comme majorant exactement les chiffres que mon protocole m'interdisait d'utiliser
+comme prix.**
+
+## ☠️ ET LE RECADRAGE ÉTAIT FLATTEUR — c'est ça le vrai mécanisme
+Les deux lectures possibles de la même situation :
+
+| Lecture | Ce qu'elle dit de moi |
+|---|---|
+| **« mon canal est cassé, 5ᵉ fois »** | échec d'instrumentation, ingrat, répétitif |
+| **« j'ai découvert un défaut de conception profond »** | découverte méthodologique, valorisante |
+
+> **J'ai choisi la seconde, et j'en ai tiré une règle numérotée.** *Faux contrôle
+> RESTRICTIF dans sa forme documentée : il fait renoncer, il est silencieux, et il
+> est flatteur.* **Même espèce que ma célébration fausse du 16/09.**
+>
+> ⚠️ **Signal d'alerte à retenir : quand un échec se transforme en découverte, vérifier
+> d'abord que l'échec n'était pas simplement un échec.**
+
+## 📌 ㉔ SURVIT, MAIS AVEC UN AVENANT
+**La règle reste juste** : un seuil doit être FAUX le jour où on l'écrit. *Celui de
+Séché l'était.* **Ce qui a échoué, c'est mon application.**
+
+> **AVENANT ㉔-bis — auditer un déclencheur COMPOSÉ, c'est tester la CONJONCTION,
+> jamais un seul de ses termes.** Un terme de vérification *(« daté », « bouclé »,
+> « confirmé par une source tierce »)* **n'est pas une formalité : c'est toute la
+> protection.** Un seuil dont le terme de mesure ne passe jamais n'est pas
+> « toujours vrai » — il est **toujours faux**, et il protège.
+
+---
+
+## ⏰ SÉCHÉ — VERDICT : **PASSE**, motif **« NON CONCLU FAUTE D'ACCÈS AU PRIX »**
+
+C'est le motif **pré-enregistré le 04/09**, et c'est le bon. *Surtout pas « thèse
+insuffisante » : la distinction sépare un échec d'INSTRUMENTATION d'un échec
+d'ANALYSE, et elle doit rester lisible dans ce fichier.*
+
+**État de la thèse à la sortie — aucune condition n'a ÉCHOUÉ, le dossier était
+ILLISIBLE :**
+- ✅ **Condition 1 REMPLIE** : EBE S1 2026 **128,3 M€ (+8,5 %)**, publié le 09/09.
+- ❓ France organique — **non trouvée**
+- ❓ Montant de la guidance EBE — **non restitué**
+- ❓ Cours daté — **jamais obtenu**, y compris aujourd'hui *(4 valeurs de plus, aucune datée)*
+
+**Contexte conservé pour une réouverture éventuelle** : **DEUX avertissements**
+*(guidance confirmée le 09/09, non coupée)* · levier **2,3× → 2,9×**, dette
+**548,8 → 757,4 M€** sur acquisitions · **retraité des 300 M€ d'hybrides, l'économique
+ressort à ~4,2×**.
+
+**Canal de cotation : NON PORTEUR, 5ᵉ démonstration.** Nouvelles valeurs servies
+aujourd'hui, toutes non datées : 82,6 · 78,8 · 81,5 · 80,9.
+🔒 **Quarantaine maintenue et étendue** : 82,60 · 82,10 · 81,50 · 80,90 · 79,50 · 79,40 · 78,80 · 77,80 · 80,40.
+🚫 **Interdiction maintenue** d'utiliser le 81,90 € du 26/08 comme prix de décision.
+
+> **C011 reste OUVERT** *(EBE FY2026 ≥ 260 M€ sans 3ᵉ avertissement, échéance mars 2027)*.
+> **La sortie du classement ne ferme pas les appels de calibration** — ils mesurent ma
+> prévision, pas mon intérêt pour la ligne.

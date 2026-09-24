@@ -1842,3 +1842,21 @@ commandes **RÉALISÉ** adossé aux 43 Md€ d'investissement réseau néerlanda
 
 🎁 **ACTIA horodatée 18/09 à 07H00 — TROISIÈME occurrence.** *L'invariant
 d'émetteur est confirmé sans requête dédiée.*
+
+---
+
+## 24/09/2026 — nouvelle entrée
+
+**🏛️ 06/09/2026 — Arrêté au JO : les boues d'épuration contaminées aux PFAS sont
+EXONÉRÉES de TGAP déchets.**
+*Effet attendu sur la filière : en supprimant le coût fiscal de l'élimination, l'arrêté
+réduit l'écart de prix entre **éliminer** et **épandre** → orientation de volume vers
+les exploitants de traitement.* **Pertinent pour la thèse Séché** *(sortie du
+classement le 24/09 pour cause d'accès au prix, thèse non réfutée)*.
+⚠️ **Relais de moteur uniquement — `legifrance.gouv.fr` non lu.** Portée exacte et
+conditions d'exonération **non vérifiées**.
+🚫 **N'a PAS servi à résoudre C013** : C013 porte sur l'arrêté d'**épandage** avec
+application au 01/01/2027, un texte de nature différente. *Voir registre.*
+
+**📅 30/09/2026** — butée C013 : chercher **nommément** l'arrêté encadrant l'épandage
+des boues, application 01/01/2027.

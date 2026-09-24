@@ -2510,3 +2510,49 @@ un bouclage inversé, exactement la faute d'Aubay transposée au registre.
 en deux ordres. **L'esprit de l'appel — Tanguy déploie effectivement sur le WPEA —
 est couvert ; la lettre diffère.** Je résous sur l'esprit, et je l'écris ici *avant*
 de connaître l'issue pour que ce ne soit pas un arrangement rétrospectif.
+
+---
+
+## 🚫 24/09 — C013 : JE REFUSE DE LE RÉSOUDRE SUR UN ARRÊTÉ QUI N'EST PAS LE SIEN
+
+**Proposition C013 (62 %)** : *« L'**arrêté final boues** est publié d'ici le 30/09/2026
+**avec application au 01/01/2027 maintenue** »*.
+
+**Ce qui a été trouvé aujourd'hui** : un arrêté publié au **JO du 06/09/2026** ajoutant
+les **boues d'épuration contaminées aux PFAS à la liste des déchets EXONÉRÉS de TGAP**
+*(taxe générale sur les activités polluantes)*.
+
+### Pourquoi ce n'est PAS l'arrêté de C013
+| | Arrêté attendu par C013 | Arrêté trouvé |
+|---|---|---|
+| **Objet** | encadrement de l'**ÉPANDAGE** des boues | **exonération FISCALE** de l'élimination |
+| **Nature** | réglementaire / seuils | **fiscale** / assiette de taxe |
+| **Application 01/01/2027** | c'est la moitié de la proposition | **non mentionnée** |
+
+> 🎯 **Deux textes voisins, datés, tous deux réels — et de nature différente.**
+> *Le résoudre VRAI là-dessus serait substituer une RESSEMBLANCE à la chose nommée.*
+
+### ⚠️ Et je nomme le biais, parce qu'il pointe dans un seul sens
+**C013 est à 62 %.** Le résoudre VRAI **améliorerait mon Brier**. Et l'exonération de
+TGAP est **favorable à la thèse Séché** *(elle retire un obstacle fiscal à
+l'élimination, donc oriente du volume vers le traitement plutôt que vers l'épandage)*.
+
+> ☠️ **Un fait qui améliore mon score ET qui arrange ma thèse, accepté sur une
+> ressemblance : c'est le faux contrôle PERMISSIF au complet.** *Deux jours après
+> avoir documenté sa variante restrictive sur Séché.*
+
+**Décision : C013 reste ⏳ OUVERT jusqu'au 30/09.** L'objet à chercher est
+**nommément** un arrêté encadrant l'épandage des boues, portant application au
+**01/01/2027**. *Réserve de lecture : je n'ai qu'une synthèse de moteur —
+`legifrance.gouv.fr` n'a pas été lu.*
+
+**➡️ L'exonération de TGAP part au RADAR** *(fait matériel daté pour la thèse Séché)*,
+**pas au registre.** La distinction est le fond du sujet : **un fait pertinent pour une
+thèse n'est pas la réalisation d'une prédiction qui portait sur autre chose.**
+
+### 📌 Échéances mises à jour
+**C053 + C055 : échoient AUJOURD'HUI 24/09** — *aucune confirmation d'exécution reçue
+de Tanguy.* **La règle de résolution pré-enregistrée le 23/09 s'applique :
+⏸️ PROROGATION UNIQUE au 30/09, sans score.**
+**C013 · C016 · C026 · C052 (VOID, réouvrable)** : 30/09 · **C049** : ~31/10 ·
+**C011** : mars 2027.

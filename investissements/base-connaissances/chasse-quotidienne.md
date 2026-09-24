@@ -2119,3 +2119,43 @@ n'autorise pas à jeter un de ses chiffres qui boucle sur un ancrage indépendan
 
 > ☠️ **C'est le bouclage inversé dans sa forme la plus discrète : celle qui RÉUSSIT.**
 > Un contrôle qui réussit trop bien doit être suspecté d'être circulaire.
+
+---
+
+## ㉔-bis AVENANT — AUDITER UN DÉCLENCHEUR **COMPOSÉ**, C'EST TESTER LA CONJONCTION *(24/09/2026)*
+
+**Né d'une mauvaise application de ㉔, deux jours après l'avoir écrite.**
+
+Le 22/09 j'ai déclaré le déclencheur Séché *« un décor, satisfait sans interruption
+depuis 7 semaines »*. **Le contrat était : « une CLÔTURE DATÉE ≤ 90 € ».** Deux termes.
+**Je n'ai testé que le second.**
+
+> **Un terme de VÉRIFICATION — « daté », « bouclé », « confirmé par un tiers » — n'est
+> pas une formalité administrative : c'est toute la protection du seuil.** Un
+> déclencheur dont le terme de mesure ne passe jamais n'est pas « toujours vrai » :
+> il est **toujours faux**, et il fait son travail.
+
+**㉔ reste valide** *(un seuil doit être faux le jour où on l'écrit — celui de Séché
+l'était)*. **C'est l'application qui a échoué.**
+
+### ☠️ Le mécanisme réel : QUAND UN ÉCHEC DEVIENT UNE DÉCOUVERTE
+Deux lectures de la même situation étaient disponibles :
+| Lecture | Ce qu'elle dit de moi |
+|---|---|
+| *« mon canal est cassé pour la 5ᵉ fois »* | échec d'instrumentation — ingrat, répétitif |
+| *« j'ai trouvé un défaut de conception profond »* | découverte — valorisante, numérotable |
+
+**J'ai pris la seconde et j'en ai fait une règle.** Et mon argument du majorant
+s'appuyait sur des valeurs **en quarantaine** — *or une valeur mise en quarantaine
+l'est parce que sa GRANDEUR est douteuse : elle ne peut donc borner rien du tout.*
+
+> 🚨 **SIGNAL D'ALERTE À GARDER : quand un échec se transforme en découverte
+> méthodologique, vérifier d'abord que l'échec n'était pas simplement un échec.**
+> *C'est le faux contrôle RESTRICTIF — il fait renoncer, il est silencieux, il est
+> flatteur.* **Même espèce que la célébration fausse du 16/09.**
+
+### Et la variante PERMISSIVE s'est présentée le même jour, sur C013
+Un arrêté daté, réel, **favorable à ma thèse** et qui **améliorerait mon Brier** — mais
+portant sur un **autre objet** *(exonération fiscale vs encadrement de l'épandage)*.
+**Refusé.** *Les deux espèces de faux contrôle se sont présentées dans la même
+journée, et elles se ressemblent : toutes deux offrent une issue confortable.*
