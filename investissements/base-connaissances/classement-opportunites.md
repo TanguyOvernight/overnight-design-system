@@ -2541,3 +2541,28 @@ CAC **8 123,41** *(−0,39 %)* · **S&P 22/09 établi à 7 764,26**. 🛢️ Bre
 | **Séché (SCHP)** | ⏰ **PASSE — non conclu faute d'accès au prix.** *Aucune condition n'a échoué ; EBE S1 128,3 M€ (+8,5 %) remplissait la condition 1.* **C011 reste ouvert.** | fait nouveau **ou** prix accessible |
 | **Aurea (AURE)** | ☠️ **PASSE — liquidité éliminatoire (~2 800 €/jour) + aucun cours daté.** *Pas de surveillance ouverte : un seuil immesurable serait une illusion de vigilance (㉔).* | fait nouveau |
 | **Interparfums (ITP)** | ☠️ **PASSE — T2 : flux indiciel du 21/09 déjà passé** · T1 : paire de cours invalidée (36,37 / 28,00 €). ⚠️ *Avait d'abord été tuée « sur le périmètre » — mauvais motif, corrigé : le terrain organise la détection, jamais l'allocation.* | nouvelle anomalie de flux |
+
+### 📊 CLASSEMENT AU 25/09 — 7 candidates, **0 mouvement de rang**, 1 entrée d'univers
+| Rang | Candidate | État | Déclencheur |
+|---|---|---|---|
+| ① | **Cœur World (WPEA)** | ~796 € engagés, exécution non confirmée. 🏛️ **NOUVEAU : risque réglementaire identifié** *(exclusion des ETF synthétiques du PEA, proposée fin 07/26, maintien confirmé le 26/08, absente du PLF 2027)* | versement mensuel |
+| ② | **Or** | canal non porteur · inéligible PEA | — |
+| ③ | **Aubay (AUB)** | 🔴 **6ᵉ séance sans cours** · la source se contredit **d'un jour sur l'autre** · butée **08/10** · gelée **1/3** | *à reconstruire* |
+| ④ | **Eli Lilly (LLY)** | **1 181,89 $ (24/09)** ✅ triangulé · **1 150,96 $ (23/09)** ✅ quarantaine levée · 🔒 **1 172,05 $ (22/09) MIS EN QUARANTAINE** | ≤ 1 020 $ → **−16 %** |
+| ⑤ | **Magnum** | dormant | capi ≤ 7,6 Md€ → **−27 %** |
+| ⑥ | **STM (STMPA)** | **46,11 € (23/09)** ✅ bouclé inter-éditeurs · ⚠️ **~44,8 € au 24/09 NON confirmé** | ≤ 42,00 € → **−9,8 %**, *~−6,3 % si 44,8 se confirme* |
+| ⑦ | **Nike (NKE)** | 35,99 $ (24/09), non verrouillé *(contredit l'ancrage 35,98 du 23/09)* | — |
+
+**🆕 UNIVERS ÉMERGENTS OUVERT** — `base-connaissances/univers-emergents-pea.md`.
+**PAEEM · FR0013412020 · Paris · swap · TER 0,30 % · ~37,03 €.** 🔒 **Séance 1/3, aucune
+proposition.** *Trois points à verrouiller sur le DIC (indice réel, Acc/Dis, mention PEA)
++ le coût de swap, inconnu et non servi.*
+
+**Ancrages 24/09** — CAC **8 081,43** *(−0,52 %)* ✅ **chaîne bouclée sur 4 séances**
+`8 138,94 → 8 155,22 → 8 123,41 → 8 081,43`. 🔴 **S&P et Nasdaq NON DISPONIBLES** — *le
+canal a une séance de retard sur les indices US, 3ᵉ jour consécutif.*
+🛢️ **Brent 106,39 $** *(24/09, +3,21 %, cotation datée, PAS un settlement)* — **+6 % en
+une semaine.**
+
+⚠️ **MÉTHODE TUÉE** : la reconstruction d'un cours par les seuils de réservation est
+**réfutée** — les deux seuils n'impliquent pas la même référence. **Ne pas la réemployer.**

@@ -2197,3 +2197,74 @@ recherche, une lecture de document ou un calcul. *Le canal humain sert à LIRE u
 maintenant » est un instantané, pas une clôture. **Lui demander explicitement la
 CLÔTURE et sa DATE**, sinon je reproduis le piège de l'instantané gelé avec une source
 de plus.
+
+---
+
+## ㉘ UN DOCUMENT SE LIT UNE FOIS ET SERT DEUX FOIS *(25/09/2026)*
+
+> **Tout document qui sert à corriger le CLASSEMENT doit être repassé sur la liste des
+> appels VOID ou ouverts du REGISTRE avant la fin de la même séance.**
+
+**Naissance :** le 22/09 j'ai lu le communiqué S1 d'Aubay, relevé la marge à 7,5 % et
+**rétracté un avertissement au classement**. **C052 — un appel VOID, réouvrable
+précisément si cette marge était publiée — est resté VOID trois jours de plus.**
+*J'avais le document dans les mains et je ne suis pas retourné au registre.*
+
+### ⚠️ Le diagnostic structurel, qui vaut plus que l'incident
+**Le classement possède trois lois anti-oubli explicites** *(rien ne sort sans motif
+écrit ; comparaison quotidienne obligatoire ; veille du plaidoyer ≠ sortie)*.
+**Le registre n'en a aucune.**
+
+> **Ce n'est pas une distraction, c'est un trou de procédure** — et il était prévisible :
+> j'ai bâti un dispositif anti-oubli pour la mémoire des OPPORTUNITÉS et rien pour la
+> mémoire des PRÉDICTIONS. *Le second est pourtant le seul qui mesure si j'ai raison.*
+
+## ㉙ VÉRIFIER QU'UNE PROPOSITION EST CONSTRUCTIBLE AVANT DE LUI DONNER UN P *(25/09/2026)*
+
+**Avant d'enregistrer un appel : la proposition compare-t-elle des grandeurs
+COMPARABLES ?** *Même période, même périmètre, même agrégat.*
+
+**Naissance :** C052 demandait *« la marge du SEMESTRE dépasse-t-elle 9,1 %, le réalisé
+de l'EXERCICE ? »*. **Chez un émetteur à S2 structurellement plus fort, la réponse est
+non par construction.** J'ai enregistré **54 %** là où la saisonnalité imposait **~10 %**.
+
+> 🔑 **La perte de Brier ne mesurait pas de la malchance : elle mesurait une erreur de
+> MODÈLE.** *Un appel mal construit produit un mauvais score quelle que soit la qualité
+> du jugement qu'on y met.*
+>
+> ☠️ **Et c'est la MÊME faute de catégorie — semestre contre exercice — qui a produit
+> quatre jours plus tard le faux avertissement Aubay.** **Une cause racine, deux dégâts,
+> et la première occurrence ne m'a pas alerté sur la seconde.** *C'est l'argument le plus
+> fort pour ㉓ : le comparatif doit venir de l'émetteur, dans un appel comme dans une
+> analyse.*
+
+---
+
+## ㉚ LA TOLÉRANCE D'UN CONTRÔLE SE FIXE **AVANT** DE LE PASSER *(25/09/2026)*
+
+**Et elle est la même pour mes chiffres que pour ceux des autres.**
+
+> ☠️ **Un « ✓ » écrit après avoir vu l'écart n'est pas une vérification : c'est une
+> autorisation.**
+
+**Naissance :** pour reconstruire le cours d'Aubay depuis les seuils de réservation
+**46,200 / 56,400**, j'ai écrit `51,30 × 1,10 = 56,43 ✓` et `51,30 × 0,90 = 46,17 ✓`.
+**56,43 ≠ 56,400. 46,17 ≠ 46,200.** *Deux écarts de 3 centimes comptés comme des
+égalités* — alors que **j'exige un bouclage au centime sur tout cours servi par un
+tiers.**
+
+Et le calcul correct montrait que la moyenne n'avait aucun sens :
+```
+46,200 ÷ 0,90 = 51,3333        56,400 ÷ 1,10 = 51,2727
+```
+**Les deux seuils n'impliquent pas la même référence : « le milieu » n'était même pas un
+nombre défini.** *J'ai moyenné deux grandeurs qui ne mesuraient pas la même chose.*
+
+> 🔑 **Asymétrie à surveiller en permanence : la rigueur appliquée aux données ENTRANTES
+> et la rigueur appliquée à mes propres constructions ne sont pas spontanément les
+> mêmes.** *La première est un réflexe acquis ; la seconde demande un effort, parce que
+> rien ne pousse à falsifier ce qu'on vient d'inventer.*
+
+**✅ Le dispositif qui a fonctionné : le TEST NOMMÉ.** *Annoncé la veille avec ses deux
+issues, tranché en une session, méthode morte le jour même comme promis.* **Coût : une
+question. Bénéfice : une impasse fermée au lieu d'être entretenue des semaines.**

@@ -2556,3 +2556,87 @@ de Tanguy.* **La règle de résolution pré-enregistrée le 23/09 s'applique :
 ⏸️ PROROGATION UNIQUE au 30/09, sans score.**
 **C013 · C016 · C026 · C052 (VOID, réouvrable)** : 30/09 · **C049** : ~31/10 ·
 **C011** : mars 2027.
+
+---
+
+# 🔴 25/09/2026 — C052 EST ROUVERT ET RÉSOLU **FAUX**. Et je l'ai laissé traîner trois jours.
+
+## Le fait qui le rouvre
+**C052** *(13/09, P = **54 %**)* : *« La marge opérationnelle d'activité du S1 2026
+d'Aubay ressort **≥ 9,1 %** »*. Résolu **VOID** le 16/09 à **18h20**, motif *« non
+conclu faute de publication accessible »*, **réouvrable jusqu'au 30/09 si la marge est
+publiée.**
+
+> 📰 **Le communiqué de résultats S1 2026 d'Aubay est daté du 16/09/2026 à 18h00.**
+> **Vingt minutes avant que je prononce le VOID.** *Il existait ; il ne m'était pas
+> atteignable.*
+
+**Marge publiée : 7,5 %.** → **7,5 % < 9,1 % → C052 est FAUX.**
+
+## ⏱️ Et je l'ai eu sous les yeux le 22/09 sans le voir
+**Le 22/09 j'ai lu ce communiqué**, relevé la marge à 7,5 %, son comparatif à 7,2 %, et
+**rétracté l'avertissement Aubay sur cette base.** *J'ai utilisé le document pour
+corriger le classement et je ne suis pas retourné au registre.*
+
+> ☠️ **Le classement a trois lois anti-oubli. Le registre n'en a aucune.**
+> **C'est un trou de procédure, pas une distraction** — et il a duré trois jours sur un
+> appel dont la butée tombait dans huit.
+>
+> 📌 **RÈGLE : tout document qui sert à corriger le CLASSEMENT doit être repassé sur la
+> liste des appels VOID ou ouverts avant la fin de la même séance.** *Un document se lit
+> une fois et sert deux fois.*
+
+## 🎯 LA VRAIE LEÇON : C052 ÉTAIT MAL CONSTRUIT, PAS SEULEMENT MAL PRÉVU
+
+**Ma proposition demandait : « la marge du SEMESTRE dépasse-t-elle 9,1 %, le réalisé de
+l'EXERCICE 2025 ? »**
+
+> **C'est la MÊME faute de catégorie qui a produit le faux avertissement du 17/09 :
+> comparer un SEMESTRE à un EXERCICE.**
+
+Aubay a un **S2 structurellement plus fort** — c'est pour cela que sa cible annuelle est
+à **9-10 %** quand son S1 ressort à **7,5 %**, et que la marge S1 de l'an passé était à
+**7,2 %**. **Une marge semestrielle qui dépasserait la marge annuelle serait un
+événement exceptionnel, pas le cas de base.**
+
+| | Ce que j'ai enregistré | Ce qu'un raisonnement correct aurait donné |
+|---|---|---|
+| P(marge S1 ≥ 9,1 %) | **54 %** | **~10 %**, au vu de la saisonnalité |
+
+> 🔑 **Ma perte de Brier sur C052 ne mesure PAS de la malchance : elle mesure une erreur
+> de MODÈLE.** *J'ai donné 54 % à une proposition quasi impossible par construction.*
+>
+> **Et c'est une seule cause racine pour deux dégâts** : le mauvais pari du 13/09 **et**
+> le faux avertissement du 17/09 sont **la même confusion semestre/exercice**, commise
+> deux fois à quatre jours d'écart, sans que la première m'alerte sur la seconde.
+
+## ✅ Ce qui, en revanche, avait bien fonctionné
+La **quarantaine du 13/09** avait intercepté un « 7,5 % » servi **au futur** dans le
+communiqué de chiffre d'affaires du **23/07** — *une anticipation d'émetteur, pas un
+réalisé.* **Le refus de scorer sur ce chiffre était juste sur la méthode**, et il le
+reste : *la valeur s'est avérée exacte, mais scorer une prévision sur une anticipation
+aurait été avoir raison pour une mauvaise raison.* **La quarantaine tenait ; c'est la
+proposition qu'elle protégeait qui était bancale.**
+
+## 📊 Score
+```
+C052 · P = 54 % · issue FAUSSE · Brier = 0,54² = 0,2916
+```
+| | Avant | Après |
+|---|---|---|
+| Résolus | 16 | **17** |
+| Brier moyen | 0,2922 | **0,2922** |
+| BSS | −0,169 | **−0,169** |
+
+> *Le score de C052 tombe à 0,0006 de ma moyenne courante : l'agrégat ne bouge pas d'un
+> millième.* **Ce qui est en soi un signal — je reproduis la même qualité de prédiction
+> appel après appel, et elle reste sous le hasard** *(BSS négatif)*. **Dix-sept
+> résolutions ne suffisent pas à trancher la discrimination ; le test pré-enregistré en
+> demande 20.**
+
+## 📌 Échéances au 30/09
+**C013** *(arrêté épandage boues, application 01/01/2027 — l'arrêté TGAP du 06/09 n'est
+PAS celui-là)* · **C016** *(R ≤ 25 % — direction favorable démontrée, niveau NON
+calculable sans valorisation datée)* · **C026** *(PEA ouvert et exécutable — VRAI très
+probable)* · **C053 et C055** *(prorogés une fois, dépendants de la confirmation
+d'exécution)*. **C049** ~31/10 · **C011** mars 2027.
