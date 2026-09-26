@@ -1,7 +1,7 @@
 {
   "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
-  "maj": "2026-09-25",
-  "dernier_brief": 27,
+  "maj": "2026-09-26",
+  "dernier_brief": 28,
   "vus": {
     "jobup": [
       "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -63,7 +63,13 @@
       "9eaa3315-3a59-4100-b967-3e63d7bd523e",
       "08b1b59c-0bed-4147-9192-ece6692fd5a7",
       "78588ba5-43d0-436d-a88c-06585cb10608",
-      "831e76b3-f5ff-413b-ad67-e28869045953"
+      "831e76b3-f5ff-413b-ad67-e28869045953",
+      "de1ca972-ed38-4917-b467-e816c2d02b22",
+      "eb3b43a2-ef19-4cf6-a11c-d0c0a181c19f",
+      "15431bfa-d780-48ba-91d6-3bd7222a6808",
+      "f67e7ec5-1032-478e-a207-4a188bd68bed",
+      "0e2dd78a-2133-4450-838c-8f4fc251245a",
+      "14e3da52-a249-48ec-aa3c-894053b772de"
     ],
     "ats_employeurs": [
       "https://recrutement.eben-hezer.ch/jobs/7602918-responsable-communication-et-recherche-de-fonds",
@@ -161,7 +167,11 @@
       "4468587078",
       "4367164364",
       "4453364835",
-      "4469683031"
+      "4469683031",
+      "4470312517",
+      "4470161095",
+      "4472061964",
+      "4471895200"
     ],
     "chuv": [
       "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html"
@@ -201,6 +211,9 @@
       "3d1597a7-4535-4f22-8554-9a4a5df242b9",
       "38187073-6976-4791-9bfd-c946fd67faf0",
       "85850faa-715d-4122-8ed2-82003a109779"
+    ],
+    "autres": [
+      "jobagent:3254744a77 (Akiden bright)"
     ]
   },
   "postees": [
@@ -1710,6 +1723,18 @@
         "Artefact Engagement Manager Strategy & Data/AI Transformation Lausanne (👀, LinkedIn 4367164364, 5-8 ans)",
         "SOPHiA GENETICS Senior Platform Designer Rolle (👀, LinkedIn 4453364835, Senior sans années, product UX)",
         "♻️ Nestlé Community Manager : lien officiel jobdetails.nestle.com/job/Lausanne-Community-Manager/1440625733/ (via Job-Room)"
+      ]
+    },
+    {
+      "brief": 28,
+      "date": "2026-09-26",
+      "offres": [
+        "EPFL Mediacom Coordinateur réseaux sociaux & comm digitale (👀, jobup de1ca972, CDI mais 40-50%)",
+        "Akiden Ventures/bright Chef de programme média & marketing Lausanne (👀, jobagent 3254744a77 non-GET-vérifiable, 5 ans min, CDI 100%)",
+        "Assura Analyste Digital Lausanne (👀, jobup 15431bfa, 3-5 ans, métier data)",
+        "Chavannes-près-Renens Chargé comm 60-80% (👀 bas, jobup eb3b43a2, 5 ans + allemand exigé + brevet RP, délai 16.10)",
+        "♻️ Assura Chargé comm 100% Pully republiée (e4e0da08, brief 21)",
+        "❌ notable CSD Engineers Spécialiste mkt&comm (LinkedIn 4470312517, bilingue FR/DE B2/C1 exigé)"
       ]
     }
   ]

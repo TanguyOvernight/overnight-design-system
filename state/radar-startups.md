@@ -18,6 +18,14 @@
   02.09) — vivier de candidatures spontanées ; moisson des noms + URLs carrières
   prévue à la passe mensuelle du lundi 07.09.
 
+## Signal 26.09 — Embodied AI (Lausanne) : lancement annoncé
+Startup robotique « Europe-wide » basée à Lausanne, lancée cette semaine avec un
+groupe d'investisseurs internationaux (startupticker, vu le 26.09) — « intelligent
+robots designed to operate alongside humans ». Montant non précisé dans l'accroche.
+EN FENÊTRE spontanée dès que la page carrières existe — vérifier le site à la
+passe hebdo de lundi (domaine à identifier, ne pas composer d'URL). Candidat 🚀
+mentionné au brief n°28.
+
 ## Signaux périmés ou hors fenêtre (contexte)
 - Startup aérospatiale lausannoise — seed ~40 M$ (Visionaries Club, Creandum) — mars 2026
   — hors fenêtre 1-3 mois ; nom exact non identifié en mode dégradé. À réexaminer si
