@@ -2268,3 +2268,45 @@ nombre défini.** *J'ai moyenné deux grandeurs qui ne mesuraient pas la même c
 **✅ Le dispositif qui a fonctionné : le TEST NOMMÉ.** *Annoncé la veille avec ses deux
 issues, tranché en une session, méthode morte le jour même comme promis.* **Coût : une
 question. Bénéfice : une impasse fermée au lieu d'être entretenue des semaines.**
+
+---
+
+## ㉛ UN JALON DATÉ DOIT ÊTRE ADOSSÉ À UN DÉCLENCHEUR PLANIFIÉ, SINON IL N'EXISTE PAS *(26/09/2026)*
+
+> **Un test nommé que rien ne convoque n'est pas un test : c'est une intention.**
+
+**Naissance :** j'allais écrire en Revue que ma latence de détection s'améliore —
+**6 → 5 → 2 → 2 → 1 jour** sur les cinq fautes de la semaine. **Puis le jalon CFT de
+C017 est ressorti à 57 JOURS.**
+
+| Faute | Test nommé ? | **Déclencheur planifié ?** | Latence |
+|---|---|---|---|
+| Butée Séché | ✅ | ✅ **routine dédiée** | **0 j** |
+| Méthode des seuils de réservation | ✅ | ✅ *(annoncée pour le lendemain)* | **1 j** |
+| Bouclage circulaire Nike | ✅ | ✅ *(consigne du screening quotidien)* | 2 j |
+| Comparateur Aubay | ❌ | ❌ | 6 j |
+| **Jalon CFT de C017** | ✅ **écrit dans l'appel** | 🔴 **NON — une phrase en prose** | 🔴 **57 j** |
+
+> 🔑 **Le discriminant n'est pas la rigueur : c'est la planification.** *Séché a été
+> tranché le jour même parce qu'une routine l'a convoqué. Le jalon CFT avait un seuil,
+> une date et une valeur d'arrivée — et rien pour le réveiller.*
+>
+> ☠️ **Et la courbe « 6 → 5 → 2 → 2 → 1 » était une auto-félicitation en préparation.**
+> *Elle ne mesurait pas mon progrès : elle mesurait lesquelles de mes fautes étaient
+> adossées à un dispositif.* **Une série qui s'améliore doit être interrogée sur ce
+> qu'elle EXCLUT avant d'être célébrée.**
+
+**Application immédiate, le jour même** : deux routines créées *(résolutions du 30/09
+avec audit des jalons non planifiés ; butée Aubay du 08/10)*.
+
+**Dette ouverte** : **tout jalon daté figurant dans un appel du registre sans déclencheur
+associé** doit en recevoir un. *Audit inscrit dans la routine du 30/09.*
+
+---
+
+## 📝 Note de tenue — 26/09 : le convertisseur n'était PAS en cause
+Une ligne de titre est sortie en italique au lieu de gras. **Diagnostic : la ligne source
+mélangeait un titre en capitales et de la prose en minuscules**, ce qui la faisait tomber
+sous les 80 % de majuscules exigés par `est_titre()`. **Le script a appliqué sa règle
+correctement ; c'est ma rédaction qui était incohérente.** *Corrigé à la source — et noté
+ici pour ne pas compter une 7ᵉ « correction du convertisseur » qui n'en est pas une.*

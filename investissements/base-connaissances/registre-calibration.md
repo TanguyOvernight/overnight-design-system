@@ -2640,3 +2640,83 @@ PAS celui-là)* · **C016** *(R ≤ 25 % — direction favorable démontrée, ni
 calculable sans valorisation datée)* · **C026** *(PEA ouvert et exécutable — VRAI très
 probable)* · **C053 et C055** *(prorogés une fois, dépendants de la confirmation
 d'exécution)*. **C049** ~31/10 · **C011** mars 2027.
+
+---
+
+# 🔴 26/09/2026 — REVUE : DEUX JALONS DE C017 ÉTAIENT PASSÉS. JE N'EN AVAIS VÉRIFIÉ AUCUN.
+
+**C017** *(27/07, P = **75 %**)* : *« La décote de Viel & Cie N'EST PAS une inefficience
+capturable : au 31/07/2027 elle reste ≥ 30 % ET VIL ne surperforme pas le World de plus
+de 5 pts. »* **Deux jalons de révision conditionnelle étaient écrits dans l'appel lui-même.**
+
+## ✅ JALON 1 — RÉALISÉ, et il déclenche la bascule
+> Texte de l'appel : *« S1 CFT fin août 2026 (**marge > 18 % → bascule 40 %**) »*
+
+**Compagnie Financière Tradition, S1 2026** *(communiqué du **31/07/2026**)* :
+**EBITDA 120,1 MCHF (+4,8 %), marge améliorée de 0,5 point à 18,6 %**, revenus
+646,2 MCHF (+2,2 %, +10,4 % à change constant). Résultat net pdg **79,1 MCHF (+12,6 %)**.
+
+```
+18,6 %  >  18 %     →  CONDITION REMPLIE
+```
+### ⚖️ **C017 : P révisé de 75 % à 40 %.**
+**Et ce n'est PAS une violation de l'interdiction de réviser un appel enregistré.**
+> Le 13/09 j'ai refusé de réviser C046 malgré 51 points d'écart, au motif qu'*« on ne
+> révise pas le P d'un appel enregistré »*. **La différence est nette : ici la révision
+> est INSCRITE DANS LES TERMES DE L'APPEL, avec son seuil et sa valeur d'arrivée,
+> rédigés le 27/07 avant tout fait.**
+>
+> 🔑 **Une révision conditionnelle pré-enregistrée n'est pas une révision : c'est
+> l'exécution du contrat.** *La refuser serait aussi fautif que d'en faire une qui ne
+> soit pas prévue.*
+
+## ⬜ JALON 2 — LE BLANC, et j'ai failli tomber une 3ᵉ fois sur le même piège
+> Texte de l'appel : *« semestriel Viel ~24/09 (**autocontrôle > 9 % → bascule 45 %**) »*
+
+**Viel & Cie a publié** : résultats S1 le **04/09/2026**, rapport financier semestriel
+déposé le **18/09/2026**. RNPG **77,3 M€ (+11,8 %)**, résultat d'exploitation
+**133,8 M€ (+7,2 %)**, CA **696 M€ (+6,5 %)**.
+**Actions propres au 30/06/2026 : prix de revient 24,0 M€, valeur boursière ~72,0 M€.**
+Capitaux propres consolidés **788,8 M€**, dont **613,7 M€ part du Groupe**.
+
+### ☠️ Le calcul que je REFUSE de faire
+```
+72,0 M€ ÷ 613,7 M€  =  11,7 %       →  > 9 %,  la bascule serait déclenchée
+```
+> 🔴 **C'est l'autocontrôle en part des CAPITAUX PROPRES. Le jalon porte sur l'autocontrôle
+> en part du CAPITAL.** **Dénominateurs différents — ce n'est pas la même grandeur.**
+>
+> ☠️ **C'est la TROISIÈME faute de dénominateur de la semaine**, après le semestre
+> opposé à l'exercice *(C052 et le faux avertissement Aubay)*. **Même erreur, troisième
+> costume.** *Ici elle n'était même pas flatteuse — juste fausse.*
+
+**Il me manque le nombre de titres ou un pourcentage d'autocontrôle publié. Je n'ai
+qu'une valeur en euros.** → ⬜ **JALON 2 : NON DÉTERMINÉ. Bascule 45 % NON appliquée.**
+*À rouvrir si le rapport semestriel donne le pourcentage — Tanguy peut aussi le lire.*
+
+## 🚨 LA VRAIE LEÇON DE CETTE REVUE — ET ELLE CASSE MON AUTO-FÉLICITATION
+
+**J'allais écrire que ma latence de détection s'améliore.** Les cinq fautes de la semaine
+ont été trouvées en **6 → 5 → 2 → 2 → 1 jours**. Belle courbe.
+
+**Le jalon CFT a été manqué pendant 57 JOURS.**
+
+| Faute | Avait un test nommé ? | Adossée à un déclencheur planifié ? | Latence |
+|---|---|---|---|
+| Butée Séché | ✅ | ✅ **routine dédiée** | **0 jour** |
+| Méthode des seuils | ✅ | ✅ *(annoncée pour le lendemain)* | **1 jour** |
+| Bouclage circulaire Nike | ✅ *(consigne d'agent)* | ✅ *(screening quotidien)* | 2 jours |
+| Comparateur Aubay | ❌ | ❌ | 6 jours |
+| **Jalon CFT de C017** | ✅ **écrit dans l'appel** | 🔴 **NON — une phrase en prose** | **57 jours** |
+
+> 🔑 **㉛ — UN JALON DATÉ DOIT ÊTRE ADOSSÉ À UN DÉCLENCHEUR PLANIFIÉ, SINON IL N'EXISTE PAS.**
+>
+> **La différence entre Séché (tranché le jour même) et le jalon CFT (manqué 57 jours)
+> n'est PAS une différence de rigueur : Séché avait une routine, C017 avait une phrase.**
+> *Un test nommé que rien ne convoque n'est pas un test — c'est une intention.*
+
+## 📊 État du registre au 26/09
+**17 résolus · Brier moyen 0,2922 · BSS −0,169.** *Test de discrimination : 3 sur 20.*
+**Ouverts** : C011 *(mars 2027)* · **C013, C016, C026, C053, C055 — 30/09** ·
+C014 *(30/06/2027)* · C015 *(31/12/2027)* · **C017 — P révisé à 40 %** *(31/07/2027)* ·
+C049 *(~31/10)* · C054 *(31/12/2031)*.
