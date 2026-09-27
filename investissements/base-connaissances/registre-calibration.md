@@ -2720,3 +2720,30 @@ ont été trouvées en **6 → 5 → 2 → 2 → 1 jours**. Belle courbe.
 **Ouverts** : C011 *(mars 2027)* · **C013, C016, C026, C053, C055 — 30/09** ·
 C014 *(30/06/2027)* · C015 *(31/12/2027)* · **C017 — P révisé à 40 %** *(31/07/2027)* ·
 C049 *(~31/10)* · C054 *(31/12/2031)*.
+
+---
+
+## Appels ouverts le 27/09/2026 — C056, C057, C058 *(Prépa)*
+
+**Choix délibéré : des appels COURTS.** *J'ai 17 résolutions et le test de discrimination
+en demande 20. Enregistrer encore des appels à 2027 ou 2031 ne le fait pas avancer d'un
+pas — il me faut des propositions qui SE RÉSOLVENT.*
+
+| Réf | Date | Proposition | Brut | **P enregistré** | Résolution |
+|---|---|---|---|---|---|
+| **C056** | 27/09 | **L'éligibilité PEA des ETF synthétiques est MAINTENUE au 31/12/2026** *(aucun amendement restrictif adopté)* | 97 % → rétraction 87,6 % | **78 %** *(plafond de charte)* | texte définitif du PLF 2027 · **31/12/2026** |
+| **C057** | 27/09 | **STM touche 42,00 € ou moins en CLÔTURE d'ici le 31/10/2026** | 30 % → rétraction | **34 %** | clôture Euronext Paris datée · **31/10/2026** |
+| **C058** | 27/09 | **Tanguy confirme l'exécution de ses ordres WPEA d'ici le 30/09/2026** | 45 % → rétraction | **46 %** | message de sa part · **30/09/2026** |
+
+### Ce que chaque appel mesure réellement
+- **C056** — *un risque réglementaire sur la position PRINCIPALE.* **Le plafond de charte me force à enregistrer 78 % là où mon raisonnement dit 88 %** : le texte déposé au Parlement exclut l'amendement et le ministre s'est engagé le 26/08. *Même tension qu'avec C050 le 13/09 : le plafond me protège de ma surconfiance et, ici, m'empêche d'enregistrer une conviction bien fondée.* **Je l'applique quand même — une charte qui ne mord que quand ça m'arrange n'est pas une charte.**
+- **C057** — *le seul seuil du classement qui se rapproche.* ⚠️ **Et l'appel ne distingue PAS la cause** : mes scénarios donnent **22 %** pour un franchissement par dérating de MARCHÉ contre **8 %** pour un fait PROPRE à STM. *Donc si C057 se résout VRAI, il y a ~73 % de chances que ce soit pour la mauvaise raison.* **C'est la faiblesse nommée par la règle ㉜ ce jour.**
+- **C058** — *une prédiction sur l'aboutissement de MES demandes.* **Ce n'est pas un jugement sur Tanguy : quatre demandes par brief non satisfaites sont un défaut de MA conception** *(règle ㉝)*. **L'appel mesure donc si la correction que j'applique aujourd'hui — une seule demande — fonctionne.**
+
+### ✅ ㉛ APPLIQUÉE IMMÉDIATEMENT
+**Chaque appel reçoit son déclencheur planifié le jour de son enregistrement.**
+- C058 → couvert par la routine du **30/09** *(déjà créée le 26/09)*
+- C057 → routine du **31/10** créée ce jour
+- C056 → routine du **31/12** créée ce jour
+> *Écrire ㉛ hier et laisser trois jalons en prose aujourd'hui aurait été la démonstration
+> parfaite de son inutilité.*

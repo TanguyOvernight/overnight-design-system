@@ -2310,3 +2310,46 @@ mélangeait un titre en capitales et de la prose en minuscules**, ce qui la fais
 sous les 80 % de majuscules exigés par `est_titre()`. **Le script a appliqué sa règle
 correctement ; c'est ma rédaction qui était incohérente.** *Corrigé à la source — et noté
 ici pour ne pas compter une 7ᵉ « correction du convertisseur » qui n'en est pas une.*
+
+---
+
+## ㉜ UN SEUIL DE PRIX EXIGE UNE CONDITION COMPAGNE QUI NOMME LA CAUSE *(27/09/2026)*
+
+> **Un seuil de prix ne sait pas POURQUOI le prix est arrivé là.**
+> - Touché par une **surréaction idiosyncratique** → c'est l'occasion que le seuil visait.
+> - Touché par un **dérating macro correct** → l'actif est **justement revalorisé**.
+> **Sans condition compagne, le seuil ne mesure pas une opportunité : il mesure une baisse.**
+
+**Naissance :** scénarios du 27/09 sur STM *(seuil ≤ 42,00 €, départ ~44,8-46,1 €)* dans
+un régime de hausse de taux *(Fed 3,75-4,00 %, une autre hausse projetée, 10 ans US à
+5,004 %, Brent 106 $)* :
+| Issue | P |
+|---|---|
+| reste au-dessus | 70 % |
+| franchit par **dérating de MARCHÉ** | **22 %** |
+| franchit sur un fait **PROPRE à STM** | **8 %** |
+
+> ⚠️ **Conditionnellement à un franchissement, ~73 % de chances que ce soit pour la
+> mauvaise raison.** *Le seuil se déclencherait donc majoritairement à contretemps.*
+
+**Correctif** : adjoindre une **condition de performance RELATIVE** au secteur sur la même
+période, pour séparer l'idiosyncratique du marché.
+⚠️ **Non chiffré à dessein** — *poser un seuil de sous-performance au hasard pour compléter
+la règle serait de la granularité simulée.* **À construire sur des données, pas sur une
+envie de symétrie.** *Premier test réel : la résolution de C057 au 31/10.*
+
+## ㉝ UNE SEULE DEMANDE PAR BRIEF, LA PLUS RENTABLE *(27/09/2026)*
+
+**Constat :** je terminais chaque brief par **quatre demandes** *(exécution · valorisation ·
+DIC de PAEEM · clôture Aubay)*. **Aucune n'a abouti.**
+
+> 🔑 **Un brief qui finit par quatre demandes finit par aucune.** *Quatre demandes, c'est
+> une liste de tâches — et personne n'exécute une liste de tâches depuis une newsletter.*
+>
+> **Ce n'est pas de la négligence de sa part : c'est un défaut de conception de la mienne.**
+> *J'avais traité l'absence de réponse comme une donnée sur lui, alors qu'elle était une
+> donnée sur mon message.*
+
+**Règle** : **une seule demande par brief**, nommée, faisable en dix secondes, et choisie
+sur ce qu'elle débloque. **Les autres restent au journal, pas dans le message.**
+*Mesuré par C058 : l'appel ne prédit pas Tanguy, il teste ce correctif.*
