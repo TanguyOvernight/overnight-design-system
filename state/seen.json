@@ -1,7 +1,7 @@
 {
   "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
-  "maj": "2026-09-26",
-  "dernier_brief": 28,
+  "maj": "2026-09-27",
+  "dernier_brief": 29,
   "vus": {
     "jobup": [
       "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -69,7 +69,19 @@
       "15431bfa-d780-48ba-91d6-3bd7222a6808",
       "f67e7ec5-1032-478e-a207-4a188bd68bed",
       "0e2dd78a-2133-4450-838c-8f4fc251245a",
-      "14e3da52-a249-48ec-aa3c-894053b772de"
+      "14e3da52-a249-48ec-aa3c-894053b772de",
+      "e2359637-df88-4f27-8e8b-fc05ca80e5d0",
+      "70e85aa5-fb85-47f1-b9f5-2fcac901f390",
+      "b5f5e13b-d870-4df9-ae1d-fe7fd2ad8f7c",
+      "e7e21996-870a-46a6-a47a-b8722592ea9c",
+      "74c8d265-1c03-4fbd-a15e-6f5c5d78f685",
+      "073d6f23-91cd-42ec-bbde-6022d7c0a064",
+      "b22b00e9-affe-473d-940a-d2652dcd8c4a",
+      "63af272f-b20e-428f-8c4a-e3a7f5b8fe30",
+      "286180fd-ea3e-47b1-aaca-3c240413d8cb",
+      "2911b3e3-c29b-4eaa-8b59-41200aad0e96",
+      "d30af250-7395-45cf-ab38-a514c6c088b7",
+      "a0a2acff-dd81-44a4-b952-8e58ef8a4683"
     ],
     "ats_employeurs": [
       "https://recrutement.eben-hezer.ch/jobs/7602918-responsable-communication-et-recherche-de-fonds",
@@ -171,7 +183,11 @@
       "4470312517",
       "4470161095",
       "4472061964",
-      "4471895200"
+      "4471895200",
+      "4470727726",
+      "4471879022",
+      "4472420968",
+      "4444455310"
     ],
     "chuv": [
       "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html"
@@ -1735,6 +1751,14 @@
         "Chavannes-près-Renens Chargé comm 60-80% (👀 bas, jobup eb3b43a2, 5 ans + allemand exigé + brevet RP, délai 16.10)",
         "♻️ Assura Chargé comm 100% Pully republiée (e4e0da08, brief 21)",
         "❌ notable CSD Engineers Spécialiste mkt&comm (LinkedIn 4470312517, bilingue FR/DE B2/C1 exigé)"
+      ]
+    },
+    {
+      "brief": 29,
+      "date": "2026-09-27",
+      "offres": [
+        "UNIL-HEC Exec Ed Coordinateur·trice de programmes 80-100% (👀, jobup e2359637 + variante 70e85aa5, CDD 1an renouvelable, 3 ans min, anglais C1 — déniché par le second regard)",
+        "❌ notable Orion Teamleiter Vertriebssupport & Marketing (jobup b5f5e13b — fiche FR = traduction auto, poste Bâle/DE, tué par le second regard)"
       ]
     }
   ]

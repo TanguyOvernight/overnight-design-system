@@ -26,6 +26,12 @@ EN FENÊTRE spontanée dès que la page carrières existe — vérifier le site 
 passe hebdo de lundi (domaine à identifier, ne pas composer d'URL). Candidat 🚀
 mentionné au brief n°28.
 
+## Signal 27.09 — Harmattan AI accélère (3 postes simultanés)
+Executive Assistant + ML Engineer (Detect & Track Distillation) + Data Engineer
+publiés en 48h — 6e/7e/8e postes Harmattan du mois. Toujours AUCUN rôle
+marketing/contenu : la fenêtre « premier poste marketing GenAI » se rapproche.
+Artefact ajoute aussi un Senior AI Engineer / Technical Consultant (Lausanne).
+
 ## Signaux périmés ou hors fenêtre (contexte)
 - Startup aérospatiale lausannoise — seed ~40 M$ (Visionaries Club, Creandum) — mars 2026
   — hors fenêtre 1-3 mois ; nom exact non identifié en mode dégradé. À réexaminer si
