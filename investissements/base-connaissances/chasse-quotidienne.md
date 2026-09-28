@@ -2353,3 +2353,86 @@ DIC de PAEEM · clôture Aubay)*. **Aucune n'a abouti.**
 **Règle** : **une seule demande par brief**, nommée, faisable en dix secondes, et choisie
 sur ce qu'elle débloque. **Les autres restent au journal, pas dans le message.**
 *Mesuré par C058 : l'appel ne prédit pas Tanguy, il teste ce correctif.*
+
+---
+
+## ㉜-bis PRÉFÉRER LA CONDITION GROSSIÈRE MESURABLE À LA CONDITION ÉLÉGANTE INAPPLICABLE *(28/09/2026)*
+
+Pour rendre ㉜ opérationnelle, la forme académique serait
+`(clôture ≤ seuil) ET (résidu relatif ≤ −k × σ_idio)`. **Elle exige un bêta et une
+volatilité résiduelle, donc une SÉRIE — que mon canal ne sert pas.**
+
+> ☠️ **Et j'avais commencé à inventer les paramètres** *(« σ quotidien ~1,5-2 %, donc ~9
+> points sur un mois »)*. **Granularité simulée en habit statistique : la plus difficile à
+> détecter, parce que les symboles grecs donnent à une invention l'apparence d'une
+> dérivation.**
+
+**Retenu — condition v1, mesurable dès aujourd'hui :**
+```
+(clôture ≤ seuil)  ET  (le secteur baisse de MOINS DE LA MOITIÉ de la baisse du titre)
+```
+⚠️ **« La moitié » est une CONVENTION assumée, pas une mesure.** *Révisable dès qu'une série
+permettra un bêta.* **Mais mesurable, et c'est ce qui la rend supérieure.**
+
+> **Une condition dont on ne peut pas obtenir les paramètres n'est pas plus rigoureuse
+> qu'une convention assumée : elle est INAPPLICABLE, donc pire.** *Le danger est asymétrique
+> — une convention se voit et s'amende, un σ inventé se défend.*
+> 📌 **Cette règle contre ma pente propre : je dérive vers la fausse précision, pas vers la
+> simplification.**
+
+## ㉞ LA DONNÉE QUI SERT À SATISFAIRE UN CONTRÔLE SE DATE AVEC PLUS DE SÉVÉRITÉ QUE LA DONNÉE CONTRÔLÉE *(28/09/2026)*
+
+> **Parce que le contrôle, lui, ne sera contrôlé par rien.**
+
+**Naissance : ㉜ avait DEUX JOURS et un piège était déjà taillé pour elle.** La requête
+sectorielle a ramené *« tech européenne −3,7 %, STM −8,5 %, Infineon −6,3 %, ASML −5,7 % »*
+**avec le bon contexte de taux** — **séance du 23 JUIN 2026, trois mois d'âge.**
+
+| | Archive ordinaire | **Archive CALIBRÉE** |
+|---|---|---|
+| Contamine | le **signal** | le **CONTRÔLE** du signal |
+| Attrapée par | le contrôle | 🔴 **rien** |
+
+> 🔑 **Une règle qui exige un contrôle CRÉE UNE DEMANDE pour ce contrôle, et le canal la
+> satisfait avec ce qu'il a.** **Repris sans vérification, ce chiffre n'aurait pas produit un
+> faux signal : il aurait produit une AUTORISATION.** *Le poison entre par la serrure, pas
+> par la porte.*
+>
+> ⚠️ **Corollaire inconfortable : chaque nouveau contrôle ouvre une nouvelle surface
+> d'attaque. AJOUTER UNE RÈGLE N'EST JAMAIS GRATUIT.**
+
+## ㉟ UNE JAMBE PROVISOIRE SUFFIT POUR CONCLURE À L'INACTION, PAS À L'ACHAT *(28/09/2026)*
+
+> **Le niveau de preuve exigé doit suivre l'IRRÉVERSIBILITÉ de ce qu'il autorise.**
+
+**Naissance :** la jambe sectorielle Infineon *(−5,69 % du 22 au 25/09)* a **le même éditeur
+des deux côtés** — bouclage auto-référentiel au sens de ㉖ — et cote sur **Xetra**, pas
+Euronext. **Elle conclut pourtant « pas de signal sur STM », et ne rien faire sur une preuve
+faible ne coûte rien.**
+
+> ☠️ **Argument faible explicitement REFUSÉ** : *« cette jambe va contre moi, donc elle est
+> probablement juste. »* **Une donnée n'est pas plus vraie parce qu'elle me dérange.**
+> **Ce qui la rend utilisable est l'ASYMÉTRIE DU COÛT, pas sa direction.**
+
+## 📌 SIGNATURE ÉTABLIE — granularité sélective, 3 occurrences
+| Émetteur | Agrégat chiffré ET comparé | Composante nommée, JAMAIS chiffrée |
+|---|---|---|
+| EVS | Big Event Rental 14,8 M€ | le Moyen-Orient |
+| X-FAB | — | l'ajustement Erfurt |
+| Sidetrade | 20,7 % à périmètre constant contre 15,7 % | **ezyCollect — les 4,5 points d'écart, donc toute la preuve** |
+> **Trois émetteurs, trois secteurs → ce n'est plus une observation, c'est un TEST :**
+> *« quelle composante est nommée sans être chiffrée, et est-ce celle qui porte la preuve ? »*
+
+## 📌 CHANTIER OUVERT — réexaminer le mètre « WPEA à 5 %/an net »
+**OAT 10 ans : 4,47 % au 22/09** *(spread OAT-Bund 102 pb)*. **Le mètre de tout le classement
+n'a jamais été réexaminé depuis le changement de régime de taux.** *Effet à double sens :
+sans-risque plus attrayant contre multiples d'entrée plus bas.* **Données manquantes : série
+d'OAT, multiple d'entrée du MSCI World. Chantier OUVERT, pas résolu — aucun chiffre avancé.**
+
+## 📌 NOTE DE TENUE — le « retard d'une séance » était une ERREUR D'ADRESSAGE
+Trois jours à écrire *« mon canal a une séance de retard sur les indices US »*. **Il suffisait
+d'interroger la séance précédente PAR SA DATE** : les deux trous *(S&P et Nasdaq au 24/09)*
+ont été comblés en une session, par un bouclage inter-éditeurs qui pouvait échouer.
+> **J'avais diagnostiqué une propriété du canal là où il y avait un défaut de ma requête.**
+> *Même famille que la « dispersion du CAC » du 22/09 : accuser la source d'un défaut qui est
+> dans ma façon de l'interroger.* **Deuxième occurrence — à surveiller comme un biais propre.**
