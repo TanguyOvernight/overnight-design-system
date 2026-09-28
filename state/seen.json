@@ -1,7 +1,7 @@
 {
   "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
-  "maj": "2026-09-27",
-  "dernier_brief": 29,
+  "maj": "2026-09-28",
+  "dernier_brief": 30,
   "vus": {
     "jobup": [
       "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -81,7 +81,23 @@
       "286180fd-ea3e-47b1-aaca-3c240413d8cb",
       "2911b3e3-c29b-4eaa-8b59-41200aad0e96",
       "d30af250-7395-45cf-ab38-a514c6c088b7",
-      "a0a2acff-dd81-44a4-b952-8e58ef8a4683"
+      "a0a2acff-dd81-44a4-b952-8e58ef8a4683",
+      "f99b1ce6-0756-4c53-9df1-436909e60e5e",
+      "cdaf4873-c09c-4f0e-be47-dbececf560da",
+      "884d8b97-e6be-470e-b4e9-9e2d5334f9eb",
+      "c9a0e3a6-c796-4cb2-8dc2-4f8bee6c65e5",
+      "1dac8448-4b05-42bb-bad0-0a4ff3a9f426",
+      "a34e57be-9926-46eb-9ce2-ccd22309b2c4",
+      "f4d1a858-3331-433f-bfe9-e149149c7bf5",
+      "0ef78545-f158-4801-85ba-43220e8e0a21",
+      "b703b409-4dbe-45c2-acfd-3cb1f385fa73",
+      "98ad8fee-e23e-43c1-ac34-4c5454d8edf9",
+      "527f4b56-0940-4f85-934a-b83773730954",
+      "6e84a060-15f2-48ca-a1c1-5a40e6294ab0",
+      "882006d4-2f79-4314-9e7a-2b27f0be4c99",
+      "ae11e6d2-1f83-42b4-af08-7eb337522220",
+      "131481fc-e861-4cb5-9410-93b8ecde3580",
+      "3376a53a-31c1-4e0b-82bc-a11ea2caf856"
     ],
     "ats_employeurs": [
       "https://recrutement.eben-hezer.ch/jobs/7602918-responsable-communication-et-recherche-de-fonds",
@@ -187,7 +203,8 @@
       "4470727726",
       "4471879022",
       "4472420968",
-      "4444455310"
+      "4444455310",
+      "4470599801"
     ],
     "chuv": [
       "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html"
@@ -226,10 +243,14 @@
     "lever": [
       "3d1597a7-4535-4f22-8554-9a4a5df242b9",
       "38187073-6976-4791-9bfd-c946fd67faf0",
-      "85850faa-715d-4122-8ed2-82003a109779"
+      "85850faa-715d-4122-8ed2-82003a109779",
+      "swissborg:51459e7f",
+      "sonarsource:3d1597a7 (re-vu 28.09)"
     ],
     "autres": [
-      "jobagent:3254744a77 (Akiden bright)"
+      "jobagent:3254744a77 (Akiden bright)",
+      "wttj:propulse-lab copywriter freelance + CDI",
+      "emplois-vaud:3253533672 (Benezet)"
     ]
   },
   "postees": [
@@ -1759,6 +1780,16 @@
       "offres": [
         "UNIL-HEC Exec Ed Coordinateur·trice de programmes 80-100% (👀, jobup e2359637 + variante 70e85aa5, CDD 1an renouvelable, 3 ans min, anglais C1 — déniché par le second regard)",
         "❌ notable Orion Teamleiter Vertriebssupport & Marketing (jobup b5f5e13b — fiche FR = traduction auto, poste Bâle/DE, tué par le second regard)"
+      ]
+    },
+    {
+      "brief": 30,
+      "date": "2026-09-28",
+      "offres": [
+        "Propulse Lab Copywriter-Rédacteur Investissement & Finance CDI Lausanne (✅, WTTJ copywriter-redacteur-en-investissement-et-finance_lausanne, 2-4 ans, ⚠️ début affiché 02.2024 evergreen — repêchage second regard depuis la variante freelance)",
+        "SABRINA BENEZET SA Chargé de communication/CM Lausanne (👀 ⚠️ non vérifiée, agrégateurs bloqués, emplois-vaud 3253533672, min 3 ans, agence de détectives privés)",
+        "♻️ SonarSource Marketing AI Engineer Genève toujours en ligne (lever 3d1597a7 confirmé à l'API officielle — la variante dd7a33e9 = Austin, erreur évitée)",
+        "❌ notable SwissBorg/Propr.xyz Affiliate Manager remote (lever 51459e7f, affiliation crypto)"
       ]
     }
   ]

@@ -32,6 +32,21 @@ publiés en 48h — 6e/7e/8e postes Harmattan du mois. Toujours AUCUN rôle
 marketing/contenu : la fenêtre « premier poste marketing GenAI » se rapproche.
 Artefact ajoute aussi un Senior AI Engineer / Technical Consultant (Lausanne).
 
+## Hebdo 28.09 — verdicts
+- **Embodied AI : site officiel = embodiedai.ch** (verbatim article startupticker
+  du 17.09 ; investisseurs Techshop Capital, Look AI Ventures, Kickfund, Plug and
+  Play SF, Excellis, Vento ; montant non divulgué). Domaine HORS ALLOWLIST (000) —
+  demande d'ajout formulée au brief n°30 + 🔎 humain proposé. Fenêtre spontanée OUVERTE.
+- Proton : vague specialist/manager 2-5 ans PAS ENCORE là (board 62 postes, que des
+  Head of côté Genève : Product Marketing, Growth, Design). Re-check lundi 05.10.
+- Neural Concept : expansion Inde (startupticker) — croissance confirmée, spontanée
+  avant CMO toujours pertinente. Site neuralconcept.com hors allowlist.
+- Nexthink : board Greenhouse « nexthink » = 404 (API déplacée) — 🔎 retrouver le
+  nouveau board. TAS : page jobs disparue (404 interne).
+- SonarSource (GE) : Marketing AI Engineer TOUJOURS ouvert (lever 3d1597a7, API ✔
+  28.09) ; ABM Manager GE aussi. Le descriptif SonarSource cite « Claude Code ».
+- Levées non-vaudoises du fil (non retenues) : ETFbook 13M, Ferm Labs 3M, Piomic 25M USD, Aseptuva 2.4M seed.
+
 ## Signaux périmés ou hors fenêtre (contexte)
 - Startup aérospatiale lausannoise — seed ~40 M$ (Visionaries Club, Creandum) — mars 2026
   — hors fenêtre 1-3 mois ; nom exact non identifié en mode dégradé. À réexaminer si
