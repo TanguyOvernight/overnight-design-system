@@ -2436,3 +2436,64 @@ ont été comblés en une session, par un bouclage inter-éditeurs qui pouvait �
 > **J'avais diagnostiqué une propriété du canal là où il y avait un défaut de ma requête.**
 > *Même famille que la « dispersion du CAC » du 22/09 : accuser la source d'un défaut qui est
 > dans ma façon de l'interroger.* **Deuxième occurrence — à surveiller comme un biais propre.**
+
+---
+
+## ㉞-bis LE PIÈGE DE L'ANNIVERSAIRE — contrôler L'ANNÉE dans l'URL *(30/09/2026)*
+
+Servi : *« **In September 2026**, Fugro said the business faces a EUR 100 million revenue hit
+and 300 job cuts »*. **Date réelle : 22 SEPTEMBRE 2025**, lisible dans l'URL
+`nltimes.nl/2025/09/22/…`. Objet réel : retrait de la guidance **2025**.
+
+> 🔑 **Les archives précédentes étaient plausibles par leur CONTENU. Celle-ci l'est par sa DATE
+> DE CALENDRIER** — un fait du 22 septembre re-servi un 30 septembre tombe pile dans une fenêtre
+> de dix jours.
+>
+> ☠️ **Un avertissement sur résultats a un ANNIVERSAIRE, et cet anniversaire fabrique une fausse
+> fraîcheur sans rien falsifier. C'est le piège le plus économique qui existe : aucune
+> falsification, juste une omission de millésime.**
+
+**Contrôle : lire l'ANNÉE dans l'URL, pas seulement le jour et le mois.**
+📌 **Troisième jour consécutif de contamination dans le créneau du fait ou du contrôle, par un
+mécanisme DIFFÉRENT chaque fois.** *㉞ ne décrit pas un piège : elle décrit une famille.*
+
+## ㉞-ter ㉞ VAUT POUR MES PROPRES PRÉMISSES *(30/09/2026)*
+
+**J'ai cadré la chasse industrie-énergie sur *« Brent 106,39 $, +6 % en une semaine »*.**
+| Défaut | Constat |
+|---|---|
+| **Datation** | une **cotation**, pas un settlement ICE, vieille de **6 séances** |
+| **Direction** | 🔴 **le Brent BAISSAIT** : `106,39 (24/09) → 105,31 (28/09) → 102,59 (29/09)` |
+
+> **J'ai injecté dans le brief exactement le type de donnée de contrôle faiblement datée que ma
+> propre règle dit de scruter le plus.** *Le chasseur l'a refusée sur la FORME — et son refus a
+> intercepté une erreur de FOND qu'il ne pouvait pas connaître.*
+>
+> 📌 **Le créneau du contrôle inclut ce que J'Y METS. ㉞ ne s'applique pas qu'au canal.**
+
+## 📌 TAXONOMIE CORRIGÉE — mono-jambe / multi-jambes, et non producteur / transformateur
+**Fugro voit son pétrole & gaz croître pendant que son éolien offshore s'effondre** *(−24 % au
+S1 2026 après −45 % en 2025, carnet −47 %)*. **Le pétrole cher aide une jambe et ne compense pas
+l'autre.**
+> **« Pétrole cher = bon pour le parapétrolier » ne tient pas sur une société à double jambe.**
+> **Le tri pertinent est MONO-JAMBE / MULTI-JAMBES.** *Adopté — meilleure que la mienne, et issue
+> d'une observation plutôt que d'une envie de symétrie.*
+
+## 🔴 DETTE DE MÉTHODE — T1 EST INEXÉCUTABLE SUR AMSTERDAM ET BRUXELLES
+**Le 30/09, la seule source servant des cotations datées sur ces deux places était
+`ad-hoc-news.de`** — *disqualifiée sur la forme.* ➡️ **Aucun kill-test T1 exécutable.**
+⚠️ **Portée bornée : observation d'une session sur des valeurs industrielles.** *Le canal sait
+servir ASML et Philips ; il échoue sur les mid/small caps partout, pire sur Amsterdam-Bruxelles.*
+**À tester, pas à décréter.**
+> 🎯 **ASYMÉTRIE À NOMMER : mes places sont sûres au sens TARIFAIRE, pas au sens INFORMATIONNEL.**
+> *J'ai bâti la contrainte d'achetabilité sur le coût d'exécution sans vérifier que je pouvais
+> PRICER ce que j'y autorisais.* **Priorité : réparer l'instrument — il ne bloque pas une piste,
+> il bloque toutes les chasses futures sur deux places.**
+
+## ⚠️ LE SPREAD OAT-BUND MENACE UN TERRAIN ENTIER
+`OAT 10 ans : 4,47 % (22/09) → 4,63 % (25/09) → 4,74 % (29/09)` · **spread 102 → 111,2 pb**.
+> **L'élargissement du spread souverain est un vent de face sur TOUTES les actions françaises —
+> or le terrain du jeudi, ce sont les small caps françaises.** **Chaque seuil de prix posé là se
+> déclenchera pour une raison MACRO.**
+> 🔑 **C'est le piège de ㉜ appliqué à un TERRAIN ENTIER, pas à une valeur.** *La condition
+> compagne de performance relative n'est nulle part plus nécessaire.*
