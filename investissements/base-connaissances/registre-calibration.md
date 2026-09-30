@@ -2747,3 +2747,123 @@ pas — il me faut des propositions qui SE RÉSOLVENT.*
 - C056 → routine du **31/12** créée ce jour
 > *Écrire ㉛ hier et laisser trois jalons en prose aujourd'hui aurait été la démonstration
 > parfaite de son inutilité.*
+
+---
+
+# 📅 30/09/2026 — BUTÉE : CINQ APPELS RÉSOLUS *(1 scoré, 4 non observables)*
+
+## ✅ C026 — **VRAI**, et il ne dépendait PAS de la confirmation d'exécution
+**Proposition** *(30/07, P = **75 %**, brute 78 % ramenée par le plafond de charte)* :
+*« Le PEA est **ouvert ET exécutable** (un ordre passable) »*.
+
+**Preuve au dossier** : le PEA a été ouvert, 700 € virés, et **Tanguy a déclaré le 21/09 avoir
+passé un ordre de 500 € sur le WPEA** *(« j'attends la transmission »)*, suivi d'un second de
+42 parts. **Un ordre accepté par le courtier EST la preuve qu'un ordre est passable.**
+
+> 🔑 **Correction de mon propre déclencheur** : je l'avais rédigé le 26/09 avec la mention
+> *« sous réserve de la confirmation d'exécution »*. **C'était trop prudent et hors sujet** :
+> la proposition dit *« exécutable (un ordre passable) »*, **pas « exécuté »**. *Ce sont deux
+> propositions différentes — C053 et C055 portent sur l'exécution, C026 sur la capacité.*
+>
+> ⚠️ **Et cette distinction joue EN MA FAVEUR, donc je la contrôle** : le doute était réel à
+> l'écriture — **le 18/09 l'écran n'affichait que 100 € de couverture**, un ordre n'était donc
+> pas passable. *Le 75 % était justifié, et la résolution VRAI l'est aussi.*
+
+```
+C026 · P = 75 % · issue VRAIE · Brier = (0,75 − 1)² = 0,0625
+```
+
+## ⏸️ C013 — **VOID**, et j'ai failli le résoudre FAUX à tort
+**Proposition** *(27/07, P = 62 %)* : *« L'arrêté final boues est publié d'ici le 30/09/2026
+**avec application au 01/01/2027 maintenue** »*.
+
+**Ce que le canal sert** *(règle des VERBES appliquée)* :
+| Énoncé servi | Verbe | Statut |
+|---|---|---|
+| *« un arrêté ministériel **devrait être** applicable à compter du 1er janvier 2027 »* | conditionnel | **anticipation** |
+| *« à l'été 2026, des arrêtés ministériels **viendront** poser un cadre pérenne »* | futur | **anticipation** |
+| *« **en attente** d'une publication formelle au Journal officiel en septembre 2026, une circulaire du 27/04/2026 a été publiée »* | — | ⚠️ **voir ci-dessous** |
+
+**Les seuils qui circulent** *(40 µg/kg pour 6 PFAS, 400 µg/kg pour 22 PFAS → incinération ou
+enfouissement)* **viennent de la CIRCULAIRE du 27/04/2026, pas d'un arrêté.**
+
+### 🔴 J'AI FAILLI RÉSOUDRE **FAUX** SUR UNE PHRASE DONT JE N'AVAIS PAS DATÉ LA SOURCE
+J'étais en train d'écrire que *« en attente d'une publication formelle »* constituait une
+**preuve positive de non-publication**, donc FAUX plutôt que VOID.
+
+> ☠️ **Mais cette phrase n'est pas datée.** *Sa structure — « en attente d'une publication en
+> septembre, une circulaire a été publiée » — est celle d'un commentaire écrit AUTOUR de la
+> circulaire, donc vers avril-mai 2026.* **Elle dit ce qui était ATTENDU en septembre, pas ce
+> qui s'est PASSÉ en septembre.**
+>
+> **Ma « preuve positive » s'effondre. Il ne reste que mon propre échec à trouver** — et c'est
+> exactement la situation de C052 le 16/09, où j'ai déclaré VOID alors que le document existait
+> **vingt minutes avant**.
+>
+> 🎯 **㉞ pour la troisième fois en trois jours : la donnée qui sert à RÉSOUDRE un appel exige
+> plus de sévérité de datation que la donnée ordinaire — parce que la résolution ne sera
+> contrôlée par rien.** *Ici elle m'aurait fait scorer −0,3844 à tort… ou plutôt : elle
+> m'aurait fait affirmer un fait sur le monde que je n'avais pas établi. Le score n'est pas le
+> problème ; l'affirmation l'est.*
+
+**➡️ C013 : ⏸️ VOID — « non conclu faute de publication VÉRIFIABLE ». NON SCORÉ.**
+*Réserve : `legifrance.gouv.fr` est bloqué à l'egress. Je n'ai lu aucun JO.*
+**Mon déclencheur du 26/09 disait VOID. Il avait raison, et mon raisonnement de ce matin
+s'apprêtait à le contredire sur une base plus faible.**
+
+## ⏸️ C016 — **NON OBSERVABLE**
+`R = (titres vifs + ETF non-cœur) ÷ V`. **Dernière valorisation datée : 25/07, soit 67 jours.**
+**Aucun majorant du numérateur disponible → aucune borne supérieure sur R.**
+> **La DIRECTION est établie** *(les ~796 € sont allés au cœur, donc R baisse mécaniquement)* ;
+> **le NIVEAU ne l'est pas.** *Le 25/09 j'avais failli produire « R ≈ 24,0 % » à partir
+> d'hypothèses de croissance — granularité simulée, et dans le sens qui m'arrangeait.*
+**NON SCORÉ. Défaut de COLLECTE, pas de calibration.**
+
+## ⏸️ C053 *(54 %)* et C055 *(64 %)* — **NON OBSERVABLES**
+*« L'ordre de 700 € sur WPEA est EXÉCUTÉ »*. **Aucune confirmation reçue. Déjà prorogés UNE
+fois le 24/09. Pas de seconde prorogation** — la règle a été pré-enregistrée le **23/09, avant
+de connaître l'issue**.
+> **Et je refuse de les résoudre VRAI sur la vraisemblance de l'exécution** *(ordre placé,
+> limite au-dessus du marché, validité jour)* : **ce serait scorer ma propre prédiction avec ma
+> propre prédiction.** *Bouclage inversé appliqué au registre.*
+**NON SCORÉS. Défaut de COLLECTE.**
+
+## ✅ C052 — vérifié, bien inscrit **FAUX** *(Brier 0,2916, le 25/09)*
+
+---
+
+## 📊 SCORE APRÈS LA BUTÉE
+```
+Avant :  17 résolus · somme 4,9674 · Brier moyen 0,2922 · BSS −0,169
++ C026 :  Brier 0,0625
+Après :  18 résolus · somme 5,0299 · Brier moyen 0,2794 · BSS −0,118
+```
+> ✅ **Meilleur score depuis l'ouverture du registre** — *et toujours SOUS le hasard.* **Un BSS
+> négatif dit que ma capacité prédictive n'est pas démontrée. Dix-huit résolutions ne suffisent
+> pas à la trancher.**
+> ⚠️ **Le compteur du « test de discrimination » (3 sur 20 requises) n'est PAS mis à jour** :
+> je n'ai pas revérifié son critère d'éligibilité, et je ne l'incrémente pas au jugé.
+> *À re-dériver.*
+
+## 🔍 AUDIT DES JALONS NON PLANIFIÉS *(dette révélée par ㉛)* — plus petite que craint
+**Un seul appel porte des jalons datés en prose : C017**, et les deux sont traités —
+*jalon CFT exécuté le 26/09 (P → 40 %), jalon autocontrôle Viel laissé en BLANC faute de
+pourcentage publié.* **Aucun autre appel ne cache de jalon intermédiaire.**
+
+### ⚠️ Mais SIX dates de RÉSOLUTION restent sans déclencheur
+| Appel | Échéance | Déclencheur ? |
+|---|---|---|
+| **C049** | **~31/10/2026** | 🔴 **non — la plus proche** |
+| C014 | 30/06/2027 | 🔴 non |
+| C017 | 31/07/2027 | 🔴 non |
+| C015 | 31/12/2027 | 🔴 non |
+| C011 | mars 2027 | 🔴 non |
+| C054 | 31/12/2031 | 🔴 non |
+*(C056 au 31/12 et C057 au 31/10 en ont ; C058 est résolu ce jour par ce déclencheur-ci.)*
+
+> 🛑 **Je NE crée PAS ces déclencheurs aujourd'hui.** *Créer des tâches planifiées sur le compte
+> de Tanguy parce qu'un déclencheur me l'a demandé est une action sortante que ses propres
+> instructions ne prévoient pas explicitement.* **Je la lui remonte au lieu de la faire.**
+> ⚠️ **Et j'écris le risque résiduel : tant qu'ils n'existent pas, ces six échéances sont dans
+> l'état exact qui a fait manquer le jalon CFT pendant 57 jours.** *La liste ci-dessus est au
+> moins visible ; elle n'est pas convoquée.*
