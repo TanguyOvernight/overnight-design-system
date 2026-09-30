@@ -1,7 +1,7 @@
 {
   "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
-  "maj": "2026-09-28",
-  "dernier_brief": 30,
+  "maj": "2026-09-30",
+  "dernier_brief": 32,
   "vus": {
     "jobup": [
       "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -97,7 +97,39 @@
       "882006d4-2f79-4314-9e7a-2b27f0be4c99",
       "ae11e6d2-1f83-42b4-af08-7eb337522220",
       "131481fc-e861-4cb5-9410-93b8ecde3580",
-      "3376a53a-31c1-4e0b-82bc-a11ea2caf856"
+      "3376a53a-31c1-4e0b-82bc-a11ea2caf856",
+      "f227e361-1b95-4367-8be8-b52616047971",
+      "cad5fe94-af15-41f0-a78c-abf28b71f396",
+      "16ecfd73-10cb-4260-922f-0ac4003adcfd",
+      "b2dabcb5-de1a-49d7-870d-91c536ce96a7",
+      "964e45ce-3490-455b-b567-93a826fd8bb0",
+      "f1c9dcc8-431d-496f-8a4e-f75438e4c534",
+      "3f90f5ae-7027-4289-8c80-d7a83e34af91",
+      "07e7bba4-e696-4762-afec-f8a49985cba0",
+      "422491ce-90ba-4fb0-91f3-5e2a5f0fc9ff",
+      "7c5c828f-baff-40d7-84be-d1c257b05feb",
+      "17196b43-c562-4e6e-86aa-a03b44bace7e",
+      "76224d33-9a39-4cde-8bfb-c563c5de8bc1",
+      "ebd1a931-5ddb-4e69-ba91-2d710e98c35d",
+      "280c11a0-6ae2-4880-aaa8-041d1af98be1",
+      "97cc400f-450c-4b35-b932-30300b313579",
+      "35563227-d401-4e91-b719-0e2e249b3aa5",
+      "729acca2-d4b6-422f-9df9-e78f90e4eabe",
+      "ab020327-d6b9-46ab-828c-1d884b16a395",
+      "fb994d23-9467-41af-8519-324ac35f99f5",
+      "2d1da8e1-2129-4601-87ec-341c881864ef",
+      "d0dfac3b-6db4-4332-b22c-ea6ad5a2c630",
+      "0c556f89-9eb6-418a-96d5-13cd73580c6d",
+      "b3307456-6a6b-4099-9a9f-d874ca4f2894",
+      "49b63c09-2489-4289-a9b0-ca613617d480",
+      "77aad4b7-64ed-4793-9f93-24d12efe919b",
+      "8078d360-cc37-44b9-9020-a845e2eb6854",
+      "6aeed132-efb4-4b20-aed2-d64f837eb9cb",
+      "26a5c0c9-4d7b-4c4c-8c49-8ab9b4172bf9",
+      "13d0770e-d965-4df3-b67a-4c633b081675",
+      "a713a1e8-6aab-4407-8fcc-9144a4f7bee5",
+      "509b1408-6a5a-4687-9a41-5289da1748ad",
+      "4169f5aa-9844-4d5b-90d8-1def2a8b0d7b"
     ],
     "ats_employeurs": [
       "https://recrutement.eben-hezer.ch/jobs/7602918-responsable-communication-et-recherche-de-fonds",
@@ -204,7 +236,23 @@
       "4471879022",
       "4472420968",
       "4444455310",
-      "4470599801"
+      "4470599801",
+      "4472779131",
+      "4471504387",
+      "4472755145",
+      "4471508760",
+      "4472701838",
+      "4473054659",
+      "4472719879",
+      "4472750442",
+      "4472490769",
+      "4472489838",
+      "4471760796",
+      "4473260871",
+      "4473280136",
+      "4473240264",
+      "4473265581",
+      "4472144216"
     ],
     "chuv": [
       "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html"
@@ -1790,6 +1838,31 @@
         "SABRINA BENEZET SA Chargé de communication/CM Lausanne (👀 ⚠️ non vérifiée, agrégateurs bloqués, emplois-vaud 3253533672, min 3 ans, agence de détectives privés)",
         "♻️ SonarSource Marketing AI Engineer Genève toujours en ligne (lever 3d1597a7 confirmé à l'API officielle — la variante dd7a33e9 = Austin, erreur évitée)",
         "❌ notable SwissBorg/Propr.xyz Affiliate Manager remote (lever 51459e7f, affiliation crypto)"
+      ]
+    },
+    {
+      "brief": 31,
+      "date": "2026-09-29",
+      "offres": [
+        "État de Vaud SPEI Chargé·e de communication (🎯, jobup f227e361, CDD 1 an auxiliaire, 80-100%, 3 ans min, économie durable, délai 11.10)",
+        "CVCI Spécialiste CRM données & automatisation (✅, jobup cad5fe94, CDI 100%, 3-5 ans, Dynamics 365)",
+        "Nestlé Internal Communications Manager Vevey (👀, LinkedIn 4472779131, extensive experience sans chiffre)",
+        "OneSource AI Change Lead remote CH (👀, LinkedIn 4471504387, Lead sans années, change mgmt IA)",
+        "Albedis Packaging Artwork Coordinator Étoy (👀, LinkedIn 4472755145, 8 mois 60-80%)",
+        "MANGO Visual Merchandiser Lausanne (👀, LinkedIn 4471508760)",
+        "AISTS Sport Advisory Product Coordinator (👀, jobup 16ecfd73)",
+        "❌ notable piège JobLeads : CSD retitré « Spécialiste Marketing & Contenu Digital » = même annonce bilingue"
+      ]
+    },
+    {
+      "brief": 32,
+      "date": "2026-09-30",
+      "offres": [
+        "Neural Concept Technical Marketing Engineer Lausanne (🎯, LinkedIn 4471760796, Entry level, anglais seul, démos/contenu/NVIDIA — PREMIER poste marketing de l'employeur radar)",
+        "BlueBotics Motion & Graphic Design Manager Saint-Sulpice (👀 haut, LinkedIn 4473260871, IC sous VP Marketing, vidéo A-Z/motion/3D, années non chiffrées)",
+        "Swissquote Design System Specialist Gland (👀, LinkedIn 4458199136, 5 ans min, Figma+IA)",
+        "Origami Rénovation Content & Digital Marketing Manager 50% Préverenges (👀 bas, jobup a713a1e8)",
+        "♻️ État de Vaud : lien officiel offres-emploi.vd.ch/#fr/sites/CX_1/job/5946/ via Job-Room (non ouvrable de ma session)"
       ]
     }
   ]

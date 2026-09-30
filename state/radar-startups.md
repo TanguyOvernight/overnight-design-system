@@ -47,6 +47,15 @@ Artefact ajoute aussi un Senior AI Engineer / Technical Consultant (Lausanne).
   28.09) ; ABM Manager GE aussi. Le descriptif SonarSource cite « Claude Code ».
 - Levées non-vaudoises du fil (non retenues) : ETFbook 13M, Ferm Labs 3M, Piomic 25M USD, Aseptuva 2.4M seed.
 
+## Signal 30.09 — NEURAL CONCEPT OUVRE SON PREMIER POSTE MARKETING ✅
+« Technical Marketing Engineer », Lausanne, Entry level, anglais seul
+(LinkedIn 4471760796) — 14 jours après l'ouverture du CMO (16.09). La
+prédiction du radar (un CMO qui arrive recrute son équipe) se réalise plus
+vite que prévu : le poste est publié AVANT l'arrivée du CMO. Publié 🎯 au
+brief n°32. La candidature spontanée recommandée depuis le brief 7 devient
+une candidature directe. SpotMe (event-tech Lausanne) notée : recrute un
+trainee event coordinator — surveiller leurs postes marketing confirmés.
+
 ## Signaux périmés ou hors fenêtre (contexte)
 - Startup aérospatiale lausannoise — seed ~40 M$ (Visionaries Club, Creandum) — mars 2026
   — hors fenêtre 1-3 mois ; nom exact non identifié en mode dégradé. À réexaminer si
