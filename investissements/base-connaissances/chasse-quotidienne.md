@@ -2497,3 +2497,80 @@ servir ASML et Philips ; il échoue sur les mid/small caps partout, pire sur Ams
 > déclenchera pour une raison MACRO.**
 > 🔑 **C'est le piège de ㉜ appliqué à un TERRAIN ENTIER, pas à une valeur.** *La condition
 > compagne de performance relative n'est nulle part plus nécessaire.*
+
+---
+
+## 🔴 ㊳ NE JAMAIS FAIRE FIGURER UN ANCRAGE DANS UNE REQUÊTE *(01/10/2026)*
+
+> **Le canal renvoie les chiffres qu'on met dans la question.**
+
+**Constat du screening du 01/10, par l'agent lui-même :** ses deux premières « confirmations »
+*(Fagron 23,25/22,85 et Aubay 50,80/8 977)* **ne faisaient que répéter les nombres plantés dans
+la requête.** → **nulles.**
+
+> ☠️ **C'EST MA FAUTE, pas celle du canal : mes consignes de screening listent les ancrages
+> confirmés en tête. En les listant, j'invite à les replanter — et le résumeur me les rend sous
+> forme de confirmation.** *J'avais construit un contrôle qui fabriquait ses propres réussites.*
+
+**Règle :** **les ancrages servent au CONTRÔLE ARITHMÉTIQUE APRÈS la réponse, jamais à la
+formulation de la question.** *Consigne à inclure désormais dans tout brief de screening :
+« n'écris aucun de ces chiffres dans une requête ».*
+
+**Un test ne compte que si :**
+1. **aucun chiffre n'a été planté** dans la requête ;
+2. **et** le bouclage se fait contre un ancrage **que le moteur ne peut pas connaître**.
+
+⚠️ **Portée rétroactive, écrite honnêtement** : les bouclages ARITHMÉTIQUES contre une variation
+servie *(ex. `45,105 × 1,0163 = 45,84`)* **restent valides** — pour les simuler, le résumeur
+devrait inventer une variation qui réconcilie exactement. **En revanche les confirmations du type
+« la source sert X comme clôture veille, ce qui correspond à mon ancrage » sont SUSPECTES d'écho**
+dès lors que X figurait dans la requête. *Un sous-ensemble de mes confirmations passées est donc
+fragile, et je ne sais pas lequel exactement.*
+
+## 🔴 ㊴ LE PIÈGE DU BACKEND PARTAGÉ — deux éditeurs, un seul fournisseur *(01/10/2026)*
+
+**`beursduivel.be`, `beursgorilla.nl`, `beleggen.nl`, `beurs.nl` servent tous Fagron sous
+l'identifiant interne IDENTIQUE `60194088`** *(`/Aandeel-Koers/60194088/Fagron.aspx`)*.
+**Même backend, éditeurs de façade différents.**
+
+> 🔑 **㉖ demande « qui a fourni l'autre jambe ? » — et le nom de domaine ne répond pas à cette
+> question.** *Croiser deux de ces sites donne un bouclage auto-référentiel SANS QUE ÇA SE VOIE.*
+>
+> **Contrôle : comparer les SCHÉMAS D'URL et les identifiants internes, pas les noms de
+> domaine.** *Un schéma d'URL distinct est un indice de fournisseur distinct.*
+
+✅ **Source Bruxelles identifiée : `Beursgenoten.nl`** — éditeur nommé, schéma d'URL distinct,
+horodatage **17h36** cohérent avec l'auction de clôture de Bruxelles *(17h30)*. **Fagron 23,250 €
+au 30/09.** ⚠️ *Ne boucle pas encore (veille implicite 22,850 contre 23,150 servi ailleurs) →
+MOYENNE.* **Mais c'est la première source nommée et non disqualifiée sur cette place.**
+
+## 📌 ㉞-bis ÉTENDUE — le piège d'anniversaire est une PROPRIÉTÉ D'ÉMETTEUR
+**EPC Groupe publie son semestriel le 29-30 septembre CHAQUE ANNÉE.** *Une requête « semestriel
+EPC fin septembre » passée un 1ᵉʳ octobre reçoit l'anniversaire : plausible, et périmé d'un an.*
+`EPC_Groupe_CP_RS_2025_29092025_FR_VDEF.pdf`
+> **Une société à date de publication fixe fabrique un piège STRUCTUREL et REPRODUCTIBLE.**
+> **Contrôle : avant d'interroger une publication périodique, vérifier si l'émetteur publie à
+> DATE FIXE — si oui, exiger le millésime dans l'URL ou refuser la donnée.**
+> *Le piège est prévisible, donc évitable par construction et non par vigilance.*
+
+## 📌 ㊵ LA PRIÇABILITÉ EST UN CRITÈRE ÉLIMINATOIRE, EN AMONT DE L'ACHETABILITÉ
+**Constat du 01/10 : aucun cours daté obtenable sur les small caps parisiennes** *(Linedata : un
+« 44,80 € » sans horodatage ; EPC Groupe : rien)*. **Le 30/09 j'avais borné ce défaut à
+Amsterdam-Bruxelles en écrivant « le canal sait servir Paris » — c'était une consolation non
+testée.**
+
+> **Une valeur dont je ne sais pas obtenir un cours daté n'est pas une candidate au dossier
+> incomplet : c'est une valeur sur laquelle je ne peux structurellement RIEN conclure.**
+> **㉜ y est inapplicable — donc rien n'y est proposable, quelle que soit la qualité du dossier.**
+
+### 🎯 ET LE MOTIF DE HUIT SEMAINES : LA CARTE MARCHE, LA VEILLE ÉCHOUE
+**Zéro candidate proposée en huit semaines de chasse quotidienne.** *Les deux seules séances
+productives sont les deux où la veille d'actualité a été remplacée par une CARTOGRAPHIE
+D'UNIVERS* **(émergents 25/09, santé 29/09)**.
+> **Un univers est STABLE et TROUVABLE** *(ISIN, place, liquidité, éligibilité)* — mon canal le
+> sert. **Un prix quotidien de small cap est VOLATIL et NON SERVI** — et c'est exactement ce dont
+> la veille a besoin pour conclure.
+>
+> ➡️ **Changer la SORTIE de la chasse** : étendre la carte et suivre nominativement les lignes
+> dont le prix est démontrément obtenable. **Mieux vaut dix lignes que je sais mesurer que deux
+> cents que je ne sais que décrire.**
