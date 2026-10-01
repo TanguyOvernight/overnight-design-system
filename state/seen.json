@@ -1,7 +1,7 @@
 {
   "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
-  "maj": "2026-09-30",
-  "dernier_brief": 32,
+  "maj": "2026-10-01",
+  "dernier_brief": 33,
   "vus": {
     "jobup": [
       "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -129,7 +129,20 @@
       "13d0770e-d965-4df3-b67a-4c633b081675",
       "a713a1e8-6aab-4407-8fcc-9144a4f7bee5",
       "509b1408-6a5a-4687-9a41-5289da1748ad",
-      "4169f5aa-9844-4d5b-90d8-1def2a8b0d7b"
+      "4169f5aa-9844-4d5b-90d8-1def2a8b0d7b",
+      "782932e4-42b0-4ecb-945f-68d3a76f4672",
+      "aa561e43-e0c0-4966-9303-e972ed317531",
+      "02d49c71-01e1-4ddd-a894-41d79d41a5b0",
+      "6dea2ebd-13f4-4938-9e14-5fbceaba0b87",
+      "d72e03f7-0d74-4fe9-9b5c-6b21ec6bda46",
+      "9c0d7b05-6fec-4570-90a2-189ffe599be2",
+      "99a73cf9-72ec-4d04-a2fb-157c77c8266f",
+      "37a168f1-7bb2-4e97-91a2-8161993eda43",
+      "27e3e3e7-b97e-4ca1-896d-230d2e1587fb",
+      "66de4b98-6cdf-434c-b6e2-0db917e7bea0",
+      "1e5cd58f-0916-401b-a9ab-67f9cc5c2edb",
+      "e797e286-7e5e-4191-aaca-85c037d6e03e",
+      "7dda91c9-fdcd-45b7-8d07-3c2194e0a608"
     ],
     "ats_employeurs": [
       "https://recrutement.eben-hezer.ch/jobs/7602918-responsable-communication-et-recherche-de-fonds",
@@ -252,7 +265,15 @@
       "4473280136",
       "4473240264",
       "4473265581",
-      "4472144216"
+      "4472144216",
+      "4467977158",
+      "4473775780",
+      "4473763746",
+      "4472319035",
+      "4473791369",
+      "4473548651",
+      "4471726257",
+      "4471994000"
     ],
     "chuv": [
       "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html"
@@ -1863,6 +1884,17 @@
         "Swissquote Design System Specialist Gland (👀, LinkedIn 4458199136, 5 ans min, Figma+IA)",
         "Origami Rénovation Content & Digital Marketing Manager 50% Préverenges (👀 bas, jobup a713a1e8)",
         "♻️ État de Vaud : lien officiel offres-emploi.vd.ch/#fr/sites/CX_1/job/5946/ via Job-Room (non ouvrable de ma session)"
+      ]
+    },
+    {
+      "brief": 33,
+      "date": "2026-10-01",
+      "offres": [
+        "La Squadra Food Group Content & Communication Manager Lausanne (👀, LinkedIn 4467977158, tag Teilzeit, contrat/taux non précisés — rétrogradée ✅→👀 par le second regard)",
+        "Let's Go Fitness Chargé marketing & comm HQ Lausanne (👀, LinkedIn 4473775780, 2-3 ans, CDD 4,5 mois)",
+        "TAG Heuer Creative Project Manager Signy (👀, LinkedIn 4473763746, 4+ ans, CDD 6 mois)",
+        "Audemars Piguet Retail Marketing Operations Specialist Le Brassus (👀, LinkedIn 4472319035, 5 ans min)",
+        "❌ notables PMI Sr Manager Brand Experience Design (10+ ans) et FISU Brand & Commercial Partnerships Manager (jobup 782932e4, 7 ans)"
       ]
     }
   ]
