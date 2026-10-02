@@ -2867,3 +2867,35 @@ pourcentage publié.* **Aucun autre appel ne cache de jalon intermédiaire.**
 > ⚠️ **Et j'écris le risque résiduel : tant qu'ils n'existent pas, ces six échéances sont dans
 > l'état exact qui a fait manquer le jalon CFT pendant 57 jours.** *La liste ci-dessus est au
 > moins visible ; elle n'est pas convoquée.*
+
+---
+
+## Appel ouvert le 02/10/2026 — C059 *(Aubay, réfutation du signal)*
+
+| Réf | Date | Agent | Proposition | **P** | Résolution datée |
+|---|---|---|---|---|---|
+| **C059** | 02/10 | Avocat | **Le « signal » du 16/09 sur Aubay n'est PAS une inefficience exploitable** — le relèvement date du 23/07, le fait a été repricé dans les deux sens les 17-18/09, 7 maisons couvrent avec un consensus 100 % positif à 67,14 € *(+28,6 %)*, et le +30,8 % publié est un effet de base **éteint le 01/07/2026** *(la guidance émetteur implique ~+5 % organique au S2)* | **15 %** | **CA T3 2026, attendu fin octobre** *(précédent : 29/10/2025)* |
+
+**Critères de résolution, pré-enregistrés :**
+- **Croissance publiée T3 2026 < +8 %** → ✅ **CONFIRME** la réfutation *(on ne paie plus que l'organique, ~+5 %, à ~17× le RNPG)*
+- **Croissance publiée ≥ +10 % ET organique ≥ +10 %** → ❌ **INFIRME** : mon calcul de décélération est faux, le dossier revient en AFFAIBLI
+> 🔑 **Le second critère est le signal d'invalidation de ma PROPRE réfutation, écrit en même temps
+> qu'elle.** *Une réfutation sans condition de retournement est une opinion.*
+
+### 🏆 Ce que cet appel a de différent : il a résolu une butée SANS PRIX
+**La butée Aubay du 08/10 exigeait une clôture datée. Elle est résolue le 02/10, par T2 et T3, et
+aucun cours n'a été nécessaire.** *C'est l'application directe de ㊶, écrite le matin même.*
+> ⚖️ **Et l'Avocat a signalé son propre biais avant de conclure** : historique 5 AFFAIBLI sur 5.
+> **Il a rendu un RÉFUTÉ en écrivant explicitement que ce n'était pas pour corriger sa
+> statistique.** *Un agent qui nomme son propre taux de base avant de s'en écarter est plus
+> crédible que celui qui ne le nomme pas.*
+
+### ⚠️ Jalon sans déclencheur — je l'ajoute à la liste que je remonte
+**C059 se résout fin octobre et n'a PAS de routine associée.** *S'ajoute aux six déjà signalées
+le 30/09* **(C049 ~31/10, C011, C014, C015, C017, C054)**. **Sept maintenant.**
+> 🛑 *Je ne crée pas ces tâches planifiées de ma seule initiative.* **Mais j'écris le risque : ces
+> sept échéances sont dans l'état exact qui a fait manquer le jalon CFT pendant 57 jours.**
+
+### 📊 État du registre
+**18 résolus · Brier moyen 0,2794 · BSS −0,118.** Ouverts : **C011 · C013** *(VOID, réouvrable)*
+**· C014 · C015 · C016 · C017** *(P révisé à 40 %)* **· C049 · C054 · C056 · C057 · C059.**

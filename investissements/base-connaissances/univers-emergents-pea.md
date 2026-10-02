@@ -78,3 +78,95 @@ confirmé le maintien le 26/08/2026**, et l'exclusion **ne figure pas dans le PL
 ## Statut
 🔒 **AUCUNE proposition d'achat.** Règle des 3 séances : **séance 1/3**.
 Prochaine étape : réponse de Tanguy sur les trois points du DIC.
+
+---
+
+# ✅ 02/10/2026 — LES TROIS INCERTITUDES SONT LEVÉES. ET LA LIGNE EST ÉCARTÉE.
+
+## Q1 — L'INDICE : **`MSCI EM ex-Egypt ESG Broad CTB Select`**, PAS le MSCI Emerging large
+**Tranché, et sans écho** : le libellé est revenu **spontanément sur une requête ne contenant que
+l'ISIN**. Reporting mensuel Amundi : *« 100 % MSCI EM EX-EGYPT ESG BROAD CTB SELECT INDEX »*,
+conforme aux critères **EU Climate Transition Benchmark**. *Prospectus millésimé : 16/04/2026.
+DIC : 05/12/2025.*
+
+**L'origine de la réponse concurrente est identifiée, et elle est PÉRIMÉE :** cbonds *(non daté,
+ancien nom)*, francetransactions *(« ESG Leaders »)* — et surtout 🔴 **l'URL non millésimée du
+DIC sur le domaine de l'émetteur LUI-MÊME remonte encore l'ancien titre « ESG Leaders »**, en
+cache d'avant renommage.
+> 📌 **Un document sur le domaine de l'émetteur n'est pas à jour pour autant. Une URL sans
+> millésime sert « la version courante » — ou un cache de l'ancienne.**
+
+## Q2 — **CAPITALISANT**, et le « EUR DIS » de Fortuneo est expliqué
+Prospectus : *« part de non-distribution, les revenus sont réinvestis »*. **Zéro distribution
+depuis 2019.**
+**L'explication du libellé** : MarketScreener et Zonebourse intitulent la part **« EUR (C/D) »**
+— *capitalisation **et/ou** distribution*. Le prospectus **autorise les deux** ; la société de
+gestion capitalise en pratique. **Le « DIS » de Fortuneo est un libellé dérivé de cette
+classification, pas une part distribuante réelle.**
+🚨 **PIÈGE À RETENIR — trois produits à ne pas confondre :**
+| ISIN | Quoi |
+|---|---|
+| **FR0013412020** | la part visée *(PAEEM)* |
+| **FR001400ZGO4** | **une AUTRE part du MÊME fonds** *(« S - Acc »)*, avec ses propres DIC |
+| FR0011440478 | le fonds **EMEA**, un produit différent |
+
+## Q3 — **ÉLIGIBILITÉ PEA ÉCRITE DANS LE PROSPECTUS**, plus seulement déduite
+Obtenue sur **requête neutre** *(« souscripteurs concernés »)* : *« le Fonds est ouvert à tout
+souscripteur, **en particulier aux détenteurs d'un PEA** »*.
+Et une clause plus forte : *« **suivi quotidien** du niveau de titres détenus éligibles au régime
+fiscal du PEA, pour que le portefeuille soit **en permanence investi dans le respect du seuil
+minimum requis** »*.
+> ✅ **Raisonnement sur l'écho, et il est bon : « un écho rendrait mon mot, pas un MÉCANISME ».**
+> *Une clause décrivant un dispositif de suivi quotidien n'est pas ce qu'un résumeur fabrique en
+> répétant « éligibilité ».*
+
+## 🔴 LE COÛT DU SWAP RESTE INCONNU — et ce n'est PAS un blocage
+**Contrepartie : deux candidats qui se contredisent** *(BNP Paribas France contre Crédit
+Agricole, et la première vient probablement d'un rapport annuel VOISIN)* → **rien retenu.**
+**Tracking difference : deux chiffres incompatibles**, dont un qui est une tracking *error* →
+**écartés.** **Frais de swap implicites : introuvables.**
+
+> ⚖️ **ET J'APPLIQUAIS ICI UN STANDARD QUE JE N'AI PAS APPLIQUÉ AU CŒUR.**
+> *Le WPEA de Tanguy est LUI AUSSI un ETF synthétique dont je n'ai jamais établi le coût de swap.*
+> **Si cet inconnu bloque PAEEM, il aurait dû bloquer le cœur — et il ne l'a pas fait.**
+>
+> 🔑 **Résolution : pour une exposition hors Europe en PEA, la réplication synthétique est la
+> SEULE option — il n'existe aucun équivalent physique éligible.** *Le coût de swap est donc un
+> coût de STRUCTURE, pas un critère de CHOIX entre produits.* **Et PAEEM étant le seul ETF
+> émergents globaux éligible PEA, il n'y a rien à quoi le comparer. Un inconnu inévitable et non
+> comparatif ne peut pas être un blocage.**
+
+---
+
+# ⛔ DÉCISION : AUCUNE LIGNE ÉMERGENTS. Et voici pourquoi, maintenant que tout est su.
+
+**Les trois blocages levés, la question devient enfin la bonne : *faut-il* ajouter des émergents ?**
+
+| Pour | Contre |
+|---|---|
+| Le cœur MSCI World est **développés uniquement** — ~0 % d'émergents | 🔴 **L'indice est FILTRÉ ESG, pas l'indice large.** *Il ne donne donc pas « les émergents » mais un sous-ensemble sélectionné — ce qui contredit la raison même de la diversification.* |
+| Les émergents pèsent ~10 % de la capitalisation mondiale | 🔴 **À sa taille de portefeuille, 150 € d'émergents représenteront ~1,5 % dans un an** s'il continue d'alimenter le cœur. **Le gain de diversification est marginal face à la complexité ajoutée** : une 2ᵉ ligne, un 2ᵉ swap, une 2ᵉ contrepartie, un arbitrage de poids à tenir. |
+
+## 🎯 ET L'ALTERNATIVE ÉLÉGANTE EXISTE — mais elle est trop JEUNE
+**GPEA** *(Amundi PEA Global MSCI ACWI, `FR0014017NX3`, Paris, swap, TER 0,30 %, ~5,10 €)*
+contient **~12 % d'émergents en UNE ligne**.
+> **Rediriger les versements mensuels du WPEA vers GPEA amènerait les émergents automatiquement
+> au poids de marché, sans satellite, sans arbitrage, au même TER.** *Après douze mois :
+> ~10,6 % d'émergents, atteints sans aucune décision supplémentaire.*
+>
+> 🔴 **MAIS : GPEA est coté depuis le 15/07/2026 — moins de trois mois — avec un encours de
+> ~52-63 M€.** *Un ETF de trois mois et de cinquante millions n'est pas où l'on installe un plan
+> de versement : risque de fusion ou de fermeture, écarts de cotation plus larges.*
+
+## ➡️ CONCLUSION, ET ELLE FERME LA QUESTION
+**Pas de seconde ligne aujourd'hui.** *Le cœur fait son travail ; l'exposition émergents vaut,
+à sa taille, un ou deux dixièmes de point de rendement espéré — contre une complexité réelle et
+deux structures de swap non vérifiées.*
+
+> 📌 **RÉEXAMEN DÉCLENCHÉ PAR UN SEUIL, PAS PAR UNE DATE : quand le portefeuille dépasse
+> ~10 000 €.** *À ce moment-là l'arithmétique de diversification compte vraiment, et GPEA aura
+> un historique.*
+>
+> 🔑 **Clore une question par un « non » daté vaut mieux que la laisser ouverte.** *Elle traînait
+> depuis le 17/09. Les trois incertitudes du DIC ont été levées — et la réponse qu'elles
+> permettent est : ce n'était pas la bonne question.*

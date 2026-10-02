@@ -2574,3 +2574,56 @@ D'UNIVERS* **(émergents 25/09, santé 29/09)**.
 > ➡️ **Changer la SORTIE de la chasse** : étendre la carte et suivre nominativement les lignes
 > dont le prix est démontrément obtenable. **Mieux vaut dix lignes que je sais mesurer que deux
 > cents que je ne sais que décrire.**
+
+---
+
+## 🏆 ㊶ UN PRIX EST NÉCESSAIRE POUR ACHETER, PAS POUR REJETER *(02/10/2026)*
+
+| Élimination | Motif réel | Prix nécessaire ? |
+|---|---|---|
+| Rubis | divergence EBITDA / flux de trésorerie | ❌ |
+| Kalray | EBITDA porté par une refacturation de personnel | ❌ |
+| Sidetrade | T2 + T3 | ❌ |
+| Aurea | liquidité | ❌ |
+| Interparfums | flux indiciel déjà passé | ❌ |
+| **Aubay** | **T2 + T3** | ❌ |
+| Séché | 🔴 accès au prix | ✅ **la seule** |
+
+> **Six éliminations sur sept n'ont jamais eu besoin d'un cours.** *Le prix n'intervient que pour
+> la décision POSITIVE : dimensionner, poser une limite, mesurer une surréaction.*
+
+### 📌 LE PROTOCOLE
+> 1. **Instruire TOUT ce qui ne dépend pas du prix.** *C'est gratuit, et ça produit les rejets.*
+> 2. **Le prix est la DERNIÈRE porte**, réclamée une seule fois, sur un dossier qui a déjà tout franchi.
+> 3. **C'est là que le canal humain (㉗) est le bon outil** : une question, une fois, sur un dossier complet.
+
+**☠️ Ce que ça révèle de mon erreur passée : je réclamais le cours d'Aubay depuis le 24/09 alors
+que T2, T3, T4, T5 et T6 n'étaient pas instruits.** *J'aurais pu obtenir le prix et la tuer
+ensuite sur T2.* **Je demandais un prix parce qu'il MANQUAIT, pas parce qu'il était la dernière
+pièce — c'est la différence entre combler un trou et finir un travail.**
+
+**✅ VALIDÉ LE JOUR MÊME** : écrit le matin, appliqué l'après-midi, **butée du 08/10 résolue le
+02/10 sans prix.**
+
+## 📌 DEUX MOTIFS DE SORTIE À NE JAMAIS CONFONDRE
+| Motif | Cas | Ce qu'il dit |
+|---|---|---|
+| **« non conclu faute d'accès au prix »** | **Séché** | **l'INSTRUMENT manquait** — la thèse n'est pas réfutée, le dossier est réouvrable |
+| **« signal réfuté »** | **Aubay** | **la THÈSE ne tient pas** — réouverture sur fait nouveau seulement |
+> **Écrire l'un à la place de l'autre rend le classement illisible : le premier invite à revenir,
+> le second interdit de répéter.**
+
+## ✅ LE TEST DE GRANULARITÉ SÉLECTIVE A SON PREMIER CAS NÉGATIF
+| Émetteur | Verdict |
+|---|---|
+| EVS · X-FAB · Sidetrade · Linedata | 🔴 **déclenché** — composante porteuse de preuve nommée sans être chiffrée |
+| **AUBAY** | ✅ **NON déclenché** — l'émetteur chiffre lui-même **+19,4 points de périmètre**, et `19,4 % × 269,0 M€ ≈ 52 M€` boucle sur un semestre de Solutec |
+> 🔑 **C'est une information sur le TEST autant que sur l'émetteur.** *Un test qui mord toujours ne
+> discrimine rien.* **Après quatre déclenchements, un non-déclenchement établit qu'il sépare
+> réellement ceux qui cachent de ceux qui montrent.**
+
+## 📌 UN AGENT QUI DÉCLARE SON TAUX DE BASE AVANT DE S'EN ÉCARTER
+**L'Avocat a ouvert son rapport par : « historique 5 AFFAIBLI sur 5 ; ce verdict est un RÉFUTÉ, et
+il ne l'est pas pour corriger la statistique ».**
+> **Nommer son propre biais avant de conclure est plus crédible que de ne pas le nommer.** *C'est
+> le geste que je m'impose sur le registre — il vaut aussi pour les agents.*

@@ -2566,3 +2566,133 @@ une semaine.**
 
 ⚠️ **MÉTHODE TUÉE** : la reconstruction d'un cours par les seuils de réservation est
 **réfutée** — les deux seuils n'impliquent pas la même référence. **Ne pas la réemployer.**
+
+---
+
+# ⏰ 02/10/2026 — AUBAY : **PASSE**. Le signal est RÉFUTÉ, et SANS PRIX.
+
+**La butée du 08/10 est résolue six jours en avance.** *Et par le protocole établi ce matin même :
+instruire tout ce qui ne dépend pas du prix, parce qu'un prix est nécessaire pour ACHETER, pas
+pour REJETER.*
+
+## 🔴 T2 — RÉFUTÉ : le fait a DIX SEMAINES, pas seize jours
+**Le communiqué du 16/09 s'intitule littéralement « Relèvement CONFIRMÉ des objectifs 2026 ».**
+**Le relèvement lui-même date du 23/07/2026** *(CA semestriel)* : **695-705 M€ contre 676-690 M€**,
+marge **9-10 % contre 9-9,5 %**. **Le 16/09 n'a apporté que la marge et la confirmation.**
+
+**Et le fait a été repricé DANS LES DEUX SENS :**
+| Date | Événement |
+|---|---|
+| 16/09 18h00 | communiqué S1 |
+| 17/09 10h00 | réunion analystes |
+| **17/09** | **chute** — ouverture 53,80 €, **plus-bas 48,45 €** |
+| **18/09** | **rebond +3,6 % à 51,1 €** |
+| 28/09 | note de broker réitérant Achat |
+| 29/09 18h15 | rapport financier semestriel déposé |
+
+## 🔴 T3 — RÉFUTÉ : suivi, aimé, et déjà raconté
+**Sept maisons ont couvert dans l'année** *(Bernstein, Financière d'Uzès, Gilbert Dupont, Invest
+Securities, Oddo BHF, Société Générale, TP ICAP Midcap)*. **Consensus vivant : 3 bureaux,
+objectifs 65-68 €, médiane 67,14 €, potentiel publié +28,6 %, 100 % d'avis positifs, ZÉRO
+dissident.**
+> *Nuance honnête : 3 analystes sur ~0,6 Md€ de capi, c'est une couverture MINCE.* **Mais T3 ne
+> demande pas « est-ce peu suivi », il demande « est-ce un ANGLE MORT ».** *Un dossier avec un
+> potentiel publié de +28,6 % et aucune opinion négative n'est pas ignoré.*
+
+## 🟢 T4 — MON ATTAQUE ÉCHOUE, et c'est le résultat le plus important
+**Acquisition identifiée : SOLUTEC** *(finalisée le **07/07/2025** — millésime lu dans l'URL)*,
+CA 112 M€ en 2024, >1 400 salariés, consolidée depuis le 01/07/2025, **prix jamais divulgué**.
+| | 30/06/2026 | 31/12/2025 |
+|---|---|---|
+| **Trésorerie nette** | **+44,3 M€** | +56,2 M€ |
+| Dette brute | **24,6 M€** | 31,9 M€ ⬇️ |
+**Aucun levier, aucun financement caché, dette brute en BAISSE.** *Baisse de trésorerie expliquée :
+BFR saisonnier + dividende + investissements. Objectif ~70 M€ fin 2026.*
+
+### ✅ TEST DE GRANULARITÉ SÉLECTIVE : **PASSÉ** — PREMIER CAS NÉGATIF APRÈS QUATRE POSITIFS
+> **L'émetteur CHIFFRE lui-même la composante qui porte toute la preuve : « +19,4 points
+> d'impact des variations de périmètre ».**
+> **Et ça boucle** : `19,4 pts × 269,0 M€ ≈ 52 M€` = un semestre de Solutec à son CA de 112 M€. ✅
+>
+> 🔑 **C'est l'inverse exact d'EVS, X-FAB, Sidetrade et Linedata.** *Et c'est une information sur
+> le TEST autant que sur Aubay : après quatre déclenchements, un non-déclenchement montre qu'il
+> DISCRIMINE au lieu de toujours mordre.* **Un test qui ne dit jamais non ne dit rien.**
+
+## ☠️ MAIS T4 PRODUIT UN KILL QUE JE NE CHERCHAIS PAS : le +30,8 % est MORT depuis le 01/07/2026
+**Solutec est absente de la base du S1 et intégralement présente dans celle du S2. Le périmètre
+s'annule.**
+```
+CA 2025 = 601,6 M€  ·  S1 2025 = 269,0 M€  →  S2 2025 = 332,6 M€
+S2 2026 guidé = 695-705 − 351,8  =  343-353 M€
+→ croissance publiée S2 2026 implicite : +3,2 % à +6,2 %
+→ et elle est INTÉGRALEMENT ORGANIQUE (Solutec déjà dans la base)
+```
+> 🔴 **La guidance RELEVÉE de l'émetteur implique elle-même une décélération organique de
+> +11,4 % à environ +5 % au S2.** *⚠️ Arithmétique DÉRIVÉE, intrants sourcés et datés — pas un
+> comparatif d'émetteur.*
+>
+> ✅ **Contre-point d'honnêteté : sur la MARGE la guidance n'est pas tendue.** *9 % d'année exige
+> ~10,4 % au S2 contre **10,7 % réalisés** au S2 2025 : une répétition, pas un exploit. Seul le
+> haut de fourchette demande un progrès.* **La saisonnalité invoquée par le broker est réelle.**
+
+## 🟡 T5 — AFFAIBLI, et sa pièce centrale est INACCESSIBLE
+**Marge France 6,9 % contre 7,0 %** — **en BAISSE**, sur un CA France **+48,5 %**. *Motif servi :
+la rentabilité de Solutec est sensiblement inférieure → **dilution**, pas pression tarifaire.*
+**La marge groupe ne monte que grâce à l'International** *(8,6 % contre 7,4 %, tiré par l'Italie)*.
+⛔ **Les mots de l'émetteur sur l'IA et la pression tarifaire : NON OBTENUS** *(URD 2025 et SFAF
+en PDF sur `aubay.com`, egress bloqué, non contourné)*.
+
+## ⚪ T6 — NON INSTRUIT, et l'indice disponible va à l'ENVERS
+**La seule contrepartie identifiable est un ACHETEUR : l'émetteur lui-même, qui rachète chaque
+semaine.**
+> **Un flux acheteur permanent et régulier est l'inverse d'une dislocation de liquidité.** *T6 ne
+> fournit aucun argument au signal — il en fournit un CONTRE.*
+
+## 💰 Le prix déclaré en dépôt réglementaire — qualifié exactement
+**Déclaration des transactions sur actions propres du 21 au 25/09**, publiée le **28/09 à 17h45** :
+VWAP XPAR **51,7577 · 51,9962 · 51,7895 · 51,0054 · 50,8704**.
+⚠️ **Ce sont des prix moyens pondérés d'acquisition journaliers par place, dans un dépôt
+réglementaire. PAS des clôtures. Ils ne peuvent PAS déclencher un seuil de prix.**
+➡️ **Bande 50,87-52,00 €, en déclin monotone**, contre ~56,85 € à la mi-août : **≈ −10 %**.
+*Corroboration de NATURE différente — un VWAP réglementaire contre un récit de séance — et non un
+comptage de relais.*
+
+### 🔴 Et une discordance que je NE TRANCHE PAS
+**La clôture du 17/09 est soit 49,35 €, soit 50,00 € exactement.** *Deux chaînes servies, chacune
+cohérente au centime, mutuellement exclusives — et elles encadrent le seuil de 50 €.*
+> *Les deux nombres ronds de la seconde chaîne sont une signature de réponse dégénérée que mon
+> registre dit de suspecter — **mais ce n'est pas un motif suffisant pour choisir.*** **Le seuil a
+> été TOUCHÉ le 17/09 et mon canal ne sait pas dire de quel côté.** *Ce qui est réglementaire et
+> certain : le titre était au-dessus de 50 € du 21 au 25/09.*
+
+---
+
+# ⚖️ VERDICT : **PASSE — signal RÉFUTÉ (15 %)**, et le motif n'est PAS celui de Séché
+
+> 🔑 **« RÉFUTÉ EN TANT QUE SIGNAL » N'EST PAS « RÉFUTÉ EN TANT QUE SOCIÉTÉ ».**
+> **Aubay sort du forensic PLUS PROPRE qu'elle n'y est entrée** : périmètre chiffré par l'émetteur,
+> trésorerie nette positive, dette brute en baisse, marge qui monte réellement, test de
+> granularité passé. **Il n'y a pas de cadavre.**
+> **Ce qui est réfuté, c'est l'INEFFICIENCE : rien ici n'est ni nouveau, ni ignoré, ni mal compris.**
+
+**MOTIF DE SORTIE : « signal réfuté sur T2 et T3 » — et SURTOUT PAS « faute d'accès au prix ».**
+*C'est la distinction exacte qui séparait Séché : là c'était l'instrument qui manquait, ici c'est
+la thèse qui ne tient pas.* **Un prix n'aurait servi qu'à acheter, et il n'y a rien à acheter.**
+
+**Réouverture sur FAIT nouveau** *(décote réelle, ou un T3 2026 démentant la décélération)*,
+**jamais sur la répétition du même.**
+
+📌 **La routine du 08/10 est PRÉEMPTÉE.** *Je la laisse en place — je ne supprime pas une tâche
+planifiée de ma seule initiative — et quand elle se déclenchera, elle se résoudra en une ligne.*
+
+## 📊 CLASSEMENT AU 02/10 — 6 candidates
+| Rang | Candidate | État |
+|---|---|---|
+| ① | **Cœur World (WPEA)** | ordre du 01/10 : 70 parts, limite 7,14 € |
+| ② | **Or** | inéligible PEA · *seau restructuré : accumuler puis acheter en un lot* |
+| ③ | **Eli Lilly (LLY)** | **1 149,85 $ (01/10)** ✅ · seuil 1 020 $ |
+| ④ | **Magnum** | dormant |
+| ⑤ | **STM (STMPA)** | 47,035 € (29/09) · seuil 42 € non approché |
+| ⑥ | **Nike (NKE)** | non corroboré depuis le 28/09 |
+| — | ~~**Aubay (AUB)**~~ | ⏰ **SORTIE — PASSE, signal réfuté T2+T3** |
+| — | ~~Émergents (PAEEM)~~ | ⛔ **ÉCARTÉE — indice filtré ESG, gain marginal à cette taille** *(réexamen > 10 000 €)* |
