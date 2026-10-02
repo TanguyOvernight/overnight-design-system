@@ -1,7 +1,7 @@
 {
   "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
-  "maj": "2026-10-01",
-  "dernier_brief": 33,
+  "maj": "2026-10-02",
+  "dernier_brief": 34,
   "vus": {
     "jobup": [
       "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -142,7 +142,26 @@
       "66de4b98-6cdf-434c-b6e2-0db917e7bea0",
       "1e5cd58f-0916-401b-a9ab-67f9cc5c2edb",
       "e797e286-7e5e-4191-aaca-85c037d6e03e",
-      "7dda91c9-fdcd-45b7-8d07-3c2194e0a608"
+      "7dda91c9-fdcd-45b7-8d07-3c2194e0a608",
+      "a5561232-9368-48a2-8593-a920d48c0cfb",
+      "abb3bc19-7c70-485c-92de-fd5485458848",
+      "20d7bee3-1dad-4186-bb46-602cb3f2a817",
+      "a52d224f-0ffe-4790-88c1-40df94c5b42c",
+      "5765f847-c669-4a93-8277-f4480d99bdcc",
+      "427dcf84-6ddb-4499-a75c-1c3d09db16f8",
+      "6d70f0fd-2f23-4e5a-b507-7970729bf8fe",
+      "fb3af3c3-8127-4b3f-9242-cd5211c70c22",
+      "87400909-60c6-460a-9098-8a41c8f00fe8",
+      "521dde20-7ce2-4650-b9af-3794bcb51241",
+      "ea376844-b21e-4599-8b54-55774d1f7649",
+      "b6d2e591-27c8-4ce6-a43f-3c71551705ca",
+      "7c7dd84a-1646-4fd5-938e-aac94dcfeb73",
+      "04d3e5ad-a1fa-4654-9042-d5cb9448baaf",
+      "85784cda-362b-49aa-9d03-2f16653d81c5",
+      "56269d58-652c-4f30-ba13-f639070d10d1",
+      "b2111040-cb9e-42d6-84b0-af9bf14dcf9b",
+      "816c1856-a19a-4e9d-958e-1f797a3eee81",
+      "77d295ad-6142-4a3a-acdc-79ebf48792d6"
     ],
     "ats_employeurs": [
       "https://recrutement.eben-hezer.ch/jobs/7602918-responsable-communication-et-recherche-de-fonds",
@@ -273,7 +292,11 @@
       "4473791369",
       "4473548651",
       "4471726257",
-      "4471994000"
+      "4471994000",
+      "4472849204",
+      "4474707556",
+      "4472553381",
+      "4474303930"
     ],
     "chuv": [
       "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html"
@@ -1895,6 +1918,15 @@
         "TAG Heuer Creative Project Manager Signy (👀, LinkedIn 4473763746, 4+ ans, CDD 6 mois)",
         "Audemars Piguet Retail Marketing Operations Specialist Le Brassus (👀, LinkedIn 4472319035, 5 ans min)",
         "❌ notables PMI Sr Manager Brand Experience Design (10+ ans) et FISU Brand & Commercial Partnerships Manager (jobup 782932e4, 7 ans)"
+      ]
+    },
+    {
+      "brief": 34,
+      "date": "2026-10-02",
+      "offres": [
+        "JOUR CREUX — 0 nouvelle persona. ❌ notables : RTS Chef d'antenne Couleur 3 (LinkedIn 4472849204, direction/management exigé, DE/EN B1) et Edwards TDM Manager THV (LinkedIn 4463047513, diplôme Life Sciences requis) — toutes deux relues aux BONS IDs par le second regard après mélange d'IDs évité",
+        "♻️ AP Retail Education Specialist re-postée (repost du brief 15, CDD 12 mois, 3-5 ans)",
+        "Signal radar : Harmattan AI re-poste son EA pour la 3e fois (4474707556)"
       ]
     }
   ]

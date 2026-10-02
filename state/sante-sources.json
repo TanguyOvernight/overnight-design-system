@@ -174,5 +174,10 @@
     "careers.epfl.ch",
     "www.lausanne.ch",
     "qoqa.jobs"
-  ]
+  ],
+  "serpapi": {
+    "status": "PANNE",
+    "depuis": "2026-09-30",
+    "note": "3 jours consécutifs de connexions coupées (HTTP 000) au 02.10 — escalade allowlist au brief 34; précédent: panne 11-22.09"
+  }
 }
