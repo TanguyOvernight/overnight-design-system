@@ -130,3 +130,17 @@ apis.indeed.com, ch-fr.indeed.com (Indeed) · www.google.com (Google Jobs direct
 csekhvms53-dsn.algolia.net (recherche WTTJ) · jooble.org, careerjet.ch, adzuna.ch/api.adzuna.com,
 jobscout24.ch, myjob.ch, jobagent.ch, glassdoor.ch, monster.ch, talent.com (SSR vide),
 epfl.ch, lausanne.ch, olympics.com, ecal.ch, remoteok/himalayas/remotive/the muse/jobicy.
+
+### Addendum 03.10 (suite) — contournements : ce qui est possible et ce qui ne l'est pas
+- INDEED : le refus vient du PROXY DE L'ENVIRONNEMENT (403 au CONNECT, avant d'atteindre Indeed).
+  Ralentir/« humaniser » n'y change rien ; on ne contourne pas ce proxy (garde-fou réseau de la
+  session). Seule voie : ajouter ch-fr.indeed.com + apis.indeed.com à l'allowlist → alors
+  state/collecte/jobspy_indeed.py fonctionne tel quel (rythme prudent intégré).
+- SERPAPI : quota RÉEL = 250/mois (plan gratuit), 233 restants au 03.10 → budget ~7/jour via
+  state/collecte/serpapi_jobs.py (requêtes variées, pas de pagination : vide sur Lausanne).
+  Google Jobs agrège Indeed mais en filet (~1 lien sur 10).
+- RYTHME HUMAIN : state/collecte/polite.py (pauses aléatoires, recul exponentiel 429/403/503,
+  plafond par domaine, Accept-Language fr-CH) — pour LinkedIn/jobup/jobs.ch, joignables mais
+  rate-limités. Un refus proxy est détecté et non réessayé.
+- Radar : Rigi Technologies (drones, Vaud) publie un stage « AI-Driven Marketing » → la
+  scale-up structure son marketing ; surveiller un poste junior/confirmé.
