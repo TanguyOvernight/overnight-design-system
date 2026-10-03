@@ -81,3 +81,20 @@ résultats « AI Designer » et des 6 postes Lausanne du Workday officiel. RÈGL
 3. Chaque source peut échouer sans faire tomber le run — rapport de santé dans le brief.
 4. Fenêtre 48h + run quotidien.
 5. EGRESS_BLOCKED → substitution WebSearch si possible, et domaine listé dans 🔧.
+
+## Addendum 03.10.2026 — SPECTRE ÉLARGI (consigne Tanguy : « davantage d'offres par jour »)
+1. jobup quotidien : 15 mots-clés Lausanne (ajout content, social media, graphiste,
+   rédacteur, événement, growth, vidéo, web design) + Morges ×4 + VEVEY ×2 + NYON ×2
+   (≈23 requêtes, espacées 3 s — script versionné : state/collecte/parse_jobup.py).
+2. LinkedIn quotidien : distance=25 → 35 (couvre Vevey/Nyon/Rolle en P2) et kw
+   élargis : + "content creator", "social media", "graphic design", "communications".
+   Toujours max 6-8 requêtes espacées, re-extraction verbatim des URLs.
+3. Job-Room : keywords + "contenu", "graphisme", "événementiel".
+4. SCORING ÉLARGI : offre P2 (-1 géo) avec fit correct → publiée 👀 SYSTÉMATIQUEMENT
+   (plus jamais reléguée en « écartées notables ») ; CDD < 12 mois avec bon fit → 👀
+   systématique ; « écartées notables » réservé aux vrais KO (allemand exigé, 7+ ans,
+   stages, hors métier). Objectif : volume dans le brief ET sur le board.
+5. SerpAPI : quota inchangé (clé ~100 req/mois → max 3-4/jour) mais requête n°1
+   élargie : "(marketing OR communication OR designer OR content) Lausanne" sans chips.
+6. Board : toutes les offres publiées (👀 inclus) entrent dans offres.json avec
+   dist + fit + missions dès le jour 1.
