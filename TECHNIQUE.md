@@ -98,3 +98,8 @@ résultats « AI Designer » et des 6 postes Lausanne du Workday officiel. RÈGL
    élargie : "(marketing OR communication OR designer OR content) Lausanne" sans chips.
 6. Board : toutes les offres publiées (👀 inclus) entrent dans offres.json avec
    dist + fit + missions dès le jour 1.
+
+### Correctif 03.10 (soir) au spectre élargi
+Nyon RETIRÉ de la collecte quotidienne (trop loin — consigne Tanguy) ; Vevey
+conservé (train direct ~13 min). LinkedIn distance=25 (pas 35). Événementiel
+pur = hors scope (voir PERSONA). La préférence Lausanne/≤5 km guide le tri.

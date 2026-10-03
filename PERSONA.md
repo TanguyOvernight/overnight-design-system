@@ -109,3 +109,14 @@ Malus : grille corporate rigide, poste siloté.
    traitées sans aucune réserve.
 2. Salaire : pas de plancher — affiché quand l'annonce le donne, sans filtrage.
 3. Permis/résidence : citoyen UE en mobilité Lyon→Lausanne — sans impact sur la collecte.
+
+## Précisions Tanguy du 03.10.2026 (soir)
+- ÉVÉNEMENTIEL : « je ne fais pas d'événementiel » — les postes à dominante
+  événementielle (event coordinator/manager, comm événementielle pure) sont
+  HORS SCOPE → ❌ ou 👀 bas avec ⚠️. L'événementiel comme mission secondaire
+  d'un poste comm généraliste reste acceptable.
+- GÉO resserrée : GROSSE PRÉFÉRENCE pour Lausanne ou ≤ 5 km (Pully, Prilly,
+  Renens, Chavannes, Paudex, Epalinges…), toujours ACCESSIBLE EN TRANSPORTS.
+  Le corridor jusqu'à Morges reste P1 ; au-delà = -1 ; NYON = trop loin
+  (P2 rare, seulement si exceptionnelle) — retiré de la collecte quotidienne.
+  Rayon LinkedIn ramené à 25 km.

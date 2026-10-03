@@ -10,8 +10,7 @@ KW_FULL=["marketing","communication","brand","designer","digital","intelligence%
          "content","social%20media","graphiste","r%C3%A9dacteur","v%C3%A9nement","growth","vid%C3%A9o","web%20design"]
 queries=[("Lausanne",k) for k in KW_FULL] \
        +[("Morges",k) for k in ["marketing","communication","designer","digital"]] \
-       +[("Vevey",k) for k in ["marketing","communication"]] \
-       +[("Nyon",k) for k in ["marketing","communication"]]
+       +[("Vevey",k) for k in ["marketing","communication"]]
 out=[]
 for loc,kw in queries:
     url=f"https://www.jobup.ch/fr/emplois/?location={loc}&publication-date=2&term={kw}"
