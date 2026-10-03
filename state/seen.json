@@ -1,7 +1,7 @@
 {
   "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
-  "maj": "2026-10-02",
-  "dernier_brief": 34,
+  "maj": "2026-10-03",
+  "dernier_brief": 35,
   "vus": {
     "jobup": [
       "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -161,7 +161,15 @@
       "56269d58-652c-4f30-ba13-f639070d10d1",
       "b2111040-cb9e-42d6-84b0-af9bf14dcf9b",
       "816c1856-a19a-4e9d-958e-1f797a3eee81",
-      "77d295ad-6142-4a3a-acdc-79ebf48792d6"
+      "77d295ad-6142-4a3a-acdc-79ebf48792d6",
+      "d5842508-b052-4b19-8abb-b7308a620ce9",
+      "f500ca31-fcfd-481f-8206-472489250361",
+      "c4585fc2-d366-4c2f-ad5e-3895a9d1e68e",
+      "cf62483b-992f-48f9-8bf8-a3aa83a7ab51",
+      "dcd20615-b202-4dc0-8bf7-1a88ef4f1789",
+      "620ac5b4-647e-4946-92cc-e1c2fd6efd66",
+      "f1d06181-0d46-44af-9ced-fdddd5e5e875",
+      "b69e707f-a9dd-444c-9d14-b1dc5fb2478f"
     ],
     "ats_employeurs": [
       "https://recrutement.eben-hezer.ch/jobs/7602918-responsable-communication-et-recherche-de-fonds",
@@ -296,7 +304,12 @@
       "4472849204",
       "4474707556",
       "4472553381",
-      "4474303930"
+      "4474303930",
+      "4474716554",
+      "4474850991",
+      "4473358000",
+      "4472903644",
+      "4465051898"
     ],
     "chuv": [
       "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html"
@@ -342,7 +355,8 @@
     "autres": [
       "jobagent:3254744a77 (Akiden bright)",
       "wttj:propulse-lab copywriter freelance + CDI",
-      "emplois-vaud:3253533672 (Benezet)"
+      "emplois-vaud:3253533672 (Benezet)",
+      "hosco:createur-de-contenus-visuels sandoz (09.09, fraîcheur incertaine)"
     ]
   },
   "postees": [
@@ -1927,6 +1941,16 @@
         "JOUR CREUX — 0 nouvelle persona. ❌ notables : RTS Chef d'antenne Couleur 3 (LinkedIn 4472849204, direction/management exigé, DE/EN B1) et Edwards TDM Manager THV (LinkedIn 4463047513, diplôme Life Sciences requis) — toutes deux relues aux BONS IDs par le second regard après mélange d'IDs évité",
         "♻️ AP Retail Education Specialist re-postée (repost du brief 15, CDD 12 mois, 3-5 ans)",
         "Signal radar : Harmattan AI re-poste son EA pour la 3e fois (4474707556)"
+      ]
+    },
+    {
+      "brief": 35,
+      "date": "2026-10-03",
+      "offres": [
+        "nuée Production Manager/Resp production audiovisuelle 80% Lausanne (👀 haut, LinkedIn 4474716554, expérience confirmée sans années, contrat non précisé, candidature info@nuee.ch)",
+        "Sandoz Foundation Hotels/Beau-Rivage Créateur de Contenus Visuels (👀, CDI 100%, 5 ans min, publiée 09.09 délistée jobup → ⚠️ possiblement périmée, lien Hosco verbatim)",
+        "♻️ CVCI CRM republié via Multi Personnel (LinkedIn ×2)",
+        "❌ notables Sabina Graphiste Senior (bilingue DE/FR + CDD maternité), YO AI Labs gig contractor"
       ]
     }
   ]
