@@ -20,6 +20,19 @@ Trois piliers :
    site corporate en React Three Fiber codé seul, automatisations (réunions→CRM,
    briefs quotidiens), workflows IA génératifs. Pas un simple utilisateur : un bâtisseur.
 
+### Pilier 3 élargi (consigne Tanguy du 03.10.2026 — projets récents)
+Compétences consolidées via les derniers projets (Chat3D, Sandflow, Overnight, entre
+autres) : **vibe-coding de très bon niveau avec Claude** — de l'idée au prototype
+fonctionnel : specs produit, prototypes web interactifs (React/React Three Fiber),
+design systems appliqués au code, dashboards et briefs automatisés, pipelines de
+contenu IA/3D, intégration d'APIs via Claude.
+⚠️ GARDE-FOU EXPLICITE : Tanguy N'EST PAS développeur — pas de background de
+codage classique. Le vibe-coding est un multiplicateur de son profil marketing/créa,
+JAMAIS une raison de scorer un poste d'ingénierie logicielle (dev, data engineer,
+ML engineer → ❌ inchangé). En revanche : « Python/IA un plus », « technical
+marketing », « creative technologist », « automatisations », « no-code/IA-assisted »
+dans une offre marketing/créa/contenu = bonus réel à valoriser dans l'angle.
+
 Titre actuel : **Head of Marketing & Brand Identity** (Chat3D / Overnight Studio, 4 ans).
 Avant : **2,5 ans dans le gaming** (Game Only) — renforce le secteur gaming/e-sport.
 Portfolio : **oblativity.com**. Basé à **Lyon → candidature en mobilité** vers Lausanne
@@ -60,7 +73,8 @@ Lead · Marketing Automation / AI Marketing · Product Marketing Manager · Comm
 
 ### Anti-persona (❌, jamais posté)
 Pure performance SEA/PPC sans dimension créative · postes commerciaux déguisés ·
-exécution graphique junior · stages/apprentissages · < 80 %.
+exécution graphique junior · stages/apprentissages · < 80 % · postes d'ingénierie
+logicielle pure (dev/data/ML engineer) — le vibe-coding ne change PAS cette règle.
 
 ## Périmètre géographique — ÉLARGI le 30.08 (consigne Tanguy : « alentours en
 ## transports en commun jusqu'à Morges incluse »)

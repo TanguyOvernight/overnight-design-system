@@ -75,3 +75,21 @@ _Publiée {fraîcheur} · {source}_
 - Émojis en caractères Unicode directs. Le brief est UN message (pas de thread).
 - Les échanges de suivi (« montre-moi l'offre X ») se font en réponse dans le canal ou
   dans la conversation de la routine.
+
+## Addendum 03.10.2026 — Job board artifact (consigne Tanguy, 1er message depuis le 01.09)
+- Un ARTIFACT « Veille Emploi Lausanne » double désormais le brief :
+  https://claude.ai/artifact/Qxk3XD5vYj3i1GToLMEpQz (URL stable — toujours
+  republier sur CETTE URL, jamais en créer une nouvelle).
+- Source de vérité : state/offres.json → state/build_board.py → publier.
+  CHAQUE RUN : ajouter les nouvelles offres du brief dans offres.json
+  (avec dist + fit M/DA/IA/pct), mettre à jour st (ouverte/fermee/incertaine)
+  et les suivis, rebuild, republier, et inclure le lien du board dans le brief.
+- Design : cards façon Zepcruit/Apple — jauge de fit + piliers M/DA/IA par
+  card (consigne : « que je puisse d'un coup d'œil savoir si ça colle avec
+  mes compétences »), distance depuis Lausanne (km + temps TC) sur chaque
+  offre, icônes SVG, filtres, badges (NOUVEAU/★Claude/✦GenAI/⏰délai/📌/⚠️).
+- LE FORMAT SLACK RESTE INCHANGÉ (consigne explicite : « garde le format
+  slack tout de même, l'artifact c'est pour l'aspect visuel »').
+- PERSONA élargi le même jour : vibe-coding haut niveau (Chat3D, Sandflow…)
+  = bonus sur postes marketing/créa techniques ; GARDE-FOU : jamais de
+  postes d'ingénierie (Tanguy n'est pas développeur).
