@@ -144,3 +144,18 @@ epfl.ch, lausanne.ch, olympics.com, ecal.ch, remoteok/himalayas/remotive/the mus
   rate-limités. Un refus proxy est détecté et non réessayé.
 - Radar : Rigi Technologies (drones, Vaud) publie un stage « AI-Driven Marketing » → la
   scale-up structure son marketing ; surveiller un poste junior/confirmé.
+
+### 03.10 (fin) — ALLOWLIST ÉLARGIE PAR TANGUY → résultats des tests
+- INDEED ACTIF via JobSpy (state/collecte/jobspy_indeed.py, apis.indeed.com OK) — à lancer
+  CHAQUE MATIN. Mesure 7 j / 25 km : 60 offres uniques, 10 titres métier dont 7 déjà connus
+  (AP, PMI, TAG, Osmose…) → apport = PME qui ne publient que sur Indeed (ex. Holy Cow,
+  Dream Beauty Spa). Fenêtre quotidienne : hours_old=72, distance=15.
+- www.google.com 200 (Google Jobs direct possible, SerpAPI reste plus fiable).
+- offres-emploi.vd.ch 200 (portail État de Vaud), embodiedai.ch 200, neuralconcept.com 200,
+  lausanne.ch 200, swissaijob.ch 200 (que de l'ingénierie/recherche à Lausanne).
+- 403 anti-bot des sites eux-mêmes (pas le proxy) : ch-fr.indeed.com (pages), jooble, jobagent,
+  emplois-vaud.ch, hubflow.chat3d.ai, algolia WTTJ (clé front refusée hors navigateur).
+- careerjet.ch / myjob.ch / jobscout24.ch : joignables mais URL de recherche à trouver (404) —
+  TODO passe hebdo.
+- Embodied AI : ATS = Teamtailor (embodiedai.teamtailor.com) ; 4 postes, tous ingénierie
+  robotique au 03.10 → aucun marketing, fenêtre spontanée ouverte.
