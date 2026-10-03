@@ -43,7 +43,12 @@ def est_titre(txt: str) -> bool:
     return sum(c.isupper() for c in lettres) / len(lettres) >= 0.8
 
 
-MARQUEURS_LISTE = "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳•"
+MARQUEURS_LISTE = "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳•✅❌📉"
+# 7e correction (03/10). "✅ *STM* — n'a jamais approché..." ressortait en GRAS :
+# la 6e correction avait ajoute les glyphes que j'avais SOUS LES YEUX (puces et
+# numeros cercles), pas ceux que mon format utilise aussi comme puces. ✅/❌/📉
+# ouvrent des ELEMENTS DE LISTE dans la Verif' des appels depuis des semaines.
+# Lecon : un correctif sur une ENUMERATION de cas se re-casse au cas suivant.
 
 
 def est_element_de_liste(ligne: str) -> bool:

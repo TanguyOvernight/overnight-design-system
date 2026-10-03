@@ -2627,3 +2627,35 @@ pièce — c'est la différence entre combler un trou et finir un travail.**
 il ne l'est pas pour corriger la statistique ».**
 > **Nommer son propre biais avant de conclure est plus crédible que de ne pas le nommer.** *C'est
 > le geste que je m'impose sur le registre — il vaut aussi pour les agents.*
+
+---
+
+## ㊸ — demander la COMPARAISON, pas la MESURE *(03/10/2026)*
+> **Avant de réclamer un chiffre, dériver le SEUIL qui changerait la décision.** La réponse
+> devient un oui/non au lieu d'une saisie — et très souvent le seuil démontre que le chiffre
+> n'était pas nécessaire.
+
+**Cas de naissance.** J'ai réclamé la valorisation totale `V` pendant **dix semaines** pour
+vérifier `R ≤ 25 %`. Or :
+```
+R ≤ 25 %  ⟺  N ≤ V/4  ⟺  N ≤ (N+C)/4  ⟺  3N ≤ C
+```
+*« le risqué sous 25 % » = « le cœur vaut au moins trois fois le risqué ».* Et le cœur du PEA
+était **connu sans rien demander** — j'avais spécifié les trois ordres moi-même. Seuil obtenu :
+**+12,2 % sur les positions risquées depuis le 25/07**, une question à quatre mots.
+
+**Parenté.** ㊶ *(un prix est nécessaire pour ACHETER, pas pour REJETER)* a été écrite la
+veille, 02/10, sur le prix d'Aubay. **Même racine, deux faces** : ㊶ interdit de bloquer un
+REJET sur une donnée manquante, ㊸ interdit de bloquer une DEMANDE sur une donnée dérivable.
+*Dans les deux cas la faute est de confondre « ça manque » avec « c'est la dernière pièce ».*
+**Re-commise en 24 h sur un autre objet — donc la règle précédente n'avait pas généralisé.**
+
+**Protocole.** Toute demande chiffrée à Tanguy doit désormais porter la dérivation du seuil
+**avant** l'envoi. Si le seuil est calculable sans lui, la demande disparaît ; s'il ne l'est
+pas, elle devient binaire. *Corollaire : ㉝ (une seule demande par brief) reste une règle
+d'hygiène, mais C058 a établi qu'elle ne traitait pas la cause — réduire 4 demandes à 1 n'a
+produit aucune réponse. Le levier est la FORME de la demande, pas son nombre.*
+
+**Condition d'invalidation.** La borne suppose les trois ordres exécutés. À 112 parts le seuil
+passe à −31 % et bascule. **Donc la confirmation d'exécution reste nécessaire ; ㊸ ne la
+supprime pas, elle supprime la valorisation.**

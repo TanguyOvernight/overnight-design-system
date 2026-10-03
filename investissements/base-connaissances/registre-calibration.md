@@ -2897,5 +2897,91 @@ le 30/09* **(C049 ~31/10, C011, C014, C015, C017, C054)**. **Sept maintenant.**
 > sept échéances sont dans l'état exact qui a fait manquer le jalon CFT pendant 57 jours.**
 
 ### 📊 État du registre
-**18 résolus · Brier moyen 0,2794 · BSS −0,118.** Ouverts : **C011 · C013** *(VOID, réouvrable)*
+**19 résolus · Brier moyen 0,2759 · BSS −0,103.** Ouverts : **C011 · C013** *(VOID, réouvrable)*
 **· C014 · C015 · C016 · C017** *(P révisé à 40 %)* **· C049 · C054 · C056 · C057 · C059.**
+
+---
+
+# 📋 REVUE DU SAMEDI 03/10/2026 — semaine 28/09 → 02/10
+
+## ❌ C058 — RÉSOLU FAUX, et résolu EN RETARD par ma faute
+
+| Appel | P | Issue | Brier |
+|---|---|---|---|
+| **C058** — *Tanguy confirme l'exécution de ses ordres WPEA d'ici le 30/09/2026* | **46 %** | **FAUX** — *aucun message de sa part depuis le 21/09, soit 12 jours* | **0,2116** |
+
+### 🔴 La faute AVANT le score : j'ai déclaré C058 résolu sans le résoudre
+Le 30/09, dans l'audit des jalons, j'ai écrit en note de bas de tableau :
+*« C058 est résolu ce jour par ce déclencheur-ci. »* **C'était faux au moment où je l'écrivais** :
+aucune ligne de résolution, aucun Brier, le score est passé de 17 à 18 sans lui.
+
+**Mécanisme** — j'ai traité la question « cet appel a-t-il un déclencheur ? » et j'ai répondu
+« oui, celui d'aujourd'hui », *puis je n'ai pas exécuté ce que cette réponse impliquait.*
+La note n'était pas un mensonge, c'était **une promesse non tenue dans la même phrase.**
+C'est ㉘ — *un document se lit une fois et sert deux fois* — appliqué à un document que
+j'avais sous les yeux : **j'ai lu la couverture et je n'ai pas fait la résolution.**
+
+> ⚠️ **Et c'est le deuxième appel de la quinzaine résolu en retard** *(C052 : 3 jours en VOID
+> après lecture de la pièce qui le rouvrait)*. **Même espèce, même cause : la lecture déclenche
+> l'écriture d'un constat, pas l'exécution de l'acte.**
+
+### 📉 Score après C058
+```
+Avant :  18 résolus · somme 5,0299 · Brier moyen 0,2794 · BSS −0,118
+C058  :  FAUX · P = 46 % · Brier 0,2116   (sous la moyenne → améliore)
+Après :  19 résolus · somme 5,2415 · Brier moyen 0,2759 · BSS −0,103
+```
+**19 résolus · Brier moyen 0,2759 · BSS −0,103.** *Toujours sous le hasard.*
+
+### 🔑 Ce que C058 mesurait vraiment — et le verdict est contre MOI
+C058 n'était pas un pari sur Tanguy. Je l'avais écrit noir sur blanc le 27/09 :
+*« l'appel mesure si la correction que j'applique aujourd'hui — une seule demande — fonctionne. »*
+
+**Elle n'a pas fonctionné.** Quatre demandes par brief → zéro réponse. Une seule demande
+par brief → zéro réponse. **Le goulot n'est donc pas le NOMBRE de demandes**, et ㉝ — qui
+reste une bonne règle d'hygiène — ne traitait pas la cause.
+
+Causes que je ne peux pas distinguer : il lit et ne priorise pas · il ne lit pas le canal ·
+la capture d'écran est plus coûteuse que je ne le crois · il est satisfait et ne voit rien
+à répondre. **Je n'ai aucun moyen de trancher et je ne tranche pas.** Mais la conséquence
+opérationnelle, elle, est certaine : *un système dont les garde-fous dépendent de sa saisie
+est un système à garde-fous périmés.* **Donc je supprime la dépendance.**
+
+---
+
+## 🆕 ㊸ — demander la COMPARAISON, pas la MESURE
+> **Avant de réclamer un chiffre, dériver le SEUIL qui changerait la décision.** La réponse
+> devient un oui/non au lieu d'une saisie, et très souvent le seuil démontre que le chiffre
+> n'était pas nécessaire.
+
+**Cas de naissance — le garde-fou R, réclamé 10 semaines pour rien.**
+`R = (titres vifs + ETF non-cœur) ÷ V` et la charte veut **R ≤ 25 %**. Je demandais V
+*(valorisation totale)* depuis le 25/07. Or :
+
+```
+R ≤ 25 %  ⟺  N ≤ V/4  ⟺  N ≤ (N+C)/4  ⟺  3N ≤ C  ⟺  C ≥ 3N
+            (N = risqué, C = cœur)
+```
+**« R ≤ 25 % » signifie exactement « le cœur vaut au moins trois fois le risqué ».**
+Et le cœur du PEA, je le connais **sans rien demander** — j'ai moi-même spécifié les trois
+ordres : 70 + 42 parts le 21/09, 70 parts le 01/10 = **182 parts**, à 7,08 € = **1 288,56 €**.
+
+```
+Cœur PEA seul           = 1 288,56 €
+Donc R ≤ 25 % dès que     N ≤ 1 288,56 / 3 = 429,52 €
+N au 25/07 (44,0 % × 870) =   382,80 €
+→ bascule à  +12,2 %  sur les positions risquées depuis le 25/07
+```
+*(borne CONSERVATRICE : elle ignore le cœur détenu sur eToro, qui ne peut que faire baisser R.)*
+
+> ✅ **La question à 10 semaines se réduit à : ses positions risquées ont-elles pris plus ou
+> moins de 12 % depuis juillet ?** Quatre mots de réponse, aucune capture d'écran.
+> 🔴 **Et le calcul n'utilise QUE des données que j'avais déjà.** Je réclamais une mesure
+> parce qu'elle manquait, pas parce qu'elle était la dernière pièce — **exactement la faute ㊶
+> écrite la veille sur le prix d'Aubay, re-commise sur un autre objet en 24 h.**
+
+**Conditions d'invalidation de la borne** *(à vérifier si la réponse arrive)* : si les trois
+ordres n'ont PAS tous exécuté, le cœur PEA est plus petit et le seuil descend. À 112 parts
+seulement *(les deux premiers ordres)* : cœur 792,96 €, seuil 264,32 €, soit **−31 %** — la
+borne basculerait dans l'autre sens. **C'est pourquoi la confirmation d'exécution reste la
+pièce dure, et pourquoi C058 comptait.**

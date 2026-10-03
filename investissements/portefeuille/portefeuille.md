@@ -162,3 +162,24 @@ ancrage d'indice validé au 25/07** : je ne peux pas chaîner.
 
 **État au 14/09 : V = ~1 015 $ (~870 €) au 25/07 — 🔴 PÉRIMÉ (51 jours).
 L ≈ 131 € 🔴 périmé. R = 44,0 % 🔴 périmé.**
+
+
+---
+
+## 🔁 03/10/2026 — le garde-fou R est VÉRIFIABLE sans valorisation *(㊸)*
+`R ≤ 25 %  ⟺  3N ≤ C` *(N = titres vifs + ETF non-cœur ; C = cœur)*
+
+| Grandeur | Valeur | Source |
+|---|---|---|
+| Cœur PEA *(si les 3 ordres ont exécuté)* | **1 288,56 €** | 70+42 parts 21/09 + 70 parts 01/10 = **182** × 7,08 € |
+| Prix de revient cumulé | ~**1 275,29 €** | 493,43 + 296,06 + ~485,80 |
+| → seuil : R ≤ 25 % tant que N ≤ | **429,52 €** | 1 288,56 ÷ 3 |
+| N au 25/07 *(44,0 % × 870 €)* | **382,80 €** | dernier relevé daté |
+| **→ bascule à** | **+12,2 %** | sur les lignes risquées depuis le 25/07 |
+
+> ✅ **Borne CONSERVATRICE** : elle ignore le cœur détenu sur eToro, qui ne peut que faire
+> baisser R. **La valorisation `V` n'est donc plus nécessaire au garde-fou d'exposition.**
+> 🔴 **Mais `V` reste nécessaire à `L = min(5 % × (V + 6 000 €) ; 15 % × V)`** — la taille de
+> ligne offensive, elle, n'a pas d'équivalent en seuil. *Et V reste 🔴 PÉRIMÉ (70 jours).*
+> ⚠️ **Fragilité** : à 112 parts seulement, cœur = 792,96 €, seuil = 264,32 €, bascule à
+> **−31 %** — la borne s'inverse. **La confirmation d'exécution reste la pièce dure.**
