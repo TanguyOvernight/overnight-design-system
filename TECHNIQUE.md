@@ -103,3 +103,30 @@ résultats « AI Designer » et des 6 postes Lausanne du Workday officiel. RÈGL
 Nyon RETIRÉ de la collecte quotidienne (trop loin — consigne Tanguy) ; Vevey
 conservé (train direct ~13 min). LinkedIn distance=25 (pas 35). Événementiel
 pur = hors scope (voir PERSONA). La préférence Lausanne/≤5 km guide le tri.
+
+## Addendum 03.10.2026 — NOUVELLES SOURCES (consigne Tanguy : « nouveaux angles », « un maximum d'API gratuites »)
+Scripts versionnés dans state/collecte/ — à lancer CHAQUE MATIN en plus de jobup/Job-Room :
+1. **jobsch_api.py** — API JSON publique jobs.ch (même base que jobup, contourne l'anti-bot
+   HTML). rows ≤ 20 (sinon 422), pagination page=1..3. Chaque doc = lien officiel verbatim
+   (_links.detail_fr), language_skills, work_experience, employment_grades, is_active,
+   coordonnées GPS → distance réelle (ignorer si > 80 km pour une commune du corridor : coordonnées
+   du siège). Recherche plein texte → filtrer sur le TITRE (regex métier + exclusions).
+2. **linkedin_guest.py** — API guest LinkedIn : PAGINATION PAR PAS DE 10 (start=0,10,20,30) —
+   on ne lisait que la 1re page (36 offres « marketing »/7 j au lieu de 10). Fiche détaillée :
+   jobs-guest/jobs/api/jobPosting/{id} → texte complet + critères structurés (séniorité, type).
+3. **ats_scan.py + ats_registry.json** — API publiques d'ATS, gratuites sans clé :
+   Ashby (api.ashbyhq.com/posting-api/job-board/{slug}) — NOUVEAU, ouvre Neural Concept,
+   Harmattan AI, Adaptyv Bio (sites carrières bloqués) ; Greenhouse (boards-api) ; Lever (api.lever.co) ;
+   SmartRecruiters (api.smartrecruiters.com). Ajouter chaque slug d'employeur vaudois découvert.
+   1re prise : Adaptyv Bio Community Manager (🎯, 03.10).
+4. **JobSpy** (python-jobspy, open source) installé et testé : LinkedIn OK ; Indeed et Google
+   ÉCHOUENT au niveau du proxy (apis.indeed.com, www.google.com → 403). Prêt à servir dès que
+   ces domaines sont autorisés.
+5. WTTJ : pages /fr/companies/{slug}/jobs/{job} lisibles (SSR) ; recherche géo et liste
+   d'entreprises = JavaScript + Algolia (CSEKHVMS53-dsn.algolia.net) BLOQUÉ par le proxy.
+
+### Testés et BLOQUÉS par le proxy (403 tunnel / 000) — à ajouter à l'allowlist si voulus
+apis.indeed.com, ch-fr.indeed.com (Indeed) · www.google.com (Google Jobs direct) ·
+csekhvms53-dsn.algolia.net (recherche WTTJ) · jooble.org, careerjet.ch, adzuna.ch/api.adzuna.com,
+jobscout24.ch, myjob.ch, jobagent.ch, glassdoor.ch, monster.ch, talent.com (SSR vide),
+epfl.ch, lausanne.ch, olympics.com, ecal.ch, remoteok/himalayas/remotive/the muse/jobicy.

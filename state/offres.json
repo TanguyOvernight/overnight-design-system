@@ -3,6 +3,87 @@
  "maj": "2026-10-03",
  "offres": [
   {
+   "d": "2026-10-03",
+   "b": 35,
+   "s": "cible",
+   "st": "ouverte",
+   "suivi": true,
+   "depuis": "2026-10-03",
+   "t": "Community Manager",
+   "c": "Adaptyv Bio",
+   "l": "Lausanne (hybride)",
+   "dist": "Lausanne",
+   "tx": "100%",
+   "ct": "Full-time (CDI présumé)",
+   "xp": "1-3 ans",
+   "lg": "EN (écriture distinctive exigée)",
+   "u": "https://jobs.ashbyhq.com/adaptyv/5a44f0eb-8d0d-4b04-9d51-9933f899aeaf",
+   "n": "La startup « agentic biology » du radar marché caché (Série A €34M) — poste trouvé via l'API Ashby, leur site carrières étant bloqué. ⚠️ Publiée le 03.06 mais toujours listée active : candidater vite.",
+   "g": true,
+   "cl": false,
+   "dl": null,
+   "fit": {
+    "m": 2,
+    "da": 1,
+    "ia": 2,
+    "pct": 90
+   },
+   "ms": [
+    "Animer la présence sociale au quotidien sur X et LinkedIn : updates produit, succès clients, contenus de conférence, réactions à l'actualité du domaine",
+    "Faire vivre la communauté Proteinbase : newsletter, actus des compétitions, portraits de designers, Slack communautaire",
+    "Gérer côté participants les compétitions ouvertes et hackathons, et transformer chaque événement en contenu public (leaderboard, dataset, article)",
+    "Trier les messages entrants communauté/clients et router les questions techniques",
+    "Coordonner avec les fondateurs et l'équipe scientifique ce qu'on publie et amplifie"
+   ],
+   "inf": [
+    "1 à 3 ans en social, contenu ou communauté pour une entreprise technique ou une plateforme communautaire — audiences construites soi-même comptées",
+    "« Une voix d'écriture forte et distinctive », sans formulations IA génériques",
+    "Hybride Lausanne / remote · temps plein",
+    "Les hackathons sont une mission secondaire (pas un poste événementiel)",
+    "Publiée le 03.06.2026 — toujours active sur leur board officiel le 03.10"
+   ],
+   "at": "Une startup IA en pleine croissance qui veut une voix éditoriale humaine et distinctive : ton hybride marketing + DA + bâtisseur IA, et ta capacité à produire vite du contenu visuel autour d'une techno complexe. Montre une audience ou un contenu que tu as construit toi-même."
+  },
+  {
+   "d": "2026-10-03",
+   "b": 35,
+   "s": "solide",
+   "st": "ouverte",
+   "t": "Webmaster spécialisé UI/UX (80-100%)",
+   "c": "Centre Patronal",
+   "l": "Paudex",
+   "dist": "4 km · ~10 min TC",
+   "tx": "80-100%",
+   "ct": "n.p.",
+   "xp": "3 ans min",
+   "lg": "FR + EN B2 min · DE atout",
+   "u": "https://www.jobs.ch/fr/offres-emplois/detail/f5b13669-1723-4d29-bcce-511ab4d9095b/",
+   "n": "Trouvé via l'API jobs.ch. Gestion web, CMS, UI/UX, création visuelle. ⚠️ Demande aussi des bases de développement web (HTML/CSS/JS/PHP).",
+   "g": false,
+   "cl": false,
+   "dl": null,
+   "fit": {
+    "m": 1,
+    "da": 2,
+    "ia": 1,
+    "pct": 72
+   },
+   "ms": [
+    "Gérer et faire évoluer les sites web (contenus, CMS)",
+    "Concevoir les interfaces et l'expérience utilisateur (UI/UX)",
+    "Création visuelle : Figma, Adobe Creative Suite, Canva",
+    "SEO et suivi (Google Search Console)"
+   ],
+   "inf": [
+    "Minimum 3 ans dans un poste similaire",
+    "CMS : WordPress, Drupal ou Typo3",
+    "⚠️ Compétences en développement web demandées (HTML, CSS, JavaScript, PHP)",
+    "Anglais B2 minimum · allemand atout",
+    "À 4 km de Lausanne (Paudex)"
+   ],
+   "at": "Le pilier DA web + ton vibe-coding : Figma et la création visuelle sont ton terrain ; pour la partie code, sois transparent — tu construis avec Claude, tu n'es pas développeur."
+  },
+  {
    "d": "2026-09-30",
    "b": 32,
    "s": "cible",
@@ -15,8 +96,8 @@
    "tx": "100%",
    "ct": "Full-time",
    "xp": "Entry level",
-   "u": "https://ch.linkedin.com/jobs/view/technical-marketing-engineer-at-neural-concept-4471760796",
-   "n": "PREMIER poste marketing de la scale-up simulation/IA (CMO ouvert le 16.09). Démos, contenu technique, co-marketing NVIDIA. Anglais seul. Postule avec une démo — ton site React Three Fiber EST l'argument.",
+   "u": "https://jobs.ashbyhq.com/neuralconcept/e98ebb0a-dd1b-4098-9809-06cbda80a5a0",
+   "n": "PREMIER poste marketing de la scale-up simulation/IA (CMO ouvert le 16.09). Démos, contenu technique, co-marketing NVIDIA. Anglais seul. Postule avec une démo — ton site React Three Fiber EST l'argument. Lien officiel Ashby (plutôt que LinkedIn).",
    "g": true,
    "cl": false,
    "dl": null,

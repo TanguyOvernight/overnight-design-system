@@ -1,0 +1,26 @@
+{
+  "_doc": "Registre des employeurs lisibles via API d'ATS publique (gratuite, sans clé). Scanné par state/collecte/ats_scan.py. Ajouter tout nouveau slug trouvé.",
+  "maj": "2026-10-03",
+  "ashby": [
+    "neuralconcept",
+    "harmattan-ai",
+    "adaptyv"
+  ],
+  "greenhouse": [
+    "proton",
+    "scandit",
+    "spotme"
+  ],
+  "lever": [
+    "sonarsource",
+    "swissborg"
+  ],
+  "smartrecruiters": [],
+  "bloques_reseau": [
+    "personio",
+    "recruitee",
+    "teamtailor",
+    "workable (429)",
+    "jobs.ashbyhq.com pages (API OK)"
+  ]
+}

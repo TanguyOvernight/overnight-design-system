@@ -169,7 +169,10 @@
       "dcd20615-b202-4dc0-8bf7-1a88ef4f1789",
       "620ac5b4-647e-4946-92cc-e1c2fd6efd66",
       "f1d06181-0d46-44af-9ced-fdddd5e5e875",
-      "b69e707f-a9dd-444c-9d14-b1dc5fb2478f"
+      "b69e707f-a9dd-444c-9d14-b1dc5fb2478f",
+      "2e9fd9ab-9515-46f3-a9d2-acfd0147f2ec",
+      "bf311247-e4cd-4c9c-8515-e622586bce51",
+      "f5555cbe-1c00-4ec9-9489-53c5a1218163"
     ],
     "ats_employeurs": [
       "https://recrutement.eben-hezer.ch/jobs/7602918-responsable-communication-et-recherche-de-fonds",
@@ -357,6 +360,10 @@
       "wttj:propulse-lab copywriter freelance + CDI",
       "emplois-vaud:3253533672 (Benezet)",
       "hosco:createur-de-contenus-visuels sandoz (09.09, fraîcheur incertaine)"
+    ],
+    "ashby": [
+      "adaptyv:5a44f0eb",
+      "neuralconcept:e98ebb0a"
     ]
   },
   "postees": [

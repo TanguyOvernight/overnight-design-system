@@ -107,6 +107,18 @@
       "dernier_check": "2026-10-03",
       "statut": "en ligne (GET ✔ 03.10) — DÉLAI 11.10 (J-8)",
       "note": "CDD 1 an auxiliaire, 80-100%, 3 ans min, DÉLAI 11.10.2026, entrée 01.01.27"
+    },
+    {
+      "id": "adaptyv-cm",
+      "titre": "Community Manager",
+      "entreprise": "Adaptyv Bio",
+      "lieu": "Lausanne (hybride)",
+      "score": "🎯",
+      "lien": "https://jobs.ashbyhq.com/adaptyv/5a44f0eb-8d0d-4b04-9d51-9933f899aeaf",
+      "premiere_apparition": "2026-10-03",
+      "dernier_check": "2026-10-03",
+      "statut": "listée active sur Ashby (API) le 03.10 — publiée 03.06",
+      "note": "re-check via API Ashby : isListed"
     }
   ]
 }
