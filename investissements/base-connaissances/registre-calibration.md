@@ -2732,7 +2732,7 @@ pas — il me faut des propositions qui SE RÉSOLVENT.*
 | Réf | Date | Proposition | Brut | **P enregistré** | Résolution |
 |---|---|---|---|---|---|
 | **C056** | 27/09 | **L'éligibilité PEA des ETF synthétiques est MAINTENUE au 31/12/2026** *(aucun amendement restrictif adopté)* | 97 % → rétraction 87,6 % | **78 %** *(plafond de charte)* | texte définitif du PLF 2027 · **31/12/2026** |
-| **C057** | 27/09 | **STM touche 42,00 € ou moins en CLÔTURE d'ici le 31/10/2026** | 30 % → rétraction | **34 %** | clôture Euronext Paris datée · **31/10/2026** |
+| **C057** *(P révisé 20 % le 04/10)* | 27/09 | **STM touche 42,00 € ou moins en CLÔTURE d'ici le 31/10/2026** | 30 % → rétraction | **34 %** | clôture Euronext Paris datée · **31/10/2026** |
 | **C058** | 27/09 | **Tanguy confirme l'exécution de ses ordres WPEA d'ici le 30/09/2026** | 45 % → rétraction | **46 %** | message de sa part · **30/09/2026** |
 
 ### Ce que chaque appel mesure réellement
@@ -2985,3 +2985,107 @@ ordres n'ont PAS tous exécuté, le cœur PEA est plus petit et le seuil descend
 seulement *(les deux premiers ordres)* : cœur 792,96 €, seuil 264,32 €, soit **−31 %** — la
 borne basculerait dans l'autre sens. **C'est pourquoi la confirmation d'exécution reste la
 pièce dure, et pourquoi C058 comptait.**
+
+---
+
+# 📅 04/10/2026 — RÉVISION C057, et la faille que ㊷ laissait ouverte
+
+## 🔻 C057 révisé : 34 % → **20 %**
+*Appel : « STM touche 42,00 € ou moins en CLÔTURE d'ici le 31/10/2026 ».*
+
+STM cotait **47,035 € au 29/09** *(seuil à −10,7 %)*. Au 02/10 deux valeurs circulent,
+**49,08 €** et **50,34 €** — et la première a été **démontrée intra-séance** *(cf. ci-dessous)*.
+Quelle que soit la bonne, **le seuil s'est ÉLOIGNÉ** :
+
+| Cours retenu | Distance au seuil | σ à 27 j *(vol ~45 %)* | P(touche) |
+|---|---|---|---|
+| 49,08 € | −14,43 % | 12,2 % | ~23,9 % |
+| 49,71 € *(milieu)* | −15,51 % | 12,2 % | ~20,5 % |
+| 50,34 € | −16,57 % | 12,2 % | ~17,6 % |
+
+→ **P = 20 %.** ✅ **La révision est ROBUSTE à l'ambiguïté du cours** : les trois hypothèses
+donnent 17,6-23,9 %, toutes très loin de 34 %. *Je n'ai donc pas besoin de trancher
+49,08 vs 50,34 pour réviser — ㊸ : la comparaison suffit, la mesure n'est pas requise.*
+
+### ⚖️ Pourquoi je révise C057 alors que j'ai TENU C056 à 78 % le 02/10
+Apparente incohérence, et elle se résout par une distinction qu'il faut écrire :
+
+> **㊺ — une révision sur la VARIABLE DE RÉSOLUTION est OBLIGATOIRE ; une révision sur le
+> CONTEXTE est INTERDITE sans clause pré-enregistrée.**
+> C057 porte sur **le cours de STM** : le cours a bougé, donc la probabilité conditionnelle
+> *doit* bouger — sinon ce n'est plus une probabilité, c'est un slogan. C056 porte sur
+> l'éligibilité PEA des ETF synthétiques : la tension budgétaire française est du **contexte**,
+> elle ne touche pas la variable, et l'appel n'avait pas de clause de révision. **Tenir l'un et
+> réviser l'autre n'est pas de l'opportunisme — c'est la même règle appliquée deux fois.**
+
+---
+
+## 🆕 ㊻ — la PROVENANCE se vérifie comme une donnée *(et ㊷ était contournable)*
+> **Un rapport qui affirme « j'ai récupéré la page » doit être REJOUABLE.** Un horodatage
+> relayé par une couche de résumé n'est pas une certification de clôture, même quand il est
+> exact. **Rejouer la récupération, pas seulement recouper le chiffre.**
+
+**Cas de naissance.** La chasse du jour a livré trois cours avec des horodatages de fin de
+séance d'une précision convaincante — *« Oct 2, 5:37:38 PM GMT+2 »* pour Amsterdam,
+*« Closed: Oct 2, 4:00:03 PM GMT-4 »* pour le NYSE — en déclarant explicitement :
+*« pages récupérées par moi le 04/10, chacune portant son propre horodatage »*, et en nommant
+Google Finance comme le seul canal ayant répondu.
+
+**J'ai rejoué. Trois URL, trois 404** — dont `NEX:EPA`, que le rapport nomme, et `LLY:NYSE`,
+qui est canonique et existe certainement. **Le canal ne sert pas cette session.** L'explication
+la plus probable n'est pas une invention : **les résumés de recherche recopient fréquemment la
+chaîne d'horodatage de Google Finance**, et le rapport a décrit cette lecture indirecte comme
+une récupération directe. *Les chiffres peuvent être exacts ; le récit de leur obtention est faux.*
+
+> 🔴 **Pourquoi c'est la faille la plus dangereuse rencontrée jusqu'ici.** ㊷ *(un bouclage sur la
+> veille ne distingue pas une clôture d'un instantané)* m'avait fait exiger **un horodatage de fin
+> de séance**. Aujourd'hui un horodatage de fin de séance est arrivé — **et il ne certifie rien.**
+> **Le contrôle que j'avais construit était contournable par la couche qu'il devait filtrer.**
+> *Ce n'est pas une donnée fausse, c'est un CONTRÔLE faux : espèce bien plus coûteuse.*
+
+**Et la même séance a fourni la démonstration en clair du piège sous-jacent** : sur STM, deux
+valeurs servies pour le 02/10, **49,08 € assortie d'un pseudo-OHLC qui l'encadrait proprement**
+et **50,34 €**, les deux bouclant *exactement* sur la clôture de la veille à 47,25 €. ✅ **㊷ est
+confirmée dans son diagnostic** *(le bouclage ne prouve rien)* **et insuffisante dans son remède.**
+
+---
+
+## 🆕 ㊹ — trois causes distinctes se cachaient sous « l'instrument est cassé »
+Depuis des semaines je journalise « T1/priçabilité cassée sur Paris, Amsterdam, Bruxelles »,
+« aucun settlement Brent depuis le 17/09 », « aucune clôture OAT jamais obtenue » — **comme si
+c'était un seul problème de qualité de sources.** Ce sont trois pathologies à remèdes opposés :
+
+| Espèce | Constat | Remède |
+|---|---|---|
+| **Canal FERMÉ par politique** | **20 hôtes refusés au gateway ce matin** *(403 CONNECT, journal du proxy)* : morningstar.fr, justetf.com, marketscreener.com, barchart.com, wsj.com, spglobal.com, msn.com, query1/2.finance.yahoo.com, stooq.com, alphavantage.co, api.marketstack.com, simplywall.st, boerse-frankfurt.de, comdirect.de, finanzen.net, ariva.de, eurometal.net, de.marketscreener.com, **et en.wikipedia.org** | **Le signaler, ne pas contourner** *(consigne du proxy)*. C'est **la quasi-totalité des sources de données structurées** → explique l'absence systématique d'OHLC |
+| **Objet INEXISTANT** | **L'OAT n'a PAS de fixing de clôture officiel** : elle se traite en OTC. Les « clôtures » des agrégateurs sont des arrêtés arbitraires | **Réécrire le contrat.** J'exigeais depuis des semaines un objet **sans référent**. La seule voie propre serait l'AFT ou la Banque de France *(inaccessibles)* |
+| **Canal DISPERSÉ / instantané déguisé** | STM 49,08 vs 50,34 ce jour | **㊷ + ㊻** : horodatage **rejouable**, ou OHLC |
+
+> **㊹ — avant de déclarer un instrument défaillant, établir laquelle des trois causes opère.**
+> *Un canal fermé se remonte, un objet inexistant se réécrit, un canal dispersé se recoupe.
+> Les confondre, c'est ce que j'ai fait pendant des semaines : j'ai cherché plus fort une
+> clôture d'OAT qui n'existe pas, et j'ai attribué à la « dispersion » un refus de gateway.*
+
+### 🔧 Avenant à ㊳ — l'ancrage planté peut être une IDENTITÉ, pas seulement un nombre
+㊳ m'interdit de faire figurer un ancrage chiffré dans une requête. **Ce matin j'ai planté une
+erreur d'un autre type** : j'ai écrit à l'agent *« iShares **Core** MSCI World UCITS ETF (WPEA) »*.
+**Faux.** WPEA est l'**iShares MSCI World Swap PEA**, synthétique — et mes propres fichiers
+l'écrivent correctement *(`IE0002XZSHO1`, à revérifier)*. L'« iShares Core MSCI World » est
+**IWDA**, physique, coté Amsterdam, un **autre fonds** de ~129,8 Md€. **L'agent a corrigé ; moi
+non.** Si elle ne l'avait pas fait, elle pouvait rapporter l'encours d'IWDA comme celui de mon
+cœur de portefeuille. *Même espèce que les pièges d'appariement du dossier santé — sauf que
+celui-ci, je l'avais fabriqué moi-même, dans ma requête.*
+
+> **㊳-bis — ne jamais faire figurer dans une requête un IDENTIFIANT que l'on n'a pas vérifié.**
+> *Un nom faux invite le canal à répondre juste… sur le mauvais objet.*
+
+## 🆕 Appels ouverts le 04/10/2026 — C060, C061 *(Prépa)*
+
+| # | Date | Proposition | P | Résolution |
+|---|---|---|---|---|
+| **C060** | 04/10 | **Tanguy ouvre l'accès réseau à au moins un des domaines de cotation demandés d'ici le 11/10/2026** | **15 %** | test `WebFetch` sur `live.euronext.com` ou `morningstar.fr` · **11/10/2026** |
+| **C061** | 04/10 | **Le S&P 500 clôture au moins 12 % sous sa clôture du 02/10 (≤ 6 795,99) à un moment avant le 31/12/2026** — c'est le scénario C de la Prépa | **12 %** | clôture S&P datée · **31/12/2026** |
+
+- **C060** — *suite directe de C058, et c'est tout l'intérêt.* C058 a établi que réduire le NOMBRE de demandes ne produisait rien. **C060 teste une demande d'une autre NATURE** : une modification de réglage de deux minutes, à effet permanent, au lieu d'une saisie de données à refaire. **Taux de base défavorable et assumé : 0 réponse sur 5 demandes depuis le 21/09**, d'où 15 % et non 50 %. *Si C060 échoue aussi, la conclusion ne portera plus sur la forme de mes demandes mais sur le canal lui-même — et c'est une conclusion que je devrai écrire.*
+- **C061** — ⚠️ **la référence 7 722,72 est de qualité imparfaite** *(dépêche AP relayée, aucune page ouvrable — ㊻)*. Elle a toutefois passé **un vrai test différentiel** : une fiche « midday » donnait 7 718, valeur distincte, donc le chiffre retenu n'est pas l'instantané de milieu de séance ; et l'arithmétique boucle *(7 722,72 − 56,27 = 7 666,45 → +0,734 %)*. **Tolérance fixée AVANT le test, conformément à ㉚ : si la référence du 02/10 se révèle fausse, le seuil se recalcule à −12 % de la valeur corrigée, et l'appel n'est pas annulé.**
+- 🔴 **Ni C060 ni C061 n'ont de routine associée.** S'ajoutent aux sept déjà signalées. **C060 échoit le 11/10 — c'est désormais la plus proche, devant C049 (~31/10).**

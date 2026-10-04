@@ -2696,3 +2696,42 @@ planifiée de ma seule initiative — et quand elle se déclenchera, elle se ré
 | ⑥ | **Nike (NKE)** | non corroboré depuis le 28/09 |
 | — | ~~**Aubay (AUB)**~~ | ⏰ **SORTIE — PASSE, signal réfuté T2+T3** |
 | — | ~~Émergents (PAEEM)~~ | ⛔ **ÉCARTÉE — indice filtré ESG, gain marginal à cette taille** *(réexamen > 10 000 €)* |
+
+---
+
+# 📅 DIMANCHE 04/10/2026 — PRÉPA · terrain prospectif
+
+## 🔻 LE MÈTRE ÉTAIT INCOMPLET — correction appliquée à tout le classement
+Lilly, l'or et Nike sont étiquetés **CTO** partout dans ce document depuis des semaines.
+**L'écart fiscal n'est jamais entré dans la comparaison d'espérance NETTE** que la routine exige.
+Chiffré, pour délivrer **5,00 %/an net** :
+
+| Horizon | PEA *(t = 18,6 %)* | CTO *(t = 31,4 %)* | Handicap CTO |
+|---|---|---|---|
+| 5 ans | 6,02 % brut | 7,00 % brut | **+0,98 pt/an** |
+| **6 ans** | **5,99 % brut** | **6,94 % brut** | **+0,95 pt/an** *(+15,9 % relatif)* |
+| 7 ans | 5,96 % brut | 6,88 % brut | +0,92 pt/an |
+
+> ✅ **Le résultat est stable sur tout l'horizon** → c'est un critère, pas un artefact de paramétrage.
+> **Effet sur les rangs : AUCUN réordonnancement entre ②③⑥** *(le handicap les frappe à l'identique)*
+> **mais l'écart entre ① et tout le reste se creuse.** Le cœur devient plus dur à battre : il faut
+> ~1 pt/an de rendement brut EN PLUS pour seulement l'égaler hors PEA.
+> ⚠️ **L'or garde son rang** : il est détenu pour la DÉCORRÉLATION, pas pour l'espérance — le mètre
+> d'espérance nette n'est pas son seul critère. *Mais il paie désormais sa décorrélation ~1 pt/an.*
+
+## ⛔ SORTIES DU JOUR
+| Candidate | Verdict | Motif |
+|---|---|---|
+| ⑥ **Nike (NKE)** | **DÉCLASSÉ — sortie** | *Trois raisons cumulées :* **aucun déclencheur** depuis son entrée *(case « — » dans le tableau : elle ne travaillait pas)* · handicap CTO désormais chiffré **+0,95 pt/an** · **événement émetteur défavorable daté du 01/10** *(T1 FY2027 : CA 11,2 Md$, −5 % à devises constantes ; guidance BPA FY2027 1,15-1,35 $ contre ~1,69 $ attendu ; Chine −26 %)*. ⚠️ **Je le sors en DÉCLASSÉ et non en TUÉ** : ces chiffres ne sont **pas certifiés** *(résumés de recherche, aucune page source ouvrable)*. **Un déclassement se justifie sans eux ; un « tué sur les fondamentaux » ne se justifierait pas.** |
+| — | **ArcelorMittal (MT, Amsterdam)** | **PASSE — T1 + T2.** Candidate du jour, écartée à l'entrée. **+89,8 % au-dessus de son plus bas 52 s.**, payée **27,35× un BPA déprimé de 2,09 €** : multiple qui anticipe déjà le redressement des marges, pas un multiple de bas de cycle. **T2 : la mutation est publique depuis six mois** *(accord Conseil-PE 13/04, vote PE 21/05, entrée en vigueur du règlement (UE) 2026/1384 le 01/07)* et les émetteurs eux-mêmes citent déjà les mesures commerciales dans leurs perspectives S2. *Le PASSE tient malgré un prix non certifié — **㊶ : un prix est nécessaire pour acheter, pas pour rejeter**.* |
+| — | **Elia Group (ELI, Bruxelles)** | **PASSE — CATALYSEUR ININSTRUMENTABLE.** *Et c'est une sortie d'un genre nouveau : elle ne meurt pas sur son mérite.* La thèse est sérieuse *(subvention fédérale allemande de 5,525 Md€ au réseau votée en Conseil des ministres début septembre ; tarifs provisoires 2027 publiés par les quatre GRT le 01-02/10 à 3,54 ct/kWh avec subvention contre 6,52 sans ; le marché valoriserait le PROJET de rémunération BNetzA que la société qualifie publiquement d'insuffisant)*. **Mais son unique catalyseur est une décision de la BNetzA, et `bundesnetzagentur.de` est BLOQUÉ par la politique d'egress** *(testé ce jour : `EGRESS_BLOCKED`)*. **Son déclencheur serait donc un déclencheur que je ne pourrais jamais observer** — pire qu'un déclencheur toujours satisfait *(㉔)*. 🔓 **RÉOUVERTURE si l'accès à `bundesnetzagentur.de` est ouvert.** *Et elle n'aurait de toute façon pas pu être proposée aujourd'hui : règle des 3 séances, celle-ci était la 1re.* |
+
+## 🎯 CLASSEMENT AU 04/10 — 5 candidates *(6 → 5)*
+| Rang | Candidate | Chiffre du jour | Déclencheur |
+|---|---|---|---|
+| ① | **Cœur World (WPEA)** | ordre du 01/10 exécutable *(limite 7,14 €)* | — *(accumulation mensuelle)* |
+| ② | **Or** | inéligible PEA · paie ~0,95 pt/an pour sa décorrélation | seau accumulé, achat en un lot |
+| ③ | **Eli Lilly (LLY)** | **~1 142,85 $ (02/10) NON CERTIFIÉ** *(variation servie de façon incohérente : −0,61 % puis −1,40 %, seul −0,61 % boucle)* | ≤ 1 020 $ → **−10,7 %** |
+| ④ | **Magnum** | dormant | capi ≤ 7,6 Md€ |
+| ⑤ | **STM (STMPA)** | **~49-50 € (02/10)** · deux valeurs servies, **49,08 € démontré INTRA-SÉANCE** | ≤ 42 € → **s'est ÉLOIGNÉ à ~−15 %** *(était −10,7 % au 29/09)* |
+| — | ~~Nike (NKE)~~ | ⛔ **DÉCLASSÉ** | — |
