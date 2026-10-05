@@ -1,7 +1,7 @@
 {
  "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
- "maj": "2026-10-04",
- "dernier_brief": 36,
+ "maj": "2026-10-05",
+ "dernier_brief": 37,
  "vus": {
   "jobup": [
    "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -231,7 +231,35 @@
    "ec595e0c-d822-4cef-85a2-3548eccfaa2f",
    "f3bb32f4-8714-440e-b1d8-ad8f38ffe8bd",
    "f69f3698-1ff8-4c1b-a3ff-72bce240af00",
-   "fd7b3fbd-3076-41c8-8b89-c1253e679443"
+   "fd7b3fbd-3076-41c8-8b89-c1253e679443",
+   "0421c6d5-e33d-4b22-b9d1-34e2d35c5f7d",
+   "1c0b6744-bad9-492e-99ac-35178f225187",
+   "25f37246-abc2-4eb2-8dfa-2c49c2efb300",
+   "2692af29-f89d-4ff2-9ccd-19190430f05e",
+   "276c2046-bc55-4f03-8403-cba5ac3203d7",
+   "30d9255b-45fc-40c4-b90a-451a248f8074",
+   "40df31ec-e9ee-43c0-b59d-9d3de97ed26b",
+   "46a47691-6d0a-429f-b958-79b216570072",
+   "477c45ff-d4e3-46b1-a855-8b4b57f2fe86",
+   "61b6d469-ee59-44c4-98ec-8628d79d5fe6",
+   "69786fa4-7a91-497c-95c9-79f2c9d160f5",
+   "6ce611f3-6d03-494b-a22c-a24cd68d3cb9",
+   "84ca667e-6fea-4218-845b-9ec85745b5fe",
+   "93c8d4cc-aef6-4ccd-a019-34a81038741e",
+   "be46cb06-0558-4537-b93f-7f91d64a2933",
+   "c750ca45-3983-475f-9f06-7616ef0ea212",
+   "ce438733-0507-4754-b502-6ff125fe4580",
+   "da14064b-9fe9-42db-8969-2b6cbf11f68f",
+   "de76f9a7-96c8-4e52-9002-457c53cf3d7f",
+   "e29b69ef-7602-4444-8768-ee03fac1e7f0",
+   "e49bec2d-fe92-435c-84c8-3db7db89534d",
+   "e4e32cce-a0b9-4f27-8c56-38b0b9ad3b70",
+   "e9315da3-0ea9-4c8f-9459-805bdcf175aa",
+   "e9be6998-a704-4c51-9901-82e473db2ee9",
+   "edc7de49-92dc-4903-bb34-ae64fa369873",
+   "f141ef7f-9bf9-416a-9ef4-aa43bf00d68c",
+   "f53817b7-b428-4b23-bb5d-a51a7f610ed2",
+   "fefb37cc-3e8c-4821-b366-ee487095f7d3"
   ],
   "ats_employeurs": [
    "https://recrutement.eben-hezer.ch/jobs/7602918-responsable-communication-et-recherche-de-fonds",
@@ -445,7 +473,41 @@
    "4473107731",
    "4462869302",
    "4470318947",
-   "4457500033"
+   "4457500033",
+   "4447414791",
+   "4447427031",
+   "4447421651",
+   "4447405977",
+   "4472019700",
+   "4447151515",
+   "4447167220",
+   "4447422516",
+   "4418866280",
+   "4447417741",
+   "4474223778",
+   "4474798626",
+   "4410558696",
+   "4465109810",
+   "4462955134",
+   "4447455902",
+   "4475392768",
+   "4457377736",
+   "4474218722",
+   "4429372351",
+   "4205077758",
+   "4419185935",
+   "4475529296",
+   "4472031131",
+   "4456266288",
+   "4447427022",
+   "4447428000",
+   "4473481418",
+   "4447408871",
+   "4475337940",
+   "4475514811",
+   "4464868914",
+   "4267284450",
+   "4344475846"
   ],
   "chuv": [
    "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html"
@@ -501,7 +563,8 @@
   "indeed": [
    "043ebd7e1c91f873",
    "6c4e32a5a6b52d24",
-   "86c417887bc434fd"
+   "86c417887bc434fd",
+   "a9ce62baf1baf8f3"
   ]
  },
  "postees": [
@@ -2097,6 +2160,7 @@
     "♻️ CVCI CRM republié via Multi Personnel (LinkedIn ×2)",
     "❌ notables Sabina Graphiste Senior (bilingue DE/FR + CDD maternité), YO AI Labs gig contractor"
    ]
-  }
+  },
+  "jobsch:2e9fd9ab-9515-46f3-a9d2-acfd0147f2ec"
  ]
 }

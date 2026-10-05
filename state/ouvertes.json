@@ -1,6 +1,6 @@
 {
  "_doc": "Suivi des meilleures offres en cours : 🎯 passées + ✅ likées + ✉️, tant que non déclinées ni envoyées. Re-check à CHAQUE run, MÉTHODE STRICTE (règle 04.09) : GET avec suivi de redirections — en ligne seulement si l'URL FINALE contient l'identifiant ET contenu d'offre présent ; 301 vers catégorie = fermée ; 404/410 = fermée. GRANDE PURGE exécutée le 04.09 (egress ouvert) : 10 retirées sur 13, bilan au brief n°8bis et au journal.",
- "maj": "2026-10-04",
+ "maj": "2026-10-05",
  "fermees_recemment": [
   "QoQa Content Manager Brico & Jardin (📌 11.09→24.09) : 410 Gone sur le lien canonique jobup au GET du 24.09 — retirée après 13 j ; QoQa a publié un Social Media Manager 60% le même jour (réorganisation équipe contenu)",
   "CHUV Motion designer-vidéaste (📌 28.08→08.09) : page « Annonce fermée » au GET du 08.09 — retirée ; 1 mois en ligne au total",
@@ -55,7 +55,7 @@
    "score": "🎯",
    "lien": "https://ch.linkedin.com/jobs/view/marketing-digital-communications-lead-80%25-100%25-at-swissvet-group-4372250006",
    "premiere_apparition": "2026-08-28",
-   "dernier_check": "2026-10-04",
+   "dernier_check": "2026-10-05",
    "statut": "en ligne (GET+titre ✔ 03.10) — 37 j"
   },
   {
@@ -66,7 +66,7 @@
    "score": "🎯",
    "lien": "https://ch.linkedin.com/jobs/view/graphic-multimedia-designer-at-matisa-mat%C3%A9riel-industriel-s-a-4467750491",
    "premiere_apparition": "2026-09-16",
-   "dernier_check": "2026-10-04",
+   "dernier_check": "2026-10-05",
    "statut": "en ligne (GET+titre ✔ 03.10) — 18 j — ⚠️ 200+ candidatures LinkedIn (second regard 03.10) : très disputé",
    "note": "3-5 ans, motion+3D+Figma, FR/EN ; publiée 15.09 ; meilleur fit DA pur à date"
   },
@@ -79,7 +79,7 @@
    "lien": "https://www.jobup.ch/fr/emplois/detail/78588ba5-43d0-436d-a88c-06585cb10608/",
    "lien_alternatif": "https://www.jobup.ch/fr/emplois/detail/831e76b3-f5ff-413b-ad67-e28869045953/",
    "premiere_apparition": "2026-09-25",
-   "dernier_check": "2026-10-04",
+   "dernier_check": "2026-10-05",
    "statut": "en ligne (GET ✔ 03.10) — entrée 01.12",
    "note": "CDD 1 an renouvelable ; 3 ans min comm/vente/mkt ; entrée 01.12 ou à convenir ; annonce cite « outils de génération de contenu (IA, etc.) » ; réserve : prospection tél. ; deadline implicite ~2 sem"
   },
@@ -91,7 +91,7 @@
    "score": "🎯",
    "lien": "https://ch.linkedin.com/jobs/view/technical-marketing-engineer-at-neural-concept-4471760796",
    "premiere_apparition": "2026-09-30",
-   "dernier_check": "2026-10-04",
+   "dernier_check": "2026-10-05",
    "statut": "en ligne (GET+titre ✔ 03.10 après 429 transitoire) — 4e jour",
    "note": "PREMIER poste marketing opérationnel de Neural Concept (CMO ouvert 16.09) ; Entry level, anglais seul, démos/contenu technique/co-marketing NVIDIA ; contrat non explicité (full-time) ; angle : postuler avec une démo"
   },
@@ -104,7 +104,7 @@
    "lien": "https://www.jobup.ch/fr/emplois/detail/f227e361-1b95-4367-8be8-b52616047971/",
    "lien_officiel": "https://offres-emploi.vd.ch/#fr/sites/CX_1/job/5946/ (hors allowlist, non vérifié)",
    "premiere_apparition": "2026-09-29",
-   "dernier_check": "2026-10-04",
+   "dernier_check": "2026-10-05",
    "statut": "en ligne (GET ✔ 03.10) — DÉLAI 11.10 (J-8)",
    "note": "CDD 1 an auxiliaire, 80-100%, 3 ans min, DÉLAI 11.10.2026, entrée 01.01.27"
   },
@@ -116,7 +116,7 @@
    "score": "🎯",
    "lien": "https://jobs.ashbyhq.com/adaptyv/5a44f0eb-8d0d-4b04-9d51-9933f899aeaf",
    "premiere_apparition": "2026-10-03",
-   "dernier_check": "2026-10-04",
+   "dernier_check": "2026-10-05",
    "statut": "listée active sur Ashby (API) le 03.10 — publiée 03.06",
    "note": "re-check via API Ashby : isListed"
   }

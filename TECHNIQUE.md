@@ -159,3 +159,10 @@ epfl.ch, lausanne.ch, olympics.com, ecal.ch, remoteok/himalayas/remotive/the mus
   TODO passe hebdo.
 - Embodied AI : ATS = Teamtailor (embodiedai.teamtailor.com) ; 4 postes, tous ingénierie
   robotique au 03.10 → aucun marketing, fenêtre spontanée ouverte.
+
+## Addendum 05.10.2026 — passe hebdo des agrégateurs
+- jobscout24 : seule URL valide = https://www.jobscout24.ch/fr/jobs-%C3%A0-lausanne/?p=N ; ses UUID
+  sont identiques à jobup/jobs.ch (réseau JobCloud) → doublon, contrôle croisé uniquement.
+- careerjet.ch et myjob.ch : recherche introuvable (404 sur toutes les formes testées) → abandonnés.
+- Piège jobs.ch API : `company_name` peut être null (« employeur non divulgué ») → ne jamais écarter
+  sur ce critère, lire le JSON-LD de la page (Assura, 05.10).
