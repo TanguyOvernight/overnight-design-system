@@ -1860,3 +1860,52 @@ application au 01/01/2027, un texte de nature différente. *Voir registre.*
 
 **📅 30/09/2026** — butée C013 : chercher **nommément** l'arrêté encadrant l'épandage
 des boues, application 01/01/2027.
+
+---
+
+## 📡 RADAR — catalyseurs datés du 05/10/2026 *(chasse tech)*
+⚠️ **TOUS étiquetés [RÉSUMÉ DE RECHERCHE]** : aucune page d'agenda d'émetteur n'a pu être ouverte
+*(asml.com, st.com, 3ds.com bloqués — vérifié par moi ce matin sur asml.com)*. **Niveau de preuve
+indiqué ligne par ligne ; aucun seuil ne doit être écrit sur ces dates avant reconfirmation.**
+
+| Date | Émetteur (place) | Événement | Preuve |
+|---|---|---|---|
+| **14/10** 07h00 CET | **ASML** (Amsterdam) | Résultats T3 2026 | **la mieux étayée** : heure, canal et horaire de call concordants sur plusieurs relais + un 6-K listé |
+| 20/10 | Sidetrade (Paris) | CA T3 | base de connaissances, non reconfirmé |
+| 21/10 | Claranova (Paris) | Résultats annuels | [MONO-SOURCE] |
+| **22/10** 07h00 CET | **Besi** (Amsterdam) | Résultats T3 2026 | base de connaissances · **juge de paix du fait du 01/10** |
+| **22/10** | **STM (STMPA, Paris)** | **Résultats T3 2026** | [MONO-SOURCE] ⚠️ **à réconcilier — voir ci-dessous** |
+| 27/10 | ASM International (Amsterdam) | Résultats T3 | deux résumés concordants |
+| 27-28/10 | Adyen (Amsterdam) | Trading update T3 | [MONO-SOURCE] |
+| 28/10 | Dassault Systèmes (Paris) | Résultats T3 | [MONO-SOURCE] |
+| 28/10 | Melexis (Bruxelles) | Résultats T3 | [MONO-SOURCE] |
+| 30/10 | Capgemini (Paris) | CA T3 | [MONO-SOURCE] |
+| fin oct. | Aubay (Paris) | Résultats T3 | **date précise jamais établie** — échéance de C059 |
+
+### 🔑 Réconciliation STM : C057 se jouera le 22/10, pas par dérive
+**C057** *(STM ≤ 42 € en clôture d'ici le 31/10, P = 20 %)* a sa résolution au 31/10 — et **un
+événement émetteur tombe le 22/10**, neuf jours avant. **Ce n'est pas une contradiction, c'est
+l'identification du mécanisme** : avec le titre à ~15 % du seuil, une dérive progressive ne l'y
+amène pas en 27 jours ; **seule une réaction à la publication le peut.**
+> ✅ **㉛ satisfaite** : le jalon est désormais daté ET adossé à un rendez-vous planifié.
+> ⚠️ **Mais la date du 22/10 est mono-source** → à reconfirmer avant de s'y adosser fermement.
+> **Je ne change PAS le P** : identifier le mécanisme ne change pas la probabilité, et la vol
+> employée pour la calculer inclut déjà, en moyenne, les dates de publication.
+
+### ⛔ Fait du 01/10 sur Besi — versé au dossier, NON promu
+Applied Materials et Besi étendent leur partenariat *(hybrid bonding, TCB, architectures
+die-on-wafer)*. **Communiqué conjoint GlobeNewswire du 01/10, non ouvert** *(domaine bloqué)*.
+**T1 inexécutable** *(aucune cotation vérifiable)* · **T2 échoue sur la matérialité** : accord de
+co-innovation **sans aucun chiffre ni échéance commerciale** — ce n'est ni une commande ni un
+*design win* · **T3 drapeau** : la preuve est co-signée par le partenaire.
+> 🔴 **Piège nommé d'avance** : la presse secondaire rapproche ce fait d'un « 10,25 Md$ » qui est
+> **la guidance d'Applied Materials, pas de Besi**. *C'est exactement la faute ㉓ — le comparatif
+> doit être celui de l'ÉMETTEUR. Je le consigne pour ne pas le recroiser naïvement.*
+
+### 🪤 Incident de canal — le piège de l'ANNIVERSAIRE a resservi
+Le résumé de recherche a présenté le départ du DG d'OVHcloud comme *« In October 2026 »*.
+**C'était le conseil du 20/10/2025, communiqué le 21/10/2025** — quatre relais portent 2025.
+**Décalage de douze mois PILE : le jour et le mois collent, seule l'année trahit.** Et c'était la
+meilleure piste du jour *(changement de dirigeant, tech, Paris, éligible PEA)*.
+> ✅ **㉞-bis a fonctionné** *(écrite le 30/09 : lire l'ANNÉE dans l'URL)*. **Première fois qu'une
+> de mes règles intercepte sa propre faute en conditions réelles, sur la piste la plus tentante.**

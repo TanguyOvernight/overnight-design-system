@@ -2735,3 +2735,46 @@ Chiffré, pour délivrer **5,00 %/an net** :
 | ④ | **Magnum** | dormant | capi ≤ 7,6 Md€ |
 | ⑤ | **STM (STMPA)** | **~49-50 € (02/10)** · deux valeurs servies, **49,08 € démontré INTRA-SÉANCE** | ≤ 42 € → **s'est ÉLOIGNÉ à ~−15 %** *(était −10,7 % au 29/09)* |
 | — | ~~Nike (NKE)~~ | ⛔ **DÉCLASSÉ** | — |
+
+---
+
+# 🔻 05/10/2026 — RÉVISION DU MÈTRE : il était trop BAS, donc trop GÉNÉREUX avec les prétendantes
+
+## Le défaut
+Le mètre de la routine est *« vs le cœur WPEA à **5 %/an net** »*. **Je ne l'avais jamais
+interrogé.** Or il s'inverse facilement : **5 %/an net dans un PEA ⟺ ~5,99 %/an BRUT**.
+Avec le **10 ans américain à ~5 %**, cela suppose une **prime de risque actions de ~1 point**.
+**C'est implausible** — la fourchette usuelle est de 3 à 5 points.
+
+## Sensibilité — horizon 6 ans, PEA 18,6 % / CTO 31,4 %
+| Brut Monde | Net en PEA | Brut CTO requis pour égaler | Handicap CTO |
+|---|---|---|---|
+| 5,00 % | 4,16 % | 5,81 % | +0,81 pt/an |
+| **6,00 %** | **5,01 %** ← *le mètre actuel* | 6,95 % | **+0,95 pt/an** ← *le chiffre publié hier* |
+| 7,00 % | 5,86 % | 8,08 % | +1,08 pt/an |
+| **8,00 %** ← *10 ans à 5 % + PRA de 3 pts* | **6,72 %** | **9,21 %** | **+1,21 pt/an** |
+| 9,00 % | 7,59 % | 10,33 % | +1,33 pt/an |
+
+✅ **Le +0,95 pt/an publié hier n'était pas faux** — il correspond exactement au mètre à 5 % net.
+⚠️ **Mais il n'est pas une constante : le handicap CTO CROÎT avec le niveau de rendement attendu.**
+Le citer seul, sans son mètre, serait trompeur.
+
+## 🔴 Décision : mètre relevé de 5,0 % à **6,7 %/an net** *(8 % brut Monde)*
+**Conséquence, et elle va dans le sens de MOINS d'activité, pas plus :**
+- toute prétendante doit désormais battre **6,7 %/an net**, et non 5,0 % ;
+- une prétendante en **CTO** doit délivrer **9,21 %/an brut** pour seulement ÉGALER le cœur ;
+- **j'ai donc jugé pendant des semaines des prétendantes contre un cœur sous-évalué de ~1,7 pt/an.
+  C'était un biais systématique en faveur des challengers — c'est-à-dire en faveur de l'ACTION.**
+
+> ⚠️ **Hypothèse nommée et non sourçable dans cette session** : la prime de risque de 3 points est
+> une fourchette de manuel, pas une donnée que j'ai mesurée *(les hôtes qui la serviraient sont
+> bloqués)*. **Je retiens néanmoins la révision parce qu'elle durcit le critère** : se tromper
+> vers le mètre le plus exigeant protège son capital, l'inverse non.
+> 🔑 **Et il faut dire ce qui n'a PAS été abîmé** : ce biais n'a produit **aucun achat regrettable**,
+> parce que toutes les prétendantes sont mortes avant sur d'autres tests *(T1, T2, priçabilité)*.
+> **Le biais existait sans jamais mordre. C'est une chance, pas une validation de la méthode.**
+
+## 📡 Catalyseurs du 05/10 → déposés dans `radar-catalyseurs.md`
+*Onze dates T3 du secteur tech, la réconciliation STM/C057, le fait Besi du 01/10 et
+l'incident de canal OVHcloud sont écrits dans le radar — **source de vérité unique**.*
+*Retenir ici : **aucun changement de rang au 05/10**, et **le mètre est passé à 6,7 %/an net**.*
