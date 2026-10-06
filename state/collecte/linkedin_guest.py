@@ -10,6 +10,7 @@ ROOT = '/home/user/overnight-design-system'
 UA = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124 Safari/537.36'}
 KWS = ["marketing", "communication", "brand", "graphic designer", "content", "social media",
        "art director", "motion designer", "creative", "generative AI", "copywriter", "digital marketing"]
+REMOTE_KWS = ["marketing", "brand", "content", "creative", "designer", "social media", "communication"]
 BASE = "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?"
 
 def get(u):
@@ -57,6 +58,21 @@ def main():
             for x in cs:
                 if x['id'] not in seen and x['id'] not in found:
                     x['kw'] = kw; found[x['id']] = x
+            if len(cs) < 10: break
+            time.sleep(3)
+        time.sleep(3)
+    # Passe « remote Suisse » (06.10) : le persona traite le full remote CH comme P1.
+    # f_WT=2 = remote ; LinkedIn y mêle des postes hybrides alémaniques → trier au scoring.
+    for kw in REMOTE_KWS:
+        for start in (0, 10):
+            c, raw = get(BASE + up.urlencode({"keywords": kw, "location": "Switzerland", "f_WT": "2",
+                                              "f_TPR": tpr, "start": str(start)}))
+            if c == 429:
+                print(f"  remote {kw}: 429 — pause"); time.sleep(20); break
+            cs = cards(raw)
+            for x in cs:
+                if x['id'] not in seen and x['id'] not in found:
+                    x['kw'] = 'remote:' + kw; found[x['id']] = x
             if len(cs) < 10: break
             time.sleep(3)
         time.sleep(3)

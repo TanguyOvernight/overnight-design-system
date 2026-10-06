@@ -119,6 +119,17 @@
    "dernier_check": "2026-10-06",
    "statut": "listée active sur Ashby (API) le 03.10 — publiée 03.06",
    "note": "re-check via API Ashby : isListed"
+  },
+  {
+   "id": "remote-contentlead-3d",
+   "titre": "Content Lead (IA image/texte → 3D)",
+   "entreprise": "Jobgether (client non nommé)",
+   "lieu": "Suisse remote",
+   "score": "🎯",
+   "lien": "https://ch.linkedin.com/jobs/view/content-lead-at-jobgether-4474670951",
+   "premiere_apparition": "2026-10-06",
+   "dernier_check": "2026-10-06",
+   "statut": "en ligne (GET+titre ✔ 06.10)"
   }
  ]
 }

@@ -166,3 +166,14 @@ epfl.ch, lausanne.ch, olympics.com, ecal.ch, remoteok/himalayas/remotive/the mus
 - careerjet.ch et myjob.ch : recherche introuvable (404 sur toutes les formes testées) → abandonnés.
 - Piège jobs.ch API : `company_name` peut être null (« employeur non divulgué ») → ne jamais écarter
   sur ce critère, lire le JSON-LD de la page (Assura, 05.10).
+
+## Addendum 06.10.2026 — passe « remote Suisse » (LinkedIn)
+- Motif : PERSONA.md traite le full remote suisse comme P1, mais aucune requête ne le ciblait.
+  Audit du 06.10 : sur jobs.ch, seulement ~9 offres métier en 2 semaines autour de Lausanne,
+  toutes déjà connues → le marché local est mince, le levier est le remote.
+- linkedin_guest.py : passe supplémentaire location=Switzerland + f_WT=2 (7 mots-clés, 2 pages).
+- ⚠️ f_WT=2 laisse passer beaucoup d'hybrides alémaniques (Zurich, Zoug, Bâle) : au scoring,
+  ne garder que les annonces dont le lieu est « Switzerland »/« Suisse » seul ou dont le texte
+  dit explicitement remote (100 % remote, remote Europe…). Les postes alémaniques en présentiel
+  restent hors persona (géo + allemand).
+- Première passe : Content Lead IA→3D (Jobgether, 🎯), ElevenLabs et Kraken (👀, 5+ ans).
