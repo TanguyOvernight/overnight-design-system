@@ -93,3 +93,10 @@ _Publiée {fraîcheur} · {source}_
 - PERSONA élargi le même jour : vibe-coding haut niveau (Chat3D, Sandflow…)
   = bonus sur postes marketing/créa techniques ; GARDE-FOU : jamais de
   postes d'ingénierie (Tanguy n'est pas développeur).
+
+## Addendum 06.10.2026 — ordre de publication (consigne du 05.10)
+- Le JOB BOARD est republié AVANT l'envoi du brief Slack, toujours. Le message Slack est le
+  signal « tout est prêt » : il ne doit jamais pointer vers un board périmé.
+- Si la republication du board échoue : le brief part quand même, avec une ligne 🔧 en tête
+  qui le dit explicitement (jamais d'envoi silencieux).
+- Déclenchement de la routine avancé à 8h30 (Europe/Zurich) pour absorber les runs longs.
