@@ -1909,3 +1909,80 @@ Le résumé de recherche a présenté le départ du DG d'OVHcloud comme *« In O
 meilleure piste du jour *(changement de dirigeant, tech, Paris, éligible PEA)*.
 > ✅ **㉞-bis a fonctionné** *(écrite le 30/09 : lire l'ANNÉE dans l'URL)*. **Première fois qu'une
 > de mes règles intercepte sa propre faute en conditions réelles, sur la piste la plus tentante.**
+
+---
+
+## 📅 06/10/2026 — surveillance nominative des 8 santé *(la veille hebdo reste abolie)*
+⚠️ **Tout [RÉSUMÉ DE RECHERCHE]** : aucune page ouverte, l'egress bloque aussi les relais
+*(tradingsat, boursorama, zonebourse, marketscreener, biospace, ideal-investisseur — vérifiés)*.
+
+### 🔔 GUERBET — le fait du jour, et c'est une question de SOLVABILITÉ
+**S1 2026 publié le 28/09/2026 17h45.** Trois relais indépendants portant l'année dans l'URL.
+**Comparatifs ci-dessous = ceux de l'ÉMETTEUR** *(㉓ respectée)*, mais **non lus en primaire** :
+
+| Grandeur | S1 2026 | Comparatif publié par Guerbet |
+|---|---|---|
+| CA | **379,2 M€** | **−0,1 %** à change constant et périmètre comparable · *« en ligne avec la prévision du Groupe »* |
+| EBITDA | **30,6 M€** | **−15,5 M€ sur un an**, après **14,3 M€** de coûts exceptionnels *(plan de conformité du site de Raleigh)* |
+| Marge d'EBITDA ajusté | **9,1 %** | **contre 12,9 %** un an plus tôt |
+| Résultat opérationnel | **−18,4 M€** | contre −15 M€ au S1 2025 |
+| Résultat net | **−32,7 M€** | **après +1,3 M€** un an plus tôt |
+
+🔴 **Et le fait central n'est pas un chiffre de résultat** : Guerbet a obtenu des **WAIVERS de ses
+partenaires financiers sur le respect du ratio de levier**, discussions de refinancement en cours,
+**modalités à finaliser d'ici le 31/10/2026.**
+
+**VERDICT : non promue au classement. Séance 1/3, et T4 est inexécutable sur le chiffre qui décide.**
+- **T6 CONTREPARTIE — plutôt favorable** : un waiver de covenant crée des vendeurs par MANDAT
+  *(fonds dont le mandat exclut le crédit tendu)*, pas par information. C'est le profil classique
+  d'une décote forcée.
+- 🔴 **T4 FORENSIC — mort sur le point décisif** : **ni la dette nette, ni le ratio de levier, ni
+  le périmètre du refinancement ne sont établis.** *Une société de 225 M€ de capitalisation qui
+  demande un waiver, dont je ne peux pas mesurer le levier et dont je ne peux pas lire le
+  communiqué, est inévaluable — quelle que soit la décote.*
+- **㊵ priçabilité** : aucun cours.
+- **Ce qui la promouvrait, nommément** : *(1)* les modalités du refinancement publiées,
+  *(2)* le ratio de levier chiffré, *(3)* une clôture datée. **Butée naturelle : 31/10.**
+- ⚠️ **Et la bonne lecture du « CA en ligne avec la prévision »** : le haut de bilan tient, c'est
+  **la structure financière** qui a bougé. *Ne pas se laisser rassurer par la ligne de CA.*
+
+### IBA — deux faits datés, aucun chiffre
+**29/09** : contrat Proteus®ONE pour l'IFO / Regina Elena à **Rome**, 1er système à gantry du
+centre-sud italien, patients attendus **2030**. **Aucun montant communiqué** → **T2 échoue sur la
+matérialité**, exactement comme le fait Besi du 01/10. **01/10** : notification de transparence
+*(art. 14 §1)* — **déclarant et seuil non établis**.
+
+### Medincell — fait probable, chiffres non fiables
+**AG du 30/09** *(décalée du 10/09)* : say-on-pay contesté à **45,74 %**, **autorisation d'options
+REJETÉE** *(57,59 % pour, deux tiers requis)*. ⚠️ **Relais unique, blog de cabinet d'avocats** —
+aucune source émetteur ni relais de marché. **À ne pas utiliser avant corroboration.**
+🔴 **Piège nommé** : la décision PDUFA sur l'olanzapine LAI *(TEV-'749)* est un dépôt **TEVA**,
+pas un fait Medincell *(jalons jusqu'à 112 M$ + redevances)*. **Deux versions contradictoires du
+calendrier** *(première quinzaine d'octobre vs T4 2026)* → **non tranché.**
+> *C'est ㉓-bis écrite ce matin, sur l'axe du SUJET : ne pas présenter un communiqué Teva comme
+> un fait Medincell.* **Convergence utile — la règle du matin a servi l'après-midi.**
+
+### Cinq « rien » : emeis · Fagron · Clariane · Vetoquinol · Onward Medical
+*(Vetoquinol : S1 publié le **10/09** — CA 259,3 M€, **+3,4 % à changes constants**, marge sur
+achats 77,1 % **vs 75,8 %**, RN **+22 %**, titre +17 % le 11/09. **Hors fenêtre de 12 jours, non
+compté** — mais c'est le fait le plus matériel récent sur ce nom.)*
+
+### 📅 Échéances versées
+| Date | Nom | Événement | Preuve |
+|---|---|---|---|
+| **08/10** *(dans 2 j)* | **Fagron** | Trading update T3 | moyen |
+| **22/10** | **Guerbet** | CA T3, après bourse | moyen |
+| **🔴 31/10** | **Guerbet** | **butée de finalisation du refinancement** | moyen — **le point le plus chaud des huit** |
+| 28/10 | Clariane · Vetoquinol | CA T3 | moyen |
+| 29/10 | emeis | CA T3 | faible-moyen |
+| 08/12 | Medincell | Résultats S1 2026-27 | moyen — **à défier** *(le même calendrier donnait l'AG au 10/09, qui a bougé)* |
+| — | Onward Medical · IBA | T3 | **non établies** |
+
+### ✅ ㊞-bis : 3 interceptions sur 3 en deux jours
+Deux faux positifs attrapés ce jour, **tous deux sur emeis** : *« 251 M€ de cessions depuis début
+octobre »* = communiqué de **décembre 2024** *(décalage 22 mois)* · *« accords du 23 septembre »*
+= **23 septembre 2025**, et ce « 23 septembre » contamine les agrégateurs jusqu'à faire dater le
+S1 d'emeis du 23/09/2026 alors que **deux relais datés donnent le 29/07/2026**.
+> **Avec OVHcloud hier, la règle de l'année a intercepté trois faux positifs en deux séances —
+> dont, chaque fois, la piste la plus tentante du jour.** *Elle est devenue mon contrôle le plus
+> rentable après le bouclage arithmétique.*

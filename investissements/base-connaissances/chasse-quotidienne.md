@@ -2659,3 +2659,42 @@ produit aucune réponse. Le levier est la FORME de la demande, pas son nombre.*
 **Condition d'invalidation.** La borne suppose les trois ordres exécutés. À 112 parts le seuil
 passe à −31 % et bascule. **Donc la confirmation d'exécution reste nécessaire ; ㊸ ne la
 supprime pas, elle supprime la valorisation.**
+
+---
+
+## 🔧 ㉓-bis — vérifier le PÉRIMÈTRE du chiffre, pas seulement sa source *(06/10/2026)*
+> ㉓ exige que **le comparatif** soit celui de l'émetteur. ㉓-bis exige que **le périmètre** du
+> chiffre soit celui de la question. *Un agrégat exact peut répondre à une autre question que
+> celle qu'on lui pose — et il est alors faux sans être inexact.*
+
+**Cas de naissance — le budget français, deux fautes en deux jours.**
+1. **Le 04/10 j'ai écrit « ~54 Md€ d'effort »** pour le PLF 2027. Décomposition réelle :
+   **43 Md€ d'effort NOUVEAU** dans ce budget, et **54 Md€** seulement en y agrégeant des mesures
+   de redressement **antérieures**. *Le 54 n'est pas faux ; il n'est pas la mesure de ce budget.*
+   **J'ai relayé un agrégat comme une mesure.**
+2. **Le 05/10 j'ai annoncé « demain 06/10 : dépôt du budget à l'Assemblée »** — date que je ne peux
+   pas établir : un chemin donne le **PLF n° 3210 déposé le 01/10** *(jour de la présentation en
+   Conseil des ministres)*, un autre le **06/10**. **`assemblee-nationale.fr` est BLOQUÉ** par
+   l'egress *(vérifié ce jour)* : la source primaire est hors d'atteinte.
+
+**Et le contrôle qui a tout attrapé coûte zéro : l'arithmétique.** Le canal servait aussi
+« 70 jours pour le PLF → **26 novembre** » et « 50 jours pour le PLFSS → **17 décembre** » :
+
+| Si dépôt le 01/10 | Calcul | Le canal annonce |
+|---|---|---|
+| +70 jours *(art. 47)* | **10/12/2026** | 26/11 ❌ |
+| +50 jours | **20/11/2026** | 17/12 ❌ |
+| **26/11 − 70 j** ⇒ dépôt le | **17/09/2026** | — |
+| **17/12 − 50 j** ⇒ dépôt le | **28/10/2026** | — |
+
+> 🔴 **Les deux échéances impliquent deux dates de dépôt distinctes, à 41 jours d'écart, et
+> aucune ne coïncide avec les dates de dépôt servies.** *Canal AUTO-CONTRADICTOIRE sur le
+> calendrier budgétaire.* **Rien de ce calendrier n'est relayé.**
+> ✅ **Troisième fois que le bouclage arithmétique est mon contrôle le plus productif** *(après
+> l'ancre S&P du 17/09 et le dénominateur Viel du 26/09)* — **et le seul qui ne dépende d'aucun
+> canal.** Quand l'egress tombe, c'est le dernier contrôle qui reste debout. *À faire en premier,
+> pas en dernier.*
+
+**Protocole ㉓-bis.** Devant tout chiffre d'agrégat *(« effort de X », « plan de Y », « enveloppe
+de Z »)*, poser la question : **« le total de QUOI, exactement, et sur quelle période ? »** Si la
+réponse n'est pas dans la source, le chiffre ne sort pas du brouillon.
