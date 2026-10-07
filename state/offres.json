@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-10-06",
+ "maj": "2026-10-07",
  "offres": [
   {
    "d": "2026-10-03",
@@ -2125,6 +2125,261 @@
     "Portfolio demandé"
    ],
    "at": "Ton passé gaming et ta production créa comptent ; la crypto et les 5 ans demandés sont les points faibles."
+  },
+  {
+   "d": "2026-10-07",
+   "b": 39,
+   "st": "ouverte",
+   "cl": false,
+   "s": "avoir",
+   "t": "Visual Communications Specialist (100%)",
+   "c": "Albedis (pour une organisation internationale)",
+   "l": "Lausanne",
+   "dist": "Lausanne",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "5+ ans",
+   "lg": "EN courant exigé · environnement international",
+   "u": "https://www.jobup.ch/en/jobs/detail/947c24d0-0dcf-4761-bdce-336d2740543d/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+   "g": false,
+   "dl": "2026-10-09",
+   "n": "Cabinet de recrutement Albedis pour « une organisation internationale prestigieuse à la croisée du business, du savoir et du leadership mondial » à Lausanne. Annonce publiée le 06.10, fin de publication le 09.10.",
+   "fit": {
+    "m": 1,
+    "da": 2,
+    "ia": 1,
+    "pct": 74
+   },
+   "ms": [
+    "Créer des contenus visuels : digital, éditorial, réseaux sociaux, web, événements",
+    "Transformer des contenus business et recherche en récits visuels",
+    "Publications, rapports, campagnes, présentations, infographies",
+    "Data visualisation claire et engageante",
+    "Piloter des projets créatifs du concept à la livraison"
+   ],
+   "inf": [
+    "⚠️ 5+ ans en design graphique / communication visuelle",
+    "Adobe CC (InDesign, Photoshop, Illustrator), Canva, PowerPoint",
+    "Print et digital, rapports et campagnes sociales",
+    "Anglais courant",
+    "⏰ Annonce visible jusqu'au 09.10"
+   ],
+   "at": "Le pilier DA à l'état pur, à Lausanne et en anglais : mets en avant ta production visuelle multicanale et ta capacité à rendre lisible un sujet complexe (decks investisseurs, contenus techniques 3D/IA)."
+  },
+  {
+   "d": "2026-10-07",
+   "b": 39,
+   "st": "ouverte",
+   "cl": false,
+   "s": "avoir",
+   "t": "Rédacteur·rice – Chargé·e de communication",
+   "c": "Institut et Haute École de la Santé La Source",
+   "l": "Lausanne",
+   "dist": "Lausanne",
+   "tx": "n.p.",
+   "ct": "n.p.",
+   "xp": "« solide expérience en rédaction »",
+   "lg": "FR",
+   "u": null,
+   "g": false,
+   "dl": null,
+   "n": "⚠️ Non vérifiée : l'annonce n'est visible que sur des agrégateurs bloqués (emplois-vaud, jobagent, bebee). 🔎 À retrouver : cherche « Rédactrice·eur – Chargé·e de communication » sur le site de La Source (Lausanne).",
+   "fit": {
+    "m": 2,
+    "da": 1,
+    "ia": 0,
+    "pct": 60
+   },
+   "ms": [
+    "Stratégie de communication pour promouvoir la recherche et l'innovation en santé",
+    "Rédacteur·rice en chef du Journal La Source",
+    "Rapports, actualités, communiqués de presse"
+   ],
+   "inf": [
+    "⚠️ Non vérifiée — possiblement périmée",
+    "Profil très rédactionnel (vulgarisation scientifique)",
+    "Taux et contrat non précisés"
+   ],
+   "at": "Ton expérience à rendre une techno complexe désirable (IA, 3D) se transpose à la vulgarisation santé ; poste plus rédaction que DA."
+  },
+  {
+   "d": "2026-10-07",
+   "b": 39,
+   "st": "ouverte",
+   "cl": false,
+   "s": "avoir",
+   "t": "Chargé·e de communication — mandat 70 %",
+   "c": "Lausanne à Table",
+   "l": "Lausanne",
+   "dist": "Lausanne",
+   "tx": "70%",
+   "ct": "Mandat 1 an renouvelable",
+   "xp": "Entry level",
+   "lg": "FR",
+   "u": "https://ch.linkedin.com/jobs/view/charg%C3%A9%C2%B7e-de-communication-mandat-%C3%A0-70-%25-at-lausanne-%C3%A0-table-4474071198",
+   "g": false,
+   "dl": null,
+   "n": "Association qui promeut la gastronomie locale. Entrée en janvier 2027 (passation en décembre).",
+   "fit": {
+    "m": 2,
+    "da": 1,
+    "ia": 0,
+    "pct": 58
+   },
+   "ms": [
+    "Plan de communication et calendrier éditorial",
+    "Réseaux sociaux et animation de communauté",
+    "Lien avec membres, partenaires, médias et public",
+    "Coordonner communication et événements"
+   ],
+   "inf": [
+    "⚠️ 70 % (sous ton seuil) et mandat, pas un CDI",
+    "⚠️ Une part de coordination d'événements",
+    "Niveau d'entrée (Entry level)"
+   ],
+   "at": "Une porte d'entrée lausannoise rapide si tu acceptes 70 % : stratégie + contenus + communauté."
+  },
+  {
+   "d": "2026-10-07",
+   "b": 39,
+   "st": "ouverte",
+   "cl": false,
+   "s": "avoir",
+   "t": "Senior Graphic Designer",
+   "c": "Jobgether (pour une entreprise tech non nommée)",
+   "l": "Suisse · remote",
+   "dist": "Télétravail",
+   "tx": "100%",
+   "ct": "n.p. (temps plein)",
+   "xp": "« Senior », années non chiffrées",
+   "lg": "EN",
+   "u": "https://ch.linkedin.com/jobs/view/senior-graphic-designer-at-jobgether-4475151031",
+   "g": true,
+   "dl": null,
+   "n": "Passe remote Suisse. Intermédiaire Jobgether ; employeur final non nommé. Remote « depuis là où tu es le plus à l'aise ».",
+   "fit": {
+    "m": 1,
+    "da": 2,
+    "ia": 1,
+    "pct": 72
+   },
+   "ms": [
+    "Projets visuels : marketing, produit, réseaux sociaux, présentations",
+    "Design digital et de marque",
+    "Composition, typographie, compositing"
+   ],
+   "inf": [
+    "Illustrator, Photoshop, Figma avancés",
+    "Expérience pratique des outils IA demandée",
+    "⚠️ Séniorité à vérifier",
+    "⚠️ Intermédiaire, employeur non nommé"
+   ],
+   "at": "Figma + IA dans la fiche : ton pilier DA augmenté par l'IA est exactement ce qui est demandé."
+  },
+  {
+   "d": "2026-10-07",
+   "b": 39,
+   "st": "ouverte",
+   "cl": false,
+   "s": "avoir",
+   "t": "Social Media Manager",
+   "c": "Jobgether (pour une plateforme voyage non nommée)",
+   "l": "Suisse · 100 % remote",
+   "dist": "Télétravail",
+   "tx": "100%",
+   "ct": "n.p. (temps plein)",
+   "xp": "5+ ans",
+   "lg": "EN",
+   "u": "https://ch.linkedin.com/jobs/view/social-media-manager-at-jobgether-4475146132",
+   "g": false,
+   "dl": null,
+   "n": "Passe remote Suisse. Fully remote, environnement international. Intermédiaire Jobgether.",
+   "fit": {
+    "m": 2,
+    "da": 1,
+    "ia": 0,
+    "pct": 60
+   },
+   "ms": [
+    "Stratégie sociale globale, communauté de voyageurs",
+    "Planification de contenus par plateforme",
+    "Contenus réactifs aux tendances culturelles"
+   ],
+   "inf": [
+    "⚠️ 5+ ans",
+    "⚠️ Intermédiaire, employeur non nommé"
+   ],
+   "at": "Contenus et communauté ; l'écart est sur les années demandées."
+  },
+  {
+   "d": "2026-10-07",
+   "b": 39,
+   "st": "ouverte",
+   "cl": false,
+   "s": "avoir",
+   "t": "Creative Lead",
+   "c": "WeirdCo",
+   "l": "Remote (annonce rattachée à Fully, VS)",
+   "dist": "Télétravail",
+   "tx": "100%",
+   "ct": "n.p. (temps plein)",
+   "xp": "5+ ans",
+   "lg": "EN",
+   "u": "https://ch.linkedin.com/jobs/view/creative-lead-at-weirdco-4475893279",
+   "g": false,
+   "dl": null,
+   "n": "Studio créatif/divertissement. Location : Remote, reporte au Creative Director.",
+   "fit": {
+    "m": 1,
+    "da": 2,
+    "ia": 1,
+    "pct": 64
+   },
+   "ms": [
+    "Porter la vision créative du concept au lancement",
+    "Travailler aux côtés du Creative Director"
+   ],
+   "inf": [
+    "⚠️ 5+ ans",
+    "Remote"
+   ],
+   "at": "Rôle DA de lead ; ton passé gaming et ta culture créa jouent pour toi."
+  },
+  {
+   "d": "2026-10-07",
+   "b": 39,
+   "st": "ouverte",
+   "cl": false,
+   "s": "avoir",
+   "t": "Brand Manager – Home Category (CDD 12 mois)",
+   "c": "L'Occitane en Provence",
+   "l": "Plan-les-Ouates (GE)",
+   "dist": "~60 km · Genève",
+   "tx": "100%",
+   "ct": "CDD 12 mois",
+   "xp": "3-5 ans",
+   "lg": "EN · FR",
+   "u": "https://ch.linkedin.com/jobs/view/brand-manager-home-category-12-months-fixed-term-contract-at-l-occitane-en-provence-4476155851",
+   "g": false,
+   "dl": null,
+   "n": "Siège international de L'Occitane. CDD 12 mois = éligible. Mais Genève, hors périmètre transports habituel.",
+   "fit": {
+    "m": 2,
+    "da": 1,
+    "ia": 0,
+    "pct": 66
+   },
+   "ms": [
+    "Définir les priorités business et brand-building de la catégorie Home",
+    "Développer les collections Home Décor",
+    "Stratégies go-to-market et activation 360°"
+   ],
+   "inf": [
+    "3-5 ans = dans ta fourchette",
+    "⚠️ Genève (Plan-les-Ouates), ~1 h de Lausanne",
+    "CDD 12 mois"
+   ],
+   "at": "Le meilleur calibrage d'années du jour (3-5 ans) sur un vrai rôle de brand manager ; seul frein : Genève."
   }
  ]
 }
