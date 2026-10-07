@@ -3083,9 +3083,107 @@ celui-ci, je l'avais fabriqué moi-même, dans ma requête.*
 
 | # | Date | Proposition | P | Résolution |
 |---|---|---|---|---|
-| **C060** | 04/10 | **Tanguy ouvre l'accès réseau à au moins un des domaines de cotation demandés d'ici le 11/10/2026** | **15 %** | test `WebFetch` sur `live.euronext.com` ou `morningstar.fr` · **11/10/2026** |
+| **C060** *(P révisé 8 % le 07/10)* | 04/10 | **Tanguy ouvre l'accès réseau à au moins un des domaines de cotation demandés d'ici le 11/10/2026** | **15 %** | test `WebFetch` sur `live.euronext.com` ou `morningstar.fr` · **11/10/2026** |
 | **C061** | 04/10 | **Le S&P 500 clôture au moins 12 % sous sa clôture du 02/10 (≤ 6 795,99) à un moment avant le 31/12/2026** — c'est le scénario C de la Prépa | **12 %** | clôture S&P datée · **31/12/2026** |
 
 - **C060** — *suite directe de C058, et c'est tout l'intérêt.* C058 a établi que réduire le NOMBRE de demandes ne produisait rien. **C060 teste une demande d'une autre NATURE** : une modification de réglage de deux minutes, à effet permanent, au lieu d'une saisie de données à refaire. **Taux de base défavorable et assumé : 0 réponse sur 5 demandes depuis le 21/09**, d'où 15 % et non 50 %. *Si C060 échoue aussi, la conclusion ne portera plus sur la forme de mes demandes mais sur le canal lui-même — et c'est une conclusion que je devrai écrire.*
 - **C061** — ⚠️ **la référence 7 722,72 est de qualité imparfaite** *(dépêche AP relayée, aucune page ouvrable — ㊻)*. Elle a toutefois passé **un vrai test différentiel** : une fiche « midday » donnait 7 718, valeur distincte, donc le chiffre retenu n'est pas l'instantané de milieu de séance ; et l'arithmétique boucle *(7 722,72 − 56,27 = 7 666,45 → +0,734 %)*. **Tolérance fixée AVANT le test, conformément à ㉚ : si la référence du 02/10 se révèle fausse, le seuil se recalcule à −12 % de la valeur corrigée, et l'appel n'est pas annulé.**
 - 🔴 **Ni C060 ni C061 n'ont de routine associée.** S'ajoutent aux sept déjà signalées. **C060 échoit le 11/10 — c'est désormais la plus proche, devant C049 (~31/10).**
+
+---
+
+# 📅 07/10/2026 — ㊼ : j'ai vérifié mes envois, jamais mes LIVRAISONS
+
+## 🔴 Ce que j'ai établi ce matin
+En lisant le canal `#brief-investissements` *(première lecture en quatorze jours)* :
+- **Les quatorze briefs sont attribués au compte de Tanguy lui-même** — *« Tanguy Rousselin
+  <tanguy.rousselin@chat3d.ai> (U0BKM1N48JF) »*, signés *« Envoyé avec Claude »*.
+  **Il n'existe aucune identité d'expéditeur distincte.**
+- **Le canal ne contient QUE mes briefs.** Aucune réponse, aucun message de lui.
+- **Aucune réaction sur aucun message** *(le format détaillé les afficherait)*.
+
+## ⚖️ Ce que j'en INFÈRE, et ce que je n'établis pas
+| | Statut |
+|---|---|
+| Les messages sont postés sous son identité | ✅ **établi** *(attribution lue)* |
+| Slack ne notifie pas un utilisateur de ses propres messages | 🟡 **propriété générale de Slack**, non vérifiée sur SON client |
+| Il n'a donc jamais vu les briefs | 🔴 **NON établi** — c'est une inférence, la plus probable, pas un fait |
+| Les `PushNotification` quotidiennes l'ont atteint | 🔴 **NON établi** — l'outil répond *« push requested »*, pas « delivered », et ne pousse que si le Remote Control est connecté |
+
+> ⚠️ **Deux canaux, aucun confirmé.** *Je ne conclus donc PAS « il ne lit rien » — je conclus que
+> je n'ai jamais eu de preuve de livraison, sur aucun des deux.*
+
+## 🆕 ㊼ — vérifier la livraison au point de RÉCEPTION, jamais au point d'envoi
+> **Un POST réussi n'est pas une livraison.** Le `message_link` que Slack me renvoie prouve que
+> le message existe sur le serveur — **rien de plus**. Une livraison ne se constate qu'au
+> récepteur : une réaction, une réponse, un accusé.
+
+**Cas de naissance.** Quatorze jours. Quatorze briefs. **Six demandes de conceptions
+différentes** — quatre par brief, puis une seule *(㉝)*, puis une question binaire à quatre mots
+*(㊸)*, puis un réglage de deux minutes. **Zéro réponse.** Et pendant ces quatorze jours j'ai
+successivement accusé : le nombre de mes demandes, leur forme, leur coût pour lui, le fait qu'il
+soit occupé. **Je n'ai jamais testé le canal — alors que c'était le test le MOINS CHER de tous :
+une lecture.**
+
+> 🔴 **C'est la même faute que ㊻, d'un cran plus profond.** ㊻ disait : *la provenance d'une
+> donnée se rejoue.* ㊼ dit : **la livraison d'un message se vérifie au bout du fil.** Dans les
+> deux cas j'avais construit un contrôle qui s'auto-satisfaisait — là un horodatage qui
+> certifiait son propre canal, ici un accusé d'envoi pris pour un accusé de réception.
+> 🔑 **Et le plus coûteux n'est pas le silence : c'est que j'ai tiré des CONCLUSIONS de ce
+> silence.** *Le 03/10 j'ai écrit que « le goulot n'est pas le nombre de demandes » et j'ai
+> redessiné ma demande deux fois sur cette base. Le raisonnement était juste et la prémisse
+> non testée.* **Quatorze jours d'optimisation d'un message peut-être jamais affiché.**
+
+### 🔧 Avenant à ㊺ — une TROISIÈME catégorie, écrite le lendemain de la règle
+㊺ *(04/10)* distinguait la **variable de résolution** *(révision obligatoire)* du **contexte**
+*(révision interdite sans clause)*. **Il manquait un cas** : une information qui ne porte ni sur
+la variable ni sur le contexte, mais sur **la CHAÎNE CAUSALE qui mène à l'issue**.
+> **Révision OBLIGATOIRE aussi quand un fait nouveau porte sur le mécanisme par lequel l'issue
+> peut survenir.** *㊺ existe pour m'empêcher de réviser sur l'humeur ou l'actualité — pas pour
+> m'interdire de réviser quand je découvre que le mécanisme est rompu.*
+
+## 🔻 C060 révisé : 15 % → **8 %**
+*« Tanguy ouvre l'accès réseau à au moins un des domaines demandés d'ici le 11/10 »* — la demande
+**peut n'avoir jamais été affichée**. Quatre jours restants. *Révision au titre de l'avenant
+ci-dessus : le fait porte sur la chaîne causale.*
+**Registre : 19 résolus · Brier 0,2759 · BSS −0,103** *(inchangé — aucune résolution ce jour).*
+
+## ➡️ Ce que je change, et ce que je ne change pas
+- ✅ **Je continue de poster sur `C0BKM2ACTUK`** : c'est le canal que le mandat nomme. **Je ne vais
+  pas poster ailleurs de mon propre chef** — choisir un autre canal de diffusion est une action
+  sortante que ses instructions ne prévoient pas.
+- ✅ **Je mets désormais la demande unique AUSSI dans ma réponse de fin de tour**, qui est la
+  surface qu'il voit s'il ouvre la session.
+- 🔴 **J'arrête de traiter son silence comme une donnée sur son engagement.** *Un silence dont le
+  canal n'est pas vérifié ne renseigne sur rien.*
+
+## 🆕 Appel ouvert le 07/10/2026 — C062 *(le test de livraison)*
+
+| # | Date | Proposition | P | Résolution |
+|---|---|---|---|---|
+| **C062** | 07/10 | **Une réaction emoji apparaît sur le brief du 07/10 (`1791357865.228719`) d'ici le 09/10/2026** | **20 %** | `slack_get_reactions` sur `C0BKM2ACTUK` · **09/10/2026** |
+
+**Pourquoi cet appel vaut mieux que les six demandes précédentes — et c'est ㊸ appliqué à la
+livraison** *(demander la COMPARAISON, pas la MESURE)* :
+- **Je peux le VÉRIFIER MOI-MÊME.** `slack_get_reactions` lit les réactions d'un message.
+  **C'est la première demande de la série dont l'échec est interprétable** : les six autres
+  étaient indiscernables d'un canal mort. *Une demande dont on ne peut pas lire le résultat
+  n'est pas une demande, c'est une bouteille à la mer.*
+- **Le coût pour lui est le plus bas possible** : un emoji, deux secondes, pas de saisie,
+  pas de capture d'écran, pas de réglage.
+- **Elle est DIAGNOSTIQUE, pas informative** : elle ne m'apporte aucune donnée de portefeuille —
+  elle m'apprend si le canal existe. **Et sans ça, toutes les autres demandes sont aveugles.**
+  *Dépenser une demande pour tester le tuyau plutôt que pour obtenir de l'eau est le bon ordre
+  quand on ne sait pas si le tuyau est raccordé.*
+
+**P = 20 %, et voici la décomposition** *(pour que l'appel soit auditable)* :
+- **0 réponse sur 6 demandes en 14 jours** → taux de base brut proche de 0.
+- **Mais** : les `PushNotification` constituent un second canal, **non confirmé mais non réfuté**,
+  et un emoji est de très loin l'action la moins coûteuse jamais demandée. Ces deux éléments
+  relèvent la probabilité au-dessus du taux de base.
+- **Et un contre-argument que je m'applique** : il a écrit trois messages le 21/09 — **dans la
+  conversation, pas dans Slack.** *Son engagement est donc établi ; sa présence sur CE canal ne
+  l'est pas.* **C'est exactement ce que C062 mesure.**
+
+> 🔴 **Si C062 se résout FAUX, la conclusion ne portera plus sur mes demandes.** Elle portera sur
+> le canal, et il faudra que je le dise sans détour au lieu de redessiner un septième message.
