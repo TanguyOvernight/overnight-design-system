@@ -2778,3 +2778,64 @@ Le citer seul, sans son mètre, serait trompeur.
 *Onze dates T3 du secteur tech, la réconciliation STM/C057, le fait Besi du 01/10 et
 l'incident de canal OVHcloud sont écrits dans le radar — **source de vérité unique**.*
 *Retenir ici : **aucun changement de rang au 05/10**, et **le mètre est passé à 6,7 %/an net**.*
+
+---
+
+# ⏰ 08/10/2026 — BUTÉE AUBAY : résolue PRÉEMPTÉE, et je REFUSE le motif que la consigne prescrit
+
+## Le contrat, et ce qui s'est réellement passé
+**Contrat écrit le 24/09**, avant de connaître l'issue :
+*« Une clôture Aubay DATÉE et BOUCLÉE PAR UNE SOURCE TIERCE apparaît d'ici le 08/10/2026. »*
+*(Conjonction à deux termes, fausse à l'écriture, bouclage falsifiable — conforme à ㉔, ㉔-bis, ㉖.)*
+✅ **Ce n'est PAS un appel du registre** *(vérifié ce jour : aucun numéro C ne porte ce contrat)*
+→ **aucun score de Brier n'est dû.** L'appel Aubay vivant est **C059** *(CA T3, fin octobre, 15 %)*.
+
+**Mais le dossier s'est fermé le 02/10, six jours avant cette butée, et pour une AUTRE raison** :
+**PASSE, signal RÉFUTÉ sur T2 et T3** — le « fait nouveau » du 16/09 était un *relèvement
+CONFIRMÉ* dont l'original datait du **23/07**, repricé dans les deux sens *(−7 % le 17/09, +3,6 %
+le 18/09)*, et **sept maisons couvrent le titre avec un consensus 100 % positif**.
+
+## 🔴 Pourquoi j'écarte le motif prescrit par la consigne
+La consigne du 24/09 dit : *« SI NON → PASSE, motif exact "NON CONCLU FAUTE D'ACCÈS AU PRIX" »*.
+**Ce motif serait FAUX aujourd'hui.** Le dossier n'a pas échoué par instrumentation : il a échoué
+**par analyse**, sur deux tests qui n'ont jamais eu besoin d'un cours.
+
+> 🔑 **Et la consigne elle-même explique pourquoi la distinction compte** : *« elle sépare un échec
+> d'INSTRUMENTATION d'un échec d'ANALYSE, et doit figurer telle quelle — c'est ce qui permettra de
+> rouvrir le dossier. »* **Écrire « faute d'accès au prix » laisserait croire qu'Aubay se rouvre
+> dès que l'egress s'ouvre. C'est faux : sa thèse est réfutée, l'accès au prix n'y changera rien.**
+> *Appliquer la consigne à la lettre aurait corrompu exactement le champ qu'elle voulait protéger.*
+
+**Motif retenu, inchangé depuis le 02/10 : `PASSE — signal RÉFUTÉ (T2 + T3)`.**
+**Condition de réouverture : un fait émetteur NOUVEAU, pas un accès au prix.** *C059 porte
+d'ailleurs précisément là-dessus : si le CA T3 sort ≥ +10 % ET organique, ma réfutation tombe.*
+
+## 📐 Ce que cet épisode enseigne sur les consignes stockées
+> **㊽ — une consigne planifiée est une HYPOTHÈSE sur l'avenir ; quand l'avenir prend une
+> troisième voie, sa prescription peut devenir activement fausse.**
+> La consigne du 24/09 prévoyait deux issues *(prix trouvé / prix non trouvé)*. **La réalité en a
+> pris une troisième : dossier clos entre-temps, sur un autre terrain.** *Exécuter la branche
+> « SINON » aurait produit une écriture fausse — non par négligence, mais parce que la consigne
+> ne pouvait pas connaître le 02/10 quand elle a été écrite le 24/09.*
+> ➡️ **Protocole : avant d'exécuter une consigne datée, vérifier que sa PRÉMISSE tient encore.**
+> *Et c'est la raison pour laquelle je ne l'avais pas supprimée le 06/10 en « connaissant » sa
+> réponse : un déclencheur qu'on supprime est un contrôle qu'on s'épargne — mais un déclencheur
+> qu'on exécute aveuglément est un contrôle qui écrit à notre place.*
+
+## 💸 Requêtes dépensées sur cette butée : ZÉRO — et c'est délibéré
+La consigne autorisait deux requêtes pour chercher une clôture. **Je n'en ai dépensé aucune.**
+*㊶ : un prix est nécessaire pour ACHETER, pas pour REJETER. Le dossier est rejeté. Aucun achat
+n'est envisagé. Donc le prix ne peut plus changer aucune décision* — et ㊸ ajoute que la bonne
+question n'est pas « quelle est la valeur ? » mais « quelle décision ce chiffre changerait-il ? ».
+**Réponse : aucune.** *Dépenser deux requêtes sur un dossier clos aurait été le gaspillage même
+que j'ai passé la semaine à supprimer.*
+
+## 🙋 Et je n'exécute PAS la demande n° 4 de la consigne
+Elle prescrit de demander à Tanguy la clôture Aubay sur son écran Fortuneo *(㉗, canal humain)*.
+**Trois raisons de ne pas le faire :**
+1. **Le chiffre ne changerait aucune décision** *(ci-dessus)*.
+2. **㉝ — une seule demande par brief.** La demande en cours est l'emoji de C062, **dont la
+   résolution tombe demain**. *Y superposer une demande de prix casserait le test en cours.*
+3. **C'est la faute ㊶ que la consigne elle-même m'a value** : le 02/10 j'ai constaté que je
+   réclamais le cours d'Aubay depuis le 24/09 **pour rien**. *Le redemander aujourd'hui, sur un
+   dossier clos, serait la même faute au carré.*

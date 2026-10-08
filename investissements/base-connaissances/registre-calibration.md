@@ -3187,3 +3187,46 @@ livraison** *(demander la COMPARAISON, pas la MESURE)* :
 
 > 🔴 **Si C062 se résout FAUX, la conclusion ne portera plus sur mes demandes.** Elle portera sur
 > le canal, et il faudra que je le dise sans détour au lieu de redessiner un septième message.
+
+---
+
+# 📅 08/10/2026 — contrôle intermédiaire C062, et ㊽
+
+## ⏳ C062 — vérifié ce jour, NON RÉSOLU : l'échéance est demain
+*« Une réaction emoji apparaît sur le brief du 07/10 (`1791357865.228719`) d'ici le 09/10 »*, P = **20 %**.
+**Contrôle du 08/10 ~08h30 : `slack_get_reactions` → "No reactions found on this message".**
+
+> 🛑 **Je NE résous PAS l'appel aujourd'hui.** L'échéance est le **09/10** et il reste une journée
+> entière. *Clore un appel un jour plus tôt parce que l'issue présente me paraît acquise est
+> exactement ce que j'ai refusé de faire le 10/08 sur le déclencheur de déclassement d'Eli Lilly :
+> « avancer une échéance parce que le résultat me convient ».* **Ici le résultat ne me convient
+> même pas — ce qui rend la tentation inverse et la règle identique.**
+> ✅ **Le contrôle intermédiaire est néanmoins JOURNALISÉ**, pour que la résolution de demain ne
+> repose pas sur une seule lecture.
+
+## 🆕 ㊽ — une consigne planifiée est une HYPOTHÈSE sur l'avenir
+> **Avant d'exécuter une consigne datée, vérifier que sa PRÉMISSE tient encore.** Une consigne
+> écrite pour deux issues devient **activement fausse** si la réalité en prend une troisième.
+
+**Cas de naissance — la butée Aubay de ce matin.** Écrite le 24/09, elle prévoyait : prix trouvé
+→ instruire ; prix non trouvé → **« PASSE, motif exact : NON CONCLU FAUTE D'ACCÈS AU PRIX »**.
+**La réalité a pris une troisième voie** : le dossier s'est fermé le **02/10**, six jours avant la
+butée, **sur T2 et T3**, deux tests qui n'ont jamais eu besoin d'un cours.
+
+> 🔴 **Exécuter la branche « SINON » aurait écrit un motif faux** — et pas un motif anodin :
+> la consigne elle-même précise que ce champ *« sépare un échec d'INSTRUMENTATION d'un échec
+> d'ANALYSE, et c'est ce qui permettra de rouvrir le dossier »*. **« Faute d'accès au prix »
+> laisserait croire qu'Aubay se rouvre quand l'egress s'ouvrira. Faux : sa thèse est réfutée.**
+> **Appliquer la consigne à la lettre aurait corrompu précisément le champ qu'elle protégeait.**
+
+**Et la tension avec ma décision du 06/10 se résout proprement.** J'avais écrit : *« un déclencheur
+qu'on supprime parce qu'on croit connaître sa réponse est un contrôle qu'on s'épargne »* — et je
+l'avais laissé vivre exprès. **C'était juste.** ㊽ ajoute l'autre moitié : **un déclencheur qu'on
+exécute aveuglément est un contrôle qui écrit à notre place.** *Le garder ET auditer sa prémisse
+ne sont pas contradictoires : c'est la même exigence, appliquée aux deux bouts.*
+
+**Dépense sur cette butée : ZÉRO requête** *(sur deux autorisées)*. ㊶ + ㊸ : le prix ne pouvait
+plus changer aucune décision, le dossier étant rejeté. **Et la demande n° 4 de la consigne —
+réclamer le cours à Tanguy — n'est PAS exécutée** : elle casserait le test C062 en cours, et
+redemander ce cours serait la faute ㊶ au carré, puisque le 02/10 j'ai établi que je le réclamais
+depuis le 24/09 pour rien.
