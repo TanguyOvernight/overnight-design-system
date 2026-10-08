@@ -3230,3 +3230,16 @@ plus changer aucune décision, le dossier étant rejeté. **Et la demande n° 4 
 réclamer le cours à Tanguy — n'est PAS exécutée** : elle casserait le test C062 en cours, et
 redemander ce cours serait la faute ㊶ au carré, puisque le 02/10 j'ai établi que je le réclamais
 depuis le 24/09 pour rien.
+
+## ⚠️ 08/10 — PRÉCISION DE RÉSOLUTION DE C062, écrite AVANT l'échéance
+C062 énonce : *« Une réaction emoji apparaît sur le brief du **07/10** (`1791357865.228719`) d'ici
+le 09/10 »*. **Défaut de construction que je viens de voir** : si Tanguy réagit au brief
+d'**aujourd'hui** plutôt qu'à celui d'hier, l'appel se résoudrait **FAUX sur une technicalité**
+alors que sa SUBSTANCE — *le canal livre-t-il ?* — serait **VRAIE**.
+
+> ✅ **Règle de résolution fixée maintenant, avant de connaître l'issue** *(㉚ : la tolérance d'un
+> contrôle se fixe AVANT de le passer)* : **une réaction sur N'IMPORTE QUEL brief d'ici le 09/10
+> résout C062 VRAI.** La proposition porte sur la livraison, pas sur un horodatage particulier.
+> 🔑 **L'écrire aujourd'hui est légitime ; l'écrire demain serait déplacer les poteaux.** *C'est
+> toute la différence, et c'est ㉙ — vérifier qu'une proposition est bien construite — appliqué
+> un jour trop tard mais avant que ça compte.*

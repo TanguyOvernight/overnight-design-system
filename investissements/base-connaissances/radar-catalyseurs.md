@@ -1986,3 +1986,96 @@ S1 d'emeis du 23/09/2026 alors que **deux relais datés donnent le 29/07/2026**.
 > **Avec OVHcloud hier, la règle de l'année a intercepté trois faux positifs en deux séances —
 > dont, chaque fois, la piste la plus tentante du jour.** *Elle est devenue mon contrôle le plus
 > rentable après le bouclage arithmétique.*
+
+---
+
+## 📅 08/10/2026 — Fagron T3 publié · OPmobility avertit · IntegraGen tranché demain
+⚠️ **Tout [RÉSUMÉ DE RECHERCHE]** — aucune page ouverte. *Nouveaux hôtes refusés confirmés :
+`investors.fagron.com`, `investing.com`, `nasdaq.com`, `tipranks.com`, `bdif.amf-france.org`
+(base AMF), `ml-eu.globenewswire.com`, `webdisclosure.com`, `financialcontent.com`,
+`manilatimes.net`, `opmobility.com`.* **La base de l'AMF elle-même est hors d'atteinte.**
+
+### ✅ FAGRON — T3 2026 publié le 08/10 à 07h00 CET *(échéance du radar TENUE)*
+**Année vérifiée dans l'URL sur deux hôtes indépendants** + un relais tiers distinct.
+
+| Grandeur | T3 2026 | Comparatif publié par FAGRON |
+|---|---|---|
+| CA groupe | **281,3 M€** | **+23,2 %** *(+19,5 % à change constant)* |
+| **dont croissance ORGANIQUE à change constant** | — | **+3,4 %** |
+| EMEA | 113,1 M€ | organique CER **+6,5 %** |
+| Amérique latine | 69,0 M€ | organique CER **+9,7 %** |
+| North America-Pacific | 99,2 M€ | **Compounding Services −2,8 %** · Brands & Essentials +26,1 % |
+| **Guidance FY 2026** | CA **1 125-1 150 M€** · marge EBITDA ajusté **19,5-20,0 %** | **CONFIRMÉE** — ni relevée, ni abaissée |
+
+> 🔑 **La lecture qui compte : +23,2 % en titre, +3,4 % en organique.** *Une vingtaine de points de
+> croissance viennent des acquisitions et du change — l'exercice est une histoire de croissance
+> EXTERNE, pas d'élan opérationnel.* **Et dans sa plus grosse région, le métier cœur
+> (Compounding Services) RECULE de 2,8 %**, la hausse de NA-Pacific venant de Brands & Essentials.
+> *Cause avancée par l'émetteur : une pénurie SECTORIELLE de poches IV, « stabilisée », volumes
+> attendus normalisés au T4 — **déclaration de direction, pas fait vérifié**.*
+> ✅ Injeplast *(Brésil)* bouclée ; toutes les acquisitions annoncées sont closes.
+> ⚠️ **Trou nommé** : impossible d'établir **quand** la fourchette en euros a été introduite. Si
+> les publications antérieures étaient qualitatives, « confirmer une fourchette » change de sens.
+> ✅ **Contrôle d'arrondi honnête** : 281,3 / 228,2 = +23,3 % contre +23,2 % publié. **Arrondi, pas
+> signal** — et c'est l'émetteur qui est retenu, pas mon quotient.
+> 🚫 **Consensus d'analystes par région écartés** *(EMEA 110,5 · LatAm 65,3 · NA-Pac 105,7 · groupe
+> 281,5 M€)* : **ce ne sont pas des comparatifs Fagron.** ㉓ — ne jamais les rapprocher.
+
+### 📉 OPmobility (OPM, Paris) — AVERTISSEMENT le 07/10 à ~17h45, NON PROMUE
+**Nouveaux objectifs 2026** *(chiffres émetteur)* : marge opérationnelle **430-450 M€** · FCF
+**> 220 M€** · RNPG « significatif » — **le groupe ne promet plus de hausse** · dette nette en
+amélioration vs **1 409 M€** fin 2025. **Restructuration : ~770 postes** *(460 Allemagne,
+310 France)*, coût **120-130 M€**, fermeture de Venette, Labège et Sterbfritz. Motifs : marché
+auto pire qu'anticipé *(Chine)*, volatilité matières, **annulations de projets hydrogène US/Europe**.
+
+> 🛑 **Je REFUSE de chiffrer le delta de guidance, et c'est la bonne décision.** Les relais se
+> contredisent : « 490 M€ de marge op. et 297 M€ de FCF » sont donnés **tantôt comme l'ancien
+> objectif, tantôt comme le RÉALISÉ 2025**. *Poser « 430-450 contre > 490 » serait fabriquer un
+> comparatif — la faute ㉓ exacte qui m'a coûté dix jours sur Aubay.* **Ce qui est solide : les
+> nouveaux chiffres sont ceux de l'émetteur, et l'émetteur qualifie lui-même l'opération
+> d'abaissement.**
+> **NON PROMUE** : séance **1/3** · capitalisation **non vérifiable** *(seuil 2 Md€ non tranché)* ·
+> aucun cours · et **T5 douteux** — un équipementier auto européen qui coupe 770 postes dans un
+> marché en recul structurel est un profil de **piège de valeur** tant que la valorisation n'est
+> pas mesurable. *T6 est favorable (un avertissement fait vendre par mandat), mais T6 seul n'a
+> jamais suffi.*
+
+### ☠️ INTEGRAGEN (ALINT, Growth Paris) — DÉCISION DU TRIBUNAL DEMAIN 09/10
+**Redressement judiciaire depuis le 15/06/2026.** Deux offres de reprise déposées le 11/09
+*(ABL Diagnostics, Health In Code)*, **incomplètes et sous conditions suspensives**. Audience au
+**TC d'Évry le 05/10**, mise en délibéré, **décision le 09/10/2026**.
+> 🔴 **Ce que l'ÉMETTEUR écrit lui-même** : les deux offres **ne prévoient AUCUN rachat des
+> actions** · *« la reprise de l'activité ne garantit pas l'existence d'une valeur résiduelle pour
+> les actionnaires »* · en cas de plan de cession, **« une liquidation judiciaire interviendra et
+> une radiation des actions sera effectuée »**.
+> ⚠️ **Et c'est un piège PARFAIT** : « poursuit ses activités sans interruption » + « offres de
+> reprise » se lit comme un dossier de retournement. **Ce n'en est pas un.** *Même espèce que
+> Carmat et McPhy — à ne toucher sous aucun prétexte.*
+
+### ☠️ Liste noire — 5 ajouts
+| Société | Sort | Date |
+|---|---|---|
+| **Cabasse** *(Growth)* | RJ 09/03/2026 → **liquidation 20/04/2026**, cession à Loewe, **cotation suspendue et ne reprendra pas** | 20/04/2026 |
+| **VEOM Group** | **liquidation judiciaire**, radiation annoncée | 20/04/2026 |
+| **Phaxiam** | suspendue 06/2025 puis liquidation + radiation | 2025 *(à reconfirmer)* |
+| **Enertime** *(ALENE)* | RJ 10/07/2024 → **liquidation 09/10/2024**, actions sans valeur | **2024** |
+| **Navya** | RJ 2023, suspension maintenue | 2023 |
+
+### 🎯 ㉞-bis : QUATRE interceptions de plus — sept en quatre séances
+1. **Enertime — décalage de 24 mois, le pire à ce jour.** Des titres sans année se lisent comme du
+   courant. **C'est 2024**, et la liquidation est du **09/10** — *date qui tomberait PILE dans ma
+   fenêtre si l'année se perdait.* **Enertime est morte depuis deux ans.**
+2. **Les Constructeurs du Bois — 12 mois, et de SIGNE INVERSÉ.** Un article du 01/10/**2025** titre
+   *« rentabilité opérationnelle SOLIDE »* ; le communiqué de 2026 donne **EBITDA −55,5 %**.
+   *Même société, même saison, message opposé — seule l'année trahit.* **La forme la plus
+   dangereuse du piège : il ne sert pas un chiffre faux, il sert la conclusion inverse.**
+3. **Pixium Vision** — « cotation suspendue », forum du 02/10/**2023** : décalage de 36 mois.
+4. **Maisons du Monde** — refinancement bouclé le 31/07/2026, **dilution de 95,2 %** des
+   actionnaires ; résultats S1 du **25/09**, soit **3 jours AVANT ma fenêtre**. *Écarté comme
+   hors fenêtre — la borne tient.*
+
+### ✅ Non-contradiction vérifiée sur Guerbet
+Ce rapport donne *« CA 379,2 M€, **−2,2 %** »*, le rapport du 06/10 donnait *« −0,1 % à change
+constant et périmètre comparable »*. **Ce ne sont pas deux chiffres incompatibles mais deux
+BASES** *(publié vs organique à périmètre constant)*. **Mon brief du 06/10 portait l'étiquette
+exacte** — vérifié. *Je le consigne pour ne pas croire à une contradiction dans trois semaines.*

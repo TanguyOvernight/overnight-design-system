@@ -2839,3 +2839,55 @@ Elle prescrit de demander à Tanguy la clôture Aubay sur son écran Fortuneo *(
 3. **C'est la faute ㊶ que la consigne elle-même m'a value** : le 02/10 j'ai constaté que je
    réclamais le cours d'Aubay depuis le 24/09 **pour rien**. *Le redemander aujourd'hui, sur un
    dossier clos, serait la même faute au carré.*
+
+---
+
+# ✅ 08/10/2026 — CHANTIER DU 28/09 FERMÉ : « faut-il arbitrer vers l'OAT ? »
+Le 28/09 j'avais écrit que le sans-risque en euros était au plus haut de sa vie d'investisseur et
+que je ne tranchais pas, *« sans inventer de chiffre »*. **Je le tranche aujourd'hui avec un
+chiffre — et la réponse est NON, de façon ROBUSTE.**
+
+## Les deux termes, chacun après son enveloppe
+| | Brut | Enveloppe | Net / an |
+|---|---|---|---|
+| **Cœur WPEA** *(actions Monde)* | 8,00 % *(hypothèse)* | **PEA, 18,6 % à la SORTIE** — la plus-value capitalise non taxée 6 ans | **6,72 %** |
+| **OAT 10 ans** | 4,74 % | **CTO, 31,4 % CHAQUE ANNÉE** sur le coupon — l'OAT est **inéligible au PEA** | **3,25 %** |
+| | | **→ prime nette** | **+3,47 pt/an** |
+
+## 🔑 Et la conclusion ne dépend PAS de mon hypothèse non sourçable
+| Brut Monde | Net en PEA | Prime nette vs OAT |
+|---|---|---|
+| 6,00 % *(soit une prime de risque d'à peine 1 pt — que j'ai qualifiée d'implausible)* | 5,01 % | **+1,76 pt/an** |
+| 7,00 % | 5,86 % | +2,61 pt/an |
+| **8,00 %** *(mètre retenu)* | **6,72 %** | **+3,47 pt/an** |
+| 9,00 % | 7,59 % | +4,34 pt/an |
+| 10,00 % | 8,46 % | +5,21 pt/an |
+
+> ✅ **Les actions battent l'OAT nettement sur TOUTE la plage**, y compris à l'hypothèse la plus
+> défavorable que j'aie jugée implausible. **La décision est donc insensible au paramètre que je
+> ne peux pas sourcer** — c'est ㊲ *(chercher l'action DOMINANTE avant de déclarer une donnée
+> bloquante)* appliqué au mètre lui-même.
+> ⚠️ **Simplifications nommées** : coupon d'OAT taxé annuellement sans report *(approximation d'un
+> achat au pair)*, et **aucun risque de prix** — une OAT 10 ans détenue 6 ans en porte un, ce que
+> j'avais déjà écrit le 30/09 *(« une OAT 10 ans n'est pas ton horizon »)*.
+
+## 🔴 LA FAUTE QUE J'AI ÉVITÉE DE PEU — et c'est la partie instructive
+J'ai d'abord calculé **un seul point** *(8 % brut)* et vu que l'écart passait de **+3,26 pt brut à
++3,47 pt net** : l'enveloppe **ajoutait** 0,21 pt. **J'allais écrire que le PEA ÉLARGIT la prime
+d'actions.** Puis j'ai calculé trois points :
+
+| Brut Monde | Écart brut | Écart net | Apport de l'enveloppe |
+|---|---|---|---|
+| 6 % | +1,26 pt | +1,76 pt | **+0,50 pt** |
+| 8 % | +3,26 pt | +3,47 pt | **+0,21 pt** |
+| 10 % | +5,26 pt | +5,21 pt | **−0,05 pt** |
+
+> **L'apport de l'enveloppe DÉCROÎT quand le rendement monte, et change de signe vers 10 %.**
+> *Mécanisme : le PEA taxe la plus-value CUMULÉE une fois à la sortie, donc son prélèvement en
+> points croît avec g ; le CTO taxe un coupon FIXE, donc son prélèvement est constant à 1,49 pt.
+> Les deux se croisent.*
+> 🔴 **J'ai failli généraliser une pente à partir d'UN point.** *C'est exactement la faute que
+> j'ai relevée HIER chez un agent — « 15 hôtes sur 15 ont échoué, donc tout échoue », sur un
+> échantillon d'une seule catégorie. Vingt-quatre heures plus tard, j'allais la commettre
+> moi-même sur une courbe.* **Un point ne donne pas une pente ; deux ne donnent pas une courbure.**
+> ✅ **Ce qui l'a attrapée : avoir recalculé au lieu d'avoir raisonné.** Trois lignes de code.
