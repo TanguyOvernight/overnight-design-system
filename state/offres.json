@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-10-07",
+ "maj": "2026-10-08",
  "offres": [
   {
    "d": "2026-10-03",
@@ -2239,6 +2239,159 @@
     "Fully remote, équipes à Kyiv et Varsovie — statut d'emploi suisse à clarifier (probablement contractor)"
    ],
    "at": "Figma + IA dans la fiche : ton pilier DA augmenté par l'IA est exactement ce qui est demandé."
+  },
+  {
+   "d": "2026-10-08",
+   "b": 40,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "cible",
+   "suivi": true,
+   "depuis": "2026-10-08",
+   "t": "Content Creator & Social Media Specialist",
+   "c": "Freshape SA",
+   "l": "Renens",
+   "dist": "5 km · ~12 min TC",
+   "tx": "100% (sur site)",
+   "ct": "n.p. (temps plein)",
+   "xp": "3+ ans",
+   "lg": "EN excellent exigé · FR et/ou DE = plus",
+   "u": "https://ch.linkedin.com/jobs/view/content-creator-social-media-specialist-at-freshape-4474463176",
+   "g": true,
+   "n": "Green-tech en croissance (solutions off-grid), nouveaux bureaux à Renens avec studio interne. Rattaché·e au Marketing Manager, lancements produits à venir.",
+   "fit": {
+    "m": 2,
+    "da": 2,
+    "ia": 1,
+    "pct": 88
+   },
+   "ms": [
+    "Stratégie social media et voix de marque",
+    "Diriger, planifier et produire les contenus photo/vidéo/texte (studio interne + terrain)",
+    "Positionnement, copy du site et plans de lancement produits",
+    "Campagnes Meta et Google (budget, ciblage, ROI)",
+    "Communauté, influenceurs, ambassadeurs ; reporting de performance"
+   ],
+   "inf": [
+    "3+ ans en création de contenu / social media",
+    "Direction créative ET production de tes propres visuels (photo, vidéo) et textes",
+    "Pratique des outils IA exigée (copy, visuels, montage, reporting)",
+    "Anglais excellent · FR/DE en plus",
+    "100 % sur site à Renens · lancements hardware/e-commerce/crowdfunding = gros plus"
+   ],
+   "at": "Taillé pour toi : DA + production de contenu + IA dans le workflow, à 5 km de Lausanne. Montre tes contenus Chat3D/Overnight (photo, vidéo, motion) et explique comment tu les produis plus vite avec l'IA."
+  },
+  {
+   "d": "2026-10-08",
+   "b": 40,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "solide",
+   "t": "Growth Marketer (aussi publiée en « Marketing Specialist » et « Content Creator »)",
+   "c": "Inved SA",
+   "l": "Vevey",
+   "dist": "~20 km · ~15 min en train",
+   "tx": "100%",
+   "ct": "CDI",
+   "xp": "non chiffrée (tag Entry level)",
+   "lg": "FR excellent · EN/DE en plus",
+   "u": "https://ch.linkedin.com/jobs/view/growth-marketer-at-inved-sa-4476586093",
+   "g": false,
+   "n": "Proptech romande (data + expertise immobilière). Trois annonces LinkedIn au texte identique pour le même poste. Candidature par e-mail indiquée dans l'annonce. Bureaux à Vevey et Sion.",
+   "fit": {
+    "m": 2,
+    "da": 1,
+    "ia": 1,
+    "pct": 74
+   },
+   "ms": [
+    "Définir et exécuter la stratégie marketing (acquisition, marque, conversion)",
+    "Campagnes Meta, Google, LinkedIn, YouTube ; SEO y compris visibilité dans les outils d'IA",
+    "Emailing, nurturing, automatisation marketing ; tests A/B",
+    "Ligne éditoriale : réseaux, vidéo, blog, podcast, newsletter",
+    "Encadrer une petite équipe marketing, freelances et agences"
+   ],
+   "inf": [
+    "Expérience en marketing digital et création de contenu",
+    "Résultats en acquisition B2C et génération de leads",
+    "Meta Ads, Google Ads, GA4, Looker Studio, HubSpot",
+    "Pratique de l'IA appliquée au marketing = plus",
+    "Vevey : un cran au-delà de ton périmètre, mais direct en train"
+   ],
+   "at": "Un rôle de « head of marketing » hands-on dans une petite structure : ton profil startup (stratégie + exécution + IA + automatisations) colle ; le côté acquisition chiffrée est à mettre en avant."
+  },
+  {
+   "d": "2026-10-08",
+   "b": 40,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Conversion Copywriter & Content Lead",
+   "c": "Jobgether (client non nommé)",
+   "l": "Suisse · remote",
+   "dist": "Télétravail",
+   "tx": "100%",
+   "ct": "n.p. (temps plein)",
+   "xp": "non chiffrée · Mid-Senior",
+   "lg": "EN",
+   "u": "https://ch.linkedin.com/jobs/view/conversion-copywriter-content-lead-at-jobgether-4475727177",
+   "g": true,
+   "n": "Passe remote Suisse. Intermédiaire Jobgether.",
+   "fit": {
+    "m": 2,
+    "da": 0,
+    "ia": 1,
+    "pct": 60
+   },
+   "ms": [
+    "Copy outbound, publicité, landing pages, email, LinkedIn",
+    "Adapter les messages aux voix des fondateurs",
+    "IA intégrée au workflow d'écriture"
+   ],
+   "inf": [
+    "Orienté performance (réponses, leads, conversions)",
+    "⚠️ Intermédiaire, employeur non nommé"
+   ],
+   "at": "Ton expérience cold email / ICP et ton usage de Claude pour écrire sont directement pertinents."
+  },
+  {
+   "d": "2026-10-08",
+   "b": 40,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Product Designer",
+   "c": "Jobgether (client non nommé)",
+   "l": "Suisse · 100 % remote",
+   "dist": "Télétravail",
+   "tx": "100%",
+   "ct": "n.p. (temps plein)",
+   "xp": "3+ ans",
+   "lg": "EN",
+   "u": "https://ch.linkedin.com/jobs/view/product-designer-at-jobgether-4476563490",
+   "g": true,
+   "n": "Passe remote Suisse. Intermédiaire Jobgether.",
+   "fit": {
+    "m": 0,
+    "da": 2,
+    "ia": 1,
+    "pct": 55
+   },
+   "ms": [
+    "Product design web, mobile, widgets, portails",
+    "UX, visual design, prototypage, design systems",
+    "Outils IA dans le process de design"
+   ],
+   "inf": [
+    "3+ ans",
+    "⚠️ Poste UX produit, plus éloigné du marketing",
+    "⚠️ Intermédiaire"
+   ],
+   "at": "Ton expérience de design system et de prototypage avec Claude est un vrai argument ; le cœur UX produit est un pas de côté."
   }
  ]
 }
