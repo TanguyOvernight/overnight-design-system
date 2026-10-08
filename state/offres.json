@@ -2353,45 +2353,12 @@
    ],
    "inf": [
     "Orienté performance (réponses, leads, conversions)",
-    "⚠️ Intermédiaire, employeur non nommé"
+    "⚠️ Intermédiaire, employeur non nommé",
+    "⚠️ Anglais de niveau natif à l'écrit demandé",
+    "⚠️ Direct-response B2B/SaaS : la fiche écarte le storytelling de marque",
+    "Remote avec 4 h de recouvrement sur l'heure de Lisbonne"
    ],
    "at": "Ton expérience cold email / ICP et ton usage de Claude pour écrire sont directement pertinents."
-  },
-  {
-   "d": "2026-10-08",
-   "b": 40,
-   "st": "ouverte",
-   "cl": false,
-   "dl": null,
-   "s": "avoir",
-   "t": "Product Designer",
-   "c": "Jobgether (client non nommé)",
-   "l": "Suisse · 100 % remote",
-   "dist": "Télétravail",
-   "tx": "100%",
-   "ct": "n.p. (temps plein)",
-   "xp": "3+ ans",
-   "lg": "EN",
-   "u": "https://ch.linkedin.com/jobs/view/product-designer-at-jobgether-4476563490",
-   "g": true,
-   "n": "Passe remote Suisse. Intermédiaire Jobgether.",
-   "fit": {
-    "m": 0,
-    "da": 2,
-    "ia": 1,
-    "pct": 55
-   },
-   "ms": [
-    "Product design web, mobile, widgets, portails",
-    "UX, visual design, prototypage, design systems",
-    "Outils IA dans le process de design"
-   ],
-   "inf": [
-    "3+ ans",
-    "⚠️ Poste UX produit, plus éloigné du marketing",
-    "⚠️ Intermédiaire"
-   ],
-   "at": "Ton expérience de design system et de prototypage avec Claude est un vrai argument ; le cœur UX produit est un pas de côté."
   }
  ]
 }
