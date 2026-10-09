@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-10-08",
+ "maj": "2026-10-09",
  "offres": [
   {
    "d": "2026-10-03",
@@ -1059,7 +1059,7 @@
    "d": "2026-09-26",
    "b": 28,
    "s": "avoir",
-   "st": "ouverte",
+   "st": "fermee",
    "t": "Analyste Digital",
    "c": "Assura",
    "l": "Lausanne",
@@ -1067,7 +1067,7 @@
    "ct": "CDI",
    "xp": "3-5 ans",
    "u": "https://www.jobup.ch/fr/emplois/detail/15431bfa-d780-48ba-91d6-3bd7222a6808/",
-   "n": "GA4, GTM, BigQuery, Looker — l'adjacence analytics de ton profil, pas le cœur créa. Pas d'allemand.",
+   "n": "GA4, GTM, BigQuery, Looker — l'adjacence analytics de ton profil, pas le cœur créa. Pas d'allemand. ❌ Fermée au re-check du 09.10 (redirection vers la page catégorie jobs.ch).",
    "g": false,
    "cl": false,
    "dl": null,
@@ -1571,7 +1571,7 @@
    "d": "2026-09-17",
    "b": 21,
    "s": "avoir",
-   "st": "ouverte",
+   "st": "fermee",
    "t": "Chargé·e de communication (100%)",
    "c": "Assura",
    "l": "Pully",
@@ -1579,7 +1579,7 @@
    "ct": "CDI",
    "xp": "5 ans (comm institutionnelle)",
    "u": "https://www.assura.ch/fr/carriere/postes-a-pourvoir/charge-communication-pu",
-   "n": "Republiée le 26.09 — toujours ouverte. Lien officiel assura.ch (apparu via Job-Room). Allemand « idéalement ».",
+   "n": "Republiée le 26.09 — toujours ouverte. Lien officiel assura.ch (apparu via Job-Room). Allemand « idéalement ». ❌ Fermée au re-check du 09.10 (redirection vers la page catégorie jobs.ch).",
    "g": false,
    "cl": false,
    "dl": null,
@@ -1975,7 +1975,7 @@
    "d": "2026-10-05",
    "b": 37,
    "s": "avoir",
-   "st": "ouverte",
+   "st": "fermee",
    "t": "Chargé·e de communication (100%)",
    "c": "Assura",
    "l": "Pully",
@@ -1985,7 +1985,7 @@
    "xp": "5 ans min",
    "lg": "FR natif · DE idéalement · EN non exigé",
    "u": "https://www.jobs.ch/fr/offres-emplois/detail/2e9fd9ab-9515-46f3-a9d2-acfd0147f2ec/",
-   "n": "Publiée le 02.10 sous « employeur non divulgué » — le texte est celui d'Assura (siège de Pully). Début 1er novembre ou à convenir, télétravail possible. Annonce visible jusqu'au 17.10.",
+   "n": "Publiée le 02.10 sous « employeur non divulgué » — le texte est celui d'Assura (siège de Pully). Début 1er novembre ou à convenir, télétravail possible. Annonce visible jusqu'au 17.10. ❌ Fermée au re-check du 09.10 (redirection vers la page catégorie jobs.ch).",
    "g": false,
    "cl": false,
    "dl": null,
@@ -2359,6 +2359,82 @@
     "Remote avec 4 h de recouvrement sur l'heure de Lisbonne"
    ],
    "at": "Ton expérience cold email / ICP et ton usage de Claude pour écrire sont directement pertinents."
+  },
+  {
+   "d": "2026-10-09",
+   "b": 41,
+   "st": "ouverte",
+   "cl": false,
+   "g": false,
+   "s": "avoir",
+   "t": "Responsable de communication — Swiss Plasma Center",
+   "c": "EPFL",
+   "l": "Lausanne (campus EPFL, Écublens)",
+   "dist": "6 km · ~15 min M1",
+   "tx": "80-100%",
+   "ct": "CDD 1 an renouvelable (minimum souhaité 3 ans)",
+   "xp": "5 ans min",
+   "lg": "FR + EN excellents (écrit et oral)",
+   "dl": null,
+   "u": "https://ch.talent.com/view?id=627775606569698305",
+   "n": "Centre de recherche en fusion de l'EPFL. Annonce publiée le 07.10, vue via talent.com (aucune source plus officielle trouvée par le second regard).",
+   "fit": {
+    "m": 2,
+    "da": 1,
+    "ia": 0,
+    "pct": 66
+   },
+   "ms": [
+    "Piloter la communication interne et externe du centre avec la direction",
+    "Stratégie de communication et actions concrètes",
+    "Production éditoriale et vulgarisation scientifique, newsletter interne",
+    "Communiqués et relations presse",
+    "Contenus réseaux sociaux et web, identité visuelle et charte graphique"
+   ],
+   "inf": [
+    "⚠️ Au moins 5 ans en journalisme, comm. institutionnelle ou RP",
+    "Diplôme universitaire ou équivalent",
+    "FR + EN excellents",
+    "Événementiel marginal (participation)",
+    "CDD renouvelable, perspective 3 ans"
+   ],
+   "at": "Un rôle de « head of comm » autonome sur un sujet deeptech : ton expérience à rendre désirable une techno complexe (IA/3D) et ta maîtrise de l'identité visuelle sont tes arguments ; l'écart est sur les 5 ans et le profil presse."
+  },
+  {
+   "d": "2026-10-09",
+   "b": 41,
+   "st": "ouverte",
+   "cl": false,
+   "g": false,
+   "s": "avoir",
+   "t": "Creative Project Manager (intérim 9 mois)",
+   "c": "Michael Page (pour une organisation internationale)",
+   "l": "Lausanne",
+   "dist": "Lausanne",
+   "tx": "100%",
+   "ct": "Intérim 9 mois (remplacement maternité)",
+   "xp": "« expérimenté·e », non chiffré",
+   "lg": "EN exigé",
+   "dl": null,
+   "u": "https://ch.linkedin.com/jobs/view/creative-project-manager-9-month-interim-assignment-at-michael-page-4477197465",
+   "n": "Démarrage ASAP. Client anonyme, équipe Creative & Design.",
+   "fit": {
+    "m": 1,
+    "da": 1,
+    "ia": 0,
+    "pct": 52
+   },
+   "ms": [
+    "Piloter la livraison de projets créatifs et marketing de bout en bout",
+    "Planning dans Asana, coordination des productions (vidéo, photo, digital, pub)",
+    "Gérer les demandes Brand & Creative et les priorités"
+   ],
+   "inf": [
+    "⚠️ Contrat 9 mois (< 12)",
+    "Asana et Figma",
+    "Gestion de projet plus que création"
+   ],
+   "at": "Un pied rapide dans une équipe créa internationale à Lausanne ; ta double casquette DA + pilotage de prod est pertinente."
   }
  ]
 }
