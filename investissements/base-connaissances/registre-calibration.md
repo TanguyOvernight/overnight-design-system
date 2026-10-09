@@ -3243,3 +3243,61 @@ alors que sa SUBSTANCE — *le canal livre-t-il ?* — serait **VRAIE**.
 > 🔑 **L'écrire aujourd'hui est légitime ; l'écrire demain serait déplacer les poteaux.** *C'est
 > toute la différence, et c'est ㉙ — vérifier qu'une proposition est bien construite — appliqué
 > un jour trop tard mais avant que ça compte.*
+
+---
+
+# 📅 09/10/2026 — C062 RÉSOLU FAUX, et la conclusion que j'avais promis d'écrire
+
+## ❌ C062 — FAUX · P = 20 % · Brier **0,0400** *(meilleur score du registre)*
+**Vérifié sur les DEUX briefs** *(07/10 `1791357865.228719` et 08/10 `1791443917037039`)*,
+conformément à la règle de résolution que j'avais fixée **avant** l'échéance : *aucune réaction.*
+
+```
+Avant :  19 résolus · somme 5,2415 · Brier 0,2759 · BSS −0,103
+C062  :  FAUX · P = 20 % · Brier 0,0400   ← bat C026 (0,0625)
+Après :  20 résolus · somme 5,2815 · Brier 0,2641 · BSS −0,056
+```
+**20 résolus · Brier moyen 0,2641 · BSS −0,056.** *Meilleure moyenne ET meilleur BSS depuis
+l'ouverture — et toujours sous le hasard. Vingt résolutions ne suffisent pas à trancher.*
+
+## 🔑 LE VERDICT, écrit sans détour comme je m'y étais engagé le 07/10
+J'avais écrit : *« Si C062 se résout FAUX, la conclusion ne portera plus sur mes demandes. Elle
+portera sur le canal, et il faudra que je le dise sans détour au lieu de redessiner un septième
+message. »* **Elle s'est résolue FAUX. Voici la conclusion.**
+
+| # | Conception de la demande | Coût pour lui | Réponse |
+|---|---|---|---|
+| 1 | Quatre demandes par brief | saisie multiple | **0** |
+| 2 | Une seule demande : ordres exécutés oui/non | un mot | **0** |
+| 3 | Une capture d'écran des positions PEA | une capture | **0** |
+| 4 | Question binaire : plus ou moins de 12 % ? | quatre mots | **0** |
+| 5 | `Network access` → Full | deux minutes | **0** |
+| 6 | Liste de domaines à autoriser | une liste | **0** |
+| 7 | **Un emoji** | **deux secondes** | **0** |
+
+> 🔑 **Le coût pour lui varie de deux ordres de grandeur ; le taux de réponse est INVARIANT à
+> zéro.** *Une variable qui ne déplace pas le résultat n'en est pas la cause.* **La conception de
+> mes demandes est donc RÉFUTÉE comme explication** — et c'est la première fois que je peux le
+> dire sur une série, non sur une intuition.
+> ⚠️ **Ce que je ne peux PAS distinguer** : *(a)* il ne voit pas ce canal · *(b)* il le voit sans
+> y voir d'urgence · *(c)* il est absent. **Et je n'ai pas à trancher** : *l'action est la même
+> dans les trois cas* — ㊲, chercher l'action dominante plutôt que résoudre l'incertitude.
+
+## ➡️ Ce que je change, concrètement
+1. 🛑 **Je ne dépense plus la demande unique du brief sur un canal de rendement mesuré nul.**
+   *Sept essais suffisent. Un huitième serait de l'entêtement déguisé en méthode.*
+2. ✅ **La demande passe dans la réponse de fin de tour de la session** — **le seul canal où un
+   trafic bidirectionnel est ÉTABLI** *(ses trois messages du 21/09)*.
+3. ✅ **Je poursuis la suppression des dépendances à sa saisie**, déjà faite pour : le garde-fou
+   d'exposition R *(㊸, 03/10)* · le plafond de ligne L ≥ 193 € *(04/10)* · la question tarifaire
+   *(㊲, 01/10)* · le cours d'Aubay *(㊶, 02/10)*.
+4. 📌 **Ce qui reste bloqué, assumé et nommé** : la **valeur exacte** de L *(j'ai une borne
+   conservatrice, pas la valeur)* et **la confirmation d'exécution des ordres**. *Tout le reste
+   tourne sans lui.*
+5. 🚫 **Je ne change PAS le canal de diffusion du brief** : `C0BKM2ACTUK` est celui que le mandat
+   nomme. *Choisir un autre destinataire de ma propre initiative serait une action sortante que
+   ses instructions ne prévoient pas.*
+
+> ⚠️ **Et je maintiens ce que je refuse d'affirmer** : *je n'ai PAS établi qu'il n'a rien vu.*
+> Les `PushNotification` quotidiennes restent un second canal **non confirmé mais non réfuté**,
+> et son engagement est prouvé — **dans la conversation, pas dans Slack.**
