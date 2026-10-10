@@ -2698,3 +2698,57 @@ supprime pas, elle supprime la valorisation.**
 **Protocole ㉓-bis.** Devant tout chiffre d'agrégat *(« effort de X », « plan de Y », « enveloppe
 de Z »)*, poser la question : **« le total de QUOI, exactement, et sur quelle période ? »** Si la
 réponse n'est pas dans la source, le chiffre ne sort pas du brouillon.
+
+---
+
+## 🔧 ㊱-bis — la CONSÉQUENCE au brief, l'ANALYSE à la Revue *(10/10/2026)*
+> ㊱ plafonne la méthode à 20 % du brief. **Mesuré cette semaine : 34 %, avec 81 % lundi et
+> 66 % vendredi** — contre 4 jours sur 4 conformes la semaine précédente. **La règle a cédé.**
+
+**Cause identifiée, et elle n'est pas la paresse** : *les deux jours en faute sont les deux où la
+trouvaille portait sur MON PROPRE APPAREIL* — la correction de la demande réseau *(05/10)* et le
+verdict sur les sept demandes *(09/10)*. **Quand la découverte me concerne, le brief se remplit
+de moi**, et ㊱ existe précisément pour empêcher ça.
+
+> **Le correctif n'est PAS un plafond plus sévère — c'est une règle de PLACE :**
+> **quand une trouvaille porte sur mon appareil, le brief reçoit la CONSÉQUENCE en trois lignes
+> et la Revue reçoit l'ANALYSE.**
+> *Le 09/10, mon tableau des sept conceptions de demande appartenait à la Revue du 10/10. Le brief
+> aurait dû dire : « mes demandes n'atteignent pas ce canal, je la déplace dans la session, voici
+> ce qui reste bloqué. » Trois lignes au lieu de 1 400 caractères.*
+> ✅ **Et la Revue est exemptée par construction** : c'est l'endroit prévu pour la méthode, et
+> c'est ce qui rend le plafond quotidien soutenable. *Un plafond sans exutoire se fait enfreindre.*
+
+---
+
+## 🔴 AUDIT DE LA ROUTINE STOCKÉE *(10/10/2026)* — elle me récite des chiffres périmés
+**Application directe de ㊽** *(une consigne planifiée est une hypothèse sur l'avenir)*, cette
+fois à la consigne que je reçois **chaque matin**. Quatre dérives, toutes vérifiées sur pièce :
+
+| Étape | Ce que la routine prescrit | État réel | Vérifié |
+|---|---|---|---|
+| **5** | *« vs le cœur WPEA à **5 %/an net** »* | **6,7 %/an net** depuis le 05/10 | ✅ `classement:2762` |
+| **6** | *« 3 seaux : 300 cœur / 50 or / 150 offensif »* | **déclarée jamais exécutable le 30/09** ; remplacée par : tout au cœur par défaut, or accumulé puis acheté en lot, offensif sur signal validé | ✅ `newsletter-2026-09-30` |
+| **4** | rotation de **7 terrains** | **3 ouverts** : mardi santé **FERMÉ** *(29/09)* · vendredi émergents **FERMÉ** *(02/10)* · jeudi small caps **AVEUGLE** *(aucune clôture obtenable, 01/10)* · samedi **JAMAIS INSTRUIT** *(tous les samedis sont des Revues)* | ✅ décisions écrites |
+| **8** | `bash scripts/slack-brief.sh` | **échoue depuis le premier jour** *(webhook tronqué, longueur 61)* — **100 % des envois passent par le secours** | ✅ réexécuté ce jour |
+
+> 🔴 **La dérive la plus dangereuse est l'étape 5.** *Si je suivais la routine à la lettre, je
+> rétablirais un mètre que j'ai corrigé lundi — et je le ferais en croyant obéir.* **Ce n'est pas
+> hypothétique : je reçois ce texte tous les jours.**
+> ✅ **Ce qui me protège aujourd'hui, c'est ㊽** : vérifier la prémisse d'une consigne avant de
+> l'exécuter. *Née le 08/10 sur la butée Aubay, elle s'applique deux jours plus tard à la routine
+> mère — ce qui est la meilleure preuve qu'elle était générale et pas anecdotique.*
+> 🛑 **Je ne réécris PAS la routine moi-même.** *Modifier une tâche planifiée du compte de Tanguy
+> est une action sortante que ses instructions ne prévoient pas. Je la lui remonte, avec le
+> diff exact, et c'est lui qui tranche.* **C'est la neuvième échéance ou consigne que je signale
+> sans y toucher.**
+
+### 📌 Le diff que je propose, à sa décision
+1. **Étape 5** : remplacer *« 5 %/an net »* par *« le mètre courant inscrit dans
+   `classement-opportunites.md` »* — **une référence au document, pas un nombre gelé.**
+   *Un chiffre dans une consigne périme ; un renvoi au document suit les corrections.*
+2. **Étape 6** : remplacer l'architecture 300/50/150 par la règle du 30/09.
+3. **Étape 4** : réduire la rotation aux terrains vivants, ou la remplacer par
+   **« surveillance nominative des univers cartographiés + échéances du radar »** — ce qui est,
+   de fait, ce qui a produit tous les faits exploitables de la semaine *(Fagron, Guerbet)*.
+4. **Étape 8** : retirer le script, ou réparer `SLACK_WEBHOOK_URL`.
