@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-10-09",
+ "maj": "2026-10-10",
  "offres": [
   {
    "d": "2026-10-03",
@@ -791,11 +791,11 @@
    "tx": "60-80%",
    "ct": "Mission 8 mois",
    "xp": "n.p.",
-   "u": "https://ch.linkedin.com/jobs/view/packaging-artwork-coordinator-at-albedis-4472755145",
-   "n": "Artwork/packaging, Adobe Acrobat. Anglais courant exigé.",
+   "u": "https://www.jobup.ch/fr/emplois/detail/cea0fdc4-fdb7-40ea-9d42-b76eafbab621/",
+   "n": "Artwork/packaging, Adobe Acrobat. Anglais courant exigé. ♻️ Republiée le 09.10 (nouvelle annonce, visible jusqu'au 12.10) — lien mis à jour.",
    "g": false,
    "cl": false,
-   "dl": null,
+   "dl": "2026-10-12",
    "dist": "17 km · ~15 min train",
    "fit": {
     "m": 0,
@@ -2140,10 +2140,10 @@
    "ct": "n.p.",
    "xp": "5+ ans",
    "lg": "EN courant exigé · environnement international",
-   "u": "https://www.jobup.ch/en/jobs/detail/947c24d0-0dcf-4761-bdce-336d2740543d/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+   "u": "https://www.jobup.ch/fr/emplois/detail/cea0fdc4-fdb7-40ea-9d42-b76eafbab621/",
    "g": false,
-   "dl": "2026-10-09",
-   "n": "Cabinet de recrutement Albedis pour « une organisation internationale prestigieuse à la croisée du business, du savoir et du leadership mondial » à Lausanne. Annonce publiée le 06.10, fin de publication le 09.10. Client non nommé — profil « business, savoir, leadership mondial » à Lausanne : probablement une école/institution internationale (déduction, non confirmée).",
+   "dl": "2026-10-12",
+   "n": "Cabinet de recrutement Albedis pour « une organisation internationale prestigieuse à la croisée du business, du savoir et du leadership mondial » à Lausanne. Annonce publiée le 06.10, fin de publication le 09.10. Client non nommé — profil « business, savoir, leadership mondial » à Lausanne : probablement une école/institution internationale (déduction, non confirmée). ♻️ Republiée le 09.10 (nouvelle annonce, visible jusqu'au 12.10) — lien mis à jour.",
    "fit": {
     "m": 1,
     "da": 2,
@@ -2435,6 +2435,83 @@
     "Gestion de projet plus que création"
    ],
    "at": "Un pied rapide dans une équipe créa internationale à Lausanne ; ta double casquette DA + pilotage de prod est pertinente."
+  },
+  {
+   "d": "2026-10-10",
+   "b": 42,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "cible",
+   "suivi": true,
+   "depuis": "2026-10-10",
+   "t": "Spécialiste Marketing et Communication Digitale",
+   "c": "La Maison des Énergies SA",
+   "l": "Morges",
+   "dist": "11 km · ~10 min en train",
+   "tx": "80-100%",
+   "ct": "n.p.",
+   "xp": "2-4 ans",
+   "lg": "FR excellent · suisse-allemand/allemand = atout",
+   "g": false,
+   "u": "https://www.jobup.ch/fr/emplois/detail/2d251afe-72dc-4afd-88a3-03cf6938d77b/",
+   "n": "PME des énergies renouvelables qui renforce sa communication et sa présence digitale. Publiée le 09.10, visible jusqu'au 07.11.",
+   "fit": {
+    "m": 2,
+    "da": 2,
+    "ia": 0,
+    "pct": 84
+   },
+   "ms": [
+    "Gérer et animer LinkedIn, Instagram, Facebook, TikTok ; développer la communauté",
+    "Contenus organiques et campagnes sponsorisées (Meta Ads)",
+    "Créer vidéos, photos, témoignages clients, contenus corporate et recrutement",
+    "Planning éditorial annuel et calendrier de communication",
+    "Communication interne et externe ; soutien aux salons et événements"
+   ],
+   "inf": [
+    "2-4 ans dans une fonction similaire = pile ta fourchette",
+    "Création de visuels et vidéo (Canva ou Adobe CC)",
+    "Meta Ads + suivi de KPI",
+    "Événementiel = une rubrique parmi d'autres, pas dominant",
+    "Contrat non précisé · Morges = plein corridor"
+   ],
+   "at": "Le poste « tout-en-un » d'une PME : stratégie éditoriale + production visuelle et vidéo + campagnes. Ton profil marketing + DA coche tout ; ajoute l'IA comme accélérateur de production."
+  },
+  {
+   "d": "2026-10-10",
+   "b": 42,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Content Marketing Specialist (SEO)",
+   "c": "Jobgether (client non nommé)",
+   "l": "Suisse · remote",
+   "dist": "Télétravail",
+   "tx": "n.p.",
+   "ct": "n.p.",
+   "xp": "2-4 ans",
+   "lg": "EN",
+   "g": true,
+   "u": "https://ch.linkedin.com/jobs/view/content-marketing-specialist-at-jobgether-4475975216",
+   "n": "Passe remote Suisse. Portefeuille de logiciels verticaux reconstruits avec l'IA. 71 candidatures.",
+   "fit": {
+    "m": 2,
+    "da": 0,
+    "ia": 1,
+    "pct": 55
+   },
+   "ms": [
+    "Contenus SEO B2B/SaaS, recherche de mots-clés, optimisation on-page",
+    "Traduire des workflows techniques en récits"
+   ],
+   "inf": [
+    "SEMrush, Ahrefs, WordPress",
+    "Plus rédaction que créa",
+    "⚠️ Intermédiaire, contrat non précisé"
+   ],
+   "at": "Ton expérience de contenu tech (IA, 3D) est un atout ; le SEO pur est un pas de côté."
   }
  ]
 }
