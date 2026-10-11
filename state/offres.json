@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-10-10",
+ "maj": "2026-10-11",
  "offres": [
   {
    "d": "2026-10-03",
@@ -2180,10 +2180,10 @@
    "ct": "n.p.",
    "xp": "« solide expérience en rédaction »",
    "lg": "FR",
-   "u": null,
+   "u": "https://ch.linkedin.com/jobs/view/r%C3%A9dactrice%C2%B7eur-%E2%80%93-charg%C3%A9%C2%B7e-de-communication-at-institut-et-haute-ecole-de-la-sant%C3%A9-la-source-4476174146",
    "g": false,
    "dl": null,
-   "n": "⚠️ Non vérifiée : l'annonce n'est visible que sur des agrégateurs bloqués (emplois-vaud, jobagent, bebee). 🔎 À retrouver : cherche « Rédactrice·eur – Chargé·e de communication » sur le site de La Source (Lausanne).",
+   "n": "✅ Vérifiée le 11.10 : l'annonce est publiée sur LinkedIn (temps plein). Profil : Bachelor/Master journalisme ou communication, expérience avérée en rédaction, idéalement scientifique.",
    "fit": {
     "m": 2,
     "da": 1,
@@ -2196,9 +2196,10 @@
     "Rapports, actualités, communiqués de presse"
    ],
    "inf": [
-    "⚠️ Non vérifiée — possiblement périmée",
     "Profil très rédactionnel (vulgarisation scientifique)",
-    "Taux et contrat non précisés"
+    "Taux et contrat non précisés",
+    "Temps plein (LinkedIn)",
+    "Connaissance du système de santé et académique suisse souhaitée"
    ],
    "at": "Ton expérience à rendre une techno complexe désirable (IA, 3D) se transpose à la vulgarisation santé ; poste plus rédaction que DA."
   },
@@ -2512,6 +2513,42 @@
     "⚠️ Intermédiaire, contrat non précisé"
    ],
    "at": "Ton expérience de contenu tech (IA, 3D) est un atout ; le SEO pur est un pas de côté."
+  },
+  {
+   "d": "2026-10-11",
+   "b": 43,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Global Digital Marketing & Social Media Specialist (mission 6 mois)",
+   "c": "Michael Page (client non nommé)",
+   "l": "Lausanne",
+   "dist": "Lausanne",
+   "tx": "n.p.",
+   "ct": "Temporaire 6 mois",
+   "xp": "n.p.",
+   "lg": "⚠️ annonce rédigée en allemand",
+   "g": false,
+   "u": null,
+   "n": "⚠️ Non vérifiée : seulement visible via un agrégateur (jobleads) inaccessible. 🔎 À retrouver : cherche « Global Digital Marketing & Social Media Specialist » Michael Page Lausanne sur michaelpage.ch ou LinkedIn.",
+   "fit": {
+    "m": 2,
+    "da": 1,
+    "ia": 0,
+    "pct": 50
+   },
+   "ms": [
+    "Réseaux sociaux, briefings et agences",
+    "Mises à jour du site et e-commerce (Shopify)",
+    "Idées de contenus et plans éditoriaux, lancements produits"
+   ],
+   "inf": [
+    "⚠️ Mission de 6 mois",
+    "⚠️ Non vérifiée",
+    "Annonce en allemand : vérifier si l'allemand est exigé"
+   ],
+   "at": "Missions proches de ton quotidien marketing ; c'est une porte d'entrée courte."
   }
  ]
 }
