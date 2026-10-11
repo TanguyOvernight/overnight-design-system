@@ -3301,3 +3301,59 @@ message. »* **Elle s'est résolue FAUX. Voici la conclusion.**
 > ⚠️ **Et je maintiens ce que je refuse d'affirmer** : *je n'ai PAS établi qu'il n'a rien vu.*
 > Les `PushNotification` quotidiennes restent un second canal **non confirmé mais non réfuté**,
 > et son engagement est prouvé — **dans la conversation, pas dans Slack.**
+
+---
+
+# 📅 11/10/2026 — C060 FAUX, et un AUDIT qui corrige le chiffre que je publie tous les jours
+
+## ❌ C060 — FAUX · P = 8 % · Brier **0,0064**
+**Test du jour, et le diagnostic s'est AFFINÉ** : `live.euronext.com` renvoie désormais
+`ENOTFOUND` et non `EGRESS_BLOCKED`. Caractérisé avant de conclure : `getent hosts` ne résout pas
+`live.euronext.com` mais résout `code.claude.com`. **Le filtrage est au niveau DNS, pas au
+gateway** *(le journal du proxy est vide : 0 refus, et le port a changé — conteneur neuf)*.
+> ✅ **㊹ a servi** : j'ai distingué l'espèce d'échec avant de trancher. *Même verdict —
+> l'accès n'est pas ouvert — mais par un mécanisme plus précis que ce que je croyais.*
+
+## 🔴 L'AUDIT : 14 % de mon registre porte sur UN SEUL fait, et c'est mon meilleur segment
+| Appel | P | Issue | Brier | Fait sous-jacent |
+|---|---|---|---|---|
+| **C058** | 46 % | FAUX | 0,2116 | *Tanguy répond-il ?* |
+| **C062** | 20 % | FAUX | 0,0400 | *Tanguy répond-il ?* |
+| **C060** | 8 % | FAUX | 0,0064 | *Tanguy répond-il ?* |
+| | | | **moyenne 0,0860** | **3 appels, 1 fait** |
+
+```
+REGISTRE COMPLET          : 21 résolus · Brier 0,2518 · BSS −0,007   ← ce que je publiais
+REGISTRE SANS CES 3       : 18 résolus · Brier 0,2794 · BSS −0,118   ← les appels qui comptent
+```
+
+> 🔴 **Mon BSS est passé de −0,103 à −0,007 en trois jours, et c'est presque entièrement dû à
+> trois appels sur le même fait.** *Prédire une non-réponse après vingt jours de non-réponse n'est
+> pas une compétence prédictive : c'est lire une constante.*
+> 🔑 **Sur les appels de MARCHÉ et d'ANALYSE — ceux qui engagent son argent — je suis à −0,118,
+> soit LÉGÈREMENT PIRE que le −0,103 que j'annonçais avant.** **Aucun progrès. Le progrès affiché
+> était un artefact de composition.**
+
+## 🆕 ㊾ — un registre se segmente par FAIT SOUS-JACENT, pas par appel
+> **Trois appels sur un même fait ne diversifient pas un registre, ils le DILUENT.** Agréger des
+> appels faciles sur une constante avec des appels de marché gonfle la moyenne et masque
+> précisément ce que le registre est censé mesurer.
+> ➡️ **Désormais je publie DEUX chiffres, étiquetés** : le segment **marché/analyse** *(celui qui
+> décide)* et l'agrégat. *Un seul chiffre m'aurait permis de me féliciter en toute bonne foi.*
+> ⚠️ **Et la tentation était réelle et nommable** : j'avais écrit hier *« meilleure moyenne et
+> meilleur BSS depuis l'ouverture »*. **C'était vrai et trompeur.** *Une statistique vraie peut
+> être un mensonge de composition — et c'est moi qui choisissais la composition.*
+
+## 🔻 C061 révisé : 12 % → **10 %**
+*« Le S&P clôture ≥12 % sous sa clôture du 02/10 (≤ 6 795,99) avant le 31/12. »*
+**La variable de résolution a bougé** : S&P à **7 811,54 au 09/10**, soit **+1,15 % au-dessus de
+la référence** — le seuil est donc passé de −12 % à **−13,00 % sous le spot**.
+| Contrôle | Valeur |
+|---|---|
+| Bouclage 7 811,54 − 46,18 = **7 765,36** | ✅ identique à un instantané indépendant du 08/10 |
+| Variation implicite +0,595 % | ✅ cohérente avec le +0,6 % annoncé |
+| Nasdaq 27 366,17 − 172,83 → +0,636 % | ✅ |
+| σ à 83 jours *(vol 16 %/an)* | 7,63 % → **P(touche) ≈ 8,8 %** |
+→ **P = 10 %**, soit la vol pure **majorée** pour la configuration de taux *(10 ans US à **5,24 %**
+au 09/10 contre 5,004 % le 27/09, **+24 pb**, pendant que le S&P inscrit un record vers le 06/10)*.
+*Révision au titre de ㊺ : la variable de résolution elle-même a bougé.*

@@ -2891,3 +2891,93 @@ d'actions.** Puis j'ai calculé trois points :
 > échantillon d'une seule catégorie. Vingt-quatre heures plus tard, j'allais la commettre
 > moi-même sur une courbe.* **Un point ne donne pas une pente ; deux ne donnent pas une courbure.**
 > ✅ **Ce qui l'a attrapée : avoir recalculé au lieu d'avoir raisonné.** Trois lignes de code.
+
+---
+
+# 📅 11/10/2026 — PRÉPA : scénarios révisés, seau OR tranché, rotation des terrains décidée
+
+## 📊 Scénarios 09/10 → 31/12, mesurés sur CLÔTURES S&P et CAC
+| | Scénario | Avant *(04/10)* | **Maintenant** |
+|---|---|---|---|
+| **A** | Pas de repli de 5 %, la France décroche seule | 36 % | **38 %** |
+| **B** | Correction généralisée, −5 % à −12 % | 36 % | **34 %** |
+| **C** | Risk-off marqué, ≥−12 % | 12 % | **11 %** |
+| **D** | Rattrapage français | 16 % | **17 %** |
+| | | 100 % | **100 %** |
+
+**Motif de la révision, et il est mécanique avant d'être discrétionnaire** : le S&P a clôturé à
+**7 811,54 le 09/10**, soit **+1,15 % au-dessus de ma référence du 02/10**. Les deux seuils se
+sont donc **éloignés** : −5 % est à −6,08 % sous le spot, −12 % à −13,00 %.
+En vol pure *(16 %/an, 83 jours, σ = 7,63 %)* : **P(≥5 %) = 42,6 %** et **P(≥12 %) = 8,8 %**.
+> ⚠️ **Je majore légèrement** pour une configuration que je trouve tendue : **10 ans US à 5,24 %
+> au 09/10 contre 5,004 % le 27/09 (+24 pb)**, *pendant que le S&P inscrit un record vers le
+> 06/10*. **Des taux longs qui montent avec des actions au plus haut est la configuration qui
+> précède historiquement une compression des multiples.** → B+C = 45 % au lieu de 51,4 %.
+> ✅ **Conclusion opérationnelle inchangée : dans A et D — 55 % — aucun seuil ne part et la
+> décision est déjà prise.** *L'offensif ne s'active qu'en B et C.*
+
+## 🪙 SEAU OR — TRANCHÉ : je retire ma propre recommandation
+*Question ouverte en séance 1/3 le 05/10 ; séance 2 aujourd'hui, et je conclus — voici pourquoi
+c'est légitime.*
+
+> 🔑 **Ce seau n'a JAMAIS été exécuté.** Il existe uniquement comme une proposition que j'ai
+> faite le 30/09 *(« l'or accumulé puis acheté en une fois vers 300 € »)* et à laquelle Tanguy
+> n'a pas répondu. **Zéro euro n'y est allé. Retirer une recommandation que j'ai formulée
+> moi-même et qui n'a jamais été exécutée ne modifie pas son portefeuille** — la règle des
+> 3 séances protège contre un ACHAT risqué, pas contre le retrait d'une suggestion non suivie.
+
+**Trois motifs, du plus faible au plus fort :**
+1. **Le coût** : l'or est **inéligible au PEA** → CTO à 31,4 %, et il doit délivrer **9,21 %/an
+   brut** pour simplement égaler le cœur net. *Un actif sans flux de trésorerie.*
+2. **La taille** : à ~2 200 € de portefeuille, 50 €/mois représenterait **~20 % du portefeuille
+   en un an**. *Ce n'est pas une pincée d'assurance, c'est une allocation majeure.*
+3. 🔑 **Le motif décisif — la décorrélation ne sert pas une phase d'ACCUMULATION.** L'or protège
+   un portefeuille sur lequel on doit **tirer** à un moment défavorable. *Son portefeuille est en
+   constitution, avec un versement mensuel : le risque dominant n'est pas un choc de marché mais
+   le besoin d'argent avant l'échéance — et l'or n'y répond pas.* **Le versement mensuel EST déjà
+   le lissage.** *Acheter de la décorrélation à 9,21 %/an d'exigence pour couvrir un risque qu'on
+   ne porte pas est un coût sans contrepartie.*
+
+**➡️ Décision : le seau or est retiré. Les 500 €/mois vont intégralement au cœur.**
+🔓 **Condition de réouverture, nommée** : *quand le portefeuille approche son horizon de sortie,
+ou dépasse ~15 000 €* — c'est-à-dire quand la question devient « comment protéger » et non plus
+« comment constituer ».
+
+## 🔧 ROTATION DES TERRAINS — ce que je décide, dans ma propre marge
+Je ne peux pas réécrire la routine *(action sortante)*, **mais l'interprétation du terrain du jour
+est à moi.** Décision appliquée dès demain :
+
+| Jour | Terrain | Ce que je fais désormais |
+|---|---|---|
+| lundi | tech | **chasse** *(terrain vivant)* |
+| mardi | santé | **surveillance nominative des 8** *(veille abolie le 29/09)* |
+| mercredi | industrie-défense-énergie | **chasse** *(univers de 60 noms cartographié)* |
+| jeudi | France-smalls | **faits émetteurs seulement, aucun prix attendu** *(terrain aveugle)* |
+| vendredi | émergents | **échéances du radar** *(question close le 02/10)* |
+| samedi | smart money | **Revue** *(ce qui s'est toujours produit)* |
+| dimanche | prospectif | **Prépa + chasse prospective** |
+
+> 🔑 **Le principe** : *le terrain du jour organise la détection là où il y a quelque chose à
+> détecter ; là où il est clos ou aveugle, il cède la place à la surveillance nominative et aux
+> échéances datées.* **Et c'est fondé sur un résultat mesuré, pas sur une préférence : cette
+> semaine, TOUS les faits exploitables — Fagron, Guerbet — sont venus de la surveillance
+> nominative. Les deux chasses ouvertes ont rendu zéro signal.**
+
+## 🔻 CONSÉQUENCE SUR LE CLASSEMENT — l'or SORT, et les rangs se décalent
+**Je ne peux pas retirer le seau et garder l'or au rang ②.** *Une candidate classée est une
+candidate que j'achèterais si son déclencheur partait ; l'or est désormais une candidate que je
+refuse d'acheter avant ~15 000 €. Les deux ne tiennent pas ensemble — et laisser l'or au rang ②
+serait exactement le genre d'incohérence que le classement existe pour empêcher.*
+
+| Rang | Candidate | Déclencheur | Mouvement |
+|---|---|---|---|
+| ① | **Cœur World (WPEA)** | — *(accumulation mensuelle, désormais 500 € pleins)* | **=** |
+| ② | **Eli Lilly (LLY)** | ≤ 1 020 $ → **−10,7 %** · CTO, doit battre 9,21 %/an brut | ③ → ② |
+| ③ | **Magnum** | dormant · capi ≤ 7,6 Md€ | ④ → ③ |
+| ④ | **STM (STMPA)** | ≤ 42 € → **−15,5 %** · le 22/10 décidera | ⑤ → ④ |
+| — | ~~**Or**~~ | ⛔ **ÉCARTÉE** — 🔓 réexamen **> ~15 000 €** ou à l'approche de l'horizon | **SORTIE** |
+
+**Classement : 5 → 4 candidates.** *Motif de la sortie, journalisé comme la routine l'exige :
+la décorrélation ne sert pas une phase d'accumulation, et son coût fiscal en CTO l'exige à
+9,21 %/an brut pour un actif sans flux.* **Ce n'est ni un oubli ni un déclassement de performance
+— c'est un retrait de recommandation, le troisième motif de sortie après EXÉCUTÉ et TUÉ.**
