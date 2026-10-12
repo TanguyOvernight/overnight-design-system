@@ -2981,3 +2981,24 @@ serait exactement le genre d'incohérence que le classement existe pour empêche
 la décorrélation ne sert pas une phase d'accumulation, et son coût fiscal en CTO l'exige à
 9,21 %/an brut pour un actif sans flux.* **Ce n'est ni un oubli ni un déclassement de performance
 — c'est un retrait de recommandation, le troisième motif de sortie après EXÉCUTÉ et TUÉ.**
+
+---
+
+## 🎯 CLASSEMENT AU 12/10 — chiffres du jour sur clôtures CERTIFIÉES du 09/10
+| Rang | Candidate | Clôture 09/10 | Déclencheur | Mouvement |
+|---|---|---|---|---|
+| ① | **Cœur World (WPEA)** | **7,2150 €** *(horodaté 17:35:20, 2 sources)* · cœur = **1 313,13 €** | — *(500 € pleins au 1er novembre)* | **=** |
+| ② | **Eli Lilly (LLY)** | **1 179,27 $** *(« At close: Oct 9 4:00:02 PM EDT », OHLC complet)* | ≤ 1 020 $ → **−13,51 %** *(s'ÉLOIGNE de −10,75 %)* | **=** |
+| ③ | **Magnum** | dormant | capi ≤ 7,6 Md€ | **=** |
+| ④ | **STM (STMPA)** | **46,545 €** *(−3,00 %, OHLC complet)* | ≤ 42 € → **−9,76 %** 🔔 *(se RAPPROCHE de −15,51 %)* · **+ condition compagne** | **=** |
+
+**Aucun changement de rang.** *Les deux mouvements sont de sens opposé et aucun ne renverse
+l'ordre : STM se rapproche de son seuil mais reste la 4e sur le mètre, Lilly s'en éloigne mais
+reste la 2e.* **Un rapprochement de seuil n'est pas une promotion de rang** — le rang mesure
+l'espérance nette ajustée du risque, le seuil mesure une distance de prix.
+
+> 🛑 **PAS de fast-track Arbitre** : la routine le déclenche sous ~5 % du seuil, **nous sommes à
+> 9,76 %.** *Anticiper serait la faute refusée le 10/08 sur le déclencheur de Lilly.*
+> 🔑 **Et la condition compagne de STM, ajoutée ce jour, dit déjà que le rapprochement actuel ne
+> serait pas achetable** : le 09/10, **STM −3,00 % et ASML −1,78 % pendant que le S&P montait de
+> +0,6 %** — baisse SECTORIELLE, donc réévaluation de marché et non décote.

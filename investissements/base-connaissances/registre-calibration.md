@@ -3357,3 +3357,110 @@ la référence** — le seuil est donc passé de −12 % à **−13,00 % sous le
 → **P = 10 %**, soit la vol pure **majorée** pour la configuration de taux *(10 ans US à **5,24 %**
 au 09/10 contre 5,004 % le 27/09, **+24 pb**, pendant que le S&P inscrit un record vers le 06/10)*.
 *Révision au titre de ㊺ : la variable de résolution elle-même a bougé.*
+
+## 🆕 Appel ouvert le 12/10/2026 — C063 *(le juge de paix de Besi)*
+
+| # | Date | Proposition | P | Résolution |
+|---|---|---|---|---|
+| **C063** | 12/10 | **Le communiqué T3 2026 de Besi (22/10) ne chiffre AUCUN effet attribuable au partenariat Applied Materials du 01/10** *(ni commande, ni carnet, ni guidance mentionnant hybrid bonding ou TCB avec un montant)* | **78 %** *(raisonnement à 90 %, ramené au plafond de charte)* | communiqué T3 de Besi · **22/10/2026** |
+
+**Pourquoi 90 %** — et je donne la décomposition pour que l'appel soit auditable :
+- Le communiqué du 01/10 est un **accord de co-innovation R&D**, sans montant, sans échéance
+  commerciale, sans *design win*. **Trois semaines séparent l'annonce du T3.**
+- Un effet chiffré apparaîtrait dans le carnet de commandes **plusieurs trimestres** plus tard,
+  si tant est qu'il apparaisse : l'objet de l'accord est du développement de plateformes, pas une
+  livraison.
+- **Ce qui retient les 10 %** : Besi pourrait choisir de *mentionner* le partenariat avec un
+  chiffre de carnet attribué à l'hybrid bonding dans son commentaire — les équipementiers
+  communiquent volontiers sur leurs cycles d'adoption.
+
+> ✅ **㉔ respectée : l'appel est FAUX à l'écriture si Besi chiffre quelque chose** — il peut donc
+> échouer. **Et ㉙ : la proposition est CONSTRUCTIBLE**, parce qu'elle porte sur le CONTENU d'un
+> communiqué et non sur un prix. *Un appel « Besi entre au classement » n'aurait PAS été
+> constructible : je ne sais pas si Besi est priçable ni si son ticket est praticable.*
+### 🔴 Je me suis accordé une exemption, et je la RETIRE dans la minute
+**J'avais d'abord écrit 90 %**, en raisonnant ainsi : *« le plafond de charte protège contre la
+surconfiance sur des faits INCERTAINS ; ici je prédis l'absence d'un contenu dans un document,
+à partir de la nature de l'accord — autre classe de référence. »*
+
+> 🔴 **C'est exactement le motif que j'ai condamné le 27/09** en appliquant le plafond à C056
+> alors qu'il me coûtait 10 points : *« une charte qui ne mord que quand ça m'arrange n'est pas
+> une charte. »* **Inventer une classe exemptée est la façon la plus propre de dissoudre une
+> règle — on ne la viole pas, on la contourne par une définition.**
+> 🔑 **Et l'argument qui tranche est l'inverse du mien** : *je n'ai JAMAIS résolu un appel sur le
+> contenu d'un document. Je n'ai donc AUCUNE donnée de calibration dans cette classe.* **Une
+> classe où je n'ai aucune preuve de bonne calibration mérite PLUS de prudence, pas moins** — le
+> plafond existe précisément pour l'absence de preuve.
+> ➡️ **C063 est enregistré à 78 %.** *Brier 0,0484 si j'ai raison, 0,6084 si j'ai tort.*
+> ✅ *Deuxième fois que le plafond mord contre mon raisonnement. C'est la définition d'une charte
+> qui tient.*
+
+---
+
+# 📅 12/10/2026 — C057 révisé 20 % → **30 %**, et j'ajoute enfin la condition compagne
+
+## 🔻 La variable de résolution a franchement bougé
+**Clôtures du 09/10, les mieux certifiées depuis des semaines** *(OHLC complets, horodatages de
+fin de séance, deux sources concordantes, et les quatre bouclages passent à 0,01 point près)* :
+
+| Valeur | Clôture 09/10 | Variation | Bouclage |
+|---|---|---|---|
+| **STM (STMPA)** | **46,545 €** | **−3,00 %** *(veille 47,985)* | ✅ implicite −3,00 % |
+| **Eli Lilly** | **1 179,27 $** | +0,83 % *(veille 1 169,60)* · *« At close: October 9 at 4:00:02 PM EDT »* | ✅ |
+| **ASML** | **1 601,60 €** | −1,78 % *(veille 1 630,60)* | ✅ |
+| **CAC 40** | **7 803,33** | +0,95 % *(veille 7 729,69)* · semaine **−1,19 %** | ✅ |
+| **WPEA** | **7,2150 €** | +0,49 % · horodaté **17:35:20**, deux sources | ✅ partiel *(ouverture non publiée)* |
+
+| Seuil | Avant | **Maintenant** |
+|---|---|---|
+| **STM ≤ 42 €** | −15,5 % | **−9,76 %** 🔔 |
+| **Lilly ≤ 1 020 $** | −10,75 % | **−13,51 %** *(s'ÉLOIGNE)* |
+
+**Et c'est une baisse RÉELLE, pas un artefact de ma référence** : STM est passé de ~50 € au 02/10
+à 47,985 € le 08/10 puis **46,545 € le 09/10**, soit **~−7 % sur la semaine**.
+
+## 🔻 C057 : 20 % → **30 %**
+`σ = 45 % × √(19/365) = 10,27 %` · distance **−9,76 %** → `z = −0,951` → P(terminal) **17,1 %**,
+P(touche continue) **34,2 %**.
+> **Je retiens 30 %, pas 34 %, et voici les deux ajustements :**
+> 🔻 **à la baisse** : la condition exige une **CLÔTURE** ≤ 42 €, pas une touche. *Le doublement
+> par principe de réflexion surestime une barrière observée en clôture — un chemin peut percer
+> en séance et clôturer au-dessus.*
+> 🔺 **à la hausse** : **la publication du 22/10 tombe DANS la fenêtre** et concentre la variance.
+> *㊺ : révision obligatoire, la variable de résolution elle-même a bougé.*
+
+## ✅ J'AJOUTE LA CONDITION COMPAGNE — promise le 28/09, jamais implémentée
+Le 28/09 j'ai écrit : *« adosser à chaque seuil de prix une condition de performance relative à
+son secteur, pour séparer ce qui est propre à la valeur de ce qui est du marché »*, et **je ne
+l'ai jamais fait.** ㉜ l'exige. **Je le fais maintenant, AVANT que le seuil soit atteint** — car
+le faire après serait déplacer les poteaux *(㉚)*.
+
+> **CONTRAT STM, amendé ce jour :** *une clôture ≤ 42 € ne devient une candidate à l'achat que si
+> la baisse est **PROPRE À STM** — c'est-à-dire si STM sous-performe son secteur sur la fenêtre de
+> baisse.* **Sinon c'est une réévaluation de marché : l'actif est justement repricé, pas bradé.**
+> 🔑 **Pourquoi ça compte aujourd'hui** : le 09/10, **STM −3,00 % et ASML −1,78 % pendant que le
+> S&P montait de +0,6 %.** *Le secteur des semi-conducteurs a sous-performé l'indice.* **Donc le
+> rapprochement actuel de mon seuil est en partie SECTORIEL — et un rapprochement sectoriel
+> n'autorise pas un achat.**
+> ⚠️ **Limite nommée du comparateur** : STM −3,00 % contre ASML −1,78 % **sur un seul jour**
+> donne 1,22 point de sous-performance — *c'est maigre, et ASML est un équipementier, pas un
+> fabricant de puces.* **Le bon pair est Infineon** *(utilisé le 28/09)*, **mais il cote à
+> Francfort**, place dont je n'obtiens rien. *Je consigne la faiblesse du contrôle plutôt que de
+> faire comme si j'avais le bon comparateur.*
+> 🛑 **Pas de fast-track Arbitre** : la routine le déclenche sous ~5 % du seuil. **Nous sommes à
+> 9,76 %.** *Je ne l'anticipe pas — c'est la faute que j'ai refusée le 10/08 sur Lilly.*
+
+## 📐 Garde-fous recalculés sur un cœur enfin certifié
+`cœur PEA = 182 parts × 7,2150 € = **1 313,13 €**`
+- **R ≤ 25 %** tant que le risqué ≤ **437,71 €** *(contre 382,80 € au 25/07)* → **bascule à
+  +14,3 %** *(j'annonçais +12,2 % sur un cœur estimé à 7,08 €)*
+- **L ≥ 196,97 €** *(contre 193,28 €)* — jambe mordante `15 % × V`
+
+## 🪤 Deux pièges interceptés par l'agent, consignés
+1. **CAC 7 834,10 présenté comme un niveau de fin de semaine** — c'est la clôture du **lundi
+   05/10**, et le chiffre venait d'un récapitulatif **horodaté 09/10 à 13h07, donc AVANT la
+   clôture.** *Espèce : instantané pré-clôture servi comme bilan hebdomadaire.*
+2. **Un article daté du 09/10 donnant STM vers ~64 €** — incompatible avec tout le reste, écarté.
+3. **Deux cotations STM hors Paris** *(47,78 € et 46,66 €, Lang & Schwarz, Allemagne)* — **des
+   intra-séances d'une AUTRE place**, pas des clôtures Euronext. *L'agent les a signalées sans
+   arbitrer à ma place, ce qui est exactement le bon comportement.*

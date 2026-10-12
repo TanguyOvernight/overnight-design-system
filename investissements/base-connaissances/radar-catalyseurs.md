@@ -2079,3 +2079,48 @@ Ce rapport donne *« CA 379,2 M€, **−2,2 %** »*, le rapport du 06/10 donnai
 constant et périmètre comparable »*. **Ce ne sont pas deux chiffres incompatibles mais deux
 BASES** *(publié vs organique à périmètre constant)*. **Mon brief du 06/10 portait l'étiquette
 exacte** — vérifié. *Je le consigne pour ne pas croire à une contradiction dans trois semaines.*
+
+---
+
+## 📜 12/10/2026 — CONTRATS DE LECTURE écrits AVANT les publications
+**Changement de méthode, et il est fondé sur un constat mesuré.** La chasse tech ouverte du 05/10
+a rendu **zéro signal**, et le contenu vivant du terrain pour les dix prochains jours est **un
+calendrier déjà capturé** *(11 échéances versées le 05/10)*. **Relancer une chasse dupliquerait ce
+calendrier. Je préfère pré-engager la LECTURE des événements que je sais venir.**
+
+> 🔑 **Ce que ça corrige** : jusqu'ici le radar était une liste de dates. *Une date sans contrat de
+> lecture ne dit pas ce qui compterait comme une surprise — donc elle autorise, le jour venu, à
+> appeler « surprise » ce qui arrange.* **㉚ : la tolérance d'un contrôle se fixe AVANT de le
+> passer.** Et ㉛ : un jalon daté doit être adossé à un test, pas seulement à un rendez-vous.
+
+### 📅 ASML — T3 2026, **14/10 à 07h00 CET** *(dans 2 jours)*
+**Pourquoi ça m'importe alors qu'ASML est INACHETABLE** *(≈1 636 € l'action → ticket impossible,
+mesuré le 04/10)* : **c'est la meilleure lecture du cycle de capex semi-conducteurs, et STM est
+ma seule ligne portant un seuil de prix vivant.** *ASML est donc un indicateur AVANCÉ de C057.*
+
+| Champ | Contenu, fixé avant l'événement |
+|---|---|
+| **Ce que je lis** | la **guidance FY2026 en euros** et les **prises de commandes** — dans le communiqué de l'émetteur |
+| **Ce qui compte comme surprise NÉGATIVE** | guidance annuelle **abaissée** *(bornes en euros)* **OU** prises de commandes en **recul séquentiel > 10 %** |
+| **Ce qui compte comme surprise POSITIVE** | guidance **relevée**, **ou** confirmée avec des commandes en hausse |
+| 🚫 **Ce qui NE compte PAS** | **un écart au consensus d'analystes.** *㉓ : le comparatif est la guidance ANTÉRIEURE DE L'ÉMETTEUR, pas une moyenne de maisons.* **Et c'est précisément la faute qui m'a coûté le dossier Aubay.** |
+| **Conséquence pré-engagée** | surprise négative → **je révise C057 À LA HAUSSE**, chiffrée sur la nouvelle distance de STM à 42 € · surprise positive → **révision À LA BAISSE** · ni l'un ni l'autre → **je ne touche pas à C057** |
+> ⚠️ **Je ne pré-engage pas la MAGNITUDE de la révision**, seulement sa direction et son
+> déclencheur. *Chiffrer d'avance une magnitude sans connaître l'ampleur du mouvement serait poser
+> un nombre pour faire joli — ce que j'ai refusé le 27/09 sur un autre seuil.*
+> ⚠️ **Trou connu, hérité du 05/10** : la guidance T3 que les résumés attribuent à ASML
+> *(CA 11,0-12,0 Md€, marge brute 55-57 %)* **date de juillet et porte la formule « now expects »,
+> qui suggère une RÉVISION dont je n'ai ni le sens ni l'ampleur.** *C'est le premier chiffre à
+> lire le 14/10 — et tant que je ne l'ai pas, je ne sais pas de quelle base je mesure une surprise.*
+
+### 📅 BESI — T3 2026, **22/10 à 07h00 CET** · juge de paix du fait du 01/10
+Le fait du 01/10 *(extension du partenariat Applied Materials × Besi : hybrid bonding, TCB,
+architectures die-on-wafer)* a été **non promu** : T2 échoue sur la matérialité — **un accord de
+co-innovation sans aucun chiffre ni échéance commerciale.**
+
+| Champ | Contenu, fixé avant l'événement |
+|---|---|
+| **Ce que je lis** | le T3 de Besi **chiffre-t-il un effet attribuable à ce partenariat ?** *(commandes, carnet, guidance mentionnant hybrid bonding ou TCB)* |
+| **Si NON** | le fait du 01/10 est **définitivement classé « narratif sans substance »**, et je ferme la boucle |
+| **Si OUI** | le dossier est **ré-instruit**, séance 1/3 — *et il faudra d'abord établir si Besi est même PRIÇABLE et ACHETABLE, ce qui n'est pas acquis* |
+| 🚫 **Ce qui NE compte PAS** | **le « 10,25 Md$ » qui circule dans la presse secondaire : c'est la guidance d'APPLIED MATERIALS, pas de Besi.** *Consigné d'avance le 05/10 pour ne pas le recroiser naïvement.* |
