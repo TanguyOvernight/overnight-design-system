@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-10-11",
+ "maj": "2026-10-12",
  "offres": [
   {
    "d": "2026-10-03",
@@ -127,8 +127,8 @@
    "d": "2026-09-29",
    "b": 31,
    "s": "cible",
-   "st": "ouverte",
-   "suivi": true,
+   "st": "fermee",
+   "suivi": false,
    "depuis": "2026-09-29",
    "t": "Chargé·e de communication (SPEI, économie durable)",
    "c": "État de Vaud",
@@ -137,7 +137,7 @@
    "ct": "CDD 1 an (auxiliaire)",
    "xp": "3 ans min",
    "u": "https://www.jobup.ch/fr/emplois/detail/f227e361-1b95-4367-8be8-b52616047971/",
-   "n": "Campagnes, sites, réseaux sociaux, newsletters pour l'économie durable vaudoise. Lien officiel : offres-emploi.vd.ch (portail État, job 5946). Entrée 01.01.27.",
+   "n": "Campagnes, sites, réseaux sociaux, newsletters pour l'économie durable vaudoise. Lien officiel : offres-emploi.vd.ch (portail État, job 5946). Entrée 01.01.27. ⏹ Délai de candidature passé (11.10).",
    "g": false,
    "cl": false,
    "dl": "2026-10-11",
@@ -2549,6 +2549,43 @@
     "Annonce en allemand : vérifier si l'allemand est exigé"
    ],
    "at": "Missions proches de ton quotidien marketing ; c'est une porte d'entrée courte."
+  },
+  {
+   "d": "2026-10-12",
+   "b": 44,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Social Media Manager — studio podcast & Reels",
+   "c": "Margaux Klein",
+   "l": "Lausanne",
+   "dist": "Lausanne",
+   "tx": "n.p.",
+   "ct": "n.p. (long terme annoncé)",
+   "xp": "n.p.",
+   "lg": "FR",
+   "g": false,
+   "u": null,
+   "n": "⚠️ Non vérifiée : vue seulement via un agrégateur (learn4good) injoignable. 🔎 À retrouver : cherche « Social Media Manager » Margaux Klein Lausanne.",
+   "fit": {
+    "m": 1,
+    "da": 2,
+    "ia": 0,
+    "pct": 55
+   },
+   "ms": [
+    "Préparer les tournages des clientes au studio podcast (sujets, questions)",
+    "Installer caméras, micros, lumières ; accompagner les tournages",
+    "Transformer les vidéos YouTube longues en Reels Instagram",
+    "Publier et planifier de A à Z"
+   ],
+   "inf": [
+    "⚠️ Non vérifiée",
+    "Petite équipe exigeante, entrepreneurs établis",
+    "Taux et contrat non précisés"
+   ],
+   "at": "Très orienté production vidéo courte : ta pratique du montage et de la DA est un atout, mais c'est un poste d'exécution."
   }
  ]
 }
