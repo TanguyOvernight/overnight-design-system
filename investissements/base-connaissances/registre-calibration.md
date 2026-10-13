@@ -3464,3 +3464,73 @@ le faire après serait déplacer les poteaux *(㉚)*.
 3. **Deux cotations STM hors Paris** *(47,78 € et 46,66 €, Lang & Schwarz, Allemagne)* — **des
    intra-séances d'une AUTRE place**, pas des clôtures Euronext. *L'agent les a signalées sans
    arbitrer à ma place, ce qui est exactement le bon comportement.*
+
+---
+
+# 📅 13/10/2026 — AUDIT DES APPELS OUVERTS : une erreur de tenue de 13 jours, et un refus
+
+## 🔧 Correction de tenue : C016 n'est PAS ouvert, et je l'écrivais depuis le 30/09
+**C016 a été résolu NON OBSERVABLE le 30/09** *(ligne 2814 de ce registre)*. **Et je l'ai listé
+comme « ouvert » dans chaque journal depuis — treize jours.**
+> 🔴 **Troisième erreur de tenue du registre en trois semaines**, après C052 *(laissé VOID trois
+> jours après avoir lu la pièce qui le rouvrait)* et C058 *(déclaré résolu dans une note, jamais
+> scoré)*. **Trois espèces différentes : un retard de résolution, une résolution fantôme, une
+> clôture oubliée.** *Le point commun n'est pas l'inattention : c'est que je tiens l'état des
+> appels DE MÉMOIRE au lieu de le relire.*
+> ✅ **Liste corrigée des appels réellement OUVERTS** : **C011** *(mars 2027)* · **C013** *(VOID,
+> réouvrable)* · **C014** *(30/06/2027)* · **C015** *(31/12/2027)* · **C017** *(31/07/2027)* ·
+> **C049** *(~31/10)* · **C054** *(31/12/2031)* · **C056** *(78 %, 31/12)* · **C057** *(30 %,
+> 31/10)* · **C059** *(fin oct.)* · **C061** *(10 %, 31/12)* · **C063** *(78 %, 22/10)*.
+> **Soit 12, pas 13.** *C016, C053 et C055 sont CLOS sans score.*
+
+## 🧮 Et pourtant la QUESTION de C016 est désormais répondable — opérationnellement
+C016 énonçait : *« R ≤ 25 % au 30/09/2026 »*, P = 80 %, résolution par **« calcul de R sur la
+capture du 30/09 »**. La capture n'est jamais arrivée. **Mais ㊸ (écrite le 03/10) permet de
+borner R sans valorisation :**
+
+`R = N₀·g ⁄ (N₀·g + C₀·g + PEA)` où **g = croissance du livre eToro depuis le 25/07**
+*(N₀ = 382,80 € risqué · C₀ = 487,20 € cœur eToro · PEA au 30/09 = 112 × 7,08 = **792,96 €**)*
+
+| g | R au 30/09 | |
+|---|---|---|
+| 0,90 *(−10 %)* | 21,86 % | ✅ |
+| 1,00 | 23,02 % | ✅ |
+| 1,096 *(≈ S&P)* | **24,02 %** | ✅ |
+| 1,15 | 24,55 % | ✅ |
+| **1,199** | **25,00 %** | **← bascule** |
+| 1,30 *(+30 %)* | 25,87 % | ❌ |
+
+> 🔑 **Le résultat intéressant est l'INSENSIBILITÉ** : *g apparaît au numérateur ET au
+> dénominateur, donc une variation de 40 points de performance ne déplace R que de 4 points.*
+> **R dépassait 25 % uniquement si son livre eToro avait gagné plus de +19,9 % depuis le 25/07 —
+> soit plus du DOUBLE du S&P sur la période (+9,6 %).** ➡️ **Le garde-fou était donc respecté,
+> avec une marge confortable.**
+
+## 🛑 MAIS JE NE RÉSOUS PAS C016 — et je nomme le conflit d'intérêt
+**P était à 80 %, et ma dérivation conclut VRAI. Me résoudre moi-même donnerait un Brier de
+0,04** — l'un de mes meilleurs. **C'est précisément pourquoi je m'arrête.**
+> 🔴 **La résolution SPÉCIFIÉE était « le calcul sur la capture du 30/09 ».** *Résoudre sur un
+> MODÈLE au lieu de la pièce désignée change le critère après coup — et ㉚ interdit exactement
+> ça : la tolérance d'un contrôle se fixe AVANT de le passer.*
+> ⚠️ **Test d'honnêteté que je m'applique** : *le ferais-je si la dérivation disait FAUX ?*
+> **Probablement oui — mais « probablement » ne suffit pas quand le résultat m'arrange, et
+> c'est justement dans ce cas que la règle doit mordre.**
+
+## 🆕 ㊿ — le REGISTRE et la DÉCISION n'ont pas le même standard de preuve
+> **La décision se contente d'une BORNE ; le registre exige la PIÈCE SPÉCIFIÉE.**
+> Quand les deux divergent : **on AGIT, et on ne SCORE pas.**
+> *C016 en est le cas pur : le garde-fou est répondu avec une marge confortable, et l'appel reste
+> non scoré. Ce n'est pas une incohérence — c'est le registre qui est plus exigeant que la vie,
+> par construction. Un registre aussi tolérant que la décision ne mesurerait plus rien.*
+
+## 🔻 13/10 — C057 révisé 30 % → **38 %**
+**STM clôture à 45,565 € le 12/10** *(−2,11 %, OHLC complet, horodaté 17:39:45, bouclage exact)*.
+Seuil 42 € : **−7,82 %** *(contre −9,76 % le 09/10 et −15,51 % le 02/10)*.
+`σ = 45 % × √(18/365) = 9,99 %` · `z = −0,783` → terminal **21,7 %**, touche continue **43,4 %**.
+**Retenu 38 %**, même abattement que le 12/10 *(la condition exige une CLÔTURE, pas une touche)*,
+majoré de la publication du 22/10 dans la fenêtre.
+> ⚠️ **La condition compagne n'est PAS testable aujourd'hui** : je n'ai pas la clôture d'ASML du
+> 12/10. *Et elle ne change de toute façon pas P — elle décide s'il faut ACHETER si le seuil est
+> touché, pas la probabilité qu'il le soit.* **Garder les deux séparés est le point.**
+> 🛑 **Toujours pas de fast-track** *(déclenché sous ~5 %, nous sommes à 7,82 %)* — mais **nous
+> nous en approchons, et c'est la première fois.**

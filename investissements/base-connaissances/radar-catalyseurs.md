@@ -2124,3 +2124,85 @@ co-innovation sans aucun chiffre ni échéance commerciale.**
 | **Si NON** | le fait du 01/10 est **définitivement classé « narratif sans substance »**, et je ferme la boucle |
 | **Si OUI** | le dossier est **ré-instruit**, séance 1/3 — *et il faudra d'abord établir si Besi est même PRIÇABLE et ACHETABLE, ce qui n'est pas acquis* |
 | 🚫 **Ce qui NE compte PAS** | **le « 10,25 Md$ » qui circule dans la presse secondaire : c'est la guidance d'APPLIED MATERIALS, pas de Besi.** *Consigné d'avance le 05/10 pour ne pas le recroiser naïvement.* |
+
+---
+
+## 📅 13/10/2026 — journée la plus productive du dispositif, et c'est la surveillance NOMINATIVE
+⚠️ **Tout [RÉSUMÉ DE RECHERCHE]** — aucune page ouverte *(6 tentatives, toutes `ENOTFOUND`)*.
+
+### ☠️ INTEGRAGEN — TRANCHÉ le 09/10, et l'avertissement était juste
+**Deux jugements le MÊME JOUR, 09/10/2026, Tribunal de commerce d'Évry :**
+1. **Plan de cession totale** à **ABL Diagnostics** *(et non Health In Code)* — génomique et
+   bio-informatique, **100 000 € hors droits**, **16 salariés** repris, jouissance au 09/10.
+2. **LIQUIDATION JUDICIAIRE prononcée** — second jugement convertissant le redressement.
+
+**Ce que l'émetteur écrit lui-même** : les actionnaires **conservent leurs actions** mais sont
+exposés à une perte *« a minima partielle et peut-être totale »* · le prix de cession **plus** la
+réalisation des actifs non cédés **plus** les créances vont **au règlement des CRÉANCIERS** · et
+ce montant *« ne constitue pas une garantie de remboursement intégral du passif »*.
+**Radiation d'Euronext Growth annoncée dans son PRINCIPE** *(« à la clôture de la procédure »)*,
+**sans date** — aucun avis Euronext trouvé.
+> 🔑 **100 000 € de prix de cession face à un passif que la société dit elle-même non couvert.**
+> *Les actionnaires passent après les créanciers. C'est un effacement, pas un reliquat.*
+> ✅ **Mon message du 08/10 — « à ne toucher sous aucun prétexte » — est validé par les faits
+> quatre jours plus tard.** Et le piège nommé ce jour-là a fonctionné : *« poursuit ses activités »
+> + « offres de reprise » se lisait comme un retournement et n'en était pas un.*
+
+### 💊 MEDINCELL — approbation FDA le 09/10, le fait le plus net de la semaine
+**WELTRUZA™** *(olanzapine injectable à action prolongée)*, schizophrénie de l'adulte, développée
+avec **Teva**, **lancement US par Teva au T4 2026**. **Cotation suspendue à 9h00 à la demande de
+la société, reprise l'après-midi du 09/10.**
+> ✅ **Mon incertitude du 06/10 est tranchée** : j'avais deux calendriers contradictoires pour la
+> PDUFA *(première quinzaine d'octobre vs T4 2026)* et j'ai refusé de choisir. **C'était la
+> première quinzaine.** *Ne pas trancher était le bon choix : l'un des deux était faux.*
+> ⚠️ **Et le piège que j'avais nommé d'avance tient** : **c'est un dépôt TEVA.** Medincell touche
+> des **jalons jusqu'à 112 M$ plus redevances** — **aucun chiffre n'est rattaché au communiqué.**
+> 🛑 **NON PROMUE, et je formule le motif avec précision** : *le marché a EU L'OCCASION de la
+> valoriser — suspension puis reprise le 09/10. Je ne peux pas mesurer s'il l'a fait, parce que
+> je n'ai aucun cours de Medincell.* **Dire « c'est déjà dans le cours » serait une affirmation
+> sans prix. Le motif est donc : non mesurable, pas « déjà pricé ».**
+
+### 🔬 GUERBET — TUÉE, et sur le chiffre exact dont j'avais dit qu'il déciderait
+Le 06/10 j'ai écrit : *« ce qui la promouvrait : (1) les modalités du refinancement, (2) le ratio
+de levier chiffré, (3) une clôture datée »*. **J'ai le (2). Il tue le dossier.**
+
+| Grandeur *(au 30/06/2026, publié le 28/09)* | Valeur | Comparatif de l'ÉMETTEUR |
+|---|---|---|
+| Dette financière **nette** | **355,9 M€** | *« contre 325,7 M€ six mois plus tôt »* |
+| Dette brute / trésorerie | 488,1 M€ / 132,0 M€ | — |
+| **Levier** | **5,3×** | **covenant 3,5× → dépassement de ~1,8 tour** |
+| Reclassé en dettes **courantes** | **438,6 M€** | *waivers obtenus après le 30/06* |
+| Marge EBITDA | 8,1 % *(9,1 % retraitée)* | *« contre 12,9 % un an plus tôt »* |
+| **Free cash-flow attendu** | **−50 à −70 M€** | — |
+
+**Mes calculs sur ces chiffres** *(capi ~225 M€)* :
+```
+dette nette = 1,58 × la capitalisation
+VE = 225 + 356 = 581 M€ · EBITDA annualisé ≈ 61 M€ → VE/EBITDA ≈ 9,5×
+FCF attendu = −22 % à −31 % de la capitalisation, PAR AN
+```
+> 🔑 **Ce n'est pas une décote, c'est un bilan sur-endetté qui brûle du cash à un multiple
+> NORMAL.** *9,5× l'EBITDA pour 5,3× de levier contre un covenant à 3,5× : le marché ne la brade
+> pas, il la price comme une société en difficulté — ce qu'elle est.* **T6 (vendeurs par mandat)
+> était favorable, mais T4 l'écrase : il n'y a pas de décote à capter.**
+> **➡️ GUERBET : PASSE — TUÉE SUR T4.** *Et c'est une mort propre : le dossier avait une
+> condition de promotion écrite, la condition a été remplie, et elle a répondu NON.*
+
+#### 🔻 Et je dois CORRIGER ce que j'ai dit du 31/10
+J'ai écrit deux fois *« butée du refinancement Guerbet »*, le 06/10 et le 08/10. **Faux cadrage.**
+**Les waivers couvrent les tests du 30/06/2026, du 31/12/2026 ET du 30/06/2027.**
+> **Le 31/10 est l'OBJECTIF que la société s'est donné, pas une falaise de covenant.** *La
+> pression contractuelle est reportée à mi-2027.* **J'ai transformé une intention d'émetteur en
+> échéance contraignante — ㉓-bis sur l'axe de la NATURE du fait : un objectif n'est pas une
+> butée.*
+
+### 📊 Clôtures du 12/10 *(OHLC complets, horodatages, bouclages exacts)*
+**STM 45,565 €** *(−2,11 %, horodaté 17:39:45)* · **WPEA 7,2490 €** *(+0,47 %)*.
+### 🪤 Pièges interceptés
+**Onward Medical** : un communiqué ARC-IM/EIGER présenté comme vieux de six jours — **il est du
+03/09/2026**, décalage de **cinq semaines**, écarté · **quatre instantanés matinaux rejetés**
+*(Lang & Schwarz 46,25 € à 9h26 · Morningstar 46,41 € à 9h43 · Fortuneo WPEA 7,242 € à 14h44 ·
+Investing.com 46,35 € avec une veille incohérente)*.
+### Les autres : emeis *(rachats hebdo, 50 000 titres à 10,0544 € de moyenne)* · Clariane
+*(franchissement de 10 % par René Holecek, déclaré à l'AMF le 12/10 — **déclaration
+d'ACTIONNAIRE, pas fait émetteur**)* · Fagron *(déjà traité)* · Vetoquinol, IBA : **rien**.
