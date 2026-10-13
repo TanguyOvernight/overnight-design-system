@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-10-12",
+ "maj": "2026-10-13",
  "offres": [
   {
    "d": "2026-10-03",
@@ -2440,11 +2440,11 @@
   {
    "d": "2026-10-10",
    "b": 42,
-   "st": "ouverte",
+   "st": "fermee",
    "cl": false,
    "dl": null,
    "s": "cible",
-   "suivi": true,
+   "suivi": false,
    "depuis": "2026-10-10",
    "t": "Spécialiste Marketing et Communication Digitale",
    "c": "La Maison des Énergies SA",
@@ -2456,7 +2456,7 @@
    "lg": "FR excellent · suisse-allemand/allemand = atout",
    "g": false,
    "u": "https://www.jobup.ch/fr/emplois/detail/2d251afe-72dc-4afd-88a3-03cf6938d77b/",
-   "n": "PME des énergies renouvelables qui renforce sa communication et sa présence digitale. Publiée le 09.10, visible jusqu'au 07.11.",
+   "n": "PME des énergies renouvelables qui renforce sa communication et sa présence digitale. Publiée le 09.10, visible jusqu'au 07.11. ❌ Fermée au re-check du 13.10 : l'API jobup la donne inactive, fin de publication avancée au 11.10 (410).",
    "fit": {
     "m": 2,
     "da": 2,
@@ -2587,6 +2587,47 @@
     "Production vidéo + animation d'interviews + relation cliente, plus que social media pur"
    ],
    "at": "Très orienté production vidéo courte : ta pratique du montage et de la DA est un atout, mais c'est un poste d'exécution."
+  },
+  {
+   "d": "2026-10-13",
+   "b": 45,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "solide",
+   "t": "Social Media Lead — Kraken Pro",
+   "c": "Kraken",
+   "l": "Suisse · remote",
+   "dist": "Télétravail",
+   "tx": "100%",
+   "ct": "n.p. (temps plein)",
+   "xp": "3+ ans",
+   "lg": "EN",
+   "g": true,
+   "u": "https://ch.linkedin.com/jobs/view/social-media-lead-kraken-pro-at-kraken-4468717093",
+   "n": "Passe remote Suisse. Plateforme crypto (Payward). Candidatures au fil de l'eau.",
+   "fit": {
+    "m": 2,
+    "da": 1,
+    "ia": 2,
+    "pct": 72
+   },
+   "ms": [
+    "Contenus natifs pour X, Telegram et au-delà",
+    "Réagir aux tendances (CT/FinTwit) en temps réel",
+    "Animer la communauté Kraken Pro",
+    "Calendrier éditorial, publication, suivi de performance",
+    "Traduire l'actualité produit en récits"
+   ],
+   "inf": [
+    "3+ ans en social ou contenu (idéalement fintech, crypto, trading)",
+    "« High AI competency » demandée",
+    "Polyvalence : copy, memes, vidéo courte, charts ; Figma ou CapCut",
+    "Portfolio > CV",
+    "⚠️ Remote et fuseau horaire non précisés dans la fiche (lieu « Switzerland ») — à confirmer",
+    "Republiée le 12.10"
+   ],
+   "at": "Ils veulent un « maker » qui produit seul avec l'IA : exactement ton mode de travail. La crypto est le terrain à apprivoiser ; ton passé gaming aide pour la culture communautaire."
   }
  ]
 }

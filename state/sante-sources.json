@@ -1,184 +1,191 @@
 {
-  "_doc": "Santé des sources. EGRESS OUVERT le 04.09 (44 domaines autorisés par Tanguy) — fin du mode dégradé, vérifié dans cette session. Re-test quotidien maintenu. bebee.com / bewtr.com hors liste (agrégateurs secondaires).",
-  "teste_depuis": "environnement cloud claude.ai — egress OUVERT depuis le 04.09",
-  "sources": {
-    "jobup": {
-      "verdict": "OK",
-      "detail": "OK — JSON-LD ItemList opérationnel (53 offres 48h le 04.09) ; parse liste-aware requis",
-      "teste_le": "2026-09-04"
-    },
-    "jobs_ch": {
-      "verdict": "OK",
-      "detail": "OK — pages détail GET ✔ (piège confirmé : offre expirée = 301 vers catégorie en 200)",
-      "teste_le": "2026-09-04"
-    },
-    "linkedin_guest": {
-      "verdict": "A_RETESTER",
-      "detail": "A_RETESTER — pages /jobs/view/ GET ✔ ; endpoint seeMoreJobPostings à re-tester au prochain run",
-      "teste_le": "2026-09-04"
-    },
-    "job_room_seco": {
-      "verdict": "OK",
-      "detail": "OK — POST _search opérationnel (6 hits marketing VD le 04.09) ; externalUrl = lien verbatim",
-      "teste_le": "2026-09-04"
-    },
-    "ats_greenhouse": {
-      "verdict": "A_RETESTER",
-      "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
-      "teste_le": "2026-09-04"
-    },
-    "ats_lever": {
-      "verdict": "A_RETESTER",
-      "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
-      "teste_le": "2026-09-04"
-    },
-    "ats_smartrecruiters": {
-      "verdict": "A_RETESTER",
-      "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
-      "teste_le": "2026-09-04"
-    },
-    "ats_workday": {
-      "verdict": "A_RETESTER",
-      "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
-      "teste_le": "2026-09-04"
-    },
-    "ats_phenom_pmi": {
-      "verdict": "A_RETESTER",
-      "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
-      "teste_le": "2026-09-04"
-    },
-    "rss_cominmag": {
-      "verdict": "A_RETESTER",
-      "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
-      "teste_le": "2026-09-04"
-    },
-    "wttj_lausanne": {
-      "verdict": "A_RETESTER",
-      "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
-      "teste_le": "2026-09-04"
-    },
-    "etat_vaud_oracle": {
-      "verdict": "A_RETESTER",
-      "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
-      "teste_le": "2026-09-04"
-    },
-    "chuv_feed": {
-      "verdict": "OK",
-      "detail": "OK — recrutement.chuv.ch accessible (home + vacancy GET ✔) ; feed à exploiter au prochain run",
-      "teste_le": "2026-09-04"
-    },
-    "cio_sap": {
-      "verdict": "A_RETESTER",
-      "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
-      "teste_le": "2026-09-04"
-    },
-    "bcv_sitemap": {
-      "verdict": "A_RETESTER",
-      "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
-      "teste_le": "2026-09-04"
-    },
-    "vaudoise_softgarden": {
-      "verdict": "OK",
-      "detail": "OK — listing SSR opérationnel (Digital Creative Specialist ABSENTE = fermée)",
-      "teste_le": "2026-09-04"
-    },
-    "tamedia_rss": {
-      "verdict": "A_RETESTER",
-      "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
-      "teste_le": "2026-09-04"
-    },
-    "talent_com": {
-      "verdict": "A_RETESTER",
-      "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
-      "teste_le": "2026-09-04"
-    },
-    "michael_page": {
-      "verdict": "A_RETESTER",
-      "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
-      "teste_le": "2026-09-04"
-    },
-    "serpapi_google_jobs": {
-      "verdict": "OK",
-      "detail": "OK — 3/3 requêtes le 04.09 ; chips=date_posted:today souvent vide → retry sans chips ; apply_options = liens verbatim",
-      "teste_le": "2026-09-04"
-    },
-    "startupticker": {
-      "verdict": "A_RETESTER",
-      "detail": "A_RETESTER au prochain run (domaine autorisé)",
-      "teste_le": "2026-09-04"
-    },
-    "ictjournal_rss": {
-      "verdict": "A_RETESTER",
-      "detail": "A_RETESTER au prochain run",
-      "teste_le": "2026-09-04"
-    },
-    "swissaijob": {
-      "verdict": "A_TESTER",
-      "detail": "3e vague hebdo (lundi) — premier passage prévu lundi 31.08 ; egress probablement bloqué, prévoir substitution WebSearch site:swissaijob.ch",
-      "teste_le": null
-    },
-    "wellfound": {
-      "verdict": "A_TESTER",
-      "detail": "3e vague hebdo (lundi) — premier passage prévu lundi 31.08",
-      "teste_le": null
-    },
-    "websearch": {
-      "verdict": "OK",
-      "detail": "WebSearch opérationnel (runs n°1 et n°2 entièrement dessus). Limites confirmées : pas de fenêtre 48h stricte, index mélange frais et périmé (LinkedIn IDs 2023), certains liens détail introuvables ; mais republications détectables (PLATEFORME 10 « il y a 3 jours »)",
-      "teste_le": "2026-08-30"
-    }
+ "_doc": "Santé des sources. EGRESS OUVERT le 04.09 (44 domaines autorisés par Tanguy) — fin du mode dégradé, vérifié dans cette session. Re-test quotidien maintenu. bebee.com / bewtr.com hors liste (agrégateurs secondaires).",
+ "teste_depuis": "environnement cloud claude.ai — egress OUVERT depuis le 04.09",
+ "sources": {
+  "jobup": {
+   "verdict": "OK",
+   "detail": "OK — JSON-LD ItemList opérationnel (53 offres 48h le 04.09) ; parse liste-aware requis",
+   "teste_le": "2026-09-04"
   },
-  "domaines_a_autoriser": [
-    "www.jobup.ch",
-    "www.jobs.ch",
-    "www.linkedin.com",
-    "www.job-room.ch",
-    "boards-api.greenhouse.io",
-    "api.lever.co",
-    "api.smartrecruiters.com",
-    "*.myworkdayjobs.com",
-    "join.pmicareers.com",
-    "cominmag.ch",
-    "www.welcometothejungle.com",
-    "apply.workable.com",
-    "api.ashbyhq.com",
-    "careers.batmaid.com",
-    "careers.corintis.com",
-    "careers.uefa.com",
-    "www.olympics.com",
-    "qoqa.jobs",
-    "www.salt.ch",
-    "www.epfl-innovationpark.ch",
-    "fa-ewrg-saasfaeuraprod1.fa.ocs.oraclecloud.com",
-    "recrutement.chuv.ch",
-    "ioc.jobs.hr.cloud.sap",
-    "careers.olympics.com",
-    "jobs.bcv.ch",
-    "vaudoise.softgarden.io",
-    "jobs.tamedia.ch",
-    "ch.talent.com",
-    "www.michaelpage.ch",
-    "inside.fei.org",
-    "jobs.world.luccasoftware.com",
-    "www.gymnastics.sport",
-    "www.tas-cas.org",
-    "www.loro.ch",
-    "serpapi.com",
-    "www.startupticker.ch",
-    "www.ictjournal.ch",
-    "swissaijob.ch",
-    "wellfound.com",
-    "www.eu-startups.com",
-    "www.scale-up-vaud.ch",
-    "www.shab.ch",
-    "careers.epfl.ch",
-    "www.lausanne.ch",
-    "qoqa.jobs"
-  ],
-  "serpapi": {
-    "status": "OK",
-    "depuis": "2026-09-30",
-    "note": "Panne 30.09-02.10 (3 jours, 000) terminée — 2/3 requêtes servies le 03.10, a immédiatement livré la piste Beau-Rivage",
-    "retabli": "2026-10-03"
+  "jobs_ch": {
+   "verdict": "OK",
+   "detail": "OK — pages détail GET ✔ (piège confirmé : offre expirée = 301 vers catégorie en 200)",
+   "teste_le": "2026-09-04"
+  },
+  "linkedin_guest": {
+   "verdict": "A_RETESTER",
+   "detail": "A_RETESTER — pages /jobs/view/ GET ✔ ; endpoint seeMoreJobPostings à re-tester au prochain run",
+   "teste_le": "2026-09-04"
+  },
+  "job_room_seco": {
+   "verdict": "OK",
+   "detail": "OK — POST _search opérationnel (6 hits marketing VD le 04.09) ; externalUrl = lien verbatim",
+   "teste_le": "2026-09-04"
+  },
+  "ats_greenhouse": {
+   "verdict": "A_RETESTER",
+   "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
+   "teste_le": "2026-09-04"
+  },
+  "ats_lever": {
+   "verdict": "A_RETESTER",
+   "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
+   "teste_le": "2026-09-04"
+  },
+  "ats_smartrecruiters": {
+   "verdict": "A_RETESTER",
+   "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
+   "teste_le": "2026-09-04"
+  },
+  "ats_workday": {
+   "verdict": "A_RETESTER",
+   "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
+   "teste_le": "2026-09-04"
+  },
+  "ats_phenom_pmi": {
+   "verdict": "A_RETESTER",
+   "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
+   "teste_le": "2026-09-04"
+  },
+  "rss_cominmag": {
+   "verdict": "A_RETESTER",
+   "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
+   "teste_le": "2026-09-04"
+  },
+  "wttj_lausanne": {
+   "verdict": "A_RETESTER",
+   "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
+   "teste_le": "2026-09-04"
+  },
+  "etat_vaud_oracle": {
+   "verdict": "A_RETESTER",
+   "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
+   "teste_le": "2026-09-04"
+  },
+  "chuv_feed": {
+   "verdict": "OK",
+   "detail": "OK — recrutement.chuv.ch accessible (home + vacancy GET ✔) ; feed à exploiter au prochain run",
+   "teste_le": "2026-09-04"
+  },
+  "cio_sap": {
+   "verdict": "A_RETESTER",
+   "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
+   "teste_le": "2026-09-04"
+  },
+  "bcv_sitemap": {
+   "verdict": "A_RETESTER",
+   "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
+   "teste_le": "2026-09-04"
+  },
+  "vaudoise_softgarden": {
+   "verdict": "OK",
+   "detail": "OK — listing SSR opérationnel (Digital Creative Specialist ABSENTE = fermée)",
+   "teste_le": "2026-09-04"
+  },
+  "tamedia_rss": {
+   "verdict": "A_RETESTER",
+   "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
+   "teste_le": "2026-09-04"
+  },
+  "talent_com": {
+   "verdict": "A_RETESTER",
+   "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
+   "teste_le": "2026-09-04"
+  },
+  "michael_page": {
+   "verdict": "A_RETESTER",
+   "detail": "egress ouvert le 04.09 — à re-tester au prochain run (ancien statut : bloqué)",
+   "teste_le": "2026-09-04"
+  },
+  "serpapi_google_jobs": {
+   "verdict": "OK",
+   "detail": "OK — 3/3 requêtes le 04.09 ; chips=date_posted:today souvent vide → retry sans chips ; apply_options = liens verbatim",
+   "teste_le": "2026-09-04"
+  },
+  "startupticker": {
+   "verdict": "A_RETESTER",
+   "detail": "A_RETESTER au prochain run (domaine autorisé)",
+   "teste_le": "2026-09-04"
+  },
+  "ictjournal_rss": {
+   "verdict": "A_RETESTER",
+   "detail": "A_RETESTER au prochain run",
+   "teste_le": "2026-09-04"
+  },
+  "swissaijob": {
+   "verdict": "A_TESTER",
+   "detail": "3e vague hebdo (lundi) — premier passage prévu lundi 31.08 ; egress probablement bloqué, prévoir substitution WebSearch site:swissaijob.ch",
+   "teste_le": null
+  },
+  "wellfound": {
+   "verdict": "A_TESTER",
+   "detail": "3e vague hebdo (lundi) — premier passage prévu lundi 31.08",
+   "teste_le": null
+  },
+  "websearch": {
+   "verdict": "OK",
+   "detail": "WebSearch opérationnel (runs n°1 et n°2 entièrement dessus). Limites confirmées : pas de fenêtre 48h stricte, index mélange frais et périmé (LinkedIn IDs 2023), certains liens détail introuvables ; mais republications détectables (PLATEFORME 10 « il y a 3 jours »)",
+   "teste_le": "2026-08-30"
   }
+ },
+ "domaines_a_autoriser": [
+  "www.jobup.ch",
+  "www.jobs.ch",
+  "www.linkedin.com",
+  "www.job-room.ch",
+  "boards-api.greenhouse.io",
+  "api.lever.co",
+  "api.smartrecruiters.com",
+  "*.myworkdayjobs.com",
+  "join.pmicareers.com",
+  "cominmag.ch",
+  "www.welcometothejungle.com",
+  "apply.workable.com",
+  "api.ashbyhq.com",
+  "careers.batmaid.com",
+  "careers.corintis.com",
+  "careers.uefa.com",
+  "www.olympics.com",
+  "qoqa.jobs",
+  "www.salt.ch",
+  "www.epfl-innovationpark.ch",
+  "fa-ewrg-saasfaeuraprod1.fa.ocs.oraclecloud.com",
+  "recrutement.chuv.ch",
+  "ioc.jobs.hr.cloud.sap",
+  "careers.olympics.com",
+  "jobs.bcv.ch",
+  "vaudoise.softgarden.io",
+  "jobs.tamedia.ch",
+  "ch.talent.com",
+  "www.michaelpage.ch",
+  "inside.fei.org",
+  "jobs.world.luccasoftware.com",
+  "www.gymnastics.sport",
+  "www.tas-cas.org",
+  "www.loro.ch",
+  "serpapi.com",
+  "www.startupticker.ch",
+  "www.ictjournal.ch",
+  "swissaijob.ch",
+  "wellfound.com",
+  "www.eu-startups.com",
+  "www.scale-up-vaud.ch",
+  "www.shab.ch",
+  "careers.epfl.ch",
+  "www.lausanne.ch",
+  "qoqa.jobs"
+ ],
+ "serpapi": {
+  "status": "OK",
+  "depuis": "2026-09-30",
+  "note": "Panne 30.09-02.10 (3 jours, 000) terminée — 2/3 requêtes servies le 03.10, a immédiatement livré la piste Beau-Rivage",
+  "retabli": "2026-10-03"
+ },
+ "incidents": [
+  {
+   "date": "2026-10-13",
+   "source": "jobs.ch API + jobup API détail",
+   "etat": "403 sur toutes les requêtes jobs.ch, 17/22 détails jobup en 403"
+  }
+ ]
 }
