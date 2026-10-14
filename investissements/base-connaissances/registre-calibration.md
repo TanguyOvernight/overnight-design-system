@@ -3534,3 +3534,18 @@ majoré de la publication du 22/10 dans la fenêtre.
 > touché, pas la probabilité qu'il le soit.* **Garder les deux séparés est le point.**
 > 🛑 **Toujours pas de fast-track** *(déclenché sous ~5 %, nous sommes à 7,82 %)* — mais **nous
 > nous en approchons, et c'est la première fois.**
+
+## 🔺 14/10 — C057 révisé 38 % → **55 %**, et la DIVERGENCE avec la décision d'achat
+**STM clôture à 43,835 € le 13/10** *(−3,80 %, horodatage 17h35, fourchette 44,955/42,930, et la
+veille affichée coïncide EXACTEMENT avec ma référence du 12/10 — triple recoupement)*.
+Seuil 42 € : **−4,19 %** *(−7,82 % le 12/10 · −9,76 % le 09/10 · −15,51 % le 02/10)*.
+`σ 9,71 % à 17 j · z −0,431` → terminal **33,3 %**, touche continue **66,6 %** → **retenu 55 %**
+*(abattement pour une barrière observée en CLÔTURE sur ~12 séances, non en continu)*.
+
+> 🔑 **C057 et la décision d'ACHAT divergent désormais pour de bon, et c'est le résultat du jour.**
+> *La probabilité de TOUCHER passe de 38 à 55 % pendant que la condition d'ACHAT échoue par
+> 0,08 point contre 5 exigés.* **La séparation construite le 12/10 est maintenant visible dans
+> les chiffres : un seuil de prix mesure une distance, il ne dit pas s'il faut acheter.**
+> ✅ **Et C057 reste un appel honnête malgré ça** : il porte sur le PRIX, pas sur l'opportunité.
+> *Le résoudre VRAI sans avoir acheté ne sera pas une contradiction — ce sera la preuve que les
+> deux questions étaient bien distinctes.*

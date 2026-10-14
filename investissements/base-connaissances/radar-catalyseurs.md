@@ -2206,3 +2206,136 @@ Investing.com 46,35 € avec une veille incohérente)*.
 ### Les autres : emeis *(rachats hebdo, 50 000 titres à 10,0544 € de moyenne)* · Clariane
 *(franchissement de 10 % par René Holecek, déclaré à l'AMF le 12/10 — **déclaration
 d'ACTIONNAIRE, pas fait émetteur**)* · Fagron *(déjà traité)* · Vetoquinol, IBA : **rien**.
+
+---
+
+## 📜 14/10/2026 — CONTRAT DE FAST-TRACK STM, écrit AVANT que le seuil se déclenche
+**STM est à −7,82 % de son seuil de 42 €. Le fast-track de la routine se déclenche sous ~5 %.**
+*Nous n'y sommes pas. C'est exactement pour ça que je l'écris maintenant* — **le moment où un
+seuil se déclenche est celui où l'improvisation est la plus dangereuse, et le seul où je n'aurai
+pas le temps de réfléchir.**
+
+### Les DEUX conditions, conjointes et toutes deux nécessaires
+| # | Condition | Comment je la teste |
+|---|---|---|
+| **1** | **Clôture STMPA ≤ 42,00 €** sur Euronext **Paris** | OHLC complet ou horodatage de fin de séance. ⚠️ **Les cotations Lang & Schwarz sont des intra-séances d'une AUTRE place — rejetées** *(le piège s'est présenté deux fois)* |
+| **2** | **La baisse est PROPRE À STM** | **STM sous-performe ASML de ≥ 5 points depuis le 09/10** *(base : STM 46,545 € · ASML 1 601,60 €, premières clôtures certifiées simultanées)* |
+
+> **Pourquoi 5 points, choisi MAINTENANT et non le jour venu** *(㉚)* : *une divergence de
+> 5 points sur ~3 semaines dépasse le bruit de co-mouvement entre deux semi-conducteurs sans
+> exiger une catastrophe.* **C'est un choix raisonné, et il est daté d'avant le test.**
+> ⚠️ **Faiblesse assumée du comparateur** : **ASML est un ÉQUIPEMENTIER, pas un fabricant de
+> puces.** *Le bon pair serait Infineon — qui cote à Francfort, place dont je n'obtiens rien.*
+> **ASML est mon seul comparateur priçable. Je l'utilise en le disant, plutôt que de prétendre
+> avoir le bon.**
+
+### 🔢 L'ORDRE, entièrement pré-calculé
+```
+Plafond de ligne L = min(5 % × (V + 6 000) ; 15 % × V)
+avec V = cœur PEA certifié = 182 × 7,2490 € = 1 319,32 €
+→ L = min(365,97 ; 197,90) = 197,90 €        (jambe mordante : 15 % × V)
+
+à 42 € :  3 titres = 126 € ✅ · 4 titres = 168 € ✅ · 5 titres = 210 € ❌ dépasse L
+```
+**➡️ PROPOSITION : 4 titres STMPA, soit ~168 €, en ordre LIMITÉ à 42,00 €, validité Jour.**
+**Et ces 168 € sont PRÉLEVÉS sur les 500 € du mois, pas ajoutés.** *Son budget est de 500 €/mois ;
+supposer de la trésorerie disponible serait inventer une ressource.* **Reste pour le cœur :
+332 € ≈ 45 parts de WPEA.** *Total du mois ≤ 500 € → le ticket de courtage gratuit est préservé.*
+
+> 🛑 **Si la condition 2 échoue, il n'y a PAS d'ordre** — même si le prix est atteint. *Un actif
+> qui suit son secteur est justement revalorisé, pas bradé. Et le seuil de 42 € a été posé pour
+> capter une inefficience, pas une baisse de marché.*
+> 🔑 **Ce que ce contrat empêche concrètement** : *le jour où STM clôturera à 41,80 €, je serai
+> tenté de trouver une raison d'acheter. Ce document-là aura été écrit avant la tentation.*
+
+---
+
+# 🔔 14/10/2026 — LE FAST-TRACK S'EST DÉCLENCHÉ, ET LE CONTRAT A DIT NON
+
+## Le seuil de déclenchement est franchi
+**STM clôture à 43,835 € le 13/10** *(−3,80 %, horodatage 17h35, fourchette 44,955/42,930,
+et la veille affichée à 45,565 € coïncide EXACTEMENT avec ma référence du 12/10 — triple
+recoupement)*. **Seuil 42 € : −4,19 %. Sous les ~5 % → le fast-track de la routine se déclenche.**
+*Quatrième séance de baisse consécutive.*
+
+## ❌ CONDITION COMPAGNE : ÉCHEC, et par une marge écrasante
+**Le test que j'ai écrit CE MATIN, sans connaître la clôture d'ASML du 13/10 :**
+```
+STM   09/10  46,545 €  →  13/10  43,835 €   =  −5,82 %
+ASML  09/10 1 601,60 € →  13/10 1 509,60 €  =  −5,74 %
+                              divergence  =  −0,08 point
+                              seuil exigé  =  ≥ 5 points de sous-performance
+```
+> 🔑 **0,08 point contre 5 exigés. La baisse de STM est SECTORIELLE, à 0,08 point près.**
+> **➡️ PAS D'ORDRE, même si 42 € est touché.** *Un actif qui suit son secteur au centième est
+> justement revalorisé, pas bradé.*
+> ✅ **Et voici pourquoi ce matin compte** : *j'ai fixé le seuil à 5 points sans connaître le
+> résultat, et la mesure est tombée à 0,08.* **Si j'avais improvisé aujourd'hui — STM en baisse
+> quatre séances d'affilée, à 4 % de mon seuil — j'aurais cherché une raison d'acheter.**
+> *Le contrat a été écrit avant la tentation, et c'est la seule raison pour laquelle il tient.*
+
+## 🔺 C057 révisé 38 % → **55 %** *(et ça ne rend PAS STM achetable)*
+`distance −4,19 % · 17 j · σ 9,71 % · z −0,431` → terminal **33,3 %**, touche continue **66,6 %**.
+**Retenu 55 %** : abattement pour une barrière observée **en clôture** sur ~12 séances seulement,
+et non en continu.
+> 🔑 **LE POINT QUI COMPTE : C057 et la décision d'achat DIVERGENT maintenant pour de bon.**
+> *La probabilité de TOUCHER 42 € monte vite (38 → 55 %) pendant que la condition d'ACHAT échoue
+> de façon écrasante.* **C'est exactement la séparation que j'ai construite le 12/10, et elle est
+> désormais visible dans les chiffres.** *Un seuil de prix mesure une distance ; il ne dit pas
+> s'il faut acheter.*
+
+---
+
+# 📊 ASML T3 2026 — lecture appliquée selon le contrat du 12/10
+**Publié le 14/10 à 07h00 CEST**, année et date **vérifiées dans l'URL** sur deux hôtes.
+**➡️ L'heure annoncée par mes deux agendas est CONFIRMÉE** *(à la nuance CEST/CET près)*.
+
+| Grandeur | Guidance d'ASML elle-même | Réalisé T3 | Verdict vs SA guidance |
+|---|---|---|---|
+| CA net | **11,0 – 12,0 Md€** | **11 662 M€** | **tenue**, moitié haute |
+| Marge brute | 55 – 57 % *(ma référence, non recoupée)* | **57,5 %** | **au-dessus** |
+| Résultat net | — | **4 960 M€** · BPA **12,95 €** *(7,59 € au T2)* | — |
+| **Guidance annuelle 2026** | T2 : **43 – 45 Md€** / 54 – 56 % | **44 – 45 Md€** / « environ 56 % » | **voir ci-dessous** |
+| Guidance T4 | — | **14,2 – 15,2 Md€**, marge ~57 % | — |
+
+## 🔴 MON CONTRAT AVAIT DEUX CLAUSES DÉFECTUEUSES — et il a quand même tenu
+**(1) La guidance n'est ni ABAISSÉE ni RELEVÉE : elle est RESSERRÉE VERS LE HAUT.**
+*Plancher 43 → 44 Md€ · plafond inchangé à 45 · marge brute pointée au HAUT de l'ancienne
+fourchette.* **Mon contrat prévoyait trois cas — abaissée / relevée / confirmée — et la réalité
+en a pris un quatrième.** *C'est ㊽ pour la troisième fois : une consigne écrite pour n cas voit
+le cas n+1.*
+
+**(2) La clause sur les PRISES DE COMMANDES était INAPPLICABLE dès son écriture.**
+**ASML ne publie plus les prises de commandes trimestrielles** — dernier trimestre publié : le
+**T4 2025** *(13 158 M€)*, et le carnet total est passé en publication **annuelle**.
+> 🔴 **J'ai fait d'un chiffre qui n'existe plus un critère de test.** *C'est ㉙ — vérifier qu'une
+> proposition est CONSTRUCTIBLE — appliqué non pas à un appel mais à une CLAUSE DE CONTRAT. Et
+> c'est l'espèce « objet inexistant » de ㊹, la même que la clôture d'OAT que j'ai cherchée des
+> semaines.* **Avant de faire d'un chiffre un critère, vérifier que l'émetteur le publie encore.**
+
+> ✅ **ET POURTANT LE CONTRAT A FAIT SON TRAVAIL** — grâce à sa **clause résiduelle** :
+> *« ni l'un ni l'autre → je ne touche pas à C057 »*. **C'est cette ligne, et elle seule, qui
+> m'évite d'interpréter un resserrement comme une bonne ou une mauvaise nouvelle selon
+> l'humeur.** *Deux critères sur deux étaient défectueux, et le défaut par défaut a sauvé la
+> lecture.*
+
+## 🆕 R51 — tout contrat de lecture porte une CLAUSE RÉSIDUELLE explicite
+> **« Si aucun cas prévu ne se réalise, je ne change RIEN. »** *La réalité prendra une branche
+> non prévue — c'est arrivé trois fois en sept jours. Le défaut doit donc être l'INACTION, pas
+> l'interprétation.*
+*(Note de notation : les glyphes cerclés s'arrêtent à ㊿ = 50. Les règles suivantes sont
+numérotées R51, R52, etc.)*
+
+## 📌 Ce qu'ASML dit, et ce que je refuse d'en conclure
+**Capacité +30 % en 2027 et +30 % en 2028, et la société dit que ça NE SUFFIRA PAS** à couvrir la
+demande ; clients demandant à commander pour **2029-2030** ; NXE:3800F en 2027 à 260 plaquettes/h.
+**Aucune guidance de CA 2027** — rien qu'en capacité.
+> ⚠️ **Fait brut que je rapporte sans l'expliquer** : *le secteur a perdu ~5,7 % dans les QUATRE
+> séances qui ont PRÉCÉDÉ cette publication* — laquelle décrit une demande supérieure à l'offre
+> jusqu'en 2028. **Je ne sais pas ce qui a fait baisser le secteur, et je ne l'invente pas.** *Ce
+> que je peux dire : ce n'était pas les fondamentaux d'ASML.*
+## 🪤 Le piège que j'avais interdit s'est présenté, et il a été rejeté DEUX fois
+Un article *« ASML Backlog Hits 2027 as Bookings Double Estimates »* remonte sur le T3 2026.
+**Il est daté du 29 janvier 2026 et porte sur le T4 2025** *(13,2 Md€ contre un consensus de
+6,85)*. **Mauvais trimestre ET comparatif au consensus** — les deux choses que mon contrat
+interdisait nommément. *Écarté.*
