@@ -126,6 +126,9 @@ footer.pg{color:var(--faint);font-size:12px;max-width:90ch}
 </header>
 <div class="stats" id="stats"></div>
 <div class="bar">
+  <div class="seg" id="sort" role="group" aria-label="Tri">
+    <button data-s="new">🆕 Récentes</button><button data-s="fit">Par fit</button>
+  </div>
   <div class="chips" id="chips"></div>
   <label class="search"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" placeholder="Poste, entreprise, lieu…" aria-label="Recherche"></label>
 </div>
@@ -186,8 +189,9 @@ function card(o,i){
   <div class="foot"><span class="meta">Brief n°${o.b} · ${fdate(o.d)}</span>${link}</div>
  </article>`}
 const FILTERS=[["all","Toutes"],["cible","🎯 Cibles"],["solide","✅ Solides"],["avoir","👀 À voir"],["suivi","📌 Suivies"],["genai","✦ GenAI"],["fermee","Fermées"]];
-let state={f:'all',q:''};
+let state={f:'all',q:'',sort:'new'};
 try{const s=localStorage.getItem('veille-f');if(s&&FILTERS.some(x=>x[0]===s))state.f=s}catch(e){}
+try{const s=localStorage.getItem('veille-sort');if(['new','fit'].includes(s))state.sort=s}catch(e){}
 function match(o){
  if(state.q){const q=state.q.toLowerCase();if(!(o.t+' '+o.c+' '+o.l+' '+(o.n||'')).toLowerCase().includes(q))return false}
  switch(state.f){
@@ -204,6 +208,10 @@ function render(){
  const sorted=[...DATA.offres].sort((a,b)=>{
   if((a.st==='fermee')!==(b.st==='fermee'))return a.st==='fermee'?1:-1;
   const wa=(SC[a.s]||SC.avoir).w,wb=(SC[b.s]||SC.avoir).w;
+  if(state.sort==='new'){
+   if(a.d!==b.d)return a.d<b.d?1:-1;
+   if((a.b||0)!==(b.b||0))return (b.b||0)-(a.b||0);
+   return wb-wa}
   if(wa!==wb)return wb-wa;
   return a.d<b.d?1:-1});
  const vis=sorted.filter(match);
@@ -282,6 +290,14 @@ document.getElementById('seg').addEventListener('click',e=>{
  const b=e.target.closest('button');if(b)applyTheme(b.dataset.t)});
 let th='auto';try{const s=localStorage.getItem('veille-theme');if(['auto','light','dark'].includes(s))th=s}catch(e){}
 applyTheme(th);
+/* Tri : Récentes (dernières sorties d'abord) ou Par fit (score puis date). */
+function applySort(s){
+ state.sort=s;
+ document.querySelectorAll('#sort button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.s===s)));
+ try{localStorage.setItem('veille-sort',s)}catch(e){}}
+document.getElementById('sort').addEventListener('click',e=>{
+ const b=e.target.closest('button');if(b){applySort(b.dataset.s);render()}});
+applySort(state.sort);
 document.getElementById('chips').addEventListener('click',e=>{
  const b=e.target.closest('.chip');if(!b)return;state.f=b.dataset.f;
  try{localStorage.setItem('veille-f',state.f)}catch(err){}

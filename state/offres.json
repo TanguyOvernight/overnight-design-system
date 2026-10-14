@@ -2700,6 +2700,84 @@
     "Langues et durée de la période d'essai non précisées"
    ],
    "at": "Marketing-comm généraliste avec production visuelle : bon fit si le poste est bien à Lausanne et sans allemand."
+  },
+  {
+   "d": "2026-10-14",
+   "b": 46,
+   "st": "ouverte",
+   "cl": false,
+   "s": "cible",
+   "suivi": true,
+   "depuis": "2026-10-14",
+   "t": "Chargé·e de communication à 80 %",
+   "c": "OurFrame",
+   "l": "Lausanne (et Genève) · télétravail possible",
+   "dist": "Lausanne",
+   "tx": "80%",
+   "ct": "CDI",
+   "xp": "non chiffrée (Mid-Senior)",
+   "lg": "FR + EN excellents (rédaction autonome dans les deux)",
+   "g": false,
+   "dl": "2026-10-23",
+   "u": "https://ch.linkedin.com/jobs/view/charg%C3%A9e-ou-charg%C3%A9-de-communication-%C3%A0-80-%25-at-ourframe-4479504106",
+   "n": "Média et production indépendante à but non lucratif (KAPAW, WaterBear) : récits d'intérêt général + sciences du comportement. Candidature par e-mail avant le 23.10, portfolio très apprécié.",
+   "fit": {
+    "m": 2,
+    "da": 2,
+    "ia": 1,
+    "pct": 88
+   },
+   "ms": [
+    "Déployer la stratégie de communication et tenir le calendrier éditorial",
+    "Créer textes, visuels et vidéos pour site, blog, LinkedIn, Instagram, YouTube, newsletter",
+    "Raconter projets, équipes et résultats de recherche",
+    "Animer les communautés, tests A/B et ajustements selon la performance",
+    "Selon les projets : communication autour d'événements"
+   ],
+   "inf": [
+    "CDI 80 %, entrée dès que possible, télétravail possible",
+    "FR + EN excellents à l'écrit et à l'oral",
+    "Création visuelle + montage vidéo court + analytics/A-B tests",
+    "Délai : 23.10 à 23h59",
+    "Événementiel secondaire, pas dominant"
+   ],
+   "at": "Le poste demande exactement ta combinaison : stratégie éditoriale + production visuelle et vidéo + pilotage par la donnée, en bilingue FR/EN. Envoie un portfolio de contenus et quelques résultats chiffrés."
+  },
+  {
+   "d": "2026-10-14",
+   "b": 46,
+   "st": "ouverte",
+   "cl": false,
+   "s": "avoir",
+   "t": "Spécialiste Marketing Digital",
+   "c": "Banque Cantonale Vaudoise",
+   "l": "Lausanne",
+   "dist": "Lausanne",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "5 à 7 ans",
+   "lg": "EN très bon · DE atout",
+   "g": false,
+   "dl": null,
+   "u": "https://www.jobs.ch/fr/offres-emplois/detail/1b360ad5-2296-4495-9808-d6ef3e3510f0/",
+   "n": "Publiée le 14.10. Marketing digital bancaire orienté funnel et canaux internes (BCV Mobile, BCV-net).",
+   "fit": {
+    "m": 2,
+    "da": 0,
+    "ia": 0,
+    "pct": 52
+   },
+   "ms": [
+    "Piloter la stratégie de croissance sur tout le funnel",
+    "Campagnes sur les canaux internes, KPIs et tracking",
+    "Coordonner IT, juridique, sécurité et prestataires"
+   ],
+   "inf": [
+    "⚠️ 5 à 7 ans exigés",
+    "AEM, Adobe Target, Adobe Analytics",
+    "Profil performance/CRM plus que créa"
+   ],
+   "at": "Ton expérience funnel et automatisation est pertinente ; l'écart est sur les années et l'outillage Adobe Experience."
   }
  ]
 }
