@@ -186,6 +186,11 @@
    "date": "2026-10-13",
    "source": "jobs.ch API + jobup API détail",
    "etat": "403 sur toutes les requêtes jobs.ch, 17/22 détails jobup en 403"
+  },
+  {
+   "date": "2026-10-14",
+   "source": "jobs.ch API",
+   "etat": "403 (2e jour) ; jobup détail 17/39 en 403 ; LinkedIn 429 intermittent"
   }
  ]
 }

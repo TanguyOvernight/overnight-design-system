@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-10-13",
+ "maj": "2026-10-14",
  "offres": [
   {
    "d": "2026-10-03",
@@ -784,7 +784,7 @@
    "d": "2026-09-29",
    "b": 31,
    "s": "avoir",
-   "st": "ouverte",
+   "st": "fermee",
    "t": "Packaging Artwork Coordinator",
    "c": "Albedis (client final CPG)",
    "l": "Étoy",
@@ -792,7 +792,7 @@
    "ct": "Mission 8 mois",
    "xp": "n.p.",
    "u": "https://www.jobup.ch/fr/emplois/detail/cea0fdc4-fdb7-40ea-9d42-b76eafbab621/",
-   "n": "Artwork/packaging, Adobe Acrobat. Anglais courant exigé. ♻️ Republiée le 09.10 (nouvelle annonce, visible jusqu'au 12.10) — lien mis à jour.",
+   "n": "Artwork/packaging, Adobe Acrobat. Anglais courant exigé. ♻️ Republiée le 09.10 (nouvelle annonce, visible jusqu'au 12.10) — lien mis à jour. ❌ Fermée au re-check du 14.10 (jobup 410, fin de publication 12.10).",
    "g": false,
    "cl": false,
    "dl": "2026-10-12",
@@ -2129,7 +2129,7 @@
   {
    "d": "2026-10-07",
    "b": 39,
-   "st": "ouverte",
+   "st": "fermee",
    "cl": false,
    "s": "avoir",
    "t": "Visual Communications Specialist (100%)",
@@ -2143,7 +2143,7 @@
    "u": "https://www.jobup.ch/fr/emplois/detail/cea0fdc4-fdb7-40ea-9d42-b76eafbab621/",
    "g": false,
    "dl": "2026-10-12",
-   "n": "Cabinet de recrutement Albedis pour « une organisation internationale prestigieuse à la croisée du business, du savoir et du leadership mondial » à Lausanne. Annonce publiée le 06.10, fin de publication le 09.10. Client non nommé — profil « business, savoir, leadership mondial » à Lausanne : probablement une école/institution internationale (déduction, non confirmée). ♻️ Republiée le 09.10 (nouvelle annonce, visible jusqu'au 12.10) — lien mis à jour.",
+   "n": "Cabinet de recrutement Albedis pour « une organisation internationale prestigieuse à la croisée du business, du savoir et du leadership mondial » à Lausanne. Annonce publiée le 06.10, fin de publication le 09.10. Client non nommé — profil « business, savoir, leadership mondial » à Lausanne : probablement une école/institution internationale (déduction, non confirmée). ♻️ Republiée le 09.10 (nouvelle annonce, visible jusqu'au 12.10) — lien mis à jour. ❌ Fermée au re-check du 14.10 (jobup 410, fin de publication 12.10).",
    "fit": {
     "m": 1,
     "da": 2,
