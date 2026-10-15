@@ -100,8 +100,8 @@
 #t-classement :is(th, td):nth-child(5) { text-align: right; }
 .bi-outro { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.6; }
 .bi-outro li { margin-bottom: var(--cds-gap-xs); }
-#t-estimation :is(th, td):nth-child(2), #t-estimation :is(th, td):nth-child(3),
-#t-estimation :is(th, td):nth-child(4) { text-align: right; }
+#t-2026 :is(th, td):nth-child(2), #t-2026 :is(th, td):nth-child(3),
+#t-2026 :is(th, td):nth-child(4), #t-2026 :is(th, td):nth-child(5) { text-align: right; }
 .bi-estim { border-left: 3px solid var(--cds-chart-muted); }
 .bi-estim .bi-k { color: var(--color-warn); }
 
@@ -112,7 +112,7 @@
   #t-positions :is(th, td):nth-child(2), #t-positions :is(th, td):nth-child(3),
   #t-comptes :is(th, td):nth-child(2),
   #t-classement :is(th, td):nth-child(3), #t-classement :is(th, td):nth-child(4),
-  #t-estimation :is(th, td):nth-child(3), #t-estimation :is(th, td):nth-child(5) { display: none; }
+  #t-2026 :is(th, td):nth-child(2), #t-2026 :is(th, td):nth-child(3) { display: none; }
   .bi-leg { gap: var(--cds-gap-sm) var(--cds-gap-md); }
   .bi-sec { margin-top: var(--cds-gap-lg); }
 }
@@ -220,57 +220,56 @@
     </div>
   </section>
 
-  <section class="bi-sec" id="estimation">
-    <h2 class="bi-h2">Combien tu as gagné en 2026 — estimation</h2>
-    <p class="bi-lead">Tu me l'as demandé trois fois, donc le voici, avec sa fourchette et la méthode
-      en clair. Ce bloc est le seul de la page qui ne repose pas uniquement sur tes relevés.</p>
+  <section class="bi-sec" id="annee2026">
+    <h2 class="bi-h2">Ton année 2026</h2>
+    <p class="bi-lead">Chiffres réels, reconstitués semaine par semaine à partir des cours de chacune
+      de tes lignes et du taux de change de chaque semaine. Ce ne sont plus des estimations.</p>
 
-    <div class="bi-card bi-estim">
-      <div class="bi-k">Estimation — pas une mesure</div>
-      <div class="bi-big dash-skeleton" data-source="estimation_totale" data-field="gain" data-row="0">—</div>
-      <div class="bi-note">Fourchette :
-        <span class="dash-skeleton" data-source="estimation_totale" data-field="gain_bas" data-row="0">—</span>
-        à <span class="dash-skeleton" data-source="estimation_totale" data-field="gain_haut" data-row="0">—</span>.</div>
-      <div class="bi-txt" style="margin-top: var(--cds-gap-md);">
-        Ce que ça veut dire : sur tes
-        <span class="dash-skeleton" data-source="perf_totale" data-field="pv" data-row="0">—</span>
-        de plus-value,
-        <b class="dash-skeleton" data-source="estimation_totale" data-field="avant" data-row="0">—</b>
-        ont été gagnés <b>avant</b> 2026, soit
-        <span class="dash-skeleton" data-source="estimation_totale" data-field="part_avant" data-row="0">—</span>
-        du total. <b>Cette conclusion tient d'un bout à l'autre de ma fourchette.</b>
+    <div class="bi-grid">
+      <div class="bi-card bi-gain">
+        <div class="bi-k">Gagné depuis le 2 janvier</div>
+        <div class="bi-big dash-skeleton" data-source="annee_2026" data-field="gain" data-row="0">—</div>
+        <div class="bi-note">Le reste de ta plus-value vient d'avant 2026 :
+          <span class="dash-skeleton" data-source="annee_2026" data-field="avant" data-row="0">—</span>,
+          soit <span class="dash-skeleton" data-source="annee_2026" data-field="part_avant" data-row="0">—</span>
+          du total.</div>
+      </div>
+      <div class="bi-card bi-alert">
+        <div class="bi-k">Le pire moment de ton année</div>
+        <div class="bi-big dash-skeleton" data-source="annee_2026" data-field="creux" data-row="0">—</div>
+        <div class="bi-note">Ton portefeuille est descendu à
+          <span class="dash-skeleton" data-source="annee_2026" data-field="plus_bas" data-row="0">—</span>
+          le <span class="dash-skeleton" data-source="annee_2026" data-field="date_plus_bas" data-row="0">—</span>,
+          contre <span class="dash-skeleton" data-source="annee_2026" data-field="debut" data-row="0">—</span>
+          au 2 janvier. Tu es remonté depuis.</div>
       </div>
     </div>
 
     <div class="bi-card" style="margin-top: var(--cds-gap-md);">
-      <div class="bi-k">Ligne par ligne</div>
+      <div class="bi-k">Valeur de ton portefeuille, semaine par semaine</div>
+      <div class="bi-chartwrap">
+        <div class="bi-chart bi-tall dash-skeleton" id="ch-2026" data-source="portefeuille_2026"></div>
+      </div>
+      <div class="bi-note">Le PEA n'apparaît qu'à partir du 2 octobre : tu ne l'avais pas avant.</div>
+    </div>
+
+    <div class="bi-card" style="margin-top: var(--cds-gap-md);">
+      <div class="bi-k">Ligne par ligne, du 2 janvier au 9 octobre</div>
       <div class="bi-tablebox">
-        <table class="bi-table" id="t-estimation" data-source="estimation" data-row-key="ligne">
+        <table class="bi-table" id="t-2026" data-source="perf_2026" data-row-key="ticker">
           <thead><tr>
             <th data-field="ticker">Ligne</th>
-            <th data-field="ytd_pct">2026</th>
-            <th data-field="valeur_jan">Au 1<sup>er</sup> janv.</th>
-            <th data-field="gain">Gain 2026</th>
-            <th data-field="ancrage">Sur quoi je m'appuie</th>
+            <th data-field="valeur_jan">2 janv.</th>
+            <th data-field="valeur_oct">9 oct.</th>
+            <th data-field="gain_eur">Gain</th>
+            <th data-field="perf_pct">Perf.</th>
           </tr></thead>
           <tbody></tbody>
         </table>
       </div>
-    </div>
-
-    <div class="bi-card" style="margin-top: var(--cds-gap-md);">
-      <div class="bi-k">Ce qui peut rendre ces chiffres faux</div>
-      <ul class="bi-outro">
-        <li><b>Je suppose que tu détenais les mêmes quantités depuis janvier.</b> Si tu as acheté ou
-          vendu en cours d'année, tout le bloc est faux. C'est l'hypothèse la plus lourde.</li>
-        <li><b>Le change.</b> Tes lignes eToro sont affichées en euros mais cotent en dollars. Sans
-          taux de change officiel, un mouvement de l'euro de quelques pour cent déplace le résultat
-          d'autant que le gain lui-même.</li>
-        <li><b>Mes sources s'arrêtent entre juin et septembre</b> et se contredisent. Le MSCI World
-          est le point faible : plus rien après le 30 juin.</li>
-        <li>Pour la vraie courbe, sans aucune de ces hypothèses : la performance affichée par eToro
-          et par Fortuneo sur la période de ton choix. Une capture de chacune et je la mets ici.</li>
-      </ul>
+      <div class="bi-note">Tout est converti en euros au taux de chaque semaine. L'euro a perdu 4,7 %
+        face au dollar cette année, ce qui a gonflé la valeur en euros de tes lignes américaines :
+        c'est une vraie part de ton gain.</div>
     </div>
   </section>
 
@@ -473,32 +472,17 @@ dash.calc("perf_totale", {
   }
 });
 
-dash.calc("estimation", {
-  title: "Estimation du gain 2026 par ligne",
-  description: "Valeur au 1er janvier = valeur d'aujourd'hui ÷ (1 + performance 2026). Le gain est la différence. La fourchette applique les bornes basse et haute de la performance. Suppose que la quantité détenue n'a pas changé depuis janvier.",
-  inputs: ["estimation_2026", "positions"],
-  fn: function (estimation_2026, positions) {
-    var gain = function (v, y) { return v - v / (1 + y / 100); };
-    return estimation_2026.filter(function (e) { return e.ytd_pct !== ""; }).map(function (e) {
-      var pos = positions.filter(function (p) { return p.ligne === e.ligne; })[0] || {};
-      var v = Number(pos.valeur_eur);
-      return { ligne: e.ligne, ticker: pos.ticker || e.ligne, ancrage: e.ancrage,
-        ytd_pct: Number(e.ytd_pct), valeur: v, valeur_jan: v / (1 + Number(e.ytd_pct) / 100),
-        gain: gain(v, Number(e.ytd_pct)),
-        gain_bas: gain(v, Number(e.ytd_bas)), gain_haut: gain(v, Number(e.ytd_haut)) };
-    });
-  }
-});
-
-dash.calc("estimation_totale", {
-  title: "Gain 2026 estimé, et part gagnée avant 2026",
-  description: "Somme des gains estimés de chaque ligne, avec sa fourchette, puis la part de la plus-value totale qui a été gagnée avant 2026.",
-  inputs: ["estimation", "perf_totale"],
-  fn: function (estimation, perf_totale) {
-    var s = function (k) { return estimation.reduce(function (a, e) { return a + e[k]; }, 0); };
-    var g = s("gain"), pv = perf_totale[0].pv;
-    return [{ gain: g, gain_bas: s("gain_bas"), gain_haut: s("gain_haut"),
-      avant: pv - g, part_avant: pv ? (pv - g) / pv * 100 : null }];
+dash.calc("annee_2026", {
+  title: "Ton année 2026",
+  description: "Gain 2026 = somme des gains de chaque ligne. Le creux est le point le plus bas de la valeur du portefeuille comparé à sa valeur du 2 janvier. La part gagnée avant 2026 est la plus-value totale moins le gain 2026.",
+  inputs: ["perf_2026", "portefeuille_2026", "perf_totale"],
+  fn: function (perf_2026, portefeuille_2026, perf_totale) {
+    var gain = perf_2026.reduce(function (a, r) { return a + Number(r.gain_eur); }, 0);
+    var v = portefeuille_2026.map(function (r) { return Number(r.valeur_eur); });
+    var i = v.indexOf(Math.min.apply(null, v)), pv = perf_totale[0].pv;
+    return [{ gain: gain, debut: v[0], fin: v[v.length - 1],
+      plus_bas: v[i], date_plus_bas: portefeuille_2026[i].date, creux: v[i] - v[0],
+      avant: pv - gain, part_avant: pv ? (pv - gain) / pv * 100 : null }];
   }
 });
 
@@ -919,19 +903,33 @@ dash.calc("stm_ecart", {
       function (r) { var o = perfDe(r.ligne); return o.perf_pct == null ? "—" : B.pct(o.perf_pct); }
     ], function (r) { return r.ligne; });
 
-    one("estimation_totale", "gain", function (v) { return B.eurs(v); });
-    one("estimation_totale", "gain_bas", function (v) { return B.eurs(v); });
-    one("estimation_totale", "gain_haut", function (v) { return B.eurs(v); });
-    one("estimation_totale", "avant", function (v) { return B.eurs(v); });
-    one("estimation_totale", "part_avant", function (v) { return B.pctp(v); });
+    one("annee_2026", "gain", function (v) { return B.eurs(v); });
+    one("annee_2026", "avant", function (v) { return B.eurs(v); });
+    one("annee_2026", "part_avant", function (v) { return B.pctp(v); });
+    one("annee_2026", "creux", function (v) { return B.eurs(v); });
+    one("annee_2026", "plus_bas", function (v) { return B.eur(v); });
+    one("annee_2026", "debut", function (v) { return B.eur(v); });
+    one("annee_2026", "date_plus_bas", function (v) { return B.fmtDate(v); });
 
-    fillTable("#t-estimation", ok("estimation") ? rowsOf("estimation") : [], [
+    fillTable("#t-2026", ok("perf_2026") ? rowsOf("perf_2026") : [], [
       function (r) { return r.ticker; },
-      function (r) { return B.pct(r.ytd_pct); },
-      function (r) { return B.eur(r.valeur_jan); },
-      function (r) { return B.eurs(r.gain); },
-      function (r) { return r.ancrage; }
-    ], function (r) { return r.ligne; });
+      function (r) { return B.eur(Number(r.valeur_jan)); },
+      function (r) { return B.eur(Number(r.valeur_oct)); },
+      function (r) { return B.eurs(Number(r.gain_eur)); },
+      function (r) { return B.pct(Number(r.perf_pct)); }
+    ], function (r) { return r.ticker; });
+
+    var ah = document.getElementById("ch-2026");
+    if (ok("portefeuille_2026")) {
+      ah.classList.remove("dash-skeleton");
+      drawSeries("ch-2026", [{
+        nom: "Portefeuille", couleur: dash.colors[0],
+        pts: rowsOf("portefeuille_2026").map(function (r) {
+          return { d: B.parseDay(r.date), v: Number(r.valeur_eur) };
+        }).filter(function (o) { return !isNaN(o.v) && !isNaN(o.d); })
+      }], { fmtY: function (v) { return B.eur(v, 0); }, height: 260,
+            aria: "Valeur du portefeuille en euros, semaine par semaine en 2026" });
+    } else { ah.classList.add("dash-skeleton"); ah.textContent = ""; }
 
     var ph = document.getElementById("ch-perf");
     if (ok("perf")) { ph.classList.remove("dash-skeleton"); drawPerf(visibles(perf)); }

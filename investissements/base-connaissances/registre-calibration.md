@@ -3681,3 +3681,64 @@ mineure, mais la forme est la bonne.
 **Reste ouvert sur cette ligne** : la **valeur** de 5,44 € est toujours déduite
 par différence *(977,47 − 970,21 − 1,82)*, jamais lue. Le nom est confirmé, pas
 le montant. Elle se recalera à la prochaine capture eToro complète.
+
+---
+
+## 15/10/2026 (nuit) — MON ESTIMATION ÉTAIT HORS DE MA PROPRE FOURCHETTE
+
+Canal Google Sheets ouvert → données réelles → **mon estimation publiée deux
+heures plus tôt est fausse.**
+
+```
+Estimé    : +58,54 €   fourchette annoncée +5,80 à +97,56
+RÉEL      : +130,26 €
+Erreur    : +71,72 €   — AU-DESSUS DE LA BORNE HAUTE
+```
+
+**Une fourchette qui ne contient pas la vérité n'est pas une fourchette.** C'est
+le pire défaut de calibration possible : pas « je me suis trompé », mais « je me
+suis trompé en ayant annoncé que je ne pouvais pas me tromper autant ».
+
+### Les deux causes, et la seconde est la grave
+
+**1. Les sources web étaient fausses.** MSFT : j'estimais +9,6 %, la réalité est
+**+18,43 %** en euros. Mes quatre sources donnaient +1,3 / −4,6 / −20,1 / −27,0 %.
+**Aucune n'était juste.** Je les avais traitées comme un nuage à moyenner ; c'était
+un nuage de bruit.
+
+**2. J'ai exclu le change de ma fourchette alors que je l'avais identifié.**
+EUR/USD est passé de **1,1727 à 1,1203** : le dollar a pris **+4,68 %**. Sur
+~870 € d'actifs en dollars, cela fait **~+40 €** — à lui seul, les deux tiers de
+mon erreur. J'avais écrit noir sur blanc : *« un mouvement de l'euro de quelques
+pour cent déplace le résultat d'autant que le gain lui-même »*. **Je l'ai écrit
+dans les mises en garde et je ne l'ai pas mis dans les bornes.**
+
+> **Une incertitude nommée dans le texte mais absente du calcul n'est pas prise
+> en compte.** C'est exactement la **règle 52** — « à confirmer » qui n'alimente
+> aucun calcul — appliquée cette fois à une fourchette. **Deuxième fois en un
+> jour, même faute de structure.**
+
+### Et ma « conclusion robuste » était fausse aussi
+
+J'avais écrit : *« sur tes +211 €, ~153 € ont été gagnés avant 2026, et cette
+conclusion tient d'un bout à l'autre de ma fourchette »*.
+
+**Réalité : 81 € avant 2026, soit 38 % — pas 72 %.** La majorité de sa
+plus-value a été faite **en 2026**, l'inverse de ce que j'ai publié.
+
+Le test que j'avais inventé — *« ma conclusion survit-elle à toute ma
+fourchette ? »* — **est bon**. Mais il ne vaut que si la fourchette contient la
+vérité. **Un test de robustesse appliqué à un intervalle faux fabrique de la
+confiance, il n'en mesure pas.** Je m'en étais servi pour justifier de publier.
+
+### Ce que ça coûte au registre
+
+Aucun appel formel n'était ouvert sur cette estimation — **et c'est encore le
+problème** *(déjà noté ce matin : mes appels portent sur le monde, jamais sur mon
+propre dossier)*. Si j'avais ouvert « mon estimation 2026 tombe dans ma
+fourchette » à 80 %, j'aurais encaissé un **Brier de 0,64**, le pire de l'année.
+
+**Appel ouvert — C065** : *« à la prochaine vérification d'une de mes fourchettes
+par une source dure, la vérité y sera »* — **60 %**. Délibérément sous mon
+niveau de confiance habituel : je viens d'apprendre que mes intervalles sont trop
+étroits.
