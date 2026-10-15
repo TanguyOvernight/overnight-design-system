@@ -71,9 +71,9 @@ vaut mieux qu'un chiffre inventé.
 - **TRANCHÉ le 15/10** : le cœur PEA fait **70 parts / 501,69 €**, pas 182 parts.
   Tanguy avait raison, mon registre était faux. Les jeux `lectures` et
   `versements` ont été supprimés de l'artefact, l'ambiguïté n'existe plus.
-- **C064 — la 6e ligne eToro** *(5,44 €, hors écran sur la capture)* est
-  probablement Renault, sans lecture directe. À confirmer sur une capture
-  complète.
+- **C064 RÉSOLU VRAI le 15/10** : la 6e ligne eToro est bien **Renault**,
+  confirmé par Tanguy. ⚠️ Sa **valeur** (5,44 €) reste déduite par différence et
+  n'a jamais été lue — à recaler sur la prochaine capture eToro complète.
 - **Les frais d'un ordre hors ticket gratuit** chez Fortuneo viennent d'une
   source secondaire *(≈1,75 €, grille du 09/02/2026)*. Toute la recommandation
   d'investir le cash tout de suite bascule si l'ordre coûte plus de ~7 €.

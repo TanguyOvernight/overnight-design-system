@@ -34,11 +34,13 @@ PRU **7,082 €** · cours **7,167 €** *(relevé 17:29, avant clôture)* · va
 | Nvidia | NVDA | 204,79 € | +70,85 € | Risqué |
 | Tesla | TSLA | 165,07 € | −13,52 € | Risqué |
 | Microsoft | MSFT.RTH | 77,84 € | +21,59 € | Risqué |
-| **6e ligne — hors écran** | ? | **5,44 €** | ? | Risqué |
+| **Renault** | RNO | **5,44 €** *(déduite)* | ? | Risqué |
 
 La 6e ligne est **déduite par différence** (`977,47 − 970,21 − 1,82`). L'app
-annonce « Actifs (6) » et n'en montre que 5. C'était **Renault (RNO)** à 5,33 €
-sur la capture du 25/07 — cohérent, mais **non vérifié**. À confirmer.
+annonce « Actifs (6) » et n'en montre que 5. **Nom confirmé par Tanguy le 15/10 :
+Renault (RNO)** — cohérent avec les 5,33 € de la capture du 25/07 *(appel C064,
+annoncé à 72 %, résolu VRAI)*. ⚠️ **La valeur de 5,44 € reste déduite**, jamais
+lue : à recaler sur la prochaine capture eToro complète.
 
 ⚠️ Rappel fiscal : eToro = compte à l'étranger → **flat tax 31,4 %** et
 **formulaire 3916** obligatoire à la déclaration.

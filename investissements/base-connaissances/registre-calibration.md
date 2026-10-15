@@ -3642,3 +3642,42 @@ l'extérieur ne peut pas détecter une erreur intérieure.
 **Nouvel appel ouvert — C064** : *« la 6e ligne eToro hors écran est bien
 Renault »* — **72 %** *(cohérence de montant 5,44 € vs 5,33 € au 25/07, mais
 aucune lecture directe)*. Résolution : à la prochaine capture eToro complète.
+
+---
+
+## 15/10/2026 (soir, suite) — C064 RÉSOLU VRAI en quelques minutes
+
+**C064** : *« la 6e ligne eToro hors écran est bien Renault »* — annoncé à
+**72 %**. Tanguy : « C'est Renault effectivement ».
+
+`Brier = (0,72 − 1)² = ` **0,0784** — mon meilleur score individuel du mois.
+
+```
+REGISTRE COMPLET    : 21 → 22 résolus · Brier 0,2518 → 0,2439 · BSS −0,007 → +0,024
+SANS LES 3 APPELS   : 18 → 19 résolus · Brier 0,2794 → 0,2688 · BSS −0,118 → −0,075
+```
+
+*(Sommes reconstituées depuis les moyennes publiées, à ±0,01 près.)*
+
+> 🟢 **Pour la première fois depuis l'ouverture, le registre complet passe
+> au-dessus du hasard** *(BSS +0,024)*. À ne pas sur-lire : **un seul appel**
+> fait ce basculement, et la mesure qui compte — celle qui exclut les trois
+> appels méta sur les réponses de Tanguy — **reste négative à −0,075**. C'est la
+> même erreur de lecture que le 10/10, et je la nomme avant de la commettre :
+> *une statistique vraie peut être trompeuse.*
+
+### Ce que l'appel a coûté, et ce qu'il a rapporté
+
+Trois lignes pour l'ouvrir, une question dans ma réponse, résolution en
+quelques minutes. **Comparer avec les deux semaines passées à calculer sur
+182 parts.**
+
+La différence n'est pas la chance : c'est que cette fois **je n'ai pas écrit
+« probablement Renault » pour continuer à calculer dessus**. J'ai nommé
+l'incertitude, chiffré, et demandé. C'est exactement le geste que la **règle 52**
+réclamait, appliqué dans l'heure qui a suivi son écriture — sur une donnée
+mineure, mais la forme est la bonne.
+
+**Reste ouvert sur cette ligne** : la **valeur** de 5,44 € est toujours déduite
+par différence *(977,47 − 970,21 − 1,82)*, jamais lue. Le nom est confirmé, pas
+le montant. Elle se recalera à la prochaine capture eToro complète.
