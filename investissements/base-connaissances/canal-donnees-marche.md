@@ -160,3 +160,37 @@ fois.**
 > points, pas d'un choix fait une fois.** Le code qui allait bien pour quatre
 > clôtures hebdomadaires est devenu nuisible le jour où j'ai ouvert le canal
 > quotidien — la même ligne de code, un ordre de grandeur plus loin.
+
+## Zoom et échelles — ajoutés le 15/10 au soir
+
+**Gestes** : pince, molette ou glisser pour zoomer ; **double-clic pour revenir**,
+et un bouton « Dézoomer » qui n'apparaît que si le graphique l'est.
+
+**L'axe vertical se recale sur la fenêtre visible** *(bouton « S'adapte au
+zoom », par défaut)*. C'est le cœur : sans ça, zoomer ne sert à rien, la courbe
+reste écrasée par des valeurs qui ne sont plus à l'écran. L'option « Fixe » garde
+l'échelle de toute la période, pour comparer deux zooms entre eux.
+
+### Le piège technique, à ne pas réintroduire
+
+**Ne jamais redessiner le graphique pendant le geste.** Le `d3.zoom` est attaché
+à la surface transparente ; la redessiner détruit l'élément sous le doigt et
+**coupe la pince en deux**.
+
+Solution retenue : pendant le geste, un simple étirement horizontal du groupe
+tracé *(`translate` + `scale` en x seulement)*, avec
+`vector-effect="non-scaling-stroke"` pour que l'épaisseur des traits ne gonfle
+pas. **Au relâchement** *(`end`)*, le transform est mémorisé et le vrai tracé
+refait — axes, graduations et échelle verticale recalculés.
+
+Autres points à savoir :
+- le transform vit dans `zoomT[hostId]`, **hors du dessin**, pour survivre aux
+  redessins déclenchés par `dash.onData` ;
+- `zoomSig` le remet à zéro quand la donnée ou la largeur change — un zoom gardé
+  sur une autre période n'aurait aucun sens ;
+- le tracé est **découpé** (`clipPath`), sinon les points hors fenêtre débordent
+  sur les marges ;
+- les étiquettes de dates hors fenêtre sont filtrées, sinon elles s'écrivent
+  dans le vide ;
+- `touch-action: none` sur `.bi-chart`, sans quoi le navigateur confisque la
+  pince pour zoomer la page entière.

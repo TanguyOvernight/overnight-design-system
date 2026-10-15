@@ -60,6 +60,9 @@
 .bi-seg button[aria-pressed="true"] { color: var(--color-fg);
   background: var(--color-panel); border-color: var(--color-border-line); }
 .bi-seg .bi-sep { flex: 1 1 0; min-width: 0; }
+.bi-segk { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted);
+  align-self: center; margin-right: var(--cds-gap-xs); }
+.bi-chart { touch-action: none; }
 .bi-chartwrap { position: relative; }
 .bi-chart { position: relative; min-height: 220px; }
 .bi-chart.bi-hero-chart { min-height: 300px; }
@@ -171,13 +174,21 @@
       <button type="button" data-m="pct">%</button>
       <button type="button" data-m="eur">€</button>
     </div>
+    <div class="bi-seg" id="seg-echelle" role="group" aria-label="Échelle verticale">
+      <span class="bi-segk">Axe vertical</span>
+      <button type="button" data-e="auto">S'adapte au zoom</button>
+      <button type="button" data-e="fixe">Fixe</button>
+      <span class="bi-sep"></span>
+      <button type="button" id="z-reset" hidden>Dézoomer</button>
+    </div>
 
     <div class="bi-chartwrap">
       <div class="bi-chart bi-hero-chart dash-skeleton" id="ch-valeurs" data-source="valeurs"></div>
     </div>
     <div class="bi-leg" id="val-leg" style="margin-top: var(--cds-gap-sm);"></div>
 
-    <p class="bi-note" style="margin-top: var(--cds-gap-xs);">En <b>%</b>, toutes tes lignes partent
+    <p class="bi-note" style="margin-top: var(--cds-gap-xs);">Pince, molette ou glisser pour zoomer ·
+      double-clic pour revenir. En <b>%</b>, toutes tes lignes partent
       du même point : c'est là qu'on voit laquelle monte et laquelle descend. En <b>€</b>, filtre sur
       une seule ligne et le pointillé montre ce que tu y as mis — l'écart, c'est ton gain.</p>
 
@@ -547,6 +558,19 @@ dash.calc("stm_ecart", {
 <script>
 (function () {
   var B = window.BI, drawn = {};
+  var zoomT = {}, zoomSig = {}, dernierDessin = {};
+  function redessiner() {
+    Object.keys(dernierDessin).forEach(function (id) {
+      var a = dernierDessin[id];
+      drawSeries(id, a.series, a.opt);
+    });
+    majBoutonZoom();
+  }
+  function majBoutonZoom() {
+    var zoome = Object.keys(zoomT).some(function (k) { return zoomT[k] && zoomT[k].k > 1.001; });
+    var b = q("#z-reset");
+    if (b) b.hidden = !zoome;
+  }
 
   function rowsOf(id) { var d = dash.data(id).data; return Array.isArray(d) ? d : (d ? [d] : []); }
   function ok(id) { return dash.data(id).status === "ok"; }
@@ -637,8 +661,14 @@ dash.calc("stm_ecart", {
   q("#seg-periode").addEventListener("click", function (ev) {
     var b = ev.target.closest("button");
     if (!b) return;
-    if (b.dataset.p) dash.setParams({ periode: b.dataset.p });
-    if (b.dataset.m) dash.setParams({ mode: b.dataset.m });
+    if (b.dataset.p) { zoomT = {}; dash.setParams({ periode: b.dataset.p }); }
+    if (b.dataset.m) { zoomT = {}; dash.setParams({ mode: b.dataset.m }); }
+  });
+  q("#seg-echelle").addEventListener("click", function (ev) {
+    var b = ev.target.closest("button");
+    if (!b) return;
+    if (b.dataset.e) dash.setParams({ echelle: b.dataset.e });
+    if (b.id === "z-reset") { zoomT = {}; redessiner(); }
   });
   q("#go-idees").addEventListener("click", function () {
     var el = document.getElementById("idees");
@@ -649,6 +679,7 @@ dash.calc("stm_ecart", {
   function drawSeries(hostId, series, opt) {
     var host = document.getElementById(hostId);
     if (!host) return;
+    dernierDessin[hostId] = { series: series, opt: opt };
     host.textContent = "";
     var tous = [];
     series.forEach(function (s) { s.pts.forEach(function (p) { tous.push(p); }); });
@@ -687,7 +718,28 @@ dash.calc("stm_ecart", {
     y.range([H - m.bottom, m.top]);
     var xd = d3.extent(tous, function (p) { return p.d; });
     if (+xd[0] === +xd[1]) xd = [d3.utcDay.offset(xd[0], -1), d3.utcDay.offset(xd[1], 1)];
-    var x = d3.scaleUtc(xd, [m.left, W - m.right]);
+    var xFull = d3.scaleUtc(xd, [m.left, W - m.right]);
+
+    var sig = (+xd[0]) + "|" + (+xd[1]) + "|" + series.length + "|" + W;
+    if (zoomSig[hostId] !== sig) { zoomSig[hostId] = sig; zoomT[hostId] = d3.zoomIdentity; }
+    var tr = zoomT[hostId] || d3.zoomIdentity;
+    var x = tr.rescaleX(xFull);
+
+    // L'axe vertical se recale sur la fenêtre visible. Sans ça, zoomer ne sert
+    // à rien : la courbe reste écrasée par des valeurs qui ne sont plus à l'écran.
+    if (opt.echelle !== "fixe") {
+      var vd = x.domain(), vus = [];
+      series.forEach(function (sr) {
+        sr.pts.forEach(function (pt) { if (pt.d >= vd[0] && pt.d <= vd[1]) vus.push(pt.v); });
+      });
+      if (opt.ref != null) vus.push(opt.ref);
+      if (vus.length > 1) {
+        var lo2 = d3.min(vus), hi2 = d3.max(vus);
+        var pad2 = (hi2 - lo2 || Math.abs(hi2) * 0.02 || 1) * 0.06;
+        y.domain([lo2 - pad2, hi2 + pad2]);
+        ticks = y.ticks(4);
+      }
+    }
 
     ticks.forEach(function (t) {
       svg.append("line").attr("x1", m.left).attr("x2", W - m.right).attr("y1", y(t)).attr("y2", y(t))
@@ -711,6 +763,7 @@ dash.calc("stm_ecart", {
     var keep = [];
     for (var i = dates.length - 1; i >= 0; i--) {
       var cx = x(dates[i]), half = labW[i] / 2 + 8;
+      if (cx < m.left - 1 || cx > W - m.right + 1) continue;
       var clash = keep.some(function (k) { return Math.abs(k.cx - cx) < half + k.half; });
       if (!clash) keep.push({ cx: cx, half: half, i: i });
     }
@@ -719,12 +772,20 @@ dash.calc("stm_ecart", {
         .attr("text-anchor", "middle").text(B.dayShort(dates[k.i]));
     });
 
+    var clipId = "bi-clip-" + hostId;
+    svg.append("clipPath").attr("id", clipId).append("rect")
+      .attr("x", m.left).attr("y", m.top)
+      .attr("width", Math.max(1, W - m.left - m.right))
+      .attr("height", Math.max(1, H - m.top - m.bottom));
+    var plot = svg.append("g").attr("clip-path", "url(#" + clipId + ")");
+
     var ligne = d3.line().x(function (p) { return x(p.d); }).y(function (p) { return y(p.v); });
     series.forEach(function (s) {
       if (s.pts.length > 1) {
-        svg.append("path").datum(s.pts).attr("fill", "none").attr("stroke", s.couleur)
+        plot.append("path").datum(s.pts).attr("fill", "none").attr("stroke", s.couleur)
           .attr("stroke-width", 2).attr("stroke-linecap", "round")
-          .attr("stroke-linejoin", "round").attr("d", ligne);
+          .attr("stroke-linejoin", "round")
+          .attr("vector-effect", "non-scaling-stroke").attr("d", ligne);
       }
       // Au-delà d'une quinzaine de points les pastilles noient la courbe :
       // on ne garde alors que celle du bout, qui sert de repère avec la légende.
@@ -732,18 +793,18 @@ dash.calc("stm_ecart", {
       s.pts.forEach(function (p, i) {
         var dernier = i === s.pts.length - 1;
         if (!montrerTout && !dernier) return;
-        svg.append("circle").attr("cx", x(p.d)).attr("cy", y(p.v))
+        plot.append("circle").attr("cx", x(p.d)).attr("cy", y(p.v))
           .attr("r", dernier ? 3.5 : 3).attr("fill", s.couleur);
       });
     });
     if (seule) {
       var dernier = seule.pts[seule.pts.length - 1];
-      svg.append("text").attr("class", "bi-endlab").attr("x", x(dernier.d) + 8).attr("y", y(dernier.v))
+      plot.append("text").attr("class", "bi-endlab").attr("x", x(dernier.d) + 8).attr("y", y(dernier.v))
         .attr("dominant-baseline", "middle").attr("fill", seule.couleur).text(endTxt);
     }
 
-    var tip = tipBox(host), hov = svg.append("g");
-    svg.append("rect").attr("x", m.left).attr("y", m.top)
+    var tip = tipBox(host), hov = plot.append("g");
+    var surface = svg.append("rect").attr("x", m.left).attr("y", m.top)
       .attr("width", Math.max(1, W - m.left - m.right)).attr("height", Math.max(1, H - m.top - m.bottom))
       .attr("fill", "transparent")
       .on("pointerleave", function () { tip.style.opacity = 0; hov.selectAll("*").remove(); })
@@ -778,6 +839,33 @@ dash.calc("stm_ecart", {
         tip.style.opacity = 1;
         placeTip(tip, host, ev);
       });
+
+    if (opt.zoomable !== false && tous.length > 2) {
+      var zb = d3.zoom().scaleExtent([1, 50])
+        .extent([[m.left, m.top], [W - m.right, H - m.bottom]])
+        .translateExtent([[m.left, m.top], [W - m.right, H - m.bottom]])
+        .on("zoom", function (ev) {
+          // Pendant le geste on ne redessine pas : détruire l'élément sous le
+          // doigt couperait la pince en deux. On étire horizontalement, et le
+          // vrai tracé se refait au relâchement.
+          var kr = ev.transform.k / tr.k;
+          plot.attr("transform", "translate(" + (ev.transform.x - tr.x * kr) + ",0) scale(" + kr + ",1)");
+          tip.style.opacity = 0;
+        })
+        .on("end", function (ev) {
+          plot.attr("transform", null);
+          zoomT[hostId] = ev.transform;
+          majBoutonZoom();
+          drawSeries(hostId, series, opt);
+        });
+      surface.node().__zoom = tr;
+      surface.call(zb).on("dblclick.zoom", null)
+        .on("dblclick", function () {
+          zoomT[hostId] = d3.zoomIdentity;
+          majBoutonZoom();
+          drawSeries(hostId, series, opt);
+        });
+    }
   }
 
   function drawPerf(rows) {
@@ -973,9 +1061,14 @@ dash.calc("stm_ecart", {
     if (ok("valeurs")) {
       vh.classList.remove("dash-skeleton");
       var periode = p.periode || "2026", mode = p.mode || "pct";
+      var echelle = p.echelle || "auto";
       all("#seg-periode button").forEach(function (b) {
         b.setAttribute("aria-pressed", b.dataset.p ? b.dataset.p === periode : b.dataset.m === mode);
       });
+      all("#seg-echelle button").forEach(function (b) {
+        if (b.dataset.e) b.setAttribute("aria-pressed", b.dataset.e === echelle);
+      });
+      majBoutonZoom();
       var toutes = rowsOf("valeurs").map(function (r) { return r.date; }).sort();
       var fin = toutes[toutes.length - 1] || "2026-10-15";
       var jours = { "1m": 31, "3m": 92, "6m": 184 }[periode];
@@ -1014,6 +1107,7 @@ dash.calc("stm_ecart", {
       drawSeries("ch-valeurs", series, {
         fmtY: mode === "pct" ? function (v) { return B.pct(v); } : function (v) { return B.eur(v, 0); },
         height: (vh.clientWidth || 320) >= 520 ? 290 : 330, ref: ref, refLabel: refLab,
+        echelle: echelle,
         aria: mode === "pct" ? "Évolution de chaque ligne en pourcentage, par date"
                              : "Valeur de chaque ligne en euros, par date"
       });
