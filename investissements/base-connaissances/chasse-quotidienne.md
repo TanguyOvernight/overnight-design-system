@@ -2752,3 +2752,37 @@ fois à la consigne que je reçois **chaque matin**. Quatre dérives, toutes vé
    **« surveillance nominative des univers cartographiés + échéances du radar »** — ce qui est,
    de fait, ce qui a produit tous les faits exploitables de la semaine *(Fagron, Guerbet)*.
 4. **Étape 8** : retirer le script, ou réparer `SLACK_WEBHOOK_URL`.
+
+---
+
+## Règle 52 (15/10/2026) — une mention qui ne change aucun calcul n'est pas une réserve, c'est un décor
+
+Pendant deux semaines j'ai publié « cœur PEA = 1 313 € » en accolant à chaque
+fois « *exécution non confirmée* ». La capture de Tanguy du 15/10 montre
+**501,69 €** : facteur 2,6. Deux des trois ordres que j'avais enregistrés
+n'avaient jamais été passés.
+
+La mention était présente **à chaque brief**. Elle n'a jamais rien changé :
+ni le chiffre affiché, ni le plafond par ligne calculé dessus, ni le garde-fou R,
+ni une seule décision. Elle me donnait le sentiment d'avoir signalé le risque
+tout en continuant à m'appuyer dessus comme sur un fait.
+
+> **Un chiffre « à confirmer » qui alimente quand même tous les calculs n'est pas
+> marqué : il est maquillé.** Soit la réserve change quelque chose — on prend
+> l'hypothèse basse, on borne la décision, on va chercher la confirmation — soit
+> elle ne sert qu'à me couvrir.
+
+Test opérationnel, à passer avant d'écrire « à confirmer » :
+**« qu'est-ce qui serait différent si je retirais cette mention ? »** Si la
+réponse est « rien », la mention est un décor : il faut soit la faire mordre,
+soit aller vérifier.
+
+Ce que ça aurait donné ici : avec l'hypothèse basse (**un seul ordre exécuté**,
+le plus récent), j'aurais affiché ~500 €, cherché les ~300 € manquants, et
+trouvé le cash qui dort **deux semaines plus tôt**.
+
+**Lien avec ㊼** *(vérifier la livraison à la RÉCEPTION, jamais à l'envoi)* :
+même faute de structure. J'avais vérifié que j'avais **spécifié** les ordres,
+pas qu'ils avaient été **exécutés**. Un ordre spécifié et un ordre exécuté sont
+deux objets différents ; j'ai traité ma propre recommandation comme un fait du
+monde. **C'est la quatrième fois que je confonds l'acte et son effet.**

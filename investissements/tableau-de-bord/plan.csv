@@ -1,7 +1,8 @@
 cle,libelle,valeur
-prochain_ordre_date,Prochain ordre,2026-11-01
-prochain_ordre_montant,Montant,500
-prochain_ordre_support,Support,WPEA — iShares MSCI World Swap PEA
-capacite_mensuelle,Capacité d'épargne mensuelle,500
-consigne,Consigne du jour,Ne rien acheter avant le 1er novembre. STM reste bloqué par son test.
-maj,Données arrêtées au,2026-10-15
+action,Action prioritaire,Investir sur le WPEA le cash qui dort sur ton PEA
+action_montant,Montant,304.26
+action_frais,Frais estimés de cet ordre,1.75
+prochain_versement,Prochain versement,2026-11-01
+prochain_versement_montant,Montant,500
+consigne,Consigne du jour,Aucune nouvelle ligne risquée tant que la part risquée dépasse 25 %. STM reste bloqué.
+maj,Chiffres arrêtés au,15/10 à 17:46

@@ -31,15 +31,20 @@ l'artefact.** Ne rien y mettre que Tanguy ne publierait pas.
 
 | id | fichier | contenu | fraîcheur |
 |---|---|---|---|
-| `coeur_wpea` | `coeur-wpea.csv` | clôtures WPEA certifiées | à chaque clôture obtenue |
+| `coeur_wpea` | `coeur-wpea.csv` | cours du WPEA relevés | à chaque cours obtenu |
+| `comptes` | `comptes.csv` | titres / espèces / total des 2 comptes | **sur nouvelle capture** |
+| `positions` | `positions.csv` | chaque ligne, sa valeur, sa catégorie | **sur nouvelle capture** |
+| `patrimoine` | `patrimoine.csv` | valeur totale par jour — **1 point par jour** | **tous les jours** |
+| `classement` | `classement.csv` | les 4 candidats, cours et seuils | à chaque re-classement |
 | `stm_seuil` | `stm-seuil.csv` | clôtures STM + seuil 42 € | tant que STM est au classement |
-| `classement` | `classement.csv` | les 4 candidats, cours et seuils | **à chaque re-classement** |
-| `versements` | `versements.csv` | ordres WPEA spécifiés | à chaque ordre |
-| `lectures` | `lectures.csv` | les 2 lectures du dépôt Fortuneo | **à supprimer dès que Tanguy tranche** |
-| `positions_etoro` | `positions-etoro.csv` | photo eToro du 25/07 | seulement sur nouvelle capture |
-| `plan` | `plan.csv` | prochain ordre, consigne du jour | **tous les jours** |
+| `plan` | `plan.csv` | action prioritaire, consigne du jour | **tous les jours** |
 
-Copies de référence des CSV et de la page : `investissements/tableau-de-bord/`.
+**`patrimoine.csv` est la courbe de suivi que Tanguy demandait.** Elle a démarré
+le 15/10 avec un seul point ; la page ne trace rien tant qu'il n'y en a pas deux.
+**Ajouter une ligne chaque jour** : le WPEA se recalcule depuis son cours, mais
+eToro ne bouge que sur nouvelle capture — tant qu'il n'y en a pas, reporter la
+dernière valeur connue **en le disant**, ou laisser le jour vide. Ne jamais
+interpoler.
 
 ## Les cinq calculs faits dans la page
 
@@ -63,10 +68,14 @@ vaut mieux qu'un chiffre inventé.
 
 ## Dette ouverte
 
-- **Le nombre de parts (182) n'est pas confirmé.** Les ordres des 21/09 et 01/10
-  n'ont jamais été vus exécutés. Tout le haut de la page en dépend.
-- **Tanguy a parlé de 800 € dont 500 € sur le World ; mes registres portent
-  1 292 € en trois ordres.** Les deux lectures sont affichées côte à côte dans la
-  page, et la page calcule sur la seconde. À trancher.
-- Pas de courbe pour Lilly ni pour le CAC/S&P : je n'ai qu'un point daté pour
-  chacun (09/10). Une courbe à un point serait un mensonge graphique.
+- **TRANCHÉ le 15/10** : le cœur PEA fait **70 parts / 501,69 €**, pas 182 parts.
+  Tanguy avait raison, mon registre était faux. Les jeux `lectures` et
+  `versements` ont été supprimés de l'artefact, l'ambiguïté n'existe plus.
+- **C064 — la 6e ligne eToro** *(5,44 €, hors écran sur la capture)* est
+  probablement Renault, sans lecture directe. À confirmer sur une capture
+  complète.
+- **Les frais d'un ordre hors ticket gratuit** chez Fortuneo viennent d'une
+  source secondaire *(≈1,75 €, grille du 09/02/2026)*. Toute la recommandation
+  d'investir le cash tout de suite bascule si l'ordre coûte plus de ~7 €.
+- **Aucun relevé automatique des deux comptes.** Tout dépend de captures que
+  Tanguy envoie. C'est la limite dure du dispositif, écrite dans la page.

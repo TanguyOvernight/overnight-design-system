@@ -3583,3 +3583,62 @@ ici → **barrière effective 41,31 €**.
 > 📈 **C057 à 67 % et la condition d'achat en échec : l'écart est maintenant maximal.** *Deux
 > chances sur trois que le prix tombe, et aucune raison d'acheter s'il tombe.* **C'est
 > exactement ce que la séparation du 12/10 devait rendre visible.**
+
+---
+
+## 15/10/2026 (soir) — Tanguy envoie ses deux relevés : mon cœur PEA était faux d'un facteur 2,6
+
+**Capture PEA Fortuneo, 17h33** · **Capture eToro, 17h46.** Toutes les
+vérifications croisées tombent au centime :
+
+| Contrôle | Calcul | Affiché |
+|---|---|---|
+| Titres + espèces | `501,69 + 304,26 = 805,95` | **805,95 €** ✅ |
+| 70 × PRU | `70 × 7,082 = 495,74` | — |
+| 70 × cours | `70 × 7,167 = 501,69` | **501,69 €** ✅ |
+| P/V | `501,69 − 495,74 = 5,95` | **+5,95 €** ✅ |
+| Versé total | `495,74 + 304,26 = 800,00` | « 800 € » *(Tanguy)* ✅ |
+| eToro 5 lignes + cash | `970,21 + 1,82 = 972,03` | — |
+| eToro 6e ligne | `977,47 − 972,03 = 5,44` | *(hors écran)* |
+
+**Le cours de 7,167 € corrobore ma clôture du 14/10** : `7,221 × (1 − 0,0075) =
+7,167`. La variation −0,75 % affichée boucle exactement. Ma série de cours était
+juste ; c'est le **nombre de parts** qui était faux.
+
+### L'erreur
+
+Publié du 02/10 au 15/10 : **cœur PEA = 182 parts ≈ 1 313 €**.
+Réalité : **70 parts = 501,69 €**.
+
+J'avais compté **trois ordres** comme exécutés. Un seul l'a été. Le PRU de
+**7,082 €** identifie sans ambiguïté lequel : l'ordre du 01/10 à limite 7,14 €.
+Les deux ordres du 21/09 (70 + 42 parts) n'ont jamais été passés.
+
+### Ce qui en dépendait — et qui était donc faux aussi
+
+- le **plafond par ligne** L, calculé sur un V surévalué de 160 % ;
+- le **garde-fou R**, qui m'a fait écrire que la poche risquée avait de la marge
+  alors qu'elle **dépasse** le plafond de 25 % *(R réel = 30,67 %)* ;
+- la phrase « ton cœur vaut 1 313 € » **publiée sur Slack à plusieurs reprises**.
+
+### Pourquoi je ne l'ai pas vu
+
+J'écrivais « exécution non confirmée » à côté du chiffre à chaque brief, et je
+calculais dessus comme s'il était confirmé. → **Règle 52**.
+
+Et la mention a servi d'**anesthésiant** : parce que la réserve était visible,
+je me suis cru couvert, et je n'ai jamais fait le geste qui coûtait trente
+secondes — **demander la capture**. Tanguy l'a envoyée de lui-même, le jour où
+il a voulu un tableau de bord.
+
+### Le point de calibration
+
+**Aucun appel du registre n'est en cause** : je n'avais jamais ouvert d'appel
+sur l'exécution de mes propres ordres. C'est exactement le problème. Mes appels
+portent sur le monde *(des cours, des résultats, des décisions d'entreprises)*
+et **jamais sur l'état de mon propre dossier**. Un registre qui ne score que
+l'extérieur ne peut pas détecter une erreur intérieure.
+
+**Nouvel appel ouvert — C064** : *« la 6e ligne eToro hors écran est bien
+Renault »* — **72 %** *(cohérence de montant 5,44 € vs 5,33 € au 25/07, mais
+aucune lecture directe)*. Résolution : à la prochaine capture eToro complète.

@@ -19,13 +19,12 @@
   margin-bottom: var(--cds-gap-xs); }
 .bi-big { font-family: var(--font-anthropic-serif); font-weight: 400;
   font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; line-height: 1.15; }
+.bi-alert .bi-big { color: var(--color-bad); }
 .bi-note { margin-top: var(--cds-gap-xs); font-size: var(--cds-font-size-caption);
   color: var(--color-fg-muted); font-variant-numeric: tabular-nums; line-height: 1.5; }
 .bi-flag { margin-top: var(--cds-gap-sm); font-size: var(--cds-font-size-caption);
-  color: var(--color-warn); }
-.bi-consigne { background: var(--color-panel); border: 1px solid var(--color-border-line);
-  border-radius: var(--cds-radius); padding: var(--cds-pad-lg); margin-top: var(--cds-gap-md); }
-.bi-consigne .bi-txt { font-size: var(--cds-font-size-body); line-height: 1.5; }
+  color: var(--color-warn); line-height: 1.5; }
+.bi-txt { font-size: var(--cds-font-size-body); line-height: 1.5; }
 .bi-chartwrap { position: relative; }
 .bi-chart { position: relative; min-height: 220px; }
 .bi-chart svg { display: block; }
@@ -39,22 +38,29 @@
   padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption);
   font-variant-numeric: tabular-nums; white-space: nowrap; }
 .bi-tip .bi-tipd { color: var(--cds-text-secondary); }
+.bi-bar { display: flex; width: 100%; height: 28px; border-radius: 4px; overflow: hidden;
+  margin-bottom: var(--cds-gap-sm); min-height: 28px; }
+.bi-bar > span { display: block; height: 100%; }
+.bi-leg { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm) var(--cds-gap-lg);
+  font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+.bi-leg > div { display: flex; align-items: center; gap: var(--cds-gap-xs); }
+.bi-dot { width: .625rem; height: .625rem; border-radius: 2px; flex: none; }
+.bi-legv { color: var(--color-fg-muted); }
 .bi-tablebox { overflow-x: auto; }
 .bi-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption);
   font-variant-numeric: tabular-nums; }
-.bi-table th { text-align: left; font-weight: var(--cds-font-weight-medium);
-  color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm);
+.bi-table th { font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted);
+  padding: var(--cds-pad-xs) var(--cds-pad-sm);
   border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
 .bi-table td { padding: var(--cds-pad-xs) var(--cds-pad-sm);
   border-bottom: 1px solid var(--color-border-line); }
 .bi-table tr:last-child td { border-bottom: none; }
 .bi-table th, .bi-table td { text-align: left; }
-#t-versements :is(th, td):nth-child(3), #t-versements :is(th, td):nth-child(4),
-#t-lectures :is(th, td):nth-child(2), #t-lectures :is(th, td):nth-child(3),
-#t-lectures :is(th, td):nth-child(4),
+#t-comptes :is(th, td):nth-child(2), #t-comptes :is(th, td):nth-child(3),
+#t-comptes :is(th, td):nth-child(4),
+#t-positions :is(th, td):nth-child(4), #t-positions :is(th, td):nth-child(5),
 #t-classement :is(th, td):nth-child(3), #t-classement :is(th, td):nth-child(4),
-#t-classement :is(th, td):nth-child(5),
-#t-etoro :is(th, td):nth-child(3), #t-etoro :is(th, td):nth-child(4) { text-align: right; }
+#t-classement :is(th, td):nth-child(5) { text-align: right; }
 .bi-outro { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.6; }
 .bi-outro li { margin-bottom: var(--cds-gap-xs); }
 [data-dash-source-state="empty"] { color: transparent; }
@@ -70,103 +76,138 @@
   <header class="bi-head">
     <h1 class="bi-title">Brief investissements</h1>
     <p class="bi-sub">
-      Prochain ordre le <b class="bi-hl dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=prochain_ordre_date">—</b>,
-      <b class="bi-hl dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=prochain_ordre_montant">—</b>
-      sur le World. <span class="dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=consigne">—</span>
+      <span class="dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=action">—</span> :
+      <b class="bi-hl dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=action_montant">—</b>.
+      <span class="dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=consigne">—</span>
     </p>
   </header>
 
   <section class="bi-sec" id="decision">
     <h2 class="bi-h2">Décision</h2>
-    <p class="bi-lead">Ce que tu fais de ton argent ce mois-ci, et les deux limites que je ne laisse pas franchir.</p>
+    <p class="bi-lead">Ce que tu fais de ton argent maintenant, et la limite que ton portefeuille dépasse aujourd'hui.</p>
     <div class="bi-grid">
 
       <div class="bi-card">
-        <div class="bi-k">Cœur PEA · World</div>
-        <div class="bi-big dash-skeleton" data-source="coeur" data-field="valeur" data-row="0">—</div>
-        <div class="bi-note">
-          <span class="dash-skeleton" data-source="coeur" data-field="parts" data-row="0">—</span> parts ·
-          clôture <span class="dash-skeleton" data-source="coeur" data-field="cloture" data-row="0">—</span>
-          au <span class="dash-skeleton" data-source="coeur" data-field="date" data-row="0">—</span>
-        </div>
-        <div class="bi-flag">Exécution des ordres non confirmée</div>
+        <div class="bi-k">À investir tout de suite</div>
+        <div class="bi-big dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=action_montant">—</div>
+        <div class="bi-note dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=action">—</div>
+        <div class="bi-note">Ce cash dort sur ton PEA et ne rapporte rien. Ordre hors ticket gratuit, frais estimés
+          <span class="dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=action_frais">—</span>.</div>
+      </div>
+
+      <div class="bi-card bi-alert">
+        <div class="bi-k">Part risquée du portefeuille</div>
+        <div class="bi-big dash-skeleton" data-source="garde_fous" data-field="r_pct" data-row="0">—</div>
+        <div class="bi-note">Ma règle plafonne à 25 %. Il manque
+          <span class="dash-skeleton" data-source="garde_fous" data-field="manque" data-row="0">—</span>
+          de cœur pour revenir dessous.</div>
+        <div class="bi-flag">Tant que c'est dépassé : aucune nouvelle action individuelle, STM compris.</div>
       </div>
 
       <div class="bi-card">
         <div class="bi-k">Plafond par ligne risquée</div>
         <div class="bi-big dash-skeleton" data-source="garde_fous" data-field="plafond_ligne" data-row="0">—</div>
-        <div class="bi-note">Le plus petit des deux : 5 % de (cœur + 6 000 €) et 15 % du cœur.</div>
-      </div>
-
-      <div class="bi-card">
-        <div class="bi-k">Risqué total autorisé</div>
-        <div class="bi-big dash-skeleton" data-source="garde_fous" data-field="marge_risque" data-row="0">—</div>
-        <div class="bi-note">Au-delà, la poche risquée dépasse 25 % du portefeuille.</div>
+        <div class="bi-note">Le plus petit des deux : 5 % de (patrimoine + 6 000 €) et 15 % du patrimoine.
+          Aucune de tes lignes ne le dépasse aujourd'hui.</div>
       </div>
 
     </div>
 
-    <div class="bi-consigne">
+    <div class="bi-card" style="margin-top: var(--cds-gap-md);">
       <div class="bi-k">Consigne du jour</div>
       <div class="bi-txt dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=consigne">—</div>
     </div>
   </section>
 
-  <section class="bi-sec" id="coeur">
-    <h2 class="bi-h2">Ton cœur, jour après jour</h2>
-    <p class="bi-lead">Le WPEA suit l'indice MSCI World : cette courbe, c'est à la fois ton placement
-      et le marché mondial. Chaque point est une clôture que j'ai pu certifier — les trous sont les
-      jours où je n'ai pas obtenu le cours.</p>
+  <section class="bi-sec" id="patrimoine">
+    <h2 class="bi-h2">Ton patrimoine investi</h2>
+    <p class="bi-lead">Tes deux comptes réunis, relevés sur tes captures du 15 octobre.</p>
+
+    <div class="bi-grid">
+      <div class="bi-card">
+        <div class="bi-k">Total des deux comptes</div>
+        <div class="bi-big dash-skeleton" data-source="total" data-field="total" data-row="0">—</div>
+        <div class="bi-note">
+          dont <span class="dash-skeleton" data-source="total" data-field="titres" data-row="0">—</span> en titres
+          et <span class="dash-skeleton" data-source="total" data-field="especes" data-row="0">—</span> en espèces
+        </div>
+      </div>
+
+      <div class="bi-card">
+        <div class="bi-k">Répartition</div>
+        <div class="bi-bar dash-skeleton" id="alloc-bar" data-source="allocation"></div>
+        <div class="bi-leg" id="alloc-leg"></div>
+      </div>
+    </div>
+
+    <div class="bi-card" style="margin-top: var(--cds-gap-md);">
+      <div class="bi-k">Tes deux comptes</div>
+      <div class="bi-tablebox">
+        <table class="bi-table" id="t-comptes" data-source="comptes" data-row-key="compte">
+          <thead><tr>
+            <th data-field="compte">Compte</th>
+            <th data-field="titres_eur">Titres</th>
+            <th data-field="especes_eur">Espèces</th>
+            <th data-field="total_eur">Total</th>
+            <th data-field="releve">Relevé</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="bi-sec" id="lignes">
+    <h2 class="bi-h2">Tes lignes</h2>
+    <p class="bi-lead">Classées en cœur (ETF larges et diversifiés) et risqué (actions individuelles).
+      C'est ce partage qui gouverne la limite des 25 %.</p>
     <div class="bi-card">
-      <div class="bi-k">Clôture du WPEA, en euros</div>
+      <div class="bi-tablebox">
+        <table class="bi-table" id="t-positions" data-source="positions" data-row-key="ligne">
+          <thead><tr>
+            <th data-field="ligne">Ligne</th>
+            <th data-field="poche">Compte</th>
+            <th data-field="categorie">Catégorie</th>
+            <th data-field="valeur_eur">Valeur</th>
+            <th data-field="pv_eur">Gain / perte</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="bi-flag">La sixième ligne eToro était coupée sur ta capture : sa valeur est déduite par
+        différence, et je n'ai pas son nom. Envoie-moi la ligne complète quand tu peux.</div>
+    </div>
+  </section>
+
+  <section class="bi-sec" id="courbes">
+    <h2 class="bi-h2">L'évolution, jour après jour</h2>
+    <p class="bi-lead">Le WPEA suit l'indice MSCI World : cette courbe est à la fois ton placement principal
+      et le marché mondial. Chaque point est un cours que j'ai vérifié à la main ; les trous sont les jours
+      où je n'ai pas pu le certifier.</p>
+    <div class="bi-card">
+      <div class="bi-k">Cours du WPEA, en euros</div>
       <div class="bi-chartwrap">
         <div class="bi-chart dash-skeleton" id="ch-wpea" data-source="coeur_wpea"></div>
       </div>
     </div>
 
-    <div class="bi-grid" style="margin-top: var(--cds-gap-md);">
-      <div class="bi-card">
-        <div class="bi-k">Tes ordres enregistrés</div>
-        <div class="bi-tablebox">
-          <table class="bi-table bi-num" id="t-versements" data-source="versements" data-row-key="date">
-            <thead><tr>
-              <th data-field="date">Date</th>
-              <th data-field="libelle">Ordre</th>
-              <th data-field="montant_eur">Montant</th>
-              <th data-field="parts">Parts</th>
-              <th data-field="statut">Statut</th>
-            </tr></thead>
-            <tbody></tbody>
-          </table>
-        </div>
+    <div class="bi-card" style="margin-top: var(--cds-gap-md);">
+      <div class="bi-k">Valeur totale de tes deux comptes</div>
+      <div class="bi-chartwrap">
+        <div class="bi-chart dash-skeleton" id="ch-patrimoine" data-source="patrimoine"></div>
       </div>
-
-      <div class="bi-card">
-        <div class="bi-k">Deux lectures de ton dépôt — à trancher</div>
-        <div class="bi-tablebox">
-          <table class="bi-table bi-num" id="t-lectures" data-source="lectures" data-row-key="lecture">
-            <thead><tr>
-              <th data-field="lecture">Lecture</th>
-              <th data-field="total_eur">Total</th>
-              <th data-field="dont_world_eur">Dont World</th>
-              <th data-field="parts">Parts</th>
-            </tr></thead>
-            <tbody></tbody>
-          </table>
-        </div>
-        <div class="bi-flag">Tant que tu n'as pas tranché, tous les chiffres de cette page reposent
-          sur la seconde ligne.</div>
-      </div>
+      <p class="bi-note" id="patrimoine-note"></p>
     </div>
   </section>
 
   <section class="bi-sec" id="surveillance">
     <h2 class="bi-h2">Ce que je surveille</h2>
-    <p class="bi-lead">Quatre dossiers classés sur le même mètre. Un candidat ne devient un achat
-      que si son cours passe sous son seuil — et, pour STM, seulement si son test est validé.</p>
+    <p class="bi-lead">Quatre dossiers sur le même mètre. Un candidat ne devient un achat que si son cours
+      passe sous son seuil — et aujourd'hui, aucune action individuelle ne peut entrer tant que la part
+      risquée dépasse 25 %.</p>
     <div class="bi-card">
       <div class="bi-tablebox">
-        <table class="bi-table bi-num" id="t-classement" data-source="classement" data-row-key="rang">
+        <table class="bi-table" id="t-classement" data-source="classement" data-row-key="rang">
           <thead><tr>
             <th data-field="rang">#</th>
             <th data-field="candidat">Candidat</th>
@@ -193,35 +234,16 @@
     </div>
   </section>
 
-  <section class="bi-sec" id="etoro">
-    <h2 class="bi-h2">Hors PEA — ton compte eToro</h2>
-    <p class="bi-lead">Dernière photo que j'ai de ce compte : le 25 juillet 2026. Je n'ai aucun moyen
-      de le suivre automatiquement, donc ces chiffres ne bougeront que si tu m'en envoies de nouveaux.</p>
-    <div class="bi-card">
-      <div class="bi-tablebox">
-        <table class="bi-table bi-num" id="t-etoro" data-source="positions_etoro" data-row-key="ticker">
-          <thead><tr>
-            <th data-field="ligne">Ligne</th>
-            <th data-field="ticker">Ticker</th>
-            <th data-field="valeur_affichee">Valeur</th>
-            <th data-field="pv_pct">Plus/moins-value</th>
-          </tr></thead>
-          <tbody></tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
   <section class="bi-sec" id="limites">
     <h2 class="bi-h2">Ce que cette page ne sait pas</h2>
     <ul class="bi-outro">
-      <li>Elle n'est pas branchée sur une bourse en direct : je n'ai accès à aucun flux de marché
-        depuis ma session. Chaque cours ici est une clôture que j'ai vérifiée à la main pendant le
-        brief du matin, et la page se met à jour quand je la réécris.</li>
-      <li>Les trous dans la courbe sont réels : les jours sans point sont les jours où je n'ai pas
-        réussi à certifier un cours. Je préfère un trou à un chiffre inventé.</li>
-      <li>Le nombre de parts de ton PEA vient de mes ordres, pas de ton relevé Fortuneo. Tant que tu
-        ne me confirmes pas l'exécution, la valeur du cœur est une hypothèse.</li>
+      <li>Elle n'est branchée sur aucune bourse en direct : je n'ai accès à aucun flux de marché depuis ma
+        session. Chaque cours est relevé à la main pendant le brief du matin, et la page se met à jour quand
+        je la réécris.</li>
+      <li>Tes deux comptes ne sont pas connectés non plus. Leurs montants viennent de tes captures et ne
+        bougeront que si tu m'en envoies de nouvelles.</li>
+      <li>Les trous dans la courbe sont réels : ce sont les jours où je n'ai pas réussi à certifier un cours.
+        Je préfère un trou à un chiffre inventé.</li>
       <li>Rien ici n'est une prévision. Les seuils sont des prix d'achat décidés à l'avance, pas des
         objectifs de cours.</li>
     </ul>
@@ -235,44 +257,65 @@
     currency: ["", " €"], minus: "−" });
   var MOIS = ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août",
     "sept.", "oct.", "nov.", "déc."];
-
-  var f2 = FR.format(",.2f");
-  var f3 = FR.format(",.3f");
-  var f4 = FR.format(",.4f");
-  var fpct = FR.format("+,.1f");
-
   function parseDay(s) { return new Date(String(s).slice(0, 10) + "T00:00:00Z"); }
   function dayShort(d) { return d.getUTCDate() + " " + MOIS[d.getUTCMonth()]; }
   function dayLong(d) { return d.getUTCDate() + " " + MOIS[d.getUTCMonth()] + " " + d.getUTCFullYear(); }
-  function fmtDate(s) { var d = parseDay(s); return isNaN(d) ? String(s) : dayLong(d); }
-  function eur(v, dec) { return (dec === 4 ? f4(v) : dec === 3 ? f3(v) : f2(v)) + " €"; }
-  function pct(v) { return fpct(v) + " %"; }
-
-  window.BI = { FR: FR, f2: f2, f3: f3, f4: f4, fpct: fpct, parseDay: parseDay,
-    dayShort: dayShort, dayLong: dayLong, fmtDate: fmtDate, eur: eur, pct: pct };
+  window.BI = {
+    FR: FR,
+    parseDay: parseDay, dayShort: dayShort, dayLong: dayLong,
+    fmtDate: function (s) { var d = parseDay(s); return isNaN(d) ? String(s) : dayLong(d); },
+    eur: function (v, dec) { return FR.format(",." + (dec === undefined ? 2 : dec) + "f")(v) + " €"; },
+    pct: function (v) { return FR.format("+,.1f")(v) + " %"; },
+    pctp: function (v) { return FR.format(",.1f")(v) + " %"; },
+    num: function (v) { return FR.format(",")(v); }
+  };
 })();
 </script>
 
 <script>
-dash.calc("coeur", {
-  title: "Valeur du cœur PEA",
-  description: "Parts WPEA de mes ordres × dernière clôture certifiée du WPEA.",
-  inputs: ["versements", "coeur_wpea"],
-  fn: function (versements, coeur_wpea) {
-    var parts = versements.reduce(function (s, o) { return s + Number(o.parts); }, 0);
-    var last = coeur_wpea[coeur_wpea.length - 1];
-    return [{ parts: parts, cloture: Number(last.cloture), date: last.date,
-      valeur: parts * Number(last.cloture) }];
+dash.calc("total", {
+  title: "Total des deux comptes",
+  description: "Somme des titres, des espèces et du total de chaque compte relevé.",
+  inputs: ["comptes"],
+  fn: function (comptes) {
+    var s = function (k) {
+      return comptes.reduce(function (a, c) { return a + Number(c[k]); }, 0);
+    };
+    return [{ titres: s("titres_eur"), especes: s("especes_eur"), total: s("total_eur") }];
+  }
+});
+
+dash.calc("allocation", {
+  title: "Répartition cœur / risqué / espèces",
+  description: "Additionne les lignes par catégorie, et les espèces des deux comptes.",
+  inputs: ["positions", "comptes"],
+  fn: function (positions, comptes) {
+    var par = function (c) {
+      return positions.filter(function (p) { return p.categorie === c; })
+        .reduce(function (s, p) { return s + Number(p.valeur_eur); }, 0);
+    };
+    var cash = comptes.reduce(function (s, c) { return s + Number(c.especes_eur); }, 0);
+    var coeur = par("Cœur"), risque = par("Risqué"), tot = coeur + risque + cash;
+    return [{ categorie: "Cœur", valeur_eur: coeur, part_pct: coeur / tot * 100 },
+            { categorie: "Risqué", valeur_eur: risque, part_pct: risque / tot * 100 },
+            { categorie: "Espèces", valeur_eur: cash, part_pct: cash / tot * 100 }];
   }
 });
 
 dash.calc("garde_fous", {
-  title: "Plafond par ligne et poche risquée",
-  description: "Plafond = min(5 % × (cœur + 6 000 €) ; 15 % × cœur). Risqué autorisé = cœur ÷ 3.",
-  inputs: ["coeur"],
-  fn: function (coeur) {
-    var V = coeur[0].valeur;
-    return [{ plafond_ligne: Math.min(0.05 * (V + 6000), 0.15 * V), marge_risque: V / 3 }];
+  title: "Part risquée et plafond par ligne",
+  description: "Part risquée = risqué ÷ (cœur + risqué), hors espèces. Ma règle la plafonne à 25 %, ce qui revient à exiger un cœur au moins triple du risqué. Plafond par ligne = min(5 % × (patrimoine + 6 000 €) ; 15 % × patrimoine).",
+  inputs: ["allocation", "total"],
+  fn: function (allocation, total) {
+    var get = function (c) {
+      var r = allocation.filter(function (a) { return a.categorie === c; })[0];
+      return r ? r.valeur_eur : 0;
+    };
+    var coeur = get("Cœur"), risque = get("Risqué"), V = total[0].total;
+    return [{ r_pct: risque / (coeur + risque) * 100,
+              coeur_requis: 3 * risque,
+              manque: Math.max(0, 3 * risque - coeur),
+              plafond_ligne: Math.min(0.05 * (V + 6000), 0.15 * V) }];
   }
 });
 
@@ -282,11 +325,9 @@ dash.calc("cours_seuil", {
   inputs: ["classement"],
   fn: function (classement) {
     return classement.map(function (c) {
-      return {
-        rang: c.rang,
+      return { rang: c.rang,
         cours_txt: c.cours ? String(c.cours).replace(".", ",") + " " + c.devise : "",
-        seuil_txt: c.seuil ? String(c.seuil).replace(".", ",") + " " + c.devise : ""
-      };
+        seuil_txt: c.seuil ? String(c.seuil).replace(".", ",") + " " + c.devise : "" };
     });
   }
 });
@@ -317,33 +358,31 @@ dash.calc("stm_ecart", {
 
 <script>
 (function () {
-  var B = window.BI;
-  var drawn = {};
+  var B = window.BI, drawn = {};
 
-  function rowsOf(id) {
-    var d = dash.data(id).data;
-    if (Array.isArray(d)) return d;
-    return d ? [d] : [];
-  }
+  function rowsOf(id) { var d = dash.data(id).data; return Array.isArray(d) ? d : (d ? [d] : []); }
   function ok(id) { return dash.data(id).status === "ok"; }
+  function q(s) { return document.querySelector(s); }
+  function all(s) { return Array.prototype.slice.call(document.querySelectorAll(s)); }
 
   function put(el, text, ready) {
     if (!el) return;
-    el.textContent = ready && text !== null && text !== undefined && text !== "" ? text : "—";
+    el.textContent = (ready && text !== null && text !== undefined && text !== "") ? text : "—";
     el.classList.toggle("dash-skeleton", !ready);
   }
-  function q(sel) { return document.querySelector(sel); }
-  function all(sel) { return Array.prototype.slice.call(document.querySelectorAll(sel)); }
-
-  function planVal(key) {
-    var r = rowsOf("plan").filter(function (x) { return x.cle === key; })[0];
+  function one(id, field, fmt) {
+    var good = ok(id) && rowsOf(id).length > 0;
+    var r = good ? rowsOf(id)[0] : null;
+    all('[data-source="' + id + '"][data-field="' + field + '"]').forEach(function (el) {
+      put(el, r ? fmt(r[field]) : null, good);
+    });
+  }
+  function planVal(k) {
+    var r = rowsOf("plan").filter(function (x) { return x.cle === k; })[0];
     return r ? r.valeur : null;
   }
-
-  /* ---------- tables ---------- */
-
-  function fillTable(tableSel, rows, cells, keyOf) {
-    var tb = q(tableSel + " tbody");
+  function fillTable(sel, rows, cells, keyOf) {
+    var tb = q(sel + " tbody");
     if (!tb) return;
     tb.textContent = "";
     rows.forEach(function (r) {
@@ -358,23 +397,15 @@ dash.calc("stm_ecart", {
     });
   }
 
-  /* ---------- line chart ---------- */
-
   function drawLine(hostId, rows, opt) {
     var host = document.getElementById(hostId);
     if (!host) return;
     host.textContent = "";
-    var tip = document.createElement("div");
-    tip.className = "bi-tip";
-
-    var pts = rows.map(function (r) {
-      return { d: B.parseDay(r.date), v: Number(r[opt.y]) };
-    }).filter(function (p) { return !isNaN(p.v) && !isNaN(p.d); });
+    var pts = rows.map(function (r) { return { d: B.parseDay(r.date), v: Number(r[opt.y]) }; })
+                  .filter(function (p) { return !isNaN(p.v) && !isNaN(p.d); });
     if (!pts.length) return;
 
-    var W = Math.max(240, host.clientWidth || 320);
-    var H = opt.height || 220;
-
+    var W = Math.max(240, host.clientWidth || 320), H = opt.height || 220;
     var svg = d3.select(host).append("svg")
       .attr("width", "100%").attr("viewBox", "0 0 " + W + " " + H)
       .attr("role", "img").attr("aria-label", opt.aria || "");
@@ -387,26 +418,25 @@ dash.calc("stm_ecart", {
     var y = d3.scaleLinear([lo - pad, hi + pad], [0, 1]);
     var ticks = y.ticks(4);
 
-    var meas = svg.append("g").attr("opacity", 0);
-    var leftW = 0;
+    var meas = svg.append("g").attr("opacity", 0), leftW = 0;
     ticks.forEach(function (t) {
-      var n = meas.append("text").attr("class", "bi-tick").text(opt.fmtY(t)).node();
-      leftW = Math.max(leftW, n.getComputedTextLength());
+      leftW = Math.max(leftW, meas.append("text").attr("class", "bi-tick")
+        .text(opt.fmtY(t)).node().getComputedTextLength());
     });
     var endTxt = opt.label + " " + opt.fmtY(pts[pts.length - 1].v);
     var endW = meas.append("text").attr("class", "bi-endlab").text(endTxt).node().getComputedTextLength();
-    var xLabW = {};
-    pts.forEach(function (p, i) {
-      xLabW[i] = meas.append("text").attr("class", "bi-tick").text(B.dayShort(p.d)).node().getComputedTextLength();
+    var labW = pts.map(function (p) {
+      return meas.append("text").attr("class", "bi-tick")
+        .text(B.dayShort(p.d)).node().getComputedTextLength();
     });
     meas.remove();
 
     var m = { top: 16, right: Math.min(endW + 12, W * 0.45), bottom: 24, left: leftW + 10 };
-    if (W - m.left - m.right < 60) { m.right = 12; }
+    if (W - m.left - m.right < 60) m.right = 12;
     y.range([H - m.bottom, m.top]);
-    var xdom = d3.extent(pts, function (p) { return p.d; });
-    if (+xdom[0] === +xdom[1]) { xdom = [d3.utcDay.offset(xdom[0], -1), d3.utcDay.offset(xdom[1], 1)]; }
-    var x = d3.scaleUtc(xdom, [m.left, W - m.right]);
+    var xd = d3.extent(pts, function (p) { return p.d; });
+    if (+xd[0] === +xd[1]) xd = [d3.utcDay.offset(xd[0], -1), d3.utcDay.offset(xd[1], 1)];
+    var x = d3.scaleUtc(xd, [m.left, W - m.right]);
 
     ticks.forEach(function (t) {
       svg.append("line").attr("x1", m.left).attr("x2", W - m.right)
@@ -421,14 +451,13 @@ dash.calc("stm_ecart", {
         .attr("y1", y(opt.ref)).attr("y2", y(opt.ref))
         .attr("stroke", "var(--cds-chart-reference)").attr("stroke-width", 1)
         .attr("stroke-dasharray", "4 3");
-      svg.append("text").attr("class", "bi-endlab").attr("x", W - m.right + 6)
-        .attr("y", y(opt.ref)).attr("dominant-baseline", "middle")
-        .attr("fill", "var(--color-fg-muted)").text(opt.refLabel);
+      svg.append("text").attr("class", "bi-endlab").attr("x", W - m.right + 6).attr("y", y(opt.ref))
+        .attr("dominant-baseline", "middle").attr("fill", "var(--color-fg-muted)").text(opt.refLabel);
     }
 
     var keep = [];
     for (var i = pts.length - 1; i >= 0; i--) {
-      var cx = x(pts[i].d), half = xLabW[i] / 2 + 8;
+      var cx = x(pts[i].d), half = labW[i] / 2 + 8;
       var clash = keep.some(function (k) { return Math.abs(k.cx - cx) < half + k.half; });
       if (!clash) keep.push({ cx: cx, half: half, i: i });
     }
@@ -438,22 +467,23 @@ dash.calc("stm_ecart", {
     });
 
     var color = opt.color || dash.colors[0];
-    svg.append("path").datum(pts)
-      .attr("fill", "none").attr("stroke", color).attr("stroke-width", 2)
-      .attr("stroke-linecap", "round").attr("stroke-linejoin", "round")
-      .attr("d", d3.line().x(function (p) { return x(p.d); }).y(function (p) { return y(p.v); }));
-
+    if (pts.length > 1) {
+      svg.append("path").datum(pts).attr("fill", "none").attr("stroke", color)
+        .attr("stroke-width", 2).attr("stroke-linecap", "round").attr("stroke-linejoin", "round")
+        .attr("d", d3.line().x(function (p) { return x(p.d); }).y(function (p) { return y(p.v); }));
+    }
     pts.forEach(function (p) {
       svg.append("circle").attr("cx", x(p.d)).attr("cy", y(p.v)).attr("r", 3).attr("fill", color);
     });
-
-    var lastP = pts[pts.length - 1];
-    svg.append("text").attr("class", "bi-endlab").attr("x", x(lastP.d) + 8).attr("y", y(lastP.v))
+    var last = pts[pts.length - 1];
+    svg.append("text").attr("class", "bi-endlab").attr("x", x(last.d) + 8).attr("y", y(last.v))
       .attr("dominant-baseline", "middle").attr("fill", color).text(endTxt);
 
+    var tip = document.createElement("div");
+    tip.className = "bi-tip";
+    host.appendChild(tip);
     var hov = svg.append("circle").attr("r", 5).attr("fill", "none")
       .attr("stroke", color).attr("stroke-width", 2).attr("opacity", 0);
-    host.appendChild(tip);
 
     svg.append("rect").attr("x", m.left).attr("y", m.top)
       .attr("width", Math.max(1, W - m.left - m.right)).attr("height", Math.max(1, H - m.top - m.bottom))
@@ -461,75 +491,90 @@ dash.calc("stm_ecart", {
       .on("pointerleave", function () { tip.style.opacity = 0; hov.attr("opacity", 0); })
       .on("pointermove", function (ev) {
         var box = this.getBoundingClientRect();
-        var scale = box.width / Math.max(1, W - m.left - m.right);
-        var px = m.left + (ev.clientX - box.left) / scale;
-        var i = d3.leastIndex(pts, function (p) { return Math.abs(x(p.d) - px); });
-        var p = pts[i];
+        var sc = box.width / Math.max(1, W - m.left - m.right);
+        var px = m.left + (ev.clientX - box.left) / sc;
+        var p = pts[d3.leastIndex(pts, function (o) { return Math.abs(x(o.d) - px); })];
         hov.attr("cx", x(p.d)).attr("cy", y(p.v)).attr("opacity", 1);
         tip.textContent = "";
-        var dl = document.createElement("div");
-        dl.className = "bi-tipd"; dl.textContent = B.dayLong(p.d);
-        var vl = document.createElement("div");
-        vl.textContent = opt.label + " " + opt.fmtY(p.v);
-        tip.appendChild(dl); tip.appendChild(vl);
+        var a = document.createElement("div");
+        a.className = "bi-tipd"; a.textContent = B.dayLong(p.d);
+        var b = document.createElement("div");
+        b.textContent = opt.label + " " + opt.fmtY(p.v);
+        tip.appendChild(a); tip.appendChild(b);
         tip.style.opacity = 1;
-        var hb = host.getBoundingClientRect();
-        var tw = tip.offsetWidth, left = ev.clientX - hb.left + 12;
+        var hb = host.getBoundingClientRect(), tw = tip.offsetWidth;
+        var left = ev.clientX - hb.left + 12;
         if (left + tw > hb.width) left = Math.max(0, ev.clientX - hb.left - tw - 12);
         tip.style.left = left + "px";
         tip.style.top = Math.max(0, ev.clientY - hb.top - 48) + "px";
       });
   }
 
-  /* ---------- render ---------- */
+  function drawAlloc() {
+    var bar = document.getElementById("alloc-bar"), leg = document.getElementById("alloc-leg");
+    bar.textContent = ""; leg.textContent = "";
+    var good = ok("allocation") && rowsOf("allocation").length > 0;
+    bar.classList.toggle("dash-skeleton", !good);
+    if (!good) return;
+    var couleurs = [dash.colors[0], dash.colors[1], "var(--cds-chart-muted)"];
+    rowsOf("allocation").forEach(function (a, i) {
+      var seg = document.createElement("span");
+      seg.style.width = a.part_pct + "%";
+      seg.style.background = couleurs[i];
+      bar.appendChild(seg);
+      var row = document.createElement("div");
+      var dot = document.createElement("span");
+      dot.className = "bi-dot"; dot.style.background = couleurs[i];
+      var nom = document.createElement("span");
+      nom.textContent = a.categorie;
+      var val = document.createElement("span");
+      val.className = "bi-legv";
+      val.textContent = B.eur(a.valeur_eur) + " · " + B.pctp(a.part_pct);
+      row.appendChild(dot); row.appendChild(nom); row.appendChild(val);
+      leg.appendChild(row);
+    });
+  }
 
   dash.onData(function () {
     var planOk = ok("plan");
-    all('[data-source="plan"][data-where="cle=prochain_ordre_date"]').forEach(function (el) {
-      put(el, planOk ? B.fmtDate(planVal("prochain_ordre_date")) : null, planOk);
+    [["action", function (v) { return v; }],
+     ["action_montant", function (v) { return B.eur(Number(v)); }],
+     ["action_frais", function (v) { return B.eur(Number(v)); }],
+     ["consigne", function (v) { return v; }]].forEach(function (p) {
+      all('[data-source="plan"][data-where="cle=' + p[0] + '"]').forEach(function (el) {
+        put(el, planOk ? p[1](planVal(p[0])) : null, planOk);
+      });
     });
-    all('[data-source="plan"][data-where="cle=prochain_ordre_montant"]').forEach(function (el) {
-      put(el, planOk ? B.eur(Number(planVal("prochain_ordre_montant")), 2) : null, planOk);
-    });
-    all('[data-source="plan"][data-where="cle=consigne"]').forEach(function (el) {
-      put(el, planOk ? planVal("consigne") : null, planOk);
-    });
 
-    var cOk = ok("coeur") && rowsOf("coeur").length > 0;
-    var c = cOk ? rowsOf("coeur")[0] : null;
-    put(q('[data-source="coeur"][data-field="valeur"]'), c ? B.eur(c.valeur, 2) : null, cOk);
-    put(q('[data-source="coeur"][data-field="parts"]'), c ? B.FR.format(",")(c.parts) : null, cOk);
-    put(q('[data-source="coeur"][data-field="cloture"]'), c ? B.eur(c.cloture, 4) : null, cOk);
-    put(q('[data-source="coeur"][data-field="date"]'), c ? B.fmtDate(c.date) : null, cOk);
+    one("total", "total", function (v) { return B.eur(v); });
+    one("total", "titres", function (v) { return B.eur(v); });
+    one("total", "especes", function (v) { return B.eur(v); });
+    one("garde_fous", "r_pct", function (v) { return B.pctp(v); });
+    one("garde_fous", "manque", function (v) { return B.eur(v); });
+    one("garde_fous", "plafond_ligne", function (v) { return B.eur(v); });
+    one("stm_ecart", "cloture", function (v) { return B.eur(v, 3); });
+    one("stm_ecart", "date", function (v) { return B.fmtDate(v); });
+    one("stm_ecart", "ecart_pct", function (v) { return B.pct(v); });
 
-    var gOk = ok("garde_fous") && rowsOf("garde_fous").length > 0;
-    var g = gOk ? rowsOf("garde_fous")[0] : null;
-    put(q('[data-source="garde_fous"][data-field="plafond_ligne"]'), g ? B.eur(g.plafond_ligne, 2) : null, gOk);
-    put(q('[data-source="garde_fous"][data-field="marge_risque"]'), g ? B.eur(g.marge_risque, 2) : null, gOk);
+    drawAlloc();
 
-    var sOk = ok("stm_ecart") && rowsOf("stm_ecart").length > 0;
-    var s = sOk ? rowsOf("stm_ecart")[0] : null;
-    put(q('[data-source="stm_ecart"][data-field="cloture"]'), s ? B.eur(s.cloture, 3) : null, sOk);
-    put(q('[data-source="stm_ecart"][data-field="date"]'), s ? B.fmtDate(s.date) : null, sOk);
-    put(q('[data-source="stm_ecart"][data-field="ecart_pct"]'), s ? B.pct(s.ecart_pct) : null, sOk);
+    var cOk = ok("comptes");
+    fillTable("#t-comptes", cOk ? rowsOf("comptes") : [], [
+      function (r) { return r.compte; },
+      function (r) { return B.eur(Number(r.titres_eur)); },
+      function (r) { return B.eur(Number(r.especes_eur)); },
+      function (r) { return B.eur(Number(r.total_eur)); },
+      function (r) { return r.releve; }
+    ], function (r) { return r.compte; });
 
-    var vOk = ok("versements");
-    document.getElementById("t-versements").classList.toggle("dash-skeleton", !vOk);
-    fillTable("#t-versements", vOk ? rowsOf("versements") : [], [
-      function (r) { return B.fmtDate(r.date); },
-      function (r) { return r.libelle; },
-      function (r) { return B.eur(Number(r.montant_eur), 2); },
-      function (r) { return B.FR.format(",")(Number(r.parts)); },
-      function (r) { return r.statut; }
-    ], function (r) { return r.date; });
-
-    var lOk = ok("lectures");
-    fillTable("#t-lectures", lOk ? rowsOf("lectures") : [], [
-      function (r) { return r.lecture; },
-      function (r) { return B.eur(Number(r.total_eur), 2); },
-      function (r) { return B.eur(Number(r.dont_world_eur), 2); },
-      function (r) { return r.parts ? B.FR.format(",")(Number(r.parts)) : "—"; }
-    ], function (r) { return r.lecture; });
+    var pOk = ok("positions");
+    fillTable("#t-positions", pOk ? rowsOf("positions") : [], [
+      function (r) { return r.ligne + (r.note ? " — " + r.note : ""); },
+      function (r) { return r.poche; },
+      function (r) { return r.categorie; },
+      function (r) { return B.eur(Number(r.valeur_eur)); },
+      function (r) { return r.pv_eur === "" || r.pv_eur == null ? "—" : B.eur(Number(r.pv_eur)); }
+    ], function (r) { return r.ligne; });
 
     var clOk = ok("classement");
     var cs = ok("cours_seuil") ? rowsOf("cours_seuil") : [];
@@ -549,44 +594,47 @@ dash.calc("stm_ecart", {
       function (r) { return r.statut; }
     ]);
 
-    var eOk = ok("positions_etoro");
-    fillTable("#t-etoro", eOk ? rowsOf("positions_etoro") : [], [
-      function (r) { return r.ligne; },
-      function (r) { return r.ticker; },
-      function (r) { return r.valeur_affichee; },
-      function (r) { return B.pct(Number(r.pv_pct)); }
-    ]);
-
-    var wHost = document.getElementById("ch-wpea");
+    var wh = document.getElementById("ch-wpea");
     if (ok("coeur_wpea")) {
-      wHost.classList.remove("dash-skeleton");
+      wh.classList.remove("dash-skeleton");
       drawLine("ch-wpea", rowsOf("coeur_wpea"), {
-        y: "cloture", label: "WPEA",
+        y: "cloture", label: "WPEA", color: dash.colors[0],
         fmtY: function (v) { return B.eur(v, 3); },
-        aria: "Clôture du WPEA en euros, par date",
-        color: dash.colors[0]
+        aria: "Cours du WPEA en euros, par date"
+      });
+    } else { wh.classList.add("dash-skeleton"); wh.textContent = ""; }
+
+    var ph = document.getElementById("ch-patrimoine"), pn = document.getElementById("patrimoine-note");
+    var prows = ok("patrimoine") ? rowsOf("patrimoine") : [];
+    if (prows.length > 1) {
+      ph.classList.remove("dash-skeleton");
+      ph.style.display = "";
+      pn.textContent = "";
+      drawLine("ch-patrimoine", prows, {
+        y: "total_eur", label: "Total", color: dash.colors[2],
+        fmtY: function (v) { return B.eur(v, 0); },
+        aria: "Valeur totale des deux comptes, par date"
       });
     } else {
-      wHost.classList.add("dash-skeleton");
-      wHost.textContent = "";
+      ph.classList.remove("dash-skeleton");
+      ph.textContent = "";
+      ph.style.display = "none";
+      pn.textContent = prows.length
+        ? "Cette courbe démarre aujourd'hui : elle gagnera un point par jour. Un seul point ne fait pas une courbe, je ne trace rien tant qu'il n'y en a pas deux."
+        : "—";
     }
 
-    var sHost = document.getElementById("ch-stm");
+    var sh = document.getElementById("ch-stm");
     if (ok("stm_seuil")) {
-      var srows = rowsOf("stm_seuil");
-      sHost.classList.remove("dash-skeleton");
-      drawLine("ch-stm", srows, {
-        y: "cloture", label: "STM",
-        ref: srows.length ? Number(srows[0].seuil) : null,
-        refLabel: "seuil",
-        fmtY: function (v) { return B.eur(v, 2); },
-        aria: "Clôture de STMicroelectronics en euros, et son seuil d'achat",
-        color: dash.colors[1]
+      var sr = rowsOf("stm_seuil");
+      sh.classList.remove("dash-skeleton");
+      drawLine("ch-stm", sr, {
+        y: "cloture", label: "STM", color: dash.colors[1],
+        ref: sr.length ? Number(sr[0].seuil) : null, refLabel: "seuil",
+        fmtY: function (v) { return B.eur(v); },
+        aria: "Clôture de STMicroelectronics en euros, et son seuil d'achat"
       });
-    } else {
-      sHost.classList.add("dash-skeleton");
-      sHost.textContent = "";
-    }
+    } else { sh.classList.add("dash-skeleton"); sh.textContent = ""; }
   });
 })();
 </script>

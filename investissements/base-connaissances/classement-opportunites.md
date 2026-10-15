@@ -3002,3 +3002,51 @@ l'espérance nette ajustée du risque, le seuil mesure une distance de prix.
 > 🔑 **Et la condition compagne de STM, ajoutée ce jour, dit déjà que le rapprochement actuel ne
 > serait pas achetable** : le 09/10, **STM −3,00 % et ASML −1,78 % pendant que le S&P montait de
 > +0,6 %** — baisse SECTORIELLE, donc réévaluation de marché et non décote.
+
+---
+
+## 15/10/2026 (soir) — RE-CLASSEMENT sur les chiffres réels de Tanguy
+
+Les deux captures reçues ce soir **invalident la base de tous mes calculs de
+sizing**. Cœur PEA réel : **501,69 €** (70 parts), pas 1 313 €. Patrimoine
+investi réel, deux comptes réunis : **1 783,42 €**.
+
+### Le classement change de tête
+
+| Rang | Dossier | État | Action |
+|---|---|---|---|
+| **①** | **Cœur World (WPEA)** | 7,167 € *(17:29)* | **ACHAT IMMÉDIAT — 304,26 € de cash qui dort** |
+| ② | Eli Lilly | 1 179,27 $ | seuil 1 020 $ → −13,51 %, s'éloigne |
+| ③ | Magnum | — | dormant |
+| ④ | **STM** | 43,030 € | seuil 42 € → −2,39 % · **BLOQUÉ DEUX FOIS** |
+
+### Pourquoi le cœur passe devant tout le reste
+
+**R = 30,67 %**, au-dessus du plafond de 25 % de mon propre règlement. Tant que
+c'est vrai, **aucune action individuelle ne peut entrer** — c'est mécanique, ça
+ne se négocie pas avec la qualité du dossier.
+
+**STM est donc bloqué deux fois** : par sa condition compagne *(test du 14/10,
+inchangé)* **et** par le garde-fou R. Même une clôture sous 42 € ne déclenche
+rien avant que le cœur soit remonté. **C'est la première fois que le garde-fou R
+mord réellement** — jusqu'ici il était confortable, parce que son dénominateur
+était faux.
+
+### L'arbitrage du cash qui dort : payer 1,75 € maintenant, ou attendre
+
+- Attendre le 1er novembre coûte ≈ **1,13 €** d'espérance de rendement
+  *(304,26 × 8 % × 17/365)* — moins que les ~1,75 € de frais. **À un coup, attendre gagne.**
+- Mais le ticket gratuit est **mensuel et plafonné à 500 €**. Si le versement de
+  500 € le sature chaque mois, les 304,26 € **ne passent jamais**. Le retard est
+  **permanent**, pas de 17 jours.
+- Coût d'un retard permanent : ≈ **24 €/an** d'espérance *(304,26 × 8 %)*,
+  contre **1,75 € une fois**. **Payer maintenant.**
+
+> **Ce qui change l'arbitrage, c'est la périodicité, pas le montant.** En
+> comparant un ordre à un ordre, j'aurais conclu « attends ». La bonne
+> comparaison est entre *payer une fois* et *porter la lacune indéfiniment*.
+> *(㊸ : demander la COMPARAISON, pas la mesure.)*
+
+Frais estimés depuis une source secondaire *(grille du 09/02/2026)* : **à
+confirmer sur fortuneo.fr**. Si l'ordre hors ticket coûtait plus de ~7 €,
+l'arbitrage basculerait — seuil nommé à l'avance.
