@@ -2339,3 +2339,100 @@ Un article *« ASML Backlog Hits 2027 as Bookings Double Estimates »* remonte s
 **Il est daté du 29 janvier 2026 et porte sur le T4 2025** *(13,2 Md€ contre un consensus de
 6,85)*. **Mauvais trimestre ET comparatif au consensus** — les deux choses que mon contrat
 interdisait nommément. *Écarté.*
+
+---
+
+## 🔧 15/10/2026 — AMENDEMENT à la condition compagne STM, écrit AVANT les chiffres du jour
+
+### Le défaut, et il est de ma conception
+La condition dit : *« STM sous-performe ASML de ≥ 5 points depuis le 09/10 »*. Elle suppose que
+toute divergence mesure une **faiblesse propre à STM**. **Faux dans un cas, et ce cas se présente
+aujourd'hui** : *ASML a publié ses résultats le 14/10. Si son titre a bondi sur SA PROPRE bonne
+nouvelle, la divergence se creusera — et ma condition se déclencherait en lisant « STM est
+faible » alors que la réalité serait « ASML est forte ».*
+> 🔴 **Un comparateur à titre unique porte le risque idiosyncratique des DEUX côtés.** *J'avais
+> nommé la faiblesse du comparateur (ASML est un équipementier, pas un fabricant de puces) ;
+> je n'avais pas vu que son propre calendrier pouvait fabriquer la divergence.*
+> ⚠️ **Et la faute est entièrement mienne** : **je savais le 14/10 au matin qu'ASML publiait ce
+> jour-là.** *Ce n'est pas un aléa, c'est une omission de conception.*
+
+### L'amendement, et il va dans le sens du BLOCAGE
+> **La divergence doit être ≥ 5 points sur une fenêtre EXCLUANT la séance de résultats d'ASML
+> (14/10).** *Et si une telle fenêtre ne peut pas être construite proprement, la condition
+> **ÉCHOUE par défaut** — donc pas d'ordre.*
+
+**Trois raisons de corriger dans ce sens précis :**
+1. **La condition existe pour BLOQUER des achats.** *Un défaut qui pourrait la faire passer à
+   tort doit être corrigé vers le blocage, jamais vers l'autorisation.*
+2. **C'est R51 appliquée** *(écrite hier)* : **le défaut par défaut est l'inaction.** *Une mesure
+   que je ne sais pas faire proprement ne devient pas un permis.*
+3. **Le timing est propre** : *j'écris ceci **avant** de connaître les clôtures du 14/10.* **Si je
+   l'écrivais demain, en ayant vu une divergence favorable, ce serait un déplacement de poteaux —
+   et dans le sens qui m'arrange.**
+
+### 📌 Ce qui reste utilisable aujourd'hui
+La mesure **09/10 → 13/10** est intacte et antérieure à la publication : **STM −5,82 % contre
+ASML −5,74 %, divergence 0,08 point.** *Elle reste ma meilleure lecture du caractère sectoriel de
+la baisse, et elle n'est contaminée par aucun événement propre à ASML.*
+> **Conclusion inchangée : la baisse de STM est sectorielle, et il n'y a pas d'ordre.**
+
+---
+
+## 📅 15/10/2026 — France-smalls : trois faits, dont deux protecteurs
+⚠️ Tout **[RÉSUMÉ DE RECHERCHE]**, 23 requêtes, aucune page ouverte. *Et pour une fois :
+**aucun décalage d'année détecté** — y compris sur le 09/10, où rien d'Enertime (liq. 09/10/2024)
+n'est remonté.*
+
+### ☠️ AJOUT À LA LISTE NOIRE — Transition Evergreen (EGR)
+**Pas encore liquidée, et c'est pour ça qu'elle est dangereuse.** Redressement judiciaire ouvert
+le **14/10/2025**, **période d'observation EXPIRÉE le 14/10/2026** *(hier)*, audience du 09/10,
+**décision attendue fin octobre**. **ANR −35,2 M€** · RN S1 −3,0 M€ *(contre −14,0 M€ au S1 2025,
+comparatif de l'émetteur)* · **les commissaires aux comptes émettent des doutes sur la continuité
+d'exploitation** · filiale Everwood en sauvegarde depuis le 12/01/2026.
+> **Profil identique à IntegraGen il y a dix jours** : société vivante, activité poursuivie,
+> décision de tribunal imminente, et des actionnaires derrière les créanciers. **À traiter comme
+> un dossier de détresse, jamais comme une valeur vivante.**
+**À surveiller sans la classer morte — HRS (ALHRS)** : pas de procédure collective, mais
+augmentation de capital **ramenée de 3,81 à 3,13 M€ après le retrait d'un investisseur**, et
+continuité d'exploitation **explicitement conditionnée** à l'obtention de tous les financements.
+
+### 🔻 ERAMET — augmentation de capital de 500 M€, soit **46 % de sa capitalisation**
+AK de **500 M€** avec DPS au T4, l'État *(APE)* passant de 27,1 % à premier actionnaire.
+**Motif donné par l'émetteur : reconstituer les fonds propres et RESPECTER LES COVENANTS
+BANCAIRES.** Pertes propres citées : **−477 M€ (2025)** et **−195 M€ (S1 2026)**. Titre **−14,44 %
+à 37,24 €** le 13/10.
+> 🔑 **Une levée qui pèse 46 % de la capitalisation, motivée par des covenants, après deux
+> exercices de pertes : c'est du financement de détresse, pas une opportunité.** *Même famille
+> que Guerbet, tuée avant-hier — sauf qu'ici la dilution est explicite et chiffrée.* **PASSE.**
+
+### 📈 EKINOPS — la seule guidance RELEVÉE de la fenêtre
+**13/10, 18h00** : CA T3 **31,9 M€, +43 %** *(comparatif de l'émetteur : vs T3 2025)* · 9M
+**90,1 M€, +13 %** *(+11 % à périmètre comparable)*. **Objectif annuel porté de « single-digit »
+à « high single-digit »** — *relèvement dans les termes mêmes de l'émetteur.* Vigilance annoncée
+sur l'approvisionnement en composants.
+> 🛑 **Non promue, et le motif est structurel** : **jeudi est un terrain AVEUGLE** — aucun cours
+> de small cap parisienne n'est obtenable par ce canal *(établi le 01/10, jamais démenti depuis)*.
+> **㊵ : la priçabilité est éliminatoire, en amont de tout le reste.** *Le fait est bon, daté,
+> avec le comparatif de l'émetteur. Il ne peut simplement pas être instrumenté.* **Versé au radar
+> pour le jour où l'accès s'ouvrira.**
+
+### Les autres faits de la fenêtre
+**Bourse Direct** CA 9M 65,8 M€ **+16,9 %** · **Implanet** 9M 10,57 M€ **+21 %**, trésorerie
+0,82 M€ · **SMAIO** T3 stable, marge brute **81 % contre 85 %**, RN −1,2 M€ contre −0,7 M€ ·
+**Netgem** dépréciation de **~650 K€** *(créances TalkTalk UK)* · **N4 Group** IPO Growth 50 M€,
+premières négociations le 26/10 · **Gold by Gold** AK 1,5 M€.
+**Écartés** : **Exail** *(capi ~4 Md€, hors small caps)* · **PNE AG** *(abaissement réel mais
+société du SDAX allemand — ressemble à un avertissement français et n'en est pas un)* ·
+**Euroland abaissant SMAIO** — **révision de COURTIER, pas d'émetteur, exclue.**
+**Rien du tout sur trois catégories** : aucun waiver bancaire, aucun changement de dirigeant,
+**aucun contrat chiffré** de small cap parisienne. *L'agent le donne comme « rien » plutôt que de
+le combler — c'est la bonne réponse.*
+
+### ⚠️ ASML : +1,23 % à Amsterdam et −3,94 % au Nasdaq le MÊME JOUR
+La ligne d'Amsterdam clôture à **1 528,20 € (+1,23 %)** ; la cotation américaine clôture
+**−3,94 %**. *L'écart ne peut pas venir du change — il faudrait ~5 % de variation EUR/USD en un
+jour.* **La séance américaine se termine ~4 heures après Amsterdam : le gain européen a été rendu,
+et au-delà.**
+> ⚠️ **Je rapporte le fait, pas le mécanisme.** *L'explication par le décalage horaire est
+> plausible et je ne l'ai pas vérifiée.* **Mais la lecture « ASML a monté sur ses résultats » est
+> au minimum incomplète : sur la journée pleine, le marché a vendu une publication solide.**

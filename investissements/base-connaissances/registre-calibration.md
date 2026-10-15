@@ -3549,3 +3549,37 @@ Seuil 42 € : **−4,19 %** *(−7,82 % le 12/10 · −9,76 % le 09/10 · −15
 > ✅ **Et C057 reste un appel honnête malgré ça** : il porte sur le PRIX, pas sur l'opportunité.
 > *Le résoudre VRAI sans avoir acheté ne sera pas une contradiction — ce sera la preuve que les
 > deux questions étaient bien distinctes.*
+
+## 🔺 15/10 — C057 : 55 % → **67 %**, et je remplace mon abattement ad hoc par une correction standard
+**STM 43,030 € au 14/10** *(−1,84 %, OHLC complet, horodaté 17:35:12, bouclage exact)* —
+**cinquième baisse consécutive** : 47,985 → 46,545 → 45,565 → 43,835 → **43,030**.
+Seuil 42 € : **−2,39 %.**
+
+### 🔧 Changement de méthode : correction de barrière DISCRÈTE
+Depuis le 12/10 j'appliquais un **abattement arbitraire** *(« ~×0,88 parce que la condition exige
+une clôture, pas une touche »)*. **Je le remplace par la correction standard** d'une barrière
+observée en temps discret : `barrière effective = barrière × (1 − 0,5826·σ·√Δt)`, soit **−1,65 %**
+ici → **barrière effective 41,31 €**.
+> ✅ **Rétro-contrôle honnête — mes chiffres ad hoc étaient bons** : 27,3 % *(j'avais 30)* ·
+> 35,0 % *(38)* · 55,3 % *(55)*. **Aucune révision rétroactive n'est due.** *Je note quand même le
+> changement : avoir eu raison par tâtonnement n'est pas une raison de continuer à tâtonner.*
+
+**→ Aujourd'hui : P(touche) = 67,1 %. C057 enregistré à 67 %.**
+
+### ❌ Et la condition d'ACHAT échoue toujours — sous LES DEUX constructions
+| Construction | STM | ASML | Divergence | Verdict *(seuil ≥ 5 pts)* |
+|---|---|---|---|---|
+| **(a)** 09/10 → 13/10 *(excluant la séance de résultats — mon amendement de ce matin)* | −5,82 % | −5,74 % | **−0,08 pt** | **ÉCHOUE** |
+| **(b)** 09/10 → 14/10 *(incluant la séance de résultats)* | −7,55 % | −4,58 % | **−2,97 pt** | **ÉCHOUE** |
+
+> ✅ **Le verdict ne dépend PAS de la construction, et c'est le meilleur résultat possible pour un
+> amendement** : *il a été écrit ce matin pour une bonne raison — ASML publiait et pouvait
+> fabriquer la divergence — et il n'a rien fabriqué du tout.* **Un amendement qui ne change pas
+> l'issue est un amendement qu'on peut croire désintéressé.**
+> 🔑 **ASML a bien monté de +1,23 % le jour de ses résultats** : **le risque que je redoutais ce
+> matin était réel.** *Sans l'amendement, la construction (b) aurait quand même échoué — mais
+> j'aurais dû la défendre après coup au lieu de l'avoir bornée avant.*
+
+> 📈 **C057 à 67 % et la condition d'achat en échec : l'écart est maintenant maximal.** *Deux
+> chances sur trois que le prix tombe, et aucune raison d'acheter s'il tombe.* **C'est
+> exactement ce que la séparation du 12/10 devait rendre visible.**
