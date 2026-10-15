@@ -74,3 +74,43 @@ la seule ligne dont je connais la quantité par ailleurs.
 
 Une feuille, une lecture, et les cours de toutes les lignes sont à jour — **fin
 du relevé à la main**. Supprimer les feuilles de test après usage.
+
+## Pièges d'alignement — rencontrés le 15/10, à ne pas redécouvrir
+
+**1. Les places n'ont pas les mêmes jours fériés.** Sur juin-octobre : NASDAQ
+**95** séances, Londres **97**, Paris **98**. Un `TEXTJOIN` par série donne des
+listes de longueurs différentes — **les coller côte à côte décale tout**.
+→ **Toujours récupérer la colonne de dates de CHAQUE ticker**, puis reporter le
+dernier cours connu (*forward-fill*) sur un calendrier commun.
+
+**2. Le change cote tous les jours, les actions non.** `CURRENCY:EURUSD` en
+`DAILY` renvoie **137** points sur la même période, week-ends compris.
+→ Récupérer aussi les dates du change et l'aligner par date.
+
+**3. `WEEKLY` échappe aux deux pièges** : toutes les séries tombent sur 41 points
+alignés. **Pour une vue longue, préférer `WEEKLY`** ; ne passer en `DAILY` que
+sur la période récente, avec l'alignement ci-dessus.
+
+## Pièges d'affichage — la plainte de Tanguy du 15/10 au soir
+
+> « La courbe est beaucoup trop proche, elle n'est pas visible. C'est un trait. »
+
+**Trois causes cumulées, toutes de mon fait :**
+
+1. **L'axe partait de zéro** (`fromZero: true`). Sur des valeurs de 500 €, une
+   variation de 20 € devient invisible. **Supprimé.** Un axe ne part de zéro que
+   pour des barres, jamais pour une courbe de suivi.
+2. **La marge verticale était de 15 %**, ce qui écrase encore. **Passée à 6 %.**
+3. **Des lignes de 77 € et de 500 € sur la même échelle linéaire** : les petites
+   sont des traits plats, quoi qu'on fasse.
+   → **Mode « % » par défaut** : chaque ligne repart de 0 au début de la période
+   choisie. C'est le seul affichage où des lignes d'ordres de grandeur
+   différents sont comparables.
+
+**Et un piège de fond** : un **versement** n'est pas une performance. Le dépôt
+PEA du 02/10 fait sauter le total de 500 €. La courbe de performance trace donc
+le **livre eToro seul**, continu sur l'année. `portefeuille-2026.csv` porte les
+deux colonnes : `valeur_eur` (total réel) et `etoro_eur` (hors versements).
+
+Commandes de la page : périodes **1 mois / 3 mois / 6 mois / 2026** et bascule
+**% / €**, stockées dans `dash/params` (`periode`, `mode`).

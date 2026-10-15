@@ -52,9 +52,18 @@
   border-radius: var(--cds-radius); padding: var(--cds-pad-xs) var(--cds-pad-sm); }
 .bi-btn:hover { background: var(--color-panel); }
 
+.bi-seg { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: var(--cds-gap-sm); }
+.bi-seg button { font-family: inherit; font-size: var(--cds-font-size-caption);
+  color: var(--color-fg-muted); background: none; border: 1px solid transparent;
+  border-radius: var(--cds-radius); padding: 5px 10px; cursor: pointer; min-height: 32px; }
+.bi-seg button:hover { background: var(--color-panel); }
+.bi-seg button[aria-pressed="true"] { color: var(--color-fg);
+  background: var(--color-panel); border-color: var(--color-border-line); }
+.bi-seg .bi-sep { flex: 1 1 0; min-width: 0; }
 .bi-chartwrap { position: relative; }
 .bi-chart { position: relative; min-height: 220px; }
 .bi-chart.bi-hero-chart { min-height: 300px; }
+@media (max-width: 640px) { .bi-chart.bi-hero-chart { min-height: 340px; } }
 .bi-chart.bi-tall { min-height: 260px; }
 .bi-chart svg { display: block; }
 .bi-tick { font-size: var(--cds-font-size-caption); fill: var(--color-fg-muted);
@@ -153,13 +162,24 @@
       <button class="bi-btn" id="f-reset" type="button">Tout</button>
     </div>
 
+    <div class="bi-seg" id="seg-periode" role="group" aria-label="Période">
+      <button type="button" data-p="1m">1 mois</button>
+      <button type="button" data-p="3m">3 mois</button>
+      <button type="button" data-p="6m">6 mois</button>
+      <button type="button" data-p="2026">2026</button>
+      <span class="bi-sep"></span>
+      <button type="button" data-m="pct">%</button>
+      <button type="button" data-m="eur">€</button>
+    </div>
+
     <div class="bi-chartwrap">
       <div class="bi-chart bi-hero-chart dash-skeleton" id="ch-valeurs" data-source="valeurs"></div>
     </div>
     <div class="bi-leg" id="val-leg" style="margin-top: var(--cds-gap-sm);"></div>
 
-    <p class="bi-note" style="margin-top: var(--cds-gap-xs);">Filtre sur une seule ligne et le
-      pointillé montre ce que tu y as mis : l'écart entre la courbe et lui, c'est ton gain.</p>
+    <p class="bi-note" style="margin-top: var(--cds-gap-xs);">En <b>%</b>, toutes tes lignes partent
+      du même point : c'est là qu'on voit laquelle monte et laquelle descend. En <b>€</b>, filtre sur
+      une seule ligne et le pointillé montre ce que tu y as mis — l'écart, c'est ton gain.</p>
 
     <div class="bi-rail" id="rail" hidden>
       <span>Ta part risquée est à
@@ -250,7 +270,8 @@
       <div class="bi-chartwrap">
         <div class="bi-chart bi-tall dash-skeleton" id="ch-2026" data-source="portefeuille_2026"></div>
       </div>
-      <div class="bi-note">Le PEA n'apparaît qu'à partir du 2 octobre : tu ne l'avais pas avant.</div>
+      <div class="bi-note">Ton livre eToro seul, pour que la courbe montre tes gains et pas tes
+        versements : ton dépôt PEA du 2 octobre y ferait une marche de 500 € qui écraserait tout.</div>
     </div>
 
     <div class="bi-card" style="margin-top: var(--cds-gap-md);">
@@ -613,6 +634,12 @@ dash.calc("stm_ecart", {
     if (!tr) return;
     dash.setParams({ ligne: params().ligne === tr.dataset.key ? null : tr.dataset.key });
   });
+  q("#seg-periode").addEventListener("click", function (ev) {
+    var b = ev.target.closest("button");
+    if (!b) return;
+    if (b.dataset.p) dash.setParams({ periode: b.dataset.p });
+    if (b.dataset.m) dash.setParams({ mode: b.dataset.m });
+  });
   q("#go-idees").addEventListener("click", function () {
     var el = document.getElementById("idees");
     el.scrollIntoView();
@@ -635,8 +662,7 @@ dash.calc("stm_ecart", {
     var vals = tous.map(function (p) { return p.v; });
     if (opt.ref != null) vals.push(opt.ref);
     var lo = d3.min(vals), hi = d3.max(vals);
-    if (opt.fromZero && lo > 0) lo = 0;
-    var pad = (hi - lo || Math.abs(hi) * 0.02 || 1) * 0.15;
+    var pad = (hi - lo || Math.abs(hi) * 0.02 || 1) * 0.06;
     var y = d3.scaleLinear([lo - pad, hi + pad], [0, 1]);
     var ticks = y.ticks(4);
 
@@ -925,8 +951,8 @@ dash.calc("stm_ecart", {
       drawSeries("ch-2026", [{
         nom: "Portefeuille", couleur: dash.colors[0],
         pts: rowsOf("portefeuille_2026").map(function (r) {
-          return { d: B.parseDay(r.date), v: Number(r.valeur_eur) };
-        }).filter(function (o) { return !isNaN(o.v) && !isNaN(o.d); })
+          return { d: B.parseDay(r.date), v: Number(r.etoro_eur) };
+        }).filter(function (o) { return !isNaN(o.v) && o.v > 0 && !isNaN(o.d); })
       }], { fmtY: function (v) { return B.eur(v, 0); }, height: 260,
             aria: "Valeur du portefeuille en euros, semaine par semaine en 2026" });
     } else { ah.classList.add("dash-skeleton"); ah.textContent = ""; }
@@ -939,6 +965,17 @@ dash.calc("stm_ecart", {
     vleg.textContent = "";
     if (ok("valeurs")) {
       vh.classList.remove("dash-skeleton");
+      var periode = p.periode || "2026", mode = p.mode || "pct";
+      all("#seg-periode button").forEach(function (b) {
+        b.setAttribute("aria-pressed", b.dataset.p ? b.dataset.p === periode : b.dataset.m === mode);
+      });
+      var toutes = rowsOf("valeurs").map(function (r) { return r.date; }).sort();
+      var fin = toutes[toutes.length - 1] || "2026-10-15";
+      var jours = { "1m": 31, "3m": 92, "6m": 184 }[periode];
+      var depuis = jours
+        ? d3.utcFormat("%Y-%m-%d")(d3.utcDay.offset(B.parseDay(fin), -jours))
+        : "2026-01-01";
+
       var retenues = lignesVisibles().filter(function (n) { return !p.ligne || n === p.ligne; });
       var parLigne = d3.group(rowsOf("valeurs"), function (r) { return r.ligne; });
       var tickerDe = function (nom) {
@@ -946,10 +983,14 @@ dash.calc("stm_ecart", {
         return (o && o.ticker) ? o.ticker : nom;
       };
       var series = retenues.map(function (nom) {
-        var pts = (parLigne.get(nom) || []).map(function (r) {
-          return { d: B.parseDay(r.date), v: Number(r.valeur_eur) };
-        }).filter(function (o) { return !isNaN(o.v) && !isNaN(o.d); })
+        var pts = (parLigne.get(nom) || []).filter(function (r) { return r.date >= depuis; })
+          .map(function (r) { return { d: B.parseDay(r.date), v: Number(r.valeur_eur) }; })
+          .filter(function (o) { return !isNaN(o.v) && !isNaN(o.d); })
           .sort(function (a, b) { return a.d - b.d; });
+        if (mode === "pct" && pts.length) {
+          var base = pts[0].v;
+          pts = pts.map(function (o) { return { d: o.d, v: (o.v / base - 1) * 100 }; });
+        }
         return { nom: tickerDe(nom), complet: nom, pts: pts };
       }).filter(function (s) { return s.pts.length > 0; })
         .sort(function (a, b) {
@@ -957,15 +998,17 @@ dash.calc("stm_ecart", {
         });
       series.forEach(function (s, i) { s.couleur = dash.colors[i % dash.colors.length]; });
 
-      var base = null;
-      if (series.length === 1) {
+      var ref = null, refLab = null;
+      if (mode === "pct") { ref = 0; refLab = "point de départ"; }
+      else if (series.length === 1) {
         var o = perfDe(series[0].complet);
-        if (o.investi != null) base = o.investi;
+        if (o.investi != null) { ref = o.investi; refLab = "ce que tu as mis"; }
       }
       drawSeries("ch-valeurs", series, {
-        fmtY: function (v) { return B.eur(v, 0); }, fromZero: true, height: 290,
-        ref: base, refLabel: base == null ? null : "ce que tu as mis",
-        aria: "Valeur de chaque ligne en euros, par date"
+        fmtY: mode === "pct" ? function (v) { return B.pct(v); } : function (v) { return B.eur(v, 0); },
+        height: (vh.clientWidth || 320) >= 520 ? 290 : 330, ref: ref, refLabel: refLab,
+        aria: mode === "pct" ? "Évolution de chaque ligne en pourcentage, par date"
+                             : "Valeur de chaque ligne en euros, par date"
       });
 
       if (series.length > 1) {
@@ -977,7 +1020,8 @@ dash.calc("stm_ecart", {
           var nom = document.createElement("span"); nom.textContent = s.nom;
           var val = document.createElement("span");
           val.className = "bi-legv";
-          val.textContent = B.eur(s.pts[s.pts.length - 1].v, 0);
+          val.textContent = mode === "pct" ? B.pct(s.pts[s.pts.length - 1].v)
+                                           : B.eur(s.pts[s.pts.length - 1].v, 0);
           btn.appendChild(dot); btn.appendChild(nom); btn.appendChild(val);
           btn.addEventListener("click", function () { dash.setParams({ ligne: s.complet }); });
           vleg.appendChild(btn);
