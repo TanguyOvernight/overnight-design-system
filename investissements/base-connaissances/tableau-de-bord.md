@@ -238,3 +238,34 @@ Doc : https://code.claude.com/docs/en/cloud-environments#network-access
 ⚠️ **Ne pas sur-promettre** : Yahoo donnerait les **cours**, pas l'historique de
 **ses positions**. La question « combien je gagnais en 2026 » resterait
 dépendante de ses dates d'achat, ou de la courbe de son courtier.
+
+## Périmètre du suivi — décision de Tanguy du 15/10
+
+Une **micro-position résiduelle du compte eToro est sortie du suivi**, et ne doit
+**plus être nommée** : ni dans le tableau de bord, ni dans les briefs, ni dans les
+réponses. Elle a été retirée de `positions.csv` et de `valeurs.csv`, et les
+montants eToro de `comptes.csv` ont été recalés sur les seules lignes suivies.
+
+**Ce qu'il ne faut jamais taire pour autant** : les montants eToro du dossier sont
+désormais **inférieurs de quelques euros** au total que son application affiche.
+C'est écrit dans la description des sources `positions` et `comptes`, sans nommer
+la ligne. Ne pas re-rapprocher naïvement les deux chiffres à la prochaine capture
+en croyant à une erreur.
+
+Effet sur les garde-fous — **aucun changement de conclusion** :
+
+| | Avant | Après |
+|---|---|---|
+| Patrimoine | 1 783,42 € | **1 777,98 €** |
+| Risqué | 453,14 € | **447,70 €** |
+| **R** | 30,67 % | **30,42 %** — toujours > 25 % |
+| Cœur manquant | 335,22 € | **318,90 €** |
+| Plafond L | 267,51 € | **266,70 €** |
+
+Bénéfice inattendu : les titres suivis font **exactement 1 471,90 €**, soit la
+somme des lignes du calcul de performance. **Le dossier se recoupe désormais au
+centime**, ce qui n'était pas le cas avant.
+
+> Les appels de calibration déjà résolus qui portaient sur cette ligne **restent
+> dans le registre** : on ne réécrit pas un historique de calibration pour
+> satisfaire une préférence d'affichage. On cesse simplement d'en parler.

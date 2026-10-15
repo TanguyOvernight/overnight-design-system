@@ -194,8 +194,6 @@
           <tbody></tbody>
         </table>
       </div>
-      <div class="bi-flag">Renault était coupée sur ta capture : son nom est confirmé, mais sa valeur est
-        déduite par différence et je n'ai pas son prix de revient — elle est donc hors des performances.</div>
     </div>
 
     <div class="bi-grid" style="margin-top: var(--cds-gap-md);">
@@ -232,8 +230,7 @@
       <div class="bi-big dash-skeleton" data-source="estimation_totale" data-field="gain" data-row="0">—</div>
       <div class="bi-note">Fourchette :
         <span class="dash-skeleton" data-source="estimation_totale" data-field="gain_bas" data-row="0">—</span>
-        à <span class="dash-skeleton" data-source="estimation_totale" data-field="gain_haut" data-row="0">—</span>.
-        Renault est exclue, je n'ai aucune donnée sur elle.</div>
+        à <span class="dash-skeleton" data-source="estimation_totale" data-field="gain_haut" data-row="0">—</span>.</div>
       <div class="bi-txt" style="margin-top: var(--cds-gap-md);">
         Ce que ça veut dire : sur tes
         <span class="dash-skeleton" data-source="perf_totale" data-field="pv" data-row="0">—</span>
@@ -451,7 +448,7 @@ dash.calc("garde_fous", {
 
 dash.calc("perf", {
   title: "Performance de chaque ligne",
-  description: "Montant investi = valeur actuelle − gain affiché par le courtier. Performance = gain ÷ investi. Les lignes sans gain connu, comme Renault, sont écartées.",
+  description: "Montant investi = valeur actuelle − gain affiché par le courtier. Performance = gain ÷ investi.",
   inputs: ["positions"],
   fn: function (positions) {
     return positions

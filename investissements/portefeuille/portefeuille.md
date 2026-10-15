@@ -13,8 +13,8 @@ Tanguy** (PEA Fortuneo à 17h33, eToro à 17h46). C'est le premier relevé des
 | | Titres | Espèces | Total |
 |---|---|---|---|
 | **PEA Fortuneo** | 501,69 € | **304,26 €** | **805,95 €** |
-| **eToro** (CTO) | 975,65 € | 1,82 € | **977,47 €** |
-| **Total** | 1 477,34 € | 306,08 € | **1 783,42 €** |
+| **eToro** (CTO) | 970,21 € | 1,82 € | **972,03 €** |
+| **Total** | 1 471,90 € | 306,08 € | **1 777,98 €** |
 
 ## PEA Fortuneo — n° 010264380616
 
@@ -34,13 +34,13 @@ PRU **7,082 €** · cours **7,167 €** *(relevé 17:29, avant clôture)* · va
 | Nvidia | NVDA | 204,79 € | +70,85 € | Risqué |
 | Tesla | TSLA | 165,07 € | −13,52 € | Risqué |
 | Microsoft | MSFT.RTH | 77,84 € | +21,59 € | Risqué |
-| **Renault** | RNO | **5,44 €** *(déduite)* | ? | Risqué |
 
-La 6e ligne est **déduite par différence** (`977,47 − 970,21 − 1,82`). L'app
-annonce « Actifs (6) » et n'en montre que 5. **Nom confirmé par Tanguy le 15/10 :
-Renault (RNO)** — cohérent avec les 5,33 € de la capture du 25/07 *(appel C064,
-annoncé à 72 %, résolu VRAI)*. ⚠️ **La valeur de 5,44 € reste déduite**, jamais
-lue : à recaler sur la prochaine capture eToro complète.
+⚠️ **Périmètre, décidé par Tanguy le 15/10** : une micro-position résiduelle du
+compte eToro est **sortie du suivi**, et ne doit plus être nommée dans les briefs
+ni dans le tableau de bord. Conséquence à ne jamais taire : les montants eToro de
+ce dossier **couvrent les seules lignes suivies** et sont donc inférieurs de
+quelques euros au total affiché par son application. Toute réconciliation future
+doit partir de là.
 
 ⚠️ Rappel fiscal : eToro = compte à l'étranger → **flat tax 31,4 %** et
 **formulaire 3916** obligatoire à la déclaration.
@@ -48,24 +48,24 @@ lue : à recaler sur la prochaine capture eToro complète.
 ## Répartition et garde-fous
 
 - **Cœur** *(ETF larges)* : `501,69 + 288,89 + 233,62 = ` **1 024,20 €** — 57,4 %
-- **Risqué** *(actions individuelles)* : `204,79 + 165,07 + 77,84 + 5,44 = ` **453,14 €** — 25,4 %
+- **Risqué** *(actions individuelles)* : `204,79 + 165,07 + 77,84 = ` **447,70 €** — 25,2 %
 - **Espèces** : **306,08 €** — 17,2 %
 
-**R = risqué ÷ (cœur + risqué) = 453,14 ÷ 1 477,34 = 30,67 %.**
-→ **DÉPASSE le plafond de 25 %.** Il faut un cœur ≥ `3 × 453,14 =` **1 359,42 €**,
-soit **335,22 € de cœur manquants**.
+**R = risqué ÷ (cœur + risqué) = 447,70 ÷ 1 471,90 = 30,42 %.**
+→ **DÉPASSE le plafond de 25 %.** Il faut un cœur ≥ `3 × 447,70 =` **1 343,10 €**,
+soit **318,90 € de cœur manquants**.
 
 Chemin de retour :
-- investir les 304,26 € qui dorment → **R = 25,43 %** *(encore 31 € au-dessus)* ;
-- puis le versement de 500 € du 1er novembre → **R = 19,86 %**.
+- investir les 304,26 € qui dorment → **R = 25,21 %** *(encore 15 € au-dessus)* ;
+- puis le versement de 500 € du 1er novembre → **R = 19,70 %**.
 
 **Plafond par ligne** `L = min(5 % × (V + 6 000 €) ; 15 % × V)` avec
-V = patrimoine investi = 1 783,42 € → **L = 267,51 €**. La plus grosse ligne
+V = patrimoine investi = 1 777,98 € → **L = 266,70 €**. La plus grosse ligne
 risquée (NVDA, 204,79 €) est dessous : **pas de dépassement**.
 
 > ⚠️ **Changement de base, à dire franchement** : jusqu'au 14/10 je calculais V
 > sur le seul cœur PEA, faute de relevé eToro certifié. V passe donc de ~1 313 €
-> (faux) à 1 783,42 € (vrai), et L de ~197 € à 267,51 €. Ce n'est pas un
+> (faux) à 1 777,98 € (vrai), et L de ~197 € à 266,70 €. Ce n'est pas un
 > assouplissement de la règle : c'est la première fois que j'en connais la base.
 
 ## La correction du 15/10 — ce que je publiais était faux
