@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-10-14",
+ "maj": "2026-10-15",
  "offres": [
   {
    "d": "2026-10-03",
@@ -176,7 +176,7 @@
    "ct": "CDD 1 an renouvelable",
    "xp": "3 ans min",
    "u": "https://www.jobup.ch/fr/emplois/detail/78588ba5-43d0-436d-a88c-06585cb10608/",
-   "n": "Contenu, événements, réseaux, communauté alumni. L'annonce cite les « outils de génération de contenu (IA, etc.) ». Réserves : prospection tél., CDD. Entrée 01.12 → candidater maintenant.",
+   "n": "Contenu, événements, réseaux, communauté alumni. L'annonce cite les « outils de génération de contenu (IA, etc.) ». Réserves : prospection tél., CDD. Entrée 01.12 → candidater maintenant. ⏰ Dernier jour de publication : 15.10.",
    "g": true,
    "cl": false,
    "dl": null,
@@ -2778,6 +2778,80 @@
     "Profil performance/CRM plus que créa"
    ],
    "at": "Ton expérience funnel et automatisation est pertinente ; l'écart est sur les années et l'outillage Adobe Experience."
+  },
+  {
+   "d": "2026-10-15",
+   "b": 47,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "solide",
+   "t": "Creative Marketing Manager (healthtech wellness × IA)",
+   "c": "Jobgether (client non nommé)",
+   "l": "Suisse · remote",
+   "dist": "Télétravail",
+   "tx": "100%",
+   "ct": "n.p. (temps plein)",
+   "xp": "2+ ans",
+   "lg": "EN",
+   "g": true,
+   "u": "https://ch.linkedin.com/jobs/view/creative-marketing-manager-at-jobgether-4478825276",
+   "n": "Passe remote Suisse. Produit bien-être à la croisée de l'IA et du développement personnel. Intermédiaire Jobgether.",
+   "fit": {
+    "m": 2,
+    "da": 2,
+    "ia": 1,
+    "pct": 74
+   },
+   "ms": [
+    "Concepts publicitaires pour Meta (Facebook, Instagram)",
+    "Concepts vidéo et image, formats UGC et storytelling",
+    "Hooks, titres et copy",
+    "Tests créatifs et analyse de performance",
+    "Positionnement produit selon marchés et audiences"
+   ],
+   "inf": [
+    "2+ ans en marketing, pub, copywriting, contenu ou stratégie créative",
+    "Collaboration avec designers et monteurs",
+    "⚠️ Intermédiaire, employeur non nommé"
+   ],
+   "at": "Stratégie créative + copy + lecture des données : ton profil marketing/DA ; tes contenus produits avec l'IA sont un plus pour ce produit IA."
+  },
+  {
+   "d": "2026-10-15",
+   "b": 47,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Creative Technologist (mapping vidéo, immersif)",
+   "c": "Lumen Créations",
+   "l": "Région de Lausanne",
+   "dist": "Lausanne",
+   "tx": "40-60%",
+   "ct": "n.p.",
+   "xp": "« expérience confirmée »",
+   "lg": "FR",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/creative-technologist-at-lumen-cr%C3%A9ations-4479583222",
+   "n": "Studio d'expériences immersives, mappings architecturaux, installations lumineuses, futurs spectacles de drones.",
+   "fit": {
+    "m": 0,
+    "da": 2,
+    "ia": 1,
+    "pct": 48
+   },
+   "ms": [
+    "Concevoir des expériences visuelles et immersives",
+    "Programmer et installer des mappings vidéo, dispositifs LED et interactifs",
+    "Participer à la direction technique et artistique"
+   ],
+   "inf": [
+    "⚠️ 40-60 % seulement",
+    "⚠️ Très technique : TouchDesigner, MadMapper, Notch, projection, LED",
+    "After Effects et Blender cités"
+   ],
+   "at": "Le titre de ton persona, mais en version régie technique audiovisuelle et à temps partiel : à garder pour la curiosité."
   }
  ]
 }
