@@ -100,6 +100,23 @@
 #t-classement :is(th, td):nth-child(5) { text-align: right; }
 .bi-outro { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.6; }
 .bi-outro li { margin-bottom: var(--cds-gap-xs); }
+#t-estimation :is(th, td):nth-child(2), #t-estimation :is(th, td):nth-child(3),
+#t-estimation :is(th, td):nth-child(4) { text-align: right; }
+.bi-estim { border-left: 3px solid var(--cds-chart-muted); }
+.bi-estim .bi-k { color: var(--color-warn); }
+
+@media (max-width: 640px) {
+  .bi-card { padding: var(--cds-pad-md); }
+  .bi-fld { flex: 1 1 calc(50% - var(--cds-gap-sm)); min-width: 0; }
+  .bi-table :is(th, td) { padding: var(--cds-pad-sm) var(--cds-pad-xs); }
+  #t-positions :is(th, td):nth-child(2), #t-positions :is(th, td):nth-child(3),
+  #t-comptes :is(th, td):nth-child(2),
+  #t-classement :is(th, td):nth-child(3), #t-classement :is(th, td):nth-child(4),
+  #t-estimation :is(th, td):nth-child(3), #t-estimation :is(th, td):nth-child(5) { display: none; }
+  .bi-leg { gap: var(--cds-gap-sm) var(--cds-gap-md); }
+  .bi-sec { margin-top: var(--cds-gap-lg); }
+}
+
 [data-dash-source-state="empty"] { color: transparent; }
 [data-dash-source-state="refreshing"] { opacity: .5; transition: opacity var(--cds-dur-slow); }
 @media (prefers-reduced-motion: no-preference) {
@@ -202,6 +219,61 @@
           </table>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="bi-sec" id="estimation">
+    <h2 class="bi-h2">Combien tu as gagné en 2026 — estimation</h2>
+    <p class="bi-lead">Tu me l'as demandé trois fois, donc le voici, avec sa fourchette et la méthode
+      en clair. Ce bloc est le seul de la page qui ne repose pas uniquement sur tes relevés.</p>
+
+    <div class="bi-card bi-estim">
+      <div class="bi-k">Estimation — pas une mesure</div>
+      <div class="bi-big dash-skeleton" data-source="estimation_totale" data-field="gain" data-row="0">—</div>
+      <div class="bi-note">Fourchette :
+        <span class="dash-skeleton" data-source="estimation_totale" data-field="gain_bas" data-row="0">—</span>
+        à <span class="dash-skeleton" data-source="estimation_totale" data-field="gain_haut" data-row="0">—</span>.
+        Renault est exclue, je n'ai aucune donnée sur elle.</div>
+      <div class="bi-txt" style="margin-top: var(--cds-gap-md);">
+        Ce que ça veut dire : sur tes
+        <span class="dash-skeleton" data-source="perf_totale" data-field="pv" data-row="0">—</span>
+        de plus-value,
+        <b class="dash-skeleton" data-source="estimation_totale" data-field="avant" data-row="0">—</b>
+        ont été gagnés <b>avant</b> 2026, soit
+        <span class="dash-skeleton" data-source="estimation_totale" data-field="part_avant" data-row="0">—</span>
+        du total. <b>Cette conclusion tient d'un bout à l'autre de ma fourchette.</b>
+      </div>
+    </div>
+
+    <div class="bi-card" style="margin-top: var(--cds-gap-md);">
+      <div class="bi-k">Ligne par ligne</div>
+      <div class="bi-tablebox">
+        <table class="bi-table" id="t-estimation" data-source="estimation" data-row-key="ligne">
+          <thead><tr>
+            <th data-field="ticker">Ligne</th>
+            <th data-field="ytd_pct">2026</th>
+            <th data-field="valeur_jan">Au 1<sup>er</sup> janv.</th>
+            <th data-field="gain">Gain 2026</th>
+            <th data-field="ancrage">Sur quoi je m'appuie</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="bi-card" style="margin-top: var(--cds-gap-md);">
+      <div class="bi-k">Ce qui peut rendre ces chiffres faux</div>
+      <ul class="bi-outro">
+        <li><b>Je suppose que tu détenais les mêmes quantités depuis janvier.</b> Si tu as acheté ou
+          vendu en cours d'année, tout le bloc est faux. C'est l'hypothèse la plus lourde.</li>
+        <li><b>Le change.</b> Tes lignes eToro sont affichées en euros mais cotent en dollars. Sans
+          taux de change officiel, un mouvement de l'euro de quelques pour cent déplace le résultat
+          d'autant que le gain lui-même.</li>
+        <li><b>Mes sources s'arrêtent entre juin et septembre</b> et se contredisent. Le MSCI World
+          est le point faible : plus rien après le 30 juin.</li>
+        <li>Pour la vraie courbe, sans aucune de ces hypothèses : la performance affichée par eToro
+          et par Fortuneo sur la période de ton choix. Une capture de chacune et je la mets ici.</li>
+      </ul>
     </div>
   </section>
 
@@ -386,8 +458,9 @@ dash.calc("perf", {
       .filter(function (p) { return p.pv_eur !== "" && p.pv_eur !== null && p.pv_eur !== undefined; })
       .map(function (p) {
         var v = Number(p.valeur_eur), pv = Number(p.pv_eur), inv = v - pv;
-        return { ligne: p.ligne, poche: p.poche, categorie: p.categorie,
-          investi: inv, valeur: v, pv: pv, perf_pct: inv ? pv / inv * 100 : null };
+        return { ligne: p.ligne, ticker: p.ticker || p.ligne, poche: p.poche,
+          categorie: p.categorie, investi: inv, valeur: v, pv: pv,
+          perf_pct: inv ? pv / inv * 100 : null };
       });
   }
 });
@@ -400,6 +473,35 @@ dash.calc("perf_totale", {
     var inv = perf.reduce(function (s, p) { return s + p.investi; }, 0);
     var val = perf.reduce(function (s, p) { return s + p.valeur; }, 0);
     return [{ investi: inv, valeur: val, pv: val - inv, perf_pct: inv ? (val - inv) / inv * 100 : null }];
+  }
+});
+
+dash.calc("estimation", {
+  title: "Estimation du gain 2026 par ligne",
+  description: "Valeur au 1er janvier = valeur d'aujourd'hui ÷ (1 + performance 2026). Le gain est la différence. La fourchette applique les bornes basse et haute de la performance. Suppose que la quantité détenue n'a pas changé depuis janvier.",
+  inputs: ["estimation_2026", "positions"],
+  fn: function (estimation_2026, positions) {
+    var gain = function (v, y) { return v - v / (1 + y / 100); };
+    return estimation_2026.filter(function (e) { return e.ytd_pct !== ""; }).map(function (e) {
+      var pos = positions.filter(function (p) { return p.ligne === e.ligne; })[0] || {};
+      var v = Number(pos.valeur_eur);
+      return { ligne: e.ligne, ticker: pos.ticker || e.ligne, ancrage: e.ancrage,
+        ytd_pct: Number(e.ytd_pct), valeur: v, valeur_jan: v / (1 + Number(e.ytd_pct) / 100),
+        gain: gain(v, Number(e.ytd_pct)),
+        gain_bas: gain(v, Number(e.ytd_bas)), gain_haut: gain(v, Number(e.ytd_haut)) };
+    });
+  }
+});
+
+dash.calc("estimation_totale", {
+  title: "Gain 2026 estimé, et part gagnée avant 2026",
+  description: "Somme des gains estimés de chaque ligne, avec sa fourchette, puis la part de la plus-value totale qui a été gagnée avant 2026.",
+  inputs: ["estimation", "perf_totale"],
+  fn: function (estimation, perf_totale) {
+    var s = function (k) { return estimation.reduce(function (a, e) { return a + e[k]; }, 0); };
+    var g = s("gain"), pv = perf_totale[0].pv;
+    return [{ gain: g, gain_bas: s("gain_bas"), gain_haut: s("gain_haut"),
+      avant: pv - g, part_avant: pv ? (pv - g) / pv * 100 : null }];
   }
 });
 
@@ -681,7 +783,7 @@ dash.calc("stm_ecart", {
     var meas = svg.append("g").attr("opacity", 0), nomW = 0, valW = 0;
     rows.forEach(function (r) {
       nomW = Math.max(nomW, meas.append("text").attr("class", "bi-tick")
-        .text(r.ligne).node().getComputedTextLength());
+        .text(r.ticker).node().getComputedTextLength());
       valW = Math.max(valW, meas.append("text").attr("class", "bi-endlab")
         .text(B.pct(r.perf_pct)).node().getComputedTextLength());
     });
@@ -704,7 +806,7 @@ dash.calc("stm_ecart", {
       svg.append("text").attr("class", "bi-tick").attr("x", m.left - 8)
         .attr("y", yb + hb / 2).attr("text-anchor", "end").attr("dominant-baseline", "middle")
         .attr("fill", choisie && choisie !== r.ligne ? "var(--color-fg-muted)" : "var(--color-fg)")
-        .text(r.ligne);
+        .text(r.ticker);
       svg.append("rect").attr("x", pos ? zero : x(r.perf_pct)).attr("y", yb)
         .attr("width", Math.max(1, Math.abs(x(r.perf_pct) - zero)))
         .attr("height", hb).attr("rx", 4).attr("fill", couleur)
@@ -820,6 +922,20 @@ dash.calc("stm_ecart", {
       function (r) { var o = perfDe(r.ligne); return o.perf_pct == null ? "—" : B.pct(o.perf_pct); }
     ], function (r) { return r.ligne; });
 
+    one("estimation_totale", "gain", function (v) { return B.eurs(v); });
+    one("estimation_totale", "gain_bas", function (v) { return B.eurs(v); });
+    one("estimation_totale", "gain_haut", function (v) { return B.eurs(v); });
+    one("estimation_totale", "avant", function (v) { return B.eurs(v); });
+    one("estimation_totale", "part_avant", function (v) { return B.pctp(v); });
+
+    fillTable("#t-estimation", ok("estimation") ? rowsOf("estimation") : [], [
+      function (r) { return r.ticker; },
+      function (r) { return B.pct(r.ytd_pct); },
+      function (r) { return B.eur(r.valeur_jan); },
+      function (r) { return B.eurs(r.gain); },
+      function (r) { return r.ancrage; }
+    ], function (r) { return r.ligne; });
+
     var ph = document.getElementById("ch-perf");
     if (ok("perf")) { ph.classList.remove("dash-skeleton"); drawPerf(visibles(perf)); }
     else { ph.classList.add("dash-skeleton"); ph.textContent = ""; }
@@ -830,12 +946,16 @@ dash.calc("stm_ecart", {
       vh.classList.remove("dash-skeleton");
       var retenues = lignesVisibles().filter(function (n) { return !p.ligne || n === p.ligne; });
       var parLigne = d3.group(rowsOf("valeurs"), function (r) { return r.ligne; });
+      var tickerDe = function (nom) {
+        var o = positions.filter(function (x) { return x.ligne === nom; })[0];
+        return (o && o.ticker) ? o.ticker : nom;
+      };
       var series = retenues.map(function (nom) {
         var pts = (parLigne.get(nom) || []).map(function (r) {
           return { d: B.parseDay(r.date), v: Number(r.valeur_eur) };
         }).filter(function (o) { return !isNaN(o.v) && !isNaN(o.d); })
           .sort(function (a, b) { return a.d - b.d; });
-        return { nom: nom, pts: pts };
+        return { nom: tickerDe(nom), complet: nom, pts: pts };
       }).filter(function (s) { return s.pts.length > 0; })
         .sort(function (a, b) {
           return d3.descending(a.pts[a.pts.length - 1].v, b.pts[b.pts.length - 1].v);
@@ -844,7 +964,7 @@ dash.calc("stm_ecart", {
 
       var base = null;
       if (series.length === 1) {
-        var o = perfDe(series[0].nom);
+        var o = perfDe(series[0].complet);
         if (o.investi != null) base = o.investi;
       }
       drawSeries("ch-valeurs", series, {
@@ -864,7 +984,7 @@ dash.calc("stm_ecart", {
           val.className = "bi-legv";
           val.textContent = B.eur(s.pts[s.pts.length - 1].v, 0);
           btn.appendChild(dot); btn.appendChild(nom); btn.appendChild(val);
-          btn.addEventListener("click", function () { dash.setParams({ ligne: s.nom }); });
+          btn.addEventListener("click", function () { dash.setParams({ ligne: s.complet }); });
           vleg.appendChild(btn);
         });
       } else if (series.length === 1) {
