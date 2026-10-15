@@ -702,8 +702,9 @@ dash.calc("stm_ecart", {
         .attr("stroke", "var(--cds-chart-reference)").attr("stroke-width", 1)
         .attr("stroke-dasharray", "4 3");
       if (opt.refLabel) {
-        svg.append("text").attr("class", "bi-endlab").attr("x", m.left + 4)
-          .attr("y", y(opt.ref) - 6).attr("fill", "var(--color-fg-muted)").text(opt.refLabel);
+        svg.append("text").attr("class", "bi-endlab").attr("x", W - m.right - 4)
+          .attr("y", y(opt.ref) - 7).attr("text-anchor", "end")
+          .attr("fill", "var(--color-fg-muted)").text(opt.refLabel);
       }
     }
 
@@ -725,8 +726,14 @@ dash.calc("stm_ecart", {
           .attr("stroke-width", 2).attr("stroke-linecap", "round")
           .attr("stroke-linejoin", "round").attr("d", ligne);
       }
-      s.pts.forEach(function (p) {
-        svg.append("circle").attr("cx", x(p.d)).attr("cy", y(p.v)).attr("r", 3.5).attr("fill", s.couleur);
+      // Au-delà d'une quinzaine de points les pastilles noient la courbe :
+      // on ne garde alors que celle du bout, qui sert de repère avec la légende.
+      var montrerTout = s.pts.length <= 15;
+      s.pts.forEach(function (p, i) {
+        var dernier = i === s.pts.length - 1;
+        if (!montrerTout && !dernier) return;
+        svg.append("circle").attr("cx", x(p.d)).attr("cy", y(p.v))
+          .attr("r", dernier ? 3.5 : 3).attr("fill", s.couleur);
       });
     });
     if (seule) {
@@ -999,7 +1006,7 @@ dash.calc("stm_ecart", {
       series.forEach(function (s, i) { s.couleur = dash.colors[i % dash.colors.length]; });
 
       var ref = null, refLab = null;
-      if (mode === "pct") { ref = 0; refLab = "point de départ"; }
+      if (mode === "pct") { ref = 0; refLab = null; }
       else if (series.length === 1) {
         var o = perfDe(series[0].complet);
         if (o.investi != null) { ref = o.investi; refLab = "ce que tu as mis"; }

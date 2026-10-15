@@ -136,3 +136,27 @@ l'un des miens. Une permission accordée pour un usage ne l'autorise pas pour un
 autre — elle retire une question, pas une responsabilité.
 
 Pour révoquer : supprimer la ligne de `.claude/settings.json`.
+
+## Lisibilité, deuxième passe — capture de Tanguy du 15/10 à 20h18
+
+> « C'est illisible avec les points au bout des courbes. »
+
+**Une pastille par point de donnée, c'est tenable à 10 points et illisible à
+120.** Six séries × ~120 séances = **720 pastilles** par-dessus six traits de
+2 px : la courbe disparaît sous ses propres marqueurs.
+
+Règle retenue, codée dans `drawSeries` :
+- **≤ 15 points** → une pastille par point *(des points rares doivent se voir)* ;
+- **> 15 points** → **aucune pastille sauf celle du bout**, qui sert de repère
+  entre la ligne et la légende.
+
+Second défaut de la même capture : l'étiquette « point de départ » s'écrivait à
+**gauche**, exactement là où les six courbes se rejoignent à 0 %. Déplacée à
+droite, et **supprimée en mode %** — l'axe affiche déjà `+0,0 %`, le pointillé
+se lit seul. **Une étiquette qui nomme l'évidence et masque la donnée coûte deux
+fois.**
+
+> Principe à garder : **la densité des marqueurs doit dépendre du nombre de
+> points, pas d'un choix fait une fois.** Le code qui allait bien pour quatre
+> clôtures hebdomadaires est devenu nuisible le jour où j'ai ouvert le canal
+> quotidien — la même ligne de code, un ordre de grandeur plus loin.
