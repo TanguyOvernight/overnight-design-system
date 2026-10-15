@@ -114,3 +114,25 @@ deux colonnes : `valeur_eur` (total réel) et `etoro_eur` (hors versements).
 
 Commandes de la page : périodes **1 mois / 3 mois / 6 mois / 2026** et bascule
 **% / €**, stockées dans `dash/params` (`periode`, `mode`).
+
+## Permission de nettoyage — accordée par Tanguy le 15/10
+
+`mcp__Google_Drive__trash_file` est dans `permissions.allow` de
+`.claude/settings.json` *(à la racine du dépôt)* : la mise à la corbeille des
+feuilles de calcul de travail ne demande plus de validation.
+
+**Portée exacte, à ne pas élargir sans qu'il le redemande** :
+- la règle couvre **cet outil entier**, pas seulement les feuilles que je crée —
+  les permissions MCP ne se filtrent pas par argument ;
+- `trash_file` **met à la corbeille**, il ne supprime pas : tout reste
+  récupérable 30 jours depuis Drive ;
+- le fichier est **versionné**, donc la règle vaut pour **toute session agent sur
+  ce dépôt**, pas seulement pour moi.
+
+**Discipline que je m'impose en échange** : ne mettre à la corbeille que des
+fichiers **que j'ai créés dans la même session**, et le dire dans ma réponse. Ne
+jamais toucher à un fichier préexistant de son Drive, même si le nom ressemble à
+l'un des miens. Une permission accordée pour un usage ne l'autorise pas pour un
+autre — elle retire une question, pas une responsabilité.
+
+Pour révoquer : supprimer la ligne de `.claude/settings.json`.
