@@ -20,13 +20,29 @@
 .bi-big { font-family: var(--font-anthropic-serif); font-weight: 400;
   font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; line-height: 1.15; }
 .bi-alert .bi-big { color: var(--color-bad); }
+.bi-gain .bi-big { color: var(--color-ok); }
 .bi-note { margin-top: var(--cds-gap-xs); font-size: var(--cds-font-size-caption);
   color: var(--color-fg-muted); font-variant-numeric: tabular-nums; line-height: 1.5; }
 .bi-flag { margin-top: var(--cds-gap-sm); font-size: var(--cds-font-size-caption);
   color: var(--color-warn); line-height: 1.5; }
 .bi-txt { font-size: var(--cds-font-size-body); line-height: 1.5; }
+
+.bi-filters { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm) var(--cds-gap-md);
+  align-items: flex-end; }
+.bi-fld { display: flex; flex-direction: column; gap: 2px; min-width: 9rem; flex: 1 1 9rem; }
+.bi-fld > span { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.bi-sel { font-family: inherit; font-size: var(--cds-font-size-caption); color: var(--color-fg);
+  background: var(--color-bg); border: 1px solid var(--color-border-line);
+  border-radius: var(--cds-radius); padding: var(--cds-pad-xs) var(--cds-pad-sm); width: 100%; }
+.bi-btn { font-family: inherit; font-size: var(--cds-font-size-caption); color: var(--color-fg);
+  background: var(--color-bg); border: 1px solid var(--color-border-line); cursor: pointer;
+  border-radius: var(--cds-radius); padding: var(--cds-pad-xs) var(--cds-pad-sm); }
+.bi-btn:hover { background: var(--color-panel); }
+.bi-chip { margin-top: var(--cds-gap-sm); font-size: var(--cds-font-size-caption); }
+
 .bi-chartwrap { position: relative; }
 .bi-chart { position: relative; min-height: 220px; }
+.bi-chart.bi-tall { min-height: 260px; }
 .bi-chart svg { display: block; }
 .bi-tick { font-size: var(--cds-font-size-caption); fill: var(--color-fg-muted);
   font-family: var(--font-anthropic-sans); font-variant-numeric: tabular-nums; }
@@ -38,14 +54,21 @@
   padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption);
   font-variant-numeric: tabular-nums; white-space: nowrap; }
 .bi-tip .bi-tipd { color: var(--cds-text-secondary); }
+.bi-tip .bi-tipr { display: flex; align-items: center; gap: var(--cds-gap-xs); }
+
 .bi-bar { display: flex; width: 100%; height: 28px; border-radius: 4px; overflow: hidden;
   margin-bottom: var(--cds-gap-sm); min-height: 28px; }
 .bi-bar > span { display: block; height: 100%; }
 .bi-leg { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm) var(--cds-gap-lg);
   font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+.bi-leg > button { display: flex; align-items: center; gap: var(--cds-gap-xs);
+  background: none; border: none; padding: 0; cursor: pointer; font: inherit;
+  color: var(--color-fg); }
 .bi-leg > div { display: flex; align-items: center; gap: var(--cds-gap-xs); }
+.bi-leg .bi-off { opacity: .4; }
 .bi-dot { width: .625rem; height: .625rem; border-radius: 2px; flex: none; }
 .bi-legv { color: var(--color-fg-muted); }
+
 .bi-tablebox { overflow-x: auto; }
 .bi-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption);
   font-variant-numeric: tabular-nums; }
@@ -56,9 +79,12 @@
   border-bottom: 1px solid var(--color-border-line); }
 .bi-table tr:last-child td { border-bottom: none; }
 .bi-table th, .bi-table td { text-align: left; }
+#t-positions tbody tr { cursor: pointer; }
+#t-positions tbody tr:hover { background: var(--color-bg); }
 #t-comptes :is(th, td):nth-child(2), #t-comptes :is(th, td):nth-child(3),
 #t-comptes :is(th, td):nth-child(4),
 #t-positions :is(th, td):nth-child(4), #t-positions :is(th, td):nth-child(5),
+#t-positions :is(th, td):nth-child(6),
 #t-classement :is(th, td):nth-child(3), #t-classement :is(th, td):nth-child(4),
 #t-classement :is(th, td):nth-child(5) { text-align: right; }
 .bi-outro { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.6; }
@@ -91,8 +117,11 @@
         <div class="bi-k">À investir tout de suite</div>
         <div class="bi-big dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=action_montant">—</div>
         <div class="bi-note dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=action">—</div>
-        <div class="bi-note">Ce cash dort sur ton PEA et ne rapporte rien. Ordre hors ticket gratuit, frais estimés
-          <span class="dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=action_frais">—</span>.</div>
+        <div class="bi-note">Ton ordre gratuit d'octobre est déjà parti sur l'achat du 1<sup>er</sup>.
+          Celui-ci pourrait donc être facturé, estimation
+          <span class="dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=action_frais">—</span> :
+          lis la ligne de frais dans l'appli avant de valider. Au-delà de
+          <span class="dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=seuil_frais">—</span>, préviens-moi.</div>
       </div>
 
       <div class="bi-card bi-alert">
@@ -104,11 +133,13 @@
         <div class="bi-flag">Tant que c'est dépassé : aucune nouvelle action individuelle, STM compris.</div>
       </div>
 
-      <div class="bi-card">
-        <div class="bi-k">Plafond par ligne risquée</div>
-        <div class="bi-big dash-skeleton" data-source="garde_fous" data-field="plafond_ligne" data-row="0">—</div>
-        <div class="bi-note">Le plus petit des deux : 5 % de (patrimoine + 6 000 €) et 15 % du patrimoine.
-          Aucune de tes lignes ne le dépasse aujourd'hui.</div>
+      <div class="bi-card bi-gain">
+        <div class="bi-k">Plus-value latente, tout compris</div>
+        <div class="bi-big dash-skeleton" data-source="perf_totale" data-field="pv" data-row="0">—</div>
+        <div class="bi-note">
+          <span class="dash-skeleton" data-source="perf_totale" data-field="perf_pct" data-row="0">—</span>
+          sur <span class="dash-skeleton" data-source="perf_totale" data-field="investi" data-row="0">—</span> investis.
+          Renault est hors de ce calcul : je n'ai pas son gain.</div>
       </div>
 
     </div>
@@ -116,6 +147,24 @@
     <div class="bi-card" style="margin-top: var(--cds-gap-md);">
       <div class="bi-k">Consigne du jour</div>
       <div class="bi-txt dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=consigne">—</div>
+    </div>
+  </section>
+
+  <section class="bi-sec" id="filtres">
+    <h2 class="bi-h2">Filtres</h2>
+    <p class="bi-lead">Ils s'appliquent au tableau de tes lignes, au graphique de performance et à la courbe.
+      Les chiffres de la section Décision et les totaux restent sur l'ensemble du portefeuille.</p>
+    <div class="bi-card">
+      <div class="bi-filters">
+        <label class="bi-fld"><span>Compte</span>
+          <select class="bi-sel" id="f-poche" data-source="positions"></select></label>
+        <label class="bi-fld"><span>Catégorie</span>
+          <select class="bi-sel" id="f-cat" data-source="positions"></select></label>
+        <label class="bi-fld"><span>Ligne</span>
+          <select class="bi-sel" id="f-ligne" data-source="positions"></select></label>
+        <button class="bi-btn" id="f-reset" type="button">Tout afficher</button>
+      </div>
+      <div class="bi-chip bi-note" id="f-chip"></div>
     </div>
   </section>
 
@@ -159,8 +208,8 @@
 
   <section class="bi-sec" id="lignes">
     <h2 class="bi-h2">Tes lignes</h2>
-    <p class="bi-lead">Classées en cœur (ETF larges et diversifiés) et risqué (actions individuelles).
-      C'est ce partage qui gouverne la limite des 25 %.</p>
+    <p class="bi-lead">Clique une ligne pour la suivre seule dans les graphiques. Catégorie cœur = ETF
+      larges et diversifiés ; risqué = actions individuelles. C'est ce partage qui gouverne la limite des 25 %.</p>
     <div class="bi-card">
       <div class="bi-tablebox">
         <table class="bi-table" id="t-positions" data-source="positions" data-row-key="ligne">
@@ -168,35 +217,46 @@
             <th data-field="ligne">Ligne</th>
             <th data-field="poche">Compte</th>
             <th data-field="categorie">Catégorie</th>
+            <th data-source="perf" data-field="investi">Investi</th>
             <th data-field="valeur_eur">Valeur</th>
-            <th data-field="pv_eur">Gain / perte</th>
+            <th data-source="perf" data-field="perf_pct">Perf.</th>
           </tr></thead>
           <tbody></tbody>
         </table>
       </div>
       <div class="bi-flag">La ligne Renault était coupée sur ta capture : son nom est confirmé, mais sa
-        valeur reste déduite par différence. Elle se recalera à ta prochaine capture eToro.</div>
+        valeur reste déduite par différence et je n'ai pas son prix de revient.</div>
+    </div>
+  </section>
+
+  <section class="bi-sec" id="performance">
+    <h2 class="bi-h2">Performance par ligne</h2>
+    <p class="bi-lead">Gain ou perte depuis ton achat, en pourcentage du montant investi sur chaque ligne.
+      Survole une barre pour le détail en euros.</p>
+    <div class="bi-card">
+      <div class="bi-chartwrap">
+        <div class="bi-chart bi-tall dash-skeleton" id="ch-perf" data-source="perf"></div>
+      </div>
     </div>
   </section>
 
   <section class="bi-sec" id="courbes">
     <h2 class="bi-h2">L'évolution, jour après jour</h2>
-    <p class="bi-lead">Le WPEA suit l'indice MSCI World : cette courbe est à la fois ton placement principal
-      et le marché mondial. Chaque point est un cours que j'ai vérifié à la main ; les trous sont les jours
-      où je n'ai pas pu le certifier.</p>
+    <p class="bi-lead">La valeur de chaque ligne, un point par jour. Clique une entrée de la légende pour
+      l'isoler. Ton WPEA remonte au 9 octobre parce que je connais ses cours ; les autres lignes démarrent
+      aujourd'hui et se rempliront à chaque capture eToro que tu m'enverras.</p>
     <div class="bi-card">
+      <div class="bi-chartwrap">
+        <div class="bi-chart dash-skeleton" id="ch-valeurs" data-source="valeurs"></div>
+      </div>
+      <div class="bi-leg" id="val-leg" style="margin-top: var(--cds-gap-sm);"></div>
+    </div>
+
+    <div class="bi-card" style="margin-top: var(--cds-gap-md);">
       <div class="bi-k">Cours du WPEA, en euros</div>
       <div class="bi-chartwrap">
         <div class="bi-chart dash-skeleton" id="ch-wpea" data-source="coeur_wpea"></div>
       </div>
-    </div>
-
-    <div class="bi-card" style="margin-top: var(--cds-gap-md);">
-      <div class="bi-k">Valeur totale de tes deux comptes</div>
-      <div class="bi-chartwrap">
-        <div class="bi-chart dash-skeleton" id="ch-patrimoine" data-source="patrimoine"></div>
-      </div>
-      <p class="bi-note" id="patrimoine-note"></p>
     </div>
   </section>
 
@@ -238,12 +298,11 @@
     <h2 class="bi-h2">Ce que cette page ne sait pas</h2>
     <ul class="bi-outro">
       <li>Elle n'est branchée sur aucune bourse en direct : je n'ai accès à aucun flux de marché depuis ma
-        session. Chaque cours est relevé à la main pendant le brief du matin, et la page se met à jour quand
-        je la réécris.</li>
-      <li>Tes deux comptes ne sont pas connectés non plus. Leurs montants viennent de tes captures et ne
-        bougeront que si tu m'en envoies de nouvelles.</li>
-      <li>Les trous dans la courbe sont réels : ce sont les jours où je n'ai pas réussi à certifier un cours.
-        Je préfère un trou à un chiffre inventé.</li>
+        session. Chaque cours est relevé à la main pendant le brief du matin.</li>
+      <li>Tes deux comptes ne sont pas connectés non plus. Seul le WPEA se remet à jour tout seul, parce que
+        je peux en relever le cours ; tes lignes eToro ne bougeront qu'à ta prochaine capture.</li>
+      <li>Les trous dans les courbes sont réels : ce sont les jours où je n'ai pas réussi à certifier une
+        valeur. Je préfère un trou à un chiffre inventé.</li>
       <li>Rien ici n'est une prévision. Les seuils sont des prix d'achat décidés à l'avance, pas des
         objectifs de cours.</li>
     </ul>
@@ -258,16 +317,14 @@
   var MOIS = ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août",
     "sept.", "oct.", "nov.", "déc."];
   function parseDay(s) { return new Date(String(s).slice(0, 10) + "T00:00:00Z"); }
-  function dayShort(d) { return d.getUTCDate() + " " + MOIS[d.getUTCMonth()]; }
-  function dayLong(d) { return d.getUTCDate() + " " + MOIS[d.getUTCMonth()] + " " + d.getUTCFullYear(); }
   window.BI = {
-    FR: FR,
-    parseDay: parseDay, dayShort: dayShort, dayLong: dayLong,
-    fmtDate: function (s) { var d = parseDay(s); return isNaN(d) ? String(s) : dayLong(d); },
+    FR: FR, parseDay: parseDay,
+    dayShort: function (d) { return d.getUTCDate() + " " + MOIS[d.getUTCMonth()]; },
+    dayLong: function (d) { return d.getUTCDate() + " " + MOIS[d.getUTCMonth()] + " " + d.getUTCFullYear(); },
+    fmtDate: function (s) { var d = parseDay(s); return isNaN(d) ? String(s) : window.BI.dayLong(d); },
     eur: function (v, dec) { return FR.format(",." + (dec === undefined ? 2 : dec) + "f")(v) + " €"; },
     pct: function (v) { return FR.format("+,.1f")(v) + " %"; },
-    pctp: function (v) { return FR.format(",.1f")(v) + " %"; },
-    num: function (v) { return FR.format(",")(v); }
+    pctp: function (v) { return FR.format(",.1f")(v) + " %"; }
   };
 })();
 </script>
@@ -278,9 +335,7 @@ dash.calc("total", {
   description: "Somme des titres, des espèces et du total de chaque compte relevé.",
   inputs: ["comptes"],
   fn: function (comptes) {
-    var s = function (k) {
-      return comptes.reduce(function (a, c) { return a + Number(c[k]); }, 0);
-    };
+    var s = function (k) { return comptes.reduce(function (a, c) { return a + Number(c[k]); }, 0); };
     return [{ titres: s("titres_eur"), especes: s("especes_eur"), total: s("total_eur") }];
   }
 });
@@ -316,6 +371,32 @@ dash.calc("garde_fous", {
               coeur_requis: 3 * risque,
               manque: Math.max(0, 3 * risque - coeur),
               plafond_ligne: Math.min(0.05 * (V + 6000), 0.15 * V) }];
+  }
+});
+
+dash.calc("perf", {
+  title: "Performance de chaque ligne",
+  description: "Montant investi = valeur actuelle − gain affiché par le courtier. Performance = gain ÷ investi. Les lignes sans gain connu, comme Renault, sont écartées.",
+  inputs: ["positions"],
+  fn: function (positions) {
+    return positions
+      .filter(function (p) { return p.pv_eur !== "" && p.pv_eur !== null && p.pv_eur !== undefined; })
+      .map(function (p) {
+        var v = Number(p.valeur_eur), pv = Number(p.pv_eur), inv = v - pv;
+        return { ligne: p.ligne, poche: p.poche, categorie: p.categorie,
+          investi: inv, valeur: v, pv: pv, perf_pct: inv ? pv / inv * 100 : null };
+      });
+  }
+});
+
+dash.calc("perf_totale", {
+  title: "Performance de l'ensemble",
+  description: "Somme des montants investis et des valeurs de toutes les lignes dont le gain est connu, et performance d'ensemble.",
+  inputs: ["perf"],
+  fn: function (perf) {
+    var inv = perf.reduce(function (s, p) { return s + p.investi; }, 0);
+    var val = perf.reduce(function (s, p) { return s + p.valeur; }, 0);
+    return [{ investi: inv, valeur: val, pv: val - inv, perf_pct: inv ? (val - inv) / inv * 100 : null }];
   }
 });
 
@@ -364,15 +445,13 @@ dash.calc("stm_ecart", {
   function ok(id) { return dash.data(id).status === "ok"; }
   function q(s) { return document.querySelector(s); }
   function all(s) { return Array.prototype.slice.call(document.querySelectorAll(s)); }
-
   function put(el, text, ready) {
     if (!el) return;
     el.textContent = (ready && text !== null && text !== undefined && text !== "") ? text : "—";
     el.classList.toggle("dash-skeleton", !ready);
   }
   function one(id, field, fmt) {
-    var good = ok(id) && rowsOf(id).length > 0;
-    var r = good ? rowsOf(id)[0] : null;
+    var good = ok(id) && rowsOf(id).length > 0, r = good ? rowsOf(id)[0] : null;
     all('[data-source="' + id + '"][data-field="' + field + '"]').forEach(function (el) {
       put(el, r ? fmt(r[field]) : null, good);
     });
@@ -396,25 +475,79 @@ dash.calc("stm_ecart", {
       tb.appendChild(tr);
     });
   }
+  function tipBox(host) {
+    var t = document.createElement("div");
+    t.className = "bi-tip";
+    host.appendChild(t);
+    return t;
+  }
+  function placeTip(tip, host, ev) {
+    var hb = host.getBoundingClientRect(), tw = tip.offsetWidth;
+    var left = ev.clientX - hb.left + 12;
+    if (left + tw > hb.width) left = Math.max(0, ev.clientX - hb.left - tw - 12);
+    tip.style.left = left + "px";
+    tip.style.top = Math.max(0, ev.clientY - hb.top - 48) + "px";
+  }
 
-  function drawLine(hostId, rows, opt) {
+  /* ---------- filtres ---------- */
+
+  function params() { return dash.params() || {}; }
+  function visibles(rows) {
+    var p = params();
+    return rows.filter(function (r) {
+      return (!p.poche || r.poche === p.poche) && (!p.categorie || r.categorie === p.categorie);
+    });
+  }
+  function lignesVisibles() {
+    return visibles(ok("positions") ? rowsOf("positions") : []).map(function (r) { return r.ligne; });
+  }
+  function remplirSelect(el, options, valeur, libelleTout) {
+    el.textContent = "";
+    el.appendChild(new Option(libelleTout, ""));
+    options.forEach(function (o) { el.appendChild(new Option(o, o)); });
+    el.value = valeur || "";
+    if (el.value !== (valeur || "")) el.value = "";
+  }
+
+  var selPoche = q("#f-poche"), selCat = q("#f-cat"), selLigne = q("#f-ligne");
+  selPoche.addEventListener("change", function () {
+    dash.setParams({ poche: selPoche.value || null, ligne: null });
+  });
+  selCat.addEventListener("change", function () {
+    dash.setParams({ categorie: selCat.value || null, ligne: null });
+  });
+  selLigne.addEventListener("change", function () {
+    dash.setParams({ ligne: selLigne.value || null });
+  });
+  q("#f-reset").addEventListener("click", function () { dash.resetParams(); });
+  q("#t-positions").addEventListener("click", function (ev) {
+    var tr = ev.target.closest("tr[data-key]");
+    if (!tr) return;
+    var p = params();
+    dash.setParams({ ligne: p.ligne === tr.dataset.key ? null : tr.dataset.key });
+  });
+
+  /* ---------- courbe multi-séries ---------- */
+
+  function drawSeries(hostId, series, opt) {
     var host = document.getElementById(hostId);
     if (!host) return;
     host.textContent = "";
-    var pts = rows.map(function (r) { return { d: B.parseDay(r.date), v: Number(r[opt.y]) }; })
-                  .filter(function (p) { return !isNaN(p.v) && !isNaN(p.d); });
-    if (!pts.length) return;
+    var tous = [];
+    series.forEach(function (s) { s.pts.forEach(function (p) { tous.push(p); }); });
+    if (!tous.length) return;
 
-    var W = Math.max(240, host.clientWidth || 320), H = opt.height || 220;
-    var svg = d3.select(host).append("svg")
-      .attr("width", "100%").attr("viewBox", "0 0 " + W + " " + H)
-      .attr("role", "img").attr("aria-label", opt.aria || "");
+    var W = Math.max(240, host.clientWidth || 320), H = opt.height || 230;
+    var svg = d3.select(host).append("svg").attr("width", "100%")
+      .attr("viewBox", "0 0 " + W + " " + H).attr("role", "img")
+      .attr("aria-label", opt.aria || "");
     if (!drawn[hostId]) { svg.attr("class", "bi-fade"); drawn[hostId] = true; }
 
-    var vals = pts.map(function (p) { return p.v; });
+    var vals = tous.map(function (p) { return p.v; });
     if (opt.ref != null) vals.push(opt.ref);
     var lo = d3.min(vals), hi = d3.max(vals);
-    var pad = (hi - lo || Math.abs(hi) * 0.02 || 1) * 0.2;
+    if (opt.fromZero && lo > 0) lo = 0;
+    var pad = (hi - lo || Math.abs(hi) * 0.02 || 1) * 0.15;
     var y = d3.scaleLinear([lo - pad, hi + pad], [0, 1]);
     var ticks = y.ticks(4);
 
@@ -423,24 +556,26 @@ dash.calc("stm_ecart", {
       leftW = Math.max(leftW, meas.append("text").attr("class", "bi-tick")
         .text(opt.fmtY(t)).node().getComputedTextLength());
     });
-    var endTxt = opt.label + " " + opt.fmtY(pts[pts.length - 1].v);
-    var endW = meas.append("text").attr("class", "bi-endlab").text(endTxt).node().getComputedTextLength();
-    var labW = pts.map(function (p) {
-      return meas.append("text").attr("class", "bi-tick")
-        .text(B.dayShort(p.d)).node().getComputedTextLength();
+    var seule = series.length === 1 ? series[0] : null;
+    var endTxt = seule ? seule.nom + " " + opt.fmtY(seule.pts[seule.pts.length - 1].v) : "";
+    var endW = endTxt ? meas.append("text").attr("class", "bi-endlab").text(endTxt)
+      .node().getComputedTextLength() : 0;
+    var dates = Array.from(new Set(tous.map(function (p) { return +p.d; }))).sort(d3.ascending)
+      .map(function (t) { return new Date(t); });
+    var labW = dates.map(function (d) {
+      return meas.append("text").attr("class", "bi-tick").text(B.dayShort(d)).node().getComputedTextLength();
     });
     meas.remove();
 
-    var m = { top: 16, right: Math.min(endW + 12, W * 0.45), bottom: 24, left: leftW + 10 };
+    var m = { top: 16, right: endTxt ? Math.min(endW + 12, W * 0.45) : 12, bottom: 24, left: leftW + 10 };
     if (W - m.left - m.right < 60) m.right = 12;
     y.range([H - m.bottom, m.top]);
-    var xd = d3.extent(pts, function (p) { return p.d; });
+    var xd = d3.extent(tous, function (p) { return p.d; });
     if (+xd[0] === +xd[1]) xd = [d3.utcDay.offset(xd[0], -1), d3.utcDay.offset(xd[1], 1)];
     var x = d3.scaleUtc(xd, [m.left, W - m.right]);
 
     ticks.forEach(function (t) {
-      svg.append("line").attr("x1", m.left).attr("x2", W - m.right)
-        .attr("y1", y(t)).attr("y2", y(t))
+      svg.append("line").attr("x1", m.left).attr("x2", W - m.right).attr("y1", y(t)).attr("y2", y(t))
         .attr("stroke", "var(--cds-chart-grid)").attr("stroke-width", 1);
       svg.append("text").attr("class", "bi-tick").attr("x", m.left - 6).attr("y", y(t))
         .attr("text-anchor", "end").attr("dominant-baseline", "middle").text(opt.fmtY(t));
@@ -451,63 +586,151 @@ dash.calc("stm_ecart", {
         .attr("y1", y(opt.ref)).attr("y2", y(opt.ref))
         .attr("stroke", "var(--cds-chart-reference)").attr("stroke-width", 1)
         .attr("stroke-dasharray", "4 3");
-      svg.append("text").attr("class", "bi-endlab").attr("x", W - m.right + 6).attr("y", y(opt.ref))
-        .attr("dominant-baseline", "middle").attr("fill", "var(--color-fg-muted)").text(opt.refLabel);
     }
 
     var keep = [];
-    for (var i = pts.length - 1; i >= 0; i--) {
-      var cx = x(pts[i].d), half = labW[i] / 2 + 8;
+    for (var i = dates.length - 1; i >= 0; i--) {
+      var cx = x(dates[i]), half = labW[i] / 2 + 8;
       var clash = keep.some(function (k) { return Math.abs(k.cx - cx) < half + k.half; });
       if (!clash) keep.push({ cx: cx, half: half, i: i });
     }
     keep.forEach(function (k) {
       svg.append("text").attr("class", "bi-tick").attr("x", k.cx).attr("y", H - 6)
-        .attr("text-anchor", "middle").text(B.dayShort(pts[k.i].d));
+        .attr("text-anchor", "middle").text(B.dayShort(dates[k.i]));
     });
 
-    var color = opt.color || dash.colors[0];
-    if (pts.length > 1) {
-      svg.append("path").datum(pts).attr("fill", "none").attr("stroke", color)
-        .attr("stroke-width", 2).attr("stroke-linecap", "round").attr("stroke-linejoin", "round")
-        .attr("d", d3.line().x(function (p) { return x(p.d); }).y(function (p) { return y(p.v); }));
+    var ligne = d3.line().x(function (p) { return x(p.d); }).y(function (p) { return y(p.v); });
+    series.forEach(function (s) {
+      if (s.pts.length > 1) {
+        svg.append("path").datum(s.pts).attr("fill", "none").attr("stroke", s.couleur)
+          .attr("stroke-width", 2).attr("stroke-linecap", "round")
+          .attr("stroke-linejoin", "round").attr("d", ligne);
+      }
+      s.pts.forEach(function (p) {
+        svg.append("circle").attr("cx", x(p.d)).attr("cy", y(p.v)).attr("r", 3).attr("fill", s.couleur);
+      });
+    });
+    if (seule) {
+      var dernier = seule.pts[seule.pts.length - 1];
+      svg.append("text").attr("class", "bi-endlab").attr("x", x(dernier.d) + 8).attr("y", y(dernier.v))
+        .attr("dominant-baseline", "middle").attr("fill", seule.couleur).text(endTxt);
     }
-    pts.forEach(function (p) {
-      svg.append("circle").attr("cx", x(p.d)).attr("cy", y(p.v)).attr("r", 3).attr("fill", color);
-    });
-    var last = pts[pts.length - 1];
-    svg.append("text").attr("class", "bi-endlab").attr("x", x(last.d) + 8).attr("y", y(last.v))
-      .attr("dominant-baseline", "middle").attr("fill", color).text(endTxt);
 
-    var tip = document.createElement("div");
-    tip.className = "bi-tip";
-    host.appendChild(tip);
-    var hov = svg.append("circle").attr("r", 5).attr("fill", "none")
-      .attr("stroke", color).attr("stroke-width", 2).attr("opacity", 0);
-
+    var tip = tipBox(host);
+    var hov = svg.append("g");
     svg.append("rect").attr("x", m.left).attr("y", m.top)
       .attr("width", Math.max(1, W - m.left - m.right)).attr("height", Math.max(1, H - m.top - m.bottom))
       .attr("fill", "transparent")
-      .on("pointerleave", function () { tip.style.opacity = 0; hov.attr("opacity", 0); })
+      .on("pointerleave", function () { tip.style.opacity = 0; hov.selectAll("*").remove(); })
       .on("pointermove", function (ev) {
         var box = this.getBoundingClientRect();
         var sc = box.width / Math.max(1, W - m.left - m.right);
         var px = m.left + (ev.clientX - box.left) / sc;
-        var p = pts[d3.leastIndex(pts, function (o) { return Math.abs(x(o.d) - px); })];
-        hov.attr("cx", x(p.d)).attr("cy", y(p.v)).attr("opacity", 1);
+        var jour = dates[d3.leastIndex(dates, function (d) { return Math.abs(x(d) - px); })];
+        hov.selectAll("*").remove();
         tip.textContent = "";
-        var a = document.createElement("div");
-        a.className = "bi-tipd"; a.textContent = B.dayLong(p.d);
-        var b = document.createElement("div");
-        b.textContent = opt.label + " " + opt.fmtY(p.v);
-        tip.appendChild(a); tip.appendChild(b);
+        var tete = document.createElement("div");
+        tete.className = "bi-tipd"; tete.textContent = B.dayLong(jour);
+        tip.appendChild(tete);
+        series.forEach(function (s) {
+          var p = s.pts.filter(function (o) { return +o.d === +jour; })[0];
+          if (!p) return;
+          hov.append("circle").attr("cx", x(p.d)).attr("cy", y(p.v)).attr("r", 5)
+            .attr("fill", "none").attr("stroke", s.couleur).attr("stroke-width", 2);
+          var row = document.createElement("div");
+          row.className = "bi-tipr";
+          if (!seule) {
+            var dot = document.createElement("span");
+            dot.className = "bi-dot"; dot.style.background = s.couleur;
+            row.appendChild(dot);
+          }
+          var nom = document.createElement("span");
+          nom.textContent = s.nom;
+          var val = document.createElement("span");
+          val.className = "bi-legv"; val.textContent = opt.fmtY(p.v);
+          row.appendChild(nom); row.appendChild(val);
+          tip.appendChild(row);
+        });
         tip.style.opacity = 1;
-        var hb = host.getBoundingClientRect(), tw = tip.offsetWidth;
-        var left = ev.clientX - hb.left + 12;
-        if (left + tw > hb.width) left = Math.max(0, ev.clientX - hb.left - tw - 12);
-        tip.style.left = left + "px";
-        tip.style.top = Math.max(0, ev.clientY - hb.top - 48) + "px";
+        placeTip(tip, host, ev);
       });
+  }
+
+  /* ---------- barres horizontales de performance ---------- */
+
+  function drawPerf(rows) {
+    var host = document.getElementById("ch-perf");
+    host.textContent = "";
+    if (!rows.length) return;
+    rows = rows.slice().sort(function (a, b) { return d3.descending(a.perf_pct, b.perf_pct); });
+
+    var W = Math.max(240, host.clientWidth || 320);
+    var hauteurBarre = 26, ecart = 12;
+    var H = rows.length * (hauteurBarre + ecart) + 28;
+    host.style.minHeight = H + "px";
+    var svg = d3.select(host).append("svg").attr("width", "100%")
+      .attr("viewBox", "0 0 " + W + " " + H).attr("role", "img")
+      .attr("aria-label", "Performance de chaque ligne en pourcentage");
+    if (!drawn.perf) { svg.attr("class", "bi-fade"); drawn.perf = true; }
+
+    var meas = svg.append("g").attr("opacity", 0), nomW = 0, valW = 0;
+    rows.forEach(function (r) {
+      nomW = Math.max(nomW, meas.append("text").attr("class", "bi-tick")
+        .text(r.ligne).node().getComputedTextLength());
+      valW = Math.max(valW, meas.append("text").attr("class", "bi-endlab")
+        .text(B.pct(r.perf_pct)).node().getComputedTextLength());
+    });
+    meas.remove();
+
+    var m = { left: Math.min(nomW + 10, W * 0.42), right: valW + 10, top: 6 };
+    var lo = Math.min(0, d3.min(rows, function (r) { return r.perf_pct; }));
+    var hi = Math.max(0, d3.max(rows, function (r) { return r.perf_pct; }));
+    var x = d3.scaleLinear([lo, hi * 1.08 || 1], [m.left, W - m.right]);
+    var zero = x(0);
+
+    svg.append("line").attr("x1", zero).attr("x2", zero).attr("y1", m.top)
+      .attr("y2", H - 22).attr("stroke", "var(--cds-chart-axis)").attr("stroke-width", 1);
+
+    var tip = tipBox(host);
+    var choisie = params().ligne;
+
+    rows.forEach(function (r, i) {
+      var yb = m.top + i * (hauteurBarre + ecart);
+      var pos = r.perf_pct >= 0;
+      var couleur = pos ? dash.colors[0] : "var(--cds-chart-status-critical)";
+      svg.append("text").attr("class", "bi-tick").attr("x", m.left - 8)
+        .attr("y", yb + hauteurBarre / 2).attr("text-anchor", "end")
+        .attr("dominant-baseline", "middle")
+        .attr("fill", choisie && choisie !== r.ligne ? "var(--color-fg-muted)" : "var(--color-fg)")
+        .text(r.ligne);
+      svg.append("rect")
+        .attr("x", pos ? zero : x(r.perf_pct)).attr("y", yb)
+        .attr("width", Math.max(1, Math.abs(x(r.perf_pct) - zero)))
+        .attr("height", hauteurBarre).attr("rx", 4).attr("fill", couleur)
+        .attr("opacity", choisie && choisie !== r.ligne ? 0.35 : 1)
+        .style("cursor", "pointer")
+        .on("click", function () {
+          dash.setParams({ ligne: params().ligne === r.ligne ? null : r.ligne });
+        })
+        .on("pointerleave", function () { tip.style.opacity = 0; })
+        .on("pointermove", function (ev) {
+          tip.textContent = "";
+          var t = document.createElement("div");
+          t.className = "bi-tipd"; t.textContent = r.ligne;
+          var a = document.createElement("div");
+          a.textContent = "Investi " + B.eur(r.investi);
+          var b = document.createElement("div");
+          b.textContent = "Valeur " + B.eur(r.valeur);
+          var c = document.createElement("div");
+          c.textContent = "Gain " + B.eur(r.pv) + "  ·  " + B.pct(r.perf_pct);
+          tip.appendChild(t); tip.appendChild(a); tip.appendChild(b); tip.appendChild(c);
+          tip.style.opacity = 1;
+          placeTip(tip, host, ev);
+        });
+      svg.append("text").attr("class", "bi-endlab")
+        .attr("x", (pos ? x(r.perf_pct) : zero) + 6).attr("y", yb + hauteurBarre / 2)
+        .attr("dominant-baseline", "middle").attr("fill", couleur).text(B.pct(r.perf_pct));
+    });
   }
 
   function drawAlloc() {
@@ -525,8 +748,7 @@ dash.calc("stm_ecart", {
       var row = document.createElement("div");
       var dot = document.createElement("span");
       dot.className = "bi-dot"; dot.style.background = couleurs[i];
-      var nom = document.createElement("span");
-      nom.textContent = a.categorie;
+      var nom = document.createElement("span"); nom.textContent = a.categorie;
       var val = document.createElement("span");
       val.className = "bi-legv";
       val.textContent = B.eur(a.valeur_eur) + " · " + B.pctp(a.part_pct);
@@ -535,14 +757,19 @@ dash.calc("stm_ecart", {
     });
   }
 
+  /* ---------- rendu ---------- */
+
   dash.onData(function () {
+    var p = params();
+
     var planOk = ok("plan");
     [["action", function (v) { return v; }],
      ["action_montant", function (v) { return B.eur(Number(v)); }],
      ["action_frais", function (v) { return B.eur(Number(v)); }],
-     ["consigne", function (v) { return v; }]].forEach(function (p) {
-      all('[data-source="plan"][data-where="cle=' + p[0] + '"]').forEach(function (el) {
-        put(el, planOk ? p[1](planVal(p[0])) : null, planOk);
+     ["seuil_frais", function (v) { return B.eur(Number(v)); }],
+     ["consigne", function (v) { return v; }]].forEach(function (e) {
+      all('[data-source="plan"][data-where="cle=' + e[0] + '"]').forEach(function (el) {
+        put(el, planOk ? e[1](planVal(e[0])) : null, planOk);
       });
     });
 
@@ -551,12 +778,25 @@ dash.calc("stm_ecart", {
     one("total", "especes", function (v) { return B.eur(v); });
     one("garde_fous", "r_pct", function (v) { return B.pctp(v); });
     one("garde_fous", "manque", function (v) { return B.eur(v); });
-    one("garde_fous", "plafond_ligne", function (v) { return B.eur(v); });
+    one("perf_totale", "pv", function (v) { return B.eur(v); });
+    one("perf_totale", "investi", function (v) { return B.eur(v); });
+    one("perf_totale", "perf_pct", function (v) { return B.pct(v); });
     one("stm_ecart", "cloture", function (v) { return B.eur(v, 3); });
     one("stm_ecart", "date", function (v) { return B.fmtDate(v); });
     one("stm_ecart", "ecart_pct", function (v) { return B.pct(v); });
 
     drawAlloc();
+
+    var positions = ok("positions") ? rowsOf("positions") : [];
+    remplirSelect(selPoche, Array.from(new Set(positions.map(function (r) { return r.poche; }))),
+      p.poche, "Tous les comptes");
+    remplirSelect(selCat, Array.from(new Set(positions.map(function (r) { return r.categorie; }))),
+      p.categorie, "Toutes catégories");
+    remplirSelect(selLigne, lignesVisibles(), p.ligne, "Toutes les lignes");
+    var actifs = [p.poche, p.categorie, p.ligne].filter(Boolean);
+    q("#f-chip").textContent = actifs.length
+      ? "Filtre actif : " + actifs.join(" · ") + ". Les totaux ci-dessus restent sur tout le portefeuille."
+      : "";
 
     var cOk = ok("comptes");
     fillTable("#t-comptes", cOk ? rowsOf("comptes") : [], [
@@ -567,14 +807,75 @@ dash.calc("stm_ecart", {
       function (r) { return r.releve; }
     ], function (r) { return r.compte; });
 
-    var pOk = ok("positions");
-    fillTable("#t-positions", pOk ? rowsOf("positions") : [], [
-      function (r) { return r.ligne + (r.note ? " — " + r.note : ""); },
+    var perf = ok("perf") ? rowsOf("perf") : [];
+    function perfDe(nom) {
+      return perf.filter(function (o) { return o.ligne === nom; })[0] || {};
+    }
+    var visiblesPos = visibles(positions).filter(function (r) { return !p.ligne || r.ligne === p.ligne; });
+    fillTable("#t-positions", visiblesPos, [
+      function (r) { return r.ligne; },
       function (r) { return r.poche; },
       function (r) { return r.categorie; },
+      function (r) { var o = perfDe(r.ligne); return o.investi == null ? "—" : B.eur(o.investi); },
       function (r) { return B.eur(Number(r.valeur_eur)); },
-      function (r) { return r.pv_eur === "" || r.pv_eur == null ? "—" : B.eur(Number(r.pv_eur)); }
+      function (r) { var o = perfDe(r.ligne); return o.perf_pct == null ? "—" : B.pct(o.perf_pct); }
     ], function (r) { return r.ligne; });
+
+    var ph = document.getElementById("ch-perf");
+    if (ok("perf")) {
+      ph.classList.remove("dash-skeleton");
+      drawPerf(visibles(perf));
+    } else { ph.classList.add("dash-skeleton"); ph.textContent = ""; }
+
+    var vh = document.getElementById("ch-valeurs"), vleg = document.getElementById("val-leg");
+    vleg.textContent = "";
+    if (ok("valeurs")) {
+      vh.classList.remove("dash-skeleton");
+      var retenues = lignesVisibles().filter(function (n) { return !p.ligne || n === p.ligne; });
+      var parLigne = d3.group(rowsOf("valeurs"), function (r) { return r.ligne; });
+      var series = retenues.map(function (nom, i) {
+        var pts = (parLigne.get(nom) || []).map(function (r) {
+          return { d: B.parseDay(r.date), v: Number(r.valeur_eur) };
+        }).filter(function (o) { return !isNaN(o.v) && !isNaN(o.d); })
+          .sort(function (a, b) { return a.d - b.d; });
+        return { nom: nom, pts: pts, couleur: dash.colors[i % dash.colors.length] };
+      }).filter(function (s) { return s.pts.length > 0; });
+
+      drawSeries("ch-valeurs", series, {
+        fmtY: function (v) { return B.eur(v, 0); }, fromZero: true,
+        aria: "Valeur de chaque ligne en euros, par date"
+      });
+
+      if (series.length > 1) {
+        series.forEach(function (s) {
+          var btn = document.createElement("button");
+          btn.type = "button";
+          var dot = document.createElement("span");
+          dot.className = "bi-dot"; dot.style.background = s.couleur;
+          var nom = document.createElement("span"); nom.textContent = s.nom;
+          btn.appendChild(dot); btn.appendChild(nom);
+          btn.addEventListener("click", function () { dash.setParams({ ligne: s.nom }); });
+          vleg.appendChild(btn);
+        });
+      } else if (series.length === 1) {
+        var btn2 = document.createElement("button");
+        btn2.type = "button";
+        btn2.textContent = "← revenir à toutes les lignes";
+        btn2.addEventListener("click", function () { dash.setParams({ ligne: null }); });
+        vleg.appendChild(btn2);
+      }
+    } else { vh.classList.add("dash-skeleton"); vh.textContent = ""; }
+
+    var wh = document.getElementById("ch-wpea");
+    if (ok("coeur_wpea")) {
+      wh.classList.remove("dash-skeleton");
+      drawSeries("ch-wpea", [{
+        nom: "WPEA", couleur: dash.colors[0],
+        pts: rowsOf("coeur_wpea").map(function (r) {
+          return { d: B.parseDay(r.date), v: Number(r.cloture) };
+        }).filter(function (o) { return !isNaN(o.v) && !isNaN(o.d); })
+      }], { fmtY: function (v) { return B.eur(v, 3); }, aria: "Cours du WPEA en euros, par date" });
+    } else { wh.classList.add("dash-skeleton"); wh.textContent = ""; }
 
     var clOk = ok("classement");
     var cs = ok("cours_seuil") ? rowsOf("cours_seuil") : [];
@@ -594,46 +895,17 @@ dash.calc("stm_ecart", {
       function (r) { return r.statut; }
     ]);
 
-    var wh = document.getElementById("ch-wpea");
-    if (ok("coeur_wpea")) {
-      wh.classList.remove("dash-skeleton");
-      drawLine("ch-wpea", rowsOf("coeur_wpea"), {
-        y: "cloture", label: "WPEA", color: dash.colors[0],
-        fmtY: function (v) { return B.eur(v, 3); },
-        aria: "Cours du WPEA en euros, par date"
-      });
-    } else { wh.classList.add("dash-skeleton"); wh.textContent = ""; }
-
-    var ph = document.getElementById("ch-patrimoine"), pn = document.getElementById("patrimoine-note");
-    var prows = ok("patrimoine") ? rowsOf("patrimoine") : [];
-    if (prows.length > 1) {
-      ph.classList.remove("dash-skeleton");
-      ph.style.display = "";
-      pn.textContent = "";
-      drawLine("ch-patrimoine", prows, {
-        y: "total_eur", label: "Total", color: dash.colors[2],
-        fmtY: function (v) { return B.eur(v, 0); },
-        aria: "Valeur totale des deux comptes, par date"
-      });
-    } else {
-      ph.classList.remove("dash-skeleton");
-      ph.textContent = "";
-      ph.style.display = "none";
-      pn.textContent = prows.length
-        ? "Cette courbe démarre aujourd'hui : elle gagnera un point par jour. Un seul point ne fait pas une courbe, je ne trace rien tant qu'il n'y en a pas deux."
-        : "—";
-    }
-
     var sh = document.getElementById("ch-stm");
     if (ok("stm_seuil")) {
       var sr = rowsOf("stm_seuil");
       sh.classList.remove("dash-skeleton");
-      drawLine("ch-stm", sr, {
-        y: "cloture", label: "STM", color: dash.colors[1],
-        ref: sr.length ? Number(sr[0].seuil) : null, refLabel: "seuil",
-        fmtY: function (v) { return B.eur(v); },
-        aria: "Clôture de STMicroelectronics en euros, et son seuil d'achat"
-      });
+      drawSeries("ch-stm", [{
+        nom: "STM", couleur: dash.colors[1],
+        pts: sr.map(function (r) { return { d: B.parseDay(r.date), v: Number(r.cloture) }; })
+              .filter(function (o) { return !isNaN(o.v) && !isNaN(o.d); })
+      }], { fmtY: function (v) { return B.eur(v); },
+            ref: sr.length ? Number(sr[0].seuil) : null,
+            aria: "Clôture de STMicroelectronics en euros, et son seuil d'achat" });
     } else { sh.classList.add("dash-skeleton"); sh.textContent = ""; }
   });
 })();

@@ -34,17 +34,31 @@ l'artefact.** Ne rien y mettre que Tanguy ne publierait pas.
 | `coeur_wpea` | `coeur-wpea.csv` | cours du WPEA relevés | à chaque cours obtenu |
 | `comptes` | `comptes.csv` | titres / espèces / total des 2 comptes | **sur nouvelle capture** |
 | `positions` | `positions.csv` | chaque ligne, sa valeur, sa catégorie | **sur nouvelle capture** |
-| `patrimoine` | `patrimoine.csv` | valeur totale par jour — **1 point par jour** | **tous les jours** |
+| `valeurs` | `valeurs.csv` | valeur de **chaque ligne** par jour | **tous les jours** |
 | `classement` | `classement.csv` | les 4 candidats, cours et seuils | à chaque re-classement |
 | `stm_seuil` | `stm-seuil.csv` | clôtures STM + seuil 42 € | tant que STM est au classement |
 | `plan` | `plan.csv` | action prioritaire, consigne du jour | **tous les jours** |
 
-**`patrimoine.csv` est la courbe de suivi que Tanguy demandait.** Elle a démarré
-le 15/10 avec un seul point ; la page ne trace rien tant qu'il n'y en a pas deux.
-**Ajouter une ligne chaque jour** : le WPEA se recalcule depuis son cours, mais
-eToro ne bouge que sur nouvelle capture — tant qu'il n'y en a pas, reporter la
-dernière valeur connue **en le disant**, ou laisser le jour vide. Ne jamais
-interpoler.
+**`valeurs.csv` est la courbe de suivi que Tanguy demandait**, désormais une
+série **par ligne** et non plus un total — c'est ce qui rend les filtres utiles.
+
+**Ajouter une ligne chaque jour pour le WPEA** : `70 × cours du jour`. Les 70
+parts sont détenues depuis l'ordre du 01/10, donc les points du 09, 12 et 14/10
+sont légitimement reconstitués ; **ne jamais remonter avant le 01/10**, il n'y
+avait pas de parts.
+
+**Les lignes eToro ne bougent QUE sur nouvelle capture.** Ne pas reporter la
+dernière valeur connue sur un jour sans capture : laisser le jour vide. Un trou
+est lisible, un plateau inventé ne l'est pas.
+
+### Filtres de la page
+
+`dash/params` : `{poche, categorie, ligne}`, tous à `null` = tout afficher.
+Ils sont **lus dans la page** (`setParams` sur un nom qu'aucune requête n'utilise
+redessine sans rien appeler) et ne filtrent que le tableau des lignes, les barres
+de performance et la courbe. **Les totaux et les garde-fous restent sur
+l'ensemble du portefeuille** — un total filtré serait un nombre qu'aucun calcul
+ne porte, donc non traçable.
 
 ## Les cinq calculs faits dans la page
 

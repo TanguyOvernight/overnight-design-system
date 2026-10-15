@@ -1,7 +1,8 @@
 cle,libelle,valeur
 action,Action prioritaire,Investir sur le WPEA le cash qui dort sur ton PEA
 action_montant,Montant,304.26
-action_frais,Frais estimés de cet ordre,1.75
+action_frais,Frais estimés — à lire dans l'appli avant de valider,1.75
+seuil_frais,Au-delà de ce montant de frais préviens-moi,7
 prochain_versement,Prochain versement,2026-11-01
 prochain_versement_montant,Montant,500
 consigne,Consigne du jour,Aucune nouvelle ligne risquée tant que la part risquée dépasse 25 %. STM reste bloqué.
