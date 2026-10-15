@@ -2786,3 +2786,32 @@ même faute de structure. J'avais vérifié que j'avais **spécifié** les ordre
 pas qu'ils avaient été **exécutés**. Un ordre spécifié et un ordre exécuté sont
 deux objets différents ; j'ai traité ma propre recommandation comme un fait du
 monde. **C'est la quatrième fois que je confonds l'acte et son effet.**
+
+---
+
+## Règle 53 (15/10/2026) — énumérer les CHEMINS, pas les tentatives
+
+J'ai déclaré pendant deux semaines que les données de marché m'étaient
+inaccessibles. J'avais testé **vingt hôtes** : curl, WebFetch, résolution DNS,
+statut du proxy, journal des refus. Un travail sérieux — **sur un seul chemin**.
+
+Le catalogue de connecteurs MCP contenait **Alpha Vantage et ses 126 outils**, et
+les connecteurs **ne passent pas par la politique d'egress** : ils transitent par
+`mcp-proxy.anthropic.com`. `www.alphavantage.co` en HTTPS direct renvoie 403 ;
+**le même fournisseur par son connecteur passerait.**
+
+> **La profondeur d'un test ne vaut jamais certificat de couverture.** Vingt
+> échecs sur un chemin ne disent rien de l'existence des autres chemins. Plus je
+> teste consciencieusement dans une direction, plus je me crois exhaustif — la
+> rigueur locale fabrique la fausse confiance globale.
+
+**Test de sortie, avant d'écrire « c'est impossible »** :
+**« qu'est-ce qui, dans cette session, fonctionne DÉJÀ — et par où passe-t-il ? »**
+
+Ici la réponse crevait les yeux : **Slack, Notion et GitHub marchaient**, je m'en
+servais dix fois par jour. Leur canal n'était pas le mien, et je ne me suis jamais
+demandé lequel c'était.
+
+Corollaire pour les demandes à l'humain : une demande mal adressée coûte plus cher
+qu'une absence de demande. J'ai réclamé l'ouverture de domaines pendant deux
+semaines — **le bon geste était de brancher un connecteur.**

@@ -239,6 +239,49 @@ Doc : https://code.claude.com/docs/en/cloud-environments#network-access
 **ses positions**. La question « combien je gagnais en 2026 » resterait
 dépendante de ses dates d'achat, ou de la courbe de son courtier.
 
+## ⭐ LA SOLUTION, trouvée le 15/10 au soir : un CONNECTEUR, pas un domaine
+
+**Pendant deux semaines j'ai demandé la mauvaise chose.** Je réclamais l'ouverture
+de domaines dans `Network access`. Le bon canal était ailleurs, et je ne l'avais
+jamais regardé.
+
+**Les connecteurs MCP ne passent PAS par la politique d'egress.** Ils transitent
+par `mcp-proxy.anthropic.com`, qui figure dans la liste `noProxy` du proxy. C'est
+exactement pourquoi Slack, Notion et GitHub fonctionnent dans cette session alors
+qu'un simple `curl` vers Yahoo renvoie 403.
+
+Le catalogue contient des fournisseurs de données de marché :
+
+| Connecteur | Ce qu'il apporte |
+|---|---|
+| **Alpha Vantage** ⭐ | **126 outils** : cours, historiques, fondamentaux, indices, **taux de change**, matières premières |
+| Financial Datasets | 28 outils, cours et états financiers |
+| Clear Street | recherche actions et options |
+
+**Alpha Vantage couvre TOUT le besoin de ce dossier** : les cours quotidiens de
+chaque ligne, les historiques 2026, **et les taux de change** — le verrou invoqué
+deux fois le 15/10 pour refuser de reconstituer l'historique eToro.
+
+> **L'ironie à retenir** : `www.alphavantage.co` en HTTPS direct renvoie **403**.
+> Le même fournisseur, via son connecteur MCP, **passerait**. Ce n'est pas la
+> source qui est interdite, c'est **le chemin**. J'ai testé vingt hôtes sur un
+> chemin sans jamais me demander s'il en existait un autre.
+
+**À faire par Tanguy** : ajouter le connecteur **Alpha Vantage** depuis les
+réglages de connecteurs de claude.ai, puis l'activer pour la conversation. Une
+clé d'API Alpha Vantage est nécessaire (offre gratuite disponible).
+
+**Ce que ça débloquerait, concrètement** :
+- mise à jour **automatique** des cours chaque matin, fin du relevé à la main ;
+- **l'historique 2026 réel** à la place de mes estimations ;
+- la conversion **EUR/USD** des lignes eToro ;
+- et, côté tableau de bord, la possibilité de passer les jeux de données en
+  **requêtes vives** *(`source.kind: "query"`)* au lieu de fichiers attachés —
+  la page se mettrait alors à jour toute seule chez le lecteur.
+
+⚠️ Même ainsi : Alpha Vantage donne les **cours**, pas l'historique de ses
+**positions**. Ses dates d'achat restent nécessaires pour une courbe exacte.
+
 ## Périmètre du suivi — décision de Tanguy du 15/10
 
 Une **micro-position résiduelle du compte eToro est sortie du suivi**, et ne doit
