@@ -194,3 +194,34 @@ Autres points à savoir :
   dans le vide ;
 - `touch-action: none` sur `.bi-chart`, sans quoi le navigateur confisque la
   pince pour zoomer la page entière.
+
+## Lenteur des boutons — diagnostiquée le 15/10 au soir
+
+> « Les options du graphique mettent longtemps à charger. »
+
+**Deux causes, toutes deux de ma main.**
+
+**1. Je mesurais 121 étiquettes de dates, une par une, à chaque dessin.**
+`getComputedTextLength()` oblige le navigateur à recalculer la mise en page
+**à chaque appel**. Cent vingt et un recalculs forcés par graphique, à chaque
+clic sur un filtre.
+→ Un seul gabarit mesuré *(« 30 sept. », la plus large)* : toutes les étiquettes
+de dates ont la même forme. Plus un **cache** `texte → largeur` valable pour la
+vie de la page, puisqu'une même chaîne a toujours la même largeur.
+
+**2. Un clic sur un filtre redessinait les cinq graphiques.** Or le cours du
+WPEA, STM et la courbe 2026 **ne dépendent d'aucun filtre**.
+→ `siChange(id, signature, fn)` : chaque graphique garde la signature de ce qui
+le détermine *(nombre de lignes, largeur, filtres qui le concernent)* et n'est
+refait que si elle change. Un clic sur « 3 mois » ne redessine plus que la
+courbe principale.
+
+> **Le coût n'était pas dans la quantité de données mais dans le nombre d'allers-
+> retours avec le moteur de rendu.** 615 points à tracer, c'est instantané ;
+> 121 mesures qui forcent chacune un recalcul de page, non. Chercher « trop de
+> données » m'aurait fait optimiser la mauvaise chose.
+
+⚠️ **Piège si on retouche `siChange`** : ne jamais y faire passer la courbe
+principale. Elle doit se redessiner à chaque changement de filtre — c'est son
+rôle. Et vider `signatures[id]` quand une source passe en erreur, sinon le
+graphique reste figé sur son dernier état valide.

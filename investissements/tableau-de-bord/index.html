@@ -559,6 +559,29 @@ dash.calc("stm_ecart", {
 (function () {
   var B = window.BI, drawn = {};
   var zoomT = {}, zoomSig = {}, dernierDessin = {};
+
+  // Mesurer un texte force le navigateur à recalculer la mise en page. Le même
+  // texte a toujours la même largeur : on ne le mesure qu'une fois pour la vie
+  // de la page.
+  var mesures = {};
+  function mesure(svg, cls, txt) {
+    var k = cls + "\u0000" + txt;
+    if (mesures[k] != null) return mesures[k];
+    var n = svg.append("text").attr("class", cls).attr("opacity", 0).text(txt);
+    var w = n.node().getComputedTextLength();
+    n.remove();
+    mesures[k] = w;
+    return w;
+  }
+
+  // Un clic sur un filtre relance tout le rendu. Les graphiques dont rien n'a
+  // changé n'ont aucune raison d'être refaits : on compare une signature.
+  var signatures = {};
+  function siChange(id, sig, fn) {
+    if (signatures[id] === sig) return;
+    signatures[id] = sig;
+    fn();
+  }
   function redessiner() {
     Object.keys(dernierDessin).forEach(function (id) {
       var a = dernierDessin[id];
@@ -697,21 +720,16 @@ dash.calc("stm_ecart", {
     var y = d3.scaleLinear([lo - pad, hi + pad], [0, 1]);
     var ticks = y.ticks(4);
 
-    var meas = svg.append("g").attr("opacity", 0), leftW = 0;
-    ticks.forEach(function (t) {
-      leftW = Math.max(leftW, meas.append("text").attr("class", "bi-tick")
-        .text(opt.fmtY(t)).node().getComputedTextLength());
-    });
+    var leftW = 0;
+    ticks.forEach(function (t) { leftW = Math.max(leftW, mesure(svg, "bi-tick", opt.fmtY(t))); });
     var seule = series.length === 1 ? series[0] : null;
     var endTxt = seule ? seule.nom + " " + opt.fmtY(seule.pts[seule.pts.length - 1].v) : "";
-    var endW = endTxt ? meas.append("text").attr("class", "bi-endlab").text(endTxt)
-      .node().getComputedTextLength() : 0;
+    var endW = endTxt ? mesure(svg, "bi-endlab", endTxt) : 0;
     var dates = Array.from(new Set(tous.map(function (p) { return +p.d; }))).sort(d3.ascending)
       .map(function (t) { return new Date(t); });
-    var labW = dates.map(function (d) {
-      return meas.append("text").attr("class", "bi-tick").text(B.dayShort(d)).node().getComputedTextLength();
-    });
-    meas.remove();
+    // Les étiquettes de dates ont toutes la même forme : un seul gabarit, le
+    // plus large, suffit — au lieu d'une mesure par date.
+    var labUn = mesure(svg, "bi-tick", "30 sept.");
 
     var m = { top: 16, right: endTxt ? Math.min(endW + 12, W * 0.45) : 14, bottom: 24, left: leftW + 10 };
     if (W - m.left - m.right < 60) m.right = 12;
@@ -762,7 +780,7 @@ dash.calc("stm_ecart", {
 
     var keep = [];
     for (var i = dates.length - 1; i >= 0; i--) {
-      var cx = x(dates[i]), half = labW[i] / 2 + 8;
+      var cx = x(dates[i]), half = labUn / 2 + 8;
       if (cx < m.left - 1 || cx > W - m.right + 1) continue;
       var clash = keep.some(function (k) { return Math.abs(k.cx - cx) < half + k.half; });
       if (!clash) keep.push({ cx: cx, half: half, i: i });
@@ -882,14 +900,11 @@ dash.calc("stm_ecart", {
       .attr("aria-label", "Performance de chaque ligne en pourcentage");
     if (!drawn.perf) { svg.attr("class", "bi-fade"); drawn.perf = true; }
 
-    var meas = svg.append("g").attr("opacity", 0), nomW = 0, valW = 0;
+    var nomW = 0, valW = 0;
     rows.forEach(function (r) {
-      nomW = Math.max(nomW, meas.append("text").attr("class", "bi-tick")
-        .text(r.ticker).node().getComputedTextLength());
-      valW = Math.max(valW, meas.append("text").attr("class", "bi-endlab")
-        .text(B.pct(r.perf_pct)).node().getComputedTextLength());
+      nomW = Math.max(nomW, mesure(svg, "bi-tick", r.ticker));
+      valW = Math.max(valW, mesure(svg, "bi-endlab", B.pct(r.perf_pct)));
     });
-    meas.remove();
 
     var m = { left: Math.min(nomW + 10, W * 0.42), right: valW + 10, top: 6 };
     var lo = Math.min(0, d3.min(rows, function (r) { return r.perf_pct; }));
@@ -1043,18 +1058,23 @@ dash.calc("stm_ecart", {
     var ah = document.getElementById("ch-2026");
     if (ok("portefeuille_2026")) {
       ah.classList.remove("dash-skeleton");
+      siChange("ch-2026", rowsOf("portefeuille_2026").length + "|" + ah.clientWidth, function () {
       drawSeries("ch-2026", [{
         nom: "Portefeuille", couleur: dash.colors[0],
         pts: rowsOf("portefeuille_2026").map(function (r) {
           return { d: B.parseDay(r.date), v: Number(r.etoro_eur) };
         }).filter(function (o) { return !isNaN(o.v) && o.v > 0 && !isNaN(o.d); })
       }], { fmtY: function (v) { return B.eur(v, 0); }, height: 260,
-            aria: "Valeur du portefeuille en euros, semaine par semaine en 2026" });
-    } else { ah.classList.add("dash-skeleton"); ah.textContent = ""; }
+            aria: "Valeur du portefeuille en euros, jour par jour en 2026" });
+      });
+    } else { ah.classList.add("dash-skeleton"); ah.textContent = ""; signatures["ch-2026"] = null; }
 
     var ph = document.getElementById("ch-perf");
-    if (ok("perf")) { ph.classList.remove("dash-skeleton"); drawPerf(visibles(perf)); }
-    else { ph.classList.add("dash-skeleton"); ph.textContent = ""; }
+    if (ok("perf")) {
+      ph.classList.remove("dash-skeleton");
+      siChange("ch-perf", [p.poche, p.categorie, p.ligne, perf.length, ph.clientWidth].join("|"),
+        function () { drawPerf(visibles(perf)); });
+    } else { ph.classList.add("dash-skeleton"); ph.textContent = ""; signatures["ch-perf"] = null; }
 
     var vh = document.getElementById("ch-valeurs"), vleg = document.getElementById("val-leg");
     vleg.textContent = "";
@@ -1139,13 +1159,15 @@ dash.calc("stm_ecart", {
     var wh = document.getElementById("ch-wpea");
     if (ok("coeur_wpea")) {
       wh.classList.remove("dash-skeleton");
+      siChange("ch-wpea", rowsOf("coeur_wpea").length + "|" + wh.clientWidth, function () {
       drawSeries("ch-wpea", [{
         nom: "WPEA", couleur: dash.colors[0],
         pts: rowsOf("coeur_wpea").map(function (r) {
           return { d: B.parseDay(r.date), v: Number(r.cloture) };
         }).filter(function (o) { return !isNaN(o.v) && !isNaN(o.d); })
       }], { fmtY: function (v) { return B.eur(v, 3); }, aria: "Cours du WPEA en euros, par date" });
-    } else { wh.classList.add("dash-skeleton"); wh.textContent = ""; }
+      });
+    } else { wh.classList.add("dash-skeleton"); wh.textContent = ""; signatures["ch-wpea"] = null; }
 
     var cs = ok("cours_seuil") ? rowsOf("cours_seuil") : [];
     var ec = ok("ecarts") ? rowsOf("ecarts") : [];
@@ -1168,6 +1190,7 @@ dash.calc("stm_ecart", {
     if (ok("stm_seuil")) {
       var sr = rowsOf("stm_seuil");
       sh.classList.remove("dash-skeleton");
+      siChange("ch-stm", sr.length + "|" + sh.clientWidth, function () {
       drawSeries("ch-stm", [{
         nom: "STM", couleur: dash.colors[1],
         pts: sr.map(function (r) { return { d: B.parseDay(r.date), v: Number(r.cloture) }; })
@@ -1175,7 +1198,8 @@ dash.calc("stm_ecart", {
       }], { fmtY: function (v) { return B.eur(v); },
             ref: sr.length ? Number(sr[0].seuil) : null,
             aria: "Clôture de STMicroelectronics en euros, et son seuil d'achat" });
-    } else { sh.classList.add("dash-skeleton"); sh.textContent = ""; }
+      });
+    } else { sh.classList.add("dash-skeleton"); sh.textContent = ""; signatures["ch-stm"] = null; }
   });
 })();
 </script>
