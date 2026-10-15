@@ -178,3 +178,63 @@ portefeuille sur la période choisie, Fortuneo aussi sur le PEA. **Une capture d
 chacune donne sa vraie histoire**, pas une reconstitution. C'est la même leçon
 que les frais de courtage ce matin : *la réponse exacte est dans son appli, pas
 sur le web.*
+
+## Accès aux données de marché — TESTÉ À FOND le 15/10 au soir
+
+Tanguy a demandé d'essayer vraiment de me connecter à la bourse. Bien vu : je
+l'affirmais **de mémoire**. Voici le test, daté, à ne pas refaire avant que
+l'accès réseau ait changé.
+
+### Canal 1 — HTTPS direct (curl via le proxy d'egress)
+
+État du proxy : `enabled: true`, `selective: false`, `recentRelayFailures: []`.
+Rien n'annonçait un blocage. Puis :
+
+| Hôte | Résultat |
+|---|---|
+| `api.github.com` *(témoin)* | **HTTP 403** applicatif — le tunnel passe, c'est GitHub qui restreint |
+| `data-api.ecb.europa.eu` *(change officiel BCE)* | **CONNECT tunnel failed, 403** |
+| `query1.finance.yahoo.com` | **403** |
+| `stooq.com` | **403** |
+| `alphavantage.co` | **403** |
+| `api.twelvedata.com` | **403** |
+| `financialmodelingprep.com` | **403** |
+| `api.polygon.io` | **403** |
+| `boursorama.com` | **403** |
+| `live.euronext.com` | **403** |
+
+**Neuf sur neuf refusés par la politique d'egress.** Le témoin GitHub prouve que
+le proxy fonctionne : ce n'est pas une panne, c'est une règle. Le README impose
+de **ne pas réessayer ni contourner** — je m'arrête et je rapporte.
+
+⚠️ **Même la BCE est bloquée.** C'est ce qui rend la conversion EUR/USD de ses
+lignes eToro impossible — pas seulement les cours.
+
+### Canal 2 — WebFetch
+
+`stockanalysis.com` → **`getaddrinfo ENOTFOUND`**. Échec **différent** : la
+résolution DNS elle-même ne passe pas. Deux mécanismes distincts, même résultat.
+
+### Canal 3 — Connecteurs
+
+11 installés : Canva, Figma, Gamma, Google Drive, Hubflow, HyperFrames, Miro,
+Motion, Notion, Slack, ShortLink. **Aucun connecteur financier.** Le type
+Dashboard ne déclare que BigQuery, qui ne porte aucun cours.
+
+### La solution est entre les mains de Tanguy
+
+Menu de l'environnement cloud dans la barre de titre de la session → **Edit** →
+**Network access**. Soit un niveau plus large, soit ces hôtes sous **Allowed
+domains** *(laisser « Allow package managers » coché)* :
+
+| Hôte à autoriser | Ce que ça débloque |
+|---|---|
+| `query1.finance.yahoo.com` + `query2...` | cours **et historiques** de TOUTES ses lignes — NVDA, TSLA, MSFT, VTI, SWDA.L, RNO.PA, WPEA.PA |
+| `stooq.com` | secours en CSV, sans clé d'API |
+| `data-api.ecb.europa.eu` | taux EUR/USD officiels → ses lignes eToro enfin convertibles |
+
+Doc : https://code.claude.com/docs/en/cloud-environments#network-access
+
+⚠️ **Ne pas sur-promettre** : Yahoo donnerait les **cours**, pas l'historique de
+**ses positions**. La question « combien je gagnais en 2026 » resterait
+dépendante de ses dates d'achat, ou de la courbe de son courtier.
