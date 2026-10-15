@@ -141,6 +141,9 @@
     </div>
     <div class="bi-leg" id="val-leg" style="margin-top: var(--cds-gap-sm);"></div>
 
+    <p class="bi-note" style="margin-top: var(--cds-gap-xs);">Filtre sur une seule ligne et le
+      pointillé montre ce que tu y as mis : l'écart entre la courbe et lui, c'est ton gain.</p>
+
     <div class="bi-rail" id="rail" hidden>
       <span>Ta part risquée est à
         <b class="dash-skeleton" data-source="garde_fous" data-field="r_pct" data-row="0">—</b>,
@@ -589,6 +592,10 @@ dash.calc("stm_ecart", {
         .attr("y1", y(opt.ref)).attr("y2", y(opt.ref))
         .attr("stroke", "var(--cds-chart-reference)").attr("stroke-width", 1)
         .attr("stroke-dasharray", "4 3");
+      if (opt.refLabel) {
+        svg.append("text").attr("class", "bi-endlab").attr("x", m.left + 4)
+          .attr("y", y(opt.ref) - 6).attr("fill", "var(--color-fg-muted)").text(opt.refLabel);
+      }
     }
 
     var keep = [];
@@ -835,8 +842,14 @@ dash.calc("stm_ecart", {
         });
       series.forEach(function (s, i) { s.couleur = dash.colors[i % dash.colors.length]; });
 
+      var base = null;
+      if (series.length === 1) {
+        var o = perfDe(series[0].nom);
+        if (o.investi != null) base = o.investi;
+      }
       drawSeries("ch-valeurs", series, {
         fmtY: function (v) { return B.eur(v, 0); }, fromZero: true, height: 290,
+        ref: base, refLabel: base == null ? null : "ce que tu as mis",
         aria: "Valeur de chaque ligne en euros, par date"
       });
 

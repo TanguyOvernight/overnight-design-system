@@ -130,3 +130,51 @@ quand les deux sources existent** :
 **Sans capture eToro du jour, cette colonne est fausse** — mettre `0` serait un
 mensonge, reporter la veille aussi. Dans ce cas : vider la case eToro et ne pas
 afficher de variation d'ensemble.
+
+## Reconstituer l'historique 2026 — TESTÉ le 15/10, IMPOSSIBLE
+
+Tanguy a demandé de reconstruire ses gains et pertes sur 2026 à partir des cours
+de chaque action. **J'ai testé avant de répondre.** Résultat à garder : ne pas
+re-tenter sans que la situation d'accès ait changé.
+
+### Preuve 1 — les sources atteignables se contredisent
+
+Performance 2026 de **MSFT** selon quatre sources, toutes trouvées le même jour :
+
+| Source | Date de capture | MSFT 2026 | TSLA 2026 |
+|---|---|---|---|
+| Tracker total-return | 03/08 | **+1,3 %** | −28,4 % |
+| Forum | fin juillet | **−4,6 %** | −29,5 % |
+| Autre tracker | 14/07 | **−20,1 %** | −11,9 % |
+| Comparateur | 26/06 | **−27,0 %** | −16,8 % |
+
+**28 points d'écart sur MSFT, 18 sur TSLA.** Et rien ne dépasse **fin août** —
+six semaines avant aujourd'hui. Mélange de total return et de price return,
+bases de départ différentes, aucune source primaire.
+
+### Preuve 2 — l'erreur serait du même ordre que le gain à mesurer
+
+Sa plus-value latente totale est de **+211,42 €**. Une incertitude de 20 points
+sur ses lignes actions représente **±100 à 200 €**. La courbe mesurerait son
+propre bruit.
+
+### Preuve 3 — le problème n'est pas que la donnée, c'est la question
+
+Son MSFT est à **+38,4 %** alors que MSFT lui-même est peut-être **en baisse** en
+2026 : **il a donc acheté avant janvier**. Appliquer les cours 2026 à ses
+quantités actuelles ne répondrait pas à *« combien je gagnais en 2026 »* mais à
+*« combien mes lignes d'aujourd'hui auraient valu en 2026 »* — un backtest, pas
+son histoire. **Deux questions différentes**, et il faut nommer laquelle on
+répond avant de tracer quoi que ce soit.
+
+Il me manquerait de toute façon : les **quantités eToro** *(non affichées ; la
+capture donne des valeurs en euros et des prix probablement en dollars, donc il
+faudrait un taux de change par date)* et les **dates d'achat**.
+
+### Ce qu'il faut faire à la place
+
+**Ses applications ont déjà cette courbe.** eToro affiche la performance du
+portefeuille sur la période choisie, Fortuneo aussi sur le PEA. **Une capture de
+chacune donne sa vraie histoire**, pas une reconstitution. C'est la même leçon
+que les frais de courtage ce matin : *la réponse exacte est dans son appli, pas
+sur le web.*
