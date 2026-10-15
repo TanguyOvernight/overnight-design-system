@@ -1,0 +1,592 @@
+<style>
+.bi { font-family: var(--font-anthropic-sans); color: var(--color-fg); }
+.bi * { box-sizing: border-box; }
+.bi-head { margin-bottom: var(--cds-gap-lg); }
+.bi-title { font-family: var(--font-anthropic-serif); font-weight: 400;
+  font-size: var(--cds-font-size-title); margin: 0 0 var(--cds-gap-xs) 0; }
+.bi-sub { margin: 0; font-size: var(--cds-font-size-body); color: var(--color-fg-muted); line-height: 1.5; }
+.bi .bi-hl { font-weight: var(--cds-font-weight-medium); color: var(--color-fg); }
+.bi-sec { margin-top: var(--cds-gap-xl); }
+.bi-h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium);
+  margin: 0 0 var(--cds-gap-sm) 0; }
+.bi-lead { margin: 0 0 var(--cds-gap-md) 0; font-size: var(--cds-font-size-caption);
+  color: var(--color-fg-muted); line-height: 1.5; }
+.bi-grid { display: grid; gap: var(--cds-gap-md);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); }
+.bi-card { background: var(--color-panel); border: 1px solid var(--color-border-line);
+  border-radius: var(--cds-radius); padding: var(--cds-pad-lg); }
+.bi-k { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted);
+  margin-bottom: var(--cds-gap-xs); }
+.bi-big { font-family: var(--font-anthropic-serif); font-weight: 400;
+  font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; line-height: 1.15; }
+.bi-note { margin-top: var(--cds-gap-xs); font-size: var(--cds-font-size-caption);
+  color: var(--color-fg-muted); font-variant-numeric: tabular-nums; line-height: 1.5; }
+.bi-flag { margin-top: var(--cds-gap-sm); font-size: var(--cds-font-size-caption);
+  color: var(--color-warn); }
+.bi-consigne { background: var(--color-panel); border: 1px solid var(--color-border-line);
+  border-radius: var(--cds-radius); padding: var(--cds-pad-lg); margin-top: var(--cds-gap-md); }
+.bi-consigne .bi-txt { font-size: var(--cds-font-size-body); line-height: 1.5; }
+.bi-chartwrap { position: relative; }
+.bi-chart { position: relative; min-height: 220px; }
+.bi-chart svg { display: block; }
+.bi-tick { font-size: var(--cds-font-size-caption); fill: var(--color-fg-muted);
+  font-family: var(--font-anthropic-sans); font-variant-numeric: tabular-nums; }
+.bi-endlab { font-size: var(--cds-font-size-caption); font-family: var(--font-anthropic-sans);
+  font-variant-numeric: tabular-nums; }
+.bi-tip { position: absolute; pointer-events: none; opacity: 0; z-index: 2;
+  background: var(--cds-surface-popover); border: 1px solid var(--cds-border);
+  border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover);
+  padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption);
+  font-variant-numeric: tabular-nums; white-space: nowrap; }
+.bi-tip .bi-tipd { color: var(--cds-text-secondary); }
+.bi-tablebox { overflow-x: auto; }
+.bi-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption);
+  font-variant-numeric: tabular-nums; }
+.bi-table th { text-align: left; font-weight: var(--cds-font-weight-medium);
+  color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm);
+  border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+.bi-table td { padding: var(--cds-pad-xs) var(--cds-pad-sm);
+  border-bottom: 1px solid var(--color-border-line); }
+.bi-table tr:last-child td { border-bottom: none; }
+.bi-table th, .bi-table td { text-align: left; }
+#t-versements :is(th, td):nth-child(3), #t-versements :is(th, td):nth-child(4),
+#t-lectures :is(th, td):nth-child(2), #t-lectures :is(th, td):nth-child(3),
+#t-lectures :is(th, td):nth-child(4),
+#t-classement :is(th, td):nth-child(3), #t-classement :is(th, td):nth-child(4),
+#t-classement :is(th, td):nth-child(5),
+#t-etoro :is(th, td):nth-child(3), #t-etoro :is(th, td):nth-child(4) { text-align: right; }
+.bi-outro { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.6; }
+.bi-outro li { margin-bottom: var(--cds-gap-xs); }
+[data-dash-source-state="empty"] { color: transparent; }
+[data-dash-source-state="refreshing"] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes bi-in { from { opacity: 0; } to { opacity: 1; } }
+  .bi-fade { animation: bi-in var(--cds-dur-slow) var(--cds-ease-out); }
+}
+</style>
+
+<div class="bi">
+
+  <header class="bi-head">
+    <h1 class="bi-title">Brief investissements</h1>
+    <p class="bi-sub">
+      Prochain ordre le <b class="bi-hl dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=prochain_ordre_date">—</b>,
+      <b class="bi-hl dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=prochain_ordre_montant">—</b>
+      sur le World. <span class="dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=consigne">—</span>
+    </p>
+  </header>
+
+  <section class="bi-sec" id="decision">
+    <h2 class="bi-h2">Décision</h2>
+    <p class="bi-lead">Ce que tu fais de ton argent ce mois-ci, et les deux limites que je ne laisse pas franchir.</p>
+    <div class="bi-grid">
+
+      <div class="bi-card">
+        <div class="bi-k">Cœur PEA · World</div>
+        <div class="bi-big dash-skeleton" data-source="coeur" data-field="valeur" data-row="0">—</div>
+        <div class="bi-note">
+          <span class="dash-skeleton" data-source="coeur" data-field="parts" data-row="0">—</span> parts ·
+          clôture <span class="dash-skeleton" data-source="coeur" data-field="cloture" data-row="0">—</span>
+          au <span class="dash-skeleton" data-source="coeur" data-field="date" data-row="0">—</span>
+        </div>
+        <div class="bi-flag">Exécution des ordres non confirmée</div>
+      </div>
+
+      <div class="bi-card">
+        <div class="bi-k">Plafond par ligne risquée</div>
+        <div class="bi-big dash-skeleton" data-source="garde_fous" data-field="plafond_ligne" data-row="0">—</div>
+        <div class="bi-note">Le plus petit des deux : 5 % de (cœur + 6 000 €) et 15 % du cœur.</div>
+      </div>
+
+      <div class="bi-card">
+        <div class="bi-k">Risqué total autorisé</div>
+        <div class="bi-big dash-skeleton" data-source="garde_fous" data-field="marge_risque" data-row="0">—</div>
+        <div class="bi-note">Au-delà, la poche risquée dépasse 25 % du portefeuille.</div>
+      </div>
+
+    </div>
+
+    <div class="bi-consigne">
+      <div class="bi-k">Consigne du jour</div>
+      <div class="bi-txt dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=consigne">—</div>
+    </div>
+  </section>
+
+  <section class="bi-sec" id="coeur">
+    <h2 class="bi-h2">Ton cœur, jour après jour</h2>
+    <p class="bi-lead">Le WPEA suit l'indice MSCI World : cette courbe, c'est à la fois ton placement
+      et le marché mondial. Chaque point est une clôture que j'ai pu certifier — les trous sont les
+      jours où je n'ai pas obtenu le cours.</p>
+    <div class="bi-card">
+      <div class="bi-k">Clôture du WPEA, en euros</div>
+      <div class="bi-chartwrap">
+        <div class="bi-chart dash-skeleton" id="ch-wpea" data-source="coeur_wpea"></div>
+      </div>
+    </div>
+
+    <div class="bi-grid" style="margin-top: var(--cds-gap-md);">
+      <div class="bi-card">
+        <div class="bi-k">Tes ordres enregistrés</div>
+        <div class="bi-tablebox">
+          <table class="bi-table bi-num" id="t-versements" data-source="versements" data-row-key="date">
+            <thead><tr>
+              <th data-field="date">Date</th>
+              <th data-field="libelle">Ordre</th>
+              <th data-field="montant_eur">Montant</th>
+              <th data-field="parts">Parts</th>
+              <th data-field="statut">Statut</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="bi-card">
+        <div class="bi-k">Deux lectures de ton dépôt — à trancher</div>
+        <div class="bi-tablebox">
+          <table class="bi-table bi-num" id="t-lectures" data-source="lectures" data-row-key="lecture">
+            <thead><tr>
+              <th data-field="lecture">Lecture</th>
+              <th data-field="total_eur">Total</th>
+              <th data-field="dont_world_eur">Dont World</th>
+              <th data-field="parts">Parts</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="bi-flag">Tant que tu n'as pas tranché, tous les chiffres de cette page reposent
+          sur la seconde ligne.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bi-sec" id="surveillance">
+    <h2 class="bi-h2">Ce que je surveille</h2>
+    <p class="bi-lead">Quatre dossiers classés sur le même mètre. Un candidat ne devient un achat
+      que si son cours passe sous son seuil — et, pour STM, seulement si son test est validé.</p>
+    <div class="bi-card">
+      <div class="bi-tablebox">
+        <table class="bi-table bi-num" id="t-classement" data-source="classement" data-row-key="rang">
+          <thead><tr>
+            <th data-field="rang">#</th>
+            <th data-field="candidat">Candidat</th>
+            <th data-source="cours_seuil" data-field="cours_txt">Cours</th>
+            <th data-source="cours_seuil" data-field="seuil_txt">Seuil</th>
+            <th data-source="ecarts" data-field="ecart_pct">Écart</th>
+            <th data-field="statut">Statut</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="bi-card" style="margin-top: var(--cds-gap-md);">
+      <div class="bi-k">STM contre son seuil d'achat</div>
+      <div class="bi-note" style="margin-bottom: var(--cds-gap-sm);">
+        Clôture <span class="dash-skeleton" data-source="stm_ecart" data-field="cloture" data-row="0">—</span>
+        au <span class="dash-skeleton" data-source="stm_ecart" data-field="date" data-row="0">—</span> ·
+        le seuil est à <span class="dash-skeleton" data-source="stm_ecart" data-field="ecart_pct" data-row="0">—</span>
+      </div>
+      <div class="bi-chartwrap">
+        <div class="bi-chart dash-skeleton" id="ch-stm" data-source="stm_seuil"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bi-sec" id="etoro">
+    <h2 class="bi-h2">Hors PEA — ton compte eToro</h2>
+    <p class="bi-lead">Dernière photo que j'ai de ce compte : le 25 juillet 2026. Je n'ai aucun moyen
+      de le suivre automatiquement, donc ces chiffres ne bougeront que si tu m'en envoies de nouveaux.</p>
+    <div class="bi-card">
+      <div class="bi-tablebox">
+        <table class="bi-table bi-num" id="t-etoro" data-source="positions_etoro" data-row-key="ticker">
+          <thead><tr>
+            <th data-field="ligne">Ligne</th>
+            <th data-field="ticker">Ticker</th>
+            <th data-field="valeur_affichee">Valeur</th>
+            <th data-field="pv_pct">Plus/moins-value</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="bi-sec" id="limites">
+    <h2 class="bi-h2">Ce que cette page ne sait pas</h2>
+    <ul class="bi-outro">
+      <li>Elle n'est pas branchée sur une bourse en direct : je n'ai accès à aucun flux de marché
+        depuis ma session. Chaque cours ici est une clôture que j'ai vérifiée à la main pendant le
+        brief du matin, et la page se met à jour quand je la réécris.</li>
+      <li>Les trous dans la courbe sont réels : les jours sans point sont les jours où je n'ai pas
+        réussi à certifier un cours. Je préfère un trou à un chiffre inventé.</li>
+      <li>Le nombre de parts de ton PEA vient de mes ordres, pas de ton relevé Fortuneo. Tant que tu
+        ne me confirmes pas l'exécution, la valeur du cœur est une hypothèse.</li>
+      <li>Rien ici n'est une prévision. Les seuils sont des prix d'achat décidés à l'avance, pas des
+        objectifs de cours.</li>
+    </ul>
+  </section>
+
+</div>
+
+<script>
+(function () {
+  var FR = d3.formatLocale({ decimal: ",", thousands: " ", grouping: [3],
+    currency: ["", " €"], minus: "−" });
+  var MOIS = ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août",
+    "sept.", "oct.", "nov.", "déc."];
+
+  var f2 = FR.format(",.2f");
+  var f3 = FR.format(",.3f");
+  var f4 = FR.format(",.4f");
+  var fpct = FR.format("+,.1f");
+
+  function parseDay(s) { return new Date(String(s).slice(0, 10) + "T00:00:00Z"); }
+  function dayShort(d) { return d.getUTCDate() + " " + MOIS[d.getUTCMonth()]; }
+  function dayLong(d) { return d.getUTCDate() + " " + MOIS[d.getUTCMonth()] + " " + d.getUTCFullYear(); }
+  function fmtDate(s) { var d = parseDay(s); return isNaN(d) ? String(s) : dayLong(d); }
+  function eur(v, dec) { return (dec === 4 ? f4(v) : dec === 3 ? f3(v) : f2(v)) + " €"; }
+  function pct(v) { return fpct(v) + " %"; }
+
+  window.BI = { FR: FR, f2: f2, f3: f3, f4: f4, fpct: fpct, parseDay: parseDay,
+    dayShort: dayShort, dayLong: dayLong, fmtDate: fmtDate, eur: eur, pct: pct };
+})();
+</script>
+
+<script>
+dash.calc("coeur", {
+  title: "Valeur du cœur PEA",
+  description: "Parts WPEA de mes ordres × dernière clôture certifiée du WPEA.",
+  inputs: ["versements", "coeur_wpea"],
+  fn: function (versements, coeur_wpea) {
+    var parts = versements.reduce(function (s, o) { return s + Number(o.parts); }, 0);
+    var last = coeur_wpea[coeur_wpea.length - 1];
+    return [{ parts: parts, cloture: Number(last.cloture), date: last.date,
+      valeur: parts * Number(last.cloture) }];
+  }
+});
+
+dash.calc("garde_fous", {
+  title: "Plafond par ligne et poche risquée",
+  description: "Plafond = min(5 % × (cœur + 6 000 €) ; 15 % × cœur). Risqué autorisé = cœur ÷ 3.",
+  inputs: ["coeur"],
+  fn: function (coeur) {
+    var V = coeur[0].valeur;
+    return [{ plafond_ligne: Math.min(0.05 * (V + 6000), 0.15 * V), marge_risque: V / 3 }];
+  }
+});
+
+dash.calc("cours_seuil", {
+  title: "Cours et seuil avec leur devise",
+  description: "Colle la devise de chaque candidat à son cours et à son seuil.",
+  inputs: ["classement"],
+  fn: function (classement) {
+    return classement.map(function (c) {
+      return {
+        rang: c.rang,
+        cours_txt: c.cours ? String(c.cours).replace(".", ",") + " " + c.devise : "",
+        seuil_txt: c.seuil ? String(c.seuil).replace(".", ",") + " " + c.devise : ""
+      };
+    });
+  }
+});
+
+dash.calc("ecarts", {
+  title: "Distance du cours au seuil d'achat",
+  description: "Pour chaque candidat : seuil ÷ cours − 1, en pourcentage.",
+  inputs: ["classement"],
+  fn: function (classement) {
+    return classement.map(function (c) {
+      var ok = c.seuil && c.cours;
+      return { rang: c.rang, ecart_pct: ok ? (Number(c.seuil) / Number(c.cours) - 1) * 100 : null };
+    });
+  }
+});
+
+dash.calc("stm_ecart", {
+  title: "STM — dernière clôture et distance au seuil",
+  description: "Dernière ligne de la série STM, et seuil ÷ clôture − 1 en pourcentage.",
+  inputs: ["stm_seuil"],
+  fn: function (stm_seuil) {
+    var l = stm_seuil[stm_seuil.length - 1];
+    return [{ cloture: Number(l.cloture), seuil: Number(l.seuil), date: l.date,
+      ecart_pct: (Number(l.seuil) / Number(l.cloture) - 1) * 100 }];
+  }
+});
+</script>
+
+<script>
+(function () {
+  var B = window.BI;
+  var drawn = {};
+
+  function rowsOf(id) {
+    var d = dash.data(id).data;
+    if (Array.isArray(d)) return d;
+    return d ? [d] : [];
+  }
+  function ok(id) { return dash.data(id).status === "ok"; }
+
+  function put(el, text, ready) {
+    if (!el) return;
+    el.textContent = ready && text !== null && text !== undefined && text !== "" ? text : "—";
+    el.classList.toggle("dash-skeleton", !ready);
+  }
+  function q(sel) { return document.querySelector(sel); }
+  function all(sel) { return Array.prototype.slice.call(document.querySelectorAll(sel)); }
+
+  function planVal(key) {
+    var r = rowsOf("plan").filter(function (x) { return x.cle === key; })[0];
+    return r ? r.valeur : null;
+  }
+
+  /* ---------- tables ---------- */
+
+  function fillTable(tableSel, rows, cells, keyOf) {
+    var tb = q(tableSel + " tbody");
+    if (!tb) return;
+    tb.textContent = "";
+    rows.forEach(function (r) {
+      var tr = document.createElement("tr");
+      if (keyOf) tr.setAttribute("data-key", keyOf(r));
+      cells.forEach(function (get) {
+        var td = document.createElement("td");
+        td.textContent = get(r);
+        tr.appendChild(td);
+      });
+      tb.appendChild(tr);
+    });
+  }
+
+  /* ---------- line chart ---------- */
+
+  function drawLine(hostId, rows, opt) {
+    var host = document.getElementById(hostId);
+    if (!host) return;
+    host.textContent = "";
+    var tip = document.createElement("div");
+    tip.className = "bi-tip";
+
+    var pts = rows.map(function (r) {
+      return { d: B.parseDay(r.date), v: Number(r[opt.y]) };
+    }).filter(function (p) { return !isNaN(p.v) && !isNaN(p.d); });
+    if (!pts.length) return;
+
+    var W = Math.max(240, host.clientWidth || 320);
+    var H = opt.height || 220;
+
+    var svg = d3.select(host).append("svg")
+      .attr("width", "100%").attr("viewBox", "0 0 " + W + " " + H)
+      .attr("role", "img").attr("aria-label", opt.aria || "");
+    if (!drawn[hostId]) { svg.attr("class", "bi-fade"); drawn[hostId] = true; }
+
+    var vals = pts.map(function (p) { return p.v; });
+    if (opt.ref != null) vals.push(opt.ref);
+    var lo = d3.min(vals), hi = d3.max(vals);
+    var pad = (hi - lo || Math.abs(hi) * 0.02 || 1) * 0.2;
+    var y = d3.scaleLinear([lo - pad, hi + pad], [0, 1]);
+    var ticks = y.ticks(4);
+
+    var meas = svg.append("g").attr("opacity", 0);
+    var leftW = 0;
+    ticks.forEach(function (t) {
+      var n = meas.append("text").attr("class", "bi-tick").text(opt.fmtY(t)).node();
+      leftW = Math.max(leftW, n.getComputedTextLength());
+    });
+    var endTxt = opt.label + " " + opt.fmtY(pts[pts.length - 1].v);
+    var endW = meas.append("text").attr("class", "bi-endlab").text(endTxt).node().getComputedTextLength();
+    var xLabW = {};
+    pts.forEach(function (p, i) {
+      xLabW[i] = meas.append("text").attr("class", "bi-tick").text(B.dayShort(p.d)).node().getComputedTextLength();
+    });
+    meas.remove();
+
+    var m = { top: 16, right: Math.min(endW + 12, W * 0.45), bottom: 24, left: leftW + 10 };
+    if (W - m.left - m.right < 60) { m.right = 12; }
+    y.range([H - m.bottom, m.top]);
+    var xdom = d3.extent(pts, function (p) { return p.d; });
+    if (+xdom[0] === +xdom[1]) { xdom = [d3.utcDay.offset(xdom[0], -1), d3.utcDay.offset(xdom[1], 1)]; }
+    var x = d3.scaleUtc(xdom, [m.left, W - m.right]);
+
+    ticks.forEach(function (t) {
+      svg.append("line").attr("x1", m.left).attr("x2", W - m.right)
+        .attr("y1", y(t)).attr("y2", y(t))
+        .attr("stroke", "var(--cds-chart-grid)").attr("stroke-width", 1);
+      svg.append("text").attr("class", "bi-tick").attr("x", m.left - 6).attr("y", y(t))
+        .attr("text-anchor", "end").attr("dominant-baseline", "middle").text(opt.fmtY(t));
+    });
+
+    if (opt.ref != null) {
+      svg.append("line").attr("x1", m.left).attr("x2", W - m.right)
+        .attr("y1", y(opt.ref)).attr("y2", y(opt.ref))
+        .attr("stroke", "var(--cds-chart-reference)").attr("stroke-width", 1)
+        .attr("stroke-dasharray", "4 3");
+      svg.append("text").attr("class", "bi-endlab").attr("x", W - m.right + 6)
+        .attr("y", y(opt.ref)).attr("dominant-baseline", "middle")
+        .attr("fill", "var(--color-fg-muted)").text(opt.refLabel);
+    }
+
+    var keep = [];
+    for (var i = pts.length - 1; i >= 0; i--) {
+      var cx = x(pts[i].d), half = xLabW[i] / 2 + 8;
+      var clash = keep.some(function (k) { return Math.abs(k.cx - cx) < half + k.half; });
+      if (!clash) keep.push({ cx: cx, half: half, i: i });
+    }
+    keep.forEach(function (k) {
+      svg.append("text").attr("class", "bi-tick").attr("x", k.cx).attr("y", H - 6)
+        .attr("text-anchor", "middle").text(B.dayShort(pts[k.i].d));
+    });
+
+    var color = opt.color || dash.colors[0];
+    svg.append("path").datum(pts)
+      .attr("fill", "none").attr("stroke", color).attr("stroke-width", 2)
+      .attr("stroke-linecap", "round").attr("stroke-linejoin", "round")
+      .attr("d", d3.line().x(function (p) { return x(p.d); }).y(function (p) { return y(p.v); }));
+
+    pts.forEach(function (p) {
+      svg.append("circle").attr("cx", x(p.d)).attr("cy", y(p.v)).attr("r", 3).attr("fill", color);
+    });
+
+    var lastP = pts[pts.length - 1];
+    svg.append("text").attr("class", "bi-endlab").attr("x", x(lastP.d) + 8).attr("y", y(lastP.v))
+      .attr("dominant-baseline", "middle").attr("fill", color).text(endTxt);
+
+    var hov = svg.append("circle").attr("r", 5).attr("fill", "none")
+      .attr("stroke", color).attr("stroke-width", 2).attr("opacity", 0);
+    host.appendChild(tip);
+
+    svg.append("rect").attr("x", m.left).attr("y", m.top)
+      .attr("width", Math.max(1, W - m.left - m.right)).attr("height", Math.max(1, H - m.top - m.bottom))
+      .attr("fill", "transparent")
+      .on("pointerleave", function () { tip.style.opacity = 0; hov.attr("opacity", 0); })
+      .on("pointermove", function (ev) {
+        var box = this.getBoundingClientRect();
+        var scale = box.width / Math.max(1, W - m.left - m.right);
+        var px = m.left + (ev.clientX - box.left) / scale;
+        var i = d3.leastIndex(pts, function (p) { return Math.abs(x(p.d) - px); });
+        var p = pts[i];
+        hov.attr("cx", x(p.d)).attr("cy", y(p.v)).attr("opacity", 1);
+        tip.textContent = "";
+        var dl = document.createElement("div");
+        dl.className = "bi-tipd"; dl.textContent = B.dayLong(p.d);
+        var vl = document.createElement("div");
+        vl.textContent = opt.label + " " + opt.fmtY(p.v);
+        tip.appendChild(dl); tip.appendChild(vl);
+        tip.style.opacity = 1;
+        var hb = host.getBoundingClientRect();
+        var tw = tip.offsetWidth, left = ev.clientX - hb.left + 12;
+        if (left + tw > hb.width) left = Math.max(0, ev.clientX - hb.left - tw - 12);
+        tip.style.left = left + "px";
+        tip.style.top = Math.max(0, ev.clientY - hb.top - 48) + "px";
+      });
+  }
+
+  /* ---------- render ---------- */
+
+  dash.onData(function () {
+    var planOk = ok("plan");
+    all('[data-source="plan"][data-where="cle=prochain_ordre_date"]').forEach(function (el) {
+      put(el, planOk ? B.fmtDate(planVal("prochain_ordre_date")) : null, planOk);
+    });
+    all('[data-source="plan"][data-where="cle=prochain_ordre_montant"]').forEach(function (el) {
+      put(el, planOk ? B.eur(Number(planVal("prochain_ordre_montant")), 2) : null, planOk);
+    });
+    all('[data-source="plan"][data-where="cle=consigne"]').forEach(function (el) {
+      put(el, planOk ? planVal("consigne") : null, planOk);
+    });
+
+    var cOk = ok("coeur") && rowsOf("coeur").length > 0;
+    var c = cOk ? rowsOf("coeur")[0] : null;
+    put(q('[data-source="coeur"][data-field="valeur"]'), c ? B.eur(c.valeur, 2) : null, cOk);
+    put(q('[data-source="coeur"][data-field="parts"]'), c ? B.FR.format(",")(c.parts) : null, cOk);
+    put(q('[data-source="coeur"][data-field="cloture"]'), c ? B.eur(c.cloture, 4) : null, cOk);
+    put(q('[data-source="coeur"][data-field="date"]'), c ? B.fmtDate(c.date) : null, cOk);
+
+    var gOk = ok("garde_fous") && rowsOf("garde_fous").length > 0;
+    var g = gOk ? rowsOf("garde_fous")[0] : null;
+    put(q('[data-source="garde_fous"][data-field="plafond_ligne"]'), g ? B.eur(g.plafond_ligne, 2) : null, gOk);
+    put(q('[data-source="garde_fous"][data-field="marge_risque"]'), g ? B.eur(g.marge_risque, 2) : null, gOk);
+
+    var sOk = ok("stm_ecart") && rowsOf("stm_ecart").length > 0;
+    var s = sOk ? rowsOf("stm_ecart")[0] : null;
+    put(q('[data-source="stm_ecart"][data-field="cloture"]'), s ? B.eur(s.cloture, 3) : null, sOk);
+    put(q('[data-source="stm_ecart"][data-field="date"]'), s ? B.fmtDate(s.date) : null, sOk);
+    put(q('[data-source="stm_ecart"][data-field="ecart_pct"]'), s ? B.pct(s.ecart_pct) : null, sOk);
+
+    var vOk = ok("versements");
+    document.getElementById("t-versements").classList.toggle("dash-skeleton", !vOk);
+    fillTable("#t-versements", vOk ? rowsOf("versements") : [], [
+      function (r) { return B.fmtDate(r.date); },
+      function (r) { return r.libelle; },
+      function (r) { return B.eur(Number(r.montant_eur), 2); },
+      function (r) { return B.FR.format(",")(Number(r.parts)); },
+      function (r) { return r.statut; }
+    ], function (r) { return r.date; });
+
+    var lOk = ok("lectures");
+    fillTable("#t-lectures", lOk ? rowsOf("lectures") : [], [
+      function (r) { return r.lecture; },
+      function (r) { return B.eur(Number(r.total_eur), 2); },
+      function (r) { return B.eur(Number(r.dont_world_eur), 2); },
+      function (r) { return r.parts ? B.FR.format(",")(Number(r.parts)) : "—"; }
+    ], function (r) { return r.lecture; });
+
+    var clOk = ok("classement");
+    var cs = ok("cours_seuil") ? rowsOf("cours_seuil") : [];
+    var ec = ok("ecarts") ? rowsOf("ecarts") : [];
+    function byRang(list, rang) {
+      return list.filter(function (o) { return String(o.rang) === String(rang); })[0] || {};
+    }
+    fillTable("#t-classement", clOk ? rowsOf("classement") : [], [
+      function (r) { return r.rang; },
+      function (r) { return r.candidat; },
+      function (r) { return byRang(cs, r.rang).cours_txt || "—"; },
+      function (r) { return byRang(cs, r.rang).seuil_txt || "—"; },
+      function (r) {
+        var e = byRang(ec, r.rang).ecart_pct;
+        return (e === null || e === undefined) ? "—" : B.pct(e);
+      },
+      function (r) { return r.statut; }
+    ]);
+
+    var eOk = ok("positions_etoro");
+    fillTable("#t-etoro", eOk ? rowsOf("positions_etoro") : [], [
+      function (r) { return r.ligne; },
+      function (r) { return r.ticker; },
+      function (r) { return r.valeur_affichee; },
+      function (r) { return B.pct(Number(r.pv_pct)); }
+    ]);
+
+    var wHost = document.getElementById("ch-wpea");
+    if (ok("coeur_wpea")) {
+      wHost.classList.remove("dash-skeleton");
+      drawLine("ch-wpea", rowsOf("coeur_wpea"), {
+        y: "cloture", label: "WPEA",
+        fmtY: function (v) { return B.eur(v, 3); },
+        aria: "Clôture du WPEA en euros, par date",
+        color: dash.colors[0]
+      });
+    } else {
+      wHost.classList.add("dash-skeleton");
+      wHost.textContent = "";
+    }
+
+    var sHost = document.getElementById("ch-stm");
+    if (ok("stm_seuil")) {
+      var srows = rowsOf("stm_seuil");
+      sHost.classList.remove("dash-skeleton");
+      drawLine("ch-stm", srows, {
+        y: "cloture", label: "STM",
+        ref: srows.length ? Number(srows[0].seuil) : null,
+        refLabel: "seuil",
+        fmtY: function (v) { return B.eur(v, 2); },
+        aria: "Clôture de STMicroelectronics en euros, et son seuil d'achat",
+        color: dash.colors[1]
+      });
+    } else {
+      sHost.classList.add("dash-skeleton");
+      sHost.textContent = "";
+    }
+  });
+})();
+</script>
