@@ -93,3 +93,40 @@ vaut mieux qu'un chiffre inventé.
   d'investir le cash tout de suite bascule si l'ordre coûte plus de ~7 €.
 - **Aucun relevé automatique des deux comptes.** Tout dépend de captures que
   Tanguy envoie. C'est la limite dure du dispositif, écrite dans la page.
+
+## Ordre de la page — fixé par Tanguy le 15/10
+
+> « l'interface doit focus justement sur le graphique en élément central avec la
+> variation de mes placements dessous et les idées de Claude pour investir encore
+> plus bas. L'idée c'est de pouvoir suivre mon capital en un coup d'œil. »
+
+**Trois sections, dans cet ordre. Ne pas le réarranger sans qu'il le demande.**
+
+1. **`#capital`** — le capital en gros chiffre, la variation du jour et la
+   plus-value latente sur une ligne, les trois filtres, puis **le graphique, en
+   élément central et pleine largeur**.
+2. **`#variation`** — barres de performance par ligne, tableau des lignes,
+   répartition et comptes.
+3. **`#idees`** — l'action du mois, les garde-fous, la consigne, le classement,
+   STM, le cours du WPEA.
+4. `#limites` — ce que la page ne sait pas.
+
+### Le garde-fou ne descend PAS avec les idées
+
+Tanguy a demandé que les recommandations soient « plus bas ». Une alerte d'une
+ligne reste donc **sous le graphique** quand un garde-fou est dépassé
+*(`#rail`, affiché seulement si R > 25 %)*, avec un bouton vers `#idees`.
+**Respecter la mise en page demandée n'autorise pas à enterrer un dépassement :**
+c'est la seule chose que je remonte contre sa consigne, et elle disparaît d'elle-
+même dès que R repasse sous 25 %.
+
+### Variation du jour
+
+Nouvelle colonne `variation_jour_eur` dans `comptes.csv`, calculable **seulement
+quand les deux sources existent** :
+- PEA : `70 × (cours du jour − cours de la veille)` ;
+- eToro : le montant affiché sous le total dans l'application *(capture)*.
+
+**Sans capture eToro du jour, cette colonne est fausse** — mettre `0` serait un
+mensonge, reporter la veille aussi. Dans ce cas : vider la case eToro et ne pas
+afficher de variation d'ensemble.

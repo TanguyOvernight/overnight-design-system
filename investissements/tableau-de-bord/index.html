@@ -1,11 +1,19 @@
 <style>
 .bi { font-family: var(--font-anthropic-sans); color: var(--color-fg); }
 .bi * { box-sizing: border-box; }
-.bi-head { margin-bottom: var(--cds-gap-lg); }
-.bi-title { font-family: var(--font-anthropic-serif); font-weight: 400;
-  font-size: var(--cds-font-size-title); margin: 0 0 var(--cds-gap-xs) 0; }
-.bi-sub { margin: 0; font-size: var(--cds-font-size-body); color: var(--color-fg-muted); line-height: 1.5; }
-.bi .bi-hl { font-weight: var(--cds-font-weight-medium); color: var(--color-fg); }
+.bi-eyebrow { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted);
+  margin: 0 0 var(--cds-gap-md) 0; }
+
+.bi-hero { margin-bottom: var(--cds-gap-md); }
+.bi-hero-k { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.bi-hero-num { font-family: var(--font-anthropic-serif); font-weight: 400;
+  font-size: clamp(2.5rem, 11vw, 4rem); line-height: 1.05;
+  font-variant-numeric: tabular-nums; margin-top: 2px; }
+.bi-hero-sub { margin-top: var(--cds-gap-xs); font-size: var(--cds-font-size-body);
+  color: var(--color-fg-muted); font-variant-numeric: tabular-nums; line-height: 1.5; }
+.bi .bi-up { color: var(--color-ok); }
+.bi .bi-down { color: var(--color-bad); }
+
 .bi-sec { margin-top: var(--cds-gap-xl); }
 .bi-h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium);
   margin: 0 0 var(--cds-gap-sm) 0; }
@@ -20,16 +28,21 @@
 .bi-big { font-family: var(--font-anthropic-serif); font-weight: 400;
   font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; line-height: 1.15; }
 .bi-alert .bi-big { color: var(--color-bad); }
-.bi-gain .bi-big { color: var(--color-ok); }
 .bi-note { margin-top: var(--cds-gap-xs); font-size: var(--cds-font-size-caption);
   color: var(--color-fg-muted); font-variant-numeric: tabular-nums; line-height: 1.5; }
 .bi-flag { margin-top: var(--cds-gap-sm); font-size: var(--cds-font-size-caption);
   color: var(--color-warn); line-height: 1.5; }
 .bi-txt { font-size: var(--cds-font-size-body); line-height: 1.5; }
 
-.bi-filters { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm) var(--cds-gap-md);
-  align-items: flex-end; }
-.bi-fld { display: flex; flex-direction: column; gap: 2px; min-width: 9rem; flex: 1 1 9rem; }
+.bi-rail { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cds-gap-xs) var(--cds-gap-sm);
+  margin-top: var(--cds-gap-sm); font-size: var(--cds-font-size-caption);
+  color: var(--color-warn); line-height: 1.5; }
+.bi-link { background: none; border: none; padding: 0; font: inherit; cursor: pointer;
+  color: var(--color-fg); text-decoration: underline; text-underline-offset: 2px; }
+
+.bi-filters { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm); align-items: flex-end;
+  margin-bottom: var(--cds-gap-sm); }
+.bi-fld { display: flex; flex-direction: column; gap: 2px; min-width: 8rem; flex: 1 1 8rem; }
 .bi-fld > span { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
 .bi-sel { font-family: inherit; font-size: var(--cds-font-size-caption); color: var(--color-fg);
   background: var(--color-bg); border: 1px solid var(--color-border-line);
@@ -38,10 +51,10 @@
   background: var(--color-bg); border: 1px solid var(--color-border-line); cursor: pointer;
   border-radius: var(--cds-radius); padding: var(--cds-pad-xs) var(--cds-pad-sm); }
 .bi-btn:hover { background: var(--color-panel); }
-.bi-chip { margin-top: var(--cds-gap-sm); font-size: var(--cds-font-size-caption); }
 
 .bi-chartwrap { position: relative; }
 .bi-chart { position: relative; min-height: 220px; }
+.bi-chart.bi-hero-chart { min-height: 300px; }
 .bi-chart.bi-tall { min-height: 260px; }
 .bi-chart svg { display: block; }
 .bi-tick { font-size: var(--cds-font-size-caption); fill: var(--color-fg-muted);
@@ -62,10 +75,8 @@
 .bi-leg { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm) var(--cds-gap-lg);
   font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
 .bi-leg > button { display: flex; align-items: center; gap: var(--cds-gap-xs);
-  background: none; border: none; padding: 0; cursor: pointer; font: inherit;
-  color: var(--color-fg); }
+  background: none; border: none; padding: 0; cursor: pointer; font: inherit; color: var(--color-fg); }
 .bi-leg > div { display: flex; align-items: center; gap: var(--cds-gap-xs); }
-.bi-leg .bi-off { opacity: .4; }
 .bi-dot { width: .625rem; height: .625rem; border-radius: 2px; flex: none; }
 .bi-legv { color: var(--color-fg-muted); }
 
@@ -82,7 +93,7 @@
 #t-positions tbody tr { cursor: pointer; }
 #t-positions tbody tr:hover { background: var(--color-bg); }
 #t-comptes :is(th, td):nth-child(2), #t-comptes :is(th, td):nth-child(3),
-#t-comptes :is(th, td):nth-child(4),
+#t-comptes :is(th, td):nth-child(4), #t-comptes :is(th, td):nth-child(5),
 #t-positions :is(th, td):nth-child(4), #t-positions :is(th, td):nth-child(5),
 #t-positions :is(th, td):nth-child(6),
 #t-classement :is(th, td):nth-child(3), #t-classement :is(th, td):nth-child(4),
@@ -99,118 +110,57 @@
 
 <div class="bi">
 
-  <header class="bi-head">
-    <h1 class="bi-title">Brief investissements</h1>
-    <p class="bi-sub">
-      <span class="dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=action">—</span> :
-      <b class="bi-hl dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=action_montant">—</b>.
-      <span class="dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=consigne">—</span>
-    </p>
-  </header>
+  <section id="capital">
+    <p class="bi-eyebrow">Brief investissements ·
+      <span class="dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=maj">—</span></p>
 
-  <section class="bi-sec" id="decision">
-    <h2 class="bi-h2">Décision</h2>
-    <p class="bi-lead">Ce que tu fais de ton argent maintenant, et la limite que ton portefeuille dépasse aujourd'hui.</p>
-    <div class="bi-grid">
-
-      <div class="bi-card">
-        <div class="bi-k">À investir tout de suite</div>
-        <div class="bi-big dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=action_montant">—</div>
-        <div class="bi-note dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=action">—</div>
-        <div class="bi-note">Ton ordre gratuit d'octobre est déjà parti sur l'achat du 1<sup>er</sup>.
-          Celui-ci pourrait donc être facturé, estimation
-          <span class="dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=action_frais">—</span> :
-          lis la ligne de frais dans l'appli avant de valider. Au-delà de
-          <span class="dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=seuil_frais">—</span>, préviens-moi.</div>
+    <div class="bi-hero">
+      <div class="bi-hero-k">Ton capital, les deux comptes réunis</div>
+      <div class="bi-hero-num dash-skeleton" data-source="total" data-field="total" data-row="0">—</div>
+      <div class="bi-hero-sub">
+        <b class="dash-skeleton" id="h-jour" data-source="variation" data-field="jour" data-row="0">—</b>
+        aujourd'hui ·
+        <b class="dash-skeleton" id="h-pv" data-source="perf_totale" data-field="pv" data-row="0">—</b>
+        de plus-value latente
+        <span class="dash-skeleton" data-source="perf_totale" data-field="perf_pct" data-row="0">—</span>
       </div>
-
-      <div class="bi-card bi-alert">
-        <div class="bi-k">Part risquée du portefeuille</div>
-        <div class="bi-big dash-skeleton" data-source="garde_fous" data-field="r_pct" data-row="0">—</div>
-        <div class="bi-note">Ma règle plafonne à 25 %. Il manque
-          <span class="dash-skeleton" data-source="garde_fous" data-field="manque" data-row="0">—</span>
-          de cœur pour revenir dessous.</div>
-        <div class="bi-flag">Tant que c'est dépassé : aucune nouvelle action individuelle, STM compris.</div>
-      </div>
-
-      <div class="bi-card bi-gain">
-        <div class="bi-k">Plus-value latente, tout compris</div>
-        <div class="bi-big dash-skeleton" data-source="perf_totale" data-field="pv" data-row="0">—</div>
-        <div class="bi-note">
-          <span class="dash-skeleton" data-source="perf_totale" data-field="perf_pct" data-row="0">—</span>
-          sur <span class="dash-skeleton" data-source="perf_totale" data-field="investi" data-row="0">—</span> investis.
-          Renault est hors de ce calcul : je n'ai pas son gain.</div>
-      </div>
-
     </div>
 
-    <div class="bi-card" style="margin-top: var(--cds-gap-md);">
-      <div class="bi-k">Consigne du jour</div>
-      <div class="bi-txt dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=consigne">—</div>
+    <div class="bi-filters">
+      <label class="bi-fld"><span>Compte</span>
+        <select class="bi-sel" id="f-poche" data-source="positions"></select></label>
+      <label class="bi-fld"><span>Catégorie</span>
+        <select class="bi-sel" id="f-cat" data-source="positions"></select></label>
+      <label class="bi-fld"><span>Ligne</span>
+        <select class="bi-sel" id="f-ligne" data-source="positions"></select></label>
+      <button class="bi-btn" id="f-reset" type="button">Tout</button>
+    </div>
+
+    <div class="bi-chartwrap">
+      <div class="bi-chart bi-hero-chart dash-skeleton" id="ch-valeurs" data-source="valeurs"></div>
+    </div>
+    <div class="bi-leg" id="val-leg" style="margin-top: var(--cds-gap-sm);"></div>
+
+    <div class="bi-rail" id="rail" hidden>
+      <span>Ta part risquée est à
+        <b class="dash-skeleton" data-source="garde_fous" data-field="r_pct" data-row="0">—</b>,
+        au-dessus de ma limite de 25 %.</span>
+      <button class="bi-link" id="go-idees" type="button">Voir quoi faire</button>
     </div>
   </section>
 
-  <section class="bi-sec" id="filtres">
-    <h2 class="bi-h2">Filtres</h2>
-    <p class="bi-lead">Ils s'appliquent au tableau de tes lignes, au graphique de performance et à la courbe.
-      Les chiffres de la section Décision et les totaux restent sur l'ensemble du portefeuille.</p>
+  <section class="bi-sec" id="variation">
+    <h2 class="bi-h2">La variation de tes placements</h2>
+    <p class="bi-lead">Gain ou perte depuis ton achat, en pourcentage de ce que tu as mis sur chaque ligne.
+      Clique une barre ou une ligne du tableau pour l'isoler dans le graphique du haut.</p>
+
     <div class="bi-card">
-      <div class="bi-filters">
-        <label class="bi-fld"><span>Compte</span>
-          <select class="bi-sel" id="f-poche" data-source="positions"></select></label>
-        <label class="bi-fld"><span>Catégorie</span>
-          <select class="bi-sel" id="f-cat" data-source="positions"></select></label>
-        <label class="bi-fld"><span>Ligne</span>
-          <select class="bi-sel" id="f-ligne" data-source="positions"></select></label>
-        <button class="bi-btn" id="f-reset" type="button">Tout afficher</button>
-      </div>
-      <div class="bi-chip bi-note" id="f-chip"></div>
-    </div>
-  </section>
-
-  <section class="bi-sec" id="patrimoine">
-    <h2 class="bi-h2">Ton patrimoine investi</h2>
-    <p class="bi-lead">Tes deux comptes réunis, relevés sur tes captures du 15 octobre.</p>
-
-    <div class="bi-grid">
-      <div class="bi-card">
-        <div class="bi-k">Total des deux comptes</div>
-        <div class="bi-big dash-skeleton" data-source="total" data-field="total" data-row="0">—</div>
-        <div class="bi-note">
-          dont <span class="dash-skeleton" data-source="total" data-field="titres" data-row="0">—</span> en titres
-          et <span class="dash-skeleton" data-source="total" data-field="especes" data-row="0">—</span> en espèces
-        </div>
-      </div>
-
-      <div class="bi-card">
-        <div class="bi-k">Répartition</div>
-        <div class="bi-bar dash-skeleton" id="alloc-bar" data-source="allocation"></div>
-        <div class="bi-leg" id="alloc-leg"></div>
+      <div class="bi-chartwrap">
+        <div class="bi-chart bi-tall dash-skeleton" id="ch-perf" data-source="perf"></div>
       </div>
     </div>
 
     <div class="bi-card" style="margin-top: var(--cds-gap-md);">
-      <div class="bi-k">Tes deux comptes</div>
-      <div class="bi-tablebox">
-        <table class="bi-table" id="t-comptes" data-source="comptes" data-row-key="compte">
-          <thead><tr>
-            <th data-field="compte">Compte</th>
-            <th data-field="titres_eur">Titres</th>
-            <th data-field="especes_eur">Espèces</th>
-            <th data-field="total_eur">Total</th>
-            <th data-field="releve">Relevé</th>
-          </tr></thead>
-          <tbody></tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <section class="bi-sec" id="lignes">
-    <h2 class="bi-h2">Tes lignes</h2>
-    <p class="bi-lead">Clique une ligne pour la suivre seule dans les graphiques. Catégorie cœur = ETF
-      larges et diversifiés ; risqué = actions individuelles. C'est ce partage qui gouverne la limite des 25 %.</p>
-    <div class="bi-card">
       <div class="bi-tablebox">
         <table class="bi-table" id="t-positions" data-source="positions" data-row-key="ligne">
           <thead><tr>
@@ -224,48 +174,81 @@
           <tbody></tbody>
         </table>
       </div>
-      <div class="bi-flag">La ligne Renault était coupée sur ta capture : son nom est confirmé, mais sa
-        valeur reste déduite par différence et je n'ai pas son prix de revient.</div>
+      <div class="bi-flag">Renault était coupée sur ta capture : son nom est confirmé, mais sa valeur est
+        déduite par différence et je n'ai pas son prix de revient — elle est donc hors des performances.</div>
     </div>
-  </section>
 
-  <section class="bi-sec" id="performance">
-    <h2 class="bi-h2">Performance par ligne</h2>
-    <p class="bi-lead">Gain ou perte depuis ton achat, en pourcentage du montant investi sur chaque ligne.
-      Survole une barre pour le détail en euros.</p>
-    <div class="bi-card">
-      <div class="bi-chartwrap">
-        <div class="bi-chart bi-tall dash-skeleton" id="ch-perf" data-source="perf"></div>
+    <div class="bi-grid" style="margin-top: var(--cds-gap-md);">
+      <div class="bi-card">
+        <div class="bi-k">Répartition de ton capital</div>
+        <div class="bi-bar dash-skeleton" id="alloc-bar" data-source="allocation"></div>
+        <div class="bi-leg" id="alloc-leg"></div>
+      </div>
+      <div class="bi-card">
+        <div class="bi-k">Tes deux comptes</div>
+        <div class="bi-tablebox">
+          <table class="bi-table" id="t-comptes" data-source="comptes" data-row-key="compte">
+            <thead><tr>
+              <th data-field="compte">Compte</th>
+              <th data-field="titres_eur">Titres</th>
+              <th data-field="especes_eur">Espèces</th>
+              <th data-field="total_eur">Total</th>
+              <th data-field="variation_jour_eur">Jour</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="bi-sec" id="courbes">
-    <h2 class="bi-h2">L'évolution, jour après jour</h2>
-    <p class="bi-lead">La valeur de chaque ligne, un point par jour. Clique une entrée de la légende pour
-      l'isoler. Ton WPEA remonte au 9 octobre parce que je connais ses cours ; les autres lignes démarrent
-      aujourd'hui et se rempliront à chaque capture eToro que tu m'enverras.</p>
-    <div class="bi-card">
-      <div class="bi-chartwrap">
-        <div class="bi-chart dash-skeleton" id="ch-valeurs" data-source="valeurs"></div>
+  <section class="bi-sec" id="idees">
+    <h2 class="bi-h2">Les idées de Claude</h2>
+    <p class="bi-lead">Ce que je te recommande de faire de ton argent, et les limites que je surveille pour toi.</p>
+
+    <div class="bi-grid">
+      <div class="bi-card">
+        <div class="bi-k">À investir tout de suite</div>
+        <div class="bi-big dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=action_montant">—</div>
+        <div class="bi-note dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=action">—</div>
+        <div class="bi-note">Ton ordre gratuit d'octobre est déjà parti sur l'achat du 1<sup>er</sup>.
+          Celui-ci pourrait être facturé, estimation
+          <span class="dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=action_frais">—</span> :
+          lis la ligne de frais dans l'appli avant de valider. Au-delà de
+          <span class="dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=seuil_frais">—</span>,
+          préviens-moi.</div>
       </div>
-      <div class="bi-leg" id="val-leg" style="margin-top: var(--cds-gap-sm);"></div>
+
+      <div class="bi-card bi-alert">
+        <div class="bi-k">Part risquée du portefeuille</div>
+        <div class="bi-big dash-skeleton" data-source="garde_fous" data-field="r_pct" data-row="0">—</div>
+        <div class="bi-note">Ma règle plafonne à 25 %. Il manque
+          <span class="dash-skeleton" data-source="garde_fous" data-field="manque" data-row="0">—</span>
+          de cœur pour revenir dessous.</div>
+        <div class="bi-flag">Tant que c'est dépassé : aucune nouvelle action individuelle, STM compris.</div>
+      </div>
+
+      <div class="bi-card">
+        <div class="bi-k">Plafond par ligne risquée</div>
+        <div class="bi-big dash-skeleton" data-source="garde_fous" data-field="plafond_ligne" data-row="0">—</div>
+        <div class="bi-note">Le plus petit des deux : 5 % de (capital + 6 000 €) et 15 % du capital.
+          Aucune de tes lignes ne le dépasse aujourd'hui.</div>
+      </div>
     </div>
 
     <div class="bi-card" style="margin-top: var(--cds-gap-md);">
-      <div class="bi-k">Cours du WPEA, en euros</div>
-      <div class="bi-chartwrap">
-        <div class="bi-chart dash-skeleton" id="ch-wpea" data-source="coeur_wpea"></div>
-      </div>
+      <div class="bi-k">Consigne du jour</div>
+      <div class="bi-txt dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=consigne">—</div>
+      <div class="bi-note">Prochain versement prévu le
+        <span class="dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=prochain_versement">—</span>,
+        <span class="dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=prochain_versement_montant">—</span>.</div>
     </div>
-  </section>
 
-  <section class="bi-sec" id="surveillance">
-    <h2 class="bi-h2">Ce que je surveille</h2>
-    <p class="bi-lead">Quatre dossiers sur le même mètre. Un candidat ne devient un achat que si son cours
-      passe sous son seuil — et aujourd'hui, aucune action individuelle ne peut entrer tant que la part
-      risquée dépasse 25 %.</p>
-    <div class="bi-card">
+    <div class="bi-card" style="margin-top: var(--cds-gap-md);">
+      <div class="bi-k">Ce que je surveille pour toi</div>
+      <div class="bi-note" style="margin-bottom: var(--cds-gap-sm);">Un candidat ne devient un achat que si
+        son cours passe sous son seuil — et aucune action individuelle ne peut entrer tant que la part
+        risquée dépasse 25 %.</div>
       <div class="bi-tablebox">
         <table class="bi-table" id="t-classement" data-source="classement" data-row-key="rang">
           <thead><tr>
@@ -292,6 +275,13 @@
         <div class="bi-chart dash-skeleton" id="ch-stm" data-source="stm_seuil"></div>
       </div>
     </div>
+
+    <div class="bi-card" style="margin-top: var(--cds-gap-md);">
+      <div class="bi-k">Cours du WPEA, en euros</div>
+      <div class="bi-chartwrap">
+        <div class="bi-chart dash-skeleton" id="ch-wpea" data-source="coeur_wpea"></div>
+      </div>
+    </div>
   </section>
 
   <section class="bi-sec" id="limites">
@@ -301,8 +291,8 @@
         session. Chaque cours est relevé à la main pendant le brief du matin.</li>
       <li>Tes deux comptes ne sont pas connectés non plus. Seul le WPEA se remet à jour tout seul, parce que
         je peux en relever le cours ; tes lignes eToro ne bougeront qu'à ta prochaine capture.</li>
-      <li>Les trous dans les courbes sont réels : ce sont les jours où je n'ai pas réussi à certifier une
-        valeur. Je préfère un trou à un chiffre inventé.</li>
+      <li>Les trous dans les courbes sont réels : ce sont les jours où je n'ai pas pu certifier une valeur.
+        Je préfère un trou à un chiffre inventé.</li>
       <li>Rien ici n'est une prévision. Les seuils sont des prix d'achat décidés à l'avance, pas des
         objectifs de cours.</li>
     </ul>
@@ -323,6 +313,7 @@
     dayLong: function (d) { return d.getUTCDate() + " " + MOIS[d.getUTCMonth()] + " " + d.getUTCFullYear(); },
     fmtDate: function (s) { var d = parseDay(s); return isNaN(d) ? String(s) : window.BI.dayLong(d); },
     eur: function (v, dec) { return FR.format(",." + (dec === undefined ? 2 : dec) + "f")(v) + " €"; },
+    eurs: function (v, dec) { return FR.format("+,." + (dec === undefined ? 2 : dec) + "f")(v) + " €"; },
     pct: function (v) { return FR.format("+,.1f")(v) + " %"; },
     pctp: function (v) { return FR.format(",.1f")(v) + " %"; }
   };
@@ -331,12 +322,21 @@
 
 <script>
 dash.calc("total", {
-  title: "Total des deux comptes",
+  title: "Capital des deux comptes",
   description: "Somme des titres, des espèces et du total de chaque compte relevé.",
   inputs: ["comptes"],
   fn: function (comptes) {
     var s = function (k) { return comptes.reduce(function (a, c) { return a + Number(c[k]); }, 0); };
     return [{ titres: s("titres_eur"), especes: s("especes_eur"), total: s("total_eur") }];
+  }
+});
+
+dash.calc("variation", {
+  title: "Variation du jour",
+  description: "Somme des variations du jour des deux comptes, en euros.",
+  inputs: ["comptes"],
+  fn: function (comptes) {
+    return [{ jour: comptes.reduce(function (a, c) { return a + Number(c.variation_jour_eur); }, 0) }];
   }
 });
 
@@ -359,7 +359,7 @@ dash.calc("allocation", {
 
 dash.calc("garde_fous", {
   title: "Part risquée et plafond par ligne",
-  description: "Part risquée = risqué ÷ (cœur + risqué), hors espèces. Ma règle la plafonne à 25 %, ce qui revient à exiger un cœur au moins triple du risqué. Plafond par ligne = min(5 % × (patrimoine + 6 000 €) ; 15 % × patrimoine).",
+  description: "Part risquée = risqué ÷ (cœur + risqué), hors espèces. Ma règle la plafonne à 25 %, ce qui revient à exiger un cœur au moins triple du risqué. Plafond par ligne = min(5 % × (capital + 6 000 €) ; 15 % × capital).",
   inputs: ["allocation", "total"],
   fn: function (allocation, total) {
     var get = function (c) {
@@ -488,8 +488,10 @@ dash.calc("stm_ecart", {
     tip.style.left = left + "px";
     tip.style.top = Math.max(0, ev.clientY - hb.top - 48) + "px";
   }
-
-  /* ---------- filtres ---------- */
+  function signe(el, v) {
+    el.classList.toggle("bi-up", v > 0);
+    el.classList.toggle("bi-down", v < 0);
+  }
 
   function params() { return dash.params() || {}; }
   function visibles(rows) {
@@ -523,11 +525,13 @@ dash.calc("stm_ecart", {
   q("#t-positions").addEventListener("click", function (ev) {
     var tr = ev.target.closest("tr[data-key]");
     if (!tr) return;
-    var p = params();
-    dash.setParams({ ligne: p.ligne === tr.dataset.key ? null : tr.dataset.key });
+    dash.setParams({ ligne: params().ligne === tr.dataset.key ? null : tr.dataset.key });
   });
-
-  /* ---------- courbe multi-séries ---------- */
+  q("#go-idees").addEventListener("click", function () {
+    var el = document.getElementById("idees");
+    el.scrollIntoView();
+    dash.setLink("idees");
+  });
 
   function drawSeries(hostId, series, opt) {
     var host = document.getElementById(hostId);
@@ -539,8 +543,7 @@ dash.calc("stm_ecart", {
 
     var W = Math.max(240, host.clientWidth || 320), H = opt.height || 230;
     var svg = d3.select(host).append("svg").attr("width", "100%")
-      .attr("viewBox", "0 0 " + W + " " + H).attr("role", "img")
-      .attr("aria-label", opt.aria || "");
+      .attr("viewBox", "0 0 " + W + " " + H).attr("role", "img").attr("aria-label", opt.aria || "");
     if (!drawn[hostId]) { svg.attr("class", "bi-fade"); drawn[hostId] = true; }
 
     var vals = tous.map(function (p) { return p.v; });
@@ -567,7 +570,7 @@ dash.calc("stm_ecart", {
     });
     meas.remove();
 
-    var m = { top: 16, right: endTxt ? Math.min(endW + 12, W * 0.45) : 12, bottom: 24, left: leftW + 10 };
+    var m = { top: 16, right: endTxt ? Math.min(endW + 12, W * 0.45) : 14, bottom: 24, left: leftW + 10 };
     if (W - m.left - m.right < 60) m.right = 12;
     y.range([H - m.bottom, m.top]);
     var xd = d3.extent(tous, function (p) { return p.d; });
@@ -607,7 +610,7 @@ dash.calc("stm_ecart", {
           .attr("stroke-linejoin", "round").attr("d", ligne);
       }
       s.pts.forEach(function (p) {
-        svg.append("circle").attr("cx", x(p.d)).attr("cy", y(p.v)).attr("r", 3).attr("fill", s.couleur);
+        svg.append("circle").attr("cx", x(p.d)).attr("cy", y(p.v)).attr("r", 3.5).attr("fill", s.couleur);
       });
     });
     if (seule) {
@@ -616,8 +619,7 @@ dash.calc("stm_ecart", {
         .attr("dominant-baseline", "middle").attr("fill", seule.couleur).text(endTxt);
     }
 
-    var tip = tipBox(host);
-    var hov = svg.append("g");
+    var tip = tipBox(host), hov = svg.append("g");
     svg.append("rect").attr("x", m.left).attr("y", m.top)
       .attr("width", Math.max(1, W - m.left - m.right)).attr("height", Math.max(1, H - m.top - m.bottom))
       .attr("fill", "transparent")
@@ -635,7 +637,7 @@ dash.calc("stm_ecart", {
         series.forEach(function (s) {
           var p = s.pts.filter(function (o) { return +o.d === +jour; })[0];
           if (!p) return;
-          hov.append("circle").attr("cx", x(p.d)).attr("cy", y(p.v)).attr("r", 5)
+          hov.append("circle").attr("cx", x(p.d)).attr("cy", y(p.v)).attr("r", 5.5)
             .attr("fill", "none").attr("stroke", s.couleur).attr("stroke-width", 2);
           var row = document.createElement("div");
           row.className = "bi-tipr";
@@ -644,8 +646,7 @@ dash.calc("stm_ecart", {
             dot.className = "bi-dot"; dot.style.background = s.couleur;
             row.appendChild(dot);
           }
-          var nom = document.createElement("span");
-          nom.textContent = s.nom;
+          var nom = document.createElement("span"); nom.textContent = s.nom;
           var val = document.createElement("span");
           val.className = "bi-legv"; val.textContent = opt.fmtY(p.v);
           row.appendChild(nom); row.appendChild(val);
@@ -656,8 +657,6 @@ dash.calc("stm_ecart", {
       });
   }
 
-  /* ---------- barres horizontales de performance ---------- */
-
   function drawPerf(rows) {
     var host = document.getElementById("ch-perf");
     host.textContent = "";
@@ -665,8 +664,7 @@ dash.calc("stm_ecart", {
     rows = rows.slice().sort(function (a, b) { return d3.descending(a.perf_pct, b.perf_pct); });
 
     var W = Math.max(240, host.clientWidth || 320);
-    var hauteurBarre = 26, ecart = 12;
-    var H = rows.length * (hauteurBarre + ecart) + 28;
+    var hb = 26, ecart = 12, H = rows.length * (hb + ecart) + 28;
     host.style.minHeight = H + "px";
     var svg = d3.select(host).append("svg").attr("width", "100%")
       .attr("viewBox", "0 0 " + W + " " + H).attr("role", "img")
@@ -691,22 +689,18 @@ dash.calc("stm_ecart", {
     svg.append("line").attr("x1", zero).attr("x2", zero).attr("y1", m.top)
       .attr("y2", H - 22).attr("stroke", "var(--cds-chart-axis)").attr("stroke-width", 1);
 
-    var tip = tipBox(host);
-    var choisie = params().ligne;
+    var tip = tipBox(host), choisie = params().ligne;
 
     rows.forEach(function (r, i) {
-      var yb = m.top + i * (hauteurBarre + ecart);
-      var pos = r.perf_pct >= 0;
+      var yb = m.top + i * (hb + ecart), pos = r.perf_pct >= 0;
       var couleur = pos ? dash.colors[0] : "var(--cds-chart-status-critical)";
       svg.append("text").attr("class", "bi-tick").attr("x", m.left - 8)
-        .attr("y", yb + hauteurBarre / 2).attr("text-anchor", "end")
-        .attr("dominant-baseline", "middle")
+        .attr("y", yb + hb / 2).attr("text-anchor", "end").attr("dominant-baseline", "middle")
         .attr("fill", choisie && choisie !== r.ligne ? "var(--color-fg-muted)" : "var(--color-fg)")
         .text(r.ligne);
-      svg.append("rect")
-        .attr("x", pos ? zero : x(r.perf_pct)).attr("y", yb)
+      svg.append("rect").attr("x", pos ? zero : x(r.perf_pct)).attr("y", yb)
         .attr("width", Math.max(1, Math.abs(x(r.perf_pct) - zero)))
-        .attr("height", hauteurBarre).attr("rx", 4).attr("fill", couleur)
+        .attr("height", hb).attr("rx", 4).attr("fill", couleur)
         .attr("opacity", choisie && choisie !== r.ligne ? 0.35 : 1)
         .style("cursor", "pointer")
         .on("click", function () {
@@ -717,18 +711,16 @@ dash.calc("stm_ecart", {
           tip.textContent = "";
           var t = document.createElement("div");
           t.className = "bi-tipd"; t.textContent = r.ligne;
-          var a = document.createElement("div");
-          a.textContent = "Investi " + B.eur(r.investi);
-          var b = document.createElement("div");
-          b.textContent = "Valeur " + B.eur(r.valeur);
+          var a = document.createElement("div"); a.textContent = "Investi " + B.eur(r.investi);
+          var b = document.createElement("div"); b.textContent = "Valeur " + B.eur(r.valeur);
           var c = document.createElement("div");
-          c.textContent = "Gain " + B.eur(r.pv) + "  ·  " + B.pct(r.perf_pct);
+          c.textContent = "Gain " + B.eurs(r.pv) + "  ·  " + B.pct(r.perf_pct);
           tip.appendChild(t); tip.appendChild(a); tip.appendChild(b); tip.appendChild(c);
           tip.style.opacity = 1;
           placeTip(tip, host, ev);
         });
       svg.append("text").attr("class", "bi-endlab")
-        .attr("x", (pos ? x(r.perf_pct) : zero) + 6).attr("y", yb + hauteurBarre / 2)
+        .attr("x", (pos ? x(r.perf_pct) : zero) + 6).attr("y", yb + hb / 2)
         .attr("dominant-baseline", "middle").attr("fill", couleur).text(B.pct(r.perf_pct));
     });
   }
@@ -757,8 +749,6 @@ dash.calc("stm_ecart", {
     });
   }
 
-  /* ---------- rendu ---------- */
-
   dash.onData(function () {
     var p = params();
 
@@ -767,50 +757,52 @@ dash.calc("stm_ecart", {
      ["action_montant", function (v) { return B.eur(Number(v)); }],
      ["action_frais", function (v) { return B.eur(Number(v)); }],
      ["seuil_frais", function (v) { return B.eur(Number(v)); }],
-     ["consigne", function (v) { return v; }]].forEach(function (e) {
+     ["prochain_versement", function (v) { return B.fmtDate(v); }],
+     ["prochain_versement_montant", function (v) { return B.eur(Number(v)); }],
+     ["consigne", function (v) { return v; }],
+     ["maj", function (v) { return "chiffres arrêtés au " + v; }]].forEach(function (e) {
       all('[data-source="plan"][data-where="cle=' + e[0] + '"]').forEach(function (el) {
         put(el, planOk ? e[1](planVal(e[0])) : null, planOk);
       });
     });
 
     one("total", "total", function (v) { return B.eur(v); });
-    one("total", "titres", function (v) { return B.eur(v); });
-    one("total", "especes", function (v) { return B.eur(v); });
+    one("variation", "jour", function (v) { return B.eurs(v); });
     one("garde_fous", "r_pct", function (v) { return B.pctp(v); });
     one("garde_fous", "manque", function (v) { return B.eur(v); });
-    one("perf_totale", "pv", function (v) { return B.eur(v); });
+    one("garde_fous", "plafond_ligne", function (v) { return B.eur(v); });
+    one("perf_totale", "pv", function (v) { return B.eurs(v); });
     one("perf_totale", "investi", function (v) { return B.eur(v); });
-    one("perf_totale", "perf_pct", function (v) { return B.pct(v); });
+    one("perf_totale", "perf_pct", function (v) { return "(" + B.pct(v) + ")"; });
     one("stm_ecart", "cloture", function (v) { return B.eur(v, 3); });
     one("stm_ecart", "date", function (v) { return B.fmtDate(v); });
     one("stm_ecart", "ecart_pct", function (v) { return B.pct(v); });
+
+    if (ok("variation") && rowsOf("variation").length) signe(q("#h-jour"), rowsOf("variation")[0].jour);
+    if (ok("perf_totale") && rowsOf("perf_totale").length) signe(q("#h-pv"), rowsOf("perf_totale")[0].pv);
+
+    var gf = ok("garde_fous") && rowsOf("garde_fous").length ? rowsOf("garde_fous")[0] : null;
+    q("#rail").hidden = !(gf && gf.r_pct > 25);
 
     drawAlloc();
 
     var positions = ok("positions") ? rowsOf("positions") : [];
     remplirSelect(selPoche, Array.from(new Set(positions.map(function (r) { return r.poche; }))),
-      p.poche, "Tous les comptes");
+      p.poche, "Tous");
     remplirSelect(selCat, Array.from(new Set(positions.map(function (r) { return r.categorie; }))),
-      p.categorie, "Toutes catégories");
-    remplirSelect(selLigne, lignesVisibles(), p.ligne, "Toutes les lignes");
-    var actifs = [p.poche, p.categorie, p.ligne].filter(Boolean);
-    q("#f-chip").textContent = actifs.length
-      ? "Filtre actif : " + actifs.join(" · ") + ". Les totaux ci-dessus restent sur tout le portefeuille."
-      : "";
+      p.categorie, "Toutes");
+    remplirSelect(selLigne, lignesVisibles(), p.ligne, "Toutes");
 
-    var cOk = ok("comptes");
-    fillTable("#t-comptes", cOk ? rowsOf("comptes") : [], [
+    fillTable("#t-comptes", ok("comptes") ? rowsOf("comptes") : [], [
       function (r) { return r.compte; },
       function (r) { return B.eur(Number(r.titres_eur)); },
       function (r) { return B.eur(Number(r.especes_eur)); },
       function (r) { return B.eur(Number(r.total_eur)); },
-      function (r) { return r.releve; }
+      function (r) { return B.eurs(Number(r.variation_jour_eur)); }
     ], function (r) { return r.compte; });
 
     var perf = ok("perf") ? rowsOf("perf") : [];
-    function perfDe(nom) {
-      return perf.filter(function (o) { return o.ligne === nom; })[0] || {};
-    }
+    function perfDe(nom) { return perf.filter(function (o) { return o.ligne === nom; })[0] || {}; }
     var visiblesPos = visibles(positions).filter(function (r) { return !p.ligne || r.ligne === p.ligne; });
     fillTable("#t-positions", visiblesPos, [
       function (r) { return r.ligne; },
@@ -822,10 +814,8 @@ dash.calc("stm_ecart", {
     ], function (r) { return r.ligne; });
 
     var ph = document.getElementById("ch-perf");
-    if (ok("perf")) {
-      ph.classList.remove("dash-skeleton");
-      drawPerf(visibles(perf));
-    } else { ph.classList.add("dash-skeleton"); ph.textContent = ""; }
+    if (ok("perf")) { ph.classList.remove("dash-skeleton"); drawPerf(visibles(perf)); }
+    else { ph.classList.add("dash-skeleton"); ph.textContent = ""; }
 
     var vh = document.getElementById("ch-valeurs"), vleg = document.getElementById("val-leg");
     vleg.textContent = "";
@@ -833,16 +823,20 @@ dash.calc("stm_ecart", {
       vh.classList.remove("dash-skeleton");
       var retenues = lignesVisibles().filter(function (n) { return !p.ligne || n === p.ligne; });
       var parLigne = d3.group(rowsOf("valeurs"), function (r) { return r.ligne; });
-      var series = retenues.map(function (nom, i) {
+      var series = retenues.map(function (nom) {
         var pts = (parLigne.get(nom) || []).map(function (r) {
           return { d: B.parseDay(r.date), v: Number(r.valeur_eur) };
         }).filter(function (o) { return !isNaN(o.v) && !isNaN(o.d); })
           .sort(function (a, b) { return a.d - b.d; });
-        return { nom: nom, pts: pts, couleur: dash.colors[i % dash.colors.length] };
-      }).filter(function (s) { return s.pts.length > 0; });
+        return { nom: nom, pts: pts };
+      }).filter(function (s) { return s.pts.length > 0; })
+        .sort(function (a, b) {
+          return d3.descending(a.pts[a.pts.length - 1].v, b.pts[b.pts.length - 1].v);
+        });
+      series.forEach(function (s, i) { s.couleur = dash.colors[i % dash.colors.length]; });
 
       drawSeries("ch-valeurs", series, {
-        fmtY: function (v) { return B.eur(v, 0); }, fromZero: true,
+        fmtY: function (v) { return B.eur(v, 0); }, fromZero: true, height: 290,
         aria: "Valeur de chaque ligne en euros, par date"
       });
 
@@ -853,14 +847,17 @@ dash.calc("stm_ecart", {
           var dot = document.createElement("span");
           dot.className = "bi-dot"; dot.style.background = s.couleur;
           var nom = document.createElement("span"); nom.textContent = s.nom;
-          btn.appendChild(dot); btn.appendChild(nom);
+          var val = document.createElement("span");
+          val.className = "bi-legv";
+          val.textContent = B.eur(s.pts[s.pts.length - 1].v, 0);
+          btn.appendChild(dot); btn.appendChild(nom); btn.appendChild(val);
           btn.addEventListener("click", function () { dash.setParams({ ligne: s.nom }); });
           vleg.appendChild(btn);
         });
       } else if (series.length === 1) {
         var btn2 = document.createElement("button");
         btn2.type = "button";
-        btn2.textContent = "← revenir à toutes les lignes";
+        btn2.textContent = "← revenir à toutes tes lignes";
         btn2.addEventListener("click", function () { dash.setParams({ ligne: null }); });
         vleg.appendChild(btn2);
       }
@@ -877,13 +874,12 @@ dash.calc("stm_ecart", {
       }], { fmtY: function (v) { return B.eur(v, 3); }, aria: "Cours du WPEA en euros, par date" });
     } else { wh.classList.add("dash-skeleton"); wh.textContent = ""; }
 
-    var clOk = ok("classement");
     var cs = ok("cours_seuil") ? rowsOf("cours_seuil") : [];
     var ec = ok("ecarts") ? rowsOf("ecarts") : [];
     function byRang(list, rang) {
       return list.filter(function (o) { return String(o.rang) === String(rang); })[0] || {};
     }
-    fillTable("#t-classement", clOk ? rowsOf("classement") : [], [
+    fillTable("#t-classement", ok("classement") ? rowsOf("classement") : [], [
       function (r) { return r.rang; },
       function (r) { return r.candidat; },
       function (r) { return byRang(cs, r.rang).cours_txt || "—"; },
