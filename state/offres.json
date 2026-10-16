@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-10-15",
+ "maj": "2026-10-16",
  "offres": [
   {
    "d": "2026-10-03",
@@ -166,8 +166,8 @@
    "d": "2026-09-25",
    "b": 27,
    "s": "cible",
-   "st": "ouverte",
-   "suivi": true,
+   "st": "fermee",
+   "suivi": false,
    "depuis": "2026-09-25",
    "t": "Spécialiste en Communication & Relations Alumni (80%)",
    "c": "UNIL — HEC Lausanne Exec Ed",
@@ -2852,6 +2852,116 @@
     "After Effects et Blender cités"
    ],
    "at": "Le titre de ton persona, mais en version régie technique audiovisuelle et à temps partiel : à garder pour la curiosité."
+  },
+  {
+   "d": "2026-10-16",
+   "b": 48,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Staff Brand Designer – Consumer",
+   "c": "Kraken",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "CDI",
+   "xp": "7+ ans",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/staff-brand-designer-consumer-at-kraken-4479163672",
+   "n": "Exchange crypto (Payward). Design 2D/3D pour Kraken Consumer et Krak : lancements, campagnes, always-on.",
+   "fit": {
+    "m": 1,
+    "da": 3,
+    "ia": 2,
+    "pct": 72
+   },
+   "ms": [
+    "Créas statiques 2D et 3D (Cinema 4D : modélisation, lumière, rendu)",
+    "Étendre la marque Consumer sur social, lifecycle, web, key visuals",
+    "Construire des bibliothèques Figma, templates et kits de campagne pour des workflows automatisés"
+   ],
+   "inf": [
+    "Figma expert, After Effects, outils IA de production demandés",
+    "⚠️ 7+ ans demandés (tu en as ~6,5) → 👀 selon la règle des années",
+    "⚠️ Poste de designer IC « Staff », secteur crypto régulé",
+    "Portfolio avec 1 pièce 3D + note de process exigé"
+   ],
+   "at": "Le cœur DA + 3D + systèmes Figma + IA de ton profil, en full remote : mets en avant le design system Chat3D et le site R3F comme preuve 3D."
+  },
+  {
+   "d": "2026-10-16",
+   "b": 48,
+   "st": "ouverte",
+   "cl": false,
+   "dl": "2026-10-28",
+   "s": "avoir",
+   "t": "Rights Activation Manager",
+   "c": "IOC Television & Marketing Services",
+   "l": "Lausanne",
+   "dist": "Lausanne",
+   "tx": "100%",
+   "ct": "CDI",
+   "xp": "« expérience pertinente »",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ioc.jobs.hr.cloud.sap/job/Rights-Activation-Manager/6890-en_GB",
+   "n": "Conseiller les partenaires TOP et diffuseurs olympiques sur l'activation de leurs droits marketing/médias.",
+   "fit": {
+    "m": 2,
+    "da": 1,
+    "ia": 0,
+    "pct": 50
+   },
+   "ms": [
+    "Conseiller TOP Partners et Media Rights Holders sur leurs activations",
+    "Piloter les processus d'approbation et l'usage de la propriété intellectuelle",
+    "Former les partenaires, améliorer guidelines et plateforme partenaires"
+   ],
+   "inf": [
+    "Sports marketing / sponsoring / licensing préférés",
+    "⚠️ Rôle de conseil et conformité marque plus que de création",
+    "Candidater avant le 28.10"
+   ],
+   "at": "Marketing sportif au CIO à Lausanne : ton passé gaming/e-sport et ta rigueur d'identité de marque sont l'angle, mais c'est un poste de gouvernance."
+  },
+  {
+   "d": "2026-10-16",
+   "b": 48,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Head of Organic Growth, Kraken Pro",
+   "c": "Kraken",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "CDI",
+   "xp": "5+ ans",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/head-of-organic-growth-kraken-pro-at-kraken-4479123610",
+   "n": "Croissance organique (SEO, contenu, social, lifecycle) de la plateforme de trading Kraken Pro, en player-coach.",
+   "fit": {
+    "m": 2,
+    "da": 1,
+    "ia": 2,
+    "pct": 52
+   },
+   "ms": [
+    "Diriger la croissance organique B2C de Kraken Pro",
+    "Encadrer une petite équipe (player-coach)",
+    "Piloter funnels, cohortes et expérimentations"
+   ],
+   "inf": [
+    "« High AI competency » explicitement demandée",
+    "Fintech, crypto, trading ou gaming cités",
+    "⚠️ Profil growth/acquisition chiffré plus que brand",
+    "⚠️ Culture trading attendue"
+   ],
+   "at": "Gaming + IA sont cités, mais c'est un rôle growth pur : seulement si tu veux basculer côté acquisition."
   }
  ]
 }
