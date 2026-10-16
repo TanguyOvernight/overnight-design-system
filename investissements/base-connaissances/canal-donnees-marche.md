@@ -225,3 +225,20 @@ courbe principale.
 principale. Elle doit se redessiner à chaque changement de filtre — c'est son
 rôle. Et vider `signatures[id]` quand une source passe en erreur, sinon le
 graphique reste figé sur son dernier état valide.
+
+## ⚠️ PIÈGE MAJEUR — `closeyest` ment sur la date (16/10)
+
+`GOOGLEFINANCE(ticker, "closeyest")` a renvoyé, **dans le même appel** :
+- la clôture du **15/10** pour `EPA:WPEA` et `LON:SWDA` *(correct)* ;
+- la clôture du **14/10** pour `NASDAQ:NVDA`, `TSLA`, `MSFT`, `NYSEARCA:VTI`,
+  `NYSE:LLY` *(faux d'une séance)*.
+
+**Trois chiffres faux publiés sur Slack avant détection.**
+
+> **NE PLUS JAMAIS UTILISER `closeyest` NI `price` POUR UN CHIFFRE PUBLIÉ.**
+> Toujours `close(début, fin, "DAILY")`, qui renvoie **les dates avec les
+> valeurs**. Un nombre sans date est inexploitable, et rien ne signale l'erreur.
+
+Détection : quatre valeurs **identiques au centime** aux relevés de la veille.
+→ **Toujours confronter un relevé neuf aux archives avant publication.** C'est le
+seul contrôle qui ait fonctionné ici.

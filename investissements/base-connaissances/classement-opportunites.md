@@ -3050,3 +3050,43 @@ mord réellement** — jusqu'ici il était confortable, parce que son dénominat
 Frais estimés depuis une source secondaire *(grille du 09/02/2026)* : **à
 confirmer sur fortuneo.fr**. Si l'ordre hors ticket coûtait plus de ~7 €,
 l'arbitrage basculerait — seuil nommé à l'avance.
+
+---
+
+## 16/10/2026 — RE-CLASSEMENT : le seuil STM est touché, le rang ne bouge pas
+
+| Rang | Dossier | Chiffre du jour | Distance au seuil | Mouvement |
+|---|---|---|---|---|
+| ① | **Cœur World (WPEA)** | **7,16 €** *(clôture 15/10)* | — | **=** |
+| ② | **Eli Lilly** | **1 251,61 $** *(clôture 15/10)* | ≤ 1 020 $ → **−18,50 %** *(s'éloigne encore)* | **=** |
+| ③ | Magnum | — | — | **=** |
+| ④ | **STM (STMPA)** | **41,41 €** | ≤ 42 € → **SEUIL FRANCHI** | **=** |
+
+**Aucun changement de rang, et c'est le point.** STM a franchi son seuil de prix
+pour la première fois et **reste 4e**. Le rang mesure l'espérance nette ajustée
+du risque ; le seuil mesure une distance de prix. Les confondre aurait été
+promouvoir un dossier parce que son cours baisse.
+
+### Le fast-track a été déclenché et a répondu PASSE
+
+Condition 1 *(clôture ≤ 42 €)* : **REMPLIE**, 41,41 €.
+Condition 2 *(baisse propre à STM : sous-performance ASML ≥ 5 pts depuis le
+09/10)* : **NON REMPLIE**, 2,45 points.
+
+Et le 15/10, **ASML a baissé plus que STM** (−4,19 % contre −3,76 %) — **le jour
+suivant une publication où ASML relevait sa guidance 2026**. C'est précisément la
+contamination nommée le 15/10 ; l'amendement pré-engagé disait de bloquer.
+
+**Second verrou indépendant** : R = 30,44 % > 25 %. Aucune action individuelle ne
+peut entrer, quel que soit le dossier.
+
+**Troisième verrou, arithmétique** : tranche 1 = L/3 = **89 €**, soit **2,1
+actions** à 41,41 €. Même autorisé, l'ordre serait dérisoire face aux frais.
+
+> **Trois verrous indépendants disent non.** Un seul aurait suffi ; qu'ils
+> concordent sans avoir été construits ensemble est le vrai signal.
+
+**Échéance décisive déplacée au 29/10** *(et non le 22/10 — voir radar)*. Sans
+P/E fwd < 30x sur consensus BPA 2027 publié **et** marge brute en hausse
+séquentielle, le **PASSE devient définitif** : le renouvellement a été consommé
+par avance le 26/08.

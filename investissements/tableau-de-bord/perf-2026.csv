@@ -1,7 +1,7 @@
 ligne,ticker,valeur_jan,valeur_oct,gain_eur,perf_pct,devise_cotation
-Vanguard Total Stock Market,VTI,246.09,292.55,46.46,18.88,USD
-iShares Core MSCI World,SWDA,199.21,235.37,36.16,18.15,GBX
-Nvidia,NVDA,170.11,216.18,46.08,27.09,USD
-Tesla,TSLA,192.01,175.58,-16.42,-8.55,USD
-Microsoft,MSFT,65.25,77.28,12.03,18.43,USD
-iShares MSCI World Swap PEA,WPEA,495.74,501.69,5.95,1.20,EUR
+Vanguard Total Stock Market,VTI,246.09,289.60,43.51,17.68,USD
+iShares Core MSCI World,SWDA,199.21,234.28,35.07,17.60,GBX
+Nvidia,NVDA,170.11,204.64,34.53,20.30,USD
+Tesla,TSLA,192.01,166.14,-25.87,-13.47,USD
+Microsoft,MSFT,65.25,77.84,12.59,19.29,USD
+iShares MSCI World Swap PEA,WPEA,495.74,501.20,5.46,1.10,EUR

@@ -2815,3 +2815,45 @@ demandé lequel c'était.
 Corollaire pour les demandes à l'humain : une demande mal adressée coûte plus cher
 qu'une absence de demande. J'ai réclamé l'ouverture de domaines pendant deux
 semaines — **le bon geste était de brancher un connecteur.**
+
+---
+
+## Règle 54 (16/10/2026) — une date n'est jamais un détail
+
+**Deux erreurs publiées le même matin, toutes deux des dates.**
+
+### Face A — une date RELATIVE n'est pas une date
+
+`GOOGLEFINANCE(..., "closeyest")` m'a renvoyé la clôture du **14/10** pour les
+valeurs américaines et celle du **15/10** pour les européennes, dans le même
+appel. « La clôture de la veille » dépend du calendrier de la place et de
+l'heure où on demande. Rien ne le signale : on reçoit un nombre, pas une date.
+
+Conséquence : trois chiffres faux publiés sur Slack, dont Eli Lilly à
+**1 208,74 $** au lieu de **1 251,61 $**.
+
+> **Toute fonction qui nomme une date par rapport à aujourd'hui doit être
+> remplacée par une série DATÉE.** `close(début, fin)` renvoie les dates avec les
+> valeurs ; `closeyest` renvoie un nombre orphelin. Le verdict STM a tenu
+> précisément parce qu'il reposait sur une série datée.
+
+**Ce qui a sauvé la mise** : quatre valeurs étaient **identiques au centime** à
+mes propres relevés de la veille. Une coïncidence impossible sur quatre lignes.
+→ **Le contrôle qui a détecté l'erreur n'était pas un contrôle de la source,
+c'était la confrontation à mes archives.** Garder les séries historiques n'est
+pas de l'archivage, c'est un détecteur de panne.
+
+### Face B — une date ANNONCÉE se vérifie chez l'émetteur
+
+Je portais « STM, résultats T3, **22/10** » au radar depuis des semaines. La
+société a annoncé le **29/10** dans un communiqué du **05/10**. Le 22/10 venait
+d'une fiche tierce jamais recoupée.
+
+> **Une date d'événement est un fait comme un autre : elle exige une source
+> primaire.** Je vérifie les chiffres et je recopie les calendriers. Un seul
+> calendrier faux déplace toute une surveillance d'une semaine — et j'avais
+> construit un contrat de lecture, un appel de calibration et une butée dessus.
+
+**Contrôle à passer sur chaque ligne du radar** : *« cette date vient-elle du
+communiqué de la société, ou d'un agrégateur ? »* Si la réponse n'est pas la
+première, la date est une hypothèse.

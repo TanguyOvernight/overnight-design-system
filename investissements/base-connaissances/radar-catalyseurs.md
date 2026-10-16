@@ -1874,7 +1874,7 @@ indiqué ligne par ligne ; aucun seuil ne doit être écrit sur ces dates avant 
 | 20/10 | Sidetrade (Paris) | CA T3 | base de connaissances, non reconfirmé |
 | 21/10 | Claranova (Paris) | Résultats annuels | [MONO-SOURCE] |
 | **22/10** 07h00 CET | **Besi** (Amsterdam) | Résultats T3 2026 | base de connaissances · **juge de paix du fait du 01/10** |
-| **22/10** | **STM (STMPA, Paris)** | **Résultats T3 2026** | [MONO-SOURCE] ⚠️ **à réconcilier — voir ci-dessous** |
+| **29/10** | **STM (STMPA, Paris)** | **Résultats T3 2026** | [MONO-SOURCE] ⚠️ **à réconcilier — voir ci-dessous** |
 | 27/10 | ASM International (Amsterdam) | Résultats T3 | deux résumés concordants |
 | 27-28/10 | Adyen (Amsterdam) | Trading update T3 | [MONO-SOURCE] |
 | 28/10 | Dassault Systèmes (Paris) | Résultats T3 | [MONO-SOURCE] |
@@ -2436,3 +2436,46 @@ et au-delà.**
 > ⚠️ **Je rapporte le fait, pas le mécanisme.** *L'explication par le décalage horaire est
 > plausible et je ne l'ai pas vérifiée.* **Mais la lecture « ASML a monté sur ses résultats » est
 > au minimum incomplète : sur la journée pleine, le marché a vendu une publication solide.**
+
+---
+
+## 16/10/2026 — CORRECTION DE DATE : STM publie le 29/10, pas le 22/10
+
+**Source primaire** : communiqué STMicroelectronics du **05/10/2026**,
+« announces timing for third quarter 2026 earnings release and conference call ».
+Publication **le 29/10 avant ouverture européenne**, conférence à 9h30 CET,
+replay jusqu'au 13/11. Vérifié sur la salle de presse de la société et deux
+relais syndiqués indépendants.
+
+Le 22/10 que je portais venait d'une **fiche d'agrégateur**, jamais recoupée.
+→ **Règle 54, face B.** Tout ce qui pendait au 22/10 pour STM — contrat de
+lecture, butée du PASSE définitif, appel **C049** — glisse au **29/10**.
+
+Le **22/10 reste chargé sans STM** : Besi (T3, 7h00, confirmé par son calendrier
+financier du 23/07) et Guerbet (CA T3, rapporté presse, **non confirmé société**).
+
+### Guerbet — requalification du risque du 31/10
+
+Le waiver obtenu couvre les tests de covenant du **30/06/2026, du 31/12/2026 ET
+du 30/06/2027**. Le 31/10 est une **échéance de négociation**, pas un mur de
+liquidité. Le risque n'est pas le défaut, c'est le **coût** du refinancement :
+sûretés, marge, covenants resserrés, voire augmentation de capital.
+*(Déjà noté le 13/10 ; reconfirmé ce jour par une seconde lecture indépendante.)*
+
+### Besi — élément nouveau, négatif, à six jours de sa publication
+
+**SK Hynix a écarté le collage hybride pour la HBM4E** et repoussé la technologie
+à la HBM5, horizon ~2029-2030 — plafond JEDEC relevé de 720 à 775 µm, donc moins
+besoin d'amincir les dies. Le titre a décroché début octobre.
+⚠️ **Trou dans le dossier, à combler avant d'en tirer quoi que ce soit** : la
+date de Hot Chips 2026 n'est pas établie. Si la déclaration date d'août, le
+marché l'a repricée deux mois plus tard et ce n'est pas un signal frais.
+*Et la lecture inverse tient* : le calendrier HBM5 n'a pas bougé depuis avril
+2026 — ce qui disparaît est l'**espoir** d'une adoption dès la HBM4E, pas le
+scénario central. **Retrait d'option haussière, pas dégradation.**
+
+**Ce que ça apporte au dossier STM** : confirmation indépendante que la faiblesse
+du secteur est générale. ⚠️ **Mais ASML a relevé sa guidance 2026 le 14/10** —
+donc ASML a baissé le 15/10 **après une bonne nouvelle**. C'est exactement la
+contamination que j'avais nommée le 15/10 en amendant le test : l'amendement
+disait « en cas de contamination, bloquer ». Il a tenu.

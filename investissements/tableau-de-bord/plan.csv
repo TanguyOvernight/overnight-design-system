@@ -5,5 +5,5 @@ action_frais,Frais estimés — à lire dans l'appli avant de valider,1.75
 seuil_frais,Au-delà de ce montant de frais préviens-moi,7
 prochain_versement,Prochain versement,2026-11-01
 prochain_versement_montant,Montant,500
-consigne,Consigne du jour,Aucune nouvelle ligne risquée tant que la part risquée dépasse 25 %. STM reste bloqué.
-maj,Chiffres arrêtés au,15/10 à 17:46
+consigne,Consigne du jour,STM a touché 42 € mais mon test dit non : la baisse est sectorielle. Rien de nouveau à acheter.
+maj,Chiffres arrêtés au,clôture du 15/10
