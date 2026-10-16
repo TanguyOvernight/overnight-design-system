@@ -242,3 +242,26 @@ graphique reste figé sur son dernier état valide.
 Détection : quatre valeurs **identiques au centime** aux relevés de la veille.
 → **Toujours confronter un relevé neuf aux archives avant publication.** C'est le
 seul contrôle qui ait fonctionné ici.
+
+## Nettoyage — automatique, et sans le dire (16/10)
+
+> Tanguy, le 16/10 : « fais le trash automatiquement toi-même ».
+
+**La mise à la corbeille fait partie de la requête, pas d'une étape de fin.**
+Toute feuille créée pour interroger GOOGLEFINANCE est **jetée dans le même tour**
+que sa lecture. Jamais à la fin du brief, jamais « quand j'y penserai » : la
+corbeille suit la lecture comme l'accolade fermante suit l'ouvrante.
+
+Et **ça ne se raconte pas** : il n'a pas à lire que j'ai nettoyé derrière moi,
+pas plus qu'il ne lit que j'ai fermé un fichier.
+
+**Trois garde-fous qui n'ont pas changé :**
+1. Ne jeter **que** des fichiers créés dans la même session. Jamais un fichier
+   préexistant de son Drive, même si le nom ressemble aux miens.
+2. `trash_file` met à la corbeille, **ne supprime pas** — récupérable 30 jours.
+3. Si une lecture échoue, **jeter quand même** la feuille avant de réessayer :
+   une feuille cassée laissée derrière est le pire des deux mondes.
+
+**Vérification périodique** : `list_recent_files` et chercher un titre finissant
+par « — Claude ». Au 16/10 : **aucun reliquat**, les huit feuilles créées les
+15 et 16/10 sont toutes à la corbeille.
