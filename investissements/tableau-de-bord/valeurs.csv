@@ -1,0 +1,622 @@
+date,ligne,valeur_eur
+2026-01-02,Microsoft,65.25
+2026-01-02,Nvidia,170.11
+2026-01-02,Tesla,192.01
+2026-01-02,Vanguard Total Stock Market,246.09
+2026-01-02,iShares Core MSCI World,199.21
+2026-01-09,Microsoft,66.66
+2026-01-09,Nvidia,167.84
+2026-01-09,Tesla,196.61
+2026-01-09,Vanguard Total Stock Market,252.55
+2026-01-09,iShares Core MSCI World,204.51
+2026-01-16,Microsoft,64.11
+2026-01-16,Nvidia,169.51
+2026-01-16,Tesla,193.77
+2026-01-16,Vanguard Total Stock Market,252.77
+2026-01-16,iShares Core MSCI World,205.59
+2026-01-23,Microsoft,63.74
+2026-01-23,Nvidia,167.60
+2026-01-23,Tesla,195.14
+2026-01-23,Vanguard Total Stock Market,247.07
+2026-01-23,iShares Core MSCI World,201.89
+2026-01-30,Microsoft,58.74
+2026-01-30,Nvidia,170.34
+2026-01-30,Tesla,186.66
+2026-01-30,Vanguard Total Stock Market,246.58
+2026-01-30,iShares Core MSCI World,200.90
+2026-02-06,Microsoft,54.90
+2026-02-06,Nvidia,165.66
+2026-02-06,Tesla,178.74
+2026-02-06,Vanguard Total Stock Market,247.49
+2026-02-06,iShares Core MSCI World,201.62
+2026-02-13,Microsoft,54.70
+2026-02-13,Nvidia,162.67
+2026-02-13,Tesla,180.75
+2026-02-13,Vanguard Total Stock Market,243.35
+2026-02-13,iShares Core MSCI World,201.35
+2026-02-20,Microsoft,54.56
+2026-02-20,Nvidia,170.21
+2026-02-20,Tesla,179.69
+2026-02-20,Vanguard Total Stock Market,247.87
+2026-02-20,iShares Core MSCI World,203.42
+2026-02-27,Microsoft,53.77
+2026-02-27,Nvidia,158.39
+2026-02-27,Tesla,175.08
+2026-02-27,Vanguard Total Stock Market,246.00
+2026-02-27,iShares Core MSCI World,203.60
+2026-03-06,Microsoft,56.96
+2026-03-06,Nvidia,161.70
+2026-03-06,Tesla,175.55
+2026-03-06,Vanguard Total Stock Market,244.82
+2026-03-06,iShares Core MSCI World,200.49
+2026-03-13,Microsoft,55.84
+2026-03-13,Nvidia,166.11
+2026-03-13,Tesla,175.43
+2026-03-13,Vanguard Total Stock Market,244.16
+2026-03-13,iShares Core MSCI World,199.67
+2026-03-20,Microsoft,53.34
+2026-03-20,Nvidia,157.48
+2026-03-20,Tesla,163.27
+2026-03-20,Vanguard Total Stock Market,237.30
+2026-03-20,iShares Core MSCI World,194.50
+2026-03-27,Microsoft,50.01
+2026-03-27,Nvidia,153.31
+2026-03-27,Tesla,161.13
+2026-03-27,Vanguard Total Stock Market,232.77
+2026-03-27,iShares Core MSCI World,191.56
+2026-04-02,Microsoft,52.46
+2026-04-02,Nvidia,162.67
+2026-04-02,Tesla,160.90
+2026-04-02,Vanguard Total Stock Market,241.18
+2026-04-02,iShares Core MSCI World,197.57
+2026-04-10,Microsoft,51.18
+2026-04-10,Nvidia,169.94
+2026-04-10,Tesla,152.97
+2026-04-10,Vanguard Total Stock Market,245.21
+2026-04-10,iShares Core MSCI World,202.24
+2026-04-17,Microsoft,58.12
+2026-04-17,Nvidia,181.00
+2026-04-17,Tesla,174.95
+2026-04-17,Vanguard Total Stock Market,255.56
+2026-04-17,iShares Core MSCI World,208.97
+2026-04-24,Microsoft,58.61
+2026-04-24,Nvidia,187.68
+2026-04-24,Tesla,165.00
+2026-04-24,Vanguard Total Stock Market,257.72
+2026-04-24,iShares Core MSCI World,209.29
+2026-05-01,Microsoft,57.18
+2026-05-01,Nvidia,178.75
+2026-05-01,Tesla,171.30
+2026-05-01,Vanguard Total Stock Market,259.98
+2026-05-01,iShares Core MSCI World,211.12
+2026-05-08,Microsoft,56.98
+2026-05-08,Nvidia,192.85
+2026-05-08,Tesla,186.79
+2026-05-08,Vanguard Total Stock Market,264.17
+2026-05-08,iShares Core MSCI World,213.73
+2026-05-15,Microsoft,58.72
+2026-05-15,Nvidia,204.72
+2026-05-15,Tesla,186.68
+2026-05-15,Vanguard Total Stock Market,267.73
+2026-05-15,iShares Core MSCI World,216.79
+2026-05-22,Microsoft,58.37
+2026-05-22,Nvidia,196.03
+2026-05-22,Tesla,188.72
+2026-05-22,Vanguard Total Stock Market,271.26
+2026-05-22,iShares Core MSCI World,219.80
+2026-05-29,Microsoft,62.47
+2026-05-29,Nvidia,191.26
+2026-05-29,Tesla,192.09
+2026-05-29,Vanguard Total Stock Market,274.15
+2026-05-29,iShares Core MSCI World,220.92
+2026-06-01,Microsoft,64.05
+2026-06-01,Nvidia,203.72
+2026-06-01,Tesla,183.76
+2026-06-01,Vanguard Total Stock Market,275.44
+2026-06-01,iShares Core MSCI World,221.54
+2026-06-02,Microsoft,61.44
+2026-06-02,Nvidia,202.52
+2026-06-02,Tesla,187.41
+2026-06-02,Vanguard Total Stock Market,276.41
+2026-06-02,iShares Core MSCI World,222.49
+2026-06-03,Microsoft,59.56
+2026-06-03,Nvidia,195.41
+2026-06-03,Tesla,187.60
+2026-06-03,Vanguard Total Stock Market,274.72
+2026-06-03,iShares Core MSCI World,221.73
+2026-06-04,Microsoft,59.64
+2026-06-04,Nvidia,198.91
+2026-06-04,Tesla,185.22
+2026-06-04,Vanguard Total Stock Market,275.92
+2026-06-04,iShares Core MSCI World,221.98
+2026-06-05,Microsoft,58.53
+2026-06-05,Nvidia,188.08
+2026-06-05,Tesla,174.47
+2026-06-05,Vanguard Total Stock Market,270.70
+2026-06-05,iShares Core MSCI World,220.66
+2026-06-08,Microsoft,57.79
+2026-06-08,Nvidia,191.18
+2026-06-08,Tesla,182.34
+2026-06-08,Vanguard Total Stock Market,271.30
+2026-06-08,iShares Core MSCI World,219.73
+2026-06-09,Microsoft,56.59
+2026-06-09,Nvidia,190.65
+2026-06-09,Tesla,176.77
+2026-06-09,Vanguard Total Stock Market,270.54
+2026-06-09,iShares Core MSCI World,216.66
+2026-06-10,Microsoft,55.74
+2026-06-10,Nvidia,183.53
+2026-06-10,Tesla,170.04
+2026-06-10,Vanguard Total Stock Market,266.35
+2026-06-10,iShares Core MSCI World,216.08
+2026-06-11,Microsoft,54.56
+2026-06-11,Nvidia,186.95
+2026-06-11,Tesla,177.24
+2026-06-11,Vanguard Total Stock Market,270.06
+2026-06-11,iShares Core MSCI World,216.62
+2026-06-12,Microsoft,54.63
+2026-06-12,Nvidia,187.30
+2026-06-12,Tesla,180.53
+2026-06-12,Vanguard Total Stock Market,271.67
+2026-06-12,iShares Core MSCI World,219.93
+2026-06-15,Microsoft,55.81
+2026-06-15,Nvidia,193.62
+2026-06-15,Tesla,182.34
+2026-06-15,Vanguard Total Stock Market,275.81
+2026-06-15,iShares Core MSCI World,222.40
+2026-06-16,Microsoft,54.89
+2026-06-16,Nvidia,188.72
+2026-06-16,Tesla,179.16
+2026-06-16,Vanguard Total Stock Market,273.76
+2026-06-16,iShares Core MSCI World,222.19
+2026-06-17,Microsoft,53.28
+2026-06-17,Nvidia,187.87
+2026-06-17,Tesla,177.06
+2026-06-17,Vanguard Total Stock Market,272.76
+2026-06-17,iShares Core MSCI World,222.40
+2026-06-18,Microsoft,53.58
+2026-06-18,Nvidia,194.23
+2026-06-18,Tesla,179.66
+2026-06-18,Vanguard Total Stock Market,277.09
+2026-06-18,iShares Core MSCI World,223.02
+2026-06-19,Microsoft,53.49
+2026-06-19,Nvidia,193.93
+2026-06-19,Tesla,179.38
+2026-06-19,Vanguard Total Stock Market,276.65
+2026-06-19,iShares Core MSCI World,223.42
+2026-06-22,Microsoft,52.02
+2026-06-22,Nvidia,192.88
+2026-06-22,Tesla,182.20
+2026-06-22,Vanguard Total Stock Market,276.97
+2026-06-22,iShares Core MSCI World,223.97
+2026-06-23,Microsoft,53.17
+2026-06-23,Nvidia,185.70
+2026-06-23,Tesla,172.38
+2026-06-23,Vanguard Total Stock Market,274.27
+2026-06-23,iShares Core MSCI World,222.09
+2026-06-24,Microsoft,52.08
+2026-06-24,Nvidia,185.14
+2026-06-24,Tesla,170.01
+2026-06-24,Vanguard Total Stock Market,274.85
+2026-06-24,iShares Core MSCI World,223.33
+2026-06-25,Microsoft,50.25
+2026-06-25,Nvidia,181.99
+2026-06-25,Tesla,169.71
+2026-06-25,Vanguard Total Stock Market,274.91
+2026-06-25,iShares Core MSCI World,222.25
+2026-06-26,Microsoft,52.97
+2026-06-26,Nvidia,178.50
+2026-06-26,Tesla,171.31
+2026-06-26,Vanguard Total Stock Market,272.82
+2026-06-26,iShares Core MSCI World,221.51
+2026-06-29,Microsoft,52.22
+2026-06-29,Nvidia,180.36
+2026-06-29,Tesla,185.38
+2026-06-29,Vanguard Total Stock Market,275.88
+2026-06-29,iShares Core MSCI World,221.99
+2026-06-30,Microsoft,52.88
+2026-06-30,Nvidia,185.19
+2026-06-30,Tesla,189.43
+2026-06-30,Vanguard Total Stock Market,278.23
+2026-06-30,iShares Core MSCI World,223.87
+2026-07-01,Microsoft,54.65
+2026-07-01,Nvidia,183.44
+2026-07-01,Tesla,192.14
+2026-07-01,Vanguard Total Stock Market,278.51
+2026-07-01,iShares Core MSCI World,225.69
+2026-07-02,Microsoft,55.31
+2026-07-02,Nvidia,180.17
+2026-07-02,Tesla,177.05
+2026-07-02,Vanguard Total Stock Market,277.03
+2026-07-02,iShares Core MSCI World,224.20
+2026-07-03,Microsoft,55.23
+2026-07-03,Nvidia,179.89
+2026-07-03,Tesla,176.78
+2026-07-03,Vanguard Total Stock Market,276.60
+2026-07-03,iShares Core MSCI World,225.13
+2026-07-06,Microsoft,54.69
+2026-07-06,Nvidia,180.54
+2026-07-06,Tesla,188.58
+2026-07-06,Vanguard Total Stock Market,278.76
+2026-07-06,iShares Core MSCI World,226.36
+2026-07-07,Microsoft,55.18
+2026-07-07,Nvidia,182.45
+2026-07-07,Tesla,181.64
+2026-07-07,Vanguard Total Stock Market,278.19
+2026-07-07,iShares Core MSCI World,224.52
+2026-07-08,Microsoft,54.31
+2026-07-08,Nvidia,188.79
+2026-07-08,Tesla,177.35
+2026-07-08,Vanguard Total Stock Market,276.68
+2026-07-08,iShares Core MSCI World,223.00
+2026-07-09,Microsoft,54.40
+2026-07-09,Nvidia,187.35
+2026-07-09,Tesla,182.78
+2026-07-09,Vanguard Total Stock Market,278.79
+2026-07-09,iShares Core MSCI World,225.34
+2026-07-10,Microsoft,54.57
+2026-07-10,Nvidia,195.15
+2026-07-10,Tesla,183.54
+2026-07-10,Vanguard Total Stock Market,280.06
+2026-07-10,iShares Core MSCI World,225.91
+2026-07-13,Microsoft,55.58
+2026-07-13,Nvidia,188.89
+2026-07-13,Tesla,178.27
+2026-07-13,Vanguard Total Stock Market,278.78
+2026-07-13,iShares Core MSCI World,226.03
+2026-07-14,Microsoft,54.52
+2026-07-14,Nvidia,195.83
+2026-07-14,Tesla,178.25
+2026-07-14,Vanguard Total Stock Market,278.79
+2026-07-14,iShares Core MSCI World,226.11
+2026-07-15,Microsoft,55.81
+2026-07-15,Nvidia,195.71
+2026-07-15,Tesla,176.78
+2026-07-15,Vanguard Total Stock Market,278.63
+2026-07-15,iShares Core MSCI World,226.41
+2026-07-16,Microsoft,56.71
+2026-07-16,Nvidia,191.43
+2026-07-16,Tesla,175.64
+2026-07-16,Vanguard Total Stock Market,277.87
+2026-07-16,iShares Core MSCI World,225.94
+2026-07-17,Microsoft,55.71
+2026-07-17,Nvidia,187.30
+2026-07-17,Tesla,171.14
+2026-07-17,Vanguard Total Stock Market,275.34
+2026-07-17,iShares Core MSCI World,223.66
+2026-07-20,Microsoft,57.03
+2026-07-20,Nvidia,188.12
+2026-07-20,Tesla,166.42
+2026-07-20,Vanguard Total Stock Market,275.34
+2026-07-20,iShares Core MSCI World,224.38
+2026-07-21,Microsoft,56.44
+2026-07-21,Nvidia,192.02
+2026-07-21,Tesla,170.81
+2026-07-21,Vanguard Total Stock Market,278.02
+2026-07-21,iShares Core MSCI World,225.36
+2026-07-22,Microsoft,55.35
+2026-07-22,Nvidia,196.30
+2026-07-22,Tesla,168.47
+2026-07-22,Vanguard Total Stock Market,277.39
+2026-07-22,iShares Core MSCI World,225.60
+2026-07-23,Microsoft,54.27
+2026-07-23,Nvidia,193.84
+2026-07-23,Tesla,144.44
+2026-07-23,Vanguard Total Stock Market,275.08
+2026-07-23,iShares Core MSCI World,222.78
+2026-07-24,Microsoft,54.28
+2026-07-24,Nvidia,192.04
+2026-07-24,Tesla,141.42
+2026-07-24,Vanguard Total Stock Market,275.15
+2026-07-24,iShares Core MSCI World,224.15
+2026-07-27,Microsoft,55.38
+2026-07-27,Nvidia,182.58
+2026-07-27,Tesla,139.81
+2026-07-27,Vanguard Total Stock Market,275.64
+2026-07-27,iShares Core MSCI World,223.20
+2026-07-28,Microsoft,55.90
+2026-07-28,Nvidia,182.77
+2026-07-28,Tesla,138.79
+2026-07-28,Vanguard Total Stock Market,275.83
+2026-07-28,iShares Core MSCI World,224.07
+2026-07-29,Microsoft,55.11
+2026-07-29,Nvidia,175.04
+2026-07-29,Tesla,133.72
+2026-07-29,Vanguard Total Stock Market,269.72
+2026-07-29,iShares Core MSCI World,222.22
+2026-07-30,Microsoft,63.34
+2026-07-30,Nvidia,178.79
+2026-07-30,Tesla,137.77
+2026-07-30,Vanguard Total Stock Market,272.76
+2026-07-30,iShares Core MSCI World,221.52
+2026-07-31,Microsoft,65.19
+2026-07-31,Nvidia,183.83
+2026-07-31,Tesla,138.68
+2026-07-31,Vanguard Total Stock Market,273.92
+2026-07-31,iShares Core MSCI World,222.20
+2026-08-03,Microsoft,68.57
+2026-08-03,Nvidia,189.69
+2026-08-03,Tesla,143.87
+2026-08-03,Vanguard Total Stock Market,278.79
+2026-08-03,iShares Core MSCI World,225.73
+2026-08-04,Microsoft,69.15
+2026-08-04,Nvidia,194.13
+2026-08-04,Tesla,145.91
+2026-08-04,Vanguard Total Stock Market,283.37
+2026-08-04,iShares Core MSCI World,228.55
+2026-08-05,Microsoft,68.25
+2026-08-05,Nvidia,200.37
+2026-08-05,Tesla,143.01
+2026-08-05,Vanguard Total Stock Market,281.90
+2026-08-05,iShares Core MSCI World,229.53
+2026-08-06,Microsoft,70.18
+2026-08-06,Nvidia,200.73
+2026-08-06,Tesla,142.52
+2026-08-06,Vanguard Total Stock Market,282.27
+2026-08-06,iShares Core MSCI World,229.47
+2026-08-07,Microsoft,69.99
+2026-08-07,Nvidia,204.66
+2026-08-07,Tesla,146.11
+2026-08-07,Vanguard Total Stock Market,283.42
+2026-08-07,iShares Core MSCI World,230.26
+2026-08-10,Microsoft,70.92
+2026-08-10,Nvidia,199.03
+2026-08-10,Tesla,147.30
+2026-08-10,Vanguard Total Stock Market,283.63
+2026-08-10,iShares Core MSCI World,230.35
+2026-08-11,Microsoft,70.62
+2026-08-11,Nvidia,199.03
+2026-08-11,Tesla,148.20
+2026-08-11,Vanguard Total Stock Market,282.97
+2026-08-11,iShares Core MSCI World,230.39
+2026-08-12,Microsoft,69.12
+2026-08-12,Nvidia,205.34
+2026-08-12,Tesla,146.03
+2026-08-12,Vanguard Total Stock Market,284.23
+2026-08-12,iShares Core MSCI World,230.67
+2026-08-13,Microsoft,69.70
+2026-08-13,Nvidia,206.34
+2026-08-13,Tesla,151.50
+2026-08-13,Vanguard Total Stock Market,285.92
+2026-08-13,iShares Core MSCI World,231.52
+2026-08-14,Microsoft,69.34
+2026-08-14,Nvidia,205.76
+2026-08-14,Tesla,152.20
+2026-08-14,Vanguard Total Stock Market,284.96
+2026-08-14,iShares Core MSCI World,230.51
+2026-08-17,Microsoft,67.10
+2026-08-17,Nvidia,205.21
+2026-08-17,Tesla,150.57
+2026-08-17,Vanguard Total Stock Market,283.11
+2026-08-17,iShares Core MSCI World,230.37
+2026-08-18,Microsoft,67.32
+2026-08-18,Nvidia,200.51
+2026-08-18,Tesla,149.58
+2026-08-18,Vanguard Total Stock Market,280.98
+2026-08-18,iShares Core MSCI World,228.21
+2026-08-19,Microsoft,67.13
+2026-08-19,Nvidia,196.87
+2026-08-19,Tesla,154.61
+2026-08-19,Vanguard Total Stock Market,279.34
+2026-08-19,iShares Core MSCI World,227.07
+2026-08-20,Microsoft,66.61
+2026-08-20,Nvidia,195.99
+2026-08-20,Tesla,151.78
+2026-08-20,Vanguard Total Stock Market,276.49
+2026-08-20,iShares Core MSCI World,225.89
+2026-08-21,Microsoft,66.91
+2026-08-21,Nvidia,194.09
+2026-08-21,Tesla,159.60
+2026-08-21,Vanguard Total Stock Market,277.74
+2026-08-21,iShares Core MSCI World,226.42
+2026-08-24,Microsoft,67.58
+2026-08-24,Nvidia,188.74
+2026-08-24,Tesla,153.72
+2026-08-24,Vanguard Total Stock Market,277.31
+2026-08-24,iShares Core MSCI World,225.97
+2026-08-25,Microsoft,68.15
+2026-08-25,Nvidia,192.77
+2026-08-25,Tesla,154.21
+2026-08-25,Vanguard Total Stock Market,277.95
+2026-08-25,iShares Core MSCI World,226.73
+2026-08-26,Microsoft,68.91
+2026-08-26,Nvidia,190.03
+2026-08-26,Tesla,152.52
+2026-08-26,Vanguard Total Stock Market,278.49
+2026-08-26,iShares Core MSCI World,226.78
+2026-08-27,Microsoft,70.13
+2026-08-27,Nvidia,206.67
+2026-08-27,Tesla,156.52
+2026-08-27,Vanguard Total Stock Market,280.31
+2026-08-27,iShares Core MSCI World,227.78
+2026-08-28,Microsoft,71.73
+2026-08-28,Nvidia,198.39
+2026-08-28,Tesla,154.76
+2026-08-28,Vanguard Total Stock Market,281.04
+2026-08-28,iShares Core MSCI World,229.53
+2026-08-31,Microsoft,70.65
+2026-08-31,Nvidia,200.75
+2026-08-31,Tesla,162.80
+2026-08-31,Vanguard Total Stock Market,279.32
+2026-08-31,iShares Core MSCI World,229.09
+2026-09-01,Microsoft,69.93
+2026-09-01,Nvidia,198.14
+2026-09-01,Tesla,157.89
+2026-09-01,Vanguard Total Stock Market,277.72
+2026-09-01,iShares Core MSCI World,226.47
+2026-09-02,Microsoft,69.39
+2026-09-02,Nvidia,204.62
+2026-09-02,Tesla,158.40
+2026-09-02,Vanguard Total Stock Market,279.16
+2026-09-02,iShares Core MSCI World,226.91
+2026-09-03,Microsoft,70.98
+2026-09-03,Nvidia,207.53
+2026-09-03,Tesla,166.37
+2026-09-03,Vanguard Total Stock Market,281.12
+2026-09-03,iShares Core MSCI World,228.69
+2026-09-04,Microsoft,69.59
+2026-09-04,Nvidia,209.44
+2026-09-04,Tesla,156.65
+2026-09-04,Vanguard Total Stock Market,280.47
+2026-09-04,iShares Core MSCI World,228.16
+2026-09-07,Microsoft,69.54
+2026-09-07,Nvidia,209.28
+2026-09-07,Tesla,156.53
+2026-09-07,Vanguard Total Stock Market,280.25
+2026-09-07,iShares Core MSCI World,228.07
+2026-09-08,Microsoft,68.74
+2026-09-08,Nvidia,205.08
+2026-09-08,Tesla,162.76
+2026-09-08,Vanguard Total Stock Market,278.68
+2026-09-08,iShares Core MSCI World,227.74
+2026-09-09,Microsoft,68.38
+2026-09-09,Nvidia,203.09
+2026-09-09,Tesla,162.51
+2026-09-09,Vanguard Total Stock Market,277.02
+2026-09-09,iShares Core MSCI World,225.66
+2026-09-10,Microsoft,68.63
+2026-09-10,Nvidia,198.68
+2026-09-10,Tesla,160.96
+2026-09-10,Vanguard Total Stock Market,275.88
+2026-09-10,iShares Core MSCI World,224.63
+2026-09-11,Microsoft,69.11
+2026-09-11,Nvidia,198.71
+2026-09-11,Tesla,161.87
+2026-09-11,Vanguard Total Stock Market,278.28
+2026-09-11,iShares Core MSCI World,226.87
+2026-09-14,Microsoft,70.83
+2026-09-14,Nvidia,193.00
+2026-09-14,Tesla,159.80
+2026-09-14,Vanguard Total Stock Market,278.46
+2026-09-14,iShares Core MSCI World,226.58
+2026-09-15,Microsoft,69.72
+2026-09-15,Nvidia,194.26
+2026-09-15,Tesla,158.86
+2026-09-15,Vanguard Total Stock Market,277.31
+2026-09-15,iShares Core MSCI World,225.17
+2026-09-16,Microsoft,69.17
+2026-09-16,Nvidia,197.00
+2026-09-16,Tesla,160.47
+2026-09-16,Vanguard Total Stock Market,277.77
+2026-09-16,iShares Core MSCI World,226.59
+2026-09-17,Microsoft,70.18
+2026-09-17,Nvidia,201.90
+2026-09-17,Tesla,164.03
+2026-09-17,Vanguard Total Stock Market,280.67
+2026-09-17,iShares Core MSCI World,228.36
+2026-09-18,Microsoft,69.55
+2026-09-18,Nvidia,204.39
+2026-09-18,Tesla,163.00
+2026-09-18,Vanguard Total Stock Market,280.45
+2026-09-18,iShares Core MSCI World,227.53
+2026-09-21,Microsoft,70.80
+2026-09-21,Nvidia,209.51
+2026-09-21,Tesla,168.27
+2026-09-21,Vanguard Total Stock Market,285.26
+2026-09-21,iShares Core MSCI World,230.53
+2026-09-22,Microsoft,70.39
+2026-09-22,Nvidia,211.19
+2026-09-22,Tesla,170.13
+2026-09-22,Vanguard Total Stock Market,285.80
+2026-09-22,iShares Core MSCI World,231.59
+2026-09-23,Microsoft,71.17
+2026-09-23,Nvidia,209.30
+2026-09-23,Tesla,171.67
+2026-09-23,Vanguard Total Stock Market,285.17
+2026-09-23,iShares Core MSCI World,231.07
+2026-09-24,Microsoft,70.83
+2026-09-24,Nvidia,208.56
+2026-09-24,Tesla,170.79
+2026-09-24,Vanguard Total Stock Market,285.22
+2026-09-24,iShares Core MSCI World,229.62
+2026-09-25,Microsoft,73.32
+2026-09-25,Nvidia,208.71
+2026-09-25,Tesla,167.91
+2026-09-25,Vanguard Total Stock Market,286.09
+2026-09-25,iShares Core MSCI World,231.13
+2026-09-28,Microsoft,72.46
+2026-09-28,Nvidia,212.61
+2026-09-28,Tesla,161.59
+2026-09-28,Vanguard Total Stock Market,283.64
+2026-09-28,iShares Core MSCI World,230.11
+2026-09-29,Microsoft,72.62
+2026-09-29,Nvidia,211.64
+2026-09-29,Tesla,159.93
+2026-09-29,Vanguard Total Stock Market,283.95
+2026-09-29,iShares Core MSCI World,230.68
+2026-09-30,Microsoft,73.27
+2026-09-30,Nvidia,212.98
+2026-09-30,Tesla,161.01
+2026-09-30,Vanguard Total Stock Market,283.52
+2026-09-30,iShares Core MSCI World,231.70
+2026-10-01,Microsoft,73.77
+2026-10-01,Nvidia,216.81
+2026-10-01,Tesla,161.82
+2026-10-01,Vanguard Total Stock Market,286.23
+2026-10-01,iShares Core MSCI World,230.48
+2026-10-02,Microsoft,74.37
+2026-10-02,Nvidia,219.47
+2026-10-02,Tesla,169.17
+2026-10-02,Vanguard Total Stock Market,288.06
+2026-10-02,iShares Core MSCI World,233.02
+2026-10-02,iShares MSCI World Swap PEA,499.10
+2026-10-05,Microsoft,75.76
+2026-10-05,Nvidia,224.98
+2026-10-05,Tesla,173.55
+2026-10-05,Vanguard Total Stock Market,291.17
+2026-10-05,iShares Core MSCI World,234.82
+2026-10-05,iShares MSCI World Swap PEA,503.30
+2026-10-06,Microsoft,76.10
+2026-10-06,Nvidia,224.57
+2026-10-06,Tesla,173.88
+2026-10-06,Vanguard Total Stock Market,291.70
+2026-10-06,iShares Core MSCI World,236.08
+2026-10-06,iShares MSCI World Swap PEA,506.10
+2026-10-07,Microsoft,76.53
+2026-10-07,Nvidia,223.95
+2026-10-07,Tesla,173.38
+2026-10-07,Vanguard Total Stock Market,291.91
+2026-10-07,iShares Core MSCI World,235.13
+2026-10-07,iShares MSCI World Swap PEA,504.00
+2026-10-08,Microsoft,75.42
+2026-10-08,Nvidia,217.13
+2026-10-08,Tesla,171.91
+2026-10-08,Vanguard Total Stock Market,290.49
+2026-10-08,iShares Core MSCI World,234.47
+2026-10-08,iShares MSCI World Swap PEA,502.60
+2026-10-09,Microsoft,77.28
+2026-10-09,Nvidia,216.18
+2026-10-09,Tesla,175.58
+2026-10-09,Vanguard Total Stock Market,292.55
+2026-10-09,iShares Core MSCI World,235.41
+2026-10-09,iShares MSCI World Swap PEA,505.40
+2026-10-12,Microsoft,78.46
+2026-10-12,Nvidia,214.22
+2026-10-12,Tesla,174.12
+2026-10-12,Vanguard Total Stock Market,293.40
+2026-10-12,iShares Core MSCI World,236.86
+2026-10-12,iShares MSCI World Swap PEA,507.50
+2026-10-13,Microsoft,78.50
+2026-10-13,Nvidia,215.51
+2026-10-13,Tesla,172.19
+2026-10-13,Vanguard Total Stock Market,292.13
+2026-10-13,iShares Core MSCI World,235.83
+2026-10-13,iShares MSCI World Swap PEA,505.40
+2026-10-14,Microsoft,77.13
+2026-10-14,Nvidia,208.81
+2026-10-14,Tesla,168.58
+2026-10-14,Vanguard Total Stock Market,288.88
+2026-10-14,iShares Core MSCI World,235.80
+2026-10-14,iShares MSCI World Swap PEA,505.40
+2026-10-15,Microsoft,77.84
+2026-10-15,Nvidia,204.64
+2026-10-15,Tesla,166.14
+2026-10-15,Vanguard Total Stock Market,289.60
+2026-10-15,iShares Core MSCI World,234.28
+2026-10-15,iShares MSCI World Swap PEA,501.20
+2026-10-16,Nvidia,201.22
+2026-10-16,Tesla,162.20
+2026-10-16,Vanguard Total Stock Market,285.57
+2026-10-16,iShares Core MSCI World,233.55
+2026-10-16,iShares MSCI World Swap PEA,500.50
+2026-10-16,Microsoft,76.15
