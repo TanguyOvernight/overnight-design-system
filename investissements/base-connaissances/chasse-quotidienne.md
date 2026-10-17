@@ -2895,3 +2895,43 @@ confiance** — pas ajouter un paramètre que je ne peux pas estimer.
 *« les N dernières séances sont-elles majoritairement dans le même sens, et
 le secteur bouge-t-il avec ? »* Si oui → le chiffre est annoncé comme un
 plancher.
+
+---
+
+## R56 — Le coût d'une transaction est un SEUIL, pas un pourcentage
+*(17/10/2026 — la capture Fortuneo de Tanguy)*
+
+J'ai porté **1,75 € de frais** au tableau de bord pendant deux semaines, dérivés
+d'un taux de 0,35 %. **Le vrai barème n'est pas un taux, c'est une marche** :
+premier ordre du mois **gratuit sous 500 €**, 0,35 % au-delà du plafond ou pour
+les ordres suivants.
+
+```
+69 parts = 493,56 €   →  0,00 €   (sous le plafond)
+70 parts = 500,71 €   →  1,75 €   (71 centimes de trop)
+```
+
+**Une part de plus coûte 1,75 €.** Un taux moyen n'aurait jamais montré ça : il
+aurait annoncé « 0,35 % », soit 0,02 € pour cette part.
+
+> **Quand un barème contient un palier, le modéliser par son taux moyen efface
+> exactement l'information qui sert à décider.** *Le taux dit combien ça coûte ;
+> le palier dit quoi faire.*
+
+**Conséquence sur le mandat** : viser **juste sous le plafond** à chaque achat
+mensuel. *Le rythme de 500 €/mois et le plafond de l'ordre gratuit coïncident —
+ce n'est utilisable que parce que le palier a été vu.*
+
+### ⚠️ Et la source reste faible
+Ce barème vient de **comparateurs tiers portant des liens de parrainage**, pas de
+Fortuneo. *Je l'écris au dossier en le marquant comme tel* **et je fais porter la
+vérification par l'écran de validation**, qui est la source primaire et qui
+s'affiche de toute façon avant de confirmer. **R54 face B s'applique aux
+barèmes comme aux calendriers.**
+
+### 🔁 Ce qui m'a sauvé ici
+**Les deux nombres à saisir — 42 parts et 69 parts — sont identiques que les
+frais vaillent 0 € ou 1,75 €.** *J'ai donc pu donner la décision avant d'avoir
+résolu l'incertitude, et le dire.* **C'est ㊸ : la comparaison suffit, la mesure
+n'est pas requise.** *Le réflexe à garder : avant de bloquer sur une donnée
+manquante, tester si la décision en dépend vraiment.*
