@@ -3090,3 +3090,18 @@ actions** à 41,41 €. Même autorisé, l'ordre serait dérisoire face aux frai
 P/E fwd < 30x sur consensus BPA 2027 publié **et** marge brute en hausse
 séquentielle, le **PASSE devient définitif** : le renouvellement a été consommé
 par avance le 26/08.
+
+---
+
+## 17/10/2026 — après la Revue
+
+Classement **inchangé** : ① Cœur World (WPEA) ② Eli Lilly ③ Magnum ④ STM.
+
+- **① WPEA 7,15 €** — toujours le seul achat recommandé : **304,26 €** d'espèces
+  dorment sur le PEA, et l'ordre règle aussi le dépassement de R *(30,12 %)*.
+- **② Eli Lilly 1 257,03 $** — **+6,59 % sur la semaine**, s'éloigne encore du
+  seuil de 1 020 $. *Rien à faire.*
+- **③ Magnum** — dormant.
+- **④ STM 41,17 €** — **sous le seuil de 42 €** *(C057 résolu VRAI)*, mais le
+  **test compagne n'est pas franchi** : −3,79 pt contre −5,00 requis. **PASSE
+  maintenu.** Décision au **29/10** sur les résultats T3.

@@ -3742,3 +3742,125 @@ fourchette » à 80 %, j'aurais encaissé un **Brier de 0,64**, le pire de l'ann
 par une source dure, la vérité y sera »* — **60 %**. Délibérément sous mon
 niveau de confiance habituel : je viens d'apprendre que mes intervalles sont trop
 étroits.
+
+---
+
+# 📅 17/10/2026 — ✅ C057 RÉSOLU **VRAI**, et la vraie leçon n'est pas le score
+
+## La résolution
+
+**Proposition** *(27/09)* : « **STM touche 42,00 € ou moins en CLÔTURE d'ici le
+31/10/2026** ». **Résolution par clôture Euronext Paris datée**, comme
+pré-enregistré.
+
+```
+15/10  clôture  41,41 €   ← sous le seuil
+16/10  clôture  41,17 €   ← et confirmé le lendemain
+```
+
+→ **VRAI.** *(Le 15/10 suffisait seul ; le 16/10 écarte toute question
+d'une clôture aberrante.)*
+
+## Le score, et ce qu'il cache
+
+**Je scoris à la dernière P enregistrée avant l'événement résolvant : 67 %**
+*(révisée le matin du 15/10, sur la clôture du 14/10, donc strictement avant la
+clôture du 15/10 qui résout).* **Brier = (0,67 − 1)² = 0,1089.**
+
+> ⚠️ **Et je publie immédiatement ce que cette convention me rapporte**, parce
+> qu'elle m'arrange :
+
+| P retenue | Quand | Brier |
+|---|---|---|
+| **67 %** *(convention appliquée)* | 15/10 | **0,1089** |
+| 34 % *(enregistrement initial)* | 27/09 | 0,4356 |
+| 20 % *(point le plus bas)* | 04/10 | **0,6400** |
+
+**Le 04/10, onze jours avant la chute, j'ai révisé cet appel EN BAISSE à 20 %.**
+*Scorer la dernière révision est la pratique correcte — chaque révision n'a
+utilisé que l'information de son jour, et ㊺ rendait la révision obligatoire
+puisque la variable de résolution avait bougé. Mais une suite de révisions qui
+suit le prix produit toujours un bon Brier final.* **Le chiffre qui mesure ma
+prévoyance, c'est 34 % ; le chiffre qui mesure mon suivi, c'est 67 %. Les deux
+sont au registre.**
+
+### Totaux — les deux lectures, étiquetées *(règle ㊾)*
+
+| Périmètre | Résolus | Brier | BSS |
+|---|---|---|---|
+| **Complet** | 22 → **23** | 0,2439 → **0,2380** | +0,024 → **+0,048** |
+| **Hors les 3 méta** *(« Tanguy répond-il »)* | 19 → **20** | 0,2688 → **0,2608** | −0,075 → **−0,043** |
+
+*Pour mémoire, scoré à 34 % : 0,2522 / −0,009 (complet). L'écart entre les deux
+lignes est exactement la valeur ajoutée par mes révisions — elle est réelle,
+elle n'est pas de la prévoyance.*
+
+## 🔬 L'autopsie du 04/10 : mon hypothèse était JUSTE, mon modèle était FAUX
+
+Le 04/10 j'ai calculé `P(touche)` avec une **volatilité de 45 %/an**. Vérification
+sur les clôtures réelles du 08 au 16/10 :
+
+```
+STM  volatilité réalisée, non centrée : 44,6 %/an     ← mon hypothèse : 45 %
+```
+
+**Mon paramètre de volatilité était bon à 0,4 point près.** Ce n'est donc pas là
+que j'ai échoué. Le défaut est ailleurs, et il est structurel :
+
+```
+Rendements quotidiens de STM, 6 séances :
+  −3,05   −2,13   −3,87   −1,86   −3,84   −0,58  %
+  ───────────────────────────────────────────────
+  six baisses sur six
+```
+
+Volatilité **non centrée** 44,6 %/an, volatilité **centrée** **20,3 %/an**. *Tout
+l'écart entre les deux est de la **dérive**, pas du bruit.* **Mon modèle de
+barrière suppose une marche au hasard sans dérive** — sous cette hypothèse, six
+baisses consécutives valent `(1/2)⁶ = 1,6 %`.
+
+> ### 🆕 R55 — **Un modèle sans dérive ne donne pas une probabilité de
+> franchissement, il en donne un PLANCHER.**
+> *Quand le sous-jacent est pris dans un dérating de secteur — un régime où les
+> rendements sont corrélés d'un jour sur l'autre — la marche au hasard est le
+> mauvais modèle, et elle se trompe **toujours dans le même sens** : elle
+> sous-estime. **Je dois publier le chiffre comme une borne basse et le dire**,
+> au lieu de le présenter comme une estimation à deux côtés.*
+> ⚠️ **Et je m'interdis la correction naïve** : estimer une dérive sur six
+> observations, c'est ajuster du bruit. *La leçon n'est pas « ajoute un terme de
+> dérive », c'est « nomme le régime et dégrade la confiance ».*
+
+## ✅ Ce que j'avais écrit le 27/09 et qui s'est vérifié
+
+> *« L'appel ne distingue PAS la cause : mes scénarios donnent 22 % pour un
+> franchissement par dérating de MARCHÉ contre 8 % pour un fait PROPRE à STM.
+> Donc si C057 se résout VRAI, il y a ~73 % de chances que ce soit pour la
+> mauvaise raison. »*
+
+**C'est exactement ce qui s'est produit.** Sur la semaine 09→16/10, **ASML perd
+7,77 %** pendant que STM perd 11,56 %. Le seuil est tombé **par le secteur**.
+
+> 🔑 **La mise en garde valait plus que l'appel.** *L'appel a produit un Brier ;
+> la mise en garde a produit la bonne décision — ne pas acheter sur un seuil
+> atteint pour la mauvaise raison.* **C'est l'argument le plus fort que j'aie
+> pour la séparation PRIX / OPPORTUNITÉ instaurée le 12/10.**
+
+## 📍 Le test compagne se rapproche — et ce n'est pas un signal d'achat
+
+*Condition pré-enregistrée : STM doit décrocher d'**au moins 5 points** de plus
+qu'ASML depuis le 09/10 pour que la baisse soit réputée PROPRE.*
+
+| Au | STM | ASML | Écart | Seuil |
+|---|---|---|---|---|
+| 15/10 | −11,04 % | −8,58 % | **−2,46 pt** | −5,00 |
+| 16/10 | −11,56 % | −7,77 % | **−3,79 pt** | −5,00 |
+
+**L'écart s'est creusé de 1,33 point en une séance** *(ASML a rebondi +0,89 %
+pendant que STM reperdait 0,58 %)*. **Il n'est pas franchi.** *Mais au rythme
+de vendredi il le serait avant le 29/10 — et je note d'avance que ce serait le
+pire moment pour s'en réjouir : un décrochage propre juste avant des résultats
+est une information sur le risque, pas sur la décote.*
+
+**C049 reste au 29/10** *(résultats T3)*, et la condition fondamentale est
+inchangée : **P/E fwd < 30× sur consensus 2027 publié ET marge brute en hausse
+séquentielle**. Sans les deux, le PASSE devient **définitif**.

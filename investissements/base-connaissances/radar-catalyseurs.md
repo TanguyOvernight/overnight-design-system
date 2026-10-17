@@ -2479,3 +2479,21 @@ du secteur est générale. ⚠️ **Mais ASML a relevé sa guidance 2026 le 14/1
 donc ASML a baissé le 15/10 **après une bonne nouvelle**. C'est exactement la
 contamination que j'avais nommée le 15/10 en amendant le test : l'amendement
 disait « en cas de contamination, bloquer ». Il a tenu.
+
+---
+
+## Mise à jour 17/10/2026 — après la semaine du dérating semi
+
+- **STM** — clôtures **41,41 € (15/10)** et **41,17 € (16/10)** : **sous le seuil
+  de 42 €**, C057 résolu VRAI. ⚠️ **Le test compagne n'est PAS franchi** :
+  écart STM/ASML depuis le 09/10 = **−3,79 pt** contre **−5,00** requis. *Il
+  s'est creusé de 1,33 pt le 16/10 — à surveiller séance par séance.*
+  **Date décisive inchangée : résultats T3 le 29/10** *(source primaire :
+  communiqué société du 05/10)*.
+- **Besi** — T3 le **22/10** (confirmé). Résout **C063**. *Trou connu au
+  dossier : la date de Hot Chips 2026 n'est toujours pas établie.*
+- **Sidetrade** — CA T3 le **20/10** (confirmé).
+- **Guerbet** — CA T3 le **22/10** *(presse uniquement — pas de confirmation
+  émetteur, cf. R54 face B)*. Échéance de négociation du refinancement au
+  **31/10** ; covenants déjà neutralisés jusqu'au test du 30/06/2027.
+- **Aubay** — CA T3 fin octobre, résout **C059**.

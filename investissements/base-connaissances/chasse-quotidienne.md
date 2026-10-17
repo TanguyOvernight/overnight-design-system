@@ -2857,3 +2857,41 @@ d'une fiche tierce jamais recoupée.
 **Contrôle à passer sur chaque ligne du radar** : *« cette date vient-elle du
 communiqué de la société, ou d'un agrégateur ? »* Si la réponse n'est pas la
 première, la date est une hypothèse.
+
+---
+
+## R55 — Un modèle sans dérive donne un PLANCHER, pas une probabilité
+*(17/10/2026 — autopsie de C057, résolu VRAI)*
+
+J'ai calculé pendant trois semaines la probabilité que STM franchisse 42 € avec
+un modèle de barrière à marche au hasard. **Mon paramètre de volatilité était
+excellent** — 45 % supposé, **44,6 % réalisé**. Et pourtant j'ai sous-estimé le
+franchissement jusqu'à le réviser *en baisse* à 20 % onze jours avant.
+
+La raison tient en une ligne de chiffres — les six dernières séances :
+
+```
+−3,05   −2,13   −3,87   −1,86   −3,84   −0,58  %     (6 baisses sur 6)
+
+volatilité non centrée  44,6 %/an      ← ce que mon modèle voyait
+volatilité centrée      20,3 %/an      ← le vrai bruit
+l'écart                 = la DÉRIVE, que mon modèle suppose nulle
+```
+
+Sous marche au hasard, six baisses d'affilée valent **1,6 %**.
+
+> **Quand le sous-jacent est dans un dérating de secteur, les rendements sont
+> corrélés d'un jour sur l'autre, et la marche au hasard se trompe TOUJOURS DANS
+> LE MÊME SENS : elle sous-estime le franchissement.** Le chiffre qu'elle produit
+> est une **borne basse**, et je dois l'écrire comme telle.
+
+**Ce que je ne fais PAS** : estimer une dérive sur six observations pour
+« corriger » le modèle. *Ce serait ajuster du bruit, et la prochaine fois que le
+titre rebondit le même geste me ferait surestimer.* **La correction est
+qualitative : nommer le régime, publier une borne basse, dégrader la
+confiance** — pas ajouter un paramètre que je ne peux pas estimer.
+
+**Déclencheur** : avant de publier une `P(franchissement)`, répondre à
+*« les N dernières séances sont-elles majoritairement dans le même sens, et
+le secteur bouge-t-il avec ? »* Si oui → le chiffre est annoncé comme un
+plancher.
