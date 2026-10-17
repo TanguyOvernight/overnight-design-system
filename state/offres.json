@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-10-16",
+ "maj": "2026-10-17",
  "offres": [
   {
    "d": "2026-10-03",
@@ -2962,6 +2962,151 @@
     "⚠️ Culture trading attendue"
    ],
    "at": "Gaming + IA sont cités, mais c'est un rôle growth pur : seulement si tu veux basculer côté acquisition."
+  },
+  {
+   "d": "2026-10-17",
+   "b": 49,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "solide",
+   "t": "UX/UI Designer",
+   "c": "Jobgether (client non nommé)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "non précisée",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/ux-ui-designer-at-jobgether-4479327882",
+   "n": "Annonce publiée pour une entreprise partenaire : sites, landing pages et produits digitaux multi-marques.",
+   "fit": {
+    "m": 1,
+    "da": 3,
+    "ia": 0,
+    "pct": 62
+   },
+   "ms": [
+    "Concevoir sites responsive, landing pages et produits digitaux",
+    "Construire et maintenir design systems et bibliothèques de composants Figma",
+    "Prototypes, maquettes HD et specs de handoff pour les devs"
+   ],
+   "inf": [
+    "Figma avancé : composants, design systems, prototypage",
+    "Portfolio exigé (flows, wireframes, prototypes)",
+    "⚠️ Intermédiaire, contrat non précisé",
+    "⚠️ Poste d'exécution UI/UX plus que marketing"
+   ],
+   "at": "Ton niveau Figma et le design system Chat3D appliqué au code sont exactement la preuve demandée."
+  },
+  {
+   "d": "2026-10-17",
+   "b": 49,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Commercial AI Strategy Manager",
+   "c": "Aston Carter (client grand groupe conso / travel retail)",
+   "l": "Lausanne (hybride)",
+   "dist": "Lausanne",
+   "tx": "100%",
+   "ct": "CDD 12 mois prolongeable",
+   "xp": "non précisée",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/ai-strategy-manager-at-aston-carter-4480368484",
+   "n": "Accélérer l'adoption de l'IA dans les opérations commerciales d'un leader mondial conso / travel retail.",
+   "fit": {
+    "m": 1,
+    "da": 0,
+    "ia": 3,
+    "pct": 50
+   },
+   "ms": [
+    "Construire la roadmap IA commerciale et prioriser les cas d'usage",
+    "Piloter des projets d'hyper-personnalisation client, du pilote au déploiement",
+    "Définir KPIs et reporting auprès de la direction"
+   ],
+   "inf": [
+    "IA appliquée au cœur du poste",
+    "⚠️ Profil conseil / transformation digitale / analytics attendu",
+    "⚠️ Rôle stratégique, sans création"
+   ],
+   "at": "Tes automatisations IA de bout en bout (réunions→CRM, briefs) sont un argument concret, mais le poste parle business cases et KPIs, pas création."
+  },
+  {
+   "d": "2026-10-17",
+   "b": 49,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Expert Brand Management",
+   "c": "Audemars Piguet",
+   "l": "Le Brassus (vallée de Joux)",
+   "dist": "Le Brassus",
+   "tx": "100%",
+   "ct": "CDI",
+   "xp": "5 à 8 ans",
+   "lg": "FR/EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/expert-brand-management-at-audemars-piguet-4479377608",
+   "n": "Création de poste sous le Brand Director : stratégie de marque, désirabilité et cohérence globale de la marque.",
+   "fit": {
+    "m": 3,
+    "da": 1,
+    "ia": 0,
+    "pct": 55
+   },
+   "ms": [
+    "Traduire la stratégie en plans marketing intégrés et briefs",
+    "Garantir la cohérence de la marque sur tous les points de contact",
+    "Nourrir les réflexions créatives et narratives des campagnes"
+   ],
+   "inf": [
+    "⚠️ 5 à 8 ans en brand management demandés",
+    "⚠️ Luxe / horlogerie / premium exigé",
+    "⚠️ Vallée de Joux : loin de Lausanne en transports"
+   ],
+   "at": "Employeur d'exception et vrai poste de marque, mais trois freins : années, luxe, distance."
+  },
+  {
+   "d": "2026-10-17",
+   "b": 49,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Head of Growth Marketing",
+   "c": "Jobgether (client non nommé)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "~6 ans",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/head-of-growth-marketing-at-jobgether-4479359412",
+   "n": "Boutique de monnaies in-game et de biens numériques (Afrique / Moyen-Orient).",
+   "fit": {
+    "m": 2,
+    "da": 0,
+    "ia": 1,
+    "pct": 45
+   },
+   "ms": [
+    "Diriger acquisition, rétention et réactivation",
+    "Piloter les budgets d'acquisition payante",
+    "Développer CRM et lifecycle marketing"
+   ],
+   "inf": [
+    "Secteur gaming (in-game currencies)",
+    "⚠️ ~6 ans d'expérience demandés",
+    "⚠️ Acquisition payante dominante (performance)"
+   ],
+   "at": "Ton passé gaming parle, mais le cœur est la performance chiffrée."
   }
  ]
 }
