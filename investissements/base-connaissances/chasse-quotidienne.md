@@ -2974,3 +2974,41 @@ justes.*
 Il a révélé que le **31/10** *(butée de refinancement Guerbet)* tombe un
 **samedi** : la vraie échéance ouvrable est le **vendredi 30/10**. *Un contrôle
 systématique trouve ce qu'une relecture ciblée ne cherchait pas.*
+
+---
+
+## R58 — La PLACE de cotation ne dit pas l'éligibilité PEA
+*(18/10/2026 — chasse prospective du dimanche, piège relevé sur dsm-firmenich)*
+
+Ma contrainte d'achetabilité était formulée ainsi depuis des semaines :
+
+> ~~« Euronext Paris / Amsterdam / Bruxelles sûrs »~~
+
+**C'est faux, et la formulation elle-même fabriquait l'erreur.** L'éligibilité
+PEA tient au **siège social dans l'UE/EEE**, pas au marché sur lequel le titre
+s'échange.
+
+```
+dsm-firmenich AG   cotée Euronext Amsterdam (DSFIR)
+                   siège KAISERAUGST, SUISSE
+                   → HORS UE/EEE → NON éligible PEA
+```
+
+À l'inverse **Aperam SA** *(APAM, Amsterdam)* est **luxembourgeoise**, donc dans
+l'UE, donc éligible. *Deux sociétés sur la même place, deux statuts opposés : la
+place ne prédit rien.*
+
+> **Une contrainte formulée sur le proxy observable plutôt que sur le critère
+> réel ne filtre pas — elle rassure.** *J'aurais pu présenter une candidate
+> inachetable en ayant « appliqué » ma contrainte éliminatoire.*
+
+**Contrôle désormais obligatoire avant toute présentation** : lire la **forme
+sociale** et l'**ISIN** sur un document de l'émetteur.
+- Formes UE/EEE : `S.A.` (FR/LU/BE) · `N.V.` (NL) · `SE` · `S.p.A.` · `AB`…
+- 🚩 **Drapeau rouge : `AG`** — allemande *(UE, OK)* **ou suisse** *(hors UE,
+  KO)*. **Le suffixe ne tranche pas : il déclenche la vérification du siège.**
+- L'ISIN commence par le pays d'**émission**, pas toujours le siège → il
+  corrobore, il ne prouve pas.
+
+*La contrainte se formule désormais : « siège UE/EEE ET cotée sur Euronext
+Paris / Amsterdam / Bruxelles », les deux conditions, dans cet ordre.*

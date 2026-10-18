@@ -2497,3 +2497,33 @@ disait « en cas de contamination, bloquer ». Il a tenu.
   émetteur, cf. R54 face B)*. Échéance de négociation du refinancement au
   **31/10** ; covenants déjà neutralisés jusqu'au test du 30/06/2027.
 - **Aubay** — CA T3 fin octobre, résout **C059**.
+
+---
+
+## 18/10/2026 — catalyseurs récoltés par la chasse prospective *(aucun n'ouvre de dossier)*
+
+⚠️ **Tous issus d'une chasse dont le verdict est « 0 signal solide ».** *Ils sont
+ici comme mémoire de calendrier, pas comme candidats.* **Sources juridiques
+secondaires (cabinets, presse spécialisée) — à reconfirmer sur source primaire
+avant toute conséquence décisionnelle** *(R54 face B)*.
+
+| Date | Événement | Qualité de source |
+|---|---|---|
+| **06/11/2026** | Aperam *(APAM)* — résultats T3 ; guidance déjà annoncée en baisse vs T2 | agrégateur, **à reconfirmer sur aperam.com** |
+| **~fin 2026** | Publication au JOUE du *Critical Medicines Act* *(accord provisoire 12/05/2026)* | 2 cabinets + train législatif PE |
+| **~fin 2026** | Clôture cession ANH de dsm-firmenich à CVC | communiqué relayé |
+| **H1 2027** *(estimé)* | 🔴 **Arrêt CJUE aff. C-193/25** — l'avocate générale Kokott aurait recommandé le **03/09/2026** l'annulation de la REP 80 % pharma/cosmétique de la directive (UE) 2024/3019. **Date d'arrêt non publiée.** | presse juridique — **à vérifier sur curia.europa.eu** |
+| **31/07/2027** | Transposition nationale directive (UE) 2024/3019 *(eaux urbaines résiduaires)* | 2 sources |
+| **31/12/2028** | Entrée en application des obligations REP *(80 % du coût du traitement quaternaire)* — **sous réserve de C-193/25** | 2 sources |
+
+### Pourquoi aucun n'est un dossier
+Le fil le plus intéressant *(C-193/25)* échoue sur **l'absence de véhicule coté
+matériellement exposé** : le maillon technique est porté par Veolia, pour qui
+c'est une optionnalité sur ~44 Md€ de CA, pas un marché créé. **Une thèse
+réglementaire sans véhicule et sans matérialité chiffrée n'est pas une thèse.**
+
+### ❌ NON retenu — insuffisamment sourcé
+Une mention de *« passeport batterie obligatoire au 18/02/2027, règl. (UE)
+2023/1542 »* est remontée **sans aucune source**. *Elle n'entre pas au radar* :
+une date non sourcée au radar deviendrait un fait dans trois semaines — c'est
+exactement le mécanisme qui a produit l'erreur STM du 22/10.
