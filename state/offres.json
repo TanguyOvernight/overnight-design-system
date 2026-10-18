@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-10-17",
+ "maj": "2026-10-18",
  "offres": [
   {
    "d": "2026-10-03",
@@ -3107,6 +3107,78 @@
     "⚠️ Acquisition payante dominante (performance)"
    ],
    "at": "Ton passé gaming parle, mais le cœur est la performance chiffrée."
+  },
+  {
+   "d": "2026-10-18",
+   "b": 50,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Marketing & Digital Communications Officer (ASAP)",
+   "c": "Michael Page (association internationale santé/science)",
+   "l": "Lausanne ? (client basé à Zurich)",
+   "dist": "?",
+   "tx": "n.p.",
+   "ct": "Try & Hire",
+   "xp": "n.p.",
+   "lg": "EN",
+   "g": false,
+   "u": null,
+   "n": "⚠️ Non vérifiée : vue seulement via un agrégateur bloqué par le proxy. 🔎 à retrouver : cherche « Marketing & Digital Communications Officer » Michael Page sur michaelpage.ch.",
+   "fit": {
+    "m": 2,
+    "da": 2,
+    "ia": 0,
+    "pct": 52
+   },
+   "ms": [
+    "Campagnes marketing et communication intégrées",
+    "Contenus web, newsletters, réseaux sociaux, présentations",
+    "Visuels : graphiques sociaux, bannières, infographies"
+   ],
+   "inf": [
+    "Mix contenu + design + digital",
+    "⚠️ Lieu ambigu : annonce à Lausanne, client basé à Zurich",
+    "⚠️ Try & Hire : démarre en mission avant embauche",
+    "⚠️ Lien non vérifié"
+   ],
+   "at": "Le mix contenu + visuels colle, mais il faut d'abord confirmer le lieu et le contrat sur michaelpage.ch."
+  },
+  {
+   "d": "2026-10-18",
+   "b": 50,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Marketing Coordinator",
+   "c": "Jobgether (client non nommé)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "1 à 3 ans",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/marketing-coordinator-at-jobgether-4479326509",
+   "n": "Marque D2C e-commerce : coordination marketing au plus près de la direction.",
+   "fit": {
+    "m": 2,
+    "da": 0,
+    "ia": 0,
+    "pct": 40
+   },
+   "ms": [
+    "Coordonner partenariats influenceurs et créateurs",
+    "Gérer les plateformes créateurs",
+    "Soutenir la rétention multi-canal"
+   ],
+   "inf": [
+    "⚠️ Poste de coordination, en dessous de ton niveau",
+    "⚠️ Intermédiaire, contrat non précisé"
+   ],
+   "at": "Accessible et remote, mais c'est un pas en arrière : à garder en filet de sécurité."
   }
  ]
 }
