@@ -3864,3 +3864,44 @@ est une information sur le risque, pas sur la décote.*
 **C049 reste au 29/10** *(résultats T3)*, et la condition fondamentale est
 inchangée : **P/E fwd < 30× sur consensus 2027 publié ET marge brute en hausse
 séquentielle**. Sans les deux, le PASSE devient **définitif**.
+
+---
+
+# 📅 18/10/2026 — 🆕 C066, et R55 produit son premier chiffre
+
+## L'appel
+
+| Réf | Date | Proposition | **P** | Résolution |
+|---|---|---|---|---|
+| **C066** | 18/10 | **L'écart de performance STM − ASML depuis le 09/10 atteint ou dépasse −5,00 points à la clôture du vendredi 23/10/2026** | **45 %** | clôtures Euronext datées du 23/10 · *(état au 16/10 : −3,79 pt)* |
+
+## Comment j'obtiens 45 % — et c'est R55, écrite hier, qui tranche
+
+Écarts quotidiens STM − ASML sur six séances :
+```
+−1,22   −0,49   +0,40   −3,08   +0,42   −1,47   (pt)
+moyenne −0,906 pt/séance · écart-type 1,326
+```
+Il faut encore **−1,21 pt en 5 séances**, σ = 2,97.
+
+| Modèle | P | Statut |
+|---|---|---|
+| Marche au hasard *(dérive nulle)* | **34 %** | **PLANCHER** *(R55)* |
+| Dérive ajustée sur les 6 séances | **87 %** | **interdit** *(R55)* |
+| **Enregistré** | **45 %** | au-dessus du plancher, loin de l'ajustement |
+
+> 🔑 **C'est le premier usage de R55, et elle fait exactement ce pour quoi elle a
+> été écrite** : elle m'empêche de publier 34 % *(qui ignore un régime de dérating
+> visible)* **et** de publier 87 % *(qui ajuste une tendance sur six points)*.
+> *Une règle qui n'écarte qu'un seul des deux travers ne sert à rien : les deux
+> erreurs sont symétriques et toutes deux confortables.*
+
+⚠️ **L'appel ne distingue toujours pas la DÉCISION du PRIX** — et cette fois
+c'est voulu et écrit : **même si C066 se résout VRAI, ce n'est pas un achat.**
+R est en dépassement *(30,12 %)* et le verrou fondamental ne tombe que le
+**29/10**. *La leçon de C057 est appliquée avant le fait, pas après.*
+
+## État du registre
+**23 résolus · Brier 0,2380 · BSS +0,048** *(complet)* · **20 résolus ·
+Brier 0,2608 · BSS −0,043** *(hors les 3 méta)*. **Prochaine résolution : C063
+le jeudi 22/10** *(78 %)*.

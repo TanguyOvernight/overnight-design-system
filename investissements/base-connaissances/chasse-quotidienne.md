@@ -2935,3 +2935,42 @@ frais vaillent 0 € ou 1,75 €.** *J'ai donc pu donner la décision avant d'av
 résolu l'incertitude, et le dire.* **C'est ㊸ : la comparaison suffit, la mesure
 n'est pas requise.** *Le réflexe à garder : avant de bloquer sur une donnée
 manquante, tester si la décision en dépend vraiment.*
+
+---
+
+## R57 — On corrige la CLASSE, pas l'instance
+*(18/10/2026 — la correction d'hier contenait trois fois la faute qu'elle corrigeait)*
+
+Le 17/10 j'ai publié un rectificatif nommant une faute : **des noms de jours
+posés sur des dates justes sans vérification**. J'ai corrigé les **deux**
+occurrences que j'avais remarquées dans la section performance.
+
+**Le même message en contenait trois autres**, dans « À SUIVRE » — la section
+qui dit à Tanguy *quand agir* :
+
+```
+publié « lundi 20/10 »      → le 20/10 est un MARDI
+publié « mercredi 22/10 »   → le 22/10 est un JEUDI
+publié « mercredi 29/10 »   → le 29/10 est un JEUDI   (STM, séance décisive)
+```
+
+> **Nommer une classe d'erreur et ne corriger que les instances repérées, c'est
+> republier l'erreur dans le message qui annonce la réparer.** *Le rectificatif
+> ne m'a pas servi de relecture : il m'a donné le sentiment d'avoir traité le
+> sujet.*
+
+**Ce qui aggrave** : la faute résiduelle était dans la section **opérationnelle**.
+*Un mauvais jour sur une date de résultats peut faire chercher une publication le
+mercredi et conclure qu'il n'y a rien.*
+
+**Procédure** : dès qu'une erreur est qualifiée en **classe** *(un nom de jour, une
+étiquette de colonne, un barème, une date d'événement)*, **balayer
+mécaniquement tout l'artefact pour cette classe AVANT de publier la
+correction** — par un contrôle qui ne dépend pas de ma relecture. *Pour les
+jours : les recalculer tous, sans exception, y compris ceux qui « semblent »
+justes.*
+
+### 🎁 Effet de bord du balayage
+Il a révélé que le **31/10** *(butée de refinancement Guerbet)* tombe un
+**samedi** : la vraie échéance ouvrable est le **vendredi 30/10**. *Un contrôle
+systématique trouve ce qu'une relecture ciblée ne cherchait pas.*
