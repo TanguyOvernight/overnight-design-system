@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-10-18",
+ "maj": "2026-10-21",
  "offres": [
   {
    "d": "2026-10-03",
@@ -17,7 +17,7 @@
    "ct": "Full-time (CDI présumé)",
    "xp": "1-3 ans",
    "lg": "EN (écriture distinctive exigée)",
-   "u": "https://jobs.ashbyhq.com/adaptyv/5a44f0eb-8d0d-4b04-9d51-9933f899aeaf",
+   "u": "https://ch.linkedin.com/jobs/view/community-manager-at-adaptyv-4481264294",
    "n": "La startup « agentic biology » du radar marché caché (Série A €34M) — poste trouvé via l'API Ashby, leur site carrières étant bloqué. ⚠️ Publiée le 03.06 mais toujours listée active : candidater vite.",
    "g": true,
    "cl": false,
@@ -3179,6 +3179,290 @@
     "⚠️ Intermédiaire, contrat non précisé"
    ],
    "at": "Accessible et remote, mais c'est un pas en arrière : à garder en filet de sécurité."
+  },
+  {
+   "d": "2026-10-21",
+   "b": 51,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "solide",
+   "t": "Growth Lead",
+   "c": "Jobgether (startup B2B tech non nommée)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "3+ ans",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/growth-lead-at-jobgether-4480454298",
+   "n": "Premier leader marketing d'une startup B2B cloud-native qui vend aux équipes de développeurs.",
+   "fit": {
+    "m": 3,
+    "da": 1,
+    "ia": 2,
+    "pct": 66
+   },
+   "ms": [
+    "Stratégie de croissance : adoption produit, leads qualifiés, visibilité de marque",
+    "Storytelling et contenus de cas clients",
+    "SEO et expérimentation data-driven"
+   ],
+   "inf": [
+    "3+ ans en growth / marketing B2B tech (Series A-B idéalement)",
+    "Écriture technique pour audience développeurs",
+    "⚠️ Intermédiaire, contrat non précisé"
+   ],
+   "at": "Ton marketing B2B tech chez Chat3D (ICP, contenus, vocabulaire technique) et ta pratique de Claude Code sont exactement l'angle."
+  },
+  {
+   "d": "2026-10-21",
+   "b": 51,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Communications Manager – Social Media & Campaigns",
+   "c": "Nestlé",
+   "l": "Vevey",
+   "dist": "Vevey",
+   "tx": "100%",
+   "ct": "CDI",
+   "xp": "non précisée",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/communications-manager-social-media-campaigns-at-nestl%C3%A9-4481739505",
+   "n": "Piloter les réseaux sociaux corporate globaux et les campagnes digitales du groupe.",
+   "fit": {
+    "m": 3,
+    "da": 1,
+    "ia": 0,
+    "pct": 58
+   },
+   "ms": [
+    "Diriger les canaux sociaux corporate globaux",
+    "Transformer les priorités corporate en campagnes digitales mesurables",
+    "Travailler avec contenu, affaires publiques, marchés, agences et plateformes"
+   ],
+   "inf": [
+    "⚠️ Vevey : -1 au scoring géo (15 min de train depuis Lausanne)",
+    "⚠️ Présentiel 100 %"
+   ],
+   "at": "Le rôle social media corporate d'un géant : ton regard DA et tes campagnes LinkedIn B2B sont l'angle."
+  },
+  {
+   "d": "2026-10-21",
+   "b": 51,
+   "st": "ouverte",
+   "cl": false,
+   "dl": "2026-11-20",
+   "s": "avoir",
+   "t": "Brand & Commercial Partnerships Manager",
+   "c": "FISU (Fédération Internationale du Sport Universitaire)",
+   "l": "Lausanne",
+   "dist": "Lausanne",
+   "tx": "100%",
+   "ct": "CDI",
+   "xp": "7 ans",
+   "lg": "EN",
+   "g": false,
+   "u": "https://www.jobs.ch/fr/offres-emplois/detail/1f55734b-a2e6-458b-a7c5-71ee66f6e0b1/",
+   "n": "Développer les marques FISU et World University Sport, et contribuer aux ventes de partenariats.",
+   "fit": {
+    "m": 2,
+    "da": 2,
+    "ia": 1,
+    "pct": 55
+   },
+   "ms": [
+    "Gérer la marque FISU sur événements, programmes et activités commerciales",
+    "Créer propositions de partenariat, decks de vente et présentations de direction",
+    "Prospecter et soutenir la vente de partenariats"
+   ],
+   "inf": [
+    "IA générative et construction de présentations explicitement demandées",
+    "⚠️ 7 ans d'expérience requis",
+    "⚠️ Vraie responsabilité de vente B2B / sponsoring",
+    "Candidater avant le 20.11"
+   ],
+   "at": "Tes decks de levée (+3 M€) et ta gestion de marque collent, mais le volet vente et les 7 ans sont deux freins."
+  },
+  {
+   "d": "2026-10-21",
+   "b": 51,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Communications Officer | Video & Social Media Content Producer",
+   "c": "Jobgether (organisation climat non nommée)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "non précisée",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/communications-officer-video-social-media-content-producer-at-jobgether-4479968744",
+   "n": "Transformer recherche et politiques climat en histoires digitales, surtout vidéo et YouTube.",
+   "fit": {
+    "m": 2,
+    "da": 2,
+    "ia": 0,
+    "pct": 52
+   },
+   "ms": [
+    "Produire la vidéo sociale de A à Z (tournage, interviews, montage)",
+    "Gérer les contenus sociaux",
+    "Traduire des sujets techniques en contenus accessibles"
+   ],
+   "inf": [
+    "Portfolio vidéo social exigé",
+    "⚠️ Premiere Pro, tournage et prise de son sur le terrain",
+    "⚠️ Profil vidéaste plus que marketing"
+   ],
+   "at": "Ton motion design After Effects aide, mais il faut un vrai portfolio vidéo tournée."
+  },
+  {
+   "d": "2026-10-21",
+   "b": 51,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "New Media Manager, Social & Community Growth",
+   "c": "Jobgether (écosystème blockchain non nommé)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "non précisée",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/new-media-manager-social-and-community-growth-at-jobgether-4480429935",
+   "n": "Faire croître la présence sociale et communautaire d'un écosystème blockchain.",
+   "fit": {
+    "m": 2,
+    "da": 1,
+    "ia": 0,
+    "pct": 45
+   },
+   "ms": [
+    "Croissance YouTube, TikTok, Instagram et nouveaux canaux",
+    "Formats vidéo et séries récurrentes",
+    "Vulgariser l'actualité crypto"
+   ],
+   "inf": [
+    "⚠️ Croissance YouTube prouvée exigée",
+    "⚠️ Culture crypto profonde exigée",
+    "Présence à l'écran souhaitée"
+   ],
+   "at": "Pertinent seulement si tu as une chaîne ou des résultats vidéo à montrer."
+  },
+  {
+   "d": "2026-10-21",
+   "b": 51,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Senior Associate Marketing Manager",
+   "c": "Cereal Partners Worldwide (Nestlé & General Mills)",
+   "l": "La Tour-de-Peilz",
+   "dist": "La Tour-de-Peilz",
+   "tx": "100%",
+   "ct": "CDI",
+   "xp": "non précisée",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/senior-associate-marketing-manager-at-cereal-partners-worldwide-nestl%C3%A9-general-mills-4480978000",
+   "n": "Stratégie de marque et de communication globale pour Nesquik et KitKat Cereal.",
+   "fit": {
+    "m": 3,
+    "da": 1,
+    "ia": 0,
+    "pct": 52
+   },
+   "ms": [
+    "Plans de marque annuels et pipeline d'idées",
+    "Plans de communication consommateur",
+    "Travail avec insights, médias et agences"
+   ],
+   "inf": [
+    "⚠️ Riviera : -1 au scoring géo",
+    "⚠️ Marketing grande conso, culture FMCG attendue"
+   ],
+   "at": "Rôle de marque dans un grand groupe : ton expérience startup se défend sur la créativité, moins sur la FMCG."
+  },
+  {
+   "d": "2026-10-21",
+   "b": 51,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Graphic Design Specialist",
+   "c": "Audemars Piguet",
+   "l": "Le Brassus (vallée de Joux)",
+   "dist": "Le Brassus",
+   "tx": "100%",
+   "ct": "CDI",
+   "xp": "5 ans",
+   "lg": "FR/EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/graphic-design-specialist-at-audemars-piguet-4479944084",
+   "n": "Graphiste au sein de l'équipe Brand Creative de la manufacture.",
+   "fit": {
+    "m": 0,
+    "da": 3,
+    "ia": 0,
+    "pct": 50
+   },
+   "ms": [
+    "Création graphique pour la marque",
+    "Collaboration avec l'équipe Brand Creative"
+   ],
+   "inf": [
+    "⚠️ 5 ans demandés",
+    "⚠️ Vallée de Joux, loin en transports"
+   ],
+   "at": "Pilier DA pur chez un employeur d'exception, mais loin."
+  },
+  {
+   "d": "2026-10-21",
+   "b": 51,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Growth & Partnerships Manager",
+   "c": "Eldy",
+   "l": "Canton de Vaud",
+   "dist": "Vaud",
+   "tx": "n.p.",
+   "ct": "n.p.",
+   "xp": "non précisée",
+   "lg": "FR",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/growth-partnerships-manager-responsable-partenariats-marketing-at-eldy-4478680156",
+   "n": "Startup vaudoise de maintien à domicile des seniors, en phase de croissance hors ligne.",
+   "fit": {
+    "m": 2,
+    "da": 0,
+    "ia": 0,
+    "pct": 40
+   },
+   "ms": [
+    "Ouvrir les portes des institutions médico-sociales",
+    "Faire connaître Eldy dans les médias romands",
+    "Piloter les événements et le réseau"
+   ],
+   "inf": [
+    "⚠️ Rôle de terrain : partenariats, événements",
+    "⚠️ Peu de création"
+   ],
+   "at": "Startup locale : utile surtout si tu veux du terrain."
   }
  ]
 }
