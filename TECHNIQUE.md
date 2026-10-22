@@ -177,3 +177,9 @@ epfl.ch, lausanne.ch, olympics.com, ecal.ch, remoteok/himalayas/remotive/the mus
   dit explicitement remote (100 % remote, remote Europe…). Les postes alémaniques en présentiel
   restent hors persona (géo + allemand).
 - Première passe : Content Lead IA→3D (Jobgether, 🎯), ElevenLabs et Kraken (👀, 5+ ans).
+
+## Addendum 22.10 — liens tapés à la main dans le brief
+Incident : dans le brief n°52, le lien OurFrame a été retapé de mémoire avec un mauvais identifiant (404).
+Correctif posté en fil + broadcast 13 s après. Règle : toute URL du message Slack doit être COPIÉE depuis
+offres.json / ouvertes.json / la sortie du run (imprimer les URL avant de rédiger), jamais retapée ; contrôle
+automatique après envoi (comparer chaque URL du message aux URL stockées) avant la notification.

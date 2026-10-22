@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-10-21",
+ "maj": "2026-10-22",
  "offres": [
   {
    "d": "2026-10-03",
@@ -3463,6 +3463,79 @@
     "⚠️ Peu de création"
    ],
    "at": "Startup locale : utile surtout si tu veux du terrain."
+  },
+  {
+   "d": "2026-10-22",
+   "b": 52,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "solide",
+   "t": "E-commerce & CRM Executive",
+   "c": "BAT (British American Tobacco Switzerland)",
+   "l": "Lausanne",
+   "dist": "Lausanne",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "3 ans min.",
+   "lg": "EN/FR",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/e-commerce-crm-executive-at-bat-4481100211",
+   "n": "Stratégie et croissance e-commerce multicanal, CMS/CRM, pour la filiale suisse.",
+   "fit": {
+    "m": 3,
+    "da": 1,
+    "ia": 1,
+    "pct": 60
+   },
+   "ms": [
+    "Définir et déployer la stratégie e-commerce sur plusieurs canaux",
+    "Piloter CMS et CRM (Salesforce, Magento) pour la croissance",
+    "Superviser copy et contenus visuels, budget, agence technique, reporting"
+   ],
+   "inf": [
+    "3 ans minimum en marketing digital / e-commerce",
+    "Salesforce, Magento, Google Analytics, Power BI",
+    "⚠️ Secteur tabac / nicotine",
+    "⚠️ Rôle e-commerce opérationnel plus que marque"
+   ],
+   "at": "Tes automatisations CRM et ta culture tech (APIs, intégrations via Claude) répondent au volet technique ; le secteur est à toi de juger."
+  },
+  {
+   "d": "2026-10-22",
+   "b": 52,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Media Relations Specialist – Suisse",
+   "c": "Terre des hommes",
+   "l": "Lausanne ou Zurich",
+   "dist": "Lausanne",
+   "tx": "100%",
+   "ct": "CDI (dès le 01.12)",
+   "xp": "5 ans min.",
+   "lg": "FR/DE?",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/media-relations-specialist-suisse-at-terre-des-hommes-foundation-4479405559",
+   "n": "Relations presse de la plus grande ONG suisse de défense des droits de l'enfant (siège à Lausanne).",
+   "fit": {
+    "m": 2,
+    "da": 0,
+    "ia": 0,
+    "pct": 42
+   },
+   "ms": [
+    "Relations avec les médias suisses",
+    "Voyages de presse avec des journalistes",
+    "Gestion de situations médiatiques sensibles"
+   ],
+   "inf": [
+    "⚠️ 5 ans en relations médias ou journalisme",
+    "⚠️ Profil RP pur, peu de création",
+    "Recrutement ouvert jusqu'à pourvoi"
+   ],
+   "at": "Organisation à mission à Lausanne, mais le cœur du poste est le carnet de presse, pas ton profil."
   }
  ]
 }
