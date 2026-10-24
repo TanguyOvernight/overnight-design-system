@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-10-23",
+ "maj": "2026-10-24",
  "offres": [
   {
    "d": "2026-10-03",
@@ -2704,10 +2704,10 @@
   {
    "d": "2026-10-14",
    "b": 46,
-   "st": "ouverte",
+   "st": "fermee",
    "cl": false,
    "s": "cible",
-   "suivi": true,
+   "suivi": false,
    "depuis": "2026-10-14",
    "t": "Chargé·e de communication à 80 %",
    "c": "OurFrame",
@@ -3536,6 +3536,148 @@
     "Recrutement ouvert jusqu'à pourvoi"
    ],
    "at": "Organisation à mission à Lausanne, mais le cœur du poste est le carnet de presse, pas ton profil."
+  },
+  {
+   "d": "2026-10-24",
+   "b": 54,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "solide",
+   "t": "Creative Strategist",
+   "c": "Jobgether (agence non nommée)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "non précisée",
+   "lg": "EN (DE ?)",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/creative-strategist-at-jobgether-4481686401",
+   "n": "Agence créative et marketing au service de plus de 100 marques B2C allemandes.",
+   "fit": {
+    "m": 2,
+    "da": 3,
+    "ia": 0,
+    "pct": 62
+   },
+   "ms": [
+    "Concevoir des concepts de contenu qui renforcent l'identité de marque",
+    "Écrire scripts social organique, publicités et campagnes",
+    "Piloter le processus créatif avec les fondateurs"
+   ],
+   "inf": [
+    "Pas d'années exigées",
+    "⚠️ Marques allemandes : allemand probablement attendu",
+    "⚠️ Intermédiaire, contrat non précisé"
+   ],
+   "at": "Ton double regard DA + marketing colle au rôle ; vérifie d'abord la langue de travail."
+  },
+  {
+   "d": "2026-10-24",
+   "b": 54,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Communications and Social Media Manager",
+   "c": "DuckDuckGo",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "6+ ans",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/communications-and-social-media-manager-at-duckduckgo-4481967248",
+   "n": "Entreprise remote-first de 400+ personnes (navigateur, moteur, Duck.ai qui donne accès à Claude et d'autres IA).",
+   "fit": {
+    "m": 3,
+    "da": 1,
+    "ia": 1,
+    "pct": 58
+   },
+   "ms": [
+    "PR et social media sur X, Reddit, LinkedIn, TikTok, Threads, Bluesky",
+    "Relations médias et pitch aux journalistes",
+    "Mesurer portée, engagement et sentiment"
+   ],
+   "inf": [
+    "⚠️ 6+ ans en communication (PR + social)",
+    "Culture tech et internet attendue",
+    "Employeur remarquable, full remote"
+   ],
+   "at": "Ton profil tech + IA et ta plume LinkedIn B2B sont l'angle ; il te manque le volet relations presse."
+  },
+  {
+   "d": "2026-10-24",
+   "b": 54,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Copywriter – Kraken Pro",
+   "c": "Jobgether (pour Kraken)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "3+ ans",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/copywriter-kraken-pro-at-jobgether-4481658858",
+   "n": "Donner sa voix à la plateforme de trading Kraken Pro.",
+   "fit": {
+    "m": 2,
+    "da": 1,
+    "ia": 0,
+    "pct": 48
+   },
+   "ms": [
+    "Copy pour campagnes, lancements produit, social et in-app",
+    "Travail avec les équipes créa, produit, growth et social"
+   ],
+   "inf": [
+    "3+ ans de copywriting, idéalement fintech/crypto",
+    "⚠️ Culture trading attendue",
+    "Portfolio exigé"
+   ],
+   "at": "Kraken revient pour la 3e fois : le copywriting n'est qu'une facette de ton profil."
+  },
+  {
+   "d": "2026-10-24",
+   "b": 54,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Head of Influencer Marketing",
+   "c": "Jobgether (agence non nommée)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "non précisée",
+   "lg": "EN (DE ?)",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/head-of-influencer-marketing-at-jobgether-4481900906",
+   "n": "Stratégies d'influence et de créateurs pour des marques B2C de la région DACH.",
+   "fit": {
+    "m": 2,
+    "da": 1,
+    "ia": 0,
+    "pct": 45
+   },
+   "ms": [
+    "Concepts et scripts de campagnes créateurs",
+    "Gestion des créateurs",
+    "Travail avec les fondateurs"
+   ],
+   "inf": [
+    "⚠️ Marchés DACH : allemand probable",
+    "⚠️ Spécialisation influence"
+   ],
+   "at": "Même agence que le Creative Strategist ; à garder en second choix."
   }
  ]
 }
