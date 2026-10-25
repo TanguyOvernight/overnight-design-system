@@ -183,3 +183,9 @@ Incident : dans le brief n°52, le lien OurFrame a été retapé de mémoire ave
 Correctif posté en fil + broadcast 13 s après. Règle : toute URL du message Slack doit être COPIÉE depuis
 offres.json / ouvertes.json / la sortie du run (imprimer les URL avant de rédiger), jamais retapée ; contrôle
 automatique après envoi (comparer chaque URL du message aux URL stockées) avant la notification.
+
+## Addendum 25.10 — conteneur recyclé
+Le scratchpad a été vidé (clé SerpAPI et recheck.py perdus) et `jobspy` n'était plus installé.
+Reprise : clé re-téléchargée depuis le Drive privé (serpapi-key.txt, id 1NP0TzkFaKPntei5eQN1eqcdipUDWRQ4u) vers
+<scratchpad>/serpapi.key (chmod 600, jamais affichée) ; `python3 -m pip install python-jobspy` (pas `pip`, qui vise un
+autre Python) ; recheck.py désormais versionné dans state/collecte/recheck.py (lancer depuis la racine du repo).

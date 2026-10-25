@@ -1,7 +1,7 @@
 {
  "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
- "maj": "2026-10-24",
- "dernier_brief": 54,
+ "maj": "2026-10-25",
+ "dernier_brief": 55,
  "vus": {
   "jobup": [
    "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -800,7 +800,22 @@
    "0963082a-c160-49a1-af4f-be87ca651c48",
    "689c5add-103a-4690-a777-944b81b44ab6",
    "2f55aa87-0bb5-4637-9ba3-3f2ee086f00f",
-   "64540a61-886b-4b8e-b47b-51d2a3b53fb7"
+   "64540a61-886b-4b8e-b47b-51d2a3b53fb7",
+   "600c3aca-b561-4a84-aeea-420c6174abc2",
+   "f4fa731d-c394-48d9-992a-56e9c9641a42",
+   "2a2775e6-45c6-4fa2-8463-ce6af409bcf7",
+   "c971d580-9d84-406c-952f-4a1c2f9cee05",
+   "5eea12eb-9a72-4f5c-8259-5fba964f5b71",
+   "50378542-7e49-4d72-ad10-e1f9ffe4559c",
+   "477f96b1-9326-4007-8ee0-c79216126a08",
+   "c5d5fb1f-8ca2-4da2-8e79-057ae9e1e9b0",
+   "c940efff-1a19-4427-8957-dde7bbc9ad0e",
+   "1ab03522-0cb1-406c-a35c-7f184503df0a",
+   "d962b859-447c-414a-bc1f-018acc11d5f3",
+   "2690a62d-c437-4fd9-995c-70853e6f19cc",
+   "ab51ef33-8b35-4658-a278-f2c7be135137",
+   "8b9a01dd-f663-4895-9202-0a0bebfbd96c",
+   "cd0e0079-df08-4491-8c6a-bb0a74c647dd"
   ],
   "ats_employeurs": [
    "https://recrutement.eben-hezer.ch/jobs/7602918-responsable-communication-et-recherche-de-fonds",
@@ -2521,7 +2536,50 @@
    "4480643758",
    "4465024868",
    "4474500367",
-   "4481916289"
+   "4481916289",
+   "4483136936",
+   "4482839679",
+   "4483357035",
+   "4481691184",
+   "4482881510",
+   "4482890826",
+   "4483330307",
+   "4482856202",
+   "4483318127",
+   "4478694560",
+   "4447425094",
+   "4480641789",
+   "4481971442",
+   "4474784442",
+   "4473349532",
+   "4480649902",
+   "4481060032",
+   "4474763843",
+   "4482666625",
+   "4446197261",
+   "4465164064",
+   "4481052396",
+   "4472579515",
+   "4481909774",
+   "4464261225",
+   "4481056244",
+   "4480630705",
+   "4472719696",
+   "4473410733",
+   "4464884726",
+   "4482890516",
+   "4481005321",
+   "4444590138",
+   "4481683568",
+   "4457090771",
+   "4434571501",
+   "4425778715",
+   "4481081439",
+   "4480661347",
+   "4478273237",
+   "4474799144",
+   "4475002130",
+   "4481917203"
   ],
   "chuv": [
    "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html"
@@ -2610,7 +2668,8 @@
    "in-df8a9dbca12104ef",
    "in-3a0139d5ee2f6db9",
    "in-987cfdc0bdb12087",
-   "in-6187e1fd3dbe0725"
+   "in-6187e1fd3dbe0725",
+   "in-8af348e7ab83755d"
   ]
  },
  "postees": [
@@ -4422,6 +4481,14 @@
    "titre": "Head of Influencer Marketing",
    "entreprise": "Jobgether (agence non nommée)",
    "lien": "https://ch.linkedin.com/jobs/view/head-of-influencer-marketing-at-jobgether-4481900906"
+  },
+  {
+   "brief": 55,
+   "date": "2026-10-25",
+   "score": "solide",
+   "titre": "Community Manager & Chargé·e de communication digitale",
+   "entreprise": "Cave de la Côte (coopérative viticole)",
+   "lien": "https://www.jobscout24.ch/en/job/689c5add-103a-4690-a777-944b81b44ab6/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"
   }
  ]
 }

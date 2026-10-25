@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-10-24",
+ "maj": "2026-10-25",
  "offres": [
   {
    "d": "2026-10-03",
@@ -3678,6 +3678,44 @@
     "⚠️ Spécialisation influence"
    ],
    "at": "Même agence que le Creative Strategist ; à garder en second choix."
+  },
+  {
+   "d": "2026-10-25",
+   "b": 55,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "solide",
+   "t": "Community Manager & Chargé·e de communication digitale",
+   "c": "Cave de la Côte (coopérative viticole)",
+   "l": "Tolochenaz (site de Morges)",
+   "dist": "Tolochenaz",
+   "tx": "80%",
+   "ct": "à confirmer",
+   "xp": "« expérience confirmée »",
+   "lg": "FR",
+   "g": false,
+   "u": "https://www.jobscout24.ch/en/job/689c5add-103a-4690-a777-944b81b44ab6/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+   "n": "Coopérative viticole vaudoise majeure (350 sociétaires, 1'000 références) : rayonnement digital des vins, marques et vignerons.",
+   "fit": {
+    "m": 3,
+    "da": 2,
+    "ia": 0,
+    "pct": 66
+   },
+   "ms": [
+    "Créer et animer les contenus sur Instagram, Facebook, LinkedIn et le site",
+    "Piloter le calendrier éditorial et des campagnes digitales",
+    "Coordonner les relations presse et les visites de presse"
+   ],
+   "inf": [
+    "80 %, entrée de suite, publiée le 23.10",
+    "Création de contenu (rédaction, photo, montage vidéo), Adobe, sensibilité visuelle",
+    "Français excellent ; anglais ou allemand en atout",
+    "⚠️ Contrat non précisé",
+    "⚠️ Intérêt pour le vin et le terroir attendu"
+   ],
+   "at": "Ton œil de DA et ta production de contenu rapide sont le cœur de l'annonce ; montre 2-3 formats courts vidéo/visuels."
   }
  ]
 }
