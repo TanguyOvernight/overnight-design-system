@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-10-25",
+ "maj": "2026-10-26",
  "offres": [
   {
    "d": "2026-10-03",
@@ -3716,6 +3716,40 @@
     "⚠️ Intérêt pour le vin et le terroir attendu"
    ],
    "at": "Ton œil de DA et ta production de contenu rapide sont le cœur de l'annonce ; montre 2-3 formats courts vidéo/visuels."
+  },
+  {
+   "d": "2026-10-26",
+   "b": 56,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Digital Marketing Manager",
+   "c": "Quantis",
+   "l": "EPFL Innovation Park (Lausanne)",
+   "dist": "Ecublens",
+   "tx": "n.p.",
+   "ct": "n.p.",
+   "xp": "n.p.",
+   "lg": "EN ?",
+   "g": false,
+   "u": null,
+   "n": "⚠️ Non vérifiée : vue seulement sur le job board de l'EPFL Innovation Park, sans date ni lien direct. 🔎 à retrouver : cherche « Digital Marketing Manager » Quantis sur le site carrières de Quantis ou sur LinkedIn.",
+   "fit": {
+    "m": 3,
+    "da": 1,
+    "ia": 0,
+    "pct": 50
+   },
+   "ms": [
+    "Marketing digital d'un cabinet de conseil en durabilité"
+   ],
+   "inf": [
+    "⚠️ Date, taux et contrat inconnus",
+    "⚠️ Lien non vérifié",
+    "EPFL Innovation Park : ≈ 5 km de Lausanne"
+   ],
+   "at": "Intitulé dans ta cible élargie, à deux pas de Lausanne : vaut une recherche de 2 minutes sur le site de Quantis."
   }
  ]
 }

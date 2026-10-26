@@ -1,7 +1,7 @@
 {
  "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
- "maj": "2026-10-25",
- "dernier_brief": 55,
+ "maj": "2026-10-26",
+ "dernier_brief": 56,
  "vus": {
   "jobup": [
    "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -815,7 +815,21 @@
    "2690a62d-c437-4fd9-995c-70853e6f19cc",
    "ab51ef33-8b35-4658-a278-f2c7be135137",
    "8b9a01dd-f663-4895-9202-0a0bebfbd96c",
-   "cd0e0079-df08-4491-8c6a-bb0a74c647dd"
+   "cd0e0079-df08-4491-8c6a-bb0a74c647dd",
+   "9f64ac93-b07f-4069-888f-0f4c71d5a534",
+   "39362c53-b411-4f4a-b013-46f10c08e425",
+   "bd576bea-56f6-482b-a8d3-5cb7eca53c71",
+   "b6b232fb-daff-4a0c-93ba-581977800f6f",
+   "b103412f-d109-4a92-b72d-bc54ff8904b6",
+   "5ada28b7-a8e2-471f-ae9e-e030da48b663",
+   "bfe026f2-5e76-448e-94de-c2cc4c2a06d2",
+   "bad22f85-4885-4e4e-b5e8-1a584fb4a5d2",
+   "959e8691-817d-43ac-a1f1-e61ee18b2d29",
+   "9278efd1-58fe-4212-8cf6-e7d53fab5b23",
+   "1e424c26-3ed2-4531-a9c8-a3d30d16fa23",
+   "5301ec43-fcf4-4e57-84db-c970b7eead3d",
+   "3c637157-70a9-4a4a-9a53-2bf641003673",
+   "9d8dea6c-c368-48bb-9269-d1d7c75d26b3"
   ],
   "ats_employeurs": [
    "https://recrutement.eben-hezer.ch/jobs/7602918-responsable-communication-et-recherche-de-fonds",
@@ -2579,7 +2593,24 @@
    "4478273237",
    "4474799144",
    "4475002130",
-   "4481917203"
+   "4481917203",
+   "4483375611",
+   "4482905649",
+   "4481423402",
+   "4483506832",
+   "4483395626",
+   "4481079681",
+   "4481078805",
+   "4475307432",
+   "4481411776",
+   "4482913812",
+   "4482908946",
+   "4464889653",
+   "4482907732",
+   "4482687947",
+   "4464899042",
+   "4482691096",
+   "4481099800"
   ],
   "chuv": [
    "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html"
@@ -2627,7 +2658,8 @@
    "jobagent:3254744a77 (Akiden bright)",
    "wttj:propulse-lab copywriter freelance + CDI",
    "emplois-vaud:3253533672 (Benezet)",
-   "hosco:createur-de-contenus-visuels sandoz (09.09, fraîcheur incertaine)"
+   "hosco:createur-de-contenus-visuels sandoz (09.09, fraîcheur incertaine)",
+   "Quantis — Digital Marketing Manager (EPFL Innovation Park, 26.10, non vérifiée)"
   ],
   "ashby": [
    "adaptyv:5a44f0eb",
@@ -4489,6 +4521,14 @@
    "titre": "Community Manager & Chargé·e de communication digitale",
    "entreprise": "Cave de la Côte (coopérative viticole)",
    "lien": "https://www.jobscout24.ch/en/job/689c5add-103a-4690-a777-944b81b44ab6/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"
+  },
+  {
+   "brief": 56,
+   "date": "2026-10-26",
+   "score": "avoir",
+   "titre": "Digital Marketing Manager",
+   "entreprise": "Quantis",
+   "lien": null
   }
  ]
 }

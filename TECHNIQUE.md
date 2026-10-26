@@ -189,3 +189,11 @@ Le scratchpad a été vidé (clé SerpAPI et recheck.py perdus) et `jobspy` n'é
 Reprise : clé re-téléchargée depuis le Drive privé (serpapi-key.txt, id 1NP0TzkFaKPntei5eQN1eqcdipUDWRQ4u) vers
 <scratchpad>/serpapi.key (chmod 600, jamais affichée) ; `python3 -m pip install python-jobspy` (pas `pip`, qui vise un
 autre Python) ; recheck.py désormais versionné dans state/collecte/recheck.py (lancer depuis la racine du repo).
+
+## Addendum 26.10 — Job-Room (SECO) opérationnel
+`state/collecte/jobroom.py [jours]` : POST jobAdvertisements/_search, cantonCodes VD, mots-clés en boucle. Répond 200
+sans authentification. Le filtre mots-clés est large (beaucoup de bruit) → trier par titre. L'URL publiable est
+`externalUrl` (souvent jobup/jobs.ch/jobscout24 avec utm). Attention : certaines externalUrl n'ont pas de schéma
+(« www.jobs.ch/… ») — ne PAS y ajouter « https:// » soi-même (ce serait composer) : utiliser à la place l'URL jobup/
+jobscout24 du même UUID si elle apparaît verbatim dans une autre réponse, sinon publier sans lien + 🔎.
+Dédup : vus.jobroom (IDs Job-Room).
