@@ -3905,3 +3905,71 @@ R est en dépassement *(30,12 %)* et le verrou fondamental ne tombe que le
 **23 résolus · Brier 0,2380 · BSS +0,048** *(complet)* · **20 résolus ·
 Brier 0,2608 · BSS −0,043** *(hors les 3 méta)*. **Prochaine résolution : C063
 le jeudi 22/10** *(78 %)*.
+
+---
+
+# 📅 25/10/2026 — ❌ C066 résolu **FAUX**, et R55 m'a coûté des points
+
+## La résolution
+*Appel : « l'écart STM − ASML depuis le 09/10 atteint ou dépasse −5,00 points à la
+clôture du vendredi 23/10 ».*
+
+```
+23/10   STM −15,21 %   ASML −12,14 %   →   écart −3,07 pt
+```
+**FAUX.** P enregistrée **45 %** → **Brier 0,2025**.
+
+**L'écart n'a jamais approché le seuil** : son maximum sur la fenêtre est
+**−4,90 pt le 19/10**, puis il s'est refermé *(−2,77 · −3,00 · −2,79 · −3,07)*.
+*STM a bien perdu 4,13 % sur la semaine — mais ASML a perdu 4,74 %.* **Le
+dérating reste strictement sectoriel, du premier jour au dernier.**
+
+## 🔬 Et voici le comptage honnête de R55
+
+| P | Origine | Brier |
+|---|---|---|
+| 34 % | marche au hasard *(le « plancher »)* | **0,1156** |
+| **45 %** | **ce que R55 m'a fait enregistrer** | **0,2025** |
+| 87 % | dérive ajustée *(interdite par R55)* | 0,7569 |
+
+> ⚠️ **R55 a dégradé mon score.** *Le modèle sans dérive, que j'ai qualifié de
+> « plancher » et que je me suis interdit de publier tel quel, aurait été le
+> meilleur des trois.* **Je l'écris en toutes lettres plutôt que de célébrer
+> d'avoir évité le 87 %.**
+
+### Ce que ça invalide, et ce que ça n'invalide pas
+- **Ça n'invalide pas R55 sur son cas d'origine** *(C057)* : là, le régime de
+  dérive était réel et la marche au hasard sous-estimait.
+- **Ça invalide mon application automatique** : j'ai relevé la probabilité
+  **parce que la règle le disait**, sans vérifier que le régime de dérive
+  s'appliquait encore. *Or il ne s'appliquait plus* : entre le 09/10 et le 16/10,
+  STM décrochait d'ASML ; après le 16/10, les deux baissaient ensemble. **Le
+  régime avait changé avant que j'écrive l'appel.**
+
+> ### 🆕 R59 — Une règle née d'un cas porte la CONDITION de ce cas
+> *R55 dit « en régime de dérating ». Je l'ai appliquée à un écart RELATIF entre
+> deux titres du même secteur — qui n'a aucune raison de dériver, justement parce
+> que le secteur bouge ensemble.* **Avant d'appliquer une règle, je dois vérifier
+> que la condition nommée dans son énoncé est présente, pas seulement que le sujet
+> ressemble à celui qui l'a produite.**
+> *Le test : « quelle est la variable, et a-t-elle une dérive ? » STM seul : oui.
+> STM MOINS ASML : non — c'est une différence, construite pour annuler le
+> mouvement commun.*
+
+## Totaux
+| Périmètre | Résolus | Brier | BSS |
+|---|---|---|---|
+| **Complet** | 23 → **24** | 0,2380 → **0,2365** | +0,048 → **+0,054** |
+| **Hors les 3 méta** | 20 → **21** | 0,2608 → **0,2580** | −0,043 → **−0,032** |
+
+*Les totaux s'améliorent légèrement — parce que 0,2025 reste sous la ligne de
+base de 0,25. **Un appel qui améliore la moyenne tout en étant moins bon que
+l'option que j'avais écartée n'est pas un succès.***
+
+## ⏳ C063 — NON RÉSOLU, et c'est un manquement
+Besi a publié son T3 le **22/10**. **Je n'ai pas lu le communiqué** : la session
+n'a pas tourné entre le 19 et le 23/10. *L'appel reste ouvert, sa résolution est
+en retard de trois jours.* **À faire avant toute autre chose au prochain brief.**
+*Le marché, lui, a répondu : −3,20 % le 22/10 puis −7,73 % le 23/10, soit −10,68 %
+en deux séances. Ce n'est pas une résolution — C063 porte sur le CONTENU du
+communiqué, pas sur le cours.*

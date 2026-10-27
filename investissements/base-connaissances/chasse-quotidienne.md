@@ -3012,3 +3012,32 @@ sociale** et l'**ISIN** sur un document de l'émetteur.
 
 *La contrainte se formule désormais : « siège UE/EEE ET cotée sur Euronext
 Paris / Amsterdam / Bruxelles », les deux conditions, dans cet ordre.*
+
+---
+
+## R59 — Une règle née d'un cas porte la CONDITION de ce cas
+*(25/10/2026 — R55 appliquée hors de son domaine a dégradé C066)*
+
+R55 dit : *« quand le sous-jacent est pris dans un dérating de SECTEUR, un modèle
+sans dérive donne un plancher »*. Je l'ai appliquée à **l'écart STM − ASML**, et
+j'ai relevé ma probabilité de 34 % à 45 %. **Résultat : FAUX, et le 34 % que je
+m'étais interdit aurait mieux scoré.**
+
+**La faute est de domaine, pas de calcul.** Un écart entre deux titres du même
+secteur est **construit pour annuler le mouvement commun** — c'est précisément la
+variable qui n'a **aucune raison de dériver** quand le secteur baisse ensemble.
+
+```
+STM seul            → dérive réelle (le secteur l'entraîne)      → R55 s'applique
+STM MOINS ASML      → la dérive commune est soustraite           → R55 ne s'applique PAS
+```
+
+> **Appliquer une règle parce que le sujet ressemble à celui qui l'a produite,
+> c'est raisonner par analogie de surface.** *La règle nomme une condition :
+> « régime de dérating ». Je dois vérifier que la condition est présente SUR LA
+> VARIABLE DE RÉSOLUTION, pas sur le titre dont elle parle.*
+
+**Contrôle avant d'invoquer une règle probabiliste** : *« quelle est exactement
+la variable que je modélise, et la condition nommée par la règle porte-t-elle sur
+CETTE variable ? »* Si la variable est une différence, un ratio ou un écart, la
+plupart des règles de tendance ne s'y appliquent pas.
