@@ -3041,3 +3041,36 @@ STM MOINS ASML      → la dérive commune est soustraite           → R55 ne s
 la variable que je modélise, et la condition nommée par la règle porte-t-elle sur
 CETTE variable ? »* Si la variable est une différence, un ratio ou un écart, la
 plupart des règles de tendance ne s'y appliquent pas.
+
+---
+
+## R60 — Une parenthèse qui énumère doit dire si elle RESTREINT ou ÉTEND
+*(27/10/2026 — C063 avait deux lectures et 0,56 point de Brier d'écart)*
+
+L'énoncé de C063 disait : *« ne chiffre aucun effet attribuable au partenariat
+Applied Materials **(ni commande, ni carnet, ni guidance mentionnant hybrid
+bonding ou TCB avec un montant)** »*.
+
+```
+Parenthèse = glose de la clause principale   → VRAI   → Brier 0,0484
+Parenthèse = condition autonome              → FAUX   → Brier 0,6084
+```
+
+**Deux lectures grammaticalement défendables, issues opposées, et celle qui
+m'arrangeait valait 0,56 point.** *J'ai pu trancher honnêtement — mais grâce à
+une phrase de justification écrite dix jours plus tôt ailleurs dans le registre,
+pas grâce à l'énoncé.*
+
+> **Un énoncé qui n'est désambiguïsé que par son commentaire est un énoncé
+> ambigu.** *Le commentaire peut manquer, ou dire le contraire ; alors c'est moi
+> qui choisis, après coup, en connaissant l'issue.*
+
+**Règle de rédaction** : toute parenthèse énumérative dans un appel porte
+désormais une marque explicite —
+- **`c'est-à-dire`** → restrictive *(elle décrit les formes de la clause
+  principale, elle n'ajoute rien)*
+- **`et par ailleurs`** → extensive *(chaque élément est une condition
+  suffisante à lui seul)*
+
+*Le coût de la marque est de trois mots. Le coût de son absence est un arbitrage
+rétrospectif par l'auteur en sa propre faveur.*

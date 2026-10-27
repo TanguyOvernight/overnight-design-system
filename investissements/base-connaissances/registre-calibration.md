@@ -3973,3 +3973,72 @@ en retard de trois jours.* **À faire avant toute autre chose au prochain brief.
 *Le marché, lui, a répondu : −3,20 % le 22/10 puis −7,73 % le 23/10, soit −10,68 %
 en deux séances. Ce n'est pas une résolution — C063 porte sur le CONTENU du
 communiqué, pas sur le cours.*
+
+---
+
+# 📅 27/10/2026 — ✅ C063 résolu **VRAI**, et l'énoncé avait deux lectures
+
+## Ce que Besi a publié le 22/10
+*(sources : couverture de presse financière concordante — **le communiqué
+émetteur lui-même n'a PAS été lu**, voir la réserve en fin de section)*
+
+- CA T3 **283,4 M€** *(+113,6 % a/a)* · commandes **342,6 M€** *(+96,1 %,
+  consensus battu de ~15 %)* · résultat net **107,2 M€**, marge nette **37,8 %**.
+- **Hybrid bonding chiffré** : 23 clients en 2026, demande cumulée > **215
+  systèmes**, commandes hybrid bonding depuis janvier **plus que doublées**.
+- **Applied Materials mentionné** : Besi est nommé *key innovation partner* de
+  l'**EPIC Center** d'Applied, qui met en vitrine ses systèmes hybrid bonding et
+  TC Next. **Aucun montant n'accompagne cette mention.**
+
+## ⚖️ Les deux lectures, et pourquoi je tranche comme ça
+
+**L'énoncé** : *« le communiqué ne chiffre AUCUN effet attribuable au partenariat
+Applied Materials (ni commande, ni carnet, ni guidance mentionnant hybrid bonding
+ou TCB avec un montant) »*.
+
+| Lecture | La parenthèse… | Issue | Brier |
+|---|---|---|---|
+| **Étroite** *(retenue)* | **énumère les FORMES** que prendrait un effet attribuable | **VRAI** | **0,0484** |
+| Large | pose une condition **autonome** : tout chiffre d'hybrid bonding suffit | FAUX | 0,6084 |
+
+> ⚠️ **L'écart entre les deux est de 0,56 point de Brier, et la lecture qui
+> m'arrange est celle que je retiens.** *Je ne peux donc pas me contenter de la
+> choisir : il faut qu'elle ait été fixée avant les faits.*
+
+**Elle l'a été.** L'entrée du **12/10** écrit, en explicitant les 10 % de
+réserve : *« Besi pourrait choisir de mentionner le partenariat avec un chiffre
+de carnet **attribué** à l'hybrid bonding »*. **Le mot « attribué » rend la
+parenthèse subordonnée à la clause d'attribution** — et il a été écrit dix jours
+avant la publication. *C'est la convention du 15/08 appliquée : une règle de
+lecture ne vaut que fixée avant tout fait connu.*
+
+**Verdict** : Besi a mentionné le partenariat **sans aucun chiffre**, et a chiffré
+l'hybrid bonding **sans l'attribuer au partenariat**. → **VRAI**.
+
+## 🆕 R60 — Une parenthèse qui énumère doit dire si elle RESTREINT ou ÉTEND
+*J'ai écrit un énoncé dont la parenthèse pouvait se lire comme une glose ou comme
+une condition supplémentaire. Deux lectures, deux issues opposées, 0,56 point
+d'écart.* **Que j'aie pu trancher ne doit rien au hasard : ça tient à une phrase
+de justification écrite ailleurs, pas à l'énoncé lui-même.** *La prochaine fois,
+la chance peut manquer.*
+
+> **Tout énoncé d'appel contenant une parenthèse énumérative porte désormais
+> « c'est-à-dire » (restrictif) ou « et par ailleurs » (extensif), explicitement.**
+
+## ⚠️ Réserve de source — assumée
+Je résous sur de la **presse financière secondaire**, pas sur le communiqué de
+Besi. *R54 face B demande la source primaire.* **La résolution est donc marquée
+provisoire** : elle tient si le communiqué n'attribue aucun montant au
+partenariat, ce que plusieurs sources indépendantes rapportent concordamment,
+mais qu'aucune ne cite textuellement. **À reconfirmer sur besi.com.**
+
+## Totaux
+| Périmètre | Résolus | Brier | BSS |
+|---|---|---|---|
+| **Complet** | 24 → **25** | 0,2365 → **0,2290** | +0,054 → **+0,084** |
+| **Hors les 3 méta** | 21 → **22** | 0,2580 → **0,2485** | −0,032 → **+0,006** |
+
+🔑 **Le périmètre « hors méta » repasse positif pour la première fois** *(+0,006)*.
+*C'est la mesure la plus sévère que je m'applique, et elle était négative depuis
+des semaines. Marge minuscule — et obtenue sur un appel dont j'ai dû arbitrer
+l'énoncé. **Je ne la célèbre pas.***
