@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-10-26",
+ "maj": "2026-10-27",
  "offres": [
   {
    "d": "2026-10-03",
@@ -3750,6 +3750,151 @@
     "EPFL Innovation Park : ≈ 5 km de Lausanne"
    ],
    "at": "Intitulé dans ta cible élargie, à deux pas de Lausanne : vaut une recherche de 2 minutes sur le site de Quantis."
+  },
+  {
+   "d": "2026-10-27",
+   "b": 57,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "solide",
+   "t": "Brand & PR Specialist",
+   "c": "Jobgether (entreprise B2B tech & iGaming non nommée)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "non précisée",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/brand-pr-specialist-at-jobgether-4483604550",
+   "n": "Visibilité de marque d'un fournisseur B2B tech dans l'industrie du jeu (iGaming).",
+   "fit": {
+    "m": 3,
+    "da": 2,
+    "ia": 0,
+    "pct": 64
+   },
+   "ms": [
+    "Piloter la communication de marque et les canaux digitaux",
+    "Lancer ou relancer site et réseaux sociaux B2B",
+    "Créer supports marketing et sales enablement ; relations médias et annuaires du secteur"
+   ],
+   "inf": [
+    "Expérience gaming / iGaming souhaitée",
+    "Pas d'années chiffrées",
+    "⚠️ Secteur jeux d'argent en ligne",
+    "⚠️ Intermédiaire, contrat non précisé"
+   ],
+   "at": "Tes 2,5 ans chez Game Only et le relancement de marque Chat3D (site, réseaux, decks) cochent presque toutes les cases."
+  },
+  {
+   "d": "2026-10-27",
+   "b": 57,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "solide",
+   "t": "Head of Content and Editorial",
+   "c": "Jobgether (entreprise tech produit non nommée)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "non précisée",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/head-of-content-and-editorial-at-jobgether-4482947547",
+   "n": "Stratégie de contenu et standards éditoriaux d'une entreprise tech en croissance, production assistée par IA.",
+   "fit": {
+    "m": 2,
+    "da": 0,
+    "ia": 3,
+    "pct": 62
+   },
+   "ms": [
+    "Définir la stratégie de contenu et les standards éditoriaux",
+    "Encadrer une petite équipe de rédacteurs",
+    "Industrialiser la production avec des outils IA, piloter par les métriques"
+   ],
+   "inf": [
+    "Production de contenu assistée par IA au cœur du poste",
+    "⚠️ Profil éditorial / rédaction avant tout",
+    "⚠️ Intermédiaire, contrat non précisé"
+   ],
+   "at": "Ton usage expert de Claude et tes pipelines de contenu IA sont l'angle ; il faudra prouver une plume et du management d'équipe."
+  },
+  {
+   "d": "2026-10-27",
+   "b": 57,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Responsable communication — Sécurité civile et militaire",
+   "c": "État de Vaud (SSCM)",
+   "l": "Morges",
+   "dist": "Morges",
+   "tx": "n.p.",
+   "ct": "n.p.",
+   "xp": "« expérience significative »",
+   "lg": "FR",
+   "g": false,
+   "u": "https://fa-ewrg-saasfaeuraprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_xx/requisitions/preview/6052",
+   "n": "Communication du service cantonal de sécurité civile et militaire, incluant le Château de Morges et ses musées.",
+   "fit": {
+    "m": 2,
+    "da": 1,
+    "ia": 0,
+    "pct": 48
+   },
+   "ms": [
+    "Stratégie de communication interne et externe, conseil à la direction",
+    "Relations médias, porte-parole, communication de crise",
+    "Plan de promotion et de marketing du Château de Morges et ses musées"
+   ],
+   "inf": [
+    "⚠️ Master exigé ; expérience en relations médias et gestion de crise",
+    "⚠️ Conduite d'équipe demandée",
+    "⚠️ Taux non affiché ; casier judiciaire vierge requis"
+   ],
+   "at": "Le volet musée (marketing du Château) te parle, mais le cœur est la com institutionnelle et de crise."
+  },
+  {
+   "d": "2026-10-27",
+   "b": 57,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Senior Product Designer (UX/UI)",
+   "c": "Smile / UX-Republic",
+   "l": "Lausanne",
+   "dist": "Lausanne",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "5 ans min.",
+   "lg": "FR",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/senior-product-designer-ux-ui-lausanne-at-smile-4482945078",
+   "n": "Agence UX en mission chez une organisation internationale : refonte d'écosystèmes digitaux complexes.",
+   "fit": {
+    "m": 0,
+    "da": 3,
+    "ia": 1,
+    "pct": 52
+   },
+   "ms": [
+    "Recherche et tests utilisateurs",
+    "Parcours, wireframes, prototypes et UI haute fidélité sur Figma",
+    "Contribuer au design system ; intégrer les outils de conception assistée par IA"
+   ],
+   "inf": [
+    "⚠️ Expérience demandée : 5 ans en product design UX/UI",
+    "Figma et design system au cœur",
+    "⚠️ Poste de design produit, pas marketing"
+   ],
+   "at": "Ton niveau Figma et ton design system appliqué au code jouent, mais il faudra un portfolio UX produit."
   }
  ]
 }
