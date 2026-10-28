@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-10-27",
+ "maj": "2026-10-28",
  "offres": [
   {
    "d": "2026-10-03",
@@ -3833,9 +3833,9 @@
    "s": "avoir",
    "t": "Responsable communication — Sécurité civile et militaire",
    "c": "État de Vaud (SSCM)",
-   "l": "Morges",
+   "l": "Morges / Gollion",
    "dist": "Morges",
-   "tx": "n.p.",
+   "tx": "80-100%",
    "ct": "n.p.",
    "xp": "« expérience significative »",
    "lg": "FR",
@@ -3856,7 +3856,7 @@
    "inf": [
     "⚠️ Master exigé ; expérience en relations médias et gestion de crise",
     "⚠️ Conduite d'équipe demandée",
-    "⚠️ Taux non affiché ; casier judiciaire vierge requis"
+    "Taux 80-100 % (Job-Room)"
    ],
    "at": "Le volet musée (marketing du Château) te parle, mais le cœur est la com institutionnelle et de crise."
   },
@@ -3895,6 +3895,43 @@
     "⚠️ Poste de design produit, pas marketing"
    ],
    "at": "Ton niveau Figma et ton design system appliqué au code jouent, mais il faudra un portfolio UX produit."
+  },
+  {
+   "d": "2026-10-28",
+   "b": 58,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Responsable Communication, Marketing & Engagement Numérique (remplacement)",
+   "c": "Alimentarium",
+   "l": "Vevey",
+   "dist": "Vevey",
+   "tx": "80%",
+   "ct": "CDD 6 mois (déc. 2026 → juin 2027)",
+   "xp": "3 à 5 ans (idéalement)",
+   "lg": "FR",
+   "g": false,
+   "u": null,
+   "n": "⚠️ Non vérifiée : annonce LinkedIn retirée (404), vue encore sur Google Jobs. 🔎 à retrouver : cherche « Responsable Communication Marketing Engagement Numérique » sur le site de l'Alimentarium.",
+   "fit": {
+    "m": 3,
+    "da": 1,
+    "ia": 0,
+    "pct": 50
+   },
+   "ms": [
+    "Déployer la stratégie de communication et de marketing du musée",
+    "Suivre et coordonner les projets en cours",
+    "Garantir la cohérence des communications sur tous les canaux"
+   ],
+   "inf": [
+    "⚠️ Remplacement de congé maternité, 6 mois",
+    "⚠️ Vevey : -1 au scoring géo",
+    "3 à 5 ans d'expérience idéalement",
+    "⚠️ Lien non vérifié (LinkedIn 404)"
+   ],
+   "at": "Un vrai poste de responsable com dans un musée Nestlé, mais court : utile comme tremplin en Suisse si l'annonce est encore ouverte."
   }
  ]
 }
