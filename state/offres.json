@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-10-28",
+ "maj": "2026-10-29",
  "offres": [
   {
    "d": "2026-10-03",
@@ -2893,7 +2893,7 @@
   {
    "d": "2026-10-16",
    "b": 48,
-   "st": "ouverte",
+   "st": "fermee",
    "cl": false,
    "dl": "2026-10-28",
    "s": "avoir",
@@ -2924,7 +2924,8 @@
     "⚠️ Rôle de conseil et conformité marque plus que de création",
     "Candidater avant le 28.10"
    ],
-   "at": "Marketing sportif au CIO à Lausanne : ton passé gaming/e-sport et ta rigueur d'identité de marque sont l'angle, mais c'est un poste de gouvernance."
+   "at": "Marketing sportif au CIO à Lausanne : ton passé gaming/e-sport et ta rigueur d'identité de marque sont l'angle, mais c'est un poste de gouvernance.",
+   "suivi": false
   },
   {
    "d": "2026-10-16",
@@ -3932,6 +3933,80 @@
     "⚠️ Lien non vérifié (LinkedIn 404)"
    ],
    "at": "Un vrai poste de responsable com dans un musée Nestlé, mais court : utile comme tremplin en Suisse si l'annonce est encore ouverte."
+  },
+  {
+   "d": "2026-10-29",
+   "b": 59,
+   "st": "ouverte",
+   "cl": false,
+   "dl": "2026-11-26",
+   "s": "avoir",
+   "t": "Concepteur multimédia",
+   "c": "Orllati",
+   "l": "Bioley-Orjulaz",
+   "dist": "Bioley-Orjulaz",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "5 ans min.",
+   "lg": "FR",
+   "g": false,
+   "u": "https://www.jobup.ch/fr/emplois/detail/c833e2d5-4732-4dc3-9959-55a0c7d9b3d1/?utm_source=job-room.ch&utm_medium=affiliate&utm_campaign=wb:jobup|tg:b2c|cn:ch|lg:fr|ct:targeting,nonbrand,job|cd:feedonomics-jobroom|mg:job-application|pd:n|tt:organic",
+   "n": "Groupe de construction romand : production photo, vidéo et graphique, gestion de la charte.",
+   "fit": {
+    "m": 1,
+    "da": 3,
+    "ia": 0,
+    "pct": 46
+   },
+   "ms": [
+    "Montages vidéo et son",
+    "Prises de vue photo et sélection d'images de chantiers",
+    "Supports graphiques (infographies, brochures), charte graphique, WordPress"
+   ],
+   "inf": [
+    "⚠️ 5 ans minimum",
+    "⚠️ Poste d'exécution multimédia",
+    "⚠️ ≈ 12 km de Lausanne, moins pratique en transports",
+    "Adobe (InDesign, Illustrator) ; drone en atout",
+    "En ligne jusqu'au 26.11 (API jobup)"
+   ],
+   "at": "Ta palette DA/motion colle à l'exécution, mais c'est un cran sous ton niveau et un peu loin."
+  },
+  {
+   "d": "2026-10-29",
+   "b": 59,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Growth Lead, Marketplace",
+   "c": "Jobgether (marketplace non nommée)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "non précisée",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/growth-lead-marketplace-at-jobgether-4483858517",
+   "n": "Croissance d'une marketplace de découverte reliant créateurs, communautés et produits.",
+   "fit": {
+    "m": 2,
+    "da": 1,
+    "ia": 0,
+    "pct": 44
+   },
+   "ms": [
+    "Stratégie de génération de demande, trafic, GMV",
+    "Lifecycle email et acquisition d'abonnés",
+    "SEO, recommandations, succès des créateurs"
+   ],
+   "inf": [
+    "⚠️ Track record de croissance de revenu ou de GMV exigé",
+    "⚠️ Rôle growth / performance",
+    "Intermédiaire, contrat non précisé"
+   ],
+   "at": "Le côté créateurs est sympa, mais le poste se juge sur des chiffres de croissance."
   }
  ]
 }
