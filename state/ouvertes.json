@@ -1,6 +1,6 @@
 {
  "_doc": "Suivi des meilleures offres en cours : 🎯 passées + ✅ likées + ✉️, tant que non déclinées ni envoyées. Re-check à CHAQUE run, MÉTHODE STRICTE (règle 04.09) : GET avec suivi de redirections — en ligne seulement si l'URL FINALE contient l'identifiant ET contenu d'offre présent ; 301 vers catégorie = fermée ; 404/410 = fermée. GRANDE PURGE exécutée le 04.09 (egress ouvert) : 10 retirées sur 13, bilan au brief n°8bis et au journal.",
- "maj": "2026-10-29",
+ "maj": "2026-10-30",
  "fermees_recemment": [
   "QoQa Content Manager Brico & Jardin (📌 11.09→24.09) : 410 Gone sur le lien canonique jobup au GET du 24.09 — retirée après 13 j ; QoQa a publié un Social Media Manager 60% le même jour (réorganisation équipe contenu)",
   "CHUV Motion designer-vidéaste (📌 28.08→08.09) : page « Annonce fermée » au GET du 08.09 — retirée ; 1 mois en ligne au total",
@@ -103,7 +103,7 @@
    "score": "🎯",
    "lien": "https://ch.linkedin.com/jobs/view/marketing-digital-communications-lead-80%25-100%25-at-swissvet-group-4372250006",
    "premiere_apparition": "2026-08-28",
-   "dernier_check": "2026-10-29",
+   "dernier_check": "2026-10-30",
    "statut": "en ligne (GET+titre ✔ 03.10) — 37 j"
   },
   {
@@ -114,7 +114,7 @@
    "score": "🎯",
    "lien": "https://ch.linkedin.com/jobs/view/graphic-multimedia-designer-at-matisa-mat%C3%A9riel-industriel-s-a-4467750491",
    "premiere_apparition": "2026-09-16",
-   "dernier_check": "2026-10-29",
+   "dernier_check": "2026-10-30",
    "statut": "en ligne (GET+titre ✔ 03.10) — 18 j — ⚠️ 200+ candidatures LinkedIn (second regard 03.10) : très disputé",
    "note": "3-5 ans, motion+3D+Figma, FR/EN ; publiée 15.09 ; meilleur fit DA pur à date"
   },
@@ -126,7 +126,7 @@
    "score": "🎯",
    "lien": "https://ch.linkedin.com/jobs/view/technical-marketing-engineer-at-neural-concept-4471760796",
    "premiere_apparition": "2026-09-30",
-   "dernier_check": "2026-10-29",
+   "dernier_check": "2026-10-30",
    "statut": "en ligne (GET+titre ✔ 03.10 après 429 transitoire) — 4e jour",
    "note": "PREMIER poste marketing opérationnel de Neural Concept (CMO ouvert 16.09) ; Entry level, anglais seul, démos/contenu technique/co-marketing NVIDIA ; contrat non explicité (full-time) ; angle : postuler avec une démo"
   },
@@ -138,7 +138,7 @@
    "score": "🎯",
    "lien": "https://ch.linkedin.com/jobs/view/community-manager-at-adaptyv-4481264294",
    "premiere_apparition": "2026-10-03",
-   "dernier_check": "2026-10-29",
+   "dernier_check": "2026-10-30",
    "statut": "republiée 19.10 (nouvelle annonce LinkedIn, GET+titre ✔ 21.10)",
    "note": "re-check via API Ashby : isListed"
   },
@@ -150,7 +150,7 @@
    "score": "🎯",
    "lien": "https://ch.linkedin.com/jobs/view/content-lead-at-jobgether-4474670951",
    "premiere_apparition": "2026-10-06",
-   "dernier_check": "2026-10-29",
+   "dernier_check": "2026-10-30",
    "statut": "en ligne (GET+titre ✔ 06.10)"
   },
   {
@@ -161,7 +161,7 @@
    "score": "🎯",
    "lien": "https://ch.linkedin.com/jobs/view/content-creator-social-media-specialist-at-freshape-4474463176",
    "premiere_apparition": "2026-10-08",
-   "dernier_check": "2026-10-29",
+   "dernier_check": "2026-10-30",
    "statut": "en ligne (GET+titre ✔ 08.10)"
   },
   {
@@ -172,7 +172,7 @@
    "score": "👀",
    "lien": "https://ch.linkedin.com/jobs/view/staff-brand-designer-consumer-at-kraken-4479163672",
    "premiere_apparition": "2026-10-16",
-   "dernier_check": "2026-10-29",
+   "dernier_check": "2026-10-30",
    "statut": "en ligne (GET+titre ✔ 16.10)"
   },
   {
@@ -183,7 +183,7 @@
    "score": "✅",
    "lien": "https://ch.linkedin.com/jobs/view/ux-ui-designer-at-jobgether-4479327882",
    "premiere_apparition": "2026-10-17",
-   "dernier_check": "2026-10-29",
+   "dernier_check": "2026-10-30",
    "statut": "en ligne (GET+titre ✔ 17.10)"
   },
   {
@@ -194,7 +194,7 @@
    "score": "✅",
    "lien": "https://ch.linkedin.com/jobs/view/growth-lead-at-jobgether-4480454298",
    "premiere_apparition": "2026-10-21",
-   "dernier_check": "2026-10-29",
+   "dernier_check": "2026-10-30",
    "statut": "en ligne (GET+titre ✔ 21.10)"
   },
   {
@@ -205,7 +205,7 @@
    "score": "✅",
    "lien": "https://ch.linkedin.com/jobs/view/e-commerce-crm-executive-at-bat-4481100211",
    "premiere_apparition": "2026-10-22",
-   "dernier_check": "2026-10-29",
+   "dernier_check": "2026-10-30",
    "statut": "en ligne (GET+titre ✔ 22.10)"
   },
   {
@@ -216,7 +216,7 @@
    "score": "✅",
    "lien": "https://ch.linkedin.com/jobs/view/creative-strategist-at-jobgether-4481686401",
    "premiere_apparition": "2026-10-24",
-   "dernier_check": "2026-10-29",
+   "dernier_check": "2026-10-30",
    "statut": "en ligne (GET+titre ✔ 24.10)"
   },
   {
@@ -227,7 +227,7 @@
    "score": "✅",
    "lien": "https://www.jobscout24.ch/en/job/689c5add-103a-4690-a777-944b81b44ab6/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
    "premiere_apparition": "2026-10-25",
-   "dernier_check": "2026-10-29",
+   "dernier_check": "2026-10-30",
    "statut": "en ligne (jobscout24 GET+titre ✔ 25.10 ; jobs.ch 403)"
   },
   {
@@ -238,7 +238,7 @@
    "score": "✅",
    "lien": "https://ch.linkedin.com/jobs/view/brand-pr-specialist-at-jobgether-4483604550",
    "premiere_apparition": "2026-10-27",
-   "dernier_check": "2026-10-29",
+   "dernier_check": "2026-10-30",
    "statut": "en ligne (GET+titre ✔ 27.10)"
   },
   {
@@ -249,7 +249,7 @@
    "score": "✅",
    "lien": "https://ch.linkedin.com/jobs/view/head-of-content-and-editorial-at-jobgether-4482947547",
    "premiere_apparition": "2026-10-27",
-   "dernier_check": "2026-10-29",
+   "dernier_check": "2026-10-30",
    "statut": "en ligne (GET+titre ✔ 27.10)"
   }
  ]
