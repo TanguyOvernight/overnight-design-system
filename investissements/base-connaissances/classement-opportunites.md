@@ -3105,3 +3105,34 @@ Classement **inchangé** : ① Cœur World (WPEA) ② Eli Lilly ③ Magnum ④ S
 - **④ STM 41,17 €** — **sous le seuil de 42 €** *(C057 résolu VRAI)*, mais le
   **test compagne n'est pas franchi** : −3,79 pt contre −5,00 requis. **PASSE
   maintenu.** Décision au **29/10** sur les résultats T3.
+
+---
+
+## 29/10/2026 — RE-CLASSEMENT : STM passe ③, le verrou fondamental est levé
+
+| Rang | Dossier | Chiffre | Mouvement |
+|---|---|---|---|
+| ① | **Cœur World (WPEA)** | 7,21 € *(27/10)* | **=** |
+| ② | **Eli Lilly** | 1 281,91 $ · seuil 1 020 $ *(−20,4 %)* | **=** |
+| ③ | **STMicroelectronics** | 43,36 € · seuil 42 € | **▲ de ④ à ③** |
+| ④ | Magnum Ice Cream | — | **▼ de ③ à ④** |
+
+### Motif du changement de rang
+**STM a passé son test fondamental du 29/10, les deux branches :** marge brute
+**34,8 % → 37,3 %** séquentiel *(T4 guidé à 39,0 %)* et **P/E fwd 2027 de 16 à
+19×** selon la source, contre un seuil de 30× — *il faudrait un BPA 35 % sous la
+plus basse estimation publiée pour échouer*.
+
+**Magnum reste dormant** : aucune thèse active, aucun chiffre au dossier.
+*Un dossier dont le verrou fondamental vient d'être levé bat un dossier sans
+thèse. Le rang mesure l'espérance, pas l'exécutabilité.*
+
+### ⛔ Et STM reste INACHETABLE — deux verrous indépendants
+1. **R = 31,34 %** contre un plafond de 25 %.
+2. **Le cours est repassé AU-DESSUS du seuil** : 43,36 € contre 42 € requis,
+   après **+9,86 % en deux séances** *(dont +7,06 % le 27/10)*.
+
+> 🔑 **La contrainte mordante n'a jamais été le prix.** *STM a coté sous 42 € du
+> 15 au 26/10 — douze jours pendant lesquels R interdisait tout achat.* **Le
+> seuil de prix a été atteint, le verrou fondamental a été levé, et aucun achat
+> n'a été possible une seule journée : parce que le cœur est trop petit.**

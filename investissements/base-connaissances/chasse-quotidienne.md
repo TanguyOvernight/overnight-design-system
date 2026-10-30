@@ -3074,3 +3074,34 @@ désormais une marque explicite —
 
 *Le coût de la marque est de trois mots. Le coût de son absence est un arbitrage
 rétrospectif par l'auteur en sa propre faveur.*
+
+---
+
+## R61 — Un appel se cherche par son ÉVÉNEMENT DE RÉSOLUTION, pas par son sujet
+*(29/10/2026 — C049 et C057 étaient le même appel, ouverts à cinq semaines d'écart)*
+
+```
+C049  26/08  « STMPA clôture ≤ 42,00 € avant le 31/10/2026 »          P = 72 %
+C057  27/09  « STM touche 42,00 € ou moins en clôture d'ici 31/10 »   P = 34 %
+```
+
+**Même proposition, même butée, même source.** Les deux ouverts en même temps,
+aucun ne citant l'autre, et **38 points d'écart d'évaluation**.
+
+> **Deux appels qui se résolvent sur la même observation ne sont pas deux points
+> de données.** *Ils comptent une fois, gonflent `n`, et si les deux sont bons ils
+> flattent la moyenne deux fois.* **Mon périmètre sévère est repassé négatif dès
+> que j'ai retiré la paire.**
+
+**Contrôle à l'ouverture de tout appel** — chercher dans les appels ouverts :
+*« y en a-t-il un dont la **source de résolution** et la **date de butée** sont
+identiques ? »* Si oui : **réviser l'existant, ne pas en créer un second.**
+
+*Chercher par le sujet n'aurait rien donné : « STM » renvoie une dizaine
+d'entrées. C'est le couple (source, butée) qui identifie un appel.*
+
+### Et l'incohérence que le contrôle aurait attrapée
+Le 27/09 j'ai inscrit **34 %** pour un événement que j'évaluais à **72 %** cinq
+semaines plus tôt, en raisonnant depuis un cours récent sans consulter mes
+propres archives. **Une probabilité qui change de 38 points sans qu'aucune
+information le justifie n'est pas une révision : c'est un oubli.**

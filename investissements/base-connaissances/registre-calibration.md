@@ -4042,3 +4042,93 @@ mais qu'aucune ne cite textuellement. **À reconfirmer sur besi.com.**
 *C'est la mesure la plus sévère que je m'applique, et elle était négative depuis
 des semaines. Marge minuscule — et obtenue sur un appel dont j'ai dû arbitrer
 l'énoncé. **Je ne la célèbre pas.***
+
+---
+
+# 📅 29/10/2026 — STM publie · C049 résolu VRAI · ⚠️ et j'ai scoré DEUX FOIS le même événement
+
+## 1. Les résultats T3 de STM — les deux conditions sont REMPLIES
+
+| | T3 2025 | T2 2026 | **T3 2026** | T4 2026 *(guidance)* |
+|---|---|---|---|---|
+| Marge brute | 33,2 % | 34,8 % | **37,3 %** | **39,0 %** |
+
+- **CA 3,76 Md$** *(point médian visé 3,70)* · **marge brute 37,3 %** *(visé 37,0)*
+  · RN **291 M$**, **0,31 $** par action · marge opérationnelle non-GAAP 11,4 %.
+- **Guidance T4 : CA 4,15 Md$, +10,5 % séquentiel**, marge brute **39,0 %**.
+
+**Condition ② — marge brute en hausse séquentielle : REMPLIE** *(+2,5 pt)*.
+
+**Condition ① — P/E fwd < 30× sur consensus 2027 publié : REMPLIE**, et elle
+résiste à toute la dispersion des sources :
+
+| BPA 2027 publié | Source | P/E à 48,45 $ |
+|---|---|---|
+| 3,00 $ | borne haute | 16,2× |
+| 2,77 $ | note d'août, révisée en baisse | 17,5× |
+| 2,68 $ | ancienne (~9 mois) | 18,1× |
+| 2,50 $ | borne basse | 19,4× |
+
+> ✅ **Il faudrait un BPA 2027 de 1,61 $ pour atteindre 30× — soit 35 % sous la
+> plus basse estimation publiée.** *La conclusion survit à toute la fourchette :
+> c'est le test que j'avais inventé le 15/10 et mal appliqué alors ; ici il tient
+> vraiment, et je peux dire de combien.*
+
+**→ Le PASSE ne devient PAS définitif.** Le verrou fondamental est levé.
+
+### Mais le dossier reste INACHETABLE, pour deux raisons indépendantes
+1. **R = 31,34 %** *(plafond 25 %)* — aucune action individuelle ne peut entrer.
+2. **STM cote 43,36 €** *(clôture du 27/10)*, soit **+3,2 % AU-DESSUS** du seuil
+   d'entrée de 42 €.
+
+> 🔑 **Et voici ce que six semaines de modèles de barrière m'ont caché : la
+> contrainte mordante n'a JAMAIS été le prix.** *Le prix est passé sous 42 € du
+> 15 au 26/10 — douze jours. Pendant ces douze jours, R était à 30 %, et aucun
+> achat n'était possible de toute façon.* **J'ai raffiné des corrections de
+> barrière discrète sur une condition non mordante pendant que la seule qui liait
+> — un cœur trop petit — restait inchangée.**
+
+---
+
+## 2. ⚠️ C049 résolu VRAI — et c'est le MÊME événement que C057
+
+**C049** *(26/08, P inscrite **72 %**)* : « STMPA clôture ≤ 42,00 € sur Euronext
+Paris au moins une fois avant le 31/10/2026 ».
+**C057** *(27/09, P inscrite **34 %** puis révisée à 67 %)* : « STM touche
+42,00 € ou moins en CLÔTURE d'ici le 31/10/2026 ».
+
+**Même proposition. Même butée. Même source de résolution.** Résolus VRAI par les
+mêmes clôtures *(41,41 € le 15/10 ; 39,47 € le 23/10)*.
+
+### Deux fautes, et la seconde est pire
+1. **J'ai ouvert un doublon** sans voir que l'appel existait déjà — les deux sont
+   restés ouverts simultanément, **aucun ne citant l'autre**.
+2. **Je les ai évalués à 72 % et à 34 % : 38 points d'écart sur la même
+   proposition.** *Le 27/09, j'ai raisonné à partir d'un cours récent en ignorant
+   que j'avais inscrit 72 % cinq semaines plus tôt.* **Une incohérence interne de
+   cette taille, maintenue sans la voir, en dit plus long sur ma calibration que
+   n'importe quel Brier.**
+
+### Les totaux, sous TROIS périmètres étiquetés
+
+| Périmètre | Résolus | Brier | BSS |
+|---|---|---|---|
+| **Complet** *(C049 compté)* | **26** | **0,2232** | **+0,107** |
+| Hors les 3 méta | 23 | 0,2411 | +0,036 |
+| **Hors méta ET hors la paire C049/C057** | **21** | **0,2551** | **−0,021** |
+
+> 🛑 **Le périmètre le plus sévère REPASSE NÉGATIF.** *J'ai annoncé mardi « le
+> périmètre sévère repasse positif pour la première fois » à +0,006. Cette ligne
+> était en partie un double comptage : le même événement y entrait deux fois, et
+> les deux fois favorablement (0,1089 et 0,0784).* **Je la corrige.**
+
+## 🆕 R61 — Avant d'ouvrir un appel, chercher l'ÉVÉNEMENT dans les appels ouverts
+*Pas le sujet, pas le titre : **l'événement de résolution**.* Deux appels qui se
+résolvent sur **la même observation** ne sont pas deux points de données — ils
+comptent une fois et gonflent `n`.
+
+**Contrôle obligatoire à l'ouverture** : *« existe-t-il un appel ouvert dont la
+source ET la date de résolution sont les mêmes ? »* Si oui → **réviser l'appel
+existant, ne pas en ouvrir un second.**
+*Bénéfice collatéral : le contrôle aurait révélé l'écart 72 % / 34 % le jour même,
+et m'aurait forcé à le réconcilier au lieu de le porter cinq semaines.*
