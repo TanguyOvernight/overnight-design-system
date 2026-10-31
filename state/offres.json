@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-10-30",
+ "maj": "2026-10-31",
  "offres": [
   {
    "d": "2026-10-03",
@@ -4007,6 +4007,181 @@
     "Intermédiaire, contrat non précisé"
    ],
    "at": "Le côté créateurs est sympa, mais le poste se juge sur des chiffres de croissance."
+  },
+  {
+   "d": "2026-10-31",
+   "b": 61,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "solide",
+   "t": "Creative Marketing Manager",
+   "c": "Jobgether (plateforme de brain training non nommée)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "1 an min.",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/creative-marketing-manager-at-jobgether-4484848061",
+   "n": "Créas publicitaires d'une plateforme digitale de développement cognitif.",
+   "fit": {
+    "m": 2,
+    "da": 2,
+    "ia": 0,
+    "pct": 60
+   },
+   "ms": [
+    "Concevoir et optimiser les créas publicitaires",
+    "Traduire insights audience et données de performance en concepts",
+    "Analyser la concurrence, travailler avec designers et fondateurs"
+   ],
+   "inf": [
+    "1 an minimum en marketing créatif",
+    "⚠️ Orienté performance publicitaire",
+    "⚠️ Intermédiaire, contrat non précisé"
+   ],
+   "at": "Ton double profil DA + marketing colle ; montre des créas testées et itérées."
+  },
+  {
+   "d": "2026-10-31",
+   "b": 61,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Senior Creative Designer",
+   "c": "Coop",
+   "l": "Rolle",
+   "dist": "Rolle",
+   "tx": "80-100%",
+   "ct": "n.p.",
+   "xp": "« Senior », années non précisées",
+   "lg": "DE ?",
+   "g": false,
+   "u": null,
+   "n": "⚠️ Non vérifiée : page coopjobs.ch bloquée par le proxy. 🔎 à retrouver : cherche « Senior Creative Designer » Rolle sur jobs.coopjobs.ch.",
+   "fit": {
+    "m": 1,
+    "da": 3,
+    "ia": 0,
+    "pct": 52
+   },
+   "ms": [
+    "Master designs et systèmes visuels multicanaux (POS, print, digital, image)",
+    "Garantir la qualité créative des campagnes avec le marketing"
+   ],
+   "inf": [
+    "⚠️ Annonce rédigée en allemand : allemand probablement requis",
+    "⚠️ Séniorité à vérifier",
+    "⚠️ Rolle : au-delà de Morges",
+    "⚠️ Lien non vérifié"
+   ],
+   "at": "Les systèmes visuels sont ton terrain ; tout dépend de la langue de travail."
+  },
+  {
+   "d": "2026-10-31",
+   "b": 61,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Content & CRM Specialist (Ticketing)",
+   "c": "UEFA Events SA",
+   "l": "Nyon (1 j de télétravail/sem.)",
+   "dist": "Nyon",
+   "tx": "100%",
+   "ct": "CDD fév. 2027 → juil. 2028",
+   "xp": "4 à 6 ans",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/content-crm-specialist-ticketing-at-uefa-4483475860",
+   "n": "Contenus et storytelling de la billetterie UEFA EURO 2028 et des finales de clubs.",
+   "fit": {
+    "m": 2,
+    "da": 1,
+    "ia": 0,
+    "pct": 50
+   },
+   "ms": [
+    "Contribuer à la stratégie de communication et de storytelling billetterie",
+    "Rédiger et optimiser les communications aux fans",
+    "Gérer les campagnes CRM"
+   ],
+   "inf": [
+    "⚠️ 4 à 6 ans comme rédacteur / copywriter",
+    "⚠️ Nyon : loin de Lausanne",
+    "Contrat d'environ 18 mois"
+   ],
+   "at": "L'EURO 2028 est un beau nom de CV ; le poste est surtout rédactionnel."
+  },
+  {
+   "d": "2026-10-31",
+   "b": 61,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Influencer Marketing Manager",
+   "c": "Hilo by Aktiia",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "2 ans min.",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/influencer-marketing-manager-m-f-d-at-hilo-by-aktiia-4485342797",
+   "n": "Scale-up medtech suisse (tensiomètre sans brassard, 96 M$ levés), remote-first.",
+   "fit": {
+    "m": 2,
+    "da": 1,
+    "ia": 0,
+    "pct": 46
+   },
+   "ms": [
+    "Piloter le marketing d'influence et de créateurs"
+   ],
+   "inf": [
+    "⚠️ 2+ ans en marketing d'influence exigés",
+    "Scale-up bien financée, issue du CSEM"
+   ],
+   "at": "Bon employeur suisse, mais spécialisation influence pure."
+  },
+  {
+   "d": "2026-10-31",
+   "b": 61,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Product Marketing Manager – GraphAware Solutions",
+   "c": "Jobgether (pour GraphAware)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "5 ans (dont 3 en PMM)",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/product-marketing-manager-graphaware-solutions-at-jobgether-4484839085",
+   "n": "Positionnement et go-to-market de solutions d'intelligence anti-criminalité financière.",
+   "fit": {
+    "m": 3,
+    "da": 0,
+    "ia": 1,
+    "pct": 46
+   },
+   "ms": [
+    "Positionnement, messages et go-to-market",
+    "Traduire des capacités techniques en propositions de valeur"
+   ],
+   "inf": [
+    "⚠️ 5 ans en marketing B2B tech dont 3 en product marketing",
+    "⚠️ Secteur finance / conformité"
+   ],
+   "at": "Ton marketing B2B tech parle, mais le PMM pur demande un historique dédié."
   }
  ]
 }
