@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-10-31",
+ "maj": "2026-11-01",
  "offres": [
   {
    "d": "2026-10-03",
@@ -4182,6 +4182,78 @@
     "⚠️ Secteur finance / conformité"
    ],
    "at": "Ton marketing B2B tech parle, mais le PMM pur demande un historique dédié."
+  },
+  {
+   "d": "2026-11-01",
+   "b": 62,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "solide",
+   "t": "Email Marketing Manager",
+   "c": "Jobgether (produit B2C par abonnement non nommé)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "2 ans min.",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/email-marketing-manager-at-jobgether-4484829829",
+   "n": "Startup digitale early-stage : créer de zéro la fonction email d'un produit B2C par abonnement.",
+   "fit": {
+    "m": 3,
+    "da": 1,
+    "ia": 1,
+    "pct": 60
+   },
+   "ms": [
+    "Bâtir la stratégie lifecycle (onboarding, panier abandonné, rétention, upsell, win-back)",
+    "Transformer insights et données comportementales en revenu",
+    "Posséder tout le funnel email"
+   ],
+   "inf": [
+    "2+ ans en email marketing",
+    "⚠️ Orienté revenu / données",
+    "⚠️ Intermédiaire, contrat non précisé"
+   ],
+   "at": "Tes automatisations et ton emailing B2B chez Chat3D sont la preuve ; mets en avant une séquence que tu as construite seul."
+  },
+  {
+   "d": "2026-11-01",
+   "b": 62,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Consultant Marketing",
+   "c": "McDonald's Suisse",
+   "l": "Crissier (siège)",
+   "dist": "Crissier",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "5 ans min.",
+   "lg": "FR/EN",
+   "g": false,
+   "u": "https://www.jobup.ch/fr/emplois/detail/f2cf8b53-778b-4bed-a005-8d64a0fe773b/?utm_source=job-room.ch&utm_medium=affiliate&utm_campaign=wb:jobup|tg:b2c|cn:ch|lg:fr|ct:targeting,nonbrand,job|cd:feedonomics-jobroom|mg:job-application|pd:n|tt:organic",
+   "n": "Département marketing du siège suisse : campagnes nationales de marque, promotions et communication de confiance.",
+   "fit": {
+    "m": 3,
+    "da": 2,
+    "ia": 0,
+    "pct": 58
+   },
+   "ms": [
+    "Piloter des campagnes nationales 360° du brief au lancement",
+    "Traduire les insights consommateurs en plateformes créatives",
+    "Gérer et inspirer l'agence créative ; budgets multi-millions"
+   ],
+   "inf": [
+    "⚠️ Expérience demandée : 5 ans",
+    "Préférence retail / FMCG / marques globales",
+    "Crissier : ≈ 6 km, bus et métro"
+   ],
+   "at": "Grande marque à 6 km avec un vrai rôle de direction créative de campagnes : ton regard DA sur les briefs d'agence est l'angle."
   }
  ]
 }
