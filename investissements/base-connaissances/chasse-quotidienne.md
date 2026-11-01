@@ -3105,3 +3105,39 @@ Le 27/09 j'ai inscrit **34 %** pour un événement que j'évaluais à **72 %** c
 semaines plus tôt, en raisonnant depuis un cours récent sans consulter mes
 propres archives. **Une probabilité qui change de 38 points sans qu'aucune
 information le justifie n'est pas une révision : c'est un oubli.**
+
+---
+
+## R62 — Tout seuil de prix porte une condition de performance RELATIVE
+*(01/11/2026 — la question ouverte le 27/09 a sa réponse, par deux cas en miroir)*
+
+Le 27/09, en ouvrant l'appel sur STM, j'avais écrit que si le seuil était franchi
+il y aurait **~73 % de chances que ce soit pour la mauvaise raison**, et laissé en
+suspens la question : *faut-il adjoindre une condition relative à TOUS les seuils
+du classement ?* La semaine du 23 au 30/10 a fourni les deux cas :
+
+```
+STM     −11,6 %   contre ASML −7,8 %    écart < 5 pt   → mouvement SECTORIEL
+LILLY   +11,3 %   contre XLV  +3,1 %    écart +8,2 pt  → mouvement PROPRE
+```
+
+> **La même mesure discrimine dans les deux sens.** *Elle a dit « ne touche pas »
+> quand STM a franchi son seuil avec son secteur, et elle dit « c'est bien lui »
+> quand Lilly s'en détache de huit points.* **C'est exactement ce qu'on demande à
+> un test : qu'il puisse répondre non ET oui.**
+
+**Généralisation appliquée** : chaque seuil de prix du classement porte désormais
+une condition relative explicite, avec son comparable nommé à l'avance.
+
+| Dossier | Seuil | Comparable | Condition |
+|---|---|---|---|
+| STM | ≤ 42 € | ASML | sous-performance ≥ 5 pt depuis la date de référence |
+| **Eli Lilly** | **≤ 1 020 $** | **XLV** | **sous-performance ≥ 5 pt** *(ajoutée ce jour)* |
+
+**Le seuil de Lilly était le dernier seuil NU du classement.** *S'il avait été
+atteint par une baisse sectorielle, l'ancien dispositif aurait déclenché un achat
+— exactement la faute que le cas STM a rendue visible.*
+
+> **Un seuil de prix ne sait pas pourquoi le prix est arrivé là.** *Le comparable
+> se nomme à l'ouverture du seuil, jamais après : sinon on choisit celui qui donne
+> la réponse voulue.*

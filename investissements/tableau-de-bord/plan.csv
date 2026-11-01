@@ -1,11 +1,11 @@
 cle,libelle,valeur
-action,Action prioritaire,Investir sur le WPEA le cash qui dort sur ton PEA
-action_montant,Montant,304.26
+action,Action prioritaire,Investir 69 parts de WPEA avec le versement du 1er novembre
+action_montant,Montant,489.90
 action_frais,Frais estimés — à lire dans l'appli avant de valider,0
 seuil_frais,Au-delà de ce montant de frais préviens-moi,7
-prochain_versement,Prochain versement,2026-11-01
+prochain_versement,Prochain versement,2026-12-01
 prochain_versement_montant,Montant,500
-consigne,Consigne du jour,Semaine à plat (+0.09 %) grâce à Tesla. STM sous 40 € mais mon test a échoué : la baisse reste sectorielle. Décision le 29/10.
-maj,Chiffres arrêtés au,clôture du 23/10
-action_parts,Nombre de parts à saisir,42
+consigne,Consigne du jour,Le versement du mois règle ton R : 69 parts le font passer de 30.87 % à 23.14 %, et l'ordre est gratuit.
+maj,Chiffres arrêtés au,clôture du 30/10
+action_parts,Nombre de parts à saisir,69
 frais_regle,Pourquoi 0 €,Premier ordre du mois gratuit en formule Starter si le montant reste sous 500 € — à confirmer sur l'écran de validation
