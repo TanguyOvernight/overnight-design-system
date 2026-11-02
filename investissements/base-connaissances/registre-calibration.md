@@ -4132,3 +4132,36 @@ source ET la date de résolution sont les mêmes ? »* Si oui → **réviser l'a
 existant, ne pas en ouvrir un second.**
 *Bénéfice collatéral : le contrôle aurait révélé l'écart 72 % / 34 % le jour même,
 et m'aurait forcé à le réconcilier au lieu de le porter cinq semaines.*
+
+---
+
+# 📅 02/11/2026 — C063 : la réserve de source est levée
+
+Le **27/10** j'avais résolu C063 VRAI en marquant la résolution **provisoire** :
+elle reposait sur de la presse financière concordante, pas sur le communiqué de
+Besi *(R54 face B)*. **Le communiqué a été lu.**
+
+**Ce qu'il dit** *(besi.com, 22/10/2026)* : la hausse des commandes est attribuée
+à *« l'hybrid bonding, les datacenters et les applications de calcul liées à
+l'IA »*. Les chiffres d'hybrid bonding publiés — **plus de 215 systèmes** en
+demande cumulée, commandes annuelles **plus que doublées**, adoption passée de 15
+clients fin 2025 à 21 fin T2-26 — **mesurent l'adoption du produit, pas le
+partenariat**. Guidance T4 : CA plat à ±5 %, marge brute 63-65 %, nouveau
+programme de rachat de 100 M€.
+
+> ✅ **Aucun montant n'est rattaché à Applied Materials. Le communiqué ne le
+> mentionne pas dans ses métriques.** *La mention « key innovation partner » de
+> l'EPIC Center, qui m'avait servi d'argument le 27/10, ne vient même pas de ce
+> communiqué — elle vient d'ailleurs.* **La résolution est donc plus solide que
+> ce que j'avais écrit, pas moins.**
+
+**→ C063 VRAI, mention « provisoire » LEVÉE.** Brier **0,0784**, totaux
+inchangés : **26 résolus · 0,2232 · +0,107** *(complet)* · **23 · 0,2411 ·
++0,036** *(hors méta)* · **21 · 0,2551 · −0,021** *(hors méta et hors le doublon
+C049/C057)*.
+
+> 🔑 **Ce qu'il faut en retenir sur la méthode, pas sur Besi** : la lecture de la
+> source primaire n'a pas changé l'issue, **elle a changé l'argument**. *Mon
+> raisonnement du 27/10 s'appuyait sur un fait qui n'était pas dans le document
+> que je prétendais résoudre.* **Une conclusion juste obtenue par un argument
+> faux reste à refaire — et c'est pour ça que R54 face B existe.**
