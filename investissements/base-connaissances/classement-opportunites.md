@@ -3136,3 +3136,35 @@ thèse. Le rang mesure l'espérance, pas l'exécutabilité.*
 > 15 au 26/10 — douze jours pendant lesquels R interdisait tout achat.* **Le
 > seuil de prix a été atteint, le verrou fondamental a été levé, et aucun achat
 > n'a été possible une seule journée : parce que le cœur est trop petit.**
+
+---
+
+## 02/11/2026 — X-FAB : test NON franchi, signal RÉFUTÉ, aucun changement de rang
+
+| Rang | Dossier | Chiffre | Mouvement |
+|---|---|---|---|
+| ① | **Cœur World (WPEA)** | 7,10 € | **=** |
+| ② | Eli Lilly | 1 417,54 $ · seuil 1 020 $ *(−28,0 %)* | **=** |
+| ③ | STMicroelectronics | 41,88 € · seuil 42 € | **=** |
+| ④ | Magnum | — | **=** |
+
+**X-FAB n'entre pas au classement.** *Le dossier reste en surveillance, au statut
+où il était depuis le 10/08 — ni promu, ni tué.*
+
+### Pourquoi : le test pré-enregistré n'a PAS été franchi
+Le test disait *« 2ᵉ trimestre consécutif de book-to-bill > 1 »*. **Sur base
+publiée, le T3 2026 est le PREMIER trimestre > 1 depuis le T3 2024** *(T2 2026 :
+0,881)*. Le Chasseur l'avait déclaré franchi en s'appuyant sur la mesure ajustée
+de l'émetteur. → **R63.**
+
+### Et l'Avocat réfute à 25 % sur quatre faits positifs
+Précédent in-name *(T3 2024 : B2B 1,05, même dispositif, CA en recul de 15 % deux
+ans après)* · arithmétique du CEO plafonnant 2027 à **+4 %** de croissance ·
+RCF d'un an que le management dit lui-même insuffisant, 173 M$ de prépaiements à
+rembourser jusqu'en 2028, 300-400 M€ de capex Fab4Micro · et l'énoncé de tendance
+factuellement faux.
+
+**C067 ouvert à 25 %, résolution au 11/02/2027.**
+
+> ⛔ **Verrou indépendant de tout ça : R = 30,87 %.** *Aucune action individuelle
+> ne peut entrer, quel qu'eût été le verdict.*

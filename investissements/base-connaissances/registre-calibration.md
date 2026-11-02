@@ -4165,3 +4165,84 @@ C049/C057)*.
 > raisonnement du 27/10 s'appuyait sur un fait qui n'était pas dans le document
 > que je prétendais résoudre.* **Une conclusion juste obtenue par un argument
 > faux reste à refaire — et c'est pour ça que R54 face B existe.**
+
+---
+
+# 📅 02/11/2026 — 🆕 C067 · X-FAB **RÉFUTÉ**, et notre propre test n'était pas rempli
+
+## L'appel
+
+| Réf | Date | Agent | Affirmation | **P** | Résolution |
+|---|---|---|---|---|---|
+| **C067** | 02/11 | Avocat | **Le book-to-bill T3 2026 de X-FAB (1,12) est un retournement de cycle exploitable et non pricé** — X-FAB surperforme le SXXP sur 12 mois | **25 %** | **11/02/2027** *(résultats T4 2026)* |
+
+**Critères pré-enregistrés.** *Réfutation CONFIRMÉE si* : book-to-bill T4 **publié**
+< 1,0 **OU** guidance 2027 absente ou < 820 M$ **OU** financement dilutif annoncé
+avant le 30/06/2027. *Verdict RENVERSÉ si les quatre tombent* : B2B T4 ≥ 1,0 **ET**
+guidance 2027 ≥ 850 M$ **ET** part last-time-buy du site B publiée < 15 % **ET**
+refinancement sans dilution.
+
+## 🔴 Le fait qui porte le verdict touche NOTRE test, pas la société
+
+Le dossier X-FAB portait depuis le **10/08** un test écrit à l'avance :
+*« un 2ᵉ trimestre consécutif de book-to-bill > 1 confirme »*. **Le Chasseur l'a
+déclaré franchi. Il ne l'est pas.**
+
+```
+Commandes T2 2026            173,3 M$
+CA T2 hors IFRS-15 (déduit)  196,8 M$   ← 200,7 / 1,02
+book-to-bill T2 PUBLIÉ        0,881     ← SOUS 1,0
+
+book-to-bill T3 PUBLIÉ        1,120     ← le PREMIER > 1 depuis le T3 2024
+```
+
+**Chemin indépendant concordant** : au T2, le CEO disait *« **excluant** l'impact
+temporaire du programme de fin de vie d'Erfurt, notre book-to-bill
+**sous-jacent** repasse au-dessus de 1,0 pour la première fois depuis le T2
+2024 »* — formulation qui n'a de sens que si le **publié** était en dessous.
+
+> ⚠️ **Notre test ne disait pas sur quelle base il se mesurait.** *Sur base
+> publiée : un seul trimestre, le test n'est pas rempli. Sur la base ajustée par
+> l'émetteur : il l'est.* **Et l'émetteur a changé de base entre les deux
+> trimestres** — il mettait l'ajustement « ex-Erfurt » en avant au T2, quand il
+> flattait, et l'a abandonné au T3, quand il aurait nui.
+
+## 🆕 R63 — Un test pré-enregistré nomme la BASE de sa métrique
+*Même famille que R60 : un énoncé que l'auteur — ou ici **l'émetteur** —
+peut réinterpréter après coup n'est pas un test.* **Ici c'est pire que R60 :
+ce n'est pas moi qui arbitre l'ambiguïté, c'est la partie intéressée.**
+
+> **Toute métrique d'un test porte désormais `publié` ou `ajusté`, explicitement,
+> et par défaut `publié`.** *Une société qui publie deux versions d'un même ratio
+> choisira celle qui l'arrange, et un test muet sur la base lui délègue la
+> résolution.*
+
+## Le précédent in-name, qui achève la thèse de tendance
+**T3 2024 : book-to-bill 1,05, commandes 217,1 M$** — le même dispositif à 3 %
+près. **Deux ans plus tard, le CA du T3 2026 est en recul de ~15 %.** *Sur ce nom
+précis, un book-to-bill publié > 1 n'a encore jamais annoncé de croissance
+durable.*
+
+## Ce que l'Avocat a retiré de son propre réquisitoire
+✅ **La surcapacité chinoise sur nœuds mûrs n'est PAS la menace 2026-2027** : Hua
+Hong tournait à 102,8 % d'utilisation au T2 2026, SMIC à 93,7 %, Nexchip a relevé
+ses prix de 10 %. *C'est une menace 2028+.* **Il l'a donc retirée de sa thèse
+inverse — et ça rend la sous-performance de X-FAB plus accusatrice, pas moins :
+le secteur se tend, les prix montent, et X-FAB fait −15 % de CA.**
+
+> 🔑 **Un Avocat qui retire un argument de son propre réquisitoire est un Avocat
+> qui instruit.** *Ses cinq verdicts précédents étaient cinq AFFAIBLI — il a
+> signalé lui-même ce défaut de discrimination avant de trancher.*
+
+## ⛔ Pas d'Arbitre
+*La dialectique envoie au Juge les signaux CONFIRMÉ et AFFAIBLI.* **RÉFUTÉ
+s'arrête ici.** Et de toute façon **R = 30,87 %** : aucune action individuelle
+ne peut entrer.
+
+## ⚠️ Mur d'accès — signalé, non contourné
+**Les deux agents ont échoué en DNS sur tous les documents primaires**, `xfab.com`
+compris. *Ni le Chasseur ni l'Avocat n'ont lu le communiqué : le second n'améliore
+donc pas le niveau de preuve du premier, il l'égale.* **Le verdict repose sur des
+reprises convergentes et sur de l'arithmétique interne** *(c'est l'arithmétique
+qui le porte, pas la source)*. **Je ne contourne pas la politique de sortie
+réseau ; je remonte le blocage.**

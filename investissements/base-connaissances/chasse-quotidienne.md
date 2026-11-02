@@ -3141,3 +3141,33 @@ atteint par une baisse sectorielle, l'ancien dispositif aurait déclenché un ac
 > **Un seuil de prix ne sait pas pourquoi le prix est arrivé là.** *Le comparable
 > se nomme à l'ouverture du seuil, jamais après : sinon on choisit celui qui donne
 > la réponse voulue.*
+
+---
+
+## R63 — Un test pré-enregistré nomme la BASE de sa métrique
+*(02/11/2026 — X-FAB : notre test de 10/08 était muet, l'émetteur a choisi)*
+
+Le dossier X-FAB portait depuis le 10/08 : *« un 2ᵉ trimestre consécutif de
+book-to-bill > 1 confirme »*. Au T3 2026, le Chasseur a déclaré le test franchi.
+
+```
+book-to-bill T2 2026  PUBLIÉ   0,881     → test NON rempli
+book-to-bill T2 2026  AJUSTÉ   > 1,0     → test rempli
+```
+
+**L'émetteur publie les deux**, et il a **changé de base entre les trimestres** :
+l'ajustement « hors fin de vie d'Erfurt » était mis en avant au T2, quand il
+flattait, et abandonné au T3, quand il aurait nui.
+
+> **Un test muet sur la base de sa métrique délègue sa résolution à la partie
+> intéressée.** *R60 disait qu'un énoncé ambigu me laisse arbitrer après coup en
+> ma faveur. Ici c'est pire : ce n'est pas moi qui arbitre, c'est la société
+> notée.*
+
+**Règle de rédaction** : toute métrique d'un test porte `publié` ou `ajusté`,
+explicitement. **Par défaut : `publié`.** *Un chiffre ajusté n'entre dans un test
+que si l'ajustement est défini par moi, pas par l'émetteur.*
+
+**Contrôle à l'arbitrage** : avant de déclarer un test franchi, vérifier que le
+chiffre utilisé est bien sur la base nommée — et si l'émetteur a changé de
+présentation entre deux périodes, **c'est un signal en soi**, à porter au dossier.
