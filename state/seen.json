@@ -1,7 +1,7 @@
 {
  "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
- "maj": "2026-11-01",
- "dernier_brief": 62,
+ "maj": "2026-11-02",
+ "dernier_brief": 63,
  "vus": {
   "jobup": [
    "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -950,7 +950,27 @@
    "c033c543-4f34-4ca7-ba8d-f0ad38ec55e5",
    "f9abdc3b-50a1-4579-9fa1-73e8a6c1ee8b",
    "040c547b-0af8-47e6-8dec-e5ce82e8e0fe",
-   "008f751f-2824-4818-a06a-76ac40f6f43b"
+   "008f751f-2824-4818-a06a-76ac40f6f43b",
+   "100eeb70-93e4-45e0-ac20-c36650228e16",
+   "165d7151-4ea7-403d-9752-80959d26bf33",
+   "1f8786a3-ad44-4fc1-a61d-ea085df727d5",
+   "4516ee9c-6203-4f6f-9ea3-37f0d9e25e81",
+   "46986153-2321-4f22-a9ca-6f4b151468a5",
+   "46c86e9e-5a13-48f5-b0bb-48f184221c14",
+   "48630f36-05c9-4306-9088-17d5d4dd7cc0",
+   "487c8818-e35f-4af7-8595-a1d28f95cf44",
+   "5d7cff14-430f-4184-b8ec-6942a61eb581",
+   "80259205-828f-493e-8f61-8f97017e30a7",
+   "81562d72-09d1-4156-a9d0-29298c10bd07",
+   "816f98cc-de18-4458-86f4-398d231d709e",
+   "84b3f673-52d1-4c4d-8ca9-22410e912a4d",
+   "875cf77d-e54d-499a-b933-a024fa06d722",
+   "9366bb5c-ac38-467c-94c7-89bc5aa187fd",
+   "a1057e35-c01e-4a48-ae19-fe9276dc6244",
+   "a389d5bf-6197-42c0-a5ee-ab9dcaee42a1",
+   "c67586d1-ab97-4816-b004-27e46bf7510a",
+   "effeba1e-8263-46b8-a000-f3e8130a6d42",
+   "fb1b7e62-5f2a-4c26-83c3-d9acdec46650"
   ],
   "ats_employeurs": [
    "https://recrutement.eben-hezer.ch/jobs/7602918-responsable-communication-et-recherche-de-fonds",
@@ -3138,7 +3158,15 @@
    "4485313431",
    "4484827496",
    "4483926676",
-   "4484842295"
+   "4484842295",
+   "4485414848",
+   "4485432008",
+   "4485979394",
+   "4484324090",
+   "4484318505",
+   "4484325073",
+   "4485195988",
+   "4483991914"
   ],
   "chuv": [
    "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html"
@@ -3234,7 +3262,8 @@
    "in-42c1207014650eca",
    "in-4d051bfb27e3d9f5",
    "in-82901fac821448ea",
-   "in-ceaeebca2733d5e3"
+   "in-ceaeebca2733d5e3",
+   "in-f7ce5243f2eb1dbe"
   ],
   "jobroom": [
    "6ce0fade-e7cd-41e3-9327-208a9b3f763d",
@@ -3653,7 +3682,28 @@
    "d2094e3a-990b-459b-8925-97b682ccaf28",
    "aca19a1a-763e-403b-950f-77ce759c10e0",
    "e9327b9c-18ae-411d-ad2c-10302220d063",
-   "1a1c17b8-628b-4ac3-95ff-e030d9b1aa4c"
+   "1a1c17b8-628b-4ac3-95ff-e030d9b1aa4c",
+   "a0d649c8-45f9-4744-9039-77c960a8e48a",
+   "de8da638-ab1d-4d3e-bde0-40c9eacf6c0b",
+   "2f1c9723-6bc3-4504-b1e0-9b053d247172",
+   "078cf9ee-2004-4969-8825-400f312a5ab1",
+   "00a60caf-d8a0-4f33-abc9-d9972244e64e",
+   "b4f84bd3-1913-451c-a6d2-dcb47c20385f",
+   "9db0ce36-2413-4c8e-8f39-8dbe5132b811",
+   "d98bcb52-9222-42f8-b4f5-0907de310711",
+   "1e08fb6f-d935-481e-9cf7-0b6071e79937",
+   "2614a9be-ba57-4e3d-838d-c56ddc06838e",
+   "75f38b53-4d03-4ce6-b324-1893d80ffefa",
+   "2338b9fd-f606-4e4f-829b-2b985b5bf86e",
+   "f70081cf-55bd-4918-9f8f-44b8cccbcca2",
+   "1ebd2cd0-a564-4130-b85d-a8d9b57414fe",
+   "3b12e0ad-f461-4a43-b20e-910c832651f8",
+   "419e25c3-253b-49cf-8ba0-79dd261af193",
+   "4a5a0edd-0414-425e-a438-73253a5e23bf",
+   "3acdf3ad-2d3d-460d-900a-dde15dda0d89",
+   "d760bc99-3aab-43f3-b084-03d0cbfcc7f1",
+   "4402e0cb-5126-4796-8752-1e1b7ea54921",
+   "dd50593c-7845-4bcf-8cd6-ef223a0fe2b2"
   ]
  },
  "postees": [
