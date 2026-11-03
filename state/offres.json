@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-11-02",
+ "maj": "2026-11-03",
  "offres": [
   {
    "d": "2026-10-03",
@@ -4254,6 +4254,114 @@
     "Crissier : ≈ 6 km, bus et métro"
    ],
    "at": "Grande marque à 6 km avec un vrai rôle de direction créative de campagnes : ton regard DA sur les briefs d'agence est l'angle."
+  },
+  {
+   "d": "2026-11-03",
+   "b": 64,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "solide",
+   "t": "Head of Brand",
+   "c": "Jobgether (startup IA « AI employee » non nommée)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "« brand leader expérimenté », années non chiffrées",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/head-of-brand-at-jobgether-4485452777",
+   "n": "Startup IA en forte croissance : créer une marque distinctive dans la catégorie émergente des « employés IA », rattaché au CMO.",
+   "fit": {
+    "m": 3,
+    "da": 3,
+    "ia": 3,
+    "pct": 80
+   },
+   "ms": [
+    "Posséder tout le système de marque : identité visuelle, voix, positionnement, messages",
+    "Déployer la nouvelle identité sur le site, le produit et les supports de vente",
+    "Campagnes de marque, guidelines ; monter et diriger l'équipe créative interne"
+   ],
+   "inf": [
+    "Marque + DA + IA : tes trois piliers dans un seul poste",
+    "Avoir porté une marque early-stage dans sa croissance : ton rebranding Chat3D",
+    "⚠️ Contrat non précisé (intermédiaire)",
+    "⚠️ Séniorité à vérifier"
+   ],
+   "at": "C'est presque ton poste actuel en plus grand : rebranding Chat3D, design system, site R3F codé avec Claude. Candidate vite."
+  },
+  {
+   "d": "2026-11-03",
+   "b": 64,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "solide",
+   "t": "Long-Form Content Writer (AEO/SEO)",
+   "c": "Jobgether (entreprise non nommée)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "non précisée",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/long-form-content-writer-aeo-seo-at-jobgether-4486025171",
+   "n": "Spécialiste contenu « AI-native » : produire des articles longs à l'échelle avec ses propres workflows d'agents IA.",
+   "fit": {
+    "m": 2,
+    "da": 0,
+    "ia": 3,
+    "pct": 62
+   },
+   "ms": [
+    "Piloter agents et outils IA pour rechercher, rédiger, optimiser et rafraîchir des contenus",
+    "Optimiser pour le SEO et les moteurs de réponse IA (AEO)",
+    "Garantir exactitude et qualité éditoriale"
+   ],
+   "inf": [
+    "Concevoir et opérer ses propres workflows IA exigé",
+    "Portfolio d'articles publiés exigé",
+    "⚠️ Poste de rédaction avant tout"
+   ],
+   "at": "Tes pipelines Claude sont exactement la compétence demandée ; il faudra 2-3 articles longs publiés."
+  },
+  {
+   "d": "2026-11-03",
+   "b": 64,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Content Manager",
+   "c": "Jobgether (éditeur logiciel non nommé)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "« plusieurs années »",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/content-manager-at-jobgether-4485481004",
+   "n": "Stratégie de contenu et qualité éditoriale d'un éditeur logiciel rentable.",
+   "fit": {
+    "m": 2,
+    "da": 0,
+    "ia": 1,
+    "pct": 48
+   },
+   "ms": [
+    "Définir les priorités éditoriales",
+    "Encadrer une petite équipe de rédacteurs",
+    "SEO et optimisation pour la recherche IA"
+   ],
+   "inf": [
+    "⚠️ Plusieurs années de rédaction et management de rédacteurs",
+    "⚠️ Profil éditorial"
+   ],
+   "at": "Plus éditorial que ton profil ; à garder si le Head of Brand ne répond pas."
   }
  ]
 }
