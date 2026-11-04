@@ -3171,3 +3171,35 @@ que si l'ajustement est défini par moi, pas par l'émetteur.*
 **Contrôle à l'arbitrage** : avant de déclarer un test franchi, vérifier que le
 chiffre utilisé est bien sur la base nommée — et si l'émetteur a changé de
 présentation entre deux périodes, **c'est un signal en soi**, à porter au dossier.
+
+---
+
+## R64 — Un événement géopolitique RÉCURRENT se date deux fois
+*(04/11/2026 — une purge défense de novembre 2025 s'est présentée comme celle du jour)*
+
+Une requête sur la faiblesse du secteur défense a remonté un titre **sans date** :
+*« CAC 40 ends at session low amid defense sector losses as peace plan emerges »*,
+avec des chiffres parfaitement crédibles *(Safran −2,4 %, Thales −1,5 %)*.
+
+**Tout le corpus datait du 24/11/2025.** Aucun résultat de novembre 2026.
+
+```
+titre non daté  +  chiffres plausibles  =  anniversaire SEO
+                                           indiscernable de l'actualité
+```
+
+> **Les thèmes géopolitiques reviennent à l'identique chaque année** — plan de paix,
+> cessez-le-feu, sommet, train de sanctions — **et leurs archives sont
+> indiscernables du présent.** *Une thèse « secteur survendu » adossée à un
+> drawdown vieux de douze mois aurait eu l'air parfaitement sourcée, et la
+> performance sectorielle exigée par R62 aurait été fausse de douze mois.*
+
+**Procédure** : sur tout mouvement de cours attribué à un événement géopolitique,
+**dater deux fois** — l'article ET l'événement lui-même.
+**Exiger l'année explicite dans le CORPS du texte**, jamais dans le titre seul.
+
+*Cousin de R54 face B (une date est un fait qui exige sa source) et du piège
+d'archive Oddo attrapé le 02/11 — une note « encore un profit warning » qui
+datait du T3 2024 et remontait en tête sur une requête 2026.* **Trois incidents
+d'archive en trois jours : ce n'est pas un hasard, c'est la forme que prend le
+bruit sur ces terrains.**
