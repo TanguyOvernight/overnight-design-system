@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-11-03",
+ "maj": "2026-11-04",
  "offres": [
   {
    "d": "2026-10-03",
@@ -4362,6 +4362,77 @@
     "⚠️ Profil éditorial"
    ],
    "at": "Plus éditorial que ton profil ; à garder si le Head of Brand ne répond pas."
+  },
+  {
+   "d": "2026-11-04",
+   "b": 65,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "solide",
+   "t": "Product Designer",
+   "c": "Salt Mobile",
+   "l": "Prilly",
+   "dist": "Prilly",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "« proven experience », années non chiffrées",
+   "lg": "EN",
+   "g": false,
+   "u": "https://www.jobup.ch/fr/emplois/detail/9a3574e5-52e5-4a72-83d6-d8e1211b74b0/?utm_source=job-room.ch&utm_medium=affiliate&utm_campaign=wb:jobup|tg:b2c|cn:ch|lg:fr|ct:targeting,nonbrand,job|cd:feedonomics-jobroom|mg:job-application|pd:n|tt:organic",
+   "n": "Opérateur télécom suisse, équipe Digital Experience & Transformation, à ≈ 3 km de Lausanne.",
+   "fit": {
+    "m": 1,
+    "da": 3,
+    "ia": 2,
+    "pct": 66
+   },
+   "ms": [
+    "Piloter de bout en bout des améliorations d'expérience digitale",
+    "Ateliers, parcours, wireframes, prototypes ; design system",
+    "Specs pour les devs, suivi de l'implémentation, mesure par KPIs"
+   ],
+   "inf": [
+    "Figma avancé, design system, outils IA demandés",
+    "Pas d'années chiffrées",
+    "⚠️ Product design / UX plus que marketing"
+   ],
+   "at": "Ton Figma expert et le design system Chat3D appliqué au code sont la preuve ; ajoute un cas UX mesuré."
+  },
+  {
+   "d": "2026-11-04",
+   "b": 65,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Retail Marketing Manager",
+   "c": "Jobgether (marque non nommée)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "5 ans",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/retail-marketing-manager-at-jobgether-4484646510",
+   "n": "Renforcer la présence de marque et la croissance retail sur les marchés européens.",
+   "fit": {
+    "m": 3,
+    "da": 1,
+    "ia": 0,
+    "pct": 46
+   },
+   "ms": [
+    "Campagnes retail, expériences en magasin, activations partenaires",
+    "Adapter la stratégie globale aux pays",
+    "Coordonner les lancements produits"
+   ],
+   "inf": [
+    "⚠️ Expérience demandée : 5 ans en retail marketing",
+    "⚠️ Intermédiaire, contrat non précisé"
+   ],
+   "at": "Ton expérience retail 3D (Overnight) parle, mais le retail marketing terrain est un autre métier."
   }
  ]
 }
