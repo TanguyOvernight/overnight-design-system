@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-11-04",
+ "maj": "2026-11-05",
  "offres": [
   {
    "d": "2026-10-03",
@@ -4433,6 +4433,112 @@
     "⚠️ Intermédiaire, contrat non précisé"
    ],
    "at": "Ton expérience retail 3D (Overnight) parle, mais le retail marketing terrain est un autre métier."
+  },
+  {
+   "d": "2026-11-05",
+   "b": 66,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Brand Lead Coordinator Marché Suisse (remplacement)",
+   "c": "Audemars Piguet",
+   "l": "Tolochenaz",
+   "dist": "Tolochenaz",
+   "tx": "100%",
+   "ct": "CDD 7-8 mois",
+   "xp": "3 à 5 ans",
+   "lg": "FR (DE atout)",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/brand-lead-coordinator-march%C3%A9-suisse-cdd-7-8-mois-at-audemars-piguet-4486354916",
+   "n": "Remplacement de congé maternité : rayonnement de la marque sur le marché suisse.",
+   "fit": {
+    "m": 3,
+    "da": 1,
+    "ia": 0,
+    "pct": 52
+   },
+   "ms": [
+    "Coordonner les projets de marque sur le marché suisse",
+    "Gérer des projets d'envergure dans l'univers du luxe"
+   ],
+   "inf": [
+    "⚠️ CDD 7-8 mois (remplacement)",
+    "3 à 5 ans de gestion de projets",
+    "Allemand en atout",
+    "Tolochenaz, à côté de Morges"
+   ],
+   "at": "Porte d'entrée chez AP sans aller au Brassus ; court, mais un très beau nom de CV."
+  },
+  {
+   "d": "2026-11-05",
+   "b": 66,
+   "st": "ouverte",
+   "cl": false,
+   "dl": "2026-11-15",
+   "s": "avoir",
+   "t": "Digital & Marketing Specialist",
+   "c": "UEFA / UC3 (Ligue des champions)",
+   "l": "Nyon",
+   "dist": "Nyon",
+   "tx": "100%",
+   "ct": "CDI dès le 01.01.2027",
+   "xp": "6 à 8 ans",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/digital-marketing-specialist-at-uefa-4485502859",
+   "n": "UC3, coentreprise UEFA–clubs qui pilote marketing et commercial de la Ligue des champions et des autres compétitions de clubs.",
+   "fit": {
+    "m": 3,
+    "da": 1,
+    "ia": 0,
+    "pct": 50
+   },
+   "ms": [
+    "Développer et livrer les initiatives digitales, marketing et communication des programmes commerciaux",
+    "Coordonner UC3, l'UEFA et l'EFC"
+   ],
+   "inf": [
+    "⚠️ Expérience demandée : 6 à 8 ans",
+    "⚠️ Nyon : loin de Lausanne",
+    "Candidater avant le 15.11"
+   ],
+   "at": "Très beau nom (Ligue des champions), mais années et distance pèsent."
+  },
+  {
+   "d": "2026-11-05",
+   "b": 66,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Wearables Marketing Expert",
+   "c": "Jobgether (produit bien-être IA non nommé)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "2 ans + 1 an wearables",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/wearables-marketing-expert-at-jobgether-4486576684",
+   "n": "Go-to-market d'un produit de bien-être piloté par IA qui se lance dans les wearables.",
+   "fit": {
+    "m": 2,
+    "da": 1,
+    "ia": 1,
+    "pct": 44
+   },
+   "ms": [
+    "Positionnement, lancements, acquisition, partenariats",
+    "Transformer les données de santé en propositions de valeur"
+   ],
+   "inf": [
+    "⚠️ 1 an d'expérience wearables / health-tech exigé",
+    "⚠️ Performance marketing (Meta, TikTok, CAC, LTV) attendue",
+    "Intermédiaire, contrat non précisé"
+   ],
+   "at": "Produit IA sympa, mais le profil demandé est growth + hardware."
   }
  ]
 }
