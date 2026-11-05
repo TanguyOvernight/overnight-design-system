@@ -3203,3 +3203,28 @@ d'archive Oddo attrapé le 02/11 — une note « encore un profit warning » qui
 datait du T3 2024 et remontait en tête sur une requête 2026.* **Trois incidents
 d'archive en trois jours : ce n'est pas un hasard, c'est la forme que prend le
 bruit sur ces terrains.**
+
+---
+
+## Précision de la contrainte d'achetabilité — Euronext **Growth**
+*(05/11/2026 — question posée par le chasseur sur ICAPE)*
+
+La contrainte dit « Euronext Paris / Amsterdam / Bruxelles ». **ICAPE Holding
+(ALICA) est sur Euronext *Growth* Paris** — un **MTF**, pas le marché réglementé.
+*Le préfixe `AL` le signale ; l'URL Euronext en `-XPAR` est trompeuse sur ce
+point.*
+
+**Décision** : **Growth est DANS le périmètre** — siège UE, éligible PEA, ce n'est
+pas l'AIM. **Mais il porte un drapeau de liquidité qui devient éliminatoire sous
+100 M€ de capitalisation.**
+
+```
+Euronext Paris / Amsterdam / Bruxelles (réglementé)  → OK
+Euronext Growth, capi ≥ 100 M€                       → OK, drapeau liquidité
+Euronext Growth, capi < 100 M€                       → ÉLIMINÉ
+AIM, Nordiques, Varsovie, Vienne                     → ÉLIMINÉ
+```
+
+*ICAPE échoue de toute façon sur ce seuil : capitalisation ~80 M€.* **Mais la
+question méritait d'être tranchée avant qu'un dossier ne dépende de la réponse,
+pas après.**

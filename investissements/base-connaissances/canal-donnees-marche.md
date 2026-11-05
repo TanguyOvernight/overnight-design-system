@@ -265,3 +265,68 @@ pas plus qu'il ne lit que j'ai fermé un fichier.
 **Vérification périodique** : `list_recent_files` et chercher un titre finissant
 par « — Claude ». Au 16/10 : **aucun reliquat**, les huit feuilles créées les
 15 et 16/10 sont toutes à la corbeille.
+
+---
+
+# 📅 05/11/2026 — DEUXIÈME CANAL OUVERT : le primaire horodaté
+
+*Les deux hôtes autorisés le 04/11 fonctionnent. Première chasse depuis six
+semaines à lire des documents primaires.*
+
+## ⭐ Recette 1 — le FAIT primaire daté : Euronext par ISIN
+
+```
+https://live.euronext.com/en/product/equities/<ISIN>-XPAR
+```
+→ **liste horodatée des communiqués réglementés de l'émetteur**, dates exactes et
+titres. *Le flux réglementé à la source, pas une paraphrase de presse.*
+Validé sur `FR001400A3Q3` *(ICAPE)* et `FR0000130403` *(Christian Dior)*.
+
+```
+https://live.euronext.com/en/markets/paris
+```
+→ **communiqués réglementés du jour horodatés à la minute** *(07:30, 07:45, 07:58,
+08:00 CET)* **+ niveaux d'indices en direct**.
+
+### ⚠️ Limites établies, à ne pas re-tester
+- `live.euronext.com/en/products/equities/company-news` renvoie **vide** *(rendu
+  JS)*. **Ne pas réutiliser.**
+- Les fiches par ISIN **ne portent ni prix ni capitalisation** → second hôte requis.
+- **Les titres sont tronqués et le corps du communiqué n'est pas servi** : on
+  obtient le fait et sa date, pas le détail. *Un émetteur du 05/11 est resté non
+  identifiable, titre coupé en français comme en anglais.*
+
+## ⭐⭐ Recette 2 — le PRIX horodaté : abcbourse par ticker
+
+```
+https://www.abcbourse.com/cotation/<TICKER>p
+```
+→ nom, ticker, ISIN, **dernier cours avec HORODATAGE PRÉCIS**
+*(« 04/11/2026, 17:55:00 »)*, variation du jour, valorisation, borne 1 an.
+
+> 🔑 **C'est l'instrument qui manquait depuis le début. R17 — « pas de thèse de
+> sous-réaction sans prix horodaté » — est désormais exécutable sur n'importe
+> quelle valeur de Paris, en une requête.** *Medincell serait mort en une requête
+> au lieu de six prix contradictoires non datés.*
+
+⚠️ `abcbourse.com/marches/palmares_pz` → **404**. Mauvaise URL, ne pas réessayer.
+
+## 🚨 Démonstration involontaire, le jour même
+
+Les résultats de recherche servaient le **CAC Small à 16 700-16 900 pts** — pages
+datées de **janvier 2026**. Le fetch direct donne le niveau réel :
+
+```
+CAC Small   15 845,38 pts   (+1,71 %, séance du 05/11/2026)   [PRIMAIRE]
+écart avec les agrégateurs : ~6 %
+```
+
+> **Et l'écart va dans le sens qui fabrique de fausses décotes.** *Les agrégateurs
+> vieillissent ensemble : une valeur comparée à un indice périmé de 6 % paraît
+> bon marché sans l'être.* **Troisième incident d'archive en quatre jours
+> (Oddo 02/11, purge défense 04/11, CAC Small 05/11). Le fetch direct tranche,
+> la recherche non.**
+
+## Ce que ça change
+Les **deux causes de décès les plus fréquentes** de nos dossiers — *fait non
+primaire* et *prix périmé* — sont désormais traitables **en deux requêtes**.
