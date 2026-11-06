@@ -2527,3 +2527,31 @@ Une mention de *« passeport batterie obligatoire au 18/02/2027, règl. (UE)
 2023/1542 »* est remontée **sans aucune source**. *Elle n'entre pas au radar* :
 une date non sourcée au radar deviendrait un fait dans trois semaines — c'est
 exactement le mécanisme qui a produit l'erreur STM du 22/10.
+
+---
+
+## 06/11/2026 — après la chasse émergents
+
+### 🔴 LE POINT QUI TOUCHE LE CŒUR — C056
+**PLF 2027, texte n° 3210, déposé à l'Assemblée le 01/10/2026.** Une note de la
+DGT de **juillet 2026** proposait d'exclure du PEA les ETF à **réplication
+synthétique** ; **le gouvernement y a renoncé** *(déclaration du ministre, aucune
+mesure dans le texte déposé)*. **Mais un amendement parlementaire reste possible
+jusqu'au vote.**
+
+> ⚠️ **Tout ETF World éligible PEA est synthétique par construction.** *Ce n'est
+> pas une question de ligne satellite : c'est le **WPEA**, la position principale
+> de Tanguy, qui est dans le périmètre du débat.*
+
+**C'est exactement l'appel C056** *(78 %, résolution au 31/12/2026 sur le texte
+définitif)*. **Événement résolvant : le vote du PLF 2027.** *À suivre au
+calendrier budgétaire — pas à arbitrer, il n'y a rien à faire d'ici là.*
+
+### Autres catalyseurs datés
+| Date | Événement |
+|---|---|
+| **11/11/2026** | Résultats de la **revue MSCI de novembre**, effectifs le **01/12** *(sort de la consultation Indonésie → Standalone)* |
+| **mi-nov. 2026** *(à confirmer)* | Résultats T3 **Vallourec** |
+| **24/11/2026** | ICAPE — Capital Market Day |
+| **≈ 31/12/2026** | Closing **Maurel & Prom / Gran Tierra** *(VE 1,33 Md$)* — reste les autorisations Colombie + Équateur |
+| non daté | **Augmentation de capital Eramet** — modalités à établir |

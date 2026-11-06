@@ -330,3 +330,26 @@ CAC Small   15 845,38 pts   (+1,71 %, séance du 05/11/2026)   [PRIMAIRE]
 ## Ce que ça change
 Les **deux causes de décès les plus fréquentes** de nos dossiers — *fait non
 primaire* et *prix périmé* — sont désormais traitables **en deux requêtes**.
+
+---
+
+## 06/11/2026 — limites du canal, confirmées à l'usage
+
+✅ **Les deux recettes d'hier sont confirmées** : `live.euronext.com/.../<ISIN>-XPAR`
+a donné la liste datée des communiqués de Maurel & Prom, et
+`abcbourse.com/cotation/MAUp` a donné **7,18 € au 05/11/2026 17:55:00**.
+*R17 exécutée en une requête, pour la deuxième journée consécutive.*
+
+⚠️ **Deux limites neuves, à connaître avant d'y revenir :**
+1. `live.euronext.com/en/markets/paris` sert bien les communiqués du jour
+   **horodatés à la minute**, mais ses **niveaux d'indices arrivent SANS
+   horodatage** → utilisables en ordre de grandeur, pas comme référence.
+2. 🔴 **Aucun prix de matière première n'est fiable par ce canal.** Les niveaux de
+   Brent servis par la recherche sont **mutuellement incohérents** :
+   ```
+   96,78 $ au 24/07   ·   79,45 $ début août   ·   103,71 $ au 15/10
+   108,73 $ au 02/11  ·   « sous 115 $ » au 26/10
+   ```
+   **Aucune thèse cyclique ne doit s'appuyer là-dessus.** *À traiter comme
+   le mur d'egress l'était avant le 04/11 : une absence de canal, pas une donnée
+   incertaine.*

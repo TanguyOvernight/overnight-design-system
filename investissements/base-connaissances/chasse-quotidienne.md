@@ -3228,3 +3228,43 @@ AIM, Nordiques, Varsovie, Vienne                     → ÉLIMINÉ
 *ICAPE échoue de toute façon sur ce seuil : capitalisation ~80 M€.* **Mais la
 question méritait d'être tranchée avant qu'un dossier ne dépende de la réponse,
 pas après.**
+
+---
+
+## 📉 Le terrain ÉMERGENTS est mal posé — recommandation de retrait
+*(06/11/2026 — quatrième zéro d'affilée, mais celui-ci est structurel)*
+
+**Le canal de transmission est cassé.** Un signal précoce suppose qu'un **fait
+local daté** se transmette au **cours d'un titre achetable**. Sur ce terrain, la
+chaîne passe obligatoirement par une **matière première ou une devise cotée en
+continu** — c'est-à-dire par le marché le plus efficient du monde.
+
+**Démonstration chiffrée, sur le seul pur-play émergent de Paris :**
+```
+Maurel & Prom   02/11 : titre −4,3 %   Brent −4,1 %
+                15/10 : titre −2,5 %   Brent −2,2 %
+```
+**Bêta ~1 sur le Brent, deux séances sur deux.** *Son 9 mois du 22/10 — production
++4 %, CA +17 %, prix réalisé +40 % — n'a aucun pouvoir explicatif propre.*
+**Le fait gabonais ne bouge pas le titre : le baril le bouge.**
+
+### Les trois voies, et ce qu'elles donnent
+| Voie | Verdict |
+|---|---|
+| **(a)** sociétés UE à forte exposition émergente | **Existe, mais ce n'est pas un terrain, c'est un filtre.** Eramet, Maurel & Prom, Vallourec : **trois cycliques de matières premières sur trois**. Ce n'est pas un hasard d'échantillon — les sociétés UE dont le CA vient des émergents sont par construction extractives, pétrolières, ou des mégacaps sur-couvertes. |
+| **(b)** ETF émergents à Paris | **Close depuis le 02/10** : un seul éligible PEA *(PAEEM)*, et pas de seconde ligne avant ~10 000 € de portefeuille. *Le portefeuille est à 1 705 €.* |
+| **(c)** reclassements d'indices MSCI | **Signaux réels, datés, mécaniques — et zéro véhicule.** Grèce → Athènes *(exclue)*, Indonésie → Jakarta *(exclue)*. |
+
+> **Le terrain produit des signaux que nous ne pouvons pas acheter, et des titres
+> achetables dont le moteur n'est pas le signal.** *C'est la définition d'un
+> terrain à retirer.*
+
+**Recommandation** : remplacer le créneau du vendredi par un second passage
+**France/Benelux smalls** ou un terrain « poches UE sous-analysées » — **les deux
+ont un canal intact : fait émetteur → cours du même émetteur.**
+Et garder l'exposition émergente comme **question à l'intérieur des autres
+jours** : *« la croissance de cette société européenne vient-elle de la demande
+émergente ? »* **Le signal porte alors sur la société, pas sur la géographie.**
+
+⚠️ **Décision non prise** : la rotation est dans la routine de Tanguy. *Je
+recommande, il tranche.*
