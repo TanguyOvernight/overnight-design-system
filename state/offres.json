@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-11-05",
+ "maj": "2026-11-06",
  "offres": [
   {
    "d": "2026-10-03",
@@ -4539,6 +4539,114 @@
     "Intermédiaire, contrat non précisé"
    ],
    "at": "Produit IA sympa, mais le profil demandé est growth + hardware."
+  },
+  {
+   "d": "2026-11-06",
+   "b": 67,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "solide",
+   "t": "Lead UX Designer",
+   "c": "ActAI",
+   "l": "Suisse (lieu à vérifier)",
+   "dist": "?",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "non précisée",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/lead-ux-designer-at-actai-4486596351",
+   "n": "Startup IA qui construit des applications « agent-first » pour le grand public, à commencer par une appli de communication.",
+   "fit": {
+    "m": 0,
+    "da": 3,
+    "ia": 2,
+    "pct": 64
+   },
+   "ms": [
+    "Concevoir des interfaces de qualité",
+    "Construire et maintenir composants UI et design systems",
+    "Typographie, mise en page, cohérence visuelle, avec produit et ingénierie"
+   ],
+   "inf": [
+    "Figma et design systems au cœur",
+    "Portfolio + design challenge",
+    "⚠️ Lieu exact à vérifier (Suisse)",
+    "⚠️ Design d'interface plus que marketing"
+   ],
+   "at": "Une startup IA qui cherche un œil visuel fort : ton design system Chat3D et ton site R3F parlent d'eux-mêmes."
+  },
+  {
+   "d": "2026-11-06",
+   "b": 67,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Technology Marketing Manager",
+   "c": "Neural Concept",
+   "l": "Lausanne",
+   "dist": "Lausanne",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "5+ ans",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/technology-marketing-manager-at-neural-concept-4485826975",
+   "n": "Scale-up lausannoise d'IA pour l'ingénierie (Global 2000) : raconter la plateforme aux ingénieurs et aux dirigeants.",
+   "fit": {
+    "m": 3,
+    "da": 1,
+    "ia": 3,
+    "pct": 62
+   },
+   "ms": [
+    "Construire le récit technologique et marché de la plateforme",
+    "Travailler entre produit, ingénierie et go-to-market",
+    "Évolution possible vers lead product marketing"
+   ],
+   "inf": [
+    "⚠️ Expérience demandée : 5+ ans en marketing technologique",
+    "IA appliquée à la 3D / CAO : très proche de Chat3D",
+    "Lausanne"
+   ],
+   "at": "Ton expérience ML 3D chez Chat3D est le meilleur argument possible ; Neural Concept est déjà dans tes épinglées (TME)."
+  },
+  {
+   "d": "2026-11-06",
+   "b": 67,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Product Content & Education Specialist",
+   "c": "Clinique La Prairie",
+   "l": "Montreux",
+   "dist": "Montreux",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "3 à 5 ans",
+   "lg": "EN (+ autre langue appréciée)",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/content-product-specialist-at-clinique-la-prairie-4487767546",
+   "n": "Maison de longévité scientifique : transformer l'offre médicale en contenus que toutes les équipes utilisent.",
+   "fit": {
+    "m": 2,
+    "da": 1,
+    "ia": 0,
+    "pct": 46
+   },
+   "ms": [
+    "Écrire brochures, web, scripts, contenus de formation et briefs",
+    "Connaître le produit mieux que quiconque hors équipe médicale"
+   ],
+   "inf": [
+    "⚠️ 3 à 5 ans comme copywriter / rédacteur",
+    "⚠️ Montreux : -1 au scoring géo",
+    "Poste d'écriture avant tout"
+   ],
+   "at": "Belle maison, mais c'est un poste de plume."
   }
  ]
 }
