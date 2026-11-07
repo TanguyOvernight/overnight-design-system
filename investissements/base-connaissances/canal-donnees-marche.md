@@ -353,3 +353,84 @@ a donné la liste datée des communiqués de Maurel & Prom, et
    **Aucune thèse cyclique ne doit s'appuyer là-dessus.** *À traiter comme
    le mur d'egress l'était avant le 04/11 : une absence de canal, pas une donnée
    incertaine.*
+
+---
+
+# ⚠️ 07/11/2026 — LE CANAL EST VALIDÉ PAR TAILLE, PAS GLOBALEMENT
+
+**Google Finance est faux sur les petites valeurs françaises.** Démonstration sur
+Aubay (AUB, FR0000063737) :
+
+```
+Google (EPA:AUB, DAILY)        05/11 = 52,50 €       06/11 = 49,55 €   ⇒ −5,62 %
+abcbourse (horodaté 17:35:00)  clôture préc. 51,80 €  06/11 = 49,55 €   ⇒ −4,34 %
+Contrôle interne : 51,80 × (1 − 0,0434) = 49,55 ✓  ·  52,50 ne boucle avec rien.
+Et Google répète 49,55 € trois fois : 26/10, 27/10 et 06/11.
+```
+
+La validation du 15/10 portait sur **NVDA, VTI, SWDA et WPEA** — que des ETF et des
+grandes capis — plus le contrôle des 70 parts. **Elle ne transporte pas aux small caps.**
+
+> **Règle (R66)** : toute petite capitalisation exige un **recoupement horodaté** sur
+> `abcbourse.com/cotation/<TICKER>p` **avant** d'entrer dans un appel, un seuil ou un
+> classement. Les ETF et grandes capis restent servis par le canal Sheets.
+
+**Symptôme à reconnaître** : une valeur **répétée à l'identique** sur des séances non
+consécutives, ou une variation qui **ne boucle pas** avec la clôture précédente annoncée
+par une autre source. C'est le même symptôme que `closeyest` (qui mentait sur la date) et
+que `capi ÷ titres` (qui exhumait un prix périmé) : **le canal rend un chiffre ancien sous
+une date fraîche.**
+
+---
+
+# ⭐ NOUVEAU CANAL — déclarations de dirigeants (art. 19 MAR), validé le 07/11/2026
+
+| Usage | URL |
+|---|---|
+| **Liste nationale** des déclarations, fraîche | `abcbourse.com/marches/transactions_dirigeants` |
+| **La page qui décide** — par émetteur | `abcbourse.com/marches/transactions_dirigeants/<ISIN>p` |
+
+**Fraîcheur mesurée le 07/11** : opérations jusqu'au 04/11 déclarées le 05/11.
+**Délai structurel : 3 jours ouvrés** — un achat du vendredi n'est pas lisible avant le mercredi.
+
+## 🔑 Le champ qui décide : prix unitaire + contrepartie nommée
+
+La **liste nationale** ne donne qu'un **montant**. La page **par émetteur** donne la
+**quantité**, le **prix unitaire** et le **commentaire AMF nommant la contrepartie**.
+
+**Le cas qui l'a prouvé — Audacia, 07/11/2026.** La liste affichait Gravitation SAS
+(holding du président du conseil) en « Acquisition » de **996 227 €** le 03/11 : le plus gros
+ticket d'initié de la semaine à Paris, ~4,1 % de la capi, sur un titre près de son plus-bas.
+La page par émetteur disait : **245 982 titres à 4,05 €, « auprès de monsieur Charles
+Beigbeder »** — la holding de M. Beigbeder rachetant à M. Beigbeder, à un prix **18 % au-dessus
+du marché** qui est exactement celui de l'augmentation de capital du 11/02/2026.
+**Transfert de contrôle intra-familial, zéro euro extérieur.**
+
+> **Un montant d'« acquisition » sans prix unitaire ni contrepartie nommée n'est pas un achat
+> d'initié — c'est une ligne de tableau.** Sans ce champ, un faux signal de manuel partait
+> dans le brief.
+
+**Deux tests à passer systématiquement sur ce canal :**
+1. **T6 (contrepartie)** — *qui vend ?* Si le vendeur est lié à l'acheteur, il n'y a pas
+   d'argent extérieur, donc pas de signal.
+2. **Prix unitaire contre cours du jour** — un achat **au-dessus** du marché est un prix de
+   transfert comptable, pas une conviction.
+
+---
+
+# 🚫 Hôtes bloqués — état au 07/11/2026
+
+| Hôte | Ce qu'il porte | État |
+|---|---|---|
+| `echanges.dila.gouv.fr` | **Franchissements de seuil AMF** — `/OPENDATA/AMF/ACT/<année>/<mois>/`, fichiers `FCACT*.pdf`. C'est **le** canal primaire. | DNS non résolu |
+| `assemblee-nationale.fr` | Amendements du PLF 2027 — **la base de résolution de C056** | DNS non résolu |
+| `actusnews.com` | Communiqués primaires d'émetteurs français | DNS non résolu |
+| `bdif.amf-france.org` | Avis AMF — les PDF individuels sont indexés, mais l'interface est une SPA : **la liste de la semaine est inaccessible**. Avis les plus récents remontés : juillet 2026. | atteignable, inutilisable |
+
+**Conséquence** : aucun accès systématique aux franchissements de seuil. Le terrain smart
+money repose entièrement sur les déclarations de dirigeants (ci-dessus) et, à partir du
+~14/11, sur les 13F.
+
+⚠️ **Je signale les hôtes bloqués, je ne les contourne pas, et je ne déclenche pas de
+demande d'autorisation réseau depuis une routine planifiée.** C'est la décision de Tanguy,
+comme pour `live.euronext.com` et `abcbourse.com` qu'il a autorisés le 04/11.

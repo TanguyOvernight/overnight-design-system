@@ -2555,3 +2555,51 @@ calendrier budgétaire — pas à arbitrer, il n'y a rien à faire d'ici là.*
 | **24/11/2026** | ICAPE — Capital Market Day |
 | **≈ 31/12/2026** | Closing **Maurel & Prom / Gran Tierra** *(VE 1,33 Md$)* — reste les autorisations Colombie + Équateur |
 | non daté | **Augmentation de capital Eramet** — modalités à établir |
+
+---
+
+## Catalyseurs datés — mise à jour du 07/11/2026
+
+| Date | Jour | Événement | Certitude |
+|---|---|---|---|
+| **11/11/2026** | mercredi | Résultats de la revue MSCI de novembre (effet au 01/12) | FAIT — calendrier MSCI |
+| **~14/11/2026** | samedi | **Échéance de dépôt des 13F du T3 2026.** Ouvre la fenêtre superinvestisseurs — la chasse smart money devrait être calée APRÈS cette date (R67) | FAIT — règle SEC |
+| mi-novembre | — | Vallourec, résultats T3 | FAIT |
+| **24/11/2026** | mardi | ICAPE, Capital Market Day | FAIT |
+| **03/12/2026** | jeudi | Assemblée générale Bonduelle | MONO-SOURCE — à confirmer chez l'émetteur |
+| **≈31/12/2026** | — | Closing Maurel & Prom / Gran Tierra | FAIT |
+| **31/12/2026** | jeudi | **Butée de C056** (ETF synthétiques en PEA, 78 %) **et de C061** (S&P ≤ 6 795,99, 10 %) | appels |
+| **27/01/2027** | mercredi | **Aubay — CA annuel 2026**, après bourse. Prochaine publication après le T3 du 28/10 | FAIT — annoncé dans le communiqué du 28/10/2026 |
+| en cours | — | PLF 2027 (texte n° 3210, déposé le 01/10) — vote et texte définitif. **Base de résolution de C056** ; `assemblee-nationale.fr` hors réseau | — |
+
+### Suivis sans date, journalisés
+- **Bonduelle** — le ticket d'achat de Pierre et Benoît Bonduelle SAS du 04/11 (332 484 €)
+  est **~30× celui de décembre 2025** (~11 470 €). Achat structurel déclaré depuis 2023,
+  donc **pas un signal aujourd'hui** — *mais une répétition de cette taille en décembre
+  serait un fait NOUVEAU à remesurer.*
+- **Roche Bobois** — premier exercice sous Eric Amourdedieu, président du directoire depuis
+  le 30/07/2026 (révocation de Guillaume Demulier). Deux actionnaires de référence acheteurs
+  début novembre, pour des montants non matériels (~58 k€ au total). La prochaine publication
+  est le test du nouveau management.
+- **ABC Arbitrage** — Aubepar Industries SE (administrateur) allège **en continu** :
+  8 cessions échelonnées du 02 au 04/11/2026, ~268 k€. Drapeau si la valeur revient par un
+  autre chemin : contrepartie informée **à la vente**.
+- **bioMérieux** — cessions simultanées de Pierre Boulud (378 955 €) et Guillaume Bouhours
+  (291 750 €) le 04/11/2026. ⚠️ **Caveat non vérifié** : ce type de cession simultanée est
+  très souvent un débouclage post-attribution d'actions gratuites, pas une vente de
+  conviction. **Ne pas lire comme un signal baissier sans le commentaire AMF détaillé.**
+- **Pizzorno** — OPA simplifiée Paprec à 62,50 €/action (note d'offre déposée le 29/07/2026 ;
+  Paprec + famille = 71,82 % du capital / 80,02 % des droits de vote). Retrait obligatoire
+  possible. **Hors mandat** (arbitrage d'OPA), mais le dossier est clos.
+- **Bonduelle SCA / La Plaine SA** — projet de fusion mentionné par un agrégateur **sans
+  date** → traité comme **périmé par défaut**. À vérifier à la source IR avant tout usage.
+
+### ⚠️ Échéances d'appels toujours sans tâche planifiée
+**C011** (mars 2027) · **C014** (30/06/2027) · **C015** (31/12/2027) · **C017** (31/07/2027)
+· **C054** (31/12/2031) · **C056** (31/12/2026) · **C061** (31/12/2026) · **C065** ·
+**C067** (11/02/2027).
+
+> 🔴 **Le risque que je signale depuis le 30/09 s'est matérialisé DEUX FOIS** : C063 résolu
+> 3 jours en retard, **C059 résolu 10 jours en retard** (butée fin octobre, résolu le 07/11).
+> Ce n'est plus une hypothèse, c'est un taux. *Je ne crée pas ces tâches planifiées de ma
+> seule initiative — mais le constat est désormais empirique.*

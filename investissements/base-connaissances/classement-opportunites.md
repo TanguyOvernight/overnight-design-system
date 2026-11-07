@@ -3168,3 +3168,63 @@ factuellement faux.
 
 > ⛔ **Verrou indépendant de tout ça : R = 30,87 %.** *Aucune action individuelle
 > ne peut entrer, quel qu'eût été le verdict.*
+
+---
+
+## CLASSEMENT AU 07/11/2026 — revue hebdomadaire
+
+| Rang | Candidate | Cours 06/11 | Mouvement | Motif |
+|---|---|---|---|---|
+| **1** | **Cœur World (WPEA)** | **6,98 €** | = | 🔔 **ACHAT : 43 parts, 300,14 €, avec le cash qui dort déjà sur le PEA.** R 29,63 % → **24,44 %** |
+| **2** | Eli Lilly | 1 354 $ | = | Seuil 1 020 $, **32,8 % au-dessus**. Semaine **−4,48 % contre −0,04 % pour XLV** : s'approche par faiblesse propre (R62 satisfait) |
+| **3** | STMicroelectronics | 37,64 € | = *(contrat AFFAIBLI)* | Voir ci-dessous |
+| **4** | Magnum Ice Cream | — | = | Dormant |
+
+**Aucun changement de rang.** La chasse smart money du jour a rendu **0 signal** (5ᵉ
+consécutive) : rien de neuf à comparer sur le mètre commun, donc les rangs tiennent par
+application de la **loi 2** *(l'ancienneté n'est ni un avantage ni un handicap)*.
+
+### Rang 1 — pourquoi l'ordre change de nature aujourd'hui
+
+Pendant vingt jours la recommandation était « investir le versement du 1er décembre ».
+**Elle devient : acheter maintenant avec le cash déjà présent.**
+
+```
+43 parts × 6,98 €            = 300,14 €    (cash PEA 304,26 € → reste 4,12 €)
+cœur  994,95 € → 1 295,09 €  ⇒  R = 24,44 %      ← sous le plafond de 25 %
+```
+
+- **44 parts est impossible** : 307,12 € > 304,26 €. **Le cash est la contrainte, pas le plafond.**
+- **38 parts suffiraient** arithmétiquement (265,24 € → R 24,95 %), mais 0,05 pt de marge
+  n'est pas une marge. 43 parts donne **0,56 pt**.
+- **Frais 0 €** : premier ordre du mois, Starter, sous 500 € (R56 — c'est une **marche**,
+  pas un taux ; le plafond gratuit est monté à **71 parts / 495,58 €** avec la baisse du cours).
+- ⚠️ **Le plafond de ligne L (258,00 €) ne s'applique pas au cœur** → **R68**.
+
+### Rang 3 — STM : l'avance relative a fondu de moitié, 2ᵉ affaiblissement en deux jours
+
+```
+Fenêtre de référence 09/10 → 05/11 :  STM −20,37 %  ASML −21,95 %  ⇒  +1,58 pt
+Fenêtre de référence 09/10 → 06/11 :  STM −19,14 %  ASML −19,86 %  ⇒  +0,71 pt
+Semaine         30/10 → 06/11 :       STM −10,12 %  ASML  −9,14 %  ⇒  −0,98 pt
+```
+
+STM a **moins rebondi** qu'ASML (+1,54 % contre +2,69 %). La thèse « baisse propre, donc
+sectorielle, donc temporaire » exige que STM fasse **mieux** que son comparable : elle le fait
+encore sur la fenêtre de référence, mais **l'avance a perdu 55 % en une seule séance**, et
+sur la semaine le signe est **négatif**.
+
+- **Rang 3 conservé** — rien de meilleur à y mettre, et la fenêtre de référence gouverne.
+- ☠️ **Kill criterion explicite, ajouté aujourd'hui** : si l'avance de STM sur ASML **sur la
+  fenêtre de référence 09/10** passe **négative**, la thèse est morte et la candidate sort par
+  la porte **TUÉ**.
+- 🧱 **Mur étanche** : de toute façon **aucun achat risqué n'est possible tant que R > 25 %**.
+  **L'ordre WPEA est la condition d'accès à STM**, pas l'inverse.
+
+### Candidates examinées aujourd'hui et NON retenues (traçabilité)
+
+Terrain smart money, 9 pistes, toutes tuées par un fait primaire. **Aucune n'entre au
+classement** — les motifs complets sont dans `journal/2026-11-07.md` et le canal dans
+`canal-donnees-marche.md`. Le cas à retenir : **Audacia**, où un « achat d'initié » de
+996 227 € s'est révélé être un **transfert intra-familial à 18 % au-dessus du marché**
+(T6 : le vendeur est le propriétaire de l'acheteur).

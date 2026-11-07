@@ -1,7 +1,7 @@
 ligne,ticker,valeur_depart,valeur_oct,gain_eur,perf_pct,devise_cotation,depart
-Vanguard Total Stock Market,VTI,246.09,275.37,+29.28,11.90,USD,02/01/2026
-iShares Core MSCI World,SWDA,199.21,228.48,+29.27,14.69,GBX,02/01/2026
-Nvidia,NVDA,170.11,170.75,+0.64,0.38,USD,02/01/2026
-Tesla,TSLA,192.01,157.24,-34.77,-18.11,USD,02/01/2026
-Microsoft,MSFT,65.25,77.18,+11.93,18.28,USD,02/01/2026
-iShares MSCI World Swap PEA,WPEA,495.74,490.00,-5.74,-1.16,EUR,01/10/2026 (ton achat)
+Vanguard Total Stock Market,VTI,246.09,278.55,+32.46,13.19,USD,02/01/2026
+iShares Core MSCI World,SWDA,199.21,227.80,+28.59,14.35,GBX,02/01/2026
+Nvidia,NVDA,170.11,176.82,+6.71,3.94,USD,02/01/2026
+Tesla,TSLA,192.01,165.14,-26.87,-13.99,USD,02/01/2026
+Microsoft,MSFT,65.25,77.00,+11.75,18.01,USD,02/01/2026
+iShares MSCI World Swap PEA,WPEA,495.74,488.60,-7.14,-1.44,EUR,01/10/2026 (ton achat)

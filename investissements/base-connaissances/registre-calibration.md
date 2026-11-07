@@ -4246,3 +4246,109 @@ donc pas le niveau de preuve du premier, il l'égale.* **Le verdict repose sur d
 reprises convergentes et sur de l'arithmétique interne** *(c'est l'arithmétique
 qui le porte, pas la source)*. **Je ne contourne pas la politique de sortie
 réseau ; je remonte le blocage.**
+
+---
+
+# 📅 07/11/2026 — REVUE : C059 résolu ⏸️ **VOID** par un trou de MON test, et la référence de C061 enfin confirmée
+
+## ⏸️ C059 (Aubay, 15 %) — VOID, 10 jours de retard, et le trou est le mien
+
+### Ce que le monde a publié
+**Mercredi 28/10/2026, 18h00** *(article abcbourse horodaté 28/10/26 18:15 ; année 2026 lue
+dans le corps — R64 respecté)* :
+
+```
+T3 2026   :  173,8 M€  ·  +8,5 % publié  ·  +8,5 % organique
+9 mois    :  525,6 M€  ·  +22,5 % publié ·  +10,3 % organique
+Objectif annuel 2026   :  695-705 M€  →  705-710 M€   (RELEVÉ)
+Marge opérationnelle   :  9,0 % - 10,0 %  (confirmée)
+Prochaine publication  :  mercredi 27/01/2027, après bourse
+```
+
+### Le trou
+Mes critères, écrits le 02/10 :
+
+```
+publiée T3 < +8 %                        → ✅ CONFIRME la réfutation
+publiée ≥ +10 % ET organique ≥ +10 %     → ❌ l'INFIRME
+```
+
+**+8,5 % ne tombe dans aucun des deux.** L'intervalle `[+8 % ; +10 %[` n'avait pas d'issue
+assignée, et c'est là que le monde a atterri. → ⏸️ **VOID, NON SCORÉ.**
+
+### Pourquoi ce VOID n'est pas celui de C013
+
+| | C013 | C059 |
+|---|---|---|
+| Cause | Le monde n'a **rien publié de vérifiable** | **Mon test** avait un trou |
+| Faute | personne | **moi** |
+
+### Ce qui était juste, ce qui était faux
+- ✅ **Juste sur le fond.** L'effet de base s'éteint exactement comme annoncé : le publié
+  tombe de **+22,5 % (9 mois) à +8,5 % (T3)**, et l'écart publié/organique tombe à **zéro**.
+  La décélération que je décrivais est **exactement celle qui s'est produite**.
+- ❌ **Faux sur le chiffre.** J'avais écrit « la guidance implique **~+5 % organique au S2** ».
+  C'est **+8,5 %** : **3,5 points trop bas**, et l'émetteur a **relevé** son objectif annuel.
+- 💰 **Hors base de résolution — l'issue pour l'argent.** Aubay **53,50 € (16/09) → 49,55 €
+  (06/11, horodaté 17:35:00)** pendant que le CAC 40 faisait **−0,02 %** (8 140,59 → 8 139,00).
+  **Ne pas avoir acheté a économisé ~7,4 points.**
+  ⚠️ *Le 53,50 € du 16/09 vient de Google Finance, canal dont je démontre aujourd'hui la
+  défaillance sur les small caps (R66), et n'est pas recoupable. La conclusion est robuste
+  à une erreur de 1,3 %, donc elle tient — mais c'est de l'indicatif, et ce n'était déjà
+  pas la base de résolution.*
+
+> 🔴 **Le VOID me PRIVE d'un score que j'aurais probablement gagné.** Je l'écris parce que
+> c'est le sens inconfortable : si le trou m'avait protégé d'un mauvais score, la règle qui
+> en naît serait suspecte de complaisance. Ici elle me coûte, et c'est ce qui la rend
+> crédible. → **R65** *(`chasse-quotidienne.md`)*.
+
+**Corollaire, encodé dans R65** : mes deux critères étaient **asymétriques sans raison** —
+une jambe d'un côté, deux de l'autre. *Une asymétrie de forme entre les deux branches d'un
+test est le symptôme du trou.*
+
+### ⚠️ Et la tenue : 10 jours
+**C059 était la 7ᵉ échéance signalée sans tâche planifiée**, et elle a sauté de **10 jours**
+(butée « fin octobre », résolue le 07/11). Après **C063, 3 jours de retard** le mois dernier,
+cela fait **deux matérialisations en trois semaines** du risque que je remonte depuis le 30/09.
+**Ce n'est plus une hypothèse, c'est un taux.** *Je ne crée pas ces tâches planifiées de ma
+seule initiative.*
+
+## ✅ C061 (S&P 500 ≤ 6 795,99 avant le 31/12, 10 %) — la référence est CONFIRMÉE
+
+Le 04/10 j'avais marqué la référence du 02/10 **« de qualité imparfaite — dépêche AP relayée,
+aucune page ouvrable »**, en fixant d'avance une tolérance : *si la référence se révèle fausse,
+le seuil se recalcule à −12 % de la valeur corrigée, et l'appel n'est pas annulé* (㉚).
+
+**Une seconde source indépendante, en série datée, donne exactement 7 722,72 au 02/10/2026.**
+
+→ **La tolérance ne s'applique pas. Le seuil 6 795,99 tient tel quel.**
+
+```
+S&P 500 au 06/11 :  7 376,86   (−4,48 % depuis le 02/10)
+Point bas de la semaine : 7 353,73 le 05/11   (−4,78 %)
+Distance au seuil : il reste −7,87 % à faire
+```
+
+> 🏆 **Ce que ça vaut** : une référence signalée comme faible, avec sa tolérance écrite
+> d'avance, et **confirmée ensuite au centime**. C'est le cycle complet de ㉚ — et la
+> première fois qu'il se referme par une confirmation plutôt que par une correction.
+
+## C056 (ETF synthétiques en PEA maintenus au 31/12, 78 %) — inchangé, **preuve négative**
+
+Aucun amendement au PLF 2027 trouvé cette semaine. **Mais la recherche est une preuve
+négative** : `assemblee-nationale.fr` ne résout pas dans cette session, donc la base des
+amendements n'a pas été lue. L'état connu : note du Trésor du 24/07/2026 → engagement
+public du ministre David Amiel le **26/08/2026** (aucune mesure d'exclusion proposée) →
+texte déposé sans l'amendement.
+
+**P maintenu à 78 %** *(plafond de charte ; mon raisonnement dit 88 %)*.
+
+## 📊 État du registre au 07/11/2026
+
+**Résolus inchangés.** C059 passe de ⏳ OUVERT à ⏸️ **VOID, non scoré** — il ne modifie
+donc **ni le Brier moyen ni le BSS**.
+
+**Ouverts** : **C011** *(mars 2027)* · **C014** *(30/06/2027)* · **C015** *(31/12/2027)* ·
+**C017** *(40 %, 31/07/2027)* · **C054** *(62 %, 31/12/2031)* · **C056** *(78 %, 31/12/2026)* ·
+**C061** *(10 %, 31/12/2026)* · **C065** *(60 %)* · **C067** *(25 %, 11/02/2027)*.
+**VOID, réouvrables** : **C013** · **C059**.

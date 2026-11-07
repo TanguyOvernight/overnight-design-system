@@ -3268,3 +3268,137 @@ jours** : *« la croissance de cette société européenne vient-elle de la dema
 
 ⚠️ **Décision non prise** : la rotation est dans la routine de Tanguy. *Je
 recommande, il tranche.*
+
+---
+
+## R65 — Deux critères de résolution doivent PARTITIONNER les issues
+
+**Né de C059 (Aubay), le 07/11/2026.**
+
+J'avais écrit, le 02/10, deux critères pré-enregistrés pour ma propre réfutation :
+
+```
+croissance publiée T3 < +8 %                   → ✅ réfutation CONFIRMÉE
+publiée ≥ +10 % ET organique ≥ +10 %           → ❌ réfutation INFIRMÉE
+```
+
+Le publié est sorti à **+8,5 %**. Il ne tombe **dans aucun des deux**. L'intervalle
+`[+8 % ; +10 %[` n'avait **pas d'issue assignée** — et c'est exactement là que le monde
+a atterri.
+
+> **La règle** : deux critères pré-enregistrés qui se veulent décisifs doivent **couvrir
+> tout l'espace des issues, sans trou et sans recouvrement**. Après les avoir écrits, je
+> dois poser la question : *« quelle valeur de la métrique ne déclenche ni l'un ni l'autre ? »*
+> Si la réponse n'est pas « aucune », le test n'est pas pré-enregistré, il est **esquissé**.
+
+**Conséquence de score** : l'appel part ⏸️ **VOID, non scoré**. Et la nature du VOID n'est
+pas la même que celle de C013 :
+
+| | C013 | C059 |
+|---|---|---|
+| Cause du VOID | Le monde n'a **rien publié de vérifiable** | **Mon test** avait un trou |
+| Faute | personne | **moi** |
+
+**Le VOID n'est pas neutre ici.** Dans le cas d'Aubay le titre a fait **−7,4 points contre
+un CAC plat** : la réfutation aurait très probablement été scorée **gagnante**. Le trou de
+mon test m'a **privé d'un bon score**, pas protégé d'un mauvais. *Je l'écris pour que la
+règle ne soit pas lue comme une sortie de secours : un trou de critère coûte dans les deux
+sens, et le sens du jour est défavorable.*
+
+**Corollaire sur l'asymétrie** : mes deux critères étaient **asymétriques sans raison** —
+l'un à une jambe (`publié < 8 %`), l'autre à deux (`publié ≥ 10 % ET organique ≥ 10 %`).
+Une asymétrie de forme entre les deux branches est le **symptôme** du trou. Quand les deux
+branches n'ont pas la même structure, chercher le trou.
+
+---
+
+## R66 — Le canal Google Sheets est validé par TAILLE DE CAPITALISATION, pas globalement
+
+**Né le 07/11/2026, sur Aubay.**
+
+Le canal `GOOGLEFINANCE()` a été validé le 15/10 par croisement en 4 points (NVDA, VTI,
+SWDA, WPEA) **et** par le contrôle décisif des 70 parts de WPEA. **Toutes ces lignes sont
+des ETF ou des grandes capitalisations.** J'en ai conclu « le canal fonctionne ». C'était
+une généralisation hors de son échantillon.
+
+**La démonstration, sur une small cap française :**
+
+```
+Google (EPA:AUB, DAILY)       05/11 = 52,50 €      06/11 = 49,55 €   ⇒ −5,62 %
+abcbourse (horodaté 17:35:00) clôture préc. 51,80 € 06/11 = 49,55 €   ⇒ −4,34 %
+Contrôle interne : 51,80 × (1 − 0,0434) = 49,55 ✓  —  52,50 ne boucle avec rien.
+Pire : Google répète 49,55 € trois fois (26/10, 27/10, 06/11).
+```
+
+Le 06/11 est confirmé par deux sources. **Le 05/11 ne l'est pas, et Google est le suspect**
+(c'est lui qui ne boucle pas, et lui qui duplique).
+
+> **La règle** : le canal Google Sheets est **fiable sur les ETF et les grandes
+> capitalisations**, et **non vérifié — donc non fiable — sur les petites valeurs**.
+> Toute petite capi exige un **recoupement horodaté** (`abcbourse.com/cotation/<TICKER>p`)
+> **avant** d'entrer dans un appel, un seuil ou un classement.
+
+**Et la règle sur la règle** : une validation de canal porte sur **l'échantillon qui l'a
+validée**. Quatre grandes capis ne valident pas les small caps, exactement comme un ratio
+de couverture mesuré sur un secteur ne se transporte pas à un autre (R59).
+
+**Cas d'usage touché aujourd'hui** : le 53,50 € d'Aubay au 16/09 vient du canal défaillant
+et n'est pas recoupable. Je l'ai utilisé en **indicatif explicitement hors base de
+résolution**, et j'ai écrit que la conclusion est robuste à une erreur de 1,3 %. *C'est la
+bonne façon d'utiliser une donnée dégradée : nommée comme telle, et jamais portante.*
+
+---
+
+## R67 — Un terrain de la rotation peut être VIDE PAR CONSTRUCTION
+
+**Né le 07/11/2026, terrain « smart money ».**
+
+La chasse du samedi comporte une branche « 13F américains récents ». **Les 13F du T3 2026
+n'étaient pas déposés** : trimestre clos le 30/09, échéance légale **~14/11/2026**. La
+branche ne pouvait rien rendre — non pas par malchance, mais **par calendrier réglementaire**.
+Tout ce qui circule aujourd'hui sous ce nom est du T2, déposé vers le 14/08.
+
+> **La règle** : avant de lancer une chasse sur un terrain, vérifier que **la source du
+> terrain a publié quelque chose depuis la dernière chasse**. Une source à publication
+> périodique (13F trimestriels, déclarations art. 19 MAR à 3 jours ouvrés, revues d'indices
+> semestrielles) rend un terrain **mécaniquement stérile** entre deux dates.
+
+**Ce n'est pas la même maladie que le terrain émergents (06/11).** Il faut les distinguer,
+sinon on retire le mauvais terrain :
+
+| | Émergents | Smart money |
+|---|---|---|
+| Problème | Le **canal de transmission** est cassé (bêta matière première ~1, l'actualité émetteur n'explique rien) | Le **calendrier** est désaligné |
+| Remède | **retirer** le terrain | **recaler** la date |
+
+→ **Recommandation** : caler la chasse smart money **après le 14 novembre** (dépôt des 13F
+du T3), puis sur un rythme trimestriel pour cette branche, en gardant la branche
+« déclarations de dirigeants » en hebdomadaire — elle, elle publie en continu.
+
+⚠️ **Décision non prise** : la rotation est dans la routine de Tanguy. *Je recommande, il tranche.*
+
+---
+
+## R68 — Le plafond de ligne L ne vise qu'une ligne CONCENTRÉE
+
+**Né le 07/11/2026, en préparant l'ordre WPEA.**
+
+```
+L = min(5 % × (V + 6 000) ; 15 % × V) = min(386,00 € ; 258,00 €) = 258,00 €
+Or le WPEA porte déjà 488,60 €, et l'ordre recommandé est de 300,14 €.
+```
+
+Appliqué littéralement au cœur, L **interdirait** l'ordre qui fait respecter le garde-fou R —
+et rendrait R **mathématiquement inatteignable**, puisque le seul instrument de cœur
+disponible en PEA est un ETF World unique.
+
+> **La règle** : L borne l'exposition à **un émetteur** — le risque qu'il porte est
+> idiosyncratique et non diversifiable. Un **ETF large** n'est pas une ligne au sens de L :
+> c'est le **dénominateur** de la règle, l'actif de référence contre lequel L est calibré.
+> L ne s'applique donc **pas** au cœur.
+
+**C'est un cas de R59** (*une règle née d'un cas porte la condition de ce cas*). L a été
+écrite pour empêcher qu'une **candidate single-name** prenne trop de place. Lue hors de cette
+condition, elle retourne un résultat absurde. **Le test de l'absurde est le signal** : quand
+une règle interdit l'action qu'une autre règle impose, l'une des deux est lue hors de son
+domaine — ce n'est pas un conflit de règles, c'est une erreur de lecture.

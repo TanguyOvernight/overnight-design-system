@@ -1,11 +1,11 @@
 cle,libelle,valeur
-action,Action prioritaire,Investir 69 parts de WPEA avec le versement de novembre
-action_montant,Montant,294.00
+action,Action prioritaire,Acheter 43 parts de WPEA avec le cash qui dort déjà sur le PEA
+action_montant,Montant,300.14
 action_frais,Frais estimés — à lire dans l'appli avant de valider,0
 seuil_frais,Au-delà de ce montant de frais préviens-moi,7
 prochain_versement,Prochain versement,2026-12-01
 prochain_versement_montant,Montant,500
-consigne,Consigne du jour,La baisse a fait tomber le besoin de cœur à 221.68 €. 42 parts à 294 € suffisent désormais pour R à 23.93 %.
-maj,Chiffres arrêtés au,clôture du 05/11
-action_parts,Nombre de parts à saisir,42
+consigne,Consigne du jour,Pas besoin d'attendre le 1er décembre : 304.26 € dorment sur le PEA. 43 parts à 6.98 € font tomber R de 29.63 % à 24.44 %, sous le plafond de 25 % pour la première fois.
+maj,Chiffres arrêtés au,clôture du 06/11
+action_parts,Nombre de parts à saisir,43
 frais_regle,Pourquoi 0 €,Premier ordre du mois gratuit en formule Starter si le montant reste sous 500 € — à confirmer sur l'écran de validation
