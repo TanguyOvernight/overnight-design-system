@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-11-06",
+ "maj": "2026-11-07",
  "offres": [
   {
    "d": "2026-10-03",
@@ -4647,6 +4647,112 @@
     "Poste d'écriture avant tout"
    ],
    "at": "Belle maison, mais c'est un poste de plume."
+  },
+  {
+   "d": "2026-11-07",
+   "b": 68,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Paid Media Creative Strategist",
+   "c": "Jobgether (client non nommé, multi-marques)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "5 ans",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/paid-media-creative-strategist-at-jobgether-4486951005",
+   "n": "Idéation créative, angles de message et briefs pour publicités statiques et vidéo, analyse de performance des créas sur plusieurs marques.",
+   "fit": {
+    "m": 2,
+    "da": 2,
+    "ia": 1,
+    "pct": 60
+   },
+   "ms": [
+    "Trouver de nouveaux angles créatifs et les tester",
+    "Briefer designers, monteurs et copywriters",
+    "Lire la performance des campagnes pour itérer"
+   ],
+   "inf": [
+    "⚠️ expérience demandée : 5 ans",
+    "Employeur non nommé (Jobgether)",
+    "Orientation performance/paid"
+   ],
+   "at": "Meilleur fit créatif du jour : DA + IA générative pour produire et tester des variantes."
+  },
+  {
+   "d": "2026-11-07",
+   "b": 68,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Storytelling & Narrative Lead",
+   "c": "Jobgether (entreprise tech globale non nommée)",
+   "l": "Remote Suisse / EMEA",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "5 ans + 2 ans de management",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/storytelling-and-narrative-lead-at-jobgether-4486960876",
+   "n": "Piloter la stratégie de contenu et l'équipe éditoriale, rendre clairs des sujets tech complexes ; SEO, GEO, automatisation.",
+   "fit": {
+    "m": 2,
+    "da": 1,
+    "ia": 1,
+    "pct": 52
+   },
+   "ms": [
+    "Stratégie de contenu et calendrier éditorial",
+    "Coacher une équipe de content specialists",
+    "Narratifs tech avec produit et ingénierie"
+   ],
+   "inf": [
+    "⚠️ expérience demandée : 5 ans + 2 ans de management",
+    "Employeur non nommé (Jobgether)"
+   ],
+   "at": "Ton récit Chat3D (ML 3D expliqué simplement) est l'argument."
+  },
+  {
+   "d": "2026-11-07",
+   "b": 68,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Chief Marketing Officer",
+   "c": "Neural Concept",
+   "l": "Bussigny / Lausanne",
+   "dist": "Lausanne",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "non chiffrée (poste C-level)",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.talent.com/view?id=644900733183926280&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+   "n": "Créer la catégorie « AI for Engineering » : positionnement, récit produit, stratégie de croissance et organisation marketing, en reportant au CEO.",
+   "fit": {
+    "m": 3,
+    "da": 1,
+    "ia": 2,
+    "pct": 40
+   },
+   "ms": [
+    "Positionnement et récit produit",
+    "Diriger une équipe marketing internationale",
+    "Bâtir le modèle opérationnel marketing"
+   ],
+   "inf": [
+    "⚠️ très senior : C-level, équipe établie à diriger",
+    "Lien via agrégateur talent.com (annonce d'origine non trouvée)"
+   ],
+   "at": "Hors de portée en l'état, mais signal fort : Neural Concept recrute en marketing (TMM toujours ouvert)."
   }
  ]
 }
