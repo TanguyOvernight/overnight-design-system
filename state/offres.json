@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-11-07",
+ "maj": "2026-11-08",
  "offres": [
   {
    "d": "2026-10-03",
@@ -4753,6 +4753,75 @@
     "Lien via agrégateur talent.com (annonce d'origine non trouvée)"
    ],
    "at": "Hors de portée en l'état, mais signal fort : Neural Concept recrute en marketing (TMM toujours ouvert)."
+  },
+  {
+   "d": "2026-11-08",
+   "b": 69,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "solide",
+   "t": "Email Marketing Manager (Klaviyo)",
+   "c": "Jobgether (marques DTC/e-commerce non nommées)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "1 an de Klaviyo pratique",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/email-marketing-manager-klaviyo-at-jobgether-4486971218",
+   "n": "Piloter l'e-mail marketing de marques DTC établies : campagnes, flows automatisés, pop-ups, copywriting et suivi de performance dans Klaviyo.",
+   "fit": {
+    "m": 3,
+    "da": 1,
+    "ia": 1,
+    "pct": 62
+   },
+   "ms": [
+    "Construire campagnes et flows automatisés dans Klaviyo",
+    "Écrire des e-mails qui convertissent",
+    "Gérer plusieurs projets en autonomie"
+   ],
+   "inf": [
+    "⚠️ au moins 1 an de Klaviyo intensif demandé",
+    "Employeur non nommé (Jobgether)"
+   ],
+   "at": "Tes automatisations marketing et ton copywriting cochent l'essentiel ; prépare un exemple de flow."
+  },
+  {
+   "d": "2026-11-08",
+   "b": 69,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Sr Product Manager – Growth Marketing Enablement",
+   "c": "Kraken",
+   "l": "Suisse (remote)",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "non chiffrée (Senior)",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/sr-product-manager-growth-marketing-enablement-at-kraken-4469601630",
+   "n": "Concevoir et lancer les parcours in-app et web sur lesquels arrivent les utilisateurs venus des push, e-mails, réseaux et campagnes payantes (équipe Consumer Trading).",
+   "fit": {
+    "m": 2,
+    "da": 1,
+    "ia": 1,
+    "pct": 38
+   },
+   "ms": [
+    "Concevoir les parcours de campagne in-app et web",
+    "Outiller le growth marketing côté produit"
+   ],
+   "inf": [
+    "⚠️ poste de product management, pas de marketing",
+    "⚠️ Senior sans années chiffrées"
+   ],
+   "at": "Pont entre marketing et produit ; Kraken Staff Brand Designer déjà épinglé."
   }
  ]
 }
