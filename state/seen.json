@@ -1,7 +1,7 @@
 {
  "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
- "maj": "2026-11-08",
- "dernier_brief": 69,
+ "maj": "2026-11-09",
+ "dernier_brief": 70,
  "vus": {
   "jobup": [
    "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -1163,7 +1163,17 @@
    "b2b3e06c-f8df-40ed-9a22-088e387a1b69",
    "ecda9610-3b9e-4db1-b45a-bfac3273f0a7",
    "f1def93e-2a69-4062-b0c3-c5a8d032dc58",
-   "f1f85236-d553-47ed-b0ee-abd549d6f021"
+   "f1f85236-d553-47ed-b0ee-abd549d6f021",
+   "1d637208-0750-4423-9bc3-03b7b84a6371",
+   "2a9ecd6d-fbb5-431c-b0b6-fe4cdbce1cce",
+   "6f2aef65-0c51-4024-a827-ddc4f69165e5",
+   "8fc5249d-d4e3-4448-9542-3c8540500ba9",
+   "8fe785c1-b732-4ddd-9103-5e95be25559e",
+   "9298f533-fc18-41d1-85d9-b431337c7da4",
+   "a21fcb54-fa8d-490b-8738-effa021d3bd9",
+   "ab9570d7-9fe5-4540-98d3-301a86a6e3a1",
+   "b8c442f4-82b5-4f35-bcc3-c92b28da48f8",
+   "ec6ad94f-8063-45d5-b5c7-e82aa82cd1ef"
   ],
   "ats_employeurs": [
    "https://recrutement.eben-hezer.ch/jobs/7602918-responsable-communication-et-recherche-de-fonds",
@@ -3820,7 +3830,22 @@
    "4488167653",
    "4488175479",
    "4488405256",
-   "4488113960"
+   "4488113960",
+   "4488760419",
+   "4488836327",
+   "4472007017",
+   "4488784144",
+   "4479883334",
+   "4487650649",
+   "4488784787",
+   "4488810393",
+   "4487106826",
+   "4487677475",
+   "4488834280",
+   "4487106239",
+   "4487100535",
+   "4487648525",
+   "4487124841"
   ],
   "chuv": [
    "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html"
@@ -3871,7 +3896,8 @@
    "emplois-vaud:3253533672 (Benezet)",
    "hosco:createur-de-contenus-visuels sandoz (09.09, fraîcheur incertaine)",
    "Quantis — Digital Marketing Manager (EPFL Innovation Park, 26.10, non vérifiée)",
-   "Securitas coord. appels d'offres, HEFP comm 40 %, Romande Energie stratégie réseau (07.11, ❌)"
+   "Securitas coord. appels d'offres, HEFP comm 40 %, Romande Energie stratégie réseau (07.11, ❌)",
+   "jobscout24:a49f4ab0 Medicalis « Marketing, auteur/autrice » (09.11, ❌ annonce = texte de blog)"
   ],
   "ashby": [
    "adaptyv:5a44f0eb",
@@ -3932,7 +3958,8 @@
    "in-8f5f6b709258afd3",
    "in-118f40ff224d808c",
    "in-806e3d8d679e8bce",
-   "in-f153875f54c60ffa"
+   "in-f153875f54c60ffa",
+   "https://ch.indeed.com/viewjob?jk=191c18a1eb7a9746"
   ],
   "jobroom": [
    "6ce0fade-e7cd-41e3-9327-208a9b3f763d",
@@ -4767,7 +4794,33 @@
    "9c167510-dd29-45b1-a764-6590a3456da0",
    "8bc8dda3-f5b3-49f2-b991-b85aadcb03aa",
    "049a7635-ffbf-4120-9bee-ca90b62aeadb",
-   "6b606157-b789-47f2-93a9-57f01cd89c29"
+   "6b606157-b789-47f2-93a9-57f01cd89c29",
+   "a29e74ff-66ab-486e-a84f-bab362b8bd32",
+   "51dbac1c-df5d-44b2-8d51-27559db186dc",
+   "80bab8aa-2409-4c53-abde-c131ac2954a1",
+   "6793b2db-5cd8-4f48-aaff-9f674dee3d27",
+   "c2bd2a5b-4b1e-42b2-97e9-9a97a0961f61",
+   "4e42d852-5ab4-414b-a7c8-34100111cf80",
+   "62c47155-70e3-49a6-88bf-f4fba62d0275",
+   "f37e5e40-789f-4b11-b61f-436ea5afc4b6",
+   "6111bc59-55f5-4cfb-96d0-fdc7871bb916",
+   "273d2ec7-366f-4abc-a851-b042316b140a",
+   "0def1a6f-b05e-48b2-bec2-e12f3485a72e",
+   "6e1eec6f-6c16-4ac7-bc3d-16192676e045",
+   "c75f09d9-2486-404f-8448-62a3c68ccc90",
+   "f4cb1688-0c6e-40d6-8e60-d76c0bc441be",
+   "078027b8-be46-4869-b71a-6ff03d9208f7",
+   "73730439-c9da-4d1a-ba12-abc887a2d088",
+   "32b4201d-316e-4dd2-9cb2-b76b0d87f252",
+   "f4b33271-ec04-4177-939f-16c9a77d3c87",
+   "8ab92a22-24d7-4596-98ca-0733e25ffe26",
+   "d815e302-2108-4388-bb7f-f2c030595179",
+   "8282db8b-8211-4575-a929-e1d5c06a0bb4",
+   "7c8fe7da-d3b4-46da-830b-0d7e9f4905d6",
+   "da2a6ae6-da93-4ed2-b6ab-6ff568ca395f",
+   "0b0f4bc3-0f9d-4289-a1fa-55b04c482384",
+   "5c00daf7-c69a-4850-9926-6180d16acd7a",
+   "5e0ff397-c571-4ef0-8516-70c09bd48b20"
   ]
  },
  "postees": [
@@ -6835,6 +6888,22 @@
    "titre": "Sr Product Manager – Growth Marketing Enablement",
    "entreprise": "Kraken",
    "lien": "https://ch.linkedin.com/jobs/view/sr-product-manager-growth-marketing-enablement-at-kraken-4469601630"
+  },
+  {
+   "brief": 70,
+   "date": "2026-11-09",
+   "score": "cible",
+   "titre": "Product and Content Marketer (IA)",
+   "entreprise": "Jobgether (entreprise IA non nommée)",
+   "lien": "https://ch.linkedin.com/jobs/view/product-and-content-marketer-at-jobgether-4487677475"
+  },
+  {
+   "brief": 70,
+   "date": "2026-11-09",
+   "score": "avoir",
+   "titre": "Chef·fe de produit, recettes et projets hors transports",
+   "entreprise": "tl (Transports publics de la région lausannoise)",
+   "lien": "https://ch.indeed.com/viewjob?jk=191c18a1eb7a9746"
   }
  ]
 }

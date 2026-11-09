@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-11-08",
+ "maj": "2026-11-09",
  "offres": [
   {
    "d": "2026-10-03",
@@ -4822,6 +4822,75 @@
     "⚠️ Senior sans années chiffrées"
    ],
    "at": "Pont entre marketing et produit ; Kraken Staff Brand Designer déjà épinglé."
+  },
+  {
+   "d": "2026-11-09",
+   "b": 70,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "cible",
+   "t": "Product and Content Marketer (IA)",
+   "c": "Jobgether (entreprise IA non nommée)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "4 ans dont 2 en IA/ML",
+   "lg": "EN",
+   "g": true,
+   "u": "https://ch.linkedin.com/jobs/view/product-and-content-marketer-at-jobgether-4487677475",
+   "n": "Donner une voix à une entreprise d'IA : traduire recherche, papiers et benchmarks en contenus pour développeurs, chercheurs et entreprises ; lancements produit, storytelling technique, X et LinkedIn, vidéo courte.",
+   "fit": {
+    "m": 3,
+    "da": 1,
+    "ia": 3,
+    "pct": 78
+   },
+   "ms": [
+    "Storytelling technique et récits de lancement",
+    "Faire grandir les comptes X et LinkedIn dans la communauté IA",
+    "Positionnement produit pour publics techniques et business"
+   ],
+   "inf": [
+    "Employeur non nommé (Jobgether)",
+    "4 ans dont 2 en IA/ML : ton passage chez Chat3D compte"
+   ],
+   "at": "Ton expérience Chat3D (ML 3D, contenus LinkedIn, site R3F) est exactement le profil décrit."
+  },
+  {
+   "d": "2026-11-09",
+   "b": 70,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Chef·fe de produit, recettes et projets hors transports",
+   "c": "tl (Transports publics de la région lausannoise)",
+   "l": "Lausanne",
+   "dist": "Lausanne",
+   "tx": "n.p.",
+   "ct": "n.p.",
+   "xp": "non chiffrée",
+   "lg": "FR",
+   "g": false,
+   "u": "https://ch.indeed.com/viewjob?jk=191c18a1eb7a9746",
+   "n": "Développer les revenus hors transport des tl : concessions publicitaires, partenariats commerciaux, espaces commercialisables, contrats.",
+   "fit": {
+    "m": 2,
+    "da": 0,
+    "ia": 0,
+    "pct": 35
+   },
+   "ms": [
+    "Piloter le portefeuille de recettes complémentaires",
+    "Concevoir des offres et suivre partenaires et budgets"
+   ],
+   "inf": [
+    "⚠️ non vérifiée : Indeed refuse notre vérification (401). 🔎 cherche « Chef·fe de produit, recettes et projets hors transports » sur le site carrière des tl",
+    "Poste plutôt commercial (prospection, contrats)"
+   ],
+   "at": "Employeur lausannois solide ; angle publicité et partenariats de marque."
   }
  ]
 }
