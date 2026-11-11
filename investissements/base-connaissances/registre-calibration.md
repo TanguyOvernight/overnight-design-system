@@ -4352,3 +4352,102 @@ donc **ni le Brier moyen ni le BSS**.
 **C017** *(40 %, 31/07/2027)* · **C054** *(62 %, 31/12/2031)* · **C056** *(78 %, 31/12/2026)* ·
 **C061** *(10 %, 31/12/2026)* · **C065** *(60 %)* · **C067** *(25 %, 11/02/2027)*.
 **VOID, réouvrables** : **C013** · **C059**.
+
+---
+
+# 📅 08/11/2026 — Appel ouvert C068 *(Prépa)*
+
+| Réf | Date | Agent | Proposition | **P** | Résolution datée |
+|---|---|---|---|---|---|
+| **C068** | 08/11 | Prépa | **Le WPEA clôture à 6,80 € ou moins le 01/12/2026** | **28 %** | clôture Euronext Paris datée · **01/12/2026** |
+
+**Partition sous-jacente** *(somme = 100 %, dérive nulle, 17 séances, vol mesurée 14,4 %
+annualisée sur les 21 derniers rendements)* :
+`≤ 6,50 : 2,8 %` · `6,50-6,80 : 21,4 %` · `6,80-7,00 : 28,8 %` · `7,00-7,20 : 26,6 %` ·
+`7,20-7,50 : 17,6 %` · `> 7,50 : 2,7 %`.
+
+**Pourquoi 28 % et non 24,2 %** : le modèle à volatilité mesurée donne 24,2 %, à vol 20 %
+il donne 30,8 %. La fenêtre de mesure **chevauche un changement de régime** (semaine du
+02-06/11) et la volatilité se regroupe après un choc : 14,4 % est donc un **plancher sur
+la volatilité**, donc 24,2 % un **plancher sur la queue**.
+
+> 🔴 **C'est exactement le geste qui m'a coûté des points sur C066** (monté de 34 % à
+> 45 %, résolu FAUX — R55). **Donc les deux scores sont pré-enregistrés**, pour que la
+> comparaison soit automatique et non reconstruite après coup :
+
+```
+si VRAI  :  28 % → 0,5184   ·   plancher 24,2 % → 0,5745   ⇒ monter gagne
+si FAUX  :  28 % → 0,0784   ·   plancher 24,2 % → 0,0586   ⇒ le plancher gagne
+```
+
+**C'est le premier test propre de la PORTÉE de R55** : « ne jamais monter au-dessus du
+plancher du modèle » est-il une règle, ou l'anecdote d'un seul appel ?
+
+> 🔑 **Et une observation de méthode qui servira à choisir les prochains appels** :
+> `P(hausse)` ne bouge presque pas quand la volatilité double (**47,0 % → 48,2 %**) alors
+> que **les queues doublent** (2,8 % → 13,6 %). *Un appel sur le milieu de la distribution
+> est robuste à mon ignorance de la volatilité ; un appel sur les extrêmes ne l'est pas —
+> mais seul le second est informatif.* Le choix d'un appel est donc un arbitrage explicite
+> entre **robustesse** et **contenu informatif**, et il faut le nommer en l'ouvrant.
+
+---
+
+# 📅 11/11/2026 — Appel ouvert C069 *(gouvernance Nvidia)*
+
+| Réf | Date | Agent | Proposition | **P** | Résolution datée |
+|---|---|---|---|---|---|
+| **C069** | 11/11 | Juge | **Jensen Huang est encore directeur général de Nvidia le 31/12/2026** | **78 %** *(plafond de charte)* | communiqué Nvidia ou dépôt SEC · **31/12/2026** |
+
+**Le fait**, daté deux fois : le **dimanche 08/11/2026**, Jensen Huang a reconnu une
+relation avec une cadre que le renseignement américain soupçonne de servir Pékin
+*(articles des 09 et 10/11/2026, année explicite)*. Conseil → **enquête indépendante** ;
+**FBI** → enquête ; Congrès → enquête annoncée. **Le conseil déclare n'avoir aucune raison
+de penser que la sécurité nationale ou les secrets de Nvidia aient été compromis.**
+
+**Mon raisonnement dit ~90 %** : aucune atteinte prouvée, dirigeant fondateur, soutien
+présidentiel public, et les conseils ne révoquent pas un fondateur-dirigeant en sept
+semaines sur une affaire de conduite privée sans préjudice établi.
+
+> ⚖️ **Le plafond de 78 % me force à enregistrer moins que ma conviction**, troisième fois
+> après C050 (13/09) et C056 (27/09). Il **me coûte si c'est VRAI** (0,0484 contre 0,0100)
+> et **me protège si c'est FAUX** (0,6084 contre 0,8100). **Je l'applique : une charte qui
+> ne mord que quand ça m'arrange n'est pas une charte.**
+
+### Ce que l'affaire change pour le portefeuille — et ce qu'elle ne change pas
+
+```
+Nvidia   186,64 $ (06/11) → 168,89 $ (10/11)   −9,51 %
+S&P 500  7 376,86 → 7 520,93                   +1,95 %
+⇒ 11,5 points de décrochage idiosyncratique en deux séances
+```
+
+**Décision : on ne vend pas.** (1) Le conseil dit qu'il n'y a pas d'atteinte aux secrets —
+vendre, c'est parier contre cette déclaration sans information propre. (2) Vendre
+cristallise des frais pour acheter une opinion sur une enquête que personne ne peut
+tarifer. (3) 🔑 **Le problème n'est pas Nvidia, c'est la TAILLE de la poche risquée** :
+R = 29,00 % contre un plafond de 25 %, et **Nvidia pèse 38,8 % de cette poche**
+(159,73 € sur 411,75 €). *Un risque de gouvernance non tarifable sur 38,8 % d'une poche
+déjà en infraction ne se règle pas en prédisant l'issue : il se règle en cessant d'être
+surexposé.* **L'affaire renforce l'ordre WPEA sans exiger la moindre vue sur Huang.**
+
+> ⚖️ **Kill criterion écrit d'avance, et il n'est pas un prix** : je change d'avis si
+> (a) la publication du T3 *(semaine du 16/11)* montre un impact sur les comptes ou la
+> guidance, ou (b) l'enquête passe de la conduite du **DIRIGEANT** à celle de la
+> **SOCIÉTÉ** (contrôles à l'export, données client). **Pas sur le cours.**
+
+### ⚠️ Un écart de source, signalé et non lissé
+Une dépêche AFP relayée donne **−6,81 % à 166,51 $** le 10/11 ; ma série datée donne
+**168,89 $** en clôture (−5,47 %). Les deux ne bouclent pas. **Je garde la clôture datée
+et je signale l'écart** — très probablement un relevé intra-séance présenté comme un
+cours, le piège même de R17.
+
+## 📊 État du registre au 11/11/2026
+**Ouverts** : **C011** *(mars 2027)* · **C014** *(30/06/2027)* · **C015** *(31/12/2027)* ·
+**C017** *(40 %, 31/07/2027)* · **C054** *(62 %, 31/12/2031)* · **C056** *(78 %, 31/12)* ·
+**C061** *(10 %, 31/12)* · **C065** *(60 %)* · **C067** *(25 %, 11/02/2027)* ·
+**C068** *(28 %, 01/12)* · **C069** *(78 %, 31/12)*.
+**VOID, réouvrables** : **C013** · **C059**.
+
+> 🔴 **Onze échéances ouvertes, zéro tâche planifiée.** Le risque que je remonte depuis le
+> 30/09 s'est matérialisé **deux fois** (C063 à 3 jours, C059 à 10 jours). *Je ne crée pas
+> ces tâches de ma seule initiative — mais ce n'est plus une hypothèse, c'est un taux.*

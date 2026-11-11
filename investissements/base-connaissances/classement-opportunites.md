@@ -3228,3 +3228,75 @@ classement** — les motifs complets sont dans `journal/2026-11-07.md` et le can
 `canal-donnees-marche.md`. Le cas à retenir : **Audacia**, où un « achat d'initié » de
 996 227 € s'est révélé être un **transfert intra-familial à 18 % au-dessus du marché**
 (T6 : le vendeur est le propriétaire de l'acheteur).
+
+---
+
+## CLASSEMENT AU 11/11/2026 *(clôtures du 10/11)*
+
+| Rang | Candidate | Cours | Mouvement | Motif |
+|---|---|---|---|---|
+| **1** | **Cœur World (WPEA)** | **7,05 €** | = | 🔔 **43 parts, 303,15 €** — tout le cash du PEA. R **29,00 % → 23,90 %** |
+| **2** | Eli Lilly | 1 432,29 $ | = *(s'éloigne)* | **40,4 %** au-dessus du seuil de 1 020 $ |
+| **3** | STMicroelectronics | 40,10 € | = *(contrat **RÉTABLI**)* | Voir ci-dessous |
+| **4** | Magnum Ice Cream | — | = | Dormant |
+| **🆕 en instruction** | **ICAPE Holding** (ALICA) | — | **entrée en cours** | Chez l'**Avocat du Diable**, verdict attendu |
+
+### Rang 1 — l'ordre, et ce que le retard a coûté
+```
+43 parts × 7,05 € = 303,15 €   (cash PEA 304,26 € → reste 1,11 €)
+44 parts          = 310,20 €   > 304,26 €  ⇒ impossible
+```
+**Le retard a coûté 3,01 €** (les mêmes 43 parts valaient 300,14 € le 07/11), soit **plus
+que les 2,81 € de frais que l'ordre économise**. → **R69** : la décision est robuste, mon
+argumentaire était suradapté. *La raison structurelle, et la seule à répéter : le
+garde-fou est en infraction depuis 25 jours et 304 € dorment.*
+
+**Et l'affaire Nvidia la renforce sans exiger de vue sur Nvidia** : R = 29,00 % contre un
+plafond de 25 %, et **Nvidia pèse 38,8 % de la poche risquée** au moment où elle révèle un
+risque de gouvernance non tarifable. *Un tel risque ne se règle pas en prédisant l'issue,
+il se règle en cessant d'être surexposé.*
+
+### Rang 2 — Eli Lilly s'éloigne, et par sa propre force
++5,78 % en deux séances contre **+2,21 % pour XLV**. R62 est satisfaite **dans le mauvais
+sens** : le seuil s'éloigne parce que la valeur surperforme son secteur, pas parce que le
+secteur monte. **Le seuil de 1 020 $ n'est pas près d'être touché** — 40,4 % au-dessus.
+
+### Rang 3 — STM : je rectifie mon alerte du 07/11
+```
+09/10 → 05/11 :  STM −20,37 %  ASML −21,95 %  ⇒  +1,58 pt
+09/10 → 06/11 :  STM −19,14 %  ASML −19,86 %  ⇒  +0,71 pt
+09/10 → 10/11 :  STM −13,86 %  ASML −15,02 %  ⇒  +1,17 pt
+```
+J'avais annoncé un **« 2ᵉ affaiblissement de la thèse »** sur ce qui n'était **qu'une
+séance** — et elle s'est inversée dès la suivante, STM (+6,54 %) faisant mieux qu'ASML
+(+6,03 %). → **R70** : la règle des 3 séances vaut aussi pour les **indicateurs dérivés**,
+et davantage, puisqu'un écart entre deux rendements cumule deux bruits.
+**Rang 3 conservé, contrat RÉTABLI.** ☠️ **Kill inchangé** : si l'avance sur la fenêtre de
+référence passe **négative**, la thèse meurt.
+
+### 🆕 ICAPE Holding — entrée en instruction, pas encore classée
+```
+CA T3 2026     68,7 M€     +36,4 % yoy · +34,2 % organique à change constant · +11,1 % vs T2
+Carnet 30/09  136,0 MUSD
+Carnet 31/10  152,9 MUSD   (136,9 M€)  +138 % yoy   ← +12,4 % sur le seul mois d'octobre
+```
+Communiqué du **mardi 03/11/2026 à 18h15**. Euronext **Growth** Paris, siège France.
+**Catalyseur daté : Capital Market Day le mardi 24/11/2026** *(déjà au radar avant que ce
+signal n'apparaisse)*.
+
+**Chez l'Avocat du Diable, signal nu.** Les deux questions qui peuvent tout casser :
+**T1 PRIX** — le cours a eu **six séances** pour digérer le 03/11 ; **T4 FORENSIC** — un
+carnet en **USD** avec un CA en **EUR** peut cacher du change ou du périmètre plutôt que
+de la demande. S'y ajoute **T5** : un carnet qui double chez un intermédiaire de circuits
+imprimés est-il une inflexion ou un **pré-achat** qui s'éteindra ? Et la contrainte
+**d'achetabilité**, éliminatoire : Euronext Growth n'est admissible que si le ticket de
+150-300 € passe sur le carnet réel.
+*Elle n'entre au classement qu'après verdict — l'inscrire maintenant serait classer une
+candidate sur son seul récit.*
+
+### Candidates examinées aujourd'hui et NON retenues
+Terrain industrie-défense-énergie, 6 pistes, 6 écartées. Le cas à retenir : **Cenergy**,
+dont le contrat de 1,5 Md€ « signé le 09/11 » **avait été attribué et annoncé le
+13/08/2026** — un titre de presse neuf sur un fait vieux, démasqué par la seule question
+« depuis quand est-ce public ? ». Détails dans `journal/2026-11-11.md` et le nouveau canal
+dans `canal-donnees-marche.md`.

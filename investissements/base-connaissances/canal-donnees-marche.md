@@ -434,3 +434,64 @@ money repose entièrement sur les déclarations de dirigeants (ci-dessus) et, à
 ⚠️ **Je signale les hôtes bloqués, je ne les contourne pas, et je ne déclenche pas de
 demande d'autorisation réseau depuis une routine planifiée.** C'est la décision de Tanguy,
 comme pour `live.euronext.com` et `abcbourse.com` qu'il a autorisés le 04/11.
+
+---
+
+# ⭐⭐ 11/11/2026 — LA BONNE PORTE EURONEXT : `listview/company-press-release`
+
+```
+https://live.euronext.com/en/listview/company-press-release/<code émetteur>
+```
+
+**Liste DATÉE des communiqués réglementés d'un émetteur.** Exemple validé :
+`/003071` pour Vallourec.
+
+**C'est la page que je cherchais depuis le 04/11.** La fiche ISIN
+(`/en/product/equities/<ISIN>-XPAR`) rend une section « Press release » **vide** — c'est
+ce que j'ai constaté sur Aubay le 07/11 et pris pour une absence de canal. **Le canal
+existait, l'URL n'était pas la bonne.**
+
+**Ce qu'elle permet, et que rien d'autre ne permettait :**
+1. **Le test T2 (NOUVEAUTÉ) devient exécutable.** « Depuis quand est-ce public ? » se
+   répond en une requête, sur la source primaire, par la liste datée.
+2. **Confirmer une date de publication annoncée** par l'émetteur sans passer par son
+   site IR (souvent hors réseau).
+
+**Les deux cas du 11/11 :**
+- ☠️ **Cenergy TUÉ.** Le 09/11, communiqué « signs a turnkey contract with IPTO » pour
+  l'interconnexion Corinthe–Kos, **1,5 Md€**, 1 GW. Profil parfait. **La liste montre que
+  l'attribution avait été annoncée le 13/08/2026** (« *is awarded* … subject to customary
+  statutory conditions ») : le 09/11 n'est que la **signature** d'un fait public depuis
+  trois mois. *Un titre de presse neuf sur un fait vieux* — le piège d'Aubay, dans une
+  autre robe.
+- ✅ **Vallourec confirmé.** T3 2026 le **vendredi 20/11/2026**, annoncé par communiqué du
+  **27/10/2026**. Et la liste **prouve l'absence** de publication au 11/11 — donc tout
+  chiffre « T3 Vallourec » croisé aujourd'hui est une archive du T3 2025.
+
+> 🔑 **Et la leçon de datation, encore.** La recherche sur « résultats T3 Vallourec »
+> remonte massivement du **novembre 2025** au présent, et la date piège est le
+> **14/11/2025** — parfaitement plausible pour un « mi-novembre 2026 ». Le contrôle qui a
+> tranché n'est pas une date mais une **incohérence d'unité** : une guidance « RBE entre
+> 170 et 210 millions de **DOLLARS** » alors que **Vallourec guide en EUROS**.
+> *Une unité qui ne colle pas date un document mieux qu'un horodatage absent.*
+
+# 🚫 Hôtes bloqués — mise à jour du 11/11/2026
+
+| Hôte | Ce qu'il porte | État |
+|---|---|---|
+| `echanges.dila.gouv.fr` | Franchissements de seuil AMF (`/OPENDATA/AMF/ACT/<an>/<mois>/`) | DNS non résolu |
+| `assemblee-nationale.fr` | Amendements du PLF 2027 — base de résolution de **C056** | DNS non résolu |
+| `actusnews.com` | Communiqués primaires d'émetteurs français | DNS non résolu |
+| `www.msci.com` · `app2.msci.com` | Revues d'indices MSCI — **flux mécaniques datés** | DNS non résolu |
+| `www.vallourec.com` | Calendrier IR *(contourné par la liste Euronext)* | DNS non résolu |
+| `www.boursorama.com` | Presse financière française, communiqués relayés | DNS non résolu |
+| `bdif.amf-france.org` | Avis AMF — SPA, liste de la semaine inaccessible | atteignable, inutilisable |
+
+**Et une limite de couverture d'abcbourse, découverte le 11/11** :
+`abcbourse.com/cotation/CENERb` renvoie **404**. **abcbourse ne couvre que Paris** —
+aucun prix horodaté sur les lignes Bruxelles ou Amsterdam. Pour une valeur belge ou
+néerlandaise, **je n'ai aujourd'hui aucun canal de prix horodaté**, donc aucun prix
+rapportable. *À dire au lieu de servir un chiffre Google non recoupé (R66).*
+
+⚠️ **Je signale les hôtes bloqués, je ne les contourne pas, et je ne déclenche pas de
+demande d'autorisation réseau depuis une routine planifiée.** C'est la décision de Tanguy.

@@ -2603,3 +2603,55 @@ calendrier budgétaire — pas à arbitrer, il n'y a rien à faire d'ici là.*
 > 3 jours en retard, **C059 résolu 10 jours en retard** (butée fin octobre, résolu le 07/11).
 > Ce n'est plus une hypothèse, c'est un taux. *Je ne crée pas ces tâches planifiées de ma
 > seule initiative — mais le constat est désormais empirique.*
+
+---
+
+## Catalyseurs datés — mise à jour du 11/11/2026
+
+| Date | Jour | Événement | Certitude |
+|---|---|---|---|
+| **11/11/2026, après 23h00 CET** | mercredi | **Résultats de la revue MSCI de novembre.** Effet **à la clôture du 30/11**, date d'effet **01/12**. Périmètre : Global Standard, Small Cap, Micro Cap, Value & Growth. Diffusion Bloomberg `MSCN` / Reuters `MSCIA`. ⚠️ *Toute liste d'entrées-sorties circulant AVANT ce soir est une anticipation de broker ou une archive.* Points d'attention : exclusion des **sociétés non opérationnelles** (effective 30/11), reprise des titres **bangladais**, et sort de l'**Indonésie** et de la **Turquie** après la revue de classification de juin | FAIT — pré-annonce MSCI du 04/11/2026 |
+| **16-20/11/2026** | semaine | **Nvidia — résultats T3.** Le test fondamental de l'affaire Huang, et la jambe (a) du kill criterion de **C069** | FAIT |
+| **≈14/11/2026** | samedi | Échéance de dépôt des **13F du T3** → la chasse smart money se recale après (R67) | FAIT — règle SEC |
+| **20/11/2026** | vendredi | **Vallourec — résultats T3 2026** + conférence téléphonique. *Date confirmée en source primaire : communiqué de l'émetteur du 27/10/2026, « Invitation: Q3 2026 Results Release… Friday, November 20th, 2026 ». Ce n'était pas « mi-novembre ».* | FAIT — source primaire |
+| **24/11/2026** | mardi | **ICAPE Holding — Capital Market Day.** ⚠️ *Monte en importance* : le T3 publié le 03/11 donne un carnet record de **152,9 MUSD au 31/10 (+138 % yoy)**, après 136 MUSD au 30/09 — le carnet accélère encore en octobre. Signal **chez l'Avocat du Diable** | FAIT |
+| **30/11/2026** | lundi | Clôture d'effet des changements de la revue MSCI | FAIT |
+| **01/12/2026** | mardi | Versement de 500 € · date d'effet MSCI · **butée de C068** | — |
+| **≈31/12/2026** | — | Closing Maurel & Prom / Gran Tierra | FAIT |
+| **31/12/2026** | jeudi | **Butées de C056** (ETF synthétiques en PEA, 78 %), **C061** (S&P ≤ 6 795,99, 10 %) et **C069** (Huang CEO, 78 %) | appels |
+| **27/01/2027** | mercredi | Aubay — CA annuel 2026, après bourse | FAIT |
+| **11/02/2027** | jeudi | Butée de **C067** (X-FAB, 25 %) | appel |
+| **T4 2026 → 2030** | — | Démarrage puis achèvement du chantier **Corinthe–Kos** (1 GW, 1 260 km de câbles sous-marins), Fulgor / Hellenic Cables. *L'annonce est périmée (attribution du 13/08/2026) mais les jalons d'exécution restent à suivre* | FAIT |
+| **2030** | — | Premières livraisons visées du standard **MdCN Mk2** (MBDA). Contrat DGA **pas encore signé** — annonce d'intention à Euronaval le 09/11/2026 | MONO-SOURCE presse |
+
+### Repères et suivis sans date
+- **KNDS** — l'État allemand acquiert **50 % pour 6,64 Md€** *(AFP, 10/11/2026 18h28,
+  source parlementaire)*, soit une valorisation implicite du groupe à **~13 Md€**.
+  **Non coté, donc non investissable** — mais c'est désormais **un repère de valorisation
+  pour le terrestre de défense européen**, et ça ferme ou repousse la thèse d'une IPO KNDS.
+- **Exail Technologies** — ⚠️ **drapeau T6** : **Thales a acquis 35,5 % du capital auprès
+  de la famille Gorgé** en juillet 2026. *Vendeur informé, et plafond potentiel sur le
+  dossier* — à instruire avant toute thèse Exail. Dernière commande datée : 21/10/2026
+  (systèmes inertiels Marins, « plusieurs dizaines de millions d'euros »).
+- **Nexans** — sous-traitant du système 110 kV de Corinthe–Kos (consortium avec
+  Asso.subsea), production fin 2026 → mi-2028. ⚠️ **Non retenu, et pour une raison de
+  charte** : la seule preuve vient de la presse spécialisée et de l'écosystème du contrat,
+  **pas d'un communiqué Nexans** — configuration exacte de la leçon Nexans (T3). Montant
+  non divulgué et probablement non matériel. *À confirmer uniquement sur communiqué émetteur.*
+- **Bonduelle** — ticket d'achat de Pierre et Benoît Bonduelle SAS du 04/11 (332 484 €),
+  **~30× celui de décembre 2025**. Achat structurel déclaré depuis 2023, donc pas un
+  signal — *mais une répétition de cette taille en décembre serait un fait nouveau*.
+  AG le 03/12/2026 (mono-source, à confirmer).
+- **ABC Arbitrage** — Aubepar Industries SE allège en continu (8 cessions, ~268 k€ du 02
+  au 04/11). Contrepartie informée **à la vente**.
+- **bioMérieux** — cessions simultanées de Pierre Boulud (378 955 €) et Guillaume Bouhours
+  (291 750 €) le 04/11/2026. ⚠️ *Caveat non vérifié : très souvent un débouclage
+  post-attribution. Ne pas lire comme un signal baissier sans le commentaire AMF.*
+- 🔴 **Pétrole, gaz, métaux : AUCUN canal de prix fiable.** Ça a **stérilisé le dossier
+  Vallourec** aujourd'hui (titre à −29,7 % de son plus haut, carnet de contrats majeurs
+  dense, crédit revolving de 750 M€ le 06/11 : décote de sentiment ou cycle qui se
+  retourne ? *indécidable sans canal prix*). **Recommandation : sur le terrain énergie,
+  soit un canal de prix matières primaire est rétabli, soit le sous-segment pétrole-gaz
+  est explicitement interdit et la chasse se porte sur la défense, les réseaux
+  électriques et le réglementaire.** *Forcer une thèse énergie sans canal prix, c'est
+  inventer.*

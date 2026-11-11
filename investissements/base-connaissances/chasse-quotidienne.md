@@ -3402,3 +3402,70 @@ disponible en PEA est un ETF World unique.
 condition, elle retourne un résultat absurde. **Le test de l'absurde est le signal** : quand
 une règle interdit l'action qu'une autre règle impose, l'une des deux est lue hors de son
 domaine — ce n'est pas un conflit de règles, c'est une erreur de lecture.
+
+---
+
+## R69 — Quand la justification change de forme à chaque édition, c'est l'ARGUMENTAIRE qui est suradapté, pas la décision qui est fragile
+
+**Née le 11/11/2026, sur l'ordre WPEA.**
+
+Trois éditions, trois raisons principales pour **la même action** :
+
+| Date | Raison avancée | Ce qu'elle valait |
+|---|---|---|
+| 07/11 | « R passe sous 25 % pour la première fois » | **faible** — décembre ramène R à 18,9 % quoi qu'il arrive |
+| 09/11 | « la marche de frais : deux ordres gratuits au lieu d'un » | **2,81 €** |
+| 11/11 | « les deux arguments sont petits » | le retard a coûté **3,01 €**, soit *plus* que les frais économisés |
+
+> **La règle** : quand je reformule la justification d'une recommandation à chaque
+> édition, je dois me demander **laquelle des deux choses bouge** : la décision, ou mon
+> argumentaire. Ici la décision est **robuste dans les trois cadres** — elle ne dépend
+> d'aucun des trois arguments. C'est donc l'argumentaire qui était **suradapté**, et le
+> symptôme est que chaque nouvelle raison est de la **taille du bruit** (±3 €).
+
+**Le test** : si deux justifications successives d'une même action sont du même ordre de
+grandeur que la volatilité de l'actif sur la période, **aucune des deux ne porte la
+décision**. Il faut alors remonter à la raison structurelle et s'y tenir.
+
+**La raison structurelle, ici, tient en une phrase** : *le garde-fou R est en infraction
+depuis 25 jours et 304 € dorment sur le PEA.* Elle ne dépend ni du cours, ni des frais,
+ni de la date. **C'est celle-là qu'il faut répéter, et sans la réhabiller.**
+
+**Et le vrai coût de l'over-engineering** : à force de produire un nouvel argument chaque
+matin, je donne l'impression que la décision est rediscutée tous les jours. *Une
+recommandation qu'on réargumente est une recommandation qu'on affaiblit.*
+
+---
+
+## R70 — La règle des 3 séances s'applique AUSSI aux indicateurs dérivés
+
+**Née le 11/11/2026, sur STM.**
+
+```
+Fenêtre de référence 09/10 → 05/11 :  STM −20,37 %  ASML −21,95 %  ⇒  +1,58 pt
+Fenêtre de référence 09/10 → 06/11 :  STM −19,14 %  ASML −19,86 %  ⇒  +0,71 pt
+Fenêtre de référence 09/10 → 10/11 :  STM −13,86 %  ASML −15,02 %  ⇒  +1,17 pt
+```
+
+Le **07/11** j'ai écrit que l'avance de STM sur ASML *« avait fondu de moitié »* et que la
+thèse s'affaiblissait **« une 2ᵉ fois »**. **C'était une variation d'UNE séance**, et elle
+s'est inversée dès la suivante.
+
+> **La règle** : la règle des 3 séances ne protège pas seulement contre le bruit des
+> **prix**. Elle protège contre le bruit de **tout indicateur calculé sur des prix** —
+> un écart de performance relative, un ratio, une avance sectorielle. **Et elle protège
+> davantage, pas moins** : un écart entre deux rendements cumule deux bruits, donc il est
+> **plus** volatil que chacun d'eux, pas moins.
+
+**Pourquoi j'ai enfreint une règle que je respecte sur les prix** : parce qu'un écart
+relatif *a l'air* d'une mesure structurelle. Il porte un nom qualitatif (« l'avance »),
+il s'exprime en points, il ressemble à un fondamental. **Ce n'est qu'un prix moins un
+autre prix.**
+
+**Procédure, désormais** : avant d'annoncer qu'un contrat de surveillance s'affaiblit ou
+se renforce sur la base d'un indicateur dérivé, **exiger trois séances dans le même
+sens**. Une séance isolée se journalise comme donnée, **jamais comme changement de thèse**.
+
+> ⚖️ **Et le correctif a été publié dans les deux sens** : le brief du 11/11 rectifie
+> explicitement l'alerte du 07/11. *Ne garder que ce qui arrange est le seul vrai péché
+> de ce registre.*
