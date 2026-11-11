@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-11-09",
+ "maj": "2026-11-11",
  "offres": [
   {
    "d": "2026-10-03",
@@ -4871,10 +4871,10 @@
    "dist": "Lausanne",
    "tx": "n.p.",
    "ct": "n.p.",
-   "xp": "non chiffrée",
+   "xp": "3 à 5 ans (marketing ou vente)",
    "lg": "FR",
    "g": false,
-   "u": "https://ch.indeed.com/viewjob?jk=191c18a1eb7a9746",
+   "u": "https://ch.linkedin.com/jobs/view/chef%C2%B7fe-de-produit-recettes-et-projets-hors-transports-at-transports-publics-de-la-r%C3%A9gion-lausannoise-sa-4487134061",
    "n": "Développer les revenus hors transport des tl : concessions publicitaires, partenariats commerciaux, espaces commercialisables, contrats.",
    "fit": {
     "m": 2,
@@ -4887,10 +4887,311 @@
     "Concevoir des offres et suivre partenaires et budgets"
    ],
    "inf": [
-    "⚠️ non vérifiée : Indeed refuse notre vérification (401). 🔎 cherche « Chef·fe de produit, recettes et projets hors transports » sur le site carrière des tl",
-    "Poste plutôt commercial (prospection, contrats)"
+    "Poste plutôt commercial (prospection, contrats)",
+    "Lien LinkedIn vérifié le 11.11 ; allemand et anglais = atouts"
    ],
    "at": "Employeur lausannois solide ; angle publicité et partenariats de marque."
+  },
+  {
+   "d": "2026-11-11",
+   "b": 71,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "cible",
+   "t": "Creative Designer (Logos)",
+   "c": "Jobgether (app IA de bien-être non nommée)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "non chiffrée",
+   "lg": "EN",
+   "g": true,
+   "u": "https://ch.linkedin.com/jobs/view/creative-designer-logos-at-jobgether-4487461192",
+   "n": "Identité visuelle et direction créative des campagnes et du produit d'une app d'IA : outils d'IA générative, graphisme et motion design.",
+   "fit": {
+    "m": 2,
+    "da": 3,
+    "ia": 3,
+    "pct": 80
+   },
+   "ms": [
+    "Créer des collections de visuels et de vidéos avec l'IA générative",
+    "Tenir une identité visuelle et motion cohérente entre marketing et app"
+   ],
+   "inf": [
+    "Portfolio de projets assistés par IA exigé",
+    "Employeur non nommé ; équipe basée à Kyiv/Lviv/Varsovie"
+   ],
+   "at": "Le poste qui ressemble le plus à ton travail de DA + IA générative chez Chat3D."
+  },
+  {
+   "d": "2026-11-11",
+   "b": 71,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "solide",
+   "t": "Global Portfolio & Marketing Manager, PWS New Ventures",
+   "c": "Logitech",
+   "l": "Lausanne (ou Cork)",
+   "dist": "Lausanne",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "non chiffrée",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/marketing-portfolio-manager-new-ventures-personal-work-solutions-business-group-at-logitech-4488855475",
+   "n": "Construire de nouvelles catégories chez Logitech : stratégie portfolio et marketing B2B/B2C, go-to-market, modèles de lancement, campagnes globales avec agences.",
+   "fit": {
+    "m": 3,
+    "da": 2,
+    "ia": 1,
+    "pct": 58
+   },
+   "ms": [
+    "Définir les stratégies go-to-market et de lancement",
+    "Piloter agences créatives et production de campagnes globales",
+    "Digital, search et optimisation AEO/LLM"
+   ],
+   "inf": [
+    "⚠️ années non chiffrées, poste probablement expérimenté",
+    "Sur site Lausanne"
+   ],
+   "at": "Logitech demande l'optimisation pour les LLM : ton angle IA marque des points."
+  },
+  {
+   "d": "2026-11-11",
+   "b": 71,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Growth (contenu, campagnes, communauté)",
+   "c": "coprod (startup robotique)",
+   "l": "Lausanne",
+   "dist": "Lausanne",
+   "tx": "n.p.",
+   "ct": "n.p.",
+   "xp": "non chiffrée",
+   "lg": "EN",
+   "g": false,
+   "u": null,
+   "n": "Faire connaître une startup robotique : animer X, LinkedIn, YouTube, Instagram et Discord, produire build logs, démos et vidéos courtes, campagnes de lancement, newsletter, analytics.",
+   "fit": {
+    "m": 3,
+    "da": 2,
+    "ia": 1,
+    "pct": 62
+   },
+   "ms": [
+    "Produire du contenu avec les ingénieurs",
+    "Animer la communauté et les lancements"
+   ],
+   "inf": [
+    "⚠️ non vérifiée : seul lien via un agrégateur bloqué. 🔎 cherche « coprod Growth » sur LinkedIn ou le site de coprod"
+   ],
+   "at": "Très proche de ce que tu faisais chez Chat3D (tech hardcore rendue désirable)."
+  },
+  {
+   "d": "2026-11-11",
+   "b": 71,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Coordinateur·trice Communication Éditoriale",
+   "c": "CCHE",
+   "l": "Lausanne",
+   "dist": "Lausanne",
+   "tx": "80-100%",
+   "ct": "n.p.",
+   "xp": "non chiffrée",
+   "lg": "FR + EN",
+   "g": false,
+   "u": null,
+   "n": "Orchestrer le contenu publié sur les sites et canaux : cohérence des messages, qualité linguistique, coordination avec les équipes.",
+   "fit": {
+    "m": 2,
+    "da": 1,
+    "ia": 0,
+    "pct": 50
+   },
+   "ms": [
+    "Planifier et coordonner la production éditoriale"
+   ],
+   "inf": [
+    "⚠️ non vérifiée : agrégateurs bloqués. 🔎 cherche « Coordinateur Communication Éditoriale CCHE Lausanne » sur jobup ou LinkedIn"
+   ],
+   "at": "Poste lausannois à 80-100 % en plein dans la communication."
+  },
+  {
+   "d": "2026-11-11",
+   "b": 71,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Chargé·e de projets marketing digital",
+   "c": "Vauban Éditions",
+   "l": "Lausanne",
+   "dist": "Lausanne",
+   "tx": "n.p.",
+   "ct": "n.p.",
+   "xp": "pas de diplôme exigé",
+   "lg": "FR",
+   "g": false,
+   "u": null,
+   "n": "Marketing digital d'un éditeur de newsletters financières (150 000 lecteurs), bureaux au centre de Lausanne.",
+   "fit": {
+    "m": 2,
+    "da": 0,
+    "ia": 0,
+    "pct": 40
+   },
+   "ms": [
+    "Campagnes d'acquisition et de conversion d'abonnés"
+   ],
+   "inf": [
+    "⚠️ non vérifiée : agrégateur bloqué. 🔎 cherche « Chargé de projets marketing digital Vauban Éditions »",
+    "Univers finance/investissement"
+   ],
+   "at": "Marketing direct très orienté conversion."
+  },
+  {
+   "d": "2026-11-11",
+   "b": 71,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Senior Technical Content Writer",
+   "c": "Jobgether (infrastructure internet non nommée)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "Senior (non chiffrée)",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/senior-technical-content-writer-at-jobgether-4488657827",
+   "n": "Définir la stratégie de contenu et écrire pour des développeurs et décideurs techniques.",
+   "fit": {
+    "m": 2,
+    "da": 0,
+    "ia": 1,
+    "pct": 40
+   },
+   "ms": [
+    "Écrire du contenu technique accessible",
+    "Fixer les standards éditoriaux"
+   ],
+   "inf": [
+    "⚠️ Senior sans années",
+    "Contenu très technique (infrastructure)"
+   ],
+   "at": "À tenter si tu veux pousser l'angle rédaction tech."
+  },
+  {
+   "d": "2026-11-11",
+   "b": 71,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "(Senior) Product Marketing Manager",
+   "c": "Jobgether (AdTech non nommée)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "5 ans en AdTech B2B",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/senior-product-marketing-manager-at-jobgether-4487958000",
+   "n": "Stratégie de product marketing et go-to-market pour des produits de technologie publicitaire.",
+   "fit": {
+    "m": 3,
+    "da": 0,
+    "ia": 0,
+    "pct": 38
+   },
+   "ms": [
+    "Positionnement et propositions de valeur",
+    "Go-to-market et sales enablement"
+   ],
+   "inf": [
+    "⚠️ expérience demandée : 5 ans en AdTech B2B"
+   ],
+   "at": "Niche AdTech, mais le métier est dans tes cordes."
+  },
+  {
+   "d": "2026-11-11",
+   "b": 71,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Digital Marketing Specialist",
+   "c": "Hays (client pharma / medtech)",
+   "l": "Nyon",
+   "dist": "Nyon",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "3 à 5 ans",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/digital-marketing-specialist-901750-1-at-hays-4489484538",
+   "n": "Planifier et optimiser des campagnes omnicanales (e-mail, web, social, paid, vidéo), coordonner les créas avec les agences.",
+   "fit": {
+    "m": 3,
+    "da": 1,
+    "ia": 0,
+    "pct": 45
+   },
+   "ms": [
+    "Campagnes omnicanales",
+    "Segmentation et suivi de performance"
+   ],
+   "inf": [
+    "⚠️ Nyon : -1 au scoring géo",
+    "⚠️ contrat (durée non précisée)"
+   ],
+   "at": "Bon fit métier, mais lieu et contrat pèsent."
+  },
+  {
+   "d": "2026-11-11",
+   "b": 71,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Business Development & Partnerships Manager – AI",
+   "c": "Giotto.ai",
+   "l": "Lausanne",
+   "dist": "Lausanne",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "3 à 5 ans",
+   "lg": "EN (+ FR/DE)",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/business-development-partnerships-manager-%E2%80%93-ai-at-giotto-ai-4489450492",
+   "n": "Construire le réseau de partenaires d'une startup lausannoise d'IA souveraine fondée par des mathématiciens de l'EPFL.",
+   "fit": {
+    "m": 1,
+    "da": 0,
+    "ia": 2,
+    "pct": 40
+   },
+   "ms": [
+    "Développer et animer les partenariats B2B",
+    "Transformer les opportunités communes en résultats commerciaux"
+   ],
+   "inf": [
+    "⚠️ métier commercial (partenariats, ventes indirectes)"
+   ],
+   "at": "Porte d'entrée dans une startup IA lausannoise."
   }
  ]
 }
