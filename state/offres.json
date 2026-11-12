@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-11-11",
+ "maj": "2026-11-12",
  "offres": [
   {
    "d": "2026-10-03",
@@ -5192,6 +5192,77 @@
     "⚠️ métier commercial (partenariats, ventes indirectes)"
    ],
    "at": "Porte d'entrée dans une startup IA lausannoise."
+  },
+  {
+   "d": "2026-11-12",
+   "b": 72,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Consultant·e en communication",
+   "c": "Farner Consulting (agence de communication)",
+   "l": "Lausanne",
+   "dist": "Lausanne",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "environ 5 ans",
+   "lg": "FR + EN + DE",
+   "g": false,
+   "u": "https://ch.indeed.com/viewjob?jk=19f817366b57ef5d",
+   "n": "Conseiller des clients en communication 360° : stratégies, campagnes multicanales (médias, réseaux sociaux, influence, contenus), relations presse. Entrée le 1er février 2027.",
+   "fit": {
+    "m": 3,
+    "da": 1,
+    "ia": 0,
+    "pct": 48
+   },
+   "ms": [
+    "Élaborer stratégies et plans de communication",
+    "Coordonner les campagnes multicanales",
+    "Relations presse et veille médiatique"
+   ],
+   "inf": [
+    "⚠️ expérience demandée : environ 5 ans",
+    "⚠️ allemand demandé + réseau de journalistes romands",
+    "⚠️ non vérifiée : Indeed refuse notre vérification. 🔎 cherche « Consultant·e en communication Farner Lausanne »"
+   ],
+   "at": "Première agence de communication de Suisse ; bon tremplin si l'allemand passe."
+  },
+  {
+   "d": "2026-11-12",
+   "b": 72,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Marketing Manager (remplacement maternité 12 mois)",
+   "c": "Jobgether (SaaS B2B pour photographes et créatifs)",
+   "l": "Lausanne / Suisse",
+   "dist": "Lausanne",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "non chiffrée",
+   "lg": "EN (DACH)",
+   "g": false,
+   "u": null,
+   "n": "Piloter les programmes partenaires, affiliation et influence d'un SaaS pour photographes, et tester l'acquisition B2B sur le marché DACH, pendant 12 mois.",
+   "fit": {
+    "m": 3,
+    "da": 1,
+    "ia": 0,
+    "pct": 45
+   },
+   "ms": [
+    "Programmes partenaires, affiliés et influenceurs",
+    "Expériences de génération de leads B2B DACH"
+   ],
+   "inf": [
+    "⚠️ CDD 12 mois (remplacement)",
+    "⚠️ non vérifiée : seul lien via un agrégateur bloqué. 🔎 cherche « Marketing Manager (Maternity Cover) Jobgether » sur LinkedIn",
+    "Marché DACH : l'allemand peut être attendu"
+   ],
+   "at": "Univers créatif (photographie) et SaaS."
   }
  ]
 }
