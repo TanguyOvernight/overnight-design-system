@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-11-12",
+ "maj": "2026-11-13",
  "offres": [
   {
    "d": "2026-10-03",
@@ -5209,7 +5209,7 @@
    "xp": "environ 5 ans",
    "lg": "FR + EN + DE",
    "g": false,
-   "u": "https://ch.indeed.com/viewjob?jk=19f817366b57ef5d",
+   "u": "https://www.jobs.ch/fr/offres-emplois/detail/24c7831b-3c72-44eb-b5ee-6804cc5a0947/",
    "n": "Conseiller des clients en communication 360° : stratégies, campagnes multicanales (médias, réseaux sociaux, influence, contenus), relations presse. Entrée le 1er février 2027.",
    "fit": {
     "m": 3,
@@ -5225,7 +5225,7 @@
    "inf": [
     "⚠️ expérience demandée : environ 5 ans",
     "⚠️ allemand demandé + réseau de journalistes romands",
-    "⚠️ non vérifiée : Indeed refuse notre vérification. 🔎 cherche « Consultant·e en communication Farner Lausanne »"
+    "Lien jobs.ch vérifié le 13.11"
    ],
    "at": "Première agence de communication de Suisse ; bon tremplin si l'allemand passe."
   },
@@ -5263,6 +5263,177 @@
     "Marché DACH : l'allemand peut être attendu"
    ],
    "at": "Univers créatif (photographie) et SaaS."
+  },
+  {
+   "d": "2026-11-13",
+   "b": 73,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "solide",
+   "t": "Responsable de la communication en Romandie",
+   "c": "Sonic Suisse Labs (réseau de laboratoires médicaux)",
+   "l": "Lausanne",
+   "dist": "Lausanne",
+   "tx": "80-100%",
+   "ct": "n.p.",
+   "xp": "non chiffrée",
+   "lg": "FR + EN (DE atout)",
+   "g": false,
+   "u": "https://www.jobs.ch/fr/offres-emplois/detail/8107b33d-4fd9-41f0-872f-d25853c1c93c/",
+   "n": "Porter la communication clients et interne de Sonic Suisse en Suisse romande, au sein de l'équipe Marketing Communication.",
+   "fit": {
+    "m": 3,
+    "da": 1,
+    "ia": 0,
+    "pct": 58
+   },
+   "ms": [
+    "Communication clients et interne pour la Romandie",
+    "Coordination avec l'équipe Marketing Communication nationale"
+   ],
+   "inf": [
+    "Très bon anglais requis ; allemand = atout",
+    "Secteur santé / diagnostic"
+   ],
+   "at": "Poste de communication lausannois à 80-100 %, sans années exigées."
+  },
+  {
+   "d": "2026-11-13",
+   "b": 73,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Communications Officer – EPFL AI Center (80%)",
+   "c": "EPFL",
+   "l": "Lausanne (campus)",
+   "dist": "Lausanne",
+   "tx": "80%",
+   "ct": "n.p.",
+   "xp": "au moins 5 ans",
+   "lg": "EN + FR",
+   "g": true,
+   "u": "https://ch.linkedin.com/jobs/view/communications-officer-at-epfl-ai-center-80%25-at-epfl-4489217157",
+   "n": "Raconter l'IA de l'EPFL : articles, interviews, communiqués, web, visuels (présentations, affiches, réseaux sociaux), relations médias et animation de la communauté autour d'une IA responsable.",
+   "fit": {
+    "m": 3,
+    "da": 2,
+    "ia": 2,
+    "pct": 66
+   },
+   "ms": [
+    "Créer contenus et visuels",
+    "Réseaux sociaux et web",
+    "Relations médias avec Mediacom",
+    "Communauté et adoption responsable de l'IA"
+   ],
+   "inf": [
+    "⚠️ expérience demandée : au moins 5 ans",
+    "Lien aussi sur jobup (Chargé de communication au Centre IA de l'EPFL)"
+   ],
+   "at": "Le poste le plus aligné du jour : IA + storytelling visuel, sur le campus EPFL."
+  },
+  {
+   "d": "2026-11-13",
+   "b": 73,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Head of Brand & Communications",
+   "c": "Jobgether (éditeur de jeux mobiles non nommé)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "non chiffrée (Head)",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/head-of-brand-communications-at-jobgether-4489084596",
+   "n": "Façonner l'identité de marque et la communication corporate, employeur et éditeur d'un studio de jeux mobiles international.",
+   "fit": {
+    "m": 3,
+    "da": 2,
+    "ia": 0,
+    "pct": 50
+   },
+   "ms": [
+    "Stratégie de marque et de communication",
+    "Marque employeur et marque éditeur"
+   ],
+   "inf": [
+    "⚠️ niveau « Head » : séniorité probable",
+    "Employeur non nommé"
+   ],
+   "at": "Ton expérience 3D / gaming chez Overnight compte ici."
+  },
+  {
+   "d": "2026-11-13",
+   "b": 73,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Responsable Social Media, Content Creation & Influence",
+   "c": "Habefast Group (conseil + agence créative)",
+   "l": "Nyon",
+   "dist": "Nyon",
+   "tx": "n.p.",
+   "ct": "n.p.",
+   "xp": "non chiffrée",
+   "lg": "FR",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/responsable-social-media-content-creation-influence-at-habefast-group-4489483320?refId=gqMA8LXp7cF23zkutBDuhQ%3D%3D&trackingId=iGvzJdLQHMPtAJ4n3iznSw%3D%3D&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+   "n": "Prendre le leadership de l'expertise social media, contenu et influence : piloter des mandats clients et développer de nouveaux clients.",
+   "fit": {
+    "m": 2,
+    "da": 2,
+    "ia": 0,
+    "pct": 45
+   },
+   "ms": [
+    "Piloter des mandats de la stratégie à la création",
+    "Développer l'activité Social Media & Content"
+   ],
+   "inf": [
+    "⚠️ Nyon : -1 au scoring géo",
+    "Volet commercial (développement de clients)"
+   ],
+   "at": "Agence créative, poste de lead."
+  },
+  {
+   "d": "2026-11-13",
+   "b": 73,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Media Relations Lead",
+   "c": "Terre des hommes",
+   "l": "Lausanne ou Zurich",
+   "dist": "Lausanne",
+   "tx": "n.p.",
+   "ct": "n.p.",
+   "xp": "non chiffrée",
+   "lg": "FR (+ EN)",
+   "g": false,
+   "u": null,
+   "n": "Relations avec les rédactions, stratégie média, communiqués et voyages de presse, soutien aux délégations en urgence.",
+   "fit": {
+    "m": 2,
+    "da": 0,
+    "ia": 0,
+    "pct": 38
+   },
+   "ms": [
+    "Stratégie et relations médias"
+   ],
+   "inf": [
+    "⚠️ non vérifiée : agrégateur bloqué. 🔎 cherche « Media Relations Lead Terre des hommes » sur leur site carrière ou LinkedIn",
+    "Relations presse pures"
+   ],
+   "at": "Grande ONG lausannoise."
   }
  ]
 }
