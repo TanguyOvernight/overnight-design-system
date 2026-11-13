@@ -1,11 +1,11 @@
 cle,libelle,valeur
-action,Action prioritaire,Acheter 43 parts de WPEA avec le cash qui dort sur le PEA
-action_montant,Montant,303.15
+action,Action prioritaire,Acheter 42 parts de WPEA avec le cash qui dort sur le PEA
+action_montant,Montant,302.82
 action_frais,Frais estimés — à lire dans l'appli avant de valider,0
 seuil_frais,Au-delà de ce montant de frais préviens-moi,7
 prochain_versement,Prochain versement,2026-12-01
 prochain_versement_montant,Montant,500
-consigne,Consigne du jour,Le retard a déjà coûté 3.01 € sur cet ordre, plus que les 2.81 € de frais qu'il économise. Garde-fou R en infraction depuis 25 jours : 43 parts le ramènent à 23.90 %.
-maj,Chiffres arrêtés au,clôture du 10/11
-action_parts,Nombre de parts à saisir,43
+consigne,Consigne du jour,27 jours d'infraction au garde-fou R. STM a fait +14.22 % depuis le 05/11 pendant qu'elle était intouchable. Tant que R dépasse 25 %, aucune candidate du classement n'est actionnable.
+maj,Chiffres arrêtés au,clôture du 12/11
+action_parts,Nombre de parts à saisir,42
 frais_regle,Pourquoi 0 €,Premier ordre du mois gratuit en formule Starter si le montant reste sous 500 € — à confirmer sur l'écran de validation

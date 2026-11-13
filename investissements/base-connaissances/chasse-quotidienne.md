@@ -3469,3 +3469,97 @@ sens**. Une séance isolée se journalise comme donnée, **jamais comme changeme
 > ⚖️ **Et le correctif a été publié dans les deux sens** : le brief du 11/11 rectifie
 > explicitement l'alerte du 07/11. *Ne garder que ce qui arrange est le seul vrai péché
 > de ce registre.*
+
+---
+
+## R71 — Le coût d'une infraction au garde-fou, c'est tout ce qu'elle interdit pendant qu'elle dure
+
+**Née le 12/11/2026, sur STM.**
+
+Pendant **26 jours** la poche risquée est restée au-dessus de son plafond
+(R entre 28,9 % et 31,1 % contre un plafond de 25 %). Pendant ces 26 jours, le mur étanche
+interdit d'ajouter **la moindre** ligne risquée. Et pendant ces 26 jours :
+
+```
+05/11  STM  37,07 €   ← candidate de rang 3, seuil d'entrée 42 €, soit 11,7 % DESSOUS
+11/11  STM  42,18 €   ← +13,78 % en quatre séances, repassée AU-DESSUS du seuil
+Fenêtre de référence 09/10 → 11/11 : STM −9,39 % vs ASML −12,35 %  ⇒  +2,96 pt
+```
+
+La thèse s'est vérifiée **exactement** comme écrite, et la fenêtre s'est fermée sans
+qu'aucune décision n'ait pu être prise.
+
+> **La règle** : quand je rapporte une infraction à un garde-fou, je ne dois pas la
+> rapporter comme **une règle enfreinte** — un fait administratif, facile à repousser au
+> lendemain. Je dois la rapporter comme **une mise à l'arrêt du processus de décision** :
+> *tant que R > 25 %, AUCUNE candidate du classement n'est actionnable, quelle que soit sa
+> qualité.* Le classement continue de tourner, les seuils continuent d'être touchés, et
+> rien ne peut être fait. **C'est ça le coût, et il faut l'afficher avec un prix.**
+
+### ⚠️ Et la discipline anti-regret, qui fait partie de la règle
+Il est tentant de chiffrer « ce que l'infraction a coûté » et d'en faire un reproche.
+**C'est un sophisme** : je n'aurais **pas** recommandé STM le 05/11 même sans la
+contrainte R, puisque son portail fondamental était « PASSE non définitif ». L'infraction
+n'a donc **pas** coûté 13,8 % de façon certaine — elle a rendu la question **sans objet
+avant qu'elle soit posée.**
+
+> **La formulation correcte, et la seule défendable** : *l'infraction ne prouve pas une
+> perte réalisée, elle prouve une incapacité à décider.* La première se calcule après coup
+> et flatte le narrateur ; la seconde est vraie en continu et se vérifie sans connaître la
+> suite. **Chiffrer l'opportunité manquée est permis comme illustration ; en faire le coût
+> est malhonnête.**
+
+### Son articulation avec R69
+R69 disait : quand la justification change à chaque édition, c'est l'argumentaire qui est
+suradapté. **R71 donne la justification stable qu'il fallait trouver.** Les trois
+arguments successifs — « R passe sous 25 % », « la marche de frais », « les deux sont
+petits » — étaient tous des **conséquences** de l'infraction. La raison est l'infraction
+**elle-même**, et son coût est l'arrêt du processus.
+**Donc : même argument tous les jours, et un prix affiché qui change. Pas un argument neuf
+chaque jour.**
+
+---
+
+## R72 — Une absence de réaction du cours ne s'interprète qu'avec la POSITION du cours dans son range
+
+**Née le 13/11/2026, sur ICAPE — et c'est une correction de ma propre lecture de la veille.**
+
+Le 12/11 j'ai rapporté qu'ICAPE n'avait pas réagi à un carnet de commandes en hausse de
+**138 %** et j'en ai conclu que le fait n'était « pas tarifé ».
+
+```
+02/11 (veille du communiqué)  9,80 €
+12/11                         9,84 €      +0,41 % en sept séances
+CAC 40 sur la même fenêtre                +3,90 %
+⇒ sous-performance de 3,5 pt APRÈS la nouvelle
+```
+
+La mesure était bonne. **L'interprétation était fausse, faute d'une donnée que je n'avais
+pas cherchée :**
+
+```
+Plus haut 1 an   9,94 €    ← le cours est à 1 % SOUS son plus haut
+Plus bas 1 an    3,56 €    ← +176 % au-dessus
+Depuis le 01/01  +63,46 %
+```
+
+> **La règle** : « le cours n'a pas réagi » est une phrase **vide** tant qu'on ne dit pas
+> **d'où** il ne réagit pas. Sept séances plates **sur un plus-bas annuel** et sept séances
+> plates **sur un plus-haut annuel** sont deux faits **opposés** :
+> - sur un plus-bas : un marché qui n'a pas vu, ou qui ne croit pas → *inefficience possible* ;
+> - sur un plus-haut, après **+63 % dans l'année** : un marché qui a déjà tout pris et qui
+>   refuse d'aller plus loin → *au mieux ambigu, au pire un plafond*.
+
+**Procédure, désormais** : toute mesure de réaction post-annonce (T1 PRIX) se rend avec
+**trois** chiffres, jamais un seul —
+1. la variation depuis la veille de l'annonce, contre un indice ;
+2. la **position dans le range 52 semaines** (distance au plus haut ET au plus bas) ;
+3. la **performance depuis le début de l'année**.
+
+Sans (2) et (3), T1 n'est pas exécuté : il est juste énoncé.
+
+**Et la leçon de second ordre** : j'avais mesuré ce qui était *facile à mesurer* (une
+variation sur sept séances) et j'en avais tiré une conclusion qui exigeait une *autre*
+mesure. **Un test pré-enregistré doit nommer les chiffres qu'il exige**, sinon il se
+satisfait du premier qui vient — c'est la même maladie que R63 (nommer la BASE de sa
+métrique) appliquée au nombre de métriques.
