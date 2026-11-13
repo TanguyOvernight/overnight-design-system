@@ -4451,3 +4451,54 @@ cours, le piège même de R17.
 > 🔴 **Onze échéances ouvertes, zéro tâche planifiée.** Le risque que je remonte depuis le
 > 30/09 s'est matérialisé **deux fois** (C063 à 3 jours, C059 à 10 jours). *Je ne crée pas
 > ces tâches de ma seule initiative — mais ce n'est plus une hypothèse, c'est un taux.*
+
+---
+
+# 📅 13/11/2026 — C070 *(ICAPE, réfutation du signal)*
+
+| Réf | Date | Agent | Proposition | **P** | Résolution datée |
+|---|---|---|---|---|---|
+| **C070** | 13/11 | Avocat | **La marge d'EBIT publiée d'ICAPE Holding pour l'exercice 2026 est inférieure à 5,8 %** — le carnet record du T3 est une croissance d'effet prix non convertie en marge | **22 %** | résultats annuels 2026, **~31/03/2027** |
+
+**Critères de résolution, pré-enregistrés et PARTITIONNANTS** *(R65 — pas de trou, pas de
+recouvrement)* :
+- **marge d'EBIT FY2026 publiée < 5,8 %** → ✅ la réfutation est CONFIRMÉE
+- **marge d'EBIT FY2026 publiée ≥ 5,8 %** → ❌ elle est INFIRMÉE
+
+> **Base de la métrique (R63) : marge d'EBIT consolidée PUBLIÉE par l'émetteur dans son
+> communiqué de résultats annuels 2026, sans retraitement.** Si l'émetteur publie plusieurs
+> définitions (« résultat opérationnel d'activité » vs « résultat opérationnel »), c'est
+> **celle qu'il utilise lui-même pour se comparer à son objectif de « ~6 % »** qui fait foi.
+
+**Point de contrôle intermédiaire daté : Capital Market Day du mardi 24/11/2026.** Si le
+plan moyen terme y chiffre une marge d'EBIT **> 7,5 %** avec un pont de marge documenté, le
+dossier remonte en AFFAIBLI et P est révisé. *C'est un fait nouveau, donc une révision
+légitime — pas un ajustement sur le chemin parcouru.*
+
+### 🏆 Ce que cet appel a de différent
+**Un RÉFUTÉ rendu par un agent dont les cinq verdicts précédents étaient tous AFFAIBLI**,
+et qui a nommé ce taux de base **avant** de conclure, en justifiant l'écart par quatre
+éléments datés et chiffrés plutôt que par un argument général. *Un agent qui annonce son
+biais puis s'en écarte en donnant ses raisons est plus crédible que celui qui ne l'annonce
+pas — c'était déjà la remarque de C059, et elle se vérifie dans l'autre sens.*
+
+### ⚠️ Et un contrôle que j'ai fait moi-même, qui a trouvé une erreur
+Le rapport annonce **−10 % le 26/03/2026** sur le titre. **Ma série datée donne −2,0 %**
+(3,95 → 3,87 €). La baisse s'est produite sur la période (5,84 € le 13/02 → 3,92 € le
+24/03, −33 %), pas en une séance.
+> 🔑 **Le point n'était pas porteur — et c'est précisément pour ça qu'il est dangereux.**
+> Les piliers d'un rapport se vérifient d'office ; les chiffres d'illustration passent, et
+> ce sont eux qu'on recite ensuite sans y penser. **Vérifier les piliers ne dispense pas de
+> vérifier les ornements.**
+*Les trois faits porteurs, eux, sont vérifiés en source primaire : EBIT S1 en baisse en
+valeur (01/10/2026), carnet record déjà public au 25/09, et +6,67 % du titre le 01/10.*
+
+## 📊 État du registre au 13/11/2026
+**Ouverts** : **C011** *(mars 2027)* · **C014** *(30/06/2027)* · **C015** *(31/12/2027)* ·
+**C017** *(40 %, 31/07/2027)* · **C054** *(62 %, 31/12/2031)* · **C056** *(78 %, 31/12)* ·
+**C061** *(10 %, 31/12)* · **C065** *(60 %)* · **C067** *(25 %, 11/02/2027)* ·
+**C068** *(28 %, 01/12)* · **C069** *(78 %, 31/12)* · **C070** *(22 %, ~31/03/2027)*.
+**VOID, réouvrables** : **C013** · **C059**.
+
+> 🔴 **Douze échéances ouvertes, zéro tâche planifiée.** Déjà deux matérialisations
+> (C063 à 3 jours, C059 à 10 jours). *Je ne crée pas ces tâches de ma seule initiative.*

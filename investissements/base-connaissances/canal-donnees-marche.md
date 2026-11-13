@@ -495,3 +495,66 @@ rapportable. *À dire au lieu de servir un chiffre Google non recoupé (R66).*
 
 ⚠️ **Je signale les hôtes bloqués, je ne les contourne pas, et je ne déclenche pas de
 demande d'autorisation réseau depuis une routine planifiée.** C'est la décision de Tanguy.
+
+---
+
+# 🔧 13/11/2026 — R66 AFFINÉE : le bon symptôme n'est pas la duplication, c'est la NON-RÉCONCILIATION
+
+**Correction d'une erreur de ma part, trouvée en vérifiant ICAPE.**
+
+Le 07/11, en démontrant la défaillance de Google Finance sur Aubay, j'avais retenu **deux**
+symptômes :
+1. une variation qui **ne boucle pas** avec la clôture précédente d'une source indépendante ;
+2. une **valeur répétée à l'identique** sur des séances non consécutives.
+
+**Le symptôme 2 est un faux positif.** Sur ICAPE (ALICA), la série Google donnait
+`9,80 | 9,80 | 9,88 | 9,80 | 9,54 | 9,48 | 9,54 | 9,84 | 9,84` — trois paires de valeurs
+identiques, et j'ai soupçonné le canal. **Recoupement sur abcbourse : ce sont de vraies
+clôtures plates.** Sur un titre qui échange **1 900 à 12 300 titres par jour**, le cours
+*ne bouge pas* certaines séances. Google avait raison.
+
+> **La règle corrigée** : sur une petite capitalisation, **une valeur répétée n'est pas un
+> défaut, c'est la liquidité**. Moins un titre échange, plus ses clôtures se répètent
+> légitimement — et ce sont justement les titres sur lesquels j'ai le plus besoin de faire
+> confiance à mes données.
+> **Le seul symptôme qui démasque vraiment le canal est la NON-RÉCONCILIATION** : une
+> variation annoncée qui ne reconstruit pas le prix à partir de la clôture précédente
+> donnée par une source indépendante.
+
+**Le contrôle qui marche, et qui a tranché les deux cas :**
+```
+AUBAY   abcbourse : clôture préc. 51,80 € · var −4,34 % → 51,80 × 0,9566 = 49,55 ✓
+        Google    : clôture préc. 52,50 €                   ne boucle avec rien ✗
+        ⇒ canal en défaut sur le 05/11
+
+ICAPE   deux sources donnent 9,84 € au 12/11, et la série boucle séance par séance ✓
+        ⇒ canal fiable ici, malgré les valeurs répétées
+```
+
+> 🔑 **Et la leçon de second ordre, qui est la plus coûteuse** : j'avais généralisé à partir
+> d'un seul cas en retenant **tout ce que ce cas présentait**, au lieu de retenir **ce qui
+> l'avait prouvé**. Aubay présentait les deux symptômes ; seul le premier était la preuve.
+> *Un diagnostic tiré d'un cas unique doit nommer le test qui a tranché, pas la liste de ce
+> qu'on a observé autour.* C'est R59 appliquée à un canal de données.
+
+**R66 reste valable sur le fond** — Google Finance n'est pas validé sur les petites valeurs
+et tout prix de petite capi se recoupe. **Seule la procédure de détection change** : on
+teste la réconciliation, on ignore la répétition.
+
+# 🚫 Hôtes bloqués — mise à jour du 13/11/2026
+
+S'ajoutent à la liste du 11/11 :
+
+| Hôte | Ce qu'il porte | Conséquence concrète |
+|---|---|---|
+| `ir.msci.com` · `app2.msci.com` *(s'ajoutent à `www.msci.com`)* | Listes nominatives des revues d'indices MSCI | **Les trois portes MSCI sont fermées.** J'ai les comptes de la revue de novembre (France Standard 0/2, Micro Cap 7/3, ACWI Small Cap 171/243) mais **aucun nom**, et je n'en reconstitue pas |
+| `www.icape-group.com` | Site émetteur — **définition du carnet de commandes** | Seul trou restant du dossier ICAPE : impossible de savoir si le carnet mêle commandes fermes et prévisionnels |
+| `www.webdisclosure.fr` | Communiqués réglementés d'émetteurs français | Chemin alternatif perdu quand actusnews et boursorama sont déjà bloqués |
+| `www.tradingsat.com` | Presse financière, historiques de participations | Taille de la cession du fondateur d'ICAPE non vérifiable |
+
+**Et une limite de forme d'abcbourse, relevée le 13/11** : la page
+`abcbourse.com/cotation/ALICAp` **n'affiche aucun horodatage**, alors qu'elle en donne un à
+la seconde pour Aubay (« 06/11/2026, 17:35:00 ») et Vallourec. *Sur les valeurs les moins
+suivies, la discipline « un prix sans horodatage n'est pas un prix » n'est pas satisfaite :
+elle est remplacée par un contrôle plus faible — la concordance de deux sources
+indépendantes sur une clôture datée. **Le dire plutôt que le masquer.***

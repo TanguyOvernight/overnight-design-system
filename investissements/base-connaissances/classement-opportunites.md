@@ -3300,3 +3300,87 @@ dont le contrat de 1,5 Md€ « signé le 09/11 » **avait été attribué et an
 13/08/2026** — un titre de presse neuf sur un fait vieux, démasqué par la seule question
 « depuis quand est-ce public ? ». Détails dans `journal/2026-11-11.md` et le nouveau canal
 dans `canal-donnees-marche.md`.
+
+---
+
+## ☠️ 13/11/2026 — ICAPE Holding sort par la porte TUÉ, sans être jamais entrée au classement
+
+**Verdict de l'Avocat du Diable : RÉFUTÉ, 22 %.** Conformément à la dialectique, **un RÉFUTÉ
+s'arrête à l'Avocat et ne monte pas à l'Arbitre.** La candidate quitte l'instruction.
+
+**Et aucun de ses chiffres n'est faux.** C'est ce qui rend le cas instructif : le dossier
+n'est pas refusé pour mensonge, il est refusé parce que **le fait est vrai, déjà connu,
+déjà payé, et qu'il ne se convertit pas en profit.**
+
+### Le fait décisif — vérifié par moi à la source primaire, pas relayé
+```
+S1 2026   CA 113,3 M€  (+12,5 %)   EBIT 4,7 M€   marge 4,1 %
+S1 2025                            EBIT 5,0 M€   marge 4,9 %
+```
+*(communiqué du 01/10/2026, conseil d'administration du 30/09/2026)*
+
+**Le chiffre d'affaires monte de 12,5 % et le profit d'exploitation BAISSE en valeur.**
+Signature exacte du distributeur en pénurie : il facture plus et gagne moins, parce qu'il
+encaisse la hausse des prix d'achat avant de pouvoir la répercuter. **Un carnet record dans
+cette configuration n'est pas un stock de profit futur**, c'est un stock de commandes
+prises à des prix qui montent plus vite que les prix de vente.
+
+### T2 — le récit était public cinq semaines avant, et le marché l'avait payé
+Le **01/10/2026**, ICAPE publiait déjà un **carnet record de 134,9 MUSD arrêté au 25/09**
+et relevait sa guidance de +12 % à **≥ +18 %**. Vérifié sur mes propres séries datées :
+```
+30/09  8,70 €  →  01/10  9,28 €   +6,67 % sur la séance
+                   08/10  9,90 €   +13,8 % en six séances
+```
+Le communiqué du **03/11** ajoute 18 MUSD de carnet et **zéro révision de guidance**.
+> **Même piège que Cenergy la veille** : un titre de presse neuf sur un fait déjà connu.
+> *Deux fois en 48 heures, le test « depuis quand est-ce public ? » a été le test décisif.*
+
+### T5 — le carnet double, sa couverture double aussi
+≈**1,1 trimestre** de couverture il y a un an, ≈**2,0** aujourd'hui. *Un carnet qui double
+pendant que sa couverture double, c'est l'allongement des délais, pas le doublement de la
+demande finale.* Un client qui ne peut plus être livré à 8 semaines commande à 20 : le
+carnet gonfle sans qu'un circuit imprimé de plus ne soit consommé — et **se dégonfle
+mécaniquement quand les délais se normalisent, à demande finale stable**.
+Moteur nommé par l'émetteur : **« principalement l'effet prix, puis les volumes dans une
+moindre mesure »**, dans des tensions d'approvisionnement qu'il date lui-même
+**« au moins jusqu'au T1 2027 »**. *L'émetteur fournit la date de péremption de sa propre
+bonne nouvelle.*
+
+### L'arithmétique falsifiable
+Tenir « ~6 % de marge d'EBIT » sur ~236 M€ en 2026 exige **~14 M€** d'EBIT. Le S1 en a
+produit **4,7**. Il faut donc **~7,7 % de marge au S2 contre 4,1 % réalisés**. *Doubler sa
+marge en six mois tout en déclarant subir des tensions de coûts.*
+Antécédents : objectif de marge ramené de **9,5 % à ~6 % le 12/02/2026** (titre **−8,0 %**,
+vérifié sur ma série), **perte nette de −0,4 M€ en 2025**, objectif d'acquisitions 2026
+divisé par ~5,6.
+
+### ⚠️ Ce que je n'ai PAS pu vérifier, et que je ne relaie donc pas comme acquis
+L'Avocat annonce **−10 % le 26/03/2026** ; ma série datée donne **−2,0 %** ce jour-là
+(3,95 → 3,87 €). La chute s'est faite sur la période (5,84 € le 13/02 → 3,92 € le 24/03,
+soit −33 %), pas en une séance. **Le point n'est pas porteur, mais il est faux tel qu'écrit.**
+> 🔑 *Un rapport dense et juste sur l'essentiel peut porter un chiffre d'illustration
+> inexact. Vérifier les piliers ne dispense pas de vérifier les ornements — ce sont eux
+> qu'on cite ensuite sans y penser.*
+
+### Ce qui reste acquis, et qui vaut pour la suite
+- **T7 ACHETABILITÉ FRANCHI** — capi 79,6 M€, volume médian **~45 k€/jour**, siège à
+  Fontenay-aux-Roses ⇒ **PEA et PEA-PME**. **Première candidate Euronext Growth à passer ce
+  test.** *La contrainte n'est donc pas un mur : elle est franchissable, juste rarement
+  franchie. À ne pas oublier au prochain dossier Growth.*
+- **La croissance est authentiquement organique** : externe 0,7 pt seulement, carnet mesuré
+  **USD sur USD** donc sans effet de change. *Sur ce point l'Avocat a corrigé MA suspicion,
+  il ne l'a pas confortée — et l'écart +34,2 / +35,7 % est bénin : l'émetteur titre le
+  chiffre le plus conservateur.*
+- **T6** — aucune déclaration d'achat de dirigeant malgré un « carnet record ». *Une absence
+  qui parle.* Le fondateur a par ailleurs cédé des titres hors marché en 2026 (taille non
+  vérifiable, hôte bloqué).
+
+### Le classement reste donc à quatre lignes
+| Rang | Candidate | Statut |
+|---|---|---|
+| **1** | Cœur World (WPEA) | 🔔 42 parts, 302,82 € |
+| **2** | Eli Lilly | 39,9 % au-dessus du seuil |
+| **3** | STMicroelectronics | déclencheur désarmé (42,34 € > 42 €) |
+| **4** | Magnum Ice Cream | dormant |
+| ☠️ | **ICAPE Holding** | **TUÉ le 13/11/2026** — verdict RÉFUTÉ, motif écrit ci-dessus |
