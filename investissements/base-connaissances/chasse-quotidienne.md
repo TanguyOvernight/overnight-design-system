@@ -3371,9 +3371,23 @@ sinon on retire le mauvais terrain :
 | Problème | Le **canal de transmission** est cassé (bêta matière première ~1, l'actualité émetteur n'explique rien) | Le **calendrier** est désaligné |
 | Remède | **retirer** le terrain | **recaler** la date |
 
-→ **Recommandation** : caler la chasse smart money **après le 14 novembre** (dépôt des 13F
-du T3), puis sur un rythme trimestriel pour cette branche, en gardant la branche
-« déclarations de dirigeants » en hebdomadaire — elle, elle publie en continu.
+→ **Recommandation** : caler la chasse smart money **après le dépôt des 13F du T3**, puis
+sur un rythme trimestriel pour cette branche, en gardant la branche « déclarations de
+dirigeants » en hebdomadaire — elle, elle publie en continu.
+
+> ❌ **CORRECTION DU 14/11/2026 — j'avais écrit « après le 14 novembre », et la date était
+> fausse.** 30/09 + 45 jours = **14/11/2026, qui tombe un SAMEDI**. Une échéance
+> réglementaire ne tombe pas un week-end : elle **roule au lundi 16/11/2026**. La vraie
+> fenêtre d'exploitation est donc **mardi 17/11**, après la vague terminale des gros
+> déposants.
+> **Extension du domaine de R64** *(et non une règle nouvelle — voir le journal du 14/11)* :
+> une échéance réglementaire porte une **règle de jour ouvré**. Calculer la date brute ne
+> suffit pas ; il faut vérifier le jour de la semaine et appliquer le report.
+> 🔴 **Et le plus gênant : j'avais le jour sous les yeux.** J'ai écrit « samedi 14/11 —
+> échéance de dépôt des 13F » dans quatre briefs consécutifs sans voir que les deux mots
+> étaient incompatibles. *Avoir la donnée ne suffit pas à la lire : il faut que quelque
+> chose dans la procédure la confronte à autre chose.* C'est le même mécanisme que R57 —
+> une erreur de jour de semaine qui survit à sa propre énonciation.
 
 ⚠️ **Décision non prise** : la rotation est dans la routine de Tanguy. *Je recommande, il tranche.*
 
@@ -3563,3 +3577,57 @@ variation sur sept séances) et j'en avais tiré une conclusion qui exigeait une
 mesure. **Un test pré-enregistré doit nommer les chiffres qu'il exige**, sinon il se
 satisfait du premier qui vient — c'est la même maladie que R63 (nommer la BASE de sa
 métrique) appliquée au nombre de métriques.
+
+
+---
+
+## 🔴 14/11/2026 — R67 AGGRAVÉE : le terrain smart money n'est pas décalé, il est INEXÉCUTABLE
+
+Le 07/11 j'avais diagnostiqué un terrain **vide par construction** (calendrier des 13F) et
+conclu qu'il suffisait de **recaler la date**. La chasse du 14/11 montre que le diagnostic
+était incomplet : **deux des trois branches du terrain n'ont aucun canal.**
+
+| Branche | Canal primaire | État |
+|---|---|---|
+| **13F américains** | `www.sec.gov` | 🔴 **hors réseau** |
+| **Franchissements de seuil** | `echanges.dila.gouv.fr` | 🔴 **hors réseau** |
+| **Déclarations de dirigeants (art. 19 MAR)** | `abcbourse.com/marches/transactions_dirigeants/<ISIN>p` | ✅ **fonctionne, et bien** |
+
+**Et les substituts ne substituent rien.** Les agrégateurs de 13F testés le 14/11 :
+- l'un présente des positions du **T2 2026** et du **T3 2025** comme nouvelles ;
+- un autre attribue une « nouvelle position de 4,4 Md$ » à un gérant **purement
+  indiciaire/factoriel** — zéro contenu informationnel par construction ;
+- un troisième affiche **38 300 milliards de dollars** de portefeuille pour un conseiller.
+  *Une donnée absurde ne rend pas un canal douteux : elle le tue.*
+
+> **Recommandation, plus nette qu'au 07/11** : **réduire officiellement le samedi à la seule
+> branche « déclarations de dirigeants »** tant que `sec.gov` n'est pas autorisé. Les deux
+> autres ne sont pas *maigres*, elles sont **inexécutables** — et une branche inexécutable
+> qu'on interroge quand même produit soit zéro, soit un faux positif d'agrégateur.
+> ⚠️ **Décision non prise : la rotation est dans la routine de Tanguy. Je recommande, il tranche.**
+
+### ✅ Ce qui marche sur ce terrain, et qu'il faut garder
+**Le champ « prix unitaire » de la déclaration AMF a tué un faux signal pour la TROISIÈME
+fois en huit jours.**
+
+| Date | Dossier | Montant affiché | Ce que le prix unitaire révélait |
+|---|---|---|---|
+| 07/11 | **Audacia** | 996 227 € d'« acquisition » | 4,05 € l'unité, **18 % au-dessus du marché**, « auprès de monsieur Beigbeder » ⇒ transfert intra-familial |
+| 14/11 | **Pizzorno** | 1,27 M€ sur deux semaines | **62,50 € sur TOUTES les lignes** ⇒ Paprec ramasse au prix exact de son OPA (conforme AMF le 26/10) |
+| 14/11 | **Viridien** | 47 471 € par le directeur général | 500 titres, **la même quantité qu'en juin** ⇒ programme d'actionnariat, pas une conviction |
+
+> 🔑 **Et le contrôle qui complète le prix unitaire : la SÉQUENCE de prix.** Sur Roche
+> Bobois, la contrepartie n'était pas renseignée — le test Audacia ne passait donc qu'à
+> moitié. Ce qui a tranché, c'est que **la suite des prix payés suit le marché tick par
+> tick** (12,82 → 16,39 → 17,23 → 18,45 → 20,34 €), ce qui exclut un transfert à prix fixe.
+> *Un prix unique répété = transfert ou offre publique. Une séquence qui suit le marché =
+> vrai achat au marché.*
+
+### Et un contre-usage à retenir : le canal AMF comme source de PRIX
+Sur Roche Bobois, deux cotations contradictoires circulaient (20,00 € horodaté contre
+13,75 € « en dernière clôture »). **L'arbitrage s'est fait par les déclarations AMF**, qui
+ne dépendent d'aucun agrégateur : un initié a payé 20,34 € le 12/11, ce qui disqualifie le
+13,75 € — un cours périmé de dix jours.
+> **Les prix des déclarations de dirigeants sont une source de prix indépendante et datée.**
+> Peu dense, mais incorruptible par un agrégateur. *À utiliser comme juge de paix quand deux
+> cotations ne se réconcilient pas (R66).*

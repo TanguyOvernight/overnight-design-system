@@ -2655,3 +2655,76 @@ calendrier budgétaire — pas à arbitrer, il n'y a rien à faire d'ici là.*
   est explicitement interdit et la chasse se porte sur la défense, les réseaux
   électriques et le réglementaire.** *Forcer une thèse énergie sans canal prix, c'est
   inventer.*
+
+---
+
+## ❌ 14/11/2026 — CORRECTION D'UNE DATE QUE J'AI PUBLIÉE QUATRE FOIS
+
+**« samedi 14/11 — échéance de dépôt des 13F du T3 »** est **faux**, et figurait dans les
+briefs des 07, 11, 12 et 13/11 ainsi que dans R67.
+
+```
+30/09/2026 + 45 jours = 14/11/2026  →  c'est un SAMEDI
+Une échéance réglementaire ne tombe pas un week-end : elle roule au jour ouvré suivant.
+ÉCHÉANCE RÉELLE : lundi 16/11/2026.
+```
+
+**Conséquence** : la vague terminale des gros déposants — ceux qui attendent le dernier
+jour — n'est pas tombée. **Le terrain smart money est exploitable à partir du mardi 17/11**,
+pas avant. *Et il ne le sera de toute façon que si `sec.gov` est autorisé.*
+
+> 🔴 **Ce qui rend l'erreur gênante : j'avais le jour de la semaine sous les yeux.** J'ai
+> écrit **« samedi 14/11 — échéance de dépôt »** sans voir que les deux mots étaient
+> incompatibles. *Avoir la donnée ne suffit pas à la lire — il faut qu'une étape de la
+> procédure la confronte à autre chose.* Même mécanisme que R57.
+> **Extension du domaine de R64, et pas une règle nouvelle** *(voir journal du 14/11 sur
+> l'inflation du corpus)* : **une échéance réglementaire porte une règle de jour ouvré.**
+
+## Catalyseurs datés — mise à jour du 14/11/2026
+
+| Date | Jour | Événement | Certitude |
+|---|---|---|---|
+| **16/11/2026** | lundi | **Échéance RÉELLE de dépôt des 13F du T3 2026.** Terrain smart money à rejouer **mardi 17/11** | FAIT — report de jour ouvré |
+| **16-20/11/2026** | semaine | **Nvidia — résultats T3.** Le fait qui tranche **C069**, et la jambe (a) de son kill criterion | FAIT |
+| **20/11/2026** | vendredi | **Vallourec — résultats T3 2026** + conférence | FAIT — communiqué émetteur du 27/10 |
+| **24/11/2026** | mardi | **ICAPE — Capital Market Day.** Point de contrôle de **C070** : un plan chiffrant une marge d'EBIT > 7,5 % avec un pont documenté rouvre le dossier | FAIT |
+| **30/11/2026** | lundi | Clôture d'effet des changements de la revue MSCI de novembre | FAIT |
+| **01/12/2026** | mardi | Versement de 500 € · **butée de C068** | — |
+| **31/12/2026** | jeudi | Butées de **C056**, **C061** et **C069** | appels |
+| **27/01/2027** | mercredi | Aubay — CA annuel 2026, après bourse | FAIT |
+| **11/02/2027** | jeudi | Butée de **C067** (X-FAB) | appel |
+| **≈31/03/2027** | — | **Résultats annuels ICAPE — butée de C070** (marge d'EBIT FY2026 < 5,8 % ?) | appel |
+
+### 🔎 ROCHE BOBOIS — mis au radar, pas au classement
+**RBO · FR0013344173 · Euronext Paris · siège France ⇒ PEA · capi 203 M€ · volume médian
+~86 k€/jour** *(ticket 150-300 € praticable, à l'ordre limité)*.
+
+**Le fait** : **30 déclarations art. 19 MAR, toutes des achats, aucune vente**, depuis le
+23/09/2026, par **deux déclarants non liés entre eux** — TXR S.R.L. *(Giovanni Tamburi,
+conseil de surveillance)* et la **Société Patrimoniale Roche** *(famille fondatrice, au-delà
+de 20 % des droits de vote depuis le 01/07/2026)*. Le gros du cluster est au point bas des
+23-26/10 : 3 990 et 5 200 titres, soit **10 à 50 fois leur routine habituelle**.
+
+**Pourquoi il n'est PAS escaladé à l'Avocat** — son propre détecteur constate l'échec de T1 :
+```
+23/10  12,82 €  →  13/11  20,00 €  (horodaté 17:35:14)   +56 %
+dont +44 % sur les sept dernières séances
+Position dans le range (R72) : −46,8 % sous le plus haut 52 sem. (37,60 €)
+                               +62,6 % au-dessus du plus bas (12,30 €)
+                               −35,9 % depuis le 1er janvier
+```
+*L'information est obscure — zéro couverture de presse, zéro objectif de cours, le seul avis
+visible est à la VENTE — mais le prix a déjà couru. C'est la configuration inverse de celle
+qu'on cherche.* **Dépenser un Avocat sur un dossier dont le test de prix a déjà échoué,
+c'est se payer une confirmation.**
+
+⚠️ **Le drapeau que personne n'explique** : **deux démissions au conseil de surveillance**
+*(Denis Terrien le 15/10, Lan Cittadini Cesi le 27/10)*, **annoncées le 03/11/2026 à 08h00
+sans aucun motif et sans remplacement**, conseil ramené à 7 membres — pendant que les
+véhicules du président et de la famille fondatrice ramassent le flottant. Avec un **CA T3
+2026 à 86,5 M€, −7,3 %** et un S1 à −8,9 %.
+> *Des départs inexpliqués ne valident pas un achat d'initié : ils le rendent ambigu.*
+
+**L'information qui décide, nommée d'avance** : **le motif de ces deux démissions.**
+Déclencheurs secondaires : un franchissement de seuil par TXR + SPR *(si le total approche
+50 %, le dossier change de nature — offre obligatoire)*, et le CA annuel 2026.

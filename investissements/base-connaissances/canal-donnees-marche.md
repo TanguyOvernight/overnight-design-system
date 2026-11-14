@@ -558,3 +558,40 @@ la seconde pour Aubay (« 06/11/2026, 17:35:00 ») et Vallourec. *Sur les valeur
 suivies, la discipline « un prix sans horodatage n'est pas un prix » n'est pas satisfaite :
 elle est remplacée par un contrôle plus faible — la concordance de deux sources
 indépendantes sur une clôture datée. **Le dire plutôt que le masquer.***
+
+
+---
+
+# ❌ 14/11/2026 — CORRECTION DE LA RECETTE EURONEXT : le paramètre est un CODE ÉMETTEUR, pas un ISIN
+
+Le 11/11 j'ai noté la recette `live.euronext.com/en/listview/company-press-release/<code>`
+avec pour seul exemple `/003071` (Vallourec). **Je n'ai pas dit ce qu'était ce code**, et
+l'essai du 14/11 sur Roche Bobois avec `FR0013344173-XPAR` rend **« no results »**.
+
+> **Le paramètre est un code émetteur interne Euronext** (6 chiffres du type `003071`),
+> **pas un ISIN et pas un ISIN-XPAR.** La recette est donc **incomplète** tant que je ne
+> sais pas comment obtenir ce code pour un émetteur donné.
+> **Contournement connu** : les PDF sous
+> `live.euronext.com/sites/default/files/company_press_releases/...`
+
+*Une recette dont un paramètre n'est pas spécifié n'est pas une recette, c'est un souvenir
+d'un cas qui a marché.* **À compléter : où lire le code émetteur Euronext d'une société.**
+
+# 🚫 Hôtes bloqués — mise à jour du 14/11/2026
+
+| Hôte | Ce qu'il porte | Gravité |
+|---|---|---|
+| **`www.sec.gov`** | **13F, 13D/G, tous les dépôts américains** | 🔴 **BLOQUANT** — rend la branche 13F du terrain smart money inexécutable, et les agrégateurs de substitution sont disqualifiés |
+| `echanges.dila.gouv.fr` | Franchissements de seuil AMF | 🔴 bloquant pour la 2ᵉ branche du même terrain |
+| `assemblee-nationale.fr` | Amendements du PLF — base de **C056** | bloquant pour la résolution |
+| `msci.com` · `ir.msci.com` · `app2.msci.com` | Listes nominatives des revues d'indices | les trois portes fermées |
+| `actusnews.com` · `boursorama.com` · `webdisclosure.fr` · `tradingsat.com` | Communiqués et presse financière française | chemins alternatifs tous fermés |
+| `vallourec.com` · `icape-group.com` | Sites émetteurs | contournables par Euronext, sauf pour les définitions internes |
+| `bdif.amf-france.org` | Avis AMF | atteignable, SPA, liste inutilisable |
+
+**Le constat d'ensemble, à dire tel quel** : sur les quatre canaux primaires de données
+réglementaires — SEC, DILA/AMF, Assemblée nationale, MSCI — **aucun n'est accessible**.
+Ce qui reste : Euronext Live, abcbourse, et la recherche web. *Ce n'est pas une gêne
+ponctuelle, c'est la forme de ce que je peux savoir.*
+⚠️ **Je signale, je ne contourne pas, et je ne déclenche pas de demande d'autorisation
+réseau depuis une routine planifiée.** C'est la décision de Tanguy.
