@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-11-13",
+ "maj": "2026-11-14",
  "offres": [
   {
    "d": "2026-10-03",
@@ -2279,7 +2279,8 @@
     "Direction créative ET production de tes propres visuels (photo, vidéo) et textes",
     "Pratique des outils IA exigée (copy, visuels, montage, reporting)",
     "Anglais excellent · FR/DE en plus",
-    "100 % sur site à Renens · lancements hardware/e-commerce/crowdfunding = gros plus"
+    "100 % sur site à Renens · lancements hardware/e-commerce/crowdfunding = gros plus",
+    "Re-publiée le 13.11 sous un nouvel ID LinkedIn (4488920636) : 3+ ans, usage pratique d'outils d'IA demandé"
    ],
    "at": "Taillé pour toi : DA + production de contenu + IA dans le workflow, à 5 km de Lausanne. Montre tes contenus Chat3D/Overnight (photo, vidéo, motion) et explique comment tu les produis plus vite avec l'IA."
   },
@@ -5434,6 +5435,144 @@
     "Relations presse pures"
    ],
    "at": "Grande ONG lausannoise."
+  },
+  {
+   "d": "2026-11-14",
+   "b": 74,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "cible",
+   "t": "Motion Designer (mentionne Claude Code)",
+   "c": "Jobgether (produit d'éducation à l'IA non nommé)",
+   "l": "Remote",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "2 ans en motion design / montage",
+   "lg": "EN",
+   "g": true,
+   "u": "https://ch.linkedin.com/jobs/view/motion-designer-at-jobgether-4489542756",
+   "n": "Créer vidéos et créas publicitaires qui font découvrir les outils d'IA, en générant images et vidéos avec l'IA ; atout : automatiser les workflows créatifs avec des scripts ou plugins After Effects/Premiere développés avec Claude Code.",
+   "fit": {
+    "m": 2,
+    "da": 3,
+    "ia": 3,
+    "pct": 78
+   },
+   "ms": [
+    "Vidéos et créas publicitaires sur l'IA",
+    "Génération et retouche d'images et vidéos par IA",
+    "Automatiser les workflows avec Claude Code"
+   ],
+   "inf": [
+    "⚠️ After Effects avancé exigé",
+    "Employeur non nommé ; bureaux optionnels Kyiv/Lviv/Varsovie"
+   ],
+   "at": "Claude Code cité dans l'annonce : ton site R3F codé avec Claude est la preuve parfaite."
+  },
+  {
+   "d": "2026-11-14",
+   "b": 74,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Responsable de la communication – Swiss Plasma Center",
+   "c": "EPFL",
+   "l": "Lausanne (campus)",
+   "dist": "Lausanne",
+   "tx": "n.p.",
+   "ct": "n.p.",
+   "xp": "non chiffrée",
+   "lg": "FR + EN",
+   "g": false,
+   "u": "https://ch.talent.com/view?id=642846354439082422&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+   "n": "Piloter la communication interne et externe d'un centre mondial de recherche sur la fusion, sur tous les canaux, avec une forte autonomie stratégique et éditoriale.",
+   "fit": {
+    "m": 3,
+    "da": 1,
+    "ia": 0,
+    "pct": 55
+   },
+   "ms": [
+    "Définir la stratégie de communication avec la direction",
+    "Piloter tous les canaux"
+   ],
+   "inf": [
+    "⚠️ lien via l'agrégateur talent.com (annonce EPFL d'origine non trouvée)",
+    "Poste autonome : expérience probablement attendue"
+   ],
+   "at": "Raconter une science complexe : même exercice que Chat3D."
+  },
+  {
+   "d": "2026-11-14",
+   "b": 74,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Regional Marketing Lead (MENA / Afrique subsaharienne)",
+   "c": "Jobgether (marque B2C non nommée)",
+   "l": "Remote",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "4 ans + 2 ans de management",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/regional-marketing-lead-at-jobgether-4489549490",
+   "n": "Piloter l'expansion marketing B2C sur le Moyen-Orient et l'Afrique en encadrant une équipe de managers régionaux.",
+   "fit": {
+    "m": 3,
+    "da": 0,
+    "ia": 0,
+    "pct": 35
+   },
+   "ms": [
+    "Stratégies localisées",
+    "Encadrer 4 personnes ou plus"
+   ],
+   "inf": [
+    "⚠️ 2 ans de management d'équipe demandés",
+    "Fit faible"
+   ],
+   "at": "Les 4 ans collent, le management d'équipe moins."
+  },
+  {
+   "d": "2026-11-14",
+   "b": 74,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Responsable communication (70-80 %)",
+   "c": "Lausanne Aquatique (club de natation)",
+   "l": "Prilly",
+   "dist": "Lausanne",
+   "tx": "70-80%",
+   "ct": "n.p.",
+   "xp": "non chiffrée",
+   "lg": "FR",
+   "g": false,
+   "u": null,
+   "n": "Stratégie de communication et de marketing 360° du club, identité de marque, calendrier éditorial, encadrement d'un chargé de communication junior.",
+   "fit": {
+    "m": 2,
+    "da": 2,
+    "ia": 0,
+    "pct": 48
+   },
+   "ms": [
+    "Stratégie 360° et calendrier éditorial",
+    "Identité de marque",
+    "Coordonner junior et prestataires"
+   ],
+   "inf": [
+    "⚠️ 70-80 % : négocier 80 %",
+    "⚠️ non vérifiée : agrégateur bloqué. 🔎 cherche « Responsable communication Lausanne Aquatique »"
+   ],
+   "at": "Poste de responsable à 3 km de Lausanne."
   }
  ]
 }
