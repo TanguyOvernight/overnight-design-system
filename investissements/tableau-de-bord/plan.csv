@@ -1,11 +1,11 @@
 cle,libelle,valeur
 action,Action prioritaire,Acheter 42 parts de WPEA avec le cash qui dort sur le PEA
-action_montant,Montant,302.82
+action_montant,Montant,300.30
 action_frais,Frais estimés — à lire dans l'appli avant de valider,0
 seuil_frais,Au-delà de ce montant de frais préviens-moi,7
 prochain_versement,Prochain versement,2026-12-01
 prochain_versement_montant,Montant,500
-consigne,Consigne du jour,27 jours d'infraction au garde-fou R. STM a fait +14.22 % depuis le 05/11 pendant qu'elle était intouchable. Tant que R dépasse 25 %, aucune candidate du classement n'est actionnable.
-maj,Chiffres arrêtés au,clôture du 12/11
+consigne,Consigne du jour,28 jours d'infraction. STM est repassée juste sous son seuil avec une avance record sur ASML — et reste intouchable tant que R dépasse 25 %.
+maj,Chiffres arrêtés au,clôture du 13/11
 action_parts,Nombre de parts à saisir,42
 frais_regle,Pourquoi 0 €,Premier ordre du mois gratuit en formule Starter si le montant reste sous 500 € — à confirmer sur l'écran de validation
