@@ -3384,3 +3384,69 @@ soit −33 %), pas en une séance. **Le point n'est pas porteur, mais il est fau
 | **3** | STMicroelectronics | déclencheur désarmé (42,34 € > 42 €) |
 | **4** | Magnum Ice Cream | dormant |
 | ☠️ | **ICAPE Holding** | **TUÉ le 13/11/2026** — verdict RÉFUTÉ, motif écrit ci-dessus |
+
+---
+
+## 🔧 15/11/2026 — Eli Lilly passe en DORMANTE, et son déclencheur change d'unité
+
+**Décision de la Prépa du 15/11.** *Sujet pré-engagé la veille, pas choisi le matin même :
+le seuil reculait depuis deux semaines par surperformance sectorielle, symptôme d'un seuil
+périmé.*
+
+### Pourquoi dormante
+```
+Cours 13/11 : 1 443,50 $     ·     Seuil : 1 020 $     ·     il faut −29,3 %
+P(toucher 1 020 $ d'ici fin 2026) = 0,2 %
+```
+Le seuil n'est pas absurde — **30 % sur treize mois**, précisément parce que la volatilité
+de LLY est de **31,7 %/an**. Mais à six semaines il est à **0,2 %**, et il était rapporté
+**chaque matin** avec la mention « hors de portée ».
+
+> 🔑 **Une ligne qui ne peut pas se déclencher et qu'on rapporte quotidiennement n'informe
+> pas : elle entraîne le lecteur à sauter la section.** Le coût n'est pas son propre bruit,
+> c'est l'attention qu'elle retire aux lignes qui ont quelque chose à dire.
+> **Dormante, condition d'alerte intacte** — comme Magnum. *Elle ne sort pas du classement :
+> aucune candidate ne sort par oubli (loi 1). Elle cesse d'être bavarde, pas d'exister
+> (loi 3).*
+
+### ⚠️ Et une erreur de classification que je corrige
+```
+Volatilité LLY  31,7 %/an   ·   XLV 16,8 %/an   ·   bêta 1,56   ·   corrélation 0,82
+```
+**Lilly est 1,9 fois plus volatile que son propre secteur santé.** Je l'avais rangée
+mentalement en « pharma, donc défensive » **sans jamais le vérifier**.
+➡️ **Si elle est achetée un jour, elle va dans la poche RISQUÉE et compte dans le garde-fou
+R.** *Ce n'est pas une étiquette, c'est un terme du calcul d'allocation.*
+
+### 🔧 Le déclencheur change d'unité : PER ≤ 33, plus 1 020 $
+```
+À 1 020 $ avec un BPA de 30,81 $  →  PER 33        (PER actuel : 46,9)
+PER 33 aujourd'hui                →  1 017 $       (0,3 % du seuil d'origine)
+```
+**Le seuil n'a jamais été un prix : c'était une opinion sur la valorisation déguisée en
+prix.** Et un seuil de prix fixe sur une société dont les bénéfices croissent **se durcit
+tout seul** : si le BPA gagne 20 %, « PER 33 » vaut 1 221 $ pendant que le seuil reste
+cloué à 1 020 $. *Un durcissement par omission, et invisible.*
+
+**Nouveau déclencheur : PER ≤ 33 sur le bénéfice des douze derniers mois publiés.**
+> *Le contrôle de fidélité est que le niveau ne bouge pas* : 1 017 $ contre 1 020 $.
+> **Une reformulation qui change le niveau n'est pas une reformulation, c'est un
+> déplacement déguisé.** Celle-ci est fidèle, et c'est ce qui l'autorise.
+
+*C'est **R63** — « un test pré-enregistré nomme la BASE de sa métrique » — appliquée à un
+seuil de surveillance, et **pas** une règle nouvelle. Deuxième jour consécutif d'extension
+plutôt que de numérotation.*
+
+### Le classement au 15/11/2026
+| Rang | Candidate | Cours | État |
+|---|---|---|---|
+| **1** | **Cœur World (WPEA)** | 7,15 € | 🔔 **la seule ligne actionnable** — 42 parts, 300,30 €, R → 23,87 % |
+| **2** | STMicroelectronics | 41,95 € | **bloquée par le garde-fou, pas par son prix** |
+| **3** | Eli Lilly | 1 443,50 $ | **dormante** — déclencheur **PER ≤ 33** |
+| **4** | Magnum Ice Cream | — | dormante |
+| ☠️ | ICAPE Holding | 9,84 € | **TUÉE le 13/11** — verdict RÉFUTÉ |
+| 🔎 radar | Roche Bobois | 20,00 € | **au radar, pas au classement** — T1 échoué (+56 % depuis le 23/10) |
+
+> 🔑 **Sur quatre lignes, une seule porte une décision.** **Ce n'est pas un classement
+> maigre, c'est un classement honnête** — et le dire ainsi montre que tout dépend d'un seul
+> ordre de 300 €, et que « quoi acheter ? » n'a qu'une réponse tant que R dépasse 25 %.

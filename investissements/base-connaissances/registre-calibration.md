@@ -4502,3 +4502,55 @@ valeur (01/10/2026), carnet record déjà public au 25/09, et +6,67 % du titre l
 
 > 🔴 **Douze échéances ouvertes, zéro tâche planifiée.** Déjà deux matérialisations
 > (C063 à 3 jours, C059 à 10 jours). *Je ne crée pas ces tâches de ma seule initiative.*
+
+---
+
+# 📅 15/11/2026 — C071 *(Prépa : le seuil d'Eli Lilly)*
+
+| Réf | Date | Agent | Proposition | **P** | Résolution datée |
+|---|---|---|---|---|---|
+| **C071** | 15/11 | Prépa | **Eli Lilly touche 1 020 $ ou moins en clôture avant le 31/12/2027** | **25 %** | clôture NYSE datée · **31/12/2027** |
+
+**Critères partitionnants** *(R65)* : au moins une clôture ≤ 1 020,00 $ avant la butée →
+✅ VRAI ; aucune → ❌ FAUX. **Aucun trou, aucun recouvrement.**
+**Base de la métrique** *(R63)* : **clôture NYSE non ajustée, telle que publiée.**
+
+**Le modèle** *(vol mesurée sur 44 rendements hebdomadaires de 2026)* :
+```
+Volatilité LLY  31,7 %/an   ·   XLV 16,8 %/an   ·   bêta 1,56   ·   corrélation 0,82
+P(toucher 1 020 $) sans dérive :  0,2 % d'ici fin 2026  ·  16,6 % au 30/06/2027  ·  30,2 % au 31/12/2027
+```
+
+**Pourquoi 25 % et non 30,2 %** : une action porte une **dérive positive**, et une dérive
+positive **réduit** la probabilité de toucher une barrière **basse**. Le modèle sans dérive
+est donc ici un **plafond**, pas un plancher — contrairement au cas de C066/C068, où la
+barrière et le sens de l'ajustement étaient inversés.
+
+> ⚠️ **La tension avec C068, nommée d'avance.** Le 08/11 j'ai enregistré C068 **au-dessus**
+> de mon modèle (24,2 → 28 %) ; aujourd'hui j'enregistre C071 **en dessous** (30,2 → 25 %).
+> Deux écarts au modèle, en sens opposés, à une semaine d'intervalle : vu de l'extérieur,
+> ça ressemble à de l'arbitraire.
+> **Ce qui les distingue, et c'est écrit avant les deux résolutions** : la prime de risque
+> actions est un mécanisme standard, mesuré depuis un siècle, dont le **signe** ne fait pas
+> débat. Le regroupement de volatilité est réel, mais **son ampleur sur six semaines est
+> mon estimation personnelle**.
+> **Conséquence pré-enregistrée** : si C068 se résout contre moi le 01/12, c'est un argument
+> contre **l'ajustement du haut**, et **pas** contre celui du bas. *Je l'écris maintenant
+> pour ne pas pouvoir choisir après coup laquelle des deux leçons retenir — c'est exactement
+> ce que R55 m'a appris à mes frais sur C066.*
+
+**Note de forme** : le seuil de **l'appel** reste en dollars, volontairement — *un appel doit
+être résoluble sans dépendre d'un bénéfice futur*. Le seuil de **la surveillance** passe en
+PER (voir `classement-opportunites.md`). **Deux objets différents, deux unités différentes,
+et c'est délibéré.**
+
+## 📊 État du registre au 15/11/2026
+**Ouverts (13)** : **C011** *(mars 2027)* · **C014** *(30/06/2027)* · **C015** *(31/12/2027)* ·
+**C017** *(40 %, 31/07/2027)* · **C054** *(62 %, 31/12/2031)* · **C056** *(78 %, 31/12/2026)* ·
+**C061** *(10 %, 31/12/2026)* · **C065** *(60 %)* · **C067** *(25 %, 11/02/2027)* ·
+**C068** *(28 %, 01/12/2026)* · **C069** *(78 %, 31/12/2026)* · **C070** *(22 %, ~31/03/2027)* ·
+**C071** *(25 %, 31/12/2027)*.
+**VOID, réouvrables** : **C013** · **C059**.
+
+> 🔴 **Treize échéances ouvertes, zéro tâche planifiée.** Deux matérialisations déjà
+> (C063 à 3 jours, C059 à 10 jours). *Je ne crée pas ces tâches de ma seule initiative.*
