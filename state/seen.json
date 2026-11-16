@@ -1,7 +1,7 @@
 {
  "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
- "maj": "2026-11-15",
- "dernier_brief": 75,
+ "maj": "2026-11-16",
+ "dernier_brief": 76,
  "vus": {
   "jobup": [
    "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -1328,7 +1328,22 @@
    "ba233592-782e-47b5-8830-3d844108756e",
    "cc9b43af-48b2-42d4-877d-438cca593f2f",
    "de8fc22a-457b-4cb2-8c08-b894226bd1a4",
-   "f8bfb6ad-a097-4aee-8545-6cec9cf66878"
+   "f8bfb6ad-a097-4aee-8545-6cec9cf66878",
+   "437e6f7a-6af4-4d41-92c8-2455992022e3",
+   "47025801-c467-4d9a-920d-a6e14c52784f",
+   "651b6b42-64eb-4d72-97e8-141762500c3f",
+   "6c1a7e88-7bd4-4d75-b8b6-f68d93dbebe3",
+   "6d34dd1b-dec7-462b-9f07-081229ac6087",
+   "6ff09964-9437-40ea-af04-8f10fb2217fc",
+   "8a010b58-1435-478b-8e03-29bb1af0722c",
+   "8ea2c950-89f7-486d-bd02-7cf7135c254d",
+   "90f8a547-0005-4b8d-aabf-c315f314f613",
+   "a9c39675-b0e5-4678-98ca-7bd5506edb75",
+   "adf5c879-2406-4fd9-8b7a-8a6f6a538479",
+   "d2aea6b1-3c4f-4000-9687-0504119edc45",
+   "e26ed860-15b2-42ff-83ff-c07bc010d7bf",
+   "ea60b355-c7a7-4e37-bc52-abac0b6b91aa",
+   "f1081643-87a7-4895-9662-9a7923ac421b"
   ],
   "ats_employeurs": [
    "https://recrutement.eben-hezer.ch/jobs/7602918-responsable-communication-et-recherche-de-fonds",
@@ -4338,7 +4353,20 @@
    "4489567427",
    "4491025684",
    "4491214496",
-   "4488932033"
+   "4488932033",
+   "4489382986",
+   "4491249316",
+   "4490243893",
+   "4491224727",
+   "4490237426",
+   "4491500284",
+   "4489712038",
+   "4489704617",
+   "4490255595",
+   "4489375760",
+   "4490232240",
+   "4491277249",
+   "4490235984"
   ],
   "chuv": [
    "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html"
@@ -4347,7 +4375,8 @@
    "https://ch.talent.com/view?id=98e1d682673e",
    "https://ch.talent.com/view?id=2415865893ec",
    "https://ch.talent.com/view?id=644900733183926280&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
-   "https://ch.talent.com/view?id=642846354439082422&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"
+   "https://ch.talent.com/view?id=642846354439082422&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+   "https://ch.talent.com/view?id=646216519803410752&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"
   ],
   "albedis": [
    "https://www.albedis.com/emploi/4267277496-marketing-b2b-specialist-h-f-100-7-months-assignment-fr/"
@@ -4382,7 +4411,8 @@
    "Entreprise anonyme immobilier — Chargée Marketing (11.11, ❌)",
    "Jobgether — Marketing Manager (Maternity Cover) SaaS photo (12.11, 👀 sans lien)",
    "Terre des hommes — Media Relations Lead (13.11, 👀 sans lien)",
-   "Lausanne Aquatique — Responsable communication 70-80 % (14.11, 👀 sans lien)"
+   "Lausanne Aquatique — Responsable communication 70-80 % (14.11, 👀 sans lien)",
+   "BAT — Brand Marketing Executive Vuse (16.11, 👀 sans lien)"
   ],
   "lever": [
    "3d1597a7-4535-4f22-8554-9a4a5df242b9",
@@ -5627,7 +5657,29 @@
    "336c816d-f370-46b9-ad0d-6a4ff53403f6",
    "639b233c-02b4-4be3-8c95-23ad0b0f6bd4",
    "70e7d750-fc90-4dfb-ae60-d2783ec4c7bc",
-   "87088d23-9457-4411-be76-9aa81aa9c4ed"
+   "87088d23-9457-4411-be76-9aa81aa9c4ed",
+   "6e02e8b9-551e-4bf9-b98e-98d36e2236a0",
+   "065ce9b3-1be4-47e7-b292-67e15315bfa3",
+   "4a0f090e-482b-454e-b638-0b05aafcd5f2",
+   "a531d8cc-1717-463d-bb83-1246c5c5fc0e",
+   "cd02b840-fe3f-4008-95a0-b5ee2e1801b4",
+   "466b5bc0-5b2a-4acb-9c7d-b5d96abb3b2b",
+   "7310c3ef-34ac-4e6b-ad4f-b2462f581c91",
+   "5d59ab5b-b113-4834-9489-cbf0776e725c",
+   "92917550-6168-4595-b62f-099cdb8e8d47",
+   "1c154fed-29aa-4730-98d0-65b1e7bc2406",
+   "aec44f9b-2d96-4f91-b476-28a857f680f4",
+   "ae0bbc81-0981-4688-bc16-305466df8fbb",
+   "db4442a6-cead-4fcc-be84-b27dc811f756",
+   "9d006eea-0e53-41d2-a03f-5a0a0902da63",
+   "7117ef94-e7a4-471b-a232-2f201e3dc808",
+   "63cea39c-0c98-43b7-b0e2-742a66e80d83",
+   "1c6a6079-6a4c-4bbc-a0bb-dfe9cb32ec70",
+   "9565bb86-3df2-4a09-a02c-1ba53f8f8240",
+   "139d328e-6096-4211-95df-36069d996f6d",
+   "0a5cfb52-8d85-4cdd-8857-456df449411c",
+   "52345ed7-5d78-4be9-a296-4a8bce688a51",
+   "d64b4d73-b1aa-43bc-9d46-e7d076d32751"
   ]
  },
  "postees": [
@@ -7870,6 +7922,22 @@
    "score": "avoir",
    "titre": "Responsable communication (70-80 %)",
    "entreprise": "Lausanne Aquatique (club de natation)",
+   "lien": null
+  },
+  {
+   "brief": 76,
+   "date": "2026-11-16",
+   "score": "avoir",
+   "titre": "Lead Marketing Specialist (cluster pays)",
+   "entreprise": "Logitech",
+   "lien": "https://ch.talent.com/view?id=646216519803410752&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"
+  },
+  {
+   "brief": 76,
+   "date": "2026-11-16",
+   "score": "avoir",
+   "titre": "Brand Marketing Executive (Vuse)",
+   "entreprise": "BAT Switzerland",
    "lien": null
   }
  ]

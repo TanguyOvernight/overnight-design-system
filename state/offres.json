@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-11-15",
+ "maj": "2026-11-16",
  "offres": [
   {
    "d": "2026-10-03",
@@ -5573,6 +5573,74 @@
     "⚠️ non vérifiée : agrégateur bloqué. 🔎 cherche « Responsable communication Lausanne Aquatique »"
    ],
    "at": "Poste de responsable à 3 km de Lausanne."
+  },
+  {
+   "d": "2026-11-16",
+   "b": 76,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Lead Marketing Specialist (cluster pays)",
+   "c": "Logitech",
+   "l": "Lausanne",
+   "dist": "Lausanne",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "non chiffrée",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.talent.com/view?id=646216519803410752&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+   "n": "Adapter les stratégies marketing globales et régionales (proposition de valeur, prix, positionnement) à un cluster de pays et piloter notoriété et ventes.",
+   "fit": {
+    "m": 3,
+    "da": 1,
+    "ia": 0,
+    "pct": 48
+   },
+   "ms": [
+    "Adapter la stratégie régionale au marché local",
+    "Réagir vite aux prix et à la concurrence"
+   ],
+   "inf": [
+    "⚠️ lien via l'agrégateur talent.com (annonce Logitech d'origine non trouvée)",
+    "Cluster pays non précisé"
+   ],
+   "at": "Troisième poste marketing Logitech à Lausanne ce mois-ci."
+  },
+  {
+   "d": "2026-11-16",
+   "b": 76,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Brand Marketing Executive (Vuse)",
+   "c": "BAT Switzerland",
+   "l": "Lausanne",
+   "dist": "Lausanne",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "non chiffrée",
+   "lg": "FR + EN",
+   "g": false,
+   "u": null,
+   "n": "Faire grandir la marque Vuse en Suisse : définir la stratégie de marque avec le Category Manager, piloter les projets et briefer les agences.",
+   "fit": {
+    "m": 3,
+    "da": 1,
+    "ia": 0,
+    "pct": 45
+   },
+   "ms": [
+    "Projets de marque et briefs d'agence",
+    "Suivi budgétaire"
+   ],
+   "inf": [
+    "⚠️ non vérifiée : agrégateurs bloqués. 🔎 cherche « Brand Marketing Executive BAT Lausanne » sur LinkedIn ou le site carrière BAT",
+    "Secteur tabac / vape"
+   ],
+   "at": "BAT recrute déjà en e-commerce (épinglée)."
   }
  ]
 }
