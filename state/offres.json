@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-11-16",
+ "maj": "2026-11-17",
  "offres": [
   {
    "d": "2026-10-03",
@@ -5641,6 +5641,172 @@
     "Secteur tabac / vape"
    ],
    "at": "BAT recrute déjà en e-commerce (épinglée)."
+  },
+  {
+   "d": "2026-11-17",
+   "b": 77,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "cible",
+   "t": "Video Editor & Motion Designer (cite Claude Motion)",
+   "c": "Jobgether (SaaS international non nommé)",
+   "l": "Remote",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "3 ans dont 1 an sur une chaîne YouTube",
+   "lg": "EN",
+   "g": true,
+   "u": "https://ch.linkedin.com/jobs/view/video-editor-motion-designer-at-jobgether-4490281110",
+   "n": "Piloter toute la production vidéo (YouTube, vidéos produit) en intégrant l'IA au quotidien : Claude Motion pour les inserts animés, Higgsfield ou Magnific pour images et vidéos, sous-titrage automatique.",
+   "fit": {
+    "m": 2,
+    "da": 3,
+    "ia": 3,
+    "pct": 75
+   },
+   "ms": [
+    "Montage et motion design de bout en bout",
+    "Intégrer les outils d'IA dans le workflow vidéo"
+   ],
+   "inf": [
+    "⚠️ 3 ans de montage / motion demandés, dont 1 an YouTube",
+    "Employeur non nommé"
+   ],
+   "at": "Claude cité dans l'annonce ; ton usage quotidien de l'IA générative en vidéo est l'argument."
+  },
+  {
+   "d": "2026-11-17",
+   "b": 77,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "solide",
+   "t": "Creative & Community Lead",
+   "c": "Jobgether (marque non nommée)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "non chiffrée",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/creative-community-lead-at-jobgether-4490272905",
+   "n": "Façonner le récit de marque à travers le contenu, la communication et la communauté ; suivre le sentiment de la communauté et le traduire en contenus.",
+   "fit": {
+    "m": 3,
+    "da": 2,
+    "ia": 1,
+    "pct": 65
+   },
+   "ms": [
+    "Récit de marque et contenus",
+    "Animation et écoute de la communauté"
+   ],
+   "inf": [
+    "Employeur non nommé"
+   ],
+   "at": "Mélange stratégie + exécution, pile ton profil."
+  },
+  {
+   "d": "2026-11-17",
+   "b": 77,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Lead Coordinator Social Media",
+   "c": "Audemars Piguet",
+   "l": "Le Brassus",
+   "dist": "Le Brassus",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "non chiffrée",
+   "lg": "FR + EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/lead-coordinator-social-media-at-audemars-piguet-4490692549",
+   "n": "Contribuer à la stratégie social media de la marque et coordonner des campagnes digitales intégrées (organique, paid, newsletters, landing pages) sous le Manager Media.",
+   "fit": {
+    "m": 3,
+    "da": 2,
+    "ia": 0,
+    "pct": 55
+   },
+   "ms": [
+    "Campagnes social media organiques et payantes",
+    "Pilotage dans Sprinklr et reporting"
+   ],
+   "inf": [
+    "⚠️ Le Brassus : -1 au scoring géo, loin en transports"
+   ],
+   "at": "Maison horlogère de premier plan ; storytelling de marque."
+  },
+  {
+   "d": "2026-11-17",
+   "b": 77,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Spécialiste en communication digitale (mudac)",
+   "c": "PLATEFORME 10 (Musée de design et d'arts appliqués contemporains)",
+   "l": "Lausanne",
+   "dist": "Lausanne",
+   "tx": "80%",
+   "ct": "n.p.",
+   "xp": "5 ans communication culturelle + 5 ans digital",
+   "lg": "FR + EN",
+   "g": false,
+   "u": "https://www.jobup.ch/fr/emplois/detail/63599e6a-bf4e-42c7-a13e-ae5eb10a0d6b/?utm_source=job-room.ch&utm_medium=affiliate&utm_campaign=wb:jobup|tg:b2c|cn:ch|lg:fr|ct:targeting,nonbrand,job|cd:feedonomics-jobroom|mg:job-application|pd:n|tt:organic",
+   "n": "Coordonner la communication digitale des expositions et événements du mudac, gérer le site du musée et superviser les productions de communication.",
+   "fit": {
+    "m": 2,
+    "da": 2,
+    "ia": 0,
+    "pct": 50
+   },
+   "ms": [
+    "Communication digitale des expositions",
+    "Site internet (WordPress) et réseaux Meta"
+   ],
+   "inf": [
+    "⚠️ CDD 5 mois (remplacement de congé maternité)",
+    "⚠️ expérience demandée : 5 ans + 5 ans"
+   ],
+   "at": "Musée de design au cœur de Lausanne : belle ligne sur le CV."
+  },
+  {
+   "d": "2026-11-17",
+   "b": 77,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Integrated Marketing Manager",
+   "c": "Jobgether (solutions cloud et IA non nommées)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "5 ans en marketing digital B2B",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/integrated-marketing-manager-at-jobgether-4489745919",
+   "n": "Mener la génération de leads et les campagnes intégrées pour un portefeuille de solutions cloud de productivité et d'IA.",
+   "fit": {
+    "m": 3,
+    "da": 0,
+    "ia": 1,
+    "pct": 42
+   },
+   "ms": [
+    "Campagnes intégrées et demand generation"
+   ],
+   "inf": [
+    "⚠️ expérience demandée : 5 ans"
+   ],
+   "at": "Angle IA, mais métier très demand gen."
   }
  ]
 }
