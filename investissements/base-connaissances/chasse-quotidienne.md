@@ -3631,3 +3631,78 @@ ne dépendent d'aucun agrégateur : un initié a payé 20,34 € le 12/11, ce qu
 > **Les prix des déclarations de dirigeants sont une source de prix indépendante et datée.**
 > Peu dense, mais incorruptible par un agrégateur. *À utiliser comme juge de paix quand deux
 > cotations ne se réconcilient pas (R66).*
+
+---
+
+## R73 — Un signal dont la fenêtre d'avantage est plus courte que l'horizon du mandat n'est pas un signal pour ce mandat
+
+**Née le 17/11/2026, sur Vetoquinol.**
+
+Le chasseur a rendu un bon signal — approbation FDA de Felpreva aux États-Unis, communiqué
+réglementé du **16/11 à 18h00**, après la clôture — et il a conclu : *« fenêtre d'edge en
+heures, pas en semaines »*, parce que la séance de réaction est celle du lendemain matin.
+
+**C'était exact, et sans objet.** Le raisonnement confond deux grandeurs :
+
+```
+l'avantage de PRIX         se compte en heures   ← ce n'est pas notre jeu
+la thèse d'INVESTISSEMENT  se compte en années   ← c'est le mandat
+```
+
+> **La règle** : avant de traiter un signal, comparer **la durée de son avantage** à
+> **l'horizon du mandat** *(ici 5-7 ans)*. Si l'avantage expire avant que la décision
+> puisse être prise et tenue, **le signal n'est pas exploitable par nous, quelle que soit
+> sa qualité**. Et surtout : *une thèse qui n'est valable qu'achetée dans les dix premières
+> minutes d'une séance n'est pas une thèse, c'est un arbitrage de rapidité* — un métier où
+> un particulier avec un ticket de 150-300 € n'a aucun avantage, et où il est structurellement
+> le dernier servi.
+
+**La formulation à retenir, parce qu'elle tranche vite** : *si cette société est un bon
+actif à détenir cinq ans, elle le sera encore dans trois semaines à un prix voisin. Si ce
+n'est vrai qu'aujourd'hui, ce n'était pas un investissement.*
+
+### Pourquoi celle-ci prend un numéro, après deux jours d'extensions
+Les 14 et 15/11 j'ai délibérément **étendu** R64 puis R63 plutôt que de numéroter, pour ne
+pas gonfler un corpus qui avait pris huit entrées en huit jours. **Celle-ci est différente
+et je dis en quoi** : c'est un **filtre d'étage de détection**, qui s'applique *avant* les
+six kill-tests et qui aurait **changé ma lecture du rapport de ce matin**. Aucune règle
+existante ne compare la durée d'un avantage à l'horizon du mandat — R72 parle de lire une
+réaction de prix, pas de savoir si une fenêtre est compatible avec nous.
+*Le test que je m'applique : si la règle n'avait pas existé, aurais-je lu le rapport
+différemment ? Ici oui. Les 14 et 15, non — la bonne réponse était déjà dans R64 et R63.*
+
+### Corollaire opérationnel pour les consignes de chasse
+Demander au chasseur de qualifier le **caractère early** d'un fait l'incite à mesurer *la
+fraîcheur*, qui se compte en heures. **Il faut lui demander en plus la DURÉE pendant
+laquelle le fait reste exploitable.** Un fait frais mais consommé en une séance et un fait
+vieux de trois mois mais non encore reflété sont deux objets opposés, et seule la seconde
+catégorie nous concerne.
+
+---
+
+## 🔧 17/11/2026 — Le trou de la recette Euronext est comblé
+
+Le 14/11 j'ai noté que `live.euronext.com/en/listview/company-press-release/<code>` exigeait
+un **code émetteur à 6 chiffres** que je ne savais pas obtenir, ce qui rendait la recette
+*« incomplète — le souvenir d'un cas qui a marché »*.
+
+> ✅ **La bonne porte ne demande aucun code** :
+> `https://live.euronext.com/en/markets/paris/company-news`
+> **Liste DATÉE et HORODATÉE (CET) des communiqués réglementés de TOUTES les sociétés
+> d'Euronext Paris**, paginée (37 pages au 17/11). C'est elle qui a sorti le communiqué
+> Vetoquinol du 16/11 à 18h00.
+
+**Elle remplace fonctionnellement** le `/products/equities/company-news` mort *(vide, JS)*
+et **rend le code émetteur inutile pour la veille quotidienne**. Le code reste nécessaire
+pour l'historique long d'un émetteur donné ; seul chemin identifié pour l'obtenir :
+rétro-ingénierie d'un lien déjà indexé *(`site:live.euronext.com listview/company-press-release <nom>`)* — **non testé**.
+
+> 🔑 **Trois jours pour trouver qu'il existait une page sans paramètre**, pendant lesquels
+> j'ai cherché comment obtenir le paramètre. *Quand un identifiant manque, la première
+> question n'est pas « comment l'obtenir » mais « existe-t-il un chemin qui ne le demande
+> pas ».*
+
+**Nouveaux hôtes hors réseau relevés aujourd'hui** : `marketscreener.com`, `tipranks.com`,
+`veterinarypracticenews.com`, `vetoquinol.com`. *Conséquence : le texte intégral du
+communiqué Vetoquinol n'a pas pu être lu, et la presse vétérinaire américaine n'a pas pu
+être datée dans son corps (R64 satisfaite par le seul flux Euronext).*
