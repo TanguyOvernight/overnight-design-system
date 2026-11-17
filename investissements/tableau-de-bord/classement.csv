@@ -1,5 +1,5 @@
 rang,candidat,cours,devise,seuil,statut
-1,Cœur World (WPEA),7.15,€,,ACHAT — 42 parts = 300.30 € (tout le cash du PEA) · R passe à 23.87 %
-2,Eli Lilly,1443.50,$,1020,41.5 % au-dessus — et s'éloigne : +6.61 % sur la semaine contre +2.19 % pour XLV
-3,STMicroelectronics,41.95,€,42,Déclencheur ré-armé de 0.12 % — marge de bruit. Avance sur ASML à +6.53 pt, record
+1,Cœur World (WPEA),7.13,€,,ACHAT — 42 parts = 299.46 € (tout le cash du PEA) · R passe à 23.48 %
+2,STMicroelectronics,41.07,€,42,2.21 % sous le seuil · avance sur ASML à +6.65 pt, nouveau record — bloquée par le garde-fou
+3,Eli Lilly,1431.67,$,PER 33,DORMANTE depuis le 15/11 — déclencheur reformulé en PER <= 33 (soit ~1017 $)
 4,Magnum Ice Cream,,€,,Dormant
