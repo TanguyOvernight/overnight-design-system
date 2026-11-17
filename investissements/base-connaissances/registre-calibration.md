@@ -4554,3 +4554,53 @@ et c'est délibéré.**
 
 > 🔴 **Treize échéances ouvertes, zéro tâche planifiée.** Deux matérialisations déjà
 > (C063 à 3 jours, C059 à 10 jours). *Je ne crée pas ces tâches de ma seule initiative.*
+
+---
+
+# 📅 17/11/2026 — C072 *(Vetoquinol, matérialité de l'approbation FDA)*
+
+| Réf | Date | Agent | Proposition | **P** | Résolution datée |
+|---|---|---|---|---|---|
+| **C072** | 17/11 | Avocat | **D'ici le 26/03/2027, Vetoquinol chiffre l'apport américain de Felpreva (pic de ventes ou contribution annuelle) OU le consensus BNA 2028 est révisé de ≥ +5 % du fait de Felpreva** | **18 %** | résultats annuels 2026, **26/03/2027** |
+
+**Critères partitionnants** *(R65)* : chiffrage émetteur **ou** révision de consensus ≥ +5 %
+attribuée à Felpreva → ✅ VRAI ; **ni l'un ni l'autre au 26/03/2027** → ❌ FAUX.
+**Base** *(R63)* : chiffrage publié par l'émetteur dans un communiqué ou une présentation
+investisseurs ; révision de consensus telle que rapportée par un agrégateur de consensus.
+**Conséquence actée d'un FAUX** : le fait du 16/11/2026 est **définitivement non matériel**
+et ne peut plus être invoqué dans aucune thèse sur VETO.
+
+**Ancrage de la probabilité** : type absent de la table de taux de base, donc **construit**
+sur le comparable le plus dur — *extension géographique américaine d'un produit déjà
+commercialisé en UE, par un acteur sous-échelle face à quatre combinaisons installées entre
+2018 et 2023*. Fréquence de matérialité estimée **~25 %**, **ajustée à 18 %** par trois faits
+✅ et coûteux : le **« US launch 2023 »** de la présentation 2022 *(glissement de quatre ans)*,
+l'**absence de tout chiffrage** dans le communiqué comme dans la publication 9M, et un
+**consensus à +4,7 %** avec TP Icap sous le cours.
+
+### 🏆 Premier RÉFUTÉ de cet Avocat après cinq AFFAIBLI
+L'agent a **nommé son taux de base avant de conclure** — *« 5 verdicts, 5 AFFAIBLI : calibré,
+inutile »* — puis s'en est écarté en justifiant l'écart par des faits datés. *Même structure
+que sur ICAPE le 13/11, et dans l'autre sens par rapport à son historique : un agent qui
+annonce son biais puis s'en écarte en donnant ses raisons est plus crédible que celui qui ne
+l'annonce pas.*
+
+### ⚖️ Et un appel que je REFUSE d'ouvrir
+L'Avocat proposait une seconde ligne : *« hors Felpreva, VETO surperforme le CAC Mid & Small
+à 5 ans »*, **52 %**, relevé au 17/11/2031.
+**Je ne l'ouvre pas, et le motif est méthodologique** : un appel à **52 %** sur cinq ans
+scorera **~0,25 quoi qu'il arrive** — il n'apporte **aucune information de calibration**, par
+construction. L'agent le reconnaît lui-même en écrivant qu'*« aucun des deux ne domine »*.
+Et ce serait le **14ᵉ appel ouvert alors qu'aucun n'a de tâche planifiée pour sa relecture**,
+avec deux retards déjà matérialisés *(C063 à 3 jours, C059 à 10 jours)*.
+> 🔑 **Un registre de calibration n'est pas un carnet d'opinions.** Un appel ne mérite une
+> ligne que s'il est **discriminant** *(sa résolution doit m'apprendre quelque chose)* et
+> **relisable** *(sa butée doit être atteignable avec le dispositif existant)*. Celui-ci
+> échoue aux deux. **Refuser d'ouvrir un appel est aussi un acte de tenue du registre.**
+
+## 📊 État du registre au 17/11/2026
+**Ouverts (14)** : **C011** · **C014** · **C015** · **C017** *(40 %)* · **C054** *(62 %)* ·
+**C056** *(78 %, 31/12/2026)* · **C061** *(10 %, 31/12/2026)* · **C065** *(60 %)* ·
+**C067** *(25 %, 11/02/2027)* · **C068** *(28 %, 01/12/2026)* · **C069** *(78 %, 31/12/2026)* ·
+**C070** *(22 %, ~31/03/2027)* · **C071** *(25 %, 31/12/2027)* · **C072** *(18 %, 26/03/2027)*.
+**VOID, réouvrables** : **C013** · **C059**.

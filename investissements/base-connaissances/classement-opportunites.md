@@ -3450,3 +3450,82 @@ plutôt que de numérotation.*
 > 🔑 **Sur quatre lignes, une seule porte une décision.** **Ce n'est pas un classement
 > maigre, c'est un classement honnête** — et le dire ainsi montre que tout dépend d'un seul
 > ordre de 300 €, et que « quoi acheter ? » n'a qu'une réponse tant que R dépasse 25 %.
+
+---
+
+## ⚖️ 17/11/2026 — LOI 4, ajoutée aux lois de la persistance
+
+> **Un signal RÉFUTÉ ne transmet pas sa place à une autre thèse sur la même société.**
+
+**Née du cas Vetoquinol, le 17/11/2026.** L'Avocat a rendu un verdict **scindé**, et il avait
+raison de le faire : *« le signal du 16/11 est RÉFUTÉ (18 %) ; l'actif, lui, n'est pas
+réfutable à ce prix »* — 7,4× EV/EBITDA, 223 M€ de trésorerie nette *(21 % de la capi)*,
+marge en expansion, zéro drapeau comptable, PEA-éligible.
+
+**Les deux jugements sont justes. Et c'est précisément ce qui crée le piège.**
+
+Laisser Vetoquinol « en instruction » sur sa thèse de bilan serait **parquer une candidate
+dans la liste sur un dossier que personne n'a construit ni testé**. Le signal aurait été
+tué, et la société serait restée — par une porte que les trois premières lois ne ferment
+pas. *Les lois 1 à 3 régissent les SORTIES (rien ne disparaît par oubli) ; aucune ne régit
+une ENTRÉE par substitution de thèse.*
+
+**La règle** : quand un signal est tué, **la société sort avec lui**. Si une autre thèse la
+concernant mérite un rang, elle doit passer par **sa propre détection, son propre Avocat et
+son propre rang sur le mètre commun** — face au cœur WPEA à 5 %/an net. *Elle n'hérite de
+rien.*
+
+> 🔑 **Pourquoi ça compte plus qu'il n'y paraît** : « l'actif reste défendable » est une
+> phrase que je peux écrire sur presque n'importe quelle société pas chère. Sans cette loi,
+> chaque RÉFUTÉ laisserait un résidu tiède dans le classement, et le classement se
+> remplirait de sociétés conservées pour la raison la plus faible qu'on ait trouvée en les
+> écartant. **Un verdict scindé est honnête chez l'Avocat ; recopié tel quel dans le
+> classement, il devient une liste de consolation.**
+
+*Note de proportion : ceci est consigné comme loi du classement et non comme règle de chasse
+numérotée. R73 a été écrite ce matin ; le cas d'aujourd'hui relève des conditions d'entrée au
+classement, pas de la méthode de détection, et il appartient au fichier qui est relu chaque
+jour.*
+
+### ☠️ Vetoquinol — TUÉE le 17/11/2026
+**Signal** : approbation FDA de Felpreva aux États-Unis, communiqué réglementé du **16/11 à
+18h00 CET**. **Verdict : RÉFUTÉ, 18 %.**
+
+**Les trois faits qui l'ont tué :**
+1. **Le glissement de quatre ans, publié par l'émetteur contre son propre intérêt.** La
+   présentation des résultats annuels 2022 *(23/03/2023)* annonçait **« US launch 2023 »** ;
+   le communiqué du 16/11/2026 dit « disponibilité d'ici 2027 ». *Ça qualifie sa capacité
+   d'exécution américaine mieux qu'aucun communiqué.*
+2. **Felpreva a déjà passé son examen en Europe, et l'a raté.** Vendu depuis **avril 2022**
+   dans la zone qui fait ~50 % du CA, avec réseau vétérinaire historique, force de vente
+   installée et marque centenaire à domicile — *le terrain le plus favorable au monde pour
+   eux*. Croissance de la zone Europe : **−3,6 % (2022) · −0,3 % (2023) · +5,1 % (2024) ·
+   +4,6 % (9M 2026)**. Aux États-Unis il arrive **cinquième**, derrière Revolution Plus
+   (Zoetis, 2018), Bravecto Plus (MSD, 2019), Credelio Cat (Elanco) et NexGard Combo
+   (Boehringer, 2023), détenus par des groupes **20 à 60 fois plus gros**. *Une autorisation
+   n'achète pas une ordonnance.*
+3. **La re-cotation a déjà eu lieu, et sur autre chose.** **+33 % depuis le 10/09/2026**,
+   dont **+17,3 % le 11/09** sur un S1 au-dessus des attentes — *sur la marge, pas sur
+   Felpreva*. Consensus à 3 mois +4,7 % ; **TP Icap a un objectif sous le cours**.
+   ⚠️ *Et « +4,79 % depuis janvier » masquait entièrement ces deux mois — R72 en action,
+   trois jours après avoir été écrite.*
+
+**Réserves à conserver si le dossier revient un jour** : flottant **31 %** seulement, avec
+**~77 % des droits de vote** dans la famille ⇒ aucun catalyseur d'inclusion indicielle, et
+**risque permanent d'offre de retrait au prix du contrôlant** à 7-8× l'EBITDA, sans voix au
+chapitre pour un minoritaire. Par ailleurs **l'approbation FDA n'a aucune confirmation
+primaire** : tout ce qui est accessible descend du même communiqué émetteur *(une preuve,
+pas quatre)*. **L'Avocat a supposé le fait vrai et l'a trouvé immatériel quand même** —
+c'est la bonne façon de traiter un trou de vérification : *invérifiable ≠ faux, et un trou
+plafonne un verdict sans le fonder.*
+
+### Le classement au 17/11/2026 — inchangé, quatre lignes
+| Rang | Candidate | Cours 16/11 | État |
+|---|---|---|---|
+| **1** | Cœur World (WPEA) | 7,13 € | 🔔 **seule ligne actionnable** — 42 parts, 299,46 €, R → 23,48 % |
+| **2** | STMicroelectronics | 41,07 € | **2,21 % sous le seuil, bloquée par le garde-fou** · avance sur ASML **+6,65 pt**, record |
+| **3** | Eli Lilly | 1 431,67 $ | dormante — déclencheur **PER ≤ 33** |
+| **4** | Magnum Ice Cream | — | dormante |
+| ☠️ | ICAPE Holding | | TUÉE le 13/11 |
+| ☠️ | **Vetoquinol** | 87,50 € | **TUÉE le 17/11** |
+| 🔎 radar | Roche Bobois | 20,00 € | au radar, T1 échoué |
