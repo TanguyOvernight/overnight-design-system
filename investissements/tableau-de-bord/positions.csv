@@ -1,7 +1,7 @@
 poche,ligne,ticker,valeur_eur,pv_eur,categorie,note
-PEA Fortuneo,iShares MSCI World Swap PEA,WPEA,499.10,+3.36,Cœur,70 parts · PRU 7.082 €
-eToro,Vanguard Total Stock Market,VTI,284.21,+60.98,Cœur,
-eToro,iShares Core MSCI World,SWDA.L,232.87,+60.14,Cœur,
-eToro,Nvidia,NVDA,149.95,+16.01,Risqué,-16.34 % depuis le 06/11 contre +0.54 % pour le S&P · T3 cette semaine
-eToro,Tesla,TSLA,177.45,-1.14,Risqué,Repassée en moins-value
-eToro,Microsoft,MSFT.RTH,76.20,+19.95,Risqué,
+PEA Fortuneo,iShares MSCI World Swap PEA,WPEA,487.90,-7.84,Cœur,70 parts · PRU 7.082 € · repassée sous le PRU
+eToro,Vanguard Total Stock Market,VTI,281.14,+57.91,Cœur,
+eToro,iShares Core MSCI World,SWDA.L,227.98,+55.25,Cœur,
+eToro,Nvidia,NVDA,149.37,+15.43,Risqué,"Huang a démissionné le 11/11 · T3 record (CA +103 %, T4 guidé 130 Md$) · auditions au Congrès les 1-2/12"
+eToro,Tesla,TSLA,177.72,-0.87,Risqué,
+eToro,Microsoft,MSFT.RTH,74.51,+18.26,Risqué,
