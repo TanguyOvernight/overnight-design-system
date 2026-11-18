@@ -2728,3 +2728,67 @@ véhicules du président et de la famille fondatrice ramassent le flottant. Avec
 **L'information qui décide, nommée d'avance** : **le motif de ces deux démissions.**
 Déclencheurs secondaires : un franchissement de seuil par TXR + SPR *(si le total approche
 50 %, le dossier change de nature — offre obligatoire)*, et le CA annuel 2026.
+
+---
+
+# 📅 18/11/2026 — Nvidia : deux auditions datées, et la leçon du retard de six jours
+
+## Les faits nouveaux, et pourquoi ils sont arrivés six jours en retard chez moi
+
+| Date | Fait | Comment je l'ai manqué |
+|---|---|---|
+| **11/11/2026** | **Jensen Huang démissionne** — présidence, direction générale **et** siège d'administrateur, **effet immédiat** *(dépôt SEC)* | **je ne l'ai pas cherché** |
+| **12/11/2026** | Nvidia l'annonce. **Colette Kress (directrice financière) assure l'intérim** en conservant sa fonction · **Harvey C. Jones** devient le **premier président du conseil** de l'histoire de Nvidia · décision **unanime**, et le conseil **n'a pas l'intention de le réintégrer** | **j'ai écrit « aucun fait nouveau » les 14/11 ET 17/11** |
+
+> 🔑 **La règle que je m'étais donnée — « on révise sur un fait, pas sur un cours » — est
+> juste. Mon usage, ces jours-là, était une façon de ne pas travailler.** Un cours qui
+> décroche de **16 points de son marché en huit séances** n'est pas un bruit à ignorer :
+> c'est une **sommation d'aller CHERCHER le fait**. Il dit que quelqu'un sait quelque chose.
+> **J'ai transformé une règle de prudence en permission de ne pas regarder.**
+
+**Obligation de procédure, inscrite au radar parce que c'est ici qu'elle se joue** :
+*un décrochage idiosyncratique de plus de ~8 points contre son comparable, sur une position
+détenue, déclenche une recherche de fait émetteur — communiqués réglementés, dépôts,
+gouvernance — AVANT toute mention de la ligne dans le brief.*
+Pas de numéro de règle : c'est le **mode d'emploi manquant de R62**, pas une règle nouvelle.
+
+## Les deux échéances à surveiller
+
+| Date | Jour | Événement | Pourquoi ça compte |
+|---|---|---|---|
+| **01/12/2026** | mardi | **Jensen Huang entendu par TROIS commissions de la Chambre des représentants** | la conduite d'un **homme** |
+| **02/12/2026** | mercredi | **Tim Teter, DIRECTEUR JURIDIQUE DE NVIDIA**, entendu **sur une possible atteinte à la sécurité nationale** | 🔴 **la conduite de la SOCIÉTÉ** |
+
+⚖️ **C'est la jambe (b) de mon test du 16/11** — *« l'enquête passe de la conduite du
+DIRIGEANT à celle de la SOCIÉTÉ »* — **et elle est DÉCLENCHÉE** : on ne convoque pas le
+directeur juridique d'une entreprise sur la sécurité nationale pour parler d'un homme.
+**Mon avis « on ne vend pas » est donc suspendu**, comme promis le 11/11, *sans changer
+d'argument*.
+
+**Condition d'allègement, écrite maintenant pour ne pas être inventée après** : *si les
+auditions des 1er et 2 décembre font apparaître une exposition de la SOCIÉTÉ — licences
+d'exportation menacées, données clients, sanction chiffrée — on réduit Nvidia, qui pèse
+**37,2 % de la poche risquée**. Pas avant, et jamais sur le cours.*
+
+🚫 **Ce que je n'inscris PAS** : une source non financière unique mentionnait une enquête de
+la SEC. **Aucune corroboration** → pas au radar. *Un radar qui accueille le non corroboré
+devient un radar qu'on ne peut plus croire.*
+
+## Et le fait qui pousse dans l'autre sens, le même jour
+
+```
+CA T3 FY2027     115,8 Md$   +103 % a/a        (guidance ~108 Md$)
+Data center      107,6 Md$   +110 % · +21 % séquentiel
+BPA dilué           2,70 $   contre 1,30 $     (consensus ~2,48 $)
+Guidance T4         130 Md$ ±3 %                (consensus LSEG 125,25 Md$)
+Croissance FY2028  relevée de ~70 % à ~75 %
+```
+**Jambe (a) du test — « point milieu de la guidance T4 ≥ CA réalisé du T3 » : NON
+déclenchée, et de loin** *(130 contre 115,8)*. L'affaire n'est **pas citée** comme facteur de
+la prévision ; les réserves portent sur une semaine de plus au T4 et sur l'absence de ventes
+de calcul data center en Chine.
+
+> ⚖️ **Le dossier a bougé dans les deux sens en vingt-quatre heures** : l'activité est
+> nettement plus forte qu'il y a une semaine, et le risque juridique est plus concret et
+> **désormais daté**. **Vendre aujourd'hui serait parier sur l'issue d'une audition** — un
+> pari sans avantage, dont le résultat sera connu dans treize jours.

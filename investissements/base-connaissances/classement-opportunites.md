@@ -3529,3 +3529,47 @@ plafonne un verdict sans le fonder.*
 | ☠️ | ICAPE Holding | | TUÉE le 13/11 |
 | ☠️ | **Vetoquinol** | 87,50 € | **TUÉE le 17/11** |
 | 🔎 radar | Roche Bobois | 20,00 € | au radar, T1 échoué |
+
+---
+
+# 📅 18/11/2026 — le classement ne bouge pas, mais le PRIX de la première s'améliore
+
+**Aucune chasse lancée aujourd'hui** *(mercredi = terrain industrie-défense-énergie)* : la
+journée est passée sur le fait que **j'avais manqué la démission du PDG de Nvidia pendant six
+jours**. Je l'écris ici plutôt que de le taire, parce que ce fichier sert à ne rien perdre —
+**y compris ce qui n'a pas été fait et pourquoi**.
+
+> 🔑 *Un terrain non couvert est une dette, pas un vide. Il repasse mercredi prochain, et
+> d'ici là ce fichier porte la trace de son absence.*
+
+## Le classement au 18/11/2026 — quatre lignes, rang inchangé
+
+| Rang | Candidate | Cours 17/11 | État |
+|---|---|---|---|
+| **1** | **Cœur World (WPEA)** | **6,97 €** | 🔔 **seule ligne actionnable, et moins chère qu'hier** — **43 parts, 299,71 €, R 28,71 % → 23,65 %** |
+| **2** | STMicroelectronics | **39,81 €** | **5,21 % sous le seuil**, bloquée par le garde-fou R · avance sur ASML **+8,30 pt**, **4ᵉ record** |
+| **3** | Eli Lilly | — | dormante — déclencheur **PER ≤ 33** |
+| **4** | Magnum Ice Cream | — | dormante |
+| ☠️ | ICAPE Holding | | TUÉE le 13/11 |
+| ☠️ | Vetoquinol | | TUÉE le 17/11 |
+| 🔎 radar | Roche Bobois | 20,00 € | au radar, T1 échoué, **attend le motif des deux démissions** |
+
+**Ce qui a changé, et c'est en ma faveur** : le WPEA **repasse sous son PRU** *(6,97 € contre
+7,082 €)*. La même somme achète **43 parts au lieu de 42**, et ramène **R de 28,71 % à
+23,65 %** — sous la butée de 25 %, en une seule opération. *Jour 33 sans ordre passé.*
+
+## ⚖️ Et une ligne DÉTENUE qui vient d'entrer sous condition
+
+**Nvidia n'est pas une candidate** — c'est une ligne détenue, **37,2 % de la poche risquée**.
+Mais son dossier a basculé aujourd'hui, et le classement doit en porter la trace parce que
+**c'est lui qui dira ce qu'on fait du produit d'une éventuelle cession** :
+
+> ⚖️ *Si les auditions des **1er et 2 décembre** font apparaître une exposition de la
+> SOCIÉTÉ — licences d'exportation menacées, données clients, sanction chiffrée — on réduit
+> Nvidia. **Le produit va au rang 1** *(cœur World)*, pas à la candidate la plus séduisante
+> du moment : la ligne à réduire est dans la poche risquée, et R est déjà au-dessus de sa
+> butée. **Pas avant le 1er décembre, et jamais sur le cours.***
+
+**Rappel du mur étanche** : ce n'est **pas** un verdict sur Nvidia issu du classement. Le
+thème organise la détection ; **il ne touche jamais l'allocation**. Le plafond de ligne
+`L = min(5 % × (V + 6 000 €) ; 15 % × V)` reste la seule contrainte de taille.

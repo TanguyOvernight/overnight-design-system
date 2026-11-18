@@ -4604,3 +4604,92 @@ avec deux retards déjà matérialisés *(C063 à 3 jours, C059 à 10 jours)*.
 **C067** *(25 %, 11/02/2027)* · **C068** *(28 %, 01/12/2026)* · **C069** *(78 %, 31/12/2026)* ·
 **C070** *(22 %, ~31/03/2027)* · **C071** *(25 %, 31/12/2027)* · **C072** *(18 %, 26/03/2027)*.
 **VOID, réouvrables** : **C013** · **C059**.
+
+---
+
+# 📅 18/11/2026 — ❌ C069 résolu FAUX, et le plafond de charte change un résultat
+
+## La résolution
+
+| | |
+|---|---|
+| Proposition | « **Jensen Huang est encore directeur général de Nvidia le 31/12/2026** » |
+| Ouvert le | 11/11/2026 *(Juge)* |
+| P enregistré | **78 %** — **plafond de charte** |
+| Mon raisonnement non bridé | **~90 %** |
+| Base de résolution | communiqué Nvidia ou dépôt SEC · butée 31/12/2026 |
+| **Issue** | **❌ FAUX — démission effective le 11/11, annoncée le 12/11** |
+| **Résolu le** | 18/11/2026 *(**six jours de retard**, voir ci-dessous)* |
+
+```
+Brier à 78 %  =  (0,78 − 0)²  =  0,6084     ← le score inscrit
+Brier à 90 %  =  (0,90 − 0)²  =  0,8100     ← ce que j'aurais inscrit sans la charte
+                                 ─────────
+ÉCONOMIE DUE AU PLAFOND          0,2016
+```
+
+## 🏆 Le plafond a mordu du bon côté, pour la première fois
+
+Le 11/11, en enregistrant 78 % au lieu de 90 %, j'écrivais :
+> *« Le plafond me coûte si c'est VRAI et me protège si c'est FAUX — une charte qui ne mord
+> que quand ça m'arrange n'est pas une charte. »*
+
+**C'était FAUX, et il m'a protégé de 0,2016.** Quatrième application du plafond *(C050, C056,
+C069, plus le refus de C071 au-dessus)* et **première fois qu'il change le résultat** et non
+seulement la forme.
+> 🔑 *La prochaine fois qu'il me frustrera — et il me frustrera, parce que c'est sa fonction
+> de frustrer — ce 0,2016 est la réponse. Une contrainte ne se juge pas sur les fois où elle
+> gêne, mais sur l'espérance des deux branches.*
+
+## 🔴 Mais le score est le moins grave
+
+**J'ai eu 78 % de confiance qu'un homme resterait en poste le jour même de sa démission.**
+Ce n'est **pas une erreur de calibration** : la probabilité était défendable **au regard de
+ce que je savais**, et ce que je savais était **périmé de quelques heures**.
+
+**Et je l'ai réaffirmée deux fois après coup** : le 14/11 *(Revue)* et le 17/11 *(brief)*,
+j'ai écrit **« C069 inchangé — aucun fait nouveau publié depuis le 08/11 »** alors que le
+fait était **public, documenté et multi-sources depuis le 12/11**.
+
+> 🔑 **Un appel ouvert n'est pas un appel surveillé.** Le registre enregistre des
+> probabilités ; il ne va pas chercher les faits à ma place. **Les 14 appels ouverts n'ont
+> aucune tâche planifiée pour leur relecture** — c'est la deuxième fois en une semaine que ce
+> trou se paie *(C063 relu 3 jours tard, C059 10 jours tard)*, et cette fois il a coûté un
+> appel **réaffirmé à tort deux fois**.
+> *Le défaut n'est pas dans la probabilité. Il est dans le dispositif qui la relit.*
+
+**Mécanisme à l'origine du retard**, écrit ici parce que c'est un défaut de tenue de
+registre avant d'être un défaut de marché : j'ai justifié de **ne pas chercher** par ma
+propre règle *« on révise sur un fait, pas sur un cours »* — appliquée à un décrochage de
+**16 points en huit séances**. La règle est juste ; cet usage en était un **abri**.
+*Un décrochage idiosyncratique de plus de ~8 points contre son comparable, sur une position
+détenue, est désormais un déclencheur de RECHERCHE — pas de révision.*
+
+## ⚖️ Ce que la résolution oblige à faire, et que je fais
+
+Mon kill criterion du 16/11 avait deux jambes. **(a) guidance T4 ≥ CA T3 : NON déclenchée**
+*(130 Md$ contre 115,8)*. **(b) l'enquête passe du DIRIGEANT à la SOCIÉTÉ : DÉCLENCHÉE** —
+**Tim Teter, directeur juridique de Nvidia, entendu le 02/12 sur une possible atteinte à la
+sécurité nationale** *(Huang lui-même le 01/12, trois commissions)*.
+→ **Mon avis « on ne vend pas » est SUSPENDU**, comme promis, **sans changement d'argument**.
+
+### 🔴 Et un second trou de critère en deux semaines
+**Mon test nommait deux jambes et ne nommait pas « le dirigeant part ».** L'événement qui
+s'est produit **n'était dans aucune des deux** : le test a été passé sur ses propres termes,
+mais **il ne posait pas la question à laquelle le monde a répondu**. Même famille que le trou
+de **C059** *(R65 — deux critères pré-enregistrés doivent PARTITIONNER l'espace des issues)*,
+appliquée cette fois non à un seuil chiffré mais à **l'espace des événements**.
+> ⚖️ **Je comble ce trou vers l'avant** *(condition d'allègement datée, inscrite au radar)*
+> **et je refuse de l'utiliser à rebours.** Un critère qu'on complète après les faits pour
+> valider l'action qu'on voulait prendre n'est plus un critère : c'est une justification.
+
+## 📊 État du registre au 18/11/2026
+**Ouverts (13)** : **C011** · **C014** · **C015** · **C017** *(40 %)* · **C054** *(62 %)* ·
+**C056** *(78 %, 31/12/2026)* · **C061** *(10 %, 31/12/2026)* · **C065** *(60 %)* ·
+**C067** *(25 %, 11/02/2027)* · **C068** *(28 %, 01/12/2026)* · **C070** *(22 %, ~31/03/2027)* ·
+**C071** *(25 %, 31/12/2027)* · **C072** *(18 %, 26/03/2027)*.
+**Résolus ce jour** : **C069 ❌ FAUX** *(Brier 0,6084)*.
+**VOID, réouvrables** : **C013** · **C059**.
+
+⚠️ **C068** *(WPEA ≤ 6,80 € au 01/12, 28 %)* : il ne manque plus que **−2,44 %**. Se rapproche
+vite — **je n'y touche pas**, c'est du chemin parcouru vers la butée, pas un fait nouveau.
