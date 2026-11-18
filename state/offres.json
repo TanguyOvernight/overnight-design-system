@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-11-17",
+ "maj": "2026-11-18",
  "offres": [
   {
    "d": "2026-10-03",
@@ -5807,6 +5807,175 @@
     "⚠️ expérience demandée : 5 ans"
    ],
    "at": "Angle IA, mais métier très demand gen."
+  },
+  {
+   "d": "2026-11-18",
+   "b": 78,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "cible",
+   "t": "AI Content Creator",
+   "c": "Jobgether (entreprise non nommée)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "non chiffrée",
+   "lg": "EN (B2)",
+   "g": true,
+   "u": "https://ch.linkedin.com/jobs/view/ai-content-creator-at-jobgether-4490423321",
+   "n": "Produire images et vidéos courtes pour les réseaux et campagnes marketing avec l'IA générative (Higgsfield, Kling, Nano Banana, Midjourney, Runway, Pika) ; tester outils et techniques de prompt.",
+   "fit": {
+    "m": 2,
+    "da": 3,
+    "ia": 3,
+    "pct": 82
+   },
+   "ms": [
+    "Transformer briefs et références en visuels et vidéos IA",
+    "Expérimenter outils et prompts",
+    "Respecter la charte de marque"
+   ],
+   "inf": [
+    "Employeur non nommé",
+    "Portfolio de créations IA attendu"
+   ],
+   "at": "C'est littéralement ton quotidien chez Chat3D : prépare 5 visuels et 2 vidéos IA."
+  },
+  {
+   "d": "2026-11-18",
+   "b": 78,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Creative Strategist & Producer – Consumer",
+   "c": "Kraken",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "5+ ans",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/creative-strategist-producer-consumer-at-kraken-4491181808",
+   "n": "Stratégie créative et production de contenus social et performance pour l'offre grand public de Kraken.",
+   "fit": {
+    "m": 2,
+    "da": 3,
+    "ia": 1,
+    "pct": 58
+   },
+   "ms": [
+    "Stratégie créative social et performance",
+    "Production de contenus à fort volume"
+   ],
+   "inf": [
+    "⚠️ expérience demandée : 5+ ans",
+    "Univers crypto / fintech"
+   ],
+   "at": "Kraken Staff Brand Designer déjà épinglée : même équipe marque."
+  },
+  {
+   "d": "2026-11-18",
+   "b": 78,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "CRO Manager (80-100 %)",
+   "c": "Groupe Mutuel",
+   "l": "Lausanne",
+   "dist": "Lausanne",
+   "tx": "80-100%",
+   "ct": "n.p.",
+   "xp": "non chiffrée (Chef de projet senior)",
+   "lg": "FR (+ spécificités alémaniques)",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/cro-manager-h-f-80-100%25-at-groupe-mutuel-4491783813",
+   "n": "Optimiser les parcours digitaux : identifier les frictions, piloter la roadmap CRO et l'A/B testing sur landing pages, pages produit et formulaires (GA4, ContentSquare).",
+   "fit": {
+    "m": 2,
+    "da": 1,
+    "ia": 1,
+    "pct": 45
+   },
+   "ms": [
+    "Roadmap CRO et A/B testing",
+    "Analyse GA4 / ContentSquare"
+   ],
+   "inf": [
+    "⚠️ poste orienté data et conversion",
+    "Niveau chef de projet senior"
+   ],
+   "at": "Bon pont entre UX, contenu et performance."
+  },
+  {
+   "d": "2026-11-18",
+   "b": 78,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Product Designer",
+   "c": "Jobgether (entreprise tech non nommée)",
+   "l": "Remote",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "3 ans",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/product-designer-at-jobgether-4490409644",
+   "n": "Concevoir et améliorer des interfaces web mobile-first centrées utilisateur, en utilisant l'IA pour la recherche et le prototypage.",
+   "fit": {
+    "m": 1,
+    "da": 2,
+    "ia": 1,
+    "pct": 45
+   },
+   "ms": [
+    "Design d'interfaces mobile-first",
+    "Prototypage assisté par IA"
+   ],
+   "inf": [
+    "Hubs Kyiv / Varsovie optionnels",
+    "Design produit plus que marketing"
+   ],
+   "at": "Ton design system Chat3D est la pièce maîtresse."
+  },
+  {
+   "d": "2026-11-18",
+   "b": 78,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Senior Product Marketing Manager – Recruitment Cloud",
+   "c": "Jobgether (solution RH sur Salesforce non nommée)",
+   "l": "Remote",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "5 ans",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/senior-product-marketing-manager-recruitment-cloud-at-jobgether-4490414655",
+   "n": "Positionnement et go-to-market d'une solution de recrutement cloud construite sur Salesforce.",
+   "fit": {
+    "m": 3,
+    "da": 0,
+    "ia": 0,
+    "pct": 35
+   },
+   "ms": [
+    "Positionnement et go-to-market"
+   ],
+   "inf": [
+    "⚠️ expérience demandée : 5 ans"
+   ],
+   "at": "Fit faible, à tenter si tu vises le product marketing."
   }
  ]
 }
