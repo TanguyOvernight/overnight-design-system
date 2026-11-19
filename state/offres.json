@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-11-18",
+ "maj": "2026-11-19",
  "offres": [
   {
    "d": "2026-10-03",
@@ -5976,6 +5976,75 @@
     "⚠️ expérience demandée : 5 ans"
    ],
    "at": "Fit faible, à tenter si tu vises le product marketing."
+  },
+  {
+   "d": "2026-11-19",
+   "b": 79,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "cible",
+   "t": "Content Manager (cite Claude)",
+   "c": "Jobgether (plateforme de bien-être digital non nommée)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "non chiffrée",
+   "lg": "EN (rédaction)",
+   "g": true,
+   "u": "https://ch.linkedin.com/jobs/view/content-manager-at-jobgether-4490406806",
+   "n": "Créer des contenus éducatifs et interactifs dans l'app d'une plateforme de bien-être, en s'appuyant sur des outils d'IA dont Claude pour accélérer la production, y compris vidéo.",
+   "fit": {
+    "m": 2,
+    "da": 2,
+    "ia": 3,
+    "pct": 80
+   },
+   "ms": [
+    "Contenus in-app éducatifs et interactifs",
+    "Produire plus vite avec Claude et d'autres outils d'IA",
+    "Tester et implémenter les contenus"
+   ],
+   "inf": [
+    "Employeur non nommé",
+    "Anglais écrit solide attendu"
+   ],
+   "at": "L'annonce demande un usage régulier de Claude : ton site codé avec Claude est la preuve."
+  },
+  {
+   "d": "2026-11-19",
+   "b": 79,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Lead Creative (Motion Design)",
+   "c": "Jobgether (studio non nommé)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "6 ans comme creative lead",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/lead-creative-motion-design-at-jobgether-4491846106",
+   "n": "Diriger une équipe créative internationale sur des projets de motion design et d'animation pour de grandes marques, en intégrant l'IA dans le pipeline.",
+   "fit": {
+    "m": 1,
+    "da": 3,
+    "ia": 2,
+    "pct": 48
+   },
+   "ms": [
+    "Direction créative motion et animation",
+    "IA dans le pipeline créatif"
+   ],
+   "inf": [
+    "⚠️ expérience demandée : 6 ans comme creative lead",
+    "Management d'équipe internationale"
+   ],
+   "at": "À tenter pour l'angle DA + IA."
   }
  ]
 }
