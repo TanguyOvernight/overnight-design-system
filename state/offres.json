@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-11-19",
+ "maj": "2026-11-20",
  "offres": [
   {
    "d": "2026-10-03",
@@ -6045,6 +6045,139 @@
     "Management d'équipe internationale"
    ],
    "at": "À tenter pour l'angle DA + IA."
+  },
+  {
+   "d": "2026-11-20",
+   "b": 80,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "solide",
+   "t": "Social Media Manager",
+   "c": "Jobgether (entreprise non nommée)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "2 ans",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/social-media-manager-at-jobgether-4492550658",
+   "n": "Prendre en main la présence sociale de la marque, surtout sur LinkedIn et Instagram : stratégie de contenus créatifs, notoriété et croissance organique.",
+   "fit": {
+    "m": 3,
+    "da": 2,
+    "ia": 0,
+    "pct": 65
+   },
+   "ms": [
+    "Stratégie de contenus LinkedIn et Instagram",
+    "Croissance organique et notoriété"
+   ],
+   "inf": [
+    "Employeur non nommé"
+   ],
+   "at": "2 ans demandés : ton expérience de contenus LinkedIn chez Chat3D suffit."
+  },
+  {
+   "d": "2026-11-20",
+   "b": 80,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "solide",
+   "t": "Digital Marketing Specialist",
+   "c": "Jobgether (agence pour PME américaines non nommée)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "2 ans",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/digital-marketing-specialist-at-jobgether-4492536902",
+   "n": "Planifier, exécuter et optimiser des campagnes digitales (publicité, social, search) pour des entreprises américaines en croissance.",
+   "fit": {
+    "m": 3,
+    "da": 1,
+    "ia": 0,
+    "pct": 58
+   },
+   "ms": [
+    "Campagnes multicanales",
+    "Optimisation de la performance"
+   ],
+   "inf": [
+    "Employeur non nommé ; clients américains (horaires ?)"
+   ],
+   "at": "Poste accessible, bon tremplin remote."
+  },
+  {
+   "d": "2026-11-20",
+   "b": 80,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Showrunner (dramas verticaux)",
+   "c": "Jobgether (Storyby)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "non chiffrée",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/showrunner-storyby-at-jobgether-4492143117",
+   "n": "Porter la création de séries verticales de A à Z (concept, scénario, montage, post-production), avec des outils d'IA pour le texte, l'image et la vidéo.",
+   "fit": {
+    "m": 0,
+    "da": 3,
+    "ia": 2,
+    "pct": 45
+   },
+   "ms": [
+    "Direction créative de séries courtes",
+    "IA générative en production"
+   ],
+   "inf": [
+    "⚠️ métier de production audiovisuelle, loin du marketing"
+   ],
+   "at": "Pour ton côté DA et storytelling, à regarder."
+  },
+  {
+   "d": "2026-11-20",
+   "b": 80,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Marketing & Social Media Associate",
+   "c": "Atinary Technologies (IA + robotique pour la R&D)",
+   "l": "Epalinges",
+   "dist": "Lausanne",
+   "tx": "flexible",
+   "ct": "n.p.",
+   "xp": "non chiffrée",
+   "lg": "EN",
+   "g": false,
+   "u": null,
+   "n": "Raconter les « self-driving labs » d'Atinary en photo, vidéo, web et textes, et suivre les tendances.",
+   "fit": {
+    "m": 2,
+    "da": 2,
+    "ia": 1,
+    "pct": 48
+   },
+   "ms": [
+    "Contenus photo, vidéo, web",
+    "Veille et idées de contenus"
+   ],
+   "inf": [
+    "⚠️ poste à durée déterminée, taux flexible (y compris stage)",
+    "⚠️ non vérifiée : agrégateurs bloqués. 🔎 cherche « Marketing & Social Media Associate Atinary » sur LinkedIn"
+   ],
+   "at": "Startup IA à Epalinges, déjà dans le radar."
   }
  ]
 }

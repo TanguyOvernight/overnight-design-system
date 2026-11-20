@@ -197,3 +197,6 @@ sans authentification. Le filtre mots-clés est large (beaucoup de bruit) → tr
 (« www.jobs.ch/… ») — ne PAS y ajouter « https:// » soi-même (ce serait composer) : utiliser à la place l'URL jobup/
 jobscout24 du même UUID si elle apparaît verbatim dans une autre réponse, sinon publier sans lien + 🔎.
 Dédup : vus.jobroom (IDs Job-Room).
+
+## Addendum 20.11 — 404 en masse sur les pages LinkedIn
+Le 20.11, 13 des 15 pages publiques `/jobs/view/` épinglées ont renvoyé 404 dans le même passage de recheck.py, alors que l'API guest (`linkedin_guest.detail`) servait encore l'annonce complète. Il s'agit d'un blocage anti-bot, pas de fermetures. Règle : ne jamais fermer une offre LinkedIn sur un 404 de page publique ; confirmer par l'API guest, et ne fermer que si l'API ne sert plus l'annonce ou si la page affiche « No longer accepting applications ».
