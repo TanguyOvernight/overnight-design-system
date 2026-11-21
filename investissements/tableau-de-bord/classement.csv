@@ -1,5 +1,6 @@
 rang,candidat,cours,devise,seuil,statut
-1,Cœur World (WPEA),6.97,€,,ACHAT — 43 parts = 299.71 € (tout le cash du PEA) · R passe à 23.65 %
-2,STMicroelectronics,39.81,€,42,5.21 % sous le seuil · avance sur ASML +8.30 pt, 4e record — bloquée par le garde-fou
-3,Eli Lilly,1415.55,$,PER 33,DORMANTE depuis le 15/11
+1,Cœur World (WPEA),6.73,€,,ACHAT — 45 parts = 302.85 € (tout le cash du PEA) · R passe de 27.03 % à 21.96 %
+2,STMicroelectronics,36.72,€,42,12.6 % SOUS le seuil — déclencheur armé mais bloqué par le garde-fou R
+3,Eli Lilly,1347.11,$,PER 33,DORMANTE — PER 43.73
 4,Magnum Ice Cream,,€,,Dormant
+radar,Vallourec,15.48,€,,RADAR — T3 décevant le 20/11 (-14.5 %) · fait déjà dans le prix · question : le problème US est-il temporaire ?

@@ -1,11 +1,8 @@
 cle,libelle,valeur
-action,Action prioritaire,Acheter 43 parts de WPEA avec le cash qui dort sur le PEA
-action_montant,Montant,299.71
-action_frais,Frais estimés — à lire dans l'appli avant de valider,0
-seuil_frais,Au-delà de ce montant de frais préviens-moi,7
-prochain_versement,Prochain versement,2026-12-01
-prochain_versement_montant,Montant,500
-consigne,Consigne du jour,Huang a démissionné le 11/11 et je l'ai manqué six jours. Les résultats sont spectaculaires mais mon critère (b) est déclenché : auditions au Congrès les 1-2/12. Mon avis « on ne vend pas » est suspendu jusque-là.
-maj,Chiffres arrêtés au,clôture du 17/11
-action_parts,Nombre de parts à saisir,43
+action,Action prioritaire,VENDRE la moitié de Nvidia (déclencheur SEC réalisé) ET acheter 45 parts de WPEA
+action_parts,Nombre de parts à saisir,45
+montant,Montant de l'achat WPEA,302.85 €
+vente,Vente Nvidia,0.53 part — environ 60 € — ramène la ligne de 34 % à 17 % de la poche risquée
+motif_vente,Pourquoi vendre,La SEC enquête sur la COMPTABILITÉ de Nvidia (Reuters repris par Bloomberg + WSJ, 20/11) — mon déclencheur écrit le 18/11
+r_apres,Part risquée après les deux opérations,18.9 %
 frais_regle,Pourquoi 0 €,Premier ordre du mois gratuit en formule Starter si le montant reste sous 500 € — à confirmer sur l'écran de validation
