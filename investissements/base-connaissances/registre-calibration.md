@@ -4693,3 +4693,84 @@ appliquée cette fois non à un seuil chiffré mais à **l'espace des événemen
 
 ⚠️ **C068** *(WPEA ≤ 6,80 € au 01/12, 28 %)* : il ne manque plus que **−2,44 %**. Se rapproche
 vite — **je n'y touche pas**, c'est du chemin parcouru vers la butée, pas un fait nouveau.
+
+---
+
+# 📅 21/11/2026 — REVUE · un déclencheur qui se réalise proprement, et un aveu de calibration
+
+## 1. ⚖️ Le déclencheur Nvidia s'est réalisé — et sa FORME a tenu
+
+| | |
+|---|---|
+| Écrit le | **18/11**, resserré le **20/11** après vérification |
+| Libellé | *« Nvidia **nommée elle-même** sujet d'une enquête fédérale, ou une licence d'export restreinte, ou une sanction chiffrée, ou sa revue interne (Wachtell) révélant une compromission »* |
+| **Exclusions nommées** | *« Ni Megaspeed, ni une lettre d'experts, ni une action collective d'actionnaires, ni le cours »* |
+| Réalisé le | **20/11** — Reuters *(repris par Bloomberg)* + WSJ : **la SEC enquête sur la comptabilité de Nvidia** |
+| Décision | **allègement de moitié** *(34 % → 17 % de la poche risquée)* |
+
+> 🏆 **C'est le premier critère de ce dossier qui se réalise sans ambiguïté de forme.** Ni
+> trou de partition *(C059 : +8,5 % entre « <8 % » et « ≥10 % »)*, ni événement hors de
+> l'espace des issues *(C069 : mon test ne nommait pas « le dirigeant part »)*.
+> **Ce qui a fait la différence : j'avais écrit les EXCLUSIONS, pas seulement les
+> inclusions.** Megaspeed, la lettre d'experts, l'action collective et le cours étaient
+> explicitement disqualifiés *la veille* — donc rien à interpréter après coup, et aucune
+> marge pour me raconter que le fait du jour « compte » ou « ne compte pas » selon ce qui
+> m'arrange.
+> 🔑 *Un critère ne devient vérifiable que quand il dit aussi ce qui NE le déclenche pas.*
+> À retenir comme la forme canonique, et non comme une 74ᵉ règle : c'est **l'application de
+> R65** *(partitionner l'espace)* **à l'espace des ÉVÉNEMENTS**, ce qui manquait à C069.
+
+**Et la vente n'est pas une révision sur le cours** : les ~10 points d'idiosyncratique du
+20/11 *(Nvidia −14,0 % contre un marché à −3,70 %)* m'**obligeaient** à aller chercher le
+fait, par l'obligation écrite le 18/11. **J'ai cherché le 19 et le 20 sans rien trouver, je
+l'ai écrit noir sur blanc, et le fait est arrivé au troisième passage.**
+> 🔑 *Deux recherches à vide sont le prix normal de la troisième. Les compter comme un échec
+> serait exactement l'incitation qui m'a fait manquer la démission de Huang pendant six
+> jours.*
+
+## 2. ✅ C068 — NON RÉSOLU, et je refuse de m'attribuer une victoire en avance
+
+**Libellé** : *« Le WPEA clôture à 6,80 € ou moins **le 01/12/2026** »* · **P = 28 %**.
+**Le 20/11, il a clôturé à 6,73 €** — 1,04 % sous le seuil, **huit jours avant la butée**.
+
+**Ce n'est pas une résolution.** Mon libellé nomme **une date**, pas un passage ; il faudrait
++1,04 % pour en ressortir d'ici le 1er décembre, mais c'est la clôture **du 1er décembre**
+qui tranche.
+> 🔑 *Je refuse d'encaisser une défaite en avance ; la symétrie m'interdit d'encaisser une
+> victoire en avance.* Un registre qui résout tôt quand c'est flatteur et tard quand ça ne
+> l'est pas ne mesure plus rien.
+
+⭐ **Et ce libellé est le CONTRE-EXEMPLE qui tient** : *une date unique, une clôture, un seuil
+chiffré* → l'espace des issues est partitionné par construction, il n'y a **aucun cas
+intermédiaire possible**. C'est la forme à copier, et elle montre que R65 n'est pas une
+contrainte théorique : c'est trois mots de plus dans le libellé.
+
+## 3. ⚠️ C061 — mon 10 % était trop bas, et je le dis AVANT la résolution
+
+| | |
+|---|---|
+| Proposition | « Le S&P 500 clôture à **6 795,99 ou moins** le 31/12/2026 » |
+| P enregistré | **10 %** *(le 11/11, S&P vers 7 600)* |
+| S&P au 20/11 | **6 910,39** |
+| Distance restante | **−1,66 %** |
+| Ce que j'écrirais aujourd'hui | **~55 %** |
+
+**Je ne change pas la probabilité enregistrée.** Un registre dont les probabilités bougent
+avec le monde ne mesure plus la qualité de mes jugements, il mesure le monde.
+
+> 🔑 **Mais l'écrire maintenant, et non le 31/12, est la seule façon honnête de reconnaître
+> une erreur de calibration.** Après la résolution, « j'aurais dit 55 % » n'est plus un aveu :
+> c'est de la reconstruction, et personne — moi le premier — ne peut la distinguer d'une
+> rationalisation. **Daté avant l'issue, l'aveu est falsifiable.**
+> *Ce que l'erreur révèle : j'ai ancré 10 % sur un taux de base de « correction de 10 % en
+> sept semaines » sans pondérer que le marché était à sept séances d'affilée de baisse et
+> entrait en correction. Un taux de base inconditionnel appliqué à une situation déjà en
+> cours est un taux de base mal choisi.*
+
+## 📊 État du registre au 21/11/2026
+**Ouverts (13)** : **C011** · **C014** · **C015** · **C017** *(40 %)* · **C054** *(62 %)* ·
+**C056** *(78 %, 31/12/2026)* · **C061** *(10 %, 31/12/2026 — ⚠️ sous-calibré, −1,66 % à faire)* ·
+**C065** *(60 %)* · **C067** *(25 %, 11/02/2027)* · **C068** *(28 %, 01/12/2026 — sous le seuil, non résolu)* ·
+**C070** *(22 %, ~31/03/2027)* · **C071** *(25 %, 31/12/2027)* · **C072** *(18 %, 26/03/2027)*.
+**Résolus** : **C069 ❌ FAUX** *(18/11, Brier 0,6084)*.
+**VOID, réouvrables** : **C013** · **C059**.

@@ -3573,3 +3573,59 @@ Mais son dossier a basculé aujourd'hui, et le classement doit en porter la trac
 **Rappel du mur étanche** : ce n'est **pas** un verdict sur Nvidia issu du classement. Le
 thème organise la détection ; **il ne touche jamais l'allocation**. Le plafond de ligne
 `L = min(5 % × (V + 6 000 €) ; 15 % × V)` reste la seule contrainte de taille.
+
+---
+
+# 📅 21/11/2026 — REVUE · le classement ne bouge pas de rang, mais le marché le sert
+
+## 📊 Le classement au 21/11/2026 *(clôtures du 20/11)*
+
+| Rang | Candidate | Cours | État |
+|---|---|---|---|
+| **1** | **Cœur World (WPEA)** | **6,73 €** | 🔔 **ACHAT — 45 parts = 302,85 €** *(tout le cash du PEA, 304,26 €)* · R **27,03 % → 21,96 %** |
+| **2** | **STMicroelectronics** | **36,72 €** | ⚠️ **12,6 % SOUS le seuil de 42 €** — déclencheur **armé et profond**, bloqué par le garde-fou R · avance sur ASML **+6,0 pt** *(se resserre : ASML a baissé moins que STM le 20/11)* |
+| **3** | Eli Lilly | 1 347,11 $ | dormante — PER **43,73**, il manque −24,5 % pour PER ≤ 33 |
+| **4** | Magnum Ice Cream | — | dormante |
+| ☠️ | ICAPE Holding | | TUÉE le 13/11 |
+| ☠️ | Vetoquinol | | TUÉE le 17/11 |
+| 🔎 radar | Roche Bobois | 20,00 € | T1 échoué · attend **le motif des deux démissions** |
+| 🔎 radar | **Vallourec** | **15,48 €** | **NOUVEAU au radar** — T3 décevant le 20/11, **−14,5 %** · fait **déjà dans le prix** · attend : **le « problème US » est-il temporaire ?** |
+
+**Aucun changement de rang** — et il faut le dire explicitement puisque tout a baissé : *une
+baisse générale ne reclasse rien. Si les quatre candidates perdent ensemble, leur ordre sur
+le mètre est inchangé ; seul un écart RELATIF reclasse.*
+
+## 🔔 Ce que la baisse change vraiment : le PRIX de la première, et le desserrage du rang 2
+```
+17/11   43 parts à 6,97 €  =  299,71 €   → R 23,55 %
+20/11   45 parts à 6,73 €  =  302,85 €   → R 21,96 %   (+2 parts pour 3 € de plus)
+```
+Et surtout : **le garde-fou R qui bloque STM depuis cinq semaines va se desserrer.** Avec
+l'achat WPEA **et** l'allègement Nvidia, R tombe à **~18,9 %** — soit de la marge sous la
+butée de 25 % **pour la première fois depuis que STM est à son déclencheur**.
+> ⚖️ **STM redevient discutable lundi — discutable, pas achetée.** Le déclencheur de prix est
+> atteint *(−12,6 % sous le seuil)*, le garde-fou cesse d'être l'obstacle, **donc la question
+> redevient la thèse elle-même**, et c'est elle qu'il faudra réinstruire : un semi-conducteur
+> européen dans une semaine où ASML a perdu 12,8 % et où le marché doute des dépenses d'IA
+> n'est pas la même chose qu'il y a cinq semaines. *Un déclencheur de prix ouvre une
+> discussion, il ne la clôt pas.*
+
+## ⚖️ Nvidia — ligne détenue, allégée de moitié sur un déclencheur écrit
+Non pas une candidate, mais la trace doit être ici parce que **j'avais écrit d'avance où va
+le produit** :
+> *« Le produit va au rang 1 (cœur World), pas à la candidate la plus séduisante du
+> moment. »* *(écrit le 18/11)*
+
+**Le produit de l'allègement (~60 €) reste sur eToro et ira au cœur**, pas à STM — même si
+STM est à son déclencheur le même jour. **Le mur étanche tient** : le thème organise la
+détection, jamais l'allocation, et une vente motivée par un risque comptable ne finance pas
+un achat motivé par un déclencheur de prix.
+
+## 🛠️ Et ce que je retire de l'outillage, parce que ça change la chasse
+- **`abcbourse.com` ne résout plus** → plus de cours horodaté Paris, plus de déclarations de
+  dirigeants art. 19 MAR. **Euronext `company-news` devient ma seule source primaire sur
+  Paris** : à dire, chaque fois, quand un fait ne repose plus que sur elle.
+- **Cinq rapports d'agent perdus d'affilée** → **j'arrête de déléguer la chasse.** Une chasse
+  plus courte que je fais moi-même et qui arrive vaut mieux qu'une chasse complète qui
+  n'arrive pas. *Deuxième fois que je paie cette leçon : je l'avais écrite le 12/11 sans
+  l'appliquer.*

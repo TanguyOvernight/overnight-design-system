@@ -2792,3 +2792,79 @@ de calcul data center en Chine.
 > nettement plus forte qu'il y a une semaine, et le risque juridique est plus concret et
 > **désormais daté**. **Vendre aujourd'hui serait parier sur l'issue d'une audition** — un
 > pari sans avantage, dont le résultat sera connu dans treize jours.
+
+---
+
+# 🔴 20-21/11/2026 — La SEC enquête sur la COMPTABILITÉ de Nvidia
+
+| Date | Fait | Source |
+|---|---|---|
+| **20/11/2026** | **La SEC enquête sur la comptabilité de Nvidia** et sur le fait que ses publications aient pu **induire les investisseurs en erreur** | **Reuters**, deux personnes informées · repris par **Bloomberg** |
+| plus tôt dans la semaine | Le **WSJ** avait rapporté une enquête de la SEC sur Nvidia **sans en dire l'objet** | WSJ |
+| | Reuters n'a pas pu établir **quand** l'enquête a été ouverte ni **quels** points comptables précis sont examinés. La SEC n'a pas commenté ; Nvidia n'a pas répondu | Reuters |
+
+⚠️ **Ce que Reuters écrit lui-même et que je relaie sans l'adoucir** : *une enquête de la SEC
+n'est pas une preuve de faute, et beaucoup se referment sans suite.* **L'issue modale reste
+« rien ».** C'est précisément pourquoi la décision est **un allègement de moitié et non une
+sortie.**
+
+## Pourquoi ce fait-là déplace la thèse, et pas les deux précédents
+```
+11/11  Démission de Huang          → porte sur UN HOMME        → thèse intacte
+17/11  Enquête DOJ/Commerce        → porte sur UN CLIENT        → thèse intacte
+       (Megaspeed, que Nvidia avait mis sur liste noire en juin 2025
+        et sur laquelle elle a elle-même alerté les enquêteurs)
+20/11  Enquête SEC sur la compta   → porte sur LES CHIFFRES     → 🔴 socle attaqué
+```
+La thèse « péage de l'IA » est **entièrement bâtie sur les chiffres publiés** *(CA T3
+115,8 Md$ +103 %, T4 guidé 130 Md$)*. Quand l'organe qui vérifie ces chiffres enquête sur
+leur établissement, **il n'y a plus de socle à mesurer.**
+
+## Les échéances encore datées
+| Date | Événement | Nature |
+|---|---|---|
+| **01/12/2026** | Jensen Huang — **entretien transcrit à HUIS CLOS** devant trois commissions *(Affaires étrangères, Chine, Renseignement)* | ⚠️ **pas une audition publique** — il peut n'en rien sortir ce jour-là |
+| **02/12/2026** | **Tim Teter, directeur juridique de Nvidia** — même format, sur le contrôle des exportations et le détournement de puces | idem |
+
+🚫 **Correction de ce que j'ai écrit le 18/11** : j'avais annoncé des « auditions » devant
+trois commissions. Ce sont des **entretiens à huis clos**. Donc mon *« le résultat sera connu
+dans treize jours »* était faux — **ces dates ne sont pas des dates de résolution.**
+
+## 📉 Et le contexte de marché, qui n'est pas Nvidia
+**20/11** : S&P **−3,70 % à 6 910,39**, entré en **correction** *(>10 % sous son record)*,
+**7ᵉ séance de baisse d'affilée — plus longue série depuis février 2020**. Nasdaq −5,28 %,
+gains annuels effacés.
+**Moteur** : le doute sur les **dépenses d'IA financées par la dette**, cristallisé par
+**l'introduction en bourse d'Anthropic le 19/11** *(+17 % à l'ouverture, puis retournement)*.
+> 🔑 *La chute de Nvidia n'est pas le moteur de ce marché : elle en est un passager
+> particulièrement exposé. Confondre les deux ferait attribuer à l'enquête SEC une baisse
+> dont l'essentiel est macro.*
+
+---
+
+# 🔎 20/11/2026 — Vallourec : T3 décevant, et pourquoi je ne l'escalade PAS
+
+**Publié le 20/11** *(communiqué émetteur)* :
+```
+EBITDA T3            181 M$     marge 18,9 %   (contre 21,7 % au T2)
+CA T3                956 M$     +8 % séquentiel · −10 % a/a
+Guidance T4      170-210 M$     « proche du T3 »
+Frein nommé      un « problème temporaire aux États-Unis »
+Autres vents de face   tensions au Moyen-Orient sur les expéditions,
+                       marché du minerai de fer difficile
+Titre                15,48 €    −14,5 %  ·  1,8 % au-dessus du plus bas 52 sem. (15,21 €)
+```
+⚠️ **Divergence non résolue** : un média français avance une guidance annuelle de
+760-800 M$ d'EBITDA que **je n'ai pas pu confirmer dans le communiqué**. Non retenue.
+
+> ⚖️ **Pas d'escalade à l'Avocat : le test de PRIX a déjà échoué** — le fait a été publié et
+> encaissé **en une seule séance**, à 1,8 % du plus bas annuel. C'est la configuration
+> inverse de celle qu'on cherche *(un fait pas encore dans le prix)*, et c'est le même motif
+> que Roche Bobois le 18/11, dans l'autre sens : là le prix avait trop couru, ici il a tout
+> encaissé d'un coup.
+> **Dépenser un Avocat sur un dossier dont le test de prix a échoué, c'est se payer une
+> confirmation.**
+
+**L'information qui décide, nommée d'avance** : **ce « problème temporaire aux États-Unis »
+est-il vraiment temporaire ?** Un **chiffrage** ou une **échéance** dans la publication T4
+trancherait. Déclencheur secondaire : une guidance annuelle 2027 explicite.

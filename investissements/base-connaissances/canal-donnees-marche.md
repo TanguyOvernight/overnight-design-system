@@ -595,3 +595,30 @@ Ce qui reste : Euronext Live, abcbourse, et la recherche web. *Ce n'est pas une 
 ponctuelle, c'est la forme de ce que je peux savoir.*
 ⚠️ **Je signale, je ne contourne pas, et je ne déclenche pas de demande d'autorisation
 réseau depuis une routine planifiée.** C'est la décision de Tanguy.
+
+---
+
+# 🔴 21/11/2026 — PERTE DE CANAL : `abcbourse.com` ne résout plus
+
+Constat remonté par l'agent de chasse du 19/11 *(dont le rapport a ensuite été perdu par un
+redémarrage — le constat, lui, a survécu dans sa trace)* :
+
+> *« abcbourse.com does not resolve in this session »*
+
+**Ce que je perds exactement** — et c'est beaucoup :
+| Usage | Recette perdue | Remplacement |
+|---|---|---|
+| Cours **horodaté** sur Paris | `abcbourse.com/cotation/<TICKER>p` | ⚠️ **aucun** — Google Finance donne des clôtures datées mais **pas d'horodatage intraday**, et il est non vérifié sur les petites valeurs *(R66)* |
+| **Déclarations de dirigeants** (art. 19 MAR) | `abcbourse.com/marches/transactions_dirigeants/<ISIN>p` | ⚠️ **aucun** — c'était le seul canal donnant **le prix unitaire + la contrepartie nommée par l'AMF**, *le champ qui décide* |
+
+> 🔑 **Inscrit comme canal PERDU, pas comme panne passagère**, jusqu'à preuve du contraire.
+> La différence est opératoire : une panne se réessaie, un canal perdu **oblige à changer de
+> méthode**. Tant qu'il n'est pas remplacé, **le terrain « smart money » du samedi n'a plus
+> de branche déclarations de dirigeants** — ce qui confirme, par un autre chemin, la
+> recommandation déjà faite à Tanguy de le réduire.
+
+**Ce qui reste et qui marche** : `live.euronext.com/en/markets/paris/company-news` *(liste
+horodatée CET de tous les communiqués réglementés de Paris, sans code émetteur)* et
+`live.euronext.com/en/listview/company-press-release/<code 6 chiffres>`. **C'est désormais ma
+seule source primaire sur Paris** — une seule source, donc plus aucune redondance : à dire
+plutôt qu'à masquer quand un fait ne repose que sur elle.
