@@ -18,7 +18,7 @@ for it in items:
             a=json.load(urllib.request.urlopen(urllib.request.Request(f'https://www.{m.group(1)}.ch/api/v1/public/search/job/{m.group(2)}',headers=UA),timeout=30))
             closed=not a.get('is_active',True)
         except Exception as e:
-            closed=getattr(e,'code',None)==404
+            closed=getattr(e,'code',None) in (404,410)
     else:
         closed=bool(re.search(r'no longer accepting|n.est plus disponible|plus accepter|expired',b,re.I))
     print(f"{it['id']:16} {c} idok={idok} closed={closed} | {t}")

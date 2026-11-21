@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-11-20",
+ "maj": "2026-11-21",
  "offres": [
   {
    "d": "2026-10-03",
@@ -4367,8 +4367,8 @@
   {
    "d": "2026-11-04",
    "b": 65,
-   "st": "ouverte",
-   "cl": false,
+   "st": "fermee",
+   "cl": true,
    "dl": null,
    "s": "solide",
    "t": "Product Designer",
@@ -6178,6 +6178,107 @@
     "⚠️ non vérifiée : agrégateurs bloqués. 🔎 cherche « Marketing & Social Media Associate Atinary » sur LinkedIn"
    ],
    "at": "Startup IA à Epalinges, déjà dans le radar."
+  },
+  {
+   "d": "2026-11-21",
+   "b": 81,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "solide",
+   "t": "Owned Media Specialist, Global Communications",
+   "c": "Logitech",
+   "l": "Lausanne (hybride, 2 j/sem. sur site)",
+   "dist": "Lausanne",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "3+ ans",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/owned-media-specialist-global-communications-at-logitech-4492982366",
+   "n": "Raconter l'innovation, la durabilité et la culture de Logitech sur les canaux propriétaires de la communication corporate globale.",
+   "fit": {
+    "m": 3,
+    "da": 2,
+    "ia": 1,
+    "pct": 68
+   },
+   "ms": [
+    "Stratégie de contenus sur les canaux propriétaires",
+    "Storytelling corporate (innovation, durabilité, culture)"
+   ],
+   "inf": [
+    "3+ ans demandés : dans tes cordes",
+    "Hybride : 2 jours par semaine à Lausanne"
+   ],
+   "at": "Le poste Logitech le plus accessible du mois, en plein dans la communication de marque."
+  },
+  {
+   "d": "2026-11-21",
+   "b": 81,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Head of Content & Brand",
+   "c": "Jobgether (SaaS B2B non nommé)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "non chiffrée (poste de head)",
+   "lg": "EN (+ FR atout)",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/head-of-content-brand-at-jobgether-4492567228",
+   "n": "Porter la stratégie éditoriale et la marque d'un SaaS B2B en croissance, construire une audience engagée et encadrer une équipe contenu et créa.",
+   "fit": {
+    "m": 3,
+    "da": 2,
+    "ia": 0,
+    "pct": 50
+   },
+   "ms": [
+    "Stratégie éditoriale et voix de marque",
+    "Encadrer des spécialistes contenu et créa"
+   ],
+   "inf": [
+    "⚠️ expérience de direction de contenu B2B SaaS et management attendus"
+   ],
+   "at": "Le français est un atout dans l'annonce."
+  },
+  {
+   "d": "2026-11-21",
+   "b": 81,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Influencer & Media Manager (jeux vidéo)",
+   "c": "Jobgether (label d'édition PC / consoles non nommé)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "non chiffrée",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/influencer-media-manager-at-jobgether-4492589401",
+   "n": "Relations presse et influence pour un label indépendant de jeux PC et consoles : couverture médiatique, streamers, livestreams Steam, communauté Discord.",
+   "fit": {
+    "m": 2,
+    "da": 1,
+    "ia": 0,
+    "pct": 40
+   },
+   "ms": [
+    "Relations médias et influenceurs gaming",
+    "Communauté Discord et Steam"
+   ],
+   "inf": [
+    "⚠️ réseau établi dans les médias gaming exigé",
+    "Livestreams Steam"
+   ],
+   "at": "Ton expérience 3D et gaming chez Overnight peut parler."
   }
  ]
 }
