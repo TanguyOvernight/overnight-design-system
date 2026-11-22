@@ -1,7 +1,7 @@
 {
  "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
- "maj": "2026-11-21",
- "dernier_brief": 81,
+ "maj": "2026-11-22",
+ "dernier_brief": 82,
  "vus": {
   "jobup": [
    "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -1502,7 +1502,19 @@
    "c423650b-31f4-4adb-9505-57791a8d1df7",
    "dafa4d90-9094-4dc9-ae90-908d7d356a13",
    "e837edbe-af08-4f63-a8c0-062d3c5e2f88",
-   "ee001b69-46eb-4b62-a66a-d7425ce36943"
+   "ee001b69-46eb-4b62-a66a-d7425ce36943",
+   "345e1555-a545-467e-9df4-44d9b33a7292",
+   "3aef5064-3956-4f2d-af42-7a0673c00990",
+   "3cbbbe21-71bd-4397-9146-0658d6d10123",
+   "4329fa07-e5a7-4aa0-8a5e-40eacf1253bb",
+   "74d48841-9369-4a93-aad1-903f7cce2328",
+   "8b4222cc-4a65-4aae-8e58-f2b1cec5fdcb",
+   "b8e68850-6ca0-4151-9456-94b4bbaa64a1",
+   "cbeed543-cce8-477e-92a4-db8541325cef",
+   "d4cb5263-e6be-41aa-a9be-213577389c9f",
+   "d6332a3f-8bc3-4efe-845d-c911776fedf4",
+   "e107617c-2ef2-45e0-abac-764241a55d6c",
+   "f4198c56-8c67-4ba5-aec3-770663a002e8"
   ],
   "ats_employeurs": [
    "https://recrutement.eben-hezer.ch/jobs/7602918-responsable-communication-et-recherche-de-fonds",
@@ -4877,7 +4889,39 @@
    "4373798596",
    "4492915654",
    "4491617205",
-   "4491901857"
+   "4491901857",
+   "4493230081",
+   "4493309383",
+   "4492584811",
+   "4492598399",
+   "4493312370",
+   "4491913167",
+   "4491915103",
+   "4491693998",
+   "4492803986",
+   "4491905513",
+   "4492322009",
+   "4492313439",
+   "4493282789",
+   "4492592017",
+   "4492862295",
+   "4491938789",
+   "4492906093",
+   "4492579462",
+   "4491923185",
+   "4493290472",
+   "4492333203",
+   "4493298320",
+   "4491952051",
+   "4483483163",
+   "4493297729",
+   "4493316170",
+   "4492878964",
+   "4492595090",
+   "4492822165",
+   "4440221316",
+   "4477654987",
+   "4491961002"
   ],
   "chuv": [
    "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html"
@@ -5021,7 +5065,8 @@
    "https://ch.indeed.com/viewjob?jk=77d5e9626e7e8331",
    "https://ch.indeed.com/viewjob?jk=1068dd91226b242e",
    "https://ch.indeed.com/viewjob?jk=32f2420336d411e2",
-   "https://ch.indeed.com/viewjob?jk=6b76779aa88ff9f5"
+   "https://ch.indeed.com/viewjob?jk=6b76779aa88ff9f5",
+   "https://ch.indeed.com/viewjob?jk=2d11d97a2b2b6ac1"
   ],
   "jobroom": [
    "6ce0fade-e7cd-41e3-9327-208a9b3f763d",
@@ -6547,7 +6592,32 @@
    "48afc410-ec48-420a-82f0-12fd4ada09ce",
    "11b410a4-a95b-457b-8da9-c74dce99cbd8",
    "071e580f-035f-48aa-9700-32fa41e93fed",
-   "a2278978-e941-41bc-821a-04f20d50d051"
+   "a2278978-e941-41bc-821a-04f20d50d051",
+   "d0762fcf-695f-4c15-98dc-536d28dceb12",
+   "6c92e73f-6d3a-446e-bb29-61443cd6a713",
+   "a79d114c-3ec2-4795-9c22-15c790bfc88f",
+   "0958376c-de7d-423d-8a19-28285666b8bb",
+   "e60c0b81-d0eb-492d-83b6-c9b7f4b5ccb3",
+   "92a15ccd-5a98-4cfc-9f0c-feb46bbdc6d5",
+   "bb247385-b0d5-4545-9142-797d6ed7c09f",
+   "2112d91c-08ee-4db4-a988-3a35eae5dfa1",
+   "4d92f4a4-32d8-4942-9f33-c46665855126",
+   "180aead8-7453-4ae3-a495-16a571e50728",
+   "d92bed11-7319-4b48-b015-034ee3d64423",
+   "2a511dbe-7d80-4d51-89fc-3cdb0b4fb87b",
+   "9aa627a0-103f-4d37-8d4f-fdd903c1674b",
+   "fdc1e06e-90d6-4533-b1b2-53d2ff6569c0",
+   "4aac4852-db47-4c36-bf5c-c337bef8cc9b",
+   "bed0d2fa-cd73-4e3c-bcfe-52462cc295df",
+   "17baa48c-ea9a-47b2-a58e-d7f8155a1f1c",
+   "e85229c3-41e1-483d-99c5-5a5d8efc7182",
+   "d66e13ae-5306-4994-8f99-8e25589c2f0c",
+   "014dfb85-2610-426b-a6cb-73f317099aba",
+   "3307cf34-ce5c-4477-9081-4f29835dbb4b",
+   "dab4e14d-ae36-4036-851f-ae73d372763d",
+   "3734cd25-a13b-40c5-a15d-2b915892eb4e",
+   "ecdeabeb-d44c-445a-a469-a702e26a9f28",
+   "263d769a-4ac7-4b76-9fc8-bd143bc28f76"
   ]
  },
  "postees": [
@@ -8959,6 +9029,14 @@
    "titre": "Influencer & Media Manager (jeux vidéo)",
    "entreprise": "Jobgether (label d'édition PC / consoles non nommé)",
    "lien": "https://ch.linkedin.com/jobs/view/influencer-media-manager-at-jobgether-4492589401"
+  },
+  {
+   "brief": 82,
+   "date": "2026-11-22",
+   "score": "solide",
+   "titre": "Video Content Editor",
+   "entreprise": "The Flex / Base360.ai (IA pour la location courte durée)",
+   "lien": "https://ch.linkedin.com/jobs/view/video-content-editor-at-the-flex-4493298320"
   }
  ]
 }

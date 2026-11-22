@@ -1,9 +1,19 @@
 import json,urllib.request,re,html,time,sys
 UA={'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124 Safari/537.36','Accept-Language':'fr-CH,fr;q=0.9'}
+sys.path.insert(0,'state/collecte')
+import linkedin_guest as G
 o=json.load(open('state/ouvertes.json'))
 items=o['offres']
 for it in items:
     u=it['lien']
+    li=re.search(r'linkedin\.com/jobs/view/.*?(\d{10})',u)
+    if li:  # 20.11 : pages publiques LinkedIn en 404 anti-bot -> API guest
+        for k in range(3):
+            d=G.detail(li.group(1))
+            if d.get('code')!=429: break
+            time.sleep(20)
+        print(f"{it['id']:16} {d.get('code')} idok=True closed={not bool(d.get('texte')) and d.get('code')==200} | api-guest {'texte' if d.get('texte') else ''}")
+        time.sleep(4); continue
     try:
         r=urllib.request.urlopen(urllib.request.Request(u,headers=UA),timeout=30)
         fin=r.geturl(); b=r.read().decode('utf-8','ignore'); c=r.getcode()
