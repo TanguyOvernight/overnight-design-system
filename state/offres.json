@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-11-22",
+ "maj": "2026-11-23",
  "offres": [
   {
    "d": "2026-10-03",
@@ -6313,6 +6313,40 @@
     "Montage vidéo au cœur du poste"
    ],
    "at": "Startup IA, vidéo + storytelling produit : proche de ce que tu faisais chez Chat3D."
+  },
+  {
+   "d": "2026-11-23",
+   "b": 83,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Integrated Marketing Manager – EMEA",
+   "c": "Jobgether (logiciel aéronautique & défense non nommé)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "5 ans en marketing B2B multi-pays",
+   "lg": "FR + EN (DE atout)",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/integrated-marketing-manager-emea-at-jobgether-4493711454",
+   "n": "Piloter la stratégie et l'exécution marketing en Europe pour un éditeur de logiciels destinés à l'aéronautique, la défense et la maintenance (MRO).",
+   "fit": {
+    "m": 3,
+    "da": 0,
+    "ia": 0,
+    "pct": 40
+   },
+   "ms": [
+    "Stratégie marketing régionale EMEA",
+    "Go-to-market B2B à cycles longs"
+   ],
+   "inf": [
+    "⚠️ expérience demandée : 5 ans",
+    "Français + anglais exigés : ton français est un atout"
+   ],
+   "at": "Fit moyen, mais le français natif te distingue."
   }
  ]
 }

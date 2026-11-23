@@ -1,7 +1,7 @@
 {
  "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
- "maj": "2026-11-22",
- "dernier_brief": 82,
+ "maj": "2026-11-23",
+ "dernier_brief": 83,
  "vus": {
   "jobup": [
    "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -1514,7 +1514,19 @@
    "d4cb5263-e6be-41aa-a9be-213577389c9f",
    "d6332a3f-8bc3-4efe-845d-c911776fedf4",
    "e107617c-2ef2-45e0-abac-764241a55d6c",
-   "f4198c56-8c67-4ba5-aec3-770663a002e8"
+   "f4198c56-8c67-4ba5-aec3-770663a002e8",
+   "34cd632f-ca8d-4bee-83dd-29ae1da90c0c",
+   "3cfdb865-096a-43cd-9f43-be91e4951519",
+   "735bfe2e-50cd-436b-9225-17e1f0704a0f",
+   "7d883219-e471-4868-a164-7dc791a75ee1",
+   "80e4df8a-ed26-4fbb-b2f1-0f6cadc3e2ba",
+   "82b5084c-8efb-482d-b080-2e4091972f9f",
+   "8f28e7d5-7ef0-4954-842e-3caa7da2903c",
+   "9325456a-ac1a-4f73-998d-09dfd6a35f4d",
+   "ab1789d2-d33a-46cd-b3ea-a3c0cfa69f6b",
+   "be52fdc8-afec-48ff-868f-2bc37f6b30f8",
+   "c4c46db4-069d-455d-9ca7-6cf94fc2ed55",
+   "ec957568-883c-4d8f-8bb2-3e889d0c9fc9"
   ],
   "ats_employeurs": [
    "https://recrutement.eben-hezer.ch/jobs/7602918-responsable-communication-et-recherche-de-fonds",
@@ -4921,7 +4933,30 @@
    "4492822165",
    "4440221316",
    "4477654987",
-   "4491961002"
+   "4491961002",
+   "4493363890",
+   "4492386118",
+   "4492354206",
+   "4493393419",
+   "4492586843",
+   "4493338167",
+   "4493374777",
+   "4310349261",
+   "4492967263",
+   "4491944263",
+   "4493379050",
+   "4493379275",
+   "4493621148",
+   "4493606551",
+   "4492386323",
+   "4493711454",
+   "4492346492",
+   "4492365557",
+   "4492357080",
+   "4493543713",
+   "4493728250",
+   "4493199314",
+   "4493704380"
   ],
   "chuv": [
    "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html"
@@ -6617,7 +6652,34 @@
    "dab4e14d-ae36-4036-851f-ae73d372763d",
    "3734cd25-a13b-40c5-a15d-2b915892eb4e",
    "ecdeabeb-d44c-445a-a469-a702e26a9f28",
-   "263d769a-4ac7-4b76-9fc8-bd143bc28f76"
+   "263d769a-4ac7-4b76-9fc8-bd143bc28f76",
+   "202b9951-d0cd-492f-86e5-fcece4f7866f",
+   "701f2355-ec09-4ae1-b181-fca7be476ff8",
+   "e959bbf2-b20e-4466-8064-db44cc2d7ef0",
+   "5fa56f11-a18e-4301-a10d-3d41f3c358b7",
+   "25dfb646-311d-4d2c-8afb-0cbd9ae812d7",
+   "b3ff3977-cb35-477b-963d-68178734d800",
+   "1a13889e-2a43-4b8a-ac1c-30af17f330f8",
+   "f1753d09-f9b8-4176-97e2-b863df1b53a4",
+   "f4e268f4-2faf-4e65-b0d8-1a6f104f5ef1",
+   "24991518-f9a5-497c-808f-42de615b0f1d",
+   "411a1d61-7b12-4325-9408-fdc45a147b01",
+   "22b18e07-564b-4f20-b037-ee990d180c68",
+   "b136287b-5fe4-4e04-a979-1fd2231ac26d",
+   "6471fde9-745a-4f3d-b6bb-db2970302a5e",
+   "09a7baea-7d65-49d2-be37-93fb6515abf1",
+   "7591cd14-9b61-4956-94d8-40f91f9e3ce8",
+   "87a6e114-c12f-4fd6-b156-b1bfb1407aa8",
+   "54b570a5-cf8e-4074-815e-d14b16be5c29",
+   "3da6be59-ad36-46d3-a15e-4cfbec262a16",
+   "37eb1334-9aeb-4fd2-bb61-563a39f301f5",
+   "01f4cd80-5bb3-4ce7-8dc9-600b0b21d8ce",
+   "f7920f16-c1ae-4c2f-9405-5a632b6a8f4f",
+   "4788d917-a104-4cde-ad67-6ef8b078dc45",
+   "5b8160ce-e096-4cbe-9a50-99e5c7d40cab",
+   "7c0f02d9-1059-4bdf-b38c-12af62749a18",
+   "09881bd3-1945-4e33-93b3-3b788543d4ea",
+   "d73c554c-4d09-4609-a577-4df127110d1b"
   ]
  },
  "postees": [
@@ -9037,6 +9099,14 @@
    "titre": "Video Content Editor",
    "entreprise": "The Flex / Base360.ai (IA pour la location courte durée)",
    "lien": "https://ch.linkedin.com/jobs/view/video-content-editor-at-the-flex-4493298320"
+  },
+  {
+   "brief": 83,
+   "date": "2026-11-23",
+   "score": "avoir",
+   "titre": "Integrated Marketing Manager – EMEA",
+   "entreprise": "Jobgether (logiciel aéronautique & défense non nommé)",
+   "lien": "https://ch.linkedin.com/jobs/view/integrated-marketing-manager-emea-at-jobgether-4493711454"
   }
  ]
 }
