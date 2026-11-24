@@ -4774,3 +4774,134 @@ avec le monde ne mesure plus la qualité de mes jugements, il mesure le monde.
 **C070** *(22 %, ~31/03/2027)* · **C071** *(25 %, 31/12/2027)* · **C072** *(18 %, 26/03/2027)*.
 **Résolus** : **C069 ❌ FAUX** *(18/11, Brier 0,6084)*.
 **VOID, réouvrables** : **C013** · **C059**.
+
+---
+
+# 🔴 24/11/2026 — C069 ROUVERT : j'avais résolu un appel daté cinq semaines avant sa date
+
+## Le fait
+**Le 23/11/2026, le conseil d'administration de Nvidia a RÉINTÉGRÉ Jensen Huang comme
+directeur général.** Nvidia **+31,48 %** à 165,05 $, près de **1 000 Md$** de valeur ajoutée
+en une séance — le plus gros gain en un jour de l'histoire.
+
+## Ce que ça fait à C069
+
+| | |
+|---|---|
+| Libellé | *« Jensen Huang est encore directeur général de Nvidia **le 31/12/2026** »* |
+| P enregistré | **78 %** *(plafond de charte ; mon raisonnement non bridé disait ~90 %)* |
+| Ce que j'ai fait le **18/11** | **clôturé FAUX**, Brier **0,6084**, en écrivant que le plafond m'avait « épargné 0,2016 » |
+| Statut réel | 🔴 **ROUVERT — la butée est le 31/12/2026** |
+| Score 0,6084 | **RETIRÉ** |
+
+```
+Si Huang est encore DG au 31/12/2026 :
+   Brier à 78 %  =  (0,78 − 1)²  =  0,0484
+   Brier à 90 %  =  (0,90 − 1)²  =  0,0100
+   le plafond de charte m'aura COÛTÉ  0,0384
+```
+> ⚖️ **Et c'est exactement ce que j'avais annoncé qu'il ferait.** Le 11/11 : *« le plafond me
+> coûte si c'est VRAI et me protège si c'est FAUX — une charte qui ne mord que quand ça
+> m'arrange n'est pas une charte. »* **Le 18/11 j'ai encaissé la protection ; il faut
+> maintenant accepter le coût, et il est bien plus petit que la protection que je m'étais
+> attribuée.** *Le plafond n'est pas en cause une seconde : c'est moi qui ai scoré un appel
+> non échu.*
+
+## 🔑 Le mécanisme, et il est pire que le score
+
+Le **21/11**, dans la Vérif' des appels, à propos de **C068** :
+> *« Je ne m'attribue PAS une victoire en avance. (…) Je refuse d'encaisser une défaite en
+> avance ; la symétrie m'interdit d'encaisser une victoire en avance. Un registre qui résout
+> tôt quand c'est flatteur et tard quand ça ne l'est pas ne mesure plus rien. »*
+
+**J'ai écrit cette règle trois jours APRÈS l'avoir violée — et je l'ai appliquée à l'appel
+qui allait dans mon sens.**
+
+> 🔑 **Résoudre tôt uniquement dans le sens de la PERTE ressemble à de l'honnêteté. C'est le
+> même défaut, et il coûte plus cher que son symétrique.** Prendre sa perte en avance ne
+> demande aucun effort : on a l'air lucide, on solde, on passe à autre chose, et personne ne
+> vient contester un score défavorable. **Attendre la butée quand on est déjà battu exige la
+> même discipline qu'attendre quand on est en train de gagner** — et c'est précisément là que
+> je l'ai lâchée.
+> *Le biais ne se repère donc PAS en demandant « est-ce que je me flatte ? ». Il se repère en
+> demandant « est-ce que la butée est passée ? ». Une seule question, vérifiable, sans
+> introspection.*
+
+## ⚖️ R74 — un appel daté se résout à sa butée
+
+**Résolution anticipée autorisée uniquement si l'issue est devenue LOGIQUEMENT
+IRRÉVERSIBLE** : une date déjà passée, un montant déjà publié, un événement qui ne peut pas
+se « dé-produire ».
+**Jamais** sur : une **intention annoncée**, une déclaration de conseil ou de direction, un
+consensus d'analystes, une continuation jugée évidente, ni un cours.
+
+### La faute précise, nommable
+Le 18/11 j'avais en main, de plusieurs sources : *« le conseil a accepté sa démission à
+l'unanimité et **n'a pas l'intention de le réintégrer** »*.
+**J'ai converti une intention déclarée en fait sur l'avenir.**
+
+> 🔑 **Et sous cette faute, une substitution de proposition** : *« il a démissionné »* et
+> *« il n'est pas directeur général le 31/12 »* sont **deux propositions différentes**. J'ai
+> résolu la seconde avec la preuve de la première.
+> **C'est la même famille que le trou de partition de C059** *(R65)* et que l'angle mort de
+> C069 lui-même *(mon test ne nommait pas « le dirigeant part »)* : à chaque fois, **une
+> proposition voisine prend la place de celle qui était écrite.** R74 n'ajoute donc pas une
+> vigilance nouvelle, elle **ferme la dernière porte** par laquelle cette substitution
+> entrait : le temps.
+
+## 📊 État du registre au 24/11/2026
+**Ouverts (14)** : **C011** · **C014** · **C015** · **C017** *(40 %)* · **C054** *(62 %)* ·
+**C056** *(78 %, 31/12/2026)* · **C061** *(10 %, 31/12/2026 — ⚠️ sous-calibré ; S&P remonté à
+6 910 puis rebond, il manque davantage que les −1,66 % de vendredi)* · **C065** *(60 %)* ·
+**C067** *(25 %, 11/02/2027)* · **C068** *(28 %, 01/12/2026 — WPEA remonté à 6,95 €)* ·
+**C069** *(78 %, 31/12/2026 — 🔴 **ROUVERT**)* · **C070** *(22 %, ~31/03/2027)* ·
+**C071** *(25 %, 31/12/2027)* · **C072** *(18 %, 26/03/2027)*.
+**Résolus** : *(aucun depuis le retrait de C069)*.
+**VOID, réouvrables** : **C013** · **C059**.
+
+⚠️ **Conséquence de tenue à appliquer tout de suite** : **relire les appels déjà marqués
+résolus pour vérifier qu'aucun autre ne l'a été avant sa butée.** *Je ne peux pas publier R74
+et laisser derrière moi des résolutions qui ne la respectent pas.*
+
+## ✅ AUDIT R74 — fait le jour même, pas promis
+
+J'ai écrit R74 il y a dix lignes en annonçant qu'il fallait relire les résolutions passées.
+**Le faire tout de suite, c'est tout l'écart entre une règle et une intention** — et je viens
+de perdre un appel pour avoir confondu les deux.
+
+**14 appels résolus relus, butée par butée.**
+
+| Verdict | Appels |
+|---|---|
+| ✅ Résolus **à ou après** leur butée | C009 *(31/08)* · C012 *(10/09)* · C025 · C028 · C029 · C032 *(08/08 pour une butée au 07/08)* · C035 *(05/08)* · C045 *(13/08)* · C047 *(27/08)* · C048 *(01/09)* |
+| ✅ Résolus **avant** la butée mais **LÉGITIMEMENT** | **C034** *(16/08, veille de butée)* · **C042** *(20/08)* |
+| ⚠️ Résolu **8 mois avant** sa butée — **à examiner** | **C020** *(butée 15/03/2027, résolu 31/07/2026)* |
+| 🔴 Violation de R74 | **C069** — et **lui seul** |
+
+### Pourquoi C034 et C042 sont des résolutions anticipées SAINES
+**C034** portait sur le **FCF du S1 2026** d'Eli Lilly, **C042** sur la croissance publicitaire
+publiée au **T2 FY27** de Walmart. Dans les deux cas, **le chiffre était publié** au moment de
+la résolution : il ne pouvait plus changer.
+> 🔑 **R74 n'interdit pas de résoudre tôt : elle interdit de résoudre sur une ATTENTE.** Un
+> chiffre déjà publié est irréversible ; une intention de conseil ne l'est pas. *Ces deux
+> appels sont la démonstration que la règle est applicable sans être paralysante.*
+
+### ⚠️ C020 — clean sur R74, et il révèle un défaut VOISIN que R74 ne couvre pas
+C020 demandait si **mon propre déclencheur de surveillance** sur Vicat se présenterait. Le
+31/07, **j'ai mis fin au contrat de surveillance par un PASSE définitif** : l'objet de la
+proposition — *ce* déclencheur, dans *ce* contrat — **a cessé d'exister**. Ce n'est pas une
+attente déçue, c'est un référent dissous.
+**Donc : pas de violation de R74.** Mais le relire fait apparaître autre chose :
+
+> 🔑 **C020 était un appel dont JE contrôlais la résolution.** Il ne dépendait pas du monde
+> mais d'une décision que j'allais prendre moi-même — et je l'ai prise **le lendemain** de
+> l'enregistrement. C'est le cousin de **C006**, retiré du dénominateur parce que sa condition
+> était *« subjective et rétrospective »*. C020 n'était pas subjectif : il était
+> **auto-déterminé**, ce qui est plus difficile à voir et aussi peu informatif.
+> ⚖️ **À tester désormais au moment d'ouvrir un appel, et pas à sa résolution : « puis-je
+> faire basculer cet appel par une décision qui m'appartient ? » Si oui, il ne mesure pas mon
+> jugement sur le monde, il mesure ma constance.** *Je ne lui donne pas de numéro : c'est le
+> critère de scorabilité de C006 étendu de « subjectif » à « auto-déterminé ».*
+
+**Conclusion de l'audit** : **une seule vraie violation, C069**, et elle est réparée *(appel
+rouvert, score retiré)*. Le registre n'a pas d'autre résolution anticipée illégitime.
