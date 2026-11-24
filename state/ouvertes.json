@@ -1,6 +1,6 @@
 {
  "_doc": "Suivi des meilleures offres en cours : 🎯 passées + ✅ likées + ✉️, tant que non déclinées ni envoyées. Re-check à CHAQUE run, MÉTHODE STRICTE (règle 04.09) : GET avec suivi de redirections — en ligne seulement si l'URL FINALE contient l'identifiant ET contenu d'offre présent ; 301 vers catégorie = fermée ; 404/410 = fermée. GRANDE PURGE exécutée le 04.09 (egress ouvert) : 10 retirées sur 13, bilan au brief n°8bis et au journal.",
- "maj": "2026-11-21",
+ "maj": "2026-11-24",
  "fermees_recemment": [
   "QoQa Content Manager Brico & Jardin (📌 11.09→24.09) : 410 Gone sur le lien canonique jobup au GET du 24.09 — retirée après 13 j ; QoQa a publié un Social Media Manager 60% le même jour (réorganisation équipe contenu)",
   "CHUV Motion designer-vidéaste (📌 28.08→08.09) : page « Annonce fermée » au GET du 08.09 — retirée ; 1 mois en ligne au total",
@@ -90,6 +90,19 @@
    "statut": "en ligne (jobup GET+titre ✔ 04.11)",
    "fermee_le": "2026-11-21",
    "raison": "API jobup 410 Gone, jobs.ch 404"
+  },
+  {
+   "id": "cavecote-cm",
+   "titre": "Community Manager & Chargé·e de communication digitale",
+   "entreprise": "Cave de la Côte",
+   "lieu": "Tolochenaz",
+   "score": "✅",
+   "lien": "https://www.jobscout24.ch/en/job/689c5add-103a-4690-a777-944b81b44ab6/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
+   "premiere_apparition": "2026-10-25",
+   "dernier_check": "2026-11-06",
+   "statut": "en ligne (jobscout24 GET+titre ✔ 25.10 ; jobs.ch 403)",
+   "fermee_le": "2026-11-24",
+   "raison": "API JobCloud 410 (jobup + jobs.ch)"
   }
  ],
  "purge_04_09": {
@@ -231,17 +244,6 @@
    "premiere_apparition": "2026-10-24",
    "dernier_check": "2026-11-06",
    "statut": "en ligne (GET+titre ✔ 24.10)"
-  },
-  {
-   "id": "cavecote-cm",
-   "titre": "Community Manager & Chargé·e de communication digitale",
-   "entreprise": "Cave de la Côte",
-   "lieu": "Tolochenaz",
-   "score": "✅",
-   "lien": "https://www.jobscout24.ch/en/job/689c5add-103a-4690-a777-944b81b44ab6/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic",
-   "premiere_apparition": "2026-10-25",
-   "dernier_check": "2026-11-06",
-   "statut": "en ligne (jobscout24 GET+titre ✔ 25.10 ; jobs.ch 403)"
   },
   {
    "id": "jobgether-brandpr",

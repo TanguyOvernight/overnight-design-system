@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-11-23",
+ "maj": "2026-11-24",
  "offres": [
   {
    "d": "2026-10-03",
@@ -3684,8 +3684,8 @@
   {
    "d": "2026-10-25",
    "b": 55,
-   "st": "ouverte",
-   "cl": false,
+   "st": "fermee",
+   "cl": true,
    "dl": null,
    "s": "solide",
    "t": "Community Manager & Chargé·e de communication digitale",
@@ -6347,6 +6347,41 @@
     "Français + anglais exigés : ton français est un atout"
    ],
    "at": "Fit moyen, mais le français natif te distingue."
+  },
+  {
+   "d": "2026-11-24",
+   "b": 84,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Communication & Media Relations Officer (FR/EN)",
+   "c": "UCI (Union Cycliste Internationale)",
+   "l": "Aigle",
+   "dist": "Aigle",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "au moins 5 ans en relations médias",
+   "lg": "FR + EN",
+   "g": false,
+   "u": "https://www.jobup.ch/fr/emplois/detail/b3cbac13-aef4-4ec4-9e8b-d95d2e60471b/?utm_source=job-room.ch&utm_medium=affiliate&utm_campaign=wb:jobup|tg:b2c|cn:ch|lg:fr|ct:targeting,nonbrand,job|cd:feedonomics-jobroom|mg:job-application|pd:n|tt:organic",
+   "n": "Faire connaître le cyclisme et l'UCI auprès des médias grand public et lifestyle (presse, TV, créateurs de contenus) ; interviews, conférences de presse, communication des Championnats du Monde.",
+   "fit": {
+    "m": 2,
+    "da": 1,
+    "ia": 0,
+    "pct": 40
+   },
+   "ms": [
+    "Relations médias grand public et lifestyle",
+    "Communication des Championnats du Monde"
+   ],
+   "inf": [
+    "⚠️ expérience demandée : au moins 5 ans",
+    "⚠️ Aigle : -1 au scoring géo (~45 min de train depuis Lausanne)",
+    "Part d'événementiel (conférences, championnats)"
+   ],
+   "at": "Grande fédération sportive internationale, bilingue FR/EN."
   }
  ]
 }

@@ -22,10 +22,10 @@ for it in items:
     t=re.search(r'<title[^>]*>(.*?)</title>',b,re.S)
     t=html.unescape(t.group(1)).strip()[:90] if t else ''
     idok=any(x in fin for x in re.findall(r'[0-9a-f]{8}-[0-9a-f-]{27}|\d{10}',u)) or 'neho' in u
-    m=re.search(r'(jobup|jobs)\.ch/.*?([0-9a-f]{8}-[0-9a-f-]{27})',u)
+    m=re.search(r'(jobup|jobs|jobscout24)\.ch/.*?([0-9a-f]{8}-[0-9a-f-]{27})',u)
     if m:  # JobCloud: page HTML contient des chaines i18n 'expired' -> se fier a l'API (is_active)
         try:
-            a=json.load(urllib.request.urlopen(urllib.request.Request(f'https://www.{m.group(1)}.ch/api/v1/public/search/job/{m.group(2)}',headers=UA),timeout=30))
+            a=json.load(urllib.request.urlopen(urllib.request.Request(f'https://www.{"jobup" if m.group(1)=="jobscout24" else m.group(1)}.ch/api/v1/public/search/job/{m.group(2)}',headers=UA),timeout=30))
             closed=not a.get('is_active',True)
         except Exception as e:
             closed=getattr(e,'code',None) in (404,410)
