@@ -1,0 +1,1205 @@
+<style>
+.bi { font-family: var(--font-anthropic-sans); color: var(--color-fg); }
+.bi * { box-sizing: border-box; }
+.bi-eyebrow { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted);
+  margin: 0 0 var(--cds-gap-md) 0; }
+
+.bi-hero { margin-bottom: var(--cds-gap-md); }
+.bi-hero-k { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.bi-hero-num { font-family: var(--font-anthropic-serif); font-weight: 400;
+  font-size: clamp(2.5rem, 11vw, 4rem); line-height: 1.05;
+  font-variant-numeric: tabular-nums; margin-top: 2px; }
+.bi-hero-sub { margin-top: var(--cds-gap-xs); font-size: var(--cds-font-size-body);
+  color: var(--color-fg-muted); font-variant-numeric: tabular-nums; line-height: 1.5; }
+.bi .bi-up { color: var(--color-ok); }
+.bi .bi-down { color: var(--color-bad); }
+
+.bi-sec { margin-top: var(--cds-gap-xl); }
+.bi-h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium);
+  margin: 0 0 var(--cds-gap-sm) 0; }
+.bi-lead { margin: 0 0 var(--cds-gap-md) 0; font-size: var(--cds-font-size-caption);
+  color: var(--color-fg-muted); line-height: 1.5; }
+.bi-grid { display: grid; gap: var(--cds-gap-md);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); }
+.bi-card { background: var(--color-panel); border: 1px solid var(--color-border-line);
+  border-radius: var(--cds-radius); padding: var(--cds-pad-lg); }
+.bi-k { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted);
+  margin-bottom: var(--cds-gap-xs); }
+.bi-big { font-family: var(--font-anthropic-serif); font-weight: 400;
+  font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; line-height: 1.15; }
+.bi-alert .bi-big { color: var(--color-bad); }
+.bi-note { margin-top: var(--cds-gap-xs); font-size: var(--cds-font-size-caption);
+  color: var(--color-fg-muted); font-variant-numeric: tabular-nums; line-height: 1.5; }
+.bi-flag { margin-top: var(--cds-gap-sm); font-size: var(--cds-font-size-caption);
+  color: var(--color-warn); line-height: 1.5; }
+.bi-txt { font-size: var(--cds-font-size-body); line-height: 1.5; }
+
+.bi-rail { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cds-gap-xs) var(--cds-gap-sm);
+  margin-top: var(--cds-gap-sm); font-size: var(--cds-font-size-caption);
+  color: var(--color-warn); line-height: 1.5; }
+.bi-link { background: none; border: none; padding: 0; font: inherit; cursor: pointer;
+  color: var(--color-fg); text-decoration: underline; text-underline-offset: 2px; }
+
+.bi-filters { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm); align-items: flex-end;
+  margin-bottom: var(--cds-gap-sm); }
+.bi-fld { display: flex; flex-direction: column; gap: 2px; min-width: 8rem; flex: 1 1 8rem; }
+.bi-fld > span { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.bi-sel { font-family: inherit; font-size: var(--cds-font-size-caption); color: var(--color-fg);
+  background: var(--color-bg); border: 1px solid var(--color-border-line);
+  border-radius: var(--cds-radius); padding: var(--cds-pad-xs) var(--cds-pad-sm); width: 100%; }
+.bi-btn { font-family: inherit; font-size: var(--cds-font-size-caption); color: var(--color-fg);
+  background: var(--color-bg); border: 1px solid var(--color-border-line); cursor: pointer;
+  border-radius: var(--cds-radius); padding: var(--cds-pad-xs) var(--cds-pad-sm); }
+.bi-btn:hover { background: var(--color-panel); }
+
+.bi-seg { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: var(--cds-gap-sm); }
+.bi-seg button { font-family: inherit; font-size: var(--cds-font-size-caption);
+  color: var(--color-fg-muted); background: none; border: 1px solid transparent;
+  border-radius: var(--cds-radius); padding: 5px 10px; cursor: pointer; min-height: 32px; }
+.bi-seg button:hover { background: var(--color-panel); }
+.bi-seg button[aria-pressed="true"] { color: var(--color-fg);
+  background: var(--color-panel); border-color: var(--color-border-line); }
+.bi-seg .bi-sep { flex: 1 1 0; min-width: 0; }
+.bi-segk { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted);
+  align-self: center; margin-right: var(--cds-gap-xs); }
+.bi-chart { touch-action: none; }
+.bi-chartwrap { position: relative; }
+.bi-chart { position: relative; min-height: 220px; }
+.bi-chart.bi-hero-chart { min-height: 300px; }
+@media (max-width: 640px) { .bi-chart.bi-hero-chart { min-height: 340px; } }
+.bi-chart.bi-tall { min-height: 260px; }
+.bi-chart svg { display: block; }
+.bi-tick { font-size: var(--cds-font-size-caption); fill: var(--color-fg-muted);
+  font-family: var(--font-anthropic-sans); font-variant-numeric: tabular-nums; }
+.bi-endlab { font-size: var(--cds-font-size-caption); font-family: var(--font-anthropic-sans);
+  font-variant-numeric: tabular-nums; }
+.bi-tip { position: absolute; pointer-events: none; opacity: 0; z-index: 2;
+  background: var(--cds-surface-popover); border: 1px solid var(--cds-border);
+  border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover);
+  padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption);
+  font-variant-numeric: tabular-nums; white-space: nowrap; }
+.bi-tip .bi-tipd { color: var(--cds-text-secondary); }
+.bi-tip .bi-tipr { display: flex; align-items: center; gap: var(--cds-gap-xs); }
+
+.bi-bar { display: flex; width: 100%; height: 28px; border-radius: 4px; overflow: hidden;
+  margin-bottom: var(--cds-gap-sm); min-height: 28px; }
+.bi-bar > span { display: block; height: 100%; }
+.bi-leg { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm) var(--cds-gap-lg);
+  font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+.bi-leg > button { display: flex; align-items: center; gap: var(--cds-gap-xs);
+  background: none; border: none; padding: 0; cursor: pointer; font: inherit; color: var(--color-fg); }
+.bi-leg > div { display: flex; align-items: center; gap: var(--cds-gap-xs); }
+.bi-dot { width: .625rem; height: .625rem; border-radius: 2px; flex: none; }
+.bi-legv { color: var(--color-fg-muted); }
+
+.bi-tablebox { overflow-x: auto; }
+.bi-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption);
+  font-variant-numeric: tabular-nums; }
+.bi-table th { font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted);
+  padding: var(--cds-pad-xs) var(--cds-pad-sm);
+  border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+.bi-table td { padding: var(--cds-pad-xs) var(--cds-pad-sm);
+  border-bottom: 1px solid var(--color-border-line); }
+.bi-table tr:last-child td { border-bottom: none; }
+.bi-table th, .bi-table td { text-align: left; }
+#t-positions tbody tr { cursor: pointer; }
+#t-positions tbody tr:hover { background: var(--color-bg); }
+#t-comptes :is(th, td):nth-child(2), #t-comptes :is(th, td):nth-child(3),
+#t-comptes :is(th, td):nth-child(4), #t-comptes :is(th, td):nth-child(5),
+#t-positions :is(th, td):nth-child(4), #t-positions :is(th, td):nth-child(5),
+#t-positions :is(th, td):nth-child(6),
+#t-classement :is(th, td):nth-child(3), #t-classement :is(th, td):nth-child(4),
+#t-classement :is(th, td):nth-child(5) { text-align: right; }
+.bi-outro { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.6; }
+.bi-outro li { margin-bottom: var(--cds-gap-xs); }
+#t-2026 :is(th, td):nth-child(2), #t-2026 :is(th, td):nth-child(3),
+#t-2026 :is(th, td):nth-child(4), #t-2026 :is(th, td):nth-child(5) { text-align: right; }
+.bi-estim { border-left: 3px solid var(--cds-chart-muted); }
+.bi-estim .bi-k { color: var(--color-warn); }
+
+@media (max-width: 640px) {
+  .bi-card { padding: var(--cds-pad-md); }
+  .bi-fld { flex: 1 1 calc(50% - var(--cds-gap-sm)); min-width: 0; }
+  .bi-table :is(th, td) { padding: var(--cds-pad-sm) var(--cds-pad-xs); }
+  #t-positions :is(th, td):nth-child(2), #t-positions :is(th, td):nth-child(3),
+  #t-comptes :is(th, td):nth-child(2),
+  #t-classement :is(th, td):nth-child(3), #t-classement :is(th, td):nth-child(4),
+  #t-2026 :is(th, td):nth-child(2), #t-2026 :is(th, td):nth-child(3) { display: none; }
+  .bi-leg { gap: var(--cds-gap-sm) var(--cds-gap-md); }
+  .bi-sec { margin-top: var(--cds-gap-lg); }
+}
+
+[data-dash-source-state="empty"] { color: transparent; }
+[data-dash-source-state="refreshing"] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes bi-in { from { opacity: 0; } to { opacity: 1; } }
+  .bi-fade { animation: bi-in var(--cds-dur-slow) var(--cds-ease-out); }
+}
+</style>
+
+<div class="bi">
+
+  <section id="capital">
+    <p class="bi-eyebrow">Brief investissements ·
+      <span class="dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=maj">—</span></p>
+
+    <div class="bi-hero">
+      <div class="bi-hero-k">Ton capital, les deux comptes réunis</div>
+      <div class="bi-hero-num dash-skeleton" data-source="total" data-field="total" data-row="0">—</div>
+      <div class="bi-hero-sub">
+        <b class="dash-skeleton" id="h-jour" data-source="variation" data-field="jour" data-row="0">—</b>
+        aujourd'hui ·
+        <b class="dash-skeleton" id="h-pv" data-source="perf_totale" data-field="pv" data-row="0">—</b>
+        de plus-value latente
+        <span class="dash-skeleton" data-source="perf_totale" data-field="perf_pct" data-row="0">—</span>
+      </div>
+    </div>
+
+    <div class="bi-filters">
+      <label class="bi-fld"><span>Compte</span>
+        <select class="bi-sel" id="f-poche" data-source="positions"></select></label>
+      <label class="bi-fld"><span>Catégorie</span>
+        <select class="bi-sel" id="f-cat" data-source="positions"></select></label>
+      <label class="bi-fld"><span>Ligne</span>
+        <select class="bi-sel" id="f-ligne" data-source="positions"></select></label>
+      <button class="bi-btn" id="f-reset" type="button">Tout</button>
+    </div>
+
+    <div class="bi-seg" id="seg-periode" role="group" aria-label="Période">
+      <button type="button" data-p="1m">1 mois</button>
+      <button type="button" data-p="3m">3 mois</button>
+      <button type="button" data-p="6m">6 mois</button>
+      <button type="button" data-p="2026">2026</button>
+      <span class="bi-sep"></span>
+      <button type="button" data-m="pct">%</button>
+      <button type="button" data-m="eur">€</button>
+    </div>
+    <div class="bi-seg" id="seg-echelle" role="group" aria-label="Échelle verticale">
+      <span class="bi-segk">Axe vertical</span>
+      <button type="button" data-e="auto">S'adapte au zoom</button>
+      <button type="button" data-e="fixe">Fixe</button>
+      <span class="bi-sep"></span>
+      <button type="button" id="z-reset" hidden>Dézoomer</button>
+    </div>
+
+    <div class="bi-chartwrap">
+      <div class="bi-chart bi-hero-chart dash-skeleton" id="ch-valeurs" data-source="valeurs"></div>
+    </div>
+    <div class="bi-leg" id="val-leg" style="margin-top: var(--cds-gap-sm);"></div>
+
+    <p class="bi-note" style="margin-top: var(--cds-gap-xs);">Pince, molette ou glisser pour zoomer ·
+      double-clic pour revenir. En <b>%</b>, toutes tes lignes partent
+      du même point : c'est là qu'on voit laquelle monte et laquelle descend. En <b>€</b>, filtre sur
+      une seule ligne et le pointillé montre ce que tu y as mis — l'écart, c'est ton gain.</p>
+
+    <div class="bi-rail" id="rail" hidden>
+      <span>Ta part risquée est à
+        <b class="dash-skeleton" data-source="garde_fous" data-field="r_pct" data-row="0">—</b>,
+        au-dessus de ma limite de 25 %.</span>
+      <button class="bi-link" id="go-idees" type="button">Voir quoi faire</button>
+    </div>
+  </section>
+
+  <section class="bi-sec" id="variation">
+    <h2 class="bi-h2">La variation de tes placements</h2>
+    <p class="bi-lead">Gain ou perte depuis ton achat, en pourcentage de ce que tu as mis sur chaque ligne.
+      Clique une barre ou une ligne du tableau pour l'isoler dans le graphique du haut.</p>
+
+    <div class="bi-card">
+      <div class="bi-chartwrap">
+        <div class="bi-chart bi-tall dash-skeleton" id="ch-perf" data-source="perf"></div>
+      </div>
+    </div>
+
+    <div class="bi-card" style="margin-top: var(--cds-gap-md);">
+      <div class="bi-tablebox">
+        <table class="bi-table" id="t-positions" data-source="positions" data-row-key="ligne">
+          <thead><tr>
+            <th data-field="ligne">Ligne</th>
+            <th data-field="poche">Compte</th>
+            <th data-field="categorie">Catégorie</th>
+            <th data-source="perf" data-field="investi">Investi</th>
+            <th data-field="valeur_eur">Valeur</th>
+            <th data-source="perf" data-field="perf_pct">Perf.</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="bi-grid" style="margin-top: var(--cds-gap-md);">
+      <div class="bi-card">
+        <div class="bi-k">Répartition de ton capital</div>
+        <div class="bi-bar dash-skeleton" id="alloc-bar" data-source="allocation"></div>
+        <div class="bi-leg" id="alloc-leg"></div>
+      </div>
+      <div class="bi-card">
+        <div class="bi-k">Tes deux comptes</div>
+        <div class="bi-tablebox">
+          <table class="bi-table" id="t-comptes" data-source="comptes" data-row-key="compte">
+            <thead><tr>
+              <th data-field="compte">Compte</th>
+              <th data-field="titres_eur">Titres</th>
+              <th data-field="especes_eur">Espèces</th>
+              <th data-field="total_eur">Total</th>
+              <th data-field="variation_jour_eur">Jour</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bi-sec" id="annee2026">
+    <h2 class="bi-h2">Ton année 2026</h2>
+    <p class="bi-lead">Chiffres réels, reconstitués semaine par semaine à partir des cours de chacune
+      de tes lignes et du taux de change de chaque semaine. Ce ne sont plus des estimations.</p>
+
+    <div class="bi-grid">
+      <div class="bi-card bi-gain">
+        <div class="bi-k">Gagné depuis le 2 janvier</div>
+        <div class="bi-big dash-skeleton" data-source="annee_2026" data-field="gain" data-row="0">—</div>
+        <div class="bi-note">Le reste de ta plus-value vient d'avant 2026 :
+          <span class="dash-skeleton" data-source="annee_2026" data-field="avant" data-row="0">—</span>,
+          soit <span class="dash-skeleton" data-source="annee_2026" data-field="part_avant" data-row="0">—</span>
+          du total.</div>
+      </div>
+      <div class="bi-card bi-alert">
+        <div class="bi-k">Le pire moment de ton année</div>
+        <div class="bi-big dash-skeleton" data-source="annee_2026" data-field="creux" data-row="0">—</div>
+        <div class="bi-note">Ton portefeuille est descendu à
+          <span class="dash-skeleton" data-source="annee_2026" data-field="plus_bas" data-row="0">—</span>
+          le <span class="dash-skeleton" data-source="annee_2026" data-field="date_plus_bas" data-row="0">—</span>,
+          contre <span class="dash-skeleton" data-source="annee_2026" data-field="debut" data-row="0">—</span>
+          au 2 janvier. Tu es remonté depuis.</div>
+      </div>
+    </div>
+
+    <div class="bi-card" style="margin-top: var(--cds-gap-md);">
+      <div class="bi-k">Valeur de ton portefeuille, semaine par semaine</div>
+      <div class="bi-chartwrap">
+        <div class="bi-chart bi-tall dash-skeleton" id="ch-2026" data-source="portefeuille_2026"></div>
+      </div>
+      <div class="bi-note">Ton livre eToro seul, pour que la courbe montre tes gains et pas tes
+        versements : ton dépôt PEA du 2 octobre y ferait une marche de 500 € qui écraserait tout.</div>
+    </div>
+
+    <div class="bi-card" style="margin-top: var(--cds-gap-md);">
+      <div class="bi-k">Ligne par ligne, du 2 janvier au 9 octobre</div>
+      <div class="bi-tablebox">
+        <table class="bi-table" id="t-2026" data-source="perf_2026" data-row-key="ticker">
+          <thead><tr>
+            <th data-field="ticker">Ligne</th>
+            <th data-field="valeur_jan">2 janv.</th>
+            <th data-field="valeur_oct">9 oct.</th>
+            <th data-field="gain_eur">Gain</th>
+            <th data-field="perf_pct">Perf.</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="bi-note">Tout est converti en euros au taux de chaque semaine. L'euro a perdu 4,7 %
+        face au dollar cette année, ce qui a gonflé la valeur en euros de tes lignes américaines :
+        c'est une vraie part de ton gain.</div>
+    </div>
+  </section>
+
+  <section class="bi-sec" id="idees">
+    <h2 class="bi-h2">Les idées de Claude</h2>
+    <p class="bi-lead">Ce que je te recommande de faire de ton argent, et les limites que je surveille pour toi.</p>
+
+    <div class="bi-grid">
+      <div class="bi-card">
+        <div class="bi-k">À investir tout de suite</div>
+        <div class="bi-big dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=action_montant">—</div>
+        <div class="bi-note dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=action">—</div>
+        <div class="bi-note">Ton ordre gratuit d'octobre est déjà parti sur l'achat du 1<sup>er</sup>.
+          Celui-ci pourrait être facturé, estimation
+          <span class="dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=action_frais">—</span> :
+          lis la ligne de frais dans l'appli avant de valider. Au-delà de
+          <span class="dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=seuil_frais">—</span>,
+          préviens-moi.</div>
+      </div>
+
+      <div class="bi-card bi-alert">
+        <div class="bi-k">Part risquée du portefeuille</div>
+        <div class="bi-big dash-skeleton" data-source="garde_fous" data-field="r_pct" data-row="0">—</div>
+        <div class="bi-note">Ma règle plafonne à 25 %. Il manque
+          <span class="dash-skeleton" data-source="garde_fous" data-field="manque" data-row="0">—</span>
+          de cœur pour revenir dessous.</div>
+        <div class="bi-flag">Tant que c'est dépassé : aucune nouvelle action individuelle, STM compris.</div>
+      </div>
+
+      <div class="bi-card">
+        <div class="bi-k">Plafond par ligne risquée</div>
+        <div class="bi-big dash-skeleton" data-source="garde_fous" data-field="plafond_ligne" data-row="0">—</div>
+        <div class="bi-note">Le plus petit des deux : 5 % de (capital + 6 000 €) et 15 % du capital.
+          Aucune de tes lignes ne le dépasse aujourd'hui.</div>
+      </div>
+    </div>
+
+    <div class="bi-card" style="margin-top: var(--cds-gap-md);">
+      <div class="bi-k">Consigne du jour</div>
+      <div class="bi-txt dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=consigne">—</div>
+      <div class="bi-note">Prochain versement prévu le
+        <span class="dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=prochain_versement">—</span>,
+        <span class="dash-skeleton" data-source="plan" data-field="valeur" data-where="cle=prochain_versement_montant">—</span>.</div>
+    </div>
+
+    <div class="bi-card" style="margin-top: var(--cds-gap-md);">
+      <div class="bi-k">Ce que je surveille pour toi</div>
+      <div class="bi-note" style="margin-bottom: var(--cds-gap-sm);">Un candidat ne devient un achat que si
+        son cours passe sous son seuil — et aucune action individuelle ne peut entrer tant que la part
+        risquée dépasse 25 %.</div>
+      <div class="bi-tablebox">
+        <table class="bi-table" id="t-classement" data-source="classement" data-row-key="rang">
+          <thead><tr>
+            <th data-field="rang">#</th>
+            <th data-field="candidat">Candidat</th>
+            <th data-source="cours_seuil" data-field="cours_txt">Cours</th>
+            <th data-source="cours_seuil" data-field="seuil_txt">Seuil</th>
+            <th data-source="ecarts" data-field="ecart_pct">Écart</th>
+            <th data-field="statut">Statut</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="bi-card" style="margin-top: var(--cds-gap-md);">
+      <div class="bi-k">STM contre son seuil d'achat</div>
+      <div class="bi-note" style="margin-bottom: var(--cds-gap-sm);">
+        Clôture <span class="dash-skeleton" data-source="stm_ecart" data-field="cloture" data-row="0">—</span>
+        au <span class="dash-skeleton" data-source="stm_ecart" data-field="date" data-row="0">—</span> ·
+        le seuil est à <span class="dash-skeleton" data-source="stm_ecart" data-field="ecart_pct" data-row="0">—</span>
+      </div>
+      <div class="bi-chartwrap">
+        <div class="bi-chart dash-skeleton" id="ch-stm" data-source="stm_seuil"></div>
+      </div>
+    </div>
+
+    <div class="bi-card" style="margin-top: var(--cds-gap-md);">
+      <div class="bi-k">Cours du WPEA, en euros</div>
+      <div class="bi-chartwrap">
+        <div class="bi-chart dash-skeleton" id="ch-wpea" data-source="coeur_wpea"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bi-sec" id="limites">
+    <h2 class="bi-h2">Ce que cette page ne sait pas</h2>
+    <ul class="bi-outro">
+      <li>Elle n'est branchée sur aucune bourse en direct : je n'ai accès à aucun flux de marché depuis ma
+        session. Chaque cours est relevé à la main pendant le brief du matin.</li>
+      <li>Tes deux comptes ne sont pas connectés non plus. Seul le WPEA se remet à jour tout seul, parce que
+        je peux en relever le cours ; tes lignes eToro ne bougeront qu'à ta prochaine capture.</li>
+      <li>Les trous dans les courbes sont réels : ce sont les jours où je n'ai pas pu certifier une valeur.
+        Je préfère un trou à un chiffre inventé.</li>
+      <li>Rien ici n'est une prévision. Les seuils sont des prix d'achat décidés à l'avance, pas des
+        objectifs de cours.</li>
+    </ul>
+  </section>
+
+</div>
+
+<script>
+(function () {
+  var FR = d3.formatLocale({ decimal: ",", thousands: " ", grouping: [3],
+    currency: ["", " €"], minus: "−" });
+  var MOIS = ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août",
+    "sept.", "oct.", "nov.", "déc."];
+  function parseDay(s) { return new Date(String(s).slice(0, 10) + "T00:00:00Z"); }
+  window.BI = {
+    FR: FR, parseDay: parseDay,
+    dayShort: function (d) { return d.getUTCDate() + " " + MOIS[d.getUTCMonth()]; },
+    dayLong: function (d) { return d.getUTCDate() + " " + MOIS[d.getUTCMonth()] + " " + d.getUTCFullYear(); },
+    fmtDate: function (s) { var d = parseDay(s); return isNaN(d) ? String(s) : window.BI.dayLong(d); },
+    eur: function (v, dec) { return FR.format(",." + (dec === undefined ? 2 : dec) + "f")(v) + " €"; },
+    eurs: function (v, dec) { return FR.format("+,." + (dec === undefined ? 2 : dec) + "f")(v) + " €"; },
+    pct: function (v) { return FR.format("+,.1f")(v) + " %"; },
+    pctp: function (v) { return FR.format(",.1f")(v) + " %"; }
+  };
+})();
+</script>
+
+<script>
+dash.calc("total", {
+  title: "Capital des deux comptes",
+  description: "Somme des titres, des espèces et du total de chaque compte relevé.",
+  inputs: ["comptes"],
+  fn: function (comptes) {
+    var s = function (k) { return comptes.reduce(function (a, c) { return a + Number(c[k]); }, 0); };
+    return [{ titres: s("titres_eur"), especes: s("especes_eur"), total: s("total_eur") }];
+  }
+});
+
+dash.calc("variation", {
+  title: "Variation du jour",
+  description: "Somme des variations du jour des deux comptes, en euros.",
+  inputs: ["comptes"],
+  fn: function (comptes) {
+    return [{ jour: comptes.reduce(function (a, c) { return a + Number(c.variation_jour_eur); }, 0) }];
+  }
+});
+
+dash.calc("allocation", {
+  title: "Répartition cœur / risqué / espèces",
+  description: "Additionne les lignes par catégorie, et les espèces des deux comptes.",
+  inputs: ["positions", "comptes"],
+  fn: function (positions, comptes) {
+    var par = function (c) {
+      return positions.filter(function (p) { return p.categorie === c; })
+        .reduce(function (s, p) { return s + Number(p.valeur_eur); }, 0);
+    };
+    var cash = comptes.reduce(function (s, c) { return s + Number(c.especes_eur); }, 0);
+    var coeur = par("Cœur"), risque = par("Risqué"), tot = coeur + risque + cash;
+    return [{ categorie: "Cœur", valeur_eur: coeur, part_pct: coeur / tot * 100 },
+            { categorie: "Risqué", valeur_eur: risque, part_pct: risque / tot * 100 },
+            { categorie: "Espèces", valeur_eur: cash, part_pct: cash / tot * 100 }];
+  }
+});
+
+dash.calc("garde_fous", {
+  title: "Part risquée et plafond par ligne",
+  description: "Part risquée = risqué ÷ (cœur + risqué), hors espèces. Ma règle la plafonne à 25 %, ce qui revient à exiger un cœur au moins triple du risqué. Plafond par ligne = min(5 % × (capital + 6 000 €) ; 15 % × capital).",
+  inputs: ["allocation", "total"],
+  fn: function (allocation, total) {
+    var get = function (c) {
+      var r = allocation.filter(function (a) { return a.categorie === c; })[0];
+      return r ? r.valeur_eur : 0;
+    };
+    var coeur = get("Cœur"), risque = get("Risqué"), V = total[0].total;
+    return [{ r_pct: risque / (coeur + risque) * 100,
+              coeur_requis: 3 * risque,
+              manque: Math.max(0, 3 * risque - coeur),
+              plafond_ligne: Math.min(0.05 * (V + 6000), 0.15 * V) }];
+  }
+});
+
+dash.calc("perf", {
+  title: "Performance de chaque ligne",
+  description: "Montant investi = valeur actuelle − gain affiché par le courtier. Performance = gain ÷ investi.",
+  inputs: ["positions"],
+  fn: function (positions) {
+    return positions
+      .filter(function (p) { return p.pv_eur !== "" && p.pv_eur !== null && p.pv_eur !== undefined; })
+      .map(function (p) {
+        var v = Number(p.valeur_eur), pv = Number(p.pv_eur), inv = v - pv;
+        return { ligne: p.ligne, ticker: p.ticker || p.ligne, poche: p.poche,
+          categorie: p.categorie, investi: inv, valeur: v, pv: pv,
+          perf_pct: inv ? pv / inv * 100 : null };
+      });
+  }
+});
+
+dash.calc("perf_totale", {
+  title: "Performance de l'ensemble",
+  description: "Somme des montants investis et des valeurs de toutes les lignes dont le gain est connu, et performance d'ensemble.",
+  inputs: ["perf"],
+  fn: function (perf) {
+    var inv = perf.reduce(function (s, p) { return s + p.investi; }, 0);
+    var val = perf.reduce(function (s, p) { return s + p.valeur; }, 0);
+    return [{ investi: inv, valeur: val, pv: val - inv, perf_pct: inv ? (val - inv) / inv * 100 : null }];
+  }
+});
+
+dash.calc("annee_2026", {
+  title: "Ton année 2026",
+  description: "Gain 2026 = somme des gains de chaque ligne. Le creux est le point le plus bas de la valeur du portefeuille comparé à sa valeur du 2 janvier. La part gagnée avant 2026 est la plus-value totale moins le gain 2026.",
+  inputs: ["perf_2026", "portefeuille_2026", "perf_totale"],
+  fn: function (perf_2026, portefeuille_2026, perf_totale) {
+    var gain = perf_2026.reduce(function (a, r) { return a + Number(r.gain_eur); }, 0);
+    var v = portefeuille_2026.map(function (r) { return Number(r.valeur_eur); });
+    var i = v.indexOf(Math.min.apply(null, v)), pv = perf_totale[0].pv;
+    return [{ gain: gain, debut: v[0], fin: v[v.length - 1],
+      plus_bas: v[i], date_plus_bas: portefeuille_2026[i].date, creux: v[i] - v[0],
+      avant: pv - gain, part_avant: pv ? (pv - gain) / pv * 100 : null }];
+  }
+});
+
+dash.calc("cours_seuil", {
+  title: "Cours et seuil avec leur devise",
+  description: "Colle la devise de chaque candidat à son cours et à son seuil.",
+  inputs: ["classement"],
+  fn: function (classement) {
+    return classement.map(function (c) {
+      return { rang: c.rang,
+        cours_txt: c.cours ? String(c.cours).replace(".", ",") + " " + c.devise : "",
+        seuil_txt: c.seuil ? String(c.seuil).replace(".", ",") + " " + c.devise : "" };
+    });
+  }
+});
+
+dash.calc("ecarts", {
+  title: "Distance du cours au seuil d'achat",
+  description: "Pour chaque candidat : seuil ÷ cours − 1, en pourcentage.",
+  inputs: ["classement"],
+  fn: function (classement) {
+    return classement.map(function (c) {
+      var ok = c.seuil && c.cours;
+      return { rang: c.rang, ecart_pct: ok ? (Number(c.seuil) / Number(c.cours) - 1) * 100 : null };
+    });
+  }
+});
+
+dash.calc("stm_ecart", {
+  title: "STM — dernière clôture et distance au seuil",
+  description: "Dernière ligne de la série STM, et seuil ÷ clôture − 1 en pourcentage.",
+  inputs: ["stm_seuil"],
+  fn: function (stm_seuil) {
+    var l = stm_seuil[stm_seuil.length - 1];
+    return [{ cloture: Number(l.cloture), seuil: Number(l.seuil), date: l.date,
+      ecart_pct: (Number(l.seuil) / Number(l.cloture) - 1) * 100 }];
+  }
+});
+</script>
+
+<script>
+(function () {
+  var B = window.BI, drawn = {};
+  var zoomT = {}, zoomSig = {}, dernierDessin = {};
+
+  // Mesurer un texte force le navigateur à recalculer la mise en page. Le même
+  // texte a toujours la même largeur : on ne le mesure qu'une fois pour la vie
+  // de la page.
+  var mesures = {};
+  function mesure(svg, cls, txt) {
+    var k = cls + "\u0000" + txt;
+    if (mesures[k] != null) return mesures[k];
+    var n = svg.append("text").attr("class", cls).attr("opacity", 0).text(txt);
+    var w = n.node().getComputedTextLength();
+    n.remove();
+    mesures[k] = w;
+    return w;
+  }
+
+  // Un clic sur un filtre relance tout le rendu. Les graphiques dont rien n'a
+  // changé n'ont aucune raison d'être refaits : on compare une signature.
+  var signatures = {};
+  function siChange(id, sig, fn) {
+    if (signatures[id] === sig) return;
+    signatures[id] = sig;
+    fn();
+  }
+  function redessiner() {
+    Object.keys(dernierDessin).forEach(function (id) {
+      var a = dernierDessin[id];
+      drawSeries(id, a.series, a.opt);
+    });
+    majBoutonZoom();
+  }
+  function majBoutonZoom() {
+    var zoome = Object.keys(zoomT).some(function (k) { return zoomT[k] && zoomT[k].k > 1.001; });
+    var b = q("#z-reset");
+    if (b) b.hidden = !zoome;
+  }
+
+  function rowsOf(id) { var d = dash.data(id).data; return Array.isArray(d) ? d : (d ? [d] : []); }
+  function ok(id) { return dash.data(id).status === "ok"; }
+  function q(s) { return document.querySelector(s); }
+  function all(s) { return Array.prototype.slice.call(document.querySelectorAll(s)); }
+  function put(el, text, ready) {
+    if (!el) return;
+    el.textContent = (ready && text !== null && text !== undefined && text !== "") ? text : "—";
+    el.classList.toggle("dash-skeleton", !ready);
+  }
+  function one(id, field, fmt) {
+    var good = ok(id) && rowsOf(id).length > 0, r = good ? rowsOf(id)[0] : null;
+    all('[data-source="' + id + '"][data-field="' + field + '"]').forEach(function (el) {
+      put(el, r ? fmt(r[field]) : null, good);
+    });
+  }
+  function planVal(k) {
+    var r = rowsOf("plan").filter(function (x) { return x.cle === k; })[0];
+    return r ? r.valeur : null;
+  }
+  function fillTable(sel, rows, cells, keyOf) {
+    var tb = q(sel + " tbody");
+    if (!tb) return;
+    tb.textContent = "";
+    rows.forEach(function (r) {
+      var tr = document.createElement("tr");
+      if (keyOf) tr.setAttribute("data-key", keyOf(r));
+      cells.forEach(function (get) {
+        var td = document.createElement("td");
+        td.textContent = get(r);
+        tr.appendChild(td);
+      });
+      tb.appendChild(tr);
+    });
+  }
+  function tipBox(host) {
+    var t = document.createElement("div");
+    t.className = "bi-tip";
+    host.appendChild(t);
+    return t;
+  }
+  function placeTip(tip, host, ev) {
+    var hb = host.getBoundingClientRect(), tw = tip.offsetWidth;
+    var left = ev.clientX - hb.left + 12;
+    if (left + tw > hb.width) left = Math.max(0, ev.clientX - hb.left - tw - 12);
+    tip.style.left = left + "px";
+    tip.style.top = Math.max(0, ev.clientY - hb.top - 48) + "px";
+  }
+  function signe(el, v) {
+    el.classList.toggle("bi-up", v > 0);
+    el.classList.toggle("bi-down", v < 0);
+  }
+
+  function params() { return dash.params() || {}; }
+  function visibles(rows) {
+    var p = params();
+    return rows.filter(function (r) {
+      return (!p.poche || r.poche === p.poche) && (!p.categorie || r.categorie === p.categorie);
+    });
+  }
+  function lignesVisibles() {
+    return visibles(ok("positions") ? rowsOf("positions") : []).map(function (r) { return r.ligne; });
+  }
+  function remplirSelect(el, options, valeur, libelleTout) {
+    el.textContent = "";
+    el.appendChild(new Option(libelleTout, ""));
+    options.forEach(function (o) { el.appendChild(new Option(o, o)); });
+    el.value = valeur || "";
+    if (el.value !== (valeur || "")) el.value = "";
+  }
+
+  var selPoche = q("#f-poche"), selCat = q("#f-cat"), selLigne = q("#f-ligne");
+  selPoche.addEventListener("change", function () {
+    dash.setParams({ poche: selPoche.value || null, ligne: null });
+  });
+  selCat.addEventListener("change", function () {
+    dash.setParams({ categorie: selCat.value || null, ligne: null });
+  });
+  selLigne.addEventListener("change", function () {
+    dash.setParams({ ligne: selLigne.value || null });
+  });
+  q("#f-reset").addEventListener("click", function () { dash.resetParams(); });
+  q("#t-positions").addEventListener("click", function (ev) {
+    var tr = ev.target.closest("tr[data-key]");
+    if (!tr) return;
+    dash.setParams({ ligne: params().ligne === tr.dataset.key ? null : tr.dataset.key });
+  });
+  q("#seg-periode").addEventListener("click", function (ev) {
+    var b = ev.target.closest("button");
+    if (!b) return;
+    if (b.dataset.p) { zoomT = {}; dash.setParams({ periode: b.dataset.p }); }
+    if (b.dataset.m) { zoomT = {}; dash.setParams({ mode: b.dataset.m }); }
+  });
+  q("#seg-echelle").addEventListener("click", function (ev) {
+    var b = ev.target.closest("button");
+    if (!b) return;
+    if (b.dataset.e) dash.setParams({ echelle: b.dataset.e });
+    if (b.id === "z-reset") { zoomT = {}; redessiner(); }
+  });
+  q("#go-idees").addEventListener("click", function () {
+    var el = document.getElementById("idees");
+    el.scrollIntoView();
+    dash.setLink("idees");
+  });
+
+  function drawSeries(hostId, series, opt) {
+    var host = document.getElementById(hostId);
+    if (!host) return;
+    dernierDessin[hostId] = { series: series, opt: opt };
+    host.textContent = "";
+    var tous = [];
+    series.forEach(function (s) { s.pts.forEach(function (p) { tous.push(p); }); });
+    if (!tous.length) return;
+
+    var W = Math.max(240, host.clientWidth || 320), H = opt.height || 230;
+    var svg = d3.select(host).append("svg").attr("width", "100%")
+      .attr("viewBox", "0 0 " + W + " " + H).attr("role", "img").attr("aria-label", opt.aria || "");
+    if (!drawn[hostId]) { svg.attr("class", "bi-fade"); drawn[hostId] = true; }
+
+    var vals = tous.map(function (p) { return p.v; });
+    if (opt.ref != null) vals.push(opt.ref);
+    var lo = d3.min(vals), hi = d3.max(vals);
+    var pad = (hi - lo || Math.abs(hi) * 0.02 || 1) * 0.06;
+    var y = d3.scaleLinear([lo - pad, hi + pad], [0, 1]);
+    var ticks = y.ticks(4);
+
+    var leftW = 0;
+    ticks.forEach(function (t) { leftW = Math.max(leftW, mesure(svg, "bi-tick", opt.fmtY(t))); });
+    var seule = series.length === 1 ? series[0] : null;
+    var endTxt = seule ? seule.nom + " " + opt.fmtY(seule.pts[seule.pts.length - 1].v) : "";
+    var endW = endTxt ? mesure(svg, "bi-endlab", endTxt) : 0;
+    var dates = Array.from(new Set(tous.map(function (p) { return +p.d; }))).sort(d3.ascending)
+      .map(function (t) { return new Date(t); });
+    // Les étiquettes de dates ont toutes la même forme : un seul gabarit, le
+    // plus large, suffit — au lieu d'une mesure par date.
+    var labUn = mesure(svg, "bi-tick", "30 sept.");
+
+    var m = { top: 16, right: endTxt ? Math.min(endW + 12, W * 0.45) : 14, bottom: 24, left: leftW + 10 };
+    if (W - m.left - m.right < 60) m.right = 12;
+    y.range([H - m.bottom, m.top]);
+    var xd = d3.extent(tous, function (p) { return p.d; });
+    if (+xd[0] === +xd[1]) xd = [d3.utcDay.offset(xd[0], -1), d3.utcDay.offset(xd[1], 1)];
+    var xFull = d3.scaleUtc(xd, [m.left, W - m.right]);
+
+    var sig = (+xd[0]) + "|" + (+xd[1]) + "|" + series.length + "|" + W;
+    if (zoomSig[hostId] !== sig) { zoomSig[hostId] = sig; zoomT[hostId] = d3.zoomIdentity; }
+    var tr = zoomT[hostId] || d3.zoomIdentity;
+    var x = tr.rescaleX(xFull);
+
+    // L'axe vertical se recale sur la fenêtre visible. Sans ça, zoomer ne sert
+    // à rien : la courbe reste écrasée par des valeurs qui ne sont plus à l'écran.
+    if (opt.echelle !== "fixe") {
+      var vd = x.domain(), vus = [];
+      series.forEach(function (sr) {
+        sr.pts.forEach(function (pt) { if (pt.d >= vd[0] && pt.d <= vd[1]) vus.push(pt.v); });
+      });
+      if (opt.ref != null) vus.push(opt.ref);
+      if (vus.length > 1) {
+        var lo2 = d3.min(vus), hi2 = d3.max(vus);
+        var pad2 = (hi2 - lo2 || Math.abs(hi2) * 0.02 || 1) * 0.06;
+        y.domain([lo2 - pad2, hi2 + pad2]);
+        ticks = y.ticks(4);
+      }
+    }
+
+    ticks.forEach(function (t) {
+      svg.append("line").attr("x1", m.left).attr("x2", W - m.right).attr("y1", y(t)).attr("y2", y(t))
+        .attr("stroke", "var(--cds-chart-grid)").attr("stroke-width", 1);
+      svg.append("text").attr("class", "bi-tick").attr("x", m.left - 6).attr("y", y(t))
+        .attr("text-anchor", "end").attr("dominant-baseline", "middle").text(opt.fmtY(t));
+    });
+
+    if (opt.ref != null) {
+      svg.append("line").attr("x1", m.left).attr("x2", W - m.right)
+        .attr("y1", y(opt.ref)).attr("y2", y(opt.ref))
+        .attr("stroke", "var(--cds-chart-reference)").attr("stroke-width", 1)
+        .attr("stroke-dasharray", "4 3");
+      if (opt.refLabel) {
+        svg.append("text").attr("class", "bi-endlab").attr("x", W - m.right - 4)
+          .attr("y", y(opt.ref) - 7).attr("text-anchor", "end")
+          .attr("fill", "var(--color-fg-muted)").text(opt.refLabel);
+      }
+    }
+
+    var keep = [];
+    for (var i = dates.length - 1; i >= 0; i--) {
+      var cx = x(dates[i]), half = labUn / 2 + 8;
+      if (cx < m.left - 1 || cx > W - m.right + 1) continue;
+      var clash = keep.some(function (k) { return Math.abs(k.cx - cx) < half + k.half; });
+      if (!clash) keep.push({ cx: cx, half: half, i: i });
+    }
+    keep.forEach(function (k) {
+      svg.append("text").attr("class", "bi-tick").attr("x", k.cx).attr("y", H - 6)
+        .attr("text-anchor", "middle").text(B.dayShort(dates[k.i]));
+    });
+
+    var clipId = "bi-clip-" + hostId;
+    svg.append("clipPath").attr("id", clipId).append("rect")
+      .attr("x", m.left).attr("y", m.top)
+      .attr("width", Math.max(1, W - m.left - m.right))
+      .attr("height", Math.max(1, H - m.top - m.bottom));
+    var plot = svg.append("g").attr("clip-path", "url(#" + clipId + ")");
+
+    var ligne = d3.line().x(function (p) { return x(p.d); }).y(function (p) { return y(p.v); });
+    series.forEach(function (s) {
+      if (s.pts.length > 1) {
+        plot.append("path").datum(s.pts).attr("fill", "none").attr("stroke", s.couleur)
+          .attr("stroke-width", 2).attr("stroke-linecap", "round")
+          .attr("stroke-linejoin", "round")
+          .attr("vector-effect", "non-scaling-stroke").attr("d", ligne);
+      }
+      // Au-delà d'une quinzaine de points les pastilles noient la courbe :
+      // on ne garde alors que celle du bout, qui sert de repère avec la légende.
+      var montrerTout = s.pts.length <= 15;
+      s.pts.forEach(function (p, i) {
+        var dernier = i === s.pts.length - 1;
+        if (!montrerTout && !dernier) return;
+        plot.append("circle").attr("cx", x(p.d)).attr("cy", y(p.v))
+          .attr("r", dernier ? 3.5 : 3).attr("fill", s.couleur);
+      });
+    });
+    if (seule) {
+      var dernier = seule.pts[seule.pts.length - 1];
+      plot.append("text").attr("class", "bi-endlab").attr("x", x(dernier.d) + 8).attr("y", y(dernier.v))
+        .attr("dominant-baseline", "middle").attr("fill", seule.couleur).text(endTxt);
+    }
+
+    var tip = tipBox(host), hov = plot.append("g");
+    var surface = svg.append("rect").attr("x", m.left).attr("y", m.top)
+      .attr("width", Math.max(1, W - m.left - m.right)).attr("height", Math.max(1, H - m.top - m.bottom))
+      .attr("fill", "transparent")
+      .on("pointerleave", function () { tip.style.opacity = 0; hov.selectAll("*").remove(); })
+      .on("pointermove", function (ev) {
+        var box = this.getBoundingClientRect();
+        var sc = box.width / Math.max(1, W - m.left - m.right);
+        var px = m.left + (ev.clientX - box.left) / sc;
+        var jour = dates[d3.leastIndex(dates, function (d) { return Math.abs(x(d) - px); })];
+        hov.selectAll("*").remove();
+        tip.textContent = "";
+        var tete = document.createElement("div");
+        tete.className = "bi-tipd"; tete.textContent = B.dayLong(jour);
+        tip.appendChild(tete);
+        series.forEach(function (s) {
+          var p = s.pts.filter(function (o) { return +o.d === +jour; })[0];
+          if (!p) return;
+          hov.append("circle").attr("cx", x(p.d)).attr("cy", y(p.v)).attr("r", 5.5)
+            .attr("fill", "none").attr("stroke", s.couleur).attr("stroke-width", 2);
+          var row = document.createElement("div");
+          row.className = "bi-tipr";
+          if (!seule) {
+            var dot = document.createElement("span");
+            dot.className = "bi-dot"; dot.style.background = s.couleur;
+            row.appendChild(dot);
+          }
+          var nom = document.createElement("span"); nom.textContent = s.nom;
+          var val = document.createElement("span");
+          val.className = "bi-legv"; val.textContent = opt.fmtY(p.v);
+          row.appendChild(nom); row.appendChild(val);
+          tip.appendChild(row);
+        });
+        tip.style.opacity = 1;
+        placeTip(tip, host, ev);
+      });
+
+    if (opt.zoomable !== false && tous.length > 2) {
+      var zb = d3.zoom().scaleExtent([1, 50])
+        .extent([[m.left, m.top], [W - m.right, H - m.bottom]])
+        .translateExtent([[m.left, m.top], [W - m.right, H - m.bottom]])
+        .on("zoom", function (ev) {
+          // Pendant le geste on ne redessine pas : détruire l'élément sous le
+          // doigt couperait la pince en deux. On étire horizontalement, et le
+          // vrai tracé se refait au relâchement.
+          var kr = ev.transform.k / tr.k;
+          plot.attr("transform", "translate(" + (ev.transform.x - tr.x * kr) + ",0) scale(" + kr + ",1)");
+          tip.style.opacity = 0;
+        })
+        .on("end", function (ev) {
+          plot.attr("transform", null);
+          zoomT[hostId] = ev.transform;
+          majBoutonZoom();
+          drawSeries(hostId, series, opt);
+        });
+      surface.node().__zoom = tr;
+      surface.call(zb).on("dblclick.zoom", null)
+        .on("dblclick", function () {
+          zoomT[hostId] = d3.zoomIdentity;
+          majBoutonZoom();
+          drawSeries(hostId, series, opt);
+        });
+    }
+  }
+
+  function drawPerf(rows) {
+    var host = document.getElementById("ch-perf");
+    host.textContent = "";
+    if (!rows.length) return;
+    rows = rows.slice().sort(function (a, b) { return d3.descending(a.perf_pct, b.perf_pct); });
+
+    var W = Math.max(240, host.clientWidth || 320);
+    var hb = 26, ecart = 12, H = rows.length * (hb + ecart) + 28;
+    host.style.minHeight = H + "px";
+    var svg = d3.select(host).append("svg").attr("width", "100%")
+      .attr("viewBox", "0 0 " + W + " " + H).attr("role", "img")
+      .attr("aria-label", "Performance de chaque ligne en pourcentage");
+    if (!drawn.perf) { svg.attr("class", "bi-fade"); drawn.perf = true; }
+
+    var nomW = 0, valW = 0;
+    rows.forEach(function (r) {
+      nomW = Math.max(nomW, mesure(svg, "bi-tick", r.ticker));
+      valW = Math.max(valW, mesure(svg, "bi-endlab", B.pct(r.perf_pct)));
+    });
+
+    var m = { left: Math.min(nomW + 10, W * 0.42), right: valW + 10, top: 6 };
+    var lo = Math.min(0, d3.min(rows, function (r) { return r.perf_pct; }));
+    var hi = Math.max(0, d3.max(rows, function (r) { return r.perf_pct; }));
+    var x = d3.scaleLinear([lo, hi * 1.08 || 1], [m.left, W - m.right]);
+    var zero = x(0);
+
+    svg.append("line").attr("x1", zero).attr("x2", zero).attr("y1", m.top)
+      .attr("y2", H - 22).attr("stroke", "var(--cds-chart-axis)").attr("stroke-width", 1);
+
+    var tip = tipBox(host), choisie = params().ligne;
+
+    rows.forEach(function (r, i) {
+      var yb = m.top + i * (hb + ecart), pos = r.perf_pct >= 0;
+      var couleur = pos ? dash.colors[0] : "var(--cds-chart-status-critical)";
+      svg.append("text").attr("class", "bi-tick").attr("x", m.left - 8)
+        .attr("y", yb + hb / 2).attr("text-anchor", "end").attr("dominant-baseline", "middle")
+        .attr("fill", choisie && choisie !== r.ligne ? "var(--color-fg-muted)" : "var(--color-fg)")
+        .text(r.ticker);
+      svg.append("rect").attr("x", pos ? zero : x(r.perf_pct)).attr("y", yb)
+        .attr("width", Math.max(1, Math.abs(x(r.perf_pct) - zero)))
+        .attr("height", hb).attr("rx", 4).attr("fill", couleur)
+        .attr("opacity", choisie && choisie !== r.ligne ? 0.35 : 1)
+        .style("cursor", "pointer")
+        .on("click", function () {
+          dash.setParams({ ligne: params().ligne === r.ligne ? null : r.ligne });
+        })
+        .on("pointerleave", function () { tip.style.opacity = 0; })
+        .on("pointermove", function (ev) {
+          tip.textContent = "";
+          var t = document.createElement("div");
+          t.className = "bi-tipd"; t.textContent = r.ligne;
+          var a = document.createElement("div"); a.textContent = "Investi " + B.eur(r.investi);
+          var b = document.createElement("div"); b.textContent = "Valeur " + B.eur(r.valeur);
+          var c = document.createElement("div");
+          c.textContent = "Gain " + B.eurs(r.pv) + "  ·  " + B.pct(r.perf_pct);
+          tip.appendChild(t); tip.appendChild(a); tip.appendChild(b); tip.appendChild(c);
+          tip.style.opacity = 1;
+          placeTip(tip, host, ev);
+        });
+      svg.append("text").attr("class", "bi-endlab")
+        .attr("x", (pos ? x(r.perf_pct) : zero) + 6).attr("y", yb + hb / 2)
+        .attr("dominant-baseline", "middle").attr("fill", couleur).text(B.pct(r.perf_pct));
+    });
+  }
+
+  function drawAlloc() {
+    var bar = document.getElementById("alloc-bar"), leg = document.getElementById("alloc-leg");
+    bar.textContent = ""; leg.textContent = "";
+    var good = ok("allocation") && rowsOf("allocation").length > 0;
+    bar.classList.toggle("dash-skeleton", !good);
+    if (!good) return;
+    var couleurs = [dash.colors[0], dash.colors[1], "var(--cds-chart-muted)"];
+    rowsOf("allocation").forEach(function (a, i) {
+      var seg = document.createElement("span");
+      seg.style.width = a.part_pct + "%";
+      seg.style.background = couleurs[i];
+      bar.appendChild(seg);
+      var row = document.createElement("div");
+      var dot = document.createElement("span");
+      dot.className = "bi-dot"; dot.style.background = couleurs[i];
+      var nom = document.createElement("span"); nom.textContent = a.categorie;
+      var val = document.createElement("span");
+      val.className = "bi-legv";
+      val.textContent = B.eur(a.valeur_eur) + " · " + B.pctp(a.part_pct);
+      row.appendChild(dot); row.appendChild(nom); row.appendChild(val);
+      leg.appendChild(row);
+    });
+  }
+
+  dash.onData(function () {
+    var p = params();
+
+    var planOk = ok("plan");
+    [["action", function (v) { return v; }],
+     ["action_montant", function (v) { return B.eur(Number(v)); }],
+     ["action_frais", function (v) { return B.eur(Number(v)); }],
+     ["seuil_frais", function (v) { return B.eur(Number(v)); }],
+     ["prochain_versement", function (v) { return B.fmtDate(v); }],
+     ["prochain_versement_montant", function (v) { return B.eur(Number(v)); }],
+     ["consigne", function (v) { return v; }],
+     ["maj", function (v) { return "chiffres arrêtés au " + v; }]].forEach(function (e) {
+      all('[data-source="plan"][data-where="cle=' + e[0] + '"]').forEach(function (el) {
+        put(el, planOk ? e[1](planVal(e[0])) : null, planOk);
+      });
+    });
+
+    one("total", "total", function (v) { return B.eur(v); });
+    one("variation", "jour", function (v) { return B.eurs(v); });
+    one("garde_fous", "r_pct", function (v) { return B.pctp(v); });
+    one("garde_fous", "manque", function (v) { return B.eur(v); });
+    one("garde_fous", "plafond_ligne", function (v) { return B.eur(v); });
+    one("perf_totale", "pv", function (v) { return B.eurs(v); });
+    one("perf_totale", "investi", function (v) { return B.eur(v); });
+    one("perf_totale", "perf_pct", function (v) { return "(" + B.pct(v) + ")"; });
+    one("stm_ecart", "cloture", function (v) { return B.eur(v, 3); });
+    one("stm_ecart", "date", function (v) { return B.fmtDate(v); });
+    one("stm_ecart", "ecart_pct", function (v) { return B.pct(v); });
+
+    if (ok("variation") && rowsOf("variation").length) signe(q("#h-jour"), rowsOf("variation")[0].jour);
+    if (ok("perf_totale") && rowsOf("perf_totale").length) signe(q("#h-pv"), rowsOf("perf_totale")[0].pv);
+
+    var gf = ok("garde_fous") && rowsOf("garde_fous").length ? rowsOf("garde_fous")[0] : null;
+    q("#rail").hidden = !(gf && gf.r_pct > 25);
+
+    drawAlloc();
+
+    var positions = ok("positions") ? rowsOf("positions") : [];
+    remplirSelect(selPoche, Array.from(new Set(positions.map(function (r) { return r.poche; }))),
+      p.poche, "Tous");
+    remplirSelect(selCat, Array.from(new Set(positions.map(function (r) { return r.categorie; }))),
+      p.categorie, "Toutes");
+    remplirSelect(selLigne, lignesVisibles(), p.ligne, "Toutes");
+
+    fillTable("#t-comptes", ok("comptes") ? rowsOf("comptes") : [], [
+      function (r) { return r.compte; },
+      function (r) { return B.eur(Number(r.titres_eur)); },
+      function (r) { return B.eur(Number(r.especes_eur)); },
+      function (r) { return B.eur(Number(r.total_eur)); },
+      function (r) { return B.eurs(Number(r.variation_jour_eur)); }
+    ], function (r) { return r.compte; });
+
+    var perf = ok("perf") ? rowsOf("perf") : [];
+    function perfDe(nom) { return perf.filter(function (o) { return o.ligne === nom; })[0] || {}; }
+    var visiblesPos = visibles(positions).filter(function (r) { return !p.ligne || r.ligne === p.ligne; });
+    fillTable("#t-positions", visiblesPos, [
+      function (r) { return r.ligne; },
+      function (r) { return r.poche; },
+      function (r) { return r.categorie; },
+      function (r) { var o = perfDe(r.ligne); return o.investi == null ? "—" : B.eur(o.investi); },
+      function (r) { return B.eur(Number(r.valeur_eur)); },
+      function (r) { var o = perfDe(r.ligne); return o.perf_pct == null ? "—" : B.pct(o.perf_pct); }
+    ], function (r) { return r.ligne; });
+
+    one("annee_2026", "gain", function (v) { return B.eurs(v); });
+    one("annee_2026", "avant", function (v) { return B.eurs(v); });
+    one("annee_2026", "part_avant", function (v) { return B.pctp(v); });
+    one("annee_2026", "creux", function (v) { return B.eurs(v); });
+    one("annee_2026", "plus_bas", function (v) { return B.eur(v); });
+    one("annee_2026", "debut", function (v) { return B.eur(v); });
+    one("annee_2026", "date_plus_bas", function (v) { return B.fmtDate(v); });
+
+    fillTable("#t-2026", ok("perf_2026") ? rowsOf("perf_2026") : [], [
+      function (r) { return r.ticker; },
+      function (r) { return B.eur(Number(r.valeur_jan)); },
+      function (r) { return B.eur(Number(r.valeur_oct)); },
+      function (r) { return B.eurs(Number(r.gain_eur)); },
+      function (r) { return B.pct(Number(r.perf_pct)); }
+    ], function (r) { return r.ticker; });
+
+    var ah = document.getElementById("ch-2026");
+    if (ok("portefeuille_2026")) {
+      ah.classList.remove("dash-skeleton");
+      siChange("ch-2026", rowsOf("portefeuille_2026").length + "|" + ah.clientWidth, function () {
+      drawSeries("ch-2026", [{
+        nom: "Portefeuille", couleur: dash.colors[0],
+        pts: rowsOf("portefeuille_2026").map(function (r) {
+          return { d: B.parseDay(r.date), v: Number(r.etoro_eur) };
+        }).filter(function (o) { return !isNaN(o.v) && o.v > 0 && !isNaN(o.d); })
+      }], { fmtY: function (v) { return B.eur(v, 0); }, height: 260,
+            aria: "Valeur du portefeuille en euros, jour par jour en 2026" });
+      });
+    } else { ah.classList.add("dash-skeleton"); ah.textContent = ""; signatures["ch-2026"] = null; }
+
+    var ph = document.getElementById("ch-perf");
+    if (ok("perf")) {
+      ph.classList.remove("dash-skeleton");
+      siChange("ch-perf", [p.poche, p.categorie, p.ligne, perf.length, ph.clientWidth].join("|"),
+        function () { drawPerf(visibles(perf)); });
+    } else { ph.classList.add("dash-skeleton"); ph.textContent = ""; signatures["ch-perf"] = null; }
+
+    var vh = document.getElementById("ch-valeurs"), vleg = document.getElementById("val-leg");
+    vleg.textContent = "";
+    if (ok("valeurs")) {
+      vh.classList.remove("dash-skeleton");
+      var periode = p.periode || "2026", mode = p.mode || "pct";
+      var echelle = p.echelle || "auto";
+      all("#seg-periode button").forEach(function (b) {
+        b.setAttribute("aria-pressed", b.dataset.p ? b.dataset.p === periode : b.dataset.m === mode);
+      });
+      all("#seg-echelle button").forEach(function (b) {
+        if (b.dataset.e) b.setAttribute("aria-pressed", b.dataset.e === echelle);
+      });
+      majBoutonZoom();
+      var toutes = rowsOf("valeurs").map(function (r) { return r.date; }).sort();
+      var fin = toutes[toutes.length - 1] || "2026-10-15";
+      var jours = { "1m": 31, "3m": 92, "6m": 184 }[periode];
+      var depuis = jours
+        ? d3.utcFormat("%Y-%m-%d")(d3.utcDay.offset(B.parseDay(fin), -jours))
+        : "2026-01-01";
+
+      var retenues = lignesVisibles().filter(function (n) { return !p.ligne || n === p.ligne; });
+      var parLigne = d3.group(rowsOf("valeurs"), function (r) { return r.ligne; });
+      var tickerDe = function (nom) {
+        var o = positions.filter(function (x) { return x.ligne === nom; })[0];
+        return (o && o.ticker) ? o.ticker : nom;
+      };
+      var series = retenues.map(function (nom) {
+        var pts = (parLigne.get(nom) || []).filter(function (r) { return r.date >= depuis; })
+          .map(function (r) { return { d: B.parseDay(r.date), v: Number(r.valeur_eur) }; })
+          .filter(function (o) { return !isNaN(o.v) && !isNaN(o.d); })
+          .sort(function (a, b) { return a.d - b.d; });
+        if (mode === "pct" && pts.length) {
+          var base = pts[0].v;
+          pts = pts.map(function (o) { return { d: o.d, v: (o.v / base - 1) * 100 }; });
+        }
+        return { nom: tickerDe(nom), complet: nom, pts: pts };
+      }).filter(function (s) { return s.pts.length > 0; })
+        .sort(function (a, b) {
+          return d3.descending(a.pts[a.pts.length - 1].v, b.pts[b.pts.length - 1].v);
+        });
+      series.forEach(function (s, i) { s.couleur = dash.colors[i % dash.colors.length]; });
+
+      var ref = null, refLab = null;
+      if (mode === "pct") { ref = 0; refLab = null; }
+      else if (series.length === 1) {
+        var o = perfDe(series[0].complet);
+        if (o.investi != null) { ref = o.investi; refLab = "ce que tu as mis"; }
+      }
+      drawSeries("ch-valeurs", series, {
+        fmtY: mode === "pct" ? function (v) { return B.pct(v); } : function (v) { return B.eur(v, 0); },
+        height: (vh.clientWidth || 320) >= 520 ? 290 : 330, ref: ref, refLabel: refLab,
+        echelle: echelle,
+        aria: mode === "pct" ? "Évolution de chaque ligne en pourcentage, par date"
+                             : "Valeur de chaque ligne en euros, par date"
+      });
+
+      if (series.length > 1) {
+        series.forEach(function (s) {
+          var btn = document.createElement("button");
+          btn.type = "button";
+          var dot = document.createElement("span");
+          dot.className = "bi-dot"; dot.style.background = s.couleur;
+          var nom = document.createElement("span"); nom.textContent = s.nom;
+          var val = document.createElement("span");
+          val.className = "bi-legv";
+          val.textContent = mode === "pct" ? B.pct(s.pts[s.pts.length - 1].v)
+                                           : B.eur(s.pts[s.pts.length - 1].v, 0);
+          btn.appendChild(dot); btn.appendChild(nom); btn.appendChild(val);
+          btn.addEventListener("click", function () { dash.setParams({ ligne: s.complet }); });
+          vleg.appendChild(btn);
+        });
+      } else if (series.length === 1) {
+        var btn2 = document.createElement("button");
+        btn2.type = "button";
+        btn2.textContent = "← revenir à toutes tes lignes";
+        btn2.addEventListener("click", function () { dash.setParams({ ligne: null }); });
+        vleg.appendChild(btn2);
+      }
+    } else { vh.classList.add("dash-skeleton"); vh.textContent = ""; }
+
+    var wh = document.getElementById("ch-wpea");
+    if (ok("coeur_wpea")) {
+      wh.classList.remove("dash-skeleton");
+      siChange("ch-wpea", rowsOf("coeur_wpea").length + "|" + wh.clientWidth, function () {
+      drawSeries("ch-wpea", [{
+        nom: "WPEA", couleur: dash.colors[0],
+        pts: rowsOf("coeur_wpea").map(function (r) {
+          return { d: B.parseDay(r.date), v: Number(r.cloture) };
+        }).filter(function (o) { return !isNaN(o.v) && !isNaN(o.d); })
+      }], { fmtY: function (v) { return B.eur(v, 3); }, aria: "Cours du WPEA en euros, par date" });
+      });
+    } else { wh.classList.add("dash-skeleton"); wh.textContent = ""; signatures["ch-wpea"] = null; }
+
+    var cs = ok("cours_seuil") ? rowsOf("cours_seuil") : [];
+    var ec = ok("ecarts") ? rowsOf("ecarts") : [];
+    function byRang(list, rang) {
+      return list.filter(function (o) { return String(o.rang) === String(rang); })[0] || {};
+    }
+    fillTable("#t-classement", ok("classement") ? rowsOf("classement") : [], [
+      function (r) { return r.rang; },
+      function (r) { return r.candidat; },
+      function (r) { return byRang(cs, r.rang).cours_txt || "—"; },
+      function (r) { return byRang(cs, r.rang).seuil_txt || "—"; },
+      function (r) {
+        var e = byRang(ec, r.rang).ecart_pct;
+        return (e === null || e === undefined) ? "—" : B.pct(e);
+      },
+      function (r) { return r.statut; }
+    ]);
+
+    var sh = document.getElementById("ch-stm");
+    if (ok("stm_seuil")) {
+      var sr = rowsOf("stm_seuil");
+      sh.classList.remove("dash-skeleton");
+      siChange("ch-stm", sr.length + "|" + sh.clientWidth, function () {
+      drawSeries("ch-stm", [{
+        nom: "STM", couleur: dash.colors[1],
+        pts: sr.map(function (r) { return { d: B.parseDay(r.date), v: Number(r.cloture) }; })
+              .filter(function (o) { return !isNaN(o.v) && !isNaN(o.d); })
+      }], { fmtY: function (v) { return B.eur(v); },
+            ref: sr.length ? Number(sr[0].seuil) : null,
+            aria: "Clôture de STMicroelectronics en euros, et son seuil d'achat" });
+      });
+    } else { sh.classList.add("dash-skeleton"); sh.textContent = ""; signatures["ch-stm"] = null; }
+  });
+})();
+</script>
