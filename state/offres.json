@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-11-24",
+ "maj": "2026-11-25",
  "offres": [
   {
    "d": "2026-10-03",
@@ -6382,6 +6382,74 @@
     "Part d'événementiel (conférences, championnats)"
    ],
    "at": "Grande fédération sportive internationale, bilingue FR/EN."
+  },
+  {
+   "d": "2026-11-25",
+   "b": 85,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "solide",
+   "t": "Marketing Operations Specialist, SEO/AEO",
+   "c": "Kraken",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "2+ ans de SEO pratique",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/marketing-operations-specialist-seo-aeo-at-kraken-4494330637",
+   "n": "Mettre en œuvre les améliorations SEO et AEO (visibilité dans les réponses des IA) du site de Kraken : métadonnées, maillage interne, données structurées, pages construites et vérifiées dans le CMS.",
+   "fit": {
+    "m": 2,
+    "da": 1,
+    "ia": 2,
+    "pct": 60
+   },
+   "ms": [
+    "Livrer les améliorations SEO/AEO sur le site",
+    "Construire et vérifier des pages dans le CMS"
+   ],
+   "inf": [
+    "2+ ans de SEO pratique demandés",
+    "Poste d'exécution, très rigoureux"
+   ],
+   "at": "L'AEO (être cité par les IA) est un angle d'avenir ; ton site codé toi-même est un bon exemple."
+  },
+  {
+   "d": "2026-11-25",
+   "b": 85,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Responsable marketing e-commerce",
+   "c": "Nano Filter SA (filtration d'eau)",
+   "l": "Lausanne",
+   "dist": "Lausanne",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "non chiffrée",
+   "lg": "FR",
+   "g": false,
+   "u": "https://ch.indeed.com/viewjob?jk=edd88b0dc88ca4e6",
+   "n": "Prendre en charge les campagnes d'une marque suisse de filtres à eau : copywriting (emails, pages de vente, advertorials, scripts vidéo, pubs), pilotage des campagnes, Shopify et Klaviyo, coordination de prestataires.",
+   "fit": {
+    "m": 3,
+    "da": 1,
+    "ia": 0,
+    "pct": 60
+   },
+   "ms": [
+    "Copywriting de conversion",
+    "Campagnes e-commerce (Shopify, Klaviyo)",
+    "Coordination équipe et prestataires"
+   ],
+   "inf": [
+    "⚠️ non vérifiée : Indeed refuse notre vérification. 🔎 cherche « Responsable marketing e-commerce Nano Filter Lausanne »"
+   ],
+   "at": "Rôle complet et autonome dans une petite marque lausannoise."
   }
  ]
 }
