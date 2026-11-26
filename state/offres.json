@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-11-25",
+ "maj": "2026-11-26",
  "offres": [
   {
    "d": "2026-10-03",
@@ -6450,6 +6450,108 @@
     "⚠️ non vérifiée : Indeed refuse notre vérification. 🔎 cherche « Responsable marketing e-commerce Nano Filter Lausanne »"
    ],
    "at": "Rôle complet et autonome dans une petite marque lausannoise."
+  },
+  {
+   "d": "2026-11-26",
+   "b": 86,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Copywriter expérimenté",
+   "c": "Vauban Éditions (newsletters financières)",
+   "l": "Lausanne",
+   "dist": "Lausanne",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "« expérimenté » (non chiffré)",
+   "lg": "FR + EN courant",
+   "g": false,
+   "u": "https://www.jobs.ch/fr/offres-emplois/detail/0b8c1d3f-f66c-4efc-a21e-79530e851b40/",
+   "n": "Écrire des promotions qui vendent pour un éditeur financier indépendant (130 000 lecteurs), avec des contenus américains chaque semaine ; une vraie maîtrise des outils d'IA est exigée.",
+   "fit": {
+    "m": 2,
+    "da": 0,
+    "ia": 2,
+    "pct": 52
+   },
+   "ms": [
+    "Copywriting de vente (direct response)",
+    "Adapter des contenus américains"
+   ],
+   "inf": [
+    "Maîtrise des outils d'IA exigée : un plus pour toi",
+    "Univers investissement / finance"
+   ],
+   "at": "L'annonce valorise l'usage quotidien de l'IA."
+  },
+  {
+   "d": "2026-11-26",
+   "b": 86,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Copywriter expérimenté",
+   "c": "PureSanté Éditions (groupe Vivara)",
+   "l": "Lausanne",
+   "dist": "Lausanne",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "3 ans en direct response",
+   "lg": "FR (+ lecture EN)",
+   "g": false,
+   "u": "https://www.jobs.ch/fr/offres-emplois/detail/2a64300f-75c7-4b19-8f42-20394172c38b/",
+   "n": "Écrire lettres de vente et emails pour un média de santé naturelle (500 000 lecteurs, 7 newsletters).",
+   "fit": {
+    "m": 2,
+    "da": 0,
+    "ia": 0,
+    "pct": 42
+   },
+   "ms": [
+    "Lettres de vente et objets d'emails",
+    "Vulgarisation de sujets scientifiques"
+   ],
+   "inf": [
+    "⚠️ 3 ans de copywriting direct response avec portfolio chiffré",
+    "Univers santé naturelle / spiritualité"
+   ],
+   "at": "Même immeuble que Vauban (groupe lausannois de newsletters)."
+  },
+  {
+   "d": "2026-11-26",
+   "b": 86,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Performance Marketing & Creator Success Lead",
+   "c": "Jobgether (plateforme créateurs non nommée)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "expérimenté (non chiffré)",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/performance-marketing-creator-success-lead-at-jobgether-4494990448",
+   "n": "Piloter les campagnes d'acquisition payantes et accompagner les créateurs partenaires.",
+   "fit": {
+    "m": 2,
+    "da": 1,
+    "ia": 0,
+    "pct": 38
+   },
+   "ms": [
+    "Acquisition payante",
+    "Accompagnement de créateurs"
+   ],
+   "inf": [
+    "Poste orienté performance",
+    "Employeur non nommé"
+   ],
+   "at": "Lien avec l'écosystème créateurs."
   }
  ]
 }
