@@ -1,7 +1,7 @@
 rang,candidat,cours,devise,seuil,statut
-1,Cœur World (WPEA),6.83,€,,ACHAT — 44 parts = 300.52 € (tout le cash du PEA) · R passe de 29.27 % à 24.05 %
-2,STMicroelectronics,35.92,€,42,14.5 % sous le seuil (le plus profond atteint) MAIS son avance sur ASML tombe de +8.37 pt à +2.18 pt — moins cher et moins distinctif
-3,Eli Lilly,1407.59,$,PER 33,DORMANTE — PER 45.7, s'éloigne
+1,Cœur World (WPEA),6.71,€,,ACHAT — 45 parts = 301.95 € (tout le cash du PEA) · R passe de 29.00 % à 23.73 %
+2,STMicroelectronics,34.24,€,42 (SUSPENDU),DÉCLENCHEUR SUSPENDU le 26/11 — 18.5 % sous le seuil sans thèse réinstruite · réarmement : thèse écrite sur le cycle semi européen OU fait émetteur daté · PAS le cours
+3,Eli Lilly,1392.22,$,PER 33,DORMANTE — PER ~45
 4,Magnum Ice Cream,,€,,Dormant
-radar,Vallourec,14.67,€,,RADAR — 5e séance de baisse d'affilée · le marché ne croit pas au « problème temporaire »
-tuée,ICAPE Holding,9.70,€,,TUÉE le 13/11 — CMD du 24/11 relève la croissance 2026 à ≥ 24 % mais le titre reste à ~1 % de son plus haut : la bonne nouvelle est dans le prix
+radar,Vallourec,14.55,€,,RADAR — 6e séance de baisse d'affilée sans fait nouveau depuis le T3
+tuée,ICAPE Holding,9.74,€,,TUÉE le 13/11 — CMD du 24/11 bon mais déjà dans le prix (~1 % sous le plus haut annuel)

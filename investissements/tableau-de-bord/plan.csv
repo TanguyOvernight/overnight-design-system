@@ -1,9 +1,10 @@
 cle,libelle,valeur
-action,Action prioritaire,VENDRE la moitié de Nvidia (motif SEC inchangé) ET acheter 44 parts de WPEA
-action_parts,Nombre de parts à saisir,44
-montant,Montant de l'achat WPEA,300.52 €
-vente,Vente Nvidia,0.53 part — environ 75 € — ramène la ligne de 37.1 % à ~19 % de la poche risquée
-motif_vente,Pourquoi vendre,L'enquête SEC sur la comptabilité est inchangée. Le retour de Huang le 23/11 n'y répond pas.
-r_apres,Part risquée après les deux opérations,20.50 %
-jours,Jours depuis la première recommandation,40
+action,Action prioritaire,VENDRE la moitié de Nvidia ET acheter 45 parts de WPEA
+action_parts,Nombre de parts à saisir,45
+montant,Montant de l'achat WPEA,301.95 €
+vente,Vente Nvidia,0.53 part — environ 72 € — ramène la ligne de 36.5 % à ~19 % de la poche risquée
+motif_vente,Pourquoi vendre,L'enquête SEC sur la comptabilité est inchangée.
+r_apres,Part risquée après les deux opérations,20.28 %
+jours,Jours depuis la première recommandation,41
+stm,Déclencheur STM,SUSPENDU le 26/11 — ne pas acheter sur le seuil de 42 € tant que la thèse n'est pas réinstruite
 frais_regle,Pourquoi 0 €,Premier ordre du mois gratuit en formule Starter si le montant reste sous 500 € — à confirmer sur l'écran de validation
