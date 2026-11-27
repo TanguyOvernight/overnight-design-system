@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-11-26",
+ "maj": "2026-11-27",
  "offres": [
   {
    "d": "2026-10-03",
@@ -6552,6 +6552,73 @@
     "Employeur non nommé"
    ],
    "at": "Lien avec l'écosystème créateurs."
+  },
+  {
+   "d": "2026-11-27",
+   "b": 87,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Communications & Content Officer (EBU Sport / Eurovision Sport)",
+   "c": "UER / EBU (Union européenne de radio-télévision)",
+   "l": "Lausanne",
+   "dist": "Lausanne",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "non chiffrée",
+   "lg": "EN (+ FR)",
+   "g": false,
+   "u": null,
+   "n": "Porter au quotidien la communication d'EBU Sport et Eurovision Sport : plans de communication, communiqués, relations médias, contenus « social-first », stratégie réseaux sociaux, avec des outils d'IA pour la création de contenus.",
+   "fit": {
+    "m": 3,
+    "da": 2,
+    "ia": 1,
+    "pct": 62
+   },
+   "ms": [
+    "Plans de communication et communiqués",
+    "Contenus social-first et réseaux",
+    "Outils d'IA pour la création"
+   ],
+   "inf": [
+    "⚠️ non vérifiée : seuls des agrégateurs bloqués. 🔎 cherche « Communications and Content Officer EBU Sport » sur le site carrière de l'EBU ou LinkedIn"
+   ],
+   "at": "Sport + média international + IA dans le workflow : très bon match."
+  },
+  {
+   "d": "2026-11-27",
+   "b": 87,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Copywriter (F/H/N)",
+   "c": "Michael Page (client non nommé)",
+   "l": "Lausanne",
+   "dist": "Lausanne",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "non chiffrée",
+   "lg": "FR + EN courant",
+   "g": false,
+   "u": "https://www.michaelpage.ch/fr/job-detail/copywriter-fhn/ref/jn-112026-7153374?lang=en",
+   "n": "Copywriting orienté acquisition et conversion : funnels marketing, emails, délivrabilité, exploitation de contenus anglophones.",
+   "fit": {
+    "m": 2,
+    "da": 0,
+    "ia": 0,
+    "pct": 48
+   },
+   "ms": [
+    "Copywriting de conversion",
+    "Email marketing et funnels"
+   ],
+   "inf": [
+    "Client non nommé (cabinet de recrutement)"
+   ],
+   "at": "Même famille de postes que Vauban / PureSanté cette semaine."
   }
  ]
 }
