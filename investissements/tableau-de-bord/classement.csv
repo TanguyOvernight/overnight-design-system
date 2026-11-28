@@ -1,7 +1,7 @@
 rang,candidat,cours,devise,seuil,statut
-1,Cœur World (WPEA),6.89,€,,ACHAT — 44 parts = 303.16 € (tout le cash du PEA) · R passe de 28.60 % à 23.44 %
-2,STMicroelectronics,35.77,€,42 (SUSPENDU),DÉCLENCHEUR SUSPENDU le 26/11 — 14.8 % sous le seuil sans thèse réinstruite · l'avance sur ASML est remontée à +3.92 pt après être tombée de 8.37 à 2.18 : la suspension ne tient pas à cet indicateur
-3,Eli Lilly,1392.22,$,PER 33,DORMANTE — PER ~45
+1,Cœur World (WPEA),6.97,€,,ACHAT — 43 parts = 299.71 € (tout le cash du PEA) · R passe de 28.91 % à 23.81 %
+2,STMicroelectronics,37.15,€,42 (SUSPENDU),DÉCLENCHEUR SUSPENDU — 11.6 % sous le seuil · l'écart hebdo vendredi-vendredi n'est que de -1.7 pt contre le CAC (et non -11.4 pt comme le laissait croire la fenêtre lundi-jeudi) · la suspension tient sur la thèse non réinstruite, pas sur l'écart
+3,Eli Lilly,1392.38,$,PER 33,DORMANTE — PER 45.2
 4,Magnum Ice Cream,,€,,Dormant
-radar,Vallourec,15.12,€,,RADAR — +3.92 % le 26/11, fin d'une série de 6 baisses · au niveau de son plus bas annuel · toujours aucun fait publié depuis le T3
-tuée,ICAPE Holding,9.80,€,,TUÉE le 13/11 — au plus haut annuel
+radar,Vallourec,15.56,€,,RADAR — +0.52 % sur la semaine après 6 baisses · toujours aucun fait publié depuis le T3
+tuée,ICAPE Holding,9.88,€,,TUÉE le 13/11 — +5.11 % sur la semaine, au plus haut annuel

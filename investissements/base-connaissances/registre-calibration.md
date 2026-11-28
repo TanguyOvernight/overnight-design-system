@@ -4905,3 +4905,80 @@ attente déçue, c'est un référent dissous.
 
 **Conclusion de l'audit** : **une seule vraie violation, C069**, et elle est réparée *(appel
 rouvert, score retiré)*. Le registre n'a pas d'autre résolution anticipée illégitime.
+
+---
+
+# 📅 28/11/2026 — REVUE · je retire mon autocritique du 21/11 sur C061, et R75
+
+## 1. 🔴 Rétractation : le 10 % de C061 n'était pas trop bas
+
+Le **21/11**, S&P à **6 910** après sept séances de baisse consécutives, j'écrivais dans la
+Vérif' des appels :
+> *« ⚠️ Mon 10 % était trop bas, et je le dis AVANT la résolution, pas après. (…) Si je
+> l'écrivais aujourd'hui ce serait plutôt ~55 %. »*
+
+| | 11/11 *(enregistrement)* | 21/11 *(autocritique)* | 27/11 |
+|---|---|---|---|
+| S&P 500 | ~7 600 | **6 910** | **7 297** |
+| Distance au seuil 6 795,99 | −10,6 % | **−1,66 %** | **−6,87 %** |
+
+> 🔑 **Je retire l'accusation.** Un indice qui s'approche d'un seuil puis s'en éloigne est
+> **exactement ce qu'une probabilité faible autorise** : 10 % ne veut pas dire « le seuil ne
+> sera jamais approché », il veut dire « il ne sera pas franchi **à la date dite** ». Le
+> trajet observé est le **cas central** d'un 10 %, pas son démenti.
+
+### ⚖️ La leçon, et elle est plus dure que celle de la semaine dernière
+> **Un aveu de mauvaise calibration formulé à un extrême est lui-même un acte mal calibré.**
+> Il a le goût de l'humilité et c'est **du suivi de tendance appliqué à ses propres
+> jugements** : j'ai révisé mon estimation vers le pessimisme au point bas exact du marché,
+> pour la même raison psychologique qui fait qu'on vend au plus bas.
+> *Le 21/11 je me suis félicité de l'écrire « avant la résolution ». C'était vrai et
+> insuffisant : **il faut aussi ne pas l'écrire au point bas.** Une autocritique a une date,
+> et sa date compte autant que celle d'un appel.*
+
+**Ce qui, dans l'épisode, a correctement fonctionné et que je garde** : la séparation stricte
+entre *« je ne change pas la probabilité enregistrée »* et *« voilà ce que j'écrirais
+aujourd'hui »*. **Le registre n'a pas été touché** — seul le commentaire était mauvais, et
+c'est le commentaire que je retire. *Si j'avais réécrit le 10 % en 55 %, l'erreur serait
+aujourd'hui indélébile et le registre inutilisable.*
+
+## 2. ⚖️ R75 — la fenêtre de comparaison se décide AVANT de regarder les chiffres
+
+**Fait générateur** : trois jours de suite *(25, 26, 27/11)* j'ai bâti un récit sur le
+décrochage des semi-conducteurs européens en mesurant **lundi → jeudi**. Mesuré sur la fenêtre
+pré-engagée de la Revue :
+```
+STM  lundi → jeudi        −10,60 %   vs CAC +0,79 %   =  −11,4 points
+STM  vendredi → vendredi   +1,17 %   vs CAC +2,88 %   =   −1,7 point
+```
+
+**La règle** : toute performance **relative** citée porte une fenêtre **pré-engagée**.
+1. **Revue hebdomadaire → vendredi à vendredi**, sans exception.
+2. **Chasse → la fenêtre propre du signal** *(date du fait → aujourd'hui)*, nommée.
+3. **Toute autre fenêtre → étiquetée comme telle, et jamais citée seule.**
+4. **Si deux fenêtres racontent des histoires opposées, les DEUX vont au brief.**
+
+> 🔑 **Pourquoi cette faute est plus dangereuse que celles que R66 attrape** : *aucun nombre
+> n'est faux.* Une vérification de données la laisse passer intégralement. **Elle fabrique un
+> récit sans mentir sur une seule donnée** — et le récit, lui, décide.
+> *Famille : c'est le cousin du trou de partition (R65) et de la résolution anticipée (R74).
+> Dans les trois cas je choisis, après coup, le cadre qui rend ma conclusion vraie — l'espace
+> des issues, la date, puis la fenêtre. R75 ferme la troisième.*
+
+## ✅ Le test de solidité que la semaine a fourni
+La **suspension du déclencheur STM** a survécu à la rectification de **trois** de ses
+illustrations : l'avance sur ASML *(mercredi)*, le mot « évaporée » *(vendredi)*, la fenêtre
+de mesure *(aujourd'hui)* — parce que son motif réel est **la thèse non réinstruite**.
+> 🔑 **Un motif qui survit à la rectification de tous ses ornements est probablement le vrai
+> motif.** C'est le seul test de solidité que je sache m'appliquer sans complaisance, et il
+> est maintenant daté et vérifiable.
+
+## 📊 État du registre au 28/11/2026
+**Ouverts (14)**, **aucune résolution cette semaine** : C011 · C014 · C015 · C017 · C054 ·
+**C056** *(78 %, 31/12)* · **C061** *(10 %, 31/12 — il faut −6,87 %)* · C065 · C067 ·
+**C068** *(28 %, 01/12 — il faut −2,44 % en 2 séances)* · **C069** *(78 %, 31/12 — ROUVERT)* ·
+**C070** *(22 %, ~31/03/2027)* · C071 · C072.
+**VOID, réouvrables** : C013 · C059.
+
+> ⚖️ **R74 m'a coûté quatre résolutions flatteuses en cinq jours** — C070 le 25, C068 le 26
+> puis le 28, et le maintien de C069 rouvert. **Une règle qui ne coûte rien ne protège rien.**
