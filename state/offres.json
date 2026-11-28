@@ -1,6 +1,6 @@
 {
  "_doc": "Source de vérité du job board artifact. Chaque run quotidien : ajouter les NOUVELLES offres publiées au brief, mettre à jour st (ouverte/fermee/incertaine) et jours des suivies, puis python3 state/build_board.py et republier l'artifact (même URL). Champs : d=date publication brief, b=n° brief, s=cible|solide|avoir, st=ouverte|fermee|incertaine, t=titre, c=entreprise, l=lieu, tx=taux, ct=contrat, xp=expérience exigée, u=lien verbatim (null=à retrouver), n=note/accroche, g=GenAI, cl=mention Claude, dl=deadline, suivi=pin re-checké quotidiennement, depuis=date première apparition pour les suivies",
- "maj": "2026-11-27",
+ "maj": "2026-11-28",
  "offres": [
   {
    "d": "2026-10-03",
@@ -6619,6 +6619,111 @@
     "Client non nommé (cabinet de recrutement)"
    ],
    "at": "Même famille de postes que Vauban / PureSanté cette semaine."
+  },
+  {
+   "d": "2026-11-28",
+   "b": 88,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Social Media Content Creator",
+   "c": "Laurastar",
+   "l": "Châtel-Saint-Denis (FR)",
+   "dist": "~45 min en train",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "non chiffrée (portfolio avant tout)",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/social-media-content-creator-at-laurastar-4495800033",
+   "n": "Tourner et monter des Reels, TikTok et Shorts pour une marque lifestyle (fers et centrales vapeur haut de gamme) : studio interne, défilés, coulisses ; proposer les concepts ; curiosité pour les outils créatifs IA.",
+   "fit": {
+    "m": 1,
+    "da": 2,
+    "ia": 1,
+    "pct": 58
+   },
+   "ms": [
+    "Création vidéo social-first",
+    "Montage (Premiere, DaVinci, CapCut)",
+    "Outils créatifs IA"
+   ],
+   "inf": [
+    "Hors corridor Lausanne-Morges (Fribourg)",
+    "Profil très exécution vidéo"
+   ],
+   "at": "« Un portfolio fort compte plus qu'une liste de diplômes. »"
+  },
+  {
+   "d": "2026-11-28",
+   "b": 88,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Senior Creative Strategist",
+   "c": "Jobgether (client non nommé)",
+   "l": "Remote Suisse",
+   "dist": "Remote",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "3-6+ ans",
+   "lg": "EN",
+   "g": false,
+   "u": "https://ch.linkedin.com/jobs/view/senior-creative-strategist-at-jobgether-4495095424",
+   "n": "Piloter la stratégie créative de campagnes publicitaires multi-clients (Meta, TikTok, YouTube, Google) : angles, hooks, tests créatifs, scaling des concepts gagnants, mentorat de juniors.",
+   "fit": {
+    "m": 2,
+    "da": 1,
+    "ia": 0,
+    "pct": 50
+   },
+   "ms": [
+    "Stratégie créative",
+    "Tests publicitaires",
+    "Direct response"
+   ],
+   "inf": [
+    "Orienté performance et agence",
+    "Senior"
+   ],
+   "at": "Version senior du Creative Strategist déjà épinglé."
+  },
+  {
+   "d": "2026-11-28",
+   "b": 88,
+   "st": "ouverte",
+   "cl": false,
+   "dl": null,
+   "s": "avoir",
+   "t": "Designer Horloger",
+   "c": "Blancpain SA",
+   "l": "Paudex",
+   "dist": "3 km",
+   "tx": "100%",
+   "ct": "n.p.",
+   "xp": "plusieurs années en haute horlogerie",
+   "lg": "FR",
+   "g": false,
+   "u": "https://www.jobup.ch/fr/emplois/detail/4a3ed7f7-c758-436f-a75a-9ec1c23804ab/",
+   "n": "Concevoir de nouveaux designs de montres (boîte, cadran, bracelet), les modéliser en 2D/3D et produire des rendus réalistes et moodboards pour les présentations produit.",
+   "fit": {
+    "m": 0,
+    "da": 2,
+    "ia": 0,
+    "pct": 45
+   },
+   "ms": [
+    "Modélisation 3D et rendus réalistes",
+    "Suite Adobe",
+    "Moodboards"
+   ],
+   "inf": [
+    "Expérience en haute horlogerie exigée",
+    "Design produit, pas marketing"
+   ],
+   "at": "Ta pratique 3D (Overnight) colle au volet rendus."
   }
  ]
 }

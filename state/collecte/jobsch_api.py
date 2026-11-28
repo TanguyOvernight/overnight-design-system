@@ -17,6 +17,7 @@ TITRE = re.compile(r'market|communic|brand|marque|design|graph|content|contenu|s
                    r'art director|direction artistique|community|e-?commerce', re.I)
 EXCLU = re.compile(r'stagiaire|stage\b|intern|apprenti|cfc|master thesis|trainee|ing[ée]nieur|engineer|d[ée]veloppeur|developer|[ée]ducat|soins|infirmi', re.I)
 LSNE = (46.5197, 6.6323)
+HOST = sys.argv[2] if len(sys.argv) > 2 else 'jobs'  # 'jobup' : même API, annonces propres à jobup (HTML jobup sans ItemList depuis 26.11)
 
 def km(a, b):
     la1, lo1, la2, lo2 = map(math.radians, (a[0], a[1], b[0], b[1]))
@@ -24,7 +25,7 @@ def km(a, b):
     return 6371 * 2 * math.asin(math.sqrt(h))
 
 def get(params):
-    u = "https://www.jobs.ch/api/v1/public/search?" + up.urlencode(params)
+    u = f"https://www.{HOST}.ch/api/v1/public/search?" + up.urlencode(params)
     try:
         return json.loads(urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=25).read())
     except urllib.error.HTTPError as e:

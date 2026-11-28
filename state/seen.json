@@ -1,7 +1,7 @@
 {
  "_doc": "État persistant de déduplication. vus = liens/ids déjà rencontrés par source. postees = offres envoyées dans Slack. La clé primaire est toujours le lien/id, jamais la date.",
  "maj": "2026-11-27",
- "dernier_brief": 87,
+ "dernier_brief": 88,
  "vus": {
   "jobup": [
    "https://www.jobup.ch/fr/emplois/detail/e0d84c8f-749d-4fc8-bfe4-c2d090384441/",
@@ -1615,7 +1615,9 @@
    "0b8c1d3f-f66c-4efc-a21e-79530e851b40",
    "2a64300f-75c7-4b19-8f42-20394172c38b",
    "bc77c6ea-d41a-4fe9-a320-1a8b718b3049",
-   "b2fd0584-a99f-488d-a596-6cef0040c83a"
+   "b2fd0584-a99f-488d-a596-6cef0040c83a",
+   "d998e72e-a8a9-4dbe-890f-c15ac2286c45",
+   "4a3ed7f7-c758-436f-a75a-9ec1c23804ab"
   ],
   "ats_employeurs": [
    "https://recrutement.eben-hezer.ch/jobs/7602918-responsable-communication-et-recherche-de-fonds",
@@ -5329,7 +5331,60 @@
    "4495512533",
    "4493882113",
    "4495268621",
-   "4495047406"
+   "4495047406",
+   "4495837301",
+   "4495800033",
+   "4495812485",
+   "4495804992",
+   "4495838716",
+   "4495091387",
+   "4495348624",
+   "4318241926",
+   "4495833332",
+   "4495320344",
+   "4496008054",
+   "4487545610",
+   "4495832361",
+   "4495843371",
+   "4495805595",
+   "4495849017",
+   "4495087592",
+   "4495831083",
+   "4495582983",
+   "4495012103",
+   "4495582428",
+   "4495521166",
+   "4495898532",
+   "4495825751",
+   "4495274633",
+   "4495051769",
+   "4495896996",
+   "4495519790",
+   "4495512981",
+   "4492793416",
+   "4495049987",
+   "4495060470",
+   "4495814399",
+   "4495810579",
+   "4493889759",
+   "4494207310",
+   "4495899732",
+   "4495311662",
+   "4495800901",
+   "4495829902",
+   "4495096784",
+   "4495332471",
+   "4495845039",
+   "4495591823",
+   "4495095424",
+   "4495261857",
+   "4495810537",
+   "4495816363",
+   "4495076828",
+   "4495082679",
+   "4493889173",
+   "4495300295",
+   "4495088760"
   ],
   "chuv": [
    "https://recrutement.chuv.ch/vacancy/motion-designer-videaste-au-sein-du-service-de-communication-316433.html"
@@ -5485,7 +5540,11 @@
    "https://ch.indeed.com/viewjob?jk=f4fc3ccdfad5dd53",
    "https://ch.indeed.com/viewjob?jk=5db39602d759f7b1",
    "https://ch.indeed.com/viewjob?jk=a04f746694280465",
-   "https://ch.indeed.com/viewjob?jk=d1bf8dd90406ea21"
+   "https://ch.indeed.com/viewjob?jk=d1bf8dd90406ea21",
+   "d1bf8dd90406ea21",
+   "5db39602d759f7b1",
+   "a04f746694280465",
+   "1268ffec66fac00f"
   ],
   "jobroom": [
    "6ce0fade-e7cd-41e3-9327-208a9b3f763d",
@@ -7325,7 +7384,26 @@
    "474fbd04-e6d1-434c-8288-7686bcc5ff05",
    "ddeef4f5-0093-4c41-b6dc-f2c3d16163a4",
    "48fe0870-28db-495d-b788-03b5d8cb45bf",
-   "2255235c-2ddc-4da4-a5e0-bd01e4fa7995"
+   "2255235c-2ddc-4da4-a5e0-bd01e4fa7995",
+   "a1334192-a65a-42bd-88a8-b0a9a857607c",
+   "50602934-9e47-45fe-9d44-91b4724e826a",
+   "3ba18e0b-95ff-4329-b010-76ca2739a0a8",
+   "d7b0bb6e-70c1-4b24-aa97-de29515afb67",
+   "25608764-808d-4530-822e-695d470ef639",
+   "6947f974-8a9a-4def-9043-6847f4b51030",
+   "9bbba746-1aab-4db1-bd76-79be195ce91e",
+   "c1c18289-6a8f-4834-8139-3c3a55a899db",
+   "8caeeed4-1d34-42f7-8621-f5739eaac0ed",
+   "c27e74ee-08fc-41a9-9a4a-3f05f0aa2273",
+   "f27410a9-25ca-4216-98d8-4dea22c9c63b",
+   "5f8a8141-4872-46db-945b-9746b1868823",
+   "a94fcee2-d220-4b12-a405-085efbcfe264",
+   "5450805a-40c1-4bc2-b232-f67dee6af5c8",
+   "55818688-57fb-41ff-a242-709798e081f2",
+   "62ce3dee-06db-4fd7-93d0-702c98e1a9d3",
+   "60672b58-4688-4a30-8134-37a2de367e81",
+   "3e148b00-12e2-445e-bcd5-743fb7ba7f2d",
+   "024dc7ba-d5f2-4549-9ca1-c046e972f290"
   ]
  },
  "postees": [
@@ -9817,6 +9895,30 @@
    "titre": "Copywriter (F/H/N)",
    "entreprise": "Michael Page (client non nommé)",
    "lien": "https://www.michaelpage.ch/fr/job-detail/copywriter-fhn/ref/jn-112026-7153374?lang=en"
+  },
+  {
+   "brief": 88,
+   "date": "2026-11-28",
+   "score": "👀",
+   "titre": "Social Media Content Creator",
+   "entreprise": "Laurastar",
+   "lien": "https://ch.linkedin.com/jobs/view/social-media-content-creator-at-laurastar-4495800033"
+  },
+  {
+   "brief": 88,
+   "date": "2026-11-28",
+   "score": "👀",
+   "titre": "Senior Creative Strategist",
+   "entreprise": "Jobgether (client non nommé)",
+   "lien": "https://ch.linkedin.com/jobs/view/senior-creative-strategist-at-jobgether-4495095424"
+  },
+  {
+   "brief": 88,
+   "date": "2026-11-28",
+   "score": "👀",
+   "titre": "Designer Horloger",
+   "entreprise": "Blancpain SA",
+   "lien": "https://www.jobup.ch/fr/emplois/detail/4a3ed7f7-c758-436f-a75a-9ec1c23804ab/"
   }
  ]
 }

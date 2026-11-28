@@ -196,6 +196,12 @@
    "date": "2026-11-27",
    "source": "jobup (parse_jobup.py)",
    "etat": "0 item sur toutes les requêtes depuis le 26.11"
+  },
+  {
+   "date": "2026-11-28",
+   "source": "jobup",
+   "statut": "résolu",
+   "note": "HTML de recherche jobup sans ItemList JSON-LD depuis le 26.11 ; collecte via l'API jobup.ch/api/v1/public/search (jobsch_api.py 3 jobup)."
   }
  ]
 }
